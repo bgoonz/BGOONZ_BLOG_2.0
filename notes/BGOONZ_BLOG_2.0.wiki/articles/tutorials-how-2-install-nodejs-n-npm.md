@@ -1,14 +1,13 @@
+
 # Installing Node.js via package manager | Node.js
 
 > ## Excerpt
->
 > Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 
 ---
-
 _**Note:**_ The packages on this page are maintained and supported by their respective packagers, **not** the Node.js core team. Please report any issues you encounter to the package maintainer. If it turns out your issue is a bug in Node.js itself, the maintainer will report the issue upstream.
 
----
+___
 
 -   [Alpine Linux](https://nodejs.org/en/download/package-manager/#alpine-linux)
 -   [Android](https://nodejs.org/en/download/package-manager/#android)
@@ -34,7 +33,7 @@ _**Note:**_ The packages on this page are maintained and supported by their resp
 -   [Windows](https://nodejs.org/en/download/package-manager/#windows)
 -   [z/OS](https://nodejs.org/en/download/package-manager/#zos)
 
----
+___
 
 Node.js LTS and npm packages are available in the Main Repository.
 
@@ -263,7 +262,7 @@ Node.js is available through the ports system.
 /usr/ports/lang/node
 ```
 
-Using [pkg_add](https://man.openbsd.org/OpenBSD-current/man1/pkg_add.1) on OpenBSD:
+Using [pkg\_add](https://man.openbsd.org/OpenBSD-current/man1/pkg_add.1) on OpenBSD:
 
 ```
 pkg_add node

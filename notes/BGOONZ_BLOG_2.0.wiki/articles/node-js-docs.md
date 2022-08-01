@@ -1,11 +1,10 @@
+
 # Node.js v16.13.1 Documentation
 
 > ## Excerpt
->
 > Welcome to the official API reference documentation for Node.js!
 
 ---
-
 ## About this documentation[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#documentation_about-this-documentation)
 
 Welcome to the official API reference documentation for Node.js!
@@ -152,6 +151,14 @@ Example error diff:
 import { strict as assert } from 'assert';
 
 assert.deepEqual([[[1, 2, 3]], 4, 5], [[[1, 2, '3']], 4, 5]);
+
+
+
+
+
+
+
+
 
 
 
@@ -320,6 +327,14 @@ const callsfunc = tracker.calls(func, 2);
 
 tracker.report();
 
+
+
+
+
+
+
+
+
 ```
 
 #### `tracker.verify()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#assert_trackerverify)
@@ -454,11 +469,19 @@ Tests for deep equality between the `actual` and `expected` parameters. "Deep" e
 -   Recursion stops when both sides differ or both sides encounter a circular reference.
 -   [`WeakMap`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap) and [`WeakSet`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet) comparison does not rely on their values. See below for further details.
 
-````
+```
 import assert from 'assert/strict';
 
 
 assert.deepStrictEqual({ a: 1 }, { a: '1' });
+
+
+
+
+
+
+
+
 
 const date = new Date();
 const object = {};
@@ -466,7 +489,15 @@ const fakeDate = {};
 Object.setPrototypeOf(fakeDate, Date.prototype);
 
 
-assert.deepStrictEqual(object, fakeDate);assert.deepStrictEqual(date, fakeDate);
+assert.deepStrictEqual(object, fakeDate);
+
+
+
+
+
+
+
+assert.deepStrictEqual(date, fakeDate);
 
 
 
@@ -519,7 +550,15 @@ assert.deepStrictEqual(weakMap1, weakMap2);
 
 
 
-assert.deepStrictEqual(weakMap1, weakMap3);```
+assert.deepStrictEqual(weakMap1, weakMap3);
+
+
+
+
+
+
+
+```
 
 If the values are not equal, an [`AssertionError`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#assert_class-assertassertionerror) is thrown with a `message` property set equal to the value of the `message` parameter. If the `message` parameter is undefined, a default error message is assigned. If the `message` parameter is an instance of an [`Error`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_class-error) then it will be thrown instead of the `AssertionError`.
 
@@ -531,16 +570,16 @@ If the values are not equal, an [`AssertionError`](https://nodejs.org/dist/v16.1
 
 Expects the `string` input not to match the regular expression.
 
-````
-
+```
 import assert from 'assert/strict';
 
 assert.doesNotMatch('I will fail', /fail/);
 
+
 assert.doesNotMatch(123, /pass/);
 
-assert.doesNotMatch('I will pass', /different/);
 
+assert.doesNotMatch('I will pass', /different/);
 ```
 
 If the values do match, or if the `string` argument is of another type than `string`, an [`AssertionError`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#assert_class-assertassertionerror) is thrown with a `message` property set equal to the value of the `message` parameter. If the `message` parameter is undefined, a default error message is assigned. If the `message` parameter is an instance of an [`Error`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_class-error) then it will be thrown instead of the [`AssertionError`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#assert_class-assertassertionerror).
@@ -564,27 +603,23 @@ If specified, `error` can be a [`Class`](https://developer.mozilla.org/en-US/doc
 Besides the async nature to await the completion behaves identically to [`assert.doesNotThrow()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#assert_assertdoesnotthrowfn-error-message).
 
 ```
-
 import assert from 'assert/strict';
 
 await assert.doesNotReject(
-async () => {
-throw new TypeError('Wrong value');
-},
-SyntaxError
+  async () => {
+    throw new TypeError('Wrong value');
+  },
+  SyntaxError
 );
-
 ```
 
 ```
-
 import assert from 'assert/strict';
 
 assert.doesNotReject(Promise.reject(new TypeError('Wrong value')))
-.then(() => {
-
-});
-
+  .then(() => {
+    
+  });
 ```
 
 ### `assert.doesNotThrow(fn[, error][, message])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#assert_assertdoesnotthrowfn-error-message)
@@ -606,47 +641,41 @@ If specified, `error` can be a [`Class`](https://developer.mozilla.org/en-US/doc
 The following, for instance, will throw the [`TypeError`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_class-typeerror) because there is no matching error type in the assertion:
 
 ```
-
 import assert from 'assert/strict';
 
 assert.doesNotThrow(
-() => {
-throw new TypeError('Wrong value');
-},
-SyntaxError
+  () => {
+    throw new TypeError('Wrong value');
+  },
+  SyntaxError
 );
-
 ```
 
 However, the following will result in an [`AssertionError`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#assert_class-assertassertionerror) with the message 'Got unwanted exception...':
 
 ```
-
 import assert from 'assert/strict';
 
 assert.doesNotThrow(
-() => {
-throw new TypeError('Wrong value');
-},
-TypeError
+  () => {
+    throw new TypeError('Wrong value');
+  },
+  TypeError
 );
-
 ```
 
 If an [`AssertionError`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#assert_class-assertassertionerror) is thrown and a value is provided for the `message` parameter, the value of `message` will be appended to the [`AssertionError`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#assert_class-assertassertionerror) message:
 
 ```
-
 import assert from 'assert/strict';
 
 assert.doesNotThrow(
-() => {
-throw new TypeError('Wrong value');
-},
-/Wrong value/,
-'Whoops'
+  () => {
+    throw new TypeError('Wrong value');
+  },
+  /Wrong value/,
+  'Whoops'
 );
-
 ```
 
 ### `assert.equal(actual, expected[, message])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#assert_assertequalactual-expected-message)
@@ -664,7 +693,6 @@ An alias of [`assert.strictEqual()`](https://nodejs.org/dist/v16.13.1/docs/api/a
 Tests shallow, coercive equality between the `actual` and `expected` parameters using the [Abstract Equality Comparison](https://tc39.github.io/ecma262/#sec-abstract-equality-comparison) ( `==` ). `NaN` is special handled and treated as being identical in case both sides are `NaN`.
 
 ```
-
 import assert from 'assert';
 
 assert.equal(1, 1);
@@ -673,10 +701,10 @@ assert.equal(1, '1');
 
 assert.equal(NaN, NaN);
 
+
 assert.equal(1, 2);
 
 assert.equal({ a: { b: 1 } }, { a: { b: 1 } });
-
 ```
 
 If the values are not equal, an [`AssertionError`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#assert_class-assertassertionerror) is thrown with a `message` property set equal to the value of the `message` parameter. If the `message` parameter is undefined, a default error message is assigned. If the `message` parameter is an instance of an [`Error`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_class-error) then it will be thrown instead of the `AssertionError`.
@@ -690,15 +718,15 @@ Added in: v0.1.21
 Throws an [`AssertionError`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#assert_class-assertassertionerror) with the provided error message or a default error message. If the `message` parameter is an instance of an [`Error`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_class-error) then it will be thrown instead of the [`AssertionError`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#assert_class-assertassertionerror).
 
 ```
-
 import assert from 'assert/strict';
 
 assert.fail();
 
+
 assert.fail('boom');
 
-assert.fail(new TypeError('need array'));
 
+assert.fail(new TypeError('need array'));
 ```
 
 Using `assert.fail()` with more than two arguments is possible but deprecated. See below for further details.
@@ -716,19 +744,21 @@ Using `assert.fail()` with more than two arguments is possible but deprecated. S
 If `message` is falsy, the error message is set as the values of `actual` and `expected` separated by the provided `operator`. If just the two `actual` and `expected` arguments are provided, `operator` will default to `'!='`. If `message` is provided as third argument it will be used as the error message and the other arguments will be stored as properties on the thrown object. If `stackStartFn` is provided, all stack frames above that function will be removed from stacktrace (see [`Error.captureStackTrace`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_errorcapturestacktracetargetobject-constructoropt)). If no arguments are given, the default message `Failed` will be used.
 
 ```
-
 import assert from 'assert/strict';
 
 assert.fail('a', 'b');
 
+
 assert.fail(1, 2, undefined, '>');
+
 
 assert.fail(1, 2, 'fail');
 
+
 assert.fail(1, 2, 'whoops', '>');
 
-assert.fail(1, 2, new TypeError('need array'));
 
+assert.fail(1, 2, new TypeError('need array'));
 ```
 
 In the last three cases `actual`, `expected`, and `operator` have no influence on the error message.
@@ -736,13 +766,14 @@ In the last three cases `actual`, `expected`, and `operator` have no influence o
 Example use of `stackStartFn` for truncating the exception's stacktrace:
 
 ```
-
 import assert from 'assert/strict';
 
 function suppressFrame() {
-assert.fail('a', 'b', undefined, '!==', suppressFrame);
+  assert.fail('a', 'b', undefined, '!==', suppressFrame);
 }
 suppressFrame();
+
+
 
 ```
 
@@ -753,7 +784,6 @@ suppressFrame();
 Throws `value` if `value` is not `undefined` or `null`. This is useful when testing the `error` argument in callbacks. The stack trace contains all frames from the error passed to `ifError()` including the potential new frames for `ifError()` itself.
 
 ```
-
 import assert from 'assert/strict';
 
 assert.ifError(null);
@@ -764,14 +794,17 @@ assert.ifError('error');
 
 assert.ifError(new Error());
 
+
+
 let err;
 (function errorFrame() {
-err = new Error('test error');
+  err = new Error('test error');
 })();
 
 (function ifErrorFrame() {
-assert.ifError(err);
+  assert.ifError(err);
 })();
+
 
 ```
 
@@ -784,15 +817,15 @@ assert.ifError(err);
 Expects the `string` input to match the regular expression.
 
 ```
-
 import assert from 'assert/strict';
 
 assert.match('I will fail', /pass/);
 
+
 assert.match(123, /pass/);
 
-assert.match('I will pass', /pass/);
 
+assert.match('I will pass', /pass/);
 ```
 
 If the values do not match, or if the `string` argument is of another type than `string`, an [`AssertionError`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#assert_class-assertassertionerror) is thrown with a `message` property set equal to the value of the `message` parameter. If the `message` parameter is undefined, a default error message is assigned. If the `message` parameter is an instance of an [`Error`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_class-error) then it will be thrown instead of the [`AssertionError`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#assert_class-assertassertionerror).
@@ -812,34 +845,35 @@ An alias of [`assert.notDeepStrictEqual()`](https://nodejs.org/dist/v16.13.1/doc
 Tests for any deep inequality. Opposite of [`assert.deepEqual()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#assert_assertdeepequalactual-expected-message).
 
 ```
-
 import assert from 'assert';
 
 const obj1 = {
-a: {
-b: 1
-}
+  a: {
+    b: 1
+  }
 };
 const obj2 = {
-a: {
-b: 2
-}
+  a: {
+    b: 2
+  }
 };
 const obj3 = {
-a: {
-b: 1
-}
+  a: {
+    b: 1
+  }
 };
 const obj4 = Object.create(obj1);
 
 assert.notDeepEqual(obj1, obj1);
 
+
 assert.notDeepEqual(obj1, obj2);
+
 
 assert.notDeepEqual(obj1, obj3);
 
-assert.notDeepEqual(obj1, obj4);
 
+assert.notDeepEqual(obj1, obj4);
 ```
 
 If the values are deeply equal, an [`AssertionError`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#assert_class-assertassertionerror) is thrown with a `message` property set equal to the value of the `message` parameter. If the `message` parameter is undefined, a default error message is assigned. If the `message` parameter is an instance of an [`Error`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_class-error) then it will be thrown instead of the `AssertionError`.
@@ -853,11 +887,9 @@ If the values are deeply equal, an [`AssertionError`](https://nodejs.org/dist/v1
 Tests for deep strict inequality. Opposite of [`assert.deepStrictEqual()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#assert_assertdeepstrictequalactual-expected-message).
 
 ```
-
 import assert from 'assert/strict';
 
 assert.notDeepStrictEqual({ a: 1 }, { a: '1' });
-
 ```
 
 If the values are deeply and strictly equal, an [`AssertionError`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#assert_class-assertassertionerror) is thrown with a `message` property set equal to the value of the `message` parameter. If the `message` parameter is undefined, a default error message is assigned. If the `message` parameter is an instance of an [`Error`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_class-error) then it will be thrown instead of the [`AssertionError`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#assert_class-assertassertionerror).
@@ -877,15 +909,15 @@ An alias of [`assert.notStrictEqual()`](https://nodejs.org/dist/v16.13.1/docs/ap
 Tests shallow, coercive inequality with the [Abstract Equality Comparison](https://tc39.github.io/ecma262/#sec-abstract-equality-comparison) (`!=` ). `NaN` is special handled and treated as being identical in case both sides are `NaN`.
 
 ```
-
 import assert from 'assert';
 
 assert.notEqual(1, 2);
 
+
 assert.notEqual(1, 1);
 
-assert.notEqual(1, '1');
 
+assert.notEqual(1, '1');
 ```
 
 If the values are equal, an [`AssertionError`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#assert_class-assertassertionerror) is thrown with a `message` property set equal to the value of the `message` parameter. If the `message` parameter is undefined, a default error message is assigned. If the `message` parameter is an instance of an [`Error`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_class-error) then it will be thrown instead of the `AssertionError`.
@@ -899,15 +931,17 @@ If the values are equal, an [`AssertionError`](https://nodejs.org/dist/v16.13.1/
 Tests strict inequality between the `actual` and `expected` parameters as determined by the [SameValue Comparison](https://tc39.github.io/ecma262/#sec-samevalue).
 
 ```
-
 import assert from 'assert/strict';
 
 assert.notStrictEqual(1, 2);
 
+
 assert.notStrictEqual(1, 1);
 
-assert.notStrictEqual(1, '1');
 
+
+
+assert.notStrictEqual(1, '1');
 ```
 
 If the values are strictly equal, an [`AssertionError`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#assert_class-assertassertionerror) is thrown with a `message` property set equal to the value of the `message` parameter. If the `message` parameter is undefined, a default error message is assigned. If the `message` parameter is an instance of an [`Error`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_class-error) then it will be thrown instead of the `AssertionError`.
@@ -924,32 +958,45 @@ If `value` is not truthy, an [`AssertionError`](https://nodejs.org/dist/v16.13.1
 Be aware that in the `repl` the error message will be different to the one thrown in a file! See below for further details.
 
 ```
-
 import assert from 'assert/strict';
 
 assert.ok(true);
 
 assert.ok(1);
 
+
 assert.ok();
+
 
 assert.ok(false, 'it\'s false');
 
-assert.ok(typeof 123 === 'string');
+
 
 assert.ok(typeof 123 === 'string');
+
+
+
+assert.ok(typeof 123 === 'string');
+
+
+
 
 assert.ok(false);
 
+
+
+
 assert.ok(0);
 
-```
 
 ```
 
+```
 import assert from 'assert/strict';
 
+
 assert(0);
+
 
 ```
 
@@ -972,49 +1019,43 @@ If specified, `error` can be a [`Class`](https://developer.mozilla.org/en-US/doc
 If specified, `message` will be the message provided by the [`AssertionError`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#assert_class-assertassertionerror) if the `asyncFn` fails to reject.
 
 ```
-
 import assert from 'assert/strict';
 
 await assert.rejects(
-async () => {
-throw new TypeError('Wrong value');
-},
-{
-name: 'TypeError',
-message: 'Wrong value'
-}
+  async () => {
+    throw new TypeError('Wrong value');
+  },
+  {
+    name: 'TypeError',
+    message: 'Wrong value'
+  }
 );
-
 ```
 
 ```
-
 import assert from 'assert/strict';
 
 await assert.rejects(
-async () => {
-throw new TypeError('Wrong value');
-},
-(err) => {
-assert.strictEqual(err.name, 'TypeError');
-assert.strictEqual(err.message, 'Wrong value');
-return true;
-}
+  async () => {
+    throw new TypeError('Wrong value');
+  },
+  (err) => {
+    assert.strictEqual(err.name, 'TypeError');
+    assert.strictEqual(err.message, 'Wrong value');
+    return true;
+  }
 );
-
 ```
 
 ```
-
 import assert from 'assert/strict';
 
 assert.rejects(
-Promise.reject(new Error('Wrong value')),
-Error
+  Promise.reject(new Error('Wrong value')),
+  Error
 ).then(() => {
-
+  
 });
-
 ```
 
 `error` cannot be a string. If a string is provided as the second argument, then `error` is assumed to be omitted and the string will be used for `message` instead. This can lead to easy-to-miss mistakes. Please read the example in [`assert.throws()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#assert_assertthrowsfn-error-message) carefully if using a string as the second argument gets considered.
@@ -1028,19 +1069,30 @@ Error
 Tests strict equality between the `actual` and `expected` parameters as determined by the [SameValue Comparison](https://tc39.github.io/ecma262/#sec-samevalue).
 
 ```
-
 import assert from 'assert/strict';
 
 assert.strictEqual(1, 2);
 
+
+
+
 assert.strictEqual(1, 1);
 
-assert.strictEqual('Hello foobar', 'Hello World!');const apples = 1;
+
+assert.strictEqual('Hello foobar', 'Hello World!');
+
+
+
+
+
+
+
+const apples = 1;
 const oranges = 2;
 assert.strictEqual(apples, oranges, `apples ${apples} !== oranges ${oranges}`);
 
-assert.strictEqual(1, '1', new TypeError('Inputs are not identical'));
 
+assert.strictEqual(1, '1', new TypeError('Inputs are not identical'));
 ```
 
 If the values are not strictly equal, an [`AssertionError`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#assert_class-assertassertionerror) is thrown with a `message` property set equal to the value of the `message` parameter. If the `message` parameter is undefined, a default error message is assigned. If the `message` parameter is an instance of an [`Error`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_class-error) then it will be thrown instead of the [`AssertionError`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#assert_class-assertassertionerror).
@@ -1060,84 +1112,85 @@ If specified, `message` will be appended to the message provided by the `Asserti
 Custom validation object/error instance:
 
 ```
-
 import assert from 'assert/strict';
 
 const err = new TypeError('Wrong value');
 err.code = 404;
 err.foo = 'bar';
 err.info = {
-nested: true,
-baz: 'text'
+  nested: true,
+  baz: 'text'
 };
 err.reg = /abc/i;
 
 assert.throws(
-() => {
-throw err;
-},
-{
-name: 'TypeError',
-message: 'Wrong value',
-info: {
-nested: true,
-baz: 'text'
-}
-
-}
+  () => {
+    throw err;
+  },
+  {
+    name: 'TypeError',
+    message: 'Wrong value',
+    info: {
+      nested: true,
+      baz: 'text'
+    }
+    
+    
+    
+  }
 );
 
-throws(
-() => {
-throw err;
-},
-{
 
+throws(
+  () => {
+    throw err;
+  },
+  {
+    
+    
+    
     name: /^TypeError$/,
     message: /Wrong/,
     foo: 'bar',
     info: {
       nested: true,
-
+      
       baz: 'text'
     },
-
-
-
+    
+    
+    
     reg: /abc/i
-
-}
+  }
 );
 
-throws(
-() => {
-const otherErr = new Error('Not found');
 
+throws(
+  () => {
+    const otherErr = new Error('Not found');
+    
     for (const [key, value] of Object.entries(err)) {
       otherErr[key] = value;
     }
     throw otherErr;
-
-},
-
-err
+  },
+  
+  
+  err
 );
-
 ```
 
 Validate instanceof using constructor:
 
 ```
-
 import assert from 'assert/strict';
 
 assert.throws(
-() => {
-throw new Error('Wrong value');
-},
-Error
+  () => {
+    throw new Error('Wrong value');
+  },
+  Error
 );
-
 ```
 
 Validate error message using [`RegExp`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions):
@@ -1145,16 +1198,14 @@ Validate error message using [`RegExp`](https://developer.mozilla.org/en-US/docs
 Using a regular expression runs `.toString` on the error object, and will therefore also include the error name.
 
 ```
-
 import assert from 'assert/strict';
 
 assert.throws(
-() => {
-throw new Error('Wrong value');
-},
-/^Error: Wrong value$/
+  () => {
+    throw new Error('Wrong value');
+  },
+  /^Error: Wrong value$/
 );
-
 ```
 
 Custom error validation:
@@ -1162,51 +1213,61 @@ Custom error validation:
 The function must return `true` to indicate all internal validations passed. It will otherwise fail with an [`AssertionError`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#assert_class-assertassertionerror).
 
 ```
-
 import assert from 'assert/strict';
 
 assert.throws(
-() => {
-throw new Error('Wrong value');
-},
-(err) => {
-assert(err instanceof Error);
-assert(/value/.test(err));
-
+  () => {
+    throw new Error('Wrong value');
+  },
+  (err) => {
+    assert(err instanceof Error);
+    assert(/value/.test(err));
+    
+    
+    
+    
+    
     return true;
-
-},
-'unexpected error'
+  },
+  'unexpected error'
 );
-
 ```
 
 `error` cannot be a string. If a string is provided as the second argument, then `error` is assumed to be omitted and the string will be used for `message` instead. This can lead to easy-to-miss mistakes. Using the same message as the thrown error message is going to result in an `ERR_AMBIGUOUS_ARGUMENT` error. Please read the example below carefully if using a string as the second argument gets considered:
 
 ```
-
 import assert from 'assert/strict';
 
 function throwingFirst() {
-throw new Error('First');
+  throw new Error('First');
 }
 
 function throwingSecond() {
-throw new Error('Second');
+  throw new Error('Second');
 }
 
 function notThrowing() {}
 
+
+
+
 assert.throws(throwingFirst, 'Second');
+
+
 
 assert.throws(throwingSecond, 'Second');
 
+
+
 assert.throws(notThrowing, 'Second');
+
+
+
 
 assert.throws(throwingSecond, /Second$/);
 
-assert.throws(throwingFirst, /Second$/);
 
+assert.throws(throwingFirst, /Second$/);
 ```
 
 Due to the confusing error-prone notation, avoid a string as the second argument.
@@ -1222,9 +1283,7 @@ These classes are used to associate state and propagate it throughout callbacks 
 The `AsyncLocalStorage` and `AsyncResource` classes are part of the `async_hooks` module:
 
 ```
-
 import { AsyncLocalStorage, AsyncResource } from 'async_hooks';
-
 ```
 
 ### Class: `AsyncLocalStorage`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#async_context_class-asynclocalstorage)
@@ -1236,32 +1295,33 @@ While you can create your own implementation on top of the `async_hooks` module,
 The following example uses `AsyncLocalStorage` to build a simple logger that assigns IDs to incoming HTTP requests and includes them in messages logged within each request.
 
 ```
-
 import http from 'http';
 import { AsyncLocalStorage } from 'async_hooks';
 
 const asyncLocalStorage = new AsyncLocalStorage();
 
 function logWithId(msg) {
-const id = asyncLocalStorage.getStore();
-console.log(`${id !== undefined ? id : '-'}:`, msg);
+  const id = asyncLocalStorage.getStore();
+  console.log(`${id !== undefined ? id : '-'}:`, msg);
 }
 
 let idSeq = 0;
 http.createServer((req, res) => {
-asyncLocalStorage.run(idSeq++, () => {
-logWithId('start');
-
+  asyncLocalStorage.run(idSeq++, () => {
+    logWithId('start');
+    
     setImmediate(() => {
       logWithId('finish');
       res.end();
     });
-
-});
+  });
 }).listen(8080);
 
 http.get('http://localhost:8080');
 http.get('http://localhost:8080');
+
+
+
 
 ```
 
@@ -1304,34 +1364,30 @@ Transitions into the context for the remainder of the current synchronous execut
 Example:
 
 ```
-
 const store = { id: 1 };
 
 asyncLocalStorage.enterWith(store);
-asyncLocalStorage.getStore();
+asyncLocalStorage.getStore(); 
 someAsyncOperation(() => {
-asyncLocalStorage.getStore();
+  asyncLocalStorage.getStore(); 
 });
-
 ```
 
 This transition will continue for the _entire_ synchronous execution. This means that if, for example, the context is entered within an event handler subsequent event handlers will also run within that context unless specifically bound to another context with an `AsyncResource`. That is why `run()` should be preferred over `enterWith()` unless there are strong reasons to use the latter method.
 
 ```
-
 const store = { id: 1 };
 
 emitter.on('my-event', () => {
-asyncLocalStorage.enterWith(store);
+  asyncLocalStorage.enterWith(store);
 });
 emitter.on('my-event', () => {
-asyncLocalStorage.getStore();
+  asyncLocalStorage.getStore(); 
 });
 
-asyncLocalStorage.getStore();
+asyncLocalStorage.getStore(); 
 emitter.emit('my-event');
-asyncLocalStorage.getStore();
-
+asyncLocalStorage.getStore(); 
 ```
 
 #### `asyncLocalStorage.run(store, callback[, ...args])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#async_context_asynclocalstoragerunstore-callback-args)
@@ -1351,21 +1407,19 @@ If the callback function throws an error, the error is thrown by `run()` too. Th
 Example:
 
 ```
-
 const store = { id: 2 };
 try {
-asyncLocalStorage.run(store, () => {
-asyncLocalStorage.getStore();
-setTimeout(() => {
-asyncLocalStorage.getStore();
-}, 200);
-throw new Error();
-});
+  asyncLocalStorage.run(store, () => {
+    asyncLocalStorage.getStore(); 
+    setTimeout(() => {
+      asyncLocalStorage.getStore(); 
+    }, 200);
+    throw new Error();
+  });
 } catch (e) {
-asyncLocalStorage.getStore();
-
+  asyncLocalStorage.getStore(); 
+  
 }
-
 ```
 
 #### `asyncLocalStorage.exit(callback[, ...args])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#async_context_asynclocalstorageexitcallback-args)
@@ -1386,16 +1440,15 @@ Example:
 ```
 
 try {
-asyncLocalStorage.getStore();
-asyncLocalStorage.exit(() => {
-asyncLocalStorage.getStore();
-throw new Error();
-});
+  asyncLocalStorage.getStore(); 
+  asyncLocalStorage.exit(() => {
+    asyncLocalStorage.getStore(); 
+    throw new Error();
+  });
 } catch (e) {
-asyncLocalStorage.getStore();
-
+  asyncLocalStorage.getStore(); 
+  
 }
-
 ```
 
 #### Usage with `async/await`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#async_context_usage-with-asyncawait)
@@ -1403,14 +1456,12 @@ asyncLocalStorage.getStore();
 If, within an async function, only one `await` call is to run within a context, the following pattern should be used:
 
 ```
-
 async function fn() {
-await asyncLocalStorage.run(new Map(), () => {
-asyncLocalStorage.getStore().set('key', value);
-return foo();
-});
+  await asyncLocalStorage.run(new Map(), () => {
+    asyncLocalStorage.getStore().set('key', value);
+    return foo(); 
+  });
 }
-
 ```
 
 In this example, the store is only available in the callback function and the functions called by `foo`. Outside of `run`, calling `getStore` will return `undefined`.
@@ -1432,19 +1483,31 @@ The `init` hook will trigger when an `AsyncResource` is instantiated.
 The following is an overview of the `AsyncResource` API.
 
 ```
-
 import { AsyncResource, executionAsyncId } from 'async_hooks';
 
+
+
+
 const asyncResource = new AsyncResource(
-type, { triggerAsyncId: executionAsyncId(), requireManualDestroy: false }
-);asyncResource.runInAsyncScope(fn, thisArg, ...args);
+  type, { triggerAsyncId: executionAsyncId(), requireManualDestroy: false }
+);
+
+
+
+
+
+
+
+asyncResource.runInAsyncScope(fn, thisArg, ...args);
+
 
 asyncResource.emitDestroy();
 
+
 asyncResource.asyncId();
 
-asyncResource.triggerAsyncId();
 
+asyncResource.triggerAsyncId();
 ```
 
 #### `new AsyncResource(type[, options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#async_context_new-asyncresourcetype-options)
@@ -1457,25 +1520,23 @@ asyncResource.triggerAsyncId();
 Example usage:
 
 ```
-
 class DBQuery extends AsyncResource {
-constructor(db) {
-super('DBQuery');
-this.db = db;
-}
+  constructor(db) {
+    super('DBQuery');
+    this.db = db;
+  }
 
-getInfo(query, callback) {
-this.db.get(query, (err, data) => {
-this.runInAsyncScope(callback, null, err, data);
-});
-}
+  getInfo(query, callback) {
+    this.db.get(query, (err, data) => {
+      this.runInAsyncScope(callback, null, err, data);
+    });
+  }
 
-close() {
-this.db = null;
-this.emitDestroy();
+  close() {
+    this.db = null;
+    this.emitDestroy();
+  }
 }
-}
-
 ```
 
 #### Static method: `AsyncResource.bind(fn[, type, [thisArg]])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#async_context_static-method-asyncresourcebindfn-type-thisarg)
@@ -1528,18 +1589,15 @@ The following example shows how to use the `AsyncResource` class to properly pro
 Assuming that the task is adding two numbers, using a file named `task_processor.js` with the following content:
 
 ```
-
 import { parentPort } from 'worker_threads';
 parentPort.on('message', (task) => {
-parentPort.postMessage(task.a + task.b);
+  parentPort.postMessage(task.a + task.b);
 });
-
 ```
 
 a Worker pool around it could use the following structure:
 
 ```
-
 import { AsyncResource } from 'async_hooks';
 import { EventEmitter } from 'events';
 import path from 'path';
@@ -1549,69 +1607,69 @@ const kTaskInfo = Symbol('kTaskInfo');
 const kWorkerFreedEvent = Symbol('kWorkerFreedEvent');
 
 class WorkerPoolTaskInfo extends AsyncResource {
-constructor(callback) {
-super('WorkerPoolTaskInfo');
-this.callback = callback;
-}
+  constructor(callback) {
+    super('WorkerPoolTaskInfo');
+    this.callback = callback;
+  }
 
-done(err, result) {
-this.runInAsyncScope(this.callback, null, err, result);
-this.emitDestroy();  
- }
+  done(err, result) {
+    this.runInAsyncScope(this.callback, null, err, result);
+    this.emitDestroy();  
+  }
 }
 
 export default class WorkerPool extends EventEmitter {
-constructor(numThreads) {
-super();
-this.numThreads = numThreads;
-this.workers = [];
-this.freeWorkers = [];
-this.tasks = [];
+  constructor(numThreads) {
+    super();
+    this.numThreads = numThreads;
+    this.workers = [];
+    this.freeWorkers = [];
+    this.tasks = [];
 
     for (let i = 0; i < numThreads; i++)
       this.addNewWorker();
 
-
-
+    
+    
     this.on(kWorkerFreedEvent, () => {
       if (this.tasks.length > 0) {
         const { task, callback } = this.tasks.shift();
         this.runTask(task, callback);
       }
     });
+  }
 
-}
-
-addNewWorker() {
-const worker = new Worker(new URL('task_processer.js', import.meta.url));
-worker.on('message', (result) => {
-
+  addNewWorker() {
+    const worker = new Worker(new URL('task_processer.js', import.meta.url));
+    worker.on('message', (result) => {
+      
+      
+      
       worker[kTaskInfo].done(null, result);
       worker[kTaskInfo] = null;
       this.freeWorkers.push(worker);
       this.emit(kWorkerFreedEvent);
     });
     worker.on('error', (err) => {
-
-
+      
+      
       if (worker[kTaskInfo])
         worker[kTaskInfo].done(err, null);
       else
         this.emit('error', err);
-
-
+      
+      
       this.workers.splice(this.workers.indexOf(worker), 1);
       this.addNewWorker();
     });
     this.workers.push(worker);
     this.freeWorkers.push(worker);
     this.emit(kWorkerFreedEvent);
+  }
 
-}
-
-runTask(task, callback) {
-if (this.freeWorkers.length === 0) {
-
+  runTask(task, callback) {
+    if (this.freeWorkers.length === 0) {
+      
       this.tasks.push({ task, callback });
       return;
     }
@@ -1619,14 +1677,12 @@ if (this.freeWorkers.length === 0) {
     const worker = this.freeWorkers.pop();
     worker[kTaskInfo] = new WorkerPoolTaskInfo(callback);
     worker.postMessage(task);
+  }
 
+  close() {
+    for (const worker of this.workers) worker.terminate();
+  }
 }
-
-close() {
-for (const worker of this.workers) worker.terminate();
-}
-}
-
 ```
 
 Without the explicit tracking added by the `WorkerPoolTaskInfo` objects, it would appear that the callbacks are associated with the individual `Worker` objects. However, the creation of the `Worker`s is not associated with the creation of the tasks and does not provide information about when tasks were scheduled.
@@ -1634,7 +1690,6 @@ Without the explicit tracking added by the `WorkerPoolTaskInfo` objects, it woul
 This pool could be used as follows:
 
 ```
-
 import WorkerPool from './worker_pool.js';
 import os from 'os';
 
@@ -1642,13 +1697,12 @@ const pool = new WorkerPool(os.cpus().length);
 
 let finished = 0;
 for (let i = 0; i < 10; i++) {
-pool.runTask({ a: 42, b: 100 }, (err, result) => {
-console.log(i, err, result);
-if (++finished === 10)
-pool.close();
-});
+  pool.runTask({ a: 42, b: 100 }, (err, result) => {
+    console.log(i, err, result);
+    if (++finished === 10)
+      pool.close();
+  });
 }
-
 ```
 
 #### Integrating `AsyncResource` with `EventEmitter`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#async_context_integrating-asyncresource-with-eventemitter)
@@ -1658,20 +1712,18 @@ Event listeners triggered by an [`EventEmitter`](https://nodejs.org/dist/v16.13.
 The following example shows how to use the `AsyncResource` class to properly associate an event listener with the correct execution context. The same approach can be applied to a [`Stream`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_stream) or a similar event-driven class.
 
 ```
-
 import { createServer } from 'http';
 import { AsyncResource, executionAsyncId } from 'async_hooks';
 
 const server = createServer((req, res) => {
-req.on('close', AsyncResource.bind(() => {
-
-}));
-req.on('close', () => {
-
-});
-res.end();
+  req.on('close', AsyncResource.bind(() => {
+    
+  }));
+  req.on('close', () => {
+    
+  });
+  res.end();
 }).listen(3000);
-
 ```
 
 ## Async hooks[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#async_hooks_async-hooks)
@@ -1681,9 +1733,7 @@ res.end();
 The `async_hooks` module provides an API to track asynchronous resources. It can be accessed using:
 
 ```
-
 import async_hooks from 'async_hooks';
-
 ```
 
 ### Terminology[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#async_hooks_terminology)
@@ -1697,29 +1747,51 @@ If [`Worker`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_
 Following is a simple overview of the public API.
 
 ```
-
 import async_hooks from 'async_hooks';
+
 
 const eid = async_hooks.executionAsyncId();
 
+
+
 const tid = async_hooks.triggerAsyncId();
 
+
 const asyncHook =
-async_hooks.createHook({ init, before, after, destroy, promiseResolve });
+    async_hooks.createHook({ init, before, after, destroy, promiseResolve });
+
+
+
 
 asyncHook.enable();
 
+
 asyncHook.disable();
+
+
+
+
+
+
+
+
 function init(asyncId, type, triggerAsyncId, resource) { }
+
+
+
 
 function before(asyncId) { }
 
+
 function after(asyncId) { }
+
 
 function destroy(asyncId) { }
 
-function promiseResolve(asyncId) { }
 
+
+
+function promiseResolve(asyncId) { }
 ```
 
 ### `async_hooks.createHook(callbacks)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#async_hooks_async_hookscreatehookcallbacks)
@@ -1741,32 +1813,28 @@ The callbacks `init()`/`before()`/`after()`/`destroy()` are called for the respe
 All callbacks are optional. For example, if only resource cleanup needs to be tracked, then only the `destroy` callback needs to be passed. The specifics of all functions that can be passed to `callbacks` is in the [Hook Callbacks](https://nodejs.org/dist/v16.13.1/docs/api/all.html#async_hooks_hook-callbacks) section.
 
 ```
-
 import { createHook } from 'async_hooks';
 
 const asyncHook = createHook({
-init(asyncId, type, triggerAsyncId, resource) { },
-destroy(asyncId) { }
+  init(asyncId, type, triggerAsyncId, resource) { },
+  destroy(asyncId) { }
 });
-
 ```
 
 The callbacks will be inherited via the prototype chain:
 
 ```
-
 class MyAsyncCallbacks {
-init(asyncId, type, triggerAsyncId, resource) { }
-destroy(asyncId) {}
+  init(asyncId, type, triggerAsyncId, resource) { }
+  destroy(asyncId) {}
 }
 
 class MyAddedCallbacks extends MyAsyncCallbacks {
-before(asyncId) { }
-after(asyncId) { }
+  before(asyncId) { }
+  after(asyncId) { }
 }
 
 const asyncHook = async_hooks.createHook(new MyAddedCallbacks());
-
 ```
 
 Because promises are asynchronous resources whose lifecycle is tracked via the async hooks mechanism, the `init()`, `before()`, `after()`, and `destroy()` callbacks _must not_ be async functions that return promises.
@@ -1782,15 +1850,13 @@ The reason for this error handling behavior is that these callbacks are running 
 Because printing to the console is an asynchronous operation, `console.log()` will cause the AsyncHooks callbacks to be called. Using `console.log()` or similar asynchronous operations inside an AsyncHooks callback function will thus cause an infinite recursion. An easy solution to this when debugging is to use a synchronous logging operation such as `fs.writeFileSync(file, msg, flag)`. This will print to the file and will not invoke AsyncHooks recursively because it is synchronous.
 
 ```
-
 import { writeFileSync } from 'fs';
 import { format } from 'util';
 
 function debug(...args) {
-
-writeFileSync('log.out', `${format(...args)}\n`, { flag: 'a' });
+  
+  writeFileSync('log.out', `${format(...args)}\n`, { flag: 'a' });
 }
-
 ```
 
 If an asynchronous operation is needed for logging, it is possible to keep track of what caused the asynchronous operation using the information provided by AsyncHooks itself. The logging should then be skipped when it was the logging itself that caused AsyncHooks callback to call. By doing this the otherwise infinite recursion is broken.
@@ -1808,11 +1874,9 @@ Enable the callbacks for a given `AsyncHook` instance. If no callbacks are provi
 The `AsyncHook` instance is disabled by default. If the `AsyncHook` instance should be enabled immediately after creation, the following pattern can be used.
 
 ```
-
 import { createHook } from 'async_hooks';
 
 const hook = createHook(callbacks).enable();
-
 ```
 
 #### `asyncHook.disable()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#async_hooks_asynchookdisable)
@@ -1839,13 +1903,11 @@ Called when a class is constructed that has the _possibility_ to emit an asynchr
 This behavior can be observed by doing something like opening a resource then closing it before the resource can be used. The following snippet demonstrates this.
 
 ```
-
 import { createServer } from 'net';
 
 createServer().listen(function() { this.close(); });
 
 clearTimeout(setTimeout(() => {}, 10));
-
 ```
 
 Every new resource is assigned an ID that is unique within the scope of the current Node.js instance.
@@ -1855,13 +1917,11 @@ Every new resource is assigned an ID that is unique within the scope of the curr
 The `type` is a string identifying the type of resource that caused `init` to be called. Generally, it will correspond to the name of the resource's constructor.
 
 ```
-
 FSEVENTWRAP, FSREQCALLBACK, GETADDRINFOREQWRAP, GETNAMEINFOREQWRAP, HTTPINCOMINGMESSAGE,
 HTTPCLIENTREQUEST, JSSTREAM, PIPECONNECTWRAP, PIPEWRAP, PROCESSWRAP, QUERYWRAP,
 SHUTDOWNWRAP, SIGNALWRAP, STATWATCHER, TCPCONNECTWRAP, TCPSERVERWRAP, TCPWRAP,
 TTYWRAP, UDPSENDWRAP, UDPWRAP, WRITEWRAP, ZLIB, SSLCONNECTION, PBKDF2REQUEST,
 RANDOMBYTESREQUEST, TLSWRAP, Microtask, Timeout, Immediate, TickObject
-
 ```
 
 There is also the `PROMISE` resource type, which is used to track `Promise` instances and asynchronous work scheduled by them.
@@ -1877,31 +1937,27 @@ It is possible to have type name collisions. Embedders are encouraged to use uni
 The following is a simple demonstration of `triggerAsyncId`:
 
 ```
-
 import { createHook, executionAsyncId } from 'async_hooks';
 import { stdout } from 'process';
 import net from 'net';
 
 createHook({
-init(asyncId, type, triggerAsyncId) {
-const eid = executionAsyncId();
-fs.writeSync(
-stdout.fd,
-`${type}(${asyncId}): trigger: ${triggerAsyncId} execution: ${eid}\n`);
-}
+  init(asyncId, type, triggerAsyncId) {
+    const eid = executionAsyncId();
+    fs.writeSync(
+      stdout.fd,
+      `${type}(${asyncId}): trigger: ${triggerAsyncId} execution: ${eid}\n`);
+  }
 }).enable();
 
 net.createServer((conn) => {}).listen(8080);
-
 ```
 
 Output when hitting the server with `nc localhost 8080`:
 
 ```
-
 TCPSERVERWRAP(5): trigger: 1 execution: 1
 TCPWRAP(7): trigger: 5 execution: 0
-
 ```
 
 The `TCPSERVERWRAP` is the server which receives the connections.
@@ -1919,62 +1975,57 @@ In some cases the resource object is reused for performance reasons, it is thus 
 The following is an example with additional information about the calls to `init` between the `before` and `after` calls, specifically what the callback to `listen()` will look like. The output formatting is slightly more elaborate to make calling context easier to see.
 
 ```
-
 const { fd } = process.stdout;
 
 let indent = 0;
 async_hooks.createHook({
-init(asyncId, type, triggerAsyncId) {
-const eid = async_hooks.executionAsyncId();
-const indentStr = ' '.repeat(indent);
-fs.writeSync(
-fd,
-`${indentStr}${type}(${asyncId}):` +
-` trigger: ${triggerAsyncId} execution: ${eid}\n`);
-},
-before(asyncId) {
-const indentStr = ' '.repeat(indent);
-fs.writeSync(fd, `${indentStr}before: ${asyncId}\n`);
-indent += 2;
-},
-after(asyncId) {
-indent -= 2;
-const indentStr = ' '.repeat(indent);
-fs.writeSync(fd, `${indentStr}after: ${asyncId}\n`);
-},
-destroy(asyncId) {
-const indentStr = ' '.repeat(indent);
-fs.writeSync(fd, `${indentStr}destroy: ${asyncId}\n`);
-},
+  init(asyncId, type, triggerAsyncId) {
+    const eid = async_hooks.executionAsyncId();
+    const indentStr = ' '.repeat(indent);
+    fs.writeSync(
+      fd,
+      `${indentStr}${type}(${asyncId}):` +
+      ` trigger: ${triggerAsyncId} execution: ${eid}\n`);
+  },
+  before(asyncId) {
+    const indentStr = ' '.repeat(indent);
+    fs.writeSync(fd, `${indentStr}before:  ${asyncId}\n`);
+    indent += 2;
+  },
+  after(asyncId) {
+    indent -= 2;
+    const indentStr = ' '.repeat(indent);
+    fs.writeSync(fd, `${indentStr}after:  ${asyncId}\n`);
+  },
+  destroy(asyncId) {
+    const indentStr = ' '.repeat(indent);
+    fs.writeSync(fd, `${indentStr}destroy:  ${asyncId}\n`);
+  },
 }).enable();
 
 net.createServer(() => {}).listen(8080, () => {
-
-setTimeout(() => {
-console.log('>>>', async_hooks.executionAsyncId());
-}, 10);
+  
+  setTimeout(() => {
+    console.log('>>>', async_hooks.executionAsyncId());
+  }, 10);
 });
-
 ```
 
 Output from only starting the server:
 
 ```
-
 TCPSERVERWRAP(5): trigger: 1 execution: 1
 TickObject(6): trigger: 5 execution: 1
-before: 6
-Timeout(7): trigger: 6 execution: 6
-after: 6
+before:  6
+  Timeout(7): trigger: 6 execution: 6
+after:   6
 destroy: 6
-before: 7
-
-> > > 7
-> > > TickObject(8): trigger: 7 execution: 7
-> > > after: 7
-> > > before: 8
-> > > after: 8
-
+before:  7
+>>> 7
+  TickObject(8): trigger: 7 execution: 7
+after:   7
+before:  8
+after:   8
 ```
 
 As illustrated in the example, `executionAsyncId()` and `execution` each specify the value of the current execution context; which is delineated by calls to `before` and `after`.
@@ -1982,15 +2033,13 @@ As illustrated in the example, `executionAsyncId()` and `execution` each specify
 Only using `execution` to graph resource allocation results in the following:
 
 ```
-
-root(1)
-^
-|
+  root(1)
+     ^
+     |
 TickObject(6)
-^
-|
-Timeout(7)
-
+     ^
+     |
+ Timeout(7)
 ```
 
 The `TCPSERVERWRAP` is not part of this graph, even though it was the reason for `console.log()` being called. This is because binding to a port without a host name is a _synchronous_ operation, but to maintain a completely asynchronous API the user's callback is placed in a `process.nextTick()`. Which is why `TickObject` is present in the output and is a 'parent' for `.listen()` callback.
@@ -1998,18 +2047,16 @@ The `TCPSERVERWRAP` is not part of this graph, even though it was the reason for
 The graph only shows _when_ a resource was created, not _why_, so to track the _why_ use `triggerAsyncId`. Which can be represented with the following graph:
 
 ```
-
-bootstrap(1)
-|
-˅
+ bootstrap(1)
+     |
+     ˅
 TCPSERVERWRAP(5)
-|
-˅
-TickObject(6)
-|
-˅
-Timeout(7)
-
+     |
+     ˅
+ TickObject(6)
+     |
+     ˅
+  Timeout(7)
 ```
 
 ##### `before(asyncId)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#async_hooks_beforeasyncid)
@@ -2049,22 +2096,18 @@ Called when the `resolve` function passed to the `Promise` constructor is invoke
 The `Promise` is not necessarily fulfilled or rejected at this point if the `Promise` was resolved by assuming the state of another `Promise`.
 
 ```
-
 new Promise((resolve) => resolve(true)).then((a) => {});
-
 ```
 
 calls the following callbacks:
 
 ```
-
 init for PROMISE with id 5, trigger id: 1
-promise resolve 5 # corresponds to resolve(true)
-init for PROMISE with id 6, trigger id: 5 # the Promise returned by then()
-before 6 # the then() callback is entered
-promise resolve 6 # the then() callback resolves the promise by returning
-after 6
-
+  promise resolve 5      # corresponds to resolve(true)
+init for PROMISE with id 6, trigger id: 5  # the Promise returned by then()
+  before 6               # the then() callback is entered
+  promise resolve 6      # the then() callback resolves the promise by returning
+  after 6
 ```
 
 #### `async_hooks.executionAsyncResource()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#async_hooks_async_hooksexecutionasyncresource)
@@ -2078,45 +2121,41 @@ Resource objects returned by `executionAsyncResource()` are most often internal 
 Using `executionAsyncResource()` in the top-level execution context will return an empty object as there is no handle or request object to use, but having an object representing the top-level can be helpful.
 
 ```
-
 import { open } from 'fs';
 import { executionAsyncId, executionAsyncResource } from 'async_hooks';
 
 console.log(executionAsyncId(), executionAsyncResource());  
 open(new URL(import.meta.url), 'r', (err, fd) => {
-console.log(executionAsyncId(), executionAsyncResource());  
+  console.log(executionAsyncId(), executionAsyncResource());  
 });
-
 ```
 
 This can be used to implement continuation local storage without the use of a tracking `Map` to store the metadata:
 
 ```
-
 import { createServer } from 'http';
 import {
-executionAsyncId,
-executionAsyncResource,
-createHook
+  executionAsyncId,
+  executionAsyncResource,
+  createHook
 } from 'async_hooks';
-const sym = Symbol('state');
+const sym = Symbol('state'); 
 
 createHook({
-init(asyncId, type, triggerAsyncId, resource) {
-const cr = executionAsyncResource();
-if (cr) {
-resource[sym] = cr[sym];
-}
-}
+  init(asyncId, type, triggerAsyncId, resource) {
+    const cr = executionAsyncResource();
+    if (cr) {
+      resource[sym] = cr[sym];
+    }
+  }
 }).enable();
 
 const server = createServer((req, res) => {
-executionAsyncResource()[sym] = { state: req.url };
-setTimeout(function() {
-res.end(JSON.stringify(executionAsyncResource()[sym]));
-}, 100);
+  executionAsyncResource()[sym] = { state: req.url };
+  setTimeout(function() {
+    res.end(JSON.stringify(executionAsyncResource()[sym]));
+  }, 100);
 }).listen(3000);
-
 ```
 
 #### `async_hooks.executionAsyncId()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#async_hooks_async_hooksexecutionasyncid)
@@ -2124,29 +2163,27 @@ res.end(JSON.stringify(executionAsyncResource()[sym]));
 -   Returns: [<number>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) The `asyncId` of the current execution context. Useful to track when something calls.
 
 ```
-
 import { executionAsyncId } from 'async_hooks';
 
 console.log(executionAsyncId());  
 fs.open(path, 'r', (err, fd) => {
-console.log(executionAsyncId());  
+  console.log(executionAsyncId());  
 });
-
 ```
 
 The ID returned from `executionAsyncId()` is related to execution timing, not causality (which is covered by `triggerAsyncId()`):
 
 ```
-
 const server = net.createServer((conn) => {
-
-async_hooks.executionAsyncId();
+  
+  
+  async_hooks.executionAsyncId();
 
 }).listen(port, () => {
-
-async_hooks.executionAsyncId();
+  
+  
+  async_hooks.executionAsyncId();
 });
-
 ```
 
 Promise contexts may not get precise `executionAsyncIds` by default. See the section on [promise execution tracking](https://nodejs.org/dist/v16.13.1/docs/api/all.html#async_hooks_promise-execution-tracking).
@@ -2156,16 +2193,18 @@ Promise contexts may not get precise `executionAsyncIds` by default. See the sec
 -   Returns: [<number>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) The ID of the resource responsible for calling the callback that is currently being executed.
 
 ```
-
 const server = net.createServer((conn) => {
-
-async_hooks.triggerAsyncId();
+  
+  
+  
+  async_hooks.triggerAsyncId();
 
 }).listen(port, () => {
-
-async_hooks.triggerAsyncId();
+  
+  
+  
+  async_hooks.triggerAsyncId();
 });
-
 ```
 
 Promise contexts may not get valid `triggerAsyncId`s by default. See the section on [promise execution tracking](https://nodejs.org/dist/v16.13.1/docs/api/all.html#async_hooks_promise-execution-tracking).
@@ -2175,11 +2214,10 @@ Promise contexts may not get valid `triggerAsyncId`s by default. See the section
 By default, promise executions are not assigned `asyncId`s due to the relatively expensive nature of the [promise introspection API](https://docs.google.com/document/d/1rda3yKGHimKIhg5YeoAmCOtyURgsbTH_qaYR79FELlk/edit) provided by V8. This means that programs using promises or `async`/`await` will not get correct execution and trigger ids for promise callback contexts by default.
 
 ```
-
 import { executionAsyncId, triggerAsyncId } from 'async_hooks';
 
 Promise.resolve(1729).then(() => {
-console.log(`eid ${executionAsyncId()} tid ${triggerAsyncId()}`);
+  console.log(`eid ${executionAsyncId()} tid ${triggerAsyncId()}`);
 });
 
 ```
@@ -2189,11 +2227,10 @@ Observe that the `then()` callback claims to have executed in the context of the
 Installing async hooks via `async_hooks.createHook` enables promise execution tracking:
 
 ```
-
 import { createHook, executionAsyncId, triggerAsyncId } from 'async_hooks';
-createHook({ init() {} }).enable();
+createHook({ init() {} }).enable(); 
 Promise.resolve(1729).then(() => {
-console.log(`eid ${executionAsyncId()} tid ${triggerAsyncId()}`);
+  console.log(`eid ${executionAsyncId()} tid ${triggerAsyncId()}`);
 });
 
 ```
@@ -2225,23 +2262,36 @@ The `Buffer` class is a subclass of JavaScript's [`Uint8Array`](https://develope
 While the `Buffer` class is available within the global scope, it is still recommended to explicitly reference it via an import or require statement.
 
 ```
-
 import { Buffer } from 'buffer';
+
 
 const buf1 = Buffer.alloc(10);
 
+
+
 const buf2 = Buffer.alloc(10, 1);
+
+
+
+
+
 
 const buf3 = Buffer.allocUnsafe(10);
 
+
 const buf4 = Buffer.from([1, 2, 3]);
+
+
 
 const buf5 = Buffer.from([257, 257.5, -255, '1']);
 
+
+
+
 const buf6 = Buffer.from('tést');
 
-const buf7 = Buffer.from('tést', 'latin1');
 
+const buf7 = Buffer.from('tést', 'latin1');
 ```
 
 ### Buffers and character encodings[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_buffers-and-character-encodings)
@@ -2249,7 +2299,6 @@ const buf7 = Buffer.from('tést', 'latin1');
 When converting between `Buffer`s and strings, a character encoding may be specified. If no character encoding is specified, UTF-8 will be used as the default.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.from('hello world', 'utf8');
@@ -2258,10 +2307,10 @@ console.log(buf.toString('hex'));
 
 console.log(buf.toString('base64'));
 
+
 console.log(Buffer.from('fhqwhgads', 'utf8'));
 
 console.log(Buffer.from('fhqwhgads', 'utf16le'));
-
 ```
 
 Node.js buffers accept all case variations of encoding strings that they receive. For example, UTF-8 can be specified as `'utf8'`, `'UTF8'` or `'uTf8'`.
@@ -2269,42 +2318,43 @@ Node.js buffers accept all case variations of encoding strings that they receive
 The character encodings currently supported by Node.js are the following:
 
 -   `'utf8'` (alias: `'utf-8'`): Multi-byte encoded Unicode characters. Many web pages and other document formats use [UTF-8](https://en.wikipedia.org/wiki/UTF-8). This is the default character encoding. When decoding a `Buffer` into a string that does not exclusively contain valid UTF-8 data, the Unicode replacement character `U+FFFD` � will be used to represent those errors.
-
+    
 -   `'utf16le'` (alias: `'utf-16le'`): Multi-byte encoded Unicode characters. Unlike `'utf8'`, each character in the string will be encoded using either 2 or 4 bytes. Node.js only supports the [little-endian](https://en.wikipedia.org/wiki/Endianness) variant of [UTF-16](https://en.wikipedia.org/wiki/UTF-16).
-
+    
 -   `'latin1'`: Latin-1 stands for [ISO-8859-1](https://en.wikipedia.org/wiki/ISO-8859-1). This character encoding only supports the Unicode characters from `U+0000` to `U+00FF`. Each character is encoded using a single byte. Characters that do not fit into that range are truncated and will be mapped to characters in that range.
-
+    
 
 Converting a `Buffer` into a string using one of the above is referred to as decoding, and converting a string into a `Buffer` is referred to as encoding.
 
 Node.js also supports the following binary-to-text encodings. For binary-to-text encodings, the naming convention is reversed: Converting a `Buffer` into a string is typically referred to as encoding, and converting a string into a `Buffer` as decoding.
 
 -   `'base64'`: [Base64](https://en.wikipedia.org/wiki/Base64) encoding. When creating a `Buffer` from a string, this encoding will also correctly accept "URL and Filename Safe Alphabet" as specified in [RFC 4648, Section 5](https://tools.ietf.org/html/rfc4648#section-5). Whitespace characters such as spaces, tabs, and new lines contained within the base64-encoded string are ignored.
-
+    
 -   `'base64url'`: [base64url](https://tools.ietf.org/html/rfc4648#section-5) encoding as specified in [RFC 4648, Section 5](https://tools.ietf.org/html/rfc4648#section-5). When creating a `Buffer` from a string, this encoding will also correctly accept regular base64-encoded strings. When encoding a `Buffer` to a string, this encoding will omit padding.
-
+    
 -   `'hex'`: Encode each byte as two hexadecimal characters. Data truncation may occur when decoding strings that do exclusively contain valid hexadecimal characters. See below for an example.
-
+    
 
 The following legacy character encodings are also supported:
 
 -   `'ascii'`: For 7-bit [ASCII](https://en.wikipedia.org/wiki/ASCII) data only. When encoding a string into a `Buffer`, this is equivalent to using `'latin1'`. When decoding a `Buffer` into a string, using this encoding will additionally unset the highest bit of each byte before decoding as `'latin1'`. Generally, there should be no reason to use this encoding, as `'utf8'` (or, if the data is known to always be ASCII-only, `'latin1'`) will be a better choice when encoding or decoding ASCII-only text. It is only provided for legacy compatibility.
-
+    
 -   `'binary'`: Alias for `'latin1'`. See [binary strings](https://developer.mozilla.org/en-US/docs/Web/API/DOMString/Binary) for more background on this topic. The name of this encoding can be very misleading, as all of the encodings listed here convert between strings and binary data. For converting between strings and `Buffer`s, typically `'utf8'` is the right choice.
-
+    
 -   `'ucs2'`, `'ucs-2'`: Aliases of `'utf16le'`. UCS-2 used to refer to a variant of UTF-16 that did not support characters that had code points larger than U+FFFF. In Node.js, these code points are always supported.
-
+    
 
 ```
-
 import { Buffer } from 'buffer';
 
 Buffer.from('1ag', 'hex');
 
+
+
 Buffer.from('1a7g', 'hex');
 
-Buffer.from('1634', 'hex');
 
+Buffer.from('1634', 'hex');
 ```
 
 Modern Web browsers follow the [WHATWG Encoding Standard](https://encoding.spec.whatwg.org/) which aliases both `'latin1'` and `'ISO-8859-1'` to `'win-1252'`. This means that while doing something like `http.get()`, if the returned charset is one of those listed in the WHATWG specification it is possible that the server actually returned `'win-1252'`\-encoded data, and using `'latin1'` encoding may incorrectly decode the characters.
@@ -2324,7 +2374,6 @@ There are two ways to create new [`TypedArray`](https://developer.mozilla.org/en
 -   Passing a `Buffer` to a [`TypedArray`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) constructor will copy the `Buffer`s contents, interpreted as an array of integers, and not as a byte sequence of the target type.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.from([1, 2, 3, 4]);
@@ -2337,14 +2386,13 @@ console.log(uint32array);
 -   Passing the `Buffer`s underlying [`ArrayBuffer`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) will create a [`TypedArray`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) that shares its memory with the `Buffer`.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.from('hello', 'utf16le');
 const uint16array = new Uint16Array(
-buf.buffer,
-buf.byteOffset,
-buf.length / Uint16Array.BYTES_PER_ELEMENT);
+  buf.buffer,
+  buf.byteOffset,
+  buf.length / Uint16Array.BYTES_PER_ELEMENT);
 
 console.log(uint16array);
 
@@ -2353,7 +2401,6 @@ console.log(uint16array);
 It is possible to create a new `Buffer` that shares the same allocated memory as a [`TypedArray`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) instance by using the `TypedArray` object’s `.buffer` property in the same way. [`Buffer.from()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_static-method-bufferfromarraybuffer-byteoffset-length) behaves like `new Uint8Array()` in this context.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const arr = new Uint16Array(2);
@@ -2361,7 +2408,9 @@ const arr = new Uint16Array(2);
 arr[0] = 5000;
 arr[1] = 4000;
 
+
 const buf1 = Buffer.from(arr);
+
 
 const buf2 = Buffer.from(arr.buffer);
 
@@ -2369,25 +2418,23 @@ console.log(buf1);
 
 console.log(buf2);
 
+
 arr[1] = 6000;
 
 console.log(buf1);
 
 console.log(buf2);
-
 ```
 
 When creating a `Buffer` using a [`TypedArray`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray)'s `.buffer`, it is possible to use only a portion of the underlying [`ArrayBuffer`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) by passing in `byteOffset` and `length` parameters.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const arr = new Uint16Array(20);
 const buf = Buffer.from(arr.buffer, 0, 16);
 
 console.log(buf.length);
-
 ```
 
 The `Buffer.from()` and [`TypedArray.from()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/from) have different signatures and implementations. Specifically, the [`TypedArray`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) variants accept a second argument that is a mapping function that is invoked on every element of the typed array:
@@ -2406,14 +2453,15 @@ The `Buffer.from()` method, however, does not support the use of a mapping funct
 `Buffer` instances can be iterated over using `for..of` syntax:
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.from([1, 2, 3]);
 
 for (const b of buf) {
-console.log(b);
+  console.log(b);
 }
+
+
 
 ```
 
@@ -2491,7 +2539,6 @@ The content-type of the `Blob`.
 Once a [<Blob>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-blob) object is created, it can be sent via `MessagePort` to multiple destinations without transferring or immediately copying the data. The data contained by the `Blob` is copied only when the `arrayBuffer()` or `text()` methods are called.
 
 ```
-
 import { Blob, Buffer } from 'buffer';
 import { setTimeout as delay } from 'timers/promises';
 
@@ -2501,21 +2548,21 @@ const mc1 = new MessageChannel();
 const mc2 = new MessageChannel();
 
 mc1.port1.onmessage = async ({ data }) => {
-console.log(await data.arrayBuffer());
-mc1.port1.close();
+  console.log(await data.arrayBuffer());
+  mc1.port1.close();
 };
 
 mc2.port1.onmessage = async ({ data }) => {
-await delay(1000);
-console.log(await data.arrayBuffer());
-mc2.port1.close();
+  await delay(1000);
+  console.log(await data.arrayBuffer());
+  mc2.port1.close();
 };
 
 mc1.port2.postMessage(blob);
 mc2.port2.postMessage(blob);
 
-blob.text().then(console.log);
 
+blob.text().then(console.log);
 ```
 
 ### Class: `Buffer`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer)
@@ -2531,13 +2578,11 @@ The `Buffer` class is a global type for dealing with binary data directly. It ca
 Allocates a new `Buffer` of `size` bytes. If `fill` is `undefined`, the `Buffer` will be zero-filled.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.alloc(5);
 
 console.log(buf);
-
 ```
 
 If `size` is larger than [`buffer.constants.MAX_LENGTH`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufferconstantsmax_length) or smaller than 0, [`ERR_INVALID_ARG_VALUE`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_err_invalid_arg_value) is thrown.
@@ -2545,25 +2590,21 @@ If `size` is larger than [`buffer.constants.MAX_LENGTH`](https://nodejs.org/dist
 If `fill` is specified, the allocated `Buffer` will be initialized by calling [`buf.fill(fill)`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_buffillvalue-offset-end-encoding).
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.alloc(5, 'a');
 
 console.log(buf);
-
 ```
 
 If both `fill` and `encoding` are specified, the allocated `Buffer` will be initialized by calling [`buf.fill(fill, encoding)`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_buffillvalue-offset-end-encoding).
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.alloc(11, 'aGVsbG8gd29ybGQ=', 'base64');
 
 console.log(buf);
-
 ```
 
 Calling [`Buffer.alloc()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_static-method-bufferallocsize-fill-encoding) can be measurably slower than the alternative [`Buffer.allocUnsafe()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_static-method-bufferallocunsafesize) but ensures that the newly created `Buffer` instance contents will never contain sensitive data from previous allocations, including data that might not have been allocated for `Buffer`s.
@@ -2579,17 +2620,16 @@ Allocates a new `Buffer` of `size` bytes. If `size` is larger than [`buffer.cons
 The underlying memory for `Buffer` instances created in this way is _not initialized_. The contents of the newly created `Buffer` are unknown and _may contain sensitive data_. Use [`Buffer.alloc()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_static-method-bufferallocsize-fill-encoding) instead to initialize `Buffer` instances with zeroes.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.allocUnsafe(10);
 
 console.log(buf);
 
+
 buf.fill(0);
 
 console.log(buf);
-
 ```
 
 A `TypeError` will be thrown if `size` is not a number.
@@ -2611,25 +2651,23 @@ When using [`Buffer.allocUnsafe()`](https://nodejs.org/dist/v16.13.1/docs/api/al
 However, in the case where a developer may need to retain a small chunk of memory from a pool for an indeterminate amount of time, it may be appropriate to create an un-pooled `Buffer` instance using `Buffer.allocUnsafeSlow()` and then copying out the relevant bits.
 
 ```
-
 import { Buffer } from 'buffer';
+
 
 const store = [];
 
 socket.on('readable', () => {
-let data;
-while (null !== (data = readable.read())) {
-
+  let data;
+  while (null !== (data = readable.read())) {
+    
     const sb = Buffer.allocUnsafeSlow(10);
 
-
+    
     data.copy(sb, 0, 0, 10);
 
     store.push(sb);
-
-}
+  }
 });
-
 ```
 
 A `TypeError` will be thrown if `size` is not a number.
@@ -2645,14 +2683,12 @@ Returns the byte length of a string when encoded using `encoding`. This is not t
 For `'base64'`, `'base64url'`, and `'hex'`, this function assumes valid input. For strings that contain non-base64/hex-encoded data (e.g. whitespace), the return value might be greater than the length of a `Buffer` created from the string.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const str = '\u00bd + \u00bc = \u00be';
 
 console.log(`${str}: ${str.length} characters, ` +
-`${Buffer.byteLength(str, 'utf8')} bytes`);
-
+            `${Buffer.byteLength(str, 'utf8')} bytes`);
 ```
 
 When `string` is a `Buffer`/[`DataView`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView)/[`TypedArray`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray)/[`ArrayBuffer`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer)/ [`SharedArrayBuffer`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer), the byte length as reported by `.byteLength` is returned.
@@ -2666,7 +2702,6 @@ When `string` is a `Buffer`/[`DataView`](https://developer.mozilla.org/en-US/doc
 Compares `buf1` to `buf2`, typically for the purpose of sorting arrays of `Buffer` instances. This is equivalent to calling [`buf1.compare(buf2)`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufcomparetarget-targetstart-targetend-sourcestart-sourceend).
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf1 = Buffer.from('1234');
@@ -2692,8 +2727,9 @@ If `totalLength` is not provided, it is calculated from the `Buffer` instances i
 If `totalLength` is provided, it is coerced to an unsigned integer. If the combined length of the `Buffer`s in `list` exceeds `totalLength`, the result is truncated to `totalLength`.
 
 ```
-
 import { Buffer } from 'buffer';
+
+
 
 const buf1 = Buffer.alloc(10);
 const buf2 = Buffer.alloc(14);
@@ -2702,12 +2738,12 @@ const totalLength = buf1.length + buf2.length + buf3.length;
 
 console.log(totalLength);
 
+
 const bufA = Buffer.concat([buf1, buf2, buf3], totalLength);
 
 console.log(bufA);
 
 console.log(bufA.length);
-
 ```
 
 `Buffer.concat()` may also use the internal `Buffer` pool like [`Buffer.allocUnsafe()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_static-method-bufferallocunsafesize) does.
@@ -2721,11 +2757,10 @@ Added in: v5.10.0
 Allocates a new `Buffer` using an `array` of bytes in the range `0` – `255`. Array entries outside that range will be truncated to fit into it.
 
 ```
-
 import { Buffer } from 'buffer';
 
-const buf = Buffer.from([0x62, 0x75, 0x66, 0x66, 0x65, 0x72]);
 
+const buf = Buffer.from([0x62, 0x75, 0x66, 0x66, 0x65, 0x72]);
 ```
 
 A `TypeError` will be thrown if `array` is not an `Array` or another type appropriate for `Buffer.from()` variants.
@@ -2743,7 +2778,6 @@ Added in: v5.10.0
 This creates a view of the [`ArrayBuffer`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) without copying the underlying memory. For example, when passed a reference to the `.buffer` property of a [`TypedArray`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) instance, the newly created `Buffer` will share the same allocated memory as the [`TypedArray`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray)'s underlying `ArrayBuffer`.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const arr = new Uint16Array(2);
@@ -2751,27 +2785,27 @@ const arr = new Uint16Array(2);
 arr[0] = 5000;
 arr[1] = 4000;
 
+
 const buf = Buffer.from(arr.buffer);
 
 console.log(buf);
 
+
+
 arr[1] = 6000;
 
 console.log(buf);
-
 ```
 
 The optional `byteOffset` and `length` arguments specify a memory range within the `arrayBuffer` that will be shared by the `Buffer`.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const ab = new ArrayBuffer(10);
 const buf = Buffer.from(ab, 0, 2);
 
 console.log(buf.length);
-
 ```
 
 A `TypeError` will be thrown if `arrayBuffer` is not an [`ArrayBuffer`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) or a [`SharedArrayBuffer`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer) or another type appropriate for `Buffer.from()` variants.
@@ -2779,16 +2813,14 @@ A `TypeError` will be thrown if `arrayBuffer` is not an [`ArrayBuffer`](https://
 It is important to remember that a backing `ArrayBuffer` can cover a range of memory that extends beyond the bounds of a `TypedArray` view. A new `Buffer` created using the `buffer` property of a `TypedArray` may extend beyond the range of the `TypedArray`:
 
 ```
-
 import { Buffer } from 'buffer';
 
-const arrA = Uint8Array.from([0x63, 0x64, 0x65, 0x66]);
-const arrB = new Uint8Array(arrA.buffer, 1, 2);
-console.log(arrA.buffer === arrB.buffer);
+const arrA = Uint8Array.from([0x63, 0x64, 0x65, 0x66]); 
+const arrB = new Uint8Array(arrA.buffer, 1, 2); 
+console.log(arrA.buffer === arrB.buffer); 
 
 const buf = Buffer.from(arrB.buffer);
 console.log(buf);
-
 ```
 
 #### Static method: `Buffer.from(buffer)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_static-method-bufferfrombuffer)
@@ -2800,7 +2832,6 @@ Added in: v5.10.0
 Copies the passed `buffer` data onto a new `Buffer` instance.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf1 = Buffer.from('buffer');
@@ -2811,7 +2842,6 @@ buf1[0] = 0x61;
 console.log(buf1.toString());
 
 console.log(buf2.toString());
-
 ```
 
 A `TypeError` will be thrown if `buffer` is not a `Buffer` or another type appropriate for `Buffer.from()` variants.
@@ -2827,27 +2857,23 @@ Added in: v8.2.0
 For objects whose `valueOf()` function returns a value not strictly equal to `object`, returns `Buffer.from(object.valueOf(), offsetOrEncoding, length)`.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.from(new String('this is a test'));
-
 ```
 
 For objects that support `Symbol.toPrimitive`, returns `Buffer.from(object[Symbol.toPrimitive]('string'), offsetOrEncoding)`.
 
 ```
-
 import { Buffer } from 'buffer';
 
 class Foo {
-[Symbol.toPrimitive]() {
-return 'this is a test';
-}
+  [Symbol.toPrimitive]() {
+    return 'this is a test';
+  }
 }
 
 const buf = Buffer.from(new Foo(), 'utf8');
-
 ```
 
 A `TypeError` will be thrown if `object` does not have the mentioned methods or is not of another type appropriate for `Buffer.from()` variants.
@@ -2862,7 +2888,6 @@ Added in: v5.10.0
 Creates a new `Buffer` containing `string`. The `encoding` parameter identifies the character encoding to be used when converting `string` into bytes.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf1 = Buffer.from('this is a tést');
@@ -2873,7 +2898,6 @@ console.log(buf1.toString());
 console.log(buf2.toString());
 
 console.log(buf1.toString('latin1'));
-
 ```
 
 A `TypeError` will be thrown if `string` is not a string or another type appropriate for `Buffer.from()` variants.
@@ -2888,15 +2912,13 @@ Added in: v0.1.101
 Returns `true` if `obj` is a `Buffer`, `false` otherwise.
 
 ```
-
 import { Buffer } from 'buffer';
 
-Buffer.isBuffer(Buffer.alloc(10));
-Buffer.isBuffer(Buffer.from('foo'));
-Buffer.isBuffer('a string');
-Buffer.isBuffer([]);
-Buffer.isBuffer(new Uint8Array(1024));
-
+Buffer.isBuffer(Buffer.alloc(10)); 
+Buffer.isBuffer(Buffer.from('foo')); 
+Buffer.isBuffer('a string'); 
+Buffer.isBuffer([]); 
+Buffer.isBuffer(new Uint8Array(1024)); 
 ```
 
 #### Static method: `Buffer.isEncoding(encoding)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_static-method-bufferisencodingencoding)
@@ -2909,17 +2931,18 @@ Added in: v0.9.1
 Returns `true` if `encoding` is the name of a supported character encoding, or `false` otherwise.
 
 ```
-
 import { Buffer } from 'buffer';
 
 console.log(Buffer.isEncoding('utf8'));
 
+
 console.log(Buffer.isEncoding('hex'));
+
 
 console.log(Buffer.isEncoding('utf/8'));
 
-console.log(Buffer.isEncoding(''));
 
+console.log(Buffer.isEncoding(''));
 ```
 
 #### Class property: `Buffer.poolSize`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-property-bufferpoolsize)
@@ -2939,18 +2962,20 @@ The index operator `[index]` can be used to get and set the octet at position `i
 This operator is inherited from `Uint8Array`, so its behavior on out-of-bounds access is the same as `Uint8Array`. In other words, `buf[index]` returns `undefined` when `index` is negative or greater or equal to `buf.length`, and `buf[index] = value` does not modify the buffer if `index` is negative or `>= buf.length`.
 
 ```
-
 import { Buffer } from 'buffer';
+
+
+
+
 
 const str = 'Node.js';
 const buf = Buffer.allocUnsafe(str.length);
 
 for (let i = 0; i < str.length; i++) {
-buf[i] = str.charCodeAt(i);
+  buf[i] = str.charCodeAt(i);
 }
 
 console.log(buf.toString('utf8'));
-
 ```
 
 #### `buf.buffer`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufbuffer)
@@ -2960,14 +2985,12 @@ console.log(buf.toString('utf8'));
 This `ArrayBuffer` is not guaranteed to correspond exactly to the original `Buffer`. See the notes on `buf.byteOffset` for details.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const arrayBuffer = new ArrayBuffer(16);
 const buffer = Buffer.from(arrayBuffer);
 
 console.log(buffer.buffer === arrayBuffer);
-
 ```
 
 #### `buf.byteOffset`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufbyteoffset)
@@ -2981,13 +3004,15 @@ This can cause problems when accessing the underlying `ArrayBuffer` directly usi
 A common issue when creating a `TypedArray` object that shares its memory with a `Buffer` is that in this case one needs to specify the `byteOffset` correctly:
 
 ```
-
 import { Buffer } from 'buffer';
+
 
 const nodeBuffer = new Buffer.from([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
 
-new Int8Array(nodeBuffer.buffer, nodeBuffer.byteOffset, nodeBuffer.length);
 
+
+
+new Int8Array(nodeBuffer.buffer, nodeBuffer.byteOffset, nodeBuffer.length);
 ```
 
 #### `buf.compare(target[, targetStart[, targetEnd[, sourceStart[, sourceEnd]]]])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufcomparetarget-targetstart-targetend-sourcestart-sourceend)
@@ -3006,7 +3031,6 @@ Compares `buf` with `target` and returns a number indicating whether `buf` comes
 -   `-1` is returned if `target` should come _after_ `buf` when sorted.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf1 = Buffer.from('ABC');
@@ -3030,7 +3054,6 @@ console.log([buf1, buf2, buf3].sort(Buffer.compare));
 The optional `targetStart`, `targetEnd`, `sourceStart`, and `sourceEnd` arguments can be used to limit the comparison to specific ranges within `target` and `buf` respectively.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf1 = Buffer.from([1, 2, 3, 4, 5, 6, 7, 8, 9]);
@@ -3041,7 +3064,6 @@ console.log(buf1.compare(buf2, 5, 9, 0, 4));
 console.log(buf1.compare(buf2, 0, 6, 4));
 
 console.log(buf1.compare(buf2, 5, 6, 5));
-
 ```
 
 [`ERR_OUT_OF_RANGE`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_err_out_of_range) is thrown if `targetStart < 0`, `sourceStart < 0`, `targetEnd > target.byteLength`, or `sourceEnd > source.byteLength`.
@@ -3061,38 +3083,41 @@ Copies data from a region of `buf` to a region in `target`, even if the `target`
 [`TypedArray.prototype.set()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/set) performs the same operation, and is available for all TypedArrays, including Node.js `Buffer`s, although it takes different function arguments.
 
 ```
-
 import { Buffer } from 'buffer';
+
 
 const buf1 = Buffer.allocUnsafe(26);
 const buf2 = Buffer.allocUnsafe(26).fill('!');
 
 for (let i = 0; i < 26; i++) {
-
-buf1[i] = i + 97;
+  
+  buf1[i] = i + 97;
 }
+
 
 buf1.copy(buf2, 8, 16, 20);
 
+
+
 console.log(buf2.toString('ascii', 0, 25));
-
 ```
 
 ```
-
 import { Buffer } from 'buffer';
+
+
+
 
 const buf = Buffer.allocUnsafe(26);
 
 for (let i = 0; i < 26; i++) {
-
-buf[i] = i + 97;
+  
+  buf[i] = i + 97;
 }
 
 buf.copy(buf, 0, 4, 10);
 
 console.log(buf.toString());
-
 ```
 
 #### `buf.entries()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufentries)
@@ -3104,14 +3129,20 @@ Added in: v1.1.0
 Creates and returns an [iterator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols) of `[index, byte]` pairs from the contents of `buf`.
 
 ```
-
 import { Buffer } from 'buffer';
+
+
 
 const buf = Buffer.from('buffer');
 
 for (const pair of buf.entries()) {
-console.log(pair);
+  console.log(pair);
 }
+
+
+
+
+
 
 ```
 
@@ -3123,7 +3154,6 @@ console.log(pair);
 Returns `true` if both `buf` and `otherBuffer` have exactly the same bytes, `false` otherwise. Equivalent to [`buf.compare(otherBuffer) === 0`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufcomparetarget-targetstart-targetend-sourcestart-sourceend).
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf1 = Buffer.from('ABC');
@@ -3133,7 +3163,6 @@ const buf3 = Buffer.from('ABCD');
 console.log(buf1.equals(buf2));
 
 console.log(buf1.equals(buf3));
-
 ```
 
 #### `buf.fill(value[, offset[, end]][, encoding])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_buffillvalue-offset-end-encoding)
@@ -3147,13 +3176,13 @@ console.log(buf1.equals(buf3));
 Fills `buf` with the specified `value`. If the `offset` and `end` are not given, the entire `buf` will be filled:
 
 ```
-
 import { Buffer } from 'buffer';
+
+
 
 const b = Buffer.allocUnsafe(50).fill('h');
 
 console.log(b.toString());
-
 ```
 
 `value` is coerced to a `uint32` value if it is not a string, `Buffer`, or integer. If the resulting integer is greater than `255` (decimal), `buf` will be filled with `value & 255`.
@@ -3161,17 +3190,16 @@ console.log(b.toString());
 If the final write of a `fill()` operation falls on a multi-byte character, then only the bytes of that character that fit into `buf` are written:
 
 ```
-
 import { Buffer } from 'buffer';
 
-console.log(Buffer.allocUnsafe(5).fill('\u0222'));
 
+
+console.log(Buffer.allocUnsafe(5).fill('\u0222'));
 ```
 
 If `value` contains invalid characters, it is truncated; if no valid fill data remains, an exception is thrown:
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.allocUnsafe(5);
@@ -3181,7 +3209,6 @@ console.log(buf.fill('a'));
 console.log(buf.fill('aazz', 'hex'));
 
 console.log(buf.fill('zz', 'hex'));
-
 ```
 
 #### `buf.includes(value[, byteOffset][, encoding])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufincludesvalue-byteoffset-encoding)
@@ -3196,7 +3223,6 @@ Added in: v5.3.0
 Equivalent to [`buf.indexOf() !== -1`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufindexofvalue-byteoffset-encoding).
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.from('this is a buffer');
@@ -3214,7 +3240,6 @@ console.log(buf.includes(Buffer.from('a buffer example')));
 console.log(buf.includes(Buffer.from('a buffer example').slice(0, 8)));
 
 console.log(buf.includes('this', 4));
-
 ```
 
 #### `buf.indexOf(value[, byteOffset][, encoding])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufindexofvalue-byteoffset-encoding)
@@ -3231,7 +3256,6 @@ If `value` is:
 -   a number, `value` will be interpreted as an unsigned 8-bit integer value between `0` and `255`.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.from('this is a buffer');
@@ -3248,12 +3272,12 @@ console.log(buf.indexOf(Buffer.from('a buffer example')));
 
 console.log(buf.indexOf(Buffer.from('a buffer example').slice(0, 8)));
 
+
 const utf16Buffer = Buffer.from('\u039a\u0391\u03a3\u03a3\u0395', 'utf16le');
 
 console.log(utf16Buffer.indexOf('\u03a3', 0, 'utf16le'));
 
 console.log(utf16Buffer.indexOf('\u03a3', -4, 'utf16le'));
-
 ```
 
 If `value` is not a string, number, or `Buffer`, this method will throw a `TypeError`. If `value` is a number, it will be coerced to a valid byte value, an integer between 0 and 255.
@@ -3261,19 +3285,21 @@ If `value` is not a string, number, or `Buffer`, this method will throw a `TypeE
 If `byteOffset` is not a number, it will be coerced to a number. If the result of coercion is `NaN` or `0`, then the entire buffer will be searched. This behavior matches [`String.prototype.indexOf()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf).
 
 ```
-
 import { Buffer } from 'buffer';
 
 const b = Buffer.from('abcdef');
 
+
+
 console.log(b.indexOf(99.9));
 console.log(b.indexOf(256 + 99));
+
+
 
 console.log(b.indexOf('b', undefined));
 console.log(b.indexOf('b', {}));
 console.log(b.indexOf('b', null));
 console.log(b.indexOf('b', []));
-
 ```
 
 If `value` is an empty string or empty `Buffer` and `byteOffset` is less than `buf.length`, `byteOffset` will be returned. If `value` is empty and `byteOffset` is at least `buf.length`, `buf.length` will be returned.
@@ -3287,14 +3313,18 @@ Added in: v1.1.0
 Creates and returns an [iterator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols) of `buf` keys (indices).
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.from('buffer');
 
 for (const key of buf.keys()) {
-console.log(key);
+  console.log(key);
 }
+
+
+
+
+
 
 ```
 
@@ -3308,7 +3338,6 @@ console.log(key);
 Identical to [`buf.indexOf()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufindexofvalue-byteoffset-encoding), except the last occurrence of `value` is found rather than the first occurrence.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.from('this buffer is a buffer');
@@ -3327,12 +3356,12 @@ console.log(buf.lastIndexOf('buffer', 5));
 
 console.log(buf.lastIndexOf('buffer', 4));
 
+
 const utf16Buffer = Buffer.from('\u039a\u0391\u03a3\u03a3\u0395', 'utf16le');
 
 console.log(utf16Buffer.lastIndexOf('\u03a3', undefined, 'utf16le'));
 
 console.log(utf16Buffer.lastIndexOf('\u03a3', -5, 'utf16le'));
-
 ```
 
 If `value` is not a string, number, or `Buffer`, this method will throw a `TypeError`. If `value` is a number, it will be coerced to a valid byte value, an integer between 0 and 255.
@@ -3340,20 +3369,24 @@ If `value` is not a string, number, or `Buffer`, this method will throw a `TypeE
 If `byteOffset` is not a number, it will be coerced to a number. Any arguments that coerce to `NaN`, like `{}` or `undefined`, will search the whole buffer. This behavior matches [`String.prototype.lastIndexOf()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/lastIndexOf).
 
 ```
-
 import { Buffer } from 'buffer';
 
 const b = Buffer.from('abcdef');
 
+
+
 console.log(b.lastIndexOf(99.9));
 console.log(b.lastIndexOf(256 + 99));
+
+
 
 console.log(b.lastIndexOf('b', undefined));
 console.log(b.lastIndexOf('b', {}));
 
+
+
 console.log(b.lastIndexOf('b', null));
 console.log(b.lastIndexOf('b', []));
-
 ```
 
 If `value` is an empty string or empty `Buffer`, `byteOffset` will be returned.
@@ -3367,17 +3400,18 @@ Added in: v0.1.90
 Returns the number of bytes in `buf`.
 
 ```
-
 import { Buffer } from 'buffer';
+
+
 
 const buf = Buffer.alloc(1234);
 
 console.log(buf.length);
 
+
 buf.write('some string', 0, 'utf8');
 
 console.log(buf.length);
-
 ```
 
 #### `buf.parent`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufparent)
@@ -3418,13 +3452,11 @@ Reads an unsigned, big-endian 64-bit integer from `buf` at the specified `offset
 This function is also available under the `readBigUint64BE` alias.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.from([0x00, 0x00, 0x00, 0x00, 0xff, 0xff, 0xff, 0xff]);
 
 console.log(buf.readBigUInt64BE(0));
-
 ```
 
 #### `buf.readBigUInt64LE([offset])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufreadbiguint64leoffset)
@@ -3437,13 +3469,11 @@ Reads an unsigned, little-endian 64-bit integer from `buf` at the specified `off
 This function is also available under the `readBigUint64LE` alias.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.from([0x00, 0x00, 0x00, 0x00, 0xff, 0xff, 0xff, 0xff]);
 
 console.log(buf.readBigUInt64LE(0));
-
 ```
 
 #### `buf.readDoubleBE([offset])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufreaddoublebeoffset)
@@ -3454,13 +3484,11 @@ console.log(buf.readBigUInt64LE(0));
 Reads a 64-bit, big-endian double from `buf` at the specified `offset`.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.from([1, 2, 3, 4, 5, 6, 7, 8]);
 
 console.log(buf.readDoubleBE(0));
-
 ```
 
 #### `buf.readDoubleLE([offset])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufreaddoubleleoffset)
@@ -3471,7 +3499,6 @@ console.log(buf.readDoubleBE(0));
 Reads a 64-bit, little-endian double from `buf` at the specified `offset`.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.from([1, 2, 3, 4, 5, 6, 7, 8]);
@@ -3479,7 +3506,6 @@ const buf = Buffer.from([1, 2, 3, 4, 5, 6, 7, 8]);
 console.log(buf.readDoubleLE(0));
 
 console.log(buf.readDoubleLE(1));
-
 ```
 
 #### `buf.readFloatBE([offset])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufreadfloatbeoffset)
@@ -3490,13 +3516,11 @@ console.log(buf.readDoubleLE(1));
 Reads a 32-bit, big-endian float from `buf` at the specified `offset`.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.from([1, 2, 3, 4]);
 
 console.log(buf.readFloatBE(0));
-
 ```
 
 #### `buf.readFloatLE([offset])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufreadfloatleoffset)
@@ -3507,7 +3531,6 @@ console.log(buf.readFloatBE(0));
 Reads a 32-bit, little-endian float from `buf` at the specified `offset`.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.from([1, 2, 3, 4]);
@@ -3515,7 +3538,6 @@ const buf = Buffer.from([1, 2, 3, 4]);
 console.log(buf.readFloatLE(0));
 
 console.log(buf.readFloatLE(1));
-
 ```
 
 #### `buf.readInt8([offset])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufreadint8offset)
@@ -3528,7 +3550,6 @@ Reads a signed 8-bit integer from `buf` at the specified `offset`.
 Integers read from a `Buffer` are interpreted as two's complement signed values.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.from([-1, 5]);
@@ -3538,7 +3559,6 @@ console.log(buf.readInt8(0));
 console.log(buf.readInt8(1));
 
 console.log(buf.readInt8(2));
-
 ```
 
 #### `buf.readInt16BE([offset])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufreadint16beoffset)
@@ -3551,13 +3571,11 @@ Reads a signed, big-endian 16-bit integer from `buf` at the specified `offset`.
 Integers read from a `Buffer` are interpreted as two's complement signed values.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.from([0, 5]);
 
 console.log(buf.readInt16BE(0));
-
 ```
 
 #### `buf.readInt16LE([offset])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufreadint16leoffset)
@@ -3570,7 +3588,6 @@ Reads a signed, little-endian 16-bit integer from `buf` at the specified `offset
 Integers read from a `Buffer` are interpreted as two's complement signed values.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.from([0, 5]);
@@ -3578,7 +3595,6 @@ const buf = Buffer.from([0, 5]);
 console.log(buf.readInt16LE(0));
 
 console.log(buf.readInt16LE(1));
-
 ```
 
 #### `buf.readInt32BE([offset])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufreadint32beoffset)
@@ -3591,13 +3607,11 @@ Reads a signed, big-endian 32-bit integer from `buf` at the specified `offset`.
 Integers read from a `Buffer` are interpreted as two's complement signed values.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.from([0, 0, 0, 5]);
 
 console.log(buf.readInt32BE(0));
-
 ```
 
 #### `buf.readInt32LE([offset])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufreadint32leoffset)
@@ -3610,7 +3624,6 @@ Reads a signed, little-endian 32-bit integer from `buf` at the specified `offset
 Integers read from a `Buffer` are interpreted as two's complement signed values.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.from([0, 0, 0, 5]);
@@ -3618,7 +3631,6 @@ const buf = Buffer.from([0, 0, 0, 5]);
 console.log(buf.readInt32LE(0));
 
 console.log(buf.readInt32LE(1));
-
 ```
 
 #### `buf.readIntBE(offset, byteLength)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufreadintbeoffset-bytelength)
@@ -3630,7 +3642,6 @@ console.log(buf.readInt32LE(1));
 Reads `byteLength` number of bytes from `buf` at the specified `offset` and interprets the result as a big-endian, two's complement signed value supporting up to 48 bits of accuracy.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.from([0x12, 0x34, 0x56, 0x78, 0x90, 0xab]);
@@ -3640,7 +3651,6 @@ console.log(buf.readIntBE(0, 6).toString(16));
 console.log(buf.readIntBE(1, 6).toString(16));
 
 console.log(buf.readIntBE(1, 0).toString(16));
-
 ```
 
 #### `buf.readIntLE(offset, byteLength)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufreadintleoffset-bytelength)
@@ -3652,13 +3662,11 @@ console.log(buf.readIntBE(1, 0).toString(16));
 Reads `byteLength` number of bytes from `buf` at the specified `offset` and interprets the result as a little-endian, two's complement signed value supporting up to 48 bits of accuracy.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.from([0x12, 0x34, 0x56, 0x78, 0x90, 0xab]);
 
 console.log(buf.readIntLE(0, 6).toString(16));
-
 ```
 
 #### `buf.readUInt8([offset])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufreaduint8offset)
@@ -3671,7 +3679,6 @@ Reads an unsigned 8-bit integer from `buf` at the specified `offset`.
 This function is also available under the `readUint8` alias.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.from([1, -2]);
@@ -3681,7 +3688,6 @@ console.log(buf.readUInt8(0));
 console.log(buf.readUInt8(1));
 
 console.log(buf.readUInt8(2));
-
 ```
 
 #### `buf.readUInt16BE([offset])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufreaduint16beoffset)
@@ -3694,7 +3700,6 @@ Reads an unsigned, big-endian 16-bit integer from `buf` at the specified `offset
 This function is also available under the `readUint16BE` alias.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.from([0x12, 0x34, 0x56]);
@@ -3702,7 +3707,6 @@ const buf = Buffer.from([0x12, 0x34, 0x56]);
 console.log(buf.readUInt16BE(0).toString(16));
 
 console.log(buf.readUInt16BE(1).toString(16));
-
 ```
 
 #### `buf.readUInt16LE([offset])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufreaduint16leoffset)
@@ -3715,7 +3719,6 @@ Reads an unsigned, little-endian 16-bit integer from `buf` at the specified `off
 This function is also available under the `readUint16LE` alias.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.from([0x12, 0x34, 0x56]);
@@ -3725,7 +3728,6 @@ console.log(buf.readUInt16LE(0).toString(16));
 console.log(buf.readUInt16LE(1).toString(16));
 
 console.log(buf.readUInt16LE(2).toString(16));
-
 ```
 
 #### `buf.readUInt32BE([offset])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufreaduint32beoffset)
@@ -3738,13 +3740,11 @@ Reads an unsigned, big-endian 32-bit integer from `buf` at the specified `offset
 This function is also available under the `readUint32BE` alias.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.from([0x12, 0x34, 0x56, 0x78]);
 
 console.log(buf.readUInt32BE(0).toString(16));
-
 ```
 
 #### `buf.readUInt32LE([offset])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufreaduint32leoffset)
@@ -3757,7 +3757,6 @@ Reads an unsigned, little-endian 32-bit integer from `buf` at the specified `off
 This function is also available under the `readUint32LE` alias.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.from([0x12, 0x34, 0x56, 0x78]);
@@ -3765,7 +3764,6 @@ const buf = Buffer.from([0x12, 0x34, 0x56, 0x78]);
 console.log(buf.readUInt32LE(0).toString(16));
 
 console.log(buf.readUInt32LE(1).toString(16));
-
 ```
 
 #### `buf.readUIntBE(offset, byteLength)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufreaduintbeoffset-bytelength)
@@ -3779,7 +3777,6 @@ Reads `byteLength` number of bytes from `buf` at the specified `offset` and inte
 This function is also available under the `readUintBE` alias.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.from([0x12, 0x34, 0x56, 0x78, 0x90, 0xab]);
@@ -3787,7 +3784,6 @@ const buf = Buffer.from([0x12, 0x34, 0x56, 0x78, 0x90, 0xab]);
 console.log(buf.readUIntBE(0, 6).toString(16));
 
 console.log(buf.readUIntBE(1, 6).toString(16));
-
 ```
 
 #### `buf.readUIntLE(offset, byteLength)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufreaduintleoffset-bytelength)
@@ -3801,13 +3797,11 @@ Reads `byteLength` number of bytes from `buf` at the specified `offset` and inte
 This function is also available under the `readUintLE` alias.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.from([0x12, 0x34, 0x56, 0x78, 0x90, 0xab]);
 
 console.log(buf.readUIntLE(0, 6).toString(16));
-
 ```
 
 #### `buf.subarray([start[, end]])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufsubarraystart-end)
@@ -3827,37 +3821,42 @@ This method is inherited from [`TypedArray.prototype.subarray()`](https://develo
 Modifying the new `Buffer` slice will modify the memory in the original `Buffer` because the allocated memory of the two objects overlap.
 
 ```
-
 import { Buffer } from 'buffer';
+
+
+
 
 const buf1 = Buffer.allocUnsafe(26);
 
 for (let i = 0; i < 26; i++) {
-
-buf1[i] = i + 97;
+  
+  buf1[i] = i + 97;
 }
 
 const buf2 = buf1.subarray(0, 3);
 
 console.log(buf2.toString('ascii', 0, buf2.length));
 
+
 buf1[0] = 33;
 
 console.log(buf2.toString('ascii', 0, buf2.length));
-
 ```
 
 Specifying negative indexes causes the slice to be generated relative to the end of `buf` rather than the beginning.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.from('buffer');
 
 console.log(buf.subarray(-6, -1).toString());
 
+
+
 console.log(buf.subarray(-6, -2).toString());
+
+
 
 console.log(buf.subarray(-5, -2).toString());
 
@@ -3876,7 +3875,6 @@ This is the same behavior as `buf.subarray()`.
 This method is not compatible with the `Uint8Array.prototype.slice()`, which is a superclass of `Buffer`. To copy the slice, use `Uint8Array.prototype.slice()`.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.from('buffer');
@@ -3885,8 +3883,8 @@ const copiedBuf = Uint8Array.prototype.slice.call(buf);
 copiedBuf[0]++;
 console.log(copiedBuf.toString());
 
-console.log(buf.toString());
 
+console.log(buf.toString());
 ```
 
 #### `buf.swap16()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufswap16)
@@ -3898,32 +3896,30 @@ Added in: v5.10.0
 Interprets `buf` as an array of unsigned 16-bit integers and swaps the byte order _in-place_. Throws [`ERR_INVALID_BUFFER_SIZE`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_err_invalid_buffer_size) if [`buf.length`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_buflength) is not a multiple of 2.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf1 = Buffer.from([0x1, 0x2, 0x3, 0x4, 0x5, 0x6, 0x7, 0x8]);
 
 console.log(buf1);
 
+
 buf1.swap16();
 
 console.log(buf1);
 
+
 const buf2 = Buffer.from([0x1, 0x2, 0x3]);
 
 buf2.swap16();
-
 ```
 
 One convenient use of `buf.swap16()` is to perform a fast in-place conversion between UTF-16 little-endian and UTF-16 big-endian:
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.from('This is little-endian UTF-16', 'utf16le');
-buf.swap16();
-
+buf.swap16(); 
 ```
 
 #### `buf.swap32()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufswap32)
@@ -3935,21 +3931,21 @@ Added in: v5.10.0
 Interprets `buf` as an array of unsigned 32-bit integers and swaps the byte order _in-place_. Throws [`ERR_INVALID_BUFFER_SIZE`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_err_invalid_buffer_size) if [`buf.length`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_buflength) is not a multiple of 4.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf1 = Buffer.from([0x1, 0x2, 0x3, 0x4, 0x5, 0x6, 0x7, 0x8]);
 
 console.log(buf1);
 
+
 buf1.swap32();
 
 console.log(buf1);
 
+
 const buf2 = Buffer.from([0x1, 0x2, 0x3]);
 
 buf2.swap32();
-
 ```
 
 #### `buf.swap64()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufswap64)
@@ -3961,21 +3957,21 @@ Added in: v6.3.0
 Interprets `buf` as an array of 64-bit numbers and swaps byte order _in-place_. Throws [`ERR_INVALID_BUFFER_SIZE`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_err_invalid_buffer_size) if [`buf.length`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_buflength) is not a multiple of 8.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf1 = Buffer.from([0x1, 0x2, 0x3, 0x4, 0x5, 0x6, 0x7, 0x8]);
 
 console.log(buf1);
 
+
 buf1.swap64();
 
 console.log(buf1);
 
+
 const buf2 = Buffer.from([0x1, 0x2, 0x3]);
 
 buf2.swap64();
-
 ```
 
 #### `buf.toJSON()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_buftojson)
@@ -3989,7 +3985,6 @@ Returns a JSON representation of `buf`. [`JSON.stringify()`](https://developer.m
 `Buffer.from()` accepts objects in the format returned from this method. In particular, `Buffer.from(buf.toJSON())` works like `Buffer.from(buf)`.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.from([0x1, 0x2, 0x3, 0x4, 0x5]);
@@ -3997,14 +3992,14 @@ const json = JSON.stringify(buf);
 
 console.log(json);
 
+
 const copy = JSON.parse(json, (key, value) => {
-return value && value.type === 'Buffer' ?
-Buffer.from(value) :
-value;
+  return value && value.type === 'Buffer' ?
+    Buffer.from(value) :
+    value;
 });
 
 console.log(copy);
-
 ```
 
 #### `buf.toString([encoding[, start[, end]]])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_buftostringencoding-start-end)
@@ -4023,19 +4018,19 @@ If `encoding` is `'utf8'` and a byte sequence in the input is not valid UTF-8, t
 The maximum length of a string instance (in UTF-16 code units) is available as [`buffer.constants.MAX_STRING_LENGTH`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufferconstantsmax_string_length).
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf1 = Buffer.allocUnsafe(26);
 
 for (let i = 0; i < 26; i++) {
-
-buf1[i] = i + 97;
+  
+  buf1[i] = i + 97;
 }
 
 console.log(buf1.toString('utf8'));
 
 console.log(buf1.toString('utf8', 0, 5));
+
 
 const buf2 = Buffer.from('tést');
 
@@ -4044,7 +4039,6 @@ console.log(buf2.toString('hex'));
 console.log(buf2.toString('utf8', 0, 3));
 
 console.log(buf2.toString(undefined, 0, 3));
-
 ```
 
 #### `buf.values()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufvalues)
@@ -4056,17 +4050,29 @@ Added in: v1.1.0
 Creates and returns an [iterator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols) for `buf` values (bytes). This function is called automatically when a `Buffer` is used in a `for..of` statement.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.from('buffer');
 
 for (const value of buf.values()) {
-console.log(value);
+  console.log(value);
 }
+
+
+
+
+
+
+
+
 for (const value of buf) {
-console.log(value);
+  console.log(value);
 }
+
+
+
+
+
 
 ```
 
@@ -4083,7 +4089,6 @@ Added in: v0.1.90
 Writes `string` to `buf` at `offset` according to the character encoding in `encoding`. The `length` parameter is the number of bytes to write. If `buf` did not contain enough space to fit the entire string, only part of `string` will be written. However, partially encoded characters will not be written.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.alloc(256);
@@ -4092,12 +4097,12 @@ const len = buf.write('\u00bd + \u00bc = \u00be', 0);
 
 console.log(`${len} bytes: ${buf.toString('utf8', 0, len)}`);
 
+
 const buffer = Buffer.alloc(10);
 
 const length = buffer.write('abcd', 8);
 
 console.log(`${length} bytes: ${buffer.toString('utf8', 8, 10)}`);
-
 ```
 
 #### `buf.writeBigInt64BE(value[, offset])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufwritebigint64bevalue-offset)
@@ -4113,7 +4118,6 @@ Writes `value` to `buf` at the specified `offset` as big-endian.
 `value` is interpreted and written as a two's complement signed integer.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.allocUnsafe(8);
@@ -4121,7 +4125,6 @@ const buf = Buffer.allocUnsafe(8);
 buf.writeBigInt64BE(0x0102030405060708n, 0);
 
 console.log(buf);
-
 ```
 
 #### `buf.writeBigInt64LE(value[, offset])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufwritebigint64levalue-offset)
@@ -4137,7 +4140,6 @@ Writes `value` to `buf` at the specified `offset` as little-endian.
 `value` is interpreted and written as a two's complement signed integer.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.allocUnsafe(8);
@@ -4145,7 +4147,6 @@ const buf = Buffer.allocUnsafe(8);
 buf.writeBigInt64LE(0x0102030405060708n, 0);
 
 console.log(buf);
-
 ```
 
 #### `buf.writeBigUInt64BE(value[, offset])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufwritebiguint64bevalue-offset)
@@ -4159,7 +4160,6 @@ Writes `value` to `buf` at the specified `offset` as big-endian.
 This function is also available under the `writeBigUint64BE` alias.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.allocUnsafe(8);
@@ -4167,7 +4167,6 @@ const buf = Buffer.allocUnsafe(8);
 buf.writeBigUInt64BE(0xdecafafecacefaden, 0);
 
 console.log(buf);
-
 ```
 
 #### `buf.writeBigUInt64LE(value[, offset])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufwritebiguint64levalue-offset)
@@ -4179,7 +4178,6 @@ console.log(buf);
 Writes `value` to `buf` at the specified `offset` as little-endian
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.allocUnsafe(8);
@@ -4187,7 +4185,6 @@ const buf = Buffer.allocUnsafe(8);
 buf.writeBigUInt64LE(0xdecafafecacefaden, 0);
 
 console.log(buf);
-
 ```
 
 This function is also available under the `writeBigUint64LE` alias.
@@ -4201,7 +4198,6 @@ This function is also available under the `writeBigUint64LE` alias.
 Writes `value` to `buf` at the specified `offset` as big-endian. The `value` must be a JavaScript number. Behavior is undefined when `value` is anything other than a JavaScript number.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.allocUnsafe(8);
@@ -4209,7 +4205,6 @@ const buf = Buffer.allocUnsafe(8);
 buf.writeDoubleBE(123.456, 0);
 
 console.log(buf);
-
 ```
 
 #### `buf.writeDoubleLE(value[, offset])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufwritedoublelevalue-offset)
@@ -4221,7 +4216,6 @@ console.log(buf);
 Writes `value` to `buf` at the specified `offset` as little-endian. The `value` must be a JavaScript number. Behavior is undefined when `value` is anything other than a JavaScript number.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.allocUnsafe(8);
@@ -4229,7 +4223,6 @@ const buf = Buffer.allocUnsafe(8);
 buf.writeDoubleLE(123.456, 0);
 
 console.log(buf);
-
 ```
 
 #### `buf.writeFloatBE(value[, offset])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufwritefloatbevalue-offset)
@@ -4241,7 +4234,6 @@ console.log(buf);
 Writes `value` to `buf` at the specified `offset` as big-endian. Behavior is undefined when `value` is anything other than a JavaScript number.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.allocUnsafe(4);
@@ -4249,7 +4241,6 @@ const buf = Buffer.allocUnsafe(4);
 buf.writeFloatBE(0xcafebabe, 0);
 
 console.log(buf);
-
 ```
 
 #### `buf.writeFloatLE(value[, offset])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufwritefloatlevalue-offset)
@@ -4261,7 +4252,6 @@ console.log(buf);
 Writes `value` to `buf` at the specified `offset` as little-endian. Behavior is undefined when `value` is anything other than a JavaScript number.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.allocUnsafe(4);
@@ -4269,7 +4259,6 @@ const buf = Buffer.allocUnsafe(4);
 buf.writeFloatLE(0xcafebabe, 0);
 
 console.log(buf);
-
 ```
 
 #### `buf.writeInt8(value[, offset])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufwriteint8value-offset)
@@ -4283,7 +4272,6 @@ Writes `value` to `buf` at the specified `offset`. `value` must be a valid signe
 `value` is interpreted and written as a two's complement signed integer.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.allocUnsafe(2);
@@ -4292,7 +4280,6 @@ buf.writeInt8(2, 0);
 buf.writeInt8(-2, 1);
 
 console.log(buf);
-
 ```
 
 #### `buf.writeInt16BE(value[, offset])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufwriteint16bevalue-offset)
@@ -4306,7 +4293,6 @@ Writes `value` to `buf` at the specified `offset` as big-endian. The `value` mus
 The `value` is interpreted and written as a two's complement signed integer.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.allocUnsafe(2);
@@ -4314,7 +4300,6 @@ const buf = Buffer.allocUnsafe(2);
 buf.writeInt16BE(0x0102, 0);
 
 console.log(buf);
-
 ```
 
 #### `buf.writeInt16LE(value[, offset])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufwriteint16levalue-offset)
@@ -4328,7 +4313,6 @@ Writes `value` to `buf` at the specified `offset` as little-endian. The `value` 
 The `value` is interpreted and written as a two's complement signed integer.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.allocUnsafe(2);
@@ -4336,7 +4320,6 @@ const buf = Buffer.allocUnsafe(2);
 buf.writeInt16LE(0x0304, 0);
 
 console.log(buf);
-
 ```
 
 #### `buf.writeInt32BE(value[, offset])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufwriteint32bevalue-offset)
@@ -4350,7 +4333,6 @@ Writes `value` to `buf` at the specified `offset` as big-endian. The `value` mus
 The `value` is interpreted and written as a two's complement signed integer.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.allocUnsafe(4);
@@ -4358,7 +4340,6 @@ const buf = Buffer.allocUnsafe(4);
 buf.writeInt32BE(0x01020304, 0);
 
 console.log(buf);
-
 ```
 
 #### `buf.writeInt32LE(value[, offset])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufwriteint32levalue-offset)
@@ -4372,7 +4353,6 @@ Writes `value` to `buf` at the specified `offset` as little-endian. The `value` 
 The `value` is interpreted and written as a two's complement signed integer.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.allocUnsafe(4);
@@ -4380,7 +4360,6 @@ const buf = Buffer.allocUnsafe(4);
 buf.writeInt32LE(0x05060708, 0);
 
 console.log(buf);
-
 ```
 
 #### `buf.writeIntBE(value, offset, byteLength)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufwriteintbevalue-offset-bytelength)
@@ -4393,7 +4372,6 @@ console.log(buf);
 Writes `byteLength` bytes of `value` to `buf` at the specified `offset` as big-endian. Supports up to 48 bits of accuracy. Behavior is undefined when `value` is anything other than a signed integer.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.allocUnsafe(6);
@@ -4401,7 +4379,6 @@ const buf = Buffer.allocUnsafe(6);
 buf.writeIntBE(0x1234567890ab, 0, 6);
 
 console.log(buf);
-
 ```
 
 #### `buf.writeIntLE(value, offset, byteLength)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufwriteintlevalue-offset-bytelength)
@@ -4414,7 +4391,6 @@ console.log(buf);
 Writes `byteLength` bytes of `value` to `buf` at the specified `offset` as little-endian. Supports up to 48 bits of accuracy. Behavior is undefined when `value` is anything other than a signed integer.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.allocUnsafe(6);
@@ -4422,7 +4398,6 @@ const buf = Buffer.allocUnsafe(6);
 buf.writeIntLE(0x1234567890ab, 0, 6);
 
 console.log(buf);
-
 ```
 
 #### `buf.writeUInt8(value[, offset])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufwriteuint8value-offset)
@@ -4436,7 +4411,6 @@ Writes `value` to `buf` at the specified `offset`. `value` must be a valid unsig
 This function is also available under the `writeUint8` alias.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.allocUnsafe(4);
@@ -4447,7 +4421,6 @@ buf.writeUInt8(0x23, 2);
 buf.writeUInt8(0x42, 3);
 
 console.log(buf);
-
 ```
 
 #### `buf.writeUInt16BE(value[, offset])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufwriteuint16bevalue-offset)
@@ -4461,7 +4434,6 @@ Writes `value` to `buf` at the specified `offset` as big-endian. The `value` mus
 This function is also available under the `writeUint16BE` alias.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.allocUnsafe(4);
@@ -4470,7 +4442,6 @@ buf.writeUInt16BE(0xdead, 0);
 buf.writeUInt16BE(0xbeef, 2);
 
 console.log(buf);
-
 ```
 
 #### `buf.writeUInt16LE(value[, offset])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufwriteuint16levalue-offset)
@@ -4484,7 +4455,6 @@ Writes `value` to `buf` at the specified `offset` as little-endian. The `value` 
 This function is also available under the `writeUint16LE` alias.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.allocUnsafe(4);
@@ -4493,7 +4463,6 @@ buf.writeUInt16LE(0xdead, 0);
 buf.writeUInt16LE(0xbeef, 2);
 
 console.log(buf);
-
 ```
 
 #### `buf.writeUInt32BE(value[, offset])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufwriteuint32bevalue-offset)
@@ -4507,7 +4476,6 @@ Writes `value` to `buf` at the specified `offset` as big-endian. The `value` mus
 This function is also available under the `writeUint32BE` alias.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.allocUnsafe(4);
@@ -4515,7 +4483,6 @@ const buf = Buffer.allocUnsafe(4);
 buf.writeUInt32BE(0xfeedface, 0);
 
 console.log(buf);
-
 ```
 
 #### `buf.writeUInt32LE(value[, offset])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufwriteuint32levalue-offset)
@@ -4529,7 +4496,6 @@ Writes `value` to `buf` at the specified `offset` as little-endian. The `value` 
 This function is also available under the `writeUint32LE` alias.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.allocUnsafe(4);
@@ -4537,7 +4503,6 @@ const buf = Buffer.allocUnsafe(4);
 buf.writeUInt32LE(0xfeedface, 0);
 
 console.log(buf);
-
 ```
 
 #### `buf.writeUIntBE(value, offset, byteLength)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufwriteuintbevalue-offset-bytelength)
@@ -4552,7 +4517,6 @@ Writes `byteLength` bytes of `value` to `buf` at the specified `offset` as big-e
 This function is also available under the `writeUintBE` alias.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.allocUnsafe(6);
@@ -4560,7 +4524,6 @@ const buf = Buffer.allocUnsafe(6);
 buf.writeUIntBE(0x1234567890ab, 0, 6);
 
 console.log(buf);
-
 ```
 
 #### `buf.writeUIntLE(value, offset, byteLength)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_bufwriteuintlevalue-offset-bytelength)
@@ -4575,7 +4538,6 @@ Writes `byteLength` bytes of `value` to `buf` at the specified `offset` as littl
 This function is also available under the `writeUintLE` alias.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const buf = Buffer.allocUnsafe(6);
@@ -4583,7 +4545,6 @@ const buf = Buffer.allocUnsafe(6);
 buf.writeUIntLE(0x1234567890ab, 0, 6);
 
 console.log(buf);
-
 ```
 
 #### `new Buffer(array)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_new-bufferarray)
@@ -4700,12 +4661,10 @@ Encodings supported by `buffer.transcode()` are: `'ascii'`, `'utf8'`, `'utf16le'
 The transcoding process will use substitution characters if a given byte sequence cannot be adequately represented in the target encoding. For instance:
 
 ```
-
 import { Buffer, transcode } from 'buffer';
 
 const newBuf = transcode(Buffer.from('€'), 'utf8', 'ascii');
 console.log(newBuf.toString('ascii'));
-
 ```
 
 Because the Euro (`€`) sign is not representable in US-ASCII, it is replaced with `?` in the transcoded `Buffer`.
@@ -4782,12 +4741,9 @@ Added in: v5.10.0
 Node.js can be started using the `--zero-fill-buffers` command-line option to cause all newly-allocated `Buffer` instances to be zero-filled upon creation by default. Without the option, buffers created with [`Buffer.allocUnsafe()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_static-method-bufferallocunsafesize), [`Buffer.allocUnsafeSlow()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_static-method-bufferallocunsafeslowsize), and `new SlowBuffer(size)` are not zero-filled. Use of this flag can have a measurable negative impact on performance. Use the `--zero-fill-buffers` option only when necessary to enforce that newly allocated `Buffer` instances cannot contain old data that is potentially sensitive.
 
 ```
-
 $ node --zero-fill-buffers
-
 > Buffer.allocUnsafe(5);
-> <Buffer 00 00 00 00 00>
-
+<Buffer 00 00 00 00 00>
 ```
 
 #### What makes `Buffer.allocUnsafe()` and `Buffer.allocUnsafeSlow()` "unsafe"?[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_what-makes-bufferallocunsafe-and-bufferallocunsafeslow-unsafe)
@@ -4805,13 +4761,13 @@ There are three options for implementing addons: Node-API, nan, or direct use of
 When not using Node-API, implementing addons is complicated, involving knowledge of several components and APIs:
 
 -   [V8](https://v8.dev/): the C++ library Node.js uses to provide the JavaScript implementation. V8 provides the mechanisms for creating objects, calling functions, etc. V8's API is documented mostly in the `v8.h` header file (`deps/v8/include/v8.h` in the Node.js source tree), which is also available [online](https://v8docs.nodesource.com/).
-
+    
 -   [libuv](https://github.com/libuv/libuv): The C library that implements the Node.js event loop, its worker threads and all of the asynchronous behaviors of the platform. It also serves as a cross-platform abstraction library, giving easy, POSIX-like access across all major operating systems to many common system tasks, such as interacting with the filesystem, sockets, timers, and system events. libuv also provides a threading abstraction similar to POSIX threads for more sophisticated asynchronous addons that need to move beyond the standard event loop. Addon authors should avoid blocking the event loop with I/O or other time-intensive tasks by offloading work via libuv to non-blocking system operations, worker threads, or a custom use of libuv threads.
-
+    
 -   Internal Node.js libraries. Node.js itself exports C++ APIs that addons can use, the most important of which is the `node::ObjectWrap` class.
-
+    
 -   Node.js includes other statically linked libraries including OpenSSL. These other libraries are located in the `deps/` directory in the Node.js source tree. Only the libuv, OpenSSL, V8 and zlib symbols are purposefully re-exported by Node.js and may be used to various extents by addons. See [Linking to libraries included with Node.js](https://nodejs.org/dist/v16.13.1/docs/api/all.html#addons_linking-to-libraries-included-with-nodejs) for additional information.
-
+    
 
 All of the following examples are available for [download](https://github.com/nodejs/node-addon-examples) and may be used as the starting-point for an addon.
 
@@ -4820,9 +4776,7 @@ All of the following examples are available for [download](https://github.com/no
 This "Hello world" example is a simple addon, written in C++, that is the equivalent of the following JavaScript code:
 
 ```
-
 module.exports.hello = () => 'world';
-
 ```
 
 First, create the file `hello.cc`:
@@ -4841,28 +4795,25 @@ using v8::String;
 using v8::Value;
 
 void Method(const FunctionCallbackInfo<Value>& args) {
-Isolate\* isolate = args.GetIsolate();
-args.GetReturnValue().Set(String::NewFromUtf8(
-isolate, "world").ToLocalChecked());
+  Isolate* isolate = args.GetIsolate();
+  args.GetReturnValue().Set(String::NewFromUtf8(
+      isolate, "world").ToLocalChecked());
 }
 
 void Initialize(Local<Object> exports) {
-NODE_SET_METHOD(exports, "hello", Method);
+  NODE_SET_METHOD(exports, "hello", Method);
 }
 
 NODE_MODULE(NODE_GYP_MODULE_NAME, Initialize)
 
-}
-
+}  
 ```
 
 All Node.js addons must export an initialization function following the pattern:
 
 ```
-
 void Initialize(Local<Object> exports);
 NODE_MODULE(NODE_GYP_MODULE_NAME, Initialize)
-
 ```
 
 There is no semi-colon after `NODE_MODULE` as it's not a function (see `node.h`).
@@ -4880,17 +4831,15 @@ There are environments in which Node.js addons may need to be loaded multiple ti
 A context-aware addon can be constructed by using the macro `NODE_MODULE_INITIALIZER`, which expands to the name of a function which Node.js will expect to find when it loads an addon. An addon can thus be initialized as in the following example:
 
 ```
-
 using namespace v8;
 
 extern "C" NODE_MODULE_EXPORT void
 NODE_MODULE_INITIALIZER(Local<Object> exports,
-Local<Value> module,
-Local<Context> context) {
-
+                        Local<Value> module,
+                        Local<Context> context) {
+  
 }
-
-````
+```
 
 Another option is to use the macro `NODE_MODULE_INIT()`, which will also construct a context-aware addon. Unlike `NODE_MODULE()`, which is used to construct an addon around a given addon initializer function, `NODE_MODULE_INIT()` serves as the declaration of such an initializer to be followed by a function body.
 
@@ -4905,13 +4854,13 @@ The choice to build a context-aware addon carries with it the responsibility of 
 The context-aware addon can be structured to avoid global static data by performing the following steps:
 
 -   Define a class which will hold per-addon-instance data and which has a static member of the form
-
+    
     ```
     static void DeleteInstance(void* data) {
-
+      
     }
     ```
-
+    
 -   Heap-allocate an instance of this class in the addon initializer. This can be accomplished using the `new` keyword.
 -   Call `node::AddEnvironmentCleanupHook()`, passing it the above-created instance and a pointer to `DeleteInstance()`. This will ensure the instance is deleted when the environment is torn down.
 -   Store the instance of the class in a `v8::External`, and
@@ -4921,49 +4870,55 @@ This will ensure that the per-addon-instance data reaches each binding that can 
 
 The following example illustrates the implementation of a context-aware addon:
 
-````
-
+```
 #include <node.h>
 
 using namespace v8;
 
 class AddonData {
-public:
-explicit AddonData(Isolate\* isolate):
-call_count(0) {
-
+ public:
+  explicit AddonData(Isolate* isolate):
+      call_count(0) {
+    
     node::AddEnvironmentCleanupHook(isolate, DeleteInstance, this);
+  }
 
-}
+  
+  int call_count;
 
-int call_count;
-
-static void DeleteInstance(void* data) {
-delete static_cast<AddonData*>(data);
-}
+  static void DeleteInstance(void* data) {
+    delete static_cast<AddonData*>(data);
+  }
 };
 
 static void Method(const v8::FunctionCallbackInfo<v8::Value>& info) {
-
-AddonData* data =
-reinterpret_cast<AddonData*>(info.Data().As<External>()->Value());
-data->call_count++;
-info.GetReturnValue().Set((double)data->call_count);
+  
+  AddonData* data =
+      reinterpret_cast<AddonData*>(info.Data().As<External>()->Value());
+  data->call_count++;
+  info.GetReturnValue().Set((double)data->call_count);
 }
+
 
 NODE_MODULE_INIT() {
-Isolate\* isolate = context->GetIsolate();
+  Isolate* isolate = context->GetIsolate();
 
-AddonData\* data = new AddonData(isolate);
+  
+  
+  AddonData* data = new AddonData(isolate);
 
-Local<External> external = External::New(isolate, data);
+  
+  
+  Local<External> external = External::New(isolate, data);
 
-exports->Set(context,
-String::NewFromUtf8(isolate, "method").ToLocalChecked(),
-FunctionTemplate::New(isolate, Method, external)
-->GetFunction(context).ToLocalChecked()).FromJust();
+  
+  
+  
+  exports->Set(context,
+               String::NewFromUtf8(isolate, "method").ToLocalChecked(),
+               FunctionTemplate::New(isolate, Method, external)
+                  ->GetFunction(context).ToLocalChecked()).FromJust();
 }
-
 ```
 
 ##### Worker support[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#addons_worker-support)
@@ -4976,11 +4931,9 @@ In order to be loaded from multiple Node.js environments, such as a main thread 
 In order to support [`Worker`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-worker) threads, addons need to clean up any resources they may have allocated when such a thread exists. This can be achieved through the usage of the `AddEnvironmentCleanupHook()` function:
 
 ```
-
 void AddEnvironmentCleanupHook(v8::Isolate* isolate,
-void (*fun)(void* arg),
-void* arg);
-
+                               void (*fun)(void* arg),
+                               void* arg);
 ```
 
 This function adds a hook that will run before a given Node.js instance shuts down. If necessary, such hooks can be removed before they are run using `RemoveEnvironmentCleanupHook()`, which has the same signature. Callbacks are run in last-in first-out order.
@@ -5001,37 +4954,38 @@ using v8::Isolate;
 using v8::Local;
 using v8::Object;
 
+
 static char cookie[] = "yum yum";
 static int cleanup_cb1_called = 0;
 static int cleanup_cb2_called = 0;
 
 static void cleanup_cb1(void* arg) {
-Isolate* isolate = static_cast<Isolate\*>(arg);
-HandleScope scope(isolate);
-Local<Object> obj = Object::New(isolate);
-assert(!obj.IsEmpty());  
- assert(obj->IsObject());
-cleanup_cb1_called++;
+  Isolate* isolate = static_cast<Isolate*>(arg);
+  HandleScope scope(isolate);
+  Local<Object> obj = Object::New(isolate);
+  assert(!obj.IsEmpty());  
+  assert(obj->IsObject());
+  cleanup_cb1_called++;
 }
 
 static void cleanup_cb2(void* arg) {
-assert(arg == static_cast<void*>(cookie));
-cleanup_cb2_called++;
+  assert(arg == static_cast<void*>(cookie));
+  cleanup_cb2_called++;
 }
 
-static void sanity_check(void\*) {
-assert(cleanup_cb1_called == 1);
-assert(cleanup_cb2_called == 1);
+static void sanity_check(void*) {
+  assert(cleanup_cb1_called == 1);
+  assert(cleanup_cb2_called == 1);
 }
+
 
 NODE_MODULE_INIT() {
-Isolate\* isolate = context->GetIsolate();
+  Isolate* isolate = context->GetIsolate();
 
-AddEnvironmentCleanupHook(isolate, sanity_check, nullptr);
-AddEnvironmentCleanupHook(isolate, cleanup_cb2, cookie);
-AddEnvironmentCleanupHook(isolate, cleanup_cb1, isolate);
+  AddEnvironmentCleanupHook(isolate, sanity_check, nullptr);
+  AddEnvironmentCleanupHook(isolate, cleanup_cb2, cookie);
+  AddEnvironmentCleanupHook(isolate, cleanup_cb1, isolate);
 }
-
 ```
 
 Test in JavaScript by running:
@@ -5039,7 +4993,6 @@ Test in JavaScript by running:
 ```
 
 require('./build/Release/addon');
-
 ```
 
 #### Building[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#addons_building)
@@ -5047,16 +5000,14 @@ require('./build/Release/addon');
 Once the source code has been written, it must be compiled into the binary `addon.node` file. To do so, create a file called `binding.gyp` in the top-level of the project describing the build configuration of the module using a JSON-like format. This file is used by [node-gyp](https://github.com/nodejs/node-gyp), a tool written specifically to compile Node.js addons.
 
 ```
-
 {
-"targets": [
-{
-"target_name": "addon",
-"sources": [ "hello.cc" ]
+  "targets": [
+    {
+      "target_name": "addon",
+      "sources": [ "hello.cc" ]
+    }
+  ]
 }
-]
-}
-
 ```
 
 A version of the `node-gyp` utility is bundled and distributed with Node.js as part of `npm`. This version is not made directly available for developers to use and is intended only to support the ability to use the `npm install` command to compile and install addons. Developers who wish to use `node-gyp` directly can install it using the command `npm install -g node-gyp`. See the `node-gyp` [installation instructions](https://github.com/nodejs/node-gyp#installation) for more information, including platform-specific requirements.
@@ -5074,7 +5025,6 @@ Once built, the binary addon can be used from within Node.js by pointing [`requi
 const addon = require('./build/Release/addon');
 
 console.log(addon.hello());
-
 ```
 
 Because the exact path to the compiled addon binary can vary depending on how it is compiled (i.e. sometimes it may be in `./build/Debug/`), addons can use the [bindings](https://github.com/TooTallNate/node-bindings) package to load the compiled module.
@@ -5082,13 +5032,11 @@ Because the exact path to the compiled addon binary can vary depending on how it
 While the `bindings` package implementation is more sophisticated in how it locates addon modules, it is essentially using a `try…catch` pattern similar to:
 
 ```
-
 try {
-return require('./build/Release/addon.node');
+  return require('./build/Release/addon.node');
 } catch (err) {
-return require('./build/Debug/addon.node');
+  return require('./build/Debug/addon.node');
 }
-
 ```
 
 #### Linking to libraries included with Node.js[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#addons_linking-to-libraries-included-with-nodejs)
@@ -5096,9 +5044,9 @@ return require('./build/Debug/addon.node');
 Node.js uses statically linked libraries such as V8, libuv and OpenSSL. All addons are required to link to V8 and may link to any of the other dependencies as well. Typically, this is as simple as including the appropriate `#include <...>` statements (e.g. `#include <v8.h>`) and `node-gyp` will locate the appropriate headers automatically. However, there are a few caveats to be aware of:
 
 -   When `node-gyp` runs, it will detect the specific release version of Node.js and download either the full source tarball or just the headers. If the full source is downloaded, addons will have complete access to the full set of Node.js dependencies. However, if only the Node.js headers are downloaded, then only the symbols exported by Node.js will be available.
-
+    
 -   `node-gyp` can be run using the `--nodedir` flag pointing at a local Node.js source image. Using this option, the addon will have access to the full set of dependencies.
-
+    
 
 #### Loading addons using `require()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#addons_loading-addons-using-require)
 
@@ -5127,30 +5075,29 @@ To use Node-API in the above "Hello world" example, replace the content of `hell
 namespace demo {
 
 napi_value Method(napi_env env, napi_callback_info args) {
-napi_value greeting;
-napi_status status;
+  napi_value greeting;
+  napi_status status;
 
-status = napi_create_string_utf8(env, "world", NAPI_AUTO_LENGTH, &greeting);
-if (status != napi_ok) return nullptr;
-return greeting;
+  status = napi_create_string_utf8(env, "world", NAPI_AUTO_LENGTH, &greeting);
+  if (status != napi_ok) return nullptr;
+  return greeting;
 }
 
 napi_value init(napi_env env, napi_value exports) {
-napi_status status;
-napi_value fn;
+  napi_status status;
+  napi_value fn;
 
-status = napi_create_function(env, nullptr, 0, Method, nullptr, &fn);
-if (status != napi_ok) return nullptr;
+  status = napi_create_function(env, nullptr, 0, Method, nullptr, &fn);
+  if (status != napi_ok) return nullptr;
 
-status = napi_set_named_property(env, exports, "hello", fn);
-if (status != napi_ok) return nullptr;
-return exports;
+  status = napi_set_named_property(env, exports, "hello", fn);
+  if (status != napi_ok) return nullptr;
+  return exports;
 }
 
 NAPI_MODULE(NODE_GYP_MODULE_NAME, init)
 
-}
-
+}  
 ```
 
 The functions available and how to use them are documented in [C/C++ addons with Node-API](https://nodejs.org/dist/v16.13.1/docs/api/n-api.html).
@@ -5162,32 +5109,26 @@ Following are some example addons intended to help developers get started. The e
 Each of these examples using the following `binding.gyp` file:
 
 ```
-
 {
-"targets": [
-{
-"target_name": "addon",
-"sources": [ "addon.cc" ]
+  "targets": [
+    {
+      "target_name": "addon",
+      "sources": [ "addon.cc" ]
+    }
+  ]
 }
-]
-}
-
 ```
 
 In cases where there is more than one `.cc` file, simply add the additional filename to the `sources` array:
 
 ```
-
 "sources": ["addon.cc", "myexample.cc"]
-
 ```
 
 Once the `binding.gyp` file is ready, the example addons can be configured and built using `node-gyp`:
 
 ```
-
 $ node-gyp configure build
-
 ```
 
 #### Function arguments[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#addons_function-arguments)
@@ -5211,40 +5152,46 @@ using v8::Object;
 using v8::String;
 using v8::Value;
 
+
+
+
 void Add(const FunctionCallbackInfo<Value>& args) {
-Isolate\* isolate = args.GetIsolate();
+  Isolate* isolate = args.GetIsolate();
 
-if (args.Length() < 2) {
-
+  
+  if (args.Length() < 2) {
+    
     isolate->ThrowException(Exception::TypeError(
         String::NewFromUtf8(isolate,
                             "Wrong number of arguments").ToLocalChecked()));
     return;
+  }
 
-}
+  
+  if (!args[0]->IsNumber() || !args[1]->IsNumber()) {
+    isolate->ThrowException(Exception::TypeError(
+        String::NewFromUtf8(isolate,
+                            "Wrong arguments").ToLocalChecked()));
+    return;
+  }
 
-if (!args[0]->IsNumber() || !args[1]->IsNumber()) {
-isolate->ThrowException(Exception::TypeError(
-String::NewFromUtf8(isolate,
-"Wrong arguments").ToLocalChecked()));
-return;
-}
+  
+  double value =
+      args[0].As<Number>()->Value() + args[1].As<Number>()->Value();
+  Local<Number> num = Number::New(isolate, value);
 
-double value =
-args[0].As<Number>()->Value() + args[1].As<Number>()->Value();
-Local<Number> num = Number::New(isolate, value);
-
-args.GetReturnValue().Set(num);
+  
+  
+  args.GetReturnValue().Set(num);
 }
 
 void Init(Local<Object> exports) {
-NODE_SET_METHOD(exports, "add", Add);
+  NODE_SET_METHOD(exports, "add", Add);
 }
 
 NODE_MODULE(NODE_GYP_MODULE_NAME, Init)
 
-}
-
+}  
 ```
 
 Once compiled, the example addon can be required and used from within Node.js:
@@ -5254,7 +5201,6 @@ Once compiled, the example addon can be required and used from within Node.js:
 const addon = require('./build/Release/addon');
 
 console.log('This should be eight:', addon.add(3, 5));
-
 ```
 
 #### Callbacks[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#addons_callbacks)
@@ -5278,24 +5224,23 @@ using v8::String;
 using v8::Value;
 
 void RunCallback(const FunctionCallbackInfo<Value>& args) {
-Isolate\* isolate = args.GetIsolate();
-Local<Context> context = isolate->GetCurrentContext();
-Local<Function> cb = Local<Function>::Cast(args[0]);
-const unsigned argc = 1;
-Local<Value> argv[argc] = {
-String::NewFromUtf8(isolate,
-"hello world").ToLocalChecked() };
-cb->Call(context, Null(isolate), argc, argv).ToLocalChecked();
+  Isolate* isolate = args.GetIsolate();
+  Local<Context> context = isolate->GetCurrentContext();
+  Local<Function> cb = Local<Function>::Cast(args[0]);
+  const unsigned argc = 1;
+  Local<Value> argv[argc] = {
+      String::NewFromUtf8(isolate,
+                          "hello world").ToLocalChecked() };
+  cb->Call(context, Null(isolate), argc, argv).ToLocalChecked();
 }
 
 void Init(Local<Object> exports, Local<Object> module) {
-NODE_SET_METHOD(module, "exports", RunCallback);
+  NODE_SET_METHOD(module, "exports", RunCallback);
 }
 
 NODE_MODULE(NODE_GYP_MODULE_NAME, Init)
 
-}
-
+}  
 ```
 
 This example uses a two-argument form of `Init()` that receives the full `module` object as the second argument. This allows the addon to completely overwrite `exports` with a single function instead of adding the function as a property of `exports`.
@@ -5307,10 +5252,9 @@ To test it, run the following JavaScript:
 const addon = require('./build/Release/addon');
 
 addon((msg) => {
-console.log(msg);
+  console.log(msg);
 
 });
-
 ```
 
 In this example, the callback function is invoked synchronously.
@@ -5334,27 +5278,26 @@ using v8::String;
 using v8::Value;
 
 void CreateObject(const FunctionCallbackInfo<Value>& args) {
-Isolate\* isolate = args.GetIsolate();
-Local<Context> context = isolate->GetCurrentContext();
+  Isolate* isolate = args.GetIsolate();
+  Local<Context> context = isolate->GetCurrentContext();
 
-Local<Object> obj = Object::New(isolate);
-obj->Set(context,
-String::NewFromUtf8(isolate,
-"msg").ToLocalChecked(),
-args[0]->ToString(context).ToLocalChecked())
-.FromJust();
+  Local<Object> obj = Object::New(isolate);
+  obj->Set(context,
+           String::NewFromUtf8(isolate,
+                               "msg").ToLocalChecked(),
+                               args[0]->ToString(context).ToLocalChecked())
+           .FromJust();
 
-args.GetReturnValue().Set(obj);
+  args.GetReturnValue().Set(obj);
 }
 
 void Init(Local<Object> exports, Local<Object> module) {
-NODE_SET_METHOD(module, "exports", CreateObject);
+  NODE_SET_METHOD(module, "exports", CreateObject);
 }
 
 NODE_MODULE(NODE_GYP_MODULE_NAME, Init)
 
-}
-
+}  
 ```
 
 To test it in JavaScript:
@@ -5366,7 +5309,6 @@ const addon = require('./build/Release/addon');
 const obj1 = addon('hello');
 const obj2 = addon('world');
 console.log(obj1.msg, obj2.msg);
-
 ```
 
 #### Function factory[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#addons_function-factory)
@@ -5390,32 +5332,32 @@ using v8::String;
 using v8::Value;
 
 void MyFunction(const FunctionCallbackInfo<Value>& args) {
-Isolate\* isolate = args.GetIsolate();
-args.GetReturnValue().Set(String::NewFromUtf8(
-isolate, "hello world").ToLocalChecked());
+  Isolate* isolate = args.GetIsolate();
+  args.GetReturnValue().Set(String::NewFromUtf8(
+      isolate, "hello world").ToLocalChecked());
 }
 
 void CreateFunction(const FunctionCallbackInfo<Value>& args) {
-Isolate\* isolate = args.GetIsolate();
+  Isolate* isolate = args.GetIsolate();
 
-Local<Context> context = isolate->GetCurrentContext();
-Local<FunctionTemplate> tpl = FunctionTemplate::New(isolate, MyFunction);
-Local<Function> fn = tpl->GetFunction(context).ToLocalChecked();
+  Local<Context> context = isolate->GetCurrentContext();
+  Local<FunctionTemplate> tpl = FunctionTemplate::New(isolate, MyFunction);
+  Local<Function> fn = tpl->GetFunction(context).ToLocalChecked();
 
-fn->SetName(String::NewFromUtf8(
-isolate, "theFunction").ToLocalChecked());
+  
+  fn->SetName(String::NewFromUtf8(
+      isolate, "theFunction").ToLocalChecked());
 
-args.GetReturnValue().Set(fn);
+  args.GetReturnValue().Set(fn);
 }
 
 void Init(Local<Object> exports, Local<Object> module) {
-NODE_SET_METHOD(module, "exports", CreateFunction);
+  NODE_SET_METHOD(module, "exports", CreateFunction);
 }
 
 NODE_MODULE(NODE_GYP_MODULE_NAME, Init)
 
-}
-
+}  
 ```
 
 To test:
@@ -5426,7 +5368,6 @@ const addon = require('./build/Release/addon');
 
 const fn = addon();
 console.log(fn());
-
 ```
 
 #### Wrapping C++ objects[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#addons_wrapping-c-objects)
@@ -5444,13 +5385,12 @@ using v8::Local;
 using v8::Object;
 
 void InitAll(Local<Object> exports) {
-MyObject::Init(exports);
+  MyObject::Init(exports);
 }
 
 NODE_MODULE(NODE_GYP_MODULE_NAME, InitAll)
 
-}
-
+}  
 ```
 
 Then, in `myobject.h`, the wrapper class inherits from `node::ObjectWrap`:
@@ -5466,23 +5406,22 @@ Then, in `myobject.h`, the wrapper class inherits from `node::ObjectWrap`:
 namespace demo {
 
 class MyObject : public node::ObjectWrap {
-public:
-static void Init(v8::Local<v8::Object> exports);
+ public:
+  static void Init(v8::Local<v8::Object> exports);
 
-private:
-explicit MyObject(double value = 0);
-~MyObject();
+ private:
+  explicit MyObject(double value = 0);
+  ~MyObject();
 
-static void New(const v8::FunctionCallbackInfo<v8::Value>& args);
-static void PlusOne(const v8::FunctionCallbackInfo<v8::Value>& args);
+  static void New(const v8::FunctionCallbackInfo<v8::Value>& args);
+  static void PlusOne(const v8::FunctionCallbackInfo<v8::Value>& args);
 
-double value\_;
+  double value_;
 };
 
-}
+}  
 
 #endif
-
 ```
 
 In `myobject.cc`, implement the various methods that are to be exposed. Below, the method `plusOne()` is exposed by adding it to the constructor's prototype:
@@ -5505,48 +5444,49 @@ using v8::ObjectTemplate;
 using v8::String;
 using v8::Value;
 
-MyObject::MyObject(double value) : value\_(value) {
+MyObject::MyObject(double value) : value_(value) {
 }
 
 MyObject::~MyObject() {
 }
 
 void MyObject::Init(Local<Object> exports) {
-Isolate\* isolate = exports->GetIsolate();
-Local<Context> context = isolate->GetCurrentContext();
+  Isolate* isolate = exports->GetIsolate();
+  Local<Context> context = isolate->GetCurrentContext();
 
-Local<ObjectTemplate> addon_data_tpl = ObjectTemplate::New(isolate);
-addon_data_tpl->SetInternalFieldCount(1);  
- Local<Object> addon_data =
-addon_data_tpl->NewInstance(context).ToLocalChecked();
+  Local<ObjectTemplate> addon_data_tpl = ObjectTemplate::New(isolate);
+  addon_data_tpl->SetInternalFieldCount(1);  
+  Local<Object> addon_data =
+      addon_data_tpl->NewInstance(context).ToLocalChecked();
 
-Local<FunctionTemplate> tpl = FunctionTemplate::New(isolate, New, addon_data);
-tpl->SetClassName(String::NewFromUtf8(isolate, "MyObject").ToLocalChecked());
-tpl->InstanceTemplate()->SetInternalFieldCount(1);
+  
+  Local<FunctionTemplate> tpl = FunctionTemplate::New(isolate, New, addon_data);
+  tpl->SetClassName(String::NewFromUtf8(isolate, "MyObject").ToLocalChecked());
+  tpl->InstanceTemplate()->SetInternalFieldCount(1);
 
-NODE_SET_PROTOTYPE_METHOD(tpl, "plusOne", PlusOne);
+  
+  NODE_SET_PROTOTYPE_METHOD(tpl, "plusOne", PlusOne);
 
-Local<Function> constructor = tpl->GetFunction(context).ToLocalChecked();
-addon_data->SetInternalField(0, constructor);
-exports->Set(context, String::NewFromUtf8(
-isolate, "MyObject").ToLocalChecked(),
-constructor).FromJust();
+  Local<Function> constructor = tpl->GetFunction(context).ToLocalChecked();
+  addon_data->SetInternalField(0, constructor);
+  exports->Set(context, String::NewFromUtf8(
+      isolate, "MyObject").ToLocalChecked(),
+      constructor).FromJust();
 }
 
 void MyObject::New(const FunctionCallbackInfo<Value>& args) {
-Isolate\* isolate = args.GetIsolate();
-Local<Context> context = isolate->GetCurrentContext();
+  Isolate* isolate = args.GetIsolate();
+  Local<Context> context = isolate->GetCurrentContext();
 
-if (args.IsConstructCall()) {
-
+  if (args.IsConstructCall()) {
+    
     double value = args[0]->IsUndefined() ?
         0 : args[0]->NumberValue(context).FromMaybe(0);
     MyObject* obj = new MyObject(value);
     obj->Wrap(args.This());
     args.GetReturnValue().Set(args.This());
-
-} else {
-
+  } else {
+    
     const int argc = 1;
     Local<Value> argv[argc] = { args[0] };
     Local<Function> cons =
@@ -5554,39 +5494,35 @@ if (args.IsConstructCall()) {
     Local<Object> result =
         cons->NewInstance(context, argc, argv).ToLocalChecked();
     args.GetReturnValue().Set(result);
-
-}
+  }
 }
 
 void MyObject::PlusOne(const FunctionCallbackInfo<Value>& args) {
-Isolate\* isolate = args.GetIsolate();
+  Isolate* isolate = args.GetIsolate();
 
-MyObject\* obj = ObjectWrap::Unwrap<MyObject>(args.Holder());
-obj->value\_ += 1;
+  MyObject* obj = ObjectWrap::Unwrap<MyObject>(args.Holder());
+  obj->value_ += 1;
 
-args.GetReturnValue().Set(Number::New(isolate, obj->value\_));
+  args.GetReturnValue().Set(Number::New(isolate, obj->value_));
 }
 
-}
-
+}  
 ```
 
 To build this example, the `myobject.cc` file must be added to the `binding.gyp`:
 
 ```
-
 {
-"targets": [
-{
-"target_name": "addon",
-"sources": [
-"addon.cc",
-"myobject.cc"
-]
+  "targets": [
+    {
+      "target_name": "addon",
+      "sources": [
+        "addon.cc",
+        "myobject.cc"
+      ]
+    }
+  ]
 }
-]
-}
-
 ```
 
 Test it with:
@@ -5601,7 +5537,6 @@ console.log(obj.plusOne());
 console.log(obj.plusOne());
 
 console.log(obj.plusOne());
-
 ```
 
 The destructor for a wrapper object will run when the object is garbage-collected. For destructor testing, there are command-line flags that can be used to make it possible to force garbage collection. These flags are provided by the underlying V8 JavaScript engine. They are subject to change or removal at any time. They are not documented by Node.js or V8, and they should never be used outside of testing.
@@ -5613,7 +5548,6 @@ During shutdown of the process or worker threads destructors are not called by t
 Alternatively, it is possible to use a factory pattern to avoid explicitly creating object instances using the JavaScript `new` operator:
 
 ```
-
 const obj = addon.createObject();
 
 ```
@@ -5635,19 +5569,18 @@ using v8::String;
 using v8::Value;
 
 void CreateObject(const FunctionCallbackInfo<Value>& args) {
-MyObject::NewInstance(args);
+  MyObject::NewInstance(args);
 }
 
 void InitAll(Local<Object> exports, Local<Object> module) {
-MyObject::Init(exports->GetIsolate());
+  MyObject::Init(exports->GetIsolate());
 
-NODE_SET_METHOD(module, "exports", CreateObject);
+  NODE_SET_METHOD(module, "exports", CreateObject);
 }
 
 NODE_MODULE(NODE_GYP_MODULE_NAME, InitAll)
 
-}
-
+}  
 ```
 
 In `myobject.h`, the static method `NewInstance()` is added to handle instantiating the object. This method takes the place of using `new` in JavaScript:
@@ -5663,24 +5596,23 @@ In `myobject.h`, the static method `NewInstance()` is added to handle instantiat
 namespace demo {
 
 class MyObject : public node::ObjectWrap {
-public:
-static void Init(v8::Isolate\* isolate);
-static void NewInstance(const v8::FunctionCallbackInfo<v8::Value>& args);
+ public:
+  static void Init(v8::Isolate* isolate);
+  static void NewInstance(const v8::FunctionCallbackInfo<v8::Value>& args);
 
-private:
-explicit MyObject(double value = 0);
-~MyObject();
+ private:
+  explicit MyObject(double value = 0);
+  ~MyObject();
 
-static void New(const v8::FunctionCallbackInfo<v8::Value>& args);
-static void PlusOne(const v8::FunctionCallbackInfo<v8::Value>& args);
-static v8::Global<v8::Function> constructor;
-double value\_;
+  static void New(const v8::FunctionCallbackInfo<v8::Value>& args);
+  static void PlusOne(const v8::FunctionCallbackInfo<v8::Value>& args);
+  static v8::Global<v8::Function> constructor;
+  double value_;
 };
 
-}
+}  
 
 #endif
-
 ```
 
 The implementation in `myobject.cc` is similar to the previous example:
@@ -5705,96 +5637,94 @@ using v8::Object;
 using v8::String;
 using v8::Value;
 
+
+
 Global<Function> MyObject::constructor;
 
-MyObject::MyObject(double value) : value\_(value) {
+MyObject::MyObject(double value) : value_(value) {
 }
 
 MyObject::~MyObject() {
 }
 
-void MyObject::Init(Isolate\* isolate) {
+void MyObject::Init(Isolate* isolate) {
+  
+  Local<FunctionTemplate> tpl = FunctionTemplate::New(isolate, New);
+  tpl->SetClassName(String::NewFromUtf8(isolate, "MyObject").ToLocalChecked());
+  tpl->InstanceTemplate()->SetInternalFieldCount(1);
 
-Local<FunctionTemplate> tpl = FunctionTemplate::New(isolate, New);
-tpl->SetClassName(String::NewFromUtf8(isolate, "MyObject").ToLocalChecked());
-tpl->InstanceTemplate()->SetInternalFieldCount(1);
+  
+  NODE_SET_PROTOTYPE_METHOD(tpl, "plusOne", PlusOne);
 
-NODE_SET_PROTOTYPE_METHOD(tpl, "plusOne", PlusOne);
+  Local<Context> context = isolate->GetCurrentContext();
+  constructor.Reset(isolate, tpl->GetFunction(context).ToLocalChecked());
 
-Local<Context> context = isolate->GetCurrentContext();
-constructor.Reset(isolate, tpl->GetFunction(context).ToLocalChecked());
-
-AddEnvironmentCleanupHook(isolate, [](void*) {
-constructor.Reset();
-}, nullptr);
+  AddEnvironmentCleanupHook(isolate, [](void*) {
+    constructor.Reset();
+  }, nullptr);
 }
 
 void MyObject::New(const FunctionCallbackInfo<Value>& args) {
-Isolate\* isolate = args.GetIsolate();
-Local<Context> context = isolate->GetCurrentContext();
+  Isolate* isolate = args.GetIsolate();
+  Local<Context> context = isolate->GetCurrentContext();
 
-if (args.IsConstructCall()) {
-
+  if (args.IsConstructCall()) {
+    
     double value = args[0]->IsUndefined() ?
         0 : args[0]->NumberValue(context).FromMaybe(0);
     MyObject* obj = new MyObject(value);
     obj->Wrap(args.This());
     args.GetReturnValue().Set(args.This());
-
-} else {
-
+  } else {
+    
     const int argc = 1;
     Local<Value> argv[argc] = { args[0] };
     Local<Function> cons = Local<Function>::New(isolate, constructor);
     Local<Object> instance =
         cons->NewInstance(context, argc, argv).ToLocalChecked();
     args.GetReturnValue().Set(instance);
-
-}
+  }
 }
 
 void MyObject::NewInstance(const FunctionCallbackInfo<Value>& args) {
-Isolate\* isolate = args.GetIsolate();
+  Isolate* isolate = args.GetIsolate();
 
-const unsigned argc = 1;
-Local<Value> argv[argc] = { args[0] };
-Local<Function> cons = Local<Function>::New(isolate, constructor);
-Local<Context> context = isolate->GetCurrentContext();
-Local<Object> instance =
-cons->NewInstance(context, argc, argv).ToLocalChecked();
+  const unsigned argc = 1;
+  Local<Value> argv[argc] = { args[0] };
+  Local<Function> cons = Local<Function>::New(isolate, constructor);
+  Local<Context> context = isolate->GetCurrentContext();
+  Local<Object> instance =
+      cons->NewInstance(context, argc, argv).ToLocalChecked();
 
-args.GetReturnValue().Set(instance);
+  args.GetReturnValue().Set(instance);
 }
 
 void MyObject::PlusOne(const FunctionCallbackInfo<Value>& args) {
-Isolate\* isolate = args.GetIsolate();
+  Isolate* isolate = args.GetIsolate();
 
-MyObject\* obj = ObjectWrap::Unwrap<MyObject>(args.Holder());
-obj->value\_ += 1;
+  MyObject* obj = ObjectWrap::Unwrap<MyObject>(args.Holder());
+  obj->value_ += 1;
 
-args.GetReturnValue().Set(Number::New(isolate, obj->value\_));
+  args.GetReturnValue().Set(Number::New(isolate, obj->value_));
 }
 
-}
-
+}  
 ```
 
 Once again, to build this example, the `myobject.cc` file must be added to the `binding.gyp`:
 
 ```
-
 {
-"targets": [
-{
-"target_name": "addon",
-"sources": [
-"addon.cc",
-"myobject.cc"
-]
+  "targets": [
+    {
+      "target_name": "addon",
+      "sources": [
+        "addon.cc",
+        "myobject.cc"
+      ]
+    }
+  ]
 }
-]
-}
-
 ```
 
 Test it with:
@@ -5810,13 +5740,13 @@ console.log(obj.plusOne());
 
 console.log(obj.plusOne());
 
+
 const obj2 = createObject(20);
 console.log(obj2.plusOne());
 
 console.log(obj2.plusOne());
 
 console.log(obj2.plusOne());
-
 ```
 
 #### Passing wrapped objects around[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#addons_passing-wrapped-objects-around)
@@ -5841,33 +5771,32 @@ using v8::String;
 using v8::Value;
 
 void CreateObject(const FunctionCallbackInfo<Value>& args) {
-MyObject::NewInstance(args);
+  MyObject::NewInstance(args);
 }
 
 void Add(const FunctionCallbackInfo<Value>& args) {
-Isolate\* isolate = args.GetIsolate();
-Local<Context> context = isolate->GetCurrentContext();
+  Isolate* isolate = args.GetIsolate();
+  Local<Context> context = isolate->GetCurrentContext();
 
-MyObject* obj1 = node::ObjectWrap::Unwrap<MyObject>(
-args[0]->ToObject(context).ToLocalChecked());
-MyObject* obj2 = node::ObjectWrap::Unwrap<MyObject>(
-args[1]->ToObject(context).ToLocalChecked());
+  MyObject* obj1 = node::ObjectWrap::Unwrap<MyObject>(
+      args[0]->ToObject(context).ToLocalChecked());
+  MyObject* obj2 = node::ObjectWrap::Unwrap<MyObject>(
+      args[1]->ToObject(context).ToLocalChecked());
 
-double sum = obj1->value() + obj2->value();
-args.GetReturnValue().Set(Number::New(isolate, sum));
+  double sum = obj1->value() + obj2->value();
+  args.GetReturnValue().Set(Number::New(isolate, sum));
 }
 
 void InitAll(Local<Object> exports) {
-MyObject::Init(exports->GetIsolate());
+  MyObject::Init(exports->GetIsolate());
 
-NODE_SET_METHOD(exports, "createObject", CreateObject);
-NODE_SET_METHOD(exports, "add", Add);
+  NODE_SET_METHOD(exports, "createObject", CreateObject);
+  NODE_SET_METHOD(exports, "add", Add);
 }
 
 NODE_MODULE(NODE_GYP_MODULE_NAME, InitAll)
 
-}
-
+}  
 ```
 
 In `myobject.h`, a new public method is added to allow access to private values after unwrapping the object.
@@ -5883,24 +5812,23 @@ In `myobject.h`, a new public method is added to allow access to private values 
 namespace demo {
 
 class MyObject : public node::ObjectWrap {
-public:
-static void Init(v8::Isolate\* isolate);
-static void NewInstance(const v8::FunctionCallbackInfo<v8::Value>& args);
-inline double value() const { return value\_; }
+ public:
+  static void Init(v8::Isolate* isolate);
+  static void NewInstance(const v8::FunctionCallbackInfo<v8::Value>& args);
+  inline double value() const { return value_; }
 
-private:
-explicit MyObject(double value = 0);
-~MyObject();
+ private:
+  explicit MyObject(double value = 0);
+  ~MyObject();
 
-static void New(const v8::FunctionCallbackInfo<v8::Value>& args);
-static v8::Global<v8::Function> constructor;
-double value\_;
+  static void New(const v8::FunctionCallbackInfo<v8::Value>& args);
+  static v8::Global<v8::Function> constructor;
+  double value_;
 };
 
-}
+}  
 
 #endif
-
 ```
 
 The implementation of `myobject.cc` is similar to before:
@@ -5924,67 +5852,66 @@ using v8::Object;
 using v8::String;
 using v8::Value;
 
+
+
 Global<Function> MyObject::constructor;
 
-MyObject::MyObject(double value) : value\_(value) {
+MyObject::MyObject(double value) : value_(value) {
 }
 
 MyObject::~MyObject() {
 }
 
-void MyObject::Init(Isolate\* isolate) {
+void MyObject::Init(Isolate* isolate) {
+  
+  Local<FunctionTemplate> tpl = FunctionTemplate::New(isolate, New);
+  tpl->SetClassName(String::NewFromUtf8(isolate, "MyObject").ToLocalChecked());
+  tpl->InstanceTemplate()->SetInternalFieldCount(1);
 
-Local<FunctionTemplate> tpl = FunctionTemplate::New(isolate, New);
-tpl->SetClassName(String::NewFromUtf8(isolate, "MyObject").ToLocalChecked());
-tpl->InstanceTemplate()->SetInternalFieldCount(1);
+  Local<Context> context = isolate->GetCurrentContext();
+  constructor.Reset(isolate, tpl->GetFunction(context).ToLocalChecked());
 
-Local<Context> context = isolate->GetCurrentContext();
-constructor.Reset(isolate, tpl->GetFunction(context).ToLocalChecked());
-
-AddEnvironmentCleanupHook(isolate, [](void*) {
-constructor.Reset();
-}, nullptr);
+  AddEnvironmentCleanupHook(isolate, [](void*) {
+    constructor.Reset();
+  }, nullptr);
 }
 
 void MyObject::New(const FunctionCallbackInfo<Value>& args) {
-Isolate\* isolate = args.GetIsolate();
-Local<Context> context = isolate->GetCurrentContext();
+  Isolate* isolate = args.GetIsolate();
+  Local<Context> context = isolate->GetCurrentContext();
 
-if (args.IsConstructCall()) {
-
+  if (args.IsConstructCall()) {
+    
     double value = args[0]->IsUndefined() ?
         0 : args[0]->NumberValue(context).FromMaybe(0);
     MyObject* obj = new MyObject(value);
     obj->Wrap(args.This());
     args.GetReturnValue().Set(args.This());
-
-} else {
-
+  } else {
+    
     const int argc = 1;
     Local<Value> argv[argc] = { args[0] };
     Local<Function> cons = Local<Function>::New(isolate, constructor);
     Local<Object> instance =
         cons->NewInstance(context, argc, argv).ToLocalChecked();
     args.GetReturnValue().Set(instance);
-
-}
+  }
 }
 
 void MyObject::NewInstance(const FunctionCallbackInfo<Value>& args) {
-Isolate\* isolate = args.GetIsolate();
+  Isolate* isolate = args.GetIsolate();
 
-const unsigned argc = 1;
-Local<Value> argv[argc] = { args[0] };
-Local<Function> cons = Local<Function>::New(isolate, constructor);
-Local<Context> context = isolate->GetCurrentContext();
-Local<Object> instance =
-cons->NewInstance(context, argc, argv).ToLocalChecked();
+  const unsigned argc = 1;
+  Local<Value> argv[argc] = { args[0] };
+  Local<Function> cons = Local<Function>::New(isolate, constructor);
+  Local<Context> context = isolate->GetCurrentContext();
+  Local<Object> instance =
+      cons->NewInstance(context, argc, argv).ToLocalChecked();
 
-args.GetReturnValue().Set(instance);
+  args.GetReturnValue().Set(instance);
 }
 
-}
-
+}  
 ```
 
 Test it with:
@@ -5998,7 +5925,6 @@ const obj2 = addon.createObject(20);
 const result = addon.add(obj1, obj2);
 
 console.log(result);
-
 ```
 
 ## Node-API[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_node-api)
@@ -6017,74 +5943,68 @@ APIs exposed by Node-API are generally used to create and manipulate JavaScript 
 Node-API is a C API that ensures ABI stability across Node.js versions and different compiler levels. A C++ API can be easier to use. To support using C++, the project maintains a C++ wrapper module called [`node-addon-api`](https://github.com/nodejs/node-addon-api). This wrapper provides an inlineable C++ API. Binaries built with `node-addon-api` will depend on the symbols for the Node-API C-based functions exported by Node.js. `node-addon-api` is a more efficient way to write code that calls Node-API. Take, for example, the following `node-addon-api` code. The first section shows the `node-addon-api` code and the second section shows what actually gets used in the addon.
 
 ```
-
 Object obj = Object::New(env);
 obj["foo"] = String::New(env, "bar");
-
 ```
 
 ```
-
 napi_status status;
 napi_value object, string;
 status = napi_create_object(env, &object);
 if (status != napi_ok) {
-napi_throw_error(env, ...);
-return;
+  napi_throw_error(env, ...);
+  return;
 }
 
 status = napi_create_string_utf8(env, "bar", NAPI_AUTO_LENGTH, &string);
 if (status != napi_ok) {
-napi_throw_error(env, ...);
-return;
+  napi_throw_error(env, ...);
+  return;
 }
 
 status = napi_set_named_property(env, object, "foo", string);
 if (status != napi_ok) {
-napi_throw_error(env, ...);
-return;
+  napi_throw_error(env, ...);
+  return;
 }
-
-````
+```
 
 The end result is that the addon only uses the exported C APIs. As a result, it still gets the benefits of the ABI stability provided by the C API.
 
 When using `node-addon-api` instead of the C APIs, start with the API [docs](https://github.com/nodejs/node-addon-api#api-documentation) for `node-addon-api`.
 
-The [Node-API Resource](https://nodejs.github.io/node-addon-examples/) offers an excellent orientation and tips for developers just getting started with Node-API and `node-addon-api`.
+The [Node-API Resource](https://nodejs.github.io/node-addon-examples/) offers an excellent orientation and tips for developers just getting started with Node-API and `node-addon-api`.
 
 ### Implications of ABI stability[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_implications-of-abi-stability)
 
 Although Node-API provides an ABI stability guarantee, other parts of Node.js do not, and any external libraries used from the addon may not. In particular, none of the following APIs provide an ABI stability guarantee across major versions:
 
 -   the Node.js C++ APIs available via any of
-
+    
     ```
     #include <node.h>
     #include <node_buffer.h>
     #include <node_version.h>
     #include <node_object_wrap.h>
     ```
-
+    
 -   the libuv APIs which are also included with Node.js and available via
-
+    
     ```
     #include <uv.h>
     ```
-
+    
 -   the V8 API available via
-
+    
     ```
     #include <v8.h>
     ```
-
+    
 
 Thus, for an addon to remain ABI-compatible across Node.js major versions, it must use Node-API exclusively by restricting itself to using
 
-````
-
+```
 #include <node_api.h>
-
 ```
 
 and by checking, for all external libraries that it uses, that the external library makes ABI stability guarantees similar to Node-API.
@@ -6098,17 +6018,13 @@ For Linux developers, the necessary C/C++ toolchain packages are readily availab
 For Mac developers, [Xcode](https://developer.apple.com/xcode/) offers all the required compiler tools. However, it is not necessary to install the entire Xcode IDE. The following command installs the necessary toolchain:
 
 ```
-
 xcode-select --install
-
 ```
 
 For Windows developers, [Visual Studio](https://visualstudio.microsoft.com/) offers all the required compiler tools. However, it is not necessary to install the entire Visual Studio IDE. The following command installs the necessary toolchain:
 
 ```
-
 npm install --global windows-build-tools
-
 ```
 
 The sections below describe the additional tools available for developing and deploying Node.js native addons.
@@ -6150,18 +6066,14 @@ The three tools listed here permit native addon developers and maintainers to cr
 In order to use the Node-API functions, include the file [`node_api.h`](https://github.com/nodejs/node/blob/HEAD/src/node_api.h) which is located in the src directory in the node development tree:
 
 ```
-
 #include <node_api.h>
-
 ```
 
 This will opt into the default `NAPI_VERSION` for the given release of Node.js. In order to ensure compatibility with specific versions of Node-API, the version can be specified explicitly when including the header:
 
 ```
-
 #define NAPI_VERSION 3
 #include <node_api.h>
-
 ```
 
 This restricts the Node-API surface to just the functionality that was available in the specified (and earlier) versions.
@@ -6169,10 +6081,8 @@ This restricts the Node-API surface to just the functionality that was available
 Some of the Node-API surface is experimental and requires explicit opt-in:
 
 ```
-
 #define NAPI_EXPERIMENTAL
 #include <node_api.h>
-
 ```
 
 In this case the entire API surface, including any experimental APIs, will be available to the module code.
@@ -6311,59 +6221,57 @@ The Node.js-specific parts of an addon can be separated from the code that expos
 #define _ADDON_H_
 #include <js_native_api.h>
 napi_value create_addon(napi_env env);
-#endif
-
+#endif  
 ```
 
 ```
 
 #include "addon.h"
 
-#define NAPI_CALL(env, call) \
- do { \
- napi_status status = (call); \
- if (status != napi_ok) { \
- const napi_extended_error_info* error_info = NULL; \
- napi_get_last_error_info((env), &error_info); \
- const char* err_message = error_info->error_message; \
- bool is_pending; \
- napi_is_exception_pending((env), &is_pending); \
- if (!is_pending) { \
- const char\* message = (err_message == NULL) \
- ? "empty error message" \
- : err_message; \
- napi_throw_error((env), NULL, message); \
- return NULL; \
- } \
- } \
- } while(0)
+#define NAPI_CALL(env, call)                                      \
+  do {                                                            \
+    napi_status status = (call);                                  \
+    if (status != napi_ok) {                                      \
+      const napi_extended_error_info* error_info = NULL;          \
+      napi_get_last_error_info((env), &error_info);               \
+      const char* err_message = error_info->error_message;        \
+      bool is_pending;                                            \
+      napi_is_exception_pending((env), &is_pending);              \
+      if (!is_pending) {                                          \
+        const char* message = (err_message == NULL)               \
+            ? "empty error message"                               \
+            : err_message;                                        \
+        napi_throw_error((env), NULL, message);                   \
+        return NULL;                                              \
+      }                                                           \
+    }                                                             \
+  } while(0)
 
 static napi_value
 DoSomethingUseful(napi_env env, napi_callback_info info) {
-
-return NULL;
+  
+  return NULL;
 }
 
 napi_value create_addon(napi_env env) {
-napi_value result;
-NAPI_CALL(env, napi_create_object(env, &result));
+  napi_value result;
+  NAPI_CALL(env, napi_create_object(env, &result));
 
-napi_value exported_function;
-NAPI_CALL(env, napi_create_function(env,
-"doSomethingUseful",
-NAPI_AUTO_LENGTH,
-DoSomethingUseful,
-NULL,
-&exported_function));
+  napi_value exported_function;
+  NAPI_CALL(env, napi_create_function(env,
+                                      "doSomethingUseful",
+                                      NAPI_AUTO_LENGTH,
+                                      DoSomethingUseful,
+                                      NULL,
+                                      &exported_function));
 
-NAPI_CALL(env, napi_set_named_property(env,
-result,
-"doSomethingUseful",
-exported_function));
+  NAPI_CALL(env, napi_set_named_property(env,
+                                         result,
+                                         "doSomethingUseful",
+                                         exported_function));
 
-return result;
+  return result;
 }
-
 ```
 
 ```
@@ -6372,10 +6280,11 @@ return result;
 #include "addon.h"
 
 NAPI_MODULE_INIT() {
-
-return create_addon(env);
+  
+  
+  
+  return create_addon(env);
 }
-
 ```
 
 ### Environment life cycle APIs[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_environment-life-cycle-apis)
@@ -6395,12 +6304,10 @@ To this end, Node-API provides a way to allocate data such that its life cycle i
 Added in: v12.8.0, v10.20.0 N-API version: 6
 
 ```
-
 napi_status napi_set_instance_data(napi_env env,
-void* data,
-napi_finalize finalize_cb,
-void* finalize_hint);
-
+                                   void* data,
+                                   napi_finalize finalize_cb,
+                                   void* finalize_hint);
 ```
 
 -   `[in] env`: The environment that the Node-API call is invoked under.
@@ -6417,10 +6324,8 @@ This API associates `data` with the currently running Agent. `data` can later be
 Added in: v12.8.0, v10.20.0 N-API version: 6
 
 ```
-
 napi_status napi_get_instance_data(napi_env env,
-void\*\* data);
-
+                                   void** data);
 ```
 
 -   `[in] env`: The environment that the Node-API call is invoked under.
@@ -6441,32 +6346,30 @@ Added in: v8.0.0 N-API version: 1
 Integral status code indicating the success or failure of a Node-API call. Currently, the following status codes are supported.
 
 ```
-
 typedef enum {
-napi_ok,
-napi_invalid_arg,
-napi_object_expected,
-napi_string_expected,
-napi_name_expected,
-napi_function_expected,
-napi_number_expected,
-napi_boolean_expected,
-napi_array_expected,
-napi_generic_failure,
-napi_pending_exception,
-napi_cancelled,
-napi_escape_called_twice,
-napi_handle_scope_mismatch,
-napi_callback_scope_mismatch,
-napi_queue_full,
-napi_closing,
-napi_bigint_expected,
-napi_date_expected,
-napi_arraybuffer_expected,
-napi_detachable_arraybuffer_expected,
-napi_would_deadlock,  
+  napi_ok,
+  napi_invalid_arg,
+  napi_object_expected,
+  napi_string_expected,
+  napi_name_expected,
+  napi_function_expected,
+  napi_number_expected,
+  napi_boolean_expected,
+  napi_array_expected,
+  napi_generic_failure,
+  napi_pending_exception,
+  napi_cancelled,
+  napi_escape_called_twice,
+  napi_handle_scope_mismatch,
+  napi_callback_scope_mismatch,
+  napi_queue_full,
+  napi_closing,
+  napi_bigint_expected,
+  napi_date_expected,
+  napi_arraybuffer_expected,
+  napi_detachable_arraybuffer_expected,
+  napi_would_deadlock,  
 } napi_status;
-
 ```
 
 If additional information is required upon an API returning a failed status, it can be obtained by calling `napi_get_last_error_info`.
@@ -6476,14 +6379,12 @@ If additional information is required upon an API returning a failed status, it 
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 typedef struct {
-const char* error_message;
-void* engine_reserved;
-uint32_t engine_error_code;
-napi_status error_code;
+  const char* error_message;
+  void* engine_reserved;
+  uint32_t engine_error_code;
+  napi_status error_code;
 } napi_extended_error_info;
-
 ```
 
 -   `error_message`: UTF8-encoded string containing a VM-neutral description of the error.
@@ -6514,12 +6415,10 @@ Added in: v10.6.0 N-API version: 4
 A value to be given to `napi_release_threadsafe_function()` to indicate whether the thread-safe function is to be closed immediately (`napi_tsfn_abort`) or merely released (`napi_tsfn_release`) and thus available for subsequent use via `napi_acquire_threadsafe_function()` and `napi_call_threadsafe_function()`.
 
 ```
-
 typedef enum {
-napi_tsfn_release,
-napi_tsfn_abort
+  napi_tsfn_release,
+  napi_tsfn_abort
 } napi_threadsafe_function_release_mode;
-
 ```
 
 #### `napi_threadsafe_function_call_mode`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_napi_threadsafe_function_call_mode)
@@ -6529,12 +6428,10 @@ Added in: v10.6.0 N-API version: 4
 A value to be given to `napi_call_threadsafe_function()` to indicate whether the call should block whenever the queue associated with the thread-safe function is full.
 
 ```
-
 typedef enum {
-napi_tsfn_nonblocking,
-napi_tsfn_blocking
+  napi_tsfn_nonblocking,
+  napi_tsfn_blocking
 } napi_threadsafe_function_call_mode;
-
 ```
 
 #### Node-API memory management types[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_node-api-memory-management-types)
@@ -6568,12 +6465,10 @@ Added in: v14.8.0, v12.19.0 N-API version: 8
 A 128-bit value stored as two unsigned 64-bit integers. It serves as a UUID with which JavaScript objects can be "tagged" in order to ensure that they are of a certain type. This is a stronger check than [`napi_instanceof`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_napi_instanceof), because the latter can report a false positive if the object's prototype has been manipulated. Type-tagging is most useful in conjunction with [`napi_wrap`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_napi_wrap) because it ensures that the pointer retrieved from a wrapped object can be safely cast to the native type corresponding to the type tag that had been previously applied to the JavaScript object.
 
 ```
-
 typedef struct {
-uint64_t lower;
-uint64_t upper;
+  uint64_t lower;
+  uint64_t upper;
 } napi_type_tag;
-
 ```
 
 ##### `napi_async_cleanup_hook_handle`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_napi_async_cleanup_hook_handle)
@@ -6597,9 +6492,7 @@ Added in: v8.0.0 N-API version: 1
 Function pointer type for user-provided native functions which are to be exposed to JavaScript via Node-API. Callback functions should satisfy the following signature:
 
 ```
-
-typedef napi_value (\*napi_callback)(napi_env, napi_callback_info);
-
+typedef napi_value (*napi_callback)(napi_env, napi_callback_info);
 ```
 
 Unless for reasons discussed in [Object Lifetime Management](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_object-lifetime-management), creating a handle and/or callback scope inside a `napi_callback` is not necessary.
@@ -6611,11 +6504,9 @@ Added in: v8.0.0 N-API version: 1
 Function pointer type for add-on provided functions that allow the user to be notified when externally-owned data is ready to be cleaned up because the object with which it was associated with, has been garbage-collected. The user must provide a function satisfying the following signature which would get called upon the object's collection. Currently, `napi_finalize` can be used for finding out when objects that have external data are collected.
 
 ```
-
-typedef void (_napi_finalize)(napi_env env,
-void_ finalize_data,
-void\* finalize_hint);
-
+typedef void (*napi_finalize)(napi_env env,
+                              void* finalize_data,
+                              void* finalize_hint);
 ```
 
 Unless for reasons discussed in [Object Lifetime Management](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_object-lifetime-management), creating a handle and/or callback scope inside the function body is not necessary.
@@ -6627,9 +6518,7 @@ Added in: v8.0.0 N-API version: 1
 Function pointer used with functions that support asynchronous operations. Callback functions must satisfy the following signature:
 
 ```
-
-typedef void (_napi_async_execute_callback)(napi_env env, void_ data);
-
+typedef void (*napi_async_execute_callback)(napi_env env, void* data);
 ```
 
 Implementations of this function must avoid making Node-API calls that execute JavaScript or interact with JavaScript objects. Node-API calls should be in the `napi_async_complete_callback` instead. Do not use the `napi_env` parameter as it will likely result in execution of JavaScript.
@@ -6641,11 +6530,9 @@ Added in: v8.0.0 N-API version: 1
 Function pointer used with functions that support asynchronous operations. Callback functions must satisfy the following signature:
 
 ```
-
-typedef void (_napi_async_complete_callback)(napi_env env,
-napi_status status,
-void_ data);
-
+typedef void (*napi_async_complete_callback)(napi_env env,
+                                             napi_status status,
+                                             void* data);
 ```
 
 Unless for reasons discussed in [Object Lifetime Management](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_object-lifetime-management), creating a handle and/or callback scope inside the function body is not necessary.
@@ -6663,12 +6550,10 @@ Node-API sets up the environment prior to calling this callback, so it is suffic
 Callback functions must satisfy the following signature:
 
 ```
-
-typedef void (_napi_threadsafe_function_call_js)(napi_env env,
-napi_value js_callback,
-void_ context,
-void\* data);
-
+typedef void (*napi_threadsafe_function_call_js)(napi_env env,
+                                                 napi_value js_callback,
+                                                 void* context,
+                                                 void* data);
 ```
 
 -   `[in] env`: The environment to use for API calls, or `NULL` if the thread-safe function is being torn down and `data` may need to be freed.
@@ -6687,10 +6572,8 @@ Function pointer used with [`napi_add_async_cleanup_hook`](https://nodejs.org/di
 Callback functions must satisfy the following signature:
 
 ```
-
-typedef void (_napi_async_cleanup_hook)(napi_async_cleanup_hook_handle handle,
-void_ data);
-
+typedef void (*napi_async_cleanup_hook)(napi_async_cleanup_hook_handle handle,
+                                        void* data);
 ```
 
 -   `[in] handle`: The handle that must be passed to [`napi_remove_async_cleanup_hook`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_napi_remove_async_cleanup_hook) after completion of the asynchronous cleanup.
@@ -6719,14 +6602,12 @@ In order to retrieve this information [`napi_get_last_error_info`](https://nodej
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 typedef struct napi_extended_error_info {
-const char* error_message;
-void* engine_reserved;
-uint32_t engine_error_code;
-napi_status error_code;
+  const char* error_message;
+  void* engine_reserved;
+  uint32_t engine_error_code;
+  napi_status error_code;
 };
-
 ```
 
 -   `error_message`: Textual representation of the error that occurred.
@@ -6743,11 +6624,9 @@ Do not rely on the content or format of any of the extended information as it is
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status
 napi_get_last_error_info(napi_env env,
-const napi_extended_error_info\*\* result);
-
+                         const napi_extended_error_info** result);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -6784,17 +6663,13 @@ The following utility functions are also available in case native code needs to 
 The Node.js project is adding error codes to all of the errors generated internally. The goal is for applications to use these error codes for all error checking. The associated error messages will remain, but will only be meant to be used for logging and display with the expectation that the message can change without SemVer applying. In order to support this model with Node-API, both in internal functionality and for module specific functionality (as its good practice), the `throw_` and `create_` functions take an optional code parameter which is the string for the code to be added to the error object. If the optional parameter is `NULL` then no code will be associated with the error. If a code is provided, the name associated with the error is also updated to be:
 
 ```
-
 originalName [code]
-
 ```
 
 where `originalName` is the original name associated with the error and `code` is the code that was provided. For example, if the code is `'ERR_ERROR_1'` and a `TypeError` is being created the name will be:
 
 ```
-
 TypeError [ERR_ERROR_1]
-
 ```
 
 ##### `napi_throw`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_napi_throw)
@@ -6802,9 +6677,7 @@ TypeError [ERR_ERROR_1]
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 NAPI_EXTERN napi_status napi_throw(napi_env env, napi_value error);
-
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -6819,11 +6692,9 @@ This API throws the JavaScript value provided.
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 NAPI_EXTERN napi_status napi_throw_error(napi_env env,
-const char* code,
-const char* msg);
-
+                                         const char* code,
+                                         const char* msg);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -6839,11 +6710,9 @@ This API throws a JavaScript `Error` with the text provided.
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 NAPI_EXTERN napi_status napi_throw_type_error(napi_env env,
-const char* code,
-const char* msg);
-
+                                              const char* code,
+                                              const char* msg);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -6859,11 +6728,9 @@ This API throws a JavaScript `TypeError` with the text provided.
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 NAPI_EXTERN napi_status napi_throw_range_error(napi_env env,
-const char* code,
-const char* msg);
-
+                                               const char* code,
+                                               const char* msg);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -6879,11 +6746,9 @@ This API throws a JavaScript `RangeError` with the text provided.
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 NAPI_EXTERN napi_status napi_is_error(napi_env env,
-napi_value value,
-bool\* result);
-
+                                      napi_value value,
+                                      bool* result);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -6899,12 +6764,10 @@ This API queries a `napi_value` to check if it represents an error object.
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 NAPI_EXTERN napi_status napi_create_error(napi_env env,
-napi_value code,
-napi_value msg,
-napi_value\* result);
-
+                                          napi_value code,
+                                          napi_value msg,
+                                          napi_value* result);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -6921,12 +6784,10 @@ This API returns a JavaScript `Error` with the text provided.
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 NAPI_EXTERN napi_status napi_create_type_error(napi_env env,
-napi_value code,
-napi_value msg,
-napi_value\* result);
-
+                                               napi_value code,
+                                               napi_value msg,
+                                               napi_value* result);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -6943,12 +6804,10 @@ This API returns a JavaScript `TypeError` with the text provided.
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 NAPI_EXTERN napi_status napi_create_range_error(napi_env env,
-napi_value code,
-napi_value msg,
-napi_value\* result);
-
+                                                napi_value code,
+                                                napi_value msg,
+                                                napi_value* result);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -6965,10 +6824,8 @@ This API returns a JavaScript `RangeError` with the text provided.
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_get_and_clear_last_exception(napi_env env,
-napi_value\* result);
-
+                                              napi_value* result);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -6983,9 +6840,7 @@ This API can be called even if there is a pending JavaScript exception.
 Added in: v8.0.0 N-API version: 1
 
 ```
-
-napi_status napi_is_exception_pending(napi_env env, bool\* result);
-
+napi_status napi_is_exception_pending(napi_env env, bool* result);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -7000,9 +6855,7 @@ This API can be called even if there is a pending JavaScript exception.
 Added in: v9.10.0 N-API version: 3
 
 ```
-
 napi_status napi_fatal_exception(napi_env env, napi_value err);
-
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -7019,12 +6872,10 @@ In the event of an unrecoverable error in a native module, a fatal error can be 
 Added in: v8.2.0 N-API version: 1
 
 ```
-
 NAPI_NO_RETURN void napi_fatal_error(const char* location,
-size_t location_len,
-const char* message,
-size_t message_len);
-
+                                     size_t location_len,
+                                     const char* message,
+                                     size_t message_len);
 ```
 
 -   `[in] location`: Optional location at which the error occurred.
@@ -7049,16 +6900,14 @@ In many cases, however, it is necessary that the handles remain valid for either
 It is often necessary to make the lifespan of handles shorter than the lifespan of a native method. For example, consider a native method that has a loop which iterates through the elements in a large array:
 
 ```
-
 for (int i = 0; i < 1000000; i++) {
-napi_value result;
-napi_status status = napi_get_element(env, object, i, &result);
-if (status != napi_ok) {
-break;
+  napi_value result;
+  napi_status status = napi_get_element(env, object, i, &result);
+  if (status != napi_ok) {
+    break;
+  }
+  
 }
-
-}
-
 ```
 
 This would result in a large number of handles being created, consuming substantial resources. In addition, even though the native code could only use the most recent handle, all of the associated objects would also be kept alive since they all share the same scope.
@@ -7070,25 +6919,23 @@ Node-API only supports a single nested hierarchy of scopes. There is only one ac
 Taking the earlier example, adding calls to [`napi_open_handle_scope`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_napi_open_handle_scope) and [`napi_close_handle_scope`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_napi_close_handle_scope) would ensure that at most a single handle is valid throughout the execution of the loop:
 
 ```
-
 for (int i = 0; i < 1000000; i++) {
-napi_handle_scope scope;
-napi_status status = napi_open_handle_scope(env, &scope);
-if (status != napi_ok) {
-break;
+  napi_handle_scope scope;
+  napi_status status = napi_open_handle_scope(env, &scope);
+  if (status != napi_ok) {
+    break;
+  }
+  napi_value result;
+  status = napi_get_element(env, object, i, &result);
+  if (status != napi_ok) {
+    break;
+  }
+  
+  status = napi_close_handle_scope(env, scope);
+  if (status != napi_ok) {
+    break;
+  }
 }
-napi_value result;
-status = napi_get_element(env, object, i, &result);
-if (status != napi_ok) {
-break;
-}
-
-status = napi_close_handle_scope(env, scope);
-if (status != napi_ok) {
-break;
-}
-}
-
 ```
 
 When nesting scopes, there are cases where a handle from an inner scope needs to live beyond the lifespan of that scope. Node-API supports an 'escapable scope' in order to support this case. An escapable scope allows one handle to be 'promoted' so that it 'escapes' the current scope and the lifespan of the handle changes from the current scope to that of the outer scope.
@@ -7102,10 +6949,8 @@ The request to promote a handle is made through [`napi_escape_handle`](https://n
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 NAPI_EXTERN napi_status napi_open_handle_scope(napi_env env,
-napi_handle_scope\* result);
-
+                                               napi_handle_scope* result);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -7120,10 +6965,8 @@ This API opens a new scope.
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 NAPI_EXTERN napi_status napi_close_handle_scope(napi_env env,
-napi_handle_scope scope);
-
+                                                napi_handle_scope scope);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -7140,11 +6983,9 @@ This API can be called even if there is a pending JavaScript exception.
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 NAPI_EXTERN napi_status
-napi_open_escapable_handle_scope(napi_env env,
-napi_handle_scope\* result);
-
+    napi_open_escapable_handle_scope(napi_env env,
+                                     napi_handle_scope* result);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -7159,11 +7000,9 @@ This API opens a new scope from which one object can be promoted to the outer sc
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 NAPI_EXTERN napi_status
-napi_close_escapable_handle_scope(napi_env env,
-napi_handle_scope scope);
-
+    napi_close_escapable_handle_scope(napi_env env,
+                                      napi_handle_scope scope);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -7180,12 +7019,10 @@ This API can be called even if there is a pending JavaScript exception.
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_escape_handle(napi_env env,
-napi_escapable_handle_scope scope,
-napi_value escapee,
-napi_value\* result);
-
+                               napi_escapable_handle_scope scope,
+                               napi_value escapee,
+                               napi_value* result);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -7216,12 +7053,10 @@ There can be multiple persistent references created which refer to the same obje
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 NAPI_EXTERN napi_status napi_create_reference(napi_env env,
-napi_value value,
-uint32_t initial_refcount,
-napi_ref\* result);
-
+                                              napi_value value,
+                                              uint32_t initial_refcount,
+                                              napi_ref* result);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -7238,9 +7073,7 @@ This API creates a new reference with the specified reference count to the `Obje
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 NAPI_EXTERN napi_status napi_delete_reference(napi_env env, napi_ref ref);
-
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -7257,11 +7090,9 @@ This API can be called even if there is a pending JavaScript exception.
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 NAPI_EXTERN napi_status napi_reference_ref(napi_env env,
-napi_ref ref,
-uint32_t\* result);
-
+                                           napi_ref ref,
+                                           uint32_t* result);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -7277,11 +7108,9 @@ This API increments the reference count for the reference passed in and returns 
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 NAPI_EXTERN napi_status napi_reference_unref(napi_env env,
-napi_ref ref,
-uint32_t\* result);
-
+                                             napi_ref ref,
+                                             uint32_t* result);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -7297,11 +7126,9 @@ This API decrements the reference count for the reference passed in and returns 
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 NAPI_EXTERN napi_status napi_get_reference_value(napi_env env,
-napi_ref ref,
-napi_value\* result);
-
+                                                 napi_ref ref,
+                                                 napi_value* result);
 ```
 
 the `napi_value passed` in or out of these methods is a handle to the object to which the reference is related.
@@ -7325,11 +7152,9 @@ Node-API provides functions for registering and un-registering such callbacks. W
 Added in: v10.2.0 N-API version: 3
 
 ```
-
 NODE_EXTERN napi_status napi_add_env_cleanup_hook(napi_env env,
-void (_fun)(void_ arg),
-void\* arg);
-
+                                                  void (*fun)(void* arg),
+                                                  void* arg);
 ```
 
 Registers `fun` as a function to be run with the `arg` parameter once the current Node.js environment exits.
@@ -7347,11 +7172,9 @@ For asynchronous cleanup, [`napi_add_async_cleanup_hook`](https://nodejs.org/dis
 Added in: v10.2.0 N-API version: 3
 
 ```
-
 NAPI_EXTERN napi_status napi_remove_env_cleanup_hook(napi_env env,
-void (_fun)(void_ arg),
-void\* arg);
-
+                                                     void (*fun)(void* arg),
+                                                     void* arg);
 ```
 
 Unregisters `fun` as a function to be run with the `arg` parameter once the current Node.js environment exits. Both the argument and the function value need to be exact matches.
@@ -7361,13 +7184,11 @@ The function must have originally been registered with `napi_add_env_cleanup_hoo
 ##### `napi_add_async_cleanup_hook`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_napi_add_async_cleanup_hook)
 
 ```
-
 NAPI_EXTERN napi_status napi_add_async_cleanup_hook(
-napi_env env,
-napi_async_cleanup_hook hook,
-void* arg,
-napi_async_cleanup_hook_handle* remove_handle);
-
+    napi_env env,
+    napi_async_cleanup_hook hook,
+    void* arg,
+    napi_async_cleanup_hook_handle* remove_handle);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -7386,10 +7207,8 @@ If `remove_handle` is not `NULL`, an opaque value will be stored in it that must
 ##### `napi_remove_async_cleanup_hook`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_napi_remove_async_cleanup_hook)
 
 ```
-
 NAPI_EXTERN napi_status napi_remove_async_cleanup_hook(
-napi_async_cleanup_hook_handle remove_handle);
-
+    napi_async_cleanup_hook_handle remove_handle);
 ```
 
 -   `[in] remove_handle`: The handle to an asynchronous cleanup hook that was created with [`napi_add_async_cleanup_hook`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_napi_add_async_cleanup_hook).
@@ -7401,17 +7220,13 @@ Unregisters the cleanup hook corresponding to `remove_handle`. This will prevent
 Node-API modules are registered in a manner similar to other modules except that instead of using the `NODE_MODULE` macro the following is used:
 
 ```
-
 NAPI_MODULE(NODE_GYP_MODULE_NAME, Init)
-
 ```
 
 The next difference is the signature for the `Init` method. For a Node-API module it is as follows:
 
 ```
-
 napi_value Init(napi_env env, napi_value exports);
-
 ```
 
 The return value from `Init` is treated as the `exports` object for the module. The `Init` method is passed an empty object via the `exports` parameter as a convenience. If `Init` returns `NULL`, the parameter passed as `exports` is exported by the module. Node-API modules cannot modify the `module` object but can specify anything as the `exports` property of the module.
@@ -7419,38 +7234,34 @@ The return value from `Init` is treated as the `exports` object for the module. 
 To add the method `hello` as a function so that it can be called as a method provided by the addon:
 
 ```
-
 napi_value Init(napi_env env, napi_value exports) {
-napi_status status;
-napi_property_descriptor desc = {
-"hello",
-NULL,
-Method,
-NULL,
-NULL,
-NULL,
-napi_writable | napi_enumerable | napi_configurable,
-NULL
-};
-status = napi_define_properties(env, exports, 1, &desc);
-if (status != napi_ok) return NULL;
-return exports;
+  napi_status status;
+  napi_property_descriptor desc = {
+    "hello",
+    NULL,
+    Method,
+    NULL,
+    NULL,
+    NULL,
+    napi_writable | napi_enumerable | napi_configurable,
+    NULL
+  };
+  status = napi_define_properties(env, exports, 1, &desc);
+  if (status != napi_ok) return NULL;
+  return exports;
 }
-
 ```
 
 To set a function to be returned by the `require()` for the addon:
 
 ```
-
 napi_value Init(napi_env env, napi_value exports) {
-napi_value method;
-napi_status status;
-status = napi_create_function(env, "exports", NAPI_AUTO_LENGTH, Method, NULL, &method);
-if (status != napi_ok) return NULL;
-return method;
+  napi_value method;
+  napi_status status;
+  status = napi_create_function(env, "exports", NAPI_AUTO_LENGTH, Method, NULL, &method);
+  if (status != napi_ok) return NULL;
+  return method;
 }
-
 ```
 
 To define a class so that new instances can be created (often used with [Object wrap](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_object-wrap)):
@@ -7458,46 +7269,43 @@ To define a class so that new instances can be created (often used with [Object 
 ```
 
 napi_value Init(napi_env env, napi_value exports) {
-napi_status status;
-napi_property_descriptor properties[] = {
-{ "value", NULL, NULL, GetValue, SetValue, NULL, napi_writable | napi_configurable, NULL },
-DECLARE_NAPI_METHOD("plusOne", PlusOne),
-DECLARE_NAPI_METHOD("multiply", Multiply),
-};
+  napi_status status;
+  napi_property_descriptor properties[] = {
+    { "value", NULL, NULL, GetValue, SetValue, NULL, napi_writable | napi_configurable, NULL },
+    DECLARE_NAPI_METHOD("plusOne", PlusOne),
+    DECLARE_NAPI_METHOD("multiply", Multiply),
+  };
 
-napi_value cons;
-status =
-napi_define_class(env, "MyObject", New, NULL, 3, properties, &cons);
-if (status != napi_ok) return NULL;
+  napi_value cons;
+  status =
+      napi_define_class(env, "MyObject", New, NULL, 3, properties, &cons);
+  if (status != napi_ok) return NULL;
 
-status = napi_create_reference(env, cons, 1, &constructor);
-if (status != napi_ok) return NULL;
+  status = napi_create_reference(env, cons, 1, &constructor);
+  if (status != napi_ok) return NULL;
 
-status = napi_set_named_property(env, exports, "MyObject", cons);
-if (status != napi_ok) return NULL;
+  status = napi_set_named_property(env, exports, "MyObject", cons);
+  if (status != napi_ok) return NULL;
 
-return exports;
+  return exports;
 }
-
 ```
 
 You can also use the `NAPI_MODULE_INIT` macro, which acts as a shorthand for `NAPI_MODULE` and defining an `Init` function:
 
 ```
-
 NAPI_MODULE_INIT() {
-napi_value answer;
-napi_status result;
+  napi_value answer;
+  napi_status result;
 
-status = napi_create_int64(env, 42, &answer);
-if (status != napi_ok) return NULL;
+  status = napi_create_int64(env, 42, &answer);
+  if (status != napi_ok) return NULL;
 
-status = napi_set_named_property(env, exports, "answer", answer);
-if (status != napi_ok) return NULL;
+  status = napi_set_named_property(env, exports, "answer", answer);
+  if (status != napi_ok) return NULL;
 
-return exports;
+  return exports;
 }
-
 ```
 
 All Node-API addons are context-aware, meaning they may be loaded multiple times. There are a few design considerations when declaring such a module. The documentation on [context-aware addons](https://nodejs.org/dist/v16.13.1/docs/api/all.html#addons_context-aware-addons) provides more details.
@@ -7528,12 +7336,10 @@ Node-API values are represented by the type `napi_value`. Any Node-API call that
 Added in: v13.7.0, v12.17.0, v10.20.0 N-API version: 6
 
 ```
-
 typedef enum {
-napi_key_include_prototypes,
-napi_key_own_only
+  napi_key_include_prototypes,
+  napi_key_own_only
 } napi_key_collection_mode;
-
 ```
 
 Describes the `Keys/Properties` filter enums:
@@ -7547,16 +7353,14 @@ Describes the `Keys/Properties` filter enums:
 Added in: v13.7.0, v12.17.0, v10.20.0 N-API version: 6
 
 ```
-
 typedef enum {
-napi_key_all_properties = 0,
-napi_key_writable = 1,
-napi_key_enumerable = 1 << 1,
-napi_key_configurable = 1 << 2,
-napi_key_skip_strings = 1 << 3,
-napi_key_skip_symbols = 1 << 4
+  napi_key_all_properties = 0,
+  napi_key_writable = 1,
+  napi_key_enumerable = 1 << 1,
+  napi_key_configurable = 1 << 2,
+  napi_key_skip_strings = 1 << 3,
+  napi_key_skip_symbols = 1 << 4
 } napi_key_filter;
-
 ```
 
 Property filter bits. They can be or'ed to build a composite filter.
@@ -7566,12 +7370,10 @@ Property filter bits. They can be or'ed to build a composite filter.
 Added in: v13.7.0, v12.17.0, v10.20.0 N-API version: 6
 
 ```
-
 typedef enum {
-napi_key_keep_numbers,
-napi_key_numbers_to_strings
+  napi_key_keep_numbers,
+  napi_key_numbers_to_strings
 } napi_key_conversion;
-
 ```
 
 `napi_key_numbers_to_strings` will convert integer indices to strings. `napi_key_keep_numbers` will return numbers for integer indices.
@@ -7579,21 +7381,19 @@ napi_key_numbers_to_strings
 ##### `napi_valuetype`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_napi_valuetype)
 
 ```
-
 typedef enum {
-
-napi_undefined,
-napi_null,
-napi_boolean,
-napi_number,
-napi_string,
-napi_symbol,
-napi_object,
-napi_function,
-napi_external,
-napi_bigint,
+  
+  napi_undefined,
+  napi_null,
+  napi_boolean,
+  napi_number,
+  napi_string,
+  napi_symbol,
+  napi_object,
+  napi_function,
+  napi_external,
+  napi_bigint,
 } napi_valuetype;
-
 ```
 
 Describes the type of a `napi_value`. This generally corresponds to the types described in [Section 6.1](https://tc39.github.io/ecma262/#sec-ecmascript-language-types) of the ECMAScript Language Specification. In addition to types in that section, `napi_valuetype` can also represent `Function`s and `Object`s with external data.
@@ -7603,21 +7403,19 @@ A JavaScript value of type `napi_external` appears in JavaScript as a plain obje
 ##### `napi_typedarray_type`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_napi_typedarray_type)
 
 ```
-
 typedef enum {
-napi_int8_array,
-napi_uint8_array,
-napi_uint8_clamped_array,
-napi_int16_array,
-napi_uint16_array,
-napi_int32_array,
-napi_uint32_array,
-napi_float32_array,
-napi_float64_array,
-napi_bigint64_array,
-napi_biguint64_array,
+  napi_int8_array,
+  napi_uint8_array,
+  napi_uint8_clamped_array,
+  napi_int16_array,
+  napi_uint16_array,
+  napi_int32_array,
+  napi_uint32_array,
+  napi_float32_array,
+  napi_float64_array,
+  napi_bigint64_array,
+  napi_biguint64_array,
 } napi_typedarray_type;
-
 ```
 
 This represents the underlying binary scalar datatype of the `TypedArray`. Elements of this enum correspond to [Section 22.2](https://tc39.github.io/ecma262/#sec-typedarray-objects) of the [ECMAScript Language Specification](https://tc39.github.io/ecma262/).
@@ -7629,9 +7427,7 @@ This represents the underlying binary scalar datatype of the `TypedArray`. Eleme
 Added in: v8.0.0 N-API version: 1
 
 ```
-
-napi_status napi_create_array(napi_env env, napi_value\* result)
-
+napi_status napi_create_array(napi_env env, napi_value* result)
 ```
 
 -   `[in] env`: The environment that the Node-API call is invoked under.
@@ -7646,11 +7442,9 @@ This API returns a Node-API value corresponding to a JavaScript `Array` type. Ja
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_create_array_with_length(napi_env env,
-size_t length,
-napi_value\* result)
-
+                                          size_t length,
+                                          napi_value* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -7668,12 +7462,10 @@ JavaScript arrays are described in [Section 22.1](https://tc39.github.io/ecma262
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_create_arraybuffer(napi_env env,
-size_t byte_length,
-void\*_ data,
-napi_value_ result)
-
+                                    size_t byte_length,
+                                    void** data,
+                                    napi_value* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -7692,12 +7484,10 @@ JavaScript `ArrayBuffer` objects are described in [Section 24.1](https://tc39.gi
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_create_buffer(napi_env env,
-size_t size,
-void\*_ data,
-napi_value_ result)
-
+                               size_t size,
+                               void** data,
+                               napi_value* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -7714,13 +7504,11 @@ This API allocates a `node::Buffer` object. While this is still a fully-supporte
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_create_buffer_copy(napi_env env,
-size_t length,
-const void* data,
-void\*\* result_data,
-napi_value* result)
-
+                                    size_t length,
+                                    const void* data,
+                                    void** result_data,
+                                    napi_value* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -7738,11 +7526,9 @@ This API allocates a `node::Buffer` object and initializes it with data copied f
 Added in: v11.11.0, v10.17.0 N-API version: 5
 
 ```
-
 napi_status napi_create_date(napi_env env,
-double time,
-napi_value\* result);
-
+                             double time,
+                             napi_value* result);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -7762,13 +7548,11 @@ JavaScript `Date` objects are described in [Section 20.3](https://tc39.github.io
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_create_external(napi_env env,
-void* data,
-napi_finalize finalize_cb,
-void* finalize_hint,
-napi_value\* result)
-
+                                 void* data,
+                                 napi_finalize finalize_cb,
+                                 void* finalize_hint,
+                                 napi_value* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -7794,15 +7578,13 @@ The created value is not an object, and therefore does not support additional pr
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status
 napi_create_external_arraybuffer(napi_env env,
-void* external_data,
-size_t byte_length,
-napi_finalize finalize_cb,
-void* finalize_hint,
-napi_value\* result)
-
+                                 void* external_data,
+                                 size_t byte_length,
+                                 napi_finalize finalize_cb,
+                                 void* finalize_hint,
+                                 napi_value* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -7829,14 +7611,12 @@ JavaScript `ArrayBuffer`s are described in [Section 24.1](https://tc39.github.io
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_create_external_buffer(napi_env env,
-size_t length,
-void* data,
-napi_finalize finalize_cb,
-void* finalize_hint,
-napi_value\* result)
-
+                                        size_t length,
+                                        void* data,
+                                        napi_finalize finalize_cb,
+                                        void* finalize_hint,
+                                        napi_value* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -7863,9 +7643,7 @@ For Node.js >=4 `Buffers` are `Uint8Array`s.
 Added in: v8.0.0 N-API version: 1
 
 ```
-
-napi_status napi_create_object(napi_env env, napi_value\* result)
-
+napi_status napi_create_object(napi_env env, napi_value* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -7882,11 +7660,9 @@ The JavaScript `Object` type is described in [Section 6.1.7](https://tc39.github
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_create_symbol(napi_env env,
-napi_value description,
-napi_value\* result)
-
+                               napi_value description,
+                               napi_value* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -7904,14 +7680,12 @@ The JavaScript `symbol` type is described in [Section 19.4](https://tc39.github.
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_create_typedarray(napi_env env,
-napi_typedarray_type type,
-size_t length,
-napi_value arraybuffer,
-size_t byte_offset,
-napi_value\* result)
-
+                                   napi_typedarray_type type,
+                                   size_t length,
+                                   napi_value arraybuffer,
+                                   size_t byte_offset,
+                                   napi_value* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -7934,13 +7708,11 @@ JavaScript `TypedArray` objects are described in [Section 22.2](https://tc39.git
 Added in: v8.3.0 N-API version: 1
 
 ```
-
 napi_status napi_create_dataview(napi_env env,
-size_t byte_length,
-napi_value arraybuffer,
-size_t byte_offset,
-napi_value\* result)
-
+                                 size_t byte_length,
+                                 napi_value arraybuffer,
+                                 size_t byte_offset,
+                                 napi_value* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -7964,9 +7736,7 @@ JavaScript `DataView` objects are described in [Section 24.3](https://tc39.githu
 Added in: v8.4.0 N-API version: 1
 
 ```
-
-napi_status napi_create_int32(napi_env env, int32_t value, napi_value\* result)
-
+napi_status napi_create_int32(napi_env env, int32_t value, napi_value* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -7984,9 +7754,7 @@ The JavaScript `number` type is described in [Section 6.1.6](https://tc39.github
 Added in: v8.4.0 N-API version: 1
 
 ```
-
-napi_status napi_create_uint32(napi_env env, uint32_t value, napi_value\* result)
-
+napi_status napi_create_uint32(napi_env env, uint32_t value, napi_value* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8004,9 +7772,7 @@ The JavaScript `number` type is described in [Section 6.1.6](https://tc39.github
 Added in: v8.4.0 N-API version: 1
 
 ```
-
-napi_status napi_create_int64(napi_env env, int64_t value, napi_value\* result)
-
+napi_status napi_create_int64(napi_env env, int64_t value, napi_value* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8024,9 +7790,7 @@ The JavaScript `number` type is described in [Section 6.1.6](https://tc39.github
 Added in: v8.4.0 N-API version: 1
 
 ```
-
-napi_status napi_create_double(napi_env env, double value, napi_value\* result)
-
+napi_status napi_create_double(napi_env env, double value, napi_value* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8044,11 +7808,9 @@ The JavaScript `number` type is described in [Section 6.1.6](https://tc39.github
 Added in: v10.7.0 N-API version: 6
 
 ```
-
 napi_status napi_create_bigint_int64(napi_env env,
-int64_t value,
-napi_value\* result);
-
+                                     int64_t value,
+                                     napi_value* result);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8064,11 +7826,9 @@ This API converts the C `int64_t` type to the JavaScript `BigInt` type.
 Added in: v10.7.0 N-API version: 6
 
 ```
-
 napi_status napi_create_bigint_uint64(napi_env env,
-uint64_t value,
-napi_value\* result);
-
+                                      uint64_t value,
+                                      napi_value* result);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8084,13 +7844,11 @@ This API converts the C `uint64_t` type to the JavaScript `BigInt` type.
 Added in: v10.7.0 N-API version: 6
 
 ```
-
 napi_status napi_create_bigint_words(napi_env env,
-int sign_bit,
-size_t word_count,
-const uint64_t* words,
-napi_value* result);
-
+                                     int sign_bit,
+                                     size_t word_count,
+                                     const uint64_t* words,
+                                     napi_value* result);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8110,12 +7868,10 @@ The resulting `BigInt` is calculated as: (–1)`sign_bit` (`words[0]` × (264)0 
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_create_string_latin1(napi_env env,
-const char* str,
-size_t length,
-napi_value* result);
-
+                                      const char* str,
+                                      size_t length,
+                                      napi_value* result);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8134,12 +7890,10 @@ The JavaScript `string` type is described in [Section 6.1.4](https://tc39.github
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_create_string_utf16(napi_env env,
-const char16_t* str,
-size_t length,
-napi_value* result)
-
+                                     const char16_t* str,
+                                     size_t length,
+                                     napi_value* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8158,12 +7912,10 @@ The JavaScript `string` type is described in [Section 6.1.4](https://tc39.github
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_create_string_utf8(napi_env env,
-const char* str,
-size_t length,
-napi_value* result)
-
+                                    const char* str,
+                                    size_t length,
+                                    napi_value* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8184,11 +7936,9 @@ The JavaScript `string` type is described in [Section 6.1.4](https://tc39.github
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_get_array_length(napi_env env,
-napi_value value,
-uint32_t\* result)
-
+                                  napi_value value,
+                                  uint32_t* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8206,12 +7956,10 @@ This API returns the length of an array.
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_get_arraybuffer_info(napi_env env,
-napi_value arraybuffer,
-void\*_ data,
-size_t_ byte_length)
-
+                                      napi_value arraybuffer,
+                                      void** data,
+                                      size_t* byte_length)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8230,12 +7978,10 @@ _WARNING_: Use caution while using this API. The lifetime of the underlying data
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_get_buffer_info(napi_env env,
-napi_value value,
-void\*_ data,
-size_t_ length)
-
+                                 napi_value value,
+                                 void** data,
+                                 size_t* length)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8254,11 +8000,9 @@ _Warning_: Use caution while using this API since the underlying data buffer's l
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_get_prototype(napi_env env,
-napi_value object,
-napi_value\* result)
-
+                               napi_value object,
+                               napi_value* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8272,15 +8016,13 @@ Returns `napi_ok` if the API succeeded.
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_get_typedarray_info(napi_env env,
-napi_value typedarray,
-napi_typedarray_type* type,
-size_t* length,
-void\*_ data,
-napi_value_ arraybuffer,
-size_t\* byte_offset)
-
+                                     napi_value typedarray,
+                                     napi_typedarray_type* type,
+                                     size_t* length,
+                                     void** data,
+                                     napi_value* arraybuffer,
+                                     size_t* byte_offset)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8304,14 +8046,12 @@ _Warning_: Use caution while using this API since the underlying data buffer is 
 Added in: v8.3.0 N-API version: 1
 
 ```
-
 napi_status napi_get_dataview_info(napi_env env,
-napi_value dataview,
-size_t* byte_length,
-void\*\* data,
-napi_value* arraybuffer,
-size_t\* byte_offset)
-
+                                   napi_value dataview,
+                                   size_t* byte_length,
+                                   void** data,
+                                   napi_value* arraybuffer,
+                                   size_t* byte_offset)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8332,11 +8072,9 @@ This API returns various properties of a `DataView`.
 Added in: v11.11.0, v10.17.0 N-API version: 5
 
 ```
-
 napi_status napi_get_date_value(napi_env env,
-napi_value value,
-double\* result)
-
+                                napi_value value,
+                                double* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8354,9 +8092,7 @@ This API returns the C double primitive of time value for the given JavaScript `
 Added in: v8.0.0 N-API version: 1
 
 ```
-
-napi_status napi_get_value_bool(napi_env env, napi_value value, bool\* result)
-
+napi_status napi_get_value_bool(napi_env env, napi_value value, bool* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8372,11 +8108,9 @@ This API returns the C boolean primitive equivalent of the given JavaScript `Boo
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_get_value_double(napi_env env,
-napi_value value,
-double\* result)
-
+                                  napi_value value,
+                                  double* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8392,12 +8126,10 @@ This API returns the C double primitive equivalent of the given JavaScript `numb
 Added in: v10.7.0 N-API version: 6
 
 ```
-
 napi_status napi_get_value_bigint_int64(napi_env env,
-napi_value value,
-int64_t* result,
-bool* lossless);
-
+                                        napi_value value,
+                                        int64_t* result,
+                                        bool* lossless);
 ```
 
 -   `[in] env`: The environment that the API is invoked under
@@ -8414,12 +8146,10 @@ This API returns the C `int64_t` primitive equivalent of the given JavaScript `B
 Added in: v10.7.0 N-API version: 6
 
 ```
-
 napi_status napi_get_value_bigint_uint64(napi_env env,
-napi_value value,
-uint64_t* result,
-bool* lossless);
-
+                                        napi_value value,
+                                        uint64_t* result,
+                                        bool* lossless);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8436,13 +8166,11 @@ This API returns the C `uint64_t` primitive equivalent of the given JavaScript `
 Added in: v10.7.0 N-API version: 6
 
 ```
-
 napi_status napi_get_value_bigint_words(napi_env env,
-napi_value value,
-int* sign_bit,
-size_t* word_count,
-uint64_t\* words);
-
+                                        napi_value value,
+                                        int* sign_bit,
+                                        size_t* word_count,
+                                        uint64_t* words);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8460,11 +8188,9 @@ This API converts a single `BigInt` value into a sign bit, 64-bit little-endian 
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_get_value_external(napi_env env,
-napi_value value,
-void\*\* result)
-
+                                    napi_value value,
+                                    void** result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8480,11 +8206,9 @@ This API retrieves the external data pointer that was previously passed to `napi
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_get_value_int32(napi_env env,
-napi_value value,
-int32_t\* result)
-
+                                 napi_value value,
+                                 int32_t* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8504,11 +8228,9 @@ Non-finite number values (`NaN`, `+Infinity`, or `-Infinity`) set the result to 
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_get_value_int64(napi_env env,
-napi_value value,
-int64_t\* result)
-
+                                 napi_value value,
+                                 int64_t* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8528,13 +8250,11 @@ Non-finite number values (`NaN`, `+Infinity`, or `-Infinity`) set the result to 
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_get_value_string_latin1(napi_env env,
-napi_value value,
-char* buf,
-size_t bufsize,
-size_t* result)
-
+                                         napi_value value,
+                                         char* buf,
+                                         size_t bufsize,
+                                         size_t* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8552,13 +8272,11 @@ This API returns the ISO-8859-1-encoded string corresponding the value passed in
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_get_value_string_utf8(napi_env env,
-napi_value value,
-char* buf,
-size_t bufsize,
-size_t* result)
-
+                                       napi_value value,
+                                       char* buf,
+                                       size_t bufsize,
+                                       size_t* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8576,13 +8294,11 @@ This API returns the UTF8-encoded string corresponding the value passed in.
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_get_value_string_utf16(napi_env env,
-napi_value value,
-char16_t* buf,
-size_t bufsize,
-size_t* result)
-
+                                        napi_value value,
+                                        char16_t* buf,
+                                        size_t bufsize,
+                                        size_t* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8600,11 +8316,9 @@ This API returns the UTF16-encoded string corresponding the value passed in.
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_get_value_uint32(napi_env env,
-napi_value value,
-uint32_t\* result)
-
+                                  napi_value value,
+                                  uint32_t* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8622,9 +8336,7 @@ This API returns the C primitive equivalent of the given `napi_value` as a `uint
 Added in: v8.0.0 N-API version: 1
 
 ```
-
-napi_status napi_get_boolean(napi_env env, bool value, napi_value\* result)
-
+napi_status napi_get_boolean(napi_env env, bool value, napi_value* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8640,9 +8352,7 @@ This API is used to return the JavaScript singleton object that is used to repre
 Added in: v8.0.0 N-API version: 1
 
 ```
-
-napi_status napi_get_global(napi_env env, napi_value\* result)
-
+napi_status napi_get_global(napi_env env, napi_value* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8657,9 +8367,7 @@ This API returns the `global` object.
 Added in: v8.0.0 N-API version: 1
 
 ```
-
-napi_status napi_get_null(napi_env env, napi_value\* result)
-
+napi_status napi_get_null(napi_env env, napi_value* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8674,9 +8382,7 @@ This API returns the `null` object.
 Added in: v8.0.0 N-API version: 1
 
 ```
-
-napi_status napi_get_undefined(napi_env env, napi_value\* result)
-
+napi_status napi_get_undefined(napi_env env, napi_value* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8701,11 +8407,9 @@ These APIs support doing one of the following:
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_coerce_to_bool(napi_env env,
-napi_value value,
-napi_value\* result)
-
+                                napi_value value,
+                                napi_value* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8721,11 +8425,9 @@ This API implements the abstract operation `ToBoolean()` as defined in [Section 
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_coerce_to_number(napi_env env,
-napi_value value,
-napi_value\* result)
-
+                                  napi_value value,
+                                  napi_value* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8741,11 +8443,9 @@ This API implements the abstract operation `ToNumber()` as defined in [Section 7
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_coerce_to_object(napi_env env,
-napi_value value,
-napi_value\* result)
-
+                                  napi_value value,
+                                  napi_value* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8761,11 +8461,9 @@ This API implements the abstract operation `ToObject()` as defined in [Section 7
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_coerce_to_string(napi_env env,
-napi_value value,
-napi_value\* result)
-
+                                  napi_value value,
+                                  napi_value* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8781,9 +8479,7 @@ This API implements the abstract operation `ToString()` as defined in [Section 7
 Added in: v8.0.0 N-API version: 1
 
 ```
-
-napi_status napi_typeof(napi_env env, napi_value value, napi_valuetype\* result)
-
+napi_status napi_typeof(napi_env env, napi_value value, napi_valuetype* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8806,12 +8502,10 @@ If `value` has a type that is invalid, an error is returned.
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_instanceof(napi_env env,
-napi_value object,
-napi_value constructor,
-bool\* result)
-
+                            napi_value object,
+                            napi_value constructor,
+                            bool* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8828,9 +8522,7 @@ This API represents invoking the `instanceof` Operator on the object as defined 
 Added in: v8.0.0 N-API version: 1
 
 ```
-
-napi_status napi_is_array(napi_env env, napi_value value, bool\* result)
-
+napi_status napi_is_array(napi_env env, napi_value value, bool* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8846,9 +8538,7 @@ This API represents invoking the `IsArray` operation on the object as defined in
 Added in: v8.0.0 N-API version: 1
 
 ```
-
-napi_status napi_is_arraybuffer(napi_env env, napi_value value, bool\* result)
-
+napi_status napi_is_arraybuffer(napi_env env, napi_value value, bool* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8864,9 +8554,7 @@ This API checks if the `Object` passed in is an array buffer.
 Added in: v8.0.0 N-API version: 1
 
 ```
-
-napi_status napi_is_buffer(napi_env env, napi_value value, bool\* result)
-
+napi_status napi_is_buffer(napi_env env, napi_value value, bool* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8882,9 +8570,7 @@ This API checks if the `Object` passed in is a buffer.
 Added in: v11.11.0, v10.17.0 N-API version: 5
 
 ```
-
-napi_status napi_is_date(napi_env env, napi_value value, bool\* result)
-
+napi_status napi_is_date(napi_env env, napi_value value, bool* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8900,9 +8586,7 @@ This API checks if the `Object` passed in is a date.
 Added in: v8.0.0 N-API version: 1
 
 ```
-
-napi_status napi_is_error(napi_env env, napi_value value, bool\* result)
-
+napi_status napi_is_error(napi_env env, napi_value value, bool* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8918,9 +8602,7 @@ This API checks if the `Object` passed in is an `Error`.
 Added in: v8.0.0 N-API version: 1
 
 ```
-
-napi_status napi_is_typedarray(napi_env env, napi_value value, bool\* result)
-
+napi_status napi_is_typedarray(napi_env env, napi_value value, bool* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8936,9 +8618,7 @@ This API checks if the `Object` passed in is a typed array.
 Added in: v8.3.0 N-API version: 1
 
 ```
-
-napi_status napi_is_dataview(napi_env env, napi_value value, bool\* result)
-
+napi_status napi_is_dataview(napi_env env, napi_value value, bool* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8954,12 +8634,10 @@ This API checks if the `Object` passed in is a `DataView`.
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_strict_equals(napi_env env,
-napi_value lhs,
-napi_value rhs,
-bool\* result)
-
+                               napi_value lhs,
+                               napi_value rhs,
+                               bool* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8976,10 +8654,8 @@ This API represents the invocation of the Strict Equality algorithm as defined i
 Added in: v13.0.0, v12.16.0, v10.22.0 N-API version: 7
 
 ```
-
 napi_status napi_detach_arraybuffer(napi_env env,
-napi_value arraybuffer)
-
+                                    napi_value arraybuffer)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -8996,11 +8672,9 @@ This API represents the invocation of the `ArrayBuffer` detach operation as defi
 Added in: v13.3.0, v12.16.0, v10.22.0 N-API version: 7
 
 ```
-
 napi_status napi_is_detached_arraybuffer(napi_env env,
-napi_value arraybuffer,
-bool\* result)
-
+                                         napi_value arraybuffer,
+                                         bool* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -9030,102 +8704,97 @@ The APIs documented in this section provide a simple interface to get and set pr
 For instance, consider the following JavaScript code snippet:
 
 ```
-
 const obj = {};
 obj.myProp = 123;
-
 ```
 
 The equivalent can be done using Node-API values with the following snippet:
 
 ```
-
 napi_status status = napi_generic_failure;
+
 
 napi_value obj, value;
 status = napi_create_object(env, &obj);
 if (status != napi_ok) return status;
 
+
 status = napi_create_int32(env, 123, &value);
 if (status != napi_ok) return status;
 
+
 status = napi_set_named_property(env, obj, "myProp", value);
 if (status != napi_ok) return status;
-
 ```
 
 Indexed properties can be set in a similar manner. Consider the following JavaScript snippet:
 
 ```
-
 const arr = [];
 arr[123] = 'hello';
-
 ```
 
 The equivalent can be done using Node-API values with the following snippet:
 
 ```
-
 napi_status status = napi_generic_failure;
+
 
 napi_value arr, value;
 status = napi_create_array(env, &arr);
 if (status != napi_ok) return status;
 
+
 status = napi_create_string_utf8(env, "hello", NAPI_AUTO_LENGTH, &value);
 if (status != napi_ok) return status;
 
+
 status = napi_set_element(env, arr, 123, value);
 if (status != napi_ok) return status;
-
 ```
 
 Properties can be retrieved using the APIs described in this section. Consider the following JavaScript snippet:
 
 ```
-
 const arr = [];
 const value = arr[123];
-
 ```
 
 The following is the approximate equivalent of the Node-API counterpart:
 
 ```
-
 napi_status status = napi_generic_failure;
+
 
 napi_value arr, value;
 status = napi_create_array(env, &arr);
 if (status != napi_ok) return status;
 
+
 status = napi_get_element(env, arr, 123, &value);
 if (status != napi_ok) return status;
-
 ```
 
 Finally, multiple properties can also be defined on an object for performance reasons. Consider the following JavaScript:
 
 ```
-
 const obj = {};
 Object.defineProperties(obj, {
-'foo': { value: 123, writable: true, configurable: true, enumerable: true },
-'bar': { value: 456, writable: true, configurable: true, enumerable: true }
+  'foo': { value: 123, writable: true, configurable: true, enumerable: true },
+  'bar': { value: 456, writable: true, configurable: true, enumerable: true }
 });
-
 ```
 
 The following is the approximate equivalent of the Node-API counterpart:
 
 ```
-
 napi_status status = napi_status_generic_failure;
+
 
 napi_value obj;
 status = napi_create_object(env, &obj);
 if (status != napi_ok) return status;
+
 
 napi_value fooValue, barValue;
 status = napi_create_int32(env, 123, &fooValue);
@@ -9133,16 +8802,16 @@ if (status != napi_ok) return status;
 status = napi_create_int32(env, 456, &barValue);
 if (status != napi_ok) return status;
 
+
 napi_property_descriptor descriptors[] = {
-{ "foo", NULL, NULL, NULL, NULL, fooValue, napi_writable | napi_configurable, NULL },
-{ "bar", NULL, NULL, NULL, NULL, barValue, napi_writable | napi_configurable, NULL }
+  { "foo", NULL, NULL, NULL, NULL, fooValue, napi_writable | napi_configurable, NULL },
+  { "bar", NULL, NULL, NULL, NULL, barValue, napi_writable | napi_configurable, NULL }
 }
 status = napi_define_properties(env,
-obj,
-sizeof(descriptors) / sizeof(descriptors[0]),
-descriptors);
+                                obj,
+                                sizeof(descriptors) / sizeof(descriptors[0]),
+                                descriptors);
 if (status != napi_ok) return status;
-
 ```
 
 #### Structures[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_structures)
@@ -9150,22 +8819,24 @@ if (status != napi_ok) return status;
 ##### `napi_property_attributes`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_napi_property_attributes)
 
 ```
-
 typedef enum {
-napi_default = 0,
-napi_writable = 1 << 0,
-napi_enumerable = 1 << 1,
-napi_configurable = 1 << 2,
+  napi_default = 0,
+  napi_writable = 1 << 0,
+  napi_enumerable = 1 << 1,
+  napi_configurable = 1 << 2,
 
-napi_static = 1 << 10,
+  
+  
+  napi_static = 1 << 10,
 
-napi_default_method = napi_writable | napi_configurable,
+  
+  napi_default_method = napi_writable | napi_configurable,
 
-napi_default_jsproperty = napi_writable |
-napi_enumerable |
-napi_configurable,
+  
+  napi_default_jsproperty = napi_writable |
+                          napi_enumerable |
+                          napi_configurable,
 } napi_property_attributes;
-
 ```
 
 `napi_property_attributes` are flags used to control the behavior of properties set on a JavaScript object. Other than `napi_static` they correspond to the attributes listed in [Section 6.1.7.1](https://tc39.github.io/ecma262/#table-2) of the [ECMAScript Language Specification](https://tc39.github.io/ecma262/). They can be one or more of the following bitflags:
@@ -9181,21 +8852,19 @@ napi_configurable,
 ##### `napi_property_descriptor`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_napi_property_descriptor)
 
 ```
-
 typedef struct {
+  
+  const char* utf8name;
+  napi_value name;
 
-const char\* utf8name;
-napi_value name;
+  napi_callback method;
+  napi_callback getter;
+  napi_callback setter;
+  napi_value value;
 
-napi_callback method;
-napi_callback getter;
-napi_callback setter;
-napi_value value;
-
-napi_property_attributes attributes;
-void\* data;
+  napi_property_attributes attributes;
+  void* data;
 } napi_property_descriptor;
-
 ```
 
 -   `utf8name`: Optional string describing the key for the property, encoded as UTF8. One of `utf8name` or `name` must be provided for the property.
@@ -9214,11 +8883,9 @@ void\* data;
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_get_property_names(napi_env env,
-napi_value object,
-napi_value\* result);
-
+                                    napi_value object,
+                                    napi_value* result);
 ```
 
 -   `[in] env`: The environment that the Node-API call is invoked under.
@@ -9234,14 +8901,12 @@ This API returns the names of the enumerable properties of `object` as an array 
 Added in: v13.7.0, v12.17.0, v10.20.0 N-API version: 6
 
 ```
-
 napi_get_all_property_names(napi_env env,
-napi_value object,
-napi_key_collection_mode key_mode,
-napi_key_filter key_filter,
-napi_key_conversion key_conversion,
-napi_value\* result);
-
+                            napi_value object,
+                            napi_key_collection_mode key_mode,
+                            napi_key_filter key_filter,
+                            napi_key_conversion key_conversion,
+                            napi_value* result);
 ```
 
 -   `[in] env`: The environment that the Node-API call is invoked under.
@@ -9260,12 +8925,10 @@ This API returns an array containing the names of the available properties of th
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_set_property(napi_env env,
-napi_value object,
-napi_value key,
-napi_value value);
-
+                              napi_value object,
+                              napi_value key,
+                              napi_value value);
 ```
 
 -   `[in] env`: The environment that the Node-API call is invoked under.
@@ -9282,12 +8945,10 @@ This API set a property on the `Object` passed in.
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_get_property(napi_env env,
-napi_value object,
-napi_value key,
-napi_value\* result);
-
+                              napi_value object,
+                              napi_value key,
+                              napi_value* result);
 ```
 
 -   `[in] env`: The environment that the Node-API call is invoked under.
@@ -9304,12 +8965,10 @@ This API gets the requested property from the `Object` passed in.
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_has_property(napi_env env,
-napi_value object,
-napi_value key,
-bool\* result);
-
+                              napi_value object,
+                              napi_value key,
+                              bool* result);
 ```
 
 -   `[in] env`: The environment that the Node-API call is invoked under.
@@ -9326,12 +8985,10 @@ This API checks if the `Object` passed in has the named property.
 Added in: v8.2.0 N-API version: 1
 
 ```
-
 napi_status napi_delete_property(napi_env env,
-napi_value object,
-napi_value key,
-bool\* result);
-
+                                 napi_value object,
+                                 napi_value key,
+                                 bool* result);
 ```
 
 -   `[in] env`: The environment that the Node-API call is invoked under.
@@ -9348,12 +9005,10 @@ This API attempts to delete the `key` own property from `object`.
 Added in: v8.2.0 N-API version: 1
 
 ```
-
 napi_status napi_has_own_property(napi_env env,
-napi_value object,
-napi_value key,
-bool\* result);
-
+                                  napi_value object,
+                                  napi_value key,
+                                  bool* result);
 ```
 
 -   `[in] env`: The environment that the Node-API call is invoked under.
@@ -9370,12 +9025,10 @@ This API checks if the `Object` passed in has the named own property. `key` must
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_set_named_property(napi_env env,
-napi_value object,
-const char\* utf8Name,
-napi_value value);
-
+                                    napi_value object,
+                                    const char* utf8Name,
+                                    napi_value value);
 ```
 
 -   `[in] env`: The environment that the Node-API call is invoked under.
@@ -9392,12 +9045,10 @@ This method is equivalent to calling [`napi_set_property`](https://nodejs.org/di
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_get_named_property(napi_env env,
-napi_value object,
-const char* utf8Name,
-napi_value* result);
-
+                                    napi_value object,
+                                    const char* utf8Name,
+                                    napi_value* result);
 ```
 
 -   `[in] env`: The environment that the Node-API call is invoked under.
@@ -9414,12 +9065,10 @@ This method is equivalent to calling [`napi_get_property`](https://nodejs.org/di
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_has_named_property(napi_env env,
-napi_value object,
-const char* utf8Name,
-bool* result);
-
+                                    napi_value object,
+                                    const char* utf8Name,
+                                    bool* result);
 ```
 
 -   `[in] env`: The environment that the Node-API call is invoked under.
@@ -9436,12 +9085,10 @@ This method is equivalent to calling [`napi_has_property`](https://nodejs.org/di
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_set_element(napi_env env,
-napi_value object,
-uint32_t index,
-napi_value value);
-
+                             napi_value object,
+                             uint32_t index,
+                             napi_value value);
 ```
 
 -   `[in] env`: The environment that the Node-API call is invoked under.
@@ -9458,12 +9105,10 @@ This API sets an element on the `Object` passed in.
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_get_element(napi_env env,
-napi_value object,
-uint32_t index,
-napi_value\* result);
-
+                             napi_value object,
+                             uint32_t index,
+                             napi_value* result);
 ```
 
 -   `[in] env`: The environment that the Node-API call is invoked under.
@@ -9480,12 +9125,10 @@ This API gets the element at the requested index.
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_has_element(napi_env env,
-napi_value object,
-uint32_t index,
-bool\* result);
-
+                             napi_value object,
+                             uint32_t index,
+                             bool* result);
 ```
 
 -   `[in] env`: The environment that the Node-API call is invoked under.
@@ -9502,12 +9145,10 @@ This API returns if the `Object` passed in has an element at the requested index
 Added in: v8.2.0 N-API version: 1
 
 ```
-
 napi_status napi_delete_element(napi_env env,
-napi_value object,
-uint32_t index,
-bool\* result);
-
+                                napi_value object,
+                                uint32_t index,
+                                bool* result);
 ```
 
 -   `[in] env`: The environment that the Node-API call is invoked under.
@@ -9524,12 +9165,10 @@ This API attempts to delete the specified `index` from `object`.
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_define_properties(napi_env env,
-napi_value object,
-size_t property_count,
-const napi_property_descriptor\* properties);
-
+                                   napi_value object,
+                                   size_t property_count,
+                                   const napi_property_descriptor* properties);
 ```
 
 -   `[in] env`: The environment that the Node-API call is invoked under.
@@ -9546,10 +9185,8 @@ This method allows the efficient definition of multiple properties on a given ob
 Added in: v14.14.0, v12.20.0 N-API version: 8
 
 ```
-
 napi_status napi_object_freeze(napi_env env,
-napi_value object);
-
+                               napi_value object);
 ```
 
 -   `[in] env`: The environment that the Node-API call is invoked under.
@@ -9564,10 +9201,8 @@ This method freezes a given object. This prevents new properties from being adde
 Added in: v14.14.0, v12.20.0 N-API version: 8
 
 ```
-
 napi_status napi_object_seal(napi_env env,
-napi_value object);
-
+                             napi_value object);
 ```
 
 -   `[in] env`: The environment that the Node-API call is invoked under.
@@ -9594,14 +9229,12 @@ Any non-`NULL` data which is passed to this API via the `data` field of the `nap
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 NAPI_EXTERN napi_status napi_call_function(napi_env env,
-napi_value recv,
-napi_value func,
-size_t argc,
-const napi_value* argv,
-napi_value* result);
-
+                                           napi_value recv,
+                                           napi_value func,
+                                           size_t argc,
+                                           const napi_value* argv,
+                                           napi_value* result);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -9618,11 +9251,9 @@ This method allows a JavaScript function object to be called from a native add-o
 A sample use case might look as follows. Consider the following JavaScript snippet:
 
 ```
-
 function AddTwo(num) {
-return num + 2;
+  return num + 2;
 }
-
 ```
 
 Then, the above function can be invoked from a native add-on using the following code:
@@ -9636,20 +9267,22 @@ if (status != napi_ok) return;
 status = napi_get_named_property(env, global, "AddTwo", &add_two);
 if (status != napi_ok) return;
 
+
 status = napi_create_int32(env, 1337, &arg);
 if (status != napi_ok) return;
 
-napi_value\* argv = &arg;
+napi_value* argv = &arg;
 size_t argc = 1;
+
 
 napi_value return_val;
 status = napi_call_function(env, global, add_two, argc, argv, &return_val);
 if (status != napi_ok) return;
 
+
 int32_t result;
 status = napi_get_value_int32(env, return_val, &result);
 if (status != napi_ok) return;
-
 ```
 
 #### `napi_create_function`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_napi_create_function)
@@ -9657,14 +9290,12 @@ if (status != napi_ok) return;
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_create_function(napi_env env,
-const char* utf8name,
-size_t length,
-napi_callback cb,
-void* data,
-napi_value\* result);
-
+                                 const char* utf8name,
+                                 size_t length,
+                                 napi_callback cb,
+                                 void* data,
+                                 napi_value* result);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -9683,36 +9314,32 @@ The newly created function is not automatically visible from script after this c
 In order to expose a function as part of the add-on's module exports, set the newly created function on the exports object. A sample module might look as follows:
 
 ```
-
 napi_value SayHello(napi_env env, napi_callback_info info) {
-printf("Hello\n");
-return NULL;
+  printf("Hello\n");
+  return NULL;
 }
 
 napi_value Init(napi_env env, napi_value exports) {
-napi_status status;
+  napi_status status;
 
-napi_value fn;
-status = napi_create_function(env, NULL, 0, SayHello, NULL, &fn);
-if (status != napi_ok) return NULL;
+  napi_value fn;
+  status = napi_create_function(env, NULL, 0, SayHello, NULL, &fn);
+  if (status != napi_ok) return NULL;
 
-status = napi_set_named_property(env, exports, "sayHello", fn);
-if (status != napi_ok) return NULL;
+  status = napi_set_named_property(env, exports, "sayHello", fn);
+  if (status != napi_ok) return NULL;
 
-return exports;
+  return exports;
 }
 
 NAPI_MODULE(NODE_GYP_MODULE_NAME, Init)
-
 ```
 
 Given the above code, the add-on can be used from JavaScript as follows:
 
 ```
-
 const myaddon = require('./addon');
 myaddon.sayHello();
-
 ```
 
 The string passed to `require()` is the name of the target in `binding.gyp` responsible for creating the `.node` file.
@@ -9726,14 +9353,12 @@ JavaScript `Function`s are described in [Section 19.2](https://tc39.github.io/ec
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_get_cb_info(napi_env env,
-napi_callback_info cbinfo,
-size_t* argc,
-napi_value* argv,
-napi_value\* thisArg,
-void\*\* data)
-
+                             napi_callback_info cbinfo,
+                             size_t* argc,
+                             napi_value* argv,
+                             napi_value* thisArg,
+                             void** data)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -9752,11 +9377,9 @@ This method is used within a callback function to retrieve details about the cal
 Added in: v8.6.0 N-API version: 1
 
 ```
-
 napi_status napi_get_new_target(napi_env env,
-napi_callback_info cbinfo,
-napi_value\* result)
-
+                                napi_callback_info cbinfo,
+                                napi_value* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -9772,13 +9395,11 @@ This API returns the `new.target` of the constructor call. If the current callba
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_new_instance(napi_env env,
-napi_value cons,
-size_t argc,
-napi_value* argv,
-napi_value* result)
-
+                              napi_value cons,
+                              size_t argc,
+                              napi_value* argv,
+                              napi_value* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -9790,14 +9411,12 @@ napi_value* result)
 This method is used to instantiate a new JavaScript value using a given `napi_value` that represents the constructor for the object. For example, consider the following snippet:
 
 ```
-
 function MyObject(param) {
-this.param = param;
+  this.param = param;
 }
 
 const arg = 'hello';
 const value = new MyObject(arg);
-
 ```
 
 The following can be approximated in Node-API using the following snippet:
@@ -9811,14 +9430,15 @@ if (status != napi_ok) return;
 status = napi_get_named_property(env, global, "MyObject", &constructor);
 if (status != napi_ok) return;
 
+
 status = napi_create_string_utf8(env, "hello", NAPI_AUTO_LENGTH, &arg);
 if (status != napi_ok) return;
 
-napi_value\* argv = &arg;
+napi_value* argv = &arg;
 size_t argc = 1;
 
-status = napi_new_instance(env, constructor, argc, argv, &value);
 
+status = napi_new_instance(env, constructor, argc, argv, &value);
 ```
 
 Returns `napi_ok` if the API succeeded.
@@ -9834,7 +9454,6 @@ Node-API offers a way to "wrap" C++ classes and instances so that the class cons
 For wrapped objects it may be difficult to distinguish between a function called on a class prototype and a function called on an instance of a class. A common pattern used to address this problem is to save a persistent reference to the class constructor for later `instanceof` checks.
 
 ```
-
 napi_value MyClass_constructor = NULL;
 status = napi_get_reference_value(env, MyClass::es_constructor, &MyClass_constructor);
 assert(napi_ok == status);
@@ -9842,11 +9461,10 @@ bool is_instance = false;
 status = napi_instanceof(env, es_this, MyClass_constructor, &is_instance);
 assert(napi_ok == status);
 if (is_instance) {
-
+  
 } else {
-
+  
 }
-
 ```
 
 The reference must be freed once it is no longer needed.
@@ -9854,16 +9472,25 @@ The reference must be freed once it is no longer needed.
 There are occasions where `napi_instanceof()` is insufficient for ensuring that a JavaScript object is a wrapper for a certain native type. This is the case especially when wrapped JavaScript objects are passed back into the addon via static methods rather than as the `this` value of prototype methods. In such cases there is a chance that they may be unwrapped incorrectly.
 
 ```
-
 const myAddon = require('./build/Release/my_addon.node');
+
+
 
 const dbHandle = myAddon.openDatabase();
 
+
 const queryHandle = myAddon.query(dbHandle, 'Gimme ALL the things!');
+
+
+
+
+
+
+
+
 while (myAddon.queryHasRecords(queryHandle, dbHandle)) {
-
+  
 }
-
 ```
 
 In the above example `myAddon.queryHasRecords()` is a method that accepts two arguments. The first is a database handle and the second is a query handle. Internally, it unwraps the first argument and casts the resulting pointer to a native database handle. It then unwraps the second argument and casts the resulting pointer to a query handle. If the arguments are passed in the wrong order, the casts will work, however, there is a good chance that the underlying database operation will fail, or will even cause an invalid memory access.
@@ -9880,56 +9507,70 @@ Continuing the above example, the following skeleton addon implementation illust
 
 ```
 
+
+
+
+
 static const napi_type_tag DatabaseHandleTypeTag = {
-0x1edf75a38336451d, 0xa5ed9ce2e4c00c38
+  0x1edf75a38336451d, 0xa5ed9ce2e4c00c38
 };
 
+
 static const napi_type_tag QueryHandleTypeTag = {
-0x9c73317f9fad44a3, 0x93c3920bf3b0ad6a
+  0x9c73317f9fad44a3, 0x93c3920bf3b0ad6a
 };
 
 static napi_value
 openDatabase(napi_env env, napi_callback_info info) {
-napi_status status;
-napi_value result;
+  napi_status status;
+  napi_value result;
 
-DatabaseHandle\* dbHandle = open_database();
+  
+  DatabaseHandle* dbHandle = open_database();
 
-status = napi_create_object(env, &result);
-if (status != napi_ok) return NULL;
+  
+  status = napi_create_object(env, &result);
+  if (status != napi_ok) return NULL;
 
-status = napi_type_tag_object(env, result, &DatabaseHandleTypeTag);
-if (status != napi_ok) return NULL;
+  
+  status = napi_type_tag_object(env, result, &DatabaseHandleTypeTag);
+  if (status != napi_ok) return NULL;
 
-status = napi_wrap(env, result, dbHandle, NULL, NULL, NULL);
-if (status != napi_ok) return NULL;
+  
+  status = napi_wrap(env, result, dbHandle, NULL, NULL, NULL);
+  if (status != napi_ok) return NULL;
 
-return result;
+  return result;
 }
+
+
+
+
 
 static napi_value
 query(napi_env env, napi_callback_info info) {
-napi_status status;
-size_t argc = 2;
-napi_value argv[2];
-bool is_db_handle;
+  napi_status status;
+  size_t argc = 2;
+  napi_value argv[2];
+  bool is_db_handle;
 
-status = napi_get_cb_info(env, info, &argc, argv, NULL, NULL);
-if (status != napi_ok) return NULL;
+  status = napi_get_cb_info(env, info, &argc, argv, NULL, NULL);
+  if (status != napi_ok) return NULL;
 
-status = napi_check_object_type_tag(env,
-argv[0],
-&DatabaseHandleTypeTag,
-&is_db_handle);
-if (status != napi_ok) return NULL;
+  
+  
+  status = napi_check_object_type_tag(env,
+                                      argv[0],
+                                      &DatabaseHandleTypeTag,
+                                      &is_db_handle);
+  if (status != napi_ok) return NULL;
 
-if (!is_db_handle) {
-
+  
+  if (!is_db_handle) {
+    
     return NULL;
-
+  }
 }
-}
-
 ```
 
 #### `napi_define_class`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_napi_define_class)
@@ -9937,16 +9578,14 @@ if (!is_db_handle) {
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_define_class(napi_env env,
-const char* utf8name,
-size_t length,
-napi_callback constructor,
-void* data,
-size_t property_count,
-const napi_property_descriptor* properties,
-napi_value* result);
-
+                              const char* utf8name,
+                              size_t length,
+                              napi_callback constructor,
+                              void* data,
+                              size_t property_count,
+                              const napi_property_descriptor* properties,
+                              napi_value* result);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -9977,14 +9616,12 @@ Any non-`NULL` data which is passed to this API via the `data` parameter or via 
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_wrap(napi_env env,
-napi_value js_object,
-void* native_object,
-napi_finalize finalize_cb,
-void* finalize_hint,
-napi_ref\* result);
-
+                      napi_value js_object,
+                      void* native_object,
+                      napi_finalize finalize_cb,
+                      void* finalize_hint,
+                      napi_ref* result);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -10013,11 +9650,9 @@ Calling `napi_wrap()` a second time on an object will return an error. To associ
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_unwrap(napi_env env,
-napi_value js_object,
-void\*\* result);
-
+                        napi_value js_object,
+                        void** result);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -10035,11 +9670,9 @@ When JavaScript code invokes a method or property accessor on the class, the cor
 Added in: v8.5.0 N-API version: 1
 
 ```
-
 napi_status napi_remove_wrap(napi_env env,
-napi_value js_object,
-void\*\* result);
-
+                             napi_value js_object,
+                             void** result);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -10055,11 +9688,9 @@ Retrieves a native instance that was previously wrapped in the JavaScript object
 Added in: v14.8.0, v12.19.0 N-API version: 8
 
 ```
-
 napi_status napi_type_tag_object(napi_env env,
-napi_value js_object,
-const napi_type_tag\* type_tag);
-
+                                 napi_value js_object,
+                                 const napi_type_tag* type_tag);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -10077,12 +9708,10 @@ If the object already has an associated type tag, this API will return `napi_inv
 Added in: v14.8.0, v12.19.0 N-API version: 8
 
 ```
-
 napi_status napi_check_object_type_tag(napi_env env,
-napi_value js_object,
-const napi_type_tag* type_tag,
-bool* result);
-
+                                       napi_value js_object,
+                                       const napi_type_tag* type_tag,
+                                       bool* result);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -10099,14 +9728,12 @@ Compares the pointer given as `type_tag` with any that can be found on `js_objec
 Added in: v8.0.0 N-API version: 5
 
 ```
-
 napi_status napi_add_finalizer(napi_env env,
-napi_value js_object,
-void* native_object,
-napi_finalize finalize_cb,
-void* finalize_hint,
-napi_ref\* result);
-
+                               napi_value js_object,
+                               void* native_object,
+                               napi_finalize finalize_cb,
+                               void* finalize_hint,
+                               napi_ref* result);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -10142,13 +9769,11 @@ The `execute` function should avoid making any Node-API calls that could result 
 These functions implement the following interfaces:
 
 ```
-
-typedef void (_napi_async_execute_callback)(napi_env env,
-void_ data);
-typedef void (_napi_async_complete_callback)(napi_env env,
-napi_status status,
-void_ data);
-
+typedef void (*napi_async_execute_callback)(napi_env env,
+                                            void* data);
+typedef void (*napi_async_complete_callback)(napi_env env,
+                                             napi_status status,
+                                             void* data);
 ```
 
 When these methods are invoked, the `data` parameter passed will be the addon-provided `void*` data that was passed into the `napi_create_async_work` call.
@@ -10156,10 +9781,8 @@ When these methods are invoked, the `data` parameter passed will be the addon-pr
 Once created the async worker can be queued for execution using the [`napi_queue_async_work`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_napi_queue_async_work) function:
 
 ```
-
 napi_status napi_queue_async_work(napi_env env,
-napi_async_work work);
-
+                                  napi_async_work work);
 ```
 
 [`napi_cancel_async_work`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_napi_cancel_async_work) can be used if the work needs to be cancelled before the work has started execution.
@@ -10169,15 +9792,13 @@ After calling [`napi_cancel_async_work`](https://nodejs.org/dist/v16.13.1/docs/a
 #### `napi_create_async_work`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_napi_create_async_work)
 
 ```
-
 napi_status napi_create_async_work(napi_env env,
-napi_value async_resource,
-napi_value async_resource_name,
-napi_async_execute_callback execute,
-napi_async_complete_callback complete,
-void* data,
-napi_async_work* result);
-
+                                   napi_value async_resource,
+                                   napi_value async_resource_name,
+                                   napi_async_execute_callback execute,
+                                   napi_async_complete_callback complete,
+                                   void* data,
+                                   napi_async_work* result);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -10201,10 +9822,8 @@ The `async_resource_name` identifier is provided by the user and should be repre
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_delete_async_work(napi_env env,
-napi_async_work work);
-
+                                   napi_async_work work);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -10221,10 +9840,8 @@ This API can be called even if there is a pending JavaScript exception.
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_queue_async_work(napi_env env,
-napi_async_work work);
-
+                                  napi_async_work work);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -10239,10 +9856,8 @@ This API requests that the previously allocated work be scheduled for execution.
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_cancel_async_work(napi_env env,
-napi_async_work work);
-
+                                   napi_async_work work);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -10263,12 +9878,10 @@ The simple asynchronous work APIs above may not be appropriate for every scenari
 Added in: v8.6.0 N-API version: 1
 
 ```
-
 napi_status napi_async_init(napi_env env,
-napi_value async_resource,
-napi_value async_resource_name,
-napi_async_context\* result)
-
+                            napi_value async_resource,
+                            napi_value async_resource_name,
+                            napi_async_context* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -10287,10 +9900,8 @@ In order to retain ABI compatibility with previous versions, passing `NULL` for 
 Added in: v8.6.0 N-API version: 1
 
 ```
-
 napi_status napi_async_destroy(napi_env env,
-napi_async_context async_context);
-
+                               napi_async_context async_context);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -10303,15 +9914,13 @@ This API can be called even if there is a pending JavaScript exception.
 #### `napi_make_callback`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_napi_make_callback)
 
 ```
-
 NAPI_EXTERN napi_status napi_make_callback(napi_env env,
-napi_async_context async_context,
-napi_value recv,
-napi_value func,
-size_t argc,
-const napi_value* argv,
-napi_value* result);
-
+                                           napi_async_context async_context,
+                                           napi_value recv,
+                                           napi_value func,
+                                           size_t argc,
+                                           const napi_value* argv,
+                                           napi_value* result);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -10335,12 +9944,10 @@ Any `process.nextTick`s or Promises scheduled on the microtask queue by JavaScri
 Added in: v9.6.0 N-API version: 3
 
 ```
-
 NAPI_EXTERN napi_status napi_open_callback_scope(napi_env env,
-napi_value resource_object,
-napi_async_context context,
-napi_callback_scope\* result)
-
+                                                 napi_value resource_object,
+                                                 napi_async_context context,
+                                                 napi_callback_scope* result)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -10355,10 +9962,8 @@ There are cases (for example, resolving promises) where it is necessary to have 
 Added in: v9.6.0 N-API version: 3
 
 ```
-
 NAPI_EXTERN napi_status napi_close_callback_scope(napi_env env,
-napi_callback_scope scope)
-
+                                                  napi_callback_scope scope)
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -10373,17 +9978,15 @@ This API can be called even if there is a pending JavaScript exception.
 Added in: v8.4.0 N-API version: 1
 
 ```
-
 typedef struct {
-uint32_t major;
-uint32_t minor;
-uint32_t patch;
-const char\* release;
+  uint32_t major;
+  uint32_t minor;
+  uint32_t patch;
+  const char* release;
 } napi_node_version;
 
 napi_status napi_get_node_version(napi_env env,
-const napi_node_version\*\* version);
-
+                                  const napi_node_version** version);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -10400,10 +10003,8 @@ The returned buffer is statically allocated and does not need to be freed.
 Added in: v8.0.0 N-API version: 1
 
 ```
-
 napi_status napi_get_version(napi_env env,
-uint32_t\* result);
-
+                             uint32_t* result);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -10425,11 +10026,9 @@ This API returns the highest Node-API version supported by the Node.js runtime. 
 Added in: v8.5.0 N-API version: 1
 
 ```
-
 NAPI_EXTERN napi_status napi_adjust_external_memory(napi_env env,
-int64_t change_in_bytes,
-int64_t\* result);
-
+                                                    int64_t change_in_bytes,
+                                                    int64_t* result);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -10447,40 +10046,43 @@ Node-API provides facilities for creating `Promise` objects as described in [Sec
 For example, to create a promise and pass it to an asynchronous worker:
 
 ```
-
 napi_deferred deferred;
 napi_value promise;
 napi_status status;
 
+
 status = napi_create_promise(env, &deferred, &promise);
 if (status != napi_ok) return NULL;
 
+
 do_something_asynchronous(deferred);
 
-return promise;
 
+return promise;
 ```
 
 The above function `do_something_asynchronous()` would perform its asynchronous action and then it would resolve or reject the deferred, thereby concluding the promise and freeing the deferred:
 
 ```
-
 napi_deferred deferred;
 napi_value undefined;
 napi_status status;
 
+
 status = napi_get_undefined(env, &undefined);
 if (status != napi_ok) return NULL;
 
+
+
 if (asynchronous_action_succeeded) {
-status = napi_resolve_deferred(env, deferred, undefined);
+  status = napi_resolve_deferred(env, deferred, undefined);
 } else {
-status = napi_reject_deferred(env, deferred, undefined);
+  status = napi_reject_deferred(env, deferred, undefined);
 }
 if (status != napi_ok) return NULL;
 
-deferred = NULL;
 
+deferred = NULL;
 ```
 
 #### `napi_create_promise`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_napi_create_promise)
@@ -10488,11 +10090,9 @@ deferred = NULL;
 Added in: v8.5.0 N-API version: 1
 
 ```
-
 napi_status napi_create_promise(napi_env env,
-napi_deferred* deferred,
-napi_value* promise);
-
+                                napi_deferred* deferred,
+                                napi_value* promise);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -10508,11 +10108,9 @@ This API creates a deferred object and a JavaScript promise.
 Added in: v8.5.0 N-API version: 1
 
 ```
-
 napi_status napi_resolve_deferred(napi_env env,
-napi_deferred deferred,
-napi_value resolution);
-
+                                  napi_deferred deferred,
+                                  napi_value resolution);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -10528,11 +10126,9 @@ The deferred object is freed upon successful completion.
 Added in: v8.5.0 N-API version: 1
 
 ```
-
 napi_status napi_reject_deferred(napi_env env,
-napi_deferred deferred,
-napi_value rejection);
-
+                                 napi_deferred deferred,
+                                 napi_value rejection);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -10548,11 +10144,9 @@ The deferred object is freed upon successful completion.
 Added in: v8.5.0 N-API version: 1
 
 ```
-
 napi_status napi_is_promise(napi_env env,
-napi_value value,
-bool\* is_promise);
-
+                            napi_value value,
+                            bool* is_promise);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -10568,11 +10162,9 @@ Node-API provides an API for executing a string containing JavaScript using the 
 Added in: v8.5.0 N-API version: 1
 
 ```
-
 NAPI_EXTERN napi_status napi_run_script(napi_env env,
-napi_value script,
-napi_value\* result);
-
+                                        napi_value script,
+                                        napi_value* result);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -10594,10 +10186,8 @@ Node-API provides a function for getting the current event loop associated with 
 Added in: v9.3.0, v8.10.0 N-API version: 2
 
 ```
-
 NAPI_EXTERN napi_status napi_get_uv_event_loop(napi_env env,
-struct uv_loop_s\*\* loop);
-
+                                               struct uv_loop_s** loop);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -10646,20 +10236,18 @@ Neither does `napi_unref_threadsafe_function` mark the thread-safe functions as 
 #### `napi_create_threadsafe_function`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_napi_create_threadsafe_function)
 
 ```
-
 NAPI_EXTERN napi_status
 napi_create_threadsafe_function(napi_env env,
-napi_value func,
-napi_value async_resource,
-napi_value async_resource_name,
-size_t max_queue_size,
-size_t initial_thread_count,
-void* thread_finalize_data,
-napi_finalize thread_finalize_cb,
-void* context,
-napi_threadsafe_function_call_js call_js_cb,
-napi_threadsafe_function\* result);
-
+                                napi_value func,
+                                napi_value async_resource,
+                                napi_value async_resource_name,
+                                size_t max_queue_size,
+                                size_t initial_thread_count,
+                                void* thread_finalize_data,
+                                napi_finalize thread_finalize_cb,
+                                void* context,
+                                napi_threadsafe_function_call_js call_js_cb,
+                                napi_threadsafe_function* result);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -10679,11 +10267,9 @@ napi_threadsafe_function\* result);
 Added in: v10.6.0 N-API version: 4
 
 ```
-
 NAPI_EXTERN napi_status
 napi_get_threadsafe_function_context(napi_threadsafe_function func,
-void\*\* result);
-
+                                     void** result);
 ```
 
 -   `[in] func`: The thread-safe function for which to retrieve the context.
@@ -10694,12 +10280,10 @@ This API may be called from any thread which makes use of `func`.
 #### `napi_call_threadsafe_function`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_napi_call_threadsafe_function)
 
 ```
-
 NAPI_EXTERN napi_status
 napi_call_threadsafe_function(napi_threadsafe_function func,
-void\* data,
-napi_threadsafe_function_call_mode is_blocking);
-
+                              void* data,
+                              napi_threadsafe_function_call_mode is_blocking);
 ```
 
 -   `[in] func`: The asynchronous thread-safe JavaScript function to invoke.
@@ -10717,10 +10301,8 @@ This API may be called from any thread which makes use of `func`.
 Added in: v10.6.0 N-API version: 4
 
 ```
-
 NAPI_EXTERN napi_status
 napi_acquire_threadsafe_function(napi_threadsafe_function func);
-
 ```
 
 -   `[in] func`: The asynchronous thread-safe JavaScript function to start making use of.
@@ -10734,11 +10316,9 @@ This API may be called from any thread which will start making use of `func`.
 Added in: v10.6.0 N-API version: 4
 
 ```
-
 NAPI_EXTERN napi_status
 napi_release_threadsafe_function(napi_threadsafe_function func,
-napi_threadsafe_function_release_mode mode);
-
+                                 napi_threadsafe_function_release_mode mode);
 ```
 
 -   `[in] func`: The asynchronous thread-safe JavaScript function whose reference count to decrement.
@@ -10753,10 +10333,8 @@ This API may be called from any thread which will stop making use of `func`.
 Added in: v10.6.0 N-API version: 4
 
 ```
-
 NAPI_EXTERN napi_status
 napi_ref_threadsafe_function(napi_env env, napi_threadsafe_function func);
-
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -10773,10 +10351,8 @@ This API may only be called from the main thread.
 Added in: v10.6.0 N-API version: 4
 
 ```
-
 NAPI_EXTERN napi_status
 napi_unref_threadsafe_function(napi_env env, napi_threadsafe_function func);
-
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -10793,10 +10369,8 @@ This API may only be called from the main thread.
 Added in: v15.9.0, v12.22.0
 
 ```
-
 NAPI_EXTERN napi_status
-node_api_get_module_file_name(napi_env env, const char\*\* result);
-
+node_api_get_module_file_name(napi_env env, const char** result);
 ```
 
 -   `[in] env`: The environment that the API is invoked under.
@@ -10828,32 +10402,36 @@ Node.js requires some per-process state management in order to run:
 The following example shows how these can be set up. Some class names are from the `node` and `v8` C++ namespaces, respectively.
 
 ```
+int main(int argc, char** argv) {
+  argv = uv_setup_args(argc, argv);
+  std::vector<std::string> args(argv, argv + argc);
+  std::vector<std::string> exec_args;
+  std::vector<std::string> errors;
+  
+  
+  int exit_code = node::InitializeNodeWithArgs(&args, &exec_args, &errors);
+  for (const std::string& error : errors)
+    fprintf(stderr, "%s: %s\n", args[0].c_str(), error.c_str());
+  if (exit_code != 0) {
+    return exit_code;
+  }
 
-int main(int argc, char\*\* argv) {
-argv = uv_setup_args(argc, argv);
-std::vector<std::string> args(argv, argv + argc);
-std::vector<std::string> exec_args;
-std::vector<std::string> errors;
+  
+  
+  
+  
+  std::unique_ptr<MultiIsolatePlatform> platform =
+      MultiIsolatePlatform::Create(4);
+  V8::InitializePlatform(platform.get());
+  V8::Initialize();
 
-int exit_code = node::InitializeNodeWithArgs(&args, &exec_args, &errors);
-for (const std::string& error : errors)
-fprintf(stderr, "%s: %s\n", args[0].c_str(), error.c_str());
-if (exit_code != 0) {
-return exit_code;
+  
+  int ret = RunNodeInstance(platform.get(), args, exec_args);
+
+  V8::Dispose();
+  V8::ShutdownPlatform();
+  return ret;
 }
-
-std::unique_ptr<MultiIsolatePlatform> platform =
-MultiIsolatePlatform::Create(4);
-V8::InitializePlatform(platform.get());
-V8::Initialize();
-
-int ret = RunNodeInstance(platform.get(), args, exec_args);
-
-V8::Dispose();
-V8::ShutdownPlatform();
-return ret;
-}
-
 ```
 
 #### Per-instance state[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#embedding_per-instance-state)
@@ -10872,39 +10450,40 @@ Additionally, each `v8::Isolate` that is used for a Node.js instance needs to be
 The `node::NewIsolate()` helper function creates a `v8::Isolate`, sets it up with some Node.js-specific hooks (e.g. the Node.js error handler), and registers it with the platform automatically.
 
 ```
+int RunNodeInstance(MultiIsolatePlatform* platform,
+                    const std::vector<std::string>& args,
+                    const std::vector<std::string>& exec_args) {
+  int exit_code = 0;
 
-int RunNodeInstance(MultiIsolatePlatform\* platform,
-const std::vector<std::string>& args,
-const std::vector<std::string>& exec_args) {
-int exit_code = 0;
+  
+  std::vector<std::string> errors;
+  std::unique_ptr<CommonEnvironmentSetup> setup =
+      CommonEnvironmentSetup::Create(platform, &errors, args, exec_args);
+  if (!setup) {
+    for (const std::string& err : errors)
+      fprintf(stderr, "%s: %s\n", args[0].c_str(), err.c_str());
+    return 1;
+  }
 
-std::vector<std::string> errors;
-std::unique_ptr<CommonEnvironmentSetup> setup =
-CommonEnvironmentSetup::Create(platform, &errors, args, exec_args);
-if (!setup) {
-for (const std::string& err : errors)
-fprintf(stderr, "%s: %s\n", args[0].c_str(), err.c_str());
-return 1;
-}
+  Isolate* isolate = setup->isolate();
+  Environment* env = setup->env();
 
-Isolate* isolate = setup->isolate();
-Environment* env = setup->env();
-
-{
-Locker locker(isolate);
-Isolate::Scope isolate_scope(isolate);
-
+  {
+    Locker locker(isolate);
+    Isolate::Scope isolate_scope(isolate);
+    
+    
     Context::Scope context_scope(setup->context());
 
-
-
-
-
-
-
-
-
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
     MaybeLocal<Value> loadenv_ret = node::LoadEnvironment(
         env,
         "const publicRequire ="
@@ -10912,21 +10491,19 @@ Isolate::Scope isolate_scope(isolate);
         "globalThis.require = publicRequire;"
         "require('vm').runInThisContext(process.argv[1]);");
 
-    if (loadenv_ret.IsEmpty())
+    if (loadenv_ret.IsEmpty())  
       return 1;
 
     exit_code = node::SpinEventLoop(env).FromMaybe(1);
 
-
-
-
+    
+    
+    
     node::Stop(env);
+  }
 
+  return exit_code;
 }
-
-return exit_code;
-}
-
 ```
 
 ## Child process[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_child-process)
@@ -10936,22 +10513,20 @@ return exit_code;
 The `child_process` module provides the ability to spawn subprocesses in a manner that is similar, but not identical, to [`popen(3)`](http://man7.org/linux/man-pages/man3/popen.3.html). This capability is primarily provided by the [`child_process.spawn()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_child_processspawncommand-args-options) function:
 
 ```
-
 const { spawn } = require('child_process');
 const ls = spawn('ls', ['-lh', '/usr']);
 
 ls.stdout.on('data', (data) => {
-console.log(`stdout: ${data}`);
+  console.log(`stdout: ${data}`);
 });
 
 ls.stderr.on('data', (data) => {
-console.error(`stderr: ${data}`);
+  console.error(`stderr: ${data}`);
 });
 
 ls.on('close', (code) => {
-console.log(`child process exited with code ${code}`);
+  console.log(`child process exited with code ${code}`);
 });
-
 ```
 
 By default, pipes for `stdin`, `stdout`, and `stderr` are established between the parent Node.js process and the spawned subprocess. These pipes have limited (and platform-specific) capacity. If the subprocess writes to stdout in excess of that limit without the output being captured, the subprocess blocks waiting for the pipe buffer to accept more data. This is identical to the behavior of pipes in the shell. Use the `{ stdio: 'ignore' }` option if the output will not be consumed.
@@ -10990,36 +10565,35 @@ const { spawn } = require('child_process');
 const bat = spawn('cmd.exe', ['/c', 'my.bat']);
 
 bat.stdout.on('data', (data) => {
-console.log(data.toString());
+  console.log(data.toString());
 });
 
 bat.stderr.on('data', (data) => {
-console.error(data.toString());
+  console.error(data.toString());
 });
 
 bat.on('exit', (code) => {
-console.log(`Child exited with code ${code}`);
+  console.log(`Child exited with code ${code}`);
 });
-
 ```
 
 ```
 
 const { exec, spawn } = require('child_process');
 exec('my.bat', (err, stdout, stderr) => {
-if (err) {
-console.error(err);
-return;
-}
-console.log(stdout);
+  if (err) {
+    console.error(err);
+    return;
+  }
+  console.log(stdout);
 });
+
 
 const bat = spawn('"my script.cmd"', ['a', 'b'], { shell: true });
 
 exec('"my script.cmd" a b', (err, stdout, stderr) => {
-
+  
 });
-
 ```
 
 #### `child_process.exec(command[, options][, callback])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_child_processexeccommand-options-callback)
@@ -11046,13 +10620,13 @@ exec('"my script.cmd" a b', (err, stdout, stderr) => {
 Spawns a shell then executes the `command` within that shell, buffering any generated output. The `command` string passed to the exec function is processed directly by the shell and special characters (vary based on [shell](https://en.wikipedia.org/wiki/List_of_command-line_interpreters)) need to be dealt with accordingly:
 
 ```
-
 const { exec } = require('child_process');
 
 exec('"/path/to/test file/test.sh" arg1 arg2');
 
-exec('echo "The \\$HOME variable is $HOME"');
 
+
+exec('echo "The \\$HOME variable is $HOME"');
 ```
 
 **Never pass unsanitized user input to this function. Any input containing shell metacharacters may be used to trigger arbitrary command execution.**
@@ -11062,17 +10636,15 @@ If a `callback` function is provided, it is called with the arguments `(error, s
 The `stdout` and `stderr` arguments passed to the callback will contain the stdout and stderr output of the child process. By default, Node.js will decode the output as UTF-8 and pass strings to the callback. The `encoding` option can be used to specify the character encoding used to decode the stdout and stderr output. If `encoding` is `'buffer'`, or an unrecognized character encoding, `Buffer` objects will be passed to the callback instead.
 
 ```
-
 const { exec } = require('child_process');
-exec('cat \*.js missing_file | wc -l', (error, stdout, stderr) => {
-if (error) {
-console.error(`exec error: ${error}`);
-return;
-}
-console.log(`stdout: ${stdout}`);
-console.error(`stderr: ${stderr}`);
+exec('cat *.js missing_file | wc -l', (error, stdout, stderr) => {
+  if (error) {
+    console.error(`exec error: ${error}`);
+    return;
+  }
+  console.log(`stdout: ${stdout}`);
+  console.error(`stderr: ${stderr}`);
 });
-
 ```
 
 If `timeout` is greater than `0`, the parent will send the signal identified by the `killSignal` property (the default is `'SIGTERM'`) if the child runs longer than `timeout` milliseconds.
@@ -11082,31 +10654,27 @@ Unlike the [`exec(3)`](http://man7.org/linux/man-pages/man3/exec.3.html) POSIX s
 If this method is invoked as its [`util.promisify()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utilpromisifyoriginal)ed version, it returns a `Promise` for an `Object` with `stdout` and `stderr` properties. The returned `ChildProcess` instance is attached to the `Promise` as a `child` property. In case of an error (including any error resulting in an exit code other than 0), a rejected promise is returned, with the same `error` object given in the callback, but with two additional properties `stdout` and `stderr`.
 
 ```
-
 const util = require('util');
 const exec = util.promisify(require('child_process').exec);
 
 async function lsExample() {
-const { stdout, stderr } = await exec('ls');
-console.log('stdout:', stdout);
-console.error('stderr:', stderr);
+  const { stdout, stderr } = await exec('ls');
+  console.log('stdout:', stdout);
+  console.error('stderr:', stderr);
 }
 lsExample();
-
 ```
 
 If the `signal` option is enabled, calling `.abort()` on the corresponding `AbortController` is similar to calling `.kill()` on the child process except the error passed to the callback will be an `AbortError`:
 
 ```
-
 const { exec } = require('child_process');
 const controller = new AbortController();
 const { signal } = controller;
 const child = exec('grep ssh', { signal }, (error) => {
-console.log(error);
+  console.log(error); 
 });
 controller.abort();
-
 ```
 
 #### `child_process.execFile(file[, args][, options][, callback])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_child_processexecfilefile-args-options-callback)
@@ -11137,15 +10705,13 @@ The `child_process.execFile()` function is similar to [`child_process.exec()`](h
 The same options as [`child_process.exec()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_child_processexeccommand-options-callback) are supported. Since a shell is not spawned, behaviors such as I/O redirection and file globbing are not supported.
 
 ```
-
 const { execFile } = require('child_process');
 const child = execFile('node', ['--version'], (error, stdout, stderr) => {
-if (error) {
-throw error;
-}
-console.log(stdout);
+  if (error) {
+    throw error;
+  }
+  console.log(stdout);
 });
-
 ```
 
 The `stdout` and `stderr` arguments passed to the callback will contain the stdout and stderr output of the child process. By default, Node.js will decode the output as UTF-8 and pass strings to the callback. The `encoding` option can be used to specify the character encoding used to decode the stdout and stderr output. If `encoding` is `'buffer'`, or an unrecognized character encoding, `Buffer` objects will be passed to the callback instead.
@@ -11153,15 +10719,13 @@ The `stdout` and `stderr` arguments passed to the callback will contain the stdo
 If this method is invoked as its [`util.promisify()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utilpromisifyoriginal)ed version, it returns a `Promise` for an `Object` with `stdout` and `stderr` properties. The returned `ChildProcess` instance is attached to the `Promise` as a `child` property. In case of an error (including any error resulting in an exit code other than 0), a rejected promise is returned, with the same `error` object given in the callback, but with two additional properties `stdout` and `stderr`.
 
 ```
-
 const util = require('util');
 const execFile = util.promisify(require('child_process').execFile);
 async function getVersion() {
-const { stdout } = await execFile('node', ['--version']);
-console.log(stdout);
+  const { stdout } = await execFile('node', ['--version']);
+  console.log(stdout);
 }
 getVersion();
-
 ```
 
 **If the `shell` option is enabled, do not pass unsanitized user input to this function. Any input containing shell metacharacters may be used to trigger arbitrary command execution.**
@@ -11169,15 +10733,13 @@ getVersion();
 If the `signal` option is enabled, calling `.abort()` on the corresponding `AbortController` is similar to calling `.kill()` on the child process except the error passed to the callback will be an `AbortError`:
 
 ```
-
 const { execFile } = require('child_process');
 const controller = new AbortController();
 const { signal } = controller;
 const child = execFile('node', ['--version'], { signal }, (error) => {
-console.log(error);
+  console.log(error); 
 });
 controller.abort();
-
 ```
 
 #### `child_process.fork(modulePath[, args][, options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_child_processforkmodulepath-args-options)
@@ -11216,22 +10778,20 @@ The `shell` option available in [`child_process.spawn()`](https://nodejs.org/dis
 If the `signal` option is enabled, calling `.abort()` on the corresponding `AbortController` is similar to calling `.kill()` on the child process except the error passed to the callback will be an `AbortError`:
 
 ```
-
 if (process.argv[2] === 'child') {
-setTimeout(() => {
-console.log(`Hello from ${process.argv[2]}!`);
-}, 1_000);
+  setTimeout(() => {
+    console.log(`Hello from ${process.argv[2]}!`);
+  }, 1_000);
 } else {
-const { fork } = require('child_process');
-const controller = new AbortController();
-const { signal } = controller;
-const child = fork(\_\_filename, ['child'], { signal });
-child.on('error', (err) => {
-
-});
-controller.abort();
+  const { fork } = require('child_process');
+  const controller = new AbortController();
+  const { signal } = controller;
+  const child = fork(__filename, ['child'], { signal });
+  child.on('error', (err) => {
+    
+  });
+  controller.abort(); 
 }
-
 ```
 
 #### `child_process.spawn(command[, args][, options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_child_processspawncommand-args-options)
@@ -11262,12 +10822,10 @@ The `child_process.spawn()` method spawns a new process using the given `command
 A third argument may be used to specify additional options, with these defaults:
 
 ```
-
 const defaults = {
-cwd: undefined,
-env: process.env
+  cwd: undefined,
+  env: process.env
 };
-
 ```
 
 Use `cwd` to specify the working directory from which the process is spawned. If not given, the default is to inherit the current working directory. If given, but the path does not exist, the child process emits an `ENOENT` error and exits immediately. `ENOENT` is also emitted when the command does not exist.
@@ -11279,74 +10837,68 @@ Use `env` to specify environment variables that will be visible to the new proce
 Example of running `ls -lh /usr`, capturing `stdout`, `stderr`, and the exit code:
 
 ```
-
 const { spawn } = require('child_process');
 const ls = spawn('ls', ['-lh', '/usr']);
 
 ls.stdout.on('data', (data) => {
-console.log(`stdout: ${data}`);
+  console.log(`stdout: ${data}`);
 });
 
 ls.stderr.on('data', (data) => {
-console.error(`stderr: ${data}`);
+  console.error(`stderr: ${data}`);
 });
 
 ls.on('close', (code) => {
-console.log(`child process exited with code ${code}`);
+  console.log(`child process exited with code ${code}`);
 });
-
 ```
 
 Example: A very elaborate way to run `ps ax | grep ssh`
 
 ```
-
 const { spawn } = require('child_process');
 const ps = spawn('ps', ['ax']);
 const grep = spawn('grep', ['ssh']);
 
 ps.stdout.on('data', (data) => {
-grep.stdin.write(data);
+  grep.stdin.write(data);
 });
 
 ps.stderr.on('data', (data) => {
-console.error(`ps stderr: ${data}`);
+  console.error(`ps stderr: ${data}`);
 });
 
 ps.on('close', (code) => {
-if (code !== 0) {
-console.log(`ps process exited with code ${code}`);
-}
-grep.stdin.end();
+  if (code !== 0) {
+    console.log(`ps process exited with code ${code}`);
+  }
+  grep.stdin.end();
 });
 
 grep.stdout.on('data', (data) => {
-console.log(data.toString());
+  console.log(data.toString());
 });
 
 grep.stderr.on('data', (data) => {
-console.error(`grep stderr: ${data}`);
+  console.error(`grep stderr: ${data}`);
 });
 
 grep.on('close', (code) => {
-if (code !== 0) {
-console.log(`grep process exited with code ${code}`);
-}
+  if (code !== 0) {
+    console.log(`grep process exited with code ${code}`);
+  }
 });
-
 ```
 
 Example of checking for failed `spawn`:
 
 ```
-
 const { spawn } = require('child_process');
 const subprocess = spawn('bad_command');
 
 subprocess.on('error', (err) => {
-console.error('Failed to start subprocess.');
+  console.error('Failed to start subprocess.');
 });
-
 ```
 
 Certain platforms (macOS, Linux) will use the value of `argv[0]` for the process title while others (Windows, SunOS) will use `command`.
@@ -11356,16 +10908,14 @@ Node.js currently overwrites `argv[0]` with `process.execPath` on startup, so `p
 If the `signal` option is enabled, calling `.abort()` on the corresponding `AbortController` is similar to calling `.kill()` on the child process except the error passed to the callback will be an `AbortError`:
 
 ```
-
 const { spawn } = require('child_process');
 const controller = new AbortController();
 const { signal } = controller;
 const grep = spawn('grep', ['ssh'], { signal });
 grep.on('error', (err) => {
-
+  
 });
-controller.abort();
-
+controller.abort(); 
 ```
 
 ##### `options.detached`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_optionsdetached)
@@ -11383,34 +10933,30 @@ When using the `detached` option to start a long-running process, the process wi
 Example of a long-running process, by detaching and also ignoring its parent `stdio` file descriptors, in order to ignore the parent's termination:
 
 ```
-
 const { spawn } = require('child_process');
 
 const subprocess = spawn(process.argv[0], ['child_program.js'], {
-detached: true,
-stdio: 'ignore'
+  detached: true,
+  stdio: 'ignore'
 });
 
 subprocess.unref();
-
 ```
 
 Alternatively one can redirect the child process' output into files:
 
 ```
-
 const fs = require('fs');
 const { spawn } = require('child_process');
 const out = fs.openSync('./out.log', 'a');
 const err = fs.openSync('./out.log', 'a');
 
 const subprocess = spawn('prg', [], {
-detached: true,
-stdio: [ 'ignore', out, err ]
+  detached: true,
+  stdio: [ 'ignore', out, err ]
 });
 
 subprocess.unref();
-
 ```
 
 ##### `options.stdio`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_optionsstdio)
@@ -11427,34 +10973,36 @@ For convenience, `options.stdio` may be one of the following strings:
 Otherwise, the value of `options.stdio` is an array where each index corresponds to an fd in the child. The fds 0, 1, and 2 correspond to stdin, stdout, and stderr, respectively. Additional fds can be specified to create additional pipes between the parent and child. The value is one of the following:
 
 1.  `'pipe'`: Create a pipe between the child process and the parent process. The parent end of the pipe is exposed to the parent as a property on the `child_process` object as [`subprocess.stdio[fd]`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_subprocessstdio). Pipes created for fds 0, 1, and 2 are also available as [`subprocess.stdin`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_subprocessstdin), [`subprocess.stdout`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_subprocessstdout) and [`subprocess.stderr`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_subprocessstderr), respectively.
-
-2.  `'overlapped'`: Same as `'pipe'` except that the `FILE_FLAG_OVERLAPPED` flag is set on the handle. This is necessary for overlapped I/O on the child process's stdio handles. See the [docs](https://docs.microsoft.com/windows/win32/fileio/synchronous-and-asynchronous-i-o) for more details. This is exactly the same as `'pipe'` on non-Windows systems.
-
+    
+2.  `'overlapped'`: Same as `'pipe'` except that the `FILE_FLAG_OVERLAPPED` flag is set on the handle. This is necessary for overlapped I/O on the child process's stdio handles. See the [docs](https://docs.microsoft.com/en-us/windows/win32/fileio/synchronous-and-asynchronous-i-o) for more details. This is exactly the same as `'pipe'` on non-Windows systems.
+    
 3.  `'ipc'`: Create an IPC channel for passing messages/file descriptors between parent and child. A [`ChildProcess`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_class-childprocess) may have at most one IPC stdio file descriptor. Setting this option enables the [`subprocess.send()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_subprocesssendmessage-sendhandle-options-callback) method. If the child is a Node.js process, the presence of an IPC channel will enable [`process.send()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processsendmessage-sendhandle-options-callback) and [`process.disconnect()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processdisconnect) methods, as well as [`'disconnect'`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_event-disconnect) and [`'message'`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_event-message) events within the child.
-
+    
     Accessing the IPC channel fd in any way other than [`process.send()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processsendmessage-sendhandle-options-callback) or using the IPC channel with a child process that is not a Node.js instance is not supported.
-
+    
 4.  `'ignore'`: Instructs Node.js to ignore the fd in the child. While Node.js will always open fds 0, 1, and 2 for the processes it spawns, setting the fd to `'ignore'` will cause Node.js to open `/dev/null` and attach it to the child's fd.
-
+    
 5.  `'inherit'`: Pass through the corresponding stdio stream to/from the parent process. In the first three positions, this is equivalent to `process.stdin`, `process.stdout`, and `process.stderr`, respectively. In any other position, equivalent to `'ignore'`.
-
+    
 6.  [<Stream>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_stream) object: Share a readable or writable stream that refers to a tty, file, socket, or a pipe with the child process. The stream's underlying file descriptor is duplicated in the child process to the fd that corresponds to the index in the `stdio` array. The stream must have an underlying descriptor (file streams do not until the `'open'` event has occurred).
-
+    
 7.  Positive integer: The integer value is interpreted as a file descriptor that is currently open in the parent process. It is shared with the child process, similar to how [<Stream>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_stream) objects can be shared. Passing sockets is not supported on Windows.
-
+    
 8.  `null`, `undefined`: Use default value. For stdio fds 0, 1, and 2 (in other words, stdin, stdout, and stderr) a pipe is created. For fd 3 and up, the default is `'ignore'`.
-
+    
 
 ```
-
 const { spawn } = require('child_process');
+
 
 spawn('prg', [], { stdio: 'inherit' });
 
+
 spawn('prg', [], { stdio: ['pipe', 'pipe', process.stderr] });
 
-spawn('prg', [], { stdio: ['pipe', null, null, null, 'pipe'] });
 
+
+spawn('prg', [], { stdio: ['pipe', null, null, null, 'pipe'] });
 ```
 
 _It is worth noting that when an IPC channel is established between the parent and child processes, and the child is a Node.js process, the child is launched with the IPC channel unreferenced (using `unref()`) until the child registers an event handler for the [`'disconnect'`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_event-disconnect) event or the [`'message'`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_event-message) event. This allows the child to exit normally without the process being held open by the open IPC channel._
@@ -11572,22 +11120,20 @@ Added in: v0.7.7
 The `'close'` event is emitted after a process has ended _and_ the stdio streams of a child process have been closed. This is distinct from the [`'exit'`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_event-exit) event, since multiple processes might share the same stdio streams. The `'close'` event will always emit after [`'exit'`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_event-exit) was already emitted, or [`'error'`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_event-error) if the child failed to spawn.
 
 ```
-
 const { spawn } = require('child_process');
 const ls = spawn('ls', ['-lh', '/usr']);
 
 ls.stdout.on('data', (data) => {
-console.log(`stdout: ${data}`);
+  console.log(`stdout: ${data}`);
 });
 
 ls.on('close', (code) => {
-console.log(`child process close all stdio with code ${code}`);
+  console.log(`child process close all stdio with code ${code}`);
 });
 
 ls.on('exit', (code) => {
-console.log(`child process exited with code ${code}`);
+  console.log(`child process exited with code ${code}`);
 });
-
 ```
 
 #### Event: `'disconnect'`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_event-disconnect)
@@ -11700,17 +11246,16 @@ Added in: v0.1.90
 The `subprocess.kill()` method sends a signal to the child process. If no argument is given, the process will be sent the `'SIGTERM'` signal. See [`signal(7)`](http://man7.org/linux/man-pages/man7/signal.7.html) for a list of available signals. This function returns `true` if [`kill(2)`](http://man7.org/linux/man-pages/man2/kill.2.html) succeeds, and `false` otherwise.
 
 ```
-
 const { spawn } = require('child_process');
 const grep = spawn('grep', ['ssh']);
 
 grep.on('close', (code, signal) => {
-console.log(
-`child process terminated due to receipt of signal ${signal}`);
+  console.log(
+    `child process terminated due to receipt of signal ${signal}`);
 });
 
-grep.kill('SIGHUP');
 
+grep.kill('SIGHUP');
 ```
 
 The [`ChildProcess`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_class-childprocess) object may emit an [`'error'`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_event-error) event if the signal cannot be delivered. Sending a signal to a child process that has already exited is not an error but may have unforeseen consequences. Specifically, if the process identifier (PID) has been reassigned to another process, the signal will be delivered to that process instead which can have unexpected results.
@@ -11724,26 +11269,24 @@ On Windows, where POSIX signals do not exist, the `signal` argument will be igno
 On Linux, child processes of child processes will not be terminated when attempting to kill their parent. This is likely to happen when running a new process in a shell or with the use of the `shell` option of `ChildProcess`:
 
 ```
-
 'use strict';
 const { spawn } = require('child_process');
 
 const subprocess = spawn(
-'sh',
-[
-'-c',
-`node -e "setInterval(() => {
-console.log(process.pid, 'is alive')
-}, 500);"`,
-], {
-stdio: ['inherit', 'inherit', 'inherit']
-}
+  'sh',
+  [
+    '-c',
+    `node -e "setInterval(() => {
+      console.log(process.pid, 'is alive')
+    }, 500);"`,
+  ], {
+    stdio: ['inherit', 'inherit', 'inherit']
+  }
 );
 
 setTimeout(() => {
-subprocess.kill();
+  subprocess.kill(); 
 }, 2000);
-
 ```
 
 #### `subprocess.killed`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_subprocesskilled)
@@ -11763,13 +11306,11 @@ Added in: v0.1.90
 Returns the process identifier (PID) of the child process. If the child process fails to spawn due to errors, then the value is `undefined` and `error` is emitted.
 
 ```
-
 const { spawn } = require('child_process');
 const grep = spawn('grep', ['ssh']);
 
 console.log(`Spawned child pid: ${grep.pid}`);
 grep.stdin.end();
-
 ```
 
 #### `subprocess.ref()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_subprocessref)
@@ -11779,17 +11320,15 @@ Added in: v0.7.10
 Calling `subprocess.ref()` after making a call to `subprocess.unref()` will restore the removed reference count for the child process, forcing the parent to wait for the child to exit before exiting itself.
 
 ```
-
 const { spawn } = require('child_process');
 
 const subprocess = spawn(process.argv[0], ['child_program.js'], {
-detached: true,
-stdio: 'ignore'
+  detached: true,
+  stdio: 'ignore'
 });
 
 subprocess.unref();
 subprocess.ref();
-
 ```
 
 #### `subprocess.send(message[, sendHandle[, options]][, callback])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_subprocesssendmessage-sendhandle-options-callback)
@@ -11808,28 +11347,26 @@ The message goes through serialization and parsing. The resulting message might 
 For example, in the parent script:
 
 ```
-
 const cp = require('child_process');
 const n = cp.fork(`${__dirname}/sub.js`);
 
 n.on('message', (m) => {
-console.log('PARENT got message:', m);
+  console.log('PARENT got message:', m);
 });
 
-n.send({ hello: 'world' });
 
+n.send({ hello: 'world' });
 ```
 
 And then the child script, `'sub.js'` might look like this:
 
 ```
-
 process.on('message', (m) => {
-console.log('CHILD got message:', m);
+  console.log('CHILD got message:', m);
 });
 
-process.send({ foo: 'bar', baz: NaN });
 
+process.send({ foo: 'bar', baz: NaN });
 ```
 
 Child Node.js processes will have a [`process.send()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processsendmessage-sendhandle-options-callback) method of their own that allows the child to send messages back to the parent.
@@ -11849,31 +11386,28 @@ If no `callback` function is provided and the message cannot be sent, an `'error
 The `sendHandle` argument can be used, for instance, to pass the handle of a TCP server object to the child process as illustrated in the example below:
 
 ```
-
 const subprocess = require('child_process').fork('subprocess.js');
+
 
 const server = require('net').createServer();
 server.on('connection', (socket) => {
-socket.end('handled by parent');
+  socket.end('handled by parent');
 });
 server.listen(1337, () => {
-subprocess.send('server', server);
+  subprocess.send('server', server);
 });
-
 ```
 
 The child would then receive the server object as:
 
 ```
-
 process.on('message', (m, server) => {
-if (m === 'server') {
-server.on('connection', (socket) => {
-socket.end('handled by child');
+  if (m === 'server') {
+    server.on('connection', (socket) => {
+      socket.end('handled by child');
+    });
+  }
 });
-}
-});
-
 ```
 
 Once the server is now shared between the parent and child, some connections can be handled by the parent and some by the child.
@@ -11885,39 +11419,39 @@ While the example above uses a server created using the `net` module, `dgram` mo
 Similarly, the `sendHandler` argument can be used to pass the handle of a socket to the child process. The example below spawns two children that each handle connections with "normal" or "special" priority:
 
 ```
-
 const { fork } = require('child_process');
 const normal = fork('subprocess.js', ['normal']);
 const special = fork('subprocess.js', ['special']);
 
+
+
 const server = require('net').createServer({ pauseOnConnect: true });
 server.on('connection', (socket) => {
 
-if (socket.remoteAddress === '74.125.127.100') {
-special.send('socket', socket);
-return;
-}
-
-normal.send('socket', socket);
+  
+  if (socket.remoteAddress === '74.125.127.100') {
+    special.send('socket', socket);
+    return;
+  }
+  
+  normal.send('socket', socket);
 });
 server.listen(1337);
-
 ```
 
 The `subprocess.js` would receive the socket handle as the second argument passed to the event callback function:
 
 ```
-
 process.on('message', (m, socket) => {
-if (m === 'socket') {
-if (socket) {
-
+  if (m === 'socket') {
+    if (socket) {
+      
+      
+      
       socket.end(`Request handled with ${process.argv[2]} priority`);
     }
-
-}
+  }
 });
-
 ```
 
 Do not use `.maxConnections` on a socket that has been passed to a subprocess. The parent cannot track when the socket is destroyed.
@@ -11985,17 +11519,16 @@ A sparse array of pipes to the child process, corresponding with positions in th
 In the following example, only the child's fd `1` (stdout) is configured as a pipe, so only the parent's `subprocess.stdio[1]` is a stream, all other values in the array are `null`.
 
 ```
-
 const assert = require('assert');
 const fs = require('fs');
 const child_process = require('child_process');
 
 const subprocess = child_process.spawn('ls', {
-stdio: [
-0,
-'pipe',
-fs.openSync('err.out', 'w'),
-]
+  stdio: [
+    0, 
+    'pipe', 
+    fs.openSync('err.out', 'w'), 
+  ]
 });
 
 assert.strictEqual(subprocess.stdio[0], null);
@@ -12006,7 +11539,6 @@ assert.strictEqual(subprocess.stdio[1], subprocess.stdout);
 
 assert.strictEqual(subprocess.stdio[2], null);
 assert.strictEqual(subprocess.stdio[2], subprocess.stderr);
-
 ```
 
 The `subprocess.stdio` property can be `undefined` if the child process could not be successfully spawned.
@@ -12024,15 +11556,13 @@ If the child was spawned with `stdio[1]` set to anything other than `'pipe'`, th
 `subprocess.stdout` is an alias for `subprocess.stdio[1]`. Both properties will refer to the same value.
 
 ```
-
 const { spawn } = require('child_process');
 
 const subprocess = spawn('ls');
 
 subprocess.stdout.on('data', (data) => {
-console.log(`Received chunk ${data}`);
+  console.log(`Received chunk ${data}`);
 });
-
 ```
 
 The `subprocess.stdout` property can be `null` if the child process could not be successfully spawned.
@@ -12044,16 +11574,14 @@ Added in: v0.7.10
 By default, the parent will wait for the detached child to exit. To prevent the parent from waiting for a given `subprocess` to exit, use the `subprocess.unref()` method. Doing so will cause the parent's event loop to not include the child in its reference count, allowing the parent to exit independently of the child, unless there is an established IPC channel between the child and the parent.
 
 ```
-
 const { spawn } = require('child_process');
 
 const subprocess = spawn(process.argv[0], ['child_program.js'], {
-detached: true,
-stdio: 'ignore'
+  detached: true,
+  stdio: 'ignore'
 });
 
 subprocess.unref();
-
 ```
 
 ### `maxBuffer` and Unicode[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_maxbuffer-and-unicode)
@@ -12085,7 +11613,6 @@ A single instance of Node.js runs in a single thread. To take advantage of multi
 The cluster module allows easy creation of child processes that all share server ports.
 
 ```
-
 import cluster from 'cluster';
 import http from 'http';
 import { cpus } from 'os';
@@ -12094,38 +11621,37 @@ import process from 'process';
 const numCPUs = cpus().length;
 
 if (cluster.isPrimary) {
-console.log(`Primary ${process.pid} is running`);
+  console.log(`Primary ${process.pid} is running`);
 
-for (let i = 0; i < numCPUs; i++) {
-cluster.fork();
-}
+  
+  for (let i = 0; i < numCPUs; i++) {
+    cluster.fork();
+  }
 
-cluster.on('exit', (worker, code, signal) => {
-console.log(`worker ${worker.process.pid} died`);
-});
+  cluster.on('exit', (worker, code, signal) => {
+    console.log(`worker ${worker.process.pid} died`);
+  });
 } else {
+  
+  
+  http.createServer((req, res) => {
+    res.writeHead(200);
+    res.end('hello world\n');
+  }).listen(8000);
 
-http.createServer((req, res) => {
-res.writeHead(200);
-res.end('hello world\n');
-}).listen(8000);
-
-console.log(`Worker ${process.pid} started`);
+  console.log(`Worker ${process.pid} started`);
 }
-
 ```
 
 Running Node.js will now share port 8000 between the workers:
 
 ```
-
 $ node server.js
 Primary 3596 is running
 Worker 4324 started
 Worker 4520 started
 Worker 6056 started
 Worker 5644 started
-
 ```
 
 On Windows, it is not yet possible to set up a named pipe server in a worker.
@@ -12169,11 +11695,9 @@ Added in: v0.7.7
 Similar to the `cluster.on('disconnect')` event, but specific to this worker.
 
 ```
-
 cluster.fork().on('disconnect', () => {
-
+  
 });
-
 ```
 
 #### Event: `'error'`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#cluster_event-error)
@@ -12194,20 +11718,18 @@ Added in: v0.11.2
 Similar to the `cluster.on('exit')` event, but specific to this worker.
 
 ```
-
 import cluster from 'cluster';
 
 const worker = cluster.fork();
 worker.on('exit', (code, signal) => {
-if (signal) {
-console.log(`worker was killed by signal: ${signal}`);
-} else if (code !== 0) {
-console.log(`worker exited with error code: ${code}`);
-} else {
-console.log('worker success!');
-}
+  if (signal) {
+    console.log(`worker was killed by signal: ${signal}`);
+  } else if (code !== 0) {
+    console.log(`worker exited with error code: ${code}`);
+  } else {
+    console.log('worker success!');
+  }
 });
-
 ```
 
 #### Event: `'listening'`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#cluster_event-listening)
@@ -12219,13 +11741,11 @@ Added in: v0.7.0
 Similar to the `cluster.on('listening')` event, but specific to this worker.
 
 ```
-
 import cluster from 'cluster';
 
 cluster.fork().on('listening', (address) => {
-
+  
 });
-
 ```
 
 It is not emitted in the worker.
@@ -12246,7 +11766,6 @@ See [`process` event: `'message'`](https://nodejs.org/dist/v16.13.1/docs/api/all
 Here is an example using the message system. It keeps a count in the primary process of the number of HTTP requests received by the workers:
 
 ```
-
 import cluster from 'cluster';
 import http from 'http';
 import { cpus } from 'os';
@@ -12254,37 +11773,40 @@ import process from 'process';
 
 if (cluster.isPrimary) {
 
-let numReqs = 0;
-setInterval(() => {
-console.log(`numReqs = ${numReqs}`);
-}, 1000);
+  
+  let numReqs = 0;
+  setInterval(() => {
+    console.log(`numReqs = ${numReqs}`);
+  }, 1000);
 
-function messageHandler(msg) {
-if (msg.cmd && msg.cmd === 'notifyRequest') {
-numReqs += 1;
-}
-}
+  
+  function messageHandler(msg) {
+    if (msg.cmd && msg.cmd === 'notifyRequest') {
+      numReqs += 1;
+    }
+  }
 
-const numCPUs = cpus().length;
-for (let i = 0; i < numCPUs; i++) {
-cluster.fork();
-}
+  
+  const numCPUs = cpus().length;
+  for (let i = 0; i < numCPUs; i++) {
+    cluster.fork();
+  }
 
-for (const id in cluster.workers) {
-cluster.workers[id].on('message', messageHandler);
-}
+  for (const id in cluster.workers) {
+    cluster.workers[id].on('message', messageHandler);
+  }
 
 } else {
 
-http.Server((req, res) => {
-res.writeHead(200);
-res.end('hello world\n');
+  
+  http.Server((req, res) => {
+    res.writeHead(200);
+    res.end('hello world\n');
 
+    
     process.send({ cmd: 'notifyRequest' });
-
-}).listen(8000);
+  }).listen(8000);
 }
-
 ```
 
 #### Event: `'online'`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#cluster_event-online)
@@ -12294,11 +11816,9 @@ Added in: v0.7.0
 Similar to the `cluster.on('online')` event, but specific to this worker.
 
 ```
-
 cluster.fork().on('online', () => {
-
+  
 });
-
 ```
 
 It is not emitted in the worker.
@@ -12322,39 +11842,36 @@ In a worker, `process.disconnect` exists, but it is not this function; it is [`d
 Because long living server connections may block workers from disconnecting, it may be useful to send a message, so application specific actions may be taken to close them. It also may be useful to implement a timeout, killing a worker if the `'disconnect'` event has not been emitted after some time.
 
 ```
-
 if (cluster.isPrimary) {
-const worker = cluster.fork();
-let timeout;
+  const worker = cluster.fork();
+  let timeout;
 
-worker.on('listening', (address) => {
-worker.send('shutdown');
-worker.disconnect();
-timeout = setTimeout(() => {
-worker.kill();
-}, 2000);
-});
+  worker.on('listening', (address) => {
+    worker.send('shutdown');
+    worker.disconnect();
+    timeout = setTimeout(() => {
+      worker.kill();
+    }, 2000);
+  });
 
-worker.on('disconnect', () => {
-clearTimeout(timeout);
-});
+  worker.on('disconnect', () => {
+    clearTimeout(timeout);
+  });
 
 } else if (cluster.isWorker) {
-const net = require('net');
-const server = net.createServer((socket) => {
+  const net = require('net');
+  const server = net.createServer((socket) => {
+    
+  });
 
-});
+  server.listen(8000);
 
-server.listen(8000);
-
-process.on('message', (msg) => {
-if (msg === 'shutdown') {
-
+  process.on('message', (msg) => {
+    if (msg === 'shutdown') {
+      
     }
-
-});
+  });
 }
-
 ```
 
 #### `worker.exitedAfterDisconnect`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#cluster_workerexitedafterdisconnect)
@@ -12368,15 +11885,14 @@ This property is `true` if the worker exited due to `.kill()` or `.disconnect()`
 The boolean [`worker.exitedAfterDisconnect`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#cluster_workerexitedafterdisconnect) allows distinguishing between voluntary and accidental exit, the primary may choose not to respawn a worker based on this value.
 
 ```
-
 cluster.on('exit', (worker, code, signal) => {
-if (worker.exitedAfterDisconnect === true) {
-console.log('Oh, it was just voluntary – no need to worry');
-}
+  if (worker.exitedAfterDisconnect === true) {
+    console.log('Oh, it was just voluntary – no need to worry');
+  }
 });
 
-worker.kill();
 
+worker.kill();
 ```
 
 #### `worker.id`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#cluster_workerid)
@@ -12402,7 +11918,6 @@ Added in: v0.11.14
 This function returns `true` if the worker's process has terminated (either because of exiting or being signaled). Otherwise, it returns `false`.
 
 ```
-
 import cluster from 'cluster';
 import http from 'http';
 import { cpus } from 'os';
@@ -12411,28 +11926,28 @@ import process from 'process';
 const numCPUs = cpus().length;
 
 if (cluster.isPrimary) {
-console.log(`Primary ${process.pid} is running`);
+  console.log(`Primary ${process.pid} is running`);
 
-for (let i = 0; i < numCPUs; i++) {
-cluster.fork();
-}
+  
+  for (let i = 0; i < numCPUs; i++) {
+    cluster.fork();
+  }
 
-cluster.on('fork', (worker) => {
-console.log('worker is dead:', worker.isDead());
-});
+  cluster.on('fork', (worker) => {
+    console.log('worker is dead:', worker.isDead());
+  });
 
-cluster.on('exit', (worker, code, signal) => {
-console.log('worker is dead:', worker.isDead());
-});
+  cluster.on('exit', (worker, code, signal) => {
+    console.log('worker is dead:', worker.isDead());
+  });
 } else {
-
-http.createServer((req, res) => {
-res.writeHead(200);
-res.end(`Current process\n ${process.pid}`);
-process.kill(process.pid);
-}).listen(8000);
+  
+  http.createServer((req, res) => {
+    res.writeHead(200);
+    res.end(`Current process\n ${process.pid}`);
+    process.kill(process.pid);
+  }).listen(8000);
 }
-
 ```
 
 #### `worker.kill([signal])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#cluster_workerkillsignal)
@@ -12481,17 +11996,15 @@ In a worker this sends a message to the primary. It is identical to `process.sen
 This example will echo back all messages from the primary:
 
 ```
-
 if (cluster.isPrimary) {
-const worker = cluster.fork();
-worker.send('hi there');
+  const worker = cluster.fork();
+  worker.send('hi there');
 
 } else if (cluster.isWorker) {
-process.on('message', (msg) => {
-process.send(msg);
-});
+  process.on('message', (msg) => {
+    process.send(msg);
+  });
 }
-
 ```
 
 ### Event: `'disconnect'`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#cluster_event-disconnect_1)
@@ -12505,11 +12018,9 @@ Emitted after the worker IPC channel has disconnected. This can occur when a wor
 There may be a delay between the `'disconnect'` and `'exit'` events. These events can be used to detect if the process is stuck in a cleanup or if there are long-living connections.
 
 ```
-
 cluster.on('disconnect', (worker) => {
-console.log(`The worker #${worker.id} has disconnected`);
+  console.log(`The worker #${worker.id} has disconnected`);
 });
-
 ```
 
 ### Event: `'exit'`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#cluster_event-exit_1)
@@ -12525,13 +12036,11 @@ When any of the workers die the cluster module will emit the `'exit'` event.
 This can be used to restart the worker by calling [`.fork()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#cluster_clusterforkenv) again.
 
 ```
-
 cluster.on('exit', (worker, code, signal) => {
-console.log('worker %d died (%s). restarting...',
-worker.process.pid, signal || code);
-cluster.fork();
+  console.log('worker %d died (%s). restarting...',
+              worker.process.pid, signal || code);
+  cluster.fork();
 });
-
 ```
 
 See [`child_process` event: `'exit'`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_event-exit).
@@ -12545,23 +12054,21 @@ Added in: v0.7.0
 When a new worker is forked the cluster module will emit a `'fork'` event. This can be used to log worker activity, and create a custom timeout.
 
 ```
-
 const timeouts = [];
 function errorMsg() {
-console.error('Something must be wrong with the connection ...');
+  console.error('Something must be wrong with the connection ...');
 }
 
 cluster.on('fork', (worker) => {
-timeouts[worker.id] = setTimeout(errorMsg, 2000);
+  timeouts[worker.id] = setTimeout(errorMsg, 2000);
 });
 cluster.on('listening', (worker, address) => {
-clearTimeout(timeouts[worker.id]);
+  clearTimeout(timeouts[worker.id]);
 });
 cluster.on('exit', (worker, code, signal) => {
-clearTimeout(timeouts[worker.id]);
-errorMsg();
+  clearTimeout(timeouts[worker.id]);
+  errorMsg();
 });
-
 ```
 
 ### Event: `'listening'`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#cluster_event-listening_1)
@@ -12576,12 +12083,10 @@ After calling `listen()` from a worker, when the `'listening'` event is emitted 
 The event handler is executed with two arguments, the `worker` contains the worker object and the `address` object contains the following connection properties: `address`, `port` and `addressType`. This is very useful if the worker is listening on more than one address.
 
 ```
-
 cluster.on('listening', (worker, address) => {
-console.log(
-`A worker is now connected to ${address.address}:${address.port}`);
+  console.log(
+    `A worker is now connected to ${address.address}:${address.port}`);
 });
-
 ```
 
 The `addressType` is one of:
@@ -12610,11 +12115,9 @@ Added in: v0.7.0
 After forking a new worker, the worker should respond with an online message. When the primary receives an online message it will emit this event. The difference between `'fork'` and `'online'` is that fork is emitted when the primary forks a worker, and `'online'` is emitted when the worker is running.
 
 ```
-
 cluster.on('online', (worker) => {
-console.log('Yay, the worker responded after it was forked');
+  console.log('Yay, the worker responded after it was forked');
 });
-
 ```
 
 ### Event: `'setup'`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#cluster_event-setup)
@@ -12724,21 +12227,19 @@ The only attribute of a worker that cannot be set via `.setupPrimary()` is the `
 The defaults above apply to the first call only; the defaults for later calls are the current values at the time of `cluster.setupPrimary()` is called.
 
 ```
-
 import cluster from 'cluster';
 
 cluster.setupPrimary({
-exec: 'worker.js',
-args: ['--use', 'https'],
-silent: true
+  exec: 'worker.js',
+  args: ['--use', 'https'],
+  silent: true
 });
-cluster.fork();
+cluster.fork(); 
 cluster.setupPrimary({
-exec: 'worker.js',
-args: ['--use', 'http']
+  exec: 'worker.js',
+  args: ['--use', 'http']
 });
-cluster.fork();
-
+cluster.fork(); 
 ```
 
 This can only be called from the primary process.
@@ -12752,17 +12253,15 @@ Added in: v0.7.0
 A reference to the current worker object. Not available in the primary process.
 
 ```
-
 import cluster from 'cluster';
 
 if (cluster.isPrimary) {
-console.log('I am primary');
-cluster.fork();
-cluster.fork();
+  console.log('I am primary');
+  cluster.fork();
+  cluster.fork();
 } else if (cluster.isWorker) {
-console.log(`I am worker #${cluster.worker.id}`);
+  console.log(`I am worker #${cluster.worker.id}`);
 }
-
 ```
 
 ### `cluster.workers`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#cluster_clusterworkers)
@@ -12776,28 +12275,25 @@ A hash that stores the active worker objects, keyed by `id` field. Makes it easy
 A worker is removed from `cluster.workers` after the worker has disconnected _and_ exited. The order between these two events cannot be determined in advance. However, it is guaranteed that the removal from the `cluster.workers` list happens before last `'disconnect'` or `'exit'` event is emitted.
 
 ```
-
 import cluster from 'cluster';
 
+
 function eachWorker(callback) {
-for (const id in cluster.workers) {
-callback(cluster.workers[id]);
-}
+  for (const id in cluster.workers) {
+    callback(cluster.workers[id]);
+  }
 }
 eachWorker((worker) => {
-worker.send('big announcement to all workers');
+  worker.send('big announcement to all workers');
 });
-
 ```
 
 Using the worker's unique id is the easiest way to locate the worker.
 
 ```
-
 socket.on('data', (id) => {
-const worker = cluster.workers[id];
+  const worker = cluster.workers[id];
 });
-
 ```
 
 ## Command-line options[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#cli_command-line-options)
@@ -12851,10 +12347,8 @@ Added in: v10.12.0
 Print source-able bash completion script for Node.js.
 
 ```
-
 $ node --completion-bash > node_bash_completion
 $ source node_bash_completion
-
 ```
 
 #### `-C=condition`, `--conditions=condition`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#cli_-ccondition---conditionscondition)
@@ -12870,9 +12364,7 @@ The default Node.js conditions of `"node"`, `"default"`, `"import"`, and `"requi
 For example, to run a module with "development" resolutions:
 
 ```
-
 $ node -C=development app.js
-
 ```
 
 #### `--cpu-prof`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#cli_--cpu-prof)
@@ -12886,11 +12378,9 @@ If `--cpu-prof-dir` is not specified, the generated profile is placed in the cur
 If `--cpu-prof-name` is not specified, the generated profile is named `CPU.${yyyymmdd}.${hhmmss}.${pid}.${tid}.${seq}.cpuprofile`.
 
 ```
-
 $ node --cpu-prof index.js
-$ ls \*.cpuprofile
+$ ls *.cpuprofile
 CPU.20190409.202950.15293.0.0.cpuprofile
-
 ```
 
 #### `--cpu-prof-dir`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#cli_--cpu-prof-dir)
@@ -13053,7 +12543,6 @@ When generating snapshots, garbage collection may be triggered and bring the hea
 Generating V8 snapshots takes time and memory (both memory managed by the V8 heap and native memory outside the V8 heap). The bigger the heap is, the more resources it needs. Node.js will adjust the V8 heap to accommodate the additional V8 heap memory overhead, and try its best to avoid using up all the memory available to the process. When the process uses more memory than the system deems appropriate, the process may be terminated abruptly by the system, depending on the system configuration.
 
 ```
-
 $ node --max-old-space-size=100 --heapsnapshot-near-heap-limit=3 index.js
 Wrote snapshot to Heap.20200430.100036.49580.0.001.heapsnapshot
 Wrote snapshot to Heap.20200430.100037.49580.0.002.heapsnapshot
@@ -13061,14 +12550,14 @@ Wrote snapshot to Heap.20200430.100038.49580.0.003.heapsnapshot
 
 <--- Last few GCs --->
 
-[49580:0x110000000] 4826 ms: Mark-sweep 130.6 (147.8) -> 130.5 (147.8) MB, 27.4 / 0.0 ms (average mu = 0.126, current mu = 0.034) allocation failure scavenge might not succeed
-[49580:0x110000000] 4845 ms: Mark-sweep 130.6 (147.8) -> 130.6 (147.8) MB, 18.8 / 0.0 ms (average mu = 0.088, current mu = 0.031) allocation failure scavenge might not succeed
+[49580:0x110000000]     4826 ms: Mark-sweep 130.6 (147.8) -> 130.5 (147.8) MB, 27.4 / 0.0 ms  (average mu = 0.126, current mu = 0.034) allocation failure scavenge might not succeed
+[49580:0x110000000]     4845 ms: Mark-sweep 130.6 (147.8) -> 130.6 (147.8) MB, 18.8 / 0.0 ms  (average mu = 0.088, current mu = 0.031) allocation failure scavenge might not succeed
+
 
 <--- JS stacktrace --->
 
 FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
 ....
-
 ```
 
 #### `--heapsnapshot-signal=signal`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#cli_--heapsnapshot-signalsignal)
@@ -13078,15 +12567,13 @@ Added in: v12.0.0
 Enables a signal handler that causes the Node.js process to write a heap dump when the specified signal is received. `signal` must be a valid signal name. Disabled by default.
 
 ```
-
 $ node --heapsnapshot-signal=SIGUSR2 index.js &
 $ ps aux
-USER PID %CPU %MEM VSZ RSS TTY STAT START TIME COMMAND
-node 1 5.5 6.1 787252 247004 ? Ssl 16:43 0:02 node --heapsnapshot-signal=SIGUSR2 index.js
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+node         1  5.5  6.1 787252 247004 ?       Ssl  16:43   0:02 node --heapsnapshot-signal=SIGUSR2 index.js
 $ kill -USR2 1
 $ ls
 Heap.20190718.133405.15554.0.001.heapsnapshot
-
 ```
 
 #### `--heap-prof`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#cli_--heap-prof)
@@ -13100,11 +12587,9 @@ If `--heap-prof-dir` is not specified, the generated profile is placed in the cu
 If `--heap-prof-name` is not specified, the generated profile is named `Heap.${yyyymmdd}.${hhmmss}.${pid}.${tid}.${seq}.heapprofile`.
 
 ```
-
 $ node --heap-prof index.js
-$ ls \*.heapprofile
+$ ls *.heapprofile
 Heap.20190409.202950.15293.0.001.heapprofile
-
 ```
 
 #### `--heap-prof-dir`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#cli_--heap-prof-dir)
@@ -13273,19 +12758,17 @@ Instructs the module loader to preserve symbolic links when resolving and cachin
 By default, when Node.js loads a module from a path that is symbolically linked to a different on-disk location, Node.js will dereference the link and use the actual on-disk "real path" of the module as both an identifier and as a root path to locate other dependency modules. In most cases, this default behavior is acceptable. However, when using symbolically linked peer dependencies, as illustrated in the example below, the default behavior causes an exception to be thrown if `moduleA` attempts to require `moduleB` as a peer dependency:
 
 ```
-
 {appDir}
-├── app
-│ ├── index.js
-│ └── node_modules
-│ ├── moduleA -> {appDir}/moduleA
-│ └── moduleB
-│ ├── index.js
-│ └── package.json
-└── moduleA
-├── index.js
-└── package.json
-
+ ├── app
+ │   ├── index.js
+ │   └── node_modules
+ │       ├── moduleA -> {appDir}/moduleA
+ │       └── moduleB
+ │           ├── index.js
+ │           └── package.json
+ └── moduleA
+     ├── index.js
+     └── package.json
 ```
 
 The `--preserve-symlinks` command-line flag instructs Node.js to use the symlink path for modules as opposed to the real path, allowing symbolically linked peer dependencies to be found.
@@ -13445,7 +12928,6 @@ Added in: v14.3.0
 Print short summaries of calls to [`Atomics.wait()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/wait) to stderr. The output could look like this:
 
 ```
-
 (node:15701) [Thread 0] Atomics.wait(&lt;address> + 0, 1, inf) started
 (node:15701) [Thread 0] Atomics.wait(&lt;address> + 0, 1, inf) did not wait because the values mismatched
 (node:15701) [Thread 0] Atomics.wait(&lt;address> + 0, 0, 10) started
@@ -13454,7 +12936,6 @@ Print short summaries of calls to [`Atomics.wait()`](https://developer.mozilla.o
 (node:15701) [Thread 1] Atomics.wait(&lt;address> + 4, -1, inf) started
 (node:15701) [Thread 0] Atomics.wait(&lt;address> + 4, 0, inf) was woken up by another thread
 (node:15701) [Thread 1] Atomics.wait(&lt;address> + 4, -1, inf) was woken up by another thread
-
 ```
 
 The fields here correspond to:
@@ -13693,9 +13174,7 @@ A space-separated list of command-line options. `options...` are interpreted bef
 If an option value contains a space, it can be escaped using double quotes:
 
 ```
-
 NODE_OPTIONS='--require "./my path/file.js"'
-
 ```
 
 A singleton flag passed as a command-line option will override the same flag passed into `NODE_OPTIONS`:
@@ -13703,17 +13182,14 @@ A singleton flag passed as a command-line option will override the same flag pas
 ```
 
 NODE_OPTIONS='--inspect=localhost:4444' node --inspect=localhost:5555
-
 ```
 
 A flag that can be passed multiple times will be treated as if its `NODE_OPTIONS` instances were passed first, and then its command-line instances afterwards:
 
 ```
-
 NODE_OPTIONS='--require "./a.js"' node --require "./b.js"
 
 node --require "./a.js" --require "./b.js"
-
 ```
 
 Node.js options that are allowed are:
@@ -13884,17 +13360,15 @@ When set, Node.js will begin outputting [V8 JavaScript code coverage](https://v8
 Coverage is output as an array of [ScriptCoverage](https://chromedevtools.github.io/devtools-protocol/tot/Profiler#type-ScriptCoverage) objects on the top-level key `result`:
 
 ```
-
 {
-"result": [
-{
-"scriptId": "67",
-"url": "internal/tty.js",
-"functions": []
+  "result": [
+    {
+      "scriptId": "67",
+      "url": "internal/tty.js",
+      "functions": []
+    }
+  ]
 }
-]
-}
-
 ```
 
 ##### Source map cache[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#cli_source-map-cache)
@@ -13904,41 +13378,39 @@ If found, source map data is appended to the top-level key `source-map-cache` on
 `source-map-cache` is an object with keys representing the files source maps were extracted from, and values which include the raw source-map URL (in the key `url`), the parsed Source Map v3 information (in the key `data`), and the line lengths of the source file (in the key `lineLengths`).
 
 ```
-
 {
-"result": [
-{
-"scriptId": "68",
-"url": "file:///absolute/path/to/source.js",
-"functions": []
+  "result": [
+    {
+      "scriptId": "68",
+      "url": "file:///absolute/path/to/source.js",
+      "functions": []
+    }
+  ],
+  "source-map-cache": {
+    "file:///absolute/path/to/source.js": {
+      "url": "./path-to-map.json",
+      "data": {
+        "version": 3,
+        "sources": [
+          "file:///absolute/path/to/original.js"
+        ],
+        "names": [
+          "Foo",
+          "console",
+          "info"
+        ],
+        "mappings": "MAAMA,IACJC,YAAaC",
+        "sourceRoot": "./"
+      },
+      "lineLengths": [
+        13,
+        62,
+        38,
+        27
+      ]
+    }
+  }
 }
-],
-"source-map-cache": {
-"file:///absolute/path/to/source.js": {
-"url": "./path-to-map.json",
-"data": {
-"version": 3,
-"sources": [
-"file:///absolute/path/to/original.js"
-],
-"names": [
-"Foo",
-"console",
-"info"
-],
-"mappings": "MAAMA,IACJC,YAAaC",
-"sourceRoot": "./"
-},
-"lineLengths": [
-13,
-62,
-38,
-27
-]
-}
-}
-}
-
 ```
 
 #### `NO_COLOR=<any>`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#cli_no_colorany)
@@ -13976,10 +13448,8 @@ The `TZ` environment variable is used to specify the timezone configuration.
 While the Node.js support for `TZ` will not handle all of the various [ways that `TZ` is handled in other environments](https://www.gnu.org/software/libc/manual/html_node/TZ-Variable.html), it will support basic [timezone IDs](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) (such as `'Etc/UTC'`, `'Europe/Paris'` or `'America/New_York'`. It may support a few other abbreviations or aliases, but these are strongly discouraged and not guaranteed.
 
 ```
-
 $ TZ=Europe/Dublin node -pe "new Date().toString()"
 Wed May 12 2021 20:30:48 GMT+0100 (Irish Standard Time)
-
 ```
 
 #### `UV_THREADPOOL_SIZE=size`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#cli_uv_threadpool_sizesize)
@@ -14006,9 +13476,7 @@ Sets the max memory size of V8's old memory section. As memory consumption appro
 On a machine with 2 GB of memory, consider setting this to 1536 (1.5 GB) to leave some memory for other uses and avoid swapping.
 
 ```
-
 $ node --max-old-space-size=1536 index.js
-
 ```
 
 ## Console[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#console_console)
@@ -14027,22 +13495,28 @@ _**Warning**_: The global console object's methods are neither consistently sync
 Example using the global `console`:
 
 ```
-
 console.log('hello world');
 
 console.log('hello %s', 'world');
 
 console.error(new Error('Whoops, something bad happened'));
 
+
+
+
+
+
+
+
+
+
 const name = 'Will Robinson';
 console.warn(`Danger ${name}! Danger!`);
-
 ```
 
 Example using the `Console` class:
 
 ```
-
 const out = getStreamSomehow();
 const err = getStreamSomehow();
 const myConsole = new console.Console(out, err);
@@ -14053,9 +13527,9 @@ myConsole.log('hello %s', 'world');
 
 myConsole.error(new Error('Whoops, something bad happened'));
 
+
 const name = 'Will Robinson';
 myConsole.warn(`Danger ${name}! Danger!`);
-
 ```
 
 ### Class: `Console`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#console_class-console)
@@ -14063,15 +13537,11 @@ myConsole.warn(`Danger ${name}! Danger!`);
 The `Console` class can be used to create a simple logger with configurable output streams and can be accessed using either `require('console').Console` or `console.Console` (or their destructured counterparts):
 
 ```
-
 const { Console } = require('console');
-
 ```
 
 ```
-
 const { Console } = console;
-
 ```
 
 #### `new Console(stdout[, stderr][, ignoreErrors])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#console_new-consolestdout-stderr-ignoreerrors)
@@ -14089,7 +13559,6 @@ const { Console } = console;
 Creates a new `Console` with one or two writable stream instances. `stdout` is a writable stream to print log or info output. `stderr` is used for warning or error output. If `stderr` is not provided, `stdout` is used for `stderr`.
 
 ```
-
 const output = fs.createWriteStream('./stdout.log');
 const errorOutput = fs.createWriteStream('./stderr.log');
 
@@ -14097,15 +13566,12 @@ const logger = new Console({ stdout: output, stderr: errorOutput });
 
 const count = 5;
 logger.log('count: %d', count);
-
 ```
 
 The global `console` is a special `Console` whose output is sent to [`process.stdout`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processstdout) and [`process.stderr`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processstderr). It is equivalent to calling:
 
 ```
-
 new Console({ stdout: process.stdout, stderr: process.stderr });
-
 ```
 
 #### `console.assert(value[, ...message])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#console_consoleassertvalue-message)
@@ -14118,13 +13584,12 @@ new Console({ stdout: process.stdout, stderr: process.stderr });
 If `value` is [truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy), nothing happens.
 
 ```
-
 console.assert(true, 'does nothing');
 
 console.assert(false, 'Whoops %s work', 'didn\'t');
 
-console.assert();
 
+console.assert();
 ```
 
 #### `console.clear()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#console_consoleclear)
@@ -14144,26 +13609,25 @@ Added in: v8.3.0
 Maintains an internal counter specific to `label` and outputs to `stdout` the number of times `console.count()` has been called with the given `label`.
 
 ```
-
 > console.count()
-> default: 1
-> undefined
+default: 1
+undefined
 > console.count('default')
-> default: 2
-> undefined
+default: 2
+undefined
 > console.count('abc')
-> abc: 1
-> undefined
+abc: 1
+undefined
 > console.count('xyz')
-> xyz: 1
-> undefined
+xyz: 1
+undefined
 > console.count('abc')
-> abc: 2
-> undefined
+abc: 2
+undefined
 > console.count()
-> default: 3
-> undefined
-
+default: 3
+undefined
+>
 ```
 
 #### `console.countReset([label])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#console_consolecountresetlabel)
@@ -14175,16 +13639,15 @@ Added in: v8.3.0
 Resets the internal counter specific to `label`.
 
 ```
-
 > console.count('abc');
-> abc: 1
-> undefined
+abc: 1
+undefined
 > console.countReset('abc');
-> undefined
+undefined
 > console.count('abc');
-> abc: 1
-> undefined
-
+abc: 1
+undefined
+>
 ```
 
 #### `console.debug(data[, ...args])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#console_consoledebugdata-args)
@@ -14222,12 +13685,10 @@ Added in: v0.1.100
 Prints to `stderr` with newline. Multiple arguments can be passed, with the first used as the primary message and all additional used as substitution values similar to [`printf(3)`](http://man7.org/linux/man-pages/man3/printf.3.html) (the arguments are all passed to [`util.format()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utilformatformat-args)).
 
 ```
-
 const code = 5;
 console.error('error #%d', code);
 
 console.error('error', code);
-
 ```
 
 If formatting elements (e.g. `%d`) are not found in the first string then [`util.inspect()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utilinspectobject-options) is called on each argument and the resulting string values are concatenated. See [`util.format()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utilformatformat-args) for more information.
@@ -14273,12 +13734,10 @@ Added in: v0.1.100
 Prints to `stdout` with newline. Multiple arguments can be passed, with the first used as the primary message and all additional used as substitution values similar to [`printf(3)`](http://man7.org/linux/man-pages/man3/printf.3.html) (the arguments are all passed to [`util.format()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utilformatformat-args)).
 
 ```
-
 const count = 5;
 console.log('count: %d', count);
 
 console.log('count:', count);
-
 ```
 
 See [`util.format()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utilformatformat-args) for more information.
@@ -14296,9 +13755,23 @@ Try to construct a table with the columns of the properties of `tabularData` (or
 
 console.table(Symbol());
 
+
 console.table(undefined);
 
-console.table([{ a: 1, b: 'Y' }, { a: 'Z', b: 2 }]);console.table([{ a: 1, b: 'Y' }, { a: 'Z', b: 2 }], ['a']);
+
+console.table([{ a: 1, b: 'Y' }, { a: 'Z', b: 2 }]);
+
+
+
+
+
+
+
+console.table([{ a: 1, b: 'Y' }, { a: 'Z', b: 2 }], ['a']);
+
+
+
+
 
 ```
 
@@ -14317,11 +13790,9 @@ Starts a timer that can be used to compute the duration of an operation. Timers 
 Stops a timer that was previously started by calling [`console.time()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#console_consoletimelabel) and prints the result to `stdout`:
 
 ```
-
 console.time('100-elements');
 for (let i = 0; i < 100; i++) {}
 console.timeEnd('100-elements');
-
 ```
 
 #### `console.timeLog([label][, ...data])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#console_consoletimeloglabel-data)
@@ -14334,14 +13805,12 @@ Added in: v10.7.0
 For a timer that was previously started by calling [`console.time()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#console_consoletimelabel), prints the elapsed time and other `data` arguments to `stdout`:
 
 ```
-
 console.time('process');
-const value = expensiveProcess1();
+const value = expensiveProcess1(); 
 console.timeLog('process', value);
 
 doExpensiveProcess2(value);
 console.timeEnd('process');
-
 ```
 
 #### `console.trace([message][, ...args])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#console_consoletracemessage-args)
@@ -14354,8 +13823,17 @@ Added in: v0.1.104
 Prints to `stderr` the string `'Trace: '`, followed by the [`util.format()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utilformatformat-args) formatted message and stack trace to the current position in the code.
 
 ```
-
 console.trace('Show me');
+
+
+
+
+
+
+
+
+
+
 
 ```
 
@@ -14381,11 +13859,9 @@ Added in: v8.0.0
 This method does not display anything unless used in the inspector. The `console.profile()` method starts a JavaScript CPU profile with an optional label until [`console.profileEnd()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#console_consoleprofileendlabel) is called. The profile is then added to the **Profile** panel of the inspector.
 
 ```
-
 console.profile('MyLabel');
 
 console.profileEnd('MyLabel');
-
 ```
 
 #### `console.profileEnd([label])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#console_consoleprofileendlabel)
@@ -14413,9 +13889,9 @@ _[Corepack](https://github.com/nodejs/corepack)_ is an experimental tool to help
 This feature simplifies two core workflows:
 
 -   It eases new contributor onboarding, since they won't have to follow system-specific installation processes anymore just to have the package manager you want them to.
-
+    
 -   It allows you to ensure that everyone in your team will use exactly the package manager version you intend them to, without them having to manually synchronize it each time you need to make an update.
-
+    
 
 ### Workflows[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#corepack_workflows)
 
@@ -14436,9 +13912,7 @@ If the value corresponds to a [supported package manager](https://nodejs.org/dis
 When running outside of an existing project (for example when running `yarn init`), Corepack will by default use predefined versions roughly corresponding to the latest stable releases from each tool. Those versions can be easily overriden by running the [`corepack prepare`](https://github.com/nodejs/corepack#corepack-prepare--nameversion) command along with the package manager version you wish to set:
 
 ```
-
 corepack prepare yarn@x.y.z --activate
-
 ```
 
 #### Offline workflow[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#corepack_offline-workflow)
@@ -14470,18 +13944,18 @@ Binary names
 While Corepack could easily support npm like any other package manager, its shims aren't currently enabled by default. This has a few consequences:
 
 -   It's always possible to run a `npm` command within a project configured to be used with another package manager, since Corepack cannot intercept it.
-
+    
 -   While `npm` is a valid option in the [`"packageManager"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_packagemanager) property, the lack of shim will cause the global npm to be used.
-
+    
 
 #### Running `npm install -g yarn` doesn't work[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#corepack_running-npm-install--g-yarn-doesnt-work)
 
 npm prevents accidentally overriding the Corepack binaries when doing a global install. To avoid this problem, consider one of the following options:
 
 -   Don't run this command anymore; Corepack will provide the package manager binaries anyway and will ensure that the requested versions are always available, so installing the package managers explicitly isn't needed anymore.
-
+    
 -   Add the `--force` to `npm install`; this will tell npm that it's fine to override binaries, but you'll erase the Corepack ones in the process (should that happen, run [`corepack enable`](https://github.com/nodejs/corepack#corepack-enable--name) again to add them back).
-
+    
 
 ## Crypto[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_crypto)
 
@@ -14490,13 +13964,12 @@ npm prevents accidentally overriding the Corepack binaries when doing a global i
 The `crypto` module provides cryptographic functionality that includes a set of wrappers for OpenSSL's hash, HMAC, cipher, decipher, sign, and verify functions.
 
 ```
-
 const { createHmac } = await import('crypto');
 
 const secret = 'abcdefg';
 const hash = createHmac('sha256', secret)
-.update('I love cupcakes')
-.digest('hex');
+               .update('I love cupcakes')
+               .digest('hex');
 console.log(hash);
 
 ```
@@ -14508,14 +13981,12 @@ It is possible for Node.js to be built without including support for the `crypto
 When using CommonJS, the error thrown can be caught using try/catch:
 
 ```
-
 let crypto;
 try {
-crypto = require('crypto');
+  crypto = require('crypto');
 } catch (err) {
-console.log('crypto support is disabled!');
+  console.log('crypto support is disabled!');
 }
-
 ```
 
 When using the lexical ESM `import` keyword, the error can only be caught if a handler for `process.on('uncaughtException')` is registered _before_ any attempt to load the module is made -- using, for instance, a preload module.
@@ -14523,14 +13994,12 @@ When using the lexical ESM `import` keyword, the error can only be caught if a h
 When using ESM, if there is a chance that the code may be run on a build of Node.js where crypto support is not enabled, consider using the `import()` function instead of the lexical `import` keyword:
 
 ```
-
 let crypto;
 try {
-crypto = await import('crypto');
+  crypto = await import('crypto');
 } catch (err) {
-console.log('crypto support is disabled!');
+  console.log('crypto support is disabled!');
 }
-
 ```
 
 ### Class: `Certificate`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_class-certificate)
@@ -14550,12 +14019,10 @@ The `crypto` module provides the `Certificate` class for working with SPKAC data
 -   Returns: [<Buffer>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) The challenge component of the `spkac` data structure, which includes a public key and a challenge.
 
 ```
-
 const { Certificate } = await import('crypto');
 const spkac = getSpkacSomehow();
 const challenge = Certificate.exportChallenge(spkac);
 console.log(challenge.toString('utf8'));
-
 ```
 
 #### Static method: `Certificate.exportPublicKey(spkac[, encoding])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_static-method-certificateexportpublickeyspkac-encoding)
@@ -14565,12 +14032,10 @@ console.log(challenge.toString('utf8'));
 -   Returns: [<Buffer>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) The public key component of the `spkac` data structure, which includes a public key and a challenge.
 
 ```
-
 const { Certificate } = await import('crypto');
 const spkac = getSpkacSomehow();
 const publicKey = Certificate.exportPublicKey(spkac);
 console.log(publicKey);
-
 ```
 
 #### Static method: `Certificate.verifySpkac(spkac[, encoding])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_static-method-certificateverifyspkacspkac-encoding)
@@ -14580,13 +14045,11 @@ console.log(publicKey);
 -   Returns: [<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) `true` if the given `spkac` data structure is valid, `false` otherwise.
 
 ```
-
 import { Buffer } from 'buffer';
 const { Certificate } = await import('crypto');
 
 const spkac = getSpkacSomehow();
 console.log(Certificate.verifySpkac(Buffer.from(spkac)));
-
 ```
 
 #### Legacy API[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_legacy-api)
@@ -14598,12 +14061,10 @@ As a legacy interface, it is possible to create new instances of the `crypto.Cer
 Instances of the `Certificate` class can be created using the `new` keyword or by calling `crypto.Certificate()` as a function:
 
 ```
-
 const { Certificate } = await import('crypto');
 
 const cert1 = new Certificate();
 const cert2 = Certificate();
-
 ```
 
 ##### `certificate.exportChallenge(spkac[, encoding])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_certificateexportchallengespkac-encoding)
@@ -14615,13 +14076,11 @@ Added in: v0.11.8
 -   Returns: [<Buffer>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) The challenge component of the `spkac` data structure, which includes a public key and a challenge.
 
 ```
-
 const { Certificate } = await import('crypto');
 const cert = Certificate();
 const spkac = getSpkacSomehow();
 const challenge = cert.exportChallenge(spkac);
 console.log(challenge.toString('utf8'));
-
 ```
 
 ##### `certificate.exportPublicKey(spkac[, encoding])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_certificateexportpublickeyspkac-encoding)
@@ -14633,13 +14092,11 @@ Added in: v0.11.8
 -   Returns: [<Buffer>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) The public key component of the `spkac` data structure, which includes a public key and a challenge.
 
 ```
-
 const { Certificate } = await import('crypto');
 const cert = Certificate();
 const spkac = getSpkacSomehow();
 const publicKey = cert.exportPublicKey(spkac);
 console.log(publicKey);
-
 ```
 
 ##### `certificate.verifySpkac(spkac[, encoding])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_certificateverifyspkacspkac-encoding)
@@ -14651,14 +14108,12 @@ Added in: v0.11.8
 -   Returns: [<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) `true` if the given `spkac` data structure is valid, `false` otherwise.
 
 ```
-
 import { Buffer } from 'buffer';
 const { Certificate } = await import('crypto');
 
 const cert = Certificate();
 const spkac = getSpkacSomehow();
 console.log(cert.verifySpkac(Buffer.from(spkac)));
-
 ```
 
 ### Class: `Cipher`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_class-cipher)
@@ -14677,22 +14132,24 @@ The [`crypto.createCipher()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html
 Example: Using `Cipher` objects as streams:
 
 ```
-
 const {
-scrypt,
-randomFill,
-createCipheriv
+  scrypt,
+  randomFill,
+  createCipheriv
 } = await import('crypto');
 
 const algorithm = 'aes-192-cbc';
 const password = 'Password used to generate key';
 
+
+
 scrypt(password, 'salt', 24, (err, key) => {
-if (err) throw err;
+  if (err) throw err;
+  
+  randomFill(new Uint8Array(16), (err, iv) => {
+    if (err) throw err;
 
-randomFill(new Uint8Array(16), (err, iv) => {
-if (err) throw err;
-
+    
     const cipher = createCipheriv(algorithm, key, iv);
 
     let encrypted = '';
@@ -14703,39 +14160,38 @@ if (err) throw err;
 
     cipher.write('some clear text data');
     cipher.end();
-
+  });
 });
-});
-
 ```
 
 Example: Using `Cipher` and piped streams:
 
 ```
-
 import {
-createReadStream,
-createWriteStream,
+  createReadStream,
+  createWriteStream,
 } from 'fs';
 
 import {
-pipeline
+  pipeline
 } from 'stream';
 
 const {
-scrypt,
-randomFill,
-createCipheriv
+  scrypt,
+  randomFill,
+  createCipheriv
 } = await import('crypto');
 
 const algorithm = 'aes-192-cbc';
 const password = 'Password used to generate key';
 
-scrypt(password, 'salt', 24, (err, key) => {
-if (err) throw err;
 
-randomFill(new Uint8Array(16), (err, iv) => {
-if (err) throw err;
+
+scrypt(password, 'salt', 24, (err, key) => {
+  if (err) throw err;
+  
+  randomFill(new Uint8Array(16), (err, iv) => {
+    if (err) throw err;
 
     const cipher = createCipheriv(algorithm, key, iv);
 
@@ -14745,40 +14201,37 @@ if (err) throw err;
     pipeline(input, cipher, output, (err) => {
       if (err) throw err;
     });
-
+  });
 });
-});
-
 ```
 
 Example: Using the [`cipher.update()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_cipherupdatedata-inputencoding-outputencoding) and [`cipher.final()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_cipherfinaloutputencoding) methods:
 
 ```
-
 const {
-scrypt,
-randomFill,
-createCipheriv
+  scrypt,
+  randomFill,
+  createCipheriv
 } = await import('crypto');
 
 const algorithm = 'aes-192-cbc';
 const password = 'Password used to generate key';
 
-scrypt(password, 'salt', 24, (err, key) => {
-if (err) throw err;
 
-randomFill(new Uint8Array(16), (err, iv) => {
-if (err) throw err;
+
+scrypt(password, 'salt', 24, (err, key) => {
+  if (err) throw err;
+  
+  randomFill(new Uint8Array(16), (err, iv) => {
+    if (err) throw err;
 
     const cipher = createCipheriv(algorithm, key, iv);
 
     let encrypted = cipher.update('some clear text data', 'utf8', 'hex');
     encrypted += cipher.final('hex');
     console.log(encrypted);
-
+  });
 });
-});
-
 ```
 
 #### `cipher.final([outputEncoding])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_cipherfinaloutputencoding)
@@ -14856,52 +14309,52 @@ The [`crypto.createDecipher()`](https://nodejs.org/dist/v16.13.1/docs/api/all.ht
 Example: Using `Decipher` objects as streams:
 
 ```
-
 import { Buffer } from 'buffer';
 const {
-scryptSync,
-createDecipheriv
+  scryptSync,
+  createDecipheriv
 } = await import('crypto');
 
 const algorithm = 'aes-192-cbc';
 const password = 'Password used to generate key';
 
+
+
 const key = scryptSync(password, 'salt', 24);
 
-const iv = Buffer.alloc(16, 0);
+const iv = Buffer.alloc(16, 0); 
 
 const decipher = createDecipheriv(algorithm, key, iv);
 
 let decrypted = '';
 decipher.on('readable', () => {
-while (null !== (chunk = decipher.read())) {
-decrypted += chunk.toString('utf8');
-}
+  while (null !== (chunk = decipher.read())) {
+    decrypted += chunk.toString('utf8');
+  }
 });
 decipher.on('end', () => {
-console.log(decrypted);
-
+  console.log(decrypted);
+  
 });
 
+
 const encrypted =
-'e5f79c5915c02171eec6b212d5520d44480993d7d622a7c4c2da32f6efda0ffa';
+  'e5f79c5915c02171eec6b212d5520d44480993d7d622a7c4c2da32f6efda0ffa';
 decipher.write(encrypted, 'hex');
 decipher.end();
-
 ```
 
 Example: Using `Decipher` and piped streams:
 
 ```
-
 import {
-createReadStream,
-createWriteStream,
+  createReadStream,
+  createWriteStream,
 } from 'fs';
 import { Buffer } from 'buffer';
 const {
-scryptSync,
-createDecipheriv
+  scryptSync,
+  createDecipheriv
 } = await import('crypto');
 
 const algorithm = 'aes-192-cbc';
@@ -14909,7 +14362,7 @@ const password = 'Password used to generate key';
 
 const key = scryptSync(password, 'salt', 24);
 
-const iv = Buffer.alloc(16, 0);
+const iv = Buffer.alloc(16, 0); 
 
 const decipher = createDecipheriv(algorithm, key, iv);
 
@@ -14917,17 +14370,15 @@ const input = createReadStream('test.enc');
 const output = createWriteStream('test.js');
 
 input.pipe(decipher).pipe(output);
-
 ```
 
 Example: Using the [`decipher.update()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_decipherupdatedata-inputencoding-outputencoding) and [`decipher.final()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_decipherfinaloutputencoding) methods:
 
 ```
-
 import { Buffer } from 'buffer';
 const {
-scryptSync,
-createDecipheriv
+  scryptSync,
+  createDecipheriv
 } = await import('crypto');
 
 const algorithm = 'aes-192-cbc';
@@ -14935,16 +14386,16 @@ const password = 'Password used to generate key';
 
 const key = scryptSync(password, 'salt', 24);
 
-const iv = Buffer.alloc(16, 0);
+const iv = Buffer.alloc(16, 0); 
 
 const decipher = createDecipheriv(algorithm, key, iv);
 
+
 const encrypted =
-'e5f79c5915c02171eec6b212d5520d44480993d7d622a7c4c2da32f6efda0ffa';
+  'e5f79c5915c02171eec6b212d5520d44480993d7d622a7c4c2da32f6efda0ffa';
 let decrypted = decipher.update(encrypted, 'hex', 'utf8');
 decrypted += decipher.final('utf8');
 console.log(decrypted);
-
 ```
 
 #### `decipher.final([outputEncoding])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_decipherfinaloutputencoding)
@@ -15019,24 +14470,26 @@ The `DiffieHellman` class is a utility for creating Diffie-Hellman key exchanges
 Instances of the `DiffieHellman` class can be created using the [`crypto.createDiffieHellman()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_cryptocreatediffiehellmanprime-primeencoding-generator-generatorencoding) function.
 
 ```
-
 import assert from 'assert';
 
 const {
-createDiffieHellman
+  createDiffieHellman
 } = await import('crypto');
+
 
 const alice = createDiffieHellman(2048);
 const aliceKey = alice.generateKeys();
 
+
 const bob = createDiffieHellman(alice.getPrime(), alice.getGenerator());
 const bobKey = bob.generateKeys();
+
 
 const aliceSecret = alice.computeSecret(bobKey);
 const bobSecret = bob.computeSecret(aliceKey);
 
-assert.strictEqual(aliceSecret.toString('hex'), bobSecret.toString('hex'));
 
+assert.strictEqual(aliceSecret.toString('hex'), bobSecret.toString('hex'));
 ```
 
 #### `diffieHellman.computeSecret(otherPublicKey[, inputEncoding][, outputEncoding])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_diffiehellmancomputesecretotherpublickey-inputencoding-outputencoding)
@@ -15135,26 +14588,22 @@ Added in: v0.7.5
 The `DiffieHellmanGroup` class takes a well-known modp group as its argument. It works the same as `DiffieHellman`, except that it does not allow changing its keys after creation. In other words, it does not implement `setPublicKey()` or `setPrivateKey()` methods.
 
 ```
-
 const { createDiffieHellmanGroup } = await import('crypto');
 const dh = createDiffieHellmanGroup('modp1');
-
 ```
 
 The name (e.g. `'modp1'`) is taken from [RFC 2412](https://www.rfc-editor.org/rfc/rfc2412.txt) (modp1 and 2) and [RFC 3526](https://www.rfc-editor.org/rfc/rfc3526.txt):
 
 ```
-
 $ perl -ne 'print "$1\n" if /"(modp\d+)"/' src/node_crypto_groups.h
-modp1 # 768 bits
-modp2 # 1024 bits
-modp5 # 1536 bits
+modp1  #  768 bits
+modp2  # 1024 bits
+modp5  # 1536 bits
 modp14 # 2048 bits
 modp15 # etc.
 modp16
 modp17
 modp18
-
 ```
 
 ### Class: `ECDH`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_class-ecdh)
@@ -15166,24 +14615,25 @@ The `ECDH` class is a utility for creating Elliptic Curve Diffie-Hellman (ECDH) 
 Instances of the `ECDH` class can be created using the [`crypto.createECDH()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_cryptocreateecdhcurvename) function.
 
 ```
-
 import assert from 'assert';
 
 const {
-createECDH
+  createECDH
 } = await import('crypto');
+
 
 const alice = createECDH('secp521r1');
 const aliceKey = alice.generateKeys();
 
+
 const bob = createECDH('secp521r1');
 const bobKey = bob.generateKeys();
+
 
 const aliceSecret = alice.computeSecret(bobKey);
 const bobSecret = bob.computeSecret(aliceKey);
 
 assert.strictEqual(aliceSecret.toString('hex'), bobSecret.toString('hex'));
-
 ```
 
 #### Static method: `ECDH.convertKey(key, curve[, inputEncoding[, outputEncoding[, format]]])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_static-method-ecdhconvertkeykey-curve-inputencoding-outputencoding-format)
@@ -15208,10 +14658,9 @@ If the `inputEncoding` is not provided, `key` is expected to be a [`Buffer`](htt
 Example (uncompressing a key):
 
 ```
-
 const {
-createECDH,
-ECDH
+  createECDH,
+  ECDH
 } = await import('crypto');
 
 const ecdh = createECDH('secp256k1');
@@ -15220,13 +14669,13 @@ ecdh.generateKeys();
 const compressedKey = ecdh.getPublicKey('hex', 'compressed');
 
 const uncompressedKey = ECDH.convertKey(compressedKey,
-'secp256k1',
-'hex',
-'hex',
-'uncompressed');
+                                        'secp256k1',
+                                        'hex',
+                                        'hex',
+                                        'uncompressed');
+
 
 console.log(uncompressedKey === ecdh.getPublicKey('hex'));
-
 ```
 
 #### `ecdh.computeSecret(otherPublicKey[, inputEncoding][, outputEncoding])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_ecdhcomputesecretotherpublickey-inputencoding-outputencoding)
@@ -15302,26 +14751,30 @@ There is not normally a reason to call this method because `ECDH` only requires 
 Example (obtaining a shared secret):
 
 ```
-
 const {
-createECDH,
-createHash
+  createECDH,
+  createHash
 } = await import('crypto');
 
 const alice = createECDH('secp256k1');
 const bob = createECDH('secp256k1');
 
+
+
+
 alice.setPrivateKey(
-createHash('sha256').update('alice', 'utf8').digest()
+  createHash('sha256').update('alice', 'utf8').digest()
 );
+
+
 
 bob.generateKeys();
 
 const aliceSecret = alice.computeSecret(bob.getPublicKey(), null, 'hex');
 const bobSecret = bob.computeSecret(alice.getPublicKey(), null, 'hex');
 
-console.log(aliceSecret === bobSecret);
 
+console.log(aliceSecret === bobSecret);
 ```
 
 ### Class: `Hash`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_class-hash)
@@ -15340,31 +14793,30 @@ The [`crypto.createHash()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#c
 Example: Using `Hash` objects as streams:
 
 ```
-
 const {
-createHash
+  createHash
 } = await import('crypto');
 
 const hash = createHash('sha256');
 
 hash.on('readable', () => {
-
-const data = hash.read();
-if (data) {
-console.log(data.toString('hex'));
-
-}
+  
+  
+  const data = hash.read();
+  if (data) {
+    console.log(data.toString('hex'));
+    
+    
+  }
 });
 
 hash.write('some data to hash');
 hash.end();
-
 ```
 
 Example: Using `Hash` and piped streams:
 
 ```
-
 import { createReadStream } from 'fs';
 import { stdout } from 'process';
 const { createHash } = await import('crypto');
@@ -15373,15 +14825,13 @@ const hash = createHash('sha256');
 
 const input = createReadStream('test.js');
 input.pipe(hash).setEncoding('hex').pipe(stdout);
-
 ```
 
 Example: Using the [`hash.update()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_hashupdatedata-inputencoding) and [`hash.digest()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_hashdigestencoding) methods:
 
 ```
-
 const {
-createHash
+  createHash
 } = await import('crypto');
 
 const hash = createHash('sha256');
@@ -15407,7 +14857,7 @@ An error is thrown when an attempt is made to copy the `Hash` object after its [
 ```
 
 const {
-createHash
+  createHash
 } = await import('crypto');
 
 const hash = createHash('sha256');
@@ -15459,50 +14909,47 @@ The [`crypto.createHmac()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#c
 Example: Using `Hmac` objects as streams:
 
 ```
-
 const {
-createHmac
+  createHmac
 } = await import('crypto');
 
 const hmac = createHmac('sha256', 'a secret');
 
 hmac.on('readable', () => {
-
-const data = hmac.read();
-if (data) {
-console.log(data.toString('hex'));
-
-}
+  
+  
+  const data = hmac.read();
+  if (data) {
+    console.log(data.toString('hex'));
+    
+    
+  }
 });
 
 hmac.write('some data to hash');
 hmac.end();
-
 ```
 
 Example: Using `Hmac` and piped streams:
 
 ```
-
 import { createReadStream } from 'fs';
 import { stdout } from 'process';
 const {
-createHmac
+  createHmac
 } = await import('crypto');
 
 const hmac = createHmac('sha256', 'a secret');
 
 const input = createReadStream('test.js');
 input.pipe(hmac).pipe(stdout);
-
 ```
 
 Example: Using the [`hmac.update()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_hmacupdatedata-inputencoding) and [`hmac.digest()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_hmacdigestencoding) methods:
 
 ```
-
 const {
-createHmac
+  createHmac
 } = await import('crypto');
 
 const hmac = createHmac('sha256', 'a secret');
@@ -15550,19 +14997,17 @@ Added in: v15.0.0
 Example: Converting a `CryptoKey` instance to a `KeyObject`:
 
 ```
-
 const { webcrypto, KeyObject } = await import('crypto');
 const { subtle } = webcrypto;
 
 const key = await subtle.generateKey({
-name: 'HMAC',
-hash: 'SHA-256',
-length: 256
+  name: 'HMAC',
+  hash: 'SHA-256',
+  length: 256
 }, true, ['sign', 'verify']);
 
 const keyObject = KeyObject.from(key);
 console.log(keyObject.symmetricKeySize);
-
 ```
 
 #### `keyObject.asymmetricKeyDetails`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_keyobjectasymmetrickeydetails)
@@ -15659,15 +15104,14 @@ The [`crypto.createSign()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#c
 Example: Using `Sign` and [`Verify`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_class-verify) objects as streams:
 
 ```
-
 const {
-generateKeyPairSync,
-createSign,
-createVerify
+  generateKeyPairSync,
+  createSign,
+  createVerify
 } = await import('crypto');
 
 const { privateKey, publicKey } = generateKeyPairSync('ec', {
-namedCurve: 'sect239k1'
+  namedCurve: 'sect239k1'
 });
 
 const sign = createSign('SHA256');
@@ -15679,21 +15123,19 @@ const verify = createVerify('SHA256');
 verify.write('some data to sign');
 verify.end();
 console.log(verify.verify(publicKey, signature, 'hex'));
-
 ```
 
 Example: Using the [`sign.update()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_signupdatedata-inputencoding) and [`verify.update()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_verifyupdatedata-inputencoding) methods:
 
 ```
-
 const {
-generateKeyPairSync,
-createSign,
-createVerify
+  generateKeyPairSync,
+  createSign,
+  createVerify
 } = await import('crypto');
 
 const { privateKey, publicKey } = generateKeyPairSync('rsa', {
-modulusLength: 2048,
+  modulusLength: 2048,
 });
 
 const sign = createSign('SHA256');
@@ -15705,7 +15147,6 @@ const verify = createVerify('SHA256');
 verify.update('some data to sign');
 verify.end();
 console.log(verify.verify(publicKey, signature));
-
 ```
 
 #### `sign.sign(privateKey[, outputEncoding])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_signsignprivatekey-outputencoding)
@@ -15722,18 +15163,18 @@ Calculates the signature on all the data passed through using either [`sign.upda
 If `privateKey` is not a [`KeyObject`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_class-keyobject), this function behaves as if `privateKey` had been passed to [`crypto.createPrivateKey()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_cryptocreateprivatekeykey). If it is an object, the following additional properties can be passed:
 
 -   `dsaEncoding` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) For DSA and ECDSA, this option specifies the format of the generated signature. It can be one of the following:
-
+    
     -   `'der'` (default): DER-encoded ASN.1 signature structure encoding `(r, s)`.
     -   `'ieee-p1363'`: Signature format `r || s` as proposed in IEEE-P1363.
 -   `padding` [<integer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) Optional padding value for RSA, one of the following:
-
+    
     -   `crypto.constants.RSA_PKCS1_PADDING` (default)
     -   `crypto.constants.RSA_PKCS1_PSS_PADDING`
-
+    
     `RSA_PKCS1_PSS_PADDING` will use MGF1 with the same hash function used to sign the message as specified in section 3.1 of [RFC 4055](https://www.rfc-editor.org/rfc/rfc4055.txt), unless an MGF1 hash function has been specified as part of the key in compliance with section 3.3 of [RFC 4055](https://www.rfc-editor.org/rfc/rfc4055.txt).
-
+    
 -   `saltLength` [<integer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) Salt length for when padding is `RSA_PKCS1_PSS_PADDING`. The special value `crypto.constants.RSA_PSS_SALTLEN_DIGEST` sets the salt length to the digest size, `crypto.constants.RSA_PSS_SALTLEN_MAX_SIGN` (default) sets it to the maximum permissible value.
-
+    
 
 If `outputEncoding` is provided a string is returned; otherwise a [`Buffer`](https://nodejs.org/dist/v16.13.1/docs/api/buffer.html) is returned.
 
@@ -15787,18 +15228,18 @@ Verifies the provided data using the given `object` and `signature`.
 If `object` is not a [`KeyObject`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_class-keyobject), this function behaves as if `object` had been passed to [`crypto.createPublicKey()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_cryptocreatepublickeykey). If it is an object, the following additional properties can be passed:
 
 -   `dsaEncoding` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) For DSA and ECDSA, this option specifies the format of the signature. It can be one of the following:
-
+    
     -   `'der'` (default): DER-encoded ASN.1 signature structure encoding `(r, s)`.
     -   `'ieee-p1363'`: Signature format `r || s` as proposed in IEEE-P1363.
 -   `padding` [<integer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) Optional padding value for RSA, one of the following:
-
+    
     -   `crypto.constants.RSA_PKCS1_PADDING` (default)
     -   `crypto.constants.RSA_PKCS1_PSS_PADDING`
-
+    
     `RSA_PKCS1_PSS_PADDING` will use MGF1 with the same hash function used to verify the message as specified in section 3.1 of [RFC 4055](https://www.rfc-editor.org/rfc/rfc4055.txt), unless an MGF1 hash function has been specified as part of the key in compliance with section 3.3 of [RFC 4055](https://www.rfc-editor.org/rfc/rfc4055.txt).
-
+    
 -   `saltLength` [<integer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) Salt length for when padding is `RSA_PKCS1_PSS_PADDING`. The special value `crypto.constants.RSA_PSS_SALTLEN_DIGEST` sets the salt length to the digest size, `crypto.constants.RSA_PSS_SALTLEN_AUTO` (default) causes it to be determined automatically.
-
+    
 
 The `signature` argument is the previously calculated signature for the data, in the `signatureEncoding`. If a `signatureEncoding` is specified, the `signature` is expected to be a string; otherwise `signature` is expected to be a [`Buffer`](https://nodejs.org/dist/v16.13.1/docs/api/buffer.html), `TypedArray`, or `DataView`.
 
@@ -15813,13 +15254,11 @@ Added in: v15.6.0
 Encapsulates an X509 certificate and provides read-only access to its information.
 
 ```
-
 const { X509Certificate } = await import('crypto');
 
 const x509 = new X509Certificate('{... pem encoded cert ...}');
 
 console.log(x509.subject);
-
 ```
 
 #### `new X509Certificate(buffer)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_new-x509certificatebuffer)
@@ -16217,13 +15656,12 @@ The `algorithm` is dependent on the available algorithms supported by the versio
 Example: generating the sha256 sum of a file
 
 ```
-
 import {
-createReadStream
+  createReadStream
 } from 'fs';
 import { argv } from 'process';
 const {
-createHash
+  createHash
 } = await import('crypto');
 
 const filename = argv[2];
@@ -16232,15 +15670,15 @@ const hash = createHash('sha256');
 
 const input = createReadStream(filename);
 input.on('readable', () => {
-
-const data = input.read();
-if (data)
-hash.update(data);
-else {
-console.log(`${hash.digest('hex')} ${filename}`);
-}
+  
+  
+  const data = input.read();
+  if (data)
+    hash.update(data);
+  else {
+    console.log(`${hash.digest('hex')} ${filename}`);
+  }
 });
-
 ```
 
 #### `crypto.createHmac(algorithm, key[, options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_cryptocreatehmacalgorithm-key-options)
@@ -16260,13 +15698,12 @@ The `key` is the HMAC key used to generate the cryptographic HMAC hash. If it is
 Example: generating the sha256 HMAC of a file
 
 ```
-
 import {
-createReadStream
+  createReadStream
 } from 'fs';
 import { argv } from 'process';
 const {
-createHmac
+  createHmac
 } = await import('crypto');
 
 const filename = argv[2];
@@ -16275,15 +15712,15 @@ const hmac = createHmac('sha256', 'a secret');
 
 const input = createReadStream(filename);
 input.on('readable', () => {
-
-const data = input.read();
-if (data)
-hmac.update(data);
-else {
-console.log(`${hmac.digest('hex')} ${filename}`);
-}
+  
+  
+  const data = input.read();
+  if (data)
+    hmac.update(data);
+  else {
+    console.log(`${hmac.digest('hex')} ${filename}`);
+  }
 });
-
 ```
 
 #### `crypto.createPrivateKey(key)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_cryptocreateprivatekeykey)
@@ -16374,16 +15811,14 @@ Added in: v15.0.0
 Asynchronously generates a new random secret key of the given `length`. The `type` will determine which validations will be performed on the `length`.
 
 ```
-
 const {
-generateKey
+  generateKey
 } = await import('crypto');
 
 generateKey('hmac', { length: 64 }, (err, key) => {
-if (err) throw err;
-console.log(key.export().toString('hex'));  
+  if (err) throw err;
+  console.log(key.export().toString('hex'));  
 });
-
 ```
 
 #### `crypto.generateKeyPair(type, options, callback)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_cryptogeneratekeypairtype-options-callback)
@@ -16415,27 +15850,25 @@ If a `publicKeyEncoding` or `privateKeyEncoding` was specified, this function be
 It is recommended to encode public keys as `'spki'` and private keys as `'pkcs8'` with encryption for long-term storage:
 
 ```
-
 const {
-generateKeyPair
+  generateKeyPair
 } = await import('crypto');
 
 generateKeyPair('rsa', {
-modulusLength: 4096,
-publicKeyEncoding: {
-type: 'spki',
-format: 'pem'
-},
-privateKeyEncoding: {
-type: 'pkcs8',
-format: 'pem',
-cipher: 'aes-256-cbc',
-passphrase: 'top secret'
-}
+  modulusLength: 4096,
+  publicKeyEncoding: {
+    type: 'spki',
+    format: 'pem'
+  },
+  privateKeyEncoding: {
+    type: 'pkcs8',
+    format: 'pem',
+    cipher: 'aes-256-cbc',
+    passphrase: 'top secret'
+  }
 }, (err, publicKey, privateKey) => {
-
+  
 });
-
 ```
 
 On completion, `callback` will be called with `err` set to `undefined` and `publicKey` / `privateKey` representing the generated key pair.
@@ -16470,28 +15903,26 @@ If a `publicKeyEncoding` or `privateKeyEncoding` was specified, this function be
 When encoding public keys, it is recommended to use `'spki'`. When encoding private keys, it is recommended to use `'pkcs8'` with a strong passphrase, and to keep the passphrase confidential.
 
 ```
-
 const {
-generateKeyPairSync
+  generateKeyPairSync
 } = await import('crypto');
 
 const {
-publicKey,
-privateKey,
+  publicKey,
+  privateKey,
 } = generateKeyPairSync('rsa', {
-modulusLength: 4096,
-publicKeyEncoding: {
-type: 'spki',
-format: 'pem'
-},
-privateKeyEncoding: {
-type: 'pkcs8',
-format: 'pem',
-cipher: 'aes-256-cbc',
-passphrase: 'top secret'
-}
+  modulusLength: 4096,
+  publicKeyEncoding: {
+    type: 'spki',
+    format: 'pem'
+  },
+  privateKeyEncoding: {
+    type: 'pkcs8',
+    format: 'pem',
+    cipher: 'aes-256-cbc',
+    passphrase: 'top secret'
+  }
 });
-
 ```
 
 The return value `{ publicKey, privateKey }` represents the generated key pair. When PEM encoding was selected, the respective key will be a string, otherwise it will be a buffer containing the data encoded as DER.
@@ -16510,14 +15941,12 @@ Added in: v15.0.0
 Synchronously generates a new random secret key of the given `length`. The `type` will determine which validations will be performed on the `length`.
 
 ```
-
 const {
-generateKeySync
+  generateKeySync
 } = await import('crypto');
 
 const key = generateKeySync('hmac', { length: 64 });
-console.log(key.export().toString('hex'));
-
+console.log(key.export().toString('hex'));  
 ```
 
 #### `crypto.generatePrime(size[, options[, callback]])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_cryptogenerateprimesize-options-callback)
@@ -16603,13 +16032,11 @@ Added in: v0.9.3
 -   Returns: [<string\[\]>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) An array with the names of the supported cipher algorithms.
 
 ```
-
 const {
-getCiphers
+  getCiphers
 } = await import('crypto');
 
-console.log(getCiphers());
-
+console.log(getCiphers()); 
 ```
 
 #### `crypto.getCurves()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_cryptogetcurves)
@@ -16619,13 +16046,11 @@ Added in: v2.3.0
 -   Returns: [<string\[\]>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) An array with the names of the supported elliptic curves.
 
 ```
-
 const {
-getCurves
+  getCurves
 } = await import('crypto');
 
-console.log(getCurves());
-
+console.log(getCurves()); 
 ```
 
 #### `crypto.getDiffieHellman(groupName)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_cryptogetdiffiehellmangroupname)
@@ -16640,9 +16065,8 @@ Creates a predefined `DiffieHellmanGroup` key exchange object. The supported gro
 Example (obtaining a shared secret):
 
 ```
-
 const {
-getDiffieHellman
+  getDiffieHellman
 } = await import('crypto');
 const alice = getDiffieHellman('modp14');
 const bob = getDiffieHellman('modp14');
@@ -16653,8 +16077,8 @@ bob.generateKeys();
 const aliceSecret = alice.computeSecret(bob.getPublicKey(), null, 'hex');
 const bobSecret = bob.computeSecret(alice.getPublicKey(), null, 'hex');
 
-console.log(aliceSecret === bobSecret);
 
+console.log(aliceSecret === bobSecret);
 ```
 
 #### `crypto.getFips()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_cryptogetfips)
@@ -16670,13 +16094,11 @@ Added in: v0.9.3
 -   Returns: [<string\[\]>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) An array of the names of the supported hash algorithms, such as `'RSA-SHA256'`. Hash algorithms are also called "digest" algorithms.
 
 ```
-
 const {
-getHashes
+  getHashes
 } = await import('crypto');
 
-console.log(getHashes());
-
+console.log(getHashes()); 
 ```
 
 #### `crypto.hkdf(digest, ikm, salt, info, keylen, callback)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_cryptohkdfdigest-ikm-salt-info-keylen-callback)
@@ -16697,17 +16119,15 @@ HKDF is a simple key derivation function defined in RFC 5869. The given `ikm`, `
 The supplied `callback` function is called with two arguments: `err` and `derivedKey`. If an errors occurs while deriving the key, `err` will be set; otherwise `err` will be `null`. The successfully generated `derivedKey` will be passed to the callback as an [<ArrayBuffer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer). An error will be thrown if any of the input arguments specify invalid values or types.
 
 ```
-
 import { Buffer } from 'buffer';
 const {
-hkdf
+  hkdf
 } = await import('crypto');
 
 hkdf('sha512', 'key', 'salt', 'info', 64, (err, derivedKey) => {
-if (err) throw err;
-console.log(Buffer.from(derivedKey).toString('hex'));  
+  if (err) throw err;
+  console.log(Buffer.from(derivedKey).toString('hex'));  
 });
-
 ```
 
 #### `crypto.hkdfSync(digest, ikm, salt, info, keylen)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_cryptohkdfsyncdigest-ikm-salt-info-keylen)
@@ -16728,15 +16148,13 @@ The successfully generated `derivedKey` will be returned as an [<ArrayBuffer>](h
 An error will be thrown if any of the input arguments specify invalid values or types, or if the derived key cannot be generated.
 
 ```
-
 import { Buffer } from 'buffer';
 const {
-hkdfSync
+  hkdfSync
 } = await import('crypto');
 
 const derivedKey = hkdfSync('sha512', 'key', 'salt', 'info', 64);
-console.log(Buffer.from(derivedKey).toString('hex'));
-
+console.log(Buffer.from(derivedKey).toString('hex'));  
 ```
 
 #### `crypto.pbkdf2(password, salt, iterations, keylen, digest, callback)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_cryptopbkdf2password-salt-iterations-keylen-digest-callback)
@@ -16763,29 +16181,25 @@ The `salt` should be as unique as possible. It is recommended that a salt is ran
 When passing strings for `password` or `salt`, please consider [caveats when using strings as inputs to cryptographic APIs](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_using-strings-as-inputs-to-cryptographic-apis).
 
 ```
-
 const {
-pbkdf2
+  pbkdf2
 } = await import('crypto');
 
 pbkdf2('secret', 'salt', 100000, 64, 'sha512', (err, derivedKey) => {
-if (err) throw err;
-console.log(derivedKey.toString('hex'));  
+  if (err) throw err;
+  console.log(derivedKey.toString('hex'));  
 });
-
 ```
 
 The `crypto.DEFAULT_ENCODING` property can be used to change the way the `derivedKey` is passed to the callback. This property, however, has been deprecated and use should be avoided.
 
 ```
-
 import crypto from 'crypto';
 crypto.DEFAULT_ENCODING = 'hex';
 crypto.pbkdf2('secret', 'salt', 100000, 512, 'sha512', (err, derivedKey) => {
-if (err) throw err;
-console.log(derivedKey);  
+  if (err) throw err;
+  console.log(derivedKey);  
 });
-
 ```
 
 An array of supported digest functions can be retrieved using [`crypto.getHashes()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_cryptogethashes).
@@ -16814,25 +16228,21 @@ The `salt` should be as unique as possible. It is recommended that a salt is ran
 When passing strings for `password` or `salt`, please consider [caveats when using strings as inputs to cryptographic APIs](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_using-strings-as-inputs-to-cryptographic-apis).
 
 ```
-
 const {
-pbkdf2Sync
+  pbkdf2Sync
 } = await import('crypto');
 
 const key = pbkdf2Sync('secret', 'salt', 100000, 64, 'sha512');
-console.log(key.toString('hex'));
-
+console.log(key.toString('hex'));  
 ```
 
 The `crypto.DEFAULT_ENCODING` property may be used to change the way the `derivedKey` is returned. This property, however, is deprecated and use should be avoided.
 
 ```
-
 import crypto from 'crypto';
 crypto.DEFAULT_ENCODING = 'hex';
 const key = crypto.pbkdf2Sync('secret', 'salt', 100000, 512, 'sha512');
-console.log(key);
-
+console.log(key);  
 ```
 
 An array of supported digest functions can be retrieved using [`crypto.getHashes()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_cryptogethashes).
@@ -16912,14 +16322,13 @@ If a `callback` function is provided, the bytes are generated asynchronously and
 ```
 
 const {
-randomBytes
+  randomBytes
 } = await import('crypto');
 
 randomBytes(256, (err, buf) => {
-if (err) throw err;
-console.log(`${buf.length} bytes of random data: ${buf.toString('hex')}`);
+  if (err) throw err;
+  console.log(`${buf.length} bytes of random data: ${buf.toString('hex')}`);
 });
-
 ```
 
 If the `callback` function is not provided, the random bytes are generated synchronously and returned as a [`Buffer`](https://nodejs.org/dist/v16.13.1/docs/api/buffer.html). An error will be thrown if there is a problem generating the bytes.
@@ -16927,13 +16336,12 @@ If the `callback` function is not provided, the random bytes are generated synch
 ```
 
 const {
-randomBytes
+  randomBytes
 } = await import('crypto');
 
 const buf = randomBytes(256);
 console.log(
-`${buf.length} bytes of random data: ${buf.toString('hex')}`);
-
+  `${buf.length} bytes of random data: ${buf.toString('hex')}`);
 ```
 
 The `crypto.randomBytes()` method will not complete until there is sufficient entropy available. This should normally never take longer than a few milliseconds. The only time when generating the random bytes may conceivably block for a longer period of time is right after boot, when the whole system is still low on entropy.
@@ -16952,7 +16360,6 @@ The asynchronous version of `crypto.randomBytes()` is carried out in a single th
 Synchronous version of [`crypto.randomFill()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_cryptorandomfillbuffer-offset-size-callback).
 
 ```
-
 import { Buffer } from 'buffer';
 const { randomFillSync } = await import('crypto');
 
@@ -16962,29 +16369,27 @@ console.log(randomFillSync(buf).toString('hex'));
 randomFillSync(buf, 5);
 console.log(buf.toString('hex'));
 
+
 randomFillSync(buf, 5, 5);
 console.log(buf.toString('hex'));
-
 ```
 
 Any `ArrayBuffer`, `TypedArray` or `DataView` instance may be passed as `buffer`.
 
 ```
-
 import { Buffer } from 'buffer';
 const { randomFillSync } = await import('crypto');
 
 const a = new Uint32Array(10);
 console.log(Buffer.from(randomFillSync(a).buffer,
-a.byteOffset, a.byteLength).toString('hex'));
+                        a.byteOffset, a.byteLength).toString('hex'));
 
 const b = new DataView(new ArrayBuffer(10));
 console.log(Buffer.from(randomFillSync(b).buffer,
-b.byteOffset, b.byteLength).toString('hex'));
+                        b.byteOffset, b.byteLength).toString('hex'));
 
 const c = new ArrayBuffer(10);
 console.log(Buffer.from(randomFillSync(c)).toString('hex'));
-
 ```
 
 #### `crypto.randomFill(buffer[, offset][, size], callback)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_cryptorandomfillbuffer-offset-size-callback)
@@ -16999,26 +16404,25 @@ This function is similar to [`crypto.randomBytes()`](https://nodejs.org/dist/v16
 If the `callback` function is not provided, an error will be thrown.
 
 ```
-
 import { Buffer } from 'buffer';
 const { randomFill } = await import('crypto');
 
 const buf = Buffer.alloc(10);
 randomFill(buf, (err, buf) => {
-if (err) throw err;
-console.log(buf.toString('hex'));
+  if (err) throw err;
+  console.log(buf.toString('hex'));
 });
 
 randomFill(buf, 5, (err, buf) => {
-if (err) throw err;
-console.log(buf.toString('hex'));
+  if (err) throw err;
+  console.log(buf.toString('hex'));
 });
+
 
 randomFill(buf, 5, 5, (err, buf) => {
-if (err) throw err;
-console.log(buf.toString('hex'));
+  if (err) throw err;
+  console.log(buf.toString('hex'));
 });
-
 ```
 
 Any `ArrayBuffer`, `TypedArray`, or `DataView` instance may be passed as `buffer`.
@@ -17026,30 +16430,28 @@ Any `ArrayBuffer`, `TypedArray`, or `DataView` instance may be passed as `buffer
 While this includes instances of `Float32Array` and `Float64Array`, this function should not be used to generate random floating-point numbers. The result may contain `+Infinity`, `-Infinity`, and `NaN`, and even if the array contains finite numbers only, they are not drawn from a uniform random distribution and have no meaningful lower or upper bounds.
 
 ```
-
 import { Buffer } from 'buffer';
 const { randomFill } = await import('crypto');
 
 const a = new Uint32Array(10);
 randomFill(a, (err, buf) => {
-if (err) throw err;
-console.log(Buffer.from(buf.buffer, buf.byteOffset, buf.byteLength)
-.toString('hex'));
+  if (err) throw err;
+  console.log(Buffer.from(buf.buffer, buf.byteOffset, buf.byteLength)
+    .toString('hex'));
 });
 
 const b = new DataView(new ArrayBuffer(10));
 randomFill(b, (err, buf) => {
-if (err) throw err;
-console.log(Buffer.from(buf.buffer, buf.byteOffset, buf.byteLength)
-.toString('hex'));
+  if (err) throw err;
+  console.log(Buffer.from(buf.buffer, buf.byteOffset, buf.byteLength)
+    .toString('hex'));
 });
 
 const c = new ArrayBuffer(10);
 randomFill(c, (err, buf) => {
-if (err) throw err;
-console.log(Buffer.from(buf).toString('hex'));
+  if (err) throw err;
+  console.log(Buffer.from(buf).toString('hex'));
 });
-
 ```
 
 This API uses libuv's threadpool, which can have surprising and negative performance implications for some applications; see the [`UV_THREADPOOL_SIZE`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#cli_uv_threadpool_sizesize) documentation for more information.
@@ -17073,36 +16475,33 @@ If the `callback` function is not provided, the random integer is generated sync
 ```
 
 const {
-randomInt
+  randomInt
 } = await import('crypto');
 
 randomInt(3, (err, n) => {
-if (err) throw err;
-console.log(`Random number chosen from (0, 1, 2): ${n}`);
+  if (err) throw err;
+  console.log(`Random number chosen from (0, 1, 2): ${n}`);
 });
-
 ```
 
 ```
 
 const {
-randomInt
+  randomInt
 } = await import('crypto');
 
 const n = randomInt(3);
 console.log(`Random number chosen from (0, 1, 2): ${n}`);
-
 ```
 
 ```
 
 const {
-randomInt
+  randomInt
 } = await import('crypto');
 
 const n = randomInt(1, 7);
 console.log(`The dice rolled: ${n}`);
-
 ```
 
 #### `crypto.randomUUID([options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_cryptorandomuuidoptions)
@@ -17143,21 +16542,20 @@ The `callback` function is called with two arguments: `err` and `derivedKey`. `e
 An exception is thrown when any of the input arguments specify invalid values or types.
 
 ```
-
 const {
-scrypt
+  scrypt
 } = await import('crypto');
 
+
 scrypt('password', 'salt', 64, (err, derivedKey) => {
-if (err) throw err;
-console.log(derivedKey.toString('hex'));  
+  if (err) throw err;
+  console.log(derivedKey.toString('hex'));  
 });
 
 scrypt('password', 'salt', 64, { N: 1024 }, (err, derivedKey) => {
-if (err) throw err;
-console.log(derivedKey.toString('hex'));  
+  if (err) throw err;
+  console.log(derivedKey.toString('hex'));  
 });
-
 ```
 
 #### `crypto.scryptSync(password, salt, keylen[, options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_cryptoscryptsyncpassword-salt-keylen-options)
@@ -17186,18 +16584,17 @@ An exception is thrown when key derivation fails, otherwise the derived key is r
 An exception is thrown when any of the input arguments specify invalid values or types.
 
 ```
-
 const {
-scryptSync
+  scryptSync
 } = await import('crypto');
 
+
 const key1 = scryptSync('password', 'salt', 64);
-console.log(key1.toString('hex'));
+console.log(key1.toString('hex'));  
 
 const key2 = scryptSync('password', 'salt', 64, { N: 1024 });
-console.log(key2.toString('hex'));
-
-````
+console.log(key2.toString('hex'));  
+```
 
 #### `crypto.secureHeapUsed()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_cryptosecureheapused)
 
@@ -17263,18 +16660,18 @@ Calculates and returns the signature for `data` using the given private key and 
 If `key` is not a [`KeyObject`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_class-keyobject), this function behaves as if `key` had been passed to [`crypto.createPrivateKey()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_cryptocreateprivatekeykey). If it is an object, the following additional properties can be passed:
 
 -   `dsaEncoding` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) For DSA and ECDSA, this option specifies the format of the generated signature. It can be one of the following:
-
+    
     -   `'der'` (default): DER-encoded ASN.1 signature structure encoding `(r, s)`.
     -   `'ieee-p1363'`: Signature format `r || s` as proposed in IEEE-P1363.
 -   `padding` [<integer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) Optional padding value for RSA, one of the following:
-
+    
     -   `crypto.constants.RSA_PKCS1_PADDING` (default)
     -   `crypto.constants.RSA_PKCS1_PSS_PADDING`
-
+    
     `RSA_PKCS1_PSS_PADDING` will use MGF1 with the same hash function used to sign the message as specified in section 3.1 of [RFC 4055](https://www.rfc-editor.org/rfc/rfc4055.txt).
-
+    
 -   `saltLength` [<integer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) Salt length for when padding is `RSA_PKCS1_PSS_PADDING`. The special value `crypto.constants.RSA_PSS_SALTLEN_DIGEST` sets the salt length to the digest size, `crypto.constants.RSA_PSS_SALTLEN_MAX_SIGN` (default) sets it to the maximum permissible value.
-
+    
 
 If the `callback` function is provided this function uses libuv's threadpool.
 
@@ -17308,18 +16705,18 @@ Verifies the given signature for `data` using the given key and algorithm. If `a
 If `key` is not a [`KeyObject`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_class-keyobject), this function behaves as if `key` had been passed to [`crypto.createPublicKey()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_cryptocreatepublickeykey). If it is an object, the following additional properties can be passed:
 
 -   `dsaEncoding` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) For DSA and ECDSA, this option specifies the format of the signature. It can be one of the following:
-
+    
     -   `'der'` (default): DER-encoded ASN.1 signature structure encoding `(r, s)`.
     -   `'ieee-p1363'`: Signature format `r || s` as proposed in IEEE-P1363.
 -   `padding` [<integer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) Optional padding value for RSA, one of the following:
-
+    
     -   `crypto.constants.RSA_PKCS1_PADDING` (default)
     -   `crypto.constants.RSA_PKCS1_PSS_PADDING`
-
+    
     `RSA_PKCS1_PSS_PADDING` will use MGF1 with the same hash function used to sign the message as specified in section 3.1 of [RFC 4055](https://www.rfc-editor.org/rfc/rfc4055.txt).
-
+    
 -   `saltLength` [<integer>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) Salt length for when padding is `RSA_PKCS1_PSS_PADDING`. The special value `crypto.constants.RSA_PSS_SALTLEN_DIGEST` sets the salt length to the digest size, `crypto.constants.RSA_PSS_SALTLEN_MAX_SIGN` (default) sets it to the maximum permissible value.
-
+    
 
 The `signature` argument is the previously calculated signature for the `data`.
 
@@ -17344,20 +16741,20 @@ For historical reasons, many cryptographic APIs provided by Node.js accept strin
 When passing strings to cryptographic APIs, consider the following factors.
 
 -   Not all byte sequences are valid UTF-8 strings. Therefore, when a byte sequence of length `n` is derived from a string, its entropy is generally lower than the entropy of a random or pseudorandom `n` byte sequence. For example, no UTF-8 string will result in the byte sequence `c0 af`. Secret keys should almost exclusively be random or pseudorandom byte sequences.
-
+    
 -   Similarly, when converting random or pseudorandom byte sequences to UTF-8 strings, subsequences that do not represent valid code points may be replaced by the Unicode replacement character (`U+FFFD`). The byte representation of the resulting Unicode string may, therefore, not be equal to the byte sequence that the string was created from.
-
+    
     ```
     const original = [0xc0, 0xaf];
     const bytesAsString = Buffer.from(original).toString('utf8');
     const stringAsBytes = Buffer.from(bytesAsString, 'utf8');
     console.log(stringAsBytes);
     ```
-
+    
     The outputs of ciphers, hash functions, signature algorithms, and key derivation functions are pseudorandom byte sequences and should not be used as Unicode strings.
-
+    
 -   When strings are obtained from user input, some Unicode characters can be represented in multiple equivalent ways that result in different byte sequences. For example, when passing a user passphrase to a key derivation function, such as PBKDF2 or scrypt, the result of the key derivation function depends on whether the string uses composed or decomposed characters. Node.js does not normalize character representations. Developers should consider using [`String.prototype.normalize()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/normalize) on user inputs before passing them to cryptographic APIs.
-
+    
 
 #### Legacy streams API (prior to Node.js 0.10)[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_legacy-streams-api-prior-to-nodejs-010)
 
@@ -17396,13 +16793,12 @@ CCM is one of the supported [AEAD algorithms](https://en.wikipedia.org/wiki/Auth
 -   As CCM processes the whole message at once, `update()` must be called exactly once.
 -   Even though calling `update()` is sufficient to encrypt/decrypt the message, applications _must_ call `final()` to compute or verify the authentication tag.
 
-````
-
+```
 import { Buffer } from 'buffer';
 const {
-createCipheriv,
-createDecipheriv,
-randomBytes
+  createCipheriv,
+  createDecipheriv,
+  randomBytes
 } = await import('crypto');
 
 const key = 'keykeykeykeykeykeykeykey';
@@ -17411,33 +16807,34 @@ const nonce = randomBytes(12);
 const aad = Buffer.from('0123456789', 'hex');
 
 const cipher = createCipheriv('aes-192-ccm', key, nonce, {
-authTagLength: 16
+  authTagLength: 16
 });
 const plaintext = 'Hello world';
 cipher.setAAD(aad, {
-plaintextLength: Buffer.byteLength(plaintext)
+  plaintextLength: Buffer.byteLength(plaintext)
 });
 const ciphertext = cipher.update(plaintext, 'utf8');
 cipher.final();
 const tag = cipher.getAuthTag();
 
+
+
 const decipher = createDecipheriv('aes-192-ccm', key, nonce, {
-authTagLength: 16
+  authTagLength: 16
 });
 decipher.setAuthTag(tag);
 decipher.setAAD(aad, {
-plaintextLength: ciphertext.length
+  plaintextLength: ciphertext.length
 });
 const receivedPlaintext = decipher.update(ciphertext, null, 'utf8');
 
 try {
-decipher.final();
+  decipher.final();
 } catch (err) {
-throw new Error('Authentication failed!', { cause: err });
+  throw new Error('Authentication failed!', { cause: err });
 }
 
 console.log(receivedPlaintext);
-
 ```
 
 ### Crypto constants[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_crypto-constants)
@@ -17693,22 +17090,19 @@ Specifies the active default cipher list used by the current Node.js process.
 Node.js includes a command-line debugging utility. To use it, start Node.js with the `inspect` argument followed by the path to the script to debug.
 
 ```
-
 $ node inspect myscript.js
 < Debugger listening on ws://127.0.0.1:9229/621111f9-ffcb-4e82-b718-48a145fa5db8
 < For help, see: https://nodejs.org/en/docs/inspector
 <
 < Debugger attached.
 <
-ok
+ ok
 Break on start in myscript.js:2
-1 // myscript.js
-
+  1 // myscript.js
 > 2 global.x = 5;
-> 3 setTimeout(() => {
-> 4 debugger;
-> debug>
-
+  3 setTimeout(() => {
+  4   debugger;
+debug>
 ```
 
 The Node.js debugger client is not a full-featured debugger, but simple step and inspection are possible.
@@ -17719,64 +17113,60 @@ Inserting the statement `debugger;` into the source code of a script will enable
 
 global.x = 5;
 setTimeout(() => {
-debugger;
-console.log('world');
+  debugger;
+  console.log('world');
 }, 1000);
 console.log('hello');
-
 ```
 
 Once the debugger is run, a breakpoint will occur at line 3:
 
 ```
-
 $ node inspect myscript.js
 < Debugger listening on ws://127.0.0.1:9229/621111f9-ffcb-4e82-b718-48a145fa5db8
 < For help, see: https://nodejs.org/en/docs/inspector
 <
 < Debugger attached.
 <
-ok
+ ok
 Break on start in myscript.js:2
-1 // myscript.js
-
+  1 // myscript.js
 > 2 global.x = 5;
-> 3 setTimeout(() => {
-> 4 debugger;
-> debug> cont
-> < hello
-> <
-> break in myscript.js:4
-> 2 global.x = 5;
-> 3 setTimeout(() => {
-> 4 debugger;
-> 5 console.log('world');
-> 6 }, 1000);
-> debug> next
-> break in myscript.js:5
-> 3 setTimeout(() => {
-> 4 debugger;
-> 5 console.log('world');
-> 6 }, 1000);
-> 7 console.log('hello');
-> debug> repl
-> Press Ctrl+C to leave debug repl
+  3 setTimeout(() => {
+  4   debugger;
+debug> cont
+< hello
+<
+break in myscript.js:4
+  2 global.x = 5;
+  3 setTimeout(() => {
+> 4   debugger;
+  5   console.log('world');
+  6 }, 1000);
+debug> next
+break in myscript.js:5
+  3 setTimeout(() => {
+  4   debugger;
+> 5   console.log('world');
+  6 }, 1000);
+  7 console.log('hello');
+debug> repl
+Press Ctrl+C to leave debug repl
 > x
-> 5
+5
 > 2 + 2
-> 4
-> debug> next
-> < world
-> <
-> break in myscript.js:6
-> 4 debugger;
-> 5 console.log('world');
+4
+debug> next
+< world
+<
+break in myscript.js:6
+  4   debugger;
+  5   console.log('world');
 > 6 }, 1000);
-> 7 console.log('hello');
-> 8
-> debug> .exit
-> $
-
+  7 console.log('hello');
+  8
+debug> .exit
+$
 ```
 
 The `repl` command allows code to be evaluated remotely. The `next` command steps to the next line. Type `help` to see what other commands are available.
@@ -17811,68 +17201,62 @@ To begin watching an expression, type `watch('my_expression')`. The command `wat
 It is also possible to set a breakpoint in a file (module) that is not loaded yet:
 
 ```
-
 $ node inspect main.js
 < Debugger listening on ws://127.0.0.1:9229/48a5b28a-550c-471b-b5e1-d13dd7165df9
 < For help, see: https://nodejs.org/en/docs/inspector
 <
 < Debugger attached.
 <
-ok
+ ok
 Break on start in main.js:1
-
 > 1 const mod = require('./mod.js');
-> 2 mod.hello();
-> 3 mod.hello();
-> debug> setBreakpoint('mod.js', 22)
-> Warning: script 'mod.js' was not loaded yet.
-> debug> c
-> break in mod.js:22
-> 20 // USE OR OTHER DEALINGS IN THE SOFTWARE.
-> 21
-> 22 exports.hello = function() {
-> 23 return 'hello from module';
-> 24 };
-> debug>
-
+  2 mod.hello();
+  3 mod.hello();
+debug> setBreakpoint('mod.js', 22)
+Warning: script 'mod.js' was not loaded yet.
+debug> c
+break in mod.js:22
+ 20 // USE OR OTHER DEALINGS IN THE SOFTWARE.
+ 21
+>22 exports.hello = function() {
+ 23   return 'hello from module';
+ 24 };
+debug>
 ```
 
 It is also possible to set a conditional breakpoint that only breaks when a given expression evaluates to `true`:
 
 ```
-
 $ node inspect main.js
 < Debugger listening on ws://127.0.0.1:9229/ce24daa8-3816-44d4-b8ab-8273c8a66d35
 < For help, see: https://nodejs.org/en/docs/inspector
 < Debugger attached.
 Break on start in main.js:7
-5 }
-6
-
+  5 }
+  6
 > 7 addOne(10);
-> 8 addOne(-1);
-> 9
-> debug> setBreakpoint('main.js', 4, 'num < 0')
-> 1 'use strict';
-> 2
-> 3 function addOne(num) {
-> 4 return num + 1;
-> 5 }
-> 6
-> 7 addOne(10);
-> 8 addOne(-1);
-> 9
-> debug> cont
-> break in main.js:4
-> 2
-> 3 function addOne(num) {
-> 4 return num + 1;
-> 5 }
-> 6
-> debug> exec('num')
-> -1
-> debug>
-
+  8 addOne(-1);
+  9
+debug> setBreakpoint('main.js', 4, 'num < 0')
+  1 'use strict';
+  2
+  3 function addOne(num) {
+> 4   return num + 1;
+  5 }
+  6
+  7 addOne(10);
+  8 addOne(-1);
+  9
+debug> cont
+break in main.js:4
+  2
+  3 function addOne(num) {
+> 4   return num + 1;
+  5 }
+  6
+debug> exec('num')
+-1
+debug>
 ```
 
 #### Information[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#debugger_information)
@@ -17907,11 +17291,9 @@ V8 Inspector can be enabled by passing the `--inspect` flag when starting a Node
 To break on the first line of the application code, pass the `--inspect-brk` flag instead of `--inspect`.
 
 ```
-
 $ node --inspect index.js
 Debugger listening on ws://127.0.0.1:9229/dc9010dd-f8b8-4ac5-a510-c1a114ec7d29
 For help, see: https://nodejs.org/en/docs/inspector
-
 ```
 
 (In the example above, the UUID dc9010dd-f8b8-4ac5-a510-c1a114ec7d29 at the end of the URL is generated on the fly, it varies in different debugging sessions.)
@@ -18437,21 +17819,17 @@ Type: Runtime
 `tls.parseCertString()` is a trivial parsing helper that was made public by mistake. This function can usually be replaced with:
 
 ```
-
 const querystring = require('querystring');
 querystring.parse(str, '\n', '=');
-
 ```
 
 This function is not completely equivalent to `querystring.parse()`. One difference is that `querystring.parse()` does url decoding:
 
 ```
-
 > querystring.parse('%E5%A5%BD=1', '\n', '=');
-> { '好': '1' }
+{ '好': '1' }
 > tls.parseCertString('%E5%A5%BD=1');
-> { '%E5%A5%BD': '1' }
-
+{ '%E5%A5%BD': '1' }
 ```
 
 #### DEP0077: `Module._debug()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#deprecations_dep0077-module_debug)
@@ -18841,18 +18219,16 @@ Allowing a [`fs.FileHandle`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#
 Please ensure that all `fs.FileHandle` objects are explicitly closed using `FileHandle.prototype.close()` when the `fs.FileHandle` is no longer needed:
 
 ```
-
 const fsPromises = require('fs').promises;
 async function openAndClose() {
-let filehandle;
-try {
-filehandle = await fsPromises.open('thefile.txt', 'r');
-} finally {
-if (filehandle !== undefined)
-await filehandle.close();
+  let filehandle;
+  try {
+    filehandle = await fsPromises.open('thefile.txt', 'r');
+  } finally {
+    if (filehandle !== undefined)
+      await filehandle.close();
+  }
 }
-}
-
 ```
 
 #### DEP0138: `process.mainModule`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#deprecations_dep0138-processmainmodule)
@@ -18900,20 +18276,16 @@ A CommonJS module can access the first module that required it using `module.par
 Some modules use it to check if they are the entry point of the current process. Instead, it is recommended to compare `require.main` and `module`:
 
 ```
-
 if (require.main === module) {
-
+  
 }
-
 ```
 
 When looking for the CommonJS modules that have required the current one, `require.cache` and `module.children` can be used:
 
 ```
-
 const moduleParents = Object.values(require.cache)
-.filter((m) => m.children.includes(module));
-
+  .filter((m) => m.children.includes(module));
 ```
 
 #### DEP0145: `socket.bufferSize`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#deprecations_dep0145-socketbuffersize)
@@ -19003,9 +18375,7 @@ The `diagnostics_channel` module provides an API to create named channels to rep
 It can be accessed using:
 
 ```
-
 import diagnostics_channel from 'diagnostics_channel';
-
 ```
 
 It is intended that a module writer wanting to report diagnostics messages will create one or many top-level channels to report messages through. Channels may also be acquired at runtime but it is not encouraged due to the additional overhead of doing so. Channels may be exported for convenience, but as long as the name is known it can be acquired anywhere.
@@ -19019,22 +18389,23 @@ If you intend for your module to produce diagnostics data for others to consume 
 Following is a simple overview of the public API.
 
 ```
-
 import diagnostics_channel from 'diagnostics_channel';
+
 
 const channel = diagnostics_channel.channel('my-channel');
 
-channel.subscribe((message, name) => {
 
+channel.subscribe((message, name) => {
+  
 });
+
 
 if (channel.hasSubscribers) {
-
-channel.publish({
-some: 'data'
-});
+  
+  channel.publish({
+    some: 'data'
+  });
 }
-
 ```
 
 ##### `diagnostics_channel.hasSubscribers(name)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#diagnostics_channel_diagnostics_channelhassubscribersname)
@@ -19049,13 +18420,11 @@ Check if there are active subscribers to the named channel. This is helpful if t
 This API is optional but helpful when trying to publish messages from very performance-sensitive code.
 
 ```
-
 import diagnostics_channel from 'diagnostics_channel';
 
 if (diagnostics_channel.hasSubscribers('my-channel')) {
-
+  
 }
-
 ```
 
 ##### `diagnostics_channel.channel(name)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#diagnostics_channel_diagnostics_channelchannelname)
@@ -19068,11 +18437,9 @@ Added in: v15.1.0, v14.17.0
 This is the primary entry-point for anyone wanting to interact with a named channel. It produces a channel object which is optimized to reduce overhead at publish time as much as possible.
 
 ```
-
 import diagnostics_channel from 'diagnostics_channel';
 
 const channel = diagnostics_channel.channel('my-channel');
-
 ```
 
 #### Class: `Channel`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#diagnostics_channel_class-channel)
@@ -19092,15 +18459,13 @@ Check if there are active subscribers to this channel. This is helpful if the me
 This API is optional but helpful when trying to publish messages from very performance-sensitive code.
 
 ```
-
 import diagnostics_channel from 'diagnostics_channel';
 
 const channel = diagnostics_channel.channel('my-channel');
 
 if (channel.hasSubscribers) {
-
+  
 }
-
 ```
 
 ##### `channel.publish(message)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#diagnostics_channel_channelpublishmessage)
@@ -19112,15 +18477,13 @@ Added in: v15.1.0, v14.17.0
 Publish a message to any subscribers to the channel. This will trigger message handlers synchronously so they will execute within the same context.
 
 ```
-
 import diagnostics_channel from 'diagnostics_channel';
 
 const channel = diagnostics_channel.channel('my-channel');
 
 channel.publish({
-some: 'message'
+  some: 'message'
 });
-
 ```
 
 ##### `channel.subscribe(onMessage)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#diagnostics_channel_channelsubscribeonmessage)
@@ -19134,15 +18497,13 @@ Added in: v15.1.0, v14.17.0
 Register a message handler to subscribe to this channel. This message handler will be run synchronously whenever a message is published to the channel. Any errors thrown in the message handler will trigger an [`'uncaughtException'`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_event-uncaughtexception).
 
 ```
-
 import diagnostics_channel from 'diagnostics_channel';
 
 const channel = diagnostics_channel.channel('my-channel');
 
 channel.subscribe((message, name) => {
-
+  
 });
-
 ```
 
 ##### `channel.unsubscribe(onMessage)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#diagnostics_channel_channelunsubscribeonmessage)
@@ -19154,19 +18515,17 @@ Added in: v15.1.0, v14.17.0
 Remove a message handler previously registered to this channel with [`channel.subscribe(onMessage)`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#diagnostics_channel_channelsubscribeonmessage).
 
 ```
-
 import diagnostics_channel from 'diagnostics_channel';
 
 const channel = diagnostics_channel.channel('my-channel');
 
 function onMessage(message, name) {
-
+  
 }
 
 channel.subscribe(onMessage);
 
 channel.unsubscribe(onMessage);
-
 ```
 
 ## DNS[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#dns_dns)
@@ -19178,36 +18537,32 @@ The `dns` module enables name resolution. For example, use it to look up IP addr
 Although named for the [Domain Name System (DNS)](https://en.wikipedia.org/wiki/Domain_Name_System), it does not always use the DNS protocol for lookups. [`dns.lookup()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#dns_dnslookuphostname-options-callback) uses the operating system facilities to perform name resolution. It may not need to perform any network communication. To perform name resolution the way other applications on the same system do, use [`dns.lookup()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#dns_dnslookuphostname-options-callback).
 
 ```
-
 const dns = require('dns');
 
 dns.lookup('example.org', (err, address, family) => {
-console.log('address: %j family: IPv%s', address, family);
+  console.log('address: %j family: IPv%s', address, family);
 });
-
 ```
 
 All other functions in the `dns` module connect to an actual DNS server to perform name resolution. They will always use the network to perform DNS queries. These functions do not use the same set of configuration files used by [`dns.lookup()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#dns_dnslookuphostname-options-callback) (e.g. `/etc/hosts`). Use these functions to always perform DNS queries, bypassing other name-resolution facilities.
 
 ```
-
 const dns = require('dns');
 
 dns.resolve4('archive.org', (err, addresses) => {
-if (err) throw err;
+  if (err) throw err;
 
-console.log(`addresses: ${JSON.stringify(addresses)}`);
+  console.log(`addresses: ${JSON.stringify(addresses)}`);
 
-addresses.forEach((a) => {
-dns.reverse(a, (err, hostnames) => {
-if (err) {
-throw err;
-}
-console.log(`reverse for ${a}: ${JSON.stringify(hostnames)}`);
+  addresses.forEach((a) => {
+    dns.reverse(a, (err, hostnames) => {
+      if (err) {
+        throw err;
+      }
+      console.log(`reverse for ${a}: ${JSON.stringify(hostnames)}`);
+    });
+  });
 });
-});
-});
-
 ```
 
 See the [Implementation considerations section](https://nodejs.org/dist/v16.13.1/docs/api/all.html#dns_implementation-considerations) for more information.
@@ -19221,15 +18576,14 @@ An independent resolver for DNS requests.
 Creating a new resolver uses the default server settings. Setting the servers used for a resolver using [`resolver.setServers()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#dns_dnssetserversservers) does not affect other resolvers:
 
 ```
-
 const { Resolver } = require('dns');
 const resolver = new Resolver();
 resolver.setServers(['4.4.4.4']);
 
+
 resolver.resolve4('example.org', (err, addresses) => {
-
+  
 });
-
 ```
 
 The following methods from the `dns` module are available:
@@ -19287,11 +18641,12 @@ Added in: v0.11.3
 Returns an array of IP address strings, formatted according to [RFC 5952](https://tools.ietf.org/html/rfc5952#section-6), that are currently configured for DNS resolution. A string will include a port section if a custom port is used.
 
 ```
-
-[ '4.4.4.4', '2001:4860:4860::8888', '4.4.4.4:1053', '[2001:4860:4860::8888]: 1053',
-
+[
+  '4.4.4.4',
+  '2001:4860:4860::8888',
+  '4.4.4.4:1053',
+  '[2001:4860:4860::8888]:1053',
 ]
-
 ```
 
 ### `dns.lookup(hostname[, options], callback)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#dns_dnslookuphostname-options-callback)
@@ -19318,19 +18673,19 @@ On error, `err` is an [`Error`](https://nodejs.org/dist/v16.13.1/docs/api/all.ht
 Example usage:
 
 ```
-
 const dns = require('dns');
 const options = {
-family: 6,
-hints: dns.ADDRCONFIG | dns.V4MAPPED,
+  family: 6,
+  hints: dns.ADDRCONFIG | dns.V4MAPPED,
 };
 dns.lookup('example.com', options, (err, address, family) =>
-console.log('address: %j family: IPv%s', address, family));
+  console.log('address: %j family: IPv%s', address, family));
+
+
 
 options.all = true;
 dns.lookup('example.com', options, (err, addresses) =>
-console.log('addresses: %j', addresses));
-
+  console.log('addresses: %j', addresses));
 ```
 
 If this method is invoked as its [`util.promisify()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utilpromisifyoriginal)ed version, and `all` is not set to `true`, it returns a `Promise` for an `Object` with `address` and `family` properties.
@@ -19361,13 +18716,11 @@ If `address` is not a valid IP address, a `TypeError` will be thrown. The `port`
 On an error, `err` is an [`Error`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_class-error) object, where `err.code` is the error code.
 
 ```
-
 const dns = require('dns');
 dns.lookupService('127.0.0.1', 22, (err, hostname, service) => {
-console.log(hostname, service);
-
+  console.log(hostname, service);
+  
 });
-
 ```
 
 If this method is invoked as its [`util.promisify()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utilpromisifyoriginal)ed version, it returns a `Promise` for an `Object` with `hostname` and `service` properties.
@@ -19568,21 +18921,19 @@ This type of record contains an array property called `entries` which refers to 
 Here is an example of the `ret` object passed to the callback:
 
 ```
-
 [ { type: 'A', address: '127.0.0.1', ttl: 299 },
-{ type: 'CNAME', value: 'example.com' },
-{ type: 'MX', exchange: 'alt4.aspmx.l.example.com', priority: 50 },
-{ type: 'NS', value: 'ns1.example.com' },
-{ type: 'TXT', entries: [ 'v=spf1 include:_spf.example.com ~all' ] },
-{ type: 'SOA',
-nsname: 'ns1.example.com',
-hostmaster: 'admin.example.com',
-serial: 156696742,
-refresh: 900,
-retry: 900,
-expire: 1800,
-minttl: 60 } ]
-
+  { type: 'CNAME', value: 'example.com' },
+  { type: 'MX', exchange: 'alt4.aspmx.l.example.com', priority: 50 },
+  { type: 'NS', value: 'ns1.example.com' },
+  { type: 'TXT', entries: [ 'v=spf1 include:_spf.example.com ~all' ] },
+  { type: 'SOA',
+    nsname: 'ns1.example.com',
+    hostmaster: 'admin.example.com',
+    serial: 156696742,
+    refresh: 900,
+    retry: 900,
+    expire: 1800,
+    minttl: 60 } ]
 ```
 
 DNS server operators may choose not to respond to `ANY` queries. It may be better to call individual methods like [`dns.resolve4()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#dns_dnsresolve4hostname-options-callback), [`dns.resolveMx()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#dns_dnsresolvemxhostname-callback), and so on. For more details, see [RFC 8482](https://tools.ietf.org/html/rfc8482).
@@ -19639,16 +18990,14 @@ Uses the DNS protocol to resolve regular expression based records (`NAPTR` recor
 -   `preference`
 
 ```
-
 {
-flags: 's',
-service: 'SIP+D2U',
-regexp: '',
-replacement: '\_sip.\_udp.example.com',
-order: 30,
-preference: 100
+  flags: 's',
+  service: 'SIP+D2U',
+  regexp: '',
+  replacement: '_sip._udp.example.com',
+  order: 30,
+  preference: 100
 }
-
 ```
 
 ### `dns.resolveNs(hostname, callback)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#dns_dnsresolvenshostname-callback)
@@ -19693,17 +19042,15 @@ Uses the DNS protocol to resolve a start of authority record (`SOA` record) for 
 -   `minttl`
 
 ```
-
 {
-nsname: 'ns.example.com',
-hostmaster: 'root.example.com',
-serial: 2013101809,
-refresh: 10000,
-retry: 2400,
-expire: 604800,
-minttl: 3600
+  nsname: 'ns.example.com',
+  hostmaster: 'root.example.com',
+  serial: 2013101809,
+  refresh: 10000,
+  retry: 2400,
+  expire: 604800,
+  minttl: 3600
 }
-
 ```
 
 ### `dns.resolveSrv(hostname, callback)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#dns_dnsresolvesrvhostname-callback)
@@ -19723,14 +19070,12 @@ Uses the DNS protocol to resolve service records (`SRV` records) for the `hostna
 -   `name`
 
 ```
-
 {
-priority: 10,
-weight: 5,
-port: 21223,
-name: 'service.example.com'
+  priority: 10,
+  weight: 5,
+  port: 21223,
+  name: 'service.example.com'
 }
-
 ```
 
 ### `dns.resolveTxt(hostname, callback)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#dns_dnsresolvetxthostname-callback)
@@ -19779,14 +19124,12 @@ Added in: v0.11.3
 Sets the IP address and port of servers to be used when performing DNS resolution. The `servers` argument is an array of [RFC 5952](https://tools.ietf.org/html/rfc5952#section-6) formatted addresses. If the port is the IANA default DNS port (53) it can be omitted.
 
 ```
-
 dns.setServers([
-'4.4.4.4',
-'[2001:4860:4860::8888]',
-'4.4.4.4:1053',
-'[2001:4860:4860::8888]:1053',
+  '4.4.4.4',
+  '[2001:4860:4860::8888]',
+  '4.4.4.4:1053',
+  '[2001:4860:4860::8888]:1053',
 ]);
-
 ```
 
 An error will be thrown if an invalid address is provided.
@@ -19810,19 +19153,19 @@ An independent resolver for DNS requests.
 Creating a new resolver uses the default server settings. Setting the servers used for a resolver using [`resolver.setServers()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#dns_dnspromisessetserversservers) does not affect other resolvers:
 
 ```
-
 const { Resolver } = require('dns').promises;
 const resolver = new Resolver();
 resolver.setServers(['4.4.4.4']);
 
-resolver.resolve4('example.org').then((addresses) => {
 
+resolver.resolve4('example.org').then((addresses) => {
+  
 });
 
-(async function() {
-const addresses = await resolver.resolve4('example.org');
-})();
 
+(async function() {
+  const addresses = await resolver.resolve4('example.org');
+})();
 ```
 
 The following methods from the `dnsPromises` API are available:
@@ -19859,11 +19202,12 @@ Added in: v10.6.0
 Returns an array of IP address strings, formatted according to [RFC 5952](https://tools.ietf.org/html/rfc5952#section-6), that are currently configured for DNS resolution. A string will include a port section if a custom port is used.
 
 ```
-
-[ '4.4.4.4', '2001:4860:4860::8888', '4.4.4.4:1053', '[2001:4860:4860::8888]: 1053',
-
+[
+  '4.4.4.4',
+  '2001:4860:4860::8888',
+  '4.4.4.4:1053',
+  '[2001:4860:4860::8888]:1053',
 ]
-
 ```
 
 #### `dnsPromises.lookup(hostname[, options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#dns_dnspromiseslookuphostname-options)
@@ -19888,25 +19232,24 @@ On error, the `Promise` is rejected with an [`Error`](https://nodejs.org/dist/v1
 Example usage:
 
 ```
-
 const dns = require('dns');
 const dnsPromises = dns.promises;
 const options = {
-family: 6,
-hints: dns.ADDRCONFIG | dns.V4MAPPED,
+  family: 6,
+  hints: dns.ADDRCONFIG | dns.V4MAPPED,
 };
 
 dnsPromises.lookup('example.com', options).then((result) => {
-console.log('address: %j family: IPv%s', result.address, result.family);
-
+  console.log('address: %j family: IPv%s', result.address, result.family);
+  
 });
+
 
 options.all = true;
 dnsPromises.lookup('example.com', options).then((result) => {
-console.log('addresses: %j', result);
-
+  console.log('addresses: %j', result);
+  
 });
-
 ```
 
 #### `dnsPromises.lookupService(address, port)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#dns_dnspromiseslookupserviceaddress-port)
@@ -19923,13 +19266,11 @@ If `address` is not a valid IP address, a `TypeError` will be thrown. The `port`
 On error, the `Promise` is rejected with an [`Error`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_class-error) object, where `err.code` is the error code.
 
 ```
-
 const dnsPromises = require('dns').promises;
 dnsPromises.lookupService('127.0.0.1', 22).then((result) => {
-console.log(result.hostname, result.service);
-
+  console.log(result.hostname, result.service);
+  
 });
-
 ```
 
 #### `dnsPromises.resolve(hostname[, rrtype])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#dns_dnspromisesresolvehostname-rrtype)
@@ -20122,21 +19463,19 @@ This type of record contains an array property called `entries` which refers to 
 Here is an example of the result object:
 
 ```
-
 [ { type: 'A', address: '127.0.0.1', ttl: 299 },
-{ type: 'CNAME', value: 'example.com' },
-{ type: 'MX', exchange: 'alt4.aspmx.l.example.com', priority: 50 },
-{ type: 'NS', value: 'ns1.example.com' },
-{ type: 'TXT', entries: [ 'v=spf1 include:_spf.example.com ~all' ] },
-{ type: 'SOA',
-nsname: 'ns1.example.com',
-hostmaster: 'admin.example.com',
-serial: 156696742,
-refresh: 900,
-retry: 900,
-expire: 1800,
-minttl: 60 } ]
-
+  { type: 'CNAME', value: 'example.com' },
+  { type: 'MX', exchange: 'alt4.aspmx.l.example.com', priority: 50 },
+  { type: 'NS', value: 'ns1.example.com' },
+  { type: 'TXT', entries: [ 'v=spf1 include:_spf.example.com ~all' ] },
+  { type: 'SOA',
+    nsname: 'ns1.example.com',
+    hostmaster: 'admin.example.com',
+    serial: 156696742,
+    refresh: 900,
+    retry: 900,
+    expire: 1800,
+    minttl: 60 } ]
 ```
 
 #### `dnsPromises.resolveCaa(hostname)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#dns_dnspromisesresolvecaahostname)
@@ -20179,16 +19518,14 @@ Uses the DNS protocol to resolve regular expression based records (`NAPTR` recor
 -   `preference`
 
 ```
-
 {
-flags: 's',
-service: 'SIP+D2U',
-regexp: '',
-replacement: '\_sip.\_udp.example.com',
-order: 30,
-preference: 100
+  flags: 's',
+  service: 'SIP+D2U',
+  regexp: '',
+  replacement: '_sip._udp.example.com',
+  order: 30,
+  preference: 100
 }
-
 ```
 
 #### `dnsPromises.resolveNs(hostname)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#dns_dnspromisesresolvenshostname)
@@ -20224,17 +19561,15 @@ Uses the DNS protocol to resolve a start of authority record (`SOA` record) for 
 -   `minttl`
 
 ```
-
 {
-nsname: 'ns.example.com',
-hostmaster: 'root.example.com',
-serial: 2013101809,
-refresh: 10000,
-retry: 2400,
-expire: 604800,
-minttl: 3600
+  nsname: 'ns.example.com',
+  hostmaster: 'root.example.com',
+  serial: 2013101809,
+  refresh: 10000,
+  retry: 2400,
+  expire: 604800,
+  minttl: 3600
 }
-
 ```
 
 #### `dnsPromises.resolveSrv(hostname)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#dns_dnspromisesresolvesrvhostname)
@@ -20251,14 +19586,12 @@ Uses the DNS protocol to resolve service records (`SRV` records) for the `hostna
 -   `name`
 
 ```
-
 {
-priority: 10,
-weight: 5,
-port: 21223,
-name: 'service.example.com'
+  priority: 10,
+  weight: 5,
+  port: 21223,
+  name: 'service.example.com'
 }
-
 ```
 
 #### `dnsPromises.resolveTxt(hostname)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#dns_dnspromisesresolvetxthostname)
@@ -20301,14 +19634,12 @@ Added in: v10.6.0
 Sets the IP address and port of servers to be used when performing DNS resolution. The `servers` argument is an array of [RFC 5952](https://tools.ietf.org/html/rfc5952#section-6) formatted addresses. If the port is the IANA default DNS port (53) it can be omitted.
 
 ```
-
 dnsPromises.setServers([
-'4.4.4.4',
-'[2001:4860:4860::8888]',
-'4.4.4.4:1053',
-'[2001:4860:4860::8888]:1053',
+  '4.4.4.4',
+  '[2001:4860:4860::8888]',
+  '4.4.4.4:1053',
+  '[2001:4860:4860::8888]:1053',
 ]);
-
 ```
 
 An error will be thrown if an invalid address is provided.
@@ -20390,101 +19721,126 @@ For example, this is not a good idea:
 
 ```
 
+
 const d = require('domain').create();
 d.on('error', (er) => {
-
-console.log(`error, but oh well ${er.message}`);
+  
+  
+  
+  
+  console.log(`error, but oh well ${er.message}`);
 });
 d.run(() => {
-require('http').createServer((req, res) => {
-handleRequest(req, res);
-}).listen(PORT);
+  require('http').createServer((req, res) => {
+    handleRequest(req, res);
+  }).listen(PORT);
 });
-
 ```
 
 By using the context of a domain, and the resilience of separating our program into multiple worker processes, we can react more appropriately, and handle errors with much greater safety.
 
 ```
 
+
 const cluster = require('cluster');
 const PORT = +process.env.PORT || 1337;
 
 if (cluster.isPrimary) {
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
-cluster.fork();
-cluster.fork();
+  cluster.fork();
+  cluster.fork();
 
-cluster.on('disconnect', (worker) => {
-console.error('disconnect!');
-cluster.fork();
-});
+  cluster.on('disconnect', (worker) => {
+    console.error('disconnect!');
+    cluster.fork();
+  });
 
 } else {
+  
+  
+  
 
-const domain = require('domain');
+  const domain = require('domain');
 
-const server = require('http').createServer((req, res) => {
-const d = domain.create();
-d.on('error', (er) => {
-console.error(`error ${er.stack}`);
+  
+  
+
+  const server = require('http').createServer((req, res) => {
+    const d = domain.create();
+    d.on('error', (er) => {
+      console.error(`error ${er.stack}`);
+
+      
+      
+      
+      
 
       try {
-
+        
         const killtimer = setTimeout(() => {
           process.exit(1);
         }, 30000);
-
+        
         killtimer.unref();
 
-
+        
         server.close();
 
-
-
-
+        
+        
+        
         cluster.worker.disconnect();
 
-
+        
         res.statusCode = 500;
         res.setHeader('content-type', 'text/plain');
         res.end('Oops, there was a problem!\n');
       } catch (er2) {
-
+        
         console.error(`Error sending 500! ${er2.stack}`);
       }
     });
 
-
-
-
+    
+    
+    
     d.add(req);
     d.add(res);
 
-
+    
     d.run(() => {
       handleRequest(req, res);
     });
-
-});
-server.listen(PORT);
+  });
+  server.listen(PORT);
 }
 
+
+
 function handleRequest(req, res) {
-switch (req.url) {
-case '/error':
-
+  switch (req.url) {
+    case '/error':
+      
       setTimeout(() => {
-
+        
         flerb.bark();
       }, timeout);
       break;
     default:
       res.end('ok');
-
+  }
 }
-}
-
 ```
 
 ### Additions to `Error` objects[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#domain_additions-to-error-objects)
@@ -20523,9 +19879,11 @@ const http = require('http');
 const serverDomain = domain.create();
 
 serverDomain.run(() => {
-
-http.createServer((req, res) => {
-
+  
+  http.createServer((req, res) => {
+    
+    
+    
     const reqd = domain.create();
     reqd.add(req);
     reqd.add(res);
@@ -20538,10 +19896,8 @@ http.createServer((req, res) => {
         console.error('Error sending 500', er2, req.url);
       }
     });
-
-}).listen(1337);
+  }).listen(1337);
 });
-
 ```
 
 ### `domain.create()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#domain_domaincreate)
@@ -20580,21 +19936,19 @@ If the Timer or `EventEmitter` was already bound to a domain, it is removed from
 The returned function will be a wrapper around the supplied callback function. When the returned function is called, any errors that are thrown will be routed to the domain's `'error'` event.
 
 ```
-
 const d = domain.create();
 
 function readSomeFile(filename, cb) {
-fs.readFile(filename, 'utf8', d.bind((er, data) => {
-
+  fs.readFile(filename, 'utf8', d.bind((er, data) => {
+    
     return cb(er, data ? JSON.parse(data) : null);
-
-}));
+  }));
 }
 
 d.on('error', (er) => {
-
+  
+  
 });
-
 ```
 
 #### `domain.enter()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#domain_domainenter)
@@ -20621,21 +19975,26 @@ This method is almost identical to [`domain.bind(callback)`](https://nodejs.org/
 In this way, the common `if (err) return callback(err);` pattern can be replaced with a single error handler in a single place.
 
 ```
-
 const d = domain.create();
 
 function readSomeFile(filename, cb) {
-fs.readFile(filename, 'utf8', d.intercept((data) => {
+  fs.readFile(filename, 'utf8', d.intercept((data) => {
+    
+    
+    
 
+    
+    
+    
+    
     return cb(null, JSON.parse(data));
-
-}));
+  }));
 }
 
 d.on('error', (er) => {
-
+  
+  
 });
-
 ```
 
 #### `domain.remove(emitter)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#domain_domainremoveemitter)
@@ -20654,25 +20013,22 @@ Run the supplied function in the context of the domain, implicitly binding all e
 This is the most basic way to use a domain.
 
 ```
-
 const domain = require('domain');
 const fs = require('fs');
 const d = domain.create();
 d.on('error', (er) => {
-console.error('Caught error!', er);
+  console.error('Caught error!', er);
 });
 d.run(() => {
-process.nextTick(() => {
-setTimeout(() => {
-fs.open('non-existent file', 'r', (er, fd) => {
-if (er) throw er;
-
+  process.nextTick(() => {
+    setTimeout(() => { 
+      fs.open('non-existent file', 'r', (er, fd) => {
+        if (er) throw er;
+        
       });
     }, 100);
-
+  });
 });
-});
-
 ```
 
 In this example, the `d.on('error')` handler will be triggered, rather than crashing the program.
@@ -20682,41 +20038,37 @@ In this example, the `d.on('error')` handler will be triggered, rather than cras
 As of Node.js 8.0.0, the handlers of promises are run inside the domain in which the call to `.then()` or `.catch()` itself was made:
 
 ```
-
 const d1 = domain.create();
 const d2 = domain.create();
 
 let p;
 d1.run(() => {
-p = Promise.resolve(42);
+  p = Promise.resolve(42);
 });
 
 d2.run(() => {
-p.then((v) => {
-
+  p.then((v) => {
+    
+  });
 });
-});
-
 ```
 
 A callback may be bound to a specific domain using [`domain.bind(callback)`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#domain_domainbindcallback):
 
 ```
-
 const d1 = domain.create();
 const d2 = domain.create();
 
 let p;
 d1.run(() => {
-p = Promise.resolve(42);
+  p = Promise.resolve(42);
 });
 
 d2.run(() => {
-p.then(p.domain.bind((v) => {
-
-}));
+  p.then(p.domain.bind((v) => {
+    
+  }));
 });
-
 ```
 
 Domains will not interfere with the error handling mechanisms for promises. In other words, no `'error'` event will be emitted for unhandled `Promise` rejections.
@@ -20741,13 +20093,12 @@ All JavaScript errors are handled as exceptions that _immediately_ generate and 
 ```
 
 try {
-const m = 1;
-const n = m + z;
+  const m = 1;
+  const n = m + z;
 } catch (err) {
-
+  
 }
-
-````
+```
 
 Any use of the JavaScript `throw` mechanism will raise an exception that _must_ be handled using `try…catch` or the Node.js process will exit immediately.
 
@@ -20756,7 +20107,7 @@ With few exceptions, _Synchronous_ APIs (any blocking method that does not accep
 Errors that occur within _Asynchronous APIs_ may be reported in multiple ways:
 
 -   Most asynchronous methods that accept a `callback` function will accept an `Error` object passed as the first argument to that function. If that first argument is not `null` and is an instance of `Error`, then an error occurred that should be handled.
-
+    
     ```
     const fs = require('fs');
     fs.readFile('a file that does not exist', (err, data) => {
@@ -20764,44 +20115,43 @@ Errors that occur within _Asynchronous APIs_ may be reported in multiple ways:
         console.error('There was an error reading the file!', err);
         return;
       }
-
+      
     });
     ```
-
+    
 -   When an asynchronous method is called on an object that is an [`EventEmitter`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_class-eventemitter), errors can be routed to that object's `'error'` event.
-
+    
     ```
     const net = require('net');
     const connection = net.connect('localhost');
-
-
+    
+    
     connection.on('error', (err) => {
-
-
-
+      
+      
+      
       console.error(err);
     });
-
+    
     connection.pipe(process.stdout);
     ```
-
+    
 -   A handful of typically asynchronous methods in the Node.js API may still use the `throw` mechanism to raise exceptions that must be handled using `try…catch`. There is no comprehensive list of such methods; please refer to the documentation of each method to determine the appropriate error handling mechanism required.
-
+    
 
 The use of the `'error'` event mechanism is most common for [stream-based](https://nodejs.org/dist/v16.13.1/docs/api/stream.html) and [event emitter-based](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_class-eventemitter) APIs, which themselves represent a series of asynchronous operations over time (as opposed to a single operation that may pass or fail).
 
 For _all_ [`EventEmitter`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_class-eventemitter) objects, if an `'error'` event handler is not provided, the error will be thrown, causing the Node.js process to report an uncaught exception and crash unless either: The [`domain`](https://nodejs.org/dist/v16.13.1/docs/api/domain.html) module is used appropriately or a handler has been registered for the [`'uncaughtException'`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_event-uncaughtexception) event.
 
-````
-
+```
 const EventEmitter = require('events');
 const ee = new EventEmitter();
 
 setImmediate(() => {
-
-ee.emit('error', new Error('This will crash'));
+  
+  
+  ee.emit('error', new Error('This will crash'));
 });
-
 ```
 
 Errors generated in this way _cannot_ be intercepted using `try…catch` as they are thrown _after_ the calling code has already exited.
@@ -20813,20 +20163,18 @@ Developers must refer to the documentation for each method to determine exactly 
 Most asynchronous methods exposed by the Node.js core API follow an idiomatic pattern referred to as an _error-first callback_. With this pattern, a callback function is passed to the method as an argument. When the operation either completes or an error is raised, the callback function is called with the `Error` object (if any) passed as the first argument. If no error was raised, the first argument will be passed as `null`.
 
 ```
-
 const fs = require('fs');
 
 function errorFirstCallback(err, data) {
-if (err) {
-console.error('There was an error', err);
-return;
-}
-console.log(data);
+  if (err) {
+    console.error('There was an error', err);
+    return;
+  }
+  console.log(data);
 }
 
 fs.readFile('/some/file/that/does-not-exist', errorFirstCallback);
 fs.readFile('/some/file/that/does-exist', errorFirstCallback);
-
 ```
 
 The JavaScript `try…catch` mechanism **cannot** be used to intercept errors generated by asynchronous APIs. A common mistake for beginners is to try to use `throw` inside an error-first callback:
@@ -20836,18 +20184,16 @@ The JavaScript `try…catch` mechanism **cannot** be used to intercept errors ge
 const fs = require('fs');
 
 try {
-fs.readFile('/some/file/that/does-not-exist', (err, data) => {
-
+  fs.readFile('/some/file/that/does-not-exist', (err, data) => {
+    
     if (err) {
       throw err;
     }
-
-});
+  });
 } catch (err) {
-
-console.error(err);
+  
+  console.error(err);
 }
-
 ```
 
 This will not work because the callback function passed to `fs.readFile()` is called asynchronously. By the time the callback has been called, the surrounding code, including the `try…catch` block, will have already exited. Throwing an error inside the callback **can crash the Node.js process** in most cases. If [domains](https://nodejs.org/dist/v16.13.1/docs/api/domain.html) are enabled, or a handler has been registered with `process.on('uncaughtException')`, such errors can be intercepted.
@@ -20872,11 +20218,9 @@ Creates a new `Error` object and sets the `error.message` property to the provid
 Creates a `.stack` property on `targetObject`, which when accessed returns a string representing the location in the code at which `Error.captureStackTrace()` was called.
 
 ```
-
 const myObject = {};
 Error.captureStackTrace(myObject);
-myObject.stack;
-
+myObject.stack;  
 ```
 
 The first line of the trace will be prefixed with `${myObject.name}: ${myObject.message}`.
@@ -20886,13 +20230,14 @@ The optional `constructorOpt` argument accepts a function. If given, all frames 
 The `constructorOpt` argument is useful for hiding implementation details of error generation from the user. For instance:
 
 ```
-
 function MyError() {
-Error.captureStackTrace(this, MyError);
+  Error.captureStackTrace(this, MyError);
 }
 
-new MyError().stack;
 
+
+
+new MyError().stack;
 ```
 
 #### `Error.stackTraceLimit`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_errorstacktracelimit)
@@ -20918,10 +20263,8 @@ The `error.code` property is a string label that identifies the kind of error. `
 The `error.message` property is the string description of the error as set by calling `new Error(message)`. The `message` passed to the constructor will also appear in the first line of the stack trace of the `Error`, however changing this property after the `Error` object is created _may not_ change the first line of the stack trace (for example, when `error.stack` is read before this property is changed).
 
 ```
-
 const err = new Error('The message');
 console.error(err.message);
-
 ```
 
 #### `error.stack`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_errorstack)
@@ -20931,13 +20274,11 @@ console.error(err.message);
 The `error.stack` property is a string describing the point in the code at which the `Error` was instantiated.
 
 ```
-
 Error: Things keep happening!
-at /home/gbusey/file.js:525:2
-at Frobnicator.refrobulate (/home/gbusey/business-logic.js:424:21)
-at Actor.<anonymous> (/home/gbusey/actors.js:400:8)
-at increaseSynergy (/home/gbusey/actors.js:701:6)
-
+   at /home/gbusey/file.js:525:2
+   at Frobnicator.refrobulate (/home/gbusey/business-logic.js:424:21)
+   at Actor.<anonymous> (/home/gbusey/actors.js:400:8)
+   at increaseSynergy (/home/gbusey/actors.js:701:6)
 ```
 
 The first line is formatted as `<error class name>: <error message>`, and is followed by a series of stack frames (each line beginning with "at "). Each frame describes a call site within the code that lead to the error being generated. V8 attempts to display a name for each function (by variable name, function name, or object method name), but occasionally it will not be able to find a suitable name. If V8 cannot determine a name for the function, only location information will be displayed for that frame. Otherwise, the determined function name will be displayed with location information appended in parentheses.
@@ -20945,17 +20286,29 @@ The first line is formatted as `<error class name>: <error message>`, and is fol
 Frames are only generated for JavaScript functions. If, for example, execution synchronously passes through a C++ addon function called `cheetahify` which itself calls a JavaScript function, the frame representing the `cheetahify` call will not be present in the stack traces:
 
 ```
-
 const cheetahify = require('./native-binding.node');
 
 function makeFaster() {
-
-cheetahify(function speedy() {
-throw new Error('oh no!');
-});
+  
+  cheetahify(function speedy() {
+    throw new Error('oh no!');
+  });
 }
 
 makeFaster();
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ```
 
@@ -20982,9 +20335,7 @@ Indicates the failure of an assertion. For details, see [`Class: assert.Assertio
 Indicates that a provided argument was not within the set or range of acceptable values for a function; whether that is a numeric range, or outside the set of options for a given function parameter.
 
 ```
-
 require('net').connect(-1);
-
 ```
 
 Node.js will generate and throw `RangeError` instances _immediately_ as a form of argument validation.
@@ -20998,9 +20349,7 @@ Indicates that an attempt is being made to access a variable that is not defined
 While client code may generate and propagate these errors, in practice, only V8 will do so.
 
 ```
-
 doesNotExist;
-
 ```
 
 Unless an application is dynamically generating and running code, `ReferenceError` instances indicate a bug in the code or its dependencies.
@@ -21012,13 +20361,11 @@ Unless an application is dynamically generating and running code, `ReferenceErro
 Indicates that a program is not valid JavaScript. These errors may only be generated and propagated as a result of code evaluation. Code evaluation may happen as a result of `eval`, `Function`, `require`, or [vm](https://nodejs.org/dist/v16.13.1/docs/api/vm.html). These errors are almost always indicative of a broken program.
 
 ```
-
 try {
-require('vm').runInThisContext('binary ! isNotOk');
+  require('vm').runInThisContext('binary ! isNotOk');
 } catch (err) {
-
+  
 }
-
 ```
 
 `SyntaxError` instances are unrecoverable in the context that created them – they may only be caught by other contexts.
@@ -21102,33 +20449,33 @@ The `error.syscall` property is a string describing the [syscall](https://man7.o
 This is a list of system errors commonly-encountered when writing a Node.js program. For a comprehensive list, see the [`errno`(3) man page](https://man7.org/linux/man-pages/man3/errno.3.html).
 
 -   `EACCES` (Permission denied): An attempt was made to access a file in a way forbidden by its file access permissions.
-
+    
 -   `EADDRINUSE` (Address already in use): An attempt to bind a server ([`net`](https://nodejs.org/dist/v16.13.1/docs/api/net.html), [`http`](https://nodejs.org/dist/v16.13.1/docs/api/http.html), or [`https`](https://nodejs.org/dist/v16.13.1/docs/api/https.html)) to a local address failed due to another server on the local system already occupying that address.
-
+    
 -   `ECONNREFUSED` (Connection refused): No connection could be made because the target machine actively refused it. This usually results from trying to connect to a service that is inactive on the foreign host.
-
+    
 -   `ECONNRESET` (Connection reset by peer): A connection was forcibly closed by a peer. This normally results from a loss of the connection on the remote socket due to a timeout or reboot. Commonly encountered via the [`http`](https://nodejs.org/dist/v16.13.1/docs/api/http.html) and [`net`](https://nodejs.org/dist/v16.13.1/docs/api/net.html) modules.
-
+    
 -   `EEXIST` (File exists): An existing file was the target of an operation that required that the target not exist.
-
+    
 -   `EISDIR` (Is a directory): An operation expected a file, but the given pathname was a directory.
-
+    
 -   `EMFILE` (Too many open files in system): Maximum number of [file descriptors](https://en.wikipedia.org/wiki/File_descriptor) allowable on the system has been reached, and requests for another descriptor cannot be fulfilled until at least one has been closed. This is encountered when opening many files at once in parallel, especially on systems (in particular, macOS) where there is a low file descriptor limit for processes. To remedy a low limit, run `ulimit -n 2048` in the same shell that will run the Node.js process.
-
+    
 -   `ENOENT` (No such file or directory): Commonly raised by [`fs`](https://nodejs.org/dist/v16.13.1/docs/api/fs.html) operations to indicate that a component of the specified pathname does not exist. No entity (file or directory) could be found by the given path.
-
+    
 -   `ENOTDIR` (Not a directory): A component of the given pathname existed, but was not a directory as expected. Commonly raised by [`fs.readdir`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_fsreaddirpath-options-callback).
-
+    
 -   `ENOTEMPTY` (Directory not empty): A directory with entries was the target of an operation that requires an empty directory, usually [`fs.unlink`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_fsunlinkpath-callback).
-
+    
 -   `ENOTFOUND` (DNS lookup failed): Indicates a DNS failure of either `EAI_NODATA` or `EAI_NONAME`. This is not a standard POSIX error.
-
+    
 -   `EPERM` (Operation not permitted): An attempt was made to perform an operation that requires elevated privileges.
-
+    
 -   `EPIPE` (Broken pipe): A write on a pipe, socket, or FIFO for which there is no process to read the data. Commonly encountered at the [`net`](https://nodejs.org/dist/v16.13.1/docs/api/net.html) and [`http`](https://nodejs.org/dist/v16.13.1/docs/api/http.html) layers, indicative that the remote side of the stream being written to has been closed.
-
+    
 -   `ETIMEDOUT` (Operation timed out): A connect or send request failed because the connected party did not properly respond after a period of time. Usually encountered by [`http`](https://nodejs.org/dist/v16.13.1/docs/api/http.html) or [`net`](https://nodejs.org/dist/v16.13.1/docs/api/net.html). Often a sign that a `socket.end()` was not properly called.
-
+    
 
 ### Class: `TypeError`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_class-typeerror)
 
@@ -21137,9 +20484,7 @@ This is a list of system errors commonly-encountered when writing a Node.js prog
 Indicates that a provided argument is not an allowable type. For example, passing a function to a parameter which expects a string would be a `TypeError`.
 
 ```
-
 require('url').parse(() => { });
-
 ```
 
 Node.js will generate and throw `TypeError` instances _immediately_ as a form of argument validation.
@@ -21937,12 +21282,10 @@ A `Buffer`, `TypedArray`, `DataView` or `string` was provided as stdio input to 
 A Node.js API function was called with an incompatible `this` value.
 
 ```
-
 const urlSearchParams = new URLSearchParams('foo=bar&baz=new');
 
 const buf = Buffer.alloc(1);
 urlSearchParams.has.call(buf, 'foo');
-
 ```
 
 #### `ERR_INVALID_TRANSFER_OBJECT`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_err_invalid_transfer_object)
@@ -22222,12 +21565,10 @@ An attempt was made to call [`stream.unshift()`](https://nodejs.org/dist/v16.13.
 Prevents an abort if a string decoder was set on the Socket or if the decoder is in `objectMode`.
 
 ```
-
 const Socket = require('net').Socket;
 const instance = new Socket();
 
 instance.setEncoding('utf8');
-
 ```
 
 #### `ERR_STREAM_WRITE_AFTER_END`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_err_stream_write_after_end)
@@ -22369,11 +21710,9 @@ An invalid or unknown process signal was passed to an API expecting a valid sign
 `import` a directory URL is unsupported. Instead, [self-reference a package using its name](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_self-referencing-a-package-using-its-name) and [define a custom subpath](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_subpath-exports) in the [`"exports"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_exports) field of the [`package.json`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_nodejs-packagejson-field-definitions) file.
 
 ```
-
-import './';
-import './index.js';
-import 'package-name';
-
+import './'; 
+import './index.js'; 
+import 'package-name'; 
 ```
 
 #### `ERR_UNSUPPORTED_ESM_URL_SCHEME`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_err_unsupported_esm_url_scheme)
@@ -22675,17 +22014,15 @@ When the `EventEmitter` object emits an event, all of the functions attached to 
 The following example shows a simple `EventEmitter` instance with a single listener. The `eventEmitter.on()` method is used to register listeners, while the `eventEmitter.emit()` method is used to trigger the event.
 
 ```
-
 const EventEmitter = require('events');
 
 class MyEmitter extends EventEmitter {}
 
 const myEmitter = new MyEmitter();
 myEmitter.on('event', () => {
-console.log('an event occurred!');
+  console.log('an event occurred!');
 });
 myEmitter.emit('event');
-
 ```
 
 ### Passing arguments and `this` to listeners[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_passing-arguments-and-this-to-listeners)
@@ -22693,27 +22030,28 @@ myEmitter.emit('event');
 The `eventEmitter.emit()` method allows an arbitrary set of arguments to be passed to the listener functions. Keep in mind that when an ordinary listener function is called, the standard `this` keyword is intentionally set to reference the `EventEmitter` instance to which the listener is attached.
 
 ```
-
 const myEmitter = new MyEmitter();
 myEmitter.on('event', function(a, b) {
-console.log(a, b, this, this === myEmitter);
-
+  console.log(a, b, this, this === myEmitter);
+  
+  
+  
+  
+  
+  
 });
 myEmitter.emit('event', 'a', 'b');
-
 ```
 
 It is possible to use ES6 Arrow Functions as listeners, however, when doing so, the `this` keyword will no longer reference the `EventEmitter` instance:
 
 ```
-
 const myEmitter = new MyEmitter();
 myEmitter.on('event', (a, b) => {
-console.log(a, b, this);
-
+  console.log(a, b, this);
+  
 });
 myEmitter.emit('event', 'a', 'b');
-
 ```
 
 ### Asynchronous vs. synchronous[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_asynchronous-vs-synchronous)
@@ -22721,15 +22059,13 @@ myEmitter.emit('event', 'a', 'b');
 The `EventEmitter` calls all listeners synchronously in the order in which they were registered. This ensures the proper sequencing of events and helps avoid race conditions and logic errors. When appropriate, listener functions can switch to an asynchronous mode of operation using the `setImmediate()` or `process.nextTick()` methods:
 
 ```
-
 const myEmitter = new MyEmitter();
 myEmitter.on('event', (a, b) => {
-setImmediate(() => {
-console.log('this happens asynchronously');
-});
+  setImmediate(() => {
+    console.log('this happens asynchronously');
+  });
 });
 myEmitter.emit('event', 'a', 'b');
-
 ```
 
 ### Handling events only once[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_handling-events-only-once)
@@ -22737,31 +22073,27 @@ myEmitter.emit('event', 'a', 'b');
 When a listener is registered using the `eventEmitter.on()` method, that listener is invoked _every time_ the named event is emitted.
 
 ```
-
 const myEmitter = new MyEmitter();
 let m = 0;
 myEmitter.on('event', () => {
-console.log(++m);
+  console.log(++m);
 });
 myEmitter.emit('event');
 
 myEmitter.emit('event');
-
 ```
 
 Using the `eventEmitter.once()` method, it is possible to register a listener that is called at most once for a particular event. Once the event is emitted, the listener is unregistered and _then_ called.
 
 ```
-
 const myEmitter = new MyEmitter();
 let m = 0;
 myEmitter.once('event', () => {
-console.log(++m);
+  console.log(++m);
 });
 myEmitter.emit('event');
 
 myEmitter.emit('event');
-
 ```
 
 ### Error events[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_error-events)
@@ -22771,10 +22103,8 @@ When an error occurs within an `EventEmitter` instance, the typical action is fo
 If an `EventEmitter` does _not_ have at least one listener registered for the `'error'` event, and an `'error'` event is emitted, the error is thrown, a stack trace is printed, and the Node.js process exits.
 
 ```
-
 const myEmitter = new MyEmitter();
 myEmitter.emit('error', new Error('whoops!'));
-
 ```
 
 To guard against crashing the Node.js process the [`domain`](https://nodejs.org/dist/v16.13.1/docs/api/domain.html) module can be used. (Note, however, that the `domain` module is deprecated.)
@@ -22782,27 +22112,23 @@ To guard against crashing the Node.js process the [`domain`](https://nodejs.org/
 As a best practice, listeners should always be added for the `'error'` events.
 
 ```
-
 const myEmitter = new MyEmitter();
 myEmitter.on('error', (err) => {
-console.error('whoops! there was an error');
+  console.error('whoops! there was an error');
 });
 myEmitter.emit('error', new Error('whoops!'));
-
 ```
 
 It is possible to monitor `'error'` events without consuming the emitted error by installing a listener using the symbol `events.errorMonitor`.
 
 ```
-
 const { EventEmitter, errorMonitor } = require('events');
 
 const myEmitter = new EventEmitter();
 myEmitter.on(errorMonitor, (err) => {
-MyMonitoringTool.log(err);
+  MyMonitoringTool.log(err);
 });
 myEmitter.emit('error', new Error('whoops!'));
-
 ```
 
 ### Capture rejections of promises[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_capture-rejections-of-promises)
@@ -22812,47 +22138,41 @@ myEmitter.emit('error', new Error('whoops!'));
 Using `async` functions with event handlers is problematic, because it can lead to an unhandled rejection in case of a thrown exception:
 
 ```
-
 const ee = new EventEmitter();
 ee.on('something', async (value) => {
-throw new Error('kaboom');
+  throw new Error('kaboom');
 });
-
 ```
 
 The `captureRejections` option in the `EventEmitter` constructor or the global setting change this behavior, installing a `.then(undefined, handler)` handler on the `Promise`. This handler routes the exception asynchronously to the [`Symbol.for('nodejs.rejection')`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_emittersymbolfornodejsrejectionerr-eventname-args) method if there is one, or to [`'error'`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_error-events) event handler if there is none.
 
 ```
-
 const ee1 = new EventEmitter({ captureRejections: true });
 ee1.on('something', async (value) => {
-throw new Error('kaboom');
+  throw new Error('kaboom');
 });
 
 ee1.on('error', console.log);
 
 const ee2 = new EventEmitter({ captureRejections: true });
 ee2.on('something', async (value) => {
-throw new Error('kaboom');
+  throw new Error('kaboom');
 });
 
 ee2[Symbol.for('nodejs.rejection')] = console.log;
-
 ```
 
 Setting `events.captureRejections = true` will change the default for all new instances of `EventEmitter`.
 
 ```
-
 const events = require('events');
 events.captureRejections = true;
 const ee1 = new events.EventEmitter();
 ee1.on('something', async (value) => {
-throw new Error('kaboom');
+  throw new Error('kaboom');
 });
 
 ee1.on('error', console.log);
-
 ```
 
 The `'error'` events that are generated by the `captureRejections` behavior do not have a catch handler to avoid infinite error loops: the recommendation is to **not use `async` functions as `'error'` event handlers**.
@@ -22862,9 +22182,7 @@ The `'error'` events that are generated by the `captureRejections` behavior do n
 The `EventEmitter` class is defined and exposed by the `events` module:
 
 ```
-
 const EventEmitter = require('events');
-
 ```
 
 All `EventEmitter`s emit the event `'newListener'` when new listeners are added and `'removeListener'` when existing listeners are removed.
@@ -22887,24 +22205,23 @@ Listeners registered for the `'newListener'` event are passed the event name and
 The fact that the event is triggered before adding the listener has a subtle but important side effect: any _additional_ listeners registered to the same `name` _within_ the `'newListener'` callback are inserted _before_ the listener that is in the process of being added.
 
 ```
-
 class MyEmitter extends EventEmitter {}
 
 const myEmitter = new MyEmitter();
 
 myEmitter.once('newListener', (event, listener) => {
-if (event === 'event') {
-
+  if (event === 'event') {
+    
     myEmitter.on('event', () => {
       console.log('B');
     });
-
-}
+  }
 });
 myEmitter.on('event', () => {
-console.log('A');
+  console.log('A');
 });
 myEmitter.emit('event');
+
 
 ```
 
@@ -22937,26 +22254,34 @@ Synchronously calls each of the listeners registered for the event named `eventN
 Returns `true` if the event had listeners, `false` otherwise.
 
 ```
-
 const EventEmitter = require('events');
 const myEmitter = new EventEmitter();
 
+
 myEmitter.on('event', function firstListener() {
-console.log('Helloooo! first listener');
+  console.log('Helloooo! first listener');
 });
 
 myEmitter.on('event', function secondListener(arg1, arg2) {
-console.log(`event with parameters ${arg1}, ${arg2} in second listener`);
+  console.log(`event with parameters ${arg1}, ${arg2} in second listener`);
 });
 
 myEmitter.on('event', function thirdListener(...args) {
-const parameters = args.join(', ');
-console.log(`event with parameters ${parameters} in third listener`);
+  const parameters = args.join(', ');
+  console.log(`event with parameters ${parameters} in third listener`);
 });
 
 console.log(myEmitter.listeners('event'));
 
 myEmitter.emit('event', 1, 2, 3, 4, 5);
+
+
+
+
+
+
+
+
 
 ```
 
@@ -22969,7 +22294,6 @@ Added in: v6.0.0
 Returns an array listing the events for which the emitter has registered listeners. The values in the array are strings or `Symbol`s.
 
 ```
-
 const EventEmitter = require('events');
 const myEE = new EventEmitter();
 myEE.on('foo', () => {});
@@ -22979,7 +22303,6 @@ const sym = Symbol('symbol');
 myEE.on(sym, () => {});
 
 console.log(myEE.eventNames());
-
 ```
 
 #### `emitter.getMaxListeners()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_emittergetmaxlisteners)
@@ -23007,12 +22330,10 @@ Returns the number of listeners listening to the event named `eventName`.
 Returns a copy of the array of listeners for the event named `eventName`.
 
 ```
-
 server.on('connection', (stream) => {
-console.log('someone connected!');
+  console.log('someone connected!');
 });
 console.log(util.inspect(server.listeners('connection')));
-
 ```
 
 #### `emitter.off(eventName, listener)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_emitteroffeventname-listener)
@@ -23036,11 +22357,9 @@ Added in: v0.1.101
 Adds the `listener` function to the end of the listeners array for the event named `eventName`. No checks are made to see if the `listener` has already been added. Multiple calls passing the same combination of `eventName` and `listener` will result in the `listener` being added, and called, multiple times.
 
 ```
-
 server.on('connection', (stream) => {
-console.log('someone connected!');
+  console.log('someone connected!');
 });
-
 ```
 
 Returns a reference to the `EventEmitter`, so that calls can be chained.
@@ -23048,11 +22367,11 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 By default, event listeners are invoked in the order they are added. The `emitter.prependListener()` method can be used as an alternative to add the event listener to the beginning of the listeners array.
 
 ```
-
 const myEE = new EventEmitter();
 myEE.on('foo', () => console.log('a'));
 myEE.prependListener('foo', () => console.log('b'));
 myEE.emit('foo');
+
 
 ```
 
@@ -23067,11 +22386,9 @@ Added in: v0.3.0
 Adds a **one-time** `listener` function for the event named `eventName`. The next time `eventName` is triggered, this listener is removed and then invoked.
 
 ```
-
 server.once('connection', (stream) => {
-console.log('Ah, we have our first user!');
+  console.log('Ah, we have our first user!');
 });
-
 ```
 
 Returns a reference to the `EventEmitter`, so that calls can be chained.
@@ -23079,11 +22396,11 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 By default, event listeners are invoked in the order they are added. The `emitter.prependOnceListener()` method can be used as an alternative to add the event listener to the beginning of the listeners array.
 
 ```
-
 const myEE = new EventEmitter();
 myEE.once('foo', () => console.log('a'));
 myEE.prependOnceListener('foo', () => console.log('b'));
 myEE.emit('foo');
+
 
 ```
 
@@ -23098,11 +22415,9 @@ Added in: v6.0.0
 Adds the `listener` function to the _beginning_ of the listeners array for the event named `eventName`. No checks are made to see if the `listener` has already been added. Multiple calls passing the same combination of `eventName` and `listener` will result in the `listener` being added, and called, multiple times.
 
 ```
-
 server.prependListener('connection', (stream) => {
-console.log('someone connected!');
+  console.log('someone connected!');
 });
-
 ```
 
 Returns a reference to the `EventEmitter`, so that calls can be chained.
@@ -23118,11 +22433,9 @@ Added in: v6.0.0
 Adds a **one-time** `listener` function for the event named `eventName` to the _beginning_ of the listeners array. The next time `eventName` is triggered, this listener is removed, and then invoked.
 
 ```
-
 server.prependOnceListener('connection', (stream) => {
-console.log('Ah, we have our first user!');
+  console.log('Ah, we have our first user!');
 });
-
 ```
 
 Returns a reference to the `EventEmitter`, so that calls can be chained.
@@ -23151,14 +22464,12 @@ Added in: v0.1.26
 Removes the specified `listener` from the listener array for the event named `eventName`.
 
 ```
-
 const callback = (stream) => {
-console.log('someone connected!');
+  console.log('someone connected!');
 };
 server.on('connection', callback);
 
 server.removeListener('connection', callback);
-
 ```
 
 `removeListener()` will remove, at most, one instance of a listener from the listener array. If any single listener has been added multiple times to the listener array for the specified `eventName`, then `removeListener()` must be called multiple times to remove each instance.
@@ -23166,23 +22477,29 @@ server.removeListener('connection', callback);
 Once an event is emitted, all listeners attached to it at the time of emitting are called in order. This implies that any `removeListener()` or `removeAllListeners()` calls _after_ emitting and _before_ the last listener finishes execution will not remove them from `emit()` in progress. Subsequent events behave as expected.
 
 ```
-
 const myEmitter = new MyEmitter();
 
 const callbackA = () => {
-console.log('A');
-myEmitter.removeListener('event', callbackB);
+  console.log('A');
+  myEmitter.removeListener('event', callbackB);
 };
 
 const callbackB = () => {
-console.log('B');
+  console.log('B');
 };
 
 myEmitter.on('event', callbackA);
 
 myEmitter.on('event', callbackB);
 
+
+
 myEmitter.emit('event');
+
+
+
+
+
 
 myEmitter.emit('event');
 
@@ -23193,11 +22510,10 @@ Because listeners are managed using an internal array, calling this will change 
 When a single function has been added as a handler multiple times for a single event (as in the example below), `removeListener()` will remove the most recently added instance. In the example the `once('ping')` listener is removed:
 
 ```
-
 const ee = new EventEmitter();
 
 function pong() {
-console.log('pong');
+  console.log('pong');
 }
 
 ee.on('ping', pong);
@@ -23206,7 +22522,6 @@ ee.removeListener('ping', pong);
 
 ee.emit('ping');
 ee.emit('ping');
-
 ```
 
 Returns a reference to the `EventEmitter`, so that calls can be chained.
@@ -23232,14 +22547,17 @@ Added in: v9.4.0
 Returns a copy of the array of listeners for the event named `eventName`, including any wrappers (such as those created by `.once()`).
 
 ```
-
 const emitter = new EventEmitter();
 emitter.once('log', () => console.log('log once'));
+
+
 
 const listeners = emitter.rawListeners('log');
 const logFnWrapper = listeners[0];
 
+
 logFnWrapper.listener();
+
 
 logFnWrapper();
 
@@ -23247,9 +22565,9 @@ emitter.on('log', () => console.log('log persistently'));
 
 const newListeners = emitter.rawListeners('log');
 
+
 newListeners[0]();
 emitter.emit('log');
-
 ```
 
 #### `emitter[Symbol.for('nodejs.rejection')](err, eventName[, ...args])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_emittersymbolfornodejsrejectionerr-eventname-args)
@@ -23265,24 +22583,22 @@ Added in: v13.4.0, v12.16.0
 The `Symbol.for('nodejs.rejection')` method is called in case a promise rejection happens when emitting an event and [`captureRejections`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_capture-rejections-of-promises) is enabled on the emitter. It is possible to use [`events.captureRejectionSymbol`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_eventscapturerejectionsymbol) in place of `Symbol.for('nodejs.rejection')`.
 
 ```
-
 const { EventEmitter, captureRejectionSymbol } = require('events');
 
 class MyClass extends EventEmitter {
-constructor() {
-super({ captureRejections: true });
-}
+  constructor() {
+    super({ captureRejections: true });
+  }
 
-[captureRejectionSymbol](err, event, ...args) {
-console.log('rejection happened for', event, 'with', err, ...args);
-this.destroy(err);
-}
+  [captureRejectionSymbol](err, event, ...args) {
+    console.log('rejection happened for', event, 'with', err, ...args);
+    this.destroy(err);
+  }
 
-destroy(err) {
-
+  destroy(err) {
+    
+  }
 }
-}
-
 ```
 
 ### `events.defaultMaxListeners`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_eventsdefaultmaxlisteners)
@@ -23296,13 +22612,11 @@ Take caution when setting the `events.defaultMaxListeners` because the change af
 This is not a hard limit. The `EventEmitter` instance will allow more listeners to be added but will output a trace warning to stderr indicating that a "possible EventEmitter memory leak" has been detected. For any single `EventEmitter`, the `emitter.getMaxListeners()` and `emitter.setMaxListeners()` methods can be used to temporarily avoid this warning:
 
 ```
-
 emitter.setMaxListeners(emitter.getMaxListeners() + 1);
 emitter.once('event', () => {
-
-emitter.setMaxListeners(Math.max(emitter.getMaxListeners() - 1, 0));
+  
+  emitter.setMaxListeners(Math.max(emitter.getMaxListeners() - 1, 0));
 });
-
 ```
 
 The [`--trace-warnings`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#cli_--trace-warnings) command-line flag can be used to display the stack trace for such warnings.
@@ -23332,22 +22646,20 @@ For `EventEmitter`s this behaves exactly the same as calling `.listeners` on the
 For `EventTarget`s this is the only way to get the event listeners for the event target. This is useful for debugging and diagnostic purposes.
 
 ```
-
 const { getEventListeners, EventEmitter } = require('events');
 
 {
-const ee = new EventEmitter();
-const listener = () => console.log('Events are fun');
-ee.on('foo', listener);
-getEventListeners(ee, 'foo');
+  const ee = new EventEmitter();
+  const listener = () => console.log('Events are fun');
+  ee.on('foo', listener);
+  getEventListeners(ee, 'foo'); 
 }
 {
-const et = new EventTarget();
-const listener = () => console.log('Events are fun');
-et.addEventListener('foo', listener);
-getEventListeners(et, 'foo');
+  const et = new EventTarget();
+  const listener = () => console.log('Events are fun');
+  et.addEventListener('foo', listener);
+  getEventListeners(et, 'foo'); 
 }
-
 ```
 
 ### `events.once(emitter, name[, options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_eventsonceemitter-name-options)
@@ -23363,46 +22675,43 @@ Creates a `Promise` that is fulfilled when the `EventEmitter` emits the given ev
 This method is intentionally generic and works with the web platform [EventTarget](https://dom.spec.whatwg.org/#interface-eventtarget) interface, which has no special `'error'` event semantics and does not listen to the `'error'` event.
 
 ```
-
 const { once, EventEmitter } = require('events');
 
 async function run() {
-const ee = new EventEmitter();
+  const ee = new EventEmitter();
 
-process.nextTick(() => {
-ee.emit('myevent', 42);
-});
+  process.nextTick(() => {
+    ee.emit('myevent', 42);
+  });
 
-const [value] = await once(ee, 'myevent');
-console.log(value);
+  const [value] = await once(ee, 'myevent');
+  console.log(value);
 
-const err = new Error('kaboom');
-process.nextTick(() => {
-ee.emit('error', err);
-});
+  const err = new Error('kaboom');
+  process.nextTick(() => {
+    ee.emit('error', err);
+  });
 
-try {
-await once(ee, 'myevent');
-} catch (err) {
-console.log('error happened', err);
-}
+  try {
+    await once(ee, 'myevent');
+  } catch (err) {
+    console.log('error happened', err);
+  }
 }
 
 run();
-
 ```
 
 The special handling of the `'error'` event is only used when `events.once()` is used to wait for another event. If `events.once()` is used to wait for the '`error'` event itself, then it is treated as any other kind of event without special handling:
 
 ```
-
 const { EventEmitter, once } = require('events');
 
 const ee = new EventEmitter();
 
 once(ee, 'error')
-.then(([err]) => console.log('ok', err.message))
-.catch((err) => console.log('error', err.message));
+  .then(([err]) => console.log('ok', err.message))
+  .catch((err) => console.log('error', err.message));
 
 ee.emit('error', new Error('boom'));
 
@@ -23411,29 +22720,27 @@ ee.emit('error', new Error('boom'));
 An [<AbortSignal>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#globals_class-abortsignal) can be used to cancel waiting for the event:
 
 ```
-
 const { EventEmitter, once } = require('events');
 
 const ee = new EventEmitter();
 const ac = new AbortController();
 
 async function foo(emitter, event, signal) {
-try {
-await once(emitter, event, { signal });
-console.log('event emitted!');
-} catch (error) {
-if (error.name === 'AbortError') {
-console.error('Waiting for the event was canceled!');
-} else {
-console.error('There was an error', error.message);
-}
-}
+  try {
+    await once(emitter, event, { signal });
+    console.log('event emitted!');
+  } catch (error) {
+    if (error.name === 'AbortError') {
+      console.error('Waiting for the event was canceled!');
+    } else {
+      console.error('There was an error', error.message);
+    }
+  }
 }
 
 foo(ee, 'foo', ac.signal);
-ac.abort();
-ee.emit('foo');
-
+ac.abort(); 
+ee.emit('foo'); 
 ```
 
 #### Awaiting multiple events emitted on `process.nextTick()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_awaiting-multiple-events-emitted-on-processnexttick)
@@ -23441,48 +22748,46 @@ ee.emit('foo');
 There is an edge case worth noting when using the `events.once()` function to await multiple events emitted on in the same batch of `process.nextTick()` operations, or whenever multiple events are emitted synchronously. Specifically, because the `process.nextTick()` queue is drained before the `Promise` microtask queue, and because `EventEmitter` emits all events synchronously, it is possible for `events.once()` to miss an event.
 
 ```
-
 const { EventEmitter, once } = require('events');
 
 const myEE = new EventEmitter();
 
 async function foo() {
-await once(myEE, 'bar');
-console.log('bar');
+  await once(myEE, 'bar');
+  console.log('bar');
 
-await once(myEE, 'foo');
-console.log('foo');
+  
+  
+  await once(myEE, 'foo');
+  console.log('foo');
 }
 
 process.nextTick(() => {
-myEE.emit('bar');
-myEE.emit('foo');
+  myEE.emit('bar');
+  myEE.emit('foo');
 });
 
 foo().then(() => console.log('done'));
-
 ```
 
 To catch both events, create each of the Promises _before_ awaiting either of them, then it becomes possible to use `Promise.all()`, `Promise.race()`, or `Promise.allSettled()`:
 
 ```
-
 const { EventEmitter, once } = require('events');
 
 const myEE = new EventEmitter();
 
 async function foo() {
-await Promise.all([once(myEE, 'bar'), once(myEE, 'foo')]);
-console.log('foo', 'bar');
+  await Promise.all([once(myEE, 'bar'), once(myEE, 'foo')]);
+  console.log('foo', 'bar');
 }
 
 process.nextTick(() => {
-myEE.emit('bar');
-myEE.emit('foo');
+  myEE.emit('bar');
+  myEE.emit('foo');
 });
 
 foo().then(() => console.log('done'));
-
 ```
 
 ### `events.captureRejections`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_eventscapturerejections)
@@ -23515,13 +22820,11 @@ Added in: v0.9.12Deprecated since: v3.2.0
 A class method that returns the number of listeners for the given `eventName` registered on the given `emitter`.
 
 ```
-
 const { EventEmitter, listenerCount } = require('events');
 const myEmitter = new EventEmitter();
 myEmitter.on('event', () => {});
 myEmitter.on('event', () => {});
 console.log(listenerCount(myEmitter, 'event'));
-
 ```
 
 ### `events.on(emitter, eventName[, options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_eventsonemitter-eventname-options)
@@ -23535,25 +22838,25 @@ Added in: v13.6.0, v12.16.0
 -   Returns: [<AsyncIterator>](https://tc39.github.io/ecma262/#sec-asynciterator-interface) that iterates `eventName` events emitted by the `emitter`
 
 ```
-
 const { on, EventEmitter } = require('events');
 
 (async () => {
-const ee = new EventEmitter();
+  const ee = new EventEmitter();
 
-process.nextTick(() => {
-ee.emit('foo', 'bar');
-ee.emit('foo', 42);
-});
+  
+  process.nextTick(() => {
+    ee.emit('foo', 'bar');
+    ee.emit('foo', 42);
+  });
 
-for await (const event of on(ee, 'foo')) {
-
-    console.log(event);
-
-}
-
+  for await (const event of on(ee, 'foo')) {
+    
+    
+    
+    console.log(event); 
+  }
+  
 })();
-
 ```
 
 Returns an `AsyncIterator` that iterates `eventName` events. It will throw if the `EventEmitter` emits `'error'`. It removes all listeners when exiting the loop. The `value` returned by each iteration is an array composed of the emitted event arguments.
@@ -23561,28 +22864,28 @@ Returns an `AsyncIterator` that iterates `eventName` events. It will throw if th
 An [<AbortSignal>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#globals_class-abortsignal) can be used to cancel waiting on events:
 
 ```
-
 const { on, EventEmitter } = require('events');
 const ac = new AbortController();
 
 (async () => {
-const ee = new EventEmitter();
+  const ee = new EventEmitter();
 
-process.nextTick(() => {
-ee.emit('foo', 'bar');
-ee.emit('foo', 42);
-});
+  
+  process.nextTick(() => {
+    ee.emit('foo', 'bar');
+    ee.emit('foo', 42);
+  });
 
-for await (const event of on(ee, 'foo', { signal: ac.signal })) {
-
-    console.log(event);
-
-}
-
+  for await (const event of on(ee, 'foo', { signal: ac.signal })) {
+    
+    
+    
+    console.log(event); 
+  }
+  
 })();
 
 process.nextTick(() => ac.abort());
-
 ```
 
 ### `events.setMaxListeners(n[, ...eventTargets])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_eventssetmaxlistenersn-eventtargets)
@@ -23593,17 +22896,15 @@ Added in: v15.4.0
 -   `...eventsTargets` [<EventTarget\[\]>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_class-eventtarget) | [<EventEmitter\[\]>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_class-eventemitter) Zero or more [<EventTarget>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_class-eventtarget) or [<EventEmitter>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_class-eventemitter) instances. If none are specified, `n` is set as the default max for all newly created [<EventTarget>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_class-eventtarget) and [<EventEmitter>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_class-eventemitter) objects.
 
 ```
-
 const {
-setMaxListeners,
-EventEmitter
+  setMaxListeners,
+  EventEmitter
 } = require('events');
 
 const target = new EventTarget();
 const emitter = new EventEmitter();
 
 setMaxListeners(5, target, emitter);
-
 ```
 
 ### `EventTarget` and `Event` API[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_eventtarget-and-event-api)
@@ -23611,13 +22912,11 @@ setMaxListeners(5, target, emitter);
 The `EventTarget` and `Event` objects are a Node.js-specific implementation of the [`EventTarget` Web API](https://dom.spec.whatwg.org/#eventtarget) that are exposed by some Node.js core APIs.
 
 ```
-
 const target = new EventTarget();
 
 target.addEventListener('foo', (event) => {
-console.log('foo event happened!');
+  console.log('foo event happened!');
 });
-
 ```
 
 #### Node.js `EventTarget` vs. DOM `EventTarget`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_nodejs-eventtarget-vs-dom-eventtarget)
@@ -23653,27 +22952,26 @@ Handlers are always invoked in the order they were added.
 Handler functions may mutate the `event` object.
 
 ```
-
 function handler1(event) {
-console.log(event.type);  
- event.a = 1;
+  console.log(event.type);  
+  event.a = 1;
 }
 
 async function handler2(event) {
-console.log(event.type);  
- console.log(event.a);  
+  console.log(event.type);  
+  console.log(event.a);  
 }
 
 const handler3 = {
-handleEvent(event) {
-console.log(event.type);  
- }
+  handleEvent(event) {
+    console.log(event.type);  
+  }
 };
 
 const handler4 = {
-async handleEvent(event) {
-console.log(event.type);  
- }
+  async handleEvent(event) {
+    console.log(event.type);  
+  }
 };
 
 const target = new EventTarget();
@@ -23682,7 +22980,6 @@ target.addEventListener('foo', handler1);
 target.addEventListener('foo', handler2);
 target.addEventListener('foo', handler3);
 target.addEventListener('foo', handler4, { once: true });
-
 ```
 
 #### `EventTarget` error handling[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_eventtarget-error-handling)
@@ -23841,17 +23138,17 @@ If the `once` option is `true`, the `listener` is removed after the next time a 
 The `capture` option is not used by Node.js in any functional way other than tracking registered event listeners per the `EventTarget` specification. Specifically, the `capture` option is used as part of the key when registering a `listener`. Any individual `listener` may be added once with `capture = false`, and once with `capture = true`.
 
 ```
-
 function handler(event) {}
 
 const target = new EventTarget();
 target.addEventListener('foo', handler, { capture: true });  
-target.addEventListener('foo', handler, { capture: false });
+target.addEventListener('foo', handler, { capture: false }); 
+
 
 target.removeEventListener('foo', handler);
 
-target.removeEventListener('foo', handler, { capture: true });
 
+target.removeEventListener('foo', handler, { capture: true });
 ```
 
 ##### `eventTarget.dispatchEvent(event)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_eventtargetdispatcheventevent)
@@ -23889,14 +23186,14 @@ The `NodeEventTarget` is a Node.js-specific extension to `EventTarget` that emul
 Added in: v14.5.0
 
 -   `type` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
-
+    
 -   `listener` [<Function>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function) | [<EventListener>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_event-listener)
-
+    
 -   `options` [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
-
+    
     -   `once` [<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type)
 -   Returns: [<EventTarget>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_class-eventtarget) this
-
+    
 
 Node.js-specific extension to the `EventTarget` class that emulates the equivalent `EventEmitter` API. The only difference between `addListener()` and `addEventListener()` is that `addListener()` will return a reference to the `EventTarget`.
 
@@ -23913,9 +23210,9 @@ Node.js-specific extension to the `EventTarget` class that returns an array of e
 Added in: v14.5.0
 
 -   `type` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
-
+    
 -   Returns: [<number>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type)
-
+    
 
 Node.js-specific extension to the `EventTarget` class that returns the number of event listeners registered for the `type`.
 
@@ -23924,11 +23221,11 @@ Node.js-specific extension to the `EventTarget` class that returns the number of
 Added in: v14.5.0
 
 -   `type` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
-
+    
 -   `listener` [<Function>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function) | [<EventListener>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_event-listener)
-
+    
 -   Returns: [<EventTarget>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_class-eventtarget) this
-
+    
 
 Node.js-specific alias for `eventTarget.removeListener()`.
 
@@ -23937,14 +23234,14 @@ Node.js-specific alias for `eventTarget.removeListener()`.
 Added in: v14.5.0
 
 -   `type` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
-
+    
 -   `listener` [<Function>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function) | [<EventListener>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_event-listener)
-
+    
 -   `options` [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
-
+    
     -   `once` [<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type)
 -   Returns: [<EventTarget>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_class-eventtarget) this
-
+    
 
 Node.js-specific alias for `eventTarget.addListener()`.
 
@@ -23953,13 +23250,13 @@ Node.js-specific alias for `eventTarget.addListener()`.
 Added in: v14.5.0
 
 -   `type` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
-
+    
 -   `listener` [<Function>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function) | [<EventListener>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_event-listener)
-
+    
 -   `options` [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
-
+    
 -   Returns: [<EventTarget>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_class-eventtarget) this
-
+    
 
 Node.js-specific extension to the `EventTarget` class that adds a `once` listener for the given event `type`. This is equivalent to calling `on` with the `once` option set to `true`.
 
@@ -23968,9 +23265,9 @@ Node.js-specific extension to the `EventTarget` class that adds a `once` listene
 Added in: v14.5.0
 
 -   `type` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
-
+    
 -   Returns: [<EventTarget>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_class-eventtarget) this
-
+    
 
 Node.js-specific extension to the `EventTarget` class. If `type` is specified, removes all registered listeners for `type`, otherwise removes all registered listeners.
 
@@ -23979,11 +23276,11 @@ Node.js-specific extension to the `EventTarget` class. If `type` is specified, r
 Added in: v14.5.0
 
 -   `type` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
-
+    
 -   `listener` [<Function>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function) | [<EventListener>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_event-listener)
-
+    
 -   Returns: [<EventTarget>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_class-eventtarget) this
-
+    
 
 Node.js-specific extension to the `EventTarget` class that removes the `listener` for the given `type`. The only difference between `removeListener()` and `removeEventListener()` is that `removeListener()` will return a reference to the `EventTarget`.
 
@@ -23996,17 +23293,13 @@ The `fs` module enables interacting with the file system in a way modeled on sta
 To use the promise-based APIs:
 
 ```
-
-import \* as fs from 'fs/promises';
-
+import * as fs from 'fs/promises';
 ```
 
 To use the callback and sync APIs:
 
 ```
-
-import \* as fs from 'fs';
-
+import * as fs from 'fs';
 ```
 
 All file system operations have synchronous, callback, and promise-based forms, and are accessible using both CommonJS syntax and ES6 Modules (ESM).
@@ -24016,16 +23309,14 @@ All file system operations have synchronous, callback, and promise-based forms, 
 Promise-based operations return a promise that is fulfilled when the asynchronous operation is complete.
 
 ```
-
 import { unlink } from 'fs/promises';
 
 try {
-await unlink('/tmp/hello');
-console.log('successfully deleted /tmp/hello');
+  await unlink('/tmp/hello');
+  console.log('successfully deleted /tmp/hello');
 } catch (error) {
-console.error('there was an error:', error.message);
+  console.error('there was an error:', error.message);
 }
-
 ```
 
 ### Callback example[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_callback-example)
@@ -24033,14 +23324,12 @@ console.error('there was an error:', error.message);
 The callback form takes a completion callback function as its last argument and invokes the operation asynchronously. The arguments passed to the completion callback depend on the method, but the first argument is always reserved for an exception. If the operation is completed successfully, then the first argument is `null` or `undefined`.
 
 ```
-
 import { unlink } from 'fs';
 
 unlink('/tmp/hello', (err) => {
-if (err) throw err;
-console.log('successfully deleted /tmp/hello');
+  if (err) throw err;
+  console.log('successfully deleted /tmp/hello');
 });
-
 ```
 
 The callback-based versions of the `fs` module APIs are preferable over the use of the promise APIs when maximal performance (both in terms of execution time and memory allocation are required).
@@ -24050,16 +23339,14 @@ The callback-based versions of the `fs` module APIs are preferable over the use 
 The synchronous APIs block the Node.js event loop and further JavaScript execution until the operation is complete. Exceptions are thrown immediately and can be handled using `try…catch`, or can be allowed to bubble up.
 
 ```
-
 import { unlinkSync } from 'fs';
 
 try {
-unlinkSync('/tmp/hello');
-console.log('successfully deleted /tmp/hello');
+  unlinkSync('/tmp/hello');
+  console.log('successfully deleted /tmp/hello');
 } catch (err) {
-
+  
 }
-
 ```
 
 ### Promises API[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_promises-api)
@@ -24127,16 +23414,14 @@ Added in: v10.0.0
 Closes the file handle after waiting for any pending operation on the handle to complete.
 
 ```
-
 import { open } from 'fs/promises';
 
 let filehandle;
 try {
-filehandle = await open('thefile.txt', 'r');
+  filehandle = await open('thefile.txt', 'r');
 } finally {
-await filehandle?.close();
+  await filehandle?.close();
 }
-
 ```
 
 ##### `filehandle.createReadStream([options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_filehandlecreatereadstreamoptions)
@@ -24161,19 +23446,21 @@ If the `FileHandle` points to a character device that only supports blocking rea
 By default, the stream will emit a `'close'` event after it has been destroyed. Set the `emitClose` option to `false` to change this behavior.
 
 ```
-
 import { open } from 'fs/promises';
 
 const fd = await open('/dev/input/event0');
 
 const stream = fd.createReadStream();
 setTimeout(() => {
-stream.close();
-
-stream.push(null);
-stream.read(0);
+  stream.close(); 
+  
+  
+  
+  
+  
+  stream.push(null);
+  stream.read(0);
 }, 100);
-
 ```
 
 If `autoClose` is false, then the file descriptor won't be closed, even if there's an error. It is the application's responsibility to close it and make sure there's no file descriptor leak. If `autoClose` is set to true (default behavior), on `'error'` or `'end'` the file descriptor will be closed automatically.
@@ -24181,12 +23468,10 @@ If `autoClose` is false, then the file descriptor won't be closed, even if there
 An example to read the last 10 bytes of a file which is 100 bytes long:
 
 ```
-
 import { open } from 'fs/promises';
 
 const fd = await open('sample.txt');
 fd.createReadStream({ start: 90, end: 99 });
-
 ```
 
 ##### `filehandle.createWriteStream([options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_filehandlecreatewritestreamoptions)
@@ -24312,17 +23597,15 @@ If the file was larger than `len` bytes, only the first `len` bytes will be reta
 The following example retains only the first four bytes of the file:
 
 ```
-
 import { open } from 'fs/promises';
 
 let filehandle = null;
 try {
-filehandle = await open('temp.txt', 'r+');
-await filehandle.truncate(4);
+  filehandle = await open('temp.txt', 'r+');
+  await filehandle.truncate(4);
 } finally {
-await filehandle?.close();
+  await filehandle?.close();
 }
-
 ```
 
 If the file previously was shorter than `len` bytes, it is extended, and the extended part is filled with null bytes (`'\0'`):
@@ -24427,17 +23710,15 @@ Tests a user's permissions for the file or directory specified by `path`. The `m
 If the accessibility check is successful, the promise is resolved with no value. If any of the accessibility checks fail, the promise is rejected with an [<Error>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error) object. The following example checks if the file `/etc/passwd` can be read and written by the current process.
 
 ```
-
 import { access } from 'fs/promises';
 import { constants } from 'fs';
 
 try {
-await access('/etc/passwd', constants.R_OK | constants.W_OK);
-console.log('can access');
+  await access('/etc/passwd', constants.R_OK | constants.W_OK);
+  console.log('can access');
 } catch {
-console.error('cannot access');
+  console.error('cannot access');
 }
-
 ```
 
 Using `fsPromises.access()` to check for the accessibility of a file before calling `fsPromises.open()` is not recommended. Doing so introduces a race condition, since other processes may change the file's state between the two calls. Instead, user code should open/read/write the file directly and handle the error raised if the file is not accessible.
@@ -24498,24 +23779,23 @@ Asynchronously copies `src` to `dest`. By default, `dest` is overwritten if it a
 No guarantees are made about the atomicity of the copy operation. If an error occurs after the destination file has been opened for writing, an attempt will be made to remove the destination.
 
 ```
-
 import { constants } from 'fs';
 import { copyFile } from 'fs/promises';
 
 try {
-await copyFile('source.txt', 'destination.txt');
-console.log('source.txt was copied to destination.txt');
+  await copyFile('source.txt', 'destination.txt');
+  console.log('source.txt was copied to destination.txt');
 } catch {
-console.log('The file could not be copied');
+  console.log('The file could not be copied');
 }
+
 
 try {
-await copyFile('source.txt', 'destination.txt', constants.COPYFILE_EXCL);
-console.log('source.txt was copied to destination.txt');
+  await copyFile('source.txt', 'destination.txt', constants.COPYFILE_EXCL);
+  console.log('source.txt was copied to destination.txt');
 } catch {
-console.log('The file could not be copied');
+  console.log('The file could not be copied');
 }
-
 ```
 
 #### `fsPromises.cp(src, dest[, options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_fspromisescpsrc-dest-options)
@@ -24614,15 +23894,13 @@ Creates a unique temporary directory. A unique directory name is generated by ap
 The optional `options` argument can be a string specifying an encoding, or an object with an `encoding` property specifying the character encoding to use.
 
 ```
-
 import { mkdtemp } from 'fs/promises';
 
 try {
-await mkdtemp(path.join(os.tmpdir(), 'foo-'));
+  await mkdtemp(path.join(os.tmpdir(), 'foo-'));
 } catch (err) {
-console.error(err);
+  console.error(err);
 }
-
 ```
 
 The `fsPromises.mkdtemp()` method will append the six randomly selected characters directly to the `prefix` string. For instance, given a directory `/tmp`, if the intention is to create a temporary directory _within_ `/tmp`, the `prefix` must end with a trailing platform-specific path separator (`require('path').sep`).
@@ -24638,7 +23916,7 @@ Opens a [<FileHandle>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_cla
 
 Refer to the POSIX [`open(2)`](http://man7.org/linux/man-pages/man2/open.2.html) documentation for more detail.
 
-Some characters (`< > : " / \ | ? *`) are reserved under Windows as documented by [Naming Files, Paths, and Namespaces](https://docs.microsoft.com/windows/desktop/FileIO/naming-a-file). Under NTFS, if the filename contains a colon, Node.js will open a file system stream, as described by [this MSDN page](https://docs.microsoft.com/windows/desktop/FileIO/using-streams).
+Some characters (`< > : " / \ | ? *`) are reserved under Windows as documented by [Naming Files, Paths, and Namespaces](https://docs.microsoft.com/en-us/windows/desktop/FileIO/naming-a-file). Under NTFS, if the filename contains a colon, Node.js will open a file system stream, as described by [this MSDN page](https://docs.microsoft.com/en-us/windows/desktop/FileIO/using-streams).
 
 #### `fsPromises.opendir(path[, options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_fspromisesopendirpath-options)
 
@@ -24657,17 +23935,15 @@ The `encoding` option sets the encoding for the `path` while opening the directo
 Example using async iteration:
 
 ```
-
 import { opendir } from 'fs/promises';
 
 try {
-const dir = await opendir('./');
-for await (const dirent of dir)
-console.log(dirent.name);
+  const dir = await opendir('./');
+  for await (const dirent of dir)
+    console.log(dirent.name);
 } catch (err) {
-console.error(err);
+  console.error(err);
 }
-
 ```
 
 When using the async iterator, the [<fs.Dir>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_class-fsdir) object will be automatically closed after the iterator exits.
@@ -24687,17 +23963,15 @@ The optional `options` argument can be a string specifying an encoding, or an ob
 If `options.withFileTypes` is set to `true`, the resolved array will contain [<fs.Dirent>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_class-fsdirent) objects.
 
 ```
-
 import { readdir } from 'fs/promises';
 
 try {
-const files = await readdir(path);
-for (const file of files)
-console.log(file);
+  const files = await readdir(path);
+  for (const file of files)
+    console.log(file);
 } catch (err) {
-console.error(err);
+  console.error(err);
 }
-
 ```
 
 #### `fsPromises.readFile(path[, options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_fspromisesreadfilepath-options)
@@ -24720,22 +23994,21 @@ When the `path` is a directory, the behavior of `fsPromises.readFile()` is platf
 It is possible to abort an ongoing `readFile` using an [<AbortSignal>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#globals_class-abortsignal). If a request is aborted the promise returned is rejected with an `AbortError`:
 
 ```
-
 import { readFile } from 'fs/promises';
 
 try {
-const controller = new AbortController();
-const { signal } = controller;
-const promise = readFile(fileName, { signal });
+  const controller = new AbortController();
+  const { signal } = controller;
+  const promise = readFile(fileName, { signal });
 
-controller.abort();
+  
+  controller.abort();
 
-await promise;
+  await promise;
 } catch (err) {
-
-console.error(err);
+  
+  console.error(err);
 }
-
 ```
 
 Aborting an ongoing request does not abort individual operating system requests but rather the internal buffering `fs.readFile` performs.
@@ -24883,7 +24156,6 @@ Added in: v15.9.0
 Returns an async iterator that watches for changes on `filename`, where `filename` is either a file or a directory.
 
 ```
-
 const { watch } = require('fs/promises');
 
 const ac = new AbortController();
@@ -24891,17 +24163,16 @@ const { signal } = ac;
 setTimeout(() => ac.abort(), 10000);
 
 (async () => {
-try {
-const watcher = watch(\_\_filename, { signal });
-for await (const event of watcher)
-console.log(event);
-} catch (err) {
-if (err.name === 'AbortError')
-return;
-throw err;
-}
+  try {
+    const watcher = watch(__filename, { signal });
+    for await (const event of watcher)
+      console.log(event);
+  } catch (err) {
+    if (err.name === 'AbortError')
+      return;
+    throw err;
+  }
 })();
-
 ```
 
 On most platforms, `'rename'` is emitted whenever a filename appears or disappears in the directory.
@@ -24936,24 +24207,23 @@ Similarly to `fsPromises.readFile` - `fsPromises.writeFile` is a convenience met
 It is possible to use an [<AbortSignal>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#globals_class-abortsignal) to cancel an `fsPromises.writeFile()`. Cancelation is "best effort", and some amount of data is likely still to be written.
 
 ```
-
 import { writeFile } from 'fs/promises';
 import { Buffer } from 'buffer';
 
 try {
-const controller = new AbortController();
-const { signal } = controller;
-const data = new Uint8Array(Buffer.from('Hello Node.js'));
-const promise = writeFile('message.txt', data, { signal });
+  const controller = new AbortController();
+  const { signal } = controller;
+  const data = new Uint8Array(Buffer.from('Hello Node.js'));
+  const promise = writeFile('message.txt', data, { signal });
 
-controller.abort();
+  
+  controller.abort();
 
-await promise;
+  await promise;
 } catch (err) {
-
-console.error(err);
+  
+  console.error(err);
 }
-
 ```
 
 Aborting an ongoing request does not abort individual operating system requests but rather the internal buffering `fs.writeFile` performs.
@@ -24976,32 +24246,34 @@ Tests a user's permissions for the file or directory specified by `path`. The `m
 The final argument, `callback`, is a callback function that is invoked with a possible error argument. If any of the accessibility checks fail, the error argument will be an `Error` object. The following examples check if `package.json` exists, and if it is readable or writable.
 
 ```
-
 import { access, constants } from 'fs';
 
 const file = 'package.json';
 
+
 access(file, constants.F_OK, (err) => {
-console.log(`${file} ${err ? 'does not exist' : 'exists'}`);
+  console.log(`${file} ${err ? 'does not exist' : 'exists'}`);
 });
+
 
 access(file, constants.R_OK, (err) => {
-console.log(`${file} ${err ? 'is not readable' : 'is readable'}`);
+  console.log(`${file} ${err ? 'is not readable' : 'is readable'}`);
 });
+
 
 access(file, constants.W_OK, (err) => {
-console.log(`${file} ${err ? 'is not writable' : 'is writable'}`);
+  console.log(`${file} ${err ? 'is not writable' : 'is writable'}`);
 });
+
 
 access(file, constants.F_OK | constants.W_OK, (err) => {
-if (err) {
-console.error(
-`${file} ${err.code === 'ENOENT' ? 'does not exist' : 'is read-only'}`);
-} else {
-console.log(`${file} exists, and it is writable`);
-}
+  if (err) {
+    console.error(
+      `${file} ${err.code === 'ENOENT' ? 'does not exist' : 'is read-only'}`);
+  } else {
+    console.log(`${file} exists, and it is writable`);
+  }
 });
-
 ```
 
 Do not use `fs.access()` to check for the accessibility of a file before calling `fs.open()`, `fs.readFile()` or `fs.writeFile()`. Doing so introduces a race condition, since other processes may change the file's state between the two calls. Instead, user code should open/read/write the file directly and handle the error raised if the file is not accessible.
@@ -25009,17 +24281,16 @@ Do not use `fs.access()` to check for the accessibility of a file before calling
 **write (NOT RECOMMENDED)**
 
 ```
-
 import { access, open, close } from 'fs';
 
 access('myfile', (err) => {
-if (!err) {
-console.error('myfile already exists');
-return;
-}
+  if (!err) {
+    console.error('myfile already exists');
+    return;
+  }
 
-open('myfile', 'wx', (err, fd) => {
-if (err) throw err;
+  open('myfile', 'wx', (err, fd) => {
+    if (err) throw err;
 
     try {
       writeMyData(fd);
@@ -25028,58 +24299,51 @@ if (err) throw err;
         if (err) throw err;
       });
     }
-
+  });
 });
-});
-
 ```
 
 **write (RECOMMENDED)**
 
 ```
-
 import { open, close } from 'fs';
 
 open('myfile', 'wx', (err, fd) => {
-if (err) {
-if (err.code === 'EEXIST') {
-console.error('myfile already exists');
-return;
-}
+  if (err) {
+    if (err.code === 'EEXIST') {
+      console.error('myfile already exists');
+      return;
+    }
 
     throw err;
+  }
 
-}
-
-try {
-writeMyData(fd);
-} finally {
-close(fd, (err) => {
-if (err) throw err;
+  try {
+    writeMyData(fd);
+  } finally {
+    close(fd, (err) => {
+      if (err) throw err;
+    });
+  }
 });
-}
-});
-
 ```
 
 **read (NOT RECOMMENDED)**
 
 ```
-
 import { access, open, close } from 'fs';
 access('myfile', (err) => {
-if (err) {
-if (err.code === 'ENOENT') {
-console.error('myfile does not exist');
-return;
-}
+  if (err) {
+    if (err.code === 'ENOENT') {
+      console.error('myfile does not exist');
+      return;
+    }
 
     throw err;
+  }
 
-}
-
-open('myfile', 'r', (err, fd) => {
-if (err) throw err;
+  open('myfile', 'r', (err, fd) => {
+    if (err) throw err;
 
     try {
       readMyData(fd);
@@ -25088,38 +24352,33 @@ if (err) throw err;
         if (err) throw err;
       });
     }
-
+  });
 });
-});
-
 ```
 
 **read (RECOMMENDED)**
 
 ```
-
 import { open, close } from 'fs';
 
 open('myfile', 'r', (err, fd) => {
-if (err) {
-if (err.code === 'ENOENT') {
-console.error('myfile does not exist');
-return;
-}
+  if (err) {
+    if (err.code === 'ENOENT') {
+      console.error('myfile does not exist');
+      return;
+    }
 
     throw err;
+  }
 
-}
-
-try {
-readMyData(fd);
-} finally {
-close(fd, (err) => {
-if (err) throw err;
+  try {
+    readMyData(fd);
+  } finally {
+    close(fd, (err) => {
+      if (err) throw err;
+    });
+  }
 });
-}
-});
-
 ```
 
 The "not recommended" examples above check for accessibility and then use the file; the "recommended" examples are better because they use the file directly and handle the error, if any.
@@ -25144,52 +24403,46 @@ Asynchronously append data to a file, creating the file if it does not yet exist
 The `mode` option only affects the newly created file. See [`fs.open()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_fsopenpath-flags-mode-callback) for more details.
 
 ```
-
 import { appendFile } from 'fs';
 
 appendFile('message.txt', 'data to append', (err) => {
-if (err) throw err;
-console.log('The "data to append" was appended to file!');
+  if (err) throw err;
+  console.log('The "data to append" was appended to file!');
 });
-
 ```
 
 If `options` is a string, then it specifies the encoding:
 
 ```
-
 import { appendFile } from 'fs';
 
 appendFile('message.txt', 'data to append', 'utf8', callback);
-
 ```
 
 The `path` may be specified as a numeric file descriptor that has been opened for appending (using `fs.open()` or `fs.openSync()`). The file descriptor will not be closed automatically.
 
 ```
-
 import { open, close, appendFile } from 'fs';
 
 function closeFd(fd) {
-close(fd, (err) => {
-if (err) throw err;
-});
+  close(fd, (err) => {
+    if (err) throw err;
+  });
 }
 
 open('message.txt', 'a', (err, fd) => {
-if (err) throw err;
+  if (err) throw err;
 
-try {
-appendFile(fd, 'data to append', 'utf8', (err) => {
-closeFd(fd);
-if (err) throw err;
+  try {
+    appendFile(fd, 'data to append', 'utf8', (err) => {
+      closeFd(fd);
+      if (err) throw err;
+    });
+  } catch (err) {
+    closeFd(fd);
+    throw err;
+  }
 });
-} catch (err) {
-closeFd(fd);
-throw err;
-}
-});
-
 ```
 
 #### `fs.chmod(path, mode, callback)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_fschmodpath-mode-callback)
@@ -25204,14 +24457,12 @@ Asynchronously changes the permissions of a file. No arguments other than a poss
 See the POSIX [`chmod(2)`](http://man7.org/linux/man-pages/man2/chmod.2.html) documentation for more detail.
 
 ```
-
 import { chmod } from 'fs';
 
 chmod('my_file.txt', 0o775, (err) => {
-if (err) throw err;
-console.log('The permissions for file "my_file.txt" have been changed!');
+  if (err) throw err;
+  console.log('The permissions for file "my_file.txt" have been changed!');
 });
-
 ```
 
 ##### File modes[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_file-modes)
@@ -25366,18 +24617,18 @@ Asynchronously copies `src` to `dest`. By default, `dest` is overwritten if it a
 -   `fs.constants.COPYFILE_FICLONE_FORCE`: The copy operation will attempt to create a copy-on-write reflink. If the platform does not support copy-on-write, then the operation will fail.
 
 ```
-
 import { copyFile, constants } from 'fs';
 
 function callback(err) {
-if (err) throw err;
-console.log('source.txt was copied to destination.txt');
+  if (err) throw err;
+  console.log('source.txt was copied to destination.txt');
 }
+
 
 copyFile('source.txt', 'destination.txt', callback);
 
-copyFile('source.txt', 'destination.txt', constants.COPYFILE_EXCL, callback);
 
+copyFile('source.txt', 'destination.txt', constants.COPYFILE_EXCL, callback);
 ```
 
 #### `fs.cp(src, dest[, options], callback)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_fscpsrc-dest-options-callback)
@@ -25428,17 +24679,20 @@ By default, the stream will emit a `'close'` event after it has been destroyed. 
 By providing the `fs` option, it is possible to override the corresponding `fs` implementations for `open`, `read`, and `close`. When providing the `fs` option, an override for `read` is required. If no `fd` is provided, an override for `open` is also required. If `autoClose` is `true`, an override for `close` is also required.
 
 ```
-
 import { createReadStream } from 'fs';
+
 
 const stream = createReadStream('/dev/input/event0');
 setTimeout(() => {
-stream.close();
-
-stream.push(null);
-stream.read(0);
+  stream.close(); 
+  
+  
+  
+  
+  
+  stream.push(null);
+  stream.read(0);
 }, 100);
-
 ```
 
 If `autoClose` is false, then the file descriptor won't be closed, even if there's an error. It is the application's responsibility to close it and make sure there's no file descriptor leak. If `autoClose` is set to true (default behavior), on `'error'` or `'end'` the file descriptor will be closed automatically.
@@ -25448,11 +24702,9 @@ If `autoClose` is false, then the file descriptor won't be closed, even if there
 An example to read the last 10 bytes of a file which is 100 bytes long:
 
 ```
-
 import { createReadStream } from 'fs';
 
 createReadStream('sample.txt', { start: 90, end: 99 });
-
 ```
 
 If `options` is a string, then it specifies the encoding.
@@ -25492,13 +24744,11 @@ If `options` is a string, then it specifies the encoding.
 Test whether or not the given path exists by checking with the file system. Then call the `callback` argument with either true or false:
 
 ```
-
 import { exists } from 'fs';
 
 exists('/etc/passwd', (e) => {
-console.log(e ? 'it exists' : 'no passwd!');
+  console.log(e ? 'it exists' : 'no passwd!');
 });
-
 ```
 
 **The parameters for this callback are not consistent with other Node.js callbacks.** Normally, the first parameter to a Node.js callback is an `err` parameter, optionally followed by other parameters. The `fs.exists()` callback has only one boolean parameter. This is one reason `fs.access()` is recommended instead of `fs.exists()`.
@@ -25508,15 +24758,14 @@ Using `fs.exists()` to check for the existence of a file before calling `fs.open
 **write (NOT RECOMMENDED)**
 
 ```
-
 import { exists, open, close } from 'fs';
 
 exists('myfile', (e) => {
-if (e) {
-console.error('myfile already exists');
-} else {
-open('myfile', 'wx', (err, fd) => {
-if (err) throw err;
+  if (e) {
+    console.error('myfile already exists');
+  } else {
+    open('myfile', 'wx', (err, fd) => {
+      if (err) throw err;
 
       try {
         writeMyData(fd);
@@ -25526,49 +24775,43 @@ if (err) throw err;
         });
       }
     });
-
-}
+  }
 });
-
 ```
 
 **write (RECOMMENDED)**
 
 ```
-
 import { open, close } from 'fs';
 open('myfile', 'wx', (err, fd) => {
-if (err) {
-if (err.code === 'EEXIST') {
-console.error('myfile already exists');
-return;
-}
+  if (err) {
+    if (err.code === 'EEXIST') {
+      console.error('myfile already exists');
+      return;
+    }
 
     throw err;
+  }
 
-}
-
-try {
-writeMyData(fd);
-} finally {
-close(fd, (err) => {
-if (err) throw err;
+  try {
+    writeMyData(fd);
+  } finally {
+    close(fd, (err) => {
+      if (err) throw err;
+    });
+  }
 });
-}
-});
-
 ```
 
 **read (NOT RECOMMENDED)**
 
 ```
-
 import { open, close, exists } from 'fs';
 
 exists('myfile', (e) => {
-if (e) {
-open('myfile', 'r', (err, fd) => {
-if (err) throw err;
+  if (e) {
+    open('myfile', 'r', (err, fd) => {
+      if (err) throw err;
 
       try {
         readMyData(fd);
@@ -25578,40 +24821,35 @@ if (err) throw err;
         });
       }
     });
-
-} else {
-console.error('myfile does not exist');
-}
+  } else {
+    console.error('myfile does not exist');
+  }
 });
-
 ```
 
 **read (RECOMMENDED)**
 
 ```
-
 import { open, close } from 'fs';
 
 open('myfile', 'r', (err, fd) => {
-if (err) {
-if (err.code === 'ENOENT') {
-console.error('myfile does not exist');
-return;
-}
+  if (err) {
+    if (err.code === 'ENOENT') {
+      console.error('myfile does not exist');
+      return;
+    }
 
     throw err;
+  }
 
-}
-
-try {
-readMyData(fd);
-} finally {
-close(fd, (err) => {
-if (err) throw err;
+  try {
+    readMyData(fd);
+  } finally {
+    close(fd, (err) => {
+      if (err) throw err;
+    });
+  }
 });
-}
-});
-
 ```
 
 The "not recommended" examples above check for existence and then use the file; the "recommended" examples are better because they use the file directly and handle the error, if any.
@@ -25686,29 +24924,27 @@ If the file referred to by the file descriptor was larger than `len` bytes, only
 For example, the following program retains only the first four bytes of the file:
 
 ```
-
 import { open, close, ftruncate } from 'fs';
 
 function closeFd(fd) {
-close(fd, (err) => {
-if (err) throw err;
-});
+  close(fd, (err) => {
+    if (err) throw err;
+  });
 }
 
 open('temp.txt', 'r+', (err, fd) => {
-if (err) throw err;
+  if (err) throw err;
 
-try {
-ftruncate(fd, 4, (err) => {
-closeFd(fd);
-if (err) throw err;
+  try {
+    ftruncate(fd, 4, (err) => {
+      closeFd(fd);
+      if (err) throw err;
+    });
+  } catch (err) {
+    closeFd(fd);
+    if (err) throw err;
+  }
 });
-} catch (err) {
-closeFd(fd);
-if (err) throw err;
-}
-});
-
 ```
 
 If the file previously was shorter than `len` bytes, it is extended, and the extended part is filled with null bytes (`'\0'`):
@@ -25802,25 +25038,22 @@ The callback is given a possible exception and, if `recursive` is `true`, the fi
 The optional `options` argument can be an integer specifying `mode` (permission and sticky bits), or an object with a `mode` property and a `recursive` property indicating whether parent directories should be created. Calling `fs.mkdir()` when `path` is a directory that exists results in an error only when `recursive` is false.
 
 ```
-
 import { mkdir } from 'fs';
 
-mkdir('/tmp/a/apple', { recursive: true }, (err) => {
-if (err) throw err;
-});
 
+mkdir('/tmp/a/apple', { recursive: true }, (err) => {
+  if (err) throw err;
+});
 ```
 
 On Windows, using `fs.mkdir()` on the root directory even with recursion will result in an error:
 
 ```
-
 import { mkdir } from 'fs';
 
 mkdir('/', { recursive: true }, (err) => {
-
+  
 });
-
 ```
 
 See the POSIX [`mkdir(2)`](http://man7.org/linux/man-pages/man2/mkdir.2.html) documentation for more details.
@@ -25843,39 +25076,42 @@ The created directory path is passed as a string to the callback's second parame
 The optional `options` argument can be a string specifying an encoding, or an object with an `encoding` property specifying the character encoding to use.
 
 ```
-
 import { mkdtemp } from 'fs';
 
 mkdtemp(path.join(os.tmpdir(), 'foo-'), (err, directory) => {
-if (err) throw err;
-console.log(directory);
-
+  if (err) throw err;
+  console.log(directory);
+  
 });
-
 ```
 
 The `fs.mkdtemp()` method will append the six randomly selected characters directly to the `prefix` string. For instance, given a directory `/tmp`, if the intention is to create a temporary directory _within_ `/tmp`, the `prefix` must end with a trailing platform-specific path separator (`require('path').sep`).
 
 ```
-
 import { tmpdir } from 'os';
 import { mkdtemp } from 'fs';
 
+
 const tmpDir = tmpdir();
 
-mkdtemp(tmpDir, (err, directory) => {
-if (err) throw err;
-console.log(directory);
 
+mkdtemp(tmpDir, (err, directory) => {
+  if (err) throw err;
+  console.log(directory);
+  
+  
+  
 });
+
 
 import { sep } from 'path';
 mkdtemp(`${tmpDir}${sep}`, (err, directory) => {
-if (err) throw err;
-console.log(directory);
-
+  if (err) throw err;
+  console.log(directory);
+  
+  
+  
 });
-
 ```
 
 #### `fs.open(path[, flags[, mode]], callback)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_fsopenpath-flags-mode-callback)
@@ -25893,7 +25129,7 @@ Asynchronous file open. See the POSIX [`open(2)`](http://man7.org/linux/man-page
 
 The callback gets two arguments `(err, fd)`.
 
-Some characters (`< > : " / \ | ? *`) are reserved under Windows as documented by [Naming Files, Paths, and Namespaces](https://docs.microsoft.com/windows/desktop/FileIO/naming-a-file). Under NTFS, if the filename contains a colon, Node.js will open a file system stream, as described by [this MSDN page](https://docs.microsoft.com/windows/desktop/FileIO/using-streams).
+Some characters (`< > : " / \ | ? *`) are reserved under Windows as documented by [Naming Files, Paths, and Namespaces](https://docs.microsoft.com/en-us/windows/desktop/FileIO/naming-a-file). Under NTFS, if the filename contains a colon, Node.js will open a file system stream, as described by [this MSDN page](https://docs.microsoft.com/en-us/windows/desktop/FileIO/using-streams).
 
 Functions based on `fs.open()` exhibit this behavior as well: `fs.writeFile()`, `fs.readFile()`, etc.
 
@@ -25980,14 +25216,12 @@ If `options.withFileTypes` is set to `true`, the `files` array will contain [<fs
 Asynchronously reads the entire contents of a file.
 
 ```
-
 import { readFile } from 'fs';
 
 readFile('/etc/passwd', (err, data) => {
-if (err) throw err;
-console.log(data);
+  if (err) throw err;
+  console.log(data);
 });
-
 ```
 
 The callback is passed two arguments `(err, data)`, where `data` is the contents of the file.
@@ -25997,43 +25231,39 @@ If no encoding is specified, then the raw buffer is returned.
 If `options` is a string, then it specifies the encoding:
 
 ```
-
 import { readFile } from 'fs';
 
 readFile('/etc/passwd', 'utf8', callback);
-
 ```
 
 When the path is a directory, the behavior of `fs.readFile()` and [`fs.readFileSync()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_fsreadfilesyncpath-options) is platform-specific. On macOS, Linux, and Windows, an error will be returned. On FreeBSD, a representation of the directory's contents will be returned.
 
 ```
-
 import { readFile } from 'fs';
 
-readFile('<directory>', (err, data) => {
-
-});
 
 readFile('<directory>', (err, data) => {
-
+  
 });
 
+
+readFile('<directory>', (err, data) => {
+  
+});
 ```
 
 It is possible to abort an ongoing request using an `AbortSignal`. If a request is aborted the callback is called with an `AbortError`:
 
 ```
-
 import { readFile } from 'fs';
 
 const controller = new AbortController();
 const signal = controller.signal;
 readFile(fileInfo[0].name, { signal }, (err, buf) => {
-
+  
 });
 
 controller.abort();
-
 ```
 
 The `fs.readFile()` function buffers the entire file. To minimize memory costs, when possible prefer streaming via `fs.createReadStream()`.
@@ -26107,9 +25337,9 @@ A canonical pathname is not necessarily unique. Hard links and bind mounts can e
 This function behaves like [`realpath(3)`](http://man7.org/linux/man-pages/man3/realpath.3.html), with some exceptions:
 
 1.  No case conversion is performed on case-insensitive file systems.
-
+    
 2.  The maximum number of symbolic links is platform-independent and generally (much) higher than what the native [`realpath(3)`](http://man7.org/linux/man-pages/man3/realpath.3.html) implementation supports.
-
+    
 
 The `callback` gets two arguments `(err, resolvedPath)`. May use `process.cwd` to resolve relative paths.
 
@@ -26152,14 +25382,12 @@ Asynchronously rename file at `oldPath` to the pathname provided as `newPath`. I
 See also: [`rename(2)`](http://man7.org/linux/man-pages/man2/rename.2.html).
 
 ```
-
 import { rename } from 'fs';
 
 rename('oldFile.txt', 'newFile.txt', (err) => {
-if (err) throw err;
-console.log('Rename complete!');
+  if (err) throw err;
+  console.log('Rename complete!');
 });
-
 ```
 
 #### `fs.rmdir(path[, options], callback)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_fsrmdirpath-options-callback)
@@ -26213,77 +25441,71 @@ To check if a file exists without manipulating it afterwards, [`fs.access()`](ht
 For example, given the following directory structure:
 
 ```
-
--   txtDir
-    -- file.txt
--   app.js
-
+- txtDir
+-- file.txt
+- app.js
 ```
 
 The next program will check for the stats of the given paths:
 
 ```
-
 import { stat } from 'fs';
 
 const pathsToCheck = ['./txtDir', './txtDir/file.txt'];
 
 for (let i = 0; i < pathsToCheck.length; i++) {
-stat(pathsToCheck[i], (err, stats) => {
-console.log(stats.isDirectory());
-console.log(stats);
-});
+  stat(pathsToCheck[i], (err, stats) => {
+    console.log(stats.isDirectory());
+    console.log(stats);
+  });
 }
-
 ```
 
 The resulting output will resemble:
 
 ```
-
 true
 Stats {
-dev: 16777220,
-mode: 16877,
-nlink: 3,
-uid: 501,
-gid: 20,
-rdev: 0,
-blksize: 4096,
-ino: 14214262,
-size: 96,
-blocks: 0,
-atimeMs: 1561174653071.963,
-mtimeMs: 1561174614583.3518,
-ctimeMs: 1561174626623.5366,
-birthtimeMs: 1561174126937.2893,
-atime: 2019-06-22T03:37:33.072Z,
-mtime: 2019-06-22T03:36:54.583Z,
-ctime: 2019-06-22T03:37:06.624Z,
-birthtime: 2019-06-22T03:28:46.937Z
+  dev: 16777220,
+  mode: 16877,
+  nlink: 3,
+  uid: 501,
+  gid: 20,
+  rdev: 0,
+  blksize: 4096,
+  ino: 14214262,
+  size: 96,
+  blocks: 0,
+  atimeMs: 1561174653071.963,
+  mtimeMs: 1561174614583.3518,
+  ctimeMs: 1561174626623.5366,
+  birthtimeMs: 1561174126937.2893,
+  atime: 2019-06-22T03:37:33.072Z,
+  mtime: 2019-06-22T03:36:54.583Z,
+  ctime: 2019-06-22T03:37:06.624Z,
+  birthtime: 2019-06-22T03:28:46.937Z
 }
 false
 Stats {
-dev: 16777220,
-mode: 33188,
-nlink: 1,
-uid: 501,
-gid: 20,
-rdev: 0,
-blksize: 4096,
-ino: 14214074,
-size: 8,
-blocks: 8,
-atimeMs: 1561174616618.8555,
-mtimeMs: 1561174614584,
-ctimeMs: 1561174614583.8145,
-birthtimeMs: 1561174007710.7478,
-atime: 2019-06-22T03:36:56.619Z,
-mtime: 2019-06-22T03:36:54.584Z,
-ctime: 2019-06-22T03:36:54.584Z,
-birthtime: 2019-06-22T03:26:47.711Z
+  dev: 16777220,
+  mode: 33188,
+  nlink: 1,
+  uid: 501,
+  gid: 20,
+  rdev: 0,
+  blksize: 4096,
+  ino: 14214074,
+  size: 8,
+  blocks: 8,
+  atimeMs: 1561174616618.8555,
+  mtimeMs: 1561174614584,
+  ctimeMs: 1561174614583.8145,
+  birthtimeMs: 1561174007710.7478,
+  atime: 2019-06-22T03:36:56.619Z,
+  mtime: 2019-06-22T03:36:54.584Z,
+  ctime: 2019-06-22T03:36:54.584Z,
+  birthtime: 2019-06-22T03:26:47.711Z
 }
-
 ```
 
 #### `fs.symlink(target, path[, type], callback)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_fssymlinktarget-path-type-callback)
@@ -26303,22 +25525,18 @@ The `type` argument is only available on Windows and ignored on other platforms.
 Relative targets are relative to the link’s parent directory.
 
 ```
-
 import { symlink } from 'fs';
 
 symlink('./mew', './mewtwo', callback);
-
 ```
 
 The above example creates a symbolic link `mewtwo` which points to `mew` in the same directory:
 
 ```
-
 $ tree .
 .
 ├── mew
 └── mewtwo -> ./mew
-
 ```
 
 #### `fs.truncate(path[, len], callback)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_fstruncatepath-len-callback)
@@ -26331,14 +25549,12 @@ $ tree .
 Truncates the file. No arguments other than a possible exception are given to the completion callback. A file descriptor can also be passed as the first argument. In this case, `fs.ftruncate()` is called.
 
 ```
-
 import { truncate } from 'fs';
 
 truncate('path/file.txt', (err) => {
-if (err) throw err;
-console.log('path/file.txt was truncated');
+  if (err) throw err;
+  console.log('path/file.txt was truncated');
 });
-
 ```
 
 Passing a file descriptor is deprecated and may result in an error being thrown in the future.
@@ -26354,14 +25570,12 @@ See the POSIX [`truncate(2)`](http://man7.org/linux/man-pages/man2/truncate.2.ht
 Asynchronously removes a file or symbolic link. No arguments other than a possible exception are given to the completion callback.
 
 ```
-
 import { unlink } from 'fs';
 
 unlink('path/file.txt', (err) => {
-if (err) throw err;
-console.log('path/file.txt was deleted');
+  if (err) throw err;
+  console.log('path/file.txt was deleted');
 });
-
 ```
 
 `fs.unlink()` will not work on a directory, empty or otherwise. To remove a directory, use [`fs.rmdir()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_fsrmdirpath-options-callback).
@@ -26437,7 +25651,7 @@ This feature depends on the underlying operating system providing a way to be no
 -   On BSD systems, this uses [`kqueue(2)`](https://www.freebsd.org/cgi/man.cgi?query=kqueue&sektion=2).
 -   On macOS, this uses [`kqueue(2)`](https://www.freebsd.org/cgi/man.cgi?query=kqueue&sektion=2) for files and [`FSEvents`](https://developer.apple.com/documentation/coreservices/file_system_events) for directories.
 -   On SunOS systems (including Solaris and SmartOS), this uses [`event ports`](https://illumos.org/man/port_create).
--   On Windows systems, this feature depends on [`ReadDirectoryChangesW`](https://docs.microsoft.com/windows/desktop/api/winbase/nf-winbase-readdirectorychangesw).
+-   On Windows systems, this feature depends on [`ReadDirectoryChangesW`](https://docs.microsoft.com/en-us/windows/desktop/api/winbase/nf-winbase-readdirectorychangesw).
 -   On AIX systems, this feature depends on [`AHAFS`](https://developer.ibm.com/articles/au-aix_event_infrastructure/), which must be enabled.
 -   On IBM i systems, this feature is not supported.
 
@@ -26456,17 +25670,15 @@ AIX files retain the same inode for the lifetime of a file. Saving and closing a
 Providing `filename` argument in the callback is only supported on Linux, macOS, Windows, and AIX. Even on supported platforms, `filename` is not always guaranteed to be provided. Therefore, don't assume that `filename` argument is always provided in the callback, and have some fallback logic if it is `null`.
 
 ```
-
 import { watch } from 'fs';
 watch('somedir', (eventType, filename) => {
-console.log(`event type is: ${eventType}`);
-if (filename) {
-console.log(`filename provided: ${filename}`);
-} else {
-console.log('filename not provided');
-}
+  console.log(`event type is: ${eventType}`);
+  if (filename) {
+    console.log(`filename provided: ${filename}`);
+  } else {
+    console.log('filename not provided');
+  }
 });
-
 ```
 
 #### `fs.watchFile(filename[, options], listener)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_fswatchfilefilename-options-listener)
@@ -26488,14 +25700,12 @@ The `options` argument may be omitted. If provided, it should be an object. The 
 The `listener` gets two arguments the current stat object and the previous stat object:
 
 ```
-
 import { watchFile } from 'fs';
 
 watchFile('message.text', (curr, prev) => {
-console.log(`the current mtime is: ${curr.mtime}`);
-console.log(`the previous mtime was: ${prev.mtime}`);
+  console.log(`the current mtime is: ${curr.mtime}`);
+  console.log(`the previous mtime was: ${prev.mtime}`);
 });
-
 ```
 
 These stat objects are instances of `fs.Stat`. If the `bigint` option is `true`, the numeric values in these objects are specified as `BigInt`s.
@@ -26587,26 +25797,22 @@ The `mode` option only affects the newly created file. See [`fs.open()`](https:/
 If `data` is a plain object, it must have an own (not inherited) `toString` function property.
 
 ```
-
 import { writeFile } from 'fs';
 import { Buffer } from 'buffer';
 
 const data = new Uint8Array(Buffer.from('Hello Node.js'));
 writeFile('message.txt', data, (err) => {
-if (err) throw err;
-console.log('The file has been saved!');
+  if (err) throw err;
+  console.log('The file has been saved!');
 });
-
 ```
 
 If `options` is a string, then it specifies the encoding:
 
 ```
-
 import { writeFile } from 'fs';
 
 writeFile('message.txt', 'Hello Node.js', 'utf8', callback);
-
 ```
 
 It is unsafe to use `fs.writeFile()` multiple times on the same file without waiting for the callback. For this scenario, [`fs.createWriteStream()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_fscreatewritestreampath-options) is recommended.
@@ -26616,7 +25822,6 @@ Similarly to `fs.readFile` - `fs.writeFile` is a convenience method that perform
 It is possible to use an [<AbortSignal>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#globals_class-abortsignal) to cancel an `fs.writeFile()`. Cancelation is "best effort", and some amount of data is likely still to be written.
 
 ```
-
 import { writeFile } from 'fs';
 import { Buffer } from 'buffer';
 
@@ -26624,11 +25829,10 @@ const controller = new AbortController();
 const { signal } = controller;
 const data = new Uint8Array(Buffer.from('Hello Node.js'));
 writeFile('message.txt', data, { signal }, (err) => {
-
+  
 });
 
 controller.abort();
-
 ```
 
 Aborting an ongoing request does not abort individual operating system requests but rather the internal buffering `fs.writeFile` performs.
@@ -26638,12 +25842,10 @@ Aborting an ongoing request does not abort individual operating system requests 
 When `file` is a file descriptor, the behavior is almost identical to directly calling `fs.write()` like:
 
 ```
-
 import { write } from 'fs';
 import { Buffer } from 'buffer';
 
 write(fd, Buffer.from(data, options.encoding), callback);
-
 ```
 
 The difference from directly calling `fs.write()` is that under some unusual conditions, `fs.write()` might write only part of the buffer and need to be retried to write the remaining data, whereas `fs.writeFile()` retries until the data is entirely written (or an error occurs).
@@ -26690,16 +25892,14 @@ Synchronously tests a user's permissions for the file or directory specified by 
 If any of the accessibility checks fail, an `Error` will be thrown. Otherwise, the method will return `undefined`.
 
 ```
-
 import { accessSync, constants } from 'fs';
 
 try {
-accessSync('etc/passwd', constants.R_OK | constants.W_OK);
-console.log('can read/write');
+  accessSync('etc/passwd', constants.R_OK | constants.W_OK);
+  console.log('can read/write');
 } catch (err) {
-console.error('no access!');
+  console.error('no access!');
 }
-
 ```
 
 #### `fs.appendFileSync(path, data[, options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_fsappendfilesyncpath-data-options)
@@ -26716,46 +25916,40 @@ Synchronously append data to a file, creating the file if it does not yet exist.
 The `mode` option only affects the newly created file. See [`fs.open()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_fsopenpath-flags-mode-callback) for more details.
 
 ```
-
 import { appendFileSync } from 'fs';
 
 try {
-appendFileSync('message.txt', 'data to append');
-console.log('The "data to append" was appended to file!');
+  appendFileSync('message.txt', 'data to append');
+  console.log('The "data to append" was appended to file!');
 } catch (err) {
-
+  
 }
-
 ```
 
 If `options` is a string, then it specifies the encoding:
 
 ```
-
 import { appendFileSync } from 'fs';
 
 appendFileSync('message.txt', 'data to append', 'utf8');
-
 ```
 
 The `path` may be specified as a numeric file descriptor that has been opened for appending (using `fs.open()` or `fs.openSync()`). The file descriptor will not be closed automatically.
 
 ```
-
 import { openSync, closeSync, appendFileSync } from 'fs';
 
 let fd;
 
 try {
-fd = openSync('message.txt', 'a');
-appendFileSync(fd, 'data to append', 'utf8');
+  fd = openSync('message.txt', 'a');
+  appendFileSync(fd, 'data to append', 'utf8');
 } catch (err) {
-
+  
 } finally {
-if (fd !== undefined)
-closeSync(fd);
+  if (fd !== undefined)
+    closeSync(fd);
 }
-
 ```
 
 #### `fs.chmodSync(path, mode)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_fschmodsyncpath-mode)
@@ -26804,14 +25998,14 @@ Synchronously copies `src` to `dest`. By default, `dest` is overwritten if it al
 -   `fs.constants.COPYFILE_FICLONE_FORCE`: The copy operation will attempt to create a copy-on-write reflink. If the platform does not support copy-on-write, then the operation will fail.
 
 ```
-
 import { copyFileSync, constants } from 'fs';
+
 
 copyFileSync('source.txt', 'destination.txt');
 console.log('source.txt was copied to destination.txt');
 
-copyFileSync('source.txt', 'destination.txt', constants.COPYFILE_EXCL);
 
+copyFileSync('source.txt', 'destination.txt', constants.COPYFILE_EXCL);
 ```
 
 #### `fs.cpSync(src, dest[, options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_fscpsyncsrc-dest-options)
@@ -26844,12 +26038,10 @@ For detailed information, see the documentation of the asynchronous version of t
 `fs.exists()` is deprecated, but `fs.existsSync()` is not. The `callback` parameter to `fs.exists()` accepts parameters that are inconsistent with other Node.js callbacks. `fs.existsSync()` does not use a callback.
 
 ```
-
 import { existsSync } from 'fs';
 
 if (existsSync('/etc/passwd'))
-console.log('The path exists.');
-
+  console.log('The path exists.');
 ```
 
 #### `fs.fchmodSync(fd, mode)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_fsfchmodsyncfd-mode)
@@ -27056,13 +26248,14 @@ If the `encoding` option is specified then this function returns a string. Other
 Similar to [`fs.readFile()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_fsreadfilepath-options-callback), when the path is a directory, the behavior of `fs.readFileSync()` is platform-specific.
 
 ```
-
 import { readFileSync } from 'fs';
 
-readFileSync('<directory>');
 
 readFileSync('<directory>');
 
+
+
+readFileSync('<directory>'); 
 ```
 
 #### `fs.readlinkSync(path[, options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_fsreadlinksyncpath-options)
@@ -27295,17 +26488,15 @@ A class representing a directory stream.
 Created by [`fs.opendir()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_fsopendirpath-options-callback), [`fs.opendirSync()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_fsopendirsyncpath-options), or [`fsPromises.opendir()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_fspromisesopendirpath-options).
 
 ```
-
 import { opendir } from 'fs/promises';
 
 try {
-const dir = await opendir('./');
-for await (const dirent of dir)
-console.log(dirent.name);
+  const dir = await opendir('./');
+  for await (const dirent of dir)
+    console.log(dirent.name);
 } catch (err) {
-console.error(err);
+  console.error(err);
 }
-
 ```
 
 When using the async iterator, the [<fs.Dir>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_class-fsdir) object will be automatically closed after the iterator exits.
@@ -27491,16 +26682,14 @@ Emitted when something changes in a watched directory or file. See more details 
 The `filename` argument may not be provided depending on operating system support. If `filename` is provided, it will be provided as a [<Buffer>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) if `fs.watch()` is called with its `encoding` option set to `'buffer'`, otherwise `filename` will be a UTF-8 string.
 
 ```
-
 import { watch } from 'fs';
 
 watch('./tmp', { encoding: 'buffer' }, (eventType, filename) => {
-if (filename) {
-console.log(filename);
-
-}
+  if (filename) {
+    console.log(filename);
+    
+  }
 });
-
 ```
 
 ##### Event: `'close'`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_event-close_1)
@@ -27628,57 +26817,53 @@ A [<fs.Stats>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_class-fssta
 Objects returned from [`fs.stat()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_fsstatpath-options-callback), [`fs.lstat()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_fslstatpath-options-callback) and [`fs.fstat()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_fsfstatfd-options-callback) and their synchronous counterparts are of this type. If `bigint` in the `options` passed to those methods is true, the numeric values will be `bigint` instead of `number`, and the object will contain additional nanosecond-precision properties suffixed with `Ns`.
 
 ```
-
 Stats {
-dev: 2114,
-ino: 48064969,
-mode: 33188,
-nlink: 1,
-uid: 85,
-gid: 100,
-rdev: 0,
-size: 527,
-blksize: 4096,
-blocks: 8,
-atimeMs: 1318289051000.1,
-mtimeMs: 1318289051000.1,
-ctimeMs: 1318289051000.1,
-birthtimeMs: 1318289051000.1,
-atime: Mon, 10 Oct 2011 23:24:11 GMT,
-mtime: Mon, 10 Oct 2011 23:24:11 GMT,
-ctime: Mon, 10 Oct 2011 23:24:11 GMT,
-birthtime: Mon, 10 Oct 2011 23:24:11 GMT }
-
+  dev: 2114,
+  ino: 48064969,
+  mode: 33188,
+  nlink: 1,
+  uid: 85,
+  gid: 100,
+  rdev: 0,
+  size: 527,
+  blksize: 4096,
+  blocks: 8,
+  atimeMs: 1318289051000.1,
+  mtimeMs: 1318289051000.1,
+  ctimeMs: 1318289051000.1,
+  birthtimeMs: 1318289051000.1,
+  atime: Mon, 10 Oct 2011 23:24:11 GMT,
+  mtime: Mon, 10 Oct 2011 23:24:11 GMT,
+  ctime: Mon, 10 Oct 2011 23:24:11 GMT,
+  birthtime: Mon, 10 Oct 2011 23:24:11 GMT }
 ```
 
 `bigint` version:
 
 ```
-
 BigIntStats {
-dev: 2114n,
-ino: 48064969n,
-mode: 33188n,
-nlink: 1n,
-uid: 85n,
-gid: 100n,
-rdev: 0n,
-size: 527n,
-blksize: 4096n,
-blocks: 8n,
-atimeMs: 1318289051000n,
-mtimeMs: 1318289051000n,
-ctimeMs: 1318289051000n,
-birthtimeMs: 1318289051000n,
-atimeNs: 1318289051000000000n,
-mtimeNs: 1318289051000000000n,
-ctimeNs: 1318289051000000000n,
-birthtimeNs: 1318289051000000000n,
-atime: Mon, 10 Oct 2011 23:24:11 GMT,
-mtime: Mon, 10 Oct 2011 23:24:11 GMT,
-ctime: Mon, 10 Oct 2011 23:24:11 GMT,
-birthtime: Mon, 10 Oct 2011 23:24:11 GMT }
-
+  dev: 2114n,
+  ino: 48064969n,
+  mode: 33188n,
+  nlink: 1n,
+  uid: 85n,
+  gid: 100n,
+  rdev: 0n,
+  size: 527n,
+  blksize: 4096n,
+  blocks: 8n,
+  atimeMs: 1318289051000n,
+  mtimeMs: 1318289051000n,
+  ctimeMs: 1318289051000n,
+  birthtimeMs: 1318289051000n,
+  atimeNs: 1318289051000000000n,
+  mtimeNs: 1318289051000000000n,
+  ctimeNs: 1318289051000000000n,
+  birthtimeNs: 1318289051000000000n,
+  atime: Mon, 10 Oct 2011 23:24:11 GMT,
+  mtime: Mon, 10 Oct 2011 23:24:11 GMT,
+  ctime: Mon, 10 Oct 2011 23:24:11 GMT,
+  birthtime: Mon, 10 Oct 2011 23:24:11 GMT }
 ```
 
 ##### `stats.isBlockDevice()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_statsisblockdevice)
@@ -27990,19 +27175,17 @@ To use more than one constant, use the bitwise OR `|` operator.
 Example:
 
 ```
-
 import { open, constants } from 'fs';
 
 const {
-O_RDWR,
-O_CREAT,
-O_EXCL
+  O_RDWR,
+  O_CREAT,
+  O_EXCL
 } = constants;
 
 open('/path/to/my/file', O_RDWR | O_CREAT | O_EXCL, (err, fd) => {
-
+  
 });
-
 ```
 
 ###### File access constants[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_file-access-constants)
@@ -28230,51 +27413,45 @@ Because they are executed asynchronously by the underlying thread pool, there is
 For example, the following is prone to error because the `fs.stat()` operation might complete before the `fs.rename()` operation:
 
 ```
-
 fs.rename('/tmp/hello', '/tmp/world', (err) => {
-if (err) throw err;
-console.log('renamed complete');
+  if (err) throw err;
+  console.log('renamed complete');
 });
 fs.stat('/tmp/world', (err, stats) => {
-if (err) throw err;
-console.log(`stats: ${JSON.stringify(stats)}`);
+  if (err) throw err;
+  console.log(`stats: ${JSON.stringify(stats)}`);
 });
-
 ```
 
 It is important to correctly order the operations by awaiting the results of one before invoking the other:
 
 ```
-
 import { rename, stat } from 'fs/promises';
 
 const from = '/tmp/hello';
 const to = '/tmp/world';
 
 try {
-await rename(from, to);
-const stats = await stat(to);
-console.log(`stats: ${JSON.stringify(stats)}`);
+  await rename(from, to);
+  const stats = await stat(to);
+  console.log(`stats: ${JSON.stringify(stats)}`);
 } catch (error) {
-console.error('there was an error:', error.message);
+  console.error('there was an error:', error.message);
 }
-
 ```
 
 Or, when using the callback APIs, move the `fs.stat()` call into the callback of the `fs.rename()` operation:
 
 ```
-
 import { rename, stat } from 'fs';
 
 rename('/tmp/hello', '/tmp/world', (err) => {
-if (err) throw err;
-stat('/tmp/world', (err, stats) => {
-if (err) throw err;
-console.log(`stats: ${JSON.stringify(stats)}`);
+  if (err) throw err;
+  stat('/tmp/world', (err, stats) => {
+    if (err) throw err;
+    console.log(`stats: ${JSON.stringify(stats)}`);
+  });
 });
-});
-
 ```
 
 #### File paths[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_file-paths)
@@ -28288,33 +27465,29 @@ String paths are interpreted as UTF-8 character sequences identifying the absolu
 Example using an absolute path on POSIX:
 
 ```
-
 import { open } from 'fs/promises';
 
 let fd;
 try {
-fd = await open('/open/some/file.txt', 'r');
-
+  fd = await open('/open/some/file.txt', 'r');
+  
 } finally {
-await fd.close();
+  await fd.close();
 }
-
 ```
 
 Example using a relative path on POSIX (relative to `process.cwd()`):
 
 ```
-
 import { open } from 'fs/promises';
 
 let fd;
 try {
-fd = await open('file.txt', 'r');
-
+  fd = await open('file.txt', 'r');
+  
 } finally {
-await fd.close();
+  await fd.close();
 }
-
 ```
 
 ##### File URL paths[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_file-url-paths)
@@ -28324,11 +27497,9 @@ Added in: v7.6.0
 For most `fs` module functions, the `path` or `filename` argument may be passed as a [<URL>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#url_the-whatwg-url-api) object using the `file:` protocol.
 
 ```
-
 import { readFileSync } from 'fs';
 
 readFileSync(new URL('file:///tmp/hello'));
-
 ```
 
 `file:` URLs are always absolute paths.
@@ -28338,16 +27509,20 @@ readFileSync(new URL('file:///tmp/hello'));
 On Windows, `file:` [<URL>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#url_the-whatwg-url-api)s with a host name convert to UNC paths, while `file:` [<URL>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#url_the-whatwg-url-api)s with drive letters convert to local absolute paths. `file:` [<URL>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#url_the-whatwg-url-api)s with no host name and no drive letter will result in an error:
 
 ```
-
 import { readFileSync } from 'fs';
+
+
+
 
 readFileSync(new URL('file://hostname/p/a/t/h/file'));
 
+
+
 readFileSync(new URL('file:///C:/tmp/hello'));
+
 
 readFileSync(new URL('file:///notdriveletter/p/a/t/h/file'));
 readFileSync(new URL('file:///c/p/a/t/h/file'));
-
 ```
 
 `file:` [<URL>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#url_the-whatwg-url-api)s with drive letters must use `:` as a separator just after the drive letter. Using another separator will result in an error.
@@ -28355,38 +27530,42 @@ readFileSync(new URL('file:///c/p/a/t/h/file'));
 On all other platforms, `file:` [<URL>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#url_the-whatwg-url-api)s with a host name are unsupported and will result in an error:
 
 ```
-
 import { readFileSync } from 'fs';
+
+
+
 
 readFileSync(new URL('file://hostname/p/a/t/h/file'));
 
-readFileSync(new URL('file:///tmp/hello'));
 
+
+
+readFileSync(new URL('file:///tmp/hello'));
 ```
 
 A `file:` [<URL>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#url_the-whatwg-url-api) having encoded slash characters will result in an error on all platforms:
 
 ```
-
 import { readFileSync } from 'fs';
+
 
 readFileSync(new URL('file:///C:/p/a/t/h/%2F'));
 readFileSync(new URL('file:///C:/p/a/t/h/%2f'));
 
+
+
 readFileSync(new URL('file:///p/a/t/h/%2F'));
 readFileSync(new URL('file:///p/a/t/h/%2f'));
-
 ```
 
 On Windows, `file:` [<URL>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#url_the-whatwg-url-api)s having encoded backslash will result in an error:
 
 ```
-
 import { readFileSync } from 'fs';
+
 
 readFileSync(new URL('file:///C:/path/%5C'));
 readFileSync(new URL('file:///C:/path/%5c'));
-
 ```
 
 ##### Buffer paths[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_buffer-paths)
@@ -28396,23 +27575,21 @@ Paths specified using a [<Buffer>](https://nodejs.org/dist/v16.13.1/docs/api/all
 Example using an absolute path on POSIX:
 
 ```
-
 import { open } from 'fs/promises';
 import { Buffer } from 'buffer';
 
 let fd;
 try {
-fd = await open(Buffer.from('/open/some/file.txt'), 'r');
-
+  fd = await open(Buffer.from('/open/some/file.txt'), 'r');
+  
 } finally {
-await fd.close();
+  await fd.close();
 }
-
 ```
 
 ##### Per-drive working directories on Windows[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_per-drive-working-directories-on-windows)
 
-On Windows, Node.js follows the concept of per-drive working directory. This behavior can be observed when using a drive path without a backslash. For example `fs.readdirSync('C:\\')` can potentially return a different result than `fs.readdirSync('C:')`. For more information, see [this MSDN page](https://docs.microsoft.com/windows/desktop/FileIO/naming-a-file#fully-qualified-vs-relative-paths).
+On Windows, Node.js follows the concept of per-drive working directory. This behavior can be observed when using a drive path without a backslash. For example `fs.readdirSync('C:\\')` can potentially return a different result than `fs.readdirSync('C:')`. For more information, see [this MSDN page](https://docs.microsoft.com/en-us/windows/desktop/FileIO/naming-a-file#fully-qualified-vs-relative-paths).
 
 #### File descriptors[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_file-descriptors_1)
 
@@ -28423,50 +27600,47 @@ The callback-based `fs.open()`, and synchronous `fs.openSync()` methods open a f
 Operating systems limit the number of file descriptors that may be open at any given time so it is critical to close the descriptor when operations are completed. Failure to do so will result in a memory leak that will eventually cause an application to crash.
 
 ```
-
 import { open, close, fstat } from 'fs';
 
 function closeFd(fd) {
-close(fd, (err) => {
-if (err) throw err;
-});
+  close(fd, (err) => {
+    if (err) throw err;
+  });
 }
 
 open('/open/some/file.txt', 'r', (err, fd) => {
-if (err) throw err;
-try {
-fstat(fd, (err, stat) => {
-if (err) {
-closeFd(fd);
-throw err;
-}
+  if (err) throw err;
+  try {
+    fstat(fd, (err, stat) => {
+      if (err) {
+        closeFd(fd);
+        throw err;
+      }
+
+      
 
       closeFd(fd);
     });
-
-} catch (err) {
-closeFd(fd);
-throw err;
-}
+  } catch (err) {
+    closeFd(fd);
+    throw err;
+  }
 });
-
 ```
 
 The promise-based APIs use a [<FileHandle>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_class-filehandle) object in place of the numeric file descriptor. These objects are better managed by the system to ensure that resources are not leaked. However, it is still required that they are closed when operations are completed:
 
 ```
-
 import { open } from 'fs/promises';
 
 let file;
 try {
-file = await open('/open/some/file.txt', 'r');
-const stat = await file.stat();
-
+  file = await open('/open/some/file.txt', 'r');
+  const stat = await file.stat();
+  
 } finally {
-await file.close();
+  await file.close();
 }
-
 ```
 
 #### Threadpool usage[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_threadpool-usage)
@@ -28478,35 +27652,35 @@ All callback and promise-based file system APIs ( with the exception of `fs.FSWa
 The following flags are available wherever the `flag` option takes a string.
 
 -   `'a'`: Open file for appending. The file is created if it does not exist.
-
+    
 -   `'ax'`: Like `'a'` but fails if the path exists.
-
+    
 -   `'a+'`: Open file for reading and appending. The file is created if it does not exist.
-
+    
 -   `'ax+'`: Like `'a+'` but fails if the path exists.
-
+    
 -   `'as'`: Open file for appending in synchronous mode. The file is created if it does not exist.
-
+    
 -   `'as+'`: Open file for reading and appending in synchronous mode. The file is created if it does not exist.
-
+    
 -   `'r'`: Open file for reading. An exception occurs if the file does not exist.
-
+    
 -   `'r+'`: Open file for reading and writing. An exception occurs if the file does not exist.
-
+    
 -   `'rs+'`: Open file for reading and writing in synchronous mode. Instructs the operating system to bypass the local file system cache.
-
+    
     This is primarily useful for opening files on NFS mounts as it allows skipping the potentially stale local cache. It has a very real impact on I/O performance so using this flag is not recommended unless it is needed.
-
+    
     This doesn't turn `fs.open()` or `fsPromises.open()` into a synchronous blocking call. If synchronous operation is desired, something like `fs.openSync()` should be used.
-
+    
 -   `'w'`: Open file for writing. The file is created (if it does not exist) or truncated (if it exists).
-
+    
 -   `'wx'`: Like `'w'` but fails if the path exists.
-
+    
 -   `'w+'`: Open file for reading and writing. The file is created (if it does not exist) or truncated (if it exists).
-
+    
 -   `'wx+'`: Like `'w+'` but fails if the path exists.
-
+    
 
 `flag` can also be a number as documented by [`open(2)`](http://man7.org/linux/man-pages/man2/open.2.html); commonly used constants are available from `fs.constants`. On Windows, flags are translated to their equivalent ones where applicable, e.g. `O_WRONLY` to `FILE_GENERIC_WRITE`, or `O_EXCL|O_CREAT` to `CREATE_NEW`, as accepted by `CreateFileW`.
 
@@ -28521,13 +27695,13 @@ The behavior of some flags are platform-specific. As such, opening a directory o
 ```
 
 fs.open('<directory>', 'a+', (err, fd) => {
-
+  
 });
+
 
 fs.open('<directory>', 'a+', (err, fd) => {
-
+  
 });
-
 ```
 
 On Windows, opening an existing hidden file using the `'w'` flag (either through `fs.open()` or `fs.writeFile()` or `fsPromises.open()`) will fail with `EPERM`. Existing hidden files can be opened for writing with the `'r+'` flag.
@@ -28551,16 +27725,14 @@ The objects listed here are specific to Node.js. There are [built-in objects](ht
 A utility class used to signal cancelation in selected `Promise`\-based APIs. The API is based on the Web API [`AbortController`](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
 
 ```
-
 const ac = new AbortController();
 
 ac.signal.addEventListener('abort', () => console.log('Aborted!'),
-{ once: true });
+                           { once: true });
 
 ac.abort();
 
-console.log(ac.signal.aborted);
-
+console.log(ac.signal.aborted);  
 ```
 
 #### `abortController.abort()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#globals_abortcontrollerabort)
@@ -28598,17 +27770,17 @@ Added in: v15.0.0
 The `'abort'` event is emitted when the `abortController.abort()` method is called. The callback is invoked with a single object argument with a single `type` property set to `'abort'`:
 
 ```
-
 const ac = new AbortController();
+
 
 ac.signal.onabort = () => console.log('aborted!');
 
+
 ac.signal.addEventListener('abort', (event) => {
-console.log(event.type);  
+  console.log(event.type);  
 }, { once: true });
 
 ac.abort();
-
 ```
 
 The `AbortController` with which the `AbortSignal` is associated will only ever trigger the `'abort'` event once. We recommended that code check that the `abortSignal.aborted` attribute is `false` before adding an `'abort'` event listener.
@@ -28753,20 +27925,23 @@ The microtask queue is managed by V8 and may be used in a similar manner to the 
 
 ```
 
+
+
+
+
 DataHandler.prototype.load = async function load(key) {
-const hit = this.\_cache.get(key);
-if (hit !== undefined) {
-queueMicrotask(() => {
-this.emit('load', hit);
-});
-return;
-}
+  const hit = this._cache.get(key);
+  if (hit !== undefined) {
+    queueMicrotask(() => {
+      this.emit('load', hit);
+    });
+    return;
+  }
 
-const data = await fetchData(key);
-this.\_cache.set(key, data);
-this.emit('load', data);
+  const data = await fetchData(key);
+  this._cache.set(key, data);
+  this.emit('load', data);
 };
-
 ```
 
 ### `require()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#globals_require)
@@ -28834,13 +28009,11 @@ The HTTP interfaces in Node.js are designed to support many features of the prot
 HTTP message headers are represented by an object like this:
 
 ```
-
 { 'content-length': '123',
-'content-type': 'text/plain',
-'connection': 'keep-alive',
-'host': 'mysite.com',
-'accept': '_/_' }
-
+  'content-type': 'text/plain',
+  'connection': 'keep-alive',
+  'host': 'mysite.com',
+  'accept': '*/*' }
 ```
 
 Keys are lowercased. Values are not modified.
@@ -28852,14 +28025,12 @@ See [`message.headers`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_
 The raw headers as they were received are retained in the `rawHeaders` property, which is an array of `[key, value, key2, value2, ...]`. For example, the previous message header object might have a `rawHeaders` list like the following:
 
 ```
-
 [ 'ConTent-Length', '123456',
-'content-LENGTH', '123',
-'content-type', 'text/plain',
-'CONNECTION', 'keep-alive',
-'Host', 'mysite.com',
-'accepT', '*/*' ]
-
+  'content-LENGTH', '123',
+  'content-type', 'text/plain',
+  'CONNECTION', 'keep-alive',
+  'Host', 'mysite.com',
+  'accepT', '*/*' ]
 ```
 
 ### Class: `http.Agent`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_class-httpagent)
@@ -28877,13 +28048,11 @@ It is good practice, to [`destroy()`](https://nodejs.org/dist/v16.13.1/docs/api/
 Sockets are removed from an agent when the socket emits either a `'close'` event or an `'agentRemove'` event. When intending to keep one HTTP request open for a long time without keeping it in the agent, something like the following may be done:
 
 ```
-
 http.get(options, (res) => {
-
+  
 }).on('socket', (socket) => {
-socket.emit('agentRemove');
+  socket.emit('agentRemove');
 });
-
 ```
 
 An agent may also be used for an individual request. By providing `{agent: false}` as an option to the `http.get()` or `http.request()` functions, a one-time use `Agent` with default options will be used for the client connection.
@@ -28891,16 +28060,14 @@ An agent may also be used for an individual request. By providing `{agent: false
 `agent:false`:
 
 ```
-
 http.get({
-hostname: 'localhost',
-port: 80,
-path: '/',
-agent: false  
+  hostname: 'localhost',
+  port: 80,
+  path: '/',
+  agent: false  
 }, (res) => {
-
+  
 });
-
 ```
 
 #### `new Agent([options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_new-agentoptions)
@@ -28921,12 +28088,10 @@ The default [`http.globalAgent`](https://nodejs.org/dist/v16.13.1/docs/api/all.h
 To configure any of them, a custom [`http.Agent`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_class-httpagent) instance must be created.
 
 ```
-
 const http = require('http');
 const keepAliveAgent = new http.Agent({ keepAlive: true });
 options.agent = keepAliveAgent;
 http.request(options, onResponseCallback);
-
 ```
 
 #### `agent.createConnection(options[, callback])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_agentcreateconnectionoptions-callback)
@@ -28956,11 +28121,9 @@ Added in: v8.1.0
 Called when `socket` is detached from a request and could be persisted by the `Agent`. Default behavior is to:
 
 ```
-
 socket.setKeepAlive(true, this.keepAliveMsecs);
 socket.unref();
 return true;
-
 ```
 
 This method can be overridden by a particular `Agent` subclass. If this method returns a falsy value, the socket will be destroyed instead of persisting it for use with the next request.
@@ -28977,9 +28140,7 @@ Added in: v8.1.0
 Called when `socket` is attached to `request` after being persisted because of the keep-alive options. Default behavior is to:
 
 ```
-
 socket.ref();
-
 ```
 
 This method can be overridden by a particular `Agent` subclass.
@@ -29092,43 +28253,46 @@ This event is guaranteed to be passed an instance of the [<net.Socket>](https://
 A client and server pair demonstrating how to listen for the `'connect'` event:
 
 ```
-
 const http = require('http');
 const net = require('net');
 const { URL } = require('url');
 
+
 const proxy = http.createServer((req, res) => {
-res.writeHead(200, { 'Content-Type': 'text/plain' });
-res.end('okay');
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.end('okay');
 });
 proxy.on('connect', (req, clientSocket, head) => {
+  
+  const { port, hostname } = new URL(`http://${req.url}`);
+  const serverSocket = net.connect(port || 80, hostname, () => {
+    clientSocket.write('HTTP/1.1 200 Connection Established\r\n' +
+                    'Proxy-agent: Node.js-Proxy\r\n' +
+                    '\r\n');
+    serverSocket.write(head);
+    serverSocket.pipe(clientSocket);
+    clientSocket.pipe(serverSocket);
+  });
+});
 
-const { port, hostname } = new URL(`http://${req.url}`);
-const serverSocket = net.connect(port || 80, hostname, () => {
-clientSocket.write('HTTP/1.1 200 Connection Established\r\n' +
-'Proxy-agent: Node.js-Proxy\r\n' +
-'\r\n');
-serverSocket.write(head);
-serverSocket.pipe(clientSocket);
-clientSocket.pipe(serverSocket);
-});
-});
 
 proxy.listen(1337, '127.0.0.1', () => {
 
-const options = {
-port: 1337,
-host: '127.0.0.1',
-method: 'CONNECT',
-path: 'www.google.com:80'
-};
+  
+  const options = {
+    port: 1337,
+    host: '127.0.0.1',
+    method: 'CONNECT',
+    path: 'www.google.com:80'
+  };
 
-const req = http.request(options);
-req.end();
+  const req = http.request(options);
+  req.end();
 
-req.on('connect', (res, socket, head) => {
-console.log('got connected!');
+  req.on('connect', (res, socket, head) => {
+    console.log('got connected!');
 
+    
     socket.write('GET / HTTP/1.1\r\n' +
                  'Host: www.google.com:80\r\n' +
                  'Connection: close\r\n' +
@@ -29139,10 +28303,8 @@ console.log('got connected!');
     socket.on('end', () => {
       proxy.close();
     });
-
+  });
 });
-});
-
 ```
 
 #### Event: `'continue'`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_event-continue)
@@ -29167,22 +28329,21 @@ Added in: v10.0.0
 Emitted when the server sends a 1xx intermediate response (excluding 101 Upgrade). The listeners of this event will receive an object containing the HTTP version, status code, status message, key-value headers object, and array with the raw header names followed by their respective values.
 
 ```
-
 const http = require('http');
 
 const options = {
-host: '127.0.0.1',
-port: 8080,
-path: '/length_request'
+  host: '127.0.0.1',
+  port: 8080,
+  path: '/length_request'
 };
+
 
 const req = http.request(options);
 req.end();
 
 req.on('information', (info) => {
-console.log(`Got information prior to main response: ${info.statusCode}`);
+  console.log(`Got information prior to main response: ${info.statusCode}`);
 });
-
 ```
 
 101 Upgrade statuses do not fire this event due to their break from the traditional HTTP request/response chain, such as web sockets, in-place TLS upgrades, or HTTP 2.0. To be notified of 101 Upgrade notices, listen for the [`'upgrade'`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_event-upgrade) event instead.
@@ -29226,43 +28387,44 @@ This event is guaranteed to be passed an instance of the [<net.Socket>](https://
 A client server pair demonstrating how to listen for the `'upgrade'` event.
 
 ```
-
 const http = require('http');
 
+
 const server = http.createServer((req, res) => {
-res.writeHead(200, { 'Content-Type': 'text/plain' });
-res.end('okay');
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.end('okay');
 });
 server.on('upgrade', (req, socket, head) => {
-socket.write('HTTP/1.1 101 Web Socket Protocol Handshake\r\n' +
-'Upgrade: WebSocket\r\n' +
-'Connection: Upgrade\r\n' +
-'\r\n');
+  socket.write('HTTP/1.1 101 Web Socket Protocol Handshake\r\n' +
+               'Upgrade: WebSocket\r\n' +
+               'Connection: Upgrade\r\n' +
+               '\r\n');
 
-socket.pipe(socket);
+  socket.pipe(socket); 
 });
+
 
 server.listen(1337, '127.0.0.1', () => {
 
-const options = {
-port: 1337,
-host: '127.0.0.1',
-headers: {
-'Connection': 'Upgrade',
-'Upgrade': 'websocket'
-}
-};
+  
+  const options = {
+    port: 1337,
+    host: '127.0.0.1',
+    headers: {
+      'Connection': 'Upgrade',
+      'Upgrade': 'websocket'
+    }
+  };
 
-const req = http.request(options);
-req.end();
+  const req = http.request(options);
+  req.end();
 
-req.on('upgrade', (res, socket, upgradeHead) => {
-console.log('got upgraded!');
-socket.end();
-process.exit(0);
+  req.on('upgrade', (res, socket, upgradeHead) => {
+    console.log('got upgraded!');
+    socket.end();
+    process.exit(0);
+  });
 });
-});
-
 ```
 
 #### `request.abort()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_requestabort)
@@ -29345,7 +28507,6 @@ Added in: v1.6.0
 Reads out a header on the request. The name is case-insensitive. The type of the return value depends on the arguments provided to [`request.setHeader()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_requestsetheadername-value).
 
 ```
-
 request.setHeader('content-type', 'text/html');
 request.setHeader('Content-Length', Buffer.byteLength(body));
 request.setHeader('Cookie', ['type=ninja', 'language=javascript']);
@@ -29354,7 +28515,6 @@ const contentType = request.getHeader('Content-Type');
 const contentLength = request.getHeader('Content-Length');
 
 const cookie = request.getHeader('Cookie');
-
 ```
 
 #### `request.getRawHeaderNames()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_requestgetrawheadernames)
@@ -29366,12 +28526,10 @@ Added in: v15.13.0
 Returns an array containing the unique names of the current outgoing raw headers. Header names are returned with their exact casing being set.
 
 ```
-
 request.setHeader('Foo', 'bar');
 request.setHeader('Set-Cookie', ['foo=bar', 'bar=baz']);
 
 const headerNames = request.getRawHeaderNames();
-
 ```
 
 #### `request.maxHeadersCount`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_requestmaxheaderscount)
@@ -29413,9 +28571,7 @@ Added in: v1.6.0
 Removes a header that's already defined into headers object.
 
 ```
-
 request.removeHeader('Content-Type');
-
 ```
 
 #### `request.reusedSocket`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_requestreusedsocket)
@@ -29427,51 +28583,46 @@ Added in: v13.0.0, v12.16.0
 When sending request through a keep-alive enabled agent, the underlying socket might be reused. But if server closes connection at unfortunate time, client may run into a 'ECONNRESET' error.
 
 ```
-
 const http = require('http');
 
+
 http
-.createServer((req, res) => {
-res.write('hello\n');
-res.end();
-})
-.listen(3000);
+  .createServer((req, res) => {
+    res.write('hello\n');
+    res.end();
+  })
+  .listen(3000);
 
 setInterval(() => {
-
-http.get('http://localhost:3000', { agent }, (res) => {
-res.on('data', (data) => {
-
+  
+  http.get('http://localhost:3000', { agent }, (res) => {
+    res.on('data', (data) => {
+      
     });
-
-});
-}, 5000);
-
+  });
+}, 5000); 
 ```
 
 By marking a request whether it reused socket or not, we can do automatic error retry base on it.
 
 ```
-
 const http = require('http');
 const agent = new http.Agent({ keepAlive: true });
 
 function retriableRequest() {
-const req = http
-.get('http://localhost:3000', { agent }, (res) => {
-
+  const req = http
+    .get('http://localhost:3000', { agent }, (res) => {
+      
     })
     .on('error', (err) => {
-
+      
       if (req.reusedSocket && err.code === 'ECONNRESET') {
         retriableRequest();
       }
     });
-
 }
 
 retriableRequest();
-
 ```
 
 #### `request.setHeader(name, value)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_requestsetheadername-value)
@@ -29484,17 +28635,13 @@ Added in: v1.6.0
 Sets a single header value for headers object. If this header already exists in the to-be-sent headers, its value will be replaced. Use an array of strings here to send multiple headers with the same name. Non-string values will be stored without modification. Therefore, [`request.getHeader()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_requestgetheadername) may return non-string values. However, the non-string values will be converted to strings for network transmission.
 
 ```
-
 request.setHeader('Content-Type', 'application/json');
-
 ```
 
 or
 
 ```
-
 request.setHeader('Cookie', ['type=ninja', 'language=javascript']);
-
 ```
 
 #### `request.setNoDelay([noDelay])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_requestsetnodelaynodelay)
@@ -29531,20 +28678,18 @@ Added in: v0.3.0
 Reference to the underlying socket. Usually users will not want to access this property. In particular, the socket will not emit `'readable'` events because of how the protocol parser attaches to the socket.
 
 ```
-
 const http = require('http');
 const options = {
-host: 'www.google.com',
+  host: 'www.google.com',
 };
 const req = http.get(options);
 req.end();
 req.once('response', (res) => {
-const ip = req.socket.localAddress;
-const port = req.socket.localPort;
-console.log(`Your IP address is ${ip} and your source port is ${port}.`);
-
+  const ip = req.socket.localAddress;
+  const port = req.socket.localPort;
+  console.log(`Your IP address is ${ip} and your source port is ${port}.`);
+  
 });
-
 ```
 
 This property is guaranteed to be an instance of the [<net.Socket>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_class-netsocket) class, a subclass of [<stream.Duplex>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_class-streamduplex), unless the user specified a socket type other than [<net.Socket>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_class-netsocket).
@@ -29628,17 +28773,15 @@ Default behavior is to try close the socket with a HTTP '400 Bad Request', or a 
 `socket` is the [`net.Socket`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_class-netsocket) object that the error originated from.
 
 ```
-
 const http = require('http');
 
 const server = http.createServer((req, res) => {
-res.end();
+  res.end();
 });
 server.on('clientError', (err, socket) => {
-socket.end('HTTP/1.1 400 Bad Request\r\n\r\n');
+  socket.end('HTTP/1.1 400 Bad Request\r\n\r\n');
 });
 server.listen(8000);
-
 ```
 
 When the `'clientError'` event occurs, there is no `request` or `response` object, so any HTTP response sent, including response headers and payload, _must_ be written directly to the `socket` object. Care must be taken to ensure the response is a properly formatted HTTP response message.
@@ -29651,15 +28794,13 @@ When the `'clientError'` event occurs, there is no `request` or `response` objec
 In some cases, the client has already received the response and/or the socket has already been destroyed, like in case of `ECONNRESET` errors. Before trying to send data to the socket, it is better to check that it is still writable.
 
 ```
-
 server.on('clientError', (err, socket) => {
-if (err.code === 'ECONNRESET' || !socket.writable) {
-return;
-}
+  if (err.code === 'ECONNRESET' || !socket.writable) {
+    return;
+  }
 
-socket.end('HTTP/1.1 400 Bad Request\r\n\r\n');
+  socket.end('HTTP/1.1 400 Bad Request\r\n\r\n');
 });
-
 ```
 
 #### Event: `'close'`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_event-close)
@@ -29844,13 +28985,11 @@ Trailers will **only** be emitted if chunked encoding is used for the response; 
 HTTP requires the `Trailer` header to be sent in order to emit trailers, with a list of the header fields in its value. E.g.,
 
 ```
-
 response.writeHead(200, { 'Content-Type': 'text/plain',
-'Trailer': 'Content-MD5' });
+                          'Trailer': 'Content-MD5' });
 response.write(fileData);
 response.addTrailers({ 'Content-MD5': '7895bf4b8828b55ceaf47747b4bca667' });
 response.end();
-
 ```
 
 Attempting to set a header field name or value that contains invalid characters will result in a [`TypeError`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_class-typeerror) being thrown.
@@ -29906,7 +29045,6 @@ Added in: v0.4.0
 Reads out a header that's already been queued but not sent to the client. The name is case-insensitive. The type of the return value depends on the arguments provided to [`response.setHeader()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_responsesetheadername-value).
 
 ```
-
 response.setHeader('Content-Type', 'text/html');
 response.setHeader('Content-Length', Buffer.byteLength(body));
 response.setHeader('Set-Cookie', ['type=ninja', 'language=javascript']);
@@ -29915,7 +29053,6 @@ const contentType = response.getHeader('content-type');
 const contentLength = response.getHeader('Content-Length');
 
 const setCookie = response.getHeader('set-cookie');
-
 ```
 
 #### `response.getHeaderNames()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_responsegetheadernames)
@@ -29927,12 +29064,10 @@ Added in: v7.7.0
 Returns an array containing the unique names of the current outgoing headers. All header names are lowercase.
 
 ```
-
 response.setHeader('Foo', 'bar');
 response.setHeader('Set-Cookie', ['foo=bar', 'bar=baz']);
 
 const headerNames = response.getHeaderNames();
-
 ```
 
 #### `response.getHeaders()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_responsegetheaders)
@@ -29946,12 +29081,10 @@ Returns a shallow copy of the current outgoing headers. Since a shallow copy is 
 The object returned by the `response.getHeaders()` method _does not_ prototypically inherit from the JavaScript `Object`. This means that typical `Object` methods such as `obj.toString()`, `obj.hasOwnProperty()`, and others are not defined and _will not work_.
 
 ```
-
 response.setHeader('Foo', 'bar');
 response.setHeader('Set-Cookie', ['foo=bar', 'bar=baz']);
 
 const headers = response.getHeaders();
-
 ```
 
 #### `response.hasHeader(name)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_responsehasheadername)
@@ -29964,9 +29097,7 @@ Added in: v7.7.0
 Returns `true` if the header identified by `name` is currently set in the outgoing headers. The header name matching is case-insensitive.
 
 ```
-
 const hasContentType = response.hasHeader('content-type');
-
 ```
 
 #### `response.headersSent`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_responseheaderssent)
@@ -29986,9 +29117,7 @@ Added in: v0.4.0
 Removes a header that's queued for implicit sending.
 
 ```
-
 response.removeHeader('Content-Encoding');
-
 ```
 
 #### `response.req`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_responsereq)
@@ -30022,17 +29151,13 @@ Returns the response object.
 Sets a single header value for implicit headers. If this header already exists in the to-be-sent headers, its value will be replaced. Use an array of strings here to send multiple headers with the same name. Non-string values will be stored without modification. Therefore, [`response.getHeader()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_responsegetheadername) may return non-string values. However, the non-string values will be converted to strings for network transmission. The same response object is returned to the caller, to enable call chaining.
 
 ```
-
 response.setHeader('Content-Type', 'text/html');
-
 ```
 
 or
 
 ```
-
 response.setHeader('Set-Cookie', ['type=ninja', 'language=javascript']);
-
 ```
 
 Attempting to set a header field name or value that contains invalid characters will result in a [`TypeError`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_class-typeerror) being thrown.
@@ -30042,12 +29167,11 @@ When headers have been set with [`response.setHeader()`](https://nodejs.org/dist
 ```
 
 const server = http.createServer((req, res) => {
-res.setHeader('Content-Type', 'text/html');
-res.setHeader('X-Foo', 'bar');
-res.writeHead(200, { 'Content-Type': 'text/plain' });
-res.end('ok');
+  res.setHeader('Content-Type', 'text/html');
+  res.setHeader('X-Foo', 'bar');
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.end('ok');
 });
-
 ```
 
 If [`response.writeHead()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_responsewriteheadstatuscode-statusmessage-headers) method is called and this method has not been called, it will directly write the supplied header values onto the network channel without caching internally, and the [`response.getHeader()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_responsegetheadername) on the header will not yield the expected result. If progressive population of headers is desired with potential future retrieval and modification, use [`response.setHeader()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_responsesetheadername-value) instead of [`response.writeHead()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_responsewriteheadstatuscode-statusmessage-headers).
@@ -30073,14 +29197,12 @@ Added in: v0.3.0
 Reference to the underlying socket. Usually users will not want to access this property. In particular, the socket will not emit `'readable'` events because of how the protocol parser attaches to the socket. After `response.end()`, the property is nulled.
 
 ```
-
 const http = require('http');
 const server = http.createServer((req, res) => {
-const ip = res.socket.remoteAddress;
-const port = res.socket.remotePort;
-res.end(`Your IP address is ${ip} and your source port is ${port}.`);
+  const ip = res.socket.remoteAddress;
+  const port = res.socket.remotePort;
+  res.end(`Your IP address is ${ip} and your source port is ${port}.`);
 }).listen(3000);
-
 ```
 
 This property is guaranteed to be an instance of the [<net.Socket>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_class-netsocket) class, a subclass of [<stream.Duplex>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_class-streamduplex), unless the user specified a socket type other than [<net.Socket>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_class-netsocket).
@@ -30094,9 +29216,7 @@ Added in: v0.4.0
 When using implicit headers (not calling [`response.writeHead()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_responsewriteheadstatuscode-statusmessage-headers) explicitly), this property controls the status code that will be sent to the client when the headers get flushed.
 
 ```
-
 response.statusCode = 404;
-
 ```
 
 After response header was sent to the client, this property indicates the status code which was sent out.
@@ -30110,9 +29230,7 @@ Added in: v0.11.8
 When using implicit headers (not calling [`response.writeHead()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_responsewriteheadstatuscode-statusmessage-headers) explicitly), this property controls the status message that will be sent to the client when the headers get flushed. If this is left as `undefined` then the standard message for the status code will be used.
 
 ```
-
 response.statusMessage = 'Not found';
-
 ```
 
 After response header was sent to the client, this property indicates the status message which was sent out.
@@ -30182,15 +29300,13 @@ Sends a response header to the request. The status code is a 3-digit HTTP status
 Returns a reference to the `ServerResponse`, so that calls can be chained.
 
 ```
-
 const body = 'hello world';
 response
-.writeHead(200, {
-'Content-Length': Buffer.byteLength(body),
-'Content-Type': 'text/plain'
-})
-.end(body);
-
+  .writeHead(200, {
+    'Content-Length': Buffer.byteLength(body),
+    'Content-Type': 'text/plain'
+  })
+  .end(body);
 ```
 
 This method must only be called once on a message and it must be called before [`response.end()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_responseenddata-encoding-callback) is called.
@@ -30204,12 +29320,11 @@ If this method is called and [`response.setHeader()`](https://nodejs.org/dist/v1
 ```
 
 const server = http.createServer((req, res) => {
-res.setHeader('Content-Type', 'text/html');
-res.setHeader('X-Foo', 'bar');
-res.writeHead(200, { 'Content-Type': 'text/plain' });
-res.end('ok');
+  res.setHeader('Content-Type', 'text/html');
+  res.setHeader('X-Foo', 'bar');
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.end('ok');
 });
-
 ```
 
 `Content-Length` is given in bytes, not characters. Use [`Buffer.byteLength()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_static-method-bufferbytelengthstring-encoding) to determine the length of the body in bytes. Node.js does not check whether `Content-Length` and the length of the body which has been transmitted are equal or not.
@@ -30263,20 +29378,18 @@ The `message.complete` property will be `true` if a complete HTTP message has be
 This property is particularly useful as a means of determining if a client or server fully transmitted a message before a connection was terminated:
 
 ```
-
 const req = http.request({
-host: '127.0.0.1',
-port: 8080,
-method: 'POST'
+  host: '127.0.0.1',
+  port: 8080,
+  method: 'POST'
 }, (res) => {
-res.resume();
-res.on('end', () => {
-if (!res.complete)
-console.error(
-'The connection was terminated while the message was still being sent');
+  res.resume();
+  res.on('end', () => {
+    if (!res.complete)
+      console.error(
+        'The connection was terminated while the message was still being sent');
+  });
 });
-});
-
 ```
 
 #### `message.connection`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_messageconnection)
@@ -30302,8 +29415,11 @@ Key-value pairs of header names and values. Header names are lower-cased.
 
 ```
 
-console.log(request.headers);
 
+
+
+
+console.log(request.headers);
 ```
 
 Duplicates in raw headers are handled in the following ways, depending on the header name:
@@ -30347,8 +29463,16 @@ Header names are not lowercased, and duplicates are not merged.
 
 ```
 
-console.log(request.rawHeaders);
 
+
+
+
+
+
+
+
+
+console.log(request.rawHeaders);
 ```
 
 #### `message.rawTrailers`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_messagerawtrailers)
@@ -30420,42 +29544,35 @@ Added in: v0.1.90
 Request URL string. This contains only the URL that is present in the actual HTTP request. Take the following request:
 
 ```
-
 GET /status?name=ryan HTTP/1.1
 Accept: text/plain
-
 ```
 
 To parse the URL into its parts:
 
 ```
-
 new URL(request.url, `http://${request.headers.host}`);
-
 ```
 
 When `request.url` is `'/status?name=ryan'` and `request.headers.host` is `'localhost:3000'`:
 
 ```
-
 $ node
-
 > new URL(request.url, `http://${request.headers.host}`)
-> URL {
-> href: 'http://localhost:3000/status?name=ryan',
-> origin: 'http://localhost:3000',
-> protocol: 'http:',
-> username: '',
-> password: '',
-> host: 'localhost:3000',
-> hostname: 'localhost',
-> port: '3000',
-> pathname: '/status',
-> search: '?name=ryan',
-> searchParams: URLSearchParams { 'name' => 'ryan' },
-> hash: ''
-> }
-
+URL {
+  href: 'http://localhost:3000/status?name=ryan',
+  origin: 'http://localhost:3000',
+  protocol: 'http:',
+  username: '',
+  password: '',
+  host: 'localhost:3000',
+  hostname: 'localhost',
+  port: '3000',
+  pathname: '/status',
+  search: '?name=ryan',
+  searchParams: URLSearchParams { 'name' => 'ryan' },
+  hash: ''
+}
 ```
 
 ### Class: `http.OutgoingMessage`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_class-httpoutgoingmessage)
@@ -30497,13 +29614,11 @@ Trailers are **only** be emitted if the message is chunked encoded. If not, the 
 HTTP requires the `Trailer` header to be sent to emit trailers, with a list of header fields in its value, e.g.
 
 ```
-
 message.writeHead(200, { 'Content-Type': 'text/plain',
-'Trailer': 'Content-MD5' });
+                         'Trailer': 'Content-MD5' });
 message.write(fileData);
 message.addTrailers({ 'Content-MD5': '7895bf4b8828b55ceaf47747b4bca667' });
 message.end();
-
 ```
 
 Attempting to set a header field name or value that contains invalid characters will result in a `TypeError` being thrown.
@@ -30580,12 +29695,10 @@ Returns a shallow copy of the current outgoing headers. Since a shallow copy is 
 The object returned by the `outgoingMessage.getHeaders()` method does not prototypically inherit from the JavaScript Object. This means that typical Object methods such as `obj.toString()`, `obj.hasOwnProperty()`, and others are not defined and will not work.
 
 ```
-
 outgoingMessage.setHeader('Foo', 'bar');
 outgoingMessage.setHeader('Set-Cookie', ['foo=bar', 'bar=baz']);
 
 const headers = outgoingMessage.getHeaders();
-
 ```
 
 #### `outgoingMessage.hasHeader(name)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_outgoingmessagehasheadername)
@@ -30598,9 +29711,7 @@ Added in: v8.0.0
 Returns `true` if the header identified by `name` is currently set in the outgoing headers. The header name is case-insensitive.
 
 ```
-
 const hasContentType = outgoingMessage.hasHeader('content-type');
-
 ```
 
 #### `outgoingMessage.headersSent`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_outgoingmessageheaderssent)
@@ -30628,9 +29739,7 @@ Added in: v0.4.0
 Removes a header that is queued for implicit sending.
 
 ```
-
 outgoingMessage.removeHeader('Content-Encoding');
-
 ```
 
 #### `outgoingMessage.setHeader(name, value)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_outgoingmessagesetheadername-value)
@@ -30759,50 +29868,49 @@ A collection of all the standard HTTP response status codes, and the short descr
 ### `http.createServer([options][, requestListener])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_httpcreateserveroptions-requestlistener)
 
 -   `options` [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
-
+    
     -   `IncomingMessage` [<http.IncomingMessage>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_class-httpincomingmessage) Specifies the `IncomingMessage` class to be used. Useful for extending the original `IncomingMessage`. **Default:** `IncomingMessage`.
     -   `ServerResponse` [<http.ServerResponse>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_class-httpserverresponse) Specifies the `ServerResponse` class to be used. Useful for extending the original `ServerResponse`. **Default:** `ServerResponse`.
     -   `insecureHTTPParser` [<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) Use an insecure HTTP parser that accepts invalid HTTP headers when `true`. Using the insecure parser should be avoided. See [`--insecure-http-parser`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#cli_--insecure-http-parser) for more information. **Default:** `false`
     -   `maxHeaderSize` [<number>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) Optionally overrides the value of [`--max-http-header-size`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#cli_--max-http-header-sizesize) for requests received by this server, i.e. the maximum length of request headers in bytes. **Default:** 16384 (16 KB).
 -   `requestListener` [<Function>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
-
+    
 -   Returns: [<http.Server>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_class-httpserver)
-
+    
 
 Returns a new instance of [`http.Server`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_class-httpserver).
 
 The `requestListener` is a function which is automatically added to the [`'request'`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_event-request) event.
 
 ```
-
 const http = require('http');
 
+
 const server = http.createServer((req, res) => {
-res.writeHead(200, { 'Content-Type': 'application/json' });
-res.end(JSON.stringify({
-data: 'Hello World!'
-}));
+  res.writeHead(200, { 'Content-Type': 'application/json' });
+  res.end(JSON.stringify({
+    data: 'Hello World!'
+  }));
 });
 
 server.listen(8000);
-
 ```
 
 ```
-
 const http = require('http');
+
 
 const server = http.createServer();
 
+
 server.on('request', (request, res) => {
-res.writeHead(200, { 'Content-Type': 'application/json' });
-res.end(JSON.stringify({
-data: 'Hello World!'
-}));
+  res.writeHead(200, { 'Content-Type': 'application/json' });
+  res.end(JSON.stringify({
+    data: 'Hello World!'
+  }));
 });
 
 server.listen(8000);
-
 ```
 
 ### `http.get(options[, callback])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_httpgetoptions-callback)
@@ -30821,52 +29929,51 @@ The `callback` is invoked with a single argument that is an instance of [`http.I
 JSON fetching example:
 
 ```
-
 http.get('http://localhost:8000/', (res) => {
-const { statusCode } = res;
-const contentType = res.headers['content-type'];
+  const { statusCode } = res;
+  const contentType = res.headers['content-type'];
 
-let error;
-
-if (statusCode !== 200) {
-error = new Error('Request Failed.\n' +
-`Status Code: ${statusCode}`);
-} else if (!/^application\/json/.test(contentType)) {
-error = new Error('Invalid content-type.\n' +
-`Expected application/json but received ${contentType}`);
-}
-if (error) {
-console.error(error.message);
-
+  let error;
+  
+  
+  if (statusCode !== 200) {
+    error = new Error('Request Failed.\n' +
+                      `Status Code: ${statusCode}`);
+  } else if (!/^application\/json/.test(contentType)) {
+    error = new Error('Invalid content-type.\n' +
+                      `Expected application/json but received ${contentType}`);
+  }
+  if (error) {
+    console.error(error.message);
+    
     res.resume();
     return;
+  }
 
-}
-
-res.setEncoding('utf8');
-let rawData = '';
-res.on('data', (chunk) => { rawData += chunk; });
-res.on('end', () => {
-try {
-const parsedData = JSON.parse(rawData);
-console.log(parsedData);
-} catch (e) {
-console.error(e.message);
-}
-});
+  res.setEncoding('utf8');
+  let rawData = '';
+  res.on('data', (chunk) => { rawData += chunk; });
+  res.on('end', () => {
+    try {
+      const parsedData = JSON.parse(rawData);
+      console.log(parsedData);
+    } catch (e) {
+      console.error(e.message);
+    }
+  });
 }).on('error', (e) => {
-console.error(`Got error: ${e.message}`);
+  console.error(`Got error: ${e.message}`);
 });
+
 
 const server = http.createServer((req, res) => {
-res.writeHead(200, { 'Content-Type': 'application/json' });
-res.end(JSON.stringify({
-data: 'Hello World!'
-}));
+  res.writeHead(200, { 'Content-Type': 'application/json' });
+  res.end(JSON.stringify({
+    data: 'Hello World!'
+  }));
 });
 
 server.listen(8000);
-
 ```
 
 ### `http.globalAgent`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_httpglobalagent)
@@ -30932,43 +30039,42 @@ The optional `callback` parameter will be added as a one-time listener for the [
 `http.request()` returns an instance of the [`http.ClientRequest`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_class-httpclientrequest) class. The `ClientRequest` instance is a writable stream. If one needs to upload a file with a POST request, then write to the `ClientRequest` object.
 
 ```
-
 const http = require('http');
 
 const postData = JSON.stringify({
-'msg': 'Hello World!'
+  'msg': 'Hello World!'
 });
 
 const options = {
-hostname: 'www.google.com',
-port: 80,
-path: '/upload',
-method: 'POST',
-headers: {
-'Content-Type': 'application/json',
-'Content-Length': Buffer.byteLength(postData)
-}
+  hostname: 'www.google.com',
+  port: 80,
+  path: '/upload',
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    'Content-Length': Buffer.byteLength(postData)
+  }
 };
 
 const req = http.request(options, (res) => {
-console.log(`STATUS: ${res.statusCode}`);
-console.log(`HEADERS: ${JSON.stringify(res.headers)}`);
-res.setEncoding('utf8');
-res.on('data', (chunk) => {
-console.log(`BODY: ${chunk}`);
-});
-res.on('end', () => {
-console.log('No more data in response.');
-});
+  console.log(`STATUS: ${res.statusCode}`);
+  console.log(`HEADERS: ${JSON.stringify(res.headers)}`);
+  res.setEncoding('utf8');
+  res.on('data', (chunk) => {
+    console.log(`BODY: ${chunk}`);
+  });
+  res.on('end', () => {
+    console.log('No more data in response.');
+  });
 });
 
 req.on('error', (e) => {
-console.error(`problem with request: ${e.message}`);
+  console.error(`problem with request: ${e.message}`);
 });
+
 
 req.write(postData);
 req.end();
-
 ```
 
 In the example `req.end()` was called. With `http.request()` one must always call `req.end()` to signify the end of the request - even if there is no data being written to the request body.
@@ -30978,24 +30084,22 @@ If any error is encountered during the request (be that with DNS resolution, TCP
 There are a few special headers that should be noted.
 
 -   Sending a 'Connection: keep-alive' will notify Node.js that the connection to the server should be persisted until the next request.
-
+    
 -   Sending a 'Content-Length' header will disable the default chunked encoding.
-
+    
 -   Sending an 'Expect' header will immediately send the request headers. Usually, when sending 'Expect: 100-continue', both a timeout and a listener for the `'continue'` event should be set. See RFC 2616 Section 8.2.3 for more information.
-
+    
 -   Sending an Authorization header will override using the `auth` option to compute basic authentication.
-
+    
 
 Example using a [`URL`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#url_the-whatwg-url-api) as `options`:
 
 ```
-
 const options = new URL('http://abc:xyz@example.com');
 
 const req = http.request(options, (res) => {
-
+  
 });
-
 ```
 
 In a successful request, the following events will be emitted in the following order:
@@ -31098,17 +30202,15 @@ It is not necessary to use this method before passing headers to an HTTP request
 Example:
 
 ```
-
 const { validateHeaderName } = require('http');
 
 try {
-validateHeaderName('');
+  validateHeaderName('');
 } catch (err) {
-err instanceof TypeError;
-err.code;
-err.message;
+  err instanceof TypeError; 
+  err.code; 
+  err.message; 
 }
-
 ```
 
 ### `http.validateHeaderValue(name, value)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_httpvalidateheadervaluename-value)
@@ -31130,25 +30232,23 @@ It is not necessary to use this method before passing headers to an HTTP request
 Examples:
 
 ```
-
 const { validateHeaderValue } = require('http');
 
 try {
-validateHeaderValue('x-my-header', undefined);
+  validateHeaderValue('x-my-header', undefined);
 } catch (err) {
-err instanceof TypeError;
-err.code === 'ERR_HTTP_INVALID_HEADER_VALUE';
-err.message;
+  err instanceof TypeError; 
+  err.code === 'ERR_HTTP_INVALID_HEADER_VALUE'; 
+  err.message; 
 }
 
 try {
-validateHeaderValue('x-my-header', 'oʊmɪɡə');
+  validateHeaderValue('x-my-header', 'oʊmɪɡə');
 } catch (err) {
-err instanceof TypeError;
-err.code === 'ERR_INVALID_CHAR';
-err.message;
+  err instanceof TypeError; 
+  err.code === 'ERR_INVALID_CHAR'; 
+  err.message; 
 }
-
 ```
 
 ## HTTP/2[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_http2)
@@ -31158,9 +30258,7 @@ err.message;
 The `http2` module provides an implementation of the [HTTP/2](https://tools.ietf.org/html/rfc7540) protocol. It can be accessed using:
 
 ```
-
 const http2 = require('http2');
-
 ```
 
 ### Core API[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_core-api)
@@ -31174,36 +30272,32 @@ The `http2` Core API is much more symmetric between client and server than the `
 The following illustrates a simple HTTP/2 server using the Core API. Since there are no browsers known that support [unencrypted HTTP/2](https://http2.github.io/faq/#does-http2-require-encryption), the use of [`http2.createSecureServer()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_http2createsecureserveroptions-onrequesthandler) is necessary when communicating with browser clients.
 
 ```
-
 const http2 = require('http2');
 const fs = require('fs');
 
 const server = http2.createSecureServer({
-key: fs.readFileSync('localhost-privkey.pem'),
-cert: fs.readFileSync('localhost-cert.pem')
+  key: fs.readFileSync('localhost-privkey.pem'),
+  cert: fs.readFileSync('localhost-cert.pem')
 });
 server.on('error', (err) => console.error(err));
 
 server.on('stream', (stream, headers) => {
-
-stream.respond({
-'content-type': 'text/html; charset=utf-8',
-':status': 200
-});
-stream.end('<h1>Hello World</h1>');
+  
+  stream.respond({
+    'content-type': 'text/html; charset=utf-8',
+    ':status': 200
+  });
+  stream.end('<h1>Hello World</h1>');
 });
 
 server.listen(8443);
-
 ```
 
 To generate the certificate and key for this example, run:
 
 ```
-
 openssl req -x509 -newkey rsa:2048 -nodes -sha256 -subj '/CN=localhost' \
- -keyout localhost-privkey.pem -out localhost-cert.pem
-
+  -keyout localhost-privkey.pem -out localhost-cert.pem
 ```
 
 #### Client-side example[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_client-side-example)
@@ -31211,31 +30305,29 @@ openssl req -x509 -newkey rsa:2048 -nodes -sha256 -subj '/CN=localhost' \
 The following illustrates an HTTP/2 client:
 
 ```
-
 const http2 = require('http2');
 const fs = require('fs');
 const client = http2.connect('https://localhost:8443', {
-ca: fs.readFileSync('localhost-cert.pem')
+  ca: fs.readFileSync('localhost-cert.pem')
 });
 client.on('error', (err) => console.error(err));
 
 const req = client.request({ ':path': '/' });
 
 req.on('response', (headers, flags) => {
-for (const name in headers) {
-console.log(`${name}: ${headers[name]}`);
-}
+  for (const name in headers) {
+    console.log(`${name}: ${headers[name]}`);
+  }
 });
 
 req.setEncoding('utf8');
 let data = '';
 req.on('data', (chunk) => { data += chunk; });
 req.on('end', () => {
-console.log(`\n${data}`);
-client.close();
+  console.log(`\n${data}`);
+  client.close();
 });
 req.end();
-
 ```
 
 #### Class: `Http2Session`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_class-http2session)
@@ -31318,13 +30410,11 @@ The `'localSettings'` event is emitted when an acknowledgment `SETTINGS` frame h
 When using `http2session.settings()` to submit new settings, the modified settings do not take effect until the `'localSettings'` event is emitted.
 
 ```
-
 session.settings({ enablePush: false });
 
 session.on('localSettings', (settings) => {
-
+  
 });
-
 ```
 
 ##### Event: `'ping'`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_event-ping)
@@ -31344,11 +30434,9 @@ Added in: v8.4.0
 The `'remoteSettings'` event is emitted when a new `SETTINGS` frame is received from the connected peer.
 
 ```
-
 session.on('remoteSettings', (settings) => {
-
+  
 });
-
 ```
 
 ##### Event: `'stream'`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_event-stream)
@@ -31363,41 +30451,38 @@ Added in: v8.4.0
 The `'stream'` event is emitted when a new `Http2Stream` is created.
 
 ```
-
 const http2 = require('http2');
 session.on('stream', (stream, headers, flags) => {
-const method = headers[':method'];
-const path = headers[':path'];
-
-stream.respond({
-':status': 200,
-'content-type': 'text/plain; charset=utf-8'
+  const method = headers[':method'];
+  const path = headers[':path'];
+  
+  stream.respond({
+    ':status': 200,
+    'content-type': 'text/plain; charset=utf-8'
+  });
+  stream.write('hello ');
+  stream.end('world');
 });
-stream.write('hello ');
-stream.end('world');
-});
-
 ```
 
 On the server side, user code will typically not listen for this event directly, and would instead register a handler for the `'stream'` event emitted by the `net.Server` or `tls.Server` instances returned by `http2.createServer()` and `http2.createSecureServer()`, respectively, as in the example below:
 
 ```
-
 const http2 = require('http2');
+
 
 const server = http2.createServer();
 
 server.on('stream', (stream, headers) => {
-stream.respond({
-'content-type': 'text/html; charset=utf-8',
-':status': 200
-});
-stream.on('error', (error) => console.error(error));
-stream.end('<h1>Hello World</h1>');
+  stream.respond({
+    'content-type': 'text/html; charset=utf-8',
+    ':status': 200
+  });
+  stream.on('error', (error) => console.error(error));
+  stream.end('<h1>Hello World</h1>');
 });
 
 server.listen(80);
-
 ```
 
 Even though HTTP/2 streams and network sockets are not in a 1:1 correspondence, a network error will destroy each individual stream and must be handled on the stream level, as shown above.
@@ -31409,10 +30494,8 @@ Added in: v8.4.0
 After the `http2session.setTimeout()` method is used to set the timeout period for this `Http2Session`, the `'timeout'` event is emitted if there is no activity on the `Http2Session` after the configured number of milliseconds. Its listener does not expect any arguments.
 
 ```
-
 session.setTimeout(2000);
-session.on('timeout', () => { });
-
+session.on('timeout', () => {  });
 ```
 
 ##### `http2session.alpnProtocol`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_http2sessionalpnprotocol)
@@ -31531,14 +30614,12 @@ If provided, the `payload` must be a `Buffer`, `TypedArray`, or `DataView` conta
 The callback will be invoked with three arguments: an error argument that will be `null` if the `PING` was successfully acknowledged, a `duration` argument that reports the number of milliseconds elapsed since the ping was sent and the acknowledgment was received, and a `Buffer` containing the 8-byte `PING` payload.
 
 ```
-
 session.ping(Buffer.from('abcdefgh'), (err, duration, payload) => {
-if (!err) {
-console.log(`Ping acknowledged in ${duration} milliseconds`);
-console.log(`With payload '${payload.toString()}'`);
-}
+  if (!err) {
+    console.log(`Ping acknowledged in ${duration} milliseconds`);
+    console.log(`With payload '${payload.toString()}'`);
+  }
 });
-
 ```
 
 If the `payload` argument is not specified, the default payload will be the 64-bit timestamp (little endian) marking the start of the `PING` duration.
@@ -31566,16 +30647,15 @@ Added in: v15.3.0
 Sets the local endpoint's window size. The `windowSize` is the total window size to set, not the delta.
 
 ```
-
 const http2 = require('http2');
 
 const server = http2.createServer();
-const expectedWindowSize = 2 \*\* 20;
+const expectedWindowSize = 2 ** 20;
 server.on('connect', (session) => {
 
-session.setLocalWindowSize(expectedWindowSize);
+  
+  session.setLocalWindowSize(expectedWindowSize);
 });
-
 ```
 
 ##### `http2session.setTimeout(msecs, callback)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_http2sessionsettimeoutmsecs-callback)
@@ -31666,20 +30746,18 @@ Added in: v9.4.0
 Submits an `ALTSVC` frame (as defined by [RFC 7838](https://tools.ietf.org/html/rfc7838)) to the connected client.
 
 ```
-
 const http2 = require('http2');
 
 const server = http2.createServer();
 server.on('session', (session) => {
-
-session.altsvc('h2=":8000"', 'https://example.org:80');
+  
+  session.altsvc('h2=":8000"', 'https://example.org:80');
 });
 
 server.on('stream', (stream) => {
-
-stream.session.altsvc('h2=":8000"', stream.id);
+  
+  stream.session.altsvc('h2=":8000"', stream.id);
 });
-
 ```
 
 Sending an `ALTSVC` frame with a specific stream ID indicates that the alternate service is associated with the origin of the given `Http2Stream`.
@@ -31711,18 +30789,16 @@ Added in: v10.12.0
 Submits an `ORIGIN` frame (as defined by [RFC 8336](https://tools.ietf.org/html/rfc8336)) to the connected client to advertise the set of origins for which the server is capable of providing authoritative responses.
 
 ```
-
 const http2 = require('http2');
 const options = getSecureOptionsSomehow();
 const server = http2.createSecureServer(options);
 server.on('stream', (stream) => {
-stream.respond();
-stream.end('ok');
+  stream.respond();
+  stream.end('ok');
 });
 server.on('session', (session) => {
-session.origin('https://example.com', 'https://example.org');
+  session.origin('https://example.com', 'https://example.org');
 });
-
 ```
 
 When a string is passed as an `origin`, it will be parsed as a URL and the origin will be derived. For instance, the origin for the HTTP URL `'https://example.org/foo/bar'` is the ASCII string `'https://example.org'`. An error will be thrown if either the given string cannot be parsed as a URL or if a valid origin cannot be derived.
@@ -31732,16 +30808,14 @@ A `URL` object, or any object with an `origin` property, may be passed as an `or
 Alternatively, the `origins` option may be used when creating a new HTTP/2 server using the `http2.createSecureServer()` method:
 
 ```
-
 const http2 = require('http2');
 const options = getSecureOptionsSomehow();
 options.origins = ['https://example.com', 'https://example.org'];
 const server = http2.createSecureServer(options);
 server.on('stream', (stream) => {
-stream.respond();
-stream.end('ok');
+  stream.respond();
+  stream.end('ok');
 });
-
 ```
 
 #### Class: `ClientHttp2Session`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_class-clienthttp2session)
@@ -31761,16 +30835,14 @@ Added in: v9.4.0
 The `'altsvc'` event is emitted whenever an `ALTSVC` frame is received by the client. The event is emitted with the `ALTSVC` value, origin, and stream ID. If no `origin` is provided in the `ALTSVC` frame, `origin` will be an empty string.
 
 ```
-
 const http2 = require('http2');
 const client = http2.connect('https://example.org');
 
 client.on('altsvc', (alt, origin, streamId) => {
-console.log(alt);
-console.log(origin);
-console.log(streamId);
+  console.log(alt);
+  console.log(origin);
+  console.log(streamId);
 });
-
 ```
 
 ##### Event: `'origin'`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_event-origin)
@@ -31782,15 +30854,13 @@ Added in: v10.12.0
 The `'origin'` event is emitted whenever an `ORIGIN` frame is received by the client. The event is emitted with an array of `origin` strings. The `http2session.originSet` will be updated to include the received origins.
 
 ```
-
 const http2 = require('http2');
 const client = http2.connect('https://example.org');
 
 client.on('origin', (origins) => {
-for (let n = 0; n < origins.length; n++)
-console.log(origins[n]);
+  for (let n = 0; n < origins.length; n++)
+    console.log(origins[n]);
 });
-
 ```
 
 The `'origin'` event is only emitted when using a secure TLS connection.
@@ -31800,9 +30870,9 @@ The `'origin'` event is only emitted when using a secure TLS connection.
 Added in: v8.4.0
 
 -   `headers` [<HTTP/2 Headers Object>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_headers-object)
-
+    
 -   `options` [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
-
+    
     -   `endStream` [<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) `true` if the `Http2Stream` _writable_ side should be closed initially, such as when sending a `GET` request that should not expect a payload body.
     -   `exclusive` [<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) When `true` and `parent` identifies a parent Stream, the created stream is made the sole direct dependency of the parent, with all other existing dependents made a dependent of the newly created stream. **Default:** `false`.
     -   `parent` [<number>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) Specifies the numeric identifier of a stream the newly created stream is dependent on.
@@ -31810,28 +30880,26 @@ Added in: v8.4.0
     -   `waitForTrailers` [<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) When `true`, the `Http2Stream` will emit the `'wantTrailers'` event after the final `DATA` frame has been sent.
     -   `signal` [<AbortSignal>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#globals_class-abortsignal) An AbortSignal that may be used to abort an ongoing request.
 -   Returns: [<ClientHttp2Stream>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_class-clienthttp2stream)
-
+    
 
 For HTTP/2 Client `Http2Session` instances only, the `http2session.request()` creates and returns an `Http2Stream` instance that can be used to send an HTTP/2 request to the connected server.
 
 This method is only available if `http2session.type` is equal to `http2.constants.NGHTTP2_SESSION_CLIENT`.
 
 ```
-
 const http2 = require('http2');
 const clientSession = http2.connect('https://localhost:1234');
 const {
-HTTP2_HEADER_PATH,
-HTTP2_HEADER_STATUS
+  HTTP2_HEADER_PATH,
+  HTTP2_HEADER_STATUS
 } = http2.constants;
 
 const req = clientSession.request({ [HTTP2_HEADER_PATH]: '/' });
 req.on('response', (headers) => {
-console.log(headers[HTTP2_HEADER_STATUS]);
-req.on('data', (chunk) => { });
-req.on('end', () => { });
+  console.log(headers[HTTP2_HEADER_STATUS]);
+  req.on('data', (chunk) => {  });
+  req.on('end', () => {  });
 });
-
 ```
 
 When the `options.waitForTrailers` option is set, the `'wantTrailers'` event is emitted immediately after queuing the last chunk of payload data to be sent. The `http2stream.sendTrailers()` method can then be called to send trailing headers to the peer.
@@ -31862,12 +30930,10 @@ All `Http2Stream` instances are [`Duplex`](https://nodejs.org/dist/v16.13.1/docs
 The default text character encoding for all `Http2Stream`s is UTF-8. As a best practice, it is recommended that when using an `Http2Stream` to send text, the `'content-type'` header should be set and should identify the character encoding used.
 
 ```
-
 stream.respond({
-'content-type': 'text/html; charset=utf-8',
-':status': 200
+  'content-type': 'text/html; charset=utf-8',
+  ':status': 200
 });
-
 ```
 
 ##### `Http2Stream` Lifecycle[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_http2stream-lifecycle)
@@ -31955,11 +31021,9 @@ The `'trailers'` event is emitted when a block of headers associated with traili
 This event might not be emitted if `http2stream.end()` is called before trailers are received and the incoming data is not being read or listened for.
 
 ```
-
 stream.on('trailers', (headers, flags) => {
-console.log(headers);
+  console.log(headers);
 });
-
 ```
 
 ##### Event: `'wantTrailers'`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_event-wanttrailers)
@@ -32093,14 +31157,13 @@ Added in: v8.4.0
 -   `callback` [<Function>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
 
 ```
-
 const http2 = require('http2');
 const client = http2.connect('http://example.org:8000');
 const { NGHTTP2_CANCEL } = http2.constants;
 const req = client.request({ ':path': '/' });
 
-req.setTimeout(5000, () => req.close(NGHTTP2_CANCEL));
 
+req.setTimeout(5000, () => req.close(NGHTTP2_CANCEL));
 ```
 
 ##### `http2stream.state`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_http2streamstate)
@@ -32128,17 +31191,15 @@ Added in: v10.0.0
 Sends a trailing `HEADERS` frame to the connected HTTP/2 peer. This method will cause the `Http2Stream` to be immediately closed and must only be called after the `'wantTrailers'` event has been emitted. When sending a request or sending a response, the `options.waitForTrailers` option must be set in order to keep the `Http2Stream` open after the final `DATA` frame so that trailers can be sent.
 
 ```
-
 const http2 = require('http2');
 const server = http2.createServer();
 server.on('stream', (stream) => {
-stream.respond(undefined, { waitForTrailers: true });
-stream.on('wantTrailers', () => {
-stream.sendTrailers({ xyz: 'abc' });
+  stream.respond(undefined, { waitForTrailers: true });
+  stream.on('wantTrailers', () => {
+    stream.sendTrailers({ xyz: 'abc' });
+  });
+  stream.end('Hello World');
 });
-stream.end('Hello World');
-});
-
 ```
 
 The HTTP/1 specification forbids trailers from containing HTTP/2 pseudo-header fields (e.g. `':method'`, `':path'`, etc).
@@ -32164,11 +31225,9 @@ Added in: v8.4.0
 The `'headers'` event is emitted when an additional block of headers is received for a stream, such as when a block of `1xx` informational headers is received. The listener callback is passed the [HTTP/2 Headers Object](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_headers-object) and flags associated with the headers.
 
 ```
-
 stream.on('headers', (headers, flags) => {
-console.log(headers);
+  console.log(headers);
 });
-
 ```
 
 ##### Event: `'push'`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_event-push)
@@ -32178,11 +31237,9 @@ Added in: v8.4.0
 The `'push'` event is emitted when response headers for a Server Push stream are received. The listener callback is passed the [HTTP/2 Headers Object](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_headers-object) and flags associated with the headers.
 
 ```
-
 stream.on('push', (headers, flags) => {
-console.log(headers);
+  console.log(headers);
 });
-
 ```
 
 ##### Event: `'response'`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_event-response)
@@ -32192,14 +31249,12 @@ Added in: v8.4.0
 The `'response'` event is emitted when a response `HEADERS` frame has been received for this stream from the connected HTTP/2 server. The listener is invoked with two arguments: an `Object` containing the received [HTTP/2 Headers Object](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_headers-object), and flags associated with the headers.
 
 ```
-
 const http2 = require('http2');
 const client = http2.connect('https://localhost');
 const req = client.request({ ':path': '/' });
 req.on('response', (headers, flags) => {
-console.log(headers[':status']);
+  console.log(headers[':status']);
 });
-
 ```
 
 #### Class: `ServerHttp2Stream`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_class-serverhttp2stream)
@@ -32250,19 +31305,17 @@ Added in: v8.4.0
 Initiates a push stream. The callback is invoked with the new `Http2Stream` instance created for the push stream passed as the second argument, or an `Error` passed as the first argument.
 
 ```
-
 const http2 = require('http2');
 const server = http2.createServer();
 server.on('stream', (stream) => {
-stream.respond({ ':status': 200 });
-stream.pushStream({ ':path': '/' }, (err, pushStream, headers) => {
-if (err) throw err;
-pushStream.respond({ ':status': 200 });
-pushStream.end('some pushed data');
+  stream.respond({ ':status': 200 });
+  stream.pushStream({ ':path': '/' }, (err, pushStream, headers) => {
+    if (err) throw err;
+    pushStream.respond({ ':status': 200 });
+    pushStream.end('some pushed data');
+  });
+  stream.end('some data');
 });
-stream.end('some data');
-});
-
 ```
 
 Setting the weight of a push stream is not allowed in the `HEADERS` frame. Pass a `weight` value to `http2stream.priority` with the `silent` option set to `true` to enable server-side bandwidth balancing between concurrent streams.
@@ -32277,14 +31330,12 @@ Calling `http2stream.pushStream()` from within a pushed stream is not permitted 
     -   `waitForTrailers` [<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) When `true`, the `Http2Stream` will emit the `'wantTrailers'` event after the final `DATA` frame has been sent.
 
 ```
-
 const http2 = require('http2');
 const server = http2.createServer();
 server.on('stream', (stream) => {
-stream.respond({ ':status': 200 });
-stream.end('some data');
+  stream.respond({ ':status': 200 });
+  stream.end('some data');
 });
-
 ```
 
 When the `options.waitForTrailers` option is set, the `'wantTrailers'` event will be emitted immediately after queuing the last chunk of payload data to be sent. The `http2stream.sendTrailers()` method can then be used to sent trailing header fields to the peer.
@@ -32292,17 +31343,15 @@ When the `options.waitForTrailers` option is set, the `'wantTrailers'` event wil
 When `options.waitForTrailers` is set, the `Http2Stream` will not automatically close when the final `DATA` frame is transmitted. User code must call either `http2stream.sendTrailers()` or `http2stream.close()` to close the `Http2Stream`.
 
 ```
-
 const http2 = require('http2');
 const server = http2.createServer();
 server.on('stream', (stream) => {
-stream.respond({ ':status': 200 }, { waitForTrailers: true });
-stream.on('wantTrailers', () => {
-stream.sendTrailers({ ABC: 'some value to send' });
+  stream.respond({ ':status': 200 }, { waitForTrailers: true });
+  stream.on('wantTrailers', () => {
+    stream.sendTrailers({ ABC: 'some value to send' });
+  });
+  stream.end('some data');
 });
-stream.end('some data');
-});
-
 ```
 
 ##### `http2stream.respondWithFD(fd[, headers[, options]])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_http2streamrespondwithfdfd-headers-options)
@@ -32320,24 +31369,22 @@ Initiates a response whose data is read from the given file descriptor. No valid
 When used, the `Http2Stream` object's `Duplex` interface will be closed automatically.
 
 ```
-
 const http2 = require('http2');
 const fs = require('fs');
 
 const server = http2.createServer();
 server.on('stream', (stream) => {
-const fd = fs.openSync('/some/file', 'r');
+  const fd = fs.openSync('/some/file', 'r');
 
-const stat = fs.fstatSync(fd);
-const headers = {
-'content-length': stat.size,
-'last-modified': stat.mtime.toUTCString(),
-'content-type': 'text/plain; charset=utf-8'
-};
-stream.respondWithFD(fd, headers);
-stream.on('close', () => fs.closeSync(fd));
+  const stat = fs.fstatSync(fd);
+  const headers = {
+    'content-length': stat.size,
+    'last-modified': stat.mtime.toUTCString(),
+    'content-type': 'text/plain; charset=utf-8'
+  };
+  stream.respondWithFD(fd, headers);
+  stream.on('close', () => fs.closeSync(fd));
 });
-
 ```
 
 The optional `options.statCheck` function may be specified to give user code an opportunity to set additional content headers based on the `fs.Stat` details of the given fd. If the `statCheck` function is provided, the `http2stream.respondWithFD()` method will perform an `fs.fstat()` call to collect details on the provided file descriptor.
@@ -32351,28 +31398,26 @@ When the `options.waitForTrailers` option is set, the `'wantTrailers'` event wil
 When `options.waitForTrailers` is set, the `Http2Stream` will not automatically close when the final `DATA` frame is transmitted. User code _must_ call either `http2stream.sendTrailers()` or `http2stream.close()` to close the `Http2Stream`.
 
 ```
-
 const http2 = require('http2');
 const fs = require('fs');
 
 const server = http2.createServer();
 server.on('stream', (stream) => {
-const fd = fs.openSync('/some/file', 'r');
+  const fd = fs.openSync('/some/file', 'r');
 
-const stat = fs.fstatSync(fd);
-const headers = {
-'content-length': stat.size,
-'last-modified': stat.mtime.toUTCString(),
-'content-type': 'text/plain; charset=utf-8'
-};
-stream.respondWithFD(fd, headers, { waitForTrailers: true });
-stream.on('wantTrailers', () => {
-stream.sendTrailers({ ABC: 'some value to send' });
+  const stat = fs.fstatSync(fd);
+  const headers = {
+    'content-length': stat.size,
+    'last-modified': stat.mtime.toUTCString(),
+    'content-type': 'text/plain; charset=utf-8'
+  };
+  stream.respondWithFD(fd, headers, { waitForTrailers: true });
+  stream.on('wantTrailers', () => {
+    stream.sendTrailers({ ABC: 'some value to send' });
+  });
+
+  stream.on('close', () => fs.closeSync(fd));
 });
-
-stream.on('close', () => fs.closeSync(fd));
-});
-
 ```
 
 ##### `http2stream.respondWithFile(path[, headers[, options]])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_http2streamrespondwithfilepath-headers-options)
@@ -32397,16 +31442,16 @@ If an error occurs while attempting to read the file data, the `Http2Stream` wil
 Example using a file path:
 
 ```
-
 const http2 = require('http2');
 const server = http2.createServer();
 server.on('stream', (stream) => {
-function statCheck(stat, headers) {
-headers['last-modified'] = stat.mtime.toUTCString();
-}
+  function statCheck(stat, headers) {
+    headers['last-modified'] = stat.mtime.toUTCString();
+  }
 
-function onError(err) {
-
+  function onError(err) {
+    
+    
     try {
       if (err.code === 'ENOENT') {
         stream.respond({ ':status': 404 });
@@ -32414,38 +31459,33 @@ function onError(err) {
         stream.respond({ ':status': 500 });
       }
     } catch (err) {
-
+      
       console.log(err);
     }
     stream.end();
+  }
 
-}
-
-stream.respondWithFile('/some/file',
-{ 'content-type': 'text/plain; charset=utf-8' },
-{ statCheck, onError });
+  stream.respondWithFile('/some/file',
+                         { 'content-type': 'text/plain; charset=utf-8' },
+                         { statCheck, onError });
 });
-
 ```
 
 The `options.statCheck` function may also be used to cancel the send operation by returning `false`. For instance, a conditional request may check the stat results to determine if the file has been modified to return an appropriate `304` response:
 
 ```
-
 const http2 = require('http2');
 const server = http2.createServer();
 server.on('stream', (stream) => {
-function statCheck(stat, headers) {
-
+  function statCheck(stat, headers) {
+    
     stream.respond({ ':status': 304 });
-    return false;
-
-}
-stream.respondWithFile('/some/file',
-{ 'content-type': 'text/plain; charset=utf-8' },
-{ statCheck });
+    return false; 
+  }
+  stream.respondWithFile('/some/file',
+                         { 'content-type': 'text/plain; charset=utf-8' },
+                         { statCheck });
 });
-
 ```
 
 The `content-length` header field will be automatically set.
@@ -32459,18 +31499,16 @@ When the `options.waitForTrailers` option is set, the `'wantTrailers'` event wil
 When `options.waitForTrailers` is set, the `Http2Stream` will not automatically close when the final `DATA` frame is transmitted. User code must call either `http2stream.sendTrailers()` or `http2stream.close()` to close the `Http2Stream`.
 
 ```
-
 const http2 = require('http2');
 const server = http2.createServer();
 server.on('stream', (stream) => {
-stream.respondWithFile('/some/file',
-{ 'content-type': 'text/plain; charset=utf-8' },
-{ waitForTrailers: true });
-stream.on('wantTrailers', () => {
-stream.sendTrailers({ ABC: 'some value to send' });
+  stream.respondWithFile('/some/file',
+                         { 'content-type': 'text/plain; charset=utf-8' },
+                         { waitForTrailers: true });
+  stream.on('wantTrailers', () => {
+    stream.sendTrailers({ ABC: 'some value to send' });
+  });
 });
-});
-
 ```
 
 #### Class: `Http2Server`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_class-http2server)
@@ -32539,28 +31577,26 @@ The `'stream'` event is emitted when a `'stream'` event has been emitted by an `
 See also [`Http2Session`'s `'stream'` event](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_event-stream).
 
 ```
-
 const http2 = require('http2');
 const {
-HTTP2_HEADER_METHOD,
-HTTP2_HEADER_PATH,
-HTTP2_HEADER_STATUS,
-HTTP2_HEADER_CONTENT_TYPE
+  HTTP2_HEADER_METHOD,
+  HTTP2_HEADER_PATH,
+  HTTP2_HEADER_STATUS,
+  HTTP2_HEADER_CONTENT_TYPE
 } = http2.constants;
 
 const server = http2.createServer();
 server.on('stream', (stream, headers, flags) => {
-const method = headers[HTTP2_HEADER_METHOD];
-const path = headers[HTTP2_HEADER_PATH];
-
-stream.respond({
-[HTTP2_HEADER_STATUS]: 200,
-[HTTP2_HEADER_CONTENT_TYPE]: 'text/plain; charset=utf-8'
+  const method = headers[HTTP2_HEADER_METHOD];
+  const path = headers[HTTP2_HEADER_PATH];
+  
+  stream.respond({
+    [HTTP2_HEADER_STATUS]: 200,
+    [HTTP2_HEADER_CONTENT_TYPE]: 'text/plain; charset=utf-8'
+  });
+  stream.write('hello ');
+  stream.end('world');
 });
-stream.write('hello ');
-stream.end('world');
-});
-
 ```
 
 ##### Event: `'timeout'`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_event-timeout_2)
@@ -32677,30 +31713,28 @@ The `'stream'` event is emitted when a `'stream'` event has been emitted by an `
 See also [`Http2Session`'s `'stream'` event](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_event-stream).
 
 ```
-
 const http2 = require('http2');
 const {
-HTTP2_HEADER_METHOD,
-HTTP2_HEADER_PATH,
-HTTP2_HEADER_STATUS,
-HTTP2_HEADER_CONTENT_TYPE
+  HTTP2_HEADER_METHOD,
+  HTTP2_HEADER_PATH,
+  HTTP2_HEADER_STATUS,
+  HTTP2_HEADER_CONTENT_TYPE
 } = http2.constants;
 
 const options = getOptionsSomehow();
 
 const server = http2.createSecureServer(options);
 server.on('stream', (stream, headers, flags) => {
-const method = headers[HTTP2_HEADER_METHOD];
-const path = headers[HTTP2_HEADER_PATH];
-
-stream.respond({
-[HTTP2_HEADER_STATUS]: 200,
-[HTTP2_HEADER_CONTENT_TYPE]: 'text/plain; charset=utf-8'
+  const method = headers[HTTP2_HEADER_METHOD];
+  const path = headers[HTTP2_HEADER_PATH];
+  
+  stream.respond({
+    [HTTP2_HEADER_STATUS]: 200,
+    [HTTP2_HEADER_CONTENT_TYPE]: 'text/plain; charset=utf-8'
+  });
+  stream.write('hello ');
+  stream.end('world');
 });
-stream.write('hello ');
-stream.end('world');
-});
-
 ```
 
 ##### Event: `'timeout'`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_event-timeout_3)
@@ -32792,21 +31826,23 @@ Returns a `net.Server` instance that creates and manages `Http2Session` instance
 Since there are no browsers known that support [unencrypted HTTP/2](https://http2.github.io/faq/#does-http2-require-encryption), the use of [`http2.createSecureServer()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_http2createsecureserveroptions-onrequesthandler) is necessary when communicating with browser clients.
 
 ```
-
 const http2 = require('http2');
+
+
+
+
 
 const server = http2.createServer();
 
 server.on('stream', (stream, headers) => {
-stream.respond({
-'content-type': 'text/html; charset=utf-8',
-':status': 200
-});
-stream.end('<h1>Hello World</h1>');
+  stream.respond({
+    'content-type': 'text/html; charset=utf-8',
+    ':status': 200
+  });
+  stream.end('<h1>Hello World</h1>');
 });
 
 server.listen(80);
-
 ```
 
 #### `http2.createSecureServer(options[, onRequestHandler])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_http2createsecureserveroptions-onrequesthandler)
@@ -32836,27 +31872,26 @@ server.listen(80);
 Returns a `tls.Server` instance that creates and manages `Http2Session` instances.
 
 ```
-
 const http2 = require('http2');
 const fs = require('fs');
 
 const options = {
-key: fs.readFileSync('server-key.pem'),
-cert: fs.readFileSync('server-cert.pem')
+  key: fs.readFileSync('server-key.pem'),
+  cert: fs.readFileSync('server-cert.pem')
 };
+
 
 const server = http2.createSecureServer(options);
 
 server.on('stream', (stream, headers) => {
-stream.respond({
-'content-type': 'text/html; charset=utf-8',
-':status': 200
-});
-stream.end('<h1>Hello World</h1>');
+  stream.respond({
+    'content-type': 'text/html; charset=utf-8',
+    ':status': 200
+  });
+  stream.end('<h1>Hello World</h1>');
 });
 
 server.listen(80);
-
 ```
 
 #### `http2.connect(authority[, options][, listener])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_http2connectauthority-options-listener)
@@ -32886,12 +31921,12 @@ server.listen(80);
 Returns a `ClientHttp2Session` instance.
 
 ```
-
 const http2 = require('http2');
 const client = http2.connect('https://localhost:1234');
 
-client.close();
 
+
+client.close();
 ```
 
 #### `http2.constants`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_http2constants)
@@ -33010,13 +32045,11 @@ Added in: v8.4.0
 Returns a `Buffer` instance containing serialized representation of the given HTTP/2 settings as specified in the [HTTP/2](https://tools.ietf.org/html/rfc7540) specification. This is intended for use with the `HTTP2-Settings` header field.
 
 ```
-
 const http2 = require('http2');
 
 const packed = http2.getPackedSettings({ enablePush: false });
 
 console.log(packed.toString('base64'));
-
 ```
 
 #### `http2.getUnpackedSettings(buf)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_http2getunpackedsettingsbuf)
@@ -33041,15 +32074,13 @@ This symbol can be set as a property on the HTTP/2 headers object with an array 
 Headers are represented as own-properties on JavaScript objects. The property keys will be serialized to lower-case. Property values should be strings (if they are not they will be coerced to strings) or an `Array` of strings (in order to send more than one value per header field).
 
 ```
-
 const headers = {
-':status': '200',
-'content-type': 'text-plain',
-'ABC': ['has', 'more', 'than', 'one', 'value']
+  ':status': '200',
+  'content-type': 'text-plain',
+  'ABC': ['has', 'more', 'than', 'one', 'value']
 };
 
 stream.respond(headers);
-
 ```
 
 Header objects passed to callback functions will have a `null` prototype. This means that normal JavaScript object methods such as `Object.prototype.toString()` and `Object.prototype.hasOwnProperty()` will not work.
@@ -33063,14 +32094,12 @@ For incoming headers:
 -   For all other headers, the values are joined together with ', '.
 
 ```
-
 const http2 = require('http2');
 const server = http2.createServer();
 server.on('stream', (stream, headers) => {
-console.log(headers[':path']);
-console.log(headers.ABC);
+  console.log(headers[':path']);
+  console.log(headers.ABC);
 });
-
 ```
 
 ##### Sensitive headers[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_sensitive-headers)
@@ -33078,17 +32107,15 @@ console.log(headers.ABC);
 HTTP2 headers can be marked as sensitive, which means that the HTTP/2 header compression algorithm will never index them. This can make sense for header values with low entropy and that may be considered valuable to an attacker, for example `Cookie` or `Authorization`. To achieve this, add the header name to the `[http2.sensitiveHeaders]` property as an array:
 
 ```
-
 const headers = {
-':status': '200',
-'content-type': 'text-plain',
-'cookie': 'some-cookie',
-'other-sensitive-header': 'very secret data',
-[http2.sensitiveHeaders]: ['cookie', 'other-sensitive-header']
+  ':status': '200',
+  'content-type': 'text-plain',
+  'cookie': 'some-cookie',
+  'other-sensitive-header': 'very secret data',
+  [http2.sensitiveHeaders]: ['cookie', 'other-sensitive-header']
 };
 
 stream.respond(headers);
-
 ```
 
 For some headers, such as `Authorization` and short `Cookie` headers, this flag is set automatically.
@@ -33139,20 +32166,18 @@ Header field values are handled with more leniency but _should_ not contain new-
 To receive pushed streams on the client, set a listener for the `'stream'` event on the `ClientHttp2Session`:
 
 ```
-
 const http2 = require('http2');
 
 const client = http2.connect('http://localhost');
 
 client.on('stream', (pushedStream, requestHeaders) => {
-pushedStream.on('push', (responseHeaders) => {
-
-});
-pushedStream.on('data', (chunk) => { });
+  pushedStream.on('push', (responseHeaders) => {
+    
+  });
+  pushedStream.on('data', (chunk) => {  });
 });
 
 const req = client.request({ ':path': '/' });
-
 ```
 
 #### Supporting the `CONNECT` method[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_supporting-the-connect-method)
@@ -33162,77 +32187,73 @@ The `CONNECT` method is used to allow an HTTP/2 server to be used as a proxy for
 A simple TCP Server:
 
 ```
-
 const net = require('net');
 
 const server = net.createServer((socket) => {
-let name = '';
-socket.setEncoding('utf8');
-socket.on('data', (chunk) => name += chunk);
-socket.on('end', () => socket.end(`hello ${name}`));
+  let name = '';
+  socket.setEncoding('utf8');
+  socket.on('data', (chunk) => name += chunk);
+  socket.on('end', () => socket.end(`hello ${name}`));
 });
 
 server.listen(8000);
-
 ```
 
 An HTTP/2 CONNECT proxy:
 
 ```
-
 const http2 = require('http2');
 const { NGHTTP2_REFUSED_STREAM } = http2.constants;
 const net = require('net');
 
 const proxy = http2.createServer();
 proxy.on('stream', (stream, headers) => {
-if (headers[':method'] !== 'CONNECT') {
-
+  if (headers[':method'] !== 'CONNECT') {
+    
     stream.close(NGHTTP2_REFUSED_STREAM);
     return;
-
-}
-const auth = new URL(`tcp://${headers[':authority']}`);
-
-const socket = net.connect(auth.port, auth.hostname, () => {
-stream.respond();
-socket.pipe(stream);
-stream.pipe(socket);
-});
-socket.on('error', (error) => {
-stream.close(http2.constants.NGHTTP2_CONNECT_ERROR);
-});
+  }
+  const auth = new URL(`tcp://${headers[':authority']}`);
+  
+  
+  const socket = net.connect(auth.port, auth.hostname, () => {
+    stream.respond();
+    socket.pipe(stream);
+    stream.pipe(socket);
+  });
+  socket.on('error', (error) => {
+    stream.close(http2.constants.NGHTTP2_CONNECT_ERROR);
+  });
 });
 
 proxy.listen(8001);
-
 ```
 
 An HTTP/2 CONNECT client:
 
 ```
-
 const http2 = require('http2');
 
 const client = http2.connect('http://localhost:8001');
 
+
+
 const req = client.request({
-':method': 'CONNECT',
-':authority': `localhost:${port}`
+  ':method': 'CONNECT',
+  ':authority': `localhost:${port}`
 });
 
 req.on('response', (headers) => {
-console.log(headers[http2.constants.HTTP2_HEADER_STATUS]);
+  console.log(headers[http2.constants.HTTP2_HEADER_STATUS]);
 });
 let data = '';
 req.setEncoding('utf8');
 req.on('data', (chunk) => data += chunk);
 req.on('end', () => {
-console.log(`The server says: ${data}`);
-client.close();
+  console.log(`The server says: ${data}`);
+  client.close();
 });
 req.end('Jane');
-
 ```
 
 #### The extended `CONNECT` protocol[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_the-extended-connect-protocol)
@@ -33242,26 +32263,22 @@ req.end('Jane');
 The use of the Extended CONNECT Protocol is enabled by HTTP/2 servers by using the `enableConnectProtocol` setting:
 
 ```
-
 const http2 = require('http2');
 const settings = { enableConnectProtocol: true };
 const server = http2.createServer({ settings });
-
 ```
 
 Once the client receives the `SETTINGS` frame from the server indicating that the extended CONNECT may be used, it may send `CONNECT` requests that use the `':protocol'` HTTP/2 pseudo-header:
 
 ```
-
 const http2 = require('http2');
 const client = http2.connect('http://localhost:8080');
 client.on('remoteSettings', (settings) => {
-if (settings.enableConnectProtocol) {
-const req = client.request({ ':method': 'CONNECT', ':protocol': 'foo' });
-
-}
+  if (settings.enableConnectProtocol) {
+    const req = client.request({ ':method': 'CONNECT', ':protocol': 'foo' });
+    
+  }
 });
-
 ```
 
 ### Compatibility API[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_compatibility-api)
@@ -33271,15 +32288,13 @@ The Compatibility API has the goal of providing a similar developer experience o
 The following example creates an HTTP/2 server using the compatibility API:
 
 ```
-
 const http2 = require('http2');
 const server = http2.createServer((req, res) => {
-res.setHeader('Content-Type', 'text/html');
-res.setHeader('X-Foo', 'bar');
-res.writeHead(200, { 'Content-Type': 'text/plain; charset=utf-8' });
-res.end('ok');
+  res.setHeader('Content-Type', 'text/html');
+  res.setHeader('X-Foo', 'bar');
+  res.writeHead(200, { 'Content-Type': 'text/plain; charset=utf-8' });
+  res.end('ok');
 });
-
 ```
 
 In order to create a mixed [HTTPS](https://nodejs.org/dist/v16.13.1/docs/api/https.html) and HTTP/2 server, refer to the [ALPN negotiation](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_alpn-negotiation) section. Upgrading from non-tls HTTP/1 servers is not supported.
@@ -33293,7 +32308,6 @@ ALPN negotiation allows supporting both [HTTPS](https://nodejs.org/dist/v16.13.1
 The following example creates a server that supports both protocols:
 
 ```
-
 const { createSecureServer } = require('http2');
 const { readFileSync } = require('fs');
 
@@ -33301,21 +32315,20 @@ const cert = readFileSync('./cert.pem');
 const key = readFileSync('./key.pem');
 
 const server = createSecureServer(
-{ cert, key, allowHTTP1: true },
-onRequest
+  { cert, key, allowHTTP1: true },
+  onRequest
 ).listen(4443);
 
 function onRequest(req, res) {
-
-const { socket: { alpnProtocol } } = req.httpVersion === '2.0' ?
-req.stream.session : req;
-res.writeHead(200, { 'content-type': 'application/json' });
-res.end(JSON.stringify({
-alpnProtocol,
-httpVersion: req.httpVersion
-}));
+  
+  const { socket: { alpnProtocol } } = req.httpVersion === '2.0' ?
+    req.stream.session : req;
+  res.writeHead(200, { 'content-type': 'application/json' });
+  res.end(JSON.stringify({
+    alpnProtocol,
+    httpVersion: req.httpVersion
+  }));
 }
-
 ```
 
 The `'request'` event works identically on both [HTTPS](https://nodejs.org/dist/v16.13.1/docs/api/https.html) and HTTP/2.
@@ -33396,8 +32409,11 @@ Key-value pairs of header names and values. Header names are lower-cased.
 
 ```
 
-console.log(request.headers);
 
+
+
+
+console.log(request.headers);
 ```
 
 See [HTTP/2 Headers Object](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_headers-object).
@@ -33405,10 +32421,8 @@ See [HTTP/2 Headers Object](https://nodejs.org/dist/v16.13.1/docs/api/all.html#h
 In HTTP/2, the request path, host name, protocol, and method are represented as special headers prefixed with the `:` character (e.g. `':path'`). These special headers will be included in the `request.headers` object. Care must be taken not to inadvertently modify these special headers or errors may occur. For instance, removing all headers from the request will cause errors to occur:
 
 ```
-
 removeAllHeaders(request.headers);
-assert(request.url);
-
+assert(request.url);   
 ```
 
 ##### `request.httpVersion`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_requesthttpversion)
@@ -33443,8 +32457,16 @@ Header names are not lowercased, and duplicates are not merged.
 
 ```
 
-console.log(request.rawHeaders);
 
+
+
+
+
+
+
+
+
+console.log(request.rawHeaders);
 ```
 
 ##### `request.rawTrailers`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_requestrawtrailers)
@@ -33518,42 +32540,35 @@ Added in: v8.4.0
 Request URL string. This contains only the URL that is present in the actual HTTP request. If the request is:
 
 ```
-
 GET /status?name=ryan HTTP/1.1
 Accept: text/plain
-
 ```
 
 Then `request.url` will be:
 
 ```
-
 '/status?name=ryan'
-
 ```
 
 To parse the url into its parts, `new URL()` can be used:
 
 ```
-
 $ node
-
 > new URL('/status?name=ryan', 'http://example.com')
-> URL {
-> href: 'http://example.com/status?name=ryan',
-> origin: 'http://example.com',
-> protocol: 'http:',
-> username: '',
-> password: '',
-> host: 'example.com',
-> hostname: 'example.com',
-> port: '',
-> pathname: '/status',
-> search: '?name=ryan',
-> searchParams: URLSearchParams { 'name' => 'ryan' },
-> hash: ''
-> }
-
+URL {
+  href: 'http://example.com/status?name=ryan',
+  origin: 'http://example.com',
+  protocol: 'http:',
+  username: '',
+  password: '',
+  host: 'example.com',
+  hostname: 'example.com',
+  port: '',
+  pathname: '/status',
+  search: '?name=ryan',
+  searchParams: URLSearchParams { 'name' => 'ryan' },
+  hash: ''
+}
 ```
 
 #### Class: `http2.Http2ServerResponse`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_class-http2http2serverresponse)
@@ -33638,9 +32653,7 @@ Added in: v8.4.0
 Reads out a header that has already been queued but not sent to the client. The name is case-insensitive.
 
 ```
-
 const contentType = response.getHeader('content-type');
-
 ```
 
 ##### `response.getHeaderNames()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_responsegetheadernames)
@@ -33652,12 +32665,10 @@ Added in: v8.4.0
 Returns an array containing the unique names of the current outgoing headers. All header names are lowercase.
 
 ```
-
 response.setHeader('Foo', 'bar');
 response.setHeader('Set-Cookie', ['foo=bar', 'bar=baz']);
 
 const headerNames = response.getHeaderNames();
-
 ```
 
 ##### `response.getHeaders()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_responsegetheaders)
@@ -33671,12 +32682,10 @@ Returns a shallow copy of the current outgoing headers. Since a shallow copy is 
 The object returned by the `response.getHeaders()` method _does not_ prototypically inherit from the JavaScript `Object`. This means that typical `Object` methods such as `obj.toString()`, `obj.hasOwnProperty()`, and others are not defined and _will not work_.
 
 ```
-
 response.setHeader('Foo', 'bar');
 response.setHeader('Set-Cookie', ['foo=bar', 'bar=baz']);
 
 const headers = response.getHeaders();
-
 ```
 
 ##### `response.hasHeader(name)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_responsehasheadername)
@@ -33689,9 +32698,7 @@ Added in: v8.4.0
 Returns `true` if the header identified by `name` is currently set in the outgoing headers. The header name matching is case-insensitive.
 
 ```
-
 const hasContentType = response.hasHeader('content-type');
-
 ```
 
 ##### `response.headersSent`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_responseheaderssent)
@@ -33711,9 +32718,7 @@ Added in: v8.4.0
 Removes a header that has been queued for implicit sending.
 
 ```
-
 response.removeHeader('Content-Encoding');
-
 ```
 
 #### `response.req`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_responsereq)
@@ -33744,17 +32749,13 @@ Added in: v8.4.0
 Sets a single header value for implicit headers. If this header already exists in the to-be-sent headers, its value will be replaced. Use an array of strings here to send multiple headers with the same name.
 
 ```
-
 response.setHeader('Content-Type', 'text/html; charset=utf-8');
-
 ```
 
 or
 
 ```
-
 response.setHeader('Set-Cookie', ['type=ninja', 'language=javascript']);
-
 ```
 
 Attempting to set a header field name or value that contains invalid characters will result in a [`TypeError`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_class-typeerror) being thrown.
@@ -33764,12 +32765,11 @@ When headers have been set with [`response.setHeader()`](https://nodejs.org/dist
 ```
 
 const server = http2.createServer((req, res) => {
-res.setHeader('Content-Type', 'text/html; charset=utf-8');
-res.setHeader('X-Foo', 'bar');
-res.writeHead(200, { 'Content-Type': 'text/plain; charset=utf-8' });
-res.end('ok');
+  res.setHeader('Content-Type', 'text/html; charset=utf-8');
+  res.setHeader('X-Foo', 'bar');
+  res.writeHead(200, { 'Content-Type': 'text/plain; charset=utf-8' });
+  res.end('ok');
 });
-
 ```
 
 ##### `response.setTimeout(msecs[, callback])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_responsesettimeoutmsecs-callback)
@@ -33803,14 +32803,12 @@ Returns a `Proxy` object that acts as a `net.Socket` (or `tls.TLSSocket`) but ap
 All other interactions will be routed directly to the socket.
 
 ```
-
 const http2 = require('http2');
 const server = http2.createServer((req, res) => {
-const ip = req.socket.remoteAddress;
-const port = req.socket.remotePort;
-res.end(`Your IP address is ${ip} and your source port is ${port}.`);
+  const ip = req.socket.remoteAddress;
+  const port = req.socket.remotePort;
+  res.end(`Your IP address is ${ip} and your source port is ${port}.`);
 }).listen(3000);
-
 ```
 
 ##### `response.statusCode`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_responsestatuscode)
@@ -33822,9 +32820,7 @@ Added in: v8.4.0
 When using implicit headers (not calling [`response.writeHead()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http2_responsewriteheadstatuscode-statusmessage-headers) explicitly), this property controls the status code that will be sent to the client when the headers get flushed.
 
 ```
-
 response.statusCode = 404;
-
 ```
 
 After response header was sent to the client, this property indicates the status code which was sent out.
@@ -33896,13 +32892,11 @@ Returns a reference to the `Http2ServerResponse`, so that calls can be chained.
 For compatibility with [HTTP/1](https://nodejs.org/dist/v16.13.1/docs/api/http.html), a human-readable `statusMessage` may be passed as the second argument. However, because the `statusMessage` has no meaning within HTTP/2, the argument will have no effect and a process warning will be emitted.
 
 ```
-
 const body = 'hello world';
 response.writeHead(200, {
-'Content-Length': Buffer.byteLength(body),
-'Content-Type': 'text/plain; charset=utf-8',
+  'Content-Length': Buffer.byteLength(body),
+  'Content-Type': 'text/plain; charset=utf-8',
 });
-
 ```
 
 `Content-Length` is given in bytes not characters. The `Buffer.byteLength()` API may be used to determine the number of bytes in a given encoding. On outbound messages, Node.js does not check if Content-Length and the length of the body being transmitted are equal or not. However, when receiving messages, Node.js will automatically reject messages when the `Content-Length` does not match the actual payload size.
@@ -33916,12 +32910,11 @@ When headers have been set with [`response.setHeader()`](https://nodejs.org/dist
 ```
 
 const server = http2.createServer((req, res) => {
-res.setHeader('Content-Type', 'text/html; charset=utf-8');
-res.setHeader('X-Foo', 'bar');
-res.writeHead(200, { 'Content-Type': 'text/plain; charset=utf-8' });
-res.end('ok');
+  res.setHeader('Content-Type', 'text/html; charset=utf-8');
+  res.setHeader('X-Foo', 'bar');
+  res.writeHead(200, { 'Content-Type': 'text/plain; charset=utf-8' });
+  res.end('ok');
 });
-
 ```
 
 Attempting to set a header field name or value that contains invalid characters will result in a [`TypeError`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_class-typeerror) being thrown.
@@ -33931,20 +32924,18 @@ Attempting to set a header field name or value that contains invalid characters 
 The [Performance Observer](https://nodejs.org/dist/v16.13.1/docs/api/perf_hooks.html) API can be used to collect basic performance metrics for each `Http2Session` and `Http2Stream` instance.
 
 ```
-
 const { PerformanceObserver } = require('perf_hooks');
 
 const obs = new PerformanceObserver((items) => {
-const entry = items.getEntries()[0];
-console.log(entry.entryType);  
- if (entry.name === 'Http2Session') {
-
-} else if (entry.name === 'Http2Stream') {
-
-}
+  const entry = items.getEntries()[0];
+  console.log(entry.entryType);  
+  if (entry.name === 'Http2Session') {
+    
+  } else if (entry.name === 'Http2Stream') {
+    
+  }
 });
 obs.observe({ entryTypes: ['http2'] });
-
 ```
 
 The `entryType` property of the `PerformanceEntry` will be equal to `'http2'`.
@@ -33992,11 +32983,11 @@ An [`Agent`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#https_class-http
 
 -   `options` [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) Set of configurable options to set on the agent. Can have the same fields as for [`http.Agent(options)`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_new-agentoptions), and
     -   `maxCachedSessions` [<number>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) maximum number of TLS cached sessions. Use `0` to disable TLS session caching. **Default:** `100`.
-
+        
     -   `servername` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) the value of [Server Name Indication extension](https://en.wikipedia.org/wiki/Server_Name_Indication) to be sent to the server. Use empty string `''` to disable sending the extension. **Default:** host name of the target server, unless the target server is specified using an IP address, in which case the default is `''` (no extension).
-
+        
         See [`Session Resumption`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_session-resumption) for information about TLS session reuse.
-
+        
 
 ##### Event: `'keylog'`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#https_event-keylog)
 
@@ -34012,9 +33003,8 @@ A typical use case is to append received lines to a common text file, which is l
 ```
 
 https.globalAgent.on('keylog', (line, tlsSocket) => {
-fs.appendFileSync('/tmp/ssl-keys.log', line, { mode: 0o600 });
+  fs.appendFileSync('/tmp/ssl-keys.log', line, { mode: 0o600 });
 });
-
 ```
 
 ### Class: `https.Server`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#https_class-httpsserver)
@@ -34098,34 +33088,31 @@ const https = require('https');
 const fs = require('fs');
 
 const options = {
-key: fs.readFileSync('test/fixtures/keys/agent2-key.pem'),
-cert: fs.readFileSync('test/fixtures/keys/agent2-cert.pem')
+  key: fs.readFileSync('test/fixtures/keys/agent2-key.pem'),
+  cert: fs.readFileSync('test/fixtures/keys/agent2-cert.pem')
 };
 
 https.createServer(options, (req, res) => {
-res.writeHead(200);
-res.end('hello world\n');
+  res.writeHead(200);
+  res.end('hello world\n');
 }).listen(8000);
-
 ```
 
 Or
 
 ```
-
 const https = require('https');
 const fs = require('fs');
 
 const options = {
-pfx: fs.readFileSync('test/fixtures/test_cert.pfx'),
-passphrase: 'sample'
+  pfx: fs.readFileSync('test/fixtures/test_cert.pfx'),
+  passphrase: 'sample'
 };
 
 https.createServer(options, (req, res) => {
-res.writeHead(200);
-res.end('hello world\n');
+  res.writeHead(200);
+  res.end('hello world\n');
 }).listen(8000);
-
 ```
 
 ### `https.get(options[, callback])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#https_httpsgetoptions-callback)
@@ -34141,21 +33128,19 @@ Like [`http.get()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_http
 `options` can be an object, a string, or a [`URL`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#url_the-whatwg-url-api) object. If `options` is a string, it is automatically parsed with [`new URL()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#url_new-urlinput-base). If it is a [`URL`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#url_the-whatwg-url-api) object, it will be automatically converted to an ordinary `options` object.
 
 ```
-
 const https = require('https');
 
 https.get('https://encrypted.google.com/', (res) => {
-console.log('statusCode:', res.statusCode);
-console.log('headers:', res.headers);
+  console.log('statusCode:', res.statusCode);
+  console.log('headers:', res.headers);
 
-res.on('data', (d) => {
-process.stdout.write(d);
-});
+  res.on('data', (d) => {
+    process.stdout.write(d);
+  });
 
 }).on('error', (e) => {
-console.error(e);
+  console.error(e);
 });
-
 ```
 
 ### `https.globalAgent`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#https_httpsglobalagent)
@@ -34185,108 +33170,99 @@ The following additional `options` from [`tls.connect()`](https://nodejs.org/dis
 `https.request()` returns an instance of the [`http.ClientRequest`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#http_class-httpclientrequest) class. The `ClientRequest` instance is a writable stream. If one needs to upload a file with a POST request, then write to the `ClientRequest` object.
 
 ```
-
 const https = require('https');
 
 const options = {
-hostname: 'encrypted.google.com',
-port: 443,
-path: '/',
-method: 'GET'
+  hostname: 'encrypted.google.com',
+  port: 443,
+  path: '/',
+  method: 'GET'
 };
 
 const req = https.request(options, (res) => {
-console.log('statusCode:', res.statusCode);
-console.log('headers:', res.headers);
+  console.log('statusCode:', res.statusCode);
+  console.log('headers:', res.headers);
 
-res.on('data', (d) => {
-process.stdout.write(d);
-});
+  res.on('data', (d) => {
+    process.stdout.write(d);
+  });
 });
 
 req.on('error', (e) => {
-console.error(e);
+  console.error(e);
 });
 req.end();
-
 ```
 
 Example using options from [`tls.connect()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_tlsconnectoptions-callback):
 
 ```
-
 const options = {
-hostname: 'encrypted.google.com',
-port: 443,
-path: '/',
-method: 'GET',
-key: fs.readFileSync('test/fixtures/keys/agent2-key.pem'),
-cert: fs.readFileSync('test/fixtures/keys/agent2-cert.pem')
+  hostname: 'encrypted.google.com',
+  port: 443,
+  path: '/',
+  method: 'GET',
+  key: fs.readFileSync('test/fixtures/keys/agent2-key.pem'),
+  cert: fs.readFileSync('test/fixtures/keys/agent2-cert.pem')
 };
 options.agent = new https.Agent(options);
 
 const req = https.request(options, (res) => {
-
+  
 });
-
 ```
 
 Alternatively, opt out of connection pooling by not using an [`Agent`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#https_class-httpsagent).
 
 ```
-
 const options = {
-hostname: 'encrypted.google.com',
-port: 443,
-path: '/',
-method: 'GET',
-key: fs.readFileSync('test/fixtures/keys/agent2-key.pem'),
-cert: fs.readFileSync('test/fixtures/keys/agent2-cert.pem'),
-agent: false
+  hostname: 'encrypted.google.com',
+  port: 443,
+  path: '/',
+  method: 'GET',
+  key: fs.readFileSync('test/fixtures/keys/agent2-key.pem'),
+  cert: fs.readFileSync('test/fixtures/keys/agent2-cert.pem'),
+  agent: false
 };
 
 const req = https.request(options, (res) => {
-
+  
 });
-
 ```
 
 Example using a [`URL`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#url_the-whatwg-url-api) as `options`:
 
 ```
-
 const options = new URL('https://abc:xyz@example.com');
 
 const req = https.request(options, (res) => {
-
+  
 });
-
 ```
 
 Example pinning on certificate fingerprint, or the public key (similar to `pin-sha256`):
 
 ```
-
 const tls = require('tls');
 const https = require('https');
 const crypto = require('crypto');
 
 function sha256(s) {
-return crypto.createHash('sha256').update(s).digest('base64');
+  return crypto.createHash('sha256').update(s).digest('base64');
 }
 const options = {
-hostname: 'github.com',
-port: 443,
-path: '/',
-method: 'GET',
-checkServerIdentity: function(host, cert) {
-
+  hostname: 'github.com',
+  port: 443,
+  path: '/',
+  method: 'GET',
+  checkServerIdentity: function(host, cert) {
+    
     const err = tls.checkServerIdentity(host, cert);
     if (err) {
       return err;
     }
 
-
+    
     const pubkey256 = 'pL1+qb9HTMRZJmuC/bB/ZI9d302BYrrqiVuRyW+DGrU=';
     if (sha256(cert.pubkey) !== pubkey256) {
       const msg = 'Certificate verification error: ' +
@@ -34295,7 +33271,7 @@ checkServerIdentity: function(host, cert) {
       return new Error(msg);
     }
 
-
+    
     const cert256 = '25:FE:39:32:D9:63:8C:8A:FC:A1:9A:29:87:' +
       'D8:3E:4C:1D:98:DB:71:E4:1A:48:03:98:EA:22:6A:BD:8B:93:16';
     if (cert.fingerprint256 !== cert256) {
@@ -34305,11 +33281,11 @@ checkServerIdentity: function(host, cert) {
       return new Error(msg);
     }
 
-
-
-
-
-
+    
+    
+    
+    
+    
     do {
       console.log('Subject Common Name:', cert.subject.CN);
       console.log('  Certificate SHA256 fingerprint:', cert.fingerprint256);
@@ -34321,43 +33297,40 @@ checkServerIdentity: function(host, cert) {
       cert = cert.issuerCertificate;
     } while (cert.fingerprint256 !== lastprint256);
 
-},
+  },
 };
 
 options.agent = new https.Agent(options);
 const req = https.request(options, (res) => {
-console.log('All OK. Server matched our pinned cert or public key');
-console.log('statusCode:', res.statusCode);
+  console.log('All OK. Server matched our pinned cert or public key');
+  console.log('statusCode:', res.statusCode);
+  
+  console.log('headers:', res.headers['public-key-pins']);
 
-console.log('headers:', res.headers['public-key-pins']);
-
-res.on('data', (d) => {});
+  res.on('data', (d) => {});
 });
 
 req.on('error', (e) => {
-console.error(e.message);
+  console.error(e.message);
 });
 req.end();
-
 ```
 
 Outputs for example:
 
 ```
-
 Subject Common Name: github.com
-Certificate SHA256 fingerprint: 25:FE:39:32:D9:63:8C:8A:FC:A1:9A:29:87:D8:3E:4C:1D:98:DB:71:E4:1A:48:03:98:EA:22:6A:BD:8B:93:16
-Public key ping-sha256: pL1+qb9HTMRZJmuC/bB/ZI9d302BYrrqiVuRyW+DGrU=
+  Certificate SHA256 fingerprint: 25:FE:39:32:D9:63:8C:8A:FC:A1:9A:29:87:D8:3E:4C:1D:98:DB:71:E4:1A:48:03:98:EA:22:6A:BD:8B:93:16
+  Public key ping-sha256: pL1+qb9HTMRZJmuC/bB/ZI9d302BYrrqiVuRyW+DGrU=
 Subject Common Name: DigiCert SHA2 Extended Validation Server CA
-Certificate SHA256 fingerprint: 40:3E:06:2A:26:53:05:91:13:28:5B:AF:80:A0:D4:AE:42:2C:84:8C:9F:78:FA:D0:1F:C9:4B:C5:B8:7F:EF:1A
-Public key ping-sha256: RRM1dGqnDFsCJXBTHky16vi1obOlCgFFn/yOhI/y+ho=
+  Certificate SHA256 fingerprint: 40:3E:06:2A:26:53:05:91:13:28:5B:AF:80:A0:D4:AE:42:2C:84:8C:9F:78:FA:D0:1F:C9:4B:C5:B8:7F:EF:1A
+  Public key ping-sha256: RRM1dGqnDFsCJXBTHky16vi1obOlCgFFn/yOhI/y+ho=
 Subject Common Name: DigiCert High Assurance EV Root CA
-Certificate SHA256 fingerprint: 74:31:E5:F4:C3:C1:CE:46:90:77:4F:0B:61:E0:54:40:88:3B:A9:A0:1E:D0:0B:A6:AB:D7:80:6E:D3:B1:18:CF
-Public key ping-sha256: WoiWRyIOVNa9ihaBciRSC7XHjliYS9VwUGOIud4PB18=
+  Certificate SHA256 fingerprint: 74:31:E5:F4:C3:C1:CE:46:90:77:4F:0B:61:E0:54:40:88:3B:A9:A0:1E:D0:0B:A6:AB:D7:80:6E:D3:B1:18:CF
+  Public key ping-sha256: WoiWRyIOVNa9ihaBciRSC7XHjliYS9VwUGOIud4PB18=
 All OK. Server matched our pinned cert or public key
 statusCode: 200
 headers: max-age=0; pin-sha256="WoiWRyIOVNa9ihaBciRSC7XHjliYS9VwUGOIud4PB18="; pin-sha256="RRM1dGqnDFsCJXBTHky16vi1obOlCgFFn/yOhI/y+ho="; pin-sha256="k2v657xBsOVe1PQRwOsHsw3bsGT2VzIqz5K+59sNQws="; pin-sha256="K87oWBWM9UZfyddvDfoxL+8lpNyoUB2ptGtn0fv6G2Q="; pin-sha256="IQBnNBEiFuhj+8x6X8XLgh01V9Ic5/V3IRQLNFFc7v4="; pin-sha256="iie1VXtL7HzAMF+/PVPR9xzT80kQxdZeJ+zduCB3uj0="; pin-sha256="LvRiGEjRqfzurezaWuj8Wie2gyHMrW5Q06LspMnox7A="; includeSubDomains
-
 ```
 
 ## Inspector[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#inspector_inspector)
@@ -34369,9 +33342,7 @@ The `inspector` module provides an API for interacting with the V8 inspector.
 It can be accessed using:
 
 ```
-
 const inspector = require('inspector');
-
 ```
 
 ### `inspector.close()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#inspector_inspectorclose)
@@ -34383,9 +33354,7 @@ Deactivate the inspector. Blocks until there are no active connections.
 -   [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) An object to send messages to the remote inspector console.
 
 ```
-
 require('inspector').console.log('a message');
-
 ```
 
 The inspector console does not have API parity with Node.js console.
@@ -34409,7 +33378,6 @@ See the [security warning](https://nodejs.org/dist/v16.13.1/docs/api/all.html#cl
 Return the URL of the active inspector, or `undefined` if there is none.
 
 ```
-
 $ node --inspect -p 'inspector.url()'
 Debugger listening on ws://127.0.0.1:9229/166e272e-7a30-4d09-97ce-f1c012b43c34
 For help see https://nodejs.org/en/docs/inspector
@@ -34422,7 +33390,6 @@ ws://localhost:3000/51cf8d0e-3c36-4c59-8efd-54519839e56a
 
 $ node -p 'inspector.url()'
 undefined
-
 ```
 
 ### `inspector.waitForDebugger()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#inspector_inspectorwaitfordebugger)
@@ -34454,7 +33421,6 @@ Added in: v8.0.0
 Emitted when any notification from the V8 Inspector is received.
 
 ```
-
 session.on('inspectorNotification', (message) => console.log(message.method));
 
 ```
@@ -34472,11 +33438,9 @@ Emitted when an inspector notification is received that has its method field set
 The following snippet installs a listener on the [`'Debugger.paused'`](https://chromedevtools.github.io/devtools-protocol/v8/Debugger#event-paused) event, and prints the reason for program suspension whenever program execution is suspended (through breakpoints, for example):
 
 ```
-
 session.on('Debugger.paused', ({ params }) => {
-console.log(params.hitBreakpoints);
+  console.log(params.hitBreakpoints);
 });
-
 ```
 
 #### `session.connect()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#inspector_sessionconnect)
@@ -34508,10 +33472,8 @@ Added in: v8.0.0
 Posts a message to the inspector back-end. `callback` will be notified when a response is received. `callback` is a function that accepts two optional arguments: error and message-specific result.
 
 ```
-
 session.post('Runtime.evaluate', { expression: '2 + 2' },
-(error, { result }) => console.log(result));
-
+             (error, { result }) => console.log(result));
 ```
 
 The latest version of the V8 inspector protocol is published on the [Chrome DevTools Protocol Viewer](https://chromedevtools.github.io/devtools-protocol/v8/).
@@ -34527,25 +33489,24 @@ Apart from the debugger, various V8 Profilers are available through the DevTools
 Here's an example showing how to use the [CPU Profiler](https://chromedevtools.github.io/devtools-protocol/v8/Profiler):
 
 ```
-
 const inspector = require('inspector');
 const fs = require('fs');
 const session = new inspector.Session();
 session.connect();
 
 session.post('Profiler.enable', () => {
-session.post('Profiler.start', () => {
+  session.post('Profiler.start', () => {
+    
 
+    
     session.post('Profiler.stop', (err, { profile }) => {
-
+      
       if (!err) {
         fs.writeFileSync('./profile.cpuprofile', JSON.stringify(profile));
       }
     });
-
+  });
 });
-});
-
 ```
 
 #### Heap profiler[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#inspector_heap-profiler)
@@ -34553,7 +33514,6 @@ session.post('Profiler.start', () => {
 Here's an example showing how to use the [Heap Profiler](https://chromedevtools.github.io/devtools-protocol/v8/HeapProfiler):
 
 ```
-
 const inspector = require('inspector');
 const fs = require('fs');
 const session = new inspector.Session();
@@ -34563,15 +33523,14 @@ const fd = fs.openSync('profile.heapsnapshot', 'w');
 session.connect();
 
 session.on('HeapProfiler.addHeapSnapshotChunk', (m) => {
-fs.writeSync(fd, m.params.chunk);
+  fs.writeSync(fd, m.params.chunk);
 });
 
 session.post('HeapProfiler.takeHeapSnapshot', null, (err, r) => {
-console.log('HeapProfiler.takeHeapSnapshot done:', err, r);
-session.disconnect();
-fs.closeSync(fd);
+  console.log('HeapProfiler.takeHeapSnapshot done:', err, r);
+  session.disconnect();
+  fs.closeSync(fd);
 });
-
 ```
 
 ## Internationalization support[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#intl_internationalization-support)
@@ -34763,7 +33722,6 @@ This option makes the resulting binary link against the ICU library statically, 
 Functionalities that only require the ICU library itself, such as [`String.prototype.normalize()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/normalize) and the [WHATWG URL parser](https://nodejs.org/dist/v16.13.1/docs/api/all.html#url_the-whatwg-url-api), are fully supported under `small-icu`. Features that require ICU locale data in addition, such as [`Intl.DateTimeFormat`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat), generally only work with the English locale:
 
 ```
-
 const january = new Date(9e8);
 const english = new Intl.DateTimeFormat('en', { month: 'long' });
 const spanish = new Intl.DateTimeFormat('es', { month: 'long' });
@@ -34772,7 +33730,7 @@ console.log(english.format(january));
 
 console.log(spanish.format(january));
 
-````
+```
 
 This mode provides a balance between features and binary size.
 
@@ -34781,17 +33739,17 @@ This mode provides a balance between features and binary size.
 If the `small-icu` option is used, one can still provide additional locale data at runtime so that the JS methods would work for all ICU locales. Assuming the data file is stored at `/some/directory`, it can be made available to ICU through either:
 
 -   The [`NODE_ICU_DATA`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#cli_node_icu_datafile) environment variable:
-
+    
     ```
     env NODE_ICU_DATA=/some/directory node
     ```
-
+    
 -   The [`--icu-data-dir`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#cli_--icu-data-dirfile) CLI parameter:
-
+    
     ```
     node --icu-data-dir=/some/directory
     ```
-
+    
 
 (If both are specified, the `--icu-data-dir` CLI parameter takes precedence.)
 
@@ -34807,34 +33765,28 @@ This option makes the resulting binary link against ICU statically and include a
 
 To verify that ICU is enabled at all (`system-icu`, `small-icu`, or `full-icu`), simply checking the existence of `Intl` should suffice:
 
-````
-
+```
 const hasICU = typeof Intl === 'object';
-
 ```
 
 Alternatively, checking for `process.versions.icu`, a property defined only when ICU is enabled, works too:
 
 ```
-
 const hasICU = typeof process.versions.icu === 'string';
-
 ```
 
 To check for support for a non-English locale (i.e. `full-icu` or `system-icu`), [`Intl.DateTimeFormat`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat) can be a good distinguishing factor:
 
 ```
-
 const hasFullICU = (() => {
-try {
-const january = new Date(9e8);
-const spanish = new Intl.DateTimeFormat('es', { month: 'long' });
-return spanish.format(january) === 'enero';
-} catch (err) {
-return false;
-}
+  try {
+    const january = new Date(9e8);
+    const spanish = new Intl.DateTimeFormat('es', { month: 'long' });
+    return spanish.format(january) === 'enero';
+  } catch (err) {
+    return false;
+  }
 })();
-
 ```
 
 For more verbose tests for `Intl` support, the following resources may be found to be helpful:
@@ -34847,10 +33799,8 @@ For more verbose tests for `Intl` support, the following resources may be found 
 In the Node.js module system, each file is treated as a separate module. For example, consider a file named `foo.js`:
 
 ```
-
 const circle = require('./circle.js');
 console.log(`The area of a circle of radius 4 is ${circle.area(4)}`);
-
 ```
 
 On the first line, `foo.js` loads the module `circle.js` that is in the same directory as `foo.js`.
@@ -34858,13 +33808,11 @@ On the first line, `foo.js` loads the module `circle.js` that is in the same dir
 Here are the contents of `circle.js`:
 
 ```
-
 const { PI } = Math;
 
-exports.area = (r) => PI \* r \*\* 2;
+exports.area = (r) => PI * r ** 2;
 
-exports.circumference = (r) => 2 _ PI _ r;
-
+exports.circumference = (r) => 2 * PI * r;
 ```
 
 The module `circle.js` has exported the functions `area()` and `circumference()`. Functions and objects are added to the root of a module by specifying additional properties on the special `exports` object.
@@ -34876,11 +33824,9 @@ The `module.exports` property can be assigned a new value (such as a function or
 Below, `bar.js` makes use of the `square` module, which exports a Square class:
 
 ```
-
 const Square = require('./square.js');
 const mySquare = new Square(2);
 console.log(`The area of mySquare is ${mySquare.area()}`);
-
 ```
 
 The `square` module is defined in `square.js`:
@@ -34888,15 +33834,14 @@ The `square` module is defined in `square.js`:
 ```
 
 module.exports = class Square {
-constructor(width) {
-this.width = width;
-}
+  constructor(width) {
+    this.width = width;
+  }
 
-area() {
-return this.width \*\* 2;
-}
+  area() {
+    return this.width ** 2;
+  }
 };
-
 ```
 
 The module system is implemented in the `require('module')` module.
@@ -35073,38 +34018,32 @@ Consider this situation:
 `a.js`:
 
 ```
-
 console.log('a starting');
 exports.done = false;
 const b = require('./b.js');
 console.log('in a, b.done = %j', b.done);
 exports.done = true;
 console.log('a done');
-
 ```
 
 `b.js`:
 
 ```
-
 console.log('b starting');
 exports.done = false;
 const a = require('./a.js');
 console.log('in b, a.done = %j', a.done);
 exports.done = true;
 console.log('b done');
-
 ```
 
 `main.js`:
 
 ```
-
 console.log('main starting');
 const a = require('./a.js');
 const b = require('./b.js');
 console.log('in main, a.done = %j, b.done = %j', a.done, b.done);
-
 ```
 
 When `main.js` loads `a.js`, then `a.js` in turn loads `b.js`. At that point, `b.js` tries to load `a.js`. In order to prevent an infinite loop, an **unfinished copy** of the `a.js` exports object is returned to the `b.js` module. `b.js` then finishes loading, and its `exports` object is provided to the `a.js` module.
@@ -35112,7 +34051,6 @@ When `main.js` loads `a.js`, then `a.js` in turn loads `b.js`. At that point, `b
 By the time `main.js` has loaded both modules, they're both finished. The output of this program would thus be:
 
 ```
-
 $ node main.js
 main starting
 a starting
@@ -35122,7 +34060,6 @@ b done
 in a, b.done = true
 a done
 in main, a.done = true, b.done = true
-
 ```
 
 Careful planning is required to allow cyclic module dependencies to work correctly within an application.
@@ -35148,10 +34085,8 @@ It is convenient to organize programs and libraries into self-contained director
 The first is to create a [`package.json`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_nodejs-packagejson-field-definitions) file in the root of the folder, which specifies a `main` module. An example [`package.json`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_nodejs-packagejson-field-definitions) file might look like this:
 
 ```
-
 { "name" : "some-library",
-"main" : "./lib/some-library.js" }
-
+  "main" : "./lib/some-library.js" }
 ```
 
 If this was in a folder at `./some-library`, then `require('./some-library')` would attempt to load `./some-library/lib/some-library.js`.
@@ -35166,9 +34101,7 @@ If there is no [`package.json`](https://nodejs.org/dist/v16.13.1/docs/api/all.ht
 If these attempts fail, then Node.js will report the entire module as missing with the default error:
 
 ```
-
 Error: Cannot find module 'some-library'
-
 ```
 
 ### Loading from `node_modules` folders[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#modules_loading-from-node_modules-folders)
@@ -35215,11 +34148,9 @@ It is strongly encouraged to place dependencies in the local `node_modules` fold
 Before a module's code is executed, Node.js will wrap it with a function wrapper that looks like the following:
 
 ```
-
-(function(exports, require, module, **filename, **dirname) {
+(function(exports, require, module, __filename, __dirname) {
 
 });
-
 ```
 
 By doing this, Node.js achieves a few things:
@@ -35242,11 +34173,9 @@ The directory name of the current module. This is the same as the [`path.dirname
 Example: running `node example.js` from `/Users/mjr`
 
 ```
+console.log(__dirname);
 
-console.log(\_\_dirname);
-
-console.log(path.dirname(\_\_filename));
-
+console.log(path.dirname(__filename));
 ```
 
 #### `__filename`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#modules___filename)
@@ -35266,11 +34195,9 @@ Examples:
 Running `node example.js` from `/Users/mjr`
 
 ```
+console.log(__filename);
 
-console.log(\_\_filename);
-
-console.log(\_\_dirname);
-
+console.log(__dirname);
 ```
 
 Given two modules: `a` and `b`, where `b` is a dependency of `a` and there is a directory structure of:
@@ -35307,12 +34234,14 @@ Used to import modules, `JSON`, and local files. Modules can be imported from `n
 
 ```
 
+
 const myLocalModule = require('./path/myLocalModule');
+
 
 const jsonData = require('./path/filename.json');
 
-const crypto = require('crypto');
 
+const crypto = require('crypto');
 ```
 
 ##### `require.cache`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#modules_requirecache)
@@ -35326,7 +34255,6 @@ Modules are cached in this object when they are required. By deleting a key valu
 Adding or replacing entries is also possible. This cache is checked before native modules and if a name matching a native module is added to the cache, only `node:`\-prefixed require calls are going to receive the native module. Use with care!
 
 ```
-
 const assert = require('assert');
 const realFs = require('fs');
 
@@ -35335,7 +34263,6 @@ require.cache.fs = { exports: fakeFs };
 
 assert.strictEqual(require('fs'), fakeFs);
 assert.strictEqual(require('node:fs'), realFs);
-
 ```
 
 ##### `require.extensions`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#modules_requireextensions)
@@ -35349,9 +34276,7 @@ Instruct `require` on how to handle certain file extensions.
 Process files with the extension `.sjs` as `.js`:
 
 ```
-
 require.extensions['.sjs'] = require.extensions['.js'];
-
 ```
 
 **Deprecated.** In the past, this list has been used to load non-JavaScript modules into Node.js by compiling them on-demand. However, in practice, there are much better ways to do this, such as loading modules via some other Node.js program, or compiling them to JavaScript ahead of time.
@@ -35369,32 +34294,26 @@ The `Module` object representing the entry script loaded when the Node.js proces
 In `entry.js` script:
 
 ```
-
 console.log(require.main);
-
 ```
 
 ```
-
 node entry.js
-
 ```
 
 ```
-
 Module {
-id: '.',
-path: '/absolute/path/to',
-exports: {},
-filename: '/absolute/path/to/entry.js',
-loaded: false,
-children: [],
-paths:
-[ '/absolute/path/to/node_modules',
-'/absolute/path/node_modules',
-'/absolute/node_modules',
-'/node_modules' ] }
-
+  id: '.',
+  path: '/absolute/path/to',
+  exports: {},
+  filename: '/absolute/path/to/entry.js',
+  loaded: false,
+  children: [],
+  paths:
+   [ '/absolute/path/to/node_modules',
+     '/absolute/path/node_modules',
+     '/absolute/node_modules',
+     '/node_modules' ] }
 ```
 
 ##### `require.resolve(request[, options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#modules_requireresolverequest-options)
@@ -35444,26 +34363,24 @@ The `module.exports` object is created by the `Module` system. Sometimes this is
 For example, suppose we were making a module called `a.js`:
 
 ```
-
 const EventEmitter = require('events');
 
 module.exports = new EventEmitter();
 
-setTimeout(() => {
-module.exports.emit('ready');
-}, 1000);
 
+
+setTimeout(() => {
+  module.exports.emit('ready');
+}, 1000);
 ```
 
 Then in another file we could do:
 
 ```
-
 const a = require('./a');
 a.on('ready', () => {
-console.log('module "a" is ready');
+  console.log('module "a" is ready');
 });
-
 ```
 
 Assignment to `module.exports` must be done immediately. It cannot be done in any callbacks. This does not work:
@@ -35471,20 +34388,16 @@ Assignment to `module.exports` must be done immediately. It cannot be done in an
 `x.js`:
 
 ```
-
 setTimeout(() => {
-module.exports = { a: 'hello' };
+  module.exports = { a: 'hello' };
 }, 0);
-
 ```
 
 `y.js`:
 
 ```
-
 const x = require('./x');
 console.log(x.a);
-
 ```
 
 ##### `exports` shortcut[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#modules_exports-shortcut)
@@ -35496,40 +34409,35 @@ The `exports` variable is available within a module's file-level scope, and is a
 It allows a shortcut, so that `module.exports.f = ...` can be written more succinctly as `exports.f = ...`. However, be aware that like any variable, if a new value is assigned to `exports`, it is no longer bound to `module.exports`:
 
 ```
-
-module.exports.hello = true;
-exports = { hello: false };
-
+module.exports.hello = true; 
+exports = { hello: false };  
 ```
 
 When the `module.exports` property is being completely replaced by a new object, it is common to also reassign `exports`:
 
 ```
-
 module.exports = exports = function Constructor() {
-
+  
 };
-
 ```
 
 To illustrate the behavior, imagine this hypothetical implementation of `require()`, which is quite similar to what is actually done by `require()`:
 
 ```
-
 function require() {
-const module = { exports: {} };
-((module, exports) => {
-
+  const module = { exports: {} };
+  ((module, exports) => {
+    
     function someFunc() {}
     exports = someFunc;
-
-
+    
+    
     module.exports = someFunc;
-
-})(module, module.exports);
-return module.exports;
+    
+    
+  })(module, module.exports);
+  return module.exports;
 }
-
 ```
 
 #### `module.filename`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#modules_modulefilename)
@@ -35626,11 +34534,10 @@ The following example of an ES module exports a function:
 ```
 
 function addTwo(num) {
-return num + 2;
+  return num + 2;
 }
 
 export { addTwo };
-
 ```
 
 The following example of an ES module imports the function from `addTwo.mjs`:
@@ -35639,8 +34546,8 @@ The following example of an ES module imports the function from `addTwo.mjs`:
 
 import { addTwo } from './addTwo.mjs';
 
-console.log(addTwo(4));
 
+console.log(addTwo(4));
 ```
 
 Node.js fully supports ECMAScript modules as they are currently specified and provides interoperability between them and its original module format, [CommonJS](https://nodejs.org/dist/v16.13.1/docs/api/modules.html).
@@ -35662,11 +34569,11 @@ The _specifier_ of an `import` statement is the string after the `from` keyword,
 There are three types of specifiers:
 
 -   _Relative specifiers_ like `'./startup.js'` or `'../config.mjs'`. They refer to a path relative to the location of the importing file. _The file extension is always necessary for these._
-
+    
 -   _Bare specifiers_ like `'some-package'` or `'some-package/shuffle'`. They can refer to the main entry point of a package by the package name, or a specific feature module within a package prefixed by the package name as per the examples respectively. _Including the file extension is only necessary for packages without an [`"exports"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_exports) field._
-
+    
 -   _Absolute specifiers_ like `'file:///opt/nodejs/config.js'`. They refer directly and explicitly to a full path.
-
+    
 
 Bare specifier resolutions are handled by the [Node.js module resolution algorithm](https://nodejs.org/dist/v16.13.1/docs/api/all.html#esm_resolver-algorithm-specification). All other specifier resolutions are always only resolved with the standard relative [URL](https://url.spec.whatwg.org/) resolution semantics.
 
@@ -35691,10 +34598,8 @@ ES modules are resolved and cached as URLs. This means that files containing spe
 Modules are loaded multiple times if the `import` specifier used to resolve them has a different query or fragment.
 
 ```
-
-import './foo.mjs?query=1';
-import './foo.mjs?query=2';
-
+import './foo.mjs?query=1'; 
+import './foo.mjs?query=2'; 
 ```
 
 The volume root may be referenced via `/`, `//` or `file:///`. Given the differences between [URL](https://url.spec.whatwg.org/) and path resolution (such as percent encoding details), it is recommended to use [url.pathToFileURL](https://nodejs.org/dist/v16.13.1/docs/api/all.html#url_urlpathtofileurlpath) when importing a path.
@@ -35712,10 +34617,8 @@ Added in: v12.10.0
 `data:` URLs only resolve [_Bare specifiers_](https://nodejs.org/dist/v16.13.1/docs/api/all.html#esm_terminology) for builtin modules and [_Absolute specifiers_](https://nodejs.org/dist/v16.13.1/docs/api/all.html#esm_terminology). Resolving [_Relative specifiers_](https://nodejs.org/dist/v16.13.1/docs/api/all.html#esm_terminology) does not work because `data:` is not a [special scheme](https://url.spec.whatwg.org/#special-scheme). For example, attempting to load `./foo` from `data:text/javascript,import "./foo";` fails to resolve because there is no concept of relative resolution for `data:` URLs. An example of a `data:` URLs being used is:
 
 ```
-
 import 'data:text/javascript,console.log("hello!");';
-import \_ from 'data:application/json,"world!"';
-
+import _ from 'data:application/json,"world!"';
 ```
 
 ##### `node:` Imports[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#esm_node-imports)
@@ -35723,9 +34626,7 @@ import \_ from 'data:application/json,"world!"';
 `node:` URLs are supported as an alternative means to load Node.js builtin modules. This URL scheme allows for builtin modules to be referenced by valid absolute URL strings.
 
 ```
-
 import fs from 'node:fs/promises';
-
 ```
 
 ### Builtin modules[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#esm_builtin-modules)
@@ -35733,27 +34634,22 @@ import fs from 'node:fs/promises';
 [Core modules](https://nodejs.org/dist/v16.13.1/docs/api/all.html#modules_core-modules) provide named exports of their public API. A default export is also provided which is the value of the CommonJS exports. The default export can be used for, among other things, modifying the named exports. Named exports of builtin modules are updated only by calling [`module.syncBuiltinESMExports()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#module_modulesyncbuiltinesmexports).
 
 ```
-
 import EventEmitter from 'events';
 const e = new EventEmitter();
-
 ```
 
 ```
-
 import { readFile } from 'fs';
 readFile('./foo.txt', (err, source) => {
-if (err) {
-console.error(err);
-} else {
-console.log(source);
-}
+  if (err) {
+    console.error(err);
+  } else {
+    console.log(source);
+  }
 });
-
 ```
 
 ```
-
 import fs, { readFileSync } from 'fs';
 import { syncBuiltinESMExports } from 'module';
 import { Buffer } from 'buffer';
@@ -35762,7 +34658,6 @@ fs.readFileSync = () => Buffer.from('Hello, ESM');
 syncBuiltinESMExports();
 
 fs.readFileSync === readFileSync;
-
 ```
 
 ### `import()` expressions[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#esm_import-expressions)
@@ -35784,10 +34679,8 @@ This is defined exactly the same as it is in browsers providing the URL of the c
 This enables useful patterns such as relative file loading:
 
 ```
-
 import { readFileSync } from 'fs';
 const buffer = readFileSync(new URL('./data.proto', import.meta.url));
-
 ```
 
 #### `import.meta.resolve(specifier[, parent])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#esm_importmetaresolvespecifier-parent)
@@ -35801,17 +34694,13 @@ This feature is only available with the `--experimental-import-meta-resolve` com
 Provides a module-relative resolution function scoped to each module, returning the URL string.
 
 ```
-
 const dependencyAsset = await import.meta.resolve('component-lib/asset.css');
-
 ```
 
 `import.meta.resolve` also accepts a second argument which is the parent module from which to resolve from:
 
 ```
-
 await import.meta.resolve('./dep', import.meta.url);
-
 ```
 
 This function is asynchronous because the ES module resolver in Node.js is allowed to be asynchronous.
@@ -35837,13 +34726,15 @@ CommonJS modules consist of a `module.exports` object which can be of any type.
 When importing a CommonJS module, it can be reliably imported using the ES module default import or its corresponding sugar syntax:
 
 ```
-
 import { default as cjs } from 'cjs';
+
+
 
 import cjsSugar from 'cjs';
 
 console.log(cjs);
 console.log(cjs === cjsSugar);
+
 
 ```
 
@@ -35852,10 +34743,10 @@ The ECMAScript Module Namespace representation of a CommonJS module is always a 
 This Module Namespace Exotic Object can be directly observed either when using `import * as m from 'cjs'` or a dynamic import:
 
 ```
-
-import \* as m from 'cjs';
+import * as m from 'cjs';
 console.log(m);
 console.log(m === await import('cjs'));
+
 
 ```
 
@@ -35866,22 +34757,21 @@ For example, consider a CommonJS module written:
 ```
 
 exports.name = 'exported';
-
 ```
 
 The preceding module supports named imports in ES modules:
 
 ```
-
 import { name } from './cjs.cjs';
 console.log(name);
+
 
 import cjs from './cjs.cjs';
 console.log(cjs);
 
-import \* as m from './cjs.cjs';
-console.log(m);
 
+import * as m from './cjs.cjs';
+console.log(m);
 ```
 
 As can be seen from the last example of the Module Namespace Exotic Object being logged, the `name` export is copied off of the `module.exports` object and set directly on the ES module namespace when the module is imported.
@@ -35913,10 +34803,8 @@ JSON imports are still experimental and only supported via the `--experimental-j
 Local JSON files can be loaded relative to `import.meta.url` with `fs` directly:
 
 ```
-
 import { readFile } from 'fs/promises';
 const json = JSON.parse(await readFile(new URL('./dat.json', import.meta.url)));
-
 ```
 
 Alternatively `module.createRequire()` can be used.
@@ -35956,18 +34844,14 @@ When the `--experimental-json-modules` flag is included, both the `commonjs` and
 Assuming an `index.mjs` with
 
 ```
-
 import packageConfig from './package.json';
-
 ```
 
 The `--experimental-json-modules` flag is needed for the module to work.
 
 ```
-
-node index.mjs
-node --experimental-json-modules index.mjs
-
+node index.mjs 
+node --experimental-json-modules index.mjs 
 ```
 
 ### Wasm modules[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#esm_wasm-modules)
@@ -35979,18 +34863,14 @@ This integration is in line with the [ES Module Integration Proposal for Web Ass
 For example, an `index.mjs` containing:
 
 ```
-
-import \* as M from './module.wasm';
+import * as M from './module.wasm';
 console.log(M);
-
 ```
 
 executed under:
 
 ```
-
 node --experimental-wasm-modules index.mjs
-
 ```
 
 would provide the exports interface for the instantiation of `module.wasm`.
@@ -36002,25 +34882,19 @@ The `await` keyword may be used in the top level (outside of async functions) wi
 Assuming an `a.mjs` with
 
 ```
-
 export const five = await Promise.resolve(5);
-
 ```
 
 And a `b.mjs` with
 
 ```
-
 import { five } from './a.mjs';
 
-console.log(five);
-
+console.log(five); 
 ```
 
 ```
-
-node b.mjs
-
+node b.mjs 
 ```
 
 ### Loaders[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#esm_loaders)
@@ -36057,28 +34931,27 @@ The current [package exports conditions](https://nodejs.org/dist/v16.13.1/docs/a
 ```
 
 export async function resolve(specifier, context, defaultResolve) {
-const { parentURL = null } = context;
-if (Math.random() > 0.5) {
-
+  const { parentURL = null } = context;
+  if (Math.random() > 0.5) { 
+    
+    
     return {
       url: parentURL ?
         new URL(specifier, parentURL).href :
         new URL(specifier).href,
     };
-
-}
-if (Math.random() < 0.5) {
-
+  }
+  if (Math.random() < 0.5) { 
+    
+    
     return defaultResolve(specifier, {
       ...context,
       conditions: [...context.conditions, 'another-condition'],
     });
-
+  }
+  
+  return defaultResolve(specifier, context, defaultResolve);
 }
-
-return defaultResolve(specifier, context, defaultResolve);
-}
-
 ```
 
 ##### `load(url, context, defaultLoad)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#esm_loadurl-context-defaultload)
@@ -36151,19 +35024,17 @@ The `load` hook provides a way to define a custom method for retrieving the sour
 ```
 
 export async function load(url, context, defaultLoad) {
-const { format } = context;
-if (Math.random() > 0.5) {
-
+  const { format } = context;
+  if (Math.random() > 0.5) { 
+    
     return {
       format,
       source: '...',
     };
-
+  }
+  
+  return defaultLoad(url, context, defaultLoad);
 }
-
-return defaultLoad(url, context, defaultLoad);
-}
-
 ```
 
 In a more advanced scenario, this can also be used to transform an unsupported source to a supported one (see [Examples](https://nodejs.org/dist/v16.13.1/docs/api/all.html#esm_examples) below).
@@ -36185,7 +35056,7 @@ If the code needs more advanced `require` features, it has to construct its own 
 ```
 
 export function globalPreload() {
-return `\
+  return `\
 globalThis.someInjectedProperty = 42;
 console.log('I just set some globals!');
 
@@ -36196,7 +35067,6 @@ const require = createRequire(cwd() + '/<preload>');
 // [...]
 `;
 }
-
 ```
 
 #### Examples[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#esm_examples)
@@ -36212,41 +35082,46 @@ In current Node.js, specifiers starting with `https://` are unsupported. The loa
 import { get } from 'https';
 
 export function resolve(specifier, context, defaultResolve) {
-const { parentURL = null } = context;
+  const { parentURL = null } = context;
 
-if (specifier.startsWith('https://')) {
-return {
-url: specifier
-};
-} else if (parentURL && parentURL.startsWith('https://')) {
-return {
-url: new URL(specifier, parentURL).href
-};
-}
+  
+  
+  
+  if (specifier.startsWith('https://')) {
+    return {
+      url: specifier
+    };
+  } else if (parentURL && parentURL.startsWith('https://')) {
+    return {
+      url: new URL(specifier, parentURL).href
+    };
+  }
 
-return defaultResolve(specifier, context, defaultResolve);
+  
+  return defaultResolve(specifier, context, defaultResolve);
 }
 
 export function load(url, context, defaultLoad) {
-
-if (url.startsWith('https://')) {
-return new Promise((resolve, reject) => {
-get(url, (res) => {
-let data = '';
-res.on('data', (chunk) => data += chunk);
-res.on('end', () => resolve({
-
+  
+  
+  if (url.startsWith('https://')) {
+    return new Promise((resolve, reject) => {
+      get(url, (res) => {
+        let data = '';
+        res.on('data', (chunk) => data += chunk);
+        res.on('end', () => resolve({
+          
+          
           format: 'module',
           source: data,
         }));
       }).on('error', (err) => reject(err));
     });
+  }
 
+  
+  return defaultLoad(url, context, defaultLoad);
 }
-
-return defaultLoad(url, context, defaultLoad);
-}
-
 ```
 
 ```
@@ -36254,7 +35129,6 @@ return defaultLoad(url, context, defaultLoad);
 import { VERSION } from 'https://coffeescript.org/browser-compiler-modern/coffeescript.js';
 
 console.log(VERSION);
-
 ```
 
 With the preceding loader, running `node --experimental-loader ./https-loader.mjs ./main.mjs` prints the current version of CoffeeScript per the module at the URL in `main.mjs`.
@@ -36275,37 +35149,48 @@ import CoffeeScript from 'coffeescript';
 
 const baseURL = pathToFileURL(`${cwd()}/`).href;
 
+
 const extensionsRegex = /\.coffee$|\.litcoffee$|\.coffee\.md$/;
 
 export async function resolve(specifier, context, defaultResolve) {
-const { parentURL = baseURL } = context;
+  const { parentURL = baseURL } = context;
 
-if (extensionsRegex.test(specifier)) {
-return {
-url: new URL(specifier, parentURL).href
-};
-}
+  
+  
+  if (extensionsRegex.test(specifier)) {
+    return {
+      url: new URL(specifier, parentURL).href
+    };
+  }
 
-return defaultResolve(specifier, context, defaultResolve);
+  
+  return defaultResolve(specifier, context, defaultResolve);
 }
 
 export async function load(url, context, defaultLoad) {
-
-if (extensionsRegex.test(url)) {
-
+  
+  
+  
+  
+  if (extensionsRegex.test(url)) {
+    
+    
+    
+    
+    
     const format = await getPackageType(url);
-
-
-
-
-
+    
+    
+    
+    
+    
     if (format === 'commonjs') {
       return { format };
     }
 
     const { source: rawSource } = await defaultLoad(url, { format });
-
-
+    
+    
     const transformedSource = CoffeeScript.compile(rawSource.toString(), {
       bare: true,
       filename: url,
@@ -36315,33 +35200,40 @@ if (extensionsRegex.test(url)) {
       format,
       source: transformedSource,
     };
+  }
 
-}
-
-return defaultLoad(url, context, defaultLoad);
+  
+  return defaultLoad(url, context, defaultLoad);
 }
 
 async function getPackageType(url) {
-
-const isFilePath = !!extname(url);
-
-const dir = isFilePath ?
-dirname(fileURLToPath(url)) :
-url;
-
-const packagePath = resolvePath(dir, 'package.json');
-
-const type = await readFile(packagePath, { encoding: 'utf8' })
-.then((filestring) => JSON.parse(filestring).type)
-.catch((err) => {
-if (err?.code !== 'ENOENT') console.error(err);
-});
-
-if (type) return type;
-
-return dir.length > 1 && getPackageType(resolvePath(dir, '..'));
+  
+  
+  
+  
+  
+  
+  
+  const isFilePath = !!extname(url);
+  
+  const dir = isFilePath ?
+    dirname(fileURLToPath(url)) :
+    url;
+  
+  
+  const packagePath = resolvePath(dir, 'package.json');
+  
+  const type = await readFile(packagePath, { encoding: 'utf8' })
+    .then((filestring) => JSON.parse(filestring).type)
+    .catch((err) => {
+      if (err?.code !== 'ENOENT') console.error(err);
+    });
+  
+  if (type) return type;
+  
+  
+  return dir.length > 1 && getPackageType(resolvePath(dir, '..'));
 }
-
 ```
 
 ```
@@ -36351,13 +35243,11 @@ console.log scream 'hello, world'
 
 import { version } from 'process'
 console.log "Brought to you by Node.js version #{version}"
-
 ```
 
 ```
 
 export scream = (str) -> str.toUpperCase()
-
 ```
 
 With the preceding loader, running `node --experimental-loader ./coffeescript-loader.mjs main.coffee` causes `main.coffee` to be turned into JavaScript after its source code is loaded from disk but before Node.js executes it; and so on for any `.coffee`, `.litcoffee` or `.coffee.md` files referenced via `import` statements of any loaded file.
@@ -36618,14 +35508,12 @@ The current specifier resolution does not support all default behavior of the Co
 The `--experimental-specifier-resolution=[mode]` flag can be used to customize the extension resolution algorithm. The default mode is `explicit`, which requires the full path to a module be provided to the loader. To enable the automatic extension resolution and importing from directories that include an index file use the `node` mode.
 
 ```
-
 $ node index.mjs
 success!
-$ node index
+$ node index 
 Error: Cannot find module
 $ node --experimental-specifier-resolution=node index
 success!
-
 ```
 
 ## Modules: `module` API[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#module_modules-module-api)
@@ -36650,8 +35538,8 @@ A list of the names of all modules provided by Node.js. Can be used to verify if
 
 ```
 
-import { builtinModules as builtin } from 'module';
 
+import { builtinModules as builtin } from 'module';
 ```
 
 #### `module.createRequire(filename)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#module_modulecreaterequirefilename)
@@ -36662,12 +35550,11 @@ Added in: v12.2.0
 -   Returns: [<require>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#modules_requireid) Require function
 
 ```
-
 import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 
-const siblingModule = require('./sibling-module');
 
+const siblingModule = require('./sibling-module');
 ```
 
 #### `module.syncBuiltinESMExports()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#module_modulesyncbuiltinesmexports)
@@ -36677,7 +35564,6 @@ Added in: v12.12.0
 The `module.syncBuiltinESMExports()` method updates all the live bindings for builtin [ES Modules](https://nodejs.org/dist/v16.13.1/docs/api/esm.html) to match the properties of the [CommonJS](https://nodejs.org/dist/v16.13.1/docs/api/modules.html) exports. It does not add or remove exported names from the [ES Modules](https://nodejs.org/dist/v16.13.1/docs/api/esm.html).
 
 ```
-
 const fs = require('fs');
 const assert = require('assert');
 const { syncBuiltinESMExports } = require('module');
@@ -36687,7 +35573,7 @@ fs.readFile = newAPI;
 delete fs.readFileSync;
 
 function newAPI() {
-
+  
 }
 
 fs.newAPI = newAPI;
@@ -36695,16 +35581,15 @@ fs.newAPI = newAPI;
 syncBuiltinESMExports();
 
 import('fs').then((esmFS) => {
-
-assert.strictEqual(esmFS.readFile, newAPI);
-
-assert.strictEqual('readFileSync' in fs, false);
-
-assert.strictEqual('readFileSync' in esmFS, true);
-
-assert.strictEqual(esmFS.newAPI, undefined);
+  
+  assert.strictEqual(esmFS.readFile, newAPI);
+  
+  assert.strictEqual('readFileSync' in fs, false);
+  
+  assert.strictEqual('readFileSync' in esmFS, true);
+  
+  assert.strictEqual(esmFS.newAPI, undefined);
 });
-
 ```
 
 ### Source map v3 support[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#module_source-map-v3-support)
@@ -36717,8 +35602,8 @@ To enable source map parsing, Node.js must be run with the flag [`--enable-sourc
 
 ```
 
-import { findSourceMap, SourceMap } from 'module';
 
+import { findSourceMap, SourceMap } from 'module';
 ```
 
 #### `module.findSourceMap(path)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#module_modulefindsourcemappath)
@@ -36784,20 +35669,20 @@ This page provides guidance for package authors writing `package.json` files alo
 Node.js will treat the following as [ES modules](https://nodejs.org/dist/v16.13.1/docs/api/esm.html) when passed to `node` as the initial input, or when referenced by `import` statements within ES module code:
 
 -   Files ending in `.mjs`.
-
+    
 -   Files ending in `.js` when the nearest parent `package.json` file contains a top-level [`"type"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_type) field with a value of `"module"`.
-
+    
 -   Strings passed in as an argument to `--eval`, or piped to `node` via `STDIN`, with the flag `--input-type=module`.
-
+    
 
 Node.js will treat as [CommonJS](https://nodejs.org/dist/v16.13.1/docs/api/modules.html) all other forms of input, such as `.js` files where the nearest parent `package.json` file contains no top-level `"type"` field, or string input without the flag `--input-type`. This behavior is to preserve backward compatibility. However, now that Node.js supports both CommonJS and ES modules, it is best to be explicit whenever possible. Node.js will treat the following as CommonJS when passed to `node` as the initial input, or when referenced by `import` statements within ES module code:
 
 -   Files ending in `.cjs`.
-
+    
 -   Files ending in `.js` when the nearest parent `package.json` file contains a top-level field [`"type"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_type) with a value of `"commonjs"`.
-
+    
 -   Strings passed in as an argument to `--eval` or `--print`, or piped to `node` via `STDIN`, with the flag `--input-type=commonjs`.
-
+    
 
 Package authors should include the [`"type"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_type) field, even in packages where all sources are CommonJS. Being explicit about the `type` of the package will future-proof the package in case the default type of Node.js ever changes, and it will also make things easier for build tools and loaders to determine how the files in the package should be interpreted.
 
@@ -36811,9 +35696,15 @@ The `"type"` field applies not only to initial entry points (`node my-app.js`) b
 
 ```
 
+
+
 import './startup/init.js';
 
+
+
 import 'commonjs-package';
+
+
 
 import './node_modules/commonjs-package/index.js';
 
@@ -36824,19 +35715,18 @@ Files ending with `.mjs` are always loaded as [ES modules](https://nodejs.org/di
 Files ending with `.cjs` are always loaded as [CommonJS](https://nodejs.org/dist/v16.13.1/docs/api/modules.html) regardless of the nearest parent `package.json`.
 
 ```
-
 import './legacy-file.cjs';
 
-import 'commonjs-package/src/index.mjs';
 
+import 'commonjs-package/src/index.mjs';
 ```
 
 The `.mjs` and `.cjs` extensions can be used to mix types within the same package:
 
 -   Within a `"type": "module"` package, Node.js can be instructed to interpret a particular file as [CommonJS](https://nodejs.org/dist/v16.13.1/docs/api/modules.html) by naming it with a `.cjs` extension (since both `.js` and `.mjs` files are treated as ES modules within a `"module"` package).
-
+    
 -   Within a `"type": "commonjs"` package, Node.js can be instructed to interpret a particular file as an [ES module](https://nodejs.org/dist/v16.13.1/docs/api/esm.html) by naming it with an `.mjs` extension (since both `.js` and `.cjs` files are treated as CommonJS within a `"commonjs"` package).
-
+    
 
 #### `--input-type` flag[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_--input-type-flag)
 
@@ -36845,11 +35735,9 @@ Added in: v12.0.0
 Strings passed in as an argument to `--eval` (or `-e`), or piped to `node` via `STDIN`, are treated as [ES modules](https://nodejs.org/dist/v16.13.1/docs/api/esm.html) when the `--input-type=module` flag is set.
 
 ```
-
 node --input-type=module --eval "import { sep } from 'path'; console.log(sep);"
 
 echo "import { sep } from 'path'; console.log(sep);" | node --input-type=module
-
 ```
 
 For completeness there is also `--input-type=commonjs`, for explicitly running string input as CommonJS. This is the default behavior if `--input-type` is unspecified.
@@ -36875,38 +35763,34 @@ If both [`"exports"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#package
 To make the introduction of [`"exports"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_exports) non-breaking, ensure that every previously supported entry point is exported. It is best to explicitly specify entry points so that the package’s public API is well-defined. For example, a project that previous exported `main`, `lib`, `feature`, and the `package.json` could use the following `package.exports`:
 
 ```
-
 {
-"name": "my-mod",
-"exports": {
-".": "./lib/index.js",
-"./lib": "./lib/index.js",
-"./lib/index": "./lib/index.js",
-"./lib/index.js": "./lib/index.js",
-"./feature": "./feature/index.js",
-"./feature/index.js": "./feature/index.js",
-"./package.json": "./package.json"
+  "name": "my-mod",
+  "exports": {
+    ".": "./lib/index.js",
+    "./lib": "./lib/index.js",
+    "./lib/index": "./lib/index.js",
+    "./lib/index.js": "./lib/index.js",
+    "./feature": "./feature/index.js",
+    "./feature/index.js": "./feature/index.js",
+    "./package.json": "./package.json"
+  }
 }
-}
-
 ```
 
 Alternatively a project could choose to export entire folders:
 
 ```
-
 {
-"name": "my-mod",
-"exports": {
-".": "./lib/index.js",
-"./lib": "./lib/index.js",
-"./lib/_": "./lib/_.js",
-"./feature": "./feature/index.js",
-"./feature/_": "./feature/_.js",
-"./package.json": "./package.json"
+  "name": "my-mod",
+  "exports": {
+    ".": "./lib/index.js",
+    "./lib": "./lib/index.js",
+    "./lib/*": "./lib/*.js",
+    "./feature": "./feature/index.js",
+    "./feature/*": "./feature/*.js",
+    "./package.json": "./package.json"
+  }
 }
-}
-
 ```
 
 As a last resort, package encapsulation can be disabled entirely by creating an export for the root of the package `"./*": "./*"`. This exposes every file in the package at the cost of disabling the encapsulation and potential tooling benefits this provides. As the ES Module loader in Node.js enforces the use of [the full specifier path](https://nodejs.org/dist/v16.13.1/docs/api/all.html#esm_mandatory-file-extensions), exporting the root rather than being explicit about entry is less expressive than either of the prior examples. Not only is encapsulation lost but module consumers are unable to `import feature from 'my-mod/feature'` as they need to provide the full path `import feature from 'my-mod/feature/index.js`.
@@ -36916,12 +35800,10 @@ As a last resort, package encapsulation can be disabled entirely by creating an 
 To set the main entry point for a package, it is advisable to define both [`"exports"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_exports) and [`"main"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_main) in the package’s [`package.json`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_nodejs-packagejson-field-definitions) file:
 
 ```
-
 {
-"main": "./main.js",
-"exports": "./main.js"
+  "main": "./main.js",
+  "exports": "./main.js"
 }
-
 ```
 
 When the [`"exports"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_exports) field is defined, all subpaths of the package are encapsulated and no longer available to importers. For example, `require('pkg/subpath.js')` throws an [`ERR_PACKAGE_PATH_NOT_EXPORTED`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_err_package_path_not_exported) error.
@@ -36935,31 +35817,25 @@ Added in: v12.7.0
 When using the [`"exports"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_exports) field, custom subpaths can be defined along with the main entry point by treating the main entry point as the `"."` subpath:
 
 ```
-
 {
-"main": "./main.js",
-"exports": {
-".": "./main.js",
-"./submodule": "./src/submodule.js"
+  "main": "./main.js",
+  "exports": {
+    ".": "./main.js",
+    "./submodule": "./src/submodule.js"
+  }
 }
-}
-
 ```
 
 Now only the defined subpath in [`"exports"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_exports) can be imported by a consumer:
 
 ```
-
 import submodule from 'es-module-package/submodule';
-
 ```
 
 While other subpaths will error:
 
 ```
-
 import submodule from 'es-module-package/private-module.js';
-
 ```
 
 #### Subpath imports[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_subpath-imports)
@@ -36975,17 +35851,16 @@ For example, the imports field can be used to gain the benefits of conditional e
 ```
 
 {
-"imports": {
-"#dep": {
-"node": "dep-node-native",
-"default": "./dep-polyfill.js"
+  "imports": {
+    "#dep": {
+      "node": "dep-node-native",
+      "default": "./dep-polyfill.js"
+    }
+  },
+  "dependencies": {
+    "dep-node-native": "^1.0.0"
+  }
 }
-},
-"dependencies": {
-"dep-node-native": "^1.0.0"
-}
-}
-
 ```
 
 where `import '#dep'` does not get the resolution of the external package `dep-node-native` (including its exports in turn), and instead gets the local file `./dep-polyfill.js` relative to the package in other environments.
@@ -37005,14 +35880,13 @@ For these use cases, subpath export patterns can be used instead:
 ```
 
 {
-"exports": {
-"./features/_": "./src/features/_.js"
-},
-"imports": {
-"#internal/_": "./src/internal/_.js"
+  "exports": {
+    "./features/*": "./src/features/*.js"
+  },
+  "imports": {
+    "#internal/*": "./src/internal/*.js"
+  }
 }
-}
-
 ```
 
 **`*` maps expose nested subpaths as it is a string replacement syntax only.**
@@ -37020,13 +35894,13 @@ For these use cases, subpath export patterns can be used instead:
 All instances of `*` on the right hand side will then be replaced with this value, including if it contains any `/` separators.
 
 ```
-
 import featureX from 'es-module-package/features/x';
+
 
 import featureY from 'es-module-package/features/y/y';
 
-import internalZ from '#internal/z';
 
+import internalZ from '#internal/z';
 ```
 
 This is a direct static replacement without any special handling for file extensions. In the previous example, `pkg/features/x.json` would be resolved to `./src/features/x.json.js` in the mapping.
@@ -37038,20 +35912,18 @@ To exclude private subfolders from patterns, `null` targets can be used:
 ```
 
 {
-"exports": {
-"./features/_": "./src/features/_.js",
-"./features/private-internal/\*": null
+  "exports": {
+    "./features/*": "./src/features/*.js",
+    "./features/private-internal/*": null
+  }
 }
-}
-
 ```
 
 ```
-
 import featureInternal from 'es-module-package/features/private-internal/m';
 
-import featureX from 'es-module-package/features/x';
 
+import featureX from 'es-module-package/features/x';
 ```
 
 #### Subpath folder mappings[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_subpath-folder-mappings)
@@ -37061,13 +35933,11 @@ import featureX from 'es-module-package/features/x';
 Before subpath patterns were supported, a trailing `"/"` suffix was used to support folder mappings:
 
 ```
-
 {
-"exports": {
-"./features/": "./features/"
+  "exports": {
+    "./features/": "./features/"
+  }
 }
-}
-
 ```
 
 _This feature will be removed in a future release._
@@ -37075,13 +35945,11 @@ _This feature will be removed in a future release._
 Instead, use direct [subpath patterns](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_subpath-patterns):
 
 ```
-
 {
-"exports": {
-"./features/_": "./features/_.js"
+  "exports": {
+    "./features/*": "./features/*.js"
+  }
 }
-}
-
 ```
 
 The benefit of patterns over folder exports is that packages can always be imported by consumers without subpath file extensions being necessary.
@@ -37095,23 +35963,19 @@ If the `"."` export is the only export, the [`"exports"`](https://nodejs.org/dis
 If the `"."` export has a fallback array or string value, then the [`"exports"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_exports) field can be set to this value directly.
 
 ```
-
 {
-"exports": {
-".": "./main.js"
+  "exports": {
+    ".": "./main.js"
+  }
 }
-}
-
 ```
 
 can be written:
 
 ```
-
 {
-"exports": "./main.js"
+  "exports": "./main.js"
 }
-
 ```
 
 #### Conditional exports[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_conditional-exports)
@@ -37123,14 +35987,13 @@ For example, a package that wants to provide different ES module exports for `re
 ```
 
 {
-"main": "./main-require.cjs",
-"exports": {
-"import": "./main-module.js",
-"require": "./main-require.cjs"
-},
-"type": "module"
+  "main": "./main-require.cjs",
+  "exports": {
+    "import": "./main-module.js",
+    "require": "./main-require.cjs"
+  },
+  "type": "module"
 }
-
 ```
 
 Node.js implements the following conditions:
@@ -37148,18 +36011,16 @@ Using the `"import"` and `"require"` conditions can lead to some hazards, which 
 Conditional exports can also be extended to exports subpaths, for example:
 
 ```
-
 {
-"main": "./main.js",
-"exports": {
-".": "./main.js",
-"./feature": {
-"node": "./feature-node.js",
-"default": "./feature.js"
+  "main": "./main.js",
+  "exports": {
+    ".": "./main.js",
+    "./feature": {
+      "node": "./feature-node.js",
+      "default": "./feature.js"
+    }
+  }
 }
-}
-}
-
 ```
 
 Defines a package where `require('pkg/feature')` and `import 'pkg/feature'` could provide different implementations between Node.js and other JS environments.
@@ -37173,18 +36034,16 @@ In addition to direct mappings, Node.js also supports nested condition objects.
 For example, to define a package that only has dual mode entry points for use in Node.js but not the browser:
 
 ```
-
 {
-"main": "./main.js",
-"exports": {
-"node": {
-"import": "./feature-node.mjs",
-"require": "./feature-node.cjs"
-},
-"default": "./feature.mjs",
+  "main": "./main.js",
+  "exports": {
+    "node": {
+      "import": "./feature-node.mjs",
+      "require": "./feature-node.cjs"
+    },
+    "default": "./feature.mjs",
+  }
 }
-}
-
 ```
 
 Conditions continue to be matched in order as with flat conditions. If a nested condition does not have any mapping it will continue checking the remaining conditions of the parent condition. In this way nested conditions behave analogously to nested JavaScript `if` statements.
@@ -37196,9 +36055,7 @@ Added in: v14.9.0, v12.19.0
 When running Node.js, custom user conditions can be added with the `--conditions` flag:
 
 ```
-
 node --conditions=development main.js
-
 ```
 
 which would then resolve the `"development"` condition in package imports and exports, while resolving the existing `"node"`, `"node-addons"`, `"default"`, `"import"`, and `"require"` conditions as appropriate.
@@ -37242,37 +36099,37 @@ Within a package, the values defined in the package’s `package.json` [`"export
 ```
 
 {
-"name": "a-package",
-"exports": {
-".": "./main.mjs",
-"./foo": "./foo.js"
+  "name": "a-package",
+  "exports": {
+    ".": "./main.mjs",
+    "./foo": "./foo.js"
+  }
 }
-}
-
 ```
 
 Then any module _in that package_ can reference an export in the package itself:
 
 ```
 
-import { something } from 'a-package';
-
+import { something } from 'a-package'; 
 ```
 
 Self-referencing is available only if `package.json` has [`"exports"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_exports), and will allow importing only what that [`"exports"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_exports) (in the `package.json`) allows. So the code below, given the previous package, will generate a runtime error:
 
 ```
 
-import { another } from 'a-package/m.mjs';
 
+
+
+
+import { another } from 'a-package/m.mjs';
 ```
 
 Self-referencing is also available when using `require`, both in an ES module, and in a CommonJS one. For example, this code will also work:
 
 ```
 
-const { something } = require('a-package/foo');
-
+const { something } = require('a-package/foo'); 
 ```
 
 Finally, self-referencing also works with scoped packages. For example, this code will also work:
@@ -37280,29 +36137,24 @@ Finally, self-referencing also works with scoped packages. For example, this cod
 ```
 
 {
-"name": "@my/package",
-"exports": "./index.js"
+  "name": "@my/package",
+  "exports": "./index.js"
 }
-
 ```
 
 ```
 
 module.exports = 42;
-
 ```
 
 ```
 
 console.log(require('@my/package'));
-
 ```
 
 ```
-
 $ node other.js
 42
-
 ```
 
 ### Dual CommonJS/ES module packages[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_dual-commonjses-module-packages)
@@ -37339,14 +36191,13 @@ Write the package in CommonJS or transpile ES module sources into CommonJS, and 
 ```
 
 {
-"type": "module",
-"main": "./index.cjs",
-"exports": {
-"import": "./wrapper.mjs",
-"require": "./index.cjs"
+  "type": "module",
+  "main": "./index.cjs",
+  "exports": {
+    "import": "./wrapper.mjs",
+    "require": "./index.cjs"
+  }
 }
-}
-
 ```
 
 The preceding example uses explicit extensions `.mjs` and `.cjs`. If your files use the `.js` extension, `"type": "module"` will cause such files to be treated as ES modules, just as `"type": "commonjs"` would cause them to be treated as CommonJS. See [Enabling](https://nodejs.org/dist/v16.13.1/docs/api/all.html#esm_enabling).
@@ -37354,14 +36205,12 @@ The preceding example uses explicit extensions `.mjs` and `.cjs`. If your files 
 ```
 
 exports.name = 'value';
-
 ```
 
 ```
 
 import cjsModule from './index.cjs';
 export const name = cjsModule.name;
-
 ```
 
 In this example, the `name` from `import { name } from 'pkg'` is the same singleton as the `name` from `const { name } = require('pkg')`. Therefore `===` returns `true` when comparing the two `name`s and the divergent specifier hazard is avoided.
@@ -37369,11 +36218,9 @@ In this example, the `name` from `import { name } from 'pkg'` is the same single
 If the module is not simply a list of named exports, but rather contains a unique function or object export like `module.exports = function () { ... }`, or if support in the wrapper for the `import pkg from 'pkg'` pattern is desired, then the wrapper would instead be written to export the default optionally along with any named exports as well:
 
 ```
-
 import cjsModule from './index.cjs';
 export const name = cjsModule.name;
 export default cjsModule;
-
 ```
 
 This approach is appropriate for any of the following use cases:
@@ -37387,14 +36234,13 @@ A variant of this approach not requiring conditional exports for consumers could
 ```
 
 {
-"type": "module",
-"main": "./index.cjs",
-"exports": {
-".": "./index.cjs",
-"./module": "./wrapper.mjs"
+  "type": "module",
+  "main": "./index.cjs",
+  "exports": {
+    ".": "./index.cjs",
+    "./module": "./wrapper.mjs"
+  }
 }
-}
-
 ```
 
 ##### Approach #2: Isolate state[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_approach-2-isolate-state)
@@ -37404,15 +36250,14 @@ A [`package.json`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_n
 ```
 
 {
-"type": "module",
-"main": "./index.cjs",
-"exports": {
-"import": "./index.mjs",
-"require": "./index.cjs"
+  "type": "module",
+  "main": "./index.cjs",
+  "exports": {
+    "import": "./index.mjs",
+    "require": "./index.cjs"
+  }
 }
-}
-
-````
+```
 
 This can be done if both the CommonJS and ES module versions of the package are equivalent, for example because one is the transpiled output of the other; and the package’s management of state is carefully isolated (or the package is stateless).
 
@@ -37421,32 +36266,32 @@ The reason that state is an issue is because both the CommonJS and ES module ver
 Aside from writing a stateless package (if JavaScript’s `Math` were a package, for example, it would be stateless as all of its methods are static), there are some ways to isolate state so that it’s shared between the potentially loaded CommonJS and ES module instances of the package:
 
 1.  If possible, contain all state within an instantiated object. JavaScript’s `Date`, for example, needs to be instantiated to contain state; if it were a package, it would be used like this:
-
+    
     ```
     import Date from 'date';
     const someDate = new Date();
     ```
-
+    
     The `new` keyword isn’t required; a package’s function can return a new object, or modify a passed-in object, to keep the state external to the package.
-
+    
 2.  Isolate the state in one or more CommonJS files that are shared between the CommonJS and ES module versions of the package. For example, if the CommonJS and ES module entry points are `index.cjs` and `index.mjs`, respectively:
-
+    
     ```
-
+    
     const state = require('./state.cjs');
     module.exports.state = state;
     ```
-
+    
     ```
-
+    
     import state from './state.cjs';
     export {
       state
     };
     ```
-
+    
     Even if `pkg` is used via both `require` and `import` in an application (for example, via `import` in application code and via `require` by a dependency) each reference of `pkg` will contain the same state; and modifying that state from either module system will apply to both.
-
+    
 
 Any plugins that attach to the package’s singleton would need to separately attach to both the CommonJS and ES module singletons.
 
@@ -37460,17 +36305,16 @@ Even with isolated state, there is still the cost of possible extra code executi
 
 As with the previous approach, a variant of this approach not requiring conditional exports for consumers could be to add an export, e.g. `"./module"`, to point to an all-ES module-syntax version of the package:
 
-````
+```
 
 {
-"type": "module",
-"main": "./index.cjs",
-"exports": {
-".": "./index.cjs",
-"./module": "./index.mjs"
+  "type": "module",
+  "main": "./index.cjs",
+  "exports": {
+    ".": "./index.cjs",
+    "./module": "./index.mjs"
+  }
 }
-}
-
 ```
 
 ### Node.js `package.json` field definitions[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_nodejs-packagejson-field-definitions)
@@ -37491,11 +36335,9 @@ The following fields in `package.json` files are used in Node.js:
 -   Type: [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
 
 ```
-
 {
-"name": "package-name"
+  "name": "package-name"
 }
-
 ```
 
 The `"name"` field defines your package’s name. Publishing to the _npm_ registry requires a name that satisfies [certain requirements](https://docs.npmjs.com/files/package.json#name).
@@ -37509,19 +36351,15 @@ Added in: v0.4.0
 -   Type: [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
 
 ```
-
 {
-"main": "./main.js"
+  "main": "./main.js"
 }
-
 ```
 
 The `"main"` field defines the script that is used when the [package directory is loaded via `require()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#modules_folders-as-modules). Its value is a path.
 
 ```
-
-require('./path/to/directory');
-
+require('./path/to/directory'); 
 ```
 
 When a package has an [`"exports"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_exports) field, this will take precedence over the `"main"` field when importing the package by name.
@@ -37533,11 +36371,9 @@ Added in: v16.9.0
 -   Type: [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
 
 ```
-
 {
-"packageManager": "<package manager name>@<version>"
+  "packageManager": "<package manager name>@<version>"
 }
-
 ```
 
 The `"packageManager"` field defines which package manager is expected to be used when working on the current project. It can set to any of the [supported package managers](https://nodejs.org/dist/v16.13.1/docs/api/all.html#corepack_supported-package-managers), and will ensure that your teams use the exact same package manager versions without having to install anything else than Node.js.
@@ -37557,15 +36393,13 @@ The nearest parent `package.json` is defined as the first `package.json` found w
 ```
 
 {
-"type": "module"
+  "type": "module"
 }
-
 ```
 
 ```
 
-node my-app.js
-
+node my-app.js 
 ```
 
 If the nearest parent `package.json` lacks a `"type"` field, or contains `"type": "commonjs"`, `.js` files are treated as [CommonJS](https://nodejs.org/dist/v16.13.1/docs/api/modules.html). If the volume root is reached and no `package.json` is found, `.js` files are treated as [CommonJS](https://nodejs.org/dist/v16.13.1/docs/api/modules.html).
@@ -37574,8 +36408,7 @@ If the nearest parent `package.json` lacks a `"type"` field, or contains `"type"
 
 ```
 
-import './startup.js';
-
+import './startup.js'; 
 ```
 
 Regardless of the value of the `"type"` field, `.mjs` files are always treated as ES modules and `.cjs` files are always treated as CommonJS.
@@ -37585,11 +36418,9 @@ Regardless of the value of the `"type"` field, `.mjs` files are always treated a
 -   Type: [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) | [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) | [<string\[\]>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
 
 ```
-
 {
-"exports": "./index.js"
+  "exports": "./index.js"
 }
-
 ```
 
 The `"exports"` field allows defining the [entry points](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_package-entry-points) of a package when imported by name loaded either via a `node_modules` lookup or a [self-reference](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_self-referencing-a-package-using-its-name) to its own name. It is supported in Node.js 12+ as an alternative to the [`"main"`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_main) that can support defining [subpath exports](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_subpath-exports) and [conditional exports](https://nodejs.org/dist/v16.13.1/docs/api/all.html#packages_conditional-exports) while encapsulating internal unexported modules.
@@ -37607,17 +36438,16 @@ Added in: v14.6.0, v12.19.0
 ```
 
 {
-"imports": {
-"#dep": {
-"node": "dep-node-native",
-"default": "./dep-polyfill.js"
+  "imports": {
+    "#dep": {
+      "node": "dep-node-native",
+      "default": "./dep-polyfill.js"
+    }
+  },
+  "dependencies": {
+    "dep-node-native": "^1.0.0"
+  }
 }
-},
-"dependencies": {
-"dep-node-native": "^1.0.0"
-}
-}
-
 ```
 
 Entries in the imports field must be strings starting with `#`.
@@ -37635,9 +36465,7 @@ The `net` module provides an asynchronous network API for creating stream-based 
 It can be accessed using:
 
 ```
-
 const net = require('net');
-
 ```
 
 ### IPC support[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_ipc-support)
@@ -37655,10 +36483,8 @@ On Windows, the local domain is implemented using a named pipe. The path _must_ 
 JavaScript string escaping requires paths to be specified with extra backslash escaping such as:
 
 ```
-
 net.createServer().listen(
-path.join('\\\\?\\pipe', process.cwd(), 'myctl'));
-
+  path.join('\\\\?\\pipe', process.cwd(), 'myctl'));
 ```
 
 ### Class: `net.BlockList`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_class-netblocklist)
@@ -37707,7 +36533,6 @@ Added in: v15.0.0
 Returns `true` if the given IP address matches any of the rules added to the `BlockList`.
 
 ```
-
 const blockList = new net.BlockList();
 blockList.addAddress('123.123.123.123');
 blockList.addRange('10.0.0.1', '10.0.0.10');
@@ -37715,11 +36540,11 @@ blockList.addSubnet('8592:757c:efae:4e45::', 64, 'ipv6');
 
 console.log(blockList.check('123.123.123.123'));  
 console.log(blockList.check('10.0.0.3'));  
-console.log(blockList.check('222.111.111.222'));
+console.log(blockList.check('222.111.111.222'));  
 
-console.log(blockList.check('::ffff:7b7b:7b7b', 'ipv6'));
-console.log(blockList.check('::ffff:123.123.123.123', 'ipv6'));
 
+console.log(blockList.check('::ffff:7b7b:7b7b', 'ipv6')); 
+console.log(blockList.check('::ffff:123.123.123.123', 'ipv6')); 
 ```
 
 #### `blockList.rules`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_blocklistrules)
@@ -37823,18 +36648,17 @@ Returns the bound `address`, the address `family` name, and `port` of the server
 For a server listening on a pipe or Unix domain socket, the name is returned as a string.
 
 ```
-
 const server = net.createServer((socket) => {
-socket.end('goodbye\n');
+  socket.end('goodbye\n');
 }).on('error', (err) => {
-
-throw err;
+  
+  throw err;
 });
+
 
 server.listen(() => {
-console.log('opened server on', server.address());
+  console.log('opened server on', server.address());
 });
-
 ```
 
 `server.address()` returns `null` before the `'listening'` event has been emitted or after calling `server.close()`.
@@ -37881,17 +36705,15 @@ The `server.listen()` method can be called again if and only if there was an err
 One of the most common errors raised when listening is `EADDRINUSE`. This happens when another server is already listening on the requested `port`/`path`/`handle`. One way to handle this would be to retry after a certain amount of time:
 
 ```
-
 server.on('error', (e) => {
-if (e.code === 'EADDRINUSE') {
-console.log('Address in use, retrying...');
-setTimeout(() => {
-server.close();
-server.listen(PORT, HOST);
-}, 1000);
-}
+  if (e.code === 'EADDRINUSE') {
+    console.log('Address in use, retrying...');
+    setTimeout(() => {
+      server.close();
+      server.listen(PORT, HOST);
+    }, 1000);
+  }
 });
-
 ```
 
 ##### `server.listen(handle[, backlog][, callback])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_serverlistenhandle-backlog-callback)
@@ -37929,13 +36751,11 @@ If `port` is specified, it behaves the same as [`server.listen([port[, host[, ba
 If `exclusive` is `false` (default), then cluster workers will use the same underlying handle, allowing connection handling duties to be shared. When `exclusive` is `true`, the handle is not shared, and attempted port sharing results in an error. An example which listens on an exclusive port is shown below.
 
 ```
-
 server.listen({
-host: 'localhost',
-port: 80,
-exclusive: true
+  host: 'localhost',
+  port: 80,
+  exclusive: true
 });
-
 ```
 
 Starting an IPC server as root may cause the server path to be inaccessible for unprivileged users. Using `readableAll` and `writableAll` will make the server accessible for all users.
@@ -37943,16 +36763,14 @@ Starting an IPC server as root may cause the server path to be inaccessible for 
 If the `signal` option is enabled, calling `.abort()` on the corresponding `AbortController` is similar to calling `.close()` on the server:
 
 ```
-
 const controller = new AbortController();
 server.listen({
-host: 'localhost',
-port: 80,
-signal: controller.signal
+  host: 'localhost',
+  port: 80,
+  signal: controller.signal
 });
 
 controller.abort();
-
 ```
 
 ##### `server.listen(path[, backlog][, callback])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_serverlistenpath-backlog-callback)
@@ -38197,21 +37015,18 @@ For both types, available `options` include:
 Following is an example of a client using the `onread` option:
 
 ```
-
 const net = require('net');
 net.connect({
-port: 80,
-onread: {
-
+  port: 80,
+  onread: {
+    
     buffer: Buffer.alloc(4 * 1024),
     callback: function(nread, buf) {
-
+      
       console.log(buf.toString('utf8', 0, nread));
     }
-
-}
+  }
 });
-
 ```
 
 ##### `socket.connect(path[, connectListener])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_socketconnectpath-connectlistener)
@@ -38397,13 +37212,11 @@ Sets the socket to timeout after `timeout` milliseconds of inactivity on the soc
 When an idle timeout is triggered the socket will receive a [`'timeout'`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_event-timeout) event but the connection will not be severed. The user must manually call [`socket.end()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_socketenddata-encoding-callback) or [`socket.destroy()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_socketdestroyerror) to end the connection.
 
 ```
-
 socket.setTimeout(3000);
 socket.on('timeout', () => {
-console.log('socket timeout');
-socket.end();
+  console.log('socket timeout');
+  socket.end();
 });
-
 ```
 
 If `timeout` is 0, then the existing idle timeout is disabled.
@@ -38528,29 +37341,25 @@ Additional options:
 Following is an example of a client of the echo server described in the [`net.createServer()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_netcreateserveroptions-connectionlistener) section:
 
 ```
-
 const net = require('net');
 const client = net.createConnection({ port: 8124 }, () => {
-
-console.log('connected to server!');
-client.write('world!\r\n');
+  
+  console.log('connected to server!');
+  client.write('world!\r\n');
 });
 client.on('data', (data) => {
-console.log(data.toString());
-client.end();
+  console.log(data.toString());
+  client.end();
 });
 client.on('end', () => {
-console.log('disconnected from server');
+  console.log('disconnected from server');
 });
-
 ```
 
 To connect on the socket `/tmp/echo.sock`:
 
 ```
-
 const client = net.createConnection({ path: '/tmp/echo.sock' });
-
 ```
 
 #### `net.createConnection(path[, connectListener])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_netcreateconnectionpath-connectlistener)
@@ -38599,50 +37408,42 @@ The server can be a TCP server or an [IPC](https://nodejs.org/dist/v16.13.1/docs
 Here is an example of an TCP echo server which listens for connections on port 8124:
 
 ```
-
 const net = require('net');
 const server = net.createServer((c) => {
-
-console.log('client connected');
-c.on('end', () => {
-console.log('client disconnected');
-});
-c.write('hello\r\n');
-c.pipe(c);
+  
+  console.log('client connected');
+  c.on('end', () => {
+    console.log('client disconnected');
+  });
+  c.write('hello\r\n');
+  c.pipe(c);
 });
 server.on('error', (err) => {
-throw err;
+  throw err;
 });
 server.listen(8124, () => {
-console.log('server bound');
+  console.log('server bound');
 });
-
 ```
 
 Test this by using `telnet`:
 
 ```
-
 $ telnet localhost 8124
-
 ```
 
 To listen on the socket `/tmp/echo.sock`:
 
 ```
-
 server.listen('/tmp/echo.sock', () => {
-console.log('server bound');
+  console.log('server bound');
 });
-
 ```
 
 Use `nc` to connect to a Unix domain socket server:
 
 ```
-
 $ nc -U /tmp/echo.sock
-
 ```
 
 ### `net.isIP(input)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_netisipinput)
@@ -38679,9 +37480,7 @@ Returns `true` if input is a version 6 IP address, otherwise returns `false`.
 The `os` module provides operating system-related utility methods and properties. It can be accessed using:
 
 ```
-
 const os = require('os');
-
 ```
 
 ### `os.EOL`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#os_oseol)
@@ -38733,54 +37532,52 @@ The properties included on each object include:
     -   `irq` [<number>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) The number of milliseconds the CPU has spent in irq mode.
 
 ```
-
 [
-{
-model: 'Intel(R) Core(TM) i7 CPU 860 @ 2.80GHz',
-speed: 2926,
-times: {
-user: 252020,
-nice: 0,
-sys: 30340,
-idle: 1070356870,
-irq: 0
-}
-},
-{
-model: 'Intel(R) Core(TM) i7 CPU 860 @ 2.80GHz',
-speed: 2926,
-times: {
-user: 306960,
-nice: 0,
-sys: 26980,
-idle: 1071569080,
-irq: 0
-}
-},
-{
-model: 'Intel(R) Core(TM) i7 CPU 860 @ 2.80GHz',
-speed: 2926,
-times: {
-user: 248450,
-nice: 0,
-sys: 21750,
-idle: 1070919370,
-irq: 0
-}
-},
-{
-model: 'Intel(R) Core(TM) i7 CPU 860 @ 2.80GHz',
-speed: 2926,
-times: {
-user: 256880,
-nice: 0,
-sys: 19430,
-idle: 1070905480,
-irq: 20
-}
-},
+  {
+    model: 'Intel(R) Core(TM) i7 CPU         860  @ 2.80GHz',
+    speed: 2926,
+    times: {
+      user: 252020,
+      nice: 0,
+      sys: 30340,
+      idle: 1070356870,
+      irq: 0
+    }
+  },
+  {
+    model: 'Intel(R) Core(TM) i7 CPU         860  @ 2.80GHz',
+    speed: 2926,
+    times: {
+      user: 306960,
+      nice: 0,
+      sys: 26980,
+      idle: 1071569080,
+      irq: 0
+    }
+  },
+  {
+    model: 'Intel(R) Core(TM) i7 CPU         860  @ 2.80GHz',
+    speed: 2926,
+    times: {
+      user: 248450,
+      nice: 0,
+      sys: 21750,
+      idle: 1070919370,
+      irq: 0
+    }
+  },
+  {
+    model: 'Intel(R) Core(TM) i7 CPU         860  @ 2.80GHz',
+    speed: 2926,
+    times: {
+      user: 256880,
+      nice: 0,
+      sys: 19430,
+      idle: 1070905480,
+      irq: 20
+    }
+  },
 ]
-
 ```
 
 `nice` values are POSIX-only. On Windows, the `nice` values of all processors are always 0.
@@ -38876,48 +37673,46 @@ The properties available on the assigned network address object include:
 -   `cidr` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) The assigned IPv4 or IPv6 address with the routing prefix in CIDR notation. If the `netmask` is invalid, this property is set to `null`.
 
 ```
-
 {
-lo: [
-{
-address: '127.0.0.1',
-netmask: '255.0.0.0',
-family: 'IPv4',
-mac: '00:00:00:00:00:00',
-internal: true,
-cidr: '127.0.0.1/8'
-},
-{
-address: '::1',
-netmask: 'ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff',
-family: 'IPv6',
-mac: '00:00:00:00:00:00',
-scopeid: 0,
-internal: true,
-cidr: '::1/128'
+  lo: [
+    {
+      address: '127.0.0.1',
+      netmask: '255.0.0.0',
+      family: 'IPv4',
+      mac: '00:00:00:00:00:00',
+      internal: true,
+      cidr: '127.0.0.1/8'
+    },
+    {
+      address: '::1',
+      netmask: 'ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff',
+      family: 'IPv6',
+      mac: '00:00:00:00:00:00',
+      scopeid: 0,
+      internal: true,
+      cidr: '::1/128'
+    }
+  ],
+  eth0: [
+    {
+      address: '192.168.1.108',
+      netmask: '255.255.255.0',
+      family: 'IPv4',
+      mac: '01:02:03:0a:0b:0c',
+      internal: false,
+      cidr: '192.168.1.108/24'
+    },
+    {
+      address: 'fe80::a00:27ff:fe4e:66a1',
+      netmask: 'ffff:ffff:ffff:ffff::',
+      family: 'IPv6',
+      mac: '01:02:03:0a:0b:0c',
+      scopeid: 1,
+      internal: false,
+      cidr: 'fe80::a00:27ff:fe4e:66a1/64'
+    }
+  ]
 }
-],
-eth0: [
-{
-address: '192.168.1.108',
-netmask: '255.255.255.0',
-family: 'IPv4',
-mac: '01:02:03:0a:0b:0c',
-internal: false,
-cidr: '192.168.1.108/24'
-},
-{
-address: 'fe80::a00:27ff:fe4e:66a1',
-netmask: 'ffff:ffff:ffff:ffff::',
-family: 'IPv6',
-mac: '01:02:03:0a:0b:0c',
-scopeid: 1,
-internal: false,
-cidr: 'fe80::a00:27ff:fe4e:66a1/64'
-}
-]
-}
-
 ```
 
 ### `os.platform()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#os_osplatform)
@@ -39810,9 +38605,7 @@ Description
 The `path` module provides utilities for working with file and directory paths. It can be accessed using:
 
 ```
-
 const path = require('path');
-
 ```
 
 ### Windows vs. POSIX[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#path_windows-vs-posix)
@@ -39824,17 +38617,13 @@ So using `path.basename()` might yield different results on POSIX and Windows:
 On POSIX:
 
 ```
-
 path.basename('C:\\temp\\myfile.html');
-
 ```
 
 On Windows:
 
 ```
-
 path.basename('C:\\temp\\myfile.html');
-
 ```
 
 To achieve consistent results when working with Windows file paths on any operating system, use [`path.win32`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#path_pathwin32):
@@ -39842,9 +38631,7 @@ To achieve consistent results when working with Windows file paths on any operat
 On POSIX and Windows:
 
 ```
-
 path.win32.basename('C:\\temp\\myfile.html');
-
 ```
 
 To achieve consistent results when working with POSIX file paths on any operating system, use [`path.posix`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#path_pathposix):
@@ -39852,12 +38639,10 @@ To achieve consistent results when working with POSIX file paths on any operatin
 On POSIX and Windows:
 
 ```
-
 path.posix.basename('/tmp/myfile.html');
-
 ```
 
-On Windows Node.js follows the concept of per-drive working directory. This behavior can be observed when using a drive path without a backslash. For example, `path.resolve('C:\\')` can potentially return a different result than `path.resolve('C:')`. For more information, see [this MSDN page](https://docs.microsoft.com/windows/desktop/FileIO/naming-a-file#fully-qualified-vs-relative-paths).
+On Windows Node.js follows the concept of per-drive working directory. This behavior can be observed when using a drive path without a backslash. For example, `path.resolve('C:\\')` can potentially return a different result than `path.resolve('C:')`. For more information, see [this MSDN page](https://docs.microsoft.com/en-us/windows/desktop/FileIO/naming-a-file#fully-qualified-vs-relative-paths).
 
 ### `path.basename(path[, ext])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#path_pathbasenamepath-ext)
 
@@ -39868,21 +38653,19 @@ On Windows Node.js follows the concept of per-drive working directory. This beha
 The `path.basename()` method returns the last portion of a `path`, similar to the Unix `basename` command. Trailing directory separators are ignored, see [`path.sep`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#path_pathsep).
 
 ```
-
 path.basename('/foo/bar/baz/asdf/quux.html');
 
-path.basename('/foo/bar/baz/asdf/quux.html', '.html');
 
+path.basename('/foo/bar/baz/asdf/quux.html', '.html');
 ```
 
 Although Windows usually treats file names, including file extensions, in a case-insensitive manner, this function does not. For example, `C:\\foo.html` and `C:\\foo.HTML` refer to the same file, but `basename` treats the extension as a case-sensitive string:
 
 ```
-
 path.win32.basename('C:\\foo.html', '.html');
 
-path.win32.basename('C:\\foo.HTML', '.html');
 
+path.win32.basename('C:\\foo.HTML', '.html');
 ```
 
 A [`TypeError`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_class-typeerror) is thrown if `path` is not a string or if `ext` is given and is not a string.
@@ -39901,21 +38684,19 @@ Provides the platform-specific path delimiter:
 For example, on POSIX:
 
 ```
-
 console.log(process.env.PATH);
 
-process.env.PATH.split(path.delimiter);
 
+process.env.PATH.split(path.delimiter);
 ```
 
 On Windows:
 
 ```
-
 console.log(process.env.PATH);
 
-process.env.PATH.split(path.delimiter);
 
+process.env.PATH.split(path.delimiter);
 ```
 
 ### `path.dirname(path)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#path_pathdirnamepath)
@@ -39926,9 +38707,7 @@ process.env.PATH.split(path.delimiter);
 The `path.dirname()` method returns the directory name of a `path`, similar to the Unix `dirname` command. Trailing directory separators are ignored, see [`path.sep`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#path_pathsep).
 
 ```
-
 path.dirname('/foo/bar/baz/asdf/quux');
-
 ```
 
 A [`TypeError`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_class-typeerror) is thrown if `path` is not a string.
@@ -39941,19 +38720,22 @@ A [`TypeError`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_class-
 The `path.extname()` method returns the extension of the `path`, from the last occurrence of the `.` (period) character to end of string in the last portion of the `path`. If there is no `.` in the last portion of the `path`, or if there are no `.` characters other than the first character of the basename of `path` (see `path.basename()`) , an empty string is returned.
 
 ```
-
 path.extname('index.html');
+
 
 path.extname('index.coffee.md');
 
+
 path.extname('index.');
+
 
 path.extname('index');
 
+
 path.extname('.index');
 
-path.extname('.index.md');
 
+path.extname('.index.md');
 ```
 
 A [`TypeError`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_class-typeerror) is thrown if `path` is not a string.
@@ -39981,35 +38763,40 @@ For example, on POSIX:
 
 ```
 
-path.format({
-root: '/ignored',
-dir: '/home/user/dir',
-base: 'file.txt'
-});
+
 
 path.format({
-root: '/',
-base: 'file.txt',
-ext: 'ignored'
+  root: '/ignored',
+  dir: '/home/user/dir',
+  base: 'file.txt'
 });
+
+
+
+
 
 path.format({
-root: '/',
-name: 'file',
-ext: '.txt'
+  root: '/',
+  base: 'file.txt',
+  ext: 'ignored'
 });
 
+
+
+path.format({
+  root: '/',
+  name: 'file',
+  ext: '.txt'
+});
 ```
 
 On Windows:
 
 ```
-
 path.format({
-dir: 'C:\\path\\dir',
-base: 'file.txt'
+  dir: 'C:\\path\\dir',
+  base: 'file.txt'
 });
-
 ```
 
 ### `path.isAbsolute(path)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#path_pathisabsolutepath)
@@ -40026,26 +38813,22 @@ If the given `path` is a zero-length string, `false` will be returned.
 For example, on POSIX:
 
 ```
-
-path.isAbsolute('/foo/bar');
+path.isAbsolute('/foo/bar'); 
 path.isAbsolute('/baz/..');  
-path.isAbsolute('qux/');  
-path.isAbsolute('.');
-
+path.isAbsolute('qux/');     
+path.isAbsolute('.');        
 ```
 
 On Windows:
 
 ```
-
-path.isAbsolute('//server');  
+path.isAbsolute('//server');    
 path.isAbsolute('\\\\server');  
-path.isAbsolute('C:/foo/..');  
-path.isAbsolute('C:\\foo\\..');
-path.isAbsolute('bar\\baz');  
-path.isAbsolute('bar/baz');  
-path.isAbsolute('.');
-
+path.isAbsolute('C:/foo/..');   
+path.isAbsolute('C:\\foo\\..'); 
+path.isAbsolute('bar\\baz');    
+path.isAbsolute('bar/baz');     
+path.isAbsolute('.');           
 ```
 
 A [`TypeError`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_class-typeerror) is thrown if `path` is not a string.
@@ -40062,11 +38845,10 @@ The `path.join()` method joins all given `path` segments together using the plat
 Zero-length `path` segments are ignored. If the joined path string is a zero-length string then `'.'` will be returned, representing the current working directory.
 
 ```
-
 path.join('/foo', 'bar', 'baz/asdf', 'quux', '..');
 
-path.join('foo', {}, 'bar');
 
+path.join('foo', {}, 'bar');
 ```
 
 A [`TypeError`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_class-typeerror) is thrown if any of the path segments is not a string.
@@ -40087,25 +38869,19 @@ If the `path` is a zero-length string, `'.'` is returned, representing the curre
 For example, on POSIX:
 
 ```
-
 path.normalize('/foo/bar//baz/asdf/quux/..');
-
 ```
 
 On Windows:
 
 ```
-
 path.normalize('C:\\temp\\\\foo\\bar\\..\\');
-
 ```
 
 Since Windows recognizes multiple path separators, both separators will be replaced by instances of the Windows preferred separator (`\`):
 
 ```
-
 path.win32.normalize('C:////temp\\\\/\\/\\/foo/bar');
-
 ```
 
 A [`TypeError`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_class-typeerror) is thrown if `path` is not a string.
@@ -40130,41 +38906,43 @@ The returned object will have the following properties:
 For example, on POSIX:
 
 ```
-
 path.parse('/home/user/dir/file.txt');
 
-```
+
+
+
 
 ```
 
+```
 ┌─────────────────────┬────────────┐
-│ dir │ base │
-├──────┬ ├──────┬─────┤
-│ root │ │ name │ ext │
-" / home/user/dir / file .txt "
+│          dir        │    base    │
+├──────┬              ├──────┬─────┤
+│ root │              │ name │ ext │
+"  /    home/user/dir / file  .txt "
 └──────┴──────────────┴──────┴─────┘
 (All spaces in the "" line should be ignored. They are purely for formatting.)
-
 ```
 
 On Windows:
 
 ```
-
 path.parse('C:\\path\\dir\\file.txt');
 
-```
+
+
+
 
 ```
 
+```
 ┌─────────────────────┬────────────┐
-│ dir │ base │
-├──────┬ ├──────┬─────┤
-│ root │ │ name │ ext │
-" C:\ path\dir \ file .txt "
+│          dir        │    base    │
+├──────┬              ├──────┬─────┤
+│ root │              │ name │ ext │
+" C:\      path\dir   \ file  .txt "
 └──────┴──────────────┴──────┴─────┘
 (All spaces in the "" line should be ignored. They are purely for formatting.)
-
 ```
 
 A [`TypeError`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_class-typeerror) is thrown if `path` is not a string.
@@ -40190,17 +38968,13 @@ If a zero-length string is passed as `from` or `to`, the current working directo
 For example, on POSIX:
 
 ```
-
 path.relative('/data/orandea/test/aaa', '/data/orandea/impl/bbb');
-
 ```
 
 On Windows:
 
 ```
-
 path.relative('C:\\orandea\\test\\aaa', 'C:\\orandea\\impl\\bbb');
-
 ```
 
 A [`TypeError`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_class-typeerror) is thrown if either `from` or `to` is not a string.
@@ -40225,10 +38999,11 @@ Zero-length `path` segments are ignored.
 If no `path` segments are passed, `path.resolve()` will return the absolute path of the current working directory.
 
 ```
-
 path.resolve('/foo/bar', './baz');
 
+
 path.resolve('/foo/bar', '/tmp/file/');
+
 
 path.resolve('wwwroot', 'static_files/png/', '../gif/image.gif');
 
@@ -40250,17 +39025,13 @@ Provides the platform-specific path segment separator:
 For example, on POSIX:
 
 ```
-
 'foo/bar/baz'.split(path.sep);
-
 ```
 
 On Windows:
 
 ```
-
 'foo\\bar\\baz'.split(path.sep);
-
 ```
 
 On Windows, both the forward slash (`/`) and backward slash (`\`) are accepted as path segment separators; however, the `path` methods only add backward slashes (`\`).
@@ -40272,7 +39043,7 @@ Added in: v9.0.0
 -   `path` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
 -   Returns: [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
 
-On Windows systems only, returns an equivalent [namespace-prefixed path](https://docs.microsoft.com/windows/desktop/FileIO/naming-a-file#namespaces) for the given `path`. If `path` is not a string, `path` will be returned without modifications.
+On Windows systems only, returns an equivalent [namespace-prefixed path](https://docs.microsoft.com/en-us/windows/desktop/FileIO/naming-a-file#namespaces) for the given `path`. If `path` is not a string, `path` will be returned without modifications.
 
 This method is meaningful only on Windows systems. On POSIX systems, the method is non-operational and always returns `path` without modifications.
 
@@ -40297,24 +39068,22 @@ Node.js supports the following [Web Performance APIs](https://w3c.github.io/perf
 -   [User Timing](https://www.w3.org/TR/user-timing/)
 
 ```
-
 const { PerformanceObserver, performance } = require('perf_hooks');
 
 const obs = new PerformanceObserver((items) => {
-console.log(items.getEntries()[0].duration);
-performance.clearMarks();
+  console.log(items.getEntries()[0].duration);
+  performance.clearMarks();
 });
 obs.observe({ type: 'measure' });
 performance.measure('Start to Now');
 
 performance.mark('A');
 doSomeLongRunningProcess(() => {
-performance.measure('A to Now', 'A');
+  performance.measure('A to Now', 'A');
 
-performance.mark('B');
-performance.measure('A to B', 'A', 'B');
+  performance.mark('B');
+  performance.measure('A to B', 'A', 'B');
 });
-
 ```
 
 ### `perf_hooks.performance`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#perf_hooks_perf_hooksperformance)
@@ -40355,17 +39124,15 @@ If `utilization1` and `utilization2` are both passed, then the delta is calculat
 ELU is similar to CPU utilization, except that it only measures event loop statistics and not CPU usage. It represents the percentage of time the event loop has spent outside the event loop's event provider (e.g. `epoll_wait`). No other CPU idle time is taken into consideration. The following is an example of how a mostly idle process will have a high ELU.
 
 ```
-
 'use strict';
 const { eventLoopUtilization } = require('perf_hooks').performance;
 const { spawnSync } = require('child_process');
 
 setImmediate(() => {
-const elu = eventLoopUtilization();
-spawnSync('sleep', ['5']);
-console.log(eventLoopUtilization(elu).utilization);
+  const elu = eventLoopUtilization();
+  spawnSync('sleep', ['5']);
+  console.log(eventLoopUtilization(elu).utilization);
 });
-
 ```
 
 Although the CPU is mostly idle while running this script, the value of `utilization` is `1`. This is because the call to [`child_process.spawnSync()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#child_process_child_processspawnsynccommand-args-options) blocks the event loop from proceeding.
@@ -40434,26 +39201,25 @@ _This property is an extension by Node.js. It is not available in Web browsers._
 Wraps a function within a new function that measures the running time of the wrapped function. A `PerformanceObserver` must be subscribed to the `'function'` event type in order for the timing details to be accessed.
 
 ```
-
 const {
-performance,
-PerformanceObserver
+  performance,
+  PerformanceObserver
 } = require('perf_hooks');
 
 function someFunction() {
-console.log('hello world');
+  console.log('hello world');
 }
 
 const wrapped = performance.timerify(someFunction);
 
 const obs = new PerformanceObserver((list) => {
-console.log(list.getEntries()[0].duration);
-obs.disconnect();
+  console.log(list.getEntries()[0].duration);
+  obs.disconnect();
 });
 obs.observe({ entryTypes: ['function'] });
 
-wrapped();
 
+wrapped();
 ```
 
 If the wrapped function returns a promise, a finally handler will be attached to the promise and the duration will be reported once the finally handler is invoked.
@@ -40671,20 +39437,18 @@ Added in: v8.5.0
 `PerformanceObserver` objects provide notifications when new `PerformanceEntry` instances have been added to the Performance Timeline.
 
 ```
-
 const {
-performance,
-PerformanceObserver
+  performance,
+  PerformanceObserver
 } = require('perf_hooks');
 
 const obs = new PerformanceObserver((list, observer) => {
-console.log(list.getEntries());
-observer.disconnect();
+  console.log(list.getEntries());
+  observer.disconnect();
 });
 obs.observe({ entryTypes: ['mark'], buffered: true });
 
 performance.mark('test');
-
 ```
 
 Because `PerformanceObserver` instances introduce their own additional performance overhead, instances should not be left subscribed to notifications indefinitely. Users should disconnect observers as soon as they are no longer needed.
@@ -40707,20 +39471,18 @@ Disconnects the `PerformanceObserver` instance from all notifications.
 Subscribes the [<PerformanceObserver>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#perf_hooks_class-perf_hooksperformanceobserver) instance to notifications of new [<PerformanceEntry>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#perf_hooks_class-performanceentry) instances identified either by `options.entryTypes` or `options.type`:
 
 ```
-
 const {
-performance,
-PerformanceObserver
+  performance,
+  PerformanceObserver
 } = require('perf_hooks');
 
 const obs = new PerformanceObserver((list, observer) => {
-
+  
 });
 obs.observe({ type: 'mark' });
 
 for (let n = 0; n < 3; n++)
-performance.mark(`test${n}`);
-
+  performance.mark(`test${n}`);
 ```
 
 ### Class: `PerformanceObserverEntryList`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#perf_hooks_class-performanceobserverentrylist)
@@ -40738,22 +39500,20 @@ Added in: v8.5.0
 Returns a list of `PerformanceEntry` objects in chronological order with respect to `performanceEntry.startTime`.
 
 ```
-
 const {
-performance,
-PerformanceObserver
+  performance,
+  PerformanceObserver
 } = require('perf_hooks');
 
 const obs = new PerformanceObserver((perfObserverList, observer) => {
-console.log(perfObserverList.getEntries());
-
-observer.disconnect();
+  console.log(perfObserverList.getEntries());
+  
+  observer.disconnect();
 });
 obs.observe({ type: 'mark' });
 
 performance.mark('test');
 performance.mark('meow');
-
 ```
 
 #### `performanceObserverEntryList.getEntriesByName(name[, type])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#perf_hooks_performanceobserverentrylistgetentriesbynamename-type)
@@ -40767,27 +39527,25 @@ Added in: v8.5.0
 Returns a list of `PerformanceEntry` objects in chronological order with respect to `performanceEntry.startTime` whose `performanceEntry.name` is equal to `name`, and optionally, whose `performanceEntry.entryType` is equal to `type`.
 
 ```
-
 const {
-performance,
-PerformanceObserver
+  performance,
+  PerformanceObserver
 } = require('perf_hooks');
 
 const obs = new PerformanceObserver((perfObserverList, observer) => {
-console.log(perfObserverList.getEntriesByName('meow'));
+  console.log(perfObserverList.getEntriesByName('meow'));
+  
+  console.log(perfObserverList.getEntriesByName('nope')); 
 
-console.log(perfObserverList.getEntriesByName('nope'));
-
-console.log(perfObserverList.getEntriesByName('test', 'mark'));
-
-console.log(perfObserverList.getEntriesByName('test', 'measure'));
-observer.disconnect();
+  console.log(perfObserverList.getEntriesByName('test', 'mark'));
+  
+  console.log(perfObserverList.getEntriesByName('test', 'measure')); 
+  observer.disconnect();
 });
 obs.observe({ entryTypes: ['mark', 'measure'] });
 
 performance.mark('test');
 performance.mark('meow');
-
 ```
 
 #### `performanceObserverEntryList.getEntriesByType(type)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#perf_hooks_performanceobserverentrylistgetentriesbytypetype)
@@ -40800,22 +39558,20 @@ Added in: v8.5.0
 Returns a list of `PerformanceEntry` objects in chronological order with respect to `performanceEntry.startTime` whose `performanceEntry.entryType` is equal to `type`.
 
 ```
-
 const {
-performance,
-PerformanceObserver
+  performance,
+  PerformanceObserver
 } = require('perf_hooks');
 
 const obs = new PerformanceObserver((perfObserverList, observer) => {
-console.log(perfObserverList.getEntriesByType('mark'));
-
-observer.disconnect();
+  console.log(perfObserverList.getEntriesByType('mark'));
+  
+  observer.disconnect();
 });
 obs.observe({ type: 'mark' });
 
 performance.mark('test');
 performance.mark('meow');
-
 ```
 
 ### `perf_hooks.createHistogram([options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#perf_hooks_perf_hookscreatehistogramoptions)
@@ -40845,7 +39601,6 @@ Creates an `IntervalHistogram` object that samples and reports the event loop de
 Using a timer to detect approximate event loop delay works because the execution of timers is tied specifically to the lifecycle of the libuv event loop. That is, a delay in the loop will cause a delay in the execution of the timer, and those delays are specifically what this API is intended to detect.
 
 ```
-
 const { monitorEventLoopDelay } = require('perf_hooks');
 const h = monitorEventLoopDelay({ resolution: 20 });
 h.enable();
@@ -40858,7 +39613,6 @@ console.log(h.stddev);
 console.log(h.percentiles);
 console.log(h.percentile(50));
 console.log(h.percentile(99));
-
 ```
 
 ### Class: `Histogram`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#perf_hooks_class-histogram)
@@ -40975,43 +39729,41 @@ Calculates the amount of time (in nanoseconds) that has passed since the previou
 The following example uses the [Async Hooks](https://nodejs.org/dist/v16.13.1/docs/api/async_hooks.html) and Performance APIs to measure the actual duration of a Timeout operation (including the amount of time it took to execute the callback).
 
 ```
-
 'use strict';
 const async_hooks = require('async_hooks');
 const {
-performance,
-PerformanceObserver
+  performance,
+  PerformanceObserver
 } = require('perf_hooks');
 
 const set = new Set();
 const hook = async_hooks.createHook({
-init(id, type) {
-if (type === 'Timeout') {
-performance.mark(`Timeout-${id}-Init`);
-set.add(id);
-}
-},
-destroy(id) {
-if (set.has(id)) {
-set.delete(id);
-performance.mark(`Timeout-${id}-Destroy`);
-performance.measure(`Timeout-${id}`,
-`Timeout-${id}-Init`,
-`Timeout-${id}-Destroy`);
-}
-}
+  init(id, type) {
+    if (type === 'Timeout') {
+      performance.mark(`Timeout-${id}-Init`);
+      set.add(id);
+    }
+  },
+  destroy(id) {
+    if (set.has(id)) {
+      set.delete(id);
+      performance.mark(`Timeout-${id}-Destroy`);
+      performance.measure(`Timeout-${id}`,
+                          `Timeout-${id}-Init`,
+                          `Timeout-${id}-Destroy`);
+    }
+  }
 });
 hook.enable();
 
 const obs = new PerformanceObserver((list, observer) => {
-console.log(list.getEntries()[0]);
-performance.clearMarks();
-observer.disconnect();
+  console.log(list.getEntries()[0]);
+  performance.clearMarks();
+  observer.disconnect();
 });
 obs.observe({ entryTypes: ['measure'], buffered: true });
 
 setTimeout(() => {}, 1000);
-
 ```
 
 #### Measuring how long it takes to load dependencies[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#perf_hooks_measuring-how-long-it-takes-to-load-dependencies)
@@ -41019,29 +39771,29 @@ setTimeout(() => {}, 1000);
 The following example measures the duration of `require()` operations to load dependencies:
 
 ```
-
 'use strict';
 const {
-performance,
-PerformanceObserver
+  performance,
+  PerformanceObserver
 } = require('perf_hooks');
 const mod = require('module');
 
+
 mod.Module.prototype.require =
-performance.timerify(mod.Module.prototype.require);
+  performance.timerify(mod.Module.prototype.require);
 require = performance.timerify(require);
 
+
 const obs = new PerformanceObserver((list) => {
-const entries = list.getEntries();
-entries.forEach((entry) => {
-console.log(`require('${entry[0]}')`, entry.duration);
-});
-obs.disconnect();
+  const entries = list.getEntries();
+  entries.forEach((entry) => {
+    console.log(`require('${entry[0]}')`, entry.duration);
+  });
+  obs.disconnect();
 });
 obs.observe({ entryTypes: ['function'], buffered: true });
 
 require('some-module');
-
 ```
 
 ## Policies[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#policy_policies)
@@ -41059,9 +39811,7 @@ The `--experimental-policy` flag can be used to enable features for policies whe
 Once this has been set, all modules must conform to a policy manifest file passed to the flag:
 
 ```
-
 node --experimental-policy=policy.json app.js
-
 ```
 
 The policy manifest will be used to enforce constraints on code loaded by Node.js.
@@ -41069,9 +39819,7 @@ The policy manifest will be used to enforce constraints on code loaded by Node.j
 To mitigate tampering with policy files on disk, an integrity for the policy file itself may be provided via `--policy-integrity`. This allows running `node` and asserting the policy file contents even if the file is changed on disk.
 
 ```
-
 node --experimental-policy=policy.json --policy-integrity="sha384-SggXRQHwCG8g+DktYYzxkXRIkTiEYWBHqev0xnpCxYlqMBufKZHAHQM3/boDaI/0" app.js
-
 ```
 
 ### Features[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#policy_features)
@@ -41085,16 +39833,14 @@ When a policy check fails, Node.js by default will throw an error. It is possibl
 -   `"throw"`: will throw a JS error at the site of the failure. This is the default.
 
 ```
-
 {
-"onerror": "log",
-"resources": {
-"./app/checked.js": {
-"integrity": "sha384-SggXRQHwCG8g+DktYYzxkXRIkTiEYWBHqev0xnpCxYlqMBufKZHAHQM3/boDaI/0"
+  "onerror": "log",
+  "resources": {
+    "./app/checked.js": {
+      "integrity": "sha384-SggXRQHwCG8g+DktYYzxkXRIkTiEYWBHqev0xnpCxYlqMBufKZHAHQM3/boDaI/0"
+    }
+  }
 }
-}
-}
-
 ```
 
 #### Integrity checks[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#policy_integrity-checks)
@@ -41106,15 +39852,13 @@ When using `require()` or `import` all resources involved in loading are checked
 An example policy file that would allow loading a file `checked.js`:
 
 ```
-
 {
-"resources": {
-"./app/checked.js": {
-"integrity": "sha384-SggXRQHwCG8g+DktYYzxkXRIkTiEYWBHqev0xnpCxYlqMBufKZHAHQM3/boDaI/0"
+  "resources": {
+    "./app/checked.js": {
+      "integrity": "sha384-SggXRQHwCG8g+DktYYzxkXRIkTiEYWBHqev0xnpCxYlqMBufKZHAHQM3/boDaI/0"
+    }
+  }
 }
-}
-}
-
 ```
 
 Each resource listed in the policy manifest can be of one the following formats to determine its location:
@@ -41133,19 +39877,17 @@ Integrity can be specified as the boolean value `true` to accept any body for th
 An application may need to ship patched versions of modules or to prevent modules from allowing all modules access to all other modules. Redirection can be used by intercepting attempts to load the modules wishing to be replaced.
 
 ```
-
 {
-"resources": {
-"./app/checked.js": {
-"dependencies": {
-"fs": true,
-"os": "./app/node_modules/alt-os",
-"http": { "import": true }
+  "resources": {
+    "./app/checked.js": {
+      "dependencies": {
+        "fs": true,
+        "os": "./app/node_modules/alt-os",
+        "http": { "import": true }
+      }
+    }
+  }
 }
-}
-}
-}
-
 ```
 
 The dependencies are keyed by the requested specifier string and have values of either `true`, `null`, a string pointing to a module to be resolved, or a conditions object.
@@ -41155,17 +39897,15 @@ The specifier string does not perform any searching and must match exactly what 
 Specifier strings are canonicalized but not resolved prior to be used for matching in order to have some compatibility with import maps, for example if a resource `file:///C:/app/server.js` was given the following redirection from a policy located at `file:///C:/app/policy.json`:
 
 ```
-
 {
-"resources": {
-"file:///C:/app/utils.js": {
-"dependencies": {
-"./utils.js": "./utils-v2.js"
+  "resources": {
+    "file:///C:/app/utils.js": {
+      "dependencies": {
+        "./utils.js": "./utils-v2.js"
+      }
+    }
+  }
 }
-}
-}
-}
-
 ```
 
 Any specifier used to load `file:///C:/app/utils.js` would then be intercepted and redirected to `file:///C:/app/utils-v2.js` instead regardless of using an absolute or relative specifier. However, if a specifier that is not an absolute or relative URL string is used, it would not be intercepted. So, if an import such as `import('#utils')` was used, it would not be intercepted.
@@ -41191,19 +39931,17 @@ Unknown values for the resolved module location cause failures but are not guara
 Redirected dependencies can provide attenuated or modified functionality as fits the application. For example, log data about timing of function durations by wrapping the original:
 
 ```
-
 const original = require('fn');
 module.exports = function fn(...args) {
-console.time();
-try {
-return new.target ?
-Reflect.construct(original, args) :
-Reflect.apply(original, this, args);
-} finally {
-console.timeEnd();
-}
+  console.time();
+  try {
+    return new.target ?
+      Reflect.construct(original, args) :
+      Reflect.apply(original, this, args);
+  } finally {
+    console.timeEnd();
+  }
 };
-
 ```
 
 #### Scopes[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#policy_scopes)
@@ -41215,15 +39953,13 @@ Note, `blob:` URLs adopt their origin from the path they contain, and so a scope
 ##### Example[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#policy_example)
 
 ```
-
 {
-"scopes": {
-"file:///C:/app/": {},
-"file:": {},
-"": {}
+  "scopes": {
+    "file:///C:/app/": {},
+    "file:": {},
+    "": {}
+  }
 }
-}
-
 ```
 
 Given a file located at `file:///C:/app/bin/main.js`, the following scopes would be checked in order:
@@ -41265,15 +40001,13 @@ Not including an integrity is the same as setting the integrity to `null`.
 The following example allows loading any file:
 
 ```
-
 {
-"scopes": {
-"file:": {
-"integrity": true
+  "scopes": {
+    "file:": {
+      "integrity": true
+    }
+  }
 }
-}
-}
-
 ```
 
 ##### Dependency redirection using scopes[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#policy_dependency-redirection-using-scopes)
@@ -41281,45 +40015,41 @@ The following example allows loading any file:
 The following example, would allow access to `fs` for all resources within `./app/`:
 
 ```
-
 {
-"resources": {
-"./app/checked.js": {
-"cascade": true,
-"integrity": true
+  "resources": {
+    "./app/checked.js": {
+      "cascade": true,
+      "integrity": true
+    }
+  },
+  "scopes": {
+    "./app/": {
+      "dependencies": {
+        "fs": true
+      }
+    }
+  }
 }
-},
-"scopes": {
-"./app/": {
-"dependencies": {
-"fs": true
-}
-}
-}
-}
-
 ```
 
 The following example, would allow access to `fs` for all `data:` resources:
 
 ```
-
 {
-"resources": {
-"data:text/javascript,import('fs');": {
-"cascade": true,
-"integrity": true
+  "resources": {
+    "data:text/javascript,import('fs');": {
+      "cascade": true,
+      "integrity": true
+    }
+  },
+  "scopes": {
+    "data:": {
+      "dependencies": {
+        "fs": true
+      }
+    }
+  }
 }
-},
-"scopes": {
-"data:": {
-"dependencies": {
-"fs": true
-}
-}
-}
-}
-
 ```
 
 ##### Example: [import maps](https://url.spec.whatwg.org/#relative-url-with-fragment-string) emulation[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#policy_example-import-maps-emulation)
@@ -41327,40 +40057,36 @@ The following example, would allow access to `fs` for all `data:` resources:
 Given an import map:
 
 ```
-
 {
-"imports": {
-"react": "./app/node_modules/react/index.js"
-},
-"scopes": {
-"./ssr/": {
-"react": "./app/node_modules/server-side-react/index.js"
+  "imports": {
+    "react": "./app/node_modules/react/index.js"
+  },
+  "scopes": {
+    "./ssr/": {
+      "react": "./app/node_modules/server-side-react/index.js"
+    }
+  }
 }
-}
-}
-
 ```
 
 ```
-
 {
-"dependencies": true,
-"scopes": {
-"": {
-"cascade": true,
-"dependencies": {
-"react": "./app/node_modules/react/index.js"
+  "dependencies": true,
+  "scopes": {
+    "": {
+      "cascade": true,
+      "dependencies": {
+        "react": "./app/node_modules/react/index.js"
+      }
+    },
+    "./ssr/": {
+      "cascade": true,
+      "dependencies": {
+        "react": "./app/node_modules/server-side-react/index.js"
+      }
+    }
+  }
 }
-},
-"./ssr/": {
-"cascade": true,
-"dependencies": {
-"react": "./app/node_modules/server-side-react/index.js"
-}
-}
-}
-}
-
 ```
 
 Import maps assume you can get any resource by default. This means `"dependencies"` at the top level of the policy should be set to `true`. Policies require this to be opt-in since it enables all resources of the application cross linkage which doesn't make sense for many scenarios. They also assume any given scope has access to any scope above its allowed dependencies; all scopes emulating import maps must set `"cascade": true`.
@@ -41378,9 +40104,7 @@ Additionally, import maps only work on `import` so it may be desirable to add a 
 The `process` object provides information about, and control over, the current Node.js process. While it is available as a global, it is recommended to explicitly access it via require or import:
 
 ```
-
 import process from 'process';
-
 ```
 
 ### Process events[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_process-events)
@@ -41400,18 +40124,20 @@ The `'beforeExit'` event is _not_ emitted for conditions causing explicit termin
 The `'beforeExit'` should _not_ be used as an alternative to the `'exit'` event unless the intention is to schedule additional work.
 
 ```
-
 import process from 'process';
 
 process.on('beforeExit', (code) => {
-console.log('Process beforeExit event with code: ', code);
+  console.log('Process beforeExit event with code: ', code);
 });
 
 process.on('exit', (code) => {
-console.log('Process exit event with code: ', code);
+  console.log('Process exit event with code: ', code);
 });
 
 console.log('This message is displayed first.');
+
+
+
 
 ```
 
@@ -41437,27 +40163,23 @@ There is no way to prevent the exiting of the event loop at this point, and once
 The listener callback function is invoked with the exit code specified either by the [`process.exitCode`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processexitcode) property, or the `exitCode` argument passed to the [`process.exit()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processexitcode) method.
 
 ```
-
 import process from 'process';
 
 process.on('exit', (code) => {
-console.log(`About to exit with code: ${code}`);
+  console.log(`About to exit with code: ${code}`);
 });
-
 ```
 
 Listener functions **must** only perform **synchronous** operations. The Node.js process will exit immediately after calling the `'exit'` event listeners causing any additional work still queued in the event loop to be abandoned. In the following example, for instance, the timeout will never occur:
 
 ```
-
 import process from 'process';
 
 process.on('exit', (code) => {
-setTimeout(() => {
-console.log('This will not run');
-}, 0);
+  setTimeout(() => {
+    console.log('This will not run');
+  }, 0);
 });
-
 ```
 
 #### Event: `'message'`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_event-message)
@@ -41491,27 +40213,30 @@ The `'multipleResolves'` event is emitted whenever a `Promise` has been either:
 This is useful for tracking potential errors in an application while using the `Promise` constructor, as multiple resolutions are silently swallowed. However, the occurrence of this event does not necessarily indicate an error. For example, [`Promise.race()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/race) can trigger a `'multipleResolves'` event.
 
 ```
-
 import process from 'process';
 
 process.on('multipleResolves', (type, promise, reason) => {
-console.error(type, promise, reason);
-setImmediate(() => process.exit(1));
+  console.error(type, promise, reason);
+  setImmediate(() => process.exit(1));
 });
 
 async function main() {
-try {
-return await new Promise((resolve, reject) => {
-resolve('First call');
-resolve('Swallowed resolve');
-reject(new Error('Swallowed reject'));
-});
-} catch {
-throw new Error('Failed');
-}
+  try {
+    return await new Promise((resolve, reject) => {
+      resolve('First call');
+      resolve('Swallowed resolve');
+      reject(new Error('Swallowed reject'));
+    });
+  } catch {
+    throw new Error('Failed');
+  }
 }
 
 main().then(console.log);
+
+
+
+
 
 ```
 
@@ -41534,17 +40259,15 @@ In synchronous code, the `'uncaughtException'` event is emitted when the list of
 In asynchronous code, the `'unhandledRejection'` event is emitted when the list of unhandled rejections grows, and the `'rejectionHandled'` event is emitted when the list of unhandled rejections shrinks.
 
 ```
-
 import process from 'process';
 
 const unhandledRejections = new Map();
 process.on('unhandledRejection', (reason, promise) => {
-unhandledRejections.set(promise, reason);
+  unhandledRejections.set(promise, reason);
 });
 process.on('rejectionHandled', (promise) => {
-unhandledRejections.delete(promise);
+  unhandledRejections.delete(promise);
 });
-
 ```
 
 In this example, the `unhandledRejections` `Map` will grow and shrink over time, reflecting rejections that start unhandled and then become handled. It is possible to record such errors in an error log, either periodically (which is likely best for long-running application) or upon process exit (which is likely most convenient for scripts).
@@ -41557,24 +40280,23 @@ In this example, the `unhandledRejections` `Map` will grow and shrink over time,
 The `'uncaughtException'` event is emitted when an uncaught JavaScript exception bubbles all the way back to the event loop. By default, Node.js handles such exceptions by printing the stack trace to `stderr` and exiting with code 1, overriding any previously set [`process.exitCode`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processexitcode). Adding a handler for the `'uncaughtException'` event overrides this default behavior. Alternatively, change the [`process.exitCode`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processexitcode) in the `'uncaughtException'` handler which will result in the process exiting with the provided exit code. Otherwise, in the presence of such handler the process will exit with 0.
 
 ```
-
 import process from 'process';
 
 process.on('uncaughtException', (err, origin) => {
-fs.writeSync(
-process.stderr.fd,
-`Caught exception: ${err}\n` +
-`Exception origin: ${origin}`
-);
+  fs.writeSync(
+    process.stderr.fd,
+    `Caught exception: ${err}\n` +
+    `Exception origin: ${origin}`
+  );
 });
 
 setTimeout(() => {
-console.log('This will still run.');
+  console.log('This will still run.');
 }, 500);
+
 
 nonexistentFunc();
 console.log('This will not run.');
-
 ```
 
 It is possible to monitor `'uncaughtException'` events without overriding the default behavior to exit the process by installing a `'uncaughtExceptionMonitor'` listener.
@@ -41603,15 +40325,14 @@ The `'uncaughtExceptionMonitor'` event is emitted before an `'uncaughtException'
 Installing an `'uncaughtExceptionMonitor'` listener does not change the behavior once an `'uncaughtException'` event is emitted. The process will still crash if no `'uncaughtException'` listener is installed.
 
 ```
-
 import process from 'process';
 
 process.on('uncaughtExceptionMonitor', (err, origin) => {
-MyMonitoringTool.logSync(err, origin);
+  MyMonitoringTool.logSync(err, origin);
 });
 
-nonexistentFunc();
 
+nonexistentFunc();
 ```
 
 #### Event: `'unhandledRejection'`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_event-unhandledrejection)
@@ -41622,33 +40343,29 @@ nonexistentFunc();
 The `'unhandledRejection'` event is emitted whenever a `Promise` is rejected and no error handler is attached to the promise within a turn of the event loop. When programming with Promises, exceptions are encapsulated as "rejected promises". Rejections can be caught and handled using [`promise.catch()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch) and are propagated through a `Promise` chain. The `'unhandledRejection'` event is useful for detecting and keeping track of promises that were rejected whose rejections have not yet been handled.
 
 ```
-
 import process from 'process';
 
 process.on('unhandledRejection', (reason, promise) => {
-console.log('Unhandled Rejection at:', promise, 'reason:', reason);
-
+  console.log('Unhandled Rejection at:', promise, 'reason:', reason);
+  
 });
 
 somePromise.then((res) => {
-return reportToUser(JSON.pasre(res));
-});
-
+  return reportToUser(JSON.pasre(res)); 
+}); 
 ```
 
 The following will also trigger the `'unhandledRejection'` event to be emitted:
 
 ```
-
 import process from 'process';
 
 function SomeResource() {
-
-this.loaded = Promise.reject(new Error('Resource not yet loaded!'));
+  
+  this.loaded = Promise.reject(new Error('Resource not yet loaded!'));
 }
 
 const resource = new SomeResource();
-
 ```
 
 In this example case, it is possible to track the rejection as a developer error as would typically be the case for other `'unhandledRejection'` events. To address such failures, a non-operational [`.catch(() => { })`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch) handler may be attached to `resource.loaded`, which would prevent the `'unhandledRejection'` event from being emitted.
@@ -41667,15 +40384,13 @@ The `'warning'` event is emitted whenever Node.js emits a process warning.
 A process warning is similar to an error in that it describes exceptional conditions that are being brought to the user's attention. However, warnings are not part of the normal Node.js and JavaScript error handling flow. Node.js can emit warnings whenever it detects bad coding practices that could lead to sub-optimal application performance, bugs, or security vulnerabilities.
 
 ```
-
 import process from 'process';
 
 process.on('warning', (warning) => {
-console.warn(warning.name);  
- console.warn(warning.message);
-console.warn(warning.stack);  
+  console.warn(warning.name);    
+  console.warn(warning.message); 
+  console.warn(warning.stack);   
 });
-
 ```
 
 By default, Node.js will print process warnings to `stderr`. The `--no-warnings` command-line option can be used to suppress the default console output but the `'warning'` event will still be emitted by the `process` object.
@@ -41683,29 +40398,23 @@ By default, Node.js will print process warnings to `stderr`. The `--no-warnings`
 The following example illustrates the warning that is printed to `stderr` when too many listeners have been added to an event:
 
 ```
-
 $ node
-
 > events.defaultMaxListeners = 1;
 > process.on('foo', () => {});
 > process.on('foo', () => {});
 > (node:38638) MaxListenersExceededWarning: Possible EventEmitter memory leak
-> detected. 2 foo listeners added. Use emitter.setMaxListeners() to increase limit
-
+detected. 2 foo listeners added. Use emitter.setMaxListeners() to increase limit
 ```
 
 In contrast, the following example turns off the default warning output and adds a custom handler to the `'warning'` event:
 
 ```
-
 $ node --no-warnings
-
 > const p = process.on('warning', (warning) => console.warn('Do not do that!'));
 > events.defaultMaxListeners = 1;
 > process.on('foo', () => {});
 > process.on('foo', () => {});
 > Do not do that!
-
 ```
 
 The `--trace-warnings` command-line option can be used to have the default console output for warnings include the full stack trace of the warning.
@@ -41751,22 +40460,22 @@ The signal handler will receive the signal's name (`'SIGINT'`, `'SIGTERM'`, etc.
 The name of each event will be the uppercase common name for the signal (e.g. `'SIGINT'` for `SIGINT` signals).
 
 ```
-
 import process from 'process';
+
 
 process.stdin.resume();
 
 process.on('SIGINT', () => {
-console.log('Received SIGINT. Press Control-D to exit.');
+  console.log('Received SIGINT. Press Control-D to exit.');
 });
 
+
 function handle(signal) {
-console.log(`Received ${signal}`);
+  console.log(`Received ${signal}`);
 }
 
 process.on('SIGINT', handle);
 process.on('SIGTERM', handle);
-
 ```
 
 -   `'SIGUSR1'` is reserved by Node.js to start the [debugger](https://nodejs.org/dist/v16.13.1/docs/api/debugger.html). It's possible to install a listener but doing so might interfere with the debugger.
@@ -41813,13 +40522,14 @@ The `process.allowedNodeEnvironmentFlags` property is a special, read-only `Set`
 When iterating over `process.allowedNodeEnvironmentFlags`, flags will appear only _once_; each will begin with one or more dashes. Flags passed through to V8 will contain underscores instead of non-leading dashes:
 
 ```
-
 import { allowedNodeEnvironmentFlags } from 'process';
 
 allowedNodeEnvironmentFlags.forEach((flag) => {
-
+  
+  
+  
+  
 });
-
 ```
 
 The methods `add()`, `clear()`, and `delete()` of `process.allowedNodeEnvironmentFlags` do nothing, and will fail silently.
@@ -41835,11 +40545,9 @@ Added in: v0.5.0
 The operating system CPU architecture for which the Node.js binary was compiled. Possible values are: `'arm'`, `'arm64'`, `'ia32'`, `'mips'`,`'mipsel'`, `'ppc'`, `'ppc64'`, `'s390'`, `'s390x'`, `'x32'`, and `'x64'`.
 
 ```
-
 import { arch } from 'process';
 
 console.log(`This processor architecture is ${arch}`);
-
 ```
 
 ### `process.argv`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processargv)
@@ -41853,33 +40561,28 @@ The `process.argv` property returns an array containing the command-line argumen
 For example, assuming the following script for `process-args.js`:
 
 ```
-
 import { argv } from 'process';
 
-argv.forEach((val, index) => {
-console.log(`${index}: ${val}`);
-});
 
+argv.forEach((val, index) => {
+  console.log(`${index}: ${val}`);
+});
 ```
 
 Launching the Node.js process as:
 
 ```
-
 $ node process-args.js one two=three four
-
 ```
 
 Would generate the output:
 
 ```
-
 0: /usr/local/bin/node
 1: /Users/mjr/work/node/process-args.js
 2: one
 3: two=three
 4: four
-
 ```
 
 ### `process.argv0`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processargv0)
@@ -41891,14 +40594,11 @@ Added in: v6.4.0
 The `process.argv0` property stores a read-only copy of the original value of `argv[0]` passed when Node.js starts.
 
 ```
-
 $ bash -c 'exec -a customArgv0 ./node'
-
 > process.argv[0]
-> '/Volumes/code/external/node/out/Release/node'
+'/Volumes/code/external/node/out/Release/node'
 > process.argv0
-> 'customArgv0'
-
+'customArgv0'
 ```
 
 ### `process.channel`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processchannel)
@@ -41932,17 +40632,15 @@ Added in: v0.1.17
 The `process.chdir()` method changes the current working directory of the Node.js process or throws an exception if doing so fails (for instance, if the specified `directory` does not exist).
 
 ```
-
 import { chdir, cwd } from 'process';
 
 console.log(`Starting directory: ${cwd()}`);
 try {
-chdir('/tmp');
-console.log(`New directory: ${cwd()}`);
+  chdir('/tmp');
+  console.log(`New directory: ${cwd()}`);
 } catch (err) {
-console.error(`chdir: ${err}`);
+  console.error(`chdir: ${err}`);
 }
-
 ```
 
 This feature is not available in [`Worker`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-worker) threads.
@@ -41956,33 +40654,31 @@ The `process.config` property returns an `Object` containing the JavaScript repr
 An example of the possible output looks like:
 
 ```
-
 {
-target_defaults:
-{ cflags: [],
-default_configuration: 'Release',
-defines: [],
-include_dirs: [],
-libraries: [] },
-variables:
-{
-host_arch: 'x64',
-napi_build_version: 5,
-node_install_npm: 'true',
-node_prefix: '',
-node_shared_cares: 'false',
-node_shared_http_parser: 'false',
-node_shared_libuv: 'false',
-node_shared_zlib: 'false',
-node_use_dtrace: 'false',
-node_use_openssl: 'true',
-node_shared_openssl: 'false',
-strict_aliasing: 'true',
-target_arch: 'x64',
-v8_use_snapshot: 1
+  target_defaults:
+   { cflags: [],
+     default_configuration: 'Release',
+     defines: [],
+     include_dirs: [],
+     libraries: [] },
+  variables:
+   {
+     host_arch: 'x64',
+     napi_build_version: 5,
+     node_install_npm: 'true',
+     node_prefix: '',
+     node_shared_cares: 'false',
+     node_shared_http_parser: 'false',
+     node_shared_libuv: 'false',
+     node_shared_zlib: 'false',
+     node_use_dtrace: 'false',
+     node_use_openssl: 'true',
+     node_shared_openssl: 'false',
+     strict_aliasing: 'true',
+     target_arch: 'x64',
+     v8_use_snapshot: 1
+   }
 }
-}
-
 ```
 
 The `process.config` property is **not** read-only and there are existing modules in the ecosystem that are known to extend, modify, or entirely replace the value of `process.config`.
@@ -42013,16 +40709,16 @@ The `process.cpuUsage()` method returns the user and system CPU time usage of th
 The result of a previous call to `process.cpuUsage()` can be passed as the argument to the function, to get a diff reading.
 
 ```
-
 import { cpuUsage } from 'process';
 
 const startUsage = cpuUsage();
+
+
 
 const now = Date.now();
 while (Date.now() - now < 500);
 
 console.log(cpuUsage(startUsage));
-
 ```
 
 ### `process.cwd()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processcwd)
@@ -42034,11 +40730,9 @@ Added in: v0.1.8
 The `process.cwd()` method returns the current working directory of the Node.js process.
 
 ```
-
 import { cwd } from 'process';
 
 console.log(`Current directory: ${cwd()}`);
-
 ```
 
 ### `process.debugPort`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processdebugport)
@@ -42050,11 +40744,9 @@ Added in: v0.7.2
 The port used by the Node.js debugger when enabled.
 
 ```
-
 import process from 'process';
 
 process.debugPort = 5858;
-
 ```
 
 ### `process.disconnect()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processdisconnect)
@@ -42082,16 +40774,14 @@ An important requirement when calling `process.dlopen()` is that the `module` in
 The example below shows how to load a C++ Addon, named `local.node`, that exports a `foo` function. All the symbols are loaded before the call returns, by passing the `RTLD_NOW` constant. In this example the constant is assumed to be available.
 
 ```
-
 import { dlopen } from 'process';
 import { constants } from 'os';
 import { fileURLToPath } from 'url';
 
 const module = { exports: {} };
 dlopen(module, fileURLToPath(new URL('local.node', import.meta.url)),
-constants.dlopen.RTLD_NOW);
+       constants.dlopen.RTLD_NOW);
 module.exports.foo();
-
 ```
 
 ### `process.emitWarning(warning[, options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processemitwarningwarning-options)
@@ -42108,30 +40798,29 @@ Added in: v8.0.0
 The `process.emitWarning()` method can be used to emit custom or application specific process warnings. These can be listened for by adding a handler to the [`'warning'`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_event-warning) event.
 
 ```
-
 import { emitWarning } from 'process';
 
+
 emitWarning('Something happened!', {
-code: 'MY_WARNING',
-detail: 'This is some additional information'
+  code: 'MY_WARNING',
+  detail: 'This is some additional information'
 });
+
 
 ```
 
 In this example, an `Error` object is generated internally by `process.emitWarning()` and passed through to the [`'warning'`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_event-warning) handler.
 
 ```
-
 import process from 'process';
 
 process.on('warning', (warning) => {
-console.warn(warning.name);  
- console.warn(warning.message);
-console.warn(warning.code);  
- console.warn(warning.stack);  
- console.warn(warning.detail);  
+  console.warn(warning.name);    
+  console.warn(warning.message); 
+  console.warn(warning.code);    
+  console.warn(warning.stack);   
+  console.warn(warning.detail);  
 });
-
 ```
 
 If `warning` is passed as an `Error` object, the `options` argument is ignored.
@@ -42148,49 +40837,43 @@ Added in: v6.0.0
 The `process.emitWarning()` method can be used to emit custom or application specific process warnings. These can be listened for by adding a handler to the [`'warning'`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_event-warning) event.
 
 ```
-
 import { emitWarning } from 'process';
+
 
 emitWarning('Something happened!');
-
 ```
 
 ```
-
 import { emitWarning } from 'process';
 
+
 emitWarning('Something Happened!', 'CustomWarning');
-
 ```
 
 ```
-
 import { emitWarning } from 'process';
 
 emitWarning('Something happened!', 'CustomWarning', 'WARN001');
-
 ```
 
 In each of the previous examples, an `Error` object is generated internally by `process.emitWarning()` and passed through to the [`'warning'`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_event-warning) handler.
 
 ```
-
 import process from 'process';
 
 process.on('warning', (warning) => {
-console.warn(warning.name);
-console.warn(warning.message);
-console.warn(warning.code);
-console.warn(warning.stack);
+  console.warn(warning.name);
+  console.warn(warning.message);
+  console.warn(warning.code);
+  console.warn(warning.stack);
 });
-
 ```
 
 If `warning` is passed as an `Error` object, it will be passed through to the `'warning'` event handler unmodified (and the optional `type`, `code` and `ctor` arguments will be ignored):
 
 ```
-
 import { emitWarning } from 'process';
+
 
 const myWarning = new Error('Something happened!');
 
@@ -42198,7 +40881,6 @@ myWarning.name = 'CustomWarning';
 myWarning.code = 'WARN001';
 
 emitWarning(myWarning);
-
 ```
 
 A `TypeError` is thrown if `warning` is anything other than a string or `Error` object.
@@ -42216,19 +40898,17 @@ The following additional handling is implemented if the warning `type` is `'Depr
 As a best practice, warnings should be emitted only once per process. To do so, it is recommended to place the `emitWarning()` behind a simple boolean flag as illustrated in the example below:
 
 ```
-
 import { emitWarning } from 'process';
 
 function emitMyWarning() {
-if (!emitMyWarning.warned) {
-emitMyWarning.warned = true;
-emitWarning('Only warn once!');
-}
+  if (!emitMyWarning.warned) {
+    emitMyWarning.warned = true;
+    emitWarning('Only warn once!');
+  }
 }
 emitMyWarning();
 
 emitMyWarning();
-
 ```
 
 ### `process.env`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processenv)
@@ -42240,45 +40920,38 @@ The `process.env` property returns an object containing the user environment. Se
 An example of this object looks like:
 
 ```
-
 {
-TERM: 'xterm-256color',
-SHELL: '/usr/local/bin/bash',
-USER: 'maciej',
-PATH: '~/.bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin',
-PWD: '/Users/maciej',
-EDITOR: 'vim',
-SHLVL: '1',
-HOME: '/Users/maciej',
-LOGNAME: 'maciej',
-\_: '/usr/local/bin/node'
+  TERM: 'xterm-256color',
+  SHELL: '/usr/local/bin/bash',
+  USER: 'maciej',
+  PATH: '~/.bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin',
+  PWD: '/Users/maciej',
+  EDITOR: 'vim',
+  SHLVL: '1',
+  HOME: '/Users/maciej',
+  LOGNAME: 'maciej',
+  _: '/usr/local/bin/node'
 }
-
 ```
 
 It is possible to modify this object, but such modifications will not be reflected outside the Node.js process, or (unless explicitly requested) to other [`Worker`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-worker) threads. In other words, the following example would not work:
 
 ```
-
 $ node -e 'process.env.foo = "bar"' && echo $foo
-
 ```
 
 While the following will:
 
 ```
-
 import { env } from 'process';
 
 env.foo = 'bar';
 console.log(env.foo);
-
 ```
 
 Assigning a property on `process.env` will implicitly convert the value to a string. **This behavior is deprecated.** Future versions of Node.js may throw an error when the value is not a string, number, or boolean.
 
 ```
-
 import { env } from 'process';
 
 env.test = null;
@@ -42286,30 +40959,25 @@ console.log(env.test);
 
 env.test = undefined;
 console.log(env.test);
-
 ```
 
 Use `delete` to delete a property from `process.env`.
 
 ```
-
 import { env } from 'process';
 
 env.TEST = 1;
 delete env.TEST;
 console.log(env.TEST);
-
 ```
 
 On Windows operating systems, environment variables are case-insensitive.
 
 ```
-
 import { env } from 'process';
 
 env.TEST = 1;
 console.log(env.test);
-
 ```
 
 Unless explicitly specified when creating a [`Worker`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-worker) instance, each [`Worker`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-worker) thread has its own copy of `process.env`, based on its parent thread’s `process.env`, or whatever was specified as the `env` option to the [`Worker`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-worker) constructor. Changes to `process.env` will not be visible across [`Worker`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-worker) threads, and only the main thread can make changes that are visible to the operating system or to native add-ons.
@@ -42323,25 +40991,19 @@ Added in: v0.7.7
 The `process.execArgv` property returns the set of Node.js-specific command-line options passed when the Node.js process was launched. These options do not appear in the array returned by the [`process.argv`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processargv) property, and do not include the Node.js executable, the name of the script, or any options following the script name. These options are useful in order to spawn child processes with the same execution environment as the parent.
 
 ```
-
 $ node --harmony script.js --version
-
 ```
 
 Results in `process.execArgv`:
 
 ```
-
 ['--harmony']
-
 ```
 
 And `process.argv`:
 
 ```
-
 ['/usr/local/bin/node', 'script.js', '--version']
-
 ```
 
 Refer to [`Worker` constructor](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_new-workerfilename-options) for the detailed behavior of worker threads with this property.
@@ -42355,9 +41017,7 @@ Added in: v0.1.100
 The `process.execPath` property returns the absolute pathname of the executable that started the Node.js process. Symbolic links, if any, are resolved.
 
 ```
-
 '/usr/local/bin/node'
-
 ```
 
 ### `process.exit([code])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processexitcode)
@@ -42371,11 +41031,9 @@ The `process.exit()` method instructs Node.js to terminate the process synchrono
 To exit with a 'failure' code:
 
 ```
-
 import { exit } from 'process';
 
 exit(1);
-
 ```
 
 The shell that executed Node.js should see the exit code as `1`.
@@ -42387,14 +41045,13 @@ In most situations, it is not actually necessary to call `process.exit()` explic
 For instance, the following example illustrates a _misuse_ of the `process.exit()` method that could lead to data printed to stdout being truncated and lost:
 
 ```
-
 import { exit } from 'process';
 
-if (someConditionNotMet()) {
-printUsageToStdout();
-exit(1);
-}
 
+if (someConditionNotMet()) {
+  printUsageToStdout();
+  exit(1);
+}
 ```
 
 The reason this is problematic is because writes to `process.stdout` in Node.js are sometimes _asynchronous_ and may occur over multiple ticks of the Node.js event loop. Calling `process.exit()`, however, forces the process to exit _before_ those additional writes to `stdout` can be performed.
@@ -42402,14 +41059,14 @@ The reason this is problematic is because writes to `process.stdout` in Node.js 
 Rather than calling `process.exit()` directly, the code _should_ set the `process.exitCode` and allow the process to exit naturally by avoiding scheduling any additional work for the event loop:
 
 ```
-
 import process from 'process';
 
-if (someConditionNotMet()) {
-printUsageToStdout();
-process.exitCode = 1;
-}
 
+
+if (someConditionNotMet()) {
+  printUsageToStdout();
+  process.exitCode = 1;
+}
 ```
 
 If it is necessary to terminate the Node.js process due to an error condition, throwing an _uncaught_ error and allowing the process to terminate accordingly is safer than calling `process.exit()`.
@@ -42433,13 +41090,11 @@ Added in: v2.0.0
 The `process.getegid()` method returns the numerical effective group identity of the Node.js process. (See [`getegid(2)`](http://man7.org/linux/man-pages/man2/getegid.2.html).)
 
 ```
-
 import process from 'process';
 
 if (process.getegid) {
-console.log(`Current gid: ${process.getegid()}`);
+  console.log(`Current gid: ${process.getegid()}`);
 }
-
 ```
 
 This function is only available on POSIX platforms (i.e. not Windows or Android).
@@ -42453,13 +41108,11 @@ Added in: v2.0.0
 The `process.geteuid()` method returns the numerical effective user identity of the process. (See [`geteuid(2)`](http://man7.org/linux/man-pages/man2/geteuid.2.html).)
 
 ```
-
 import process from 'process';
 
 if (process.geteuid) {
-console.log(`Current uid: ${process.geteuid()}`);
+  console.log(`Current uid: ${process.geteuid()}`);
 }
-
 ```
 
 This function is only available on POSIX platforms (i.e. not Windows or Android).
@@ -42473,13 +41126,11 @@ Added in: v0.1.31
 The `process.getgid()` method returns the numerical group identity of the process. (See [`getgid(2)`](http://man7.org/linux/man-pages/man2/getgid.2.html).)
 
 ```
-
 import process from 'process';
 
 if (process.getgid) {
-console.log(`Current gid: ${process.getgid()}`);
+  console.log(`Current gid: ${process.getgid()}`);
 }
-
 ```
 
 This function is only available on POSIX platforms (i.e. not Windows or Android).
@@ -42493,13 +41144,11 @@ Added in: v0.9.4
 The `process.getgroups()` method returns an array with the supplementary group IDs. POSIX leaves it unspecified if the effective group ID is included but Node.js ensures it always is.
 
 ```
-
 import process from 'process';
 
 if (process.getgroups) {
-console.log(process.getgroups());
+  console.log(process.getgroups()); 
 }
-
 ```
 
 This function is only available on POSIX platforms (i.e. not Windows or Android).
@@ -42513,13 +41162,11 @@ Added in: v0.1.28
 The `process.getuid()` method returns the numeric user identity of the process. (See [`getuid(2)`](http://man7.org/linux/man-pages/man2/getuid.2.html).)
 
 ```
-
 import process from 'process';
 
 if (process.getuid) {
-console.log(`Current uid: ${process.getuid()}`);
+  console.log(`Current uid: ${process.getuid()}`);
 }
-
 ```
 
 This function is only available on POSIX platforms (i.e. not Windows or Android).
@@ -42548,19 +41195,19 @@ The `process.hrtime()` method returns the current high-resolution real time in a
 These times are relative to an arbitrary time in the past, and not related to the time of day and therefore not subject to clock drift. The primary use is for measuring performance between intervals:
 
 ```
-
 import { hrtime } from 'process';
 
 const NS_PER_SEC = 1e9;
 const time = hrtime();
 
+
 setTimeout(() => {
-const diff = hrtime(time);
+  const diff = hrtime(time);
+  
 
-console.log(`Benchmark took ${diff[0] * NS_PER_SEC + diff[1]} nanoseconds`);
-
+  console.log(`Benchmark took ${diff[0] * NS_PER_SEC + diff[1]} nanoseconds`);
+  
 }, 1000);
-
 ```
 
 ### `process.hrtime.bigint()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processhrtimebigint)
@@ -42574,18 +41221,18 @@ The `bigint` version of the [`process.hrtime()`](https://nodejs.org/dist/v16.13.
 Unlike [`process.hrtime()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processhrtimetime), it does not support an additional `time` argument since the difference can just be computed directly by subtraction of the two `bigint`s.
 
 ```
-
 import { hrtime } from 'process';
 
 const start = hrtime.bigint();
 
+
 setTimeout(() => {
-const end = hrtime.bigint();
+  const end = hrtime.bigint();
+  
 
-console.log(`Benchmark took ${end - start} nanoseconds`);
-
+  console.log(`Benchmark took ${end - start} nanoseconds`);
+  
 }, 1000);
-
 ```
 
 ### `process.initgroups(user, extraGroup)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processinitgroupsuser-extragroup)
@@ -42600,15 +41247,13 @@ The `process.initgroups()` method reads the `/etc/group` file and initializes th
 Use care when dropping privileges:
 
 ```
-
 import { getgroups, initgroups, setgid } from 'process';
 
-console.log(getgroups());  
-initgroups('nodeuser', 1000);  
-console.log(getgroups());  
-setgid(1000);  
-console.log(getgroups());
-
+console.log(getgroups());         
+initgroups('nodeuser', 1000);     
+console.log(getgroups());         
+setgid(1000);                     
+console.log(getgroups());         
 ```
 
 This function is only available on POSIX platforms (i.e. not Windows or Android). This feature is not available in [`Worker`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-worker) threads.
@@ -42629,20 +41274,18 @@ This method will throw an error if the target `pid` does not exist. As a special
 Even though the name of this function is `process.kill()`, it is really just a signal sender, like the `kill` system call. The signal sent may do something other than kill the target process.
 
 ```
-
 import process, { kill } from 'process';
 
 process.on('SIGHUP', () => {
-console.log('Got SIGHUP signal.');
+  console.log('Got SIGHUP signal.');
 });
 
 setTimeout(() => {
-console.log('Exiting.');
-process.exit(0);
+  console.log('Exiting.');
+  process.exit(0);
 }, 100);
 
 kill(process.pid, 'SIGHUP');
-
 ```
 
 When `SIGUSR1` is received by a Node.js process, Node.js will start the debugger. See [Signal Events](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_signal-events).
@@ -42669,10 +41312,17 @@ As with [`require.main`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#modu
 Returns an object describing the memory usage of the Node.js process measured in bytes.
 
 ```
-
 import { memoryUsage } from 'process';
 
-console.log(memoryUsage());```
+console.log(memoryUsage());
+
+
+
+
+
+
+
+```
 
 -   `heapTotal` and `heapUsed` refer to V8's memory usage.
 -   `external` refers to the memory usage of C++ objects bound to JavaScript objects managed by V8.
@@ -43034,8 +41684,11 @@ console.log(`Report signal: ${report.signal}`);
 #### `process.report.writeReport([filename][, err])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processreportwritereportfilename-err)
 
 -   `filename` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) Name of the file where the report is written. This should be a relative path, that will be appended to the directory specified in `process.report.directory`, or the current working directory of the Node.js process, if unspecified.
+    
 -   `err` [<Error>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error) A custom error used for reporting the JavaScript stack.
+    
 -   Returns: [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) Returns the filename of the generated report.
+    
 
 Writes a diagnostic report to a file. If `filename` is not provided, the default filename includes the date, time, PID, and a sequence number. The report's JavaScript stack trace is taken from `err`, if present.
 
@@ -43180,7 +41833,7 @@ import process from 'process';
 if (process.getgroups && process.setgroups) {
   try {
     process.setgroups([501]);
-    console.log(process.getgroups());
+    console.log(process.getgroups()); 
   } catch (err) {
     console.log(`Failed to set groups: ${err}`);
   }
@@ -43501,8 +42154,8 @@ Added in: v0.5.1
 The `punycode.decode()` method converts a [Punycode](https://tools.ietf.org/html/rfc3492) string of ASCII-only characters to the equivalent string of Unicode codepoints.
 
 ```
-punycode.decode('maana-pta');
-punycode.decode('--dqo34k');
+punycode.decode('maana-pta'); 
+punycode.decode('--dqo34k'); 
 ```
 
 ### `punycode.encode(string)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#punycode_punycodeencodestring)
@@ -43514,8 +42167,8 @@ Added in: v0.5.1
 The `punycode.encode()` method converts a string of Unicode codepoints to a [Punycode](https://tools.ietf.org/html/rfc3492) string of ASCII-only characters.
 
 ```
-punycode.encode('mañana');
-punycode.encode('☃-⌘');
+punycode.encode('mañana'); 
+punycode.encode('☃-⌘'); 
 ```
 
 ### `punycode.toASCII(domain)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#punycode_punycodetoasciidomain)
@@ -43528,9 +42181,9 @@ The `punycode.toASCII()` method converts a Unicode string representing an Intern
 
 ```
 
-punycode.toASCII('mañana.com');
-punycode.toASCII('☃-⌘.com');
-punycode.toASCII('example.com');
+punycode.toASCII('mañana.com');  
+punycode.toASCII('☃-⌘.com');   
+punycode.toASCII('example.com'); 
 ```
 
 ### `punycode.toUnicode(domain)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#punycode_punycodetounicodedomain)
@@ -43543,9 +42196,9 @@ The `punycode.toUnicode()` method converts a string representing a domain name c
 
 ```
 
-punycode.toUnicode('xn--maana-pta.com');
-punycode.toUnicode('xn----dqo34k.com');
-punycode.toUnicode('example.com');
+punycode.toUnicode('xn--maana-pta.com'); 
+punycode.toUnicode('xn----dqo34k.com');  
+punycode.toUnicode('example.com');       
 ```
 
 ### `punycode.ucs2`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#punycode_punycodeucs2)
@@ -43561,9 +42214,9 @@ Added in: v0.7.0
 The `punycode.ucs2.decode()` method returns an array containing the numeric codepoint values of each Unicode symbol in the string.
 
 ```
-punycode.ucs2.decode('abc');
+punycode.ucs2.decode('abc'); 
 
-punycode.ucs2.decode('\uD834\uDF06');
+punycode.ucs2.decode('\uD834\uDF06'); 
 ```
 
 #### `punycode.ucs2.encode(codePoints)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#punycode_punycodeucs2encodecodepoints)
@@ -43575,8 +42228,8 @@ Added in: v0.7.0
 The `punycode.ucs2.encode()` method returns a string based on an array of numeric code point values.
 
 ```
-punycode.ucs2.encode([0x61, 0x62, 0x63]);
-punycode.ucs2.encode([0x1D306]);
+punycode.ucs2.encode([0x61, 0x62, 0x63]); 
+punycode.ucs2.encode([0x1D306]); 
 ```
 
 ### `punycode.version`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#punycode_punycodeversion)
@@ -43715,7 +42368,7 @@ const rl = readline.createInterface({
 });
 
 rl.question('What do you think of Node.js? ', (answer) => {
-
+  
   console.log(`Thank you for your valuable feedback: ${answer}`);
 
   rl.close();
@@ -43820,7 +42473,7 @@ The listener function is invoked without passing any arguments.
 
 ```
 rl.on('SIGCONT', () => {
-
+  
   rl.prompt();
 });
 ```
@@ -43857,8 +42510,8 @@ The listener function is invoked without passing any arguments.
 
 ```
 rl.on('SIGTSTP', () => {
-
-
+  
+  
   console.log('Caught SIGTSTP.');
 });
 ```
@@ -44016,12 +42669,12 @@ Performance is not on par with the traditional `'line'` event API. Use `'line'` 
 ```
 async function processLineByLine() {
   const rl = readline.createInterface({
-
+    
   });
 
   for await (const line of rl) {
-
-
+    
+    
   }
 }
 ```
@@ -44152,7 +42805,7 @@ For instance: `[[substr1, substr2, ...], originalsubstring]`.
 function completer(line) {
   const completions = '.help .error .exit .quit .q'.split(' ');
   const hits = completions.filter((c) => c.startsWith(line));
-
+  
   return [hits.length ? hits : completions, line];
 }
 ```
@@ -44251,11 +42904,11 @@ async function processLineByLine() {
     input: fileStream,
     crlfDelay: Infinity
   });
-
-
+  
+  
 
   for await (const line of rl) {
-
+    
     console.log(`Line from file: ${line}`);
   }
 }
@@ -44294,7 +42947,7 @@ const { createInterface } = require('readline');
     });
 
     rl.on('line', (line) => {
-
+      
     });
 
     await once(rl, 'close');
@@ -44535,19 +43188,20 @@ The REPL uses the [`domain`](https://nodejs.org/dist/v16.13.1/docs/api/domain.ht
 This use of the [`domain`](https://nodejs.org/dist/v16.13.1/docs/api/domain.html) module in the REPL has these side effects:
 
 -   Uncaught exceptions only emit the [`'uncaughtException'`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_event-uncaughtexception) event in the standalone REPL. Adding a listener for this event in a REPL within another Node.js program results in [`ERR_INVALID_REPL_INPUT`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_err_invalid_repl_input).
-
+    
     ```
     const r = repl.start();
-
+    
     r.write('process.on("uncaughtException", () => console.log("Foobar"));\n');
-
-
-
-
+    
+    
+    
+    
     r.close();
     ```
-
+    
 -   Trying to use [`process.setUncaughtExceptionCaptureCallback()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#process_processsetuncaughtexceptioncapturecallbackfn) throws an [`ERR_DOMAIN_CANNOT_SET_UNCAUGHT_EXCEPTION_CAPTURE`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_err_domain_cannot_set_uncaught_exception_capture) error.
+    
 
 ##### Assignment of the `_` (underscore) variable[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#repl_assignment-of-the-_-underscore-variable)
 
@@ -45364,17 +44018,24 @@ node --report-uncaught-exception --report-on-signal \
 ```
 
 -   `--report-uncaught-exception` Enables report to be generated on un-caught exceptions. Useful when inspecting JavaScript stack in conjunction with native stack and other runtime environment data.
+    
 -   `--report-on-signal` Enables report to be generated upon receiving the specified (or predefined) signal to the running Node.js process. (See below on how to modify the signal that triggers the report.) Default signal is `SIGUSR2`. Useful when a report needs to be triggered from another program. Application monitors may leverage this feature to collect report at regular intervals and plot rich set of internal runtime data to their views.
+    
 
 Signal based report generation is not supported in Windows.
 
 Under normal circumstances, there is no need to modify the report triggering signal. However, if `SIGUSR2` is already used for other purposes, then this flag helps to change the signal for report generation and preserve the original meaning of `SIGUSR2` for the said purposes.
 
 -   `--report-on-fatalerror` Enables the report to be triggered on fatal errors (internal errors within the Node.js runtime, such as out of memory) that leads to termination of the application. Useful to inspect various diagnostic data elements such as heap, stack, event loop state, resource consumption etc. to reason about the fatal error.
+    
 -   `--report-compact` Write reports in a compact format, single-line JSON, more easily consumable by log processing systems than the default multi-line format designed for human consumption.
+    
 -   `--report-directory` Location at which the report will be generated.
+    
 -   `--report-filename` Name of the file to which the report will be written.
+    
 -   `--report-signal` Sets or resets the signal for report generation (not supported on Windows). Default signal is `SIGUSR2`.
+    
 
 A report can also be triggered via an API call from a JavaScript application:
 
@@ -45412,7 +44073,7 @@ The content of the diagnostic report can be returned as a JavaScript Object via 
 
 ```
 const report = process.report.getReport();
-console.log(typeof report === 'object');
+console.log(typeof report === 'object'); 
 
 
 console.log(JSON.stringify(report, null, 2));
@@ -45422,7 +44083,7 @@ This function takes an optional additional argument `err`, which is an `Error` o
 
 ```
 const report = process.report.getReport(new Error('custom error'));
-console.log(typeof report === 'object');
+console.log(typeof report === 'object'); 
 ```
 
 The API versions are useful when inspecting the runtime state from within the application, in expectation of self-adjusting the resource consumption, load balancing, monitoring etc.
@@ -45565,28 +44226,28 @@ Almost all Node.js applications, no matter how simple, use streams in some manne
 const http = require('http');
 
 const server = http.createServer((req, res) => {
-
-
+  
+  
 
   let body = '';
-
-
+  
+  
   req.setEncoding('utf8');
 
-
+  
   req.on('data', (chunk) => {
     body += chunk;
   });
 
-
+  
   req.on('end', () => {
     try {
       const data = JSON.parse(body);
-
+      
       res.write(typeof data);
       res.end();
     } catch (er) {
-
+      
       res.statusCode = 400;
       return res.end(`error: ${er.message}`);
     }
@@ -45669,17 +44330,17 @@ function writeOneMillionTimes(writer, data, encoding, callback) {
     do {
       i--;
       if (i === 0) {
-
+        
         writer.write(data, encoding, callback);
       } else {
-
-
+        
+        
         ok = writer.write(data, encoding);
       }
     } while (i > 0 && ok);
     if (i > 0) {
-
-
+      
+      
       writer.once('drain', write);
     }
   }
@@ -45778,7 +44439,7 @@ const myStream = new Writable();
 
 const fooErr = new Error('foo error');
 myStream.destroy(fooErr);
-myStream.on('error', (fooErr) => console.error(fooErr.message));
+myStream.on('error', (fooErr) => console.error(fooErr.message)); 
 ```
 
 ```
@@ -45816,9 +44477,9 @@ const { Writable } = require('stream');
 
 const myStream = new Writable();
 
-console.log(myStream.destroyed);
+console.log(myStream.destroyed); 
 myStream.destroy();
-console.log(myStream.destroyed);
+console.log(myStream.destroyed); 
 ```
 
 ###### `writable.end([chunk[, encoding]][, callback])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_writableendchunk-encoding-callback)
@@ -45871,7 +44532,7 @@ stream.cork();
 stream.write('data ');
 process.nextTick(() => {
   stream.uncork();
-
+  
   stream.uncork();
 });
 ```
@@ -45998,7 +44659,9 @@ All [`Readable`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_class
 `Readable` streams effectively operate in one of two modes: flowing and paused. These modes are separate from [object mode](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_object-mode). A [`Readable`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_class-streamreadable) stream can be in object mode or not, regardless of whether it is in flowing mode or paused mode.
 
 -   In flowing mode, data is read from the underlying system automatically and provided to an application as quickly as possible using events via the [`EventEmitter`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#events_class-eventemitter) interface.
+    
 -   In paused mode, the [`stream.read()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_readablereadsize) method must be called explicitly to read chunks of data from the stream.
+    
 
 All [`Readable`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_class-streamreadable) streams begin in paused mode but can be switched to flowing mode in one of the following ways:
 
@@ -46043,8 +44706,8 @@ pass.unpipe(writable);
 
 
 pass.on('data', (chunk) => { console.log(chunk.toString()); });
-pass.write('ok');
-pass.resume();
+pass.write('ok');  
+pass.resume();     
 ```
 
 While `readable.readableFlowing` is `false`, data may be accumulating within the stream's internal buffer.
@@ -46125,7 +44788,7 @@ The `'readable'` event is emitted when there is data available to be read from t
 ```
 const readable = getReadableStreamSomehow();
 readable.on('readable', function() {
-
+  
   let data;
 
   while (data = this.read()) {
@@ -46159,7 +44822,7 @@ In some cases, attaching a listener for the `'readable'` event will cause some a
 
 In general, the `readable.pipe()` and `'data'` event mechanisms are easier to understand than the `'readable'` event. However, handling `'readable'` might result in increased throughput.
 
-If both `'readable'` and [`'data'`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_event-data) are used at the same time, `'readable'` takes precedence in controlling the flow, i.e. `'data'` will be emitted only when [`stream.read()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_readablereadsize) is called. The `readableFlowing` property would become `false`. If there are `'data'` listeners when `'readable'` is removed, the stream will start flowing, i.e. `'data'` events will be emitted without calling `.resume()`.
+If both `'readable'` and [`'data'`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_event-data) are used at the same time, `'readable'` takes precedence in controlling the flow, i.e. `'data'` will be emitted only when [`stream.read()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_readablereadsize) is called. The `readableFlowing` property would become `false`. If there are `'data'` listeners when `'readable'` is removed, the stream will start flowing, i.e. `'data'` events will be emitted without calling `.resume()`.
 
 ###### Event: `'resume'`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_event-resume)
 
@@ -46197,11 +44860,11 @@ The `readable.isPaused()` method returns the current operating state of the `Rea
 ```
 const readable = new stream.Readable();
 
-readable.isPaused();
+readable.isPaused(); 
 readable.pause();
-readable.isPaused();
+readable.isPaused(); 
 readable.resume();
-readable.isPaused();
+readable.isPaused(); 
 ```
 
 ###### `readable.pause()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_readablepause)
@@ -46297,7 +44960,7 @@ const readable = getReadableStreamSomehow();
 readable.on('readable', () => {
   let chunk;
   console.log('Stream is readable (new data received in buffer)');
-
+  
   while (null !== (chunk = readable.read())) {
     console.log(`Read ${chunk.length} bytes of data...`);
   }
@@ -46502,20 +45165,20 @@ function parseHeader(stream, callback) {
     while (null !== (chunk = stream.read())) {
       const str = decoder.write(chunk);
       if (str.match(/\n\n/)) {
-
+        
         const split = str.split(/\n\n/);
         header += split.shift();
         const remaining = split.join('\n\n');
         const buf = Buffer.from(remaining, 'utf8');
         stream.removeListener('error', callback);
-
+        
         stream.removeListener('readable', onReadable);
         if (buf.length)
           stream.unshift(buf);
-
+        
         callback(null, header, stream);
       } else {
-
+        
         header += str;
       }
     }
@@ -46545,7 +45208,7 @@ const oreader = new OldReader();
 const myReader = new Readable().wrap(oreader);
 
 myReader.on('readable', () => {
-  myReader.read();
+  myReader.read(); 
 });
 ```
 
@@ -46586,26 +45249,26 @@ const { Readable } = require('stream');
 
 async function printIterator(readable) {
   for await (const chunk of readable.iterator({ destroyOnReturn: false })) {
-    console.log(chunk);
+    console.log(chunk); 
     break;
   }
 
-  console.log(readable.destroyed);
+  console.log(readable.destroyed); 
 
   for await (const chunk of readable.iterator({ destroyOnReturn: false })) {
-    console.log(chunk);
+    console.log(chunk); 
   }
 
-  console.log(readable.destroyed);
+  console.log(readable.destroyed); 
 }
 
 async function printSymbolAsyncIterator(readable) {
   for await (const chunk of readable) {
-    console.log(chunk);
+    console.log(chunk); 
     break;
   }
 
-  console.log(readable.destroyed);
+  console.log(readable.destroyed); 
 }
 
 async function showBoth() {
@@ -46684,7 +45347,7 @@ finished(rs, (err) => {
   }
 });
 
-rs.resume();
+rs.resume(); 
 ```
 
 Especially useful in error handling scenarios where a stream is destroyed prematurely (like an aborted HTTP request), and will not emit `'end'` or `'finish'`.
@@ -46702,7 +45365,7 @@ async function run() {
 }
 
 run().catch(console.error);
-rs.resume();
+rs.resume(); 
 ```
 
 `stream.finished()` leaves dangling event listeners (in particular `'error'`, `'end'`, `'finish'` and `'close'`) after `callback` has been invoked. The reason for this is so that unexpected `'error'` events (due to incorrect stream implementations) do not cause unexpected crashes. If this is unwanted behavior then the returned cleanup function needs to be invoked in the callback:
@@ -46710,7 +45373,7 @@ rs.resume();
 ```
 const cleanup = finished(rs, (err) => {
   cleanup();
-
+  
 });
 ```
 
@@ -46793,7 +45456,7 @@ async function run() {
   );
 }
 
-run().catch(console.error);
+run().catch(console.error); 
 ```
 
 The `pipeline` API also supports async generators:
@@ -46806,7 +45469,7 @@ async function run() {
   await pipeline(
     fs.createReadStream('lowercase.txt'),
     async function* (source, signal) {
-      source.setEncoding('utf8');
+      source.setEncoding('utf8');  
       for await (const chunk of source) {
         yield await processChunk(chunk, { signal });
       }
@@ -46879,7 +45542,7 @@ for await (const buf of compose(removeSpaces, toUpper).end('hello world')) {
   res += buf;
 }
 
-console.log(res);
+console.log(res); 
 ```
 
 `stream.compose` can be used to convert async iterables, generators and functions into streams.
@@ -46916,7 +45579,7 @@ const s3 = compose(async function(source) {
 
 await finished(compose(s1, s2, s3));
 
-console.log(res);
+console.log(res); 
 ```
 
 #### `stream.Readable.from(iterable[, options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_streamreadablefromiterable-options)
@@ -47001,7 +45664,7 @@ Or using an `AbortSignal` with a readable stream as an async iterable:
 
 ```
 const controller = new AbortController();
-setTimeout(() => controller.abort(), 10_000);
+setTimeout(() => controller.abort(), 10_000); 
 const stream = addAbortSignal(
   controller.signal,
   fs.createReadStream(('object.json'))
@@ -47013,7 +45676,7 @@ const stream = addAbortSignal(
     }
   } catch (e) {
     if (e.name === 'AbortError') {
-
+      
     } else {
       throw e;
     }
@@ -47033,7 +45696,7 @@ const { Writable } = require('stream');
 class MyWritable extends Writable {
   constructor({ highWaterMark, ...options }) {
     super({ highWaterMark });
-
+    
   }
 }
 ```
@@ -47087,13 +45750,13 @@ const { Writable } = require('stream');
 
 const myWritable = new Writable({
   construct(callback) {
-
+    
   },
   write(chunk, encoding, callback) {
-
+    
   },
   destroy() {
-
+    
   }
 });
 ```
@@ -47125,9 +45788,9 @@ const { Writable } = require('stream');
 
 class MyWritable extends Writable {
   constructor(options) {
-
+    
     super(options);
-
+    
   }
 }
 ```
@@ -47153,10 +45816,10 @@ const { Writable } = require('stream');
 
 const myWritable = new Writable({
   write(chunk, encoding, callback) {
-
+    
   },
   writev(chunks, callback) {
-
+    
   }
 });
 ```
@@ -47169,10 +45832,10 @@ const { Writable } = require('stream');
 const controller = new AbortController();
 const myWritable = new Writable({
   write(chunk, encoding, callback) {
-
+    
   },
   writev(chunks, callback) {
-
+    
   },
   signal: controller.signal
 });
@@ -47346,7 +46009,7 @@ w.write('currency: ');
 w.write(euro[0]);
 w.end(euro[1]);
 
-console.log(w.data);
+console.log(w.data); 
 ```
 
 #### Implementing a readable stream[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_implementing-a-readable-stream)
@@ -47373,9 +46036,9 @@ const { Readable } = require('stream');
 
 class MyReadable extends Readable {
   constructor(options) {
-
+    
     super(options);
-
+    
   }
 }
 ```
@@ -47401,7 +46064,7 @@ const { Readable } = require('stream');
 
 const myReadable = new Readable({
   read(size) {
-
+    
   }
 });
 ```
@@ -47413,7 +46076,7 @@ const { Readable } = require('stream');
 const controller = new AbortController();
 const read = new Readable({
   read(size) {
-
+    
   },
   signal: controller.signal
 });
@@ -47523,20 +46186,20 @@ class SourceWrapper extends Readable {
 
     this._source = getLowLevelSourceObject();
 
-
+    
     this._source.ondata = (chunk) => {
-
+      
       if (!this.push(chunk))
         this._source.readStop();
     };
 
-
+    
     this._source.onend = () => {
       this.push(null);
     };
   }
-
-
+  
+  
   _read(size) {
     this._source.readStart();
   }
@@ -47560,7 +46223,7 @@ const myReadable = new Readable({
     if (err) {
       this.destroy(err);
     } else {
-
+      
     }
   }
 });
@@ -47620,7 +46283,7 @@ const { Duplex } = require('stream');
 class MyDuplex extends Duplex {
   constructor(options) {
     super(options);
-
+    
   }
 }
 ```
@@ -47646,10 +46309,10 @@ const { Duplex } = require('stream');
 
 const myDuplex = new Duplex({
   read(size) {
-
+    
   },
   write(chunk, encoding, callback) {
-
+    
   }
 });
 ```
@@ -47664,7 +46327,7 @@ pipeline(
   fs.createReadStream('object.json')
     .setEncoding('utf8'),
   new Transform({
-    decodeStrings: false,
+    decodeStrings: false, 
     construct(callback) {
       this.data = '';
       callback();
@@ -47675,7 +46338,7 @@ pipeline(
     },
     flush(callback) {
       try {
-
+        
         JSON.parse(this.data);
         this.push(this.data);
       } catch (err) {
@@ -47709,7 +46372,7 @@ class MyDuplex extends Duplex {
   }
 
   _write(chunk, encoding, callback) {
-
+    
     if (Buffer.isBuffer(chunk))
       chunk = chunk.toString();
     this[kSource].writeSomeData(chunk);
@@ -47740,13 +46403,13 @@ const myTransform = new Transform({
   writableObjectMode: true,
 
   transform(chunk, encoding, callback) {
-
+    
     chunk |= 0;
 
-
+    
     const data = chunk.toString(16);
 
-
+    
     callback(null, '0'.repeat(data.length % 2) + data);
   }
 });
@@ -47785,7 +46448,7 @@ const { Transform } = require('stream');
 class MyTransform extends Transform {
   constructor(options) {
     super(options);
-
+    
   }
 }
 ```
@@ -47811,7 +46474,7 @@ const { Transform } = require('stream');
 
 const myTransform = new Transform({
   transform(chunk, encoding, callback) {
-
+    
   }
 });
 ```
@@ -47979,9 +46642,9 @@ For example, consider the following code:
 
 net.createServer((socket) => {
 
-
+  
   socket.on('end', () => {
-
+    
     socket.end('The message was received but was not processed.\n');
   });
 
@@ -47999,7 +46662,7 @@ net.createServer((socket) => {
     socket.end('The message was received but was not processed.\n');
   });
 
-
+  
   socket.resume();
 }).listen(1337);
 ```
@@ -48030,7 +46693,7 @@ This is not a problem in common cases with `latin1` or `ascii`. But it is advise
 
 ## String decoder[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#string_decoder_string-decoder)
 
-**Source Code:** [lib/string_decoder.js](https://github.com/nodejs/node/blob/v16.13.1/lib/string_decoder.js)
+**Source Code:** [lib/string\_decoder.js](https://github.com/nodejs/node/blob/v16.13.1/lib/string_decoder.js)
 
 The `string_decoder` module provides an API for decoding `Buffer` objects into strings in a manner that preserves encoded multi-byte UTF-8 and UTF-16 characters. It can be accessed using:
 
@@ -48343,7 +47006,7 @@ import {
 
 const res = await setTimeout(100, 'result');
 
-console.log(res);
+console.log(res);  
 ```
 
 #### `timersPromises.setImmediate([value[, options]])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#timers_timerspromisessetimmediatevalue-options)
@@ -48362,7 +47025,7 @@ import {
 
 const res = await setImmediate('result');
 
-console.log(res);
+console.log(res);  
 ```
 
 #### `timersPromises.setInterval([delay[, value[, options]]])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#timers_timerspromisessetintervaldelay-value-options)
@@ -48706,7 +47369,7 @@ const logFile = fs.createWriteStream('/tmp/ssl-keys.log', { flags: 'a' });
 
 server.on('keylog', (line, tlsSocket) => {
   if (tlsSocket.remoteAddress !== '...')
-    return;
+    return; 
   logFile.write(line);
 });
 ```
@@ -48948,10 +47611,10 @@ For TLSv1.2 and below, [`tls.TLSSocket.getSession()`](https://nodejs.org/dist/v1
 
 ```
 tlsSocket.once('session', (session) => {
-
+  
   tls.connect({
     session: session,
-
+    
   });
 });
 ```
@@ -49003,9 +47666,13 @@ Always returns `true`. This may be used to distinguish TLS sockets from regular 
 Added in: v13.10.0, v12.17.0
 
 -   `length` [<number>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) number of bytes to retrieve from keying material
+    
 -   `label` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) an application specific label, typically this will be a value from the [IANA Exporter Label Registry](https://www.iana.org/assignments/tls-parameters/tls-parameters.xhtml#exporter-labels).
+    
 -   `context` [<Buffer>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) Optionally provide a context.
+    
 -   Returns: [<Buffer>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) requested bytes of the keying material
+    
 
 Keying material is used for validations to prevent different kind of attacks in network protocols, for example in the specifications of IEEE 802.1X.
 
@@ -49051,7 +47718,7 @@ For example:
 }
 ```
 
-See [SSL_CIPHER_get_name](https://www.openssl.org/docs/man1.1.1/man3/SSL_CIPHER_get_name.html) for more information.
+See [SSL\_CIPHER\_get\_name](https://www.openssl.org/docs/man1.1.1/man3/SSL_CIPHER_get_name.html) for more information.
 
 #### `tlsSocket.getEphemeralKeyInfo()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_tlssocketgetephemeralkeyinfo)
 
@@ -49202,7 +47869,7 @@ Added in: v12.11.0
 
 -   Returns: [<Array>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) List of signature algorithms shared between the server and the client in the order of decreasing preference.
 
-See [SSL_get_shared_sigalgs](https://www.openssl.org/docs/man1.1.1/man3/SSL_get_shared_sigalgs.html) for more information.
+See [SSL\_get\_shared\_sigalgs](https://www.openssl.org/docs/man1.1.1/man3/SSL_get_shared_sigalgs.html) for more information.
 
 #### `tlsSocket.getTLSTicket()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_tlssocketgettlsticket)
 
@@ -49279,12 +47946,13 @@ Returns the numeric representation of the remote port. For example, `443`.
 Added in: v0.11.8
 
 -   `options` [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
-
+    
     -   `rejectUnauthorized` [<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) If not `false`, the server certificate is verified against the list of supplied CAs. An `'error'` event is emitted if verification fails; `err.code` contains the OpenSSL error code. **Default:** `true`.
     -   `requestCert`
-
 -   `callback` [<Function>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function) If `renegotiate()` returned `true`, callback is attached once to the `'secure'` event. If `renegotiate()` returned `false`, `callback` will be called in the next tick with an error, unless the `tlsSocket` has been destroyed, in which case `callback` will not be called at all.
+    
 -   Returns: [<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) `true` if renegotiation was initiated, `false` otherwise.
+    
 
 The `tlsSocket.renegotiate()` method initiates a TLS renegotiation process. Upon completion, the `callback` function will be passed a single argument that is either an `Error` (if the request failed) or `null`.
 
@@ -49325,29 +47993,46 @@ This function is only called if the certificate passed all other checks, such as
 
 -   `options` [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
     -   `enableTrace`: See [`tls.createServer()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_tlscreateserveroptions-secureconnectionlistener)
+        
     -   `host` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) Host the client should connect to. **Default:** `'localhost'`.
+        
     -   `port` [<number>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) Port the client should connect to.
+        
     -   `path` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) Creates Unix socket connection to path. If this option is specified, `host` and `port` are ignored.
+        
     -   `socket` [<stream.Duplex>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#stream_class-streamduplex) Establish secure connection on a given socket rather than creating a new socket. Typically, this is an instance of [`net.Socket`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_class-netsocket), but any `Duplex` stream is allowed. If this option is specified, `path`, `host` and `port` are ignored, except for certificate validation. Usually, a socket is already connected when passed to `tls.connect()`, but it can be connected later. Connection/disconnection/destruction of `socket` is the user's responsibility; calling `tls.connect()` will not cause `net.connect()` to be called.
+        
     -   `allowHalfOpen` [<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) If set to `false`, then the socket will automatically end the writable side when the readable side ends. If the `socket` option is set, this option has no effect. See the `allowHalfOpen` option of [`net.Socket`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_class-netsocket) for details. **Default:** `false`.
+        
     -   `rejectUnauthorized` [<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) If not `false`, the server certificate is verified against the list of supplied CAs. An `'error'` event is emitted if verification fails; `err.code` contains the OpenSSL error code. **Default:** `true`.
+        
     -   `pskCallback` [<Function>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
-
+        
         -   hint: [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) optional message sent from the server to help client decide which identity to use during negotiation. Always `null` if TLS 1.3 is used.
         -   Returns: [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) in the form `{ psk: <Buffer|TypedArray|DataView>, identity: <string> }` or `null` to stop the negotiation process. `psk` must be compatible with the selected cipher's digest. `identity` must use UTF-8 encoding.
-
+        
         When negotiating TLS-PSK (pre-shared keys), this function is called with optional identity `hint` provided by the server or `null` in case of TLS 1.3 where `hint` was removed. It will be necessary to provide a custom `tls.checkServerIdentity()` for the connection as the default one will try to check host name/IP of the server against the certificate but that's not applicable for PSK because there won't be a certificate present. More information can be found in the [RFC 4279](https://tools.ietf.org/html/rfc4279).
-
+        
     -   `ALPNProtocols`: [<string\[\]>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) | [<Buffer\[\]>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) | [<TypedArray\[\]>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) | [<DataView\[\]>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView) | [<Buffer>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) | [<TypedArray>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) | [<DataView>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView) An array of strings, `Buffer`s or `TypedArray`s or `DataView`s, or a single `Buffer` or `TypedArray` or `DataView` containing the supported ALPN protocols. `Buffer`s should have the format `[len][name][len][name]...` e.g. `'\x08http/1.1\x08http/1.0'`, where the `len` byte is the length of the next protocol name. Passing an array is usually much simpler, e.g. `['http/1.1', 'http/1.0']`. Protocols earlier in the list have higher preference than those later.
+        
     -   `servername`: [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) Server name for the SNI (Server Name Indication) TLS extension. It is the name of the host being connected to, and must be a host name, and not an IP address. It can be used by a multi-homed server to choose the correct certificate to present to the client, see the `SNICallback` option to [`tls.createServer()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_tlscreateserveroptions-secureconnectionlistener).
+        
     -   `checkServerIdentity(servername, cert)` [<Function>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function) A callback function to be used (instead of the builtin `tls.checkServerIdentity()` function) when checking the server's host name (or the provided `servername` when explicitly set) against the certificate. This should return an [<Error>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error) if verification fails. The method should return `undefined` if the `servername` and `cert` are verified.
+        
     -   `session` [<Buffer>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) A `Buffer` instance, containing TLS session.
+        
     -   `minDHSize` [<number>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) Minimum size of the DH parameter in bits to accept a TLS connection. When a server offers a DH parameter with a size less than `minDHSize`, the TLS connection is destroyed and an error is thrown. **Default:** `1024`.
+        
     -   `highWaterMark`: [<number>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) Consistent with the readable stream `highWaterMark` parameter. **Default:** `16 * 1024`.
+        
     -   `secureContext`: TLS context object created with [`tls.createSecureContext()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_tlscreatesecurecontextoptions). If a `secureContext` is _not_ provided, one will be created by passing the entire `options` object to `tls.createSecureContext()`.
+        
     -   `onread` [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) If the `socket` option is missing, incoming data is stored in a single `buffer` and passed to the supplied `callback` when data arrives on the socket, otherwise the option is ignored. See the `onread` option of [`net.Socket`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_class-netsocket) for details.
+        
     -   ...: [`tls.createSecureContext()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_tlscreatesecurecontextoptions) options that are used if the `secureContext` option is missing, otherwise they are ignored.
+        
     -   ...: Any [`socket.connect()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_socketconnectoptions-connectlistener) option not already listed.
+        
 -   `callback` [<Function>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
 -   Returns: [<tls.TLSSocket>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_class-tlstlssocket)
 
@@ -49365,14 +48050,14 @@ const tls = require('tls');
 const fs = require('fs');
 
 const options = {
-
+  
   key: fs.readFileSync('client-key.pem'),
   cert: fs.readFileSync('client-cert.pem'),
 
-
+  
   ca: [ fs.readFileSync('server-cert.pem') ],
 
-
+  
   checkServerIdentity: () => { return null; },
 };
 
@@ -49438,7 +48123,7 @@ A port or host option, if specified, will take precedence over any port or host 
     -   `passphrase` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) Shared passphrase used for a single private key and/or a PFX.
     -   `pfx` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) | [<string\[\]>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) | [<Buffer>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) | [<Buffer\[\]>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) | [<Object\[\]>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) PFX or PKCS12 encoded private key and certificate chain. `pfx` is an alternative to providing `key` and `cert` individually. PFX is usually encrypted, if it is, `passphrase` will be used to decrypt it. Multiple PFX can be provided either as an array of unencrypted PFX buffers, or an array of objects in the form `{buf: <string|buffer>[, passphrase: <string>]}`. The object form can only occur in an array. `object.passphrase` is optional. Encrypted PFX will be decrypted with `object.passphrase` if provided, or `options.passphrase` if it is not.
     -   `secureOptions` [<number>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) Optionally affect the OpenSSL protocol behavior, which is not usually necessary. This should be used carefully if at all! Value is a numeric bitmask of the `SSL_OP_*` options from [OpenSSL Options](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_openssl-options).
-    -   `secureProtocol` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) Legacy mechanism to select the TLS protocol version to use, it does not support independent control of the minimum and maximum version, and does not support limiting the protocol to TLSv1.3. Use `minVersion` and `maxVersion` instead. The possible values are listed as [SSL_METHODS](https://www.openssl.org/docs/man1.1.1/man7/ssl.html#Dealing-with-Protocol-Methods), use the function names as strings. For example, use `'TLSv1_1_method'` to force TLS version 1.1, or `'TLS_method'` to allow any TLS protocol version up to TLSv1.3. It is not recommended to use TLS versions less than 1.2, but it may be required for interoperability. **Default:** none, see `minVersion`.
+    -   `secureProtocol` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) Legacy mechanism to select the TLS protocol version to use, it does not support independent control of the minimum and maximum version, and does not support limiting the protocol to TLSv1.3. Use `minVersion` and `maxVersion` instead. The possible values are listed as [SSL\_METHODS](https://www.openssl.org/docs/man1.1.1/man7/ssl.html#Dealing-with-Protocol-Methods), use the function names as strings. For example, use `'TLSv1_1_method'` to force TLS version 1.1, or `'TLS_method'` to allow any TLS protocol version up to TLSv1.3. It is not recommended to use TLS versions less than 1.2, but it may be required for interoperability. **Default:** none, see `minVersion`.
     -   `sessionIdContext` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) Opaque identifier used by servers to ensure session state is not shared between applications. Unused by clients.
     -   `ticketKeys`: [<Buffer>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) 48-bytes of cryptographically strong pseudorandom data. See [Session Resumption](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_session-resumption) for more information.
     -   `sessionTimeout` [<number>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) The number of seconds after which a TLS session created by the server will no longer be resumable. See [Session Resumption](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_session-resumption) for more information. **Default:** `300`.
@@ -49497,25 +48182,37 @@ where `secureSocket` has the same API as `pair.cleartext`.
 
 -   `options` [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
     -   `ALPNProtocols`: [<string\[\]>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) | [<Buffer\[\]>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) | [<TypedArray\[\]>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) | [<DataView\[\]>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView) | [<Buffer>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) | [<TypedArray>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) | [<DataView>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView) An array of strings, `Buffer`s or `TypedArray`s or `DataView`s, or a single `Buffer` or `TypedArray` or `DataView` containing the supported ALPN protocols. `Buffer`s should have the format `[len][name][len][name]...` e.g. `0x05hello0x05world`, where the first byte is the length of the next protocol name. Passing an array is usually much simpler, e.g. `['hello', 'world']`. (Protocols should be ordered by their priority.)
+        
     -   `clientCertEngine` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) Name of an OpenSSL engine which can provide the client certificate.
+        
     -   `enableTrace` [<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) If `true`, [`tls.TLSSocket.enableTrace()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_tlssocketenabletrace) will be called on new connections. Tracing can be enabled after the secure connection is established, but this option must be used to trace the secure connection setup. **Default:** `false`.
+        
     -   `handshakeTimeout` [<number>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) Abort the connection if the SSL/TLS handshake does not finish in the specified number of milliseconds. A `'tlsClientError'` is emitted on the `tls.Server` object whenever a handshake times out. **Default:** `120000` (120 seconds).
+        
     -   `rejectUnauthorized` [<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) If not `false` the server will reject any connection which is not authorized with the list of supplied CAs. This option only has an effect if `requestCert` is `true`. **Default:** `true`.
+        
     -   `requestCert` [<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) If `true` the server will request a certificate from clients that connect and attempt to verify that certificate. **Default:** `false`.
+        
     -   `sessionTimeout` [<number>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type) The number of seconds after which a TLS session created by the server will no longer be resumable. See [Session Resumption](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_session-resumption) for more information. **Default:** `300`.
+        
     -   `SNICallback(servername, callback)` [<Function>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function) A function that will be called if the client supports SNI TLS extension. Two arguments will be passed when called: `servername` and `callback`. `callback` is an error-first callback that takes two optional arguments: `error` and `ctx`. `ctx`, if provided, is a `SecureContext` instance. [`tls.createSecureContext()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_tlscreatesecurecontextoptions) can be used to get a proper `SecureContext`. If `callback` is called with a falsy `ctx` argument, the default secure context of the server will be used. If `SNICallback` wasn't provided the default callback with high-level API will be used (see below).
+        
     -   `ticketKeys`: [<Buffer>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) 48-bytes of cryptographically strong pseudorandom data. See [Session Resumption](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_session-resumption) for more information.
+        
     -   `pskCallback` [<Function>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
-
+        
         -   socket: [<tls.TLSSocket>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_class-tlstlssocket) the server [`tls.TLSSocket`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_class-tlstlssocket) instance for this connection.
         -   identity: [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) identity parameter sent from the client.
         -   Returns: [<Buffer>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#buffer_class-buffer) | [<TypedArray>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) | [<DataView>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView) pre-shared key that must either be a buffer or `null` to stop the negotiation process. Returned PSK must be compatible with the selected cipher's digest.
-
-        When negotiating TLS-PSK (pre-shared keys), this function is called with the identity provided by the client. If the return value is `null` the negotiation process will stop and an "unknown_psk_identity" alert message will be sent to the other party. If the server wishes to hide the fact that the PSK identity was not known, the callback must provide some random data as `psk` to make the connection fail with "decrypt_error" before negotiation is finished. PSK ciphers are disabled by default, and using TLS-PSK thus requires explicitly specifying a cipher suite with the `ciphers` option. More information can be found in the [RFC 4279](https://tools.ietf.org/html/rfc4279).
-
+        
+        When negotiating TLS-PSK (pre-shared keys), this function is called with the identity provided by the client. If the return value is `null` the negotiation process will stop and an "unknown\_psk\_identity" alert message will be sent to the other party. If the server wishes to hide the fact that the PSK identity was not known, the callback must provide some random data as `psk` to make the connection fail with "decrypt\_error" before negotiation is finished. PSK ciphers are disabled by default, and using TLS-PSK thus requires explicitly specifying a cipher suite with the `ciphers` option. More information can be found in the [RFC 4279](https://tools.ietf.org/html/rfc4279).
+        
     -   `pskIdentityHint` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) optional hint to send to a client to help with selecting the identity during TLS-PSK negotiation. Will be ignored in TLS 1.3. Upon failing to set pskIdentityHint `'tlsClientError'` will be emitted with `'ERR_TLS_PSK_SET_IDENTIY_HINT_FAILED'` code.
+        
     -   ...: Any [`tls.createSecureContext()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_tlscreatesecurecontextoptions) option can be provided. For servers, the identity options (`pfx`, `key`/`cert` or `pskCallback`) are usually required.
+        
     -   ...: Any [`net.createServer()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#net_netcreateserveroptions-connectionlistener) option can be provided.
+        
 -   `secureConnectionListener` [<Function>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
 -   Returns: [<tls.Server>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_class-tlsserver)
 
@@ -49533,10 +48230,10 @@ const options = {
   key: fs.readFileSync('server-key.pem'),
   cert: fs.readFileSync('server-cert.pem'),
 
-
+  
   requestCert: true,
 
-
+  
   ca: [ fs.readFileSync('client-cert.pem') ]
 };
 
@@ -49565,7 +48262,7 @@ Returns an array with the names of the supported TLS ciphers. The names are lowe
 Cipher names that start with `'tls_'` are for TLSv1.3, all the others are for TLSv1.2 and below.
 
 ```
-console.log(tls.getCiphers());
+console.log(tls.getCiphers()); 
 ```
 
 ### `tls.rootCertificates`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tls_tlsrootcertificates)
@@ -49596,7 +48293,7 @@ Added in: v11.4.0
 
 ## Trace events[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#tracing_trace-events)
 
-**Source Code:** [lib/trace_events.js](https://github.com/nodejs/node/blob/v16.13.1/lib/trace_events.js)
+**Source Code:** [lib/trace\_events.js](https://github.com/nodejs/node/blob/v16.13.1/lib/trace_events.js)
 
 The `trace_events` module provides a mechanism to centralize tracing information generated by V8, Node.js core, and userspace code.
 
@@ -49639,11 +48336,11 @@ Alternatively, trace events may be enabled using the `trace_events` module:
 ```
 const trace_events = require('trace_events');
 const tracing = trace_events.createTracing({ categories: ['node.perf'] });
-tracing.enable();
+tracing.enable();  
 
 
 
-tracing.disable();
+tracing.disable();  
 ```
 
 Running Node.js with tracing enabled will produce log files that can be opened in the [`chrome://tracing`](https://www.chromium.org/developers/how-tos/trace-event-profiling-tool) tab of Chrome.
@@ -49696,7 +48393,7 @@ t2.enable();
 
 console.log(trace_events.getEnabledCategories());
 
-t2.disable();
+t2.disable(); 
 
 
 console.log(trace_events.getEnabledCategories());
@@ -50043,8 +48740,8 @@ import cluster from 'cluster';
 import dgram from 'dgram';
 
 if (cluster.isPrimary) {
-  cluster.fork();
-  cluster.fork();
+  cluster.fork(); 
+  cluster.fork(); 
 } else {
   const s = dgram.createSocket('udp4');
   s.bind(1234, () => {
@@ -50303,9 +49000,11 @@ client.connect(41234, 'localhost', (err) => {
 The maximum size of an IPv4/v6 datagram depends on the `MTU` (Maximum Transmission Unit) and on the `Payload Length` field size.
 
 -   The `Payload Length` field is 16 bits wide, which means that a normal payload cannot exceed 64K octets including the internet header and data (65,507 bytes = 65,535 − 8 bytes UDP header − 20 bytes IP header); this is generally true for loopback interfaces, but such long datagram messages are impractical for most hosts and networks.
+    
 -   The `MTU` is the largest size a given link layer technology can support for datagram messages. For any link, IPv4 mandates a minimum `MTU` of 68 octets, while the recommended `MTU` for IPv4 is 576 (typically recommended as the `MTU` for dial-up type applications), whether they arrive whole or in fragments.
-
+    
     For IPv6, the minimum `MTU` is 1280 octets. However, the mandatory minimum fragment reassembly buffer size is 1500 octets. The value of 68 octets is very small, since most current link layer technologies, like Ethernet, have a minimum `MTU` of 1500.
+    
 
 It is impossible to know in advance the MTU of each link through which a packet might travel. Sending a datagram greater than the receiver `MTU` will not work because the packet will get silently dropped without informing the source that the data did not reach its intended recipient.
 
@@ -50592,7 +49291,7 @@ The URL constructor is accessible as a property on the global object. It can als
 
 ```
 import { URL } from 'url';
-console.log(URL === globalThis.URL);
+console.log(URL === globalThis.URL); 
 ```
 
 A `TypeError` will be thrown if the `input` or `base` are not valid URLs. Note that an effort will be made to coerce the given values into strings. For instance:
@@ -50837,7 +49536,7 @@ console.log(myURL.port);
 
 
 
-myURL.port = 1e10;
+myURL.port = 1e10; 
 console.log(myURL.port);
 ```
 
@@ -50923,12 +49622,12 @@ Use care when using `.searchParams` to modify the `URL` because, per the WHATWG 
 ```
 const myUrl = new URL('https://example.org/abc?foo=~bar');
 
-console.log(myUrl.search);
+console.log(myUrl.search);  
 
 
 myUrl.searchParams.sort();
 
-console.log(myUrl.search);
+console.log(myUrl.search);  
 ```
 
 ##### `url.username`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#url_urlusername)
@@ -51330,17 +50029,17 @@ import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 
-new URL('file:///C:/path/').pathname;
-fileURLToPath('file:///C:/path/');
+new URL('file:///C:/path/').pathname;      
+fileURLToPath('file:///C:/path/');         
 
-new URL('file://nas/foo.txt').pathname;
-fileURLToPath('file://nas/foo.txt');
+new URL('file://nas/foo.txt').pathname;    
+fileURLToPath('file://nas/foo.txt');       
 
-new URL('file:///你好.txt').pathname;
-fileURLToPath('file:///你好.txt');
+new URL('file:///你好.txt').pathname;      
+fileURLToPath('file:///你好.txt');         
 
-new URL('file:///hello world').pathname;
-fileURLToPath('file:///hello world');
+new URL('file:///hello world').pathname;   
+fileURLToPath('file:///hello world');      
 ```
 
 #### `url.format(URL[, options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#url_urlformaturl-options)
@@ -51384,11 +50083,11 @@ This function ensures that `path` is resolved absolutely, and that the URL contr
 ```
 import { pathToFileURL } from 'url';
 
-new URL('/foo#1', 'file:');
-pathToFileURL('/foo#1');
+new URL('/foo#1', 'file:');           
+pathToFileURL('/foo#1');              
 
-new URL('/some/path%.c', 'file:');
-pathToFileURL('/some/path%.c');
+new URL('/some/path%.c', 'file:');    
+pathToFileURL('/some/path%.c');       
 ```
 
 #### `url.urlToHttpOptions(url)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#url_urlurltohttpoptionsurl)
@@ -51587,9 +50286,9 @@ The `url.resolve()` method resolves a target URL relative to a base URL in a man
 
 ```
 const url = require('url');
-url.resolve('/one/two/three', 'four');
-url.resolve('http://example.com/', '/one');
-url.resolve('http://example.com/one', '/two');
+url.resolve('/one/two/three', 'four');         
+url.resolve('http://example.com/', '/one');    
+url.resolve('http://example.com/one', '/two'); 
 ```
 
 You can achieve the same result using the WHATWG URL API:
@@ -51598,16 +50297,16 @@ You can achieve the same result using the WHATWG URL API:
 function resolve(from, to) {
   const resolvedUrl = new URL(to, new URL(from, 'resolve://'));
   if (resolvedUrl.protocol === 'resolve:') {
-
+    
     const { pathname, search, hash } = resolvedUrl;
     return pathname + search + hash;
   }
   return resolvedUrl.toString();
 }
 
-resolve('/one/two/three', 'four');
-resolve('http://example.com/', '/one');
-resolve('http://example.com/one', '/two');
+resolve('/one/two/three', 'four');         
+resolve('http://example.com/', '/one');    
+resolve('http://example.com/one', '/two'); 
 ```
 
 ### Percent-encoding in URLs[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#url_percent-encoding-in-urls)
@@ -51631,9 +50330,13 @@ The [WHATWG URL Standard](https://url.spec.whatwg.org/) uses a more selective an
 The WHATWG algorithm defines four "percent-encode sets" that describe ranges of characters that must be percent-encoded:
 
 -   The _C0 control percent-encode set_ includes code points in range U+0000 to U+001F (inclusive) and all code points greater than U+007E.
+    
 -   The _fragment percent-encode set_ includes the _C0 control percent-encode set_ and code points U+0020, U+0022, U+003C, U+003E, and U+0060.
+    
 -   The _path percent-encode set_ includes the _C0 control percent-encode set_ and code points U+0020, U+0022, U+0023, U+003C, U+003E, U+003F, U+0060, U+007B, and U+007D.
+    
 -   The _userinfo encode set_ includes the _path percent-encode set_ and code points U+002F, U+003A, U+003B, U+003D, U+0040, U+005B, U+005C, U+005D, U+005E, and U+007C.
+    
 
 The _userinfo percent-encode set_ is used exclusively for username and passwords encoded within the URL. The _path percent-encode set_ is used for the path of most URLs. The _fragment percent-encode set_ is used for URL fragments. The _C0 control percent-encode set_ is used for host and path under certain specific conditions, in addition to all other cases.
 
@@ -51696,9 +50399,9 @@ function fn() {
 const callbackFunction = util.callbackify(fn);
 
 callbackFunction((err, ret) => {
-
-
-  err && err.hasOwnProperty('reason') && err.reason === null;
+  
+  
+  err && err.hasOwnProperty('reason') && err.reason === null;  
 });
 ```
 
@@ -51749,8 +50452,8 @@ The optional `callback` argument can be used to replace the logging function wit
 ```
 const util = require('util');
 let debuglog = util.debuglog('internals', (debug) => {
-
-
+  
+  
   debuglog = debug;
 });
 ```
@@ -51796,7 +50499,7 @@ The `util.deprecate()` method wraps `fn` (which may be a function or class) in s
 const util = require('util');
 
 exports.obsoleteFunction = util.deprecate(() => {
-
+  
 }, 'obsoleteFunction() is deprecated. Use newShinyFunction() instead.');
 ```
 
@@ -51809,8 +50512,8 @@ const util = require('util');
 
 const fn1 = util.deprecate(someFunction, someMessage, 'DEP0001');
 const fn2 = util.deprecate(someOtherFunction, someOtherMessage, 'DEP0001');
-fn1();
-fn2();
+fn1(); 
+fn2(); 
 ```
 
 If either the `--no-deprecation` or `--no-warnings` command-line flags are used, or if the `process.noDeprecation` property is set to `true` _prior_ to the first deprecation warning, the `util.deprecate()` method does nothing.
@@ -51892,7 +50595,7 @@ Returns the string name for a numeric error code that comes from a Node.js API. 
 ```
 fs.access('file/that/does/not/exist', (err) => {
   const name = util.getSystemErrorName(err.errno);
-  console.error(name);
+  console.error(name);  
 });
 ```
 
@@ -51908,7 +50611,7 @@ Returns a Map of all system error codes available from the Node.js API. The mapp
 fs.access('file/that/does/not/exist', (err) => {
   const errorMap = util.getSystemErrorMap();
   const name = errorMap.get(err.errno);
-  console.error(name);
+  console.error(name);  
 });
 ```
 
@@ -51941,13 +50644,13 @@ MyStream.prototype.write = function(data) {
 
 const stream = new MyStream();
 
-console.log(stream instanceof EventEmitter);
-console.log(MyStream.super_ === EventEmitter);
+console.log(stream instanceof EventEmitter); 
+console.log(MyStream.super_ === EventEmitter); 
 
 stream.on('data', (data) => {
   console.log(`Received data: "${data}"`);
 });
-stream.write('It works!');
+stream.write('It works!'); 
 ```
 
 ES6 example using `class` and `extends`:
@@ -52001,9 +50704,9 @@ class Bar {}
 
 const baz = Object.create(null, { [Symbol.toStringTag]: { value: 'foo' } });
 
-util.inspect(new Foo());
-util.inspect(new Bar());
-util.inspect(baz);
+util.inspect(new Foo()); 
+util.inspect(new Bar()); 
+util.inspect(baz);       
 ```
 
 Circular references point to their anchor by using a reference index:
@@ -52033,7 +50736,7 @@ console.log(util.inspect(util, { showHidden: true, depth: null }));
 
 The following example highlights the effect of the `compact` option:
 
-````
+```
 const util = require('util');
 
 const o = {
@@ -52048,12 +50751,43 @@ console.log(util.inspect(o, { compact: true, depth: 5, breakLength: 80 }));
 
 
 
-console.log(util.inspect(o, { compact: false, depth: 5, breakLength: 80 }));```
+
+
+
+
+
+
+
+
+console.log(util.inspect(o, { compact: false, depth: 5, breakLength: 80 }));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
 
 The `showHidden` option allows [`WeakMap`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap) and [`WeakSet`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet) entries to be inspected. If there are more entries than `maxArrayLength`, there is no guarantee which entries are displayed. That means retrieving the same [`WeakSet`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet) entries twice may result in different output. Furthermore, entries with no remaining strong references may be garbage collected at any time.
 
-````
-
+```
 const { inspect } = require('util');
 
 const obj = { a: 1 };
@@ -52061,35 +50795,33 @@ const obj2 = { b: 2 };
 const weakSet = new WeakSet([obj, obj2]);
 
 console.log(inspect(weakSet, { showHidden: true }));
-
 ```
 
 The `sorted` option ensures that an object's property insertion order does not impact the result of `util.inspect()`.
 
 ```
-
 const { inspect } = require('util');
 const assert = require('assert');
 
 const o1 = {
-b: [2, 3, 1],
-a: '`a` comes before `b`',
-c: new Set([2, 3, 1])
+  b: [2, 3, 1],
+  a: '`a` comes before `b`',
+  c: new Set([2, 3, 1])
 };
 console.log(inspect(o1, { sorted: true }));
 
 console.log(inspect(o1, { sorted: (a, b) => b.localeCompare(a) }));
 
+
 const o2 = {
-c: new Set([2, 1, 3]),
-a: '`a` comes before `b`',
-b: [2, 3, 1]
+  c: new Set([2, 1, 3]),
+  a: '`a` comes before `b`',
+  b: [2, 3, 1]
 };
 assert.strict.equal(
-inspect(o1, { sorted: true }),
-inspect(o2, { sorted: true })
+  inspect(o1, { sorted: true }),
+  inspect(o2, { sorted: true })
 );
-
 ```
 
 `util.inspect()` is a synchronous method intended for debugging. Its maximum output length is approximately 128 MB. Inputs that result in longer output will be truncated.
@@ -52179,51 +50911,46 @@ Modifier support varies throughout different terminals. They will mostly be igno
 Objects may also define their own [`[util.inspect.custom](depth, opts)`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utilinspectcustom) function, which `util.inspect()` will invoke and use the result of when inspecting the object:
 
 ```
-
 const util = require('util');
 
 class Box {
-constructor(value) {
-this.value = value;
-}
+  constructor(value) {
+    this.value = value;
+  }
 
-[util.inspect.custom](depth, options) {
-if (depth < 0) {
-return options.stylize('[Box]', 'special');
-}
+  [util.inspect.custom](depth, options) {
+    if (depth < 0) {
+      return options.stylize('[Box]', 'special');
+    }
 
     const newOptions = Object.assign({}, options, {
       depth: options.depth === null ? null : options.depth - 1
     });
 
-
+    
     const padding = ' '.repeat(5);
     const inner = util.inspect(this.value, newOptions)
                       .replace(/\n/g, `\n${padding}`);
     return `${options.stylize('Box', 'special')}< ${inner} >`;
-
-}
+  }
 }
 
 const box = new Box(true);
 
 util.inspect(box);
-
 ```
 
 Custom `[util.inspect.custom](depth, opts)` functions typically return a string but may return a value of any type that will be formatted accordingly by `util.inspect()`.
 
 ```
-
 const util = require('util');
 
 const obj = { foo: 'this will not show up in the inspect() output' };
 obj[util.inspect.custom] = (depth) => {
-return { bar: 'baz' };
+  return { bar: 'baz' };
 };
 
 util.inspect(obj);
-
 ```
 
 #### `util.inspect.custom`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utilinspectcustom)
@@ -52233,26 +50960,24 @@ util.inspect(obj);
 In addition to being accessible through `util.inspect.custom`, this symbol is [registered globally](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/for) and can be accessed in any environment as `Symbol.for('nodejs.util.inspect.custom')`.
 
 ```
-
 const inspect = Symbol.for('nodejs.util.inspect.custom');
 
 class Password {
-constructor(value) {
-this.value = value;
-}
+  constructor(value) {
+    this.value = value;
+  }
 
-toString() {
-return 'xxxxxxxx';
-}
+  toString() {
+    return 'xxxxxxxx';
+  }
 
-[inspect]() {
-return `Password <${this.toString()}>`;
-}
+  [inspect]() {
+    return `Password <${this.toString()}>`;
+  }
 }
 
 const password = new Password('r0sebud');
 console.log(password);
-
 ```
 
 See [Custom inspection functions on Objects](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_custom-inspection-functions-on-objects) for more details.
@@ -52264,14 +50989,12 @@ Added in: v6.4.0
 The `defaultOptions` value allows customization of the default options used by `util.inspect`. This is useful for functions like `console.log` or `util.format` which implicitly call into `util.inspect`. It shall be set to an object containing one or more valid [`util.inspect()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utilinspectobject-options) options. Setting option properties directly is also supported.
 
 ```
-
 const util = require('util');
 const arr = Array(101).fill(0);
 
-console.log(arr);
+console.log(arr); 
 util.inspect.defaultOptions.maxArrayLength = null;
-console.log(arr);
-
+console.log(arr); 
 ```
 
 ### `util.isDeepStrictEqual(val1, val2)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utilisdeepstrictequalval1-val2)
@@ -52296,33 +51019,29 @@ Added in: v8.0.0
 Takes a function following the common error-first callback style, i.e. taking an `(err, value) => ...` callback as the last argument, and returns a version that returns promises.
 
 ```
-
 const util = require('util');
 const fs = require('fs');
 
 const stat = util.promisify(fs.stat);
 stat('.').then((stats) => {
-
+  
 }).catch((error) => {
-
+  
 });
-
 ```
 
 Or, equivalently using `async function`s:
 
 ```
-
 const util = require('util');
 const fs = require('fs');
 
 const stat = util.promisify(fs.stat);
 
 async function callStat() {
-const stats = await stat('.');
-console.log(`This directory is owned by ${stats.uid}`);
+  const stats = await stat('.');
+  console.log(`This directory is owned by ${stats.uid}`);
 }
-
 ```
 
 If there is an `original[util.promisify.custom]` property present, `promisify` will return its value, see [Custom promisified functions](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_custom-promisified-functions).
@@ -52332,28 +51051,28 @@ If there is an `original[util.promisify.custom]` property present, `promisify` w
 Using `promisify()` on class methods or other methods that use `this` may not work as expected unless handled specially:
 
 ```
-
 const util = require('util');
 
 class Foo {
-constructor() {
-this.a = 42;
-}
+  constructor() {
+    this.a = 42;
+  }
 
-bar(callback) {
-callback(null, this.a);
-}
+  bar(callback) {
+    callback(null, this.a);
+  }
 }
 
 const foo = new Foo();
 
 const naiveBar = util.promisify(foo.bar);
 
-naiveBar.call(foo).then((a) => console.log(a));
+
+
+naiveBar.call(foo).then((a) => console.log(a)); 
 
 const bindBar = naiveBar.bind(foo);
-bindBar().then((a) => console.log(a));
-
+bindBar().then((a) => console.log(a)); 
 ```
 
 #### Custom promisified functions[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_custom-promisified-functions)
@@ -52361,20 +51080,18 @@ bindBar().then((a) => console.log(a));
 Using the `util.promisify.custom` symbol one can override the return value of [`util.promisify()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utilpromisifyoriginal):
 
 ```
-
 const util = require('util');
 
 function doSomething(foo, callback) {
-
+  
 }
 
 doSomething[util.promisify.custom] = (foo) => {
-return getPromiseSomehow();
+  return getPromiseSomehow();
 };
 
 const promisified = util.promisify(doSomething);
 console.log(promisified === doSomething[util.promisify.custom]);
-
 ```
 
 This can be useful for cases where the original function does not follow the standard format of taking an error-first callback as the last argument.
@@ -52382,13 +51099,11 @@ This can be useful for cases where the original function does not follow the sta
 For example, with a function that takes in `(foo, onSuccessCallback, onErrorCallback)`:
 
 ```
-
 doSomething[util.promisify.custom] = (foo) => {
-return new Promise((resolve, reject) => {
-doSomething(foo, resolve, reject);
-});
+  return new Promise((resolve, reject) => {
+    doSomething(foo, resolve, reject);
+  });
 };
-
 ```
 
 If `promisify.custom` is defined but is not a function, `promisify()` will throw an error.
@@ -52402,15 +51117,13 @@ In addition to being accessible through `util.promisify.custom`, this symbol is 
 For example, with a function that takes in `(foo, onSuccessCallback, onErrorCallback)`:
 
 ```
-
 const kCustomPromisifiedSymbol = Symbol.for('nodejs.util.promisify.custom');
 
 doSomething[kCustomPromisifiedSymbol] = (foo) => {
-return new Promise((resolve, reject) => {
-doSomething(foo, resolve, reject);
-});
+  return new Promise((resolve, reject) => {
+    doSomething(foo, resolve, reject);
+  });
 };
-
 ```
 
 ### `util.stripVTControlCharacters(str)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utilstripvtcontrolcharactersstr)
@@ -52423,9 +51136,7 @@ Added in: v16.11.0
 Returns `str` with any ANSI escape codes removed.
 
 ```
-
 console.log(util.stripVTControlCharacters('\u001B[4mvalue\u001B[0m'));
-
 ```
 
 ### Class: `util.TextDecoder`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_class-utiltextdecoder)
@@ -52435,15 +51146,13 @@ Added in: v8.3.0
 An implementation of the [WHATWG Encoding Standard](https://encoding.spec.whatwg.org/) `TextDecoder` API.
 
 ```
-
 const decoder = new TextDecoder('shift_jis');
 let string = '';
 let buffer;
 while (buffer = getNextChunkSomehow()) {
-string += decoder.decode(buffer, { stream: true });
+  string += decoder.decode(buffer, { stream: true });
 }
-string += decoder.decode();
-
+string += decoder.decode(); 
 ```
 
 #### WHATWG supported encodings[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_whatwg-supported-encodings)
@@ -52669,10 +51378,8 @@ The value will be `true` if the decoding result will include the byte order mark
 An implementation of the [WHATWG Encoding Standard](https://encoding.spec.whatwg.org/) `TextEncoder` API. All instances of `TextEncoder` only support UTF-8 encoding.
 
 ```
-
 const encoder = new TextEncoder();
 const uint8array = encoder.encode('this is some data');
-
 ```
 
 The `TextEncoder` class is also available on the global object.
@@ -52695,12 +51402,10 @@ UTF-8 encodes the `input` string and returns a `Uint8Array` containing the encod
 UTF-8 encodes the `src` string to the `dest` Uint8Array and returns an object containing the read Unicode code units and written UTF-8 bytes.
 
 ```
-
 const encoder = new TextEncoder();
 const src = 'this is some data';
 const dest = new Uint8Array(10);
 const { read, written } = encoder.encodeInto(src, dest);
-
 ```
 
 #### `textEncoder.encoding`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_textencoderencoding)
@@ -52737,10 +51442,8 @@ Returns `true` if the value is a built-in [`ArrayBuffer`](https://developer.mozi
 See also [`util.types.isArrayBuffer()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypesisarraybuffervalue) and [`util.types.isSharedArrayBuffer()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypesissharedarraybuffervalue).
 
 ```
-
 util.types.isAnyArrayBuffer(new ArrayBuffer());  
-util.types.isAnyArrayBuffer(new SharedArrayBuffer());
-
+util.types.isAnyArrayBuffer(new SharedArrayBuffer());  
 ```
 
 #### `util.types.isArrayBufferView(value)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypesisarraybufferviewvalue)
@@ -52753,12 +51456,10 @@ Added in: v10.0.0
 Returns `true` if the value is an instance of one of the [`ArrayBuffer`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) views, such as typed array objects or [`DataView`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView). Equivalent to [`ArrayBuffer.isView()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer/isView).
 
 ```
-
 util.types.isArrayBufferView(new Int8Array());  
-util.types.isArrayBufferView(Buffer.from('hello world'));
+util.types.isArrayBufferView(Buffer.from('hello world')); 
 util.types.isArrayBufferView(new DataView(new ArrayBuffer(16)));  
-util.types.isArrayBufferView(new ArrayBuffer());
-
+util.types.isArrayBufferView(new ArrayBuffer());  
 ```
 
 #### `util.types.isArgumentsObject(value)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypesisargumentsobjectvalue)
@@ -52771,11 +51472,9 @@ Added in: v10.0.0
 Returns `true` if the value is an `arguments` object.
 
 ```
-
 function foo() {
-util.types.isArgumentsObject(arguments);  
+  util.types.isArgumentsObject(arguments);  
 }
-
 ```
 
 #### `util.types.isArrayBuffer(value)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypesisarraybuffervalue)
@@ -52788,10 +51487,8 @@ Added in: v10.0.0
 Returns `true` if the value is a built-in [`ArrayBuffer`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) instance. This does _not_ include [`SharedArrayBuffer`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer) instances. Usually, it is desirable to test for both; See [`util.types.isAnyArrayBuffer()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypesisanyarraybuffervalue) for that.
 
 ```
-
 util.types.isArrayBuffer(new ArrayBuffer());  
-util.types.isArrayBuffer(new SharedArrayBuffer());
-
+util.types.isArrayBuffer(new SharedArrayBuffer());  
 ```
 
 #### `util.types.isAsyncFunction(value)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypesisasyncfunctionvalue)
@@ -52804,10 +51501,8 @@ Added in: v10.0.0
 Returns `true` if the value is an [async function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function). This only reports back what the JavaScript engine is seeing; in particular, the return value may not match the original source code if a transpilation tool was used.
 
 ```
-
 util.types.isAsyncFunction(function foo() {});  
-util.types.isAsyncFunction(async function foo() {});
-
+util.types.isAsyncFunction(async function foo() {});  
 ```
 
 #### `util.types.isBigInt64Array(value)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypesisbigint64arrayvalue)
@@ -52820,10 +51515,8 @@ Added in: v10.0.0
 Returns `true` if the value is a `BigInt64Array` instance.
 
 ```
-
-util.types.isBigInt64Array(new BigInt64Array());  
-util.types.isBigInt64Array(new BigUint64Array());
-
+util.types.isBigInt64Array(new BigInt64Array());   
+util.types.isBigInt64Array(new BigUint64Array());  
 ```
 
 #### `util.types.isBigUint64Array(value)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypesisbiguint64arrayvalue)
@@ -52836,10 +51529,8 @@ Added in: v10.0.0
 Returns `true` if the value is a `BigUint64Array` instance.
 
 ```
-
-util.types.isBigUint64Array(new BigInt64Array());  
-util.types.isBigUint64Array(new BigUint64Array());
-
+util.types.isBigUint64Array(new BigInt64Array());   
+util.types.isBigUint64Array(new BigUint64Array());  
 ```
 
 #### `util.types.isBooleanObject(value)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypesisbooleanobjectvalue)
@@ -52852,14 +51543,12 @@ Added in: v10.0.0
 Returns `true` if the value is a boolean object, e.g. created by `new Boolean()`.
 
 ```
-
 util.types.isBooleanObject(false);  
-util.types.isBooleanObject(true);  
-util.types.isBooleanObject(new Boolean(false));
+util.types.isBooleanObject(true);   
+util.types.isBooleanObject(new Boolean(false)); 
 util.types.isBooleanObject(new Boolean(true));  
-util.types.isBooleanObject(Boolean(false));
-util.types.isBooleanObject(Boolean(true));
-
+util.types.isBooleanObject(Boolean(false)); 
+util.types.isBooleanObject(Boolean(true));  
 ```
 
 #### `util.types.isBoxedPrimitive(value)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypesisboxedprimitivevalue)
@@ -52874,13 +51563,11 @@ Returns `true` if the value is any boxed primitive object, e.g. created by `new 
 For example:
 
 ```
-
-util.types.isBoxedPrimitive(false);
-util.types.isBoxedPrimitive(new Boolean(false));
-util.types.isBoxedPrimitive(Symbol('foo'));
-util.types.isBoxedPrimitive(Object(Symbol('foo')));
-util.types.isBoxedPrimitive(Object(BigInt(5)));
-
+util.types.isBoxedPrimitive(false); 
+util.types.isBoxedPrimitive(new Boolean(false)); 
+util.types.isBoxedPrimitive(Symbol('foo')); 
+util.types.isBoxedPrimitive(Object(Symbol('foo'))); 
+util.types.isBoxedPrimitive(Object(BigInt(5))); 
 ```
 
 #### `util.types.isCryptoKey(value)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypesiscryptokeyvalue)
@@ -52902,11 +51589,9 @@ Added in: v10.0.0
 Returns `true` if the value is a built-in [`DataView`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView) instance.
 
 ```
-
 const ab = new ArrayBuffer(20);
 util.types.isDataView(new DataView(ab));  
-util.types.isDataView(new Float64Array());
-
+util.types.isDataView(new Float64Array());  
 ```
 
 See also [`ArrayBuffer.isView()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer/isView).
@@ -52921,9 +51606,7 @@ Added in: v10.0.0
 Returns `true` if the value is a built-in [`Date`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) instance.
 
 ```
-
-util.types.isDate(new Date());
-
+util.types.isDate(new Date());  
 ```
 
 #### `util.types.isExternal(value)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypesisexternalvalue)
@@ -52938,33 +51621,29 @@ Returns `true` if the value is a native `External` value.
 A native `External` value is a special type of object that contains a raw C++ pointer (`void*`) for access from native code, and has no other properties. Such objects are created either by Node.js internals or native addons. In JavaScript, they are [frozen](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze) objects with a `null` prototype.
 
 ```
-
 #include <js_native_api.h>
 #include <stdlib.h>
 napi_value result;
 static napi_value MyNapi(napi_env env, napi_callback_info info) {
-int* raw = (int*) malloc(1024);
-napi_status status = napi_create_external(env, (void\*) raw, NULL, NULL, &result);
-if (status != napi_ok) {
-napi_throw_error(env, NULL, "napi_create_external failed");
-return NULL;
-}
-return result;
+  int* raw = (int*) malloc(1024);
+  napi_status status = napi_create_external(env, (void*) raw, NULL, NULL, &result);
+  if (status != napi_ok) {
+    napi_throw_error(env, NULL, "napi_create_external failed");
+    return NULL;
+  }
+  return result;
 }
 ...
 DECLARE_NAPI_PROPERTY("myNapi", MyNapi)
 ...
-
 ```
 
 ```
-
 const native = require('napi_addon.node');
 const data = native.myNapi();
-util.types.isExternal(data);
-util.types.isExternal(0);
-util.types.isExternal(new String('foo'));
-
+util.types.isExternal(data); 
+util.types.isExternal(0); 
+util.types.isExternal(new String('foo')); 
 ```
 
 For further information on `napi_create_external`, refer to [`napi_create_external()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#n-api_napi_create_external).
@@ -52979,11 +51658,9 @@ Added in: v10.0.0
 Returns `true` if the value is a built-in [`Float32Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array) instance.
 
 ```
-
 util.types.isFloat32Array(new ArrayBuffer());  
 util.types.isFloat32Array(new Float32Array());  
-util.types.isFloat32Array(new Float64Array());
-
+util.types.isFloat32Array(new Float64Array());  
 ```
 
 #### `util.types.isFloat64Array(value)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypesisfloat64arrayvalue)
@@ -52996,11 +51673,9 @@ Added in: v10.0.0
 Returns `true` if the value is a built-in [`Float64Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array) instance.
 
 ```
-
 util.types.isFloat64Array(new ArrayBuffer());  
 util.types.isFloat64Array(new Uint8Array());  
-util.types.isFloat64Array(new Float64Array());
-
+util.types.isFloat64Array(new Float64Array());  
 ```
 
 #### `util.types.isGeneratorFunction(value)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypesisgeneratorfunctionvalue)
@@ -53013,10 +51688,8 @@ Added in: v10.0.0
 Returns `true` if the value is a generator function. This only reports back what the JavaScript engine is seeing; in particular, the return value may not match the original source code if a transpilation tool was used.
 
 ```
-
 util.types.isGeneratorFunction(function foo() {});  
-util.types.isGeneratorFunction(function\* foo() {});
-
+util.types.isGeneratorFunction(function* foo() {});  
 ```
 
 #### `util.types.isGeneratorObject(value)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypesisgeneratorobjectvalue)
@@ -53029,11 +51702,9 @@ Added in: v10.0.0
 Returns `true` if the value is a generator object as returned from a built-in generator function. This only reports back what the JavaScript engine is seeing; in particular, the return value may not match the original source code if a transpilation tool was used.
 
 ```
-
-function\* foo() {}
+function* foo() {}
 const generator = foo();
-util.types.isGeneratorObject(generator);
-
+util.types.isGeneratorObject(generator);  
 ```
 
 #### `util.types.isInt8Array(value)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypesisint8arrayvalue)
@@ -53046,11 +51717,9 @@ Added in: v10.0.0
 Returns `true` if the value is a built-in [`Int8Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array) instance.
 
 ```
-
 util.types.isInt8Array(new ArrayBuffer());  
 util.types.isInt8Array(new Int8Array());  
-util.types.isInt8Array(new Float64Array());
-
+util.types.isInt8Array(new Float64Array());  
 ```
 
 #### `util.types.isInt16Array(value)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypesisint16arrayvalue)
@@ -53063,11 +51732,9 @@ Added in: v10.0.0
 Returns `true` if the value is a built-in [`Int16Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array) instance.
 
 ```
-
 util.types.isInt16Array(new ArrayBuffer());  
 util.types.isInt16Array(new Int16Array());  
-util.types.isInt16Array(new Float64Array());
-
+util.types.isInt16Array(new Float64Array());  
 ```
 
 #### `util.types.isInt32Array(value)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypesisint32arrayvalue)
@@ -53080,11 +51747,9 @@ Added in: v10.0.0
 Returns `true` if the value is a built-in [`Int32Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array) instance.
 
 ```
-
 util.types.isInt32Array(new ArrayBuffer());  
 util.types.isInt32Array(new Int32Array());  
-util.types.isInt32Array(new Float64Array());
-
+util.types.isInt32Array(new Float64Array());  
 ```
 
 #### `util.types.isKeyObject(value)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypesiskeyobjectvalue)
@@ -53106,9 +51771,7 @@ Added in: v10.0.0
 Returns `true` if the value is a built-in [`Map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) instance.
 
 ```
-
-util.types.isMap(new Map());
-
+util.types.isMap(new Map());  
 ```
 
 #### `util.types.isMapIterator(value)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypesismapiteratorvalue)
@@ -53121,13 +51784,11 @@ Added in: v10.0.0
 Returns `true` if the value is an iterator returned for a built-in [`Map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) instance.
 
 ```
-
 const map = new Map();
 util.types.isMapIterator(map.keys());  
 util.types.isMapIterator(map.values());  
 util.types.isMapIterator(map.entries());  
-util.types.isMapIterator(map[Symbol.iterator]());
-
+util.types.isMapIterator(map[Symbol.iterator]());  
 ```
 
 #### `util.types.isModuleNamespaceObject(value)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypesismodulenamespaceobjectvalue)
@@ -53140,11 +51801,9 @@ Added in: v10.0.0
 Returns `true` if the value is an instance of a [Module Namespace Object](https://tc39.github.io/ecma262/#sec-module-namespace-exotic-objects).
 
 ```
+import * as ns from './a.js';
 
-import \* as ns from './a.js';
-
-util.types.isModuleNamespaceObject(ns);
-
+util.types.isModuleNamespaceObject(ns);  
 ```
 
 #### `util.types.isNativeError(value)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypesisnativeerrorvalue)
@@ -53157,11 +51816,9 @@ Added in: v10.0.0
 Returns `true` if the value is an instance of a built-in [`Error`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_class-error) type.
 
 ```
-
 util.types.isNativeError(new Error());  
 util.types.isNativeError(new TypeError());  
-util.types.isNativeError(new RangeError());
-
+util.types.isNativeError(new RangeError());  
 ```
 
 #### `util.types.isNumberObject(value)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypesisnumberobjectvalue)
@@ -53174,10 +51831,8 @@ Added in: v10.0.0
 Returns `true` if the value is a number object, e.g. created by `new Number()`.
 
 ```
-
 util.types.isNumberObject(0);  
-util.types.isNumberObject(new Number(0));
-
+util.types.isNumberObject(new Number(0));   
 ```
 
 #### `util.types.isPromise(value)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypesispromisevalue)
@@ -53190,9 +51845,7 @@ Added in: v10.0.0
 Returns `true` if the value is a built-in [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise).
 
 ```
-
-util.types.isPromise(Promise.resolve(42));
-
+util.types.isPromise(Promise.resolve(42));  
 ```
 
 #### `util.types.isProxy(value)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypesisproxyvalue)
@@ -53205,12 +51858,10 @@ Added in: v10.0.0
 Returns `true` if the value is a [`Proxy`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) instance.
 
 ```
-
 const target = {};
 const proxy = new Proxy(target, {});
 util.types.isProxy(target);  
-util.types.isProxy(proxy);
-
+util.types.isProxy(proxy);  
 ```
 
 #### `util.types.isRegExp(value)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypesisregexpvalue)
@@ -53223,10 +51874,8 @@ Added in: v10.0.0
 Returns `true` if the value is a regular expression object.
 
 ```
-
 util.types.isRegExp(/abc/);  
-util.types.isRegExp(new RegExp('abc'));
-
+util.types.isRegExp(new RegExp('abc'));  
 ```
 
 #### `util.types.isSet(value)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypesissetvalue)
@@ -53239,9 +51888,7 @@ Added in: v10.0.0
 Returns `true` if the value is a built-in [`Set`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) instance.
 
 ```
-
-util.types.isSet(new Set());
-
+util.types.isSet(new Set());  
 ```
 
 #### `util.types.isSetIterator(value)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypesissetiteratorvalue)
@@ -53254,13 +51901,11 @@ Added in: v10.0.0
 Returns `true` if the value is an iterator returned for a built-in [`Set`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) instance.
 
 ```
-
 const set = new Set();
 util.types.isSetIterator(set.keys());  
 util.types.isSetIterator(set.values());  
 util.types.isSetIterator(set.entries());  
-util.types.isSetIterator(set[Symbol.iterator]());
-
+util.types.isSetIterator(set[Symbol.iterator]());  
 ```
 
 #### `util.types.isSharedArrayBuffer(value)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypesissharedarraybuffervalue)
@@ -53273,10 +51918,8 @@ Added in: v10.0.0
 Returns `true` if the value is a built-in [`SharedArrayBuffer`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer) instance. This does _not_ include [`ArrayBuffer`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) instances. Usually, it is desirable to test for both; See [`util.types.isAnyArrayBuffer()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypesisanyarraybuffervalue) for that.
 
 ```
-
 util.types.isSharedArrayBuffer(new ArrayBuffer());  
-util.types.isSharedArrayBuffer(new SharedArrayBuffer());
-
+util.types.isSharedArrayBuffer(new SharedArrayBuffer());  
 ```
 
 #### `util.types.isStringObject(value)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypesisstringobjectvalue)
@@ -53289,10 +51932,8 @@ Added in: v10.0.0
 Returns `true` if the value is a string object, e.g. created by `new String()`.
 
 ```
-
 util.types.isStringObject('foo');  
-util.types.isStringObject(new String('foo'));
-
+util.types.isStringObject(new String('foo'));   
 ```
 
 #### `util.types.isSymbolObject(value)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypesissymbolobjectvalue)
@@ -53305,11 +51946,9 @@ Added in: v10.0.0
 Returns `true` if the value is a symbol object, created by calling `Object()` on a `Symbol` primitive.
 
 ```
-
 const symbol = Symbol('foo');
 util.types.isSymbolObject(symbol);  
-util.types.isSymbolObject(Object(symbol));
-
+util.types.isSymbolObject(Object(symbol));   
 ```
 
 #### `util.types.isTypedArray(value)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypesistypedarrayvalue)
@@ -53322,11 +51961,9 @@ Added in: v10.0.0
 Returns `true` if the value is a built-in [`TypedArray`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) instance.
 
 ```
-
 util.types.isTypedArray(new ArrayBuffer());  
 util.types.isTypedArray(new Uint8Array());  
-util.types.isTypedArray(new Float64Array());
-
+util.types.isTypedArray(new Float64Array());  
 ```
 
 See also [`ArrayBuffer.isView()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer/isView).
@@ -53341,11 +51978,9 @@ Added in: v10.0.0
 Returns `true` if the value is a built-in [`Uint8Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array) instance.
 
 ```
-
 util.types.isUint8Array(new ArrayBuffer());  
 util.types.isUint8Array(new Uint8Array());  
-util.types.isUint8Array(new Float64Array());
-
+util.types.isUint8Array(new Float64Array());  
 ```
 
 #### `util.types.isUint8ClampedArray(value)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypesisuint8clampedarrayvalue)
@@ -53358,11 +51993,9 @@ Added in: v10.0.0
 Returns `true` if the value is a built-in [`Uint8ClampedArray`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray) instance.
 
 ```
-
 util.types.isUint8ClampedArray(new ArrayBuffer());  
 util.types.isUint8ClampedArray(new Uint8ClampedArray());  
-util.types.isUint8ClampedArray(new Float64Array());
-
+util.types.isUint8ClampedArray(new Float64Array());  
 ```
 
 #### `util.types.isUint16Array(value)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypesisuint16arrayvalue)
@@ -53375,11 +52008,9 @@ Added in: v10.0.0
 Returns `true` if the value is a built-in [`Uint16Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array) instance.
 
 ```
-
 util.types.isUint16Array(new ArrayBuffer());  
 util.types.isUint16Array(new Uint16Array());  
-util.types.isUint16Array(new Float64Array());
-
+util.types.isUint16Array(new Float64Array());  
 ```
 
 #### `util.types.isUint32Array(value)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypesisuint32arrayvalue)
@@ -53392,11 +52023,9 @@ Added in: v10.0.0
 Returns `true` if the value is a built-in [`Uint32Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array) instance.
 
 ```
-
 util.types.isUint32Array(new ArrayBuffer());  
 util.types.isUint32Array(new Uint32Array());  
-util.types.isUint32Array(new Float64Array());
-
+util.types.isUint32Array(new Float64Array());  
 ```
 
 #### `util.types.isWeakMap(value)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypesisweakmapvalue)
@@ -53409,9 +52038,7 @@ Added in: v10.0.0
 Returns `true` if the value is a built-in [`WeakMap`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap) instance.
 
 ```
-
-util.types.isWeakMap(new WeakMap());
-
+util.types.isWeakMap(new WeakMap());  
 ```
 
 #### `util.types.isWeakSet(value)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypesisweaksetvalue)
@@ -53424,9 +52051,7 @@ Added in: v10.0.0
 Returns `true` if the value is a built-in [`WeakSet`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet) instance.
 
 ```
-
-util.types.isWeakSet(new WeakSet());
-
+util.types.isWeakSet(new WeakSet());  
 ```
 
 #### `util.types.isWebAssemblyCompiledModule(value)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiltypesiswebassemblycompiledmodulevalue)
@@ -53441,10 +52066,8 @@ Added in: v10.0.0Deprecated since: v14.0.0
 Returns `true` if the value is a built-in [`WebAssembly.Module`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Module) instance.
 
 ```
-
 const module = new WebAssembly.Module(wasmBuffer);
-util.types.isWebAssemblyCompiledModule(module);
-
+util.types.isWebAssemblyCompiledModule(module);  
 ```
 
 ### Deprecated APIs[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_deprecated-apis)
@@ -53474,7 +52097,6 @@ Alias for [`Array.isArray()`](https://developer.mozilla.org/en-US/docs/Web/JavaS
 Returns `true` if the given `object` is an `Array`. Otherwise, returns `false`.
 
 ```
-
 const util = require('util');
 
 util.isArray([]);
@@ -53482,7 +52104,6 @@ util.isArray([]);
 util.isArray(new Array());
 
 util.isArray({});
-
 ```
 
 #### `util.isBoolean(object)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utilisbooleanobject)
@@ -53497,7 +52118,6 @@ Added in: v0.11.5Deprecated since: v4.0.0
 Returns `true` if the given `object` is a `Boolean`. Otherwise, returns `false`.
 
 ```
-
 const util = require('util');
 
 util.isBoolean(1);
@@ -53505,7 +52125,6 @@ util.isBoolean(1);
 util.isBoolean(0);
 
 util.isBoolean(false);
-
 ```
 
 #### `util.isBuffer(object)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utilisbufferobject)
@@ -53518,7 +52137,6 @@ Added in: v0.11.5Deprecated since: v4.0.0
 Returns `true` if the given `object` is a `Buffer`. Otherwise, returns `false`.
 
 ```
-
 const util = require('util');
 
 util.isBuffer({ length: 0 });
@@ -53526,7 +52144,6 @@ util.isBuffer({ length: 0 });
 util.isBuffer([]);
 
 util.isBuffer(Buffer.from('hello world'));
-
 ```
 
 #### `util.isDate(object)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utilisdateobject)
@@ -53539,7 +52156,6 @@ Added in: v0.6.0Deprecated since: v4.0.0
 Returns `true` if the given `object` is a `Date`. Otherwise, returns `false`.
 
 ```
-
 const util = require('util');
 
 util.isDate(new Date());
@@ -53547,7 +52163,6 @@ util.isDate(new Date());
 util.isDate(Date());
 
 util.isDate({});
-
 ```
 
 #### `util.isError(object)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utiliserrorobject)
@@ -53560,7 +52175,6 @@ Added in: v0.6.0Deprecated since: v4.0.0
 Returns `true` if the given `object` is an [`Error`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_class-error). Otherwise, returns `false`.
 
 ```
-
 const util = require('util');
 
 util.isError(new Error());
@@ -53568,13 +52182,11 @@ util.isError(new Error());
 util.isError(new TypeError());
 
 util.isError({ name: 'Error', message: 'an error occurred' });
-
 ```
 
 This method relies on `Object.prototype.toString()` behavior. It is possible to obtain an incorrect result when the `object` argument manipulates `@@toStringTag`.
 
 ```
-
 const util = require('util');
 const obj = { name: 'Error', message: 'an error occurred' };
 
@@ -53582,7 +52194,6 @@ util.isError(obj);
 
 obj[Symbol.toStringTag] = 'Error';
 util.isError(obj);
-
 ```
 
 #### `util.isFunction(object)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utilisfunctionobject)
@@ -53597,7 +52208,6 @@ Added in: v0.11.5Deprecated since: v4.0.0
 Returns `true` if the given `object` is a `Function`. Otherwise, returns `false`.
 
 ```
-
 const util = require('util');
 
 function Foo() {}
@@ -53608,7 +52218,6 @@ util.isFunction({});
 util.isFunction(Foo);
 
 util.isFunction(Bar);
-
 ```
 
 #### `util.isNull(object)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utilisnullobject)
@@ -53623,7 +52232,6 @@ Added in: v0.11.5Deprecated since: v4.0.0
 Returns `true` if the given `object` is strictly `null`. Otherwise, returns `false`.
 
 ```
-
 const util = require('util');
 
 util.isNull(0);
@@ -53631,7 +52239,6 @@ util.isNull(0);
 util.isNull(undefined);
 
 util.isNull(null);
-
 ```
 
 #### `util.isNullOrUndefined(object)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utilisnullorundefinedobject)
@@ -53646,7 +52253,6 @@ Added in: v0.11.5Deprecated since: v4.0.0
 Returns `true` if the given `object` is `null` or `undefined`. Otherwise, returns `false`.
 
 ```
-
 const util = require('util');
 
 util.isNullOrUndefined(0);
@@ -53654,7 +52260,6 @@ util.isNullOrUndefined(0);
 util.isNullOrUndefined(undefined);
 
 util.isNullOrUndefined(null);
-
 ```
 
 #### `util.isNumber(object)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utilisnumberobject)
@@ -53669,7 +52274,6 @@ Added in: v0.11.5Deprecated since: v4.0.0
 Returns `true` if the given `object` is a `Number`. Otherwise, returns `false`.
 
 ```
-
 const util = require('util');
 
 util.isNumber(false);
@@ -53679,7 +52283,6 @@ util.isNumber(Infinity);
 util.isNumber(0);
 
 util.isNumber(NaN);
-
 ```
 
 #### `util.isObject(object)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utilisobjectobject)
@@ -53694,7 +52297,6 @@ Added in: v0.11.5Deprecated since: v4.0.0
 Returns `true` if the given `object` is strictly an `Object` **and** not a `Function` (even though functions are objects in JavaScript). Otherwise, returns `false`.
 
 ```
-
 const util = require('util');
 
 util.isObject(5);
@@ -53704,7 +52306,6 @@ util.isObject(null);
 util.isObject({});
 
 util.isObject(() => {});
-
 ```
 
 #### `util.isPrimitive(object)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utilisprimitiveobject)
@@ -53719,7 +52320,6 @@ Added in: v0.11.5Deprecated since: v4.0.0
 Returns `true` if the given `object` is a primitive type. Otherwise, returns `false`.
 
 ```
-
 const util = require('util');
 
 util.isPrimitive(5);
@@ -53739,7 +52339,6 @@ util.isPrimitive(() => {});
 util.isPrimitive(/^$/);
 
 util.isPrimitive(new Date());
-
 ```
 
 #### `util.isRegExp(object)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utilisregexpobject)
@@ -53752,7 +52351,6 @@ Added in: v0.6.0Deprecated since: v4.0.0
 Returns `true` if the given `object` is a `RegExp`. Otherwise, returns `false`.
 
 ```
-
 const util = require('util');
 
 util.isRegExp(/some regexp/);
@@ -53760,7 +52358,6 @@ util.isRegExp(/some regexp/);
 util.isRegExp(new RegExp('another regexp'));
 
 util.isRegExp({});
-
 ```
 
 #### `util.isString(object)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utilisstringobject)
@@ -53775,7 +52372,6 @@ Added in: v0.11.5Deprecated since: v4.0.0
 Returns `true` if the given `object` is a `string`. Otherwise, returns `false`.
 
 ```
-
 const util = require('util');
 
 util.isString('');
@@ -53785,7 +52381,6 @@ util.isString('foo');
 util.isString(String('foo'));
 
 util.isString(5);
-
 ```
 
 #### `util.isSymbol(object)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utilissymbolobject)
@@ -53800,7 +52395,6 @@ Added in: v0.11.5Deprecated since: v4.0.0
 Returns `true` if the given `object` is a `Symbol`. Otherwise, returns `false`.
 
 ```
-
 const util = require('util');
 
 util.isSymbol(5);
@@ -53808,7 +52402,6 @@ util.isSymbol(5);
 util.isSymbol('foo');
 
 util.isSymbol(Symbol('foo'));
-
 ```
 
 #### `util.isUndefined(object)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utilisundefinedobject)
@@ -53823,7 +52416,6 @@ Added in: v0.11.5Deprecated since: v4.0.0
 Returns `true` if the given `object` is `undefined`. Otherwise, returns `false`.
 
 ```
-
 const util = require('util');
 
 const foo = undefined;
@@ -53832,7 +52424,6 @@ util.isUndefined(5);
 util.isUndefined(foo);
 
 util.isUndefined(null);
-
 ```
 
 #### `util.log(string)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#util_utillogstring)
@@ -53846,11 +52437,9 @@ Added in: v0.3.0Deprecated since: v6.0.0
 The `util.log()` method prints the given `string` to `stdout` with an included timestamp.
 
 ```
-
 const util = require('util');
 
 util.log('Timestamped message.');
-
 ```
 
 ## V8[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#v8_v8)
@@ -53860,9 +52449,7 @@ util.log('Timestamped message.');
 The `v8` module exposes APIs that are specific to the version of [V8](https://developers.google.com/v8/) built into the Node.js binary. It can be accessed using:
 
 ```
-
 const v8 = require('v8');
-
 ```
 
 ### `v8.cachedDataVersionTag()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#v8_v8cacheddataversiontag)
@@ -53874,12 +52461,12 @@ Added in: v8.0.0
 Returns an integer representing a version tag derived from the V8 version, command-line flags, and detected CPU features. This is useful for determining whether a [`vm.Script`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#vm_new-vmscriptcode-options) `cachedData` buffer is compatible with this instance of V8.
 
 ```
+console.log(v8.cachedDataVersionTag()); 
 
-console.log(v8.cachedDataVersionTag());
+
 
 v8.setFlagsFromString('--allow_natives_syntax');
-console.log(v8.cachedDataVersionTag());
-
+console.log(v8.cachedDataVersionTag()); 
 ```
 
 ### `v8.getHeapCodeStatistics()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#v8_v8getheapcodestatistics)
@@ -53895,13 +52482,11 @@ Returns an object with the following properties:
 -   `external_script_source_size` [<number>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type)
 
 ```
-
 {
-code_and_metadata_size: 212208,
-bytecode_and_metadata_size: 161368,
-external_script_source_size: 1410794
+  code_and_metadata_size: 212208,
+  bytecode_and_metadata_size: 161368,
+  external_script_source_size: 1410794
 }
-
 ```
 
 ### `v8.getHeapSnapshot()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#v8_v8getheapsnapshot)
@@ -53917,7 +52502,6 @@ Generates a snapshot of the current V8 heap and returns a Readable Stream that m
 const v8 = require('v8');
 const stream = v8.getHeapSnapshot();
 stream.pipe(process.stdout);
-
 ```
 
 ### `v8.getHeapSpaceStatistics()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#v8_v8getheapspacestatistics)
@@ -53935,45 +52519,43 @@ The value returned is an array of objects containing the following properties:
 -   `physical_space_size` [<number>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type)
 
 ```
-
 [
-{
-"space_name": "new_space",
-"space_size": 2063872,
-"space_used_size": 951112,
-"space_available_size": 80824,
-"physical_space_size": 2063872
-},
-{
-"space_name": "old_space",
-"space_size": 3090560,
-"space_used_size": 2493792,
-"space_available_size": 0,
-"physical_space_size": 3090560
-},
-{
-"space_name": "code_space",
-"space_size": 1260160,
-"space_used_size": 644256,
-"space_available_size": 960,
-"physical_space_size": 1260160
-},
-{
-"space_name": "map_space",
-"space_size": 1094160,
-"space_used_size": 201608,
-"space_available_size": 0,
-"physical_space_size": 1094160
-},
-{
-"space_name": "large_object_space",
-"space_size": 0,
-"space_used_size": 0,
-"space_available_size": 1490980608,
-"physical_space_size": 0
-}
+  {
+    "space_name": "new_space",
+    "space_size": 2063872,
+    "space_used_size": 951112,
+    "space_available_size": 80824,
+    "physical_space_size": 2063872
+  },
+  {
+    "space_name": "old_space",
+    "space_size": 3090560,
+    "space_used_size": 2493792,
+    "space_available_size": 0,
+    "physical_space_size": 3090560
+  },
+  {
+    "space_name": "code_space",
+    "space_size": 1260160,
+    "space_used_size": 644256,
+    "space_available_size": 960,
+    "physical_space_size": 1260160
+  },
+  {
+    "space_name": "map_space",
+    "space_size": 1094160,
+    "space_used_size": 201608,
+    "space_available_size": 0,
+    "physical_space_size": 1094160
+  },
+  {
+    "space_name": "large_object_space",
+    "space_size": 0,
+    "space_used_size": 0,
+    "space_available_size": 1490980608,
+    "physical_space_size": 0
+  }
 ]
-
 ```
 
 ### `v8.getHeapStatistics()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#v8_v8getheapstatistics)
@@ -54001,21 +52583,19 @@ Returns an object with the following properties:
 `number_of_detached_contexts` The value of detached\_context is the number of contexts that were detached and not yet garbage collected. This number being non-zero indicates a potential memory leak.
 
 ```
-
 {
-total_heap_size: 7326976,
-total_heap_size_executable: 4194304,
-total_physical_size: 7326976,
-total_available_size: 1152656,
-used_heap_size: 3476208,
-heap_size_limit: 1535115264,
-malloced_memory: 16384,
-peak_malloced_memory: 1127496,
-does_zap_garbage: 0,
-number_of_native_contexts: 1,
-number_of_detached_contexts: 0
+  total_heap_size: 7326976,
+  total_heap_size_executable: 4194304,
+  total_physical_size: 7326976,
+  total_available_size: 1152656,
+  used_heap_size: 3476208,
+  heap_size_limit: 1535115264,
+  malloced_memory: 16384,
+  peak_malloced_memory: 1127496,
+  does_zap_garbage: 0,
+  number_of_native_contexts: 1,
+  number_of_detached_contexts: 0
 }
-
 ```
 
 ### `v8.setFlagsFromString(flags)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#v8_v8setflagsfromstringflags)
@@ -54035,7 +52615,6 @@ Usage:
 const v8 = require('v8');
 v8.setFlagsFromString('--trace_gc');
 setTimeout(() => { v8.setFlagsFromString('--notrace_gc'); }, 60e3);
-
 ```
 
 ### `v8.stopCoverage()`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#v8_v8stopcoverage)
@@ -54064,35 +52643,33 @@ Generates a snapshot of the current V8 heap and writes it to a JSON file. This f
 A heap snapshot is specific to a single V8 isolate. When using [worker threads](https://nodejs.org/dist/v16.13.1/docs/api/worker_threads.html), a heap snapshot generated from the main thread will not contain any information about the workers, and vice versa.
 
 ```
-
 const { writeHeapSnapshot } = require('v8');
 const {
-Worker,
-isMainThread,
-parentPort
+  Worker,
+  isMainThread,
+  parentPort
 } = require('worker_threads');
 
 if (isMainThread) {
-const worker = new Worker(\_\_filename);
+  const worker = new Worker(__filename);
 
-worker.once('message', (filename) => {
-console.log(`worker heapdump: ${filename}`);
-
+  worker.once('message', (filename) => {
+    console.log(`worker heapdump: ${filename}`);
+    
     console.log(`main thread heapdump: ${writeHeapSnapshot()}`);
+  });
 
-});
-
-worker.postMessage('heapdump');
+  
+  worker.postMessage('heapdump');
 } else {
-parentPort.once('message', (message) => {
-if (message === 'heapdump') {
-
+  parentPort.once('message', (message) => {
+    if (message === 'heapdump') {
+      
+      
       parentPort.postMessage(writeHeapSnapshot());
     }
-
-});
+  });
 }
-
 ```
 
 ### Serialization API[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#v8_serialization-api)
@@ -54297,23 +52874,22 @@ A common use case is to run the code in a different V8 Context. This means invok
 One can provide the context by [_contextifying_](https://nodejs.org/dist/v16.13.1/docs/api/all.html#vm_what-does-it-mean-to-contextify-an-object) an object. The invoked code treats any property in the context like a global variable. Any changes to global variables caused by the invoked code are reflected in the context object.
 
 ```
-
 const vm = require('vm');
 
 const x = 1;
 
 const context = { x: 2 };
-vm.createContext(context);
+vm.createContext(context); 
 
 const code = 'x += 40; var y = 17;';
 
+
 vm.runInContext(code, context);
 
-console.log(context.x);
-console.log(context.y);
+console.log(context.x); 
+console.log(context.y); 
 
-console.log(x);
-
+console.log(x); 
 ```
 
 ### Class: `vm.Script`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#vm_class-vmscript)
@@ -54350,10 +52926,9 @@ Added in: v10.6.0
 Creates a code cache that can be used with the `Script` constructor's `cachedData` option. Returns a `Buffer`. This method may be called at any time and any number of times.
 
 ```
-
 const script = new vm.Script(`
 function add(a, b) {
-return a + b;
+  return a + b;
 }
 
 const x = add(1, 2);
@@ -54364,7 +52939,6 @@ const cacheWithoutX = script.createCachedData();
 script.runInThisContext();
 
 const cacheWithX = script.createCachedData();
-
 ```
 
 #### `script.runInContext(contextifiedObject[, options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#vm_scriptrunincontextcontextifiedobject-options)
@@ -54381,23 +52955,21 @@ Runs the compiled code contained by the `vm.Script` object within the given `con
 The following example compiles code that increments a global variable, sets the value of another global variable, then execute the code multiple times. The globals are contained in the `context` object.
 
 ```
-
 const vm = require('vm');
 
 const context = {
-animal: 'cat',
-count: 2
+  animal: 'cat',
+  count: 2
 };
 
 const script = new vm.Script('count += 1; name = "kitty";');
 
 vm.createContext(context);
 for (let i = 0; i < 10; ++i) {
-script.runInContext(context);
+  script.runInContext(context);
 }
 
 console.log(context);
-
 ```
 
 Using the `timeout` or `breakOnSigint` options will result in new event loops and corresponding threads being started, which have a non-zero performance overhead.
@@ -54422,18 +52994,16 @@ First contextifies the given `contextObject`, runs the compiled code contained b
 The following example compiles code that sets a global variable, then executes the code multiple times in different contexts. The globals are set on and contained within each individual `context`.
 
 ```
-
 const vm = require('vm');
 
 const script = new vm.Script('globalVar = "set"');
 
 const contexts = [{}, {}, {}];
 contexts.forEach((context) => {
-script.runInNewContext(context);
+  script.runInNewContext(context);
 });
 
 console.log(contexts);
-
 ```
 
 #### `script.runInThisContext([options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#vm_scriptruninthiscontextoptions)
@@ -54449,7 +53019,6 @@ Runs the compiled code contained by the `vm.Script` within the context of the cu
 The following example compiles code that increments a `global` variable then executes that code multiple times:
 
 ```
-
 const vm = require('vm');
 
 global.globalVar = 0;
@@ -54457,7 +53026,7 @@ global.globalVar = 0;
 const script = new vm.Script('globalVar += 1', { filename: 'myfile.vm' });
 
 for (let i = 0; i < 1000; ++i) {
-script.runInThisContext();
+  script.runInThisContext();
 }
 
 console.log(globalVar);
@@ -54479,25 +53048,75 @@ Using a `vm.Module` object requires three distinct steps: creation/parsing, link
 This implementation lies at a lower level than the [ECMAScript Module loader](https://nodejs.org/dist/v16.13.1/docs/api/all.html#esm_modules-ecmascript-modules). There is also no way to interact with the Loader yet, though support is planned.
 
 ```
-
 import vm from 'vm';
 
 const contextifiedObject = vm.createContext({
-secret: 42,
-print: console.log,
+  secret: 42,
+  print: console.log,
 });
 
-const bar = new vm.SourceTextModule(` import s from 'foo'; s; print(s);`, { context: contextifiedObject });
+
+
+
+
+
+
+
+
+
+
+const bar = new vm.SourceTextModule(`
+  import s from 'foo';
+  s;
+  print(s);
+`, { context: contextifiedObject });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 async function linker(specifier, referencingModule) {
-if (specifier === 'foo') {
-return new vm.SourceTextModule(` // The "secret" variable refers to the global variable we added to // "contextifiedObject" when creating the context. export default secret; `, { context: referencingModule.context });
+  if (specifier === 'foo') {
+    return new vm.SourceTextModule(`
+      // The "secret" variable refers to the global variable we added to
+      // "contextifiedObject" when creating the context.
+      export default secret;
+    `, { context: referencingModule.context });
 
+    
+    
+  }
+  throw new Error(`Unable to resolve dependency: ${specifier}`);
 }
-throw new Error(`Unable to resolve dependency: ${specifier}`);
-}
-await bar.link(linker);await bar.evaluate();
+await bar.link(linker);
 
-````
+
+
+
+
+
+
+await bar.evaluate();
+```
 
 #### `module.dependencySpecifiers`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#vm_moduledependencyspecifiers)
 
@@ -54542,24 +53161,24 @@ The identifier of the current module, as set in the constructor.
 
 -   `linker` [<Function>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
     -   `specifier` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type) The specifier of the requested module:
-
+        
         ```
         import foo from 'foo';
         ```
-
+        
     -   `extra` [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
-
+        
         -   `assert` [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) The data from the assertion:
-
+            
             ```
             import foo from 'foo' assert { name: 'value' };
             ```
-
+            
             Per ECMA-262, hosts are expected to ignore assertions that they do not support, as opposed to, for example, triggering an error if an unsupported assertion is present.
     -   `referencingModule` [<vm.Module>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#vm_class-vmmodule) The `Module` object `link()` is called on.
-
+        
     -   Returns: [<vm.Module>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#vm_class-vmmodule) | [<Promise>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
-
+        
 -   Returns: [<Promise>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 
 Link module dependencies. This method must be called before evaluation, and can only be called once per module.
@@ -54596,17 +53215,17 @@ Corresponds to the [GetModuleNamespace](https://tc39.es/ecma262/#sec-getmodulena
 The current status of the module. Will be one of:
 
 -   `'unlinked'`: `module.link()` has not yet been called.
-
+    
 -   `'linking'`: `module.link()` has been called, but not all Promises returned by the linker function have been resolved yet.
-
+    
 -   `'linked'`: The module has been linked successfully, and all of its dependencies are linked, but `module.evaluate()` has not yet been called.
-
+    
 -   `'evaluating'`: The module is being evaluated through a `module.evaluate()` on itself or a parent module.
-
+    
 -   `'evaluated'`: The module has been successfully evaluated.
-
+    
 -   `'errored'`: The module has been evaluated, but an exception was thrown.
-
+    
 
 Other than `'errored'`, this status string corresponds to the specification's [Cyclic Module Record](https://tc39.es/ecma262/#sec-cyclic-module-records)'s `[[Status]]` field. `'errored'` corresponds to `'evaluated'` in the specification, but with `[[EvaluationError]]` set to a value that is not `undefined`.
 
@@ -54642,24 +53261,30 @@ Creates a new `SourceTextModule` instance.
 
 Properties assigned to the `import.meta` object that are objects may allow the module to access information outside the specified `context`. Use `vm.runInContext()` to create objects in a specific context.
 
-````
-
+```
 import vm from 'vm';
 
 const contextifiedObject = vm.createContext({ secret: 42 });
 
 const module = new vm.SourceTextModule(
-'Object.getPrototypeOf(import.meta.prop).secret = secret;',
-{
-initializeImportMeta(meta) {
-
+  'Object.getPrototypeOf(import.meta.prop).secret = secret;',
+  {
+    initializeImportMeta(meta) {
+      
+      
+      
+      
       meta.prop = {};
     }
-
-});
+  });
 
 await module.link(() => {});
 await module.evaluate();
+
+
+
+
+
 
 ```
 
@@ -54675,10 +53300,11 @@ Creates a code cache that can be used with the `SourceTextModule` constructor's 
 
 const module = new vm.SourceTextModule('const a = 1;');
 
+
 const cachedData = module.createCachedData();
 
-const module2 = new vm.SourceTextModule('const a = 1;', { cachedData });
 
+const module2 = new vm.SourceTextModule('const a = 1;', { cachedData });
 ```
 
 ### Class: `vm.SyntheticModule`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#vm_class-vmsyntheticmodule)
@@ -54692,13 +53318,12 @@ This feature is only available with the `--experimental-vm-modules` command flag
 The `vm.SyntheticModule` class provides the [Synthetic Module Record](https://heycam.github.io/webidl/#synthetic-module-records) as defined in the WebIDL specification. The purpose of synthetic modules is to provide a generic interface for exposing non-JavaScript sources to ECMAScript module graphs.
 
 ```
-
 const vm = require('vm');
 
 const source = '{ "a": 1 }';
 const module = new vm.SyntheticModule(['default'], function() {
-const obj = JSON.parse(source);
-this.setExport('default', obj);
+  const obj = JSON.parse(source);
+  this.setExport('default', obj);
 });
 
 ```
@@ -54727,18 +53352,16 @@ Added in: v13.0.0, v12.16.0
 This method is used after the module is linked to set the values of exports. If it is called before the module is linked, an [`ERR_VM_MODULE_STATUS`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#errors_err_vm_module_status) error will be thrown.
 
 ```
-
 import vm from 'vm';
 
 const m = new vm.SyntheticModule(['x'], () => {
-m.setExport('x', 1);
+  m.setExport('x', 1);
 });
 
 await m.link(() => {});
 await m.evaluate();
 
 assert.strictEqual(m.namespace.x, 1);
-
 ```
 
 ### `vm.compileFunction(code[, params[, options]])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#vm_vmcompilefunctioncode-params-options)
@@ -54777,7 +53400,6 @@ Compiles the given code into the provided context (if no context is supplied, th
 If given a `contextObject`, the `vm.createContext()` method will [prepare that object](https://nodejs.org/dist/v16.13.1/docs/api/all.html#vm_what-does-it-mean-to-contextify-an-object) so that it can be used in calls to [`vm.runInContext()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#vm_vmrunincontextcode-contextifiedobject-options) or [`script.runInContext()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#vm_scriptrunincontextcontextifiedobject-options). Inside such scripts, the `contextObject` will be the global object, retaining all of its existing properties but also having the built-in objects and functions any standard [global object](https://es5.github.io/#x15.1) has. Outside of scripts run by the vm module, global variables will remain unchanged.
 
 ```
-
 const vm = require('vm');
 
 global.globalVar = 3;
@@ -54785,12 +53407,12 @@ global.globalVar = 3;
 const context = { globalVar: 1 };
 vm.createContext(context);
 
-vm.runInContext('globalVar \*= 2;', context);
+vm.runInContext('globalVar *= 2;', context);
 
 console.log(context);
 
-console.log(global.globalVar);
 
+console.log(global.globalVar);
 ```
 
 If `contextObject` is omitted (or passed explicitly as `undefined`), a new, empty [contextified](https://nodejs.org/dist/v16.13.1/docs/api/all.html#vm_what-does-it-mean-to-contextify-an-object) object will be returned.
@@ -54824,42 +53446,44 @@ The format of the object that the returned Promise may resolve with is specific 
 The returned result is different from the statistics returned by `v8.getHeapSpaceStatistics()` in that `vm.measureMemory()` measure the memory reachable by each V8 specific contexts in the current instance of the V8 engine, while the result of `v8.getHeapSpaceStatistics()` measure the memory occupied by each heap space in the current V8 instance.
 
 ```
-
 const vm = require('vm');
 
 vm.measureMemory({ mode: 'summary' })
-
-.then((result) => {
-
+  
+  .then((result) => {
+    
+    
+    
+    
+    
+    
     console.log(result);
-
-});
+  });
 
 const context = vm.createContext({ a: 1 });
 vm.measureMemory({ mode: 'detailed', execution: 'eager' })
-.then((result) => {
-
+  .then((result) => {
+    
+    
     console.log(context.a);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     console.log(result);
-
-});
-
+  });
 ```
 
 ### `vm.runInContext(code, contextifiedObject[, options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#vm_vmrunincontextcode-contextifiedobject-options)
@@ -54889,17 +53513,15 @@ If `options` is a string, then it specifies the filename.
 The following example compiles and executes different scripts using a single [contextified](https://nodejs.org/dist/v16.13.1/docs/api/all.html#vm_what-does-it-mean-to-contextify-an-object) object:
 
 ```
-
 const vm = require('vm');
 
 const contextObject = { globalVar: 1 };
 vm.createContext(contextObject);
 
 for (let i = 0; i < 10; ++i) {
-vm.runInContext('globalVar \*= 2;', contextObject);
+  vm.runInContext('globalVar *= 2;', contextObject);
 }
 console.log(contextObject);
-
 ```
 
 ### `vm.runInNewContext(code[, contextObject[, options]])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#vm_vmruninnewcontextcode-contextobject-options)
@@ -54935,17 +53557,15 @@ If `options` is a string, then it specifies the filename.
 The following example compiles and executes code that increments a global variable and sets a new one. These globals are contained in the `contextObject`.
 
 ```
-
 const vm = require('vm');
 
 const contextObject = {
-animal: 'cat',
-count: 2
+  animal: 'cat',
+  count: 2
 };
 
 vm.runInNewContext('count += 1; name = "kitty"', contextObject);
 console.log(contextObject);
-
 ```
 
 ### `vm.runInThisContext(code[, options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#vm_vmruninthiscontextcode-options)
@@ -54974,16 +53594,15 @@ If `options` is a string, then it specifies the filename.
 The following example illustrates using both `vm.runInThisContext()` and the JavaScript [`eval()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval) function to run the same code:
 
 ```
-
 const vm = require('vm');
 let localVar = 'initial value';
 
 const vmResult = vm.runInThisContext('localVar = "vm";');
 console.log(`vmResult: '${vmResult}', localVar: '${localVar}'`);
 
+
 const evalResult = eval('localVar = "eval";');
 console.log(`evalResult: '${evalResult}', localVar: '${localVar}'`);
-
 ```
 
 Because `vm.runInThisContext()` does not have access to the local scope, `localVar` is unchanged. In contrast, [`eval()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval) _does_ have access to the local scope, so the value `localVar` is changed. In this way `vm.runInThisContext()` is much like an [indirect `eval()` call](https://es5.github.io/#x10.4.2), e.g. `(0,eval)('code')`.
@@ -54995,24 +53614,22 @@ When using either [`script.runInThisContext()`](https://nodejs.org/dist/v16.13.1
 In order to run a simple web server using the `http` module the code passed to the context must either call `require('http')` on its own, or have a reference to the `http` module passed to it. For instance:
 
 ```
-
 'use strict';
 const vm = require('vm');
 
 const code = `
 ((require) => {
-const http = require('http');
+  const http = require('http');
 
-http.createServer((request, response) => {
-response.writeHead(200, { 'Content-Type': 'text/plain' });
-response.end('Hello World\\n');
-}).listen(8124);
+  http.createServer((request, response) => {
+    response.writeHead(200, { 'Content-Type': 'text/plain' });
+    response.end('Hello World\\n');
+  }).listen(8124);
 
-console.log('Server running at http://127.0.0.1:8124/');
+  console.log('Server running at http://127.0.0.1:8124/');
 })`;
 
 vm.runInThisContext(code)(require);
-
 ```
 
 The `require()` in the above case shares the state with the context it is passed from. This may introduce risks when untrusted code is executed, e.g. altering objects in the context in unwanted ways.
@@ -55032,40 +53649,36 @@ When the method `vm.createContext()` is called, the `contextObject` argument (or
 For example, the following code executed by `vm.runInNewContext()` with a timeout of 5 milliseconds schedules an infinite loop to run after a promise resolves. The scheduled loop is never interrupted by the timeout:
 
 ```
-
 const vm = require('vm');
 
 function loop() {
-console.log('entering loop');
-while (1) console.log(Date.now());
+  console.log('entering loop');
+  while (1) console.log(Date.now());
 }
 
 vm.runInNewContext(
-'Promise.resolve().then(() => loop());',
-{ loop, console },
-{ timeout: 5 }
+  'Promise.resolve().then(() => loop());',
+  { loop, console },
+  { timeout: 5 }
 );
 
 console.log('done executing');
-
 ```
 
 This can be addressed by passing `microtaskMode: 'afterEvaluate'` to the code that creates the `Context`:
 
 ```
-
 const vm = require('vm');
 
 function loop() {
-while (1) console.log(Date.now());
+  while (1) console.log(Date.now());
 }
 
 vm.runInNewContext(
-'Promise.resolve().then(() => loop());',
-{ loop, console },
-{ timeout: 5, microtaskMode: 'afterEvaluate' }
+  'Promise.resolve().then(() => loop());',
+  { loop, console },
+  { timeout: 5, microtaskMode: 'afterEvaluate' }
 );
-
 ```
 
 In this case, the microtask scheduled through `promise.then()` will be run before returning from `vm.runInNewContext()`, and will be interrupted by the `timeout` functionality. This applies only to code running in a `vm.Context`, so e.g. [`vm.runInThisContext()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#vm_vmruninthiscontextcode-options) does not take this option.
@@ -55081,39 +53694,38 @@ If asynchronous scheduling functions such as `process.nextTick()`, `queueMicrota
 The WASI API provides an implementation of the [WebAssembly System Interface](https://wasi.dev/) specification. WASI gives sandboxed WebAssembly applications access to the underlying operating system via a collection of POSIX-like functions.
 
 ```
-
 import { readFile } from 'fs/promises';
 import { WASI } from 'wasi';
 import { argv, env } from 'process';
 
 const wasi = new WASI({
-args: argv,
-env,
-preopens: {
-'/sandbox': '/some/real/path/that/wasm/can/access'
-}
+  args: argv,
+  env,
+  preopens: {
+    '/sandbox': '/some/real/path/that/wasm/can/access'
+  }
 });
+
+
 
 const importObject = { wasi_snapshot_preview1: wasi.wasiImport };
 
 const wasm = await WebAssembly.compile(
-await readFile(new URL('./demo.wasm', import.meta.url))
+  await readFile(new URL('./demo.wasm', import.meta.url))
 );
 const instance = await WebAssembly.instantiate(wasm, importObject);
 
 wasi.start(instance);
-
 ```
 
 To run the above example, create a new WebAssembly text format file named `demo.wat`:
 
 ```
-
 (module
-;; Import the required fd_write WASI function which will write the given io vectors to stdout
-;; The function signature for fd_write is:
-;; (File Descriptor, \*iovs, iovs_len, nwritten) -> Returns number of bytes written
-(import "wasi_snapshot_preview1" "fd_write" (func $fd_write (param i32 i32 i32 i32) (result i32)))
+    ;; Import the required fd_write WASI function which will write the given io vectors to stdout
+    ;; The function signature for fd_write is:
+    ;; (File Descriptor, *iovs, iovs_len, nwritten) -> Returns number of bytes written
+    (import "wasi_snapshot_preview1" "fd_write" (func $fd_write (param i32 i32 i32 i32) (result i32)))
 
     (memory 1)
     (export "memory" (memory 0))
@@ -55135,17 +53747,13 @@ To run the above example, create a new WebAssembly text format file named `demo.
         )
         drop ;; Discard the number of bytes written from the top of the stack
     )
-
 )
-
 ```
 
 Use [wabt](https://github.com/WebAssembly/wabt) to compile `.wat` to `.wasm`
 
 ```
-
 $ wat2wasm demo.wat
-
 ```
 
 The `--experimental-wasi-unstable-preview1` CLI argument is needed for this example to run.
@@ -55208,23 +53816,21 @@ Node.js provides an implementation of the standard [Web Crypto API](https://www.
 Use `require('crypto').webcrypto` to access this module.
 
 ```
-
 const { subtle } = require('crypto').webcrypto;
 
 (async function() {
 
-const key = await subtle.generateKey({
-name: 'HMAC',
-hash: 'SHA-256',
-length: 256
-}, true, ['sign', 'verify']);
+  const key = await subtle.generateKey({
+    name: 'HMAC',
+    hash: 'SHA-256',
+    length: 256
+  }, true, ['sign', 'verify']);
 
-const digest = await subtle.sign({
-name: 'HMAC'
-}, key, 'I love cupcakes');
+  const digest = await subtle.sign({
+    name: 'HMAC'
+  }, key, 'I love cupcakes');
 
 })();
-
 ```
 
 ### Examples[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_examples)
@@ -55236,291 +53842,269 @@ The [<SubtleCrypto>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypt
 ##### AES keys[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_aes-keys)
 
 ```
-
 const { subtle } = require('crypto').webcrypto;
 
 async function generateAesKey(length = 256) {
-const key = await subtle.generateKey({
-name: 'AES-CBC',
-length
-}, true, ['encrypt', 'decrypt']);
+  const key = await subtle.generateKey({
+    name: 'AES-CBC',
+    length
+  }, true, ['encrypt', 'decrypt']);
 
-return key;
+  return key;
 }
-
 ```
 
 ##### Elliptic curve key pairs[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_elliptic-curve-key-pairs)
 
 ```
-
 const { subtle } = require('crypto').webcrypto;
 
 async function generateEcKey(namedCurve = 'P-521') {
-const {
-publicKey,
-privateKey
-} = await subtle.generateKey({
-name: 'ECDSA',
-namedCurve,
-}, true, ['sign', 'verify']);
+  const {
+    publicKey,
+    privateKey
+  } = await subtle.generateKey({
+    name: 'ECDSA',
+    namedCurve,
+  }, true, ['sign', 'verify']);
 
-return { publicKey, privateKey };
+  return { publicKey, privateKey };
 }
-
 ```
 
 ##### ED25519/ED448/X25519/X448 Elliptic curve key pairs[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_ed25519ed448x25519x448-elliptic-curve-key-pairs)
 
 ```
-
 const { subtle } = require('crypto').webcrypto;
 
 async function generateEd25519Key() {
-return subtle.generateKey({
-name: 'NODE-ED25519',
-namedCurve: 'NODE-ED25519',
-}, true, ['sign', 'verify']);
+  return subtle.generateKey({
+    name: 'NODE-ED25519',
+    namedCurve: 'NODE-ED25519',
+  }, true, ['sign', 'verify']);
 }
 
 async function generateX25519Key() {
-return subtle.generateKey({
-name: 'ECDH',
-namedCurve: 'NODE-X25519',
-}, true, ['deriveKey']);
+  return subtle.generateKey({
+    name: 'ECDH',
+    namedCurve: 'NODE-X25519',
+  }, true, ['deriveKey']);
 }
-
 ```
 
 ##### HMAC keys[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_hmac-keys)
 
 ```
-
 const { subtle } = require('crypto').webcrypto;
 
 async function generateHmacKey(hash = 'SHA-256') {
-const key = await subtle.generateKey({
-name: 'HMAC',
-hash
-}, true, ['sign', 'verify']);
+  const key = await subtle.generateKey({
+    name: 'HMAC',
+    hash
+  }, true, ['sign', 'verify']);
 
-return key;
+  return key;
 }
-
 ```
 
 ##### RSA key pairs[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_rsa-key-pairs)
 
 ```
-
 const { subtle } = require('crypto').webcrypto;
 const publicExponent = new Uint8Array([1, 0, 1]);
 
 async function generateRsaKey(modulusLength = 2048, hash = 'SHA-256') {
-const {
-publicKey,
-privateKey
-} = await subtle.generateKey({
-name: 'RSASSA-PKCS1-v1_5',
-modulusLength,
-publicExponent,
-hash,
-}, true, ['sign', 'verify']);
+  const {
+    publicKey,
+    privateKey
+  } = await subtle.generateKey({
+    name: 'RSASSA-PKCS1-v1_5',
+    modulusLength,
+    publicExponent,
+    hash,
+  }, true, ['sign', 'verify']);
 
-return { publicKey, privateKey };
+  return { publicKey, privateKey };
 }
-
 ```
 
 #### Encryption and decryption[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_encryption-and-decryption)
 
 ```
-
 const { subtle, getRandomValues } = require('crypto').webcrypto;
 
 async function aesEncrypt(plaintext) {
-const ec = new TextEncoder();
-const key = await generateAesKey();
-const iv = getRandomValues(new Uint8Array(16));
+  const ec = new TextEncoder();
+  const key = await generateAesKey();
+  const iv = getRandomValues(new Uint8Array(16));
 
-const ciphertext = await subtle.encrypt({
-name: 'AES-CBC',
-iv,
-}, key, ec.encode(plaintext));
+  const ciphertext = await subtle.encrypt({
+    name: 'AES-CBC',
+    iv,
+  }, key, ec.encode(plaintext));
 
-return {
-key,
-iv,
-ciphertext
-};
+  return {
+    key,
+    iv,
+    ciphertext
+  };
 }
 
 async function aesDecrypt(ciphertext, key, iv) {
-const dec = new TextDecoder();
-const plaintext = await subtle.decrypt({
-name: 'AES-CBC',
-iv,
-}, key, ciphertext);
+  const dec = new TextDecoder();
+  const plaintext = await subtle.decrypt({
+    name: 'AES-CBC',
+    iv,
+  }, key, ciphertext);
 
-return dec.decode(plaintext);
+  return dec.decode(plaintext);
 }
-
 ```
 
 #### Exporting and importing keys[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_exporting-and-importing-keys)
 
 ```
-
 const { subtle } = require('crypto').webcrypto;
 
 async function generateAndExportHmacKey(format = 'jwk', hash = 'SHA-512') {
-const key = await subtle.generateKey({
-name: 'HMAC',
-hash
-}, true, ['sign', 'verify']);
+  const key = await subtle.generateKey({
+    name: 'HMAC',
+    hash
+  }, true, ['sign', 'verify']);
 
-return subtle.exportKey(format, key);
+  return subtle.exportKey(format, key);
 }
 
 async function importHmacKey(keyData, format = 'jwk', hash = 'SHA-512') {
-const key = await subtle.importKey(format, keyData, {
-name: 'HMAC',
-hash
-}, true, ['sign', 'verify']);
+  const key = await subtle.importKey(format, keyData, {
+    name: 'HMAC',
+    hash
+  }, true, ['sign', 'verify']);
 
-return key;
+  return key;
 }
-
 ```
 
 #### Wrapping and unwrapping keys[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_wrapping-and-unwrapping-keys)
 
 ```
-
 const { subtle } = require('crypto').webcrypto;
 
 async function generateAndWrapHmacKey(format = 'jwk', hash = 'SHA-512') {
-const [
-key,
-wrappingKey,
-] = await Promise.all([
-subtle.generateKey({
-name: 'HMAC', hash
-}, true, ['sign', 'verify']),
-subtle.generateKey({
-name: 'AES-KW',
-length: 256
-}, true, ['wrapKey', 'unwrapKey']),
-]);
+  const [
+    key,
+    wrappingKey,
+  ] = await Promise.all([
+    subtle.generateKey({
+      name: 'HMAC', hash
+    }, true, ['sign', 'verify']),
+    subtle.generateKey({
+      name: 'AES-KW',
+      length: 256
+    }, true, ['wrapKey', 'unwrapKey']),
+  ]);
 
-const wrappedKey = await subtle.wrapKey(format, key, wrappingKey, 'AES-KW');
+  const wrappedKey = await subtle.wrapKey(format, key, wrappingKey, 'AES-KW');
 
-return wrappedKey;
+  return wrappedKey;
 }
 
 async function unwrapHmacKey(
-wrappedKey,
-wrappingKey,
-format = 'jwk',
-hash = 'SHA-512') {
+  wrappedKey,
+  wrappingKey,
+  format = 'jwk',
+  hash = 'SHA-512') {
 
-const key = await subtle.unwrapKey(
-format,
-wrappedKey,
-unwrappingKey,
-'AES-KW',
-{ name: 'HMAC', hash },
-true,
-['sign', 'verify']);
+  const key = await subtle.unwrapKey(
+    format,
+    wrappedKey,
+    unwrappingKey,
+    'AES-KW',
+    { name: 'HMAC', hash },
+    true,
+    ['sign', 'verify']);
 
-return key;
+  return key;
 }
-
 ```
 
 #### Sign and verify[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_sign-and-verify)
 
 ```
-
 const { subtle } = require('crypto').webcrypto;
 
 async function sign(key, data) {
-const ec = new TextEncoder();
-const signature =
-await subtle.sign('RSASSA-PKCS1-v1_5', key, ec.encode(data));
-return signature;
+  const ec = new TextEncoder();
+  const signature =
+    await subtle.sign('RSASSA-PKCS1-v1_5', key, ec.encode(data));
+  return signature;
 }
 
 async function verify(key, signature, data) {
-const ec = new TextEncoder();
-const verified =
-await subtle.verify(
-'RSASSA-PKCS1-v1_5',
-key,
-signature,
-ec.encode(data));
-return verified;
+  const ec = new TextEncoder();
+  const verified =
+    await subtle.verify(
+      'RSASSA-PKCS1-v1_5',
+      key,
+      signature,
+      ec.encode(data));
+  return verified;
 }
-
 ```
 
 #### Deriving bits and keys[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_deriving-bits-and-keys)
 
 ```
-
 const { subtle } = require('crypto').webcrypto;
 
 async function pbkdf2(pass, salt, iterations = 1000, length = 256) {
-const ec = new TextEncoder();
-const key = await subtle.importKey(
-'raw',
-ec.encode(pass),
-'PBKDF2',
-false,
-['deriveBits']);
-const bits = await subtle.deriveBits({
-name: 'PBKDF2',
-hash: 'SHA-512',
-salt: ec.encode(salt),
-iterations
-}, key, length);
-return bits;
+  const ec = new TextEncoder();
+  const key = await subtle.importKey(
+    'raw',
+    ec.encode(pass),
+    'PBKDF2',
+    false,
+    ['deriveBits']);
+  const bits = await subtle.deriveBits({
+    name: 'PBKDF2',
+    hash: 'SHA-512',
+    salt: ec.encode(salt),
+    iterations
+  }, key, length);
+  return bits;
 }
 
 async function pbkdf2Key(pass, salt, iterations = 1000, length = 256) {
-const ec = new TextEncoder();
-const keyMaterial = await subtle.importKey(
-'raw',
-ec.encode(pass),
-'PBKDF2',
-false,
-['deriveKey']);
-const key = await subtle.deriveKey({
-name: 'PBKDF2',
-hash: 'SHA-512',
-salt: ec.encode(salt),
-iterations
-}, keyMaterial, {
-name: 'AES-GCM',
-length: 256
-}, true, ['encrypt', 'decrypt']);
-return key;
+  const ec = new TextEncoder();
+  const keyMaterial = await subtle.importKey(
+    'raw',
+    ec.encode(pass),
+    'PBKDF2',
+    false,
+    ['deriveKey']);
+  const key = await subtle.deriveKey({
+    name: 'PBKDF2',
+    hash: 'SHA-512',
+    salt: ec.encode(salt),
+    iterations
+  }, keyMaterial, {
+    name: 'AES-GCM',
+    length: 256
+  }, true, ['encrypt', 'decrypt']);
+  return key;
 }
-
 ```
 
 #### Digest[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_digest)
 
 ```
-
 const { subtle } = require('crypto').webcrypto;
 
 async function digest(data, algorithm = 'SHA-512') {
-const ec = new TextEncoder();
-const digest = await subtle.digest(algorithm, ec.encode(data));
-return digest;
+  const ec = new TextEncoder();
+  const digest = await subtle.digest(algorithm, ec.encode(data));
+  return digest;
 }
-
 ```
 
 ### Algorithm Matrix[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_algorithm-matrix)
@@ -57253,20 +55837,18 @@ Added in: v15.0.0
 ### Footnotes
 
 1.  Non-standard Node.js-specific extension [↩](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_user-content-fnref-1) [↩2](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_user-content-fnref-1-2) [↩3](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_user-content-fnref-1-3) [↩4](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_user-content-fnref-1-4) [↩5](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_user-content-fnref-1-5) [↩6](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_user-content-fnref-1-6) [↩7](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_user-content-fnref-1-7) [↩8](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_user-content-fnref-1-8) [↩9](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_user-content-fnref-1-9) [↩10](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_user-content-fnref-1-10) [↩11](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_user-content-fnref-1-11) [↩12](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_user-content-fnref-1-12) [↩13](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_user-content-fnref-1-13) [↩14](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_user-content-fnref-1-14) [↩15](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_user-content-fnref-1-15) [↩16](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_user-content-fnref-1-16) [↩17](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_user-content-fnref-1-17) [↩18](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_user-content-fnref-1-18) [↩19](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_user-content-fnref-1-19) [↩20](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_user-content-fnref-1-20) [↩21](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_user-content-fnref-1-21) [↩22](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_user-content-fnref-1-22) [↩23](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_user-content-fnref-1-23) [↩24](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_user-content-fnref-1-24) [↩25](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_user-content-fnref-1-25) [↩26](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_user-content-fnref-1-26) [↩27](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_user-content-fnref-1-27) [↩28](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_user-content-fnref-1-28) [↩29](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_user-content-fnref-1-29) [↩30](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_user-content-fnref-1-30) [↩31](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_user-content-fnref-1-31) [↩32](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_user-content-fnref-1-32) [↩33](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_user-content-fnref-1-33) [↩34](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_user-content-fnref-1-34) [↩35](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_user-content-fnref-1-35) [↩36](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_user-content-fnref-1-36) [↩37](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_user-content-fnref-1-37) [↩38](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_user-content-fnref-1-38) [↩39](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webcrypto_user-content-fnref-1-39)
-
+    
 
 ## Web Streams API[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webstreams_web-streams-api)
 
 An implementation of the [WHATWG Streams Standard](https://streams.spec.whatwg.org/).
 
 ```
-
 import {
-ReadableStream,
-WritableStream,
-TransformStream,
+  ReadableStream,
+  WritableStream,
+  TransformStream,
 } from 'node:stream/web';
-
 ```
 
 ### Overview[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webstreams_overview)
@@ -57284,31 +55866,29 @@ There are three primary types of objects
 This example creates a simple `ReadableStream` that pushes the current `performance.now()` timestamp once every second forever. An async iterable is used to read the data from the stream.
 
 ```
-
 import {
-ReadableStream
+  ReadableStream
 } from 'node:stream/web';
 
 import {
-setInterval as every
+  setInterval as every
 } from 'node:timers/promises';
 
 import {
-performance
+  performance
 } from 'node:perf_hooks';
 
 const SECOND = 1000;
 
 const stream = new ReadableStream({
-async start(controller) {
-for await (const \_ of every(SECOND))
-controller.enqueue(performance.now());
-}
+  async start(controller) {
+    for await (const _ of every(SECOND))
+      controller.enqueue(performance.now());
+  }
 });
 
 for await (const value of stream)
-console.log(value);
-
+  console.log(value);
 ```
 
 ### API[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webstreams_api)
@@ -57363,7 +55943,6 @@ Added in: v16.5.0
 -   Returns: [<ReadableStreamDefaultReader>](https://nodejs.org/dist/v16.13.1/docs/api/webstreams.md#class-readablestreamdefaultreader) | [<ReadableStreamBYOBReader>](https://nodejs.org/dist/v16.13.1/docs/api/webstreams.md#class-readablestreambyobreader)
 
 ```
-
 import { ReadableStream } from 'node:stream/web';
 
 const stream = new ReadableStream();
@@ -57371,7 +55950,6 @@ const stream = new ReadableStream();
 const reader = stream.getReader();
 
 console.log(await reader.read());
-
 ```
 
 Causes the `readableStream.locked` to be `true`.
@@ -57395,29 +55973,27 @@ Connects this [<ReadableStream>](https://nodejs.org/dist/v16.13.1/docs/api/webst
 Causes the `readableStream.locked` to be `true` while the pipe operation is active.
 
 ```
-
 import {
-ReadableStream,
-TransformStream,
+  ReadableStream,
+  TransformStream,
 } from 'node:stream/web';
 
 const stream = new ReadableStream({
-start(controller) {
-controller.enqueue('a');
-},
+  start(controller) {
+    controller.enqueue('a');
+  },
 });
 
 const transform = new TransformStream({
-transform(chunk, controller) {
-controller.enqueue(chunk.toUpperCase());
-}
+  transform(chunk, controller) {
+    controller.enqueue(chunk.toUpperCase());
+  }
 });
 
 const transformedStream = stream.pipeThrough(transform);
 
 for await (const chunk of transformedStream)
-console.log(chunk);
-
+  console.log(chunk);
 ```
 
 ##### `readableStream.pipeTo(destination, options)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webstreams_readablestreampipetodestination-options)
@@ -57456,14 +56032,12 @@ Creates and returns an async iterator usable for consuming this `ReadableStream`
 Causes the `readableStream.locked` to be `true` while the async iterator is active.
 
 ```
-
 import { Buffer } from 'node:buffer';
 
 const stream = new ReadableStream(getSomeSource());
 
 for await (const chunk of stream.values({ preventCancel: true }))
-console.log(Buffer.from(chunk).toString());
-
+  console.log(Buffer.from(chunk).toString());
 ```
 
 ##### Async Iteration[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webstreams_async-iteration)
@@ -57471,14 +56045,12 @@ console.log(Buffer.from(chunk).toString());
 The [<ReadableStream>](https://nodejs.org/dist/v16.13.1/docs/api/webstreams.md#class-readablestream) object supports the async iterator protocol using `for await` syntax.
 
 ```
-
 import { Buffer } from 'buffer';
 
 const stream = new ReadableStream(getSomeSource());
 
 for await (const chunk of stream)
-console.log(Buffer.from(chunk).toString());
-
+  console.log(Buffer.from(chunk).toString());
 ```
 
 The async iterator will consume the [<ReadableStream>](https://nodejs.org/dist/v16.13.1/docs/api/webstreams.md#class-readablestream) until it terminates.
@@ -57492,19 +56064,17 @@ The [<ReadableStream>](https://nodejs.org/dist/v16.13.1/docs/api/webstreams.md#c
 A [<ReadableStream>](https://nodejs.org/dist/v16.13.1/docs/api/webstreams.md#class-readablestream) instance can be transferred using a [<MessagePort>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-messageport).
 
 ```
-
 const stream = new ReadableStream(getReadableSourceSomehow());
 
 const { port1, port2 } = new MessageChannel();
 
 port1.onmessage = ({ data }) => {
-data.getReader().read().then((chunk) => {
-console.log(chunk);
-});
+  data.getReader().read().then((chunk) => {
+    console.log(chunk);
+  });
 };
 
 port2.postMessage(stream, [stream]);
-
 ```
 
 #### Class: `ReadableStreamDefaultReader`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webstreams_class-readablestreamdefaultreader)
@@ -57561,64 +56131,61 @@ The `ReadableStreamBYOBReader` is an alternative consumer for byte-oriented [<Re
 The `BYOB` is short for "bring your own buffer". This is a pattern that allows for more efficient reading of byte-oriented data that avoids extraneous copying.
 
 ```
-
 import {
-open
+  open
 } from 'node:fs/promises';
 
 import {
-ReadableStream
+  ReadableStream
 } from 'node:stream/web';
 
 import { Buffer } from 'node:buffer';
 
 class Source {
-type = 'bytes';
-autoAllocateChunkSize = 1024;
+  type = 'bytes';
+  autoAllocateChunkSize = 1024;
 
-async start(controller) {
-this.file = await open(new URL(import.meta.url));
-this.controller = controller;
-}
+  async start(controller) {
+    this.file = await open(new URL(import.meta.url));
+    this.controller = controller;
+  }
 
-async pull(controller) {
-const view = controller.byobRequest?.view;
-const {
-bytesRead,
-} = await this.file.read({
-buffer: view,
-offset: view.byteOffset,
-length: view.byteLength
-});
+  async pull(controller) {
+    const view = controller.byobRequest?.view;
+    const {
+      bytesRead,
+    } = await this.file.read({
+      buffer: view,
+      offset: view.byteOffset,
+      length: view.byteLength
+    });
 
     if (bytesRead === 0) {
       await this.file.close();
       this.controller.close();
     }
     controller.byobRequest.respond(bytesRead);
-
-}
+  }
 }
 
 const stream = new ReadableStream(new Source());
 
 async function read(stream) {
-const reader = stream.getReader({ mode: 'byob' });
+  const reader = stream.getReader({ mode: 'byob' });
 
-const chunks = [];
-let result;
-do {
-result = await reader.read(Buffer.alloc(100));
-if (result.value !== undefined)
-chunks.push(Buffer.from(result.value));
-} while (!result.done);
+  const chunks = [];
+  let result;
+  do {
+    result = await reader.read(Buffer.alloc(100));
+    if (result.value !== undefined)
+      chunks.push(Buffer.from(result.value));
+  } while (!result.done);
 
-return Buffer.concat(chunks);
+  return Buffer.concat(chunks);
 }
 
 const data = await read(stream);
 console.log(Buffer.from(data).toString());
-
 ```
 
 ##### `new ReadableStreamBYOBReader(stream)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webstreams_new-readablestreambyobreaderstream)
@@ -57776,19 +56343,17 @@ Added in: v16.5.0
 The `WritableStream` is a destination to which stream data is sent.
 
 ```
-
 import {
-WritableStream
+  WritableStream
 } from 'node:stream/web';
 
 const stream = new WritableStream({
-write(chunk) {
-console.log(chunk);
-}
+  write(chunk) {
+    console.log(chunk);
+  }
 });
 
 await stream.getWriter().write('Hello World');
-
 ```
 
 ##### `new WritableStream([underlyingSink[, strategy]])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webstreams_new-writablestreamunderlyingsink-strategy)
@@ -57853,17 +56418,15 @@ The `writableStream.locked` property is `false` by default, and is switched to `
 A [<WritableStream>](https://nodejs.org/dist/v16.13.1/docs/api/webstreams.md#class-writablestream) instance can be transferred using a [<MessagePort>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-messageport).
 
 ```
-
 const stream = new WritableStream(getWritableSinkSomehow());
 
 const { port1, port2 } = new MessageChannel();
 
 port1.onmessage = ({ data }) => {
-data.getWriter().write('hello');
+  data.getWriter().write('hello');
 };
 
 port2.postMessage(stream, [stream]);
-
 ```
 
 #### Class: `WritableStreamDefaultWriter`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webstreams_class-writablestreamdefaultwriter)
@@ -57959,22 +56522,20 @@ Added in: v16.5.0
 A `TransformStream` consists of a [<ReadableStream>](https://nodejs.org/dist/v16.13.1/docs/api/webstreams.md#class-readablestream) and a [<WritableStream>](https://nodejs.org/dist/v16.13.1/docs/api/webstreams.md#class-writablestream) that are connected such that the data written to the `WritableStream` is received, and potentially transformed, before being pushed into the `ReadableStream`'s queue.
 
 ```
-
 import {
-TransformStream
+  TransformStream
 } from 'node:stream/web';
 
 const transform = new TransformStream({
-transform(chunk, controller) {
-controller.enqueue(chunk.toUpperCase());
-}
+  transform(chunk, controller) {
+    controller.enqueue(chunk.toUpperCase());
+  }
 });
 
 await Promise.all([
-transform.writable.getWriter().write('A'),
-transform.readable.getReader().read(),
+  transform.writable.getWriter().write('A'),
+  transform.readable.getReader().read(),
 ]);
-
 ```
 
 ##### `new TransformStream([transformer[, writableStrategy[, readableStrategy]]])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webstreams_new-transformstreamtransformer-writablestrategy-readablestrategy)
@@ -58022,18 +56583,16 @@ Added in: v16.5.0
 A [<TransformStream>](https://nodejs.org/dist/v16.13.1/docs/api/webstreams.md#class-transformstream) instance can be transferred using a [<MessagePort>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-messageport).
 
 ```
-
 const stream = new TransformStream();
 
 const { port1, port2 } = new MessageChannel();
 
 port1.onmessage = ({ data }) => {
-const { writable, readable } = data;
-
+  const { writable, readable } = data;
+  
 };
 
 port2.postMessage(stream, [stream]);
-
 ```
 
 #### Class: `TransformStreamDefaultController`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webstreams_class-transformstreamdefaultcontroller)
@@ -58212,14 +56771,12 @@ The utility consumer functions provide common options for consuming streams.
 They are accessed using:
 
 ```
-
 import {
-arrayBuffer,
-blob,
-json,
-text,
+  arrayBuffer,
+  blob,
+  json,
+  text,
 } from 'node:stream/consumers';
-
 ```
 
 ##### `streamConsumers.arrayBuffer(stream)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#webstreams_streamconsumersarraybufferstream)
@@ -58264,9 +56821,7 @@ Added in: v16.7.0
 The `worker_threads` module enables the use of threads that execute JavaScript in parallel. To access it:
 
 ```
-
 const worker = require('worker_threads');
-
 ```
 
 Workers (threads) are useful for performing CPU-intensive JavaScript operations. They do not help much with I/O-intensive work. The Node.js built-in asynchronous I/O operations are more efficient than Workers can be.
@@ -58274,31 +56829,29 @@ Workers (threads) are useful for performing CPU-intensive JavaScript operations.
 Unlike `child_process` or `cluster`, `worker_threads` can share memory. They do so by transferring `ArrayBuffer` instances or sharing `SharedArrayBuffer` instances.
 
 ```
-
 const {
-Worker, isMainThread, parentPort, workerData
+  Worker, isMainThread, parentPort, workerData
 } = require('worker_threads');
 
 if (isMainThread) {
-module.exports = function parseJSAsync(script) {
-return new Promise((resolve, reject) => {
-const worker = new Worker(\_\_filename, {
-workerData: script
-});
-worker.on('message', resolve);
-worker.on('error', reject);
-worker.on('exit', (code) => {
-if (code !== 0)
-reject(new Error(`Worker stopped with exit code ${code}`));
-});
-});
-};
+  module.exports = function parseJSAsync(script) {
+    return new Promise((resolve, reject) => {
+      const worker = new Worker(__filename, {
+        workerData: script
+      });
+      worker.on('message', resolve);
+      worker.on('error', reject);
+      worker.on('exit', (code) => {
+        if (code !== 0)
+          reject(new Error(`Worker stopped with exit code ${code}`));
+      });
+    });
+  };
 } else {
-const { parse } = require('some-js-parsing-library');
-const script = workerData;
-parentPort.postMessage(parse(script));
+  const { parse } = require('some-js-parsing-library');
+  const script = workerData;
+  parentPort.postMessage(parse(script));
 }
-
 ```
 
 The above example spawns a Worker thread for each `parse()` call. In actual practice, use a pool of Workers for these kinds of tasks. Otherwise, the overhead of creating Workers would likely exceed their benefit.
@@ -58317,21 +56870,19 @@ Added in: v15.12.0
 Within a worker thread, `worker.getEnvironmentData()` returns a clone of data passed to the spawning thread's `worker.setEnvironmentData()`. Every new `Worker` receives its own copy of the environment data automatically.
 
 ```
-
 const {
-Worker,
-isMainThread,
-setEnvironmentData,
-getEnvironmentData,
+  Worker,
+  isMainThread,
+  setEnvironmentData,
+  getEnvironmentData,
 } = require('worker_threads');
 
 if (isMainThread) {
-setEnvironmentData('Hello', 'World!');
-const worker = new Worker(\_\_filename);
+  setEnvironmentData('Hello', 'World!');
+  const worker = new Worker(__filename);
 } else {
-console.log(getEnvironmentData('Hello'));  
+  console.log(getEnvironmentData('Hello'));  
 }
-
 ```
 
 ### `worker.isMainThread`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workerismainthread)
@@ -58343,17 +56894,15 @@ Added in: v10.5.0
 Is `true` if this code is not running inside of a [`Worker`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-worker) thread.
 
 ```
-
 const { Worker, isMainThread } = require('worker_threads');
 
 if (isMainThread) {
-
-new Worker(\_\_filename);
+  
+  new Worker(__filename);
 } else {
-console.log('Inside Worker!');
-console.log(isMainThread);  
+  console.log('Inside Worker!');
+  console.log(isMainThread);  
 }
-
 ```
 
 ### `worker.markAsUntransferable(object)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workermarkasuntransferableobject)
@@ -58367,7 +56916,6 @@ In particular, this makes sense for objects that can be cloned, rather than tran
 This operation cannot be undone.
 
 ```
-
 const { MessageChannel, markAsUntransferable } = require('worker_threads');
 
 const pooledBuffer = new ArrayBuffer(8);
@@ -58379,9 +56927,12 @@ markAsUntransferable(pooledBuffer);
 const { port1 } = new MessageChannel();
 port1.postMessage(typedArray1, [ typedArray1.buffer ]);
 
+
+
+
+
 console.log(typedArray1);
 console.log(typedArray2);
-
 ```
 
 There is no equivalent to this API in browsers.
@@ -58391,11 +56942,11 @@ There is no equivalent to this API in browsers.
 Added in: v11.13.0
 
 -   `port` [<MessagePort>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-messageport) The message port to transfer.
-
+    
 -   `contextifiedSandbox` [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) A [contextified](https://nodejs.org/dist/v16.13.1/docs/api/all.html#vm_what-does-it-mean-to-contextify-an-object) object as returned by the `vm.createContext()` method.
-
+    
 -   Returns: [<MessagePort>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-messageport)
-
+    
 
 Transfer a `MessagePort` to a different [`vm`](https://nodejs.org/dist/v16.13.1/docs/api/vm.html) Context. The original `port` object is rendered unusable, and the returned `MessagePort` instance takes its place.
 
@@ -58412,35 +56963,32 @@ Added in: v10.5.0
 If this thread is a [`Worker`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-worker), this is a [`MessagePort`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-messageport) allowing communication with the parent thread. Messages sent using `parentPort.postMessage()` are available in the parent thread using `worker.on('message')`, and messages sent from the parent thread using `worker.postMessage()` are available in this thread using `parentPort.on('message')`.
 
 ```
-
 const { Worker, isMainThread, parentPort } = require('worker_threads');
 
 if (isMainThread) {
-const worker = new Worker(\_\_filename);
-worker.once('message', (message) => {
-console.log(message);  
- });
-worker.postMessage('Hello, world!');
+  const worker = new Worker(__filename);
+  worker.once('message', (message) => {
+    console.log(message);  
+  });
+  worker.postMessage('Hello, world!');
 } else {
-
-parentPort.once('message', (message) => {
-parentPort.postMessage(message);
-});
+  
+  parentPort.once('message', (message) => {
+    parentPort.postMessage(message);
+  });
 }
-
 ```
 
 ### `worker.receiveMessageOnPort(port)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workerreceivemessageonportport)
 
 -   `port` [<MessagePort>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-messageport) | [<BroadcastChannel>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-broadcastchannel-extends-eventtarget)
-
+    
 -   Returns: [<Object>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) | [<undefined>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Undefined_type)
-
+    
 
 Receive a single message from a given `MessagePort`. If no message is available, `undefined` is returned, otherwise an object with a single `message` property that contains the message payload, corresponding to the oldest message in the `MessagePort`’s queue.
 
 ```
-
 const { MessageChannel, receiveMessageOnPort } = require('worker_threads');
 const { port1, port2 } = new MessageChannel();
 port1.postMessage({ hello: 'world' });
@@ -58448,7 +56996,6 @@ port1.postMessage({ hello: 'world' });
 console.log(receiveMessageOnPort(port2));
 
 console.log(receiveMessageOnPort(port2));
-
 ```
 
 When this function is used, no `'message'` event is emitted and the `onmessage` listener is not invoked.
@@ -58476,13 +57023,11 @@ Added in: v11.14.0
 A special value that can be passed as the `env` option of the [`Worker`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-worker) constructor, to indicate that the current thread and the Worker thread should share read and write access to the same set of environment variables.
 
 ```
-
 const { Worker, SHARE_ENV } = require('worker_threads');
 new Worker('process.env.SET_IN_WORKER = "foo"', { eval: true, env: SHARE_ENV })
-.on('exit', () => {
-console.log(process.env.SET_IN_WORKER);  
- });
-
+  .on('exit', () => {
+    console.log(process.env.SET_IN_WORKER);  
+  });
 ```
 
 ### `worker.setEnvironmentData(key[, value])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_workersetenvironmentdatakey-value)
@@ -58511,15 +57056,13 @@ An arbitrary JavaScript value that contains a clone of the data passed to this t
 The data is cloned as if using [`postMessage()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_portpostmessagevalue-transferlist), according to the [HTML structured clone algorithm](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm).
 
 ```
-
 const { Worker, isMainThread, workerData } = require('worker_threads');
 
 if (isMainThread) {
-const worker = new Worker(\_\_filename, { workerData: 'Hello, world!' });
+  const worker = new Worker(__filename, { workerData: 'Hello, world!' });
 } else {
-console.log(workerData);  
+  console.log(workerData);  
 }
-
 ```
 
 ### Class: `BroadcastChannel extends EventTarget`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-broadcastchannel-extends-eventtarget)
@@ -58529,30 +57072,28 @@ Added in: v15.4.0
 Instances of `BroadcastChannel` allow asynchronous one-to-many communication with all other `BroadcastChannel` instances bound to the same channel name.
 
 ```
-
 'use strict';
 
 const {
-isMainThread,
-BroadcastChannel,
-Worker
+  isMainThread,
+  BroadcastChannel,
+  Worker
 } = require('worker_threads');
 
 const bc = new BroadcastChannel('hello');
 
 if (isMainThread) {
-let c = 0;
-bc.onmessage = (event) => {
-console.log(event.data);
-if (++c === 10) bc.close();
-};
-for (let n = 0; n < 10; n++)
-new Worker(\_\_filename);
+  let c = 0;
+  bc.onmessage = (event) => {
+    console.log(event.data);
+    if (++c === 10) bc.close();
+  };
+  for (let n = 0; n < 10; n++)
+    new Worker(__filename);
 } else {
-bc.postMessage('hello from every worker');
-bc.close();
+  bc.postMessage('hello from every worker');
+  bc.close();
 }
-
 ```
 
 #### `new BroadcastChannel(name)`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_new-broadcastchannelname)
@@ -58604,13 +57145,11 @@ Added in: v10.5.0
 Instances of the `worker.MessageChannel` class represent an asynchronous, two-way communications channel. The `MessageChannel` has no methods of its own. `new MessageChannel()` yields an object with `port1` and `port2` properties, which refer to linked [`MessagePort`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-messageport) instances.
 
 ```
-
 const { MessageChannel } = require('worker_threads');
 
 const { port1, port2 } = new MessageChannel();
 port1.on('message', (message) => console.log('received', message));
 port2.postMessage({ foo: 'bar' });
-
 ```
 
 ### Class: `MessagePort`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-messageport)
@@ -58628,16 +57167,17 @@ Added in: v10.5.0
 The `'close'` event is emitted once either side of the channel has been disconnected.
 
 ```
-
 const { MessageChannel } = require('worker_threads');
 const { port1, port2 } = new MessageChannel();
+
+
+
 
 port2.on('message', (message) => console.log(message));
 port2.on('close', () => console.log('closed!'));
 
 port1.postMessage('foobar');
 port1.close();
-
 ```
 
 #### Event: `'message'`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_event-message)
@@ -58692,7 +57232,6 @@ In particular, the significant differences to `JSON` are:
     -   [<X509Certificate>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#crypto_class-x509certificate)s.
 
 ```
-
 const { MessageChannel } = require('worker_threads');
 const { port1, port2 } = new MessageChannel();
 
@@ -58702,7 +57241,6 @@ const circularData = {};
 circularData.foo = circularData;
 
 port2.postMessage(circularData);
-
 ```
 
 `transferList` may be a list of [`ArrayBuffer`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer), [`MessagePort`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-messageport) and [`FileHandle`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#fs_class-filehandle) objects. After transferring, they are not usable on the sending side of the channel anymore (even if they are not contained in `value`). Unlike with [child processes](https://nodejs.org/dist/v16.13.1/docs/api/child_process.html), transferring handles such as network sockets is currently not supported.
@@ -58712,7 +57250,6 @@ If `value` contains [`SharedArrayBuffer`](https://developer.mozilla.org/en-US/do
 `value` may still contain `ArrayBuffer` instances that are not in `transferList`; in that case, the underlying memory is copied rather than moved.
 
 ```
-
 const { MessageChannel } = require('worker_threads');
 const { port1, port2 } = new MessageChannel();
 
@@ -58724,12 +57261,16 @@ port2.postMessage(uint8Array);
 
 port2.postMessage(uint8Array, [ uint8Array.buffer ]);
 
+
+
 const sharedUint8Array = new Uint8Array(new SharedArrayBuffer(4));
 port2.postMessage(sharedUint8Array);
 
+
+
+
 const otherChannel = new MessageChannel();
 port2.postMessage({ port: otherChannel.port1 }, [ otherChannel.port1 ]);
-
 ```
 
 The message object is cloned immediately, and can be modified after posting without having side effects.
@@ -58741,18 +57282,16 @@ For more information on the serialization and deserialization mechanisms behind 
 All `TypedArray` and `Buffer` instances are views over an underlying `ArrayBuffer`. That is, it is the `ArrayBuffer` that actually stores the raw data while the `TypedArray` and `Buffer` objects provide a way of viewing and manipulating the data. It is possible and common for multiple views to be created over the same `ArrayBuffer` instance. Great care must be taken when using a transfer list to transfer an `ArrayBuffer` as doing so causes all `TypedArray` and `Buffer` instances that share that same `ArrayBuffer` to become unusable.
 
 ```
-
 const ab = new ArrayBuffer(10);
 
 const u1 = new Uint8Array(ab);
 const u2 = new Uint16Array(ab);
 
-console.log(u2.length);
+console.log(u2.length);  
 
 port.postMessage(u1, [u1.buffer]);
 
-console.log(u2.length);
-
+console.log(u2.length);  
 ```
 
 For `Buffer` instances, specifically, whether the underlying `ArrayBuffer` can be transferred or cloned depends entirely on how instances were created, which often cannot be reliably determined.
@@ -58770,17 +57309,16 @@ The `ArrayBuffer`s for `Buffer` instances created using `Buffer.alloc()` or `Buf
 Because object cloning uses the [HTML structured clone algorithm](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm), non-enumerable properties, property accessors, and object prototypes are not preserved. In particular, [`Buffer`](https://nodejs.org/dist/v16.13.1/docs/api/buffer.html) objects will be read as plain [`Uint8Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array)s on the receiving side, and instances of JavaScript classes will be cloned as plain JavaScript objects.
 
 ```
-
 const b = Symbol('b');
 
 class Foo {
-#a = 1;
-constructor() {
-this[b] = 2;
-this.c = 3;
-}
+  #a = 1;
+  constructor() {
+    this[b] = 2;
+    this.c = 3;
+  }
 
-get d() { return 4; }
+  get d() { return 4; }
 }
 
 const { port1, port2 } = new MessageChannel();
@@ -58794,7 +57332,6 @@ port2.postMessage(new Foo());
 This limitation extends to many built-in objects, such as the global `URL` object:
 
 ```
-
 const { port1, port2 } = new MessageChannel();
 
 port1.onmessage = ({ data }) => console.log(data);
@@ -58859,26 +57396,24 @@ To create custom messaging channels (which is encouraged over using the default 
 See [`port.postMessage()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_portpostmessagevalue-transferlist) for more information on how messages are passed, and what kind of JavaScript values can be successfully transported through the thread barrier.
 
 ```
-
 const assert = require('assert');
 const {
-Worker, MessageChannel, MessagePort, isMainThread, parentPort
+  Worker, MessageChannel, MessagePort, isMainThread, parentPort
 } = require('worker_threads');
 if (isMainThread) {
-const worker = new Worker(\_\_filename);
-const subChannel = new MessageChannel();
-worker.postMessage({ hereIsYourPort: subChannel.port1 }, [subChannel.port1]);
-subChannel.port2.on('message', (value) => {
-console.log('received:', value);
-});
+  const worker = new Worker(__filename);
+  const subChannel = new MessageChannel();
+  worker.postMessage({ hereIsYourPort: subChannel.port1 }, [subChannel.port1]);
+  subChannel.port2.on('message', (value) => {
+    console.log('received:', value);
+  });
 } else {
-parentPort.once('message', (value) => {
-assert(value.hereIsYourPort instanceof MessagePort);
-value.hereIsYourPort.postMessage('the worker is sending this');
-value.hereIsYourPort.close();
-});
+  parentPort.once('message', (value) => {
+    assert(value.hereIsYourPort instanceof MessagePort);
+    value.hereIsYourPort.postMessage('the worker is sending this');
+    value.hereIsYourPort.close();
+  });
 }
-
 ```
 
 #### `new Worker(filename[, options])`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_new-workerfilename-options)
@@ -58977,26 +57512,24 @@ One difference is that, unlike the main thread, bootstrapping within a worker is
 An `idle` time that does not increase does not indicate that the worker is stuck in bootstrap. The following examples shows how the worker's entire lifetime never accumulates any `idle` time, but is still be able to process messages.
 
 ```
-
 const { Worker, isMainThread, parentPort } = require('worker_threads');
 
 if (isMainThread) {
-const worker = new Worker(\_\_filename);
-setInterval(() => {
-worker.postMessage('hi');
-console.log(worker.performance.eventLoopUtilization());
-}, 100).unref();
-return;
+  const worker = new Worker(__filename);
+  setInterval(() => {
+    worker.postMessage('hi');
+    console.log(worker.performance.eventLoopUtilization());
+  }, 100).unref();
+  return;
 }
 
 parentPort.on('message', () => console.log('msg')).unref();
 (function r(n) {
-if (--n < 0) return;
-const t = Date.now();
-while (Date.now() - t < 300);
-setImmediate(r, n);
+  if (--n < 0) return;
+  const t = Date.now();
+  while (Date.now() - t < 300);
+  setImmediate(r, n);
 })(10);
-
 ```
 
 The event loop utilization of a worker is available only after the [`'online'` event](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_event-online) emitted, and if called before this, or after the [`'exit'` event](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_event-exit), then all properties have the value of `0`.
@@ -59081,20 +57614,18 @@ Calling `unref()` on a worker allows the thread to exit if this is the only acti
 `Worker`s utilize message passing via [<MessagePort>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_class-messageport) to implement interactions with `stdio`. This means that `stdio` output originating from a `Worker` can get blocked by synchronous code on the receiving end that is blocking the Node.js event loop.
 
 ```
-
 import {
-Worker,
-isMainThread,
+  Worker,
+  isMainThread,
 } from 'worker_threads';
 
 if (isMainThread) {
-new Worker(new URL(import.meta.url));
-for (let n = 0; n < 1e10; n++) {}
+  new Worker(new URL(import.meta.url));
+  for (let n = 0; n < 1e10; n++) {}
 } else {
-
-console.log('foo');
+  
+  console.log('foo');
 }
-
 ```
 
 #### Launching worker threads from preload scripts[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#worker_threads_launching-worker-threads-from-preload-scripts)
@@ -59110,9 +57641,7 @@ The `zlib` module provides compression functionality implemented using Gzip, Def
 To access it:
 
 ```
-
 const zlib = require('zlib');
-
 ```
 
 Compression and decompression are built around the Node.js [Streams API](https://nodejs.org/dist/v16.13.1/docs/api/stream.html).
@@ -59120,12 +57649,11 @@ Compression and decompression are built around the Node.js [Streams API](https:/
 Compressing or decompressing a stream (such as a file) can be accomplished by piping the source stream through a `zlib` `Transform` stream into a destination stream:
 
 ```
-
 const { createGzip } = require('zlib');
 const { pipeline } = require('stream');
 const {
-createReadStream,
-createWriteStream
+  createReadStream,
+  createWriteStream
 } = require('fs');
 
 const gzip = createGzip();
@@ -59133,64 +57661,65 @@ const source = createReadStream('input.txt');
 const destination = createWriteStream('input.txt.gz');
 
 pipeline(source, gzip, destination, (err) => {
-if (err) {
-console.error('An error occurred:', err);
-process.exitCode = 1;
-}
+  if (err) {
+    console.error('An error occurred:', err);
+    process.exitCode = 1;
+  }
 });
+
+
 
 const { promisify } = require('util');
 const pipe = promisify(pipeline);
 
 async function do_gzip(input, output) {
-const gzip = createGzip();
-const source = createReadStream(input);
-const destination = createWriteStream(output);
-await pipe(source, gzip, destination);
+  const gzip = createGzip();
+  const source = createReadStream(input);
+  const destination = createWriteStream(output);
+  await pipe(source, gzip, destination);
 }
 
 do_gzip('input.txt', 'input.txt.gz')
-.catch((err) => {
-console.error('An error occurred:', err);
-process.exitCode = 1;
-});
-
+  .catch((err) => {
+    console.error('An error occurred:', err);
+    process.exitCode = 1;
+  });
 ```
 
 It is also possible to compress or decompress data in a single step:
 
 ```
-
 const { deflate, unzip } = require('zlib');
 
 const input = '.................................';
 deflate(input, (err, buffer) => {
-if (err) {
-console.error('An error occurred:', err);
-process.exitCode = 1;
-}
-console.log(buffer.toString('base64'));
+  if (err) {
+    console.error('An error occurred:', err);
+    process.exitCode = 1;
+  }
+  console.log(buffer.toString('base64'));
 });
 
 const buffer = Buffer.from('eJzT0yMAAGTvBe8=', 'base64');
 unzip(buffer, (err, buffer) => {
-if (err) {
-console.error('An error occurred:', err);
-process.exitCode = 1;
-}
-console.log(buffer.toString());
+  if (err) {
+    console.error('An error occurred:', err);
+    process.exitCode = 1;
+  }
+  console.log(buffer.toString());
 });
+
+
 
 const { promisify } = require('util');
 const do_unzip = promisify(unzip);
 
 do_unzip(buffer)
-.then((buf) => console.log(buf.toString()))
-.catch((err) => {
-console.error('An error occurred:', err);
-process.exitCode = 1;
-});
-
+  .then((buf) => console.log(buf.toString()))
+  .catch((err) => {
+    console.error('An error occurred:', err);
+    process.exitCode = 1;
+  });
 ```
 
 ### Threadpool usage and performance considerations[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_threadpool-usage-and-performance-considerations)
@@ -59200,15 +57729,14 @@ All `zlib` APIs, except those that are explicitly synchronous, use the Node.js i
 Creating and using a large number of zlib objects simultaneously can cause significant memory fragmentation.
 
 ```
-
 const zlib = require('zlib');
 
 const payload = Buffer.from('This is some data');
 
-for (let i = 0; i < 30000; ++i) {
-zlib.deflate(payload, (err, buffer) => {});
-}
 
+for (let i = 0; i < 30000; ++i) {
+  zlib.deflate(payload, (err, buffer) => {});
+}
 ```
 
 In the preceding example, 30,000 deflate instances are created concurrently. Because of how some operating systems handle memory allocation and deallocation, this may lead to to significant memory fragmentation.
@@ -59231,24 +57759,24 @@ const fs = require('fs');
 const { pipeline } = require('stream');
 
 const request = http.get({ host: 'example.com',
-path: '/',
-port: 80,
-headers: { 'Accept-Encoding': 'br,gzip,deflate' } });
+                           path: '/',
+                           port: 80,
+                           headers: { 'Accept-Encoding': 'br,gzip,deflate' } });
 request.on('response', (response) => {
-const output = fs.createWriteStream('example.com_index.html');
+  const output = fs.createWriteStream('example.com_index.html');
 
-const onError = (err) => {
-if (err) {
-console.error('An error occurred:', err);
-process.exitCode = 1;
-}
-};
+  const onError = (err) => {
+    if (err) {
+      console.error('An error occurred:', err);
+      process.exitCode = 1;
+    }
+  };
 
-switch (response.headers['content-encoding']) {
-case 'br':
-pipeline(response, zlib.createBrotliDecompress(), output, onError);
-break;
-
+  switch (response.headers['content-encoding']) {
+    case 'br':
+      pipeline(response, zlib.createBrotliDecompress(), output, onError);
+      break;
+    
     case 'gzip':
       pipeline(response, zlib.createGunzip(), output, onError);
       break;
@@ -59258,13 +57786,13 @@ break;
     default:
       pipeline(response, output, onError);
       break;
-
-}
+  }
 });
-
 ```
 
 ```
+
+
 
 const zlib = require('zlib');
 const http = require('http');
@@ -59272,38 +57800,42 @@ const fs = require('fs');
 const { pipeline } = require('stream');
 
 http.createServer((request, response) => {
-const raw = fs.createReadStream('index.html');
+  const raw = fs.createReadStream('index.html');
+  
+  response.setHeader('Vary', 'Accept-Encoding');
+  let acceptEncoding = request.headers['accept-encoding'];
+  if (!acceptEncoding) {
+    acceptEncoding = '';
+  }
 
-response.setHeader('Vary', 'Accept-Encoding');
-let acceptEncoding = request.headers['accept-encoding'];
-if (!acceptEncoding) {
-acceptEncoding = '';
-}
-
-const onError = (err) => {
-if (err) {
-
+  const onError = (err) => {
+    if (err) {
+      
+      
+      
+      
+      
       response.end();
       console.error('An error occurred:', err);
     }
+  };
 
-};
-
-if (/\bdeflate\b/.test(acceptEncoding)) {
-response.writeHead(200, { 'Content-Encoding': 'deflate' });
-pipeline(raw, zlib.createDeflate(), response, onError);
-} else if (/\bgzip\b/.test(acceptEncoding)) {
-response.writeHead(200, { 'Content-Encoding': 'gzip' });
-pipeline(raw, zlib.createGzip(), response, onError);
-} else if (/\bbr\b/.test(acceptEncoding)) {
-response.writeHead(200, { 'Content-Encoding': 'br' });
-pipeline(raw, zlib.createBrotliCompress(), response, onError);
-} else {
-response.writeHead(200, {});
-pipeline(raw, response, onError);
-}
+  
+  
+  if (/\bdeflate\b/.test(acceptEncoding)) {
+    response.writeHead(200, { 'Content-Encoding': 'deflate' });
+    pipeline(raw, zlib.createDeflate(), response, onError);
+  } else if (/\bgzip\b/.test(acceptEncoding)) {
+    response.writeHead(200, { 'Content-Encoding': 'gzip' });
+    pipeline(raw, zlib.createGzip(), response, onError);
+  } else if (/\bbr\b/.test(acceptEncoding)) {
+    response.writeHead(200, { 'Content-Encoding': 'br' });
+    pipeline(raw, zlib.createBrotliCompress(), response, onError);
+  } else {
+    response.writeHead(200, {});
+    pipeline(raw, response, onError);
+  }
 }).listen(1337);
-
 ```
 
 By default, the `zlib` methods will throw an error when decompressing truncated data. However, if it is known that the data is incomplete, or the desire is to inspect only the beginning of a compressed file, it is possible to suppress the default error handling by changing the flushing method that is used to decompress the last chunk of input data:
@@ -59313,17 +57845,16 @@ By default, the `zlib` methods will throw an error when decompressing truncated 
 const buffer = Buffer.from('eJzT0yMA', 'base64');
 
 zlib.unzip(
-buffer,
-
-{ finishFlush: zlib.constants.Z_SYNC_FLUSH },
-(err, buffer) => {
-if (err) {
-console.error('An error occurred:', err);
-process.exitCode = 1;
-}
-console.log(buffer.toString());
-});
-
+  buffer,
+  
+  { finishFlush: zlib.constants.Z_SYNC_FLUSH },
+  (err, buffer) => {
+    if (err) {
+      console.error('An error occurred:', err);
+      process.exitCode = 1;
+    }
+    console.log(buffer.toString());
+  });
 ```
 
 This will not change the behavior in other error-throwing situations, e.g. when the input data has an invalid format. Using this method, it will not be possible to determine whether the input ended prematurely or lacks the integrity checks, making it necessary to manually check that the decompressed result is valid.
@@ -59337,9 +57868,7 @@ From `zlib/zconf.h`, modified for Node.js usage:
 The memory requirements for deflate are (in bytes):
 
 ```
-
 (1 << (windowBits + 2)) + (1 << (memLevel + 9))
-
 ```
 
 That is: 128K for `windowBits` = 15 + 128K for `memLevel` = 8 (default values) plus a few kilobytes for small objects.
@@ -59347,9 +57876,7 @@ That is: 128K for `windowBits` = 15 + 128K for `memLevel` = 8 (default values) p
 For example, to reduce the default memory requirements from 256K to 128K, the options should be set to:
 
 ```
-
 const options = { windowBits: 14, memLevel: 7 };
-
 ```
 
 This will, however, generally degrade compression.
@@ -59378,36 +57905,39 @@ Calling [`.flush()`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_zli
 In the following example, `flush()` is used to write a compressed partial HTTP response to the client:
 
 ```
-
 const zlib = require('zlib');
 const http = require('http');
 const { pipeline } = require('stream');
 
 http.createServer((request, response) => {
+  
+  response.writeHead(200, { 'content-encoding': 'gzip' });
+  const output = zlib.createGzip();
+  let i;
 
-response.writeHead(200, { 'content-encoding': 'gzip' });
-const output = zlib.createGzip();
-let i;
-
-pipeline(output, response, (err) => {
-if (err) {
-
+  pipeline(output, response, (err) => {
+    if (err) {
+      
+      
+      
+      
+      
       clearInterval(i);
       response.end();
       console.error('An error occurred:', err);
     }
+  });
 
-});
-
-i = setInterval(() => {
-output.write(`The current time is ${Date()}\n`, () => {
-
+  i = setInterval(() => {
+    output.write(`The current time is ${Date()}\n`, () => {
+      
+      
+      
+      
       output.flush();
     });
-
-}, 1000);
+  }, 1000);
 }).listen(1337);
-
 ```
 
 ### Constants[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_constants)
@@ -59544,16 +58074,14 @@ Each Brotli-based class takes an `options` object. All options are optional.
 For example:
 
 ```
-
 const stream = zlib.createBrotliCompress({
-chunkSize: 32 \* 1024,
-params: {
-[zlib.constants.BROTLI_PARAM_MODE]: zlib.constants.BROTLI_MODE_TEXT,
-[zlib.constants.BROTLI_PARAM_QUALITY]: 4,
-[zlib.constants.BROTLI_PARAM_SIZE_HINT]: fs.statSync(inputFile).size
-}
+  chunkSize: 32 * 1024,
+  params: {
+    [zlib.constants.BROTLI_PARAM_MODE]: zlib.constants.BROTLI_MODE_TEXT,
+    [zlib.constants.BROTLI_PARAM_QUALITY]: 4,
+    [zlib.constants.BROTLI_PARAM_SIZE_HINT]: fs.statSync(inputFile).size
+  }
 });
-
 ```
 
 ### Class: `zlib.BrotliCompress`[#](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-zlibbrotlicompress)
@@ -59873,4 +58401,3 @@ Decompress a chunk of data with [`InflateRaw`](https://nodejs.org/dist/v16.13.1/
 -   `options` [<zlib options>](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-options)
 
 Decompress a chunk of data with [`Unzip`](https://nodejs.org/dist/v16.13.1/docs/api/all.html#zlib_class-zlibunzip).
-```

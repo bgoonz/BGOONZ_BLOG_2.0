@@ -1,4 +1,5 @@
-## [Post processing](https://app.netlify.com/sites/bgoonz-blog/settings/deploys#post-processing)
+[Post processing](https://app.netlify.com/sites/bgoonz-blog/settings/deploys#post-processing)
+---------------------------------------------------------------------------------------------
 
 Control the post processing and optimizations Netlify can do for you
 
@@ -6,7 +7,7 @@ Control the post processing and optimizations Netlify can do for you
 
 Inject analytics or other scripts into the HTML of your site.
 
--   before `</head>`
+-   before `</head>`
 
     gtag-n-firebase
 
@@ -20,23 +21,19 @@ Inject analytics or other scripts into the HTML of your site.
     <!-- End Google Tag Manager -->
     <!--FIREBASE----------------------------------------------------------------------->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/8.8.1/firebase-app.js">
-</script>
+    <script src="/__/firebase/8.8.1/firebase-app.js"></script>
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
          https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="/__/firebase/8.8.1/firebase-analytics.js">
-</script>
+    <script src="/__/firebase/8.8.1/firebase-analytics.js"></script>
 
     <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js">
-</script>
+    <script src="/__/firebase/init.js"></script>
 
     <!--Google Tag----------------------------------------------------------------------->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9B63M34E1">
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9B63M34E1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -48,24 +45,20 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     gtag-in-body
 
     ```
     <!-- Google Tag Manager (noscript) -->
-    <noscript>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
-    height="0" width="0" style="display:none;visibility:hidden">
-</iframe>
-<br>
-</noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     ```
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     scroll-2-top
 
@@ -111,13 +104,12 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     original-analytics
 
     ```
-    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
-</script>
+    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -126,18 +118,13 @@ Inject analytics or other scripts into the HTML of your site.
     })(window,document,'script','dataLayer','GTM-5S5XXNR');</script>
     <!-- End Google Tag Manager -->
     <!-- Google Tag Manager (noscript) -->
-    <noscript>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
-    height="0" width="0" style="display:none;visibility:hidden">
-</iframe>
-<br>
-</noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <meta name="google-site-verification" content="W6SJ3S45yhnjzV6ISUMCTXl_QVX5woQZ7jO3bsahONQ" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4W5MG3DG4T">
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4W5MG3DG4T"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -146,13 +133,12 @@ Inject analytics or other scripts into the HTML of your site.
       gtag('config', 'G-4W5MG3DG4T');
     </script>
 
-    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
-</script>
+    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     ```
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     goback
 
@@ -160,13 +146,12 @@ Inject analytics or other scripts into the HTML of your site.
     <input type="button" style="position: fixed;top: 10px;right: 10px;width:80px;color:white;font-weight:bold;background-color:rgba(0, 0, 0, 0.856); border-radius:15px;" value="Go Back" onclick="history.back(-1)" />
           <?php
             $url = htmlspecialchars($_SERVER['HTTP_REFERER']);
-            echo "<a href='$url'>
-</a>
+            echo "<a href='$url'></a>
     ```
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     mdn-style
 
@@ -393,7 +378,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     meta
 
@@ -424,7 +409,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     meta
 
@@ -434,7 +419,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     back to top css
 
@@ -529,7 +514,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     scroll2topsvg
 
@@ -581,9 +566,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     <div>
     <a class="top-link hide" href="" id="js-top">
-        <span class="screen-reader-text">Back to top</span>  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6">
-<path d="M12 6H0l6-6z"/>
-</svg>
+        <span class="screen-reader-text">Back to top</span>  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
     </a>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" async defer>
@@ -664,7 +647,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     firebase-cdn
 
@@ -696,14 +679,13 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     analytics
 
     ```
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F56YP2Y17L">
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F56YP2Y17L"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -715,7 +697,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     more-meta-tags-open-graph
 
@@ -742,21 +724,18 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     simpleanalytics
 
     ```
-    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js">
-</script>
-    <noscript>
-<img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" />
-</noscript>
+    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
     ```
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     metaaaa
 
@@ -767,7 +746,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     algolia-head
 
@@ -790,7 +769,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     fb
 
@@ -817,32 +796,29 @@ Inject analytics or other scripts into the HTML of your site.
         });
       };
     </script>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js">
-</script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
     ```
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     stackbit-widget
 
     ```
-    <script src="https://widget.stackbit.com/init.js" id="stackbit-widget-init" data-stackbit-project-id="609b2d7c71a5dd0016f36326">
-</script>
+    <script src="https://widget.stackbit.com/init.js" id="stackbit-widget-init" data-stackbit-project-id="609b2d7c71a5dd0016f36326"></script>
     ```
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     blm
 
     ```
     <!-- Insert makerbadge.js (download or use ☁️cloud version) -->
 
-    <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js">
-</script>
+    <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js"></script>
 
     <!-- Initialise MakerBadge with options -->
 
@@ -861,31 +837,29 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     addthis
 
     ```
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
-</script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"></script>
     ```
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     add-this
 
     ```
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
-</script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"></script>
     ```
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     meta
 
@@ -919,11 +893,11 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</body>`
+-   before `</body>`
 
     test
 
--   before `</body>`
+-   before `</body>`
 
     search
 
@@ -946,7 +920,7 @@ Inject analytics or other scripts into the HTML of your site.
 
     Remove
 
--   before `</head>`
+-   before `</head>`
 
     links-highlight
 

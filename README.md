@@ -1,6 +1,7 @@
 <div align="center">
 
 # [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app/)
+  
 
 ### [Github Org Link](https://github.com/BGOOONZ-BLOG/)
 
@@ -8,18 +9,17 @@
 
 ---
 
-## [CHANGELOG](./CHANGELOG.md)
+
+
+
 
 <div align="center">
 
-##### [Cloudfare-Backup](https://bgoonz-blog-2-0.pages.dev/) ⇨ [search](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) ⇨ [Backup Repo Deploy](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) ⇨ [Github pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) ⇨ [Go To Site Wiki](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki) ⇨ [Gatsby Cloud Version](https://bgoonzblog20master.gtsb.io/) ⇨ [Vercel Version](https://bgoonz-blog-2-0.vercel.app/) ⇨ [Cloudfare-Domain](www.webdevhub.us) ⇨ [gh-pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/)
-
-### Repos
-
--   [Alt Backup](https://github.com/BGOOONZ-BLOG/bgoonz-blog2.0-v-5)
--   [Blog Content](https://github.com/bgoonz/MainBlogContent)
+##### [Cloudfare-Backup](https://bgoonz-blog-2-0.pages.dev/) ⇨ [search](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) ⇨ [Backup Repo Deploy](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) ⇨ [Github pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) ⇨ [Go To Site Wiki](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki) ⇨ [Gatsby Cloud Version](https://bgoonzblog20master.gatsbyjs.io/)
 
 ###### [⇨Privacy policy⇦](https://codepen.io/bgoonz/pen/LYLJZrW)
+
+###### [⇨ Changes ⇦](https://visualping.io/jobs/3577650)
 
 </div>
 <div align="center">
@@ -30,837 +30,15 @@
 
 ---
 
-![preview](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/blog-may-2022.png?raw=true)
+![preview](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/blog-preview.png?raw=true)
 
-```console
-
-npm i @stackbit/gatsby-plugin-menus babel-runtime chokidar classnames fs-extra gatsby gatsby-image gatsby-plugin-netlify gatsby-plugin-netlify-cms gatsby-plugin-sass gatsby-plugin-react-helmet gatsby-plugin-typescript  --legacy-peer-deps
-
-```
-
+  
+  
 ---
-
+  
 <a href="https://testmysite.io/61e5ff836a840eeeef7e78e9/bgoonz-blog.netlify.app" rel="Test My Site Results">![Foo](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/Screenshot%202022-03-30%20at%2012-37-24%20Website%20Speed%20Test%20Tool%20-%20Testmysite.io%20by%20Netlify.png?raw=true)</a>
-
+  
 </div>
-
----
-
-[![webdevhub logo](https://bgoonz-blog.netlify.app/images/home-button.png)]('https://bgoonz-blog.netlify.app/')
-
-Open Menu
-
--   [Navigation](/docs/sitemap) Sub-menu
-    -   [Docs](/docs)
-    -   [Showcase](/showcase)
-    -   [Contact!](/docs/faq/contact)
-    -   [Python](/docs/python/python-ds)
-    -   [JavaScript](/javascript)
--   [Blog](/blog/) Sub-menu
-    -   [Blog-Post-Archive](https://bgoonz.blogspot.com/)
-    -   [Top Blog Posts](https://blog-w-comments.vercel.app/)
-    -   [Blog w Comments](/blogWcomments/)
--   [Job Search](/docs/career/) Sub-menu
-    -   [Job Boards](/docs/career/job-boards)
-    -   [Do's and Don'ts of interviews](/interview/dos-and-donts)
-    -   [Career-Tips](https://bgoonz-blog.netlify.app/docs/career/)
-    -   [Interview Questions](/docs/interview/interview-questions)
--   [Archive](/docs/archive) Sub-menu
-    -   [Resource-Archive-Server](https://github.com/bgoonz/Learning-Assets)
-    -   [Bootcamp Resources](https://lambda-resources.netlify.app/)
-    -   [Web Dev Setup](https://bgoonz-blog.netlify.app/blog/webdev-setup/)
-    -   [OG-Blog](https://web-dev-resource-hub.netlify.app/)
-    -   [Top Repos](/docs)
-    -   [MY_DOCS](https://bryan-guner.gitbook.io/my-docs/)
--   [Projects](/docs/projects) Sub-menu
-    -   [Potluck Planner](https://potluck-landing.netlify.app/)
-    -   [Meditation App](https://meditate42app.netlify.app/)
-    -   [WebAudioLab](https://bgoonz.github.io/WebAudioDaw/)
-    -   [SearchAwesome](https://search-awesome.vercel.app/)
-    -   [Condensed -Portfolio](https://bg-portfolio.netlify.app/)
-    -   [Family Promise Tracker](https://a.familypromiseservicetracker.dev/)
-    -   [DTW-Guitar-FX-Automation](https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering)
-    -   [Embeds Blog](https://bgoonz-blog-v3-0.netlify.app/embeds/)
-    -   [alt-blogs](https://bgoonz-blog-v3-0.netlify.app/)
-    -   [Games](https://bgoonz-games.netlify.app/)
-    -   [Blog Backup](https://bgoonz-blog-v3-0.netlify.app/)
-    -   [Cover Letter](https://bgoonz-cv.netlify.app/)
-    -   [Project Centric](https://project-portfolio42.netlify.app/)
-    -   [Wordpress Blog](https://bgoonz-blog.netlify.app/)
-    -   [Project Portfolio Gallery](https://project-portfolio42.netlify.app/)
-    -   [github-stats-website](https://bgoonz.github.io/github-stats-website/)
--   [Admin](https://bgoonz-blog.netlify.app/admin/) Sub-menu
-    -   [Write Docs](https://bgoonz-blog.netlify.app/admin/#/collections/docs)
-    -   [Write Blog](https://bgoonz-blog.netlify.app/admin/#/collections/blog/new)
-    -   [Webmaster](https://bgoonz-blog.netlify.app/admin/#/collections/blog/new)
--   [Tools](/docs/tools) Sub-menu
-    -   [Github HTML Previewer](https://githtmlpreview.netlify.app/)
-    -   [Text Tools](https://devtools42.netlify.app/)
-    -   [Ternary 2 If Else](https://ternary42.netlify.app/)
-    -   [Web Dev Utility Tools](/hps://web-dev-utility-tools-bgoonz.netlify.app/)
-    -   [Setup Checker](https://github.com/bgoonz/web-dev-setup-checker)
-    -   [PotluckPlanner](https://potluck-landing.netlify.app/)
-    -   [WebDev Quizzes](https://web-dev-interview-prep-quiz-website.netlify.app/)
-    -   [Github-Advanced-Search](https://github.com/search/advanced)
-
-Close Menu
-
-_🔎_
-
-Search
-
-# I am a musician, electrical engineer & web developer
-
-**Please note that this website is in development and is often broken!**
-
-[](https://www.vagrantup.com/) [![gmail](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![linkedin](https://img.icons8.com/color/96/000000/linkedin.png) ](https://www.linkedin.com/in/bryan-guner-046199128/)[![](https://img.icons8.com/color/96/000000/instagram-new.png) ](https://www.instagram.com/bgoonz/?hl=en)[![](https://img.icons8.com/color/96/000000/pinterest--v1.png)](https://www.pinterest.com/bryanguner/_saved/)
-
-[](https://webpack.js.org/)[](https://www.adobe.com/products/xd.html)
-
-[![NetlifyStatus](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys)
-
-[![Bryansgithubactivitygraph](https://activity-graph.herokuapp.com/graph?username=bgoonz&custom_title=This%20is%20Bryans%20Activity&hide_border=true&theme=chartreuse-dark)](https://github.com/bgoonz/github-readme-activity-graph)
-
-![Jokes](https://readme-jokes.vercel.app/api)
-
-![Python](https://img.shields.io/badge/-Python-05122A?style=flat&logo=python) ![HTML](https://img.shields.io/badge/-HTML-05122A?style=flat&logo=HTML5) ![CSS](https://img.shields.io/badge/-CSS-05122A?style=flat&logo=CSS3&logoColor=1572B6) ![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript) ![React](https://img.shields.io/badge/-React-05122A?style=flat&logo=react) ![Node.js](https://img.shields.io/badge/-Node.js-05122A?style=flat&logo=node.js)
-
-![VisualStudioCode](https://img.shields.io/badge/-Visual%20Studio%20Code-05122A?style=flat&logo=visual-studio-code&logoColor=007ACC) ![Docker](https://img.shields.io/badge/-Docker-05122A?style=flat&logo=Docker) ![MongoDB](https://img.shields.io/badge/-MongoDB-05122A?style=flat&logo=mongodb) ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-05122A?style=flat&logo=postgresql)
-
-![Git](https://img.shields.io/badge/-Git-05122A?style=flat&logo=git) ![GitHub](https://img.shields.io/badge/-GitHub-05122A?style=flat&logo=github) ![GitLab](https://img.shields.io/badge/-GitLab-05122A?style=flat&logo=gitlab)
-
-![Markdown](https://img.shields.io/badge/-Markdown-05122A?style=flat&logo=markdown)
-
-[Contact](https://sidebar-blog.netlify.app/contact/)
-
-![](https://d33wubrfki0l68.cloudfront.net/47651cb6f5e64bf9eee581581215e5c456e3968d/83ee4/images/bigo.jpg)
-
-### [A Quick Guide To Big O](https://bgoonz-blog.netlify.app/docs/ds-algo/big-o/)
-
-Memoization, Tabulation, and Sorting Algorithms by Example↩ Why is looking at runtime not a reliable method of calculating time↩ complexity?
-
-[View Post](/docs/ds-algo/big-o/)
-
-![python](https://d33wubrfki0l68.cloudfront.net/4337f190bb60dcd6f83fd5e2ac21502e1cf93f45/16558/images/python-language.jpg)
-
-### [Python Guide](https://bgoonz-blog.netlify.app/docs/python/python-ds)
-
-_Python has a built in help function that let's you see a description↩ of the source code without having to navigate to it… "-SickNasty …↩ Autor Unknown" ._
-
-[View Posts](https://bgoonz-blog.netlify.app/docs/python/python-ds)
-
-![](https://d33wubrfki0l68.cloudfront.net/1111140b3425c2a3e653688cedc52c43af701d30/54d59/images/dtw-algo.jpg)
-
-### [Guitar Effects Triggering w DTW](https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering)
-
-[Learn More](/docs/tools)
-
-![img of dtw](https://d33wubrfki0l68.cloudfront.net/a37b8bc089cdd775711785baf935f9b1c4e732b0/c2294/images/react.gif)
-
-### [Beginner Guide React](https://bgoonz-blog.netlify.app/docs/react/react2/)
-
-As I learn to build web applications in React I will blog about it in↩ this series in an attempt to capture the questions that a complete↩ beginner might encounter that a more seasoned developer would take for↩ granted!
-
-![img of react](https://d33wubrfki0l68.cloudfront.net/f318a0bdc5403fb9b59683b46e3c9ec2d75d2ed2/7de75/images/pleasant-birch.png)
-
-### [Scope & Closure](https://dev.to/bgoonz/scope-and-context-in-javascript-5cma)
-
-Scope & Context in JS
-
-The **scope** of a program in JavaScript is the set of variables that are available for use within the program.
-
-![scope and closure](https://d33wubrfki0l68.cloudfront.net/bc959e2c76edd99401fa7bc07665db54863f5fd2/97e29/images/dtw-slideshow.gif)
-
-### Web Audio Daw
-
-PostgreSQL Cheat Sheet, Everything You Need to View Post With VSCode
-
--   Extensions & Resources, Super Simple Intro To HTML, Understanding↩ Git... etc....
-
-## Current Interests
-
-From github repositories to existential questions.
-
-![angolia](https://d33wubrfki0l68.cloudfront.net/589475503098710e5f2f3c1a381015f69e6b4760/0be4d/images/neural.png)
-
-### [Angolia](/angolia)
-
-## Full Text Search
-
-[Full Text Search](https://www.algolia.com/)
-
-![neural networks](https://d33wubrfki0l68.cloudfront.net/589475503098710e5f2f3c1a381015f69e6b4760/0be4d/images/neural.png)
-
-### [Convolutional Neural Networks](/neural networks)
-
-Artificial neural networks, usually simply called neural networks, are computing systems vaguely inspired by the biological [neural networks](https://github.com/tensorflow/tensorflow) ![](/_static/app-assets/neural.PNG)
-
-![jamstack](https://d33wubrfki0l68.cloudfront.net/f776b2f35588e0ab71789925ce9564924154c4cf/df9d3/images/jamstack.png)
-
-### [Jamstack](/jamstack)
-
-##### Why Jamstack Jamstack is the new standard architecture for the
-
-web. Using Git workflows and modern build tools, pre-rendered content↩ is served to a CDN and made dynamic through APIs and serverless↩ functions. Technologies in the stack include JavaScript frameworks,↩ Static Site Generators, Headless CMSs, and CDNs.
-
-![event loop](https://d33wubrfki0l68.cloudfront.net/fb22b10eaa16e4ac0690115bf6c6987350d38d4b/13c10/images/eventloop.gif)
-
-### [Asynchronous JavaScript](/docs/)
-
-The term **asynchronous** refers to two or more objects or events **not** existing or happening at the same time (or multiple related things happening without waiting for the previous one to complete). In computing, the word "asynchronous" is used in two major contexts.
-
-[NJDEVILS](https://www.allaboutthejersey.com/)
-
-![nj-devils](/images/njdev-219301cd.jpg)
-
-### [NJ Devils](https://www.allaboutthejersey.com/)
-
-# New Jersey Devils Hockey Team
-
-### (Hockey in general)
-
-## Team identity
-
-[![](https://upload.wikimedia.org/wikipedia/en/thumb/d/da/OldDevils.png/300px-OldDevils.png)](https://en.wikipedia.org/wiki/File:OldDevils.png)
-
-The old green style jerseys used from 1982 to 1992The jerseys used from 1992 to 2017[Sean Avery](https://en.wikipedia.org/wiki/Sean_Avery) of the [New York Rangers](https://en.wikipedia.org/wiki/New_York_Rangers) attempts to distract Brodeur during the [2008 Stanley Cup playoffs](https://en.wikipedia.org/wiki/2008_Stanley_Cup_playoffs). The playoff series was the fifth to feature the [Devils-Rangers rivalry](https://en.wikipedia.org/wiki/Devils%E2%80%93Rangers_rivalry).
-
-[Learn More](https://www.iter.org/)
-
-![ITER Reactor](https://d33wubrfki0l68.cloudfront.net/c2ae8fae397ffc059312cb9e84ae23dd4bf774bd/fd765/images/iter.jpg)
-
-### [ITER Fusion Reactor Experiment (Southern France)](https://www.iter.org/)
-
-# Break Even Nuclear Fusion Candidate
-
-In December, researchers at the Joint European Torus (JET) started↩ conducting fusion experiments with tritium — a rare and radioactive↩ isotope of hydrogen. The facility is a one-tenth-volume mock-up of the↩ US\$22-billion ITER project and has the same doughnut-shaped 'tokamak'↩ design — the world's most developed approach to fusion energy. It is↩ the first time since 1997 that researchers have done experiments in a↩ tokamak with any significant amount of tritium.
-
-## Resume & Portfolio
-
-![](https://d33wubrfki0l68.cloudfront.net/b6e6b09f4479310dff86d8dd7af1b73762484f6a/fea3e/images/image-of-resume.png)
-
-### [Resume](https://github.com/bgoonz/resume-cv-portfolio-samples/raw/master/2021-resume/bryan-guner-resume-2021.pdf)
-
-[View In One Drive](https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A) [Web Version](#) [Download PDF](https://github.com/bgoonz/bgoonz/raw/master/bryan_guner_resume_2021_V9.pdf)
-
-![portfolio of websites](https://d33wubrfki0l68.cloudfront.net/4e66fa2888421bd225aa811c156362cc0b7d4ebc/ca806/images/portfolio.jpg)
-
-### Showcase
-
-![My Projects](/_static/app-assets/lambda-demo1.gif)My Projects!
-
-[Learn More](/showcase)
-
-## Blog-Archive-And-Mini-Projects
-
-![animated gif](/images/cool annimation.gif)
-
-## Latest & Greatest
-
-## Web Dev Utilitiy Tools
-
-## Tools Showcase
-
-![medium](https://d33wubrfki0l68.cloudfront.net/e5828552ff6b5743ed241d9c926e60eb925dde97/8dbbf/images/goals.jpg)
-
-## Web Audio DA
-
-[Go To Web Audio Daw](https://mihirbegmusiclab.netlify.app/)
-
-## Quick Links
-
-quick links home
-
-### [About](/docs/about/)
-
-Web-Dev-Hub is my personal blogand documentation site
-
-[Learn More](/docs/about/)
-
-### [Articles](/docs/articles/)
-
-my web development articles
-
-[Learn More](/docs/articles/)
-
-### [Audio](/docs/audio/)
-
-Audio Projects and tools / web audio daw
-
-[Learn More](/docs/audio/)
-
-### [Archive](/docs/archive/)
-
-more tools that I have created or collaborated on.
-
-[Learn More](/docs/archive/)
-
-### [Career](/docs/career/)
-
-Reference materials and descriptions of fundamental concepts as well as visua
-
-[Career](/docs/career/)
-
-### [Community](/docs/community/)
-
-We'd love it if you participate in the Libris community. Find out how to get connected.
-
-[Learn More](/docs/community/)
-
-### [Content](/docs/content/)
-
-In this section you'll learn how to add syntax highlighting, examples, callouts and much more.
-
-[Learn More](/docs/content/)
-
-### [CSS](/docs/css/)
-
-[Learn More](/docs/css/)
-
-### [Docs](/docs/docs/)
-
-Documentation
-
-[Learn More](/docs/docs/)
-
-### [Data Structures](/docs/ds-algo/)
-
-In this section you'll learn how to add syntax highlighting, examples, callouts and much more.
-
-[Learn More](/docs/ds-algo/)
-
-### [FAQ](/docs/faq/)
-
-In this section you'll find commonly asked questions regarding the Libris theme. If you have questions, don't hesitate to ask us directly.
-
-[Learn More](/docs/faq/)
-
-###
-
-Learn More
-
-###
-
-Learn More
-
-###
-
-Learn More
-
-### [Interact](/docs/interact/)
-
-Interactive examples and projects
-
-[Learn More](/docs/interact/)
-
-### [Javascript](/docs/javascript/)
-
-Javascript articles and docs
-
-[Learn More](/docs/javascript/)
-
-### [JS-Quick-Tips](/docs/js-tips/)
-
-Javascript articles and docs
-
-[Learn More](/docs/js-tips/)
-
-### [Leetcode](/docs/leetcode/)
-
-feel free to try the examples
-
-[Learn More](/docs/leetcode/)
-
-### [Netlify CMS](/docs/netlify-cms-jamstack/)
-
-etlify CMS is an open source content management system for your Git workflow that enables you to provide editors with a friendly UI and intuitive workflows.
-
-[Learn More](/docs/netlify-cms-jamstack/)
-
-### [Overflow](/docs/overflow/)
-
-feel free to try the examples
-
-[Learn More](/docs/overflow/)
-
-### [Projects](/docs/projects/)
-
-We'd love it if you participate in the Web-Dev-Hubcommunity. Find out how to get connected.
-
-[Learn More](/docs/projects/)
-
-### [Python](/docs/python/)
-
-Python
-
-[Learn More](/docs/python/)
-
-### [QuickRef](/docs/quick-ref/)
-
-In this section you'll find basic information about Web-Dev-Hub and how to use it.
-
-[Learn More](/docs/quick-ref/)
-
-### [React](/docs/react/)
-
-To make it easy to write documentation in plain Markdown, most React are styled using Markdown elements with few additional CSS classes.
-
-[Learn More](/docs/react/)
-
-### [Reference](/docs/reference/)
-
-helpful reference guides
-
-[Learn More](/docs/reference/)
-
-### [Tips](/docs/tips/)
-
-lorem-ipsum
-
-[Learn More](/docs/tips/)
-
-### [Tools](/docs/tools/)
-
-See some interesting tools developed by the Web-Dev-Hubcommunity to help automate parts of your workflow.
-
-[Learn More](/docs/tools/)
-
-### [Tutorials](/docs/tutorials/)
-
-Walkthroughs of various development activities and skills
-
-[Learn More](/docs/tutorials/)
-
-## Contact
-
-get in touch! +1 (551) - 254 - 5505
-
-[Contact](/docs/faq/contact)
-
-[index](https://search.freefind.com/siteindex.html?si=14588965)
-
-[sitemap](https://search.freefind.com/find.html?si=14588965&m=0&p=0)
-
-[advanced](https://search.freefind.com/find.html?si=14588965&pid=a)
-
-[search engine](https://www.freefind.com) [byfreefind](https://www.freefind.com)
-
-[Save to PDF](//pdfcrowd.com/url_to_pdf/?)
-
-[![webdevhub logo](https://d33wubrfki0l68.cloudfront.net/e5662f0d4f3e7730aea1a0faf7ff09ea20184700/6ca0b/images/dgqlkqjtmk.png)](/)
-
-@bgoonz on almost every platform [BLM](https://random-static-html-deploys.netlify.app/blm.html)
-
-[Twitter](https://twitter.com/bgooonz) [LinkedIn](https://www.linkedin.com/in/bryan-guner-046199128/) [GitHub](https://github.com/bgoonz) [Youtube](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA) [Instagram](https://www.instagram.com/bgoonz/?hl=en) [dev.to](https://dev.to/bgoonz)
-
-[![webdevhub logo](https://d33wubrfki0l68.cloudfront.net/e5662f0d4f3e7730aea1a0faf7ff09ea20184700/83eb0/images/home-button.png)](/)
-
-Open Menu
-
--   [Navigation](/docs/sitemap) Sub-menu
-    -   [Docs](/docs)
-    -   [Showcase](/showcase)
-    -   [Contact!](/docs/faq/contact)
-    -   [Python](/docs/python/python-ds)
-    -   [JavaScript](/javascript)
--   [Blog](/blog/) Sub-menu
-    -   [Blog-Post-Archive](https://bgoonz.blogspot.com/)
-    -   [Top Blog Posts](https://blog-w-comments.vercel.app/)
-    -   [Blog w Comments](/blogWcomments/)
--   [Job Search](/docs/career/) Sub-menu
-    -   [Job Boards](/docs/career/job-boards)
-    -   [Do's and Don'ts of interviews](/interview/dos-and-donts)
-    -   [Career-Tips](https://bgoonz-blog.netlify.app/docs/career/)
-    -   [Interview Questions](/docs/interview/interview-questions)
--   [Archive](/docs/archive) Sub-menu
-    -   [Resource-Archive-Server](https://github.com/bgoonz/Learning-Assets)
-    -   [Bootcamp Resources](https://lambda-resources.netlify.app/)
-    -   [Web Dev Setup](https://bgoonz-blog.netlify.app/blog/webdev-setup/)
-    -   [OG-Blog](https://web-dev-resource-hub.netlify.app/)
-    -   [Top Repos](/docs)
-    -   [MY_DOCS](https://bryan-guner.gitbook.io/my-docs/)
--   [Projects](/docs/projects) Sub-menu
-    -   [Potluck Planner](https://potluck-landing.netlify.app/)
-    -   [Meditation App](https://meditate42app.netlify.app/)
-    -   [WebAudioLab](https://bgoonz.github.io/WebAudioDaw/)
-    -   [SearchAwesome](https://search-awesome.vercel.app/)
-    -   [Condensed -Portfolio](https://bg-portfolio.netlify.app/)
-    -   [Family Promise Tracker](https://a.familypromiseservicetracker.dev/)
-    -   [DTW-Guitar-FX-Automation](https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering)
-    -   [Embeds Blog](https://bgoonz-blog-v3-0.netlify.app/embeds/)
-    -   [alt-blogs](https://bgoonz-blog-v3-0.netlify.app/)
-    -   [Games](https://bgoonz-games.netlify.app/)
-    -   [Blog Backup](https://bgoonz-blog-v3-0.netlify.app/)
-    -   [Cover Letter](https://bgoonz-cv.netlify.app/)
-    -   [Project Centric](https://project-portfolio42.netlify.app/)
-    -   [Wordpress Blog](https://bgoonz-blog.netlify.app/)
-    -   [Project Portfolio Gallery](https://project-portfolio42.netlify.app/)
-    -   [github-stats-website](https://bgoonz.github.io/github-stats-website/)
--   [Admin](https://bgoonz-blog.netlify.app/admin/) Sub-menu
-    -   [Write Docs](https://bgoonz-blog.netlify.app/admin/#/collections/docs)
-    -   [Write Blog](https://bgoonz-blog.netlify.app/admin/#/collections/blog/new)
-    -   [Webmaster](https://bgoonz-blog.netlify.app/admin/#/collections/blog/new)
--   [Tools](/docs/tools) Sub-menu
-    -   [Github HTML Previewer](https://githtmlpreview.netlify.app/)
-    -   [Text Tools](https://devtools42.netlify.app/)
-    -   [Ternary 2 If Else](https://ternary42.netlify.app/)
-    -   [Web Dev Utility Tools](/hps://web-dev-utility-tools-bgoonz.netlify.app/)
-    -   [Setup Checker](https://github.com/bgoonz/web-dev-setup-checker)
-    -   [PotluckPlanner](https://potluck-landing.netlify.app/)
-    -   [WebDev Quizzes](https://web-dev-interview-prep-quiz-website.netlify.app/)
-    -   [Github-Advanced-Search](https://github.com/search/advanced)
-
-Close Menu
-
-_🔎_
-
-Search
-
-# I am a musician, electrical engineer & web developer
-
-**Please note that this website is in development and is often broken!**
-
-[](https://www.vagrantup.com/) [![gmail](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![linkedin](https://img.icons8.com/color/96/000000/linkedin.png) ](https://www.linkedin.com/in/bryan-guner-046199128/)[![](https://img.icons8.com/color/96/000000/instagram-new.png) ](https://www.instagram.com/bgoonz/?hl=en)[![](https://img.icons8.com/color/96/000000/pinterest--v1.png)](https://www.pinterest.com/bryanguner/_saved/)
-
-[](https://webpack.js.org/)[](https://www.adobe.com/products/xd.html)
-
-[![NetlifyStatus](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys)
-
-[![Bryansgithubactivitygraph](https://activity-graph.herokuapp.com/graph?username=bgoonz&custom_title=This%20is%20Bryans%20Activity&hide_border=true&theme=chartreuse-dark)](https://github.com/bgoonz/github-readme-activity-graph)
-
-![Jokes](https://readme-jokes.vercel.app/api)
-
-![Python](https://img.shields.io/badge/-Python-05122A?style=flat&logo=python) ![HTML](https://img.shields.io/badge/-HTML-05122A?style=flat&logo=HTML5) ![CSS](https://img.shields.io/badge/-CSS-05122A?style=flat&logo=CSS3&logoColor=1572B6) ![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript) ![React](https://img.shields.io/badge/-React-05122A?style=flat&logo=react) ![Node.js](https://img.shields.io/badge/-Node.js-05122A?style=flat&logo=node.js)
-
-![VisualStudioCode](https://img.shields.io/badge/-Visual%20Studio%20Code-05122A?style=flat&logo=visual-studio-code&logoColor=007ACC) ![Docker](https://img.shields.io/badge/-Docker-05122A?style=flat&logo=Docker) ![MongoDB](https://img.shields.io/badge/-MongoDB-05122A?style=flat&logo=mongodb) ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-05122A?style=flat&logo=postgresql)
-
-![Git](https://img.shields.io/badge/-Git-05122A?style=flat&logo=git) ![GitHub](https://img.shields.io/badge/-GitHub-05122A?style=flat&logo=github) ![GitLab](https://img.shields.io/badge/-GitLab-05122A?style=flat&logo=gitlab)
-
-![Markdown](https://img.shields.io/badge/-Markdown-05122A?style=flat&logo=markdown)
-
-[Contact](https://sidebar-blog.netlify.app/contact/)
-
-![](https://d33wubrfki0l68.cloudfront.net/47651cb6f5e64bf9eee581581215e5c456e3968d/83ee4/images/bigo.jpg)
-
-### [A Quick Guide To Big O](https://bgoonz-blog.netlify.app/docs/ds-algo/big-o/)
-
-Memoization, Tabulation, and Sorting Algorithms by Example↩ Why is looking at runtime not a reliable method of calculating time↩ complexity?
-
-[View Post](/docs/ds-algo/big-o/)
-
-![python](https://d33wubrfki0l68.cloudfront.net/4337f190bb60dcd6f83fd5e2ac21502e1cf93f45/16558/images/python-language.jpg)
-
-### [Python Guide](https://bgoonz-blog.netlify.app/docs/python/python-ds)
-
-_Python has a built in help function that let's you see a description↩ of the source code without having to navigate to it… "-SickNasty …↩ Autor Unknown" ._
-
-[View Posts](https://bgoonz-blog.netlify.app/docs/python/python-ds)
-
-![](https://d33wubrfki0l68.cloudfront.net/1111140b3425c2a3e653688cedc52c43af701d30/54d59/images/dtw-algo.jpg)
-
-### [Guitar Effects Triggering w DTW](https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering)
-
-[Learn More](/docs/tools)
-
-![img of dtw](https://d33wubrfki0l68.cloudfront.net/a37b8bc089cdd775711785baf935f9b1c4e732b0/c2294/images/react.gif)
-
-### [Beginner Guide React](https://bgoonz-blog.netlify.app/docs/react/react2/)
-
-As I learn to build web applications in React I will blog about it in↩ this series in an attempt to capture the questions that a complete↩ beginner might encounter that a more seasoned developer would take for↩ granted!
-
-![img of react](https://d33wubrfki0l68.cloudfront.net/f318a0bdc5403fb9b59683b46e3c9ec2d75d2ed2/7de75/images/pleasant-birch.png)
-
-### [Scope & Closure](https://dev.to/bgoonz/scope-and-context-in-javascript-5cma)
-
-Scope & Context in JS
-
-The **scope** of a program in JavaScript is the set of variables that are available for use within the program.
-
-![scope and closure](https://d33wubrfki0l68.cloudfront.net/bc959e2c76edd99401fa7bc07665db54863f5fd2/97e29/images/dtw-slideshow.gif)
-
-### Web Audio Daw
-
-PostgreSQL Cheat Sheet, Everything You Need to View Post With VSCode
-
--   Extensions & Resources, Super Simple Intro To HTML, Understanding↩ Git... etc....
-
-## Current Interests
-
-From github repositories to existential questions.
-
-![angolia](https://d33wubrfki0l68.cloudfront.net/589475503098710e5f2f3c1a381015f69e6b4760/0be4d/images/neural.png)
-
-### [Angolia](/angolia)
-
-## Full Text Search
-
-[Full Text Search](https://www.algolia.com/)
-
-![neural networks](https://d33wubrfki0l68.cloudfront.net/589475503098710e5f2f3c1a381015f69e6b4760/0be4d/images/neural.png)
-
-### [Convolutional Neural Networks](/neural networks)
-
-Artificial neural networks, usually simply called neural networks, are computing systems vaguely inspired by the biological [neural networks](https://github.com/tensorflow/tensorflow) ![](/_static/app-assets/neural.PNG)
-
-![jamstack](https://d33wubrfki0l68.cloudfront.net/f776b2f35588e0ab71789925ce9564924154c4cf/df9d3/images/jamstack.png)
-
-### [Jamstack](/jamstack)
-
-##### Why Jamstack Jamstack is the new standard architecture for the
-
-web. Using Git workflows and modern build tools, pre-rendered content↩ is served to a CDN and made dynamic through APIs and serverless↩ functions. Technologies in the stack include JavaScript frameworks,↩ Static Site Generators, Headless CMSs, and CDNs.
-
-![event loop](https://d33wubrfki0l68.cloudfront.net/fb22b10eaa16e4ac0690115bf6c6987350d38d4b/13c10/images/eventloop.gif)
-
-### [Asynchronous JavaScript](/docs/)
-
-The term **asynchronous** refers to two or more objects or events **not** existing or happening at the same time (or multiple related things happening without waiting for the previous one to complete). In computing, the word "asynchronous" is used in two major contexts.
-
-[Learn More](https://www.allaboutthejersey.com/)
-
-![nj-devils](/images/njdev-219301cd.jpg)
-
-### [NJ Devils](https://www.allaboutthejersey.com/)
-
-# New Jersey Devils Hockey Team
-
-### (Hockey in general)
-
-## Team identity
-
-[![](https://upload.wikimedia.org/wikipedia/en/thumb/d/da/OldDevils.png/300px-OldDevils.png)](https://en.wikipedia.org/wiki/File:OldDevils.png)
-
-The old green style jerseys used from 1982 to 1992The jerseys used from 1992 to 2017[Sean Avery](https://en.wikipedia.org/wiki/Sean_Avery) of the [New York Rangers](https://en.wikipedia.org/wiki/New_York_Rangers) attempts to distract Brodeur during the [2008 Stanley Cup playoffs](https://en.wikipedia.org/wiki/2008_Stanley_Cup_playoffs). The playoff series was the fifth to feature the [Devils-Rangers rivalry](https://en.wikipedia.org/wiki/Devils%E2%80%93Rangers_rivalry).
-
-[Learn More](https://www.iter.org/)
-
-![ITER Reactor](https://d33wubrfki0l68.cloudfront.net/c2ae8fae397ffc059312cb9e84ae23dd4bf774bd/fd765/images/iter.jpg)
-
-### [ITER Fusion Reactor Experiment (Southern France)](https://www.iter.org/)
-
-# Break Even Nuclear Fusion Candidate
-
-In December, researchers at the Joint European Torus (JET) started↩ conducting fusion experiments with tritium — a rare and radioactive↩ isotope of hydrogen. The facility is a one-tenth-volume mock-up of the↩ US\$22-billion ITER project and has the same doughnut-shaped 'tokamak'↩ design — the world's most developed approach to fusion energy. It is↩ the first time since 1997 that researchers have done experiments in a↩ tokamak with any significant amount of tritium.
-
-## Resume & Portfolio
-
-![](https://d33wubrfki0l68.cloudfront.net/b6e6b09f4479310dff86d8dd7af1b73762484f6a/fea3e/images/image-of-resume.png)
-
-### [Resume](https://github.com/bgoonz/resume-cv-portfolio-samples/raw/master/2021-resume/bryan-guner-resume-2021.pdf)
-
-[View In One Drive](https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A) [Web Version](#) [Download PDF](https://github.com/bgoonz/bgoonz/raw/master/bryan_guner_resume_2021_V9.pdf)
-
-![portfolio of websites](https://d33wubrfki0l68.cloudfront.net/4e66fa2888421bd225aa811c156362cc0b7d4ebc/ca806/images/portfolio.jpg)
-
-### Showcase
-
-![My Projects](/_static/app-assets/lambda-demo1.gif)My Projects!
-
-[Learn More](/showcase)
-
-## Blog-Archive-And-Mini-Projects
-
-![animated gif](/images/cool annimation.gif)
-
-## Latest & Greatest
-
-## Web Dev Utilitiy Tools
-
-## Tools Showcase
-
-![medium](https://d33wubrfki0l68.cloudfront.net/e5828552ff6b5743ed241d9c926e60eb925dde97/8dbbf/images/goals.jpg)
-
-## Web Audio DA
-
-[Go To Web Audio Daw](https://mihirbegmusiclab.netlify.app/)
-
-## Quick Links
-
-quick links home
-
-### [About](/docs/about/)
-
-Web-Dev-Hub is my personal blogand documentation site
-
-[Learn More](/docs/about/)
-
-### [Articles](/docs/articles/)
-
-my web development articles
-
-[Learn More](/docs/articles/)
-
-### [Audio](/docs/audio/)
-
-Audio Projects and tools / web audio daw
-
-[Learn More](/docs/audio/)
-
-### [Archive](/docs/archive/)
-
-more tools that I have created or collaborated on.
-
-[Learn More](/docs/archive/)
-
-### [Career](/docs/career/)
-
-Reference materials and descriptions of fundamental concepts as well as visua
-
-[Learn More](/docs/career/)
-
-### [Community](/docs/community/)
-
-We'd love it if you participate in the Libris community. Find out how to get connected.
-
-[Learn More](/docs/community/)
-
-### [Content](/docs/content/)
-
-In this section you'll learn how to add syntax highlighting, examples, callouts and much more.
-
-[Learn More](/docs/content/)
-
-### [CSS](/docs/css/)
-
-[Learn More](/docs/css/)
-
-### [Docs](/docs/docs/)
-
-Documentation
-
-[Learn More](/docs/docs/)
-
-### [Data Structures](/docs/ds-algo/)
-
-In this section you'll learn how to add syntax highlighting, examples, callouts and much more.
-
-[Learn More](/docs/ds-algo/)
-
-### [FAQ](/docs/faq/)
-
-In this section you'll find commonly asked questions regarding the Libris theme. If you have questions, don't hesitate to ask us directly.
-
-[Learn More](/docs/faq/)
-
-###
-
-Learn More
-
-###
-
-Learn More
-
-###
-
-Learn More
-
-### [Interact](/docs/interact/)
-
-Interactive examples and projects
-
-[Learn More](/docs/interact/)
-
-### [Javascript](/docs/javascript/)
-
-Javascript articles and docs
-
-[Learn More](/docs/javascript/)
-
-### [JS-Quick-Tips](/docs/js-tips/)
-
-Javascript articles and docs
-
-[Learn More](/docs/js-tips/)
-
-### [Leetcode](/docs/leetcode/)
-
-feel free to try the examples
-
-[Learn More](/docs/leetcode/)
-
-### [Netlify CMS](/docs/netlify-cms-jamstack/)
-
-etlify CMS is an open source content management system for your Git workflow that enables you to provide editors with a friendly UI and intuitive workflows.
-
-[Learn More](/docs/netlify-cms-jamstack/)
-
-### [Overflow](/docs/overflow/)
-
-feel free to try the examples
-
-[Learn More](/docs/overflow/)
-
-### [Projects](/docs/projects/)
-
-We'd love it if you participate in the Web-Dev-Hubcommunity. Find out how to get connected.
-
-[Learn More](/docs/projects/)
-
-### [Python](/docs/python/)
-
-Python
-
-[Learn More](/docs/python/)
-
-### [QuickRef](/docs/quick-ref/)
-
-In this section you'll find basic information about Web-Dev-Hub and how to use it.
-
-[Learn More](/docs/quick-ref/)
-
-### [React](/docs/react/)
-
-To make it easy to write documentation in plain Markdown, most React are styled using Markdown elements with few additional CSS classes.
-
-[Learn More](/docs/react/)
-
-### [Reference](/docs/reference/)
-
-helpful reference guides
-
-[Learn More](/docs/reference/)
-
-### [Tips](/docs/tips/)
-
-lorem-ipsum
-
-[Learn More](/docs/tips/)
-
-### [Tools](/docs/tools/)
-
-See some interesting tools developed by the Web-Dev-Hubcommunity to help automate parts of your workflow.
-
-[Learn More](/docs/tools/)
-
-### [Tutorials](/docs/tutorials/)
-
-Walkthroughs of various development activities and skills
-
-[Learn More](/docs/tutorials/)
-
-## Contact
-
-get in touch! +1 (551) - 254 - 5505
-
-[Contact](/docs/faq/contact)
-
-[index](https://search.freefind.com/siteindex.html?si=14588965)
-
-[sitemap](https://search.freefind.com/find.html?si=14588965&m=0&p=0)
-
-[advanced](https://search.freefind.com/find.html?si=14588965&pid=a)
-
-[search engine](https://www.freefind.com) [byfreefind](https://www.freefind.com)
-
-[Save to PDF](//pdfcrowd.com/url_to_pdf/?)
-
-[![webdevhub logo](https://d33wubrfki0l68.cloudfront.net/e5662f0d4f3e7730aea1a0faf7ff09ea20184700/6ca0b/images/dgqlkqjtmk.png)](/)
-
-@bgoonz on almost every platform [BLM](https://random-static-html-deploys.netlify.app/blm.html)
-
-[Twitter](https://twitter.com/bgooonz) [LinkedIn](https://www.linkedin.com/in/bryan-guner-046199128/) [GitHub](https://github.com/bgoonz) [Youtube](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA) [Instagram](https://www.instagram.com/bgoonz/?hl=en) [dev.to](https://dev.to/bgoonz)
-
----
 
 <details>
 
@@ -942,14 +120,14 @@ find . -type f -exec chmod 644 {} \;
 
 ## # code
 
-```console
+```sh
 find . -name "* *" -type d | rename 's/ /_/g'
 find . -name "* *" -type f | rename 's/ /_/g'
 ```
 
-````console
+```sh
 
-```console
+```sh
 find $dir -type f | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
 
 find $dir -type d | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
@@ -966,7 +144,6 @@ for i in *.*; do mv "$i" "${i%-*}.${i##*.}"; done
 ## # code:
 
 ```js
-//
 //APPEND-DIR.js
 const fs = require('fs');
 let cat = require('child_process')
@@ -976,7 +153,7 @@ fs.writeFile('output.md', cat, err =>  {
   if (err) throw err;
 });
 
-````
+```
 
 ---
 
@@ -988,7 +165,7 @@ fs.writeFile('output.md', cat, err =>  {
 
 ## ## code
 
-```console
+```sh
 
 wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e robots=off -U mozilla https://bootcamp42.gitbook.io/python/
 
@@ -1004,7 +181,7 @@ wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e ro
 
 ## ## code
 
-```console
+```sh
 
 find . -empty -type d -print -delete
 
@@ -1026,7 +203,7 @@ find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o  -name "*CHANGELOG.tx
 
 # Generalized
 
-```console
+```sh
 
 CNTX={users|orgs}; NAME={username|orgname}; PAGE=1
 curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
@@ -1037,7 +214,7 @@ curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
 
 # Clone all Git User
 
-```console
+```sh
 CNTX={users}; NAME={bgoonz}; PAGE=1
 curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=master |
   grep -e 'git_url*' |
@@ -1048,7 +225,7 @@ curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=m
 
 # Clone all Git Organization
 
-```console
+```sh
 
 CNTX={organizations}; NAME={TheAlgorithms}; PAGE=1
 curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=master |
@@ -1066,7 +243,7 @@ curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=m
 
 ## ## code
 
-```console
+```sh
 git pull
 git init
 git add .
@@ -1074,14 +251,14 @@ git commit -m"update"
 git push -u origin master
 ```
 
-```console
+```sh
 git init
 git add .
 git commit -m"update"
 git push -u origin main
 ```
 
-```console
+```sh
 
 git init
 git add .
@@ -1089,14 +266,14 @@ git commit -m"update"
 git push -u origin bryan-guner
 ```
 
-```console
+```sh
 git init
 git add .
 git commit -m"update"
 git push -u origin gh-pages
 ```
 
-```console
+```sh
 git init
 git add .
 git commit -m"update"
@@ -1113,7 +290,7 @@ git push -u origin preview
 
 ## ## code
 
-```console
+```sh
 
 find . -name "*.zip" | while read filename; do unzip -o -d "`dirname "$filename"`" "$filename"; done;
 
@@ -1131,7 +308,7 @@ find . -name "*.zip" -type f -print -delete
 
 ## ## code
 
-```console
+```sh
 
 git stash
 git pull
@@ -1149,7 +326,7 @@ git stash pop
 
 ## ## code
 
-```console
+```sh
 
 sudo npm i prettier -g
 
@@ -1167,7 +344,7 @@ prettier --write .
 
 ## ## code
 
-```console
+```sh
 
 find ./ -iname "*.md" -type f -exec sh -c 'pandoc --standalone "${0}" -o "${0%.md}.html"' {} \;
 
@@ -1187,7 +364,7 @@ find ./ -iname "*.docx" -type f -exec sh -c 'pandoc "${0}" -o "${0%.docx}.md"' {
 
 ## ## code
 
-```console
+```sh
 sudo apt install tree
 sudo apt install pandoc -y
 sudo apt install rename -y
@@ -1199,7 +376,7 @@ npm i npm-recursive-install -g
 
 ```
 
-```console
+```sh
 black .
 
 prettier --write .
@@ -1216,7 +393,7 @@ npm-recursive-install
 
 ## ## code
 
-```console
+```sh
 npm i @bgoonz11/repoutils
 
 ```
@@ -1231,7 +408,7 @@ npm i @bgoonz11/repoutils
 
 ## ## code
 
-```console
+```sh
 tree -d -I  'node_modules'
 
 tree  -I  'node_modules'
@@ -1258,7 +435,7 @@ tree -f > README.md
 
 ## ## code
 
-```console
+```sh
 
 find . -type f -exec rename 's/string1/string2/g' {} +
 
@@ -1286,7 +463,7 @@ find . -type d -exec rename 's/es6//g' {} +
 
 ## ## code
 
-```console
+```sh
 #!/bin/bash
 
 for file in *.md.md
@@ -1302,7 +479,7 @@ do
 done
 ```
 
-```console
+```sh
 
 #!/bin/bash
 
@@ -1328,7 +505,7 @@ done
 
 ## ## code
 
-```console
+```sh
 
 for d in ./*; do mv $d ${d:0:12}; done
 
@@ -1345,7 +522,6 @@ for d in ./*; do mv $d ${d:0:12}; done
 ## ## code
 
 ```js
-//
 //APPEND-DIR.js
 const fs = require('fs');
 let cat = require('child_process').execSync('cat *').toString('UTF-8');
@@ -1364,7 +540,7 @@ fs.writeFile('output.md', cat, (err) => {
 
 ## ## code
 
-```console
+```sh
 find . -name "* *" -type f | rename 's/_//g'
 
 find . -name "* *" -type d | rename 's/#/_/g'
@@ -1381,7 +557,7 @@ find . -name "* *" -type d | rename 's/#/_/g'
 
 ## ## code
 
-```console
+```sh
 find . -name '.bin' -type d -prune -exec rm -rf '{}' +
 
 find . -name '*.html' -type d -prune -exec rm -rf '{}' +
@@ -1406,7 +582,7 @@ find . -name 'left.html' -type f -prune -exec rm -rf '{}' +
 
 > Notes: Remove lines not containing `'.js'`
 
-```console
+```sh
 
 sudo sed -i '/\.js/!d' ./*scrap2.md
 
@@ -1414,7 +590,7 @@ sudo sed -i '/\.js/!d' ./*scrap2.md
 
 ## ## code
 
-```console
+```sh
 sudo sed -i '/githubusercontent/d' ./*sandbox.md
 
 sudo sed -i '/githubusercontent/d' ./*scrap2.md
@@ -1440,7 +616,7 @@ Now, let's understand the use of this with the help of an example. Suppose you h
 
 ## ## code
 
-```console
+```sh
 sudo apt install uniq
 uniq -u input.txt output.txt
 
@@ -1456,7 +632,7 @@ uniq -u input.txt output.txt
 
 ## ## code
 
-```console
+```sh
 sudo sed -i '/githubusercontent/d' ./*sandbox.md
 
 sudo sed -i '/githubusercontent/d' ./*scrap2.md
@@ -1494,7 +670,7 @@ sudo sed -i '/right\.html/d' ./right.html
 
 ## ## code
 
-```console
+```sh
 
 #!/bin/bash
 TSTAMP=`date '+%Y%m%d-%H%M%S'`
@@ -1521,7 +697,7 @@ printf "\nCreated: $1.$TSTAMP.zip\n"
 
 ## ## code
 
-```console
+```sh
 find . | xargs grep -l www.redhat.com | awk '{print "rm "$1}' >  doit.sh
 vi doit.sh // check for murphy and his law
 source doit.sh
@@ -1538,7 +714,7 @@ source doit.sh
 
 ## ## code
 
-```console
+```sh
 
 #!/bin/sh
 
@@ -1645,13 +821,13 @@ cmd $listing --sort=extension > > $html
 
 > Notes: Useful Follow up Code:
 
-```console
+```sh
 
 ```
 
 ## ## code
 
-```console
+```sh
 
 #!/bin/sh
 
@@ -1759,7 +935,7 @@ cmd $listing --sort=extension > > $html
 
 ## ## code
 
-```console
+```sh
 
 git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch assets/_index.html' HEAD
 
@@ -1779,7 +955,7 @@ If you have any files that are not tracked by Git (e.g. uploaded user content), 
 
 ## ## code
 
-```console
+```sh
 
 git fetch --all
 # Backup your current branch:
@@ -1818,7 +994,7 @@ git reset --hard origin/master
 
 ## ## code
 
-```console
+```sh
 git submodule deinit
 ```
 
@@ -1832,7 +1008,7 @@ git submodule deinit
 
 ## ## code
 
-```console
+```sh
 sudo apt install wget
 
 wget -q -O - https://api.github.com/users/bgoonz/gists | grep raw_url | awk -F\" '{print $4}' | xargs -n3 wget
@@ -1855,7 +1031,7 @@ wget -q -O - https://api.github.com/users/thomasmb/gists | grep raw_url | awk -F
 
 ## ## code
 
-```console
+```sh
 
 git remote remove origin
 
@@ -1871,7 +1047,7 @@ git remote remove origin
 
 ## ## code
 
-```console
+```sh
 
 git clone --bare --branch=master --single-branch https://github.com/bgoonz/My-Web-Dev-Archive.git
 
@@ -1887,7 +1063,7 @@ git clone --bare --branch=master --single-branch https://github.com/bgoonz/My-We
 
 ## ## code
 
-```console
+```sh
 
 git reset --hard master@{"10 minutes ago"}
 
@@ -1903,7 +1079,7 @@ git reset --hard master@{"10 minutes ago"}
 
 ## ## code
 
-```console
+```sh
 # Safe:
 
  lebab --replace ./ --transform arrow
@@ -1960,7 +1136,7 @@ lebab --replace ./ --transform includes
 
 ## ## code
 
-```
+```ps1
 
  wsl.exe --shutdown
 
@@ -1978,7 +1154,7 @@ lebab --replace ./ --transform includes
 
 ## ## code
 
-```console
+```sh
 npm i mediumexporter -g
 
 mediumexporter https://medium.com/codex/fundamental-data-structures-in-javascript-8f9f709c15b4 > ds.md
@@ -1995,7 +1171,7 @@ mediumexporter https://medium.com/codex/fundamental-data-structures-in-javascrip
 
 ## ## code
 
-```console
+```sh
 
 find . -size +75M -a -print -a -exec rm -f {} \;
 
@@ -2013,7 +1189,7 @@ find . -size +98M -a -print -a -exec rm -f {} \;
 
 ## ## code
 
-```console
+```sh
 
 wget -r -A.pdf https://overapi.com/git
 
@@ -2029,7 +1205,7 @@ wget -r -A.pdf https://overapi.com/git
 
 ## ## code
 
-```console
+```sh
 killall -s KILL node
 
 ```
@@ -2042,7 +1218,7 @@ killall -s KILL node
 
 ## ## code
 
-```console
+```sh
 find <mydir>  -type f -exec sed -i 's/<string1> /<string2> /g' {} +
 
 find . -type f -exec rename 's/-master//g' {} +
@@ -2051,7 +1227,7 @@ find . -type f -exec rename 's/-master//g' {} +
 
 > Notes: The same could be done for folder names by changing the _-type f_ flag (for file) to a _-type d_ flag (for directory)
 
-```console
+```sh
 find <mydir>  -type d -exec sed -i 's/<string1> /<string2> /g' {} +
 
 find . -type d -exec rename 's/-master//g' {} +
@@ -2068,7 +1244,7 @@ find . -type d -exec rename 's/-master//g' {} +
 
 ## ## code
 
-```console
+```sh
 
 find . -name "* *" -type d | rename 's/ /_/g'
 find . -name "* *" -type f | rename 's/ /_/g'
@@ -2084,7 +1260,7 @@ find . -name "* *" -type f | rename 's/ /_/g'
 
 ## ## code
 
-```console
+```sh
 for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ```
@@ -2101,7 +1277,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ## ## code
 
-```
+```ps1
 
 PARAM (
     [string] $ZipFilesPath = "./",
@@ -2118,7 +1294,7 @@ foreach ($ZipFile in $ZipFiles) {
     Write-Progress -Activity "Unzipping to $($UnzipPath)" -PercentComplete (($progress / ($ZipFiles.Count + 1)) * 100) -CurrentOperation $ZipFile.FullName -Status "File $($Progress) of $($ZipFiles.Count)"
     $ZipFolder = $Shell.NameSpace($ZipFile.fullname)
 
-    $Location.Copyhere($ZipFolder.items(), 1040) # 1040 - No msgboxes to the user - https://msdn.microsoft.com/library/bb787866%28VS.85%29.aspx
+    $Location.Copyhere($ZipFolder.items(), 1040) # 1040 - No msgboxes to the user - http://msdn.microsoft.com/en-us/library/bb787866%28VS.85%29.aspx
     $progress++
 }
 
@@ -2134,7 +1310,7 @@ foreach ($ZipFile in $ZipFiles) {
 
 ## ## code
 
-```console
+```sh
  sudo apt --purge remove zsh
 
 ```
@@ -2149,7 +1325,7 @@ foreach ($ZipFile in $ZipFiles) {
 
 ## ## code
 
-```console
+```sh
 
 ln -s "$(pwd)" ~/NameOfLink
 
@@ -2167,7 +1343,7 @@ ln -s "$(pwd)" ~/Downloads
 
 ## ## code
 
-```console
+```sh
 
 npx @appnest/readme generate
 
@@ -2183,7 +1359,7 @@ npx @appnest/readme generate
 
 ## ## code
 
-```console
+```sh
 sudo -u postgres psql
 ```
 
@@ -2192,7 +1368,7 @@ sudo -u postgres psql
 ## Technologies Used
 
 | URL                  | <https://bgoonz-blog.netlify.app>                        |
-| -------------------- | -------------------------------------------------------- |
+|----------------------|----------------------------------------------------------|
 | Miscellaneous        | webpack ; Prism                                          |
 | Widgets              | Facebook ; AddThis                                       |
 | Analytics            | Moat ; Google Analytics ; Google Ads Conversion Tracking |
@@ -2252,7 +1428,7 @@ https://repl.it/@bgoonz/Database-Prac?lite=true&amp;referrer=https%3A%2F%2Fbryan
 
 ## ## code
 
-```console
+```sh
 
 find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
@@ -2268,40 +1444,40 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
 ## Wiki Nav
 
--   [Home](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
--   [add copy to code blocks.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/add-copy-to-code-blocks.md)
--   [Add site search w algolia.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Add-site-search-w-algolia.md)
--   [adding mailing list.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/adding-mailing-list.md)
--   [Adding search 2 gatsby site.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Adding-search-2-gatsby-site.md)
--   [awesome.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/awesome.md)
--   [broken links.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/broken-links.md)
--   [configure custom domain.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/configure-custom-domain.md)
--   [contentauthoring.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/contentauthoring.md)
--   [full text search w lunar.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/full-text-search-w-lunar.md)
--   [inject 4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject-4.md)
--   [inject3.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject3.md)
--   [inject4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject4.md)
--   [injected content part2.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-content-part2.md)
--   [injected js part4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-js-part4.md)
--   [injected part3.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-part3.md)
--   [links 2 embed.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/links-2-embed.md)
--   [links to remember](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/links-to-remember)
--   [Netlify Injected Content](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Netlify-Injected-Content)
--   [old version of index.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/old-version-of-index.md)
--   [optimize vscode.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/optimize-vscode.md)
--   [possibly useful snippets.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/possibly-useful-snippets.md)
--   [privacy policy.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/privacy-policy.md)
--   [random stuff.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/random-stuff.md)
--   [random.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/random.md)
--   [ref type](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/ref-type)
--   [SEO.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/SEO.md)
--   [stable points.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/stable-points.md)
--   [tech used.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/tech-used.md)
--   [Technologies Used.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Technologies-Used.md)
--   [THINGS TO EMBED.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/THINGS-TO-EMBED.md)
--   [validation report.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/validation-report.md)
--   [web archive.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/web-archive.md)
--   [wordpress vs headless cms.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/wordpress-vs-headless-cms.md)
+- [Home](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
+- [add copy to code blocks.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/add-copy-to-code-blocks.md)
+- [Add site search w algolia.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Add-site-search-w-algolia.md)
+- [adding mailing list.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/adding-mailing-list.md)
+- [Adding search 2 gatsby site.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Adding-search-2-gatsby-site.md)
+- [awesome.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/awesome.md)
+- [broken links.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/broken-links.md)
+- [configure custom domain.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/configure-custom-domain.md)
+- [contentauthoring.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/contentauthoring.md)
+- [full text search w lunar.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/full-text-search-w-lunar.md)
+- [inject 4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject-4.md)
+- [inject3.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject3.md)
+- [inject4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject4.md)
+- [injected content part2.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-content-part2.md)
+- [injected js part4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-js-part4.md)
+- [injected part3.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-part3.md)
+- [links 2 embed.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/links-2-embed.md)
+- [links to remember](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/links-to-remember)
+- [Netlify Injected Content](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Netlify-Injected-Content)
+- [old version of index.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/old-version-of-index.md)
+- [optimize vscode.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/optimize-vscode.md)
+- [possibly useful snippets.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/possibly-useful-snippets.md)
+- [privacy policy.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/privacy-policy.md)
+- [random stuff.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/random-stuff.md)
+- [random.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/random.md)
+- [ref type](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/ref-type)
+- [SEO.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/SEO.md)
+- [stable points.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/stable-points.md)
+- [tech used.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/tech-used.md)
+- [Technologies Used.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Technologies-Used.md)
+- [THINGS TO EMBED.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/THINGS-TO-EMBED.md)
+- [validation report.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/validation-report.md)
+- [web archive.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/web-archive.md)
+- [wordpress vs headless cms.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/wordpress-vs-headless-cms.md)
 
 ---
 
@@ -2646,355 +1822,395 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
 # SITEMAP
 
--   [https://bgoonz-blog.netlify.app/](https://bgoonz-blog.netlify.app/)
--   [https://bgoonz-blog.netlify.app/admin](https://bgoonz-blog.netlify.app/admin)
--   [https://bgoonz-blog.netlify.app/blog](https://bgoonz-blog.netlify.app/blog)
--   [https://bgoonz-blog.netlify.app/blog/10-essential-react-interview-questions](https://bgoonz-blog.netlify.app/blog/10-essential-react-interview-questions)
--   [https://bgoonz-blog.netlify.app/blog/300-react-questions](https://bgoonz-blog.netlify.app/blog/300-react-questions)
--   [https://bgoonz-blog.netlify.app/blog/adding-css-to-your-html](https://bgoonz-blog.netlify.app/blog/adding-css-to-your-html)
--   [https://bgoonz-blog.netlify.app/blog/awesome-graphql](https://bgoonz-blog.netlify.app/blog/awesome-graphql)
--   [https://bgoonz-blog.netlify.app/blog/beginners-guide-to-python](https://bgoonz-blog.netlify.app/blog/beginners-guide-to-python)
--   [https://bgoonz-blog.netlify.app/blog/big-o-complexity](https://bgoonz-blog.netlify.app/blog/big-o-complexity)
--   [https://bgoonz-blog.netlify.app/blog/blog-archive](https://bgoonz-blog.netlify.app/blog/blog-archive)
--   [https://bgoonz-blog.netlify.app/blog/code-playgrounds-of-2021](https://bgoonz-blog.netlify.app/blog/code-playgrounds-of-2021)
--   [https://bgoonz-blog.netlify.app/blog/data-structures](https://bgoonz-blog.netlify.app/blog/data-structures)
--   [https://bgoonz-blog.netlify.app/blog/data-structures-algorithms-resources](https://bgoonz-blog.netlify.app/blog/data-structures-algorithms-resources)
--   [https://bgoonz-blog.netlify.app/blog/deploy-react-app-to-heroku](https://bgoonz-blog.netlify.app/blog/deploy-react-app-to-heroku)
--   [https://bgoonz-blog.netlify.app/blog/embedding-media-in-html](https://bgoonz-blog.netlify.app/blog/embedding-media-in-html)
--   [https://bgoonz-blog.netlify.app/blog/eslint-rules](https://bgoonz-blog.netlify.app/blog/eslint-rules)
--   [https://bgoonz-blog.netlify.app/blog/event-handeling](https://bgoonz-blog.netlify.app/blog/event-handeling)
--   [https://bgoonz-blog.netlify.app/blog/expressjs-apis](https://bgoonz-blog.netlify.app/blog/expressjs-apis)
--   [https://bgoonz-blog.netlify.app/blog/file-system-route-api](https://bgoonz-blog.netlify.app/blog/file-system-route-api)
--   [https://bgoonz-blog.netlify.app/blog/flow-control-in-python](https://bgoonz-blog.netlify.app/blog/flow-control-in-python)
--   [https://bgoonz-blog.netlify.app/blog/front-end-interview-questions-part-2](https://bgoonz-blog.netlify.app/blog/front-end-interview-questions-part-2)
--   [https://bgoonz-blog.netlify.app/blog/functions-in-python](https://bgoonz-blog.netlify.app/blog/functions-in-python)
--   [https://bgoonz-blog.netlify.app/blog/gatsby-cli](https://bgoonz-blog.netlify.app/blog/gatsby-cli)
--   [https://bgoonz-blog.netlify.app/blog/git-gateway](https://bgoonz-blog.netlify.app/blog/git-gateway)
--   [https://bgoonz-blog.netlify.app/blog/google-analytics](https://bgoonz-blog.netlify.app/blog/google-analytics)
--   [https://bgoonz-blog.netlify.app/blog/grep-in-linuz](https://bgoonz-blog.netlify.app/blog/grep-in-linuz)
--   [https://bgoonz-blog.netlify.app/blog/hoisting](https://bgoonz-blog.netlify.app/blog/hoisting)
--   [https://bgoonz-blog.netlify.app/blog/htt-requests](https://bgoonz-blog.netlify.app/blog/htt-requests)
--   [https://bgoonz-blog.netlify.app/blog/interview-questions-js](https://bgoonz-blog.netlify.app/blog/interview-questions-js)
--   [https://bgoonz-blog.netlify.app/blog/interview-questions-js-p2](https://bgoonz-blog.netlify.app/blog/interview-questions-js-p2)
--   [https://bgoonz-blog.netlify.app/blog/interview-questions-js-p3](https://bgoonz-blog.netlify.app/blog/interview-questions-js-p3)
--   [https://bgoonz-blog.netlify.app/blog/intro-01-data-structures](https://bgoonz-blog.netlify.app/blog/intro-01-data-structures)
--   [https://bgoonz-blog.netlify.app/blog/intro-to-markdown](https://bgoonz-blog.netlify.app/blog/intro-to-markdown)
--   [https://bgoonz-blog.netlify.app/blog/jsx-in-depth](https://bgoonz-blog.netlify.app/blog/jsx-in-depth)
--   [https://bgoonz-blog.netlify.app/blog/netlify-cms](https://bgoonz-blog.netlify.app/blog/netlify-cms)
--   [https://bgoonz-blog.netlify.app/blog/passing-arguments-to-a-callback-in-js](https://bgoonz-blog.netlify.app/blog/passing-arguments-to-a-callback-in-js)
--   [https://bgoonz-blog.netlify.app/blog/platform-docs](https://bgoonz-blog.netlify.app/blog/platform-docs)
--   [https://bgoonz-blog.netlify.app/blog/psql-cheat-sheet](https://bgoonz-blog.netlify.app/blog/psql-cheat-sheet)
--   [https://bgoonz-blog.netlify.app/blog/python-for-js-dev](https://bgoonz-blog.netlify.app/blog/python-for-js-dev)
--   [https://bgoonz-blog.netlify.app/blog/python-quiz](https://bgoonz-blog.netlify.app/blog/python-quiz)
--   [https://bgoonz-blog.netlify.app/blog/python-resources](https://bgoonz-blog.netlify.app/blog/python-resources)
--   [https://bgoonz-blog.netlify.app/blog/react-fragments](https://bgoonz-blog.netlify.app/blog/react-fragments)
--   [https://bgoonz-blog.netlify.app/blog/react-semantics](https://bgoonz-blog.netlify.app/blog/react-semantics)
--   [https://bgoonz-blog.netlify.app/blog/react-state](https://bgoonz-blog.netlify.app/blog/react-state)
--   [https://bgoonz-blog.netlify.app/blog/useful-stock-images](https://bgoonz-blog.netlify.app/blog/useful-stock-images)
--   [https://bgoonz-blog.netlify.app/blog/using-the-dom](https://bgoonz-blog.netlify.app/blog/using-the-dom)
--   [https://bgoonz-blog.netlify.app/blog/vs-code-extensions](https://bgoonz-blog.netlify.app/blog/vs-code-extensions)
--   [https://bgoonz-blog.netlify.app/blog/vscode-extensions](https://bgoonz-blog.netlify.app/blog/vscode-extensions)
--   [https://bgoonz-blog.netlify.app/blog/web-dev-trends](https://bgoonz-blog.netlify.app/blog/web-dev-trends)
--   [https://bgoonz-blog.netlify.app/blog/web-scraping](https://bgoonz-blog.netlify.app/blog/web-scraping)
--   [https://bgoonz-blog.netlify.app/blog/webdev-setup](https://bgoonz-blog.netlify.app/blog/webdev-setup)
--   [https://bgoonz-blog.netlify.app/blog/what-is-a-redux-reducer](https://bgoonz-blog.netlify.app/blog/what-is-a-redux-reducer)
--   [https://bgoonz-blog.netlify.app/blog/wordpress-vs-headless-cms](https://bgoonz-blog.netlify.app/blog/wordpress-vs-headless-cms)
--   [https://bgoonz-blog.netlify.app/docs](https://bgoonz-blog.netlify.app/docs)
--   [https://bgoonz-blog.netlify.app/docs/about](https://bgoonz-blog.netlify.app/docs/about)
--   [https://bgoonz-blog.netlify.app/docs/about/eng-portfolio](https://bgoonz-blog.netlify.app/docs/about/eng-portfolio)
--   [https://bgoonz-blog.netlify.app/docs/about/internal-use](https://bgoonz-blog.netlify.app/docs/about/internal-use)
--   [https://bgoonz-blog.netlify.app/docs/about/intrests](https://bgoonz-blog.netlify.app/docs/about/intrests)
--   [https://bgoonz-blog.netlify.app/docs/about/job-search](https://bgoonz-blog.netlify.app/docs/about/job-search)
--   [https://bgoonz-blog.netlify.app/docs/about/readme](https://bgoonz-blog.netlify.app/docs/about/readme)
--   [https://bgoonz-blog.netlify.app/docs/about/resume](https://bgoonz-blog.netlify.app/docs/about/resume)
--   [https://bgoonz-blog.netlify.app/docs/archive](https://bgoonz-blog.netlify.app/docs/archive)
--   [https://bgoonz-blog.netlify.app/docs/archive/embeded-websites](https://bgoonz-blog.netlify.app/docs/archive/embeded-websites)
--   [https://bgoonz-blog.netlify.app/docs/articles](https://bgoonz-blog.netlify.app/docs/articles)
--   [https://bgoonz-blog.netlify.app/docs/articles/buffers](https://bgoonz-blog.netlify.app/docs/articles/buffers)
--   [https://bgoonz-blog.netlify.app/docs/articles/common-modules](https://bgoonz-blog.netlify.app/docs/articles/common-modules)
--   [https://bgoonz-blog.netlify.app/docs/articles/dev-dep](https://bgoonz-blog.netlify.app/docs/articles/dev-dep)
--   [https://bgoonz-blog.netlify.app/docs/articles/fs-module](https://bgoonz-blog.netlify.app/docs/articles/fs-module)
--   [https://bgoonz-blog.netlify.app/docs/articles/how-search-engines-work](https://bgoonz-blog.netlify.app/docs/articles/how-search-engines-work)
--   [https://bgoonz-blog.netlify.app/docs/articles/how-the-web-works](https://bgoonz-blog.netlify.app/docs/articles/how-the-web-works)
--   [https://bgoonz-blog.netlify.app/docs/articles/intro](https://bgoonz-blog.netlify.app/docs/articles/intro)
--   [https://bgoonz-blog.netlify.app/docs/articles/jamstack](https://bgoonz-blog.netlify.app/docs/articles/jamstack)
--   [https://bgoonz-blog.netlify.app/docs/articles/nextjs](https://bgoonz-blog.netlify.app/docs/articles/nextjs)
--   [https://bgoonz-blog.netlify.app/docs/articles/node-api-express](https://bgoonz-blog.netlify.app/docs/articles/node-api-express)
--   [https://bgoonz-blog.netlify.app/docs/articles/npm](https://bgoonz-blog.netlify.app/docs/articles/npm)
--   [https://bgoonz-blog.netlify.app/docs/articles/os-module](https://bgoonz-blog.netlify.app/docs/articles/os-module)
--   [https://bgoonz-blog.netlify.app/docs/articles/reading-files](https://bgoonz-blog.netlify.app/docs/articles/reading-files)
--   [https://bgoonz-blog.netlify.app/docs/articles/semantic](https://bgoonz-blog.netlify.app/docs/articles/semantic)
--   [https://bgoonz-blog.netlify.app/docs/articles/semantic-html](https://bgoonz-blog.netlify.app/docs/articles/semantic-html)
--   [https://bgoonz-blog.netlify.app/docs/articles/url](https://bgoonz-blog.netlify.app/docs/articles/url)
--   [https://bgoonz-blog.netlify.app/docs/articles/web-standards-checklist](https://bgoonz-blog.netlify.app/docs/articles/web-standards-checklist)
--   [https://bgoonz-blog.netlify.app/docs/articles/webdev-tools](https://bgoonz-blog.netlify.app/docs/articles/webdev-tools)
--   [https://bgoonz-blog.netlify.app/docs/articles/writing-files](https://bgoonz-blog.netlify.app/docs/articles/writing-files)
--   [https://bgoonz-blog.netlify.app/docs/audio](https://bgoonz-blog.netlify.app/docs/audio)
--   [https://bgoonz-blog.netlify.app/docs/audio/dfft](https://bgoonz-blog.netlify.app/docs/audio/dfft)
--   [https://bgoonz-blog.netlify.app/docs/audio/discrete-fft](https://bgoonz-blog.netlify.app/docs/audio/discrete-fft)
--   [https://bgoonz-blog.netlify.app/docs/audio/dtw-python-explained](https://bgoonz-blog.netlify.app/docs/audio/dtw-python-explained)
--   [https://bgoonz-blog.netlify.app/docs/audio/dynamic-time-warping](https://bgoonz-blog.netlify.app/docs/audio/dynamic-time-warping)
--   [https://bgoonz-blog.netlify.app/docs/audio/web-audio-api](https://bgoonz-blog.netlify.app/docs/audio/web-audio-api)
--   [https://bgoonz-blog.netlify.app/docs/career](https://bgoonz-blog.netlify.app/docs/career)
--   [https://bgoonz-blog.netlify.app/docs/career/job-boards](https://bgoonz-blog.netlify.app/docs/career/job-boards)
--   [https://bgoonz-blog.netlify.app/docs/career/my-websites](https://bgoonz-blog.netlify.app/docs/career/my-websites)
--   [https://bgoonz-blog.netlify.app/docs/career/projects](https://bgoonz-blog.netlify.app/docs/career/projects)
--   [https://bgoonz-blog.netlify.app/docs/community](https://bgoonz-blog.netlify.app/docs/community)
--   [https://bgoonz-blog.netlify.app/docs/community/an-open-letter-2-future-developers](https://bgoonz-blog.netlify.app/docs/community/an-open-letter-2-future-developers)
--   [https://bgoonz-blog.netlify.app/docs/community/bookmarks](https://bgoonz-blog.netlify.app/docs/community/bookmarks)
--   [https://bgoonz-blog.netlify.app/docs/community/video-chat](https://bgoonz-blog.netlify.app/docs/community/video-chat)
--   [https://bgoonz-blog.netlify.app/docs/content](https://bgoonz-blog.netlify.app/docs/content)
--   [https://bgoonz-blog.netlify.app/docs/content/algo](https://bgoonz-blog.netlify.app/docs/content/algo)
--   [https://bgoonz-blog.netlify.app/docs/content/archive](https://bgoonz-blog.netlify.app/docs/content/archive)
--   [https://bgoonz-blog.netlify.app/docs/content/data-structures-in-python](https://bgoonz-blog.netlify.app/docs/content/data-structures-in-python)
--   [https://bgoonz-blog.netlify.app/docs/content/gatsby-Queries-Mutations](https://bgoonz-blog.netlify.app/docs/content/gatsby-Queries-Mutations)
--   [https://bgoonz-blog.netlify.app/docs/content/gists](https://bgoonz-blog.netlify.app/docs/content/gists)
--   [https://bgoonz-blog.netlify.app/docs/content/history-api](https://bgoonz-blog.netlify.app/docs/content/history-api)
--   [https://bgoonz-blog.netlify.app/docs/content/javascript-examples](https://bgoonz-blog.netlify.app/docs/content/javascript-examples)
--   [https://bgoonz-blog.netlify.app/docs/content/main-projects](https://bgoonz-blog.netlify.app/docs/content/main-projects)
--   [https://bgoonz-blog.netlify.app/docs/content/native-data-structures-in-js](https://bgoonz-blog.netlify.app/docs/content/native-data-structures-in-js)
--   [https://bgoonz-blog.netlify.app/docs/content/trouble-shooting](https://bgoonz-blog.netlify.app/docs/content/trouble-shooting)
--   [https://bgoonz-blog.netlify.app/docs/css](https://bgoonz-blog.netlify.app/docs/css)
--   [https://bgoonz-blog.netlify.app/docs/css/css-selector-specificity](https://bgoonz-blog.netlify.app/docs/css/css-selector-specificity)
--   [https://bgoonz-blog.netlify.app/docs/css/media-querries](https://bgoonz-blog.netlify.app/docs/css/media-querries)
--   [https://bgoonz-blog.netlify.app/docs/css/the-box-model](https://bgoonz-blog.netlify.app/docs/css/the-box-model)
--   [https://bgoonz-blog.netlify.app/docs/docs](https://bgoonz-blog.netlify.app/docs/docs)
--   [https://bgoonz-blog.netlify.app/docs/docs/appendix](https://bgoonz-blog.netlify.app/docs/docs/appendix)
--   [https://bgoonz-blog.netlify.app/docs/docs/archive](https://bgoonz-blog.netlify.app/docs/docs/archive)
--   [https://bgoonz-blog.netlify.app/docs/docs/bash](https://bgoonz-blog.netlify.app/docs/docs/bash)
--   [https://bgoonz-blog.netlify.app/docs/docs/css](https://bgoonz-blog.netlify.app/docs/docs/css)
--   [https://bgoonz-blog.netlify.app/docs/docs/git-reference](https://bgoonz-blog.netlify.app/docs/docs/git-reference)
--   [https://bgoonz-blog.netlify.app/docs/docs/git-repos](https://bgoonz-blog.netlify.app/docs/docs/git-repos)
--   [https://bgoonz-blog.netlify.app/docs/docs/glossary](https://bgoonz-blog.netlify.app/docs/docs/glossary)
--   [https://bgoonz-blog.netlify.app/docs/docs/html-tags](https://bgoonz-blog.netlify.app/docs/docs/html-tags)
--   [https://bgoonz-blog.netlify.app/docs/docs/markdown](https://bgoonz-blog.netlify.app/docs/docs/markdown)
--   [https://bgoonz-blog.netlify.app/docs/docs/no-whiteboarding](https://bgoonz-blog.netlify.app/docs/docs/no-whiteboarding)
--   [https://bgoonz-blog.netlify.app/docs/docs/node-docs-complete](https://bgoonz-blog.netlify.app/docs/docs/node-docs-complete)
--   [https://bgoonz-blog.netlify.app/docs/docs/privacy-policy](https://bgoonz-blog.netlify.app/docs/docs/privacy-policy)
--   [https://bgoonz-blog.netlify.app/docs/docs/regex-in-js](https://bgoonz-blog.netlify.app/docs/docs/regex-in-js)
--   [https://bgoonz-blog.netlify.app/docs/docs/sitemap](https://bgoonz-blog.netlify.app/docs/docs/sitemap)
--   [https://bgoonz-blog.netlify.app/docs/ds-algo](https://bgoonz-blog.netlify.app/docs/ds-algo)
--   [https://bgoonz-blog.netlify.app/docs/ds-algo/big-o](https://bgoonz-blog.netlify.app/docs/ds-algo/big-o)
--   [https://bgoonz-blog.netlify.app/docs/ds-algo/data-structures-docs](https://bgoonz-blog.netlify.app/docs/ds-algo/data-structures-docs)
--   [https://bgoonz-blog.netlify.app/docs/ds-algo/ds-algo-interview](https://bgoonz-blog.netlify.app/docs/ds-algo/ds-algo-interview)
--   [https://bgoonz-blog.netlify.app/docs/ds-algo/ds-by-example](https://bgoonz-blog.netlify.app/docs/ds-algo/ds-by-example)
--   [https://bgoonz-blog.netlify.app/docs/ds-algo/ds-overview](https://bgoonz-blog.netlify.app/docs/ds-algo/ds-overview)
--   [https://bgoonz-blog.netlify.app/docs/ds-algo/free-code-camp](https://bgoonz-blog.netlify.app/docs/ds-algo/free-code-camp)
--   [https://bgoonz-blog.netlify.app/docs/ds-algo/graph](https://bgoonz-blog.netlify.app/docs/ds-algo/graph)
--   [https://bgoonz-blog.netlify.app/docs/ds-algo/heaps](https://bgoonz-blog.netlify.app/docs/ds-algo/heaps)
--   [https://bgoonz-blog.netlify.app/docs/ds-algo/tree](https://bgoonz-blog.netlify.app/docs/ds-algo/tree)
--   [https://bgoonz-blog.netlify.app/docs/faq](https://bgoonz-blog.netlify.app/docs/faq)
--   [https://bgoonz-blog.netlify.app/docs/faq/contact](https://bgoonz-blog.netlify.app/docs/faq/contact)
--   [https://bgoonz-blog.netlify.app/docs/faq/plug-ins](https://bgoonz-blog.netlify.app/docs/faq/plug-ins)
--   [https://bgoonz-blog.netlify.app/docs/fetch-api](https://bgoonz-blog.netlify.app/docs/fetch-api)
--   [https://bgoonz-blog.netlify.app/docs/git/git](https://bgoonz-blog.netlify.app/docs/git/git)
--   [https://bgoonz-blog.netlify.app/docs/git/git/github-tutorial](https://bgoonz-blog.netlify.app/docs/git/git/github-tutorial)
--   [https://bgoonz-blog.netlify.app/docs/interact](https://bgoonz-blog.netlify.app/docs/interact)
--   [https://bgoonz-blog.netlify.app/docs/interact/callstack-visual](https://bgoonz-blog.netlify.app/docs/interact/callstack-visual)
--   [https://bgoonz-blog.netlify.app/docs/interact/clock](https://bgoonz-blog.netlify.app/docs/interact/clock)
--   [https://bgoonz-blog.netlify.app/docs/interact/jupyter-notebooks](https://bgoonz-blog.netlify.app/docs/interact/jupyter-notebooks)
--   [https://bgoonz-blog.netlify.app/docs/interact/other-sites](https://bgoonz-blog.netlify.app/docs/interact/other-sites)
--   [https://bgoonz-blog.netlify.app/docs/interact/react-testing-library](https://bgoonz-blog.netlify.app/docs/interact/react-testing-library)
--   [https://bgoonz-blog.netlify.app/docs/interact/video-chat](https://bgoonz-blog.netlify.app/docs/interact/video-chat)
--   [https://bgoonz-blog.netlify.app/docs/javascript](https://bgoonz-blog.netlify.app/docs/javascript)
--   [https://bgoonz-blog.netlify.app/docs/javascript/arrow-functions](https://bgoonz-blog.netlify.app/docs/javascript/arrow-functions)
--   [https://bgoonz-blog.netlify.app/docs/javascript/asynchronous-javascript-and-xml](https://bgoonz-blog.netlify.app/docs/javascript/asynchronous-javascript-and-xml)
--   [https://bgoonz-blog.netlify.app/docs/javascript/asyncjs](https://bgoonz-blog.netlify.app/docs/javascript/asyncjs)
--   [https://bgoonz-blog.netlify.app/docs/javascript/await-keyword](https://bgoonz-blog.netlify.app/docs/javascript/await-keyword)
--   [https://bgoonz-blog.netlify.app/docs/javascript/bigo](https://bgoonz-blog.netlify.app/docs/javascript/bigo)
--   [https://bgoonz-blog.netlify.app/docs/javascript/clean-code](https://bgoonz-blog.netlify.app/docs/javascript/clean-code)
--   [https://bgoonz-blog.netlify.app/docs/javascript/constructor-functions](https://bgoonz-blog.netlify.app/docs/javascript/constructor-functions)
--   [https://bgoonz-blog.netlify.app/docs/javascript/cs-basics-in-js](https://bgoonz-blog.netlify.app/docs/javascript/cs-basics-in-js)
--   [https://bgoonz-blog.netlify.app/docs/javascript/for-loops](https://bgoonz-blog.netlify.app/docs/javascript/for-loops)
--   [https://bgoonz-blog.netlify.app/docs/javascript/javascript-resource-table](https://bgoonz-blog.netlify.app/docs/javascript/javascript-resource-table)
--   [https://bgoonz-blog.netlify.app/docs/javascript/js-expressions](https://bgoonz-blog.netlify.app/docs/javascript/js-expressions)
--   [https://bgoonz-blog.netlify.app/docs/javascript/js-objects](https://bgoonz-blog.netlify.app/docs/javascript/js-objects)
--   [https://bgoonz-blog.netlify.app/docs/javascript/part2-pojo](https://bgoonz-blog.netlify.app/docs/javascript/part2-pojo)
--   [https://bgoonz-blog.netlify.app/docs/javascript/promises](https://bgoonz-blog.netlify.app/docs/javascript/promises)
--   [https://bgoonz-blog.netlify.app/docs/javascript/review](https://bgoonz-blog.netlify.app/docs/javascript/review)
--   [https://bgoonz-blog.netlify.app/docs/javascript/snippets](https://bgoonz-blog.netlify.app/docs/javascript/snippets)
--   [https://bgoonz-blog.netlify.app/docs/javascript/this-is-about-this](https://bgoonz-blog.netlify.app/docs/javascript/this-is-about-this)
--   [https://bgoonz-blog.netlify.app/docs/javascript/variables](https://bgoonz-blog.netlify.app/docs/javascript/variables)
--   [https://bgoonz-blog.netlify.app/docs/js-tips](https://bgoonz-blog.netlify.app/docs/js-tips)
--   [https://bgoonz-blog.netlify.app/docs/js-tips/abs](https://bgoonz-blog.netlify.app/docs/js-tips/abs)
--   [https://bgoonz-blog.netlify.app/docs/js-tips/acos](https://bgoonz-blog.netlify.app/docs/js-tips/acos)
--   [https://bgoonz-blog.netlify.app/docs/js-tips/acosh](https://bgoonz-blog.netlify.app/docs/js-tips/acosh)
--   [https://bgoonz-blog.netlify.app/docs/js-tips/addition](https://bgoonz-blog.netlify.app/docs/js-tips/addition)
--   [https://bgoonz-blog.netlify.app/docs/js-tips/all](https://bgoonz-blog.netlify.app/docs/js-tips/all)
--   [https://bgoonz-blog.netlify.app/docs/js-tips/allsettled](https://bgoonz-blog.netlify.app/docs/js-tips/allsettled)
--   [https://bgoonz-blog.netlify.app/docs/js-tips/any](https://bgoonz-blog.netlify.app/docs/js-tips/any)
--   [https://bgoonz-blog.netlify.app/docs/js-tips/array](https://bgoonz-blog.netlify.app/docs/js-tips/array)
--   [https://bgoonz-blog.netlify.app/docs/js-tips/array-methods](https://bgoonz-blog.netlify.app/docs/js-tips/array-methods)
--   [https://bgoonz-blog.netlify.app/docs/js-tips/arrow_functions](https://bgoonz-blog.netlify.app/docs/js-tips/arrow_functions)
--   [https://bgoonz-blog.netlify.app/docs/js-tips/async_function](https://bgoonz-blog.netlify.app/docs/js-tips/async_function)
--   [https://bgoonz-blog.netlify.app/docs/js-tips/bad_radix](https://bgoonz-blog.netlify.app/docs/js-tips/bad_radix)
--   [https://bgoonz-blog.netlify.app/docs/js-tips/bind](https://bgoonz-blog.netlify.app/docs/js-tips/bind)
--   [https://bgoonz-blog.netlify.app/docs/js-tips/classes](https://bgoonz-blog.netlify.app/docs/js-tips/classes)
--   [https://bgoonz-blog.netlify.app/docs/js-tips/concat](https://bgoonz-blog.netlify.app/docs/js-tips/concat)
--   [https://bgoonz-blog.netlify.app/docs/js-tips/conditional_operator](https://bgoonz-blog.netlify.app/docs/js-tips/conditional_operator)
--   [https://bgoonz-blog.netlify.app/docs/js-tips/const](https://bgoonz-blog.netlify.app/docs/js-tips/const)
--   [https://bgoonz-blog.netlify.app/docs/js-tips/create](https://bgoonz-blog.netlify.app/docs/js-tips/create)
--   [https://bgoonz-blog.netlify.app/docs/js-tips/date](https://bgoonz-blog.netlify.app/docs/js-tips/date)
--   [https://bgoonz-blog.netlify.app/docs/js-tips/eval](https://bgoonz-blog.netlify.app/docs/js-tips/eval)
--   [https://bgoonz-blog.netlify.app/docs/js-tips/every](https://bgoonz-blog.netlify.app/docs/js-tips/every)
--   [https://bgoonz-blog.netlify.app/docs/js-tips/filter](https://bgoonz-blog.netlify.app/docs/js-tips/filter)
--   [https://bgoonz-blog.netlify.app/docs/js-tips/for...of](https://bgoonz-blog.netlify.app/docs/js-tips/for...of)
--   [https://bgoonz-blog.netlify.app/docs/js-tips/foreach](https://bgoonz-blog.netlify.app/docs/js-tips/foreach)
--   [https://bgoonz-blog.netlify.app/docs/js-tips/functions](https://bgoonz-blog.netlify.app/docs/js-tips/functions)
--   [https://bgoonz-blog.netlify.app/docs/js-tips/import](https://bgoonz-blog.netlify.app/docs/js-tips/import)
--   [https://bgoonz-blog.netlify.app/docs/js-tips/insert-into-array](https://bgoonz-blog.netlify.app/docs/js-tips/insert-into-array)
--   [https://bgoonz-blog.netlify.app/docs/js-tips/map](https://bgoonz-blog.netlify.app/docs/js-tips/map)
--   [https://bgoonz-blog.netlify.app/docs/js-tips/object](https://bgoonz-blog.netlify.app/docs/js-tips/object)
--   [https://bgoonz-blog.netlify.app/docs/js-tips/reduce](https://bgoonz-blog.netlify.app/docs/js-tips/reduce)
--   [https://bgoonz-blog.netlify.app/docs/js-tips/regexp](https://bgoonz-blog.netlify.app/docs/js-tips/regexp)
--   [https://bgoonz-blog.netlify.app/docs/js-tips/sort](https://bgoonz-blog.netlify.app/docs/js-tips/sort)
--   [https://bgoonz-blog.netlify.app/docs/js-tips/sorting-strings](https://bgoonz-blog.netlify.app/docs/js-tips/sorting-strings)
--   [https://bgoonz-blog.netlify.app/docs/js-tips/string](https://bgoonz-blog.netlify.app/docs/js-tips/string)
--   [https://bgoonz-blog.netlify.app/docs/js-tips/this](https://bgoonz-blog.netlify.app/docs/js-tips/this)
--   [https://bgoonz-blog.netlify.app/docs/js-tips/var](https://bgoonz-blog.netlify.app/docs/js-tips/var)
--   [https://bgoonz-blog.netlify.app/docs/leetcode](https://bgoonz-blog.netlify.app/docs/leetcode)
--   [https://bgoonz-blog.netlify.app/docs/leetcode/ContaineWitMosWater](https://bgoonz-blog.netlify.app/docs/leetcode/ContaineWitMosWater)
--   [https://bgoonz-blog.netlify.app/docs/leetcode/DividTwIntegers](https://bgoonz-blog.netlify.app/docs/leetcode/DividTwIntegers)
--   [https://bgoonz-blog.netlify.app/docs/leetcode/GeneratParentheses](https://bgoonz-blog.netlify.app/docs/leetcode/GeneratParentheses)
--   [https://bgoonz-blog.netlify.app/docs/leetcode/LetteCombinationoPhonNumber](https://bgoonz-blog.netlify.app/docs/leetcode/LetteCombinationoPhonNumber)
--   [https://bgoonz-blog.netlify.app/docs/leetcode/LongesCommoPrefix](https://bgoonz-blog.netlify.app/docs/leetcode/LongesCommoPrefix)
--   [https://bgoonz-blog.netlify.app/docs/leetcode/MediaoTwSorteArrays](https://bgoonz-blog.netlify.app/docs/leetcode/MediaoTwSorteArrays)
--   [https://bgoonz-blog.netlify.app/docs/leetcode/NexPermutation](https://bgoonz-blog.netlify.app/docs/leetcode/NexPermutation)
--   [https://bgoonz-blog.netlify.app/docs/leetcode/PalindromNumber](https://bgoonz-blog.netlify.app/docs/leetcode/PalindromNumber)
--   [https://bgoonz-blog.netlify.app/docs/leetcode/RegulaExpressioMatching](https://bgoonz-blog.netlify.app/docs/leetcode/RegulaExpressioMatching)
--   [https://bgoonz-blog.netlify.app/docs/leetcode/RemovDuplicatefroSorteArray](https://bgoonz-blog.netlify.app/docs/leetcode/RemovDuplicatefroSorteArray)
--   [https://bgoonz-blog.netlify.app/docs/leetcode/RemovNtNodFroEnoList](https://bgoonz-blog.netlify.app/docs/leetcode/RemovNtNodFroEnoList)
--   [https://bgoonz-blog.netlify.app/docs/leetcode/RomatInteger](https://bgoonz-blog.netlify.app/docs/leetcode/RomatInteger)
--   [https://bgoonz-blog.netlify.app/docs/leetcode/SearciRotateSorteArray](https://bgoonz-blog.netlify.app/docs/leetcode/SearciRotateSorteArray)
--   [https://bgoonz-blog.netlify.app/docs/leetcode/StrintIntege(atoi)](<https://bgoonz-blog.netlify.app/docs/leetcode/StrintIntege(atoi)>)
--   [https://bgoonz-blog.netlify.app/docs/leetcode/ValiParentheses](https://bgoonz-blog.netlify.app/docs/leetcode/ValiParentheses)
--   [https://bgoonz-blog.netlify.app/docs/leetcode/ZigZaConversion](https://bgoonz-blog.netlify.app/docs/leetcode/ZigZaConversion)
--   [https://bgoonz-blog.netlify.app/docs/netlify-cms-jamstack](https://bgoonz-blog.netlify.app/docs/netlify-cms-jamstack)
--   [https://bgoonz-blog.netlify.app/docs/netlify-cms-jamstack/get-started-with-gatsby](https://bgoonz-blog.netlify.app/docs/netlify-cms-jamstack/get-started-with-gatsby)
--   [https://bgoonz-blog.netlify.app/docs/netlify-cms-jamstack/jamstack-templates](https://bgoonz-blog.netlify.app/docs/netlify-cms-jamstack/jamstack-templates)
--   [https://bgoonz-blog.netlify.app/docs/netlify-cms-jamstack/serverlessjs](https://bgoonz-blog.netlify.app/docs/netlify-cms-jamstack/serverlessjs)
--   [https://bgoonz-blog.netlify.app/docs/overflow](https://bgoonz-blog.netlify.app/docs/overflow)
--   [https://bgoonz-blog.netlify.app/docs/overflow/emmet-cheat-sheet](https://bgoonz-blog.netlify.app/docs/overflow/emmet-cheat-sheet)
--   [https://bgoonz-blog.netlify.app/docs/overflow/html-spec](https://bgoonz-blog.netlify.app/docs/overflow/html-spec)
--   [https://bgoonz-blog.netlify.app/docs/overflow/http](https://bgoonz-blog.netlify.app/docs/overflow/http)
--   [https://bgoonz-blog.netlify.app/docs/overflow/install](https://bgoonz-blog.netlify.app/docs/overflow/install)
--   [https://bgoonz-blog.netlify.app/docs/overflow/modules](https://bgoonz-blog.netlify.app/docs/overflow/modules)
--   [https://bgoonz-blog.netlify.app/docs/overflow/node-cli-args](https://bgoonz-blog.netlify.app/docs/overflow/node-cli-args)
--   [https://bgoonz-blog.netlify.app/docs/overflow/node-js-language](https://bgoonz-blog.netlify.app/docs/overflow/node-js-language)
--   [https://bgoonz-blog.netlify.app/docs/overflow/node-package-manager](https://bgoonz-blog.netlify.app/docs/overflow/node-package-manager)
--   [https://bgoonz-blog.netlify.app/docs/overflow/node-repl](https://bgoonz-blog.netlify.app/docs/overflow/node-repl)
--   [https://bgoonz-blog.netlify.app/docs/overflow/node-run-cli](https://bgoonz-blog.netlify.app/docs/overflow/node-run-cli)
--   [https://bgoonz-blog.netlify.app/docs/overflow/nodejs](https://bgoonz-blog.netlify.app/docs/overflow/nodejs)
--   [https://bgoonz-blog.netlify.app/docs/overflow/nodevsbrowser](https://bgoonz-blog.netlify.app/docs/overflow/nodevsbrowser)
--   [https://bgoonz-blog.netlify.app/docs/overflow/understanding-firebase](https://bgoonz-blog.netlify.app/docs/overflow/understanding-firebase)
--   [https://bgoonz-blog.netlify.app/docs/overflow/v8](https://bgoonz-blog.netlify.app/docs/overflow/v8)
--   [https://bgoonz-blog.netlify.app/docs/privacy-policy](https://bgoonz-blog.netlify.app/docs/privacy-policy)
--   [https://bgoonz-blog.netlify.app/docs/projects](https://bgoonz-blog.netlify.app/docs/projects)
--   [https://bgoonz-blog.netlify.app/docs/projects/archive](https://bgoonz-blog.netlify.app/docs/projects/archive)
--   [https://bgoonz-blog.netlify.app/docs/projects/archive/embeded-websites](https://bgoonz-blog.netlify.app/docs/projects/archive/embeded-websites)
--   [https://bgoonz-blog.netlify.app/docs/projects/links](https://bgoonz-blog.netlify.app/docs/projects/links)
--   [https://bgoonz-blog.netlify.app/docs/projects/mini-projects](https://bgoonz-blog.netlify.app/docs/projects/mini-projects)
--   [https://bgoonz-blog.netlify.app/docs/projects/mini-projects2](https://bgoonz-blog.netlify.app/docs/projects/mini-projects2)
--   [https://bgoonz-blog.netlify.app/docs/projects/recent](https://bgoonz-blog.netlify.app/docs/projects/recent)
--   [https://bgoonz-blog.netlify.app/docs/python](https://bgoonz-blog.netlify.app/docs/python)
--   [https://bgoonz-blog.netlify.app/docs/python/at-length](https://bgoonz-blog.netlify.app/docs/python/at-length)
--   [https://bgoonz-blog.netlify.app/docs/python/cheat-sheet](https://bgoonz-blog.netlify.app/docs/python/cheat-sheet)
--   [https://bgoonz-blog.netlify.app/docs/python/comprehensive-guide](https://bgoonz-blog.netlify.app/docs/python/comprehensive-guide)
--   [https://bgoonz-blog.netlify.app/docs/python/data-structures-in-python](https://bgoonz-blog.netlify.app/docs/python/data-structures-in-python)
--   [https://bgoonz-blog.netlify.app/docs/python/examples](https://bgoonz-blog.netlify.app/docs/python/examples)
--   [https://bgoonz-blog.netlify.app/docs/python/flow-control](https://bgoonz-blog.netlify.app/docs/python/flow-control)
--   [https://bgoonz-blog.netlify.app/docs/python/functions](https://bgoonz-blog.netlify.app/docs/python/functions)
--   [https://bgoonz-blog.netlify.app/docs/python/google-sheets-api](https://bgoonz-blog.netlify.app/docs/python/google-sheets-api)
--   [https://bgoonz-blog.netlify.app/docs/python/intro-for-js-devs](https://bgoonz-blog.netlify.app/docs/python/intro-for-js-devs)
--   [https://bgoonz-blog.netlify.app/docs/python/python-ds](https://bgoonz-blog.netlify.app/docs/python/python-ds)
--   [https://bgoonz-blog.netlify.app/docs/python/python-quiz](https://bgoonz-blog.netlify.app/docs/python/python-quiz)
--   [https://bgoonz-blog.netlify.app/docs/python/snippets](https://bgoonz-blog.netlify.app/docs/python/snippets)
--   [https://bgoonz-blog.netlify.app/docs/quick-ref](https://bgoonz-blog.netlify.app/docs/quick-ref)
--   [https://bgoonz-blog.netlify.app/docs/quick-ref/all-emojis](https://bgoonz-blog.netlify.app/docs/quick-ref/all-emojis)
--   [https://bgoonz-blog.netlify.app/docs/quick-ref/create-react-app](https://bgoonz-blog.netlify.app/docs/quick-ref/create-react-app)
--   [https://bgoonz-blog.netlify.app/docs/quick-ref/Emmet](https://bgoonz-blog.netlify.app/docs/quick-ref/Emmet)
--   [https://bgoonz-blog.netlify.app/docs/quick-ref/fetch](https://bgoonz-blog.netlify.app/docs/quick-ref/fetch)
--   [https://bgoonz-blog.netlify.app/docs/quick-ref/general-structured-data-guidelines](https://bgoonz-blog.netlify.app/docs/quick-ref/general-structured-data-guidelines)
--   [https://bgoonz-blog.netlify.app/docs/quick-ref/git-bash](https://bgoonz-blog.netlify.app/docs/quick-ref/git-bash)
--   [https://bgoonz-blog.netlify.app/docs/quick-ref/git-tricks](https://bgoonz-blog.netlify.app/docs/quick-ref/git-tricks)
--   [https://bgoonz-blog.netlify.app/docs/quick-ref/google-firebase](https://bgoonz-blog.netlify.app/docs/quick-ref/google-firebase)
--   [https://bgoonz-blog.netlify.app/docs/quick-ref/heroku-error-codes](https://bgoonz-blog.netlify.app/docs/quick-ref/heroku-error-codes)
--   [https://bgoonz-blog.netlify.app/docs/quick-ref/installation](https://bgoonz-blog.netlify.app/docs/quick-ref/installation)
--   [https://bgoonz-blog.netlify.app/docs/quick-ref/markdown-dropdowns](https://bgoonz-blog.netlify.app/docs/quick-ref/markdown-dropdowns)
--   [https://bgoonz-blog.netlify.app/docs/quick-ref/minifiction](https://bgoonz-blog.netlify.app/docs/quick-ref/minifiction)
--   [https://bgoonz-blog.netlify.app/docs/quick-ref/new-repo-instructions](https://bgoonz-blog.netlify.app/docs/quick-ref/new-repo-instructions)
--   [https://bgoonz-blog.netlify.app/docs/quick-ref/pull-request-rubric](https://bgoonz-blog.netlify.app/docs/quick-ref/pull-request-rubric)
--   [https://bgoonz-blog.netlify.app/docs/quick-ref/python-builtin-functions](https://bgoonz-blog.netlify.app/docs/quick-ref/python-builtin-functions)
--   [https://bgoonz-blog.netlify.app/docs/quick-ref/quick-links](https://bgoonz-blog.netlify.app/docs/quick-ref/quick-links)
--   [https://bgoonz-blog.netlify.app/docs/quick-ref/topRepos](https://bgoonz-blog.netlify.app/docs/quick-ref/topRepos)
--   [https://bgoonz-blog.netlify.app/docs/quick-ref/understanding-path](https://bgoonz-blog.netlify.app/docs/quick-ref/understanding-path)
--   [https://bgoonz-blog.netlify.app/docs/quick-ref/vscode-themes](https://bgoonz-blog.netlify.app/docs/quick-ref/vscode-themes)
--   [https://bgoonz-blog.netlify.app/docs/react](https://bgoonz-blog.netlify.app/docs/react)
--   [https://bgoonz-blog.netlify.app/docs/react/accessibility](https://bgoonz-blog.netlify.app/docs/react/accessibility)
--   [https://bgoonz-blog.netlify.app/docs/react/ajax-n-apis](https://bgoonz-blog.netlify.app/docs/react/ajax-n-apis)
--   [https://bgoonz-blog.netlify.app/docs/react/cheatsheet](https://bgoonz-blog.netlify.app/docs/react/cheatsheet)
--   [https://bgoonz-blog.netlify.app/docs/react/complete-react](https://bgoonz-blog.netlify.app/docs/react/complete-react)
--   [https://bgoonz-blog.netlify.app/docs/react/createReactApp](https://bgoonz-blog.netlify.app/docs/react/createReactApp)
--   [https://bgoonz-blog.netlify.app/docs/react/demo](https://bgoonz-blog.netlify.app/docs/react/demo)
--   [https://bgoonz-blog.netlify.app/docs/react/dont-use-index-as-keys](https://bgoonz-blog.netlify.app/docs/react/dont-use-index-as-keys)
--   [https://bgoonz-blog.netlify.app/docs/react/higher-order-components](https://bgoonz-blog.netlify.app/docs/react/higher-order-components)
--   [https://bgoonz-blog.netlify.app/docs/react/jsx](https://bgoonz-blog.netlify.app/docs/react/jsx)
--   [https://bgoonz-blog.netlify.app/docs/react/quiz](https://bgoonz-blog.netlify.app/docs/react/quiz)
--   [https://bgoonz-blog.netlify.app/docs/react/react-docs](https://bgoonz-blog.netlify.app/docs/react/react-docs)
--   [https://bgoonz-blog.netlify.app/docs/react/react-in-depth](https://bgoonz-blog.netlify.app/docs/react/react-in-depth)
--   [https://bgoonz-blog.netlify.app/docs/react/react-patterns-by-usecase](https://bgoonz-blog.netlify.app/docs/react/react-patterns-by-usecase)
--   [https://bgoonz-blog.netlify.app/docs/react/react-router](https://bgoonz-blog.netlify.app/docs/react/react-router)
--   [https://bgoonz-blog.netlify.app/docs/react/react-study-guide](https://bgoonz-blog.netlify.app/docs/react/react-study-guide)
--   [https://bgoonz-blog.netlify.app/docs/react/react2](https://bgoonz-blog.netlify.app/docs/react/react2)
--   [https://bgoonz-blog.netlify.app/docs/react/render-elements](https://bgoonz-blog.netlify.app/docs/react/render-elements)
--   [https://bgoonz-blog.netlify.app/docs/readme](https://bgoonz-blog.netlify.app/docs/readme)
--   [https://bgoonz-blog.netlify.app/docs/reference](https://bgoonz-blog.netlify.app/docs/reference)
--   [https://bgoonz-blog.netlify.app/docs/reference/art-of-command-line](https://bgoonz-blog.netlify.app/docs/reference/art-of-command-line)
--   [https://bgoonz-blog.netlify.app/docs/reference/awesome-lists](https://bgoonz-blog.netlify.app/docs/reference/awesome-lists)
--   [https://bgoonz-blog.netlify.app/docs/reference/awesome-nodejs](https://bgoonz-blog.netlify.app/docs/reference/awesome-nodejs)
--   [https://bgoonz-blog.netlify.app/docs/reference/awesome-static](https://bgoonz-blog.netlify.app/docs/reference/awesome-static)
--   [https://bgoonz-blog.netlify.app/docs/reference/bash-commands](https://bgoonz-blog.netlify.app/docs/reference/bash-commands)
--   [https://bgoonz-blog.netlify.app/docs/reference/bookmarks](https://bgoonz-blog.netlify.app/docs/reference/bookmarks)
--   [https://bgoonz-blog.netlify.app/docs/reference/embed-the-web](https://bgoonz-blog.netlify.app/docs/reference/embed-the-web)
--   [https://bgoonz-blog.netlify.app/docs/reference/github-resources](https://bgoonz-blog.netlify.app/docs/reference/github-resources)
--   [https://bgoonz-blog.netlify.app/docs/reference/github-search](https://bgoonz-blog.netlify.app/docs/reference/github-search)
--   [https://bgoonz-blog.netlify.app/docs/reference/google-cloud](https://bgoonz-blog.netlify.app/docs/reference/google-cloud)
--   [https://bgoonz-blog.netlify.app/docs/reference/how-2-reinstall-npm](https://bgoonz-blog.netlify.app/docs/reference/how-2-reinstall-npm)
--   [https://bgoonz-blog.netlify.app/docs/reference/how-to-kill-a-process](https://bgoonz-blog.netlify.app/docs/reference/how-to-kill-a-process)
--   [https://bgoonz-blog.netlify.app/docs/reference/installing-node](https://bgoonz-blog.netlify.app/docs/reference/installing-node)
--   [https://bgoonz-blog.netlify.app/docs/reference/intro-to-nodejs](https://bgoonz-blog.netlify.app/docs/reference/intro-to-nodejs)
--   [https://bgoonz-blog.netlify.app/docs/reference/markdown-styleguide](https://bgoonz-blog.netlify.app/docs/reference/markdown-styleguide)
--   [https://bgoonz-blog.netlify.app/docs/reference/notes-template](https://bgoonz-blog.netlify.app/docs/reference/notes-template)
--   [https://bgoonz-blog.netlify.app/docs/reference/psql](https://bgoonz-blog.netlify.app/docs/reference/psql)
--   [https://bgoonz-blog.netlify.app/docs/reference/resources](https://bgoonz-blog.netlify.app/docs/reference/resources)
--   [https://bgoonz-blog.netlify.app/docs/reference/vscode](https://bgoonz-blog.netlify.app/docs/reference/vscode)
--   [https://bgoonz-blog.netlify.app/docs/reference/web-api's](https://bgoonz-blog.netlify.app/docs/reference/web-api's)
--   [https://bgoonz-blog.netlify.app/docs/showcase](https://bgoonz-blog.netlify.app/docs/showcase)
--   [https://bgoonz-blog.netlify.app/docs/sitemap](https://bgoonz-blog.netlify.app/docs/sitemap)
--   [https://bgoonz-blog.netlify.app/docs/tips](https://bgoonz-blog.netlify.app/docs/tips)
--   [https://bgoonz-blog.netlify.app/docs/tips/7-tips-to-become-a-better-web-developer](https://bgoonz-blog.netlify.app/docs/tips/7-tips-to-become-a-better-web-developer)
--   [https://bgoonz-blog.netlify.app/docs/tips/decrement](https://bgoonz-blog.netlify.app/docs/tips/decrement)
--   [https://bgoonz-blog.netlify.app/docs/tips/firebase-hosting](https://bgoonz-blog.netlify.app/docs/tips/firebase-hosting)
--   [https://bgoonz-blog.netlify.app/docs/tips/httrack](https://bgoonz-blog.netlify.app/docs/tips/httrack)
--   [https://bgoonz-blog.netlify.app/docs/tips/regex-tips](https://bgoonz-blog.netlify.app/docs/tips/regex-tips)
--   [https://bgoonz-blog.netlify.app/docs/tips/storybook](https://bgoonz-blog.netlify.app/docs/tips/storybook)
--   [https://bgoonz-blog.netlify.app/docs/tips/top-10-money-tips](https://bgoonz-blog.netlify.app/docs/tips/top-10-money-tips)
--   [https://bgoonz-blog.netlify.app/docs/tips/ubuntu-setup](https://bgoonz-blog.netlify.app/docs/tips/ubuntu-setup)
--   [https://bgoonz-blog.netlify.app/docs/tips/web-accessibility](https://bgoonz-blog.netlify.app/docs/tips/web-accessibility)
--   [https://bgoonz-blog.netlify.app/docs/tools](https://bgoonz-blog.netlify.app/docs/tools)
--   [https://bgoonz-blog.netlify.app/docs/tools/dev-utilities](https://bgoonz-blog.netlify.app/docs/tools/dev-utilities)
--   [https://bgoonz-blog.netlify.app/docs/tools/markdown-html](https://bgoonz-blog.netlify.app/docs/tools/markdown-html)
--   [https://bgoonz-blog.netlify.app/docs/tutorials](https://bgoonz-blog.netlify.app/docs/tutorials)
--   [https://bgoonz-blog.netlify.app/docs/tutorials/bash](https://bgoonz-blog.netlify.app/docs/tutorials/bash)
--   [https://bgoonz-blog.netlify.app/docs/tutorials/bash-commands-my](https://bgoonz-blog.netlify.app/docs/tutorials/bash-commands-my)
--   [https://bgoonz-blog.netlify.app/docs/tutorials/get-file-extension](https://bgoonz-blog.netlify.app/docs/tutorials/get-file-extension)
--   [https://bgoonz-blog.netlify.app/docs/tutorials/how-2-ubuntu](https://bgoonz-blog.netlify.app/docs/tutorials/how-2-ubuntu)
--   [https://bgoonz-blog.netlify.app/docs/tutorials/psql-setup](https://bgoonz-blog.netlify.app/docs/tutorials/psql-setup)
--   [https://bgoonz-blog.netlify.app/docs/tutorials/webdev-review](https://bgoonz-blog.netlify.app/docs/tutorials/webdev-review)
--   [https://bgoonz-blog.netlify.app/docs/typescript](https://bgoonz-blog.netlify.app/docs/typescript)
--   [https://bgoonz-blog.netlify.app/interview-questions-js](https://bgoonz-blog.netlify.app/interview-questions-js)
--   [https://bgoonz-blog.netlify.app/readme](https://bgoonz-blog.netlify.app/readme)
--   [https://bgoonz-blog.netlify.app/showcase](https://bgoonz-blog.netlify.app/showcase)
+# [**🌍⇒https://bgoonz-blog.netlify.app/🗺️**](https://bgoonz-blog.netlify.app/)
+
+## [**🌍⇒blog🗺️**](https://bgoonz-blog.netlify.app/blog)
+
+## [**🌍⇒docs🗺️**](https://bgoonz-blog.netlify.app/docs)
+
+## [**🌍⇒readme🗺️**](https://bgoonz-blog.netlify.app/readme)
+
+## [**🌍⇒review🗺️**](https://bgoonz-blog.netlify.app/review)
+
+## [**🌍⇒showcase🗺️**](https://bgoonz-blog.netlify.app/showcase)
+
+## [**🌍⇒blog/awesome-graphql🗺️**](https://bgoonz-blog.netlify.app/blog/awesome-graphql)
+
+## [**🌍⇒blog/big-o-complexity🗺️**](https://bgoonz-blog.netlify.app/blog/big-o-complexity)
+
+## [**🌍⇒blog/blog-archive🗺️**](https://bgoonz-blog.netlify.app/blog/blog-archive)
+
+## [**🌍⇒blog/blogwcomments🗺️**](https://bgoonz-blog.netlify.app/blog/blogwcomments)
+
+## [**🌍⇒blog/data-structures🗺️**](https://bgoonz-blog.netlify.app/blog/data-structures)
+
+## [**🌍⇒blog/flow-control-in-python🗺️**](https://bgoonz-blog.netlify.app/blog/flow-control-in-python)
+
+## [**🌍⇒blog/functions-in-python🗺️**](https://bgoonz-blog.netlify.app/blog/functions-in-python)
+
+## [**🌍⇒blog/git-gateway🗺️**](https://bgoonz-blog.netlify.app/blog/git-gateway)
+
+## [**🌍⇒blog/interview-questions-js🗺️**](https://bgoonz-blog.netlify.app/blog/interview-questions-js)
+
+## [**🌍⇒blog/media-queries-explained🗺️**](https://bgoonz-blog.netlify.app/blog/media-queries-explained)
+
+## [**🌍⇒blog/my-medium🗺️**](https://bgoonz-blog.netlify.app/blog/my-medium)
+
+## [**🌍⇒blog/netlify-cms🗺️**](https://bgoonz-blog.netlify.app/blog/netlify-cms)
+
+## [**🌍⇒blog/platform-docs🗺️**](https://bgoonz-blog.netlify.app/blog/platform-docs)
+
+## [**🌍⇒blog/python-for-js-dev🗺️**](https://bgoonz-blog.netlify.app/blog/python-for-js-dev)
+
+## [**🌍⇒blog/python-resources🗺️**](https://bgoonz-blog.netlify.app/blog/python-resources)
+
+## [**🌍⇒blog/web-dev-trends🗺️**](https://bgoonz-blog.netlify.app/blog/web-dev-trends)
+
+## [**🌍⇒blog/web-scraping🗺️**](https://bgoonz-blog.netlify.app/blog/web-scraping)
+
+## [**🌍⇒docs/about🗺️**](https://bgoonz-blog.netlify.app/docs/about)
+
+## [**🌍⇒docs/articles🗺️**](https://bgoonz-blog.netlify.app/docs/articles)
+
+## [**🌍⇒docs/audio🗺️**](https://bgoonz-blog.netlify.app/docs/audio)
+
+## [**🌍⇒docs/career🗺️**](https://bgoonz-blog.netlify.app/docs/career)
+
+## [**🌍⇒docs/community🗺️**](https://bgoonz-blog.netlify.app/docs/community)
+
+## [**🌍⇒docs/content🗺️**](https://bgoonz-blog.netlify.app/docs/content)
+
+## [**🌍⇒docs/docs🗺️**](https://bgoonz-blog.netlify.app/docs/docs)
+
+## [**🌍⇒docs/faq🗺️**](https://bgoonz-blog.netlify.app/docs/faq)
+
+## [**🌍⇒docs/gallery🗺️**](https://bgoonz-blog.netlify.app/docs/gallery)
+
+## [**🌍⇒docs/interact🗺️**](https://bgoonz-blog.netlify.app/docs/interact)
+
+## [**🌍⇒docs/javascript🗺️**](https://bgoonz-blog.netlify.app/docs/javascript)
+
+## [**🌍⇒docs/leetcode🗺️**](https://bgoonz-blog.netlify.app/docs/leetcode)
+
+## [**🌍⇒docs/other-content🗺️**](https://bgoonz-blog.netlify.app/docs/other-content)
+
+## [**🌍⇒docs/privacy-policy🗺️**](https://bgoonz-blog.netlify.app/docs/privacy-policy)
+
+## [**🌍⇒docs/projects🗺️**](https://bgoonz-blog.netlify.app/docs/projects)
+
+## [**🌍⇒docs/python🗺️**](https://bgoonz-blog.netlify.app/docs/python)
+
+## [**🌍⇒docs/quick-reference🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference)
+
+## [**🌍⇒docs/react🗺️**](https://bgoonz-blog.netlify.app/docs/react)
+
+## [**🌍⇒docs/reference🗺️**](https://bgoonz-blog.netlify.app/docs/reference)
+
+## [**🌍⇒docs/search🗺️**](https://bgoonz-blog.netlify.app/docs/search)
+
+## [**🌍⇒docs/sitemap🗺️**](https://bgoonz-blog.netlify.app/docs/sitemap)
+
+## [**🌍⇒docs/tools🗺️**](https://bgoonz-blog.netlify.app/docs/tools)
+
+## [**🌍⇒docs/tutorials🗺️**](https://bgoonz-blog.netlify.app/docs/tutorials)
+
+## [**🌍⇒docs/about/eng-portfolio🗺️**](https://bgoonz-blog.netlify.app/docs/about/eng-portfolio)
+
+## [**🌍⇒docs/about/ideas-for-this-website🗺️**](https://bgoonz-blog.netlify.app/docs/about/ideas-for-this-website)
+
+## [**🌍⇒docs/about/intrests🗺️**](https://bgoonz-blog.netlify.app/docs/about/intrests)
+
+## [**🌍⇒docs/about/interview🗺️**](https://bgoonz-blog.netlify.app/docs/about/interview)
+
+## [**🌍⇒docs/about/resume🗺️**](https://bgoonz-blog.netlify.app/docs/about/resume)
+
+## [**🌍⇒docs/articles/basic-web-dev🗺️**](https://bgoonz-blog.netlify.app/docs/articles/basic-web-dev)
+
+## [**🌍⇒docs/articles/buffers🗺️**](https://bgoonz-blog.netlify.app/docs/articles/buffers)
+
+## [**🌍⇒docs/articles/dev-dep🗺️**](https://bgoonz-blog.netlify.app/docs/articles/dev-dep)
+
+## [**🌍⇒docs/articles/event-loop🗺️**](https://bgoonz-blog.netlify.app/docs/articles/event-loop)
+
+## [**🌍⇒docs/articles/fs-module🗺️**](https://bgoonz-blog.netlify.app/docs/articles/fs-module)
+
+## [**🌍⇒docs/articles/how-the-web-works🗺️**](https://bgoonz-blog.netlify.app/docs/articles/how-the-web-works)
+
+## [**🌍⇒docs/articles/http🗺️**](https://bgoonz-blog.netlify.app/docs/articles/http)
+
+## [**🌍⇒docs/articles/install🗺️**](https://bgoonz-blog.netlify.app/docs/articles/install)
+
+## [**🌍⇒docs/articles/intro🗺️**](https://bgoonz-blog.netlify.app/docs/articles/intro)
+
+## [**🌍⇒docs/articles/media-queries-no-more🗺️**](https://bgoonz-blog.netlify.app/docs/articles/media-queries-no-more)
+
+## [**🌍⇒docs/articles/module-exports🗺️**](https://bgoonz-blog.netlify.app/docs/articles/module-exports)
+
+## [**🌍⇒docs/articles/nextjs🗺️**](https://bgoonz-blog.netlify.app/docs/articles/nextjs)
+
+## [**🌍⇒docs/articles/node-api-express🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-api-express)
+
+## [**🌍⇒docs/articles/node-cli-args🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-cli-args)
+
+## [**🌍⇒docs/articles/node-common-modules🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-common-modules)
+
+## [**🌍⇒docs/articles/node-env-variables🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-env-variables)
+
+## [**🌍⇒docs/articles/node-js-language🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-js-language)
+
+## [**🌍⇒docs/articles/node-package-manager🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-package-manager)
+
+## [**🌍⇒docs/articles/node-repl🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-repl)
+
+## [**🌍⇒docs/articles/node-run-cli🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-run-cli)
+
+## [**🌍⇒docs/articles/nodejs🗺️**](https://bgoonz-blog.netlify.app/docs/articles/nodejs)
+
+## [**🌍⇒docs/articles/nodevsbrowser🗺️**](https://bgoonz-blog.netlify.app/docs/articles/nodevsbrowser)
+
+## [**🌍⇒docs/articles/npm🗺️**](https://bgoonz-blog.netlify.app/docs/articles/npm)
+
+## [**🌍⇒docs/articles/npx🗺️**](https://bgoonz-blog.netlify.app/docs/articles/npx)
+
+## [**🌍⇒docs/articles/os-module🗺️**](https://bgoonz-blog.netlify.app/docs/articles/os-module)
+
+## [**🌍⇒docs/articles/package-lock🗺️**](https://bgoonz-blog.netlify.app/docs/articles/package-lock)
+
+## [**🌍⇒docs/articles/reading-files🗺️**](https://bgoonz-blog.netlify.app/docs/articles/reading-files)
+
+## [**🌍⇒docs/articles/semantic🗺️**](https://bgoonz-blog.netlify.app/docs/articles/semantic)
+
+## [**🌍⇒docs/articles/semantic-html🗺️**](https://bgoonz-blog.netlify.app/docs/articles/semantic-html)
+
+## [**🌍⇒docs/articles/the-uniform-resource-locator-(url)🗺️**](<https://bgoonz-blog.netlify.app/docs/articles/the-uniform-resource-locator-(url)>)
+
+## [**🌍⇒docs/articles/understanding-firebase🗺️**](https://bgoonz-blog.netlify.app/docs/articles/understanding-firebase)
+
+## [**🌍⇒docs/articles/v8🗺️**](https://bgoonz-blog.netlify.app/docs/articles/v8)
+
+## [**🌍⇒docs/articles/web-standards-checklist🗺️**](https://bgoonz-blog.netlify.app/docs/articles/web-standards-checklist)
+
+## [**🌍⇒docs/articles/webdev-tools🗺️**](https://bgoonz-blog.netlify.app/docs/articles/webdev-tools)
+
+## [**🌍⇒docs/articles/write-2-json-with-python🗺️**](https://bgoonz-blog.netlify.app/docs/articles/write-2-json-with-python)
+
+## [**🌍⇒docs/articles/writing-files🗺️**](https://bgoonz-blog.netlify.app/docs/articles/writing-files)
+
+## [**🌍⇒docs/audio/audio🗺️**](https://bgoonz-blog.netlify.app/docs/audio/audio)
+
+## [**🌍⇒docs/audio/audio-feature-extraction🗺️**](https://bgoonz-blog.netlify.app/docs/audio/audio-feature-extraction)
+
+## [**🌍⇒docs/audio/dfft🗺️**](https://bgoonz-blog.netlify.app/docs/audio/dfft)
+
+## [**🌍⇒docs/audio/discrete-fft🗺️**](https://bgoonz-blog.netlify.app/docs/audio/discrete-fft)
+
+## [**🌍⇒docs/audio/dtw-python-explained🗺️**](https://bgoonz-blog.netlify.app/docs/audio/dtw-python-explained)
+
+## [**🌍⇒docs/audio/dynamic-time-warping🗺️**](https://bgoonz-blog.netlify.app/docs/audio/dynamic-time-warping)
+
+## [**🌍⇒docs/audio/web-audio-api🗺️**](https://bgoonz-blog.netlify.app/docs/audio/web-audio-api)
+
+## [**🌍⇒docs/career/confidence🗺️**](https://bgoonz-blog.netlify.app/docs/career/confidence)
+
+## [**🌍⇒docs/career/dev-interview🗺️**](https://bgoonz-blog.netlify.app/docs/career/dev-interview)
+
+## [**🌍⇒docs/career/interview-dos-n-donts🗺️**](https://bgoonz-blog.netlify.app/docs/career/interview-dos-n-donts)
+
+## [**🌍⇒docs/career/job-boards🗺️**](https://bgoonz-blog.netlify.app/docs/career/job-boards)
+
+## [**🌍⇒docs/community/an-open-letter-2-future-developers🗺️**](https://bgoonz-blog.netlify.app/docs/community/an-open-letter-2-future-developers)
+
+## [**🌍⇒docs/community/video-chat🗺️**](https://bgoonz-blog.netlify.app/docs/community/video-chat)
+
+## [**🌍⇒docs/content/algo🗺️**](https://bgoonz-blog.netlify.app/docs/content/algo)
+
+## [**🌍⇒docs/content/archive🗺️**](https://bgoonz-blog.netlify.app/docs/content/archive)
+
+## [**🌍⇒docs/content/data-structures-algo🗺️**](https://bgoonz-blog.netlify.app/docs/content/data-structures-algo)
+
+## [**🌍⇒docs/content/gatsby-Queries-Mutations🗺️**](https://bgoonz-blog.netlify.app/docs/content/gatsby-Queries-Mutations)
+
+## [**🌍⇒docs/content/history-api🗺️**](https://bgoonz-blog.netlify.app/docs/content/history-api)
+
+## [**🌍⇒docs/content/projects🗺️**](https://bgoonz-blog.netlify.app/docs/content/projects)
+
+## [**🌍⇒docs/content/recent-projects🗺️**](https://bgoonz-blog.netlify.app/docs/content/recent-projects)
+
+## [**🌍⇒docs/content/trouble-shooting🗺️**](https://bgoonz-blog.netlify.app/docs/content/trouble-shooting)
+
+## [**🌍⇒docs/docs/appendix🗺️**](https://bgoonz-blog.netlify.app/docs/docs/appendix)
+
+## [**🌍⇒docs/docs/bash🗺️**](https://bgoonz-blog.netlify.app/docs/docs/bash)
+
+## [**🌍⇒docs/docs/content🗺️**](https://bgoonz-blog.netlify.app/docs/docs/content)
+
+## [**🌍⇒docs/docs/css🗺️**](https://bgoonz-blog.netlify.app/docs/docs/css)
+
+## [**🌍⇒docs/docs/data-structures-docs🗺️**](https://bgoonz-blog.netlify.app/docs/docs/data-structures-docs)
+
+## [**🌍⇒docs/docs/git-reference🗺️**](https://bgoonz-blog.netlify.app/docs/docs/git-reference)
+
+## [**🌍⇒docs/docs/git-repos🗺️**](https://bgoonz-blog.netlify.app/docs/docs/git-repos)
+
+## [**🌍⇒docs/docs/html-spec🗺️**](https://bgoonz-blog.netlify.app/docs/docs/html-spec)
+
+## [**🌍⇒docs/docs/markdown🗺️**](https://bgoonz-blog.netlify.app/docs/docs/markdown)
+
+## [**🌍⇒docs/docs/no-whiteboarding🗺️**](https://bgoonz-blog.netlify.app/docs/docs/no-whiteboarding)
+
+## [**🌍⇒docs/docs/node-docs-complete🗺️**](https://bgoonz-blog.netlify.app/docs/docs/node-docs-complete)
+
+## [**🌍⇒docs/docs/node-docs-full🗺️**](https://bgoonz-blog.netlify.app/docs/docs/node-docs-full)
+
+## [**🌍⇒docs/docs/regex-in-js🗺️**](https://bgoonz-blog.netlify.app/docs/docs/regex-in-js)
+
+## [**🌍⇒docs/docs/sitemap🗺️**](https://bgoonz-blog.netlify.app/docs/docs/sitemap)
+
+## [**🌍⇒docs/faq/contact🗺️**](https://bgoonz-blog.netlify.app/docs/faq/contact)
+
+## [**🌍⇒docs/faq/plug-ins🗺️**](https://bgoonz-blog.netlify.app/docs/faq/plug-ins)
+
+## [**🌍⇒docs/interact/callstack-visual🗺️**](https://bgoonz-blog.netlify.app/docs/interact/callstack-visual)
+
+## [**🌍⇒docs/interact/clock🗺️**](https://bgoonz-blog.netlify.app/docs/interact/clock)
+
+## [**🌍⇒docs/interact/jupyter-notebooks🗺️**](https://bgoonz-blog.netlify.app/docs/interact/jupyter-notebooks)
+
+## [**🌍⇒docs/interact/other-sites🗺️**](https://bgoonz-blog.netlify.app/docs/interact/other-sites)
+
+## [**🌍⇒docs/interact/video-chat🗺️**](https://bgoonz-blog.netlify.app/docs/interact/video-chat)
+
+## [**🌍⇒docs/javascript/arrow-functions🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/arrow-functions)
+
+## [**🌍⇒docs/javascript/await-keyword🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/await-keyword)
+
+## [**🌍⇒docs/javascript/bigo🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/bigo)
+
+## [**🌍⇒docs/javascript/clean-code🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/clean-code)
+
+## [**🌍⇒docs/javascript/constructor-functions🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/constructor-functions)
+
+## [**🌍⇒docs/javascript/promises🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/promises)
+
+## [**🌍⇒docs/javascript/review🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/review)
+
+## [**🌍⇒docs/javascript/this-is-about-this🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/this-is-about-this)
+
+## [**🌍⇒docs/projects/medium-links🗺️**](https://bgoonz-blog.netlify.app/docs/projects/medium-links)
+
+## [**🌍⇒docs/projects/my-websites🗺️**](https://bgoonz-blog.netlify.app/docs/projects/my-websites)
+
+## [**🌍⇒docs/python/at-length🗺️**](https://bgoonz-blog.netlify.app/docs/python/at-length)
+
+## [**🌍⇒docs/python/basics🗺️**](https://bgoonz-blog.netlify.app/docs/python/basics)
+
+## [**🌍⇒docs/python/cheat-sheet🗺️**](https://bgoonz-blog.netlify.app/docs/python/cheat-sheet)
+
+## [**🌍⇒docs/python/comprehensive-guide🗺️**](https://bgoonz-blog.netlify.app/docs/python/comprehensive-guide)
+
+## [**🌍⇒docs/python/examples🗺️**](https://bgoonz-blog.netlify.app/docs/python/examples)
+
+## [**🌍⇒docs/python/flow-control🗺️**](https://bgoonz-blog.netlify.app/docs/python/flow-control)
+
+## [**🌍⇒docs/python/functions🗺️**](https://bgoonz-blog.netlify.app/docs/python/functions)
+
+## [**🌍⇒docs/python/google-sheets-api🗺️**](https://bgoonz-blog.netlify.app/docs/python/google-sheets-api)
+
+## [**🌍⇒docs/python/intro-for-js-devs🗺️**](https://bgoonz-blog.netlify.app/docs/python/intro-for-js-devs)
+
+## [**🌍⇒docs/python/python-ds🗺️**](https://bgoonz-blog.netlify.app/docs/python/python-ds)
+
+## [**🌍⇒docs/python/snippets🗺️**](https://bgoonz-blog.netlify.app/docs/python/snippets)
+
+## [**🌍⇒docs/quick-reference/Emmet🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/Emmet)
+
+## [**🌍⇒docs/quick-reference/all-emojis🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/all-emojis)
+
+## [**🌍⇒docs/quick-reference/create-react-app🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/create-react-app)
+
+## [**🌍⇒docs/quick-reference/git-bash🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/git-bash)
+
+## [**🌍⇒docs/quick-reference/git-tricks🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/git-tricks)
+
+## [**🌍⇒docs/quick-reference/google-firebase🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/google-firebase)
+
+## [**🌍⇒docs/quick-reference/heroku-error-codes🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/heroku-error-codes)
+
+## [**🌍⇒docs/quick-reference/installation🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/installation)
+
+## [**🌍⇒docs/quick-reference/markdown-dropdowns🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/markdown-dropdowns)
+
+## [**🌍⇒docs/quick-reference/minifiction🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/minifiction)
+
+## [**🌍⇒docs/quick-reference/new-repo-instructions🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/new-repo-instructions)
+
+## [**🌍⇒docs/quick-reference/psql-setup🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/psql-setup)
+
+## [**🌍⇒docs/quick-reference/pull-request-rubric🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/pull-request-rubric)
+
+## [**🌍⇒docs/quick-reference/quick-links🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/quick-links)
+
+## [**🌍⇒docs/quick-reference/topRepos🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/topRepos)
+
+## [**🌍⇒docs/quick-reference/understanding-path🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/understanding-path)
+
+## [**🌍⇒docs/quick-reference/vscode-themes🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/vscode-themes)
+
+## [**🌍⇒docs/react/cheatsheet🗺️**](https://bgoonz-blog.netlify.app/docs/react/cheatsheet)
+
+## [**🌍⇒docs/react/createReactApp🗺️**](https://bgoonz-blog.netlify.app/docs/react/createReactApp)
+
+## [**🌍⇒docs/react/demo🗺️**](https://bgoonz-blog.netlify.app/docs/react/demo)
+
+## [**🌍⇒docs/react/jsx🗺️**](https://bgoonz-blog.netlify.app/docs/react/jsx)
+
+## [**🌍⇒docs/react/react-docs🗺️**](https://bgoonz-blog.netlify.app/docs/react/react-docs)
+
+## [**🌍⇒docs/react/react-in-depth🗺️**](https://bgoonz-blog.netlify.app/docs/react/react-in-depth)
+
+## [**🌍⇒docs/react/react2🗺️**](https://bgoonz-blog.netlify.app/docs/react/react2)
+
+## [**🌍⇒docs/react/render-elements🗺️**](https://bgoonz-blog.netlify.app/docs/react/render-elements)
+
+## [**🌍⇒docs/reference/awesome-lists🗺️**](https://bgoonz-blog.netlify.app/docs/reference/awesome-lists)
+
+## [**🌍⇒docs/reference/awesome-static🗺️**](https://bgoonz-blog.netlify.app/docs/reference/awesome-static)
+
+## [**🌍⇒docs/reference/bookmarks🗺️**](https://bgoonz-blog.netlify.app/docs/reference/bookmarks)
+
+## [**🌍⇒docs/reference/embed-the-web🗺️**](https://bgoonz-blog.netlify.app/docs/reference/embed-the-web)
+
+## [**🌍⇒docs/reference/github-search🗺️**](https://bgoonz-blog.netlify.app/docs/reference/github-search)
+
+## [**🌍⇒docs/reference/how-2-reinstall-npm🗺️**](https://bgoonz-blog.netlify.app/docs/reference/how-2-reinstall-npm)
+
+## [**🌍⇒docs/reference/how-to-kill-a-process🗺️**](https://bgoonz-blog.netlify.app/docs/reference/how-to-kill-a-process)
+
+## [**🌍⇒docs/reference/installing-node🗺️**](https://bgoonz-blog.netlify.app/docs/reference/installing-node)
+
+## [**🌍⇒docs/reference/intro-to-nodejs🗺️**](https://bgoonz-blog.netlify.app/docs/reference/intro-to-nodejs)
+
+## [**🌍⇒docs/reference/notes-template🗺️**](https://bgoonz-blog.netlify.app/docs/reference/notes-template)
+
+## [**🌍⇒docs/reference/psql🗺️**](https://bgoonz-blog.netlify.app/docs/reference/psql)
+
+## [**🌍⇒docs/reference/resources🗺️**](https://bgoonz-blog.netlify.app/docs/reference/resources)
+
+## [**🌍⇒docs/reference/vscode🗺️**](https://bgoonz-blog.netlify.app/docs/reference/vscode)
+
+## [**🌍⇒docs/reference/web-api's🗺️**](https://bgoonz-blog.netlify.app/docs/reference/web-api's)
+
+## [**🌍⇒docs/tools/data-structures🗺️**](https://bgoonz-blog.netlify.app/docs/tools/data-structures)
+
+## [**🌍⇒docs/tools/dev-utilities🗺️**](https://bgoonz-blog.netlify.app/docs/tools/dev-utilities)
+
+## [**🌍⇒docs/tools/google-cloud🗺️**](https://bgoonz-blog.netlify.app/docs/tools/google-cloud)
+
+## [**🌍⇒docs/tools/markdown-html🗺️**](https://bgoonz-blog.netlify.app/docs/tools/markdown-html)
+
+## [**🌍⇒docs/tools/more-tools🗺️**](https://bgoonz-blog.netlify.app/docs/tools/more-tools)
+
+## [**🌍⇒docs/tutorials/google-lighthouse-cli🗺️**](https://bgoonz-blog.netlify.app/docs/tutorials/google-lighthouse-cli)
 
 </details>
 
@@ -3016,7 +2232,7 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
     Use the Gatsby CLI to create a new site, specifying the default starter.
 
-    ```consoleell
+    ```shell
     # create a new Gatsby site using the default starter
     gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
     ```
@@ -3025,7 +2241,7 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
     Navigate into your new site's directory and start it up.
 
-    ```consoleell
+    ```shell
     cd my-default-starter/
     gatsby develop
     ```
@@ -3084,9 +2300,9 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
 
--   **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby**](https://www.gatsbyjs.com/tutorial/).\*\* It starts with zero assumptions about your level of ability and walks through every step of the process.
+- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby**](https://www.gatsbyjs.com/tutorial/).\*\* It starts with zero assumptions about your level of ability and walks through every step of the process.
 -
--   **To dive straight into code samples, head [to our documentation**](https://www.gatsbyjs.com/docs/).\*\* In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+- **To dive straight into code samples, head [to our documentation**](https://www.gatsbyjs.com/docs/).\*\* In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
 ## 💫 Deploy
 
@@ -3114,24 +2330,24 @@ Inside a Gatsby project, you may see some or all of the following folders and fi
 
 ## [](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#folders)Folders
 
--   **`/.cache`** _Automatically generated._ This folder is an internal cache created automatically by Gatsby. The files inside this folder are not meant for modification. Should be added to the `.gitignore` file if not added already.
--   **`/plugins`** This folder hosts any project-specific ("local") plugins that aren't published as an `npm` package. Check out the [plugin docs](https://www.gatsbyjs.com/docs/plugins/) for more detail.
--   **`/public`** _Automatically generated._ The output of the build process will be exposed inside this folder. Should be added to the `.gitignore` file if not added already.
--   **`/src`** This directory will contain all of the code related to what you will see on the frontend of your site (what you see in the browser), like your site header, or a page template. "src" is a convention for "source code".
+- **`/.cache`** _Automatically generated._ This folder is an internal cache created automatically by Gatsby. The files inside this folder are not meant for modification. Should be added to the `.gitignore` file if not added already.
+- **`/plugins`** This folder hosts any project-specific ("local") plugins that aren't published as an `npm` package. Check out the [plugin docs](https://www.gatsbyjs.com/docs/plugins/) for more detail.
+- **`/public`** _Automatically generated._ The output of the build process will be exposed inside this folder. Should be added to the `.gitignore` file if not added already.
+- **`/src`** This directory will contain all of the code related to what you will see on the frontend of your site (what you see in the browser), like your site header, or a page template. "src" is a convention for "source code".
 
-    -   **`/api`** JavaScript and TypeScript files under `src/api` become functions automatically with paths based on their file name. Check out the [functions guide](https://www.gatsbyjs.com/docs/reference/functions/) for more detail.
-    -   **`/pages`** Components under `src/pages` become pages automatically with paths based on their file name. Check out the [pages recipes](https://www.gatsbyjs.com/docs/recipes/pages-layouts) for more detail.
-    -   **`/templates`** Contains templates for programmatically creating pages. Check out the [templates docs](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#page-template-components) for more detail.
-    -   **`html.js`** For custom configuration of default `.cache/default_html.js`. Check out the [custom HTML docs](https://www.gatsbyjs.com/docs/custom-html/) for more detail.
+    - **`/api`** JavaScript and TypeScript files under `src/api` become functions automatically with paths based on their file name. Check out the [functions guide](https://www.gatsbyjs.com/docs/reference/functions/) for more detail.
+    - **`/pages`** Components under `src/pages` become pages automatically with paths based on their file name. Check out the [pages recipes](https://www.gatsbyjs.com/docs/recipes/pages-layouts) for more detail.
+    - **`/templates`** Contains templates for programmatically creating pages. Check out the [templates docs](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#page-template-components) for more detail.
+    - **`html.js`** For custom configuration of default `.cache/default_html.js`. Check out the [custom HTML docs](https://www.gatsbyjs.com/docs/custom-html/) for more detail.
 
--   **`/static`** If you put a file into the static folder, it will not be processed by webpack. Instead it will be copied into the public folder untouched. Check out the [assets docs](https://www.gatsbyjs.com/docs/how-to/images-and-media/static-folder/#adding-assets-outside-of-the-module-system) for more detail.
+- **`/static`** If you put a file into the static folder, it will not be processed by webpack. Instead it will be copied into the public folder untouched. Check out the [assets docs](https://www.gatsbyjs.com/docs/how-to/images-and-media/static-folder/#adding-assets-outside-of-the-module-system) for more detail.
 
 ## [](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#files)Files
 
--   **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
--   **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you'd like to include, etc. Check out the [config docs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/) for more detail.
--   **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby node APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
--   **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+- **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+- **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you'd like to include, etc. Check out the [config docs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/) for more detail.
+- **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby node APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+- **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
 
 ## [](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#miscellaneous)Miscellaneous
 
@@ -3791,7 +3007,6 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
 ---
 
 ```js
-//
 import React from 'react';
 import _ from 'lodash';
 
@@ -3833,7 +3048,6 @@ export default class ActionLink extends React.Component {
 ---
 
 ```js
-//
 import React from 'react';
 import _ from 'lodash';
 
@@ -3867,7 +3081,6 @@ export default class CtaButtons extends React.Component {
 ---
 
 ```js
-//
 import React from 'react';
 import _ from 'lodash';
 
@@ -3940,7 +3153,6 @@ export default class DocsMenu extends React.Component {
 ---
 
 ```js
-//
 import React from 'react';
 import _ from 'lodash';
 
@@ -3971,7 +3183,6 @@ export default class DocsSubmenu extends React.Component {
 ---
 
 ```js
-//
 import _ from 'lodash';
 import React from 'react';
 import { htmlToReact } from '../utils';
@@ -4153,7 +3364,6 @@ export default class Footer extends React.Component {
 ---
 
 ```js
-//
 import React from 'react';
 import _ from 'lodash';
 
@@ -4291,7 +3501,6 @@ export default class Header extends React.Component {
 ---
 
 ```js
-//
 import React from 'react';
 import _ from 'lodash';
 
@@ -4332,7 +3541,6 @@ export default class Icon extends React.Component {
 ---
 
 ```js
-//
 import React from 'react';
 
 import { Helmet } from 'react-helmet';
@@ -4401,7 +3609,6 @@ export default class Body extends React.Component {
 ---
 
 ```js
-//
 import React from 'react';
 import _ from 'lodash';
 
@@ -4448,7 +3655,6 @@ export default class SectionContent extends React.Component {
 ---
 
 ```js
-//
 import React from 'react';
 import _ from 'lodash';
 
@@ -4486,7 +3692,6 @@ export default class SectionCta extends React.Component {
 ---
 
 ```js
-//
 import React from 'react';
 import _ from 'lodash';
 
@@ -4509,7 +3714,7 @@ export default class SectionDocs extends React.Component {
                             {_.get(section, 'subtitle', null) && <p className="block-subtitle"> {htmlToReact(_.get(section, 'subtitle', null))}</p>}
                         </div>
                     )}
-                    <div className="<iframe ">
+                    <div className="block-content">
                         <div
                             className={classNames('grid', {
                                 'grid-col-2': _.get(section, 'col_number', null) === 'two',
@@ -4551,7 +3756,6 @@ export default class SectionDocs extends React.Component {
 ---
 
 ```js
-//
 import React from 'react';
 import _ from 'lodash';
 
@@ -4576,7 +3780,7 @@ export default class SectionGrid extends React.Component {
                         </div>
                     )}
                     {_.get(section, 'grid_items', null) && (
-                        <div className="<iframe ">
+                        <div className="block-content">
                             <div
                                 className={classNames('grid', {
                                     'grid-col-2': _.get(section, 'col_number', null) === 'two',
@@ -4624,7 +3828,6 @@ export default class SectionGrid extends React.Component {
 ---
 
 ```js
-//
 import React from 'react';
 import _ from 'lodash';
 
@@ -4645,7 +3848,7 @@ export default class SectionHero extends React.Component {
                             <h1 className="block-title"> {_.get(section, 'title', null)}</h1>
                         </div>
                     )}
-                    {_.get(section, 'content', null) && <div className="<iframe "> {markdownify(_.get(section, 'content', null))}</div>}
+                    {_.get(section, 'content', null) && <div className="block-content"> {markdownify(_.get(section, 'content', null))}</div>}
                     {_.get(section, 'actions', null) && (
                         <div className="block-buttons">
                             <CtaButtons {...this.props} actions={_.get(section, 'actions', null)} />
@@ -4661,7 +3864,6 @@ export default class SectionHero extends React.Component {
 ---
 
 ```js
-//
 import React from 'react';
 import _ from 'lodash';
 
@@ -4695,7 +3897,6 @@ export default class Submenu extends React.Component {
 ```
 
 ```js
-//
 import ActionLink from './ActionLink';
 import CtaButtons from './CtaButtons';
 import DocsMenu from './DocsMenu';
@@ -4765,7 +3966,6 @@ export default {
 ```
 
 ```js
-//
 import React from 'react';
 import _ from 'lodash';
 import { graphql } from 'gatsby';
@@ -4800,7 +4000,6 @@ export default class Advanced extends React.Component {
 ---
 
 ```js
-//
 import React from 'react';
 import _ from 'lodash';
 import moment from 'moment-strftime';
@@ -4888,7 +4087,6 @@ export default class Blog extends React.Component {
 ---
 
 ```js
-//
 import React from 'react';
 import _ from 'lodash';
 import { graphql } from 'gatsby';
@@ -4965,7 +4163,6 @@ export default class Docs extends React.Component {
 ---
 
 ```js
-//
 import React from 'react';
 import _ from 'lodash';
 import { graphql } from 'gatsby';
@@ -5015,7 +4212,6 @@ export default class Page extends React.Component {
 ---
 
 ```js
-//
 import React from 'react';
 import _ from 'lodash';
 import moment from 'moment-strftime';

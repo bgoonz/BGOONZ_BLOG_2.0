@@ -20,7 +20,6 @@ npm i --save-dev @web/dev-server-storybook
 Add the plugin and set the project type. See below for supported project types.
 
 ```js
-//
 import { storybookPlugin } from '@web/dev-server-storybook';
 
 export default {
@@ -32,7 +31,6 @@ export default {
 Add a `.storybook/main.js` file:
 
 ```js
-//
 module.exports = {
   stories: ['../stories/**/*.stories.@(js|jsx|ts|tsx)'],
 };
@@ -41,7 +39,6 @@ module.exports = {
 Add a story: `stories/MyButton.stories.js`:
 
 ```js
-//
 export default {
   title: 'Example/Button',
   argTypes: {

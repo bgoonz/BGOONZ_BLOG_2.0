@@ -1,30 +1,26 @@
 EN
 
--   <a href="https://ar.javascript.info/reference-type"
--   <a href="reference-type.html"
--   <a href="https://es.javascript.info/reference-type"
--   <a href="https://fr.javascript.info/reference-type"
--   <a href="https://it.javascript.info/reference-type"
-    reference-type"
+- <a href="https://ar.javascript.info/reference-type"
+- <a href="reference-type.html"
+- <a href="https://es.javascript.info/reference-type"
+- <a href="https://fr.javascript.info/reference-type"
+- <a href="https://it.javascript.info/reference-type"
+  reference-type"
 
 <!-- -->
 
--   <a href="https://ko.javascript.info/reference-type"
--   <a href="
--   <a href="https://tr.javascript.info/"
--   <a href="https://zh.javascript.info/reference-type"
+- <a href="https://ko.javascript.info/reference-type"
+- <a href="
+- <a href="https://tr.javascript.info/"
+- <a href="https://zh.javascript.info/reference-type"
 
 We want to make this open-source project available for people all around the world.
 
 [Help to translate](translate.html) the content of this tutorial to your language!
 
-<a href="index.html" class="sitetoolbar__link sitetoolbar__link_logo">
-<img src="img/sitetoolbar__logo_en.svg" class="sitetoolbar__logo sitetoolbar__logo_normal" width="200" />
-<img src="img/sitetoolbar__logo_small_en.svg" class="sitetoolbar__logo sitetoolbar__logo_small" width="70" />
-</a>
+<a href="index.html" class="sitetoolbar__link sitetoolbar__link_logo"><img src="img/sitetoolbar__logo_en.svg" class="sitetoolbar__logo sitetoolbar__logo_normal" width="200" /><img src="img/sitetoolbar__logo_small_en.svg" class="sitetoolbar__logo sitetoolbar__logo_small" width="70" /></a>
 
-<a href="ebook.html" class="buy-book-button">
-<span class="buy-book-button__extra-text">Buy</span>EPUB/PDF</a>
+<a href="ebook.html" class="buy-book-button"><span class="buy-book-button__extra-text">Buy</span>EPUB/PDF</a>
 
 Search
 
@@ -32,22 +28,11 @@ Search
 
 <a href="tutorial/map.html" class="map">
 
-<span class="share-icons__title">Share</span>
-<a href="https://twitter.com/share?url=https%3A%2F%2Fjavascript.info%2Freference-type" class="share share_tw">
-</a>
-<a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=https%3A%2F%2Fjavascript.info%2Freference-type" </a>
+<span class="share-icons__title">Share</span><a href="https://twitter.com/share?url=https%3A%2F%2Fjavascript.info%2Freference-type" class="share share_tw"></a><a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=https%3A%2F%2Fjavascript.info%2Freference-type" </a>
 
-1.  <a href="index.html" class="breadcrumbs__link">
-<span class="breadcrumbs__hidden-text">Tutorial</span>
-</a>
-2.  <span id="breadcrumb-1">
-<a href="js.html" The JavaScript language</span>
-</a>
-</span>
-3.  <span id="breadcrumb-2">
-<a href="js-misc.html" Miscellaneous</span>
-</a>
-</span>
+1.  <a href="index.html" class="breadcrumbs__link"><span class="breadcrumbs__hidden-text">Tutorial</span></a>
+2.  <span id="breadcrumb-1"><a href="js.html" The JavaScript language</span></a></span>
+3.  <span id="breadcrumb-2"><a href="js-misc.html" Miscellaneous</span></a></span>
 
 30th April 2021
 
@@ -124,9 +109,9 @@ The Reference Type is a “specification type”. We can’t explicitly use it, 
 
 The value of Reference Type is a three-value combination `(base, name, strict)`, where:
 
--   `base` is the object.
--   `name` is the property name.
--   `strict` is true if `use strict` is in effect.
+- `base` is the object.
+- `name` is the property name.
+- `strict` is true if `use strict` is in effect.
 
 The result of a property access `user.hi` is not a function, but a value of Reference Type. For `user.hi` in strict mode it is:
 
@@ -157,8 +142,7 @@ The whole mechanics is hidden from our eyes. It only matters in subtle cases, su
 
 ### <a href="reference-type.html#syntax-check" id="syntax-check" class="main__anchor">Syntax check</a>
 
-<a href="task/check-syntax.html" class="task__open-link">
-</a>
+<a href="task/check-syntax.html" class="task__open-link"></a>
 
 <span class="task__importance" title="How important is the task, from 1 to 5">importance: 2</span>
 
@@ -215,8 +199,7 @@ Please note that parentheses around `(user.go)` do nothing here. Usually they se
 
 ### <a href="reference-type.html#explain-the-value-of-this" id="explain-the-value-of-this" class="main__anchor">Explain the value of "this"</a>
 
-<a href="task/why-this.html" class="task__open-link">
-</a>
+<a href="task/why-this.html" class="task__open-link"></a>
 
 <span class="task__importance" title="How important is the task, from 1 to 5">importance: 3</span>
 
@@ -262,25 +245,9 @@ To explain the behavior of `(3)` and `(4)` we need to recall that property acces
 
 Any operation on it except a method call (like assignment `=` or `||`) turns it into an ordinary value, which does not carry the information allowing to set `this`.
 
-<a href="currying-partials.html" class="page__nav page__nav_prev">
-<span class="page__nav-text">
-<span class="page__nav-text-shortcut">
-</span>
-</span>
-<span class="page__nav-text-alternate">Previous lesson</span>
-</a>
-<a href="bigint.html" class="page__nav page__nav_next">
-<span class="page__nav-text">
-<span class="page__nav-text-shortcut">
-</span>
-</span>
-<span class="page__nav-text-alternate">Next lesson</span>
-</a>
+<a href="currying-partials.html" class="page__nav page__nav_prev"><span class="page__nav-text"><span class="page__nav-text-shortcut"></span></span><span class="page__nav-text-alternate">Previous lesson</span></a><a href="bigint.html" class="page__nav page__nav_next"><span class="page__nav-text"><span class="page__nav-text-shortcut"></span></span><span class="page__nav-text-alternate">Next lesson</span></a>
 
-<span class="share-icons__title">Share</span>
-<a href="https://twitter.com/share?url=https%3A%2F%2Fjavascript.info%2Freference-type" class="share share_tw">
-</a>
-<a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=https%3A%2F%2Fjavascript.info%2Freference-type" </a>
+<span class="share-icons__title">Share</span><a href="https://twitter.com/share?url=https%3A%2F%2Fjavascript.info%2Freference-type" class="share share_tw"></a><a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=https%3A%2F%2Fjavascript.info%2Freference-type" </a>
 
 <a href="tutorial/map.html" class="map">
 
@@ -288,35 +255,31 @@ Any operation on it except a method call (like assignment `=` or `||`) turns it 
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
--   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
--   If you can't understand something in the article – please elaborate.
--   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+- If you can't understand something in the article – please elaborate.
+- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
-<a href="tutorial/map.html" class="map">
-</a>
+<a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
--   <a href="js-misc.html" class="sidebar__link">Miscellaneous</a>
+- <a href="js-misc.html" class="sidebar__link">Miscellaneous</a>
 
 #### Lesson navigation
 
--   <a href="reference-type.html#reference-type-explained" class="sidebar__link">Reference type explained</a>
--   <a href="reference-type.html#summary" class="sidebar__link">Summary</a>
+- <a href="reference-type.html#reference-type-explained" class="sidebar__link">Reference type explained</a>
+- <a href="reference-type.html#summary" class="sidebar__link">Summary</a>
 
--   <a href="reference-type.html#tasks" class="sidebar__link">Tasks (2)</a>
--   <a href="reference-type.html#comments" class="sidebar__link">Comments</a>
+- <a href="reference-type.html#tasks" class="sidebar__link">Tasks (2)</a>
+- <a href="reference-type.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
-<a href="https://twitter.com/share?url=https%3A%2F%2Fjavascript.info%2Freference-type" class="share share_tw sidebar__share">
-</a>
-<a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=https%3A%2F%2Fjavascript.info%2Freference-type" class="share share_fb sidebar__share">
-</a>
+<a href="https://twitter.com/share?url=https%3A%2F%2Fjavascript.info%2Freference-type" class="share share_tw sidebar__share"></a><a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=https%3A%2F%2Fjavascript.info%2Freference-type" class="share share_fb sidebar__share"></a>
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/99-js-misc/04-reference-type" class="sidebar__link">Edit on GitHub</a>
 
--   <a href="about.html" class="page-footer__link">about the project</a>
--   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
--   <a href="terms.html" class="page-footer__link">terms of usage</a>
--   <a href="privacy.html" class="page-footer__link">privacy policy</a>
+- <a href="about.html" class="page-footer__link">about the project</a>
+- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+- <a href="terms.html" class="page-footer__link">terms of usage</a>
+- <a href="privacy.html" class="page-footer__link">privacy policy</a>
