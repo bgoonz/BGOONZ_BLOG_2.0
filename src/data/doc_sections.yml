@@ -1,30 +1,26 @@
 root_docs_path: /docs
 sections:
-    - about🌐
-    - articles🗞️
-    - audio𝆕🔊
-    - career🎓
-    - community🧑‍🤝‍🧑
-    - content📁
-    - cheatsheet📰
-    - css🖥️
-    - docs📚
-    - ds-algo🖧
-    - faq❓
-    - fetch-api
-    - git📁
-    - index.md🌇
-    - interact🤝
-    - interview❓
-    - javascript💻
-    - js-tips💻
+    - about
+    - articles
+    - audio
+    - career
+    - community
+    - content
+    - css
+    - data-structures
+    - docs
+    - faq
+    - interact
+    - javascript
+    - interview
     - leetcode
-    - overflow
     - projects
     - python
-    - quick-ref
+    - quick-reference
     - react
     - reference
     - tools
+    - tips
     - tutorials
-    - typescript
+
+
