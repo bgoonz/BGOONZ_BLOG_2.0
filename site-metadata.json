@@ -50,7 +50,15 @@
                     },
                     {
                         "label": "JavaScript",
-                        "url": "javascript💻",
+                        "url": "docs/javascript",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false
+                    },
+                    {
+                        "label": "Internal Use💻",
+                        "url": "/docs/about/internal-use",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,

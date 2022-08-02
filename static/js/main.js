@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 window.onGatsbyInitialClientRender = function () {
     /**
      * Main JS file for theme behaviours
@@ -6,25 +5,21 @@ window.onGatsbyInitialClientRender = function () {
     // Responsive video embeds
     let videoEmbeds = ['iframe[src*="youtube.com"]', 'iframe[src*="vimeo.com"]'];
     reframe(videoEmbeds.join(','));
-
     // Handle main navigation menu toggling on small screens
     function menuToggleHandler(e) {
         e.preventDefault();
         document.body.classList.toggle('menu--opened');
     }
-
     // Handle docs navigation menu toggling on small screens
     function docsNavToggleHandler(e) {
         e.preventDefault();
         document.body.classList.toggle('docs-menu--opened');
     }
-
     // Handle submenu toggling
     function submenuToggleHandler(e) {
         e.preventDefault();
         this.parentNode.classList.toggle('active');
     }
-
     window.addMainNavigationHandlers = function () {
         const menuToggle = document.querySelectorAll('.menu-toggle');
         if (menuToggle) {
@@ -32,7 +27,6 @@ window.onGatsbyInitialClientRender = function () {
                 menuToggle[i].addEventListener('click', menuToggleHandler, false);
             }
         }
-
         const submenuToggle = document.querySelectorAll('.submenu-toggle');
         if (submenuToggle) {
             for (let i = 0; i < submenuToggle.length; i++) {
@@ -40,18 +34,15 @@ window.onGatsbyInitialClientRender = function () {
             }
         }
     };
-
     window.removeMainNavigationHandlers = function () {
         // Remove nav related classes on page load
         document.body.classList.remove('menu--opened');
-
         const menuToggle = document.querySelectorAll('.menu-toggle');
         if (menuToggle) {
             for (let i = 0; i < menuToggle.length; i++) {
                 menuToggle[i].removeEventListener('click', menuToggleHandler, false);
             }
         }
-
         const submenuToggle = document.querySelectorAll('.submenu-toggle');
         if (submenuToggle) {
             for (let i = 0; i < submenuToggle.length; i++) {
@@ -59,13 +50,11 @@ window.onGatsbyInitialClientRender = function () {
             }
         }
     };
-
     window.addDocsNavigationHandlers = function () {
         const docsNavToggle = document.getElementById('docs-nav-toggle');
         if (docsNavToggle) {
             docsNavToggle.addEventListener('click', docsNavToggleHandler, false);
         }
-
         const docsSubmenuToggle = document.querySelectorAll('.docs-submenu-toggle');
         if (docsSubmenuToggle) {
             for (let i = 0; i < docsSubmenuToggle.length; i++) {
@@ -73,16 +62,13 @@ window.onGatsbyInitialClientRender = function () {
             }
         }
     };
-
     window.removeDocsNavigationHandlers = function () {
         // Remove docs nav related classes on page load
         document.body.classList.remove('docs-menu--opened');
-
         const docsNavToggle = document.getElementById('docs-nav-toggle');
         if (docsNavToggle) {
             docsNavToggle.removeEventListener('click', docsNavToggleHandler, false);
         }
-
         const docsSubmenuToggle = document.querySelectorAll('.docs-submenu-toggle');
         if (docsSubmenuToggle) {
             for (let i = 0; i < docsSubmenuToggle.length; i++) {
@@ -90,14 +76,11 @@ window.onGatsbyInitialClientRender = function () {
             }
         }
     };
-
     window.addPageNavLinks = function () {
         const pageToc = document.getElementById('page-nav-inside');
         const pageTocContainer = document.getElementById('page-nav-link-container');
-
         if (pageToc && pageTocContainer) {
             const pageContent = document.querySelector('.type-docs .post-content');
-
             // Create in-page navigation
             const headerLinks = getHeaderLinks({
                 root: pageContent
@@ -106,7 +89,6 @@ window.onGatsbyInitialClientRender = function () {
                 pageToc.classList.add('has-links');
                 renderHeaderLinks(pageTocContainer, headerLinks);
             }
-
             // Scroll to anchors
             let scroll = new SmoothScroll('[data-scroll]');
             let hash = window.decodeURI(location.hash.replace('#', ''));
@@ -118,7 +100,6 @@ window.onGatsbyInitialClientRender = function () {
                     }
                 }, 0);
             }
-
             // Highlight current anchor
             let pageTocLinks = pageTocContainer.getElementsByTagName('a');
             if (pageTocLinks.length > 0) {
@@ -127,7 +108,6 @@ window.onGatsbyInitialClientRender = function () {
                     nestedClass: 'active-parent'
                 });
             }
-
             // Add link to page content headings
             let pageHeadings = getElementsByTagNames(pageContent, ['h2', 'h3']);
             for (let i = 0; i < pageHeadings.length; i++) {
@@ -136,7 +116,6 @@ window.onGatsbyInitialClientRender = function () {
                     heading.insertBefore(anchorForId(heading.id), heading.firstChild);
                 }
             }
-
             // Copy link url
             let clipboard = new ClipboardJS('.hash-link', {
                 text: function (trigger) {
@@ -145,11 +124,9 @@ window.onGatsbyInitialClientRender = function () {
             });
         }
     };
-
     window.removePageNavLinks = function () {
         const pageToc = document.getElementById('page-nav-inside');
         const pageTocContainer = document.getElementById('page-nav-link-container');
-
         if (pageToc && pageTocContainer) {
             pageToc.classList.remove('has-links');
             while (pageTocContainer.firstChild) {
@@ -157,7 +134,6 @@ window.onGatsbyInitialClientRender = function () {
             }
         }
     };
-
     function getElementsByTagNames(root, tagNames) {
         let elements = [];
         for (let i = 0; i < root.children.length; i++) {
@@ -170,7 +146,6 @@ window.onGatsbyInitialClientRender = function () {
         }
         return elements;
     }
-
     function createLinksForHeaderElements(elements) {
         let result = [];
         let stack = [
@@ -225,14 +200,12 @@ window.onGatsbyInitialClientRender = function () {
         }
         return result;
     }
-
     function getHeaderLinks(options = {}) {
         let tagNames = options.tagNames || ['h2', 'h3'];
         let root = options.root || document.body;
         let headerElements = getElementsByTagNames(root, tagNames);
         return createLinksForHeaderElements(headerElements);
     }
-
     function renderHeaderLinks(element, links) {
         if (links.length === 0) {
             return;
@@ -248,7 +221,6 @@ window.onGatsbyInitialClientRender = function () {
         }
         element.appendChild(ulElm);
     }
-
     function anchorForId(id) {
         let anchor = document.createElement('a');
         anchor.setAttribute('class', 'hash-link');
@@ -257,7 +229,6 @@ window.onGatsbyInitialClientRender = function () {
         anchor.innerHTML = '<span class="screen-reader-text">Copy</span>';
         return anchor;
     }
-
     // Syntax Highlighter
     // Prism.highlightAll();
 };
