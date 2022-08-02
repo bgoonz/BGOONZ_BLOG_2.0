@@ -19,7 +19,6 @@ template: docs
 ---
 
 
-## Lorem ipsum
 
 # Python Cheat Sheet
 
@@ -1943,8 +1942,8 @@ spam.strip('ampS')
 
 First, install `pypeerclip` with pip:
 
-```shell
-pip install pyperclip
+```bash
+```bashl pyperclip
 ```
 
 ```python
@@ -3076,7 +3075,7 @@ with open("filename.yaml") as f:
 Install it with:
 
 ```bash
-pip install anyconfig
+```bashl anyconfig
 ```
 
 Usage:
@@ -3482,7 +3481,7 @@ The `setup.py` file is at the heart of a Python project. It describes all of the
 This allows you to easily install Python packages. Often it's enough to write:
 
 ```bash
-python setup.py install
+```bashup.py install
 ```
 
 and module will install itself.

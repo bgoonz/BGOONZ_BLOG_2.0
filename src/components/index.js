@@ -12,6 +12,7 @@ import SectionGrid from './SectionGrid';
 import SectionHero from './SectionHero';
 import Submenu from './Submenu';
 import Layout from './Layout';
+
 export {
     ActionLink,
     CtaButtons,
@@ -28,6 +29,7 @@ export {
     Submenu,
     Layout
 };
+
 export default {
     ActionLink,
     CtaButtons,
