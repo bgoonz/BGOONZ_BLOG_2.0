@@ -48,5 +48,3 @@ sudo apt install python3
 
 
 ```
-
-git gc && git pull --rebase
