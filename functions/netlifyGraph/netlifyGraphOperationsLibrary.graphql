@@ -1,0 +1,23 @@
+query ExampleQuery @netlify(id: """c68026a8-1829-45c8-add9-c3ccac794bb7""", doc: """An empty query to start from""") {
+  __typename
+}
+
+query ExampleQuery @netlify(id: null, doc: null) {
+  __typename
+}
+
+subscription ExampleSubscription @netlify(id: """a9c682f4-3f8f-4715-82c3-9179aa26d6de""", doc: """An empty subscription to start from""") {
+  __typename
+}
+
+query GitHubIsRepositoryAFork($repoOwner: String!, $repoName: String!) @netlify(id: """2aa55512-00fd-4911-b28b-322f9511c04e""", doc: """Given a GitHub `$repoOwner`/`$repoName`, find if the corresponding repository is fork (`gitHub.repository.isFork`) - and if so, what the original repository is `gitHub.repository.parent.nameWithOwner`.""") {
+  gitHub {
+    repository(owner: $repoOwner, name: $repoName) {
+      id
+      isFork
+      parent {
+        nameWithOwner
+      }
+    }
+  }
+}
