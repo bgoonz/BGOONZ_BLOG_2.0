@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 ## [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/)
 
 ### Problem:
@@ -56,7 +55,6 @@ Whenever we choose a pivot, it must be in one of the two sorted parts of the rot
 - Otherwise the pivot is in the right part. We know that the end of the right part to the pivot are sorted.
 
 ```js
-//
 /**
  * @param {number[]} nums
  * @param {number} target

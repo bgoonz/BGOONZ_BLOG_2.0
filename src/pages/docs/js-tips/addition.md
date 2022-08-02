@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 # Addition (+)
 
 The addition operator (`+`) produces the sum of numeric operands or string concatenation.

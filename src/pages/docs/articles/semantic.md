@@ -2,14 +2,13 @@
 title: Semantic Versioning
 sections: []
 seo:
-    title: 'Semantic Versioning'
+    title: ''
     description: Semantic Versioning using npm
     robots: []
     extra: []
     type: stackbit_page_meta
 template: docs
 ---
-
 
 If there's one great thing in Node.js packages, it's that they all agreed on using Semantic Versioning for their version numbering.
 

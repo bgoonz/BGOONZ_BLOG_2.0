@@ -4,6 +4,7 @@
 
 <summary> Bash Cheat Sheet (MY COMMANDS) </summary
 
+
 ## 99. Cheat Sheet
 
 ### Description
@@ -12,9 +13,9 @@
 
 ###### code
 
-```console
+```sh
 #!/bin/bash
-revert
+
 ## SHORTCUTS and HISTORY
 
 
@@ -541,9 +542,16 @@ printf "${Red} This is red \n"
 
 ```
 
+
+
 </details>
 
+
+
 >
+
+
+
 
 #### Find
 
@@ -564,53 +572,53 @@ find . -type f
 find . -type f -perm 777
 
 ## To find files with setuid bit set
-```bash
+
 find . -xdev \( -perm -4000 \) -type f -print0 | xargs -0 ls -l
-```
+
 ## To find files with extension '.txt' and remove them
-```bash
+
 find ./path/ -name '\*.txt' -exec rm '{}' \;
-```
+
 ## To find files with extension '.txt' and look for a string into them
-```bash
+
 find ./path/ -name '\*.txt' | xargs grep 'string'
-```
+
 ## To find files with size bigger than 5 Mebibyte and sort them by size
-```bash
+
 find . -size +5M -type f -print0 | xargs -0 ls -Ssh | sort -z
-```
+
 ## To find files bigger than 2 Megabyte and list them
-```bash
+
 find . -type f -size +200000000c -exec ls -lh {} \; | awk '{ print $9 ": " $5 }'
-```
+
 ## To find files modified more than 7 days ago and list file information
-```bash
+
 find . -type f -mtime +7d -ls
-```
+
 ## To find symlinks owned by a user and list file information
-```bash
+
 find . -type l -user <username-or-userid> -ls
-```
+
 ## To search for and delete empty directories
-```bash
+
 find . -type d -empty -exec rmdir {} \;
-```
+
 ## To search for directories named build at a max depth of 2 directories
-```bash
+
 find . -maxdepth 2 -name build -type d
-```
+
 ## To search all files who are not in .git directory
-```bash
+
 find . ! -iwholename '_.git_' -type f
-```
+
 ## To find all files that have the same node (hard link) as MY_FILE_HERE
-```bash
+
 find . -type f -samefile MY_FILE_HERE 2>/dev/null
-```
+
 ## To find all files in the current directory and modify their permissions
-```bash
+
 find . -type f -exec chmod 644 {} \;
-```
+
 ---
 
 ## 1. Remove spaces from file and folder names and then remove numbers from files and folder names
@@ -621,14 +629,14 @@ find . -type f -exec chmod 644 {} \;
 
 ###### code
 
-```console
+```sh
 find . -name "* *" -type d | rename 's/ /_/g'
 find . -name "* *" -type f | rename 's/ /_/g'
 ```
 
-```bash
+```sh
 
-```console
+```sh
 find $dir -type f | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
 
 find $dir -type d | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
@@ -645,7 +653,6 @@ for i in *.*; do mv "$i" "${i%-*}.${i##*.}"; done
 ###### code:
 
 ```js
-//
 //APPEND-DIR.js
 const fs = require('fs');
 let cat = require('child_process')
@@ -655,7 +662,7 @@ fs.writeFile('output.md', cat, err => {
   if (err) throw err;
 });
 
-````
+```
 
 ---
 
@@ -667,7 +674,7 @@ fs.writeFile('output.md', cat, err => {
 
 ###### code
 
-```console
+```sh
 
 wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e robots=off -U mozilla https://bootcamp42.gitbook.io/python/
 
@@ -683,7 +690,7 @@ wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e ro
 
 ###### code
 
-```console
+```sh
 
 find . -empty -type d -print -delete
 
@@ -705,7 +712,7 @@ find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o  -name "*CHANGELOG.tx
 
 ## Generalized
 
-```console
+```sh
 
 CNTX={users|orgs}; NAME={username|orgname}; PAGE=1
 curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
@@ -716,7 +723,7 @@ curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
 
 ## Clone all Git User
 
-```console
+```sh
 CNTX={users}; NAME={bgoonz}; PAGE=1
 curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=master |
   grep -e 'git_url*' |
@@ -727,7 +734,7 @@ curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=m
 
 ## Clone all Git Organization
 
-```console
+```sh
 
 CNTX={organizations}; NAME={TheAlgorithms}; PAGE=1
 curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=master |
@@ -745,7 +752,7 @@ curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=m
 
 ###### code
 
-```console
+```sh
 git pull
 git init
 git add .
@@ -753,14 +760,14 @@ git commit -m"update"
 git push -u origin master
 ```
 
-```console
+```sh
 git init
 git add .
 git commit -m"update"
 git push -u origin main
 ```
 
-```console
+```sh
 
 git init
 git add .
@@ -768,14 +775,14 @@ git commit -m"update"
 git push -u origin bryan-guner
 ```
 
-```console
+```sh
 git init
 git add .
 git commit -m"update"
 git push -u origin gh-pages
 ```
 
-```console
+```sh
 git init
 git add .
 git commit -m"update"
@@ -792,7 +799,7 @@ git push -u origin preview
 
 ###### code
 
-```console
+```sh
 
 find . -name "*.zip" | while read filename; do unzip -o -d "`dirname "$filename"`" "$filename"; done;
 
@@ -810,7 +817,7 @@ find . -name "*.zip" -type f -print -delete
 
 ###### code
 
-```console
+```sh
 
 git stash
 git pull
@@ -828,7 +835,7 @@ git stash pop
 
 ###### code
 
-```console
+```sh
 
 sudo npm i prettier -g
 
@@ -846,7 +853,7 @@ prettier --write .
 
 ###### code
 
-```console
+```sh
 
 find ./ -iname "*.md" -type f -exec sh -c 'pandoc --standalone "${0}" -o "${0%.md}.html"' {} \;
 
@@ -866,7 +873,7 @@ find ./ -iname "*.docx" -type f -exec sh -c 'pandoc "${0}" -o "${0%.docx}.md"' {
 
 ###### code
 
-```console
+```sh
 sudo apt install tree
 sudo apt install pandoc -y
 sudo apt install rename -y
@@ -878,7 +885,7 @@ npm i npm-recursive-install -g
 
 ```
 
-```console
+```sh
 black .
 
 prettier --write .
@@ -895,7 +902,7 @@ npm-recursive-install
 
 ###### code
 
-```console
+```sh
 npm i @bgoonz11/repoutils
 
 ```
@@ -910,7 +917,7 @@ npm i @bgoonz11/repoutils
 
 ###### code
 
-```console
+```sh
 tree -d -I  'node_modules'
 
 tree  -I  'node_modules'
@@ -937,7 +944,7 @@ tree -f >README.md
 
 ###### code
 
-```console
+```sh
 
 find . -type f -exec rename 's/string1/string2/g' {} +
 
@@ -965,7 +972,7 @@ find . -type d -exec rename 's/es6//g' {} +
 
 ###### code
 
-```console
+```sh
 #!/bin/bash
 
 for file in *.md.md
@@ -981,7 +988,7 @@ do
 done
 ```
 
-```console
+```sh
 
 #!/bin/bash
 
@@ -1007,7 +1014,7 @@ done
 
 ###### code
 
-```console
+```sh
 
 for d in ./*; do mv $d ${d:0:12}; done
 
@@ -1024,7 +1031,6 @@ for d in ./*; do mv $d ${d:0:12}; done
 ###### code
 
 ```js
-//
 //APPEND-DIR.js
 const fs = require('fs');
 let cat = require('child_process').execSync('cat *').toString('UTF-8');
@@ -1043,7 +1049,7 @@ fs.writeFile('output.md', cat, (err) => {
 
 ###### code
 
-```console
+```sh
 find . -name "* *" -type f | rename 's/_//g'
 
 find . -name "* *" -type d | rename 's/#/_/g'
@@ -1060,7 +1066,7 @@ find . -name "* *" -type d | rename 's/#/_/g'
 
 ###### code
 
-```console
+```sh
 find . -name '.bin' -type d -prune -exec rm -rf '{}' +
 
 find . -name '*.html' -type d -prune -exec rm -rf '{}' +
@@ -1085,7 +1091,7 @@ find . -name 'left.html' -type f -prune -exec rm -rf '{}' +
 
 > Notes: Remove lines not containing `'.js'`
 
-```console
+```sh
 
 sudo sed -i '/\.js/!d' ./*scrap2.md
 
@@ -1093,7 +1099,7 @@ sudo sed -i '/\.js/!d' ./*scrap2.md
 
 ###### code
 
-```console
+```sh
 sudo sed -i '/githubusercontent/d' ./*sandbox.md
 
 sudo sed -i '/githubusercontent/d' ./*scrap2.md
@@ -1119,7 +1125,7 @@ Now, let's understand the use of this with the help of an example. Suppose you h
 
 ###### code
 
-```console
+```sh
 sudo apt install uniq
 uniq -u input.txt output.txt
 
@@ -1135,7 +1141,7 @@ uniq -u input.txt output.txt
 
 ###### code
 
-```console
+```sh
 sudo sed -i '/githubusercontent/d' ./*sandbox.md
 
 sudo sed -i '/githubusercontent/d' ./*scrap2.md
@@ -1173,7 +1179,7 @@ sudo sed -i '/right\.html/d' ./right.html
 
 ###### code
 
-```console
+```sh
 
 #!/bin/bash
 TSTAMP=`date '+%Y%m%d-%H%M%S'`
@@ -1200,7 +1206,7 @@ printf "\nCreated: $1.$TSTAMP.zip\n"
 
 ###### code
 
-```console
+```sh
 find . | xargs grep -l www.redhat.com | awk '{print "rm "$1}' > doit.sh
 vi doit.sh // check for murphy and his law
 source doit.sh
@@ -1217,7 +1223,7 @@ source doit.sh
 
 ###### code
 
-```console
+```sh
 
 #!/bin/sh
 
@@ -1324,13 +1330,13 @@ cmd $listing --sort=extension >>$html
 
 > Notes: Useful Follow up Code:
 
-```console
+```sh
 
 ```
 
 ###### code
 
-```console
+```sh
 
 #!/bin/sh
 
@@ -1438,7 +1444,7 @@ cmd $listing --sort=extension >>$html
 
 ###### code
 
-```console
+```sh
 
 git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch assets/_index.html' HEAD
 
@@ -1458,7 +1464,7 @@ If you have any files that are not tracked by Git (e.g. uploaded user content), 
 
 ###### code
 
-```console
+```sh
 
 git fetch --all
 ## Backup your current branch:
@@ -1497,7 +1503,7 @@ git reset --hard origin/master
 
 ###### code
 
-```console
+```sh
 git submodule deinit
 ```
 
@@ -1511,7 +1517,7 @@ git submodule deinit
 
 ###### code
 
-```console
+```sh
 sudo apt install wget
 
 wget -q -O - https://api.github.com/users/bgoonz/gists | grep raw_url | awk -F\" '{print $4}' | xargs -n3 wget
@@ -1534,7 +1540,7 @@ wget -q -O - https://api.github.com/users/thomasmb/gists | grep raw_url | awk -F
 
 ###### code
 
-```console
+```sh
 
 git remote remove origin
 
@@ -1550,7 +1556,7 @@ git remote remove origin
 
 ###### code
 
-```console
+```sh
 
 git clone --bare --branch=master --single-branch https://github.com/bgoonz/My-Web-Dev-Archive.git
 
@@ -1566,7 +1572,7 @@ git clone --bare --branch=master --single-branch https://github.com/bgoonz/My-We
 
 ###### code
 
-```console
+```sh
 
 git reset --hard master@{"10 minutes ago"}
 
@@ -1582,7 +1588,7 @@ git reset --hard master@{"10 minutes ago"}
 
 ###### code
 
-```console
+```sh
 ## Safe:
 
  lebab --replace ./ --transform arrow
@@ -1639,7 +1645,7 @@ lebab --replace ./ --transform includes
 
 ###### code
 
-```
+```ps1
 
  wsl.exe --shutdown
 
@@ -1657,7 +1663,7 @@ lebab --replace ./ --transform includes
 
 ###### code
 
-```console
+```sh
 npm i mediumexporter -g
 
 mediumexporter https://medium.com/codex/fundamental-data-structures-in-javascript-8f9f709c15b4 >ds.md
@@ -1674,7 +1680,7 @@ mediumexporter https://medium.com/codex/fundamental-data-structures-in-javascrip
 
 ###### code
 
-```console
+```sh
 
 find . -size +75M -a -print -a -exec rm -f {} \;
 
@@ -1692,7 +1698,7 @@ find . -size +98M -a -print -a -exec rm -f {} \;
 
 ###### code
 
-```console
+```sh
 
 wget -r -A.pdf https://overapi.com/git
 
@@ -1708,7 +1714,7 @@ wget -r -A.pdf https://overapi.com/git
 
 ###### code
 
-```console
+```sh
 killall -s KILL node
 
 ```
@@ -1721,7 +1727,7 @@ killall -s KILL node
 
 ###### code
 
-```console
+```sh
 find <mydir> -type f -exec sed -i 's/<string1>/<string2>/g' {} +
 
 find . -type f -exec rename 's/-master//g' {} +
@@ -1730,7 +1736,7 @@ find . -type f -exec rename 's/-master//g' {} +
 
 > Notes: The same could be done for folder names by changing the _-type f_ flag (for file) to a _-type d_ flag (for directory)
 
-```console
+```sh
 find <mydir> -type d -exec sed -i 's/<string1>/<string2>/g' {} +
 
 find . -type d -exec rename 's/-master//g' {} +
@@ -1747,7 +1753,7 @@ find . -type d -exec rename 's/-master//g' {} +
 
 ###### code
 
-```console
+```sh
 
 find . -name "* *" -type d | rename 's/ /_/g'
 find . -name "* *" -type f | rename 's/ /_/g'
@@ -1763,7 +1769,7 @@ find . -name "* *" -type f | rename 's/ /_/g'
 
 ###### code
 
-```console
+```sh
 for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ```
@@ -1876,7 +1882,7 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code
 
-```
+```ps1
 
 PARAM (
     [string] $ZipFilesPath = "./",
@@ -1893,7 +1899,7 @@ foreach ($ZipFile in $ZipFiles) {
     Write-Progress -Activity "Unzipping to $($UnzipPath)" -PercentComplete (($progress / ($ZipFiles.Count + 1)) * 100) -CurrentOperation $ZipFile.FullName -Status "File $($Progress) of $($ZipFiles.Count)"
     $ZipFolder = $Shell.NameSpace($ZipFile.fullname)
 
-    $Location.Copyhere($ZipFolder.items(), 1040) # 1040 - No msgboxes to the user - https://msdn.microsoft.com/library/bb787866%28VS.85%29.aspx
+    $Location.Copyhere($ZipFolder.items(), 1040) # 1040 - No msgboxes to the user - http://msdn.microsoft.com/en-us/library/bb787866%28VS.85%29.aspx
     $progress++
 }
 
@@ -1909,7 +1915,7 @@ foreach ($ZipFile in $ZipFiles) {
 
 ###### code
 
-```console
+```sh
  sudo apt --purge remove zsh
 
 ```
@@ -1924,7 +1930,7 @@ foreach ($ZipFile in $ZipFiles) {
 
 ###### code
 
-```console
+```sh
 
 ln -s "$(pwd)" ~/NameOfLink
 
@@ -1942,7 +1948,7 @@ ln -s "$(pwd)" ~/Downloads
 
 ###### code
 
-```console
+```sh
 
 npx @appnest/readme generate
 
@@ -1958,7 +1964,7 @@ npx @appnest/readme generate
 
 ###### code
 
-```console
+```sh
 sudo -u postgres psql
 ```
 
@@ -2006,7 +2012,7 @@ https://repl.it/@bgoonz/Database-Prac?lite=true&amp;referrer=https%3A%2F%2Fbryan
 
 ###### code
 
-```console
+```sh
 
 find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 

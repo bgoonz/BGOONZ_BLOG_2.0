@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 # Array.prototype.sort()
 
 The `sort()` method sorts the elements of an array _[in place](https://en.wikipedia.org/wiki/In-place_algorithm)_ and returns the sorted array. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.

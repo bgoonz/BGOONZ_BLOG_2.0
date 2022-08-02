@@ -1,0 +1,177 @@
+type: section_grid
+  - section_id: features-two-col
+    type: section_grid
+    title: Resume & Portfolio
+    col_number: two
+    grid_items:
+      - title: Resume
+        actions:
+          - label: View In One Drive
+            url: 'https://1drv.ms/b/s!AkGiZ9n9CRDSpLsZsnPtiN7p77vq6A'
+            style: secondary
+          - label: lorem-ipsum
+            url: '#'
+            style: link
+            icon_class: dev
+            new_window: false
+            no_follow: false
+          - label: Download PDF
+            url: >-
+              https://github.com/bgoonz/bgoonz/raw/master/bryan_guner_resume_2021_V9.pdf
+            style: secondary
+            icon_class: dev
+            new_window: false
+            no_follow: false
+            type: action
+        image: images/image-of-resume.png
+        title_url: >-
+          https://github.com/bgoonz/resume-cv-portfolio-samples/raw/master/2021-resume/bryan-guner-resume-2021.pdf
+      - title: Showcase
+        content: |
+          ![](/\_static/app-assets/lambda-demo1.gif)My Projects!
+        actions:
+          - label: Learn More
+            url: /showcase
+            style: secondary
+        image_alt: portfolio of websites
+        image: images/portfolio-91689538.jpg
+  - title: Blog-Archive-And-Mini-Projects
+    section_id: Mini Projects
+    image_alt: showcase
+    image_position: left
+    content: >-
+      <iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);sandbox="allow-scripts" 
+      src="https://random-static-html-deploys.netlify.app/"
+      class="block-content" width="100%  width="1200px!important"
+
+      height="1000px!important">
+
+      </iframe>
+    actions: []
+    type: section_content
+  - title: Latest & Greatest
+    section_id: new content
+    image_alt: animated gif
+    image_position: right
+    content: >
+      # ***What I've been working on lately:***
+
+      ## Web Dev Utilitiy Tools
+
+      <iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);sandbox="allow-scripts"  class="block-content" width="100% 
+      width="1200px!important"
+
+      height="1000px!important"
+        src="https://web-dev-utility-tools-bgoonz.netlify.app/"
+       frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);sandbox="allow-scripts"  class="block-content" width="100% 
+      width="1200px!important"
+
+      height="1000px!important"
+        src="https://cheatsheets-42.netlify.app/"
+       frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);sandbox="allow-scripts"  class="block-content" width="100% 
+      width="1200px!important"
+
+      height="1000px!important"
+        src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"
+       frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    actions: []
+    type: section_content
+  - section_id: tools
+    image_alt: lorem-ipsum
+    image_position: left
+    content: >
+      ### To⬆️ol Showcase
+
+
+      <iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7);sandbox="allow-scripts"  class="block-content" width="100% 
+      width="1200px!important"
+
+      height="1000px!important"
+        src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"
+       frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    actions: []
+    type: section_content
+    title: Tools Showcase
+  - section_id: Web Audio DAW
+    image_alt: medium
+    image_position: left
+    actions:
+      - label: Go To Web Audio Daw
+        url: 'https://mihirbegmusiclab.netlify.app/'
+        style: primary
+        icon_class: dev
+        new_window: true
+        no_follow: false
+        type: action
+    type: section_content
+    title: Web Audio DAW
+    image: images/goals.jpg
+  - title: Quick Links
+    section_id: navigate from the home page
+    col_number: three
+    type: section_docs
+    subtitle: Navigate To Docs From Home Page
+  - title: Contact
+    section_id: contact
+    actions:
+      - label: Contact
+        url: /docs/faq/contact
+        style: primary
+        icon_class: dev
+        new_window: false
+        no_follow: false
+        type: action
+      - label: email
+        url: 'mailto:bryan.guner@gmail.com'
+        style: primary
+        icon_class: dev
+        new_window: false
+        no_follow: false
+      - label: Subscribe (Youtube)
+        url: ' https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA?sub_confirmation=1'
+        style: primary
+        icon_class: dev
+        new_window: false
+        no_follow: false
+    type: section_cta
+    subtitle: get in touch! +1 (551) - 254 - 5505
+seo:
+  title: Web-Dev-Hub
+  description: |-
+    bigO, Python, Javascript, Audio, Processing, Learning, Blog, React,
+    PostgreSQL, Scope, Closure, Web Development, Embed, API, Website, Design,
+    Music, Search
+  extra:
+    - name: 'og:type'
+      value: website
+      keyName: property
+    - name: 'og:title'
+      value: Web-Dev-Hub
+      keyName: property
+    - name: 'og:description'
+      value: |-
+        my resource sharing and blog site ... centered mostly on web development
+        and just a bit of audio production / generally nerdy things I find
+        interesting.
+      keyName: property
+    - name: 'og:image'
+      value: images/code.png
+      keyName: property
+      relativeUrl: true
+    - name: 'twitter:card'
+      value: summary_large_image
+    - name: 'twitter:title'
+      value: Web-Dev-Hub
+    - name: 'twitter:description'
+      value: Web-Dev-Hub
+    - name: 'twitter:image'
+      value: images/4.jpg
+      relativeUrl: true
+template: advanced
+---

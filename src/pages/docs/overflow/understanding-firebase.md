@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 # Understand Firebase projects
 
 **Note:** If you're using the [Firebase Management REST API](https://firebase.google.com/docs/projects/api/reference/rest?authuser=0) to programmatically create a Firebase project, you must first [create a Google Cloud project](https://cloud.google.com/resource-manager/reference/rest/v1/projects?authuser=0), then [add Firebase services](https://firebase.google.com/docs/projects/api/reference/rest/v1beta1/projects/addFirebase?authuser=0) to the existing project.**Note:** The [project number](https://firebase.google.com/docs/projects/learn-more?authuser=0#project-number) and the [project ID](https://firebase.google.com/docs/projects/learn-more?authuser=0#project-id) are the truly _unique identifiers_ for a project across all of Firebase and Google Cloud.**After Firebase provisions resources for a Firebase project, you cannot change its project ID.** To use a specific identifier for Firebase resources, you must edit the project ID during the initial creation of the project.**Caution:** We do not recommend manually modifying an app's Firebase config file or object. If you initialize an app with invalid or missing values for any of these required "Firebase options", then your end users may experience serious issues.**Note:** For each Android app, if you provide a SHA-1 key for the app, you need to provide a package name and SHA-1 key combination that is globally unique across all of Google Cloud.
@@ -149,7 +148,7 @@ Make sure to review the [general project-level best practices](https://firebase.
 
 The [Firebase console](https://console.firebase.google.com/?authuser=0) offers the richest environment for managing Firebase products, apps, and project-level settings.
 
-![alt-text](https://firebase.google.com/docs/projects/images/firebase_console_overview.png?authuser=0)
+![](https://firebase.google.com/docs/projects/images/firebase_console_overview.png?authuser=0)
 
 The left-side panel of the console lists the Firebase products, organized by top-level categories. At the top of the left-side panel, access a project's settings by clicking settings. A project's settings include [integrations](https://firebase.google.com/integrations?authuser=0), [access permissions](https://firebase.google.com/docs/projects/iam/overview?authuser=0), and [billing](https://firebase.google.com/pricing?authuser=0).
 

@@ -10,13 +10,11 @@ seo:
 template: docs
 ---
 
-
 The `fs` module provides a lot of very useful functionality to access and interact with the file system.
 
 There is no need to install it. Being part of the Node.js core, it can be used by simply requiring it:
 
 ```js
-//
 const fs = require('fs');
 ```
 
@@ -65,7 +63,6 @@ This makes a huge difference in your application flow.
 For example let's examine the `fs.rename()` method. The asynchronous API is used with a callback:
 
 ```js
-//
 const fs = require('fs');
 
 fs.rename('before.json', 'after.json', (err) => {
@@ -80,7 +77,6 @@ fs.rename('before.json', 'after.json', (err) => {
 A synchronous API can be used like this, with a try/catch block to handle errors:
 
 ```js
-//
 const fs = require('fs');
 
 try {

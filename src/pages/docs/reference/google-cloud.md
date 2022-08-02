@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 The gcloud command-line tool cheat sheet
 
 ## The gcloud cheat sheet

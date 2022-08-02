@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 ## [Including keyboard users](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_accessibility#including_keyboard_users 'Permalink to Including keyboard users')
 
 At this point, we've accomplished all of the features we set out to implement. A user can add a new task, check and uncheck tasks, delete tasks, or edit task names. And they can filter their task list by all, active, or completed tasks.

@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 # Data Structures
 
 <details>
@@ -18,7 +17,6 @@ template: docs
 <summary>All Code From This Writeup</summary>
 
 ```js
-//
 
 "use strict";
 class List {
@@ -445,7 +443,6 @@ class List {
 ---
 
 ```js
-//
  constructor() {
     this.memory = [];
     this.length = 0;
@@ -460,7 +457,6 @@ class List {
 ---
 
 ```js
-//
  get(address) {
     return this.memory[address];
   }
@@ -487,7 +483,6 @@ class List {
 ---
 
 ```js
-//
  push(value) {
     this.memory[this.length] = value;
     this.length++;
@@ -502,7 +497,6 @@ class List {
 ---
 
 ```js
-//
  pop() {
 
 ```
@@ -510,14 +504,12 @@ class List {
 Don't do anything if we don't have any items.
 
 ```js
-//
 if (this.length === 0) return;
 ```
 
 Get the last value, stop storing it, and return it.
 
 ```js
-//
 let lastAddress = this.length * 1;
 let value = this.memory[lastAddress];
 delete this.memory[lastAddress];
@@ -527,7 +519,6 @@ this.length--;
 > Also return the value so it can be used.
 
 ```js
-//
     return value;
   }
 ```
@@ -545,7 +536,6 @@ this.length--;
 - room for our value at the start by sliding all of the values over by one.
 
 ```js
-//
   * [a, b, c, d, e]
   *  0  1  2  3  4
   *   ⬊  ⬊  ⬊  ⬊  ⬊
@@ -561,7 +551,6 @@ this.length--;
 ---
 
 ```js
-//
  unshift(value) {
 
 ```
@@ -569,14 +558,12 @@ this.length--;
 Store the value we are going to add to the start.
 
 ```js
-//
 let previous = value;
 ```
 
 Iterate through each item...
 
 ```js
-//
    for (let address = 0; address < this.length; address++) {
 
 ```
@@ -586,17 +573,15 @@ replacing the "current" value with the "previous" value and storing the
 > "current" value for the next iteration.
 
 ```js
-//
    let current = this.memory[address];
    this.memory[address] = previous;
    previous = current;
     }
-```
+````
 
 Add the last item in a new position at the end of the list.
 
 ```js
-//
    this.memory[this.length] = previous;
    this.length++;
  }
@@ -616,7 +601,6 @@ Add the last item in a new position at the end of the list.
 ---
 
 ```js
-//
  shift() {
 
 ```
@@ -624,7 +608,6 @@ Add the last item in a new position at the end of the list.
 Don't do anything if we don't have any items.
 
 ```js
-//
 if (this.length === 0) return;
 let value = this.memory[0];
 ```
@@ -632,14 +615,12 @@ let value = this.memory[0];
 Iterate through each item...
 
 ```js
-//
     for (let address = 0; address < this.length * 1; address++) {
 ```
 
 and replace them with the next item in the list.
 
 ```js
-//
   this.memory[address] = this.memory[address + 1];
    }
 ```
@@ -647,7 +628,6 @@ and replace them with the next item in the list.
 Delete the last item since it is now in the previous address.
 
 ```js
-//
    delete this.memory[this.length * 1];
    this.length--;
    return value;
@@ -691,7 +671,6 @@ class HashTable {
 ---
 
 ```js
-//
  constructor() {
     this.memory = [];
   }
@@ -724,7 +703,6 @@ class HashTable {
 ---
 
 ```js
-//
  hashKey(key) {
     let hash = 0;
     for (let index = 0; index < key.length; index++) {
@@ -734,7 +712,6 @@ class HashTable {
 //Oh look\*magic.
 
 ```js
-//
    let code = key.charCodeAt(index);
 hash = ((hash << 5)* hash) + code | 0;
     }
@@ -749,7 +726,6 @@ hash = ((hash << 5)* hash) + code | 0;
 ---
 
 ```js
-//
  get(key) {
 
 ```
@@ -759,7 +735,6 @@ hash = ((hash << 5)* hash) + code | 0;
 #### We start by turning our key into an address
 
 ```js
-//
 let address = this.hashKey(key);
 // then we simply return whatever is at that address.
 return this.memory[address];
@@ -774,7 +749,6 @@ return this.memory[address];
 ---
 
 ```js
-//
  set(key, value) {
 
 ```
@@ -782,7 +756,6 @@ return this.memory[address];
 Again we start by turning the key into an address.
 
 ```js
-//
 
     let address = this.hashKey(key);
 
@@ -801,7 +774,6 @@ Again we start by turning the key into an address.
 ---
 
 ```js
-//
  remove(key) {
 
 ```
@@ -809,7 +781,6 @@ Again we start by turning the key into an address.
 As always, we hash the key to get an address.
 
 ```js
-//
 
     let address = this.hashKey(key);
 
@@ -862,7 +833,6 @@ class Stack {
 ---
 
 ```js
-//
  constructor() {
     this.list = [];
     this.length = 0;
@@ -875,24 +845,21 @@ class Stack {
 ---
 
 ```js
-//
 ####  Push to add items to the top of the stack.
 
 ---
 ```js
-//
  push(value) {
     this.length++;
     this.list.push(value);
   }
-```
+````
 
 - And pop to remove items from the top of the stack.
 
 ---
 
 ```js
-//
  pop() {
 
 ```
@@ -901,7 +868,6 @@ Don't do anything if we don't have any items.
 if (this.length === 0) return;
 
 ```js
-//
  Pop the last item off the end of the list and return the value.
     this.length--;
     return this.list.pop();
@@ -914,7 +880,6 @@ if (this.length === 0) return;
 ---
 
 ```js
-//
  peek() {
 
 ```
@@ -922,7 +887,6 @@ if (this.length === 0) return;
 Return the last item in "items" without removing it.
 
 ```js
-//
     return this.list[this.length * 1];
   }
 }
@@ -951,7 +915,6 @@ class Queue {
 ---
 
 ```js
-//
  constructor() {
     this.list = [];
     this.length = 0;
@@ -965,7 +928,6 @@ class Queue {
 ---
 
 ```js
-//
  enqueue(value) {
     this.length++;
     this.list.push(value);
@@ -978,7 +940,6 @@ class Queue {
 ---
 
 ```js
-//
  dequeue() {
 
 ```
@@ -987,7 +948,6 @@ Don't do anything if we don't have any items.
 if (this.length === 0) return;
 
 ```js
-//
  Shift the first item off the start of the list and return the value.
     this.length--;
     return this.list.shift();
@@ -1000,7 +960,6 @@ if (this.length === 0) return;
 ---
 
 ```js
-//
  peek() {
     return this.list[0];
   }
@@ -1084,7 +1043,6 @@ class Graph {
 ---
 
 ```js
-//
  constructor() {
     this.nodes = [];
   }
@@ -1096,7 +1054,6 @@ class Graph {
 ---
 
 ```js
-//
  addNode(value) {
     return this.nodes.push({
    value,
@@ -1115,7 +1072,6 @@ class Graph {
 ---
 
 ```js
-//
  find(value) {
     return this.nodes.find(node => {
    return node.value === value;
@@ -1128,7 +1084,6 @@ class Graph {
 ---
 
 ```js
-//
  addLine(startValue, endValue) {
 
 ```
@@ -1136,23 +1091,20 @@ class Graph {
 Find the nodes for each value.
 
 ```js
-//
 
     let startNode = this.find(startValue);
     let endNode = this.find(endValue);
 
 ```js
-//
  Freak out if we didn't find one or the other.
     if (!startNode || !endNode) {
    throw new Error('Both nodes need to exist');
     }
-```
+````
 
 And add a reference to the endNode from the startNode.
 
 ```js
-//
     startNode.lines.push(endNode);
   }
 }
@@ -1214,7 +1166,6 @@ class LinkedList {
 ---
 
 ```js
-//
  constructor() {
     this.head = null;
     this.length = 0;
@@ -1228,7 +1179,6 @@ class LinkedList {
 ---
 
 ```js
-//
  get(position) {
 
 ```
@@ -1236,7 +1186,6 @@ class LinkedList {
 Throw an error if position is greater than the length of the LinkedList
 
 ```js
-//
 if (position >= this.length) {
   throw new Error("Position outside of list range");
 }
@@ -1245,14 +1194,12 @@ if (position >= this.length) {
 Start with the head of the list.
 
 ```js
-//
 let current = this.head;
 ```
 
 Slide through all of the items using node.next until we reach the specified position.
 
 ```js
-//
 for (let index = 0; index < position; index++) {
   current = current.next;
 }
@@ -1261,7 +1208,6 @@ for (let index = 0; index < position; index++) {
 Return the node we found.
 
 ```js
-//
     return current;
   }
 ```
@@ -1272,13 +1218,11 @@ Return the node we found.
 ---
 
 ```js
-//
  add(value, position) {
 
 ```
 
 ```js
-//
 // First create a node to hold our value.
 
 let node = {
@@ -1296,7 +1240,6 @@ let node = {
 #### We'll set the "next" field to the current head and then replace it with
 
 ```js
-//
  our new node.
     if (position === 0) {
    node.next = this.head;
@@ -1309,7 +1252,6 @@ let node = {
   First, find the previous node and the current node.
 
 ```js
-//
 let prev = this.get(position * 1);
 let current = prev.next;
 ```
@@ -1319,7 +1261,6 @@ let current = prev.next;
 - to the current node and updating the previous node's "next" field to
 
 ```js
-//
  // the new one.
    node.next = current;
    prev.next = node;
@@ -1335,7 +1276,6 @@ let current = prev.next;
 ---
 
 ```js
-//
  remove(position) {
 
 ```
@@ -1345,7 +1285,6 @@ let current = prev.next;
 #### We should not be able to remove from an empty list
 
 ```js
-//
 if (!this.head) {
   throw new Error("Removing from empty list");
 }
@@ -1354,7 +1293,6 @@ if (!this.head) {
 - If we're removing the first node we simply need to set the head to the
 
 ```js
-//
  next node in the chain
     if (position === 0) {
    this.head = this.head.next;
@@ -1365,7 +1303,6 @@ For any other position, we need to look up the previous node and set it
 - to the node after the current position.
 
 ```js
-//
    } else {
   let prev = this.get(position * 1);
   prev.next = prev.next.next;
@@ -1444,7 +1381,6 @@ class Tree {
 ---
 
 ```js
-//
  constructor() {
     this.root = null;
   }
@@ -1456,7 +1392,6 @@ class Tree {
 ---
 
 ```js
-//
  traverse(callback) {
 
 ```
@@ -1466,26 +1401,22 @@ class Tree {
 #### We'll define a walk function that we can call recursively on every node
 
 ```js
-//
  in the tree.
     function walk(node) {
 
 ```js
-//
  First call the callback on the node.
    callback(node);
 
 ```js
-//
  // then recursively call the walk function on all of its children.
    node.children.forEach(walk);
     }
-```
+````
 
 Now kick the traversal process off.
 
 ```js
-//
    walk(this.root);
  }
 ```
@@ -1495,7 +1426,6 @@ Now kick the traversal process off.
 ---
 
 ```js
-//
  add(value, parentValue) {
     let newNode = {
    value,
@@ -1506,7 +1436,6 @@ Now kick the traversal process off.
 - If there is no root, just set it to the new node.
 
 ```js
-//
 if (this.root === null) {
   this.root = newNode;
   return;
@@ -1514,7 +1443,6 @@ if (this.root === null) {
 ```
 
 ```js
-//
  Otherwise traverse the entire tree and find a node with a matching value
 
 
@@ -1599,7 +1527,6 @@ We've reached 5!
 ---
 
 ```js
-//
  constructor() {
     this.root = null;
   }
@@ -1611,7 +1538,6 @@ We've reached 5!
 ---
 
 ```js
-//
  contains(value) {
 
 ```
@@ -1621,7 +1547,6 @@ We've reached 5!
 #### We start at the root
 
 ```js
-//
 let current = this.root;
 ```
 
@@ -1634,7 +1559,6 @@ let current = this.root;
 - If the value is greater than the current.value we move to the right
 
 ```js
-//
    if (value > current.value) {
      current = current.right;
 ```
@@ -1642,7 +1566,6 @@ let current = this.root;
 - If the value is less than the current.value we move to the left.
 
 ```js
-//
    } else if (value < current.value) {
      current = current.left;
 ```
@@ -1650,7 +1573,6 @@ let current = this.root;
 Otherwise we must be equal values and we return true.
 
 ```js
-//
   } else {
     return true;
   }
@@ -1660,7 +1582,6 @@ Otherwise we must be equal values and we return true.
 - If we haven't matched anything then we return false.
 
 ```js
-//
     return false;
   }
 ```
@@ -1674,7 +1595,6 @@ Otherwise we must be equal values and we return true.
 ---
 
 ```js
-//
  add(value) {
 
 ```
@@ -1682,7 +1602,6 @@ Otherwise we must be equal values and we return true.
 First let's setup our node.
 
 ```js
-//
 let node = {
   value: value,
   left: null,
@@ -1693,7 +1612,6 @@ let node = {
 Special case for when there isn't any root node and we just need to add one.
 
 ```js
-//
 if (this.root === null) {
   this.root = node;
   return;
@@ -1705,7 +1623,6 @@ if (this.root === null) {
 #### We start at the root node
 
 ```js
-//
 let current = this.root;
 ```
 
@@ -1721,7 +1638,6 @@ already exists in the tree.
 - If `right` does not exist, set it to our node, and stop traversing.
 
 ```js
-//
      if (!current.right) {
    current.right = node;
    break;
@@ -1736,7 +1652,6 @@ current = current.right;
 - If `left` does not exist, set it to our node, and stop traversing.
 
 ```js
-//
      if (!current.left) {
    current.left = node;
    break;
@@ -1753,7 +1668,6 @@ current = current.left;
 - We don't do anything.
 
 ```js
-//
    } else {
      break;
    }
@@ -1772,7 +1686,6 @@ current = current.left;
 Just exporting everything for the tests...
 
 ```js
-//
 module.exports = {
   List,
   HashTable,

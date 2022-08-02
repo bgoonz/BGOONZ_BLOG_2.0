@@ -1,16 +1,15 @@
 ---
-title: Container With Most Water
+title: Leetcode
 weight: 0
 excerpt: feel free to try the examples
 seo:
-    title: ' Container With Most Water  '
+    title: '   '
     description: Leetcode practice
     robots: []
     extra: []
     type: stackbit_page_meta
 template: docs
 ---
-
 
 ## [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/)
 
@@ -37,7 +36,6 @@ Here we conclude rule NO.1: Get rid of the smaller one.
 What if `height[l] == height[r]`? It is safe to get rid of both. We do not need any of them to constrain the max height of the rest points.
 
 ```js
-//
 /**
  * @param {number[]} height
  * @return {number}

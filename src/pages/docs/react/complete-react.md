@@ -9,7 +9,6 @@ seo:
     extra: []
 template: docs
 ---
-
 # Comprehensive Guide To ReactJS
 
 #### Table of Contents
@@ -156,13 +155,11 @@ In this case, you add 2 script tags to the end of the `body` tag:
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/react/16.8.3/umd/react.development.js"
       crossorigin
-    >
-</script>
+    ></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.8.3/umd/react-dom.production.min.js"
       crossorigin
-    >
-</script>
+    ></script>
   </body>
 </html>
 ```
@@ -174,8 +171,7 @@ Here we loaded both React and React DOM. Why 2 libraries? Because React is 100% 
 After those tags you can load your JavaScript files that use React, or even inline JavaScript in a `script` tag:
 
 ```
-<script src="app.js">
-</script>
+<script src="app.js"></script>
 
 <!-- or -->
 
@@ -187,15 +183,13 @@ After those tags you can load your JavaScript files that use React, or even inli
 To use JSX you need an extra step: load Babel
 
 ```
-<script src="https://unpkg.com/babel-standalone@6/babel.min.js">
-</script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 ```
 
 and load your scripts with the special `text/babel` MIME type:
 
 ```
-<script src="app.js" type="text/babel">
-<;/script>
+<script src="app.js" type="text/babel"><;/script>
 ```
 
 Now you can add JSX in your app.js file:
@@ -1370,8 +1364,7 @@ Now, **any other JavaScript module** can import the functionality offered by upp
 An HTML page can add a module by using a `<scri`pt> tag with the sp`ecial type="m`odule" attribute:
 
 ```
-<script type="module" src="index.js">
-<;/script>
+<script type="module" src="index.js"><;/script>
 ```
 
 > _Note: this module import behaves like a `defer` script load. See [efficiently load JavaScript with defer and async](https://flaviocopes.com/javascript-async-defer/)_
@@ -1465,10 +1458,8 @@ Modules are fetched using [CORS](https://flaviocopes.com/cors/). This means that
 Use a combination of `type="module"` and `nomodule`:
 
 ```
-<script type="module" src="module.js">
-</script>
-<script nomodule src="fallback.js">
-</script>
+<script type="module" src="module.js"></script>
+<script nomodule src="fallback.js"></script>
 ```
 
 ES Modules are one of the biggest features introduced in modern browsers. They are part of ES6 but the road to implement them has been long.
@@ -2710,8 +2701,7 @@ class BlogPostExcerpt extends Component {
 }
 ```
 
-which also has a very nice shorthand syntax `<>
-</>` that is supported only in recent releases (and Babel 7+):
+which also has a very nice shorthand syntax `<></>` that is supported only in recent releases (and Babel 7+):
 
 ```
 import React, { Component } from 'react'
@@ -3246,8 +3236,7 @@ You have a set of folders in your app directory. Create a new folder called `ser
 
 Following the `create-react-app` conventions, the app lives in the `src/App.js` file. We're going to load that component, and render it to a string using [ReactDOMServer.renderToString()](https://reactjs.org/docs/react-dom-server.html), which is provided by `react-dom`.
 
-You get the contents of the `./build/index.html` file, and replace the `<div id="root">
-</div>`placeholder, which is the tag where the application hooks by default, with `` `<div id="root">\${ReactDOMServer.renderToString(<App />)}</div> ``.
+You get the contents of the `./build/index.html` file, and replace the `<div id="root"></div>`placeholder, which is the tag where the application hooks by default, with `` `<div id="root">\${ReactDOMServer.renderToString(<App />)}</div> ``.
 
 All the content inside the `build` folder is going to be served as-is, statically by Express.
 
@@ -3274,8 +3263,7 @@ const serverRenderer = (req, res, next) => {
     }
     return res.send(
       data.replace(
-        '<div id="root">
-</div>',
+        '<div id="root"></div>',
         `<div id="root">${ReactDOMServer.renderToString(<App />)}</div>`
       )
     )
