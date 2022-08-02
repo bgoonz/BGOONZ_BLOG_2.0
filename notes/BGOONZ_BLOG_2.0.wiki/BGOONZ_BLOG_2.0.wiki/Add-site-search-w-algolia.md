@@ -1,12 +1,10 @@
-Adding a Site Search to Your Stackbit Gatsby Site
-=================================================
+# Adding a Site Search to Your Stackbit Gatsby Site
 
 There are a number of options for adding search to your Stackbit site built with Gatsby. There are some free options like [Lunr](https://lunrjs.com/) that are free and open source and can perform simple searches on pre-generated indexes. In this example, we'll use a service called [Algolia](https://www.algolia.com/) for the search API. Algolia is a service specifically geared towards search and thus has many more features. Algolia is a commercial offering, but it has a generous free tier.
 
 The example below was built with Stackbit. You can see the full project code at <https://github.com/remotesynth/good-celery>).
 
-[](https://www.stackbit.com/docs/developer-guides/gatsby/site-search/#setting_up_algolia)Setting Up Algolia
------------------------------------------------------------------------------------------------------------
+## [](https://www.stackbit.com/docs/developer-guides/gatsby/site-search/#setting_up_algolia)Setting Up Algolia
 
 You'll need to set up your account on Algolia and set up a project. You can skip the steps about setting up indices when creating your account - we'll take care of that via code. However, be sure to grab all your API keys from the Algolia dashboard as we'll need them later.
 
@@ -151,8 +149,7 @@ We can now see the results when going into Algolia and browsing Indices.
 
 ![indices populated on Algolia dashboard](https://www.stackbit.com/docs/images/algolia-indices-sm.png)
 
-[](https://www.stackbit.com/docs/developer-guides/gatsby/site-search/#creating_the_search_ui)Creating the Search UI
--------------------------------------------------------------------------------------------------------------------
+## [](https://www.stackbit.com/docs/developer-guides/gatsby/site-search/#creating_the_search_ui)Creating the Search UI
 
 Now that our search indices are populated, let's display some results. To do this, we're going to use [React InstantSearch](https://github.com/algolia/react-instantsearch), which offers a search-as-you-type experience. It pretty much works out of the box using the [code they provide](https://www.algolia.com/doc/guides/building-search-ui/installation/react/).
 
@@ -304,8 +301,7 @@ The result works as shown below.
 
 ![finished search results](https://www.stackbit.com/docs/images/finished-search.gif)
 
-[](https://www.stackbit.com/docs/developer-guides/gatsby/site-search/#deployment)Deployment
--------------------------------------------------------------------------------------------
+## [](https://www.stackbit.com/docs/developer-guides/gatsby/site-search/#deployment)Deployment
 
 When we're ready to deploy the search, we need to ensure that the environment variables we created are available when we deploy. On Netlify, all we need to do is go to Settings > Build & Deploy > Environment and add the necessary variables defined in our `.env` file to our deployment settings.
 

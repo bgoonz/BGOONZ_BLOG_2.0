@@ -122,12 +122,14 @@ export type ExampleQuery = {
                 /**
                  * List of OneGraphNodes that are linked from this node.
                  */
-                nodes: Array<{
-                    /**
-                     * The id of the object.
-                     */
-                    oneGraphId: string;
-                }>;
+                nodes: Array<
+                    {
+                        /**
+                         * The id of the object.
+                         */
+                        oneGraphId: string;
+                    }
+                >;
             };
         };
         gitHub: {
@@ -173,18 +175,7 @@ Use this as an escape hatch if OneGraph does not yet support functionality of th
             /**
              * Perform a search across resources.
              */
-            search: {
-                /**
-                 * A list of edges.
-                 */
-                edges: Array</** No fields, named fragments, or inline fragments found */ Record<string, unknown>>;
-            };
-            /**
-             * Lookup a repository owner (ie. either a User or an Organization) by login.
-             */
-            repositoryOwner: {
-                id: string;
-            };
+            search: /** No fields, named fragments, or inline fragments found */ Record<string, unknown>;
             /**
              * Lookup a given repository by the owner and repository name.
              */

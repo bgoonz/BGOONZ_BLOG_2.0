@@ -1,4 +1,4 @@
-const { withPrefix: gatsbyWithPrefix } = require("gatsby");
+const { withPrefix: gatsbyWithPrefix } = require('gatsby');
 const _ = require('lodash');
 
 export default function withPrefix(url) {

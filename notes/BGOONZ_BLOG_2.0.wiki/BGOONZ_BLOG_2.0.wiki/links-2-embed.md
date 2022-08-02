@@ -1,11 +1,8 @@
 # Links:
 
-
 <details>
 
-<summary> Links  </summary>   
-
-
+<summary> Links  </summary>
 
 https://bgoonz-cv.netlify.app/
 
@@ -109,25 +106,17 @@ https://www.searchbar.org/
 
 https://dev.to/bgoonz"
 
-
 </details>
-
-
 
 ---
 
 # Old:
 
-
-
 <details>
 
-<summary> Old links  </summary>   
-
-
+<summary> Old links  </summary>
 
 https://gist.github.com/bgoonz/52bf38c3ba648dbf4e4acb36fb915ddc
-
 
 https://sanity-signup.netlify.app/
 
@@ -139,16 +128,13 @@ https://random-static-html-deploys.netlify.app/embeds-showcase.html
 
     <iframe src="https://drive.google.com/embeddedfolderview?id=1DHyQsPLziqSUODclplhnNX1eknzbZrL8#grid" style="width:100%; height:600px; border:0;"></iframe>
 
-- [cheat sheets](https://cheatsheets-42.netlify.app/)
+-   [cheat sheets](https://cheatsheets-42.netlify.app/)
 
-- [Gitpod Docs](https://archive-42.github.io/my-docs-gitpod-h# Links:
-
+-   [Gitpod Docs](https://archive-42.github.io/my-docs-gitpod-h# Links:
 
 <details>
 
-<summary> Links  </summary>   
-
-
+<summary> Links  </summary>
 
 https://bgoonz-cv.netlify.app/
 
@@ -252,25 +238,17 @@ https://www.searchbar.org/
 
 https://dev.to/bgoonz"
 
-
 </details>
-
-
 
 ---
 
 # Old:
 
-
-
 <details>
 
-<summary> Old links  </summary>   
-
-
+<summary> Old links  </summary>
 
 https://gist.github.com/bgoonz/52bf38c3ba648dbf4e4acb36fb915ddc
-
 
 https://sanity-signup.netlify.app/
 
@@ -282,11 +260,9 @@ https://random-static-html-deploys.netlify.app/embeds-showcase.html
 
     <iframe src="https://drive.google.com/embeddedfolderview?id=1DHyQsPLziqSUODclplhnNX1eknzbZrL8#grid" style="width:100%; height:600px; border:0;"></iframe>
 
-- [cheat sheets](https://cheatsheets-42.netlify.app/)
+-   [cheat sheets](https://cheatsheets-42.netlify.app/)
 
-- [Gitpod Docs](https://archive-42.github.io/my-docs-gitpod-html/)
-
-
+-   [Gitpod Docs](https://archive-42.github.io/my-docs-gitpod-html/)
 
 https://transform-tools-m7k1dqcmw-bgoonz.vercel.app/
 
@@ -294,8 +270,6 @@ https://transform-tools-m7k1dqcmw-bgoonz.vercel.app/
 
 </details>
 tml/)
-
-
 
 https://transform-tools-m7k1dqcmw-bgoonz.vercel.app/
 
