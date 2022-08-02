@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 # eval()
 
 **Warning:** Executing JavaScript from a string is an enormous security risk. It is far too easy for a bad actor to run arbitrary code when you use `eval()`. See [Never use eval()!](#never_use_eval!), below.

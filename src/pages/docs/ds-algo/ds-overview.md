@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 # What are data structures
 
 Data structures, at a high level, are techniques for storing and organizing data that make it easier to modify, navigate, and access. Data structures determine how data is collected, the functions we can use to access it, and the relationships between data.
@@ -37,7 +36,7 @@ Non-primitive data structures are not defined by the programming language but ra
 
 The most basic of all data structures, an array stores data in memory for later use. Each array has a fixed number of cells decided on its creation, and each cell has a corresponding numeric index used to select its data. Whenever you'd like to use the array, all you need are the desired indices, and you can access any of the data within.
 
-![alt-text](https://www.educative.io/api/page/6094484883374080/image/download/5163503745761280)
+![](https://www.educative.io/api/page/6094484883374080/image/download/5163503745761280)
 
 Advantages
 
@@ -61,7 +60,7 @@ Queues are conceptually similar to stacks; both are sequential structures, but q
 
 As a result, queues can be thought of as a FIFO (First In, First Out) version of stacks. These are helpful as a buffer for requests, storing each request in the order it was received until it can be processed.
 
-![alt-text](https://www.educative.io/api/page/6094484883374080/image/download/4608256413532160)
+![](https://www.educative.io/api/page/6094484883374080/image/download/4608256413532160)
 
 For a visual, consider a single-lane tunnel: the first car to enter is the first car to exit. If other cars should wish to exit, but the first stops, all cars will have to wait for the first to exit before they can proceed.
 
@@ -87,7 +86,7 @@ Linked lists are a data structure which, unlike the previous three, does not use
 
 This system allows efficient insertion and removal of items without the need for reorganization.
 
-![alt-text](https://www.educative.io/api/page/6094484883374080/image/download/4536246505308160)
+![](https://www.educative.io/api/page/6094484883374080/image/download/4536246505308160)
 
 Advantages
 
@@ -149,7 +148,7 @@ Disadvantages
 
 Graphs are a relation-based data structure helpful for storing web-like relationships. Each node, or vertex, as they're called in graphs, has a title (A, B, C, etc.), a value contained within, and a list of links (called edges) it has with other vertices.
 
-![alt-text](https://www.educative.io/api/page/6094484883374080/image/download/4912691077447680)
+![](https://www.educative.io/api/page/6094484883374080/image/download/4912691077447680)
 
 In the above example, each circle is a vertex, and each line is an edge. If produced in writing, this structure would look like:
 
@@ -232,7 +231,6 @@ There are two ways you could solve this coding problem in an interview. Let's di
 ---
 
 ```js
-//
 
 
 function removeEven(arr) {
@@ -255,7 +253,6 @@ This approach starts with the first element of the array. If that current elemen
 ---
 
 ```js
-//
 
 
 function removeEven(arr) {
@@ -276,7 +273,6 @@ Problem statement: Implement the `isBalanced()` function to take a string contai
 Input: A string consisting solely of `(`, `)`, `{`, `}`, `[` and `]`
 
 ```js
-//
 exp = '{[({})]}';
 ```
 
@@ -293,7 +289,6 @@ index.js
 Stack.js
 
 ```js
-//
 
 "use strict";
 module.exports = class Stack {
@@ -340,14 +335,12 @@ Problem statement: Implement a function `findBin(n)`, which will generate binary
 Input: A positive integer n
 
 ```js
-//
 n = 3;
 ```
 
 Output: Returns binary numbers in the form of strings from `1` up to `n`
 
 ```js
-//
 result = ['1', '10', '11'];
 ```
 
@@ -358,7 +351,6 @@ index.js
 Queue.js
 
 ```js
-//
 
 "use strict";
 module.exports = class Queue {
@@ -409,14 +401,12 @@ Problem statement: Write the `reverse` function to take a singly linked list and
 Input: a singly linked list
 
 ```js
-//
 LinkedList = 0->1->2->3-4
 ```
 
 Output: a reverse linked list
 
 ```js
-//
 LinkedList = 4->3->2->1->0
 ```
 
@@ -429,7 +419,6 @@ LinkedList.js
 Node.js
 
 ```js
-//
 
 "use strict";
 const Node = require( './Node.js' );
@@ -480,7 +469,6 @@ Problem statement: Use the `findMin(root)` function to find the minimum value in
 Input: a root node for a binary search tree
 
 ```js
-//
 bst = {    6 -> 4,9    4 -> 2,5    9 -> 8,12    12 -> 10,14}where parent -> leftChild,rightChild
 ```
 
@@ -503,7 +491,6 @@ BinarySearchTree.js
 Node.js
 
 ```js
-//
 'use strict';
 const Node = require('./Node.js');
 module.exports = class BinarySearchTree {
@@ -544,7 +531,7 @@ Problem statement: Implement the removeEdge function to take a source and a dest
 
 Input: A graph, a source, and a destination
 
-![alt-text](data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjA4MCIgaGVpZ2h0PSIyOTEwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg==)
+![](data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjA4MCIgaGVpZ2h0PSIyOTEwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg==)
 
 ![widget](https://www.educative.io/cdn-cgi/image/f=auto,fit=contain,w=600/api/page/6094484883374080/image/download/6576135669284864)
 
@@ -553,7 +540,6 @@ Input: A graph, a source, and a destination
 Output: A graph with the edge between the source and the destination removed.
 
 ```js
-//
 removeEdge(graph, 2, 3);
 ```
 
@@ -572,7 +558,6 @@ LinkedList.js
 Node.js
 
 ```js
-//
 const LinkedList = require('./LinkedList.js');
 const Node = require('./Node.js');
 module.exports = class Graph {
@@ -610,14 +595,12 @@ Problem statement: Implement the function `convertMax(maxHeap)` to convert a bin
 Input: a Max-Heap
 
 ```js
-//
 maxHeap = [9, 4, 7, 1, -2, 6, 5];
 ```
 
 Output: returns the converted array
 
 ```js
-//
 result = [-2, 1, 5, 9, 4, 6, 7];
 ```
 
@@ -626,7 +609,6 @@ To solve this problem, we must min heapify all parent nodes. Take a look.
 ---
 
 ```js
-//
 
 
 function minHeapify(heap, index) {
@@ -652,7 +634,6 @@ function minHeapify(heap, index) {
 ---
 
 ```js
-//
 
 
 function convertMax(maxHeap) {

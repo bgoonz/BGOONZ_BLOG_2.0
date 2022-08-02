@@ -1,15 +1,14 @@
 ---
 title: Jamstack
 weight: 0
-excerpt: Websites are served as static HTML files. These can be generated from source files, such as Markdown, using a Static Site Generator.
+excerpt: lorem-ipsum
 seo:
     title: ''
-    description: 'Websites are served as static HTML files. These can be generated from source files, such as Markdown, using a Static Site Generator.'
+    description: ''
     robots: []
     extra: []
 template: docs
 ---
-
 
 ## What is Jamstack
 

@@ -3,14 +3,13 @@ title: Python Snippets
 weight: 0
 excerpt: Snippets
 seo:
-    title: 'Python Snippets'
-    description: 'Python code Snippets'
+    title: ''
+    description: ''
     robots: []
     extra: []
     type: stackbit_page_meta
 template: docs
 ---
-
 
 # Python Snippets
 

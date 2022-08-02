@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 ## Visualizing the Discrete Fourier Transform
 
 A couple of years ago I suggested a way of thinking about [how the Discrete Fourier Transform works](https://blog.revolutionanalytics.com/2014/01/the-fourier-transform-explained-in-one-sentence.html), based on Stuart Riffle's elegant colour-coding of the equation:

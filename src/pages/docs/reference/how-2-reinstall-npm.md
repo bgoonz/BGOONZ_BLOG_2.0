@@ -1,15 +1,14 @@
 ---
 title: How To Reinstall NPM and Node.js On Your System
 weight: 0
-excerpt: How To Reinstall NPM and Node.js On Your System
+excerpt: lorem-ipsum
 seo:
-    title: 'How To Reinstall NPM and Node.js On Your System'
-    description: 'How To Reinstall NPM and Node.js On Your System'
+    title: ''
+    description: ''
     robots: []
     extra: []
 template: docs
 ---
-
 
 The Node Package Manager (usually shortened to npm) and Node.js are popular technologies among JavaScript developers. npm is the default package management utility that is installed automatically on your machine when you download and install Node.js.
 
@@ -83,7 +82,7 @@ To use this option, you can go to the [Node.js download page](https://nodejs.org
 
 It is recommended to download the version labeled LTS (Long-term Supported) because it has been tested with npm. Although the version labeled Current comes with the latest features, it may be unstable and unreliable.
 
-![alt-text](https://www.whitesourcesoftware.com/wp-content/media/2020/09/12121.png)
+![](https://www.whitesourcesoftware.com/wp-content/media/2020/09/12121.png)
 
 After selecting the version you want to download, and clicking the Windows Installer option, the installation wizard will magically complete the installation process for you.
 
@@ -341,7 +340,7 @@ Using a Node installer is the least recommended way of upgrading Node.js on Linu
 
 -   Download the binary package using your browser. Or, you can download it using the following Wget command on the terminal:
 
-![alt-text](https://www.whitesourcesoftware.com/wp-content/media/2020/08/node-js-linux.png)
+![](https://www.whitesourcesoftware.com/wp-content/media/2020/08/node-js-linux.png)
 
 -   Download the binary package using your browser. Or, you can download it using the following Wget command on the terminal:
 

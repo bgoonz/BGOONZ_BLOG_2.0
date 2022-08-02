@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 # Awesome Static Site Resources
 
 ## Table of Contents

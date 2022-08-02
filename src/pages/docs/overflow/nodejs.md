@@ -25,7 +25,6 @@ seo:
 template: docs
 ---
 
-
 As a beginner, it's hard to get to a point where you are confident enough in your programming abilities.
 
 While learning to code, you might also be confused at where does JavaScript end, and where Node.js begins, and vice versa.

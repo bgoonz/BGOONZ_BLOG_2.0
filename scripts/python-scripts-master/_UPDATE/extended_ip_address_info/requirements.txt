@@ -1,2 +1,0 @@
-pycurl
-certifi

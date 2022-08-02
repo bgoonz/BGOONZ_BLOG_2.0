@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 # Object
 
 The `Object` class represents one of [JavaScript's data types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures). It is used to store various keyed collections and more complex entities. Objects can be created using the [`Object()`](object/object) constructor or the [object initializer / literal syntax](../operators/object_initializer).
@@ -194,7 +193,6 @@ When modifying prototypes with hooks, pass `this` and the arguments (the call st
 
 Since JavaScript doesn't exactly have sub-class objects, prototype is a useful workaround to make a "base class" object of certain functions that act as objects. For example:
 ```js
-//
     var Person = function(name) {
       this.name = name;
       this.canTalk = true;

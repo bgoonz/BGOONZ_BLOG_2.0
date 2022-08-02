@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 # Tree
 
 -   [Binary Search Tree](binary-search-tree)

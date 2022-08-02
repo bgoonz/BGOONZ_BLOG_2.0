@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 Three different aspects of web site production:
 
 - Content -- the text, images, etc. What the user wants to read.
@@ -27,7 +26,7 @@ Note that it hasn't always been this way, HTML can do a bunch of Style things (e
 
 ## Document Production
 
-![alt-text](http://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Metal_movable_type.jpg/640px-Metal_movable_type.jpg)
+![](http://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Metal_movable_type.jpg/640px-Metal_movable_type.jpg)
 
 Moveable type, source [Wikimedia Commons](http://commons.wikimedia.org/wiki/File:Metal_movable_type.jpg)
 
