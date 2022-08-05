@@ -99,16 +99,7 @@ node_modules/
 
 
 *.cache
-<<<<<<< HEAD
-*public
-=======
-<<<<<<< HEAD
-*public
-=======
 
 *public/
->>>>>>> 217d551e709e0a3855c273c4474405cc96110325
 
-# Local Netlify folder
-.netlify
->>>>>>> f4594b19594599756372b62212ee4796747e0825
+package.lock.json

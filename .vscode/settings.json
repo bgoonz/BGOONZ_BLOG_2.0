@@ -1,8 +1,3 @@
 {
-<<<<<<< HEAD
       "makefile.extensionOutputFolder": "./.vscode"
-=======
-    "docwriter.style": "DocBlock",
-    "docwriter.hotkey.mac": "⌥ + ."
->>>>>>> f4594b19594599756372b62212ee4796747e0825
 }
