@@ -21,7 +21,7 @@ function findFileNode({node, getNode}) {
         console.log('did not find ancestor File node');
         return null;
     }
-    return fileNode
+    return fileNode;
 }
 exports.onCreateNode = ({node, getNode, actions}, options) => {
     const {createNodeField} = actions;
