@@ -1,11 +1,7 @@
 ---
 title: Python Cheat Sheet
 weight: 0
-<<<<<<< HEAD
 excerpt: lorem-ipsum
-=======
-excerpt:  Python Cheat Sheet
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 seo:
     title: python cheat sheet
     description: cheat sheet for python developers
@@ -22,10 +18,7 @@ seo:
 template: docs
 ---
 
-<<<<<<< HEAD
 ## Lorem ipsum
-=======
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 # Python Cheat Sheet
 
@@ -1949,17 +1942,8 @@ spam.strip('ampS')
 
 First, install `pypeerclip` with pip:
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 ```consoleell
-=======
-```console
->>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
 pip install pyperclip
-=======
-```console
-```bashl pyperclip
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 ```
 
 ```python
@@ -3091,11 +3075,7 @@ with open("filename.yaml") as f:
 Install it with:
 
 ```console
-<<<<<<< HEAD
 pip install anyconfig
-=======
-```bashl anyconfig
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 ```
 
 Usage:
@@ -3501,11 +3481,7 @@ The `setup.py` file is at the heart of a Python project. It describes all of the
 This allows you to easily install Python packages. Often it's enough to write:
 
 ```console
-<<<<<<< HEAD
 python setup.py install
-=======
-```bashup.py install
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 ```
 
 and module will install itself.
@@ -3609,15 +3585,9 @@ class WithoutExplicitTypes:
 
 ---
 
-<<<<<<< HEAD
 # PART 2:
 
 # Single line comments start with a number symbol.
-=======
-# PART 2
-
-# Single line comments start with a number symbol
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 """ Multiline strings can be written
 using three "s, and are often used
@@ -3641,11 +3611,7 @@ as documentation.
 10 \* 2 # => 20
 35 / 5 # => 7.0
 
-<<<<<<< HEAD
 # Integer division rounds down for both positive and negative numbers.
-=======
-# Integer division rounds down for both positive and negative numbers
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 5 // 3 # => 1
 -5 // 3 # => -2
@@ -3737,11 +3703,7 @@ bool(-6) # => True
 
 # (is vs. ==) is checks if two variables refer to the same object, but == checks
 
-<<<<<<< HEAD
 # if the objects pointed to have the same values.
-=======
-# if the objects pointed to have the same values
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 a = [1, 2, 3, 4] # Point a at a new list, [1, 2, 3, 4]
 b = a # Point b at what a is pointing to
@@ -3756,11 +3718,7 @@ b == a # => True, a's and b's objects are equal
 "This is a string."
 'This is also a string.'
 
-<<<<<<< HEAD
 # Strings can be added too! But try not to do this.
-=======
-# Strings can be added too! But try not to do this
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 "Hello " + "world!" # => "Hello world!"
 
@@ -3776,39 +3734,23 @@ b == a # => True, a's and b's objects are equal
 
 len("This is a string") # => 16
 
-<<<<<<< HEAD
 # .format can be used to format strings, like this:
 
 "{} can be {}".format("Strings", "interpolated") # => "Strings can be interpolated"
 
 # You can repeat the formatting arguments to save some typing.
-=======
-# .format can be used to format strings, like this
-
-"{} can be {}".format("Strings", "interpolated") # => "Strings can be interpolated"
-
-# You can repeat the formatting arguments to save some typing
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 "{0} be nimble, {0} be quick, {0} jump over the {1}".format("Jack", "candle stick")
 
 # => "Jack be nimble, Jack be quick, Jack jump over the candle stick"
 
-<<<<<<< HEAD
 # You can use keywords if you don't want to count.
-=======
-# You can use keywords if you don't want to count
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 "{name} wants to eat {food}".format(name="Bob", food="lasagna") # => "Bob wants to eat lasagna"
 
 # If your Python 3 code also needs to run on Python 2.5 and below, you can also
 
-<<<<<<< HEAD
 # still use the old style of formatting:
-=======
-# still use the old style of formatting
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 "%s can be %s the %s way" % ("Strings", "interpolated", "old") # => "Strings can be interpolated the old way"
 
@@ -3817,11 +3759,7 @@ len("This is a string") # => 16
 name = "Reiko"
 f"She said her name is {name}." # => "She said her name is Reiko"
 
-<<<<<<< HEAD
 # You can basically put any Python statement inside the braces and it will be output in the string.
-=======
-# You can basically put any Python statement inside the braces and it will be output in the string
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 f"{name} is {len(name)} characters long." # => "Reiko is 5 characters long."
 
@@ -3831,20 +3769,12 @@ None # => None
 
 # Don't use the equality "==" symbol to compare objects to None
 
-<<<<<<< HEAD
 # Use "is" instead. This checks for equality of object identity.
-=======
-# Use "is" instead. This checks for equality of object identity
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 "etc" is None # => False
 None is None # => True
 
-<<<<<<< HEAD
 # None, 0, and empty strings/lists/dicts/tuples all evaluate to False.
-=======
-# None, 0, and empty strings/lists/dicts/tuples all evaluate to False
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 # All other values are True
 
@@ -3864,15 +3794,9 @@ bool(()) # => False
 
 print("I'm Python. Nice to meet you!") # => I'm Python. Nice to meet you!
 
-<<<<<<< HEAD
 # By default the print function also prints out a newline at the end.
 
 # Use the optional argument end to change the end string.
-=======
-# By default the print function also prints out a newline at the end
-
-# Use the optional argument end to change the end string
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 print("Hello, World", end="!") # => Hello, World!
 
@@ -3882,26 +3806,16 @@ input_string_var = input("Enter some data: ") # Returns the data as a string
 
 # Note: In earlier versions of Python, input() method was named as raw_input()
 
-<<<<<<< HEAD
 # There are no declarations, only assignments.
-=======
-# There are no declarations, only assignments
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 # Convention is to use lower_case_with_underscores
 
 some_var = 5
 some_var # => 5
 
-<<<<<<< HEAD
 # Accessing a previously unassigned variable is an exception.
 
 # See Control Flow to learn more about exception handling.
-=======
-# Accessing a previously unassigned variable is an exception
-
-# See Control Flow to learn more about exception handling
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 some_unknown_var # Raises a NameError
 
@@ -3946,11 +3860,7 @@ li[-1] # => 3
 
 li[4] # Raises an IndexError
 
-<<<<<<< HEAD
 # You can look at ranges with slice syntax.
-=======
-# You can look at ranges with slice syntax
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 # The start index is included, the end index is not
 
@@ -3990,11 +3900,7 @@ li.index(4) # Raises a ValueError as 4 is not in the list
 
 # You can add lists
 
-<<<<<<< HEAD
 # Note: values for li and for other_li are not modified.
-=======
-# Note: values for li and for other_li are not modified
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 li + other_li # => [1, 2, 3, 4, 5, 6]
 
@@ -4010,11 +3916,7 @@ li.extend(other_li) # Now li is [1, 2, 3, 4, 5, 6]
 
 len(li) # => 6
 
-<<<<<<< HEAD
 # Tuples are like lists but are immutable.
-=======
-# Tuples are like lists but are immutable
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 tup = (1, 2, 3)
 tup[0] # => 1
@@ -4022,11 +3924,7 @@ tup[0] = 3 # Raises a TypeError
 
 # Note that a tuple of length one has to have a comma after the last element but
 
-<<<<<<< HEAD
 # tuples of other lengths, even zero, do not.
-=======
-# tuples of other lengths, even zero, do not
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 type((1)) # => <class 'int'>
 type((1,)) # => <class 'tuple'>
@@ -4067,15 +3965,9 @@ filled_dict = {"one": 1, "two": 2, "three": 3}
 
 # Note keys for dictionaries have to be immutable types. This is to ensure that
 
-<<<<<<< HEAD
 # the key can be converted to a constant hash value for quick look-ups.
 
 # Immutable types include ints, floats, strings, tuples.
-=======
-# the key can be converted to a constant hash value for quick look-ups
-
-# Immutable types include ints, floats, strings, tuples
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 invalid_dict = {[1,2,3]: "123"} # => Raises a TypeError: unhashable type: 'list'
 valid_dict = {(1,2,3):[1,2,3]} # Values can be of any type, however.
@@ -4092,11 +3984,7 @@ filled_dict["one"] # => 1
 
 # not match the example below exactly. However, as of Python 3.7, dictionary
 
-<<<<<<< HEAD
 # items maintain the order at which they are inserted into the dictionary.
-=======
-# items maintain the order at which they are inserted into the dictionary
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 list(filled_dict.keys()) # => ["three", "two", "one"] in Python <3.7
 list(filled_dict.keys()) # => ["one", "two", "three"] in Python 3.7+
@@ -4105,11 +3993,7 @@ list(filled_dict.keys()) # => ["one", "two", "three"] in Python 3.7+
 
 # in list() to get it out of the iterable. Note - Same as above regarding key
 
-<<<<<<< HEAD
 # ordering.
-=======
-# ordering
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 list(filled_dict.values()) # => [3, 2, 1] in Python <3.7
 list(filled_dict.values()) # => [1, 2, 3] in Python 3.7+
@@ -4150,29 +4034,17 @@ del filled_dict["one"] # Removes the key "one" from filled dict
 # From Python 3.5 you can also use the additional unpacking options
 
 {'a': 1, **{'b': 2}} # => {'a': 1, 'b': 2}
-<<<<<<< HEAD
 {'a': 1, **{'a': 2}} # => {'a': 2}
-=======
-{'a': 1,**{'a': 2}} # => {'a': 2}
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 # Sets store ... well sets
 
 empty_set = set()
 
-<<<<<<< HEAD
 # Initialize a set with a bunch of values. Yeah, it looks a bit like a dict. Sorry.
 
 some_set = {1, 1, 2, 2, 3, 4} # some_set is now {1, 2, 3, 4}
 
 # Similar to keys of a dictionary, elements of a set have to be immutable.
-=======
-# Initialize a set with a bunch of values. Yeah, it looks a bit like a dict. Sorry
-
-some_set = {1, 1, 2, 2, 3, 4} # some_set is now {1, 2, 3, 4}
-
-# Similar to keys of a dictionary, elements of a set have to be immutable
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 invalid_set = {[1], 1} # => Raises a TypeError: unhashable type: 'list'
 valid_set = {(1,), 1}
@@ -4226,15 +4098,9 @@ filled_set | other_set # => {1, 2, 3, 4, 5, 6}
 
 some_var = 5
 
-<<<<<<< HEAD
 # Here is an if statement. Indentation is significant in Python!
 
 # Convention is to use four spaces, not tabs.
-=======
-# Here is an if statement. Indentation is significant in Python
-
-# Convention is to use four spaces, not tabs
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 # This prints "some_var is smaller than 10"
 
@@ -4356,34 +4222,21 @@ print(contents)
 
 # print: {"aa": 12, "bb": 21}
 
-<<<<<<< HEAD
 # Python offers a fundamental abstraction called the Iterable.
 
 # An iterable is an object that can be treated as a sequence.
 
 # The object returned by the range function, is an iterable.
-=======
-# Python offers a fundamental abstraction called the Iterable
-
-# An iterable is an object that can be treated as a sequence
-
-# The object returned by the range function, is an iterable
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 filled_dict = {"one": 1, "two": 2, "three": 3}
 our_iterable = filled_dict.keys()
 print(our_iterable) # => dict_keys(['one', 'two', 'three']). This is an object that implements our Iterable interface.
 
-<<<<<<< HEAD
 # We can loop over it.
-=======
-# We can loop over it
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 for i in our_iterable:
 print(i) # Prints one, two, three
 
-<<<<<<< HEAD
 # However we cannot address elements by index.
 
 our_iterable[1] # Raises a TypeError
@@ -4399,23 +4252,6 @@ our_iterator = iter(our_iterable)
 next(our_iterator) # => "one"
 
 # It maintains state as we iterate.
-=======
-# However we cannot address elements by index
-
-our_iterable[1] # Raises a TypeError
-
-# An iterable is an object that knows how to create an iterator
-
-our_iterator = iter(our_iterable)
-
-# Our iterator is an object that can remember the state as we traverse through it
-
-# We get the next object with "next()"
-
-next(our_iterator) # => "one"
-
-# It maintains state as we iterate
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 next(our_iterator) # => "two"
 next(our_iterator) # => "three"
@@ -4424,21 +4260,13 @@ next(our_iterator) # => "three"
 
 next(our_iterator) # Raises StopIteration
 
-<<<<<<< HEAD
 # We can also loop over it, in fact, "for" does this implicitly!
-=======
-# We can also loop over it, in fact, "for" does this implicitly
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 our_iterator = iter(our_iterable)
 for i in our_iterator:
 print(i) # Prints one, two, three
 
-<<<<<<< HEAD
 # You can grab all the elements of an iterable or iterator by calling list() on it.
-=======
-# You can grab all the elements of an iterable or iterator by calling list() on it
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 list(our_iterable) # => Returns ["one", "two", "three"]
 list(our_iterator) # => Returns [] because state is saved
@@ -4494,15 +4322,9 @@ all_the_args(1, 2, a=3, b=4) prints:
 {"a": 3, "b": 4}
 """
 
-<<<<<<< HEAD
 # When calling functions, you can do the opposite of args/kwargs!
 
 # Use \* to expand tuples and use \*\* to expand kwargs.
-=======
-# When calling functions, you can do the opposite of args/kwargs
-
-# Use \* to expand tuples and use \*\* to expand kwargs
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 args = (1, 2, 3, 4)
 kwargs = {"a": 3, "b": 4}
@@ -4519,11 +4341,7 @@ x = 1
 y = 2
 x, y = swap(x, y) # => x = 2, y = 1
 
-<<<<<<< HEAD
 # (x, y) = swap(x,y) # Again parenthesis have been excluded but can be included.
-=======
-# (x, y) = swap(x,y) # Again parenthesis have been excluded but can be included
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 # Function Scope
 
@@ -4555,11 +4373,7 @@ add_10(3) # => 13
 # There are also anonymous functions
 
 (lambda x: x > 2)(3) # => True
-<<<<<<< HEAD
 (lambda x, y: x ** 2 + y ** 2)(2, 1) # => 5
-=======
-(lambda x, y: x **2 + y** 2)(2, 1) # => 5
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 # There are built-in higher order functions
 
@@ -4575,11 +4389,7 @@ list(filter(lambda x: x > 5, [3, 4, 5, 6, 7])) # => [6, 7]
 [add_10(i) for i in [1, 2, 3]] # => [11, 12, 13]
 [x for x in [3, 4, 5, 6, 7] if x > 5] # => [6, 7]
 
-<<<<<<< HEAD
 # You can construct set and dict comprehensions as well.
-=======
-# You can construct set and dict comprehensions as well
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 {x for x in 'abcddeef' if x not in 'abc'} # => {'d', 'e', 'f'}
 {x: x\*\*2 for x in range(5)} # => {0: 0, 1: 1, 2: 4, 3: 9, 4: 16}
@@ -4601,11 +4411,7 @@ from math import ceil, floor
 print(ceil(3.7)) # => 4.0
 print(floor(3.7)) # => 3.0
 
-<<<<<<< HEAD
 # You can import all functions from a module.
-=======
-# You can import all functions from a module
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 # Warning: this is not recommended
 
@@ -4620,19 +4426,11 @@ math.sqrt(16) == m.sqrt(16) # => True
 
 # can write your own, and import them. The name of the
 
-<<<<<<< HEAD
 # module is the same as the name of the file.
 
 # You can find out which functions and attributes
 
 # are defined in a module.
-=======
-# module is the same as the name of the file
-
-# You can find out which functions and attributes
-
-# are defined in a module
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 import math
 dir(math)
@@ -4641,19 +4439,11 @@ dir(math)
 
 # folder as your current script, the file math.py will
 
-<<<<<<< HEAD
 # be loaded instead of the built-in Python module.
 
 # This happens because the local folder has priority
 
 # over Python's built-in libraries.
-=======
-# be loaded instead of the built-in Python module
-
-# This happens because the local folder has priority
-
-# over Python's built-in libraries
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 ####################################################
 
@@ -4717,19 +4507,11 @@ class Human:
     def age(self):
         del self._age
 
-<<<<<<< HEAD
 # When a Python interpreter reads a source file it executes all its code.
 
 # This **name** check makes sure this code block is only executed when this
 
 # module is the main program.
-=======
-# When a Python interpreter reads a source file it executes all its code
-
-# This **name** check makes sure this code block is only executed when this
-
-# module is the main program
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 if **name** == '**main**': # Instantiate a class
 i = Human(name="Ian")
@@ -4768,11 +4550,7 @@ j.say("hello") # "Joel: hello" # i and j are instances of type Human, or in othe
 
 # Inheritance allows new child classes to be defined that inherit methods and
 
-<<<<<<< HEAD
 # variables from their parent class.
-=======
-# variables from their parent class
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 # Using the Human class defined above as the base or parent class, we can
 
@@ -4780,15 +4558,9 @@ j.say("hello") # "Joel: hello" # i and j are instances of type Human, or in othe
 
 # "species", "name", and "age", as well as methods, like "sing" and "grunt"
 
-<<<<<<< HEAD
 # from the Human class, but can also have its own unique properties.
 
 # To take advantage of modularization by file you could place the classes above in their own files,
-=======
-# from the Human class, but can also have its own unique properties
-
-# To take advantage of modularization by file you could place the classes above in their own files
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 # say, human.py
 
@@ -4966,11 +4738,7 @@ sup = Batman()
 
 ####################################################
 
-<<<<<<< HEAD
 # Generators help you make lazy code.
-=======
-# Generators help you make lazy code
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 def double_numbers(iterable):
 for i in iterable:
@@ -4980,15 +4748,9 @@ yield i + i
 
 # process the next value in the iterable. This allows them to perform
 
-<<<<<<< HEAD
 # operations on otherwise prohibitively large value ranges.
 
 # NOTE: `range` replaces `xrange` in Python 3.
-=======
-# operations on otherwise prohibitively large value ranges
-
-# NOTE: `range` replaces `xrange` in Python 3
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 for i in double_numbers(range(1, 900000000)): # `range` is a generator.
 print(i)
@@ -4997,21 +4759,13 @@ break
 
 # Just as you can create a list comprehension, you can create generator
 
-<<<<<<< HEAD
 # comprehensions as well.
-=======
-# comprehensions as well
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 values = (-x for x in [1,2,3,4,5])
 for x in values:
 print(x) # prints -1 -2 -3 -4 -5 to console/terminal
 
-<<<<<<< HEAD
 # You can also cast a generator comprehension directly to a list.
-=======
-# You can also cast a generator comprehension directly to a list
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 values = (-x for x in [1,2,3,4,5])
 gen_to_list = list(values)
@@ -5021,11 +4775,7 @@ print(gen_to_list) # => [-1, -2, -3, -4, -5]
 
 # In this example `beg` wraps `say`. If say_please is True then it
 
-<<<<<<< HEAD
 # will change the returned message.
-=======
-# will change the returned message
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 from functools import wraps
 

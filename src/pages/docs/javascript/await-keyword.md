@@ -3,13 +3,8 @@ title: 'Await '
 weight: 0
 excerpt: Async and await
 seo:
-<<<<<<< HEAD
     title: ''
     description: ''
-=======
-    title: 'Await '
-    description: 'asynchronous code'
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
     robots: []
     extra: []
     type: stackbit_page_meta

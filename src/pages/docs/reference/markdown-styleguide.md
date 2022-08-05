@@ -1623,11 +1623,7 @@ echo Hello world
 To fix this, add a language specifier to the code block:
 
 ````markdown
-<<<<<<< HEAD
 ```console
-=======
-```bash
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 #!/bin/bash
 echo Hello world
 ```

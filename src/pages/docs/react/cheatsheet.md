@@ -897,11 +897,7 @@ class Link extends React.Component {
 
 <summary>  </summary>
 
-<<<<<<< HEAD
 ```console
-=======
-```bash
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 npm install --save react       // declarative and flexible JavaScript library for building UI
 npm install --save react-dom   // serves as the entry point of the DOM-related rendering paths
