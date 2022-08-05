@@ -6114,7 +6114,7 @@ Cons
              ```js
 
         //
-        console.log(![alt-text]); // false
+        console.log(![]); // false
 
         ```
 
@@ -6129,7 +6129,7 @@ Cons
         //
         console.log(['a'] + ['b']); // "ab"
         console.log([] + []); // ""
-        console.log(![alt-text] + []); // "false", because ![alt-text] returns false.
+        console.log(![] + []); // "false", because ![] returns false.
 
         ```
 
@@ -6156,7 +6156,7 @@ Cons
 
              The self string can be formed with the combination of `[]()!+` characters. You need to remember the below conventions to achieve this pattern.
 
-             1. Since Arrays are truthful values, negating the arrays will produce false: ![alt-text] === false
+             1. Since Arrays are truthful values, negating the arrays will produce false: ![] === false
              2. As per JavaScript coercion rules, the addition of arrays together will toString them: [] + [] === ""
              3. Prepend an array with + operator will convert an array to false, the negation will make it true and finally converting the result will produce value '1': +(!(+[])) === 1
 
@@ -6165,7 +6165,7 @@ Cons
              ```js
 
         //
-        (![alt-text] + [] === 'false' + !+[]) === 1;
+        (![] + [] === 'false' + !+[]) === 1;
 
         ````
 
@@ -6177,14 +6177,14 @@ Cons
         s e l f
         ^^^^^^^^^^^^^ ^^^^^^^^^^^^^ ^^^^^^^^^^^^^ ^^^^^^^^^^^^^
 
-              (![alt-text] + [])[3] + (![alt-text] + [])[4] + (![alt-text] + [])[2] + (![alt-text] + [])[0]
+              (![] + [])[3] + (![] + [])[4] + (![] + [])[2] + (![] + [])[0]
               ^^^^^^^^^^^^^   ^^^^^^^^^^^^^   ^^^^^^^^^^^^^   ^^^^^^^^^^^^^
-             (![alt-text] + [])[+!+[]+!+[]+!+[]] +
-             (![alt-text] + [])[+!+[]+!+[]+!+[]+!+[]] +
-             (![alt-text] + [])[+!+[]+!+[]] +
-             (![alt-text] + [])[+[]]
+             (![] + [])[+!+[]+!+[]+!+[]] +
+             (![] + [])[+!+[]+!+[]+!+[]+!+[]] +
+             (![] + [])[+!+[]+!+[]] +
+             (![] + [])[+[]]
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-             (![alt-text]+[])[+!+[]+!+[]+!+[]]+(![alt-text]+[])[+!+[]+!+[]+!+[]+!+[]]+(![alt-text]+[])[+!+[]+!+[]]+(![alt-text]+[])[+[]]
+             (![]+[])[+!+[]+!+[]+!+[]]+(![]+[])[+!+[]+!+[]+!+[]+!+[]]+(![]+[])[+!+[]+!+[]]+(![]+[])[+[]]
              ```
 
         ````

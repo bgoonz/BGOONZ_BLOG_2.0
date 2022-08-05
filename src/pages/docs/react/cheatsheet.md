@@ -1320,7 +1320,7 @@ Link.defaultProps = { initialCount: 0 };
 ## Lifecycle Events
 
 Modern React lifecycle methods (v16+)
-![alt-text](DZ-97vzW4AAbcZj.jpg)
+![](DZ-97vzW4AAbcZj.jpg)
 
 Legacy Lifecycle Events:
 
@@ -1334,7 +1334,7 @@ Legacy Lifecycle Events:
 
 Sequence of lifecycle events:
 
-![alt-text](lifecycle-events.png)
+![](lifecycle-events.png)
 
 Inspired by <http://react.tips>
 

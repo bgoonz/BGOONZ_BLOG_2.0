@@ -7856,7 +7856,7 @@ Should you choose `row` or `row-reverse` then your main axis will run along the 
 
 Choose `column` or `column-reverse` and your main axis will run top to bottom of the page in the block direction.
 
-![alt-text](basics2.png)
+![](basics2.png)
 
 On the main axis you can control the sizing of flex items by adding any available space to the items themselves, by way of `flex` properties on the items. Or, you can control the space between and around items by using the `justify-content` property.
 
@@ -10460,7 +10460,7 @@ In addition, [CORS](/en-US/docs/Glossary/CORS) defines a subset of request heade
 
 The HTTP message below shows a few request headers after a _HTTPMethod("GET"_) request:
 
-```bash
+```console
 GET /home.html HTTP/1.1
 Host: developer.mozilla.org
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:50.0) Gecko/20100101 Firefox/50.0
@@ -10689,7 +10689,7 @@ For example, the site admin can forbid crawlers to visit a certain folder (and a
 
 > **Round Trip Time (RTT)** is the length time it takes for a data packet to be sent to a destination plus the time it takes for an acknowledgment of that packet to be received back at the origin. The RTT between a network and server can be determined by using the `ping` command.
 
-```bash
+```console
 $ ping example.com
 PING example.com (216.58.194.174): 56 data bytes
 64 bytes from 216.58.194.174: icmp_seq=0 ttl=55 time=25.050 ms
@@ -10764,7 +10764,7 @@ For SPA in application layer context, most of the popular SPA frameworks has its
 
 A basic command looks like this:
 
-```bash
+```console
 rsync [-options] SOURCE user@x.x.x.x:DESTINATION
 ```
 
@@ -10776,7 +10776,7 @@ rsync [-options] SOURCE user@x.x.x.x:DESTINATION
 
 You can also make a connection over SSH using the `-e` option as shown:
 
-```bash
+```console
 rsync [-options] -e "ssh [SSH DETAILS GO HERE]" SOURCE user@x.x.x.x:DESTINATION
 ```
 
@@ -11520,7 +11520,7 @@ For example:
 
 Most authentication occurs only at the start of a _glossary("TCP"_) session. In TCP session hijacking, an attacker gains access by taking over a TCP session between two machines in mid session.
 
-![alt-text](session_hijacking_3.jpg)
+![](session_hijacking_3.jpg)
 
 ### Session hijacking occurs because
 
@@ -12009,11 +12009,11 @@ The calculation calculates what percent of the page is visually complete at ever
 
 SQL injection can gain unauthorized access to a database or to retrieve information directly from the database. Many data breaches are due to SQL injection.
 
-[![alt-text](sql_inj_xss.gif)](https://www.acunetix.com/wp-content/uploads/2010/09/sql_inj_xss.gif)
+[![](sql_inj_xss.gif)](https://www.acunetix.com/wp-content/uploads/2010/09/sql_inj_xss.gif)
 
 ## How It Works
 
-![alt-text](updates_loginscreen.png)
+![](updates_loginscreen.png)
 
 After entering username and password, behind the GUI the SQL queries work as follows:
 
@@ -12170,13 +12170,13 @@ There are two types of basic state machines:
 
 _Figure 1: Deterministic Finite State Machine_
 
-![alt-text](statemachine1.png)
+![](statemachine1.png)
 
 In _Figure 1_, the state begins in State 1; the state changes to State 2 given input 'X', or to State 3 given input 'Y'.
 
 _Figure 2: Non-Deterministic Finite State Machine_
 
-[![alt-text](statemachine2.png)](http://postimg.org/image/mpq3nz82h/)
+[![](statemachine2.png)](http://postimg.org/image/mpq3nz82h/)
 
 In _Figure 2_, given input 'X', the state can persist or change to State 2.
 
