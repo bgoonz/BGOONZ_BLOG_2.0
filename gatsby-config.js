@@ -16,11 +16,7 @@ module.exports = {
         {
             resolve: 'gatsby-transformer-remark',
             options: {
-<<<<<<< HEAD
                 plugins: ['gatsby-remark-prismjs'],
-=======
-                plugins: ['gatsby-remark-prismjs-copy-button', 'gatsby-remark-prismjs'],
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
             },
         },
         {
@@ -28,7 +24,6 @@ module.exports = {
             options: {
                 // Optional button container class name. Defaults
                 // to 'gatsby-code-button-container'.
-<<<<<<< HEAD
                 buttonContainerClass: 'customButtonContainerClass',
                 // Optional button class name. Defaults to 'gatsby-code-button'.
                 buttonClass: 'customButtonClass',
@@ -46,25 +41,6 @@ module.exports = {
                 toasterClass: 'customToasterClass',
                 // Optional toaster text class name. Defaults to ''.
                 toasterTextClass: 'customToasterTextClass',
-=======
-                buttonContainerClass: `customButtonContainerClass`,
-                // Optional button class name. Defaults to 'gatsby-code-button'.
-                buttonClass: `customButtonClass`,
-                // Optional button text. Defaults to ''.
-                buttonText: `customButtonText`,
-                // Optional svg icon class name. Defaults to 'gatsby-code-button-icon'.
-                svgIconClass: `customSvgIconClass`,
-                // Optional svg icon. Defaults to svg string and can be
-                // replaced with any other valid svg. Use custom classes
-                // in the svg string and skip `iconClass` option.
-                svgIcon: `customSvgIcon`,
-                // Optional tooltip text. Defaults to ''.
-                tooltipText: `customTooltipText`,
-                // Optional toaster class name. Defaults to ''.
-                toasterClass: `customToasterClass`,
-                // Optional toaster text class name. Defaults to ''.
-                toasterTextClass: `customToasterTextClass`,
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
                 // Optional toaster text. Defaults to ''.
                 toasterText: 'customToasterText',
                 // Optional toaster duration. Defaults to 3500.
@@ -78,12 +54,9 @@ module.exports = {
             }
         },
         {
-<<<<<<< HEAD
             resolve: 'gatsby-plugin-no-sourcemaps',
         },
         {
-=======
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
             resolve: 'gatsby-plugin-sass',
             options: {}
         },
