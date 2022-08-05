@@ -4,12 +4,12 @@ linter:
     config: "lint_yml/.myrubocop.yml"
 
   eslint:
-    root_dir: "./src"
+    root_dir: "frontend/"
     npm_install: false
     config: "frontend/.eslintrc"
 
   stylelint:
-    root_dir: "./src/scss"
+    root_dir: "app/assets/stylesheets/"
     glob: "**/*.{css,scss}"
 
 ignore:
