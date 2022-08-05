@@ -85,9 +85,9 @@ export default class Header extends React.Component {
                                     <input className="sb-search-field" name="pesquisa" placeholder="Type your search..." type="search" autoComplete="on" id="myCustomTextInputID" />
                                         <i className="sb-icon"></i>
                                     </div>
-                                </div>
+                                
+</>
 
-                </>
 
                 <a className="github-corner" href="https://github.com/bgoonz/BGOONZ_BLOG_2.0" aria-label="View source on Github">
                     <svg
