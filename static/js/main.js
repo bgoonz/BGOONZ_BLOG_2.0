@@ -126,7 +126,7 @@ window.addPageNavLinks = function() {
       }
     });
   }
-}
+};
 window.removePageNavLinks = function() {
   const pageToc = document.getElementById('page-nav-inside');
   const pageTocContainer = document.getElementById('page-nav-link-container');
@@ -136,7 +136,7 @@ window.removePageNavLinks = function() {
       pageTocContainer.removeChild(pageTocContainer.firstChild);
     }
   }
-}
+};
 function getElementsByTagNames(root, tagNames) {
   let elements = [];
   for (let i = 0; i < root.children.length; i++) {
