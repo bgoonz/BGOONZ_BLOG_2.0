@@ -61,7 +61,11 @@ exports.onCreateNode = ({node, getNode, actions}, options) => {
         let url;
         if (node.frontmatter.url) {
             url = node.frontmatter.url;
+        } else if (_.get(options, 'uglyUrls', false)) {
+            url = path.join(fileNode.relativeDirectory, fileNode.name + '.html');
         } else {
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
             url = createFilePath({ node, getNode });
         }
@@ -85,6 +89,7 @@ exports.createPages = ({ graphql, getNode, actions, getNodesByType }) => {
                 return;
             }
 
+>>>>>>> f4594b19594599756372b62212ee4796747e0825
             url = createFilePath({node, getNode});
         }
 

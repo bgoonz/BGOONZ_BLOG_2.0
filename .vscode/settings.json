@@ -1,4 +1,3 @@
 {
-    "docwriter.style": "DocBlock",
-    "docwriter.hotkey.mac": "⌥ + ."
+      "makefile.extensionOutputFolder": "./.vscode"
 }

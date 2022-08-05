@@ -74,6 +74,7 @@ Define `f(i, j)` to be the number of ways that generate `T[0...j)` from `S[0...i
 For `f(i, j)` you can always skip `S[i-1]`, but can only take it when `S[i-1] === T[j-1]`.
 
 ```js
+//
 f(0, j) = 0, j > 0 // nothing to delete
 f(i, 0) = 1 // delete all
 f(i, j) = f(i-1, j) + (S[i-1] === T[j-1] ? f(i-1, j-1) : 0)
@@ -82,6 +83,7 @@ f(i, j) = f(i-1, j) + (S[i-1] === T[j-1] ? f(i-1, j-1) : 0)
 Dynamic array can be used.
 
 ```js
+//
 /**
  * @param {string} s
  * @param {string} t
@@ -178,6 +180,7 @@ For every `node`:
 - Right child: points to `node.next.left` if `node.next` exists.
 
 ```js
+//
 /**
  * Definition for binary tree with next pointer.
  * function TreeLinkNode(val) {
@@ -212,6 +215,7 @@ let connect = function (root) {
 Level order traversal.
 
 ```js
+//
 /**
  * Definition for binary tree with next pointer.
  * function TreeLinkNode(val) {
@@ -321,6 +325,7 @@ The tree may not be perfect now. So keep finding `next` until there is a node wi
 This also means post-order traversal is required.
 
 ```js
+//
 /**
  * Definition for binary tree with next pointer.
  * function TreeLinkNode(val) {
@@ -364,6 +369,7 @@ let connect = function (root) {
 Level order traversal. Exact same as [116. Populating Next Right Pointers in Each Node](./116.%20Populating%20Next%20Right%20Pointers%20in%20Each%20Node.md).
 
 ```js
+//
 /**
  * Definition for binary tree with next pointer.
  * function TreeLinkNode(val) {
@@ -443,6 +449,7 @@ Output:
 Dynamic Programming 101.
 
 ```js
+//
 /**
  * @param {number} numRows
  * @return {number[][]}
@@ -510,6 +517,7 @@ Dynamic Programming 101 with dynamic array.
 State `(i, j)` depends on `(i-1, j)` and `(i-1, j-1)`. So to access `(i-1, j-1)` iteration must be from right to left.
 
 ```js
+//
 /**
  * @param {number} rowIndex
  * @return {number[]}
@@ -577,6 +585,7 @@ Define `f(i, j)` to be the minimum path sum from `triangle[0][0]` to `triangle[i
 Dynamic array can be used.
 
 ```js
+//
 /**
  * @param {number[][]} triangle
  * @return {number}
@@ -651,6 +660,7 @@ Only care about positive profits. Take the frist item as base and scan to the ri
 Because `price[j]` is lower that the base, using `j` as new base is guaranteed to gain more profit comparing to the old one.
 
 ```js
+//
 /**
  * @param {number[]} prices
  * @return {number}
@@ -729,6 +739,7 @@ Explanation: Buy on day 1 (price = 1) and sell on day 5 (price = 5), profit = 5-
 Sell immediately after the price drops. Or in other perspective, it is the sum of all the incremental pairs (buy in then immediately sell out).
 
 ```js
+//
 /**
  * @param {number[]} prices
  * @return {number}
@@ -811,6 +822,7 @@ Define `p2(i)` to be the max profit of day `[i...n-1]`. This is the mirror of `p
 Define `f(k)` to be `p1(k) + p2(k)`. We need to get `max( f(0), ..., f(n-1) )`.
 
 ```js
+//
 /**
  * @param {number[]} prices
  * @return {number}
@@ -913,6 +925,7 @@ There are two ways to implement this.
 Define a function that returns two values. The max sum of a path that may or may not end with `root` node, and the max sum of the path that ends with `root` node.
 
 ```js
+//
 /**
  * Definition for a binary tree node.
  * function TreeNode(val) {
@@ -948,6 +961,7 @@ function _maxPathSum(root) {
 Just return the later (max sum of a path that ends with `root`). Maintain a global variable to store the disconnected max sum.
 
 ```js
+//
 /**
  * Definition for a binary tree node.
  * function TreeNode(val) {
@@ -1027,6 +1041,7 @@ Output: false
 #### ONE
 
 ```js
+//
 /**
  * @param {string} s
  * @return {boolean}
@@ -1042,6 +1057,7 @@ let isPalindrome = function (s) {
 Remove non-alphanumeric characters then compare.
 
 ```js
+//
 /**
  * @param {string} s
  * @return {boolean}
@@ -1062,6 +1078,7 @@ let isPalindrome = function (s) {
 Compare the char codes.
 
 ```js
+//
 /**
  * @param {string} s
  * @return {boolean}
@@ -1170,6 +1187,7 @@ The constrain still works, but instead of deleting the words right away, collect
 The items in the queue are not just words now. Parent nodes are also kept so that we can backtrack the path from the end.
 
 ```js
+//
 /**
  * @param {string} beginWord
  * @param {string} endWord
@@ -1301,6 +1319,7 @@ We do not actually build the tree because it is expensive (astronomical if the l
 To find all the next words, instead of filtering the `wordList`, enumerate all 25 possible words and check if in `wordList`.
 
 ```js
+//
 /**
  * @param {string} beginWord
  * @param {string} endWord
@@ -1383,6 +1402,7 @@ Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefor
 Build a Set from the list. Pick a number, find all it's adjacent numbers that are also in the Set. Count them and remove them all from the Set. Repeat until the Set is empty. Time complexity O(n + n) = O(n).
 
 ```js
+//
 /**
  * @param {number[]} nums
  * @return {number}
@@ -1466,6 +1486,7 @@ Find the total sum of all root-to-leaf numbers.
 To write a clean solution for this promblem, use `0` as indicator of leaf node. If all the children get `0`, it is a leaf node, return the sum of current level.
 
 ```js
+//
 /**
  * Definition for a binary tree node.
  * function TreeNode(val) {
@@ -1542,6 +1563,7 @@ The process of finding the connected `O`s is just like tree traversal. `O`s on t
 So both BFS and DFS are good. I prefer BFS when pruning is not needed in favor of its readability.
 
 ```js
+//
 /**
  * @param {character[][]} board
  * @return {void} Do not return anything, modify board in-place instead.
@@ -1669,6 +1691,7 @@ Visually, the graph looks like the following:
 DFS. Cache the visited node before entering the next recursion.
 
 ```js
+//
 /**
  * Definition for undirected graph.
  * function UndirectedGraphNode(label) {
@@ -1702,6 +1725,7 @@ let cloneGraph = function (graph) {
 ![alt text](https://github.com/everthis/leetcode-js/blob/master/images/binary-tree-upside-down.webp 'binary-tree-upside-down')
 
 ```js
+//
 /**
  * Definition for a binary tree node.
  * function TreeNode(val) {
@@ -1747,6 +1771,7 @@ const upsideDownBinaryTree = function (root) {
 ![alt text](https://github.com/everthis/leetcode-js/blob/master/images/maximum-sum-circular-subarray.png 'maximum-sum-circular-subarray')
 
 ```js
+//
 /**
  * @param {number[]} A
  * @return {number}
@@ -1782,14 +1807,14 @@ For this problem, a height-balanced binary tree is defined as:
 
 **Example 1:**
 
-![alt-text](https://assets.leetcode.com/uploads/2020/10/06/balance_1.jpg)
+![](https://assets.leetcode.com/uploads/2020/10/06/balance_1.jpg)
 
 **Input:** root = \[3,9,20,null,null,15,7]
 **Output:** true
 
 **Example 2:**
 
-![alt-text](https://assets.leetcode.com/uploads/2020/10/06/balance_2.jpg)
+![](https://assets.leetcode.com/uploads/2020/10/06/balance_2.jpg)
 
 **Input:** root = \[1,2,2,3,3,null,null,4,4]
 **Output:** false
@@ -1840,14 +1865,14 @@ Basically, the deletion can be divided into two stages:
 
 **Example 1:**
 
-![alt-text](https://assets.leetcode.com/uploads/2020/09/04/del_node_1.jpg)
+![](https://assets.leetcode.com/uploads/2020/09/04/del_node_1.jpg)
 
 **Input:** root = \[5,3,6,2,4,null,7], key = 3
 **Output:** \[5,4,6,2,null,null,7]
 **Explanation:** Given key to delete is 3. So we find the node with value 3 and delete it.
 One valid answer is \[5,4,6,2,null,null,7], shown in the above BST.
 Please notice that another valid answer is \[5,2,6,null,4,null,7] and it's also accepted.
-![alt-text](https://assets.leetcode.com/uploads/2020/09/04/del_node_supp.jpg)
+![](https://assets.leetcode.com/uploads/2020/09/04/del_node_supp.jpg)
 
 **Example 2:**
 
@@ -1872,6 +1897,7 @@ Please notice that another valid answer is \[5,2,6,null,4,null,7] and it's also 
 ![alt text](https://github.com/everthis/leetcode-js/blob/master/images/meeting-room-ii-1.jpg 'meeting-room-ii')
 
 ```js
+//
 /**
  * @param {number[][]} intervals
  * @return {number}
