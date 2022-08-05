@@ -1,10 +1,10 @@
 const path = require("path");
 const fs = require("fs");
-const {createFilePath} = require("gatsby-source-filesystem");
+const { createFilePath } = require("gatsby-source-filesystem");
 const _ = require("lodash");
 
 
-function findFileNode({node, getNode}) {
+function findFileNode({ node, getNode }) {
     let fileNode = node;
     let ids = [fileNode.id];
 
@@ -28,15 +28,15 @@ function findFileNode({node, getNode}) {
         return null;
     }
 
-    return fileNode;
+    return fileNode
 }
 
-exports.onCreateNode = ({node, getNode, actions}, options) => {
+exports.onCreateNode = ({ node, getNode, actions }, options) => {
 
-    const {createNodeField} = actions;
+    const { createNodeField } = actions;
 
     if (node.internal.type === "MarkdownRemark") {
-        let fileNode = findFileNode({node, getNode});
+        let fileNode = findFileNode({ node, getNode });
         if (!fileNode) {
             throw new Error('could not find parent File node for MarkdownRemark node: ' + node);
         }
@@ -44,28 +44,25 @@ exports.onCreateNode = ({node, getNode, actions}, options) => {
         let url;
         if (node.frontmatter.url) {
             url = node.frontmatter.url;
+        } else if (_.get(options, 'uglyUrls', false)) {
+            url = path.join(fileNode.relativeDirectory, fileNode.name + '.html');
         } else {
-            if (_.get(options, 'uglyUrls', false)) {
-                url = path.join(fileNode.relativeDirectory, `${fileNode.name}.html`);
-                return;
-            }
-
-            url = createFilePath({node, getNode});
+            url = createFilePath({ node, getNode });
         }
 
-        createNodeField({node, name: "url", value: url});
-        createNodeField({node, name: "absolutePath", value: fileNode.absolutePath});
-        createNodeField({node, name: "relativePath", value: fileNode.relativePath});
-        createNodeField({node, name: "absoluteDir", value: fileNode.dir});
-        createNodeField({node, name: "relativeDir", value: fileNode.relativeDirectory});
-        createNodeField({node, name: "base", value: fileNode.base});
-        createNodeField({node, name: "ext", value: fileNode.ext});
-        createNodeField({node, name: "name", value: fileNode.name});
+        createNodeField({ node, name: "url", value: url });
+        createNodeField({ node, name: "absolutePath", value: fileNode.absolutePath });
+        createNodeField({ node, name: "relativePath", value: fileNode.relativePath });
+        createNodeField({ node, name: "absoluteDir", value: fileNode.dir });
+        createNodeField({ node, name: "relativeDir", value: fileNode.relativeDirectory });
+        createNodeField({ node, name: "base", value: fileNode.base });
+        createNodeField({ node, name: "ext", value: fileNode.ext });
+        createNodeField({ node, name: "name", value: fileNode.name });
     }
 };
 
-exports.createPages = ({graphql, getNode, actions, getNodesByType}) => {
-    const {createPage, deletePage} = actions;
+exports.createPages = ({ graphql, getNode, actions, getNodesByType }) => {
+    const { createPage, deletePage } = actions;
 
     // Use GraphQL to bring only the "id" and "html" (added by gatsby-transformer-remark)
     // properties of the MarkdownRemark nodes. Don't bring additional fields
@@ -89,7 +86,7 @@ exports.createPages = ({graphql, getNode, actions, getNodesByType}) => {
             return Promise.reject(result.errors);
         }
 
-        const nodes = result.data.allMarkdownRemark.edges.map(({node}) => node);
+        const nodes = result.data.allMarkdownRemark.edges.map(({ node }) => node);
         const siteNode = getNode('Site');
         const siteDataNode = getNode('SiteData');
         const sitePageNodes = getNodesByType('SitePage');
@@ -115,7 +112,7 @@ exports.createPages = ({graphql, getNode, actions, getNodesByType}) => {
         nodes.forEach(graphQLNode => {
             const node = getNode(graphQLNode.id);
             const url = node.fields.url;
-            
+
             const template = node.frontmatter.template;
             if (!template) {
                 console.error(`Error: undefined template for ${url}`);
