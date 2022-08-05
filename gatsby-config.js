@@ -24,6 +24,7 @@ module.exports = {
             options: {
                 // Optional button container class name. Defaults
                 // to 'gatsby-code-button-container'.
+<<<<<<< HEAD
                 buttonContainerClass: 'customButtonContainerClass',
                 // Optional button class name. Defaults to 'gatsby-code-button'.
                 buttonClass: 'customButtonClass',
@@ -41,6 +42,25 @@ module.exports = {
                 toasterClass: 'customToasterClass',
                 // Optional toaster text class name. Defaults to ''.
                 toasterTextClass: 'customToasterTextClass',
+=======
+                buttonContainerClass: `customButtonContainerClass`,
+                // Optional button class name. Defaults to 'gatsby-code-button'.
+                buttonClass: `customButtonClass`,
+                // Optional button text. Defaults to ''.
+                buttonText: `customButtonText`,
+                // Optional svg icon class name. Defaults to 'gatsby-code-button-icon'.
+                svgIconClass: `customSvgIconClass`,
+                // Optional svg icon. Defaults to svg string and can be
+                // replaced with any other valid svg. Use custom classes
+                // in the svg string and skip `iconClass` option.
+                svgIcon: `customSvgIcon`,
+                // Optional tooltip text. Defaults to ''.
+                tooltipText: `customTooltipText`,
+                // Optional toaster class name. Defaults to ''.
+                toasterClass: `customToasterClass`,
+                // Optional toaster text class name. Defaults to ''.
+                toasterTextClass: `customToasterTextClass`,
+>>>>>>> fb14820408efc9fef569093d1a3b9ca213a5653d
                 // Optional toaster text. Defaults to ''.
                 toasterText: 'customToasterText',
                 // Optional toaster duration. Defaults to 3500.
