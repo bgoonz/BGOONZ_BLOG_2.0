@@ -1,7 +1,7 @@
 ---
 title: Netlify CMS Intro
 date: '2021-05-23'
-image: images/curious-europa.gif
+image: images/dtw-slideshow.gif
 seo:
     title: Platform Docs
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
@@ -16,7 +16,7 @@ seo:
           value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
           keyName: property
         - name: 'og:image'
-          value: images/curious-europa.gif
+          value: images/dtw-slideshow.gif
           keyName: property
           relativeUrl: true
         - name: 'twitter:card'
@@ -26,10 +26,10 @@ seo:
         - name: 'twitter:description'
           value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
         - name: 'twitter:image'
-          value: images/curious-europa.gif
+          value: images/dtw-slideshow.gif
           relativeUrl: true
 template: post
-thumb_image: images/redu-squarex.jpg
+thumb_image: images/netlifycms.png
 ---
 
 # Add to Your Site | Netlify CMS
@@ -77,7 +77,8 @@ The first file, `admin/index.html`, is the entry point for the Netlify CMS admin
     </head>
     <body>
 
-      <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+      <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js">
+</script>
     </body>
     </html>
 
@@ -176,7 +177,56 @@ Given this example, our `collections` settings would look like this in your Netl
 
 Let's break that down:
 
-<table><tbody><tr><td><code>name</code></td><td>Post type identifier, used in routes. Must be unique.</td></tr><tr><td><code>label</code></td><td>What the admin UI calls the post type.</td></tr><tr><td><code>folder</code></td><td>Where files of this type are stored, relative to the repo root.</td></tr><tr><td><code>create</code></td><td>Set to <code>true</code> to allow users to create new files in this collection.</td></tr><tr><td><code>slug</code></td><td>Template for filenames. <code>{{year}}</code>, <code>{{month}}</code>, and <code>{{day}}</code> pulls from the post's <code>date</code> field or save date. <code>{{slug}}</code> is a url-safe version of the post's <code>title</code>. Default is simply <code>{{slug}}</code>.</td></tr><tr><td><code>fields</code></td><td>Fields listed here are shown as fields in the content editor, then saved as front matter at the beginning of the document (except for <code>body</code>, which follows the front matter). Each field contains the following properties:<ul><li><code>label</code>: Field label in the editor UI.</li><li><code>name</code>: Field name in the document front matter.</li><li><code>widget</code>: Determines UI style and value data type (details below).</li><li><code>default</code> (optional): Sets a default value for the field.</li></ul></td></tr></tbody></table>
+<table>
+<tbody>
+<tr>
+<td>
+<code>name</code>
+</td>
+<td>Post type identifier, used in routes. Must be unique.</td>
+</tr>
+<tr>
+<td>
+<code>label</code>
+</td>
+<td>What the admin UI calls the post type.</td>
+</tr>
+<tr>
+<td>
+<code>folder</code>
+</td>
+<td>Where files of this type are stored, relative to the repo root.</td>
+</tr>
+<tr>
+<td>
+<code>create</code>
+</td>
+<td>Set to <code>true</code> to allow users to create new files in this collection.</td>
+</tr>
+<tr>
+<td>
+<code>slug</code>
+</td>
+<td>Template for filenames. <code>{{year}}</code>, <code>{{month}}</code>, and <code>{{day}}</code> pulls from the post's <code>date</code> field or save date. <code>{{slug}}</code> is a url-safe version of the post's <code>title</code>. Default is simply <code>{{slug}}</code>.</td>
+</tr>
+<tr>
+<td>
+<code>fields</code>
+</td>
+<td>Fields listed here are shown as fields in the content editor, then saved as front matter at the beginning of the document (except for <code>body</code>, which follows the front matter). Each field contains the following properties:<ul>
+<li>
+<code>label</code>: Field label in the editor UI.</li>
+<li>
+<code>name</code>: Field name in the document front matter.</li>
+<li>
+<code>widget</code>: Determines UI style and value data type (details below).</li>
+<li>
+<code>default</code> (optional): Sets a default value for the field.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 
 As described above, the `widget` property specifies a built-in or custom UI widget for a given field. When a content editor enters a value into a widget, that value is saved in the document front matter as the value for the `name` specified for that field. A full listing of available widgets can be found in the [Widgets doc](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/widgets).
 
@@ -211,13 +261,14 @@ Netlify's Identity and Git Gateway services allow you to manage CMS admin users 
 1.  Go to **Settings > Identity**, and select **Enable Identity service**.
 2.  Under **Registration preferences**, select **Open** or **Invite only**. In most cases, you want only invited users to access your CMS, but if you're just experimenting, you can leave it open for convenience.
 3.  If you'd like to allow one-click login with services like Google and GitHub, check the boxes next to the services you'd like to use, under **External providers**.
-4.  Scroll down to **Services > Git Gateway**, and click **Enable Git Gateway**. This authenticates with your Git host and generates an API access token. In this case, we're leaving the **Roles** field blank, which means any logged in user may access the CMS. For information on changing this, check the [Netlify Identity documentation](https://www.netlify.com/docs/identity/).
+4.  Scroll down to **Services > ay**, and click **Enable Git Gateway**. This authenticates with your Git host and generates an API access token. In this case, we're leaving the **Roles** field blank, which means any logged in user may access the CMS. For information on changing this, check the [Netlify Identity documentation](https://www.netlify.com/docs/identity/).
 
 ### [](#add-the-netlify-identity-widget)Add the Netlify Identity Widget
 
 With the backend set to handle authentication, now you need a frontend interface to connect to it. The open source Netlify Identity Widget is a drop-in widget made for just this purpose. To include the widget in your site, add the following script tag in two places:
 
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js">
+</script>
 
 Add this to the `<head>` of your CMS index page at `/admin/index.html`, as well as the `<head>` of your site's main index page. Depending on how your site generator is set up, this may mean you need to add it to the default template, or to a "partial" or "include" template. If you can find where the site stylesheet is linked, that's probably the right place. Alternatively, you can include the script in your site using Netlify's [Script Injection](https://www.netlify.com/docs/inject-analytics-snippets/) feature.
 
