@@ -200,7 +200,11 @@
 
 // Grid section
 .block-grid {
+<<<<<<< HEAD
     .block-hero+& {
+=======
+    .block-hero + & {
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
         &:not(.has-header) {
             background: 0;
             padding-top: 0;
@@ -257,7 +261,11 @@
     }
 
     a {
+<<<<<<< HEAD
         color: inherit !important;
+=======
+        color: inherit;
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
         text-decoration: none;
     }
 }
@@ -277,7 +285,11 @@
         &:not(.button) {
             &:after {
                 font-size: 1.125em;
+<<<<<<< HEAD
                 content: "\2192";
+=======
+                content: '\2192';
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
                 line-height: 1.5;
                 margin-left: 5px;
             }
@@ -312,9 +324,33 @@
         line-height: 1.5;
     }
 
+<<<<<<< HEAD
     &+.block {
         margin-top: -5em;
         position: relative;
+=======
+    & + .block {
+        margin-top: -5em;
+        position: relative;
+    }
+}
+
+@media only screen and (min-width: 641px) {
+    .block-hero {
+        .block-title {
+            font-size: 3em;
+        }
+
+        .block-content {
+            font-size: 1.25em;
+        }
+
+        .block-buttons {
+            a {
+                font-size: 1em;
+            }
+        }
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
     }
 }
 

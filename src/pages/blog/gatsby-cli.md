@@ -76,20 +76,28 @@ All the following documentation is available in the tool by running `gatsby --he
 #### [](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#usage)Usage
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ```consoleell
 =======
 ```console
 >>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
+=======
+```bash
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 gatsby new
 ```
 
 The CLI will run an interactive shell asking for these options before creating a Gatsby site for you:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ```consoleell
 =======
 ```console
 >>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
+=======
+```bash
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 gatsby new
 What would you like to name the folder where your site will be created?
 my-gatsby-site
@@ -125,10 +133,14 @@ Would you like to install additional features with other plugins? (multiple choi
 To create a site from a starter instead, run the command with your site name and starter URL:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ```consoleell
 =======
 ```console
 >>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
+=======
+```bash
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 gatsby new [<site-name> [<starter-url>]]
 ```
 
@@ -148,10 +160,14 @@ Note that this will not prompt you to create a custom setup, but only clone the 
 -   Create a Gatsby site named `my-awesome-site` using the default starter:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ```consoleell
 =======
 ```console
 >>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
+=======
+```bash
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 gatsby new my-awesome-site
 
 ```
@@ -159,10 +175,14 @@ gatsby new my-awesome-site
 -   Create a Gatsby site named `my-awesome-blog-site`, using [gatsby-starter-blog](https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-blog/):
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ```consoleell
 =======
 ```console
 >>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
+=======
+```bash
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 gatsby new my-awesome-blog-site https://github.com/gatsbyjs/gatsby-starter-blog
 ```
 
@@ -191,20 +211,28 @@ Follow the [Local HTTPS guide](https://www.gatsbyjs.com/docs/local-https/) to fi
 You can use the Gatsby develop command with the host option to access your dev environment on other devices on the same network, run:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ```consoleell
 =======
 ```console
 >>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
+=======
+```bash
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 gatsby develop -H 0.0.0.0
 ```
 
 Then the terminal will log information as usual, but will additionally include a URL that you can navigate to from a client on the same network to see how the site renders.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ```consoleell
 =======
 ```console
 >>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
+=======
+```bash
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 You can now view gatsbyjs.com in the browser.
 ⠀
   Local:            http://0.0.0.0:8000/
@@ -323,10 +351,14 @@ In addition to the explicit `--no-color` option, the CLI respects the presence o
 When you use `gatsby new` for the first time to create a new project, you are asked to choose your default package manager between yarn and npm.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ```consoleell
 =======
 ```console
 >>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
+=======
+```bash
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 Which package manager would you like to use ? › - Use arrow-keys. Return to submit.
 ❯  yarn
    npm

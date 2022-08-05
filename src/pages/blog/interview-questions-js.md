@@ -3464,7 +3464,11 @@ Cons
 
         TypeScript is a typed superset of JavaScript created by Microsoft that adds optional types, classes, async/await, and many other features, and compiles to plain JavaScript. Angular built entirely in TypeScript and used as a primary language. You can install it globally as
 
+<<<<<<< HEAD
         ```console
+=======
+        ```bash
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
         npm install -g typescript
         ```
 
@@ -4266,7 +4270,11 @@ Cons
 
         No, you cannot redeclare let and const variables. If you do, it throws below error
 
+<<<<<<< HEAD
         ```console
+=======
+        ```bash
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
         Uncaught SyntaxError: Identifier 'someVariable' has already been declared
         ```
 
@@ -5432,7 +5440,11 @@ Cons
 
         and the output would be in
 
+<<<<<<< HEAD
         ```console
+=======
+        ```bash
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
         Script loaded
         My script is initialized
         ```
@@ -5449,7 +5461,11 @@ Cons
 
         and the output is,
 
+<<<<<<< HEAD
         ```console
+=======
+        ```bash
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
         My script is initialized
         Script loaded
         ```

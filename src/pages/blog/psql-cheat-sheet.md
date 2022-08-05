@@ -4,20 +4,35 @@ template: post
 subtitle: Basic Commands
 excerpt: Login to postgresql
 date: 2022-04-04T17:27:00.746Z
+<<<<<<< HEAD
 image: /blog/psql.jpg
 thumb_image: /blog/psql.jpg
 image_position: top
+=======
+image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/psql-diagram.jpg?raw=true
+thumb_image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/psql-diagram.jpg?raw=true
+image_position: right
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 author: src/data/authors/bgoonz.yaml
 categories:
   - src/data/categories/db.yaml
 tags:
   - src/data/tags/psql.yaml
+<<<<<<< HEAD
   - src/data/tags/databases.yaml
 show_author_bio: true
 related_posts:
   - src/pages/blog/psql-cheat-sheet.md
 cmseditable: true
 ---
+=======
+show_author_bio: true
+related_posts:
+    - src/pages/blog/psql-cheat-sheet.md
+cmseditable: true
+---
+
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 # 💻 PSQL💻
 
 > source
@@ -35,7 +50,11 @@ psql -U myuser -h myhost "dbname=mydb sslmode=require" # ssl connection
 
 ### Default Admin Login
 
+<<<<<<< HEAD
 ```sql
+=======
+```bash
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 sudo -u postgres psql -U postgres
 sudo -u postgres psql
 ```
@@ -44,7 +63,11 @@ sudo -u postgres psql
 
 ### Determine system tables
 
+<<<<<<< HEAD
 ```plsql
+=======
+```bash
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 select * from pg_tables where tableowner = 'postgres';
 ```
 
@@ -60,7 +83,11 @@ select * from pg_tables where tableowner = 'postgres';
 
 ### Reset a user password as admin
 
+<<<<<<< HEAD
 ```sql
+=======
+```bash
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 alter user usertochange with password 'new_passwd';
 ```
 
@@ -72,25 +99,41 @@ alter user usertochange with password 'new_passwd';
 
 ### Load data into postgresql
 
+<<<<<<< HEAD
 ```sql
+=======
+```bash
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 psql -W -U username -H hostname < file.sql
 ```
 
 ### Dump (Backup) Data into file
 
+<<<<<<< HEAD
 ```plsql
+=======
+```bash
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 pg_dump -W -U username -h hostname database_name > file.sql
 ```
 
 ### Increment a sequence
 
+<<<<<<< HEAD
 ```plsql
+=======
+```bash
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 SELECT nextval('my_id_seq');
 ```
 
 ### Create new user
 
+<<<<<<< HEAD
 ```plsql
+=======
+```bash
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 CREATE USER lemmy WITH PASSWORD 'myPassword';
 # or
 
@@ -99,19 +142,31 @@ sudo -u postgres createuser lemmy -W
 
 ### Change user password
 
+<<<<<<< HEAD
 ```plsql
+=======
+```bash
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 ALTER USER Postgres WITH PASSWORD 'mypass';
 ```
 
 ### Grant user createdb privilege
 
+<<<<<<< HEAD
 ```plsql
+=======
+```bash
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 ALTER USER myuser WITH createdb;
 ```
 
 ### Create a superuser user
 
+<<<<<<< HEAD
 ```plsql
+=======
+```bash
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 create user mysuper with password '1234' SUPERUSER
 # or even better
 create user mysuper with password '1234' SUPERUSER CREATEDB CREATEROLE INHERIT LOGIN REPLICATION;
@@ -121,7 +176,11 @@ sudo -u postgres createuser lemmy -W -s
 
 ### Upgrade an existing user to superuser
 
+<<<<<<< HEAD
 ```plsql
+=======
+```bash
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 alter user mysuper with superuser;
 # or even better
 alter user mysuper with SUPERUSER CREATEDB CREATEROLE INHERIT LOGIN REPLICATION
@@ -131,19 +190,31 @@ alter user mysuper with SUPERUSER CREATEDB CREATEROLE INHERIT LOGIN REPLICATION
 
 ### Change Database Owner
 
+<<<<<<< HEAD
 ```plsql
+=======
+```bash
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 alter database database_name owner to new_owner;
 ```
 
 ### Copy a database
 
+<<<<<<< HEAD
 ```plsql
+=======
+```bash
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 CREATE DATABASE newdb WITH TEMPLATE originaldb;
 ```
 
 ### View Database Connections
 
+<<<<<<< HEAD
 ```sql
+=======
+```bash
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 SELECT * FROM pg_stat_activity;
 ```
 
@@ -151,14 +222,22 @@ SELECT * FROM pg_stat_activity;
 
 ### Show run-time parameters
 
+<<<<<<< HEAD
 ```console
+=======
+```bash
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 show all;
 select * from pg_settings;
 ```
 
 ### Show the block size setting
 
+<<<<<<< HEAD
 ```console
+=======
+```bash
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 # show block_size;
  block_size
 ------------
@@ -168,7 +247,11 @@ select * from pg_settings;
 
 ### Show stored procedure source
 
+<<<<<<< HEAD
 ```console
+=======
+```bash
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 SELECT prosrc FROM pg_proc WHERE proname = 'procname'
 ```
 
@@ -261,7 +344,11 @@ SELECT * FROM pg_stat_activity WHERE waiting='t';
 
 ### Query analysis
 
+<<<<<<< HEAD
 ```plsql
+=======
+```bash
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 -- See the query plan for the given query
 EXPLAIN __query__
 
@@ -276,7 +363,11 @@ ANALYZE [__table__]
 
 ### From a Single Table
 
+<<<<<<< HEAD
 ```plsql
+=======
+```bash
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 -- Query data in columns c1, c2 from a table
 SELECT c1, c2 FROM t;
 
@@ -391,6 +482,12 @@ WHERE c1 IS [NOT] NULL;
 
 ## Source
 
+<<<<<<< HEAD
 * [PostgreSQL 9.6.0 Documentation](https://www.postgresql.org/docs/9.6/static/app-psql.html)
 * [PostgreSQL Exercises](https://pgexercises.com)
 * [PostgreSQL Tutorial](http://www.postgresqltutorial.com/postgresql-cheat-sheets)
+=======
+- [PostgreSQL 9.6.0 Documentation](https://www.postgresql.org/docs/9.6/static/app-psql.html)
+- [PostgreSQL Exercises](https://pgexercises.com)
+- [PostgreSQL Tutorial](http://www.postgresqltutorial.com/postgresql-cheat-sheets)
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05

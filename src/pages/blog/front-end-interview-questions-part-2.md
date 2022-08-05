@@ -2,15 +2,22 @@
 title: Front End Interview Questions Part 2
 template: post
 subtitle: These will focus more on vocabulary and concepts than the application
+<<<<<<< HEAD
   driven approach in my last post!
 excerpt: ­­­­If you were to describe semantic HTML to the next cohort of
   students, what would you say
+=======
+    driven approach in my last post!
+excerpt: ­­­­If you were to describe semantic HTML to the next cohort of
+    students, what would you say
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 date: 2022-05-23T08:41:53.757Z
 image: https://camo.githubusercontent.com/22121fcc4ed529e7fdaea851db57c0e7dbee2ceeffe6f62b536039b71c7362c0/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f302a4433795149343267426b59706e4c58592e6a7067
 thumb_image: https://camo.githubusercontent.com/22121fcc4ed529e7fdaea851db57c0e7dbee2ceeffe6f62b536039b71c7362c0/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f302a4433795149343267426b59706e4c58592e6a7067
 image_position: right
 author: src/data/authors/bgoonz.yaml
 tags:
+<<<<<<< HEAD
   - src/data/tags/career-1.yaml
   - src/data/tags/javascript.yaml
 show_author_bio: true
@@ -18,13 +25,27 @@ related_posts:
   - src/pages/blog/python-quiz.md
 cmseditable: true
 ---
+=======
+    - src/data/tags/career-1.yaml
+    - src/data/tags/javascript.yaml
+show_author_bio: true
+related_posts:
+    - src/pages/blog/python-quiz.md
+cmseditable: true
+---
+
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 <!--StartFragment-->
 
 # Front End Interview Questions Part 2
 
 These will focus more on vocabulary and concepts than the application driven approach in my last post!
 
+<<<<<<< HEAD
 - - -
+=======
+---
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 #### [](https://github.com/permission-squad/gist-notes/blob/main/2021-03-19_Front-End-Interview-Questions-Part-2-86ddc0e91443.md#codex)[CODEX](http://medium.com/codex)
 
@@ -37,6 +58,7 @@ These will focus more on vocabulary and concepts than the application driven app
 ### [](https://github.com/permission-squad/gist-notes/blob/main/2021-03-19_Front-End-Interview-Questions-Part-2-86ddc0e91443.md#heres-part-one-for-reference)Here’s part one for reference:
 
 [**The Web Developer’s Technical Interview**\
+<<<<<<< HEAD
 *Questions….Answers… and links to the missing pieces.*bryanguner.medium.com](https://bryanguner.medium.com/the-web-developers-technical-interview-e347d7db3822 "https\://bryanguner.medium.com/the-web-developers-technical-interview-e347d7db3822")[](https://bryanguner.medium.com/the-web-developers-technical-interview-e347d7db3822)
 
 * **­­­­If you were to describe semantic HTML to the next cohort of students, what would you say?**
@@ -44,6 +66,15 @@ These will focus more on vocabulary and concepts than the application driven app
 Semantic HTML is markup that conveys meaning, not appearance, to search engines to make everything easier to identify.
 
 * **Name two big differences between display: block; and display: inline;.**
+=======
+*Questions….Answers… and links to the missing pieces.*bryanguner.medium.com](https://bryanguner.medium.com/the-web-developers-technical-interview-e347d7db3822 'https://bryanguner.medium.com/the-web-developers-technical-interview-e347d7db3822')[](https://bryanguner.medium.com/the-web-developers-technical-interview-e347d7db3822)
+
+-   **­­­­If you were to describe semantic HTML to the next cohort of students, what would you say?**
+
+Semantic HTML is markup that conveys meaning, not appearance, to search engines to make everything easier to identify.
+
+-   **Name two big differences between display: block; and display: inline;.**
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 block starts on a new line and takes up the full width of the content.\
  inline starts on the same line as previous content, in line with other content, and takes up only the space needed for the content.
@@ -103,6 +134,7 @@ It is code identified elsewhere that we can use later; gives the ability to put 
 
 Super ties the parent to the child.
 
+<<<<<<< HEAD
 * **What is the DOM?**
 
 Document object model, the ‘window’ or container that holds all the page’s elements
@@ -120,6 +152,25 @@ Javascript command that ‘listens’ for an event to happen on the page to a gi
 A NodeList isn’t a real array, so it won’t have access to array methods such as slice or map.
 
 * **What is a component?**
+=======
+-   **What is the DOM?**
+
+Document object model, the ‘window’ or container that holds all the page’s elements
+
+-   **What is an event?**
+
+An event is something happening on or to the page, like a mouse click, doubleclick, key up/down, pointer out of element/over element, things like this. There are tons of “events” that javascript can detect.
+
+-   **What is an event listener?**
+
+Javascript command that ‘listens’ for an event to happen on the page to a given element and then runs a function when that event happens
+
+-   **Why would we convert a NodeList into an Array?**
+
+A NodeList isn’t a real array, so it won’t have access to array methods such as slice or map.
+
+-   **What is a component?**
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 Reusable pieces of code to display info in a consistent repeatable way
 
@@ -273,4 +324,8 @@ Having an algorithm that hashes the information multiple times (rounds) means an
 
 Header, payload, signature
 
+<<<<<<< HEAD
 <!--EndFragment-->
+=======
+<!--EndFragment-->
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05

@@ -14,9 +14,17 @@ template: docs
 
 ## Javascript
 
+<<<<<<< HEAD
 <details>
 
 <summary>  Cheatsheet </summary>
+=======
+### Chwat sheet:
+
+<details>
+
+<summary>  **Cheatsheet** </summary>
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 ```js
 //

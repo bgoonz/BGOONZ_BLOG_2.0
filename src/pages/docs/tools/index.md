@@ -45,11 +45,29 @@ template: docs
 <br>
 <br>
 
+<<<<<<< HEAD
+=======
+
+<h1> Markdown Tools </h1>
+
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 <br>
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://random-static-html-deploys.netlify.app/markdow-tools-embed.html" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
 <br>
 
+<<<<<<< HEAD
+=======
+
+<br>
+
+<br>
+<br>
+<br>
+<br>
+
+<h1> Google Drive Storage  </h1>
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://drive.google.com/embeddedfolderview?id=1DHyQsPLziqSUODclplhnNX1eknzbZrL8#grid" style="width:100%; height:600px; border:0;">
 </iframe>
 <br>
@@ -61,6 +79,7 @@ template: docs
 <br>
 <br>
 
+<<<<<<< HEAD
 <br>
 <h1> HTML TO Markdown Converter  </h1>
 <br>
@@ -77,6 +96,8 @@ template: docs
 
 <br>
 <br>
+=======
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 <h1> PDF Tools   </h1>
 <br>
@@ -147,6 +168,7 @@ template: docs
 <br>
 
 <br>
+<<<<<<< HEAD
 
 <br>
 <br>
@@ -264,3 +286,5 @@ template: docs
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 <b
+=======
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05

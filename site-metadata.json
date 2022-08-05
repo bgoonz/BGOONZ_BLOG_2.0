@@ -6,7 +6,11 @@
         "has_nav": true,
         "nav_links": [{
                 "url": "/docs/sitemap",
+<<<<<<< HEAD
                 "label": "Navigation🗺️",
+=======
+                "label": "Navigation",
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
                 "style": "primary",
                 "icon_class": "dev",
                 "new_window": false,
@@ -16,12 +20,398 @@
                         "label": "Docs",
                         "url": "/docs",
                         "style": "primary",
+<<<<<<< HEAD
+=======
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false,
                         "type": "action"
                     },
                     {
+                        "label": "Showcase",
+                        "url": "/showcase",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Contact!",
+                        "url": "/docs/faq/contact",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Python",
+                        "url": "/docs/python/python-ds",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "JavaScript",
+                        "url": "javascript",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false
+                    }
+                ],
+                "type": "action_menu"
+            },
+            {
+                "label": "Blog📰",
+                "url": "/blog/",
+                "style": "primary",
+                "has_subnav": true,
+                "subnav_links": [{
+                        "label": "Blog-Post-Archive",
+                        "url": "https://bgoonz.blogspot.com/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Top Blog Posts📰",
+                        "url": "https://blog-w-comments.vercel.app/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": true,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Blog w Comments📰",
+                        "url": "/blogWcomments/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    }
+                ],
+                "new_window": true
+            },
+            {
+                "label": "Job Search",
+                "url": "docs/career/",
+                "style": "primary",
+                "icon_class": "dev",
+                "new_window": false,
+                "no_follow": false,
+                "has_subnav": true,
+                "subnav_links": [{
+                        "label": "Job Boards💰",
+                        "url": "docs/career/job-boards",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false
+                    },
+                    {
+                        "label": "Do's and Don'ts of interviews✅🚯",
+                        "url": "interview/dos-and-donts",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false
+                    },
+                    {
+                        "label": "Career-Tips🎓",
+                        "url": "https://bgoonz-blog.netlify.app/docs/career/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false
+                    },
+                    {
+                        "label": "Interview Questions❓",
+                        "url": "docs/interview/interview-questions",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false
+                    }
+                ]
+            },
+            {
+                "label": "Archive",
+                "url": "/docs/archive",
+                "style": "primary",
+                "icon_class": "github",
+                "type": "action_menu",
+                "no_follow": false,
+                "has_subnav": true,
+                "subnav_links": [{
+                        "label": "Resource-Archive-Server📂",
+                        "url": "https://github.com/bgoonz/Learning-Assets",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Bootcamp Resources🥾🏕",
+                        "url": "https://lambda-resources.netlify.app/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Web Dev Setup",
+                        "url": "https://bgoonz-blog.netlify.app/blog/webdev-setup/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "OG-Blog",
+                        "url": "https://web-dev-resource-hub.netlify.app/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Top Repos",
+                        "url": "/docs/docs/git-repos/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "MY_DOCS",
+                        "url": "https://bryan-guner.gitbook.io/my-docs/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false
+                    }
+                ],
+                "new_window": false
+            },
+            {
+                "label": "Projects",
+                "url": "docs/projects",
+                "style": "primary",
+                "icon_class": "dev",
+                "new_window": false,
+                "no_follow": false,
+                "has_subnav": true,
+                "subnav_links": [{
+                        "label": "Potluck Planner",
+                        "url": "https://potluck-landing.netlify.app/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Meditation App",
+                        "url": "https://meditate42app.netlify.app/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "WebAudioLab",
+                        "url": "https://bgoonz.github.io/WebAudioDaw/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "SearchAwesome",
+                        "url": "https://search-awesome.vercel.app/",
+                        "style": "primary",
+                        "icon_class": "github",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Condensed -Portfolio",
+                        "url": "https://bg-portfolio.netlify.app/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false
+                    },
+                    {
+                        "label": "Family Promise Tracker",
+                        "url": "https://a.familypromiseservicetracker.dev/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false
+                    },
+                    {
+                        "label": "DTW-Guitar-FX-Automation",
+                        "url": "https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false
+                    },
+                    {
+                        "label": "Embeds Blog",
+                        "url": "https://bgoonz-blog-v3-0.netlify.app/embeds/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "alt-blogs",
+                        "url": "https://bgoonz-blog-v3-0.netlify.app/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Games",
+                        "url": "https://bgoonz-games.netlify.app/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Blog Backup",
+                        "url": "https://bgoonz-blog-v3-0.netlify.app/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Cover Letter",
+                        "url": "https://bgoonz-cv.netlify.app/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Project Centric",
+                        "url": "https://project-portfolio42.netlify.app/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Wordpress Blog",
+                        "url": "https://bgoonz-blog.netlify.app/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Project Portfolio Gallery",
+                        "url": "https://project-portfolio42.netlify.app/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "github-stats-website",
+                        "url": "https://bgoonz.github.io/github-stats-website/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false
+                    }
+                ],
+                "type": "action_menu"
+            },
+            {
+                "label": "Admin",
+                "url": "https://bgoonz-blog.netlify.app/admin/",
+                "style": "primary",
+                "icon_class": "github",
+                "type": "action_menu",
+                "no_follow": false,
+                "has_subnav": true,
+                "subnav_links": [{
+                        "label": "Write Docs",
+                        "url": "https://bgoonz-blog.netlify.app/admin/#/collections/docs",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Write Blog",
+                        "url": "https://bgoonz-blog.netlify.app/admin/#/collections/blog/new",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Webmaster",
+                        "url": "https://bgoonz-blog.netlify.app/admin/#/collections/blog/new",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    }
+                ],
+                "new_window": true
+            },
+            {
+                "label": "Tools",
+                "url": "/docs/tools",
+                "style": "primary",
+                "has_subnav": true,
+                "subnav_links": [{
+                        "label": "Github HTML Previewer",
+                        "url": "https://githtmlpreview.netlify.app/",
+                        "style": "primary",
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+<<<<<<< HEAD
                         "label": "Showcase🔎",
                         "url": "/showcase",
                         "style": "primary",
@@ -404,6 +794,9 @@
                     },
                     {
                         "label": "Text Tools📰",
+=======
+                        "label": "Text Tools",
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
                         "url": "https://devtools42.netlify.app/",
                         "style": "primary",
                         "icon_class": "dev",
@@ -533,6 +926,10 @@
         "content": "@bgoonz on almost every platform"
     },
     "title": "webdevhub",
+<<<<<<< HEAD
     "domain": "https://bgoonz-blog.netlify.app//",
+=======
+    "domain": "https://bgoonz-blog.netlify.app/",
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
     "favicon": "images/logo-final-touchup.PNG"
 }

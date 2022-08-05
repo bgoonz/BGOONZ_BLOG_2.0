@@ -1242,6 +1242,7 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 <a href="https://medium.com/@bryanguner/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107" class="p-canonical">Canonical link</a>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
  on September 23, 2021.
 =======
 <<<<<<< HEAD
@@ -1254,3 +1255,6 @@ on September 23, 2021.
 >>>>>>> 217d551e709e0a3855c273c4474405cc96110325:src/pages/docs/git/git/index.md
 >>>>>>> f4594b19594599756372b62212ee4796747e0825
 >>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
+=======
+ on September 23, 2021.
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05

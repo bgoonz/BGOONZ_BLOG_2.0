@@ -16,23 +16,40 @@ hue-6-2: #c18401
 */
 
 .hljs {
+<<<<<<< HEAD
   display: block;
   overflow-x: auto;
   padding: 0.5em;
   color: #383a42;
   background: #fafafa;
+=======
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    color: #383a42;
+    background: #fafafa;
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 .hljs-comment,
 .hljs-quote {
+<<<<<<< HEAD
   color: #a0a1a7;
   font-style: italic;
+=======
+    color: #a0a1a7;
+    font-style: italic;
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 .hljs-doctag,
 .hljs-keyword,
 .hljs-formula {
+<<<<<<< HEAD
   color: #a626a4;
+=======
+    color: #a626a4;
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 .hljs-section,
@@ -40,11 +57,19 @@ hue-6-2: #c18401
 .hljs-selector-tag,
 .hljs-deletion,
 .hljs-subst {
+<<<<<<< HEAD
   color: #e45649;
 }
 
 .hljs-literal {
   color: #0184bb;
+=======
+    color: #e45649;
+}
+
+.hljs-literal {
+    color: #0184bb;
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 .hljs-string,
@@ -52,12 +77,20 @@ hue-6-2: #c18401
 .hljs-addition,
 .hljs-attribute,
 .hljs-meta-string {
+<<<<<<< HEAD
   color: #50a14f;
+=======
+    color: #50a14f;
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 .hljs-built_in,
 .hljs-class .hljs-title {
+<<<<<<< HEAD
   color: #c18401;
+=======
+    color: #c18401;
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 .hljs-attr,
@@ -68,7 +101,11 @@ hue-6-2: #c18401
 .hljs-selector-attr,
 .hljs-selector-pseudo,
 .hljs-number {
+<<<<<<< HEAD
   color: #986801;
+=======
+    color: #986801;
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 .hljs-symbol,
@@ -77,6 +114,7 @@ hue-6-2: #c18401
 .hljs-meta,
 .hljs-selector-id,
 .hljs-title {
+<<<<<<< HEAD
   color: #4078f2;
 }
 
@@ -90,4 +128,19 @@ hue-6-2: #c18401
 
 .hljs-link {
   text-decoration: underline;
+=======
+    color: #4078f2;
+}
+
+.hljs-emphasis {
+    font-style: italic;
+}
+
+.hljs-strong {
+    font-weight: bold;
+}
+
+.hljs-link {
+    text-decoration: underline;
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }

@@ -324,6 +324,7 @@ You can also use these shorthands
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz's gists · GitHub</a>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD:notes/articles/medium/markdown/Emmet-Cheat-Sheet.md
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong>
@@ -339,6 +340,8 @@ Or Checkout my personal Resource Site:
 <em>Edit description</em>goofy-euclid-1cd736.netlify.app</a><a href="https://goofy-euclid-1cd736.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 =======
 >>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
+=======
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz">
 <strong>bgoonz — Overview</strong>
 <br />
@@ -355,14 +358,18 @@ Or Checkout my personal Resource Site:
 <a href="https://bgoonzblog20master.gtsb.io/docs/sitemap" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
 </a>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 217d551e709e0a3855c273c4474405cc96110325:src/pages/docs/git/git/quick-ref/Emmet.md
 >>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
+=======
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [March 6, 2021](https://medium.com/p/24758e628d37).
 
 <a href="https://medium.com/@bryanguner/emmet-cheat-sheet-24758e628d37" class="p-canonical">Canonical link</a>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 May 23, 2021.
 =======
@@ -372,3 +379,6 @@ Exported from [Medium](https://medium.com) on August 31, 2021.
 May 23, 2021.
 >>>>>>> 217d551e709e0a3855c273c4474405cc96110325:src/pages/docs/git/git/quick-ref/Emmet.md
 >>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
+=======
+May 23, 2021.
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05

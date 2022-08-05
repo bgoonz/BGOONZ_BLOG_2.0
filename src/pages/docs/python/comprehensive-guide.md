@@ -4001,7 +4001,11 @@ with open("filename.yaml") as f:
 
 Install it with:
 
+<<<<<<< HEAD
 ```console
+=======
+```bash
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 pip install anyconfig
 ```
 
@@ -4487,7 +4491,11 @@ The `setup.py` file is at the heart of a Python project. It describes all of the
 
 This allows you to easily install Python packages. Often it's enough to write:
 
+<<<<<<< HEAD
 ```console
+=======
+```bash
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 python setup.py install
 ```
 

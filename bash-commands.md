@@ -4,7 +4,10 @@
 
 <summary> Bash Cheat Sheet (MY COMMANDS) </summary
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 ## 99. Cheat Sheet
 
 ### Description
@@ -13,7 +16,11 @@
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 #!/bin/bash
 revert
 ## SHORTCUTS and HISTORY
@@ -542,6 +549,7 @@ printf "${Red} This is red \n"
 
 ```
 
+<<<<<<< HEAD
 
 
 </details>
@@ -553,6 +561,12 @@ printf "${Red} This is red \n"
 
 
 
+=======
+</details>
+
+>
+
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 #### Find
 
 ## To find files by case-insensitive extension (ex: .jpg, .JPG, .jpG)
@@ -572,6 +586,7 @@ find . -type f
 find . -type f -perm 777
 
 ## To find files with setuid bit set
+<<<<<<< HEAD
 ```bash
 find . -xdev \( -perm -4000 \) -type f -print0 | xargs -0 ls -l
 ```
@@ -619,6 +634,55 @@ find . -type f -samefile MY_FILE_HERE 2>/dev/null
 ```bash
 find . -type f -exec chmod 644 {} \;
 ```
+=======
+
+find . -xdev \( -perm -4000 \) -type f -print0 | xargs -0 ls -l
+
+## To find files with extension '.txt' and remove them
+
+find ./path/ -name '\*.txt' -exec rm '{}' \;
+
+## To find files with extension '.txt' and look for a string into them
+
+find ./path/ -name '\*.txt' | xargs grep 'string'
+
+## To find files with size bigger than 5 Mebibyte and sort them by size
+
+find . -size +5M -type f -print0 | xargs -0 ls -Ssh | sort -z
+
+## To find files bigger than 2 Megabyte and list them
+
+find . -type f -size +200000000c -exec ls -lh {} \; | awk '{ print $9 ": " $5 }'
+
+## To find files modified more than 7 days ago and list file information
+
+find . -type f -mtime +7d -ls
+
+## To find symlinks owned by a user and list file information
+
+find . -type l -user <username-or-userid> -ls
+
+## To search for and delete empty directories
+
+find . -type d -empty -exec rmdir {} \;
+
+## To search for directories named build at a max depth of 2 directories
+
+find . -maxdepth 2 -name build -type d
+
+## To search all files who are not in .git directory
+
+find . ! -iwholename '_.git_' -type f
+
+## To find all files that have the same node (hard link) as MY_FILE_HERE
+
+find . -type f -samefile MY_FILE_HERE 2>/dev/null
+
+## To find all files in the current directory and modify their permissions
+
+find . -type f -exec chmod 644 {} \;
+
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 ---
 
 ## 1. Remove spaces from file and folder names and then remove numbers from files and folder names
@@ -629,14 +693,24 @@ find . -type f -exec chmod 644 {} \;
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 find . -name "* *" -type d | rename 's/ /_/g'
 find . -name "* *" -type f | rename 's/ /_/g'
 ```
 
+<<<<<<< HEAD
 ```bash
 
 ```bash
+=======
+````console
+
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 find $dir -type f | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
 
 find $dir -type d | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
@@ -653,6 +727,10 @@ for i in *.*; do mv "$i" "${i%-*}.${i##*.}"; done
 ###### code:
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 //APPEND-DIR.js
 const fs = require('fs');
 let cat = require('child_process')
@@ -662,7 +740,11 @@ fs.writeFile('output.md', cat, err => {
   if (err) throw err;
 });
 
+<<<<<<< HEAD
 ```
+=======
+````
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 ---
 
@@ -674,7 +756,11 @@ fs.writeFile('output.md', cat, err => {
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e robots=off -U mozilla https://bootcamp42.gitbook.io/python/
 
@@ -690,7 +776,11 @@ wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e ro
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 find . -empty -type d -print -delete
 
@@ -712,7 +802,11 @@ find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o  -name "*CHANGELOG.tx
 
 ## Generalized
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 CNTX={users|orgs}; NAME={username|orgname}; PAGE=1
 curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
@@ -723,7 +817,11 @@ curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
 
 ## Clone all Git User
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 CNTX={users}; NAME={bgoonz}; PAGE=1
 curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=master |
   grep -e 'git_url*' |
@@ -734,7 +832,11 @@ curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=m
 
 ## Clone all Git Organization
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 CNTX={organizations}; NAME={TheAlgorithms}; PAGE=1
 curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=master |
@@ -752,7 +854,11 @@ curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=m
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 git pull
 git init
 git add .
@@ -760,14 +866,22 @@ git commit -m"update"
 git push -u origin master
 ```
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 git init
 git add .
 git commit -m"update"
 git push -u origin main
 ```
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 git init
 git add .
@@ -775,14 +889,22 @@ git commit -m"update"
 git push -u origin bryan-guner
 ```
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 git init
 git add .
 git commit -m"update"
 git push -u origin gh-pages
 ```
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 git init
 git add .
 git commit -m"update"
@@ -799,7 +921,11 @@ git push -u origin preview
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 find . -name "*.zip" | while read filename; do unzip -o -d "`dirname "$filename"`" "$filename"; done;
 
@@ -817,7 +943,11 @@ find . -name "*.zip" -type f -print -delete
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 git stash
 git pull
@@ -835,7 +965,11 @@ git stash pop
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 sudo npm i prettier -g
 
@@ -853,7 +987,11 @@ prettier --write .
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 find ./ -iname "*.md" -type f -exec sh -c 'pandoc --standalone "${0}" -o "${0%.md}.html"' {} \;
 
@@ -873,7 +1011,11 @@ find ./ -iname "*.docx" -type f -exec sh -c 'pandoc "${0}" -o "${0%.docx}.md"' {
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 sudo apt install tree
 sudo apt install pandoc -y
 sudo apt install rename -y
@@ -885,7 +1027,11 @@ npm i npm-recursive-install -g
 
 ```
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 black .
 
 prettier --write .
@@ -902,7 +1048,11 @@ npm-recursive-install
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 npm i @bgoonz11/repoutils
 
 ```
@@ -917,7 +1067,11 @@ npm i @bgoonz11/repoutils
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 tree -d -I  'node_modules'
 
 tree  -I  'node_modules'
@@ -944,7 +1098,11 @@ tree -f >README.md
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 find . -type f -exec rename 's/string1/string2/g' {} +
 
@@ -972,7 +1130,11 @@ find . -type d -exec rename 's/es6//g' {} +
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 #!/bin/bash
 
 for file in *.md.md
@@ -988,7 +1150,11 @@ do
 done
 ```
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 #!/bin/bash
 
@@ -1014,7 +1180,11 @@ done
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 for d in ./*; do mv $d ${d:0:12}; done
 
@@ -1031,6 +1201,10 @@ for d in ./*; do mv $d ${d:0:12}; done
 ###### code
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 //APPEND-DIR.js
 const fs = require('fs');
 let cat = require('child_process').execSync('cat *').toString('UTF-8');
@@ -1049,7 +1223,11 @@ fs.writeFile('output.md', cat, (err) => {
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 find . -name "* *" -type f | rename 's/_//g'
 
 find . -name "* *" -type d | rename 's/#/_/g'
@@ -1066,7 +1244,11 @@ find . -name "* *" -type d | rename 's/#/_/g'
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 find . -name '.bin' -type d -prune -exec rm -rf '{}' +
 
 find . -name '*.html' -type d -prune -exec rm -rf '{}' +
@@ -1091,7 +1273,11 @@ find . -name 'left.html' -type f -prune -exec rm -rf '{}' +
 
 > Notes: Remove lines not containing `'.js'`
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 sudo sed -i '/\.js/!d' ./*scrap2.md
 
@@ -1099,7 +1285,11 @@ sudo sed -i '/\.js/!d' ./*scrap2.md
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 sudo sed -i '/githubusercontent/d' ./*sandbox.md
 
 sudo sed -i '/githubusercontent/d' ./*scrap2.md
@@ -1125,7 +1315,11 @@ Now, let's understand the use of this with the help of an example. Suppose you h
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 sudo apt install uniq
 uniq -u input.txt output.txt
 
@@ -1141,7 +1335,11 @@ uniq -u input.txt output.txt
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 sudo sed -i '/githubusercontent/d' ./*sandbox.md
 
 sudo sed -i '/githubusercontent/d' ./*scrap2.md
@@ -1179,7 +1377,11 @@ sudo sed -i '/right\.html/d' ./right.html
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 #!/bin/bash
 TSTAMP=`date '+%Y%m%d-%H%M%S'`
@@ -1206,7 +1408,11 @@ printf "\nCreated: $1.$TSTAMP.zip\n"
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 find . | xargs grep -l www.redhat.com | awk '{print "rm "$1}' > doit.sh
 vi doit.sh // check for murphy and his law
 source doit.sh
@@ -1223,7 +1429,11 @@ source doit.sh
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 #!/bin/sh
 
@@ -1330,13 +1540,21 @@ cmd $listing --sort=extension >>$html
 
 > Notes: Useful Follow up Code:
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 ```
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 #!/bin/sh
 
@@ -1444,7 +1662,11 @@ cmd $listing --sort=extension >>$html
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch assets/_index.html' HEAD
 
@@ -1464,7 +1686,11 @@ If you have any files that are not tracked by Git (e.g. uploaded user content), 
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 git fetch --all
 ## Backup your current branch:
@@ -1503,7 +1729,11 @@ git reset --hard origin/master
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 git submodule deinit
 ```
 
@@ -1517,7 +1747,11 @@ git submodule deinit
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 sudo apt install wget
 
 wget -q -O - https://api.github.com/users/bgoonz/gists | grep raw_url | awk -F\" '{print $4}' | xargs -n3 wget
@@ -1540,7 +1774,11 @@ wget -q -O - https://api.github.com/users/thomasmb/gists | grep raw_url | awk -F
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 git remote remove origin
 
@@ -1556,7 +1794,11 @@ git remote remove origin
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 git clone --bare --branch=master --single-branch https://github.com/bgoonz/My-Web-Dev-Archive.git
 
@@ -1572,7 +1814,11 @@ git clone --bare --branch=master --single-branch https://github.com/bgoonz/My-We
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 git reset --hard master@{"10 minutes ago"}
 
@@ -1588,7 +1834,11 @@ git reset --hard master@{"10 minutes ago"}
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 ## Safe:
 
  lebab --replace ./ --transform arrow
@@ -1645,7 +1895,11 @@ lebab --replace ./ --transform includes
 
 ###### code
 
+<<<<<<< HEAD
 ```ps1
+=======
+```
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
  wsl.exe --shutdown
 
@@ -1663,7 +1917,11 @@ lebab --replace ./ --transform includes
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 npm i mediumexporter -g
 
 mediumexporter https://medium.com/codex/fundamental-data-structures-in-javascript-8f9f709c15b4 >ds.md
@@ -1680,7 +1938,11 @@ mediumexporter https://medium.com/codex/fundamental-data-structures-in-javascrip
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 find . -size +75M -a -print -a -exec rm -f {} \;
 
@@ -1698,7 +1960,11 @@ find . -size +98M -a -print -a -exec rm -f {} \;
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 wget -r -A.pdf https://overapi.com/git
 
@@ -1714,7 +1980,11 @@ wget -r -A.pdf https://overapi.com/git
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 killall -s KILL node
 
 ```
@@ -1727,7 +1997,11 @@ killall -s KILL node
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 find <mydir> -type f -exec sed -i 's/<string1>/<string2>/g' {} +
 
 find . -type f -exec rename 's/-master//g' {} +
@@ -1736,7 +2010,11 @@ find . -type f -exec rename 's/-master//g' {} +
 
 > Notes: The same could be done for folder names by changing the _-type f_ flag (for file) to a _-type d_ flag (for directory)
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 find <mydir> -type d -exec sed -i 's/<string1>/<string2>/g' {} +
 
 find . -type d -exec rename 's/-master//g' {} +
@@ -1753,7 +2031,11 @@ find . -type d -exec rename 's/-master//g' {} +
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 find . -name "* *" -type d | rename 's/ /_/g'
 find . -name "* *" -type f | rename 's/ /_/g'
@@ -1769,7 +2051,11 @@ find . -name "* *" -type f | rename 's/ /_/g'
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ```
@@ -1882,7 +2168,11 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 ###### code
 
+<<<<<<< HEAD
 ```ps1
+=======
+```
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 PARAM (
     [string] $ZipFilesPath = "./",
@@ -1915,7 +2205,11 @@ foreach ($ZipFile in $ZipFiles) {
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
  sudo apt --purge remove zsh
 
 ```
@@ -1930,7 +2224,11 @@ foreach ($ZipFile in $ZipFiles) {
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 ln -s "$(pwd)" ~/NameOfLink
 
@@ -1948,7 +2246,11 @@ ln -s "$(pwd)" ~/Downloads
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 npx @appnest/readme generate
 
@@ -1964,7 +2266,11 @@ npx @appnest/readme generate
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 sudo -u postgres psql
 ```
 
@@ -2012,7 +2318,11 @@ https://repl.it/@bgoonz/Database-Prac?lite=true&amp;referrer=https%3A%2F%2Fbryan
 
 ###### code
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 

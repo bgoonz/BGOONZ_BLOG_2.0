@@ -13,7 +13,11 @@ template: docs
 
 # Fresh Ubuntu Setup:
 
+<<<<<<< HEAD
 ```console
+=======
+```bash
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 sudo apt update -y
 

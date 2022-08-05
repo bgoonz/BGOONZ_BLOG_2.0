@@ -10,7 +10,11 @@ body {
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
+<<<<<<< HEAD
     overflow: scroll !important;
+=======
+    overflow: scroll;
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 a {
@@ -24,6 +28,7 @@ a {
     }
 }
 
+<<<<<<< HEAD
 #social-embed {
     // position: absolute !important;
     // right: 50px !important;
@@ -38,6 +43,8 @@ a {
     // z-index: -1;
 }
 
+=======
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 #scrollBtn {
     position: fixed;
     padding: 10px;
@@ -50,12 +57,15 @@ a {
     border-radius: 10px;
 }
 
+<<<<<<< HEAD
 #sb-search-input-example {
     position: absolute;
     top: 200px;
     lef: 200px;
 }
 
+=======
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 iframe {
     overflow-y: scroll;
     overflow-x: scroll;
@@ -64,7 +74,11 @@ iframe {
     height: 1200px;
     box-shadow: inset 0px 4px 4px -10px black, inset 0px -11px 8px -10px black;
     width: 1000px;
+<<<<<<< HEAD
     resize: both !important;
+=======
+    resize: both;
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
     overflow: scroll;
 }
 
@@ -83,7 +97,11 @@ iframe {
     font-size: 18px;
     line-height: 12px;
     margin: 0;
+<<<<<<< HEAD
     z-index: 900;
+=======
+    z-index: -1;
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 #sb-search-example {
@@ -91,18 +109,30 @@ iframe {
     top: 100px;
     width: 20%;
     place-content: center;
+<<<<<<< HEAD
     z-index: 900;
     box-shadow: 0px 2px 4px rgba(190, 190, 190, 0.5);
     border: solid 5px white;
     border-radius: 100px;
     z-index: 900;
+=======
+    z-index: -1;
+    box-shadow: 0px 2px 4px rgba(190, 190, 190, 0.5);
+    border: solid 5px white;
+    border-radius: 100px;
+    z-index: -1;
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 #sb-search-example .sb-icon {
     font: normal normal 400 26px;
     align-items: center;
     padding: 10px;
+<<<<<<< HEAD
     z-index: 900;
+=======
+    z-index: -1;
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
     text-transform: none;
     cursor: pointer;
     margin: 0;
@@ -113,7 +143,11 @@ iframe {
     background: #007cff;
     color: #fff;
     cursor: pointer;
+<<<<<<< HEAD
     z-index: 900;
+=======
+    z-index: -1;
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
     border-radius: 26px;
 }
 
@@ -190,7 +224,11 @@ pre {
     }
 }
 
+<<<<<<< HEAD
 :not(pre)>code {
+=======
+:not(pre) > code {
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
     background: $gray-200;
     border-radius: $border-radius-sm;
     color: $gray-600;
@@ -250,8 +288,13 @@ ol {
     padding: 0 0 0 1.5em;
 }
 
+<<<<<<< HEAD
 li>ul,
 li>ol {
+=======
+li > ul,
+li > ol {
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
     margin-bottom: 0;
 }
 
@@ -307,4 +350,8 @@ img {
     h6 {
         font-size: 1.125em;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05

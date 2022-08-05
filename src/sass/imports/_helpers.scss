@@ -4,9 +4,15 @@
     clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
     height: 1px;
     overflow: hidden;
+<<<<<<< HEAD
     position: absolute !important;
     width: 1px;
     word-wrap: normal !important;
+=======
+    position: absolute;
+    width: 1px;
+    word-wrap: normal;
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 // Heading decorations
@@ -71,12 +77,20 @@
     h4,
     h5,
     h6 {
+<<<<<<< HEAD
         color: inherit !important;
+=======
+        color: inherit;
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
     }
 
     a {
         &:not(.button) {
+<<<<<<< HEAD
             color: inherit !important;
+=======
+            color: inherit;
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
             &:hover {
                 opacity: 0.8;
@@ -98,7 +112,11 @@
     }
 
     .button-secondary {
+<<<<<<< HEAD
         color: #fff !important;
+=======
+        color: #fff;
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
     }
 
     .inner-sm {
@@ -123,7 +141,11 @@
 // Grid
 .grid {
     display: -ms-flexbox;
+<<<<<<< HEAD
     // box-shadow: inset 0px 11px 8px -10px black, inset 0px -11px 8px -10px black;    margin: 0 auto !important;
+=======
+    // box-shadow: inset 0px 11px 8px -10px black, inset 0px -11px 8px -10px black;    margin: 0 auto ;
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
     display: flex;
     border-radius: 5px;
     -ms-flex-wrap: wrap;
@@ -134,7 +156,11 @@
 
 .grid-item {
     box-sizing: border-box;
+<<<<<<< HEAD
     // box-shadow: inset 0px 11px 8px -10px black, inset 0px -11px 8px -10px black;    margin: 0 auto !important;    
+=======
+    // box-shadow: inset 0px 11px 8px -10px black, inset 0px -11px 8px -10px black;    margin: 0 auto ;
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
     padding-left: $grid-gap / 2;
     padding-right: $grid-gap / 2;
     position: relative;
@@ -187,6 +213,7 @@
         padding-right: $container-padding / 2;
     }
 }
+<<<<<<< HEAD
 
 /*
 
@@ -581,3 +608,5 @@ td,
 th {
     padding: 0;
 }
+=======
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05

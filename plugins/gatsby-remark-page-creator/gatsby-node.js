@@ -44,7 +44,7 @@ function findFileNode({node, getNode}) {
         return null;
     }
 
-    return fileNode
+    return fileNode;
 }
 
 <<<<<<< HEAD

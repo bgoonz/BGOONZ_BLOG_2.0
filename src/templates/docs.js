@@ -5,9 +5,12 @@ import React from 'react';
 import DocsMenu from '../components/DocsMenu';
 import { Layout } from '../components/index';
 import { getPages, htmlToReact, Link, withPrefix } from '../utils';
+<<<<<<< HEAD
 // this minimal GraphQL query ensures that when 'gatsby develop' is running,
 // any changes to content files are reflected in browser
 
+=======
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 // this minimal GraphQL query ensures that when 'gatsby develop' is running,
 // any changes to content files are reflected in browser
 export const query = graphql`
@@ -17,7 +20,6 @@ export const query = graphql`
         }
     }
 `;
-
 export default class Docs extends React.Component {
     render() {
         let root_docs_path = _.trim(_.get(this.props, 'pageContext.site.data.doc_sections.root_docs_path', null), '/');
@@ -38,7 +40,11 @@ export default class Docs extends React.Component {
                                         (() => {
                                             let child_pages = _.orderBy(getPages(this.props.pageContext.pages, current_page_url), 'frontmatter.weight');
                                             let child_count = _.size(child_pages);
+<<<<<<< HEAD
                                             let has_children = child_count > 0 ? true : false;
+=======
+                                            let has_children = !!(child_count > 0);
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
                                             return (
                                                 <React.Fragment>
                                                     {has_children && (
@@ -67,6 +73,10 @@ export default class Docs extends React.Component {
                         </nav>
                     </div>
                     <Disqus />
+<<<<<<< HEAD
+=======
+                    <div data-sheet2site="1c4ZMBRKv7mwotLxfd_5-Q_XxC2_Dkc3NLfFQMmEV7Vo&g=1&e=1"></div>
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
                 </div>
             </Layout>
         );
