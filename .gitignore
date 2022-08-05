@@ -1,3 +1,25 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Logs
 logs
 *.log
@@ -52,12 +74,16 @@ typings/
 *.tgz
 
 # dotenv environment variables file
-.env
 
 
 # gatsby files
+<<<<<<< HEAD
+# .cache/
+# public
+=======
 .cache/
 public
+>>>>>>> 217d551e709e0a3855c273c4474405cc96110325
 
 # Mac files
 .DS_Store

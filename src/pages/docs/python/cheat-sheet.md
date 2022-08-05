@@ -1942,7 +1942,7 @@ spam.strip('ampS')
 
 First, install `pypeerclip` with pip:
 
-```consoleell
+```console
 pip install pyperclip
 ```
 
