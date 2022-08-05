@@ -44,9 +44,12 @@ exports.onCreateNode = ({node, getNode, actions}, options) => {
         let url;
         if (node.frontmatter.url) {
             url = node.frontmatter.url;
-        } else if (_.get(options, 'uglyUrls', false)) {
-            url = path.join(fileNode.relativeDirectory, fileNode.name + '.html');
         } else {
+            if (_.get(options, 'uglyUrls', false)) {
+                url = path.join(fileNode.relativeDirectory, `${fileNode.name}.html`);
+                return;
+            }
+
             url = createFilePath({node, getNode});
         }
 
