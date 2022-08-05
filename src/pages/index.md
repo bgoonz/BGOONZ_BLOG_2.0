@@ -5,7 +5,7 @@ sections:
       type: section_hero
       title: 'I am a musician, electrical engineer & web developer'
       image: images/dtw-slideshow.gif
-      content: "\n\n**Please note that this website is in development and is often broken!**\n\n[![GitHub](https://img.shields.io/badge/github-100000?style=flat&logo=GitHub&logoColor=0C002F&labelColor=FFFFFF&color=black)](https://github.com/bgoonz/BGOONZ_BLOG_2.0/)\n\n[vagrant](https://www.vagrantup.com/)[![gmail](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![linkedin](https://img.icons8.com/color/96/000000/linkedin.png)](https://www.linkedin.com/in/bryan-guner-046199128/)[![alt-text](https://img.icons8.com/color/96/000000/instagram-new.png)](https://www.instagram.com/bgoonz/?hl=en)[![alt-text](https://img.icons8.com/color/96/000000/pinterest--v1.png)](https://www.pinterest.com/bryanguner/\\_saved/)\n\n[webpack](https://webpack.js.org/)[\_](https://www.adobe.com/products/xd.html)\n\n[![NetlifyStatus](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys)\n\n[![Bryansgithubactivitygraph](https://activity-graph.herokuapp.com/graph?username=bgoonz\\&custom_title=This%20is%20Bryans%20Activity\\&hide_border=true\\&theme=chartreuse-dark)](https://github.com/bgoonz/github-readme-activity-graph)\n\n![Jokes](https://readme-jokes.vercel.app/api)\n\n![Python](https://img.shields.io/badge/-Python-05122A?style=flat\\&logo=python)![HTML](https://img.shields.io/badge/-HTML-05122A?style=flat\\&logo=HTML5)![CSS](https://img.shields.io/badge/-CSS-05122A?style=flat\\&logo=CSS3\\&logoColor=1572B6)![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat\\&logo=javascript)![React](https://img.shields.io/badge/-React-05122A?style=flat\\&logo=react)![Node.js](https://img.shields.io/badge/-Node.js-05122A?style=flat\\&logo=node.js)\n\n![VisualStudioCode](https://img.shields.io/badge/-Visual%20Studio%20Code-05122A?style=flat\\&logo=visual-studio-code\\&logoColor=007ACC)![Docker](https://img.shields.io/badge/-Docker-05122A?style=flat\\&logo=Docker)![MongoDB](https://img.shields.io/badge/-MongoDB-05122A?style=flat\\&logo=mongodb)![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-05122A?style=flat\\&logo=postgresql)\n\n![Git](https://img.shields.io/badge/-Git-05122A?style=flat\\&logo=git)![GitHub](https://img.shields.io/badge/-GitHub-05122A?style=flat\\&logo=github)![GitLab](https://img.shields.io/badge/-GitLab-05122A?style=flat\\&logo=gitlab)\n\n![Markdown](https://img.shields.io/badge/-Markdown-05122A?style=flat\\&logo=markdown)"
+      content: "\n\n**Please note that this website is in development and is often broken!**\n\n[](https://www.vagrantup.com/)[![gmail](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![linkedin](https://img.icons8.com/color/96/000000/linkedin.png)](https://www.linkedin.com/in/bryan-guner-046199128/)[![alt-text](https://img.icons8.com/color/96/000000/instagram-new.png)](https://www.instagram.com/bgoonz/?hl=en)[![alt-text](https://img.icons8.com/color/96/000000/pinterest--v1.png)](https://www.pinterest.com/bryanguner/\\_saved/)\n\n[](https://webpack.js.org/)[\_](https://www.adobe.com/products/xd.html)\n\n[![NetlifyStatus](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys)\n\n[![Bryansgithubactivitygraph](https://activity-graph.herokuapp.com/graph?username=bgoonz\\&custom_title=This%20is%20Bryans%20Activity\\&hide_border=true\\&theme=chartreuse-dark)](https://github.com/bgoonz/github-readme-activity-graph)\n\n![Jokes](https://readme-jokes.vercel.app/api)\n\n![Python](https://img.shields.io/badge/-Python-05122A?style=flat\\&logo=python)![HTML](https://img.shields.io/badge/-HTML-05122A?style=flat\\&logo=HTML5)![CSS](https://img.shields.io/badge/-CSS-05122A?style=flat\\&logo=CSS3\\&logoColor=1572B6)![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat\\&logo=javascript)![React](https://img.shields.io/badge/-React-05122A?style=flat\\&logo=react)![Node.js](https://img.shields.io/badge/-Node.js-05122A?style=flat\\&logo=node.js)\n\n![VisualStudioCode](https://img.shields.io/badge/-Visual%20Studio%20Code-05122A?style=flat\\&logo=visual-studio-code\\&logoColor=007ACC)![Docker](https://img.shields.io/badge/-Docker-05122A?style=flat\\&logo=Docker)![MongoDB](https://img.shields.io/badge/-MongoDB-05122A?style=flat\\&logo=mongodb)![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-05122A?style=flat\\&logo=postgresql)\n\n![Git](https://img.shields.io/badge/-Git-05122A?style=flat\\&logo=git)![GitHub](https://img.shields.io/badge/-GitHub-05122A?style=flat\\&logo=github)![GitLab](https://img.shields.io/badge/-GitLab-05122A?style=flat\\&logo=gitlab)\n\n![Markdown](https://img.shields.io/badge/-Markdown-05122A?style=flat\\&logo=markdown)"
       actions:
           - label: Contact
             url: 'https://sidebar-blog.netlify.app/contact/'
@@ -206,12 +206,12 @@ sections:
       image_alt: animated gif
       image_position: right
       content: |
-          ### Web Dev Utilitiy Tools
-          <br><br><iframe class="block-content" width="100%  width="1200px"
+          ## Web Dev Utilitiy Tools
+          <iframe class="block-content" width="100%  width="1200px"
           height="1000px"
             src="https://web-dev-utility-tools-bgoonz.netlify.app/"
             ></iframe><br><br>
-          <br><br><iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://random-static-html-deploys.netlify.app" class="block-content" width="100%  width="1200px" height="1000px"></iframe><br><br>
+          <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://random-static-html-deploys.netlify.app" class="block-content" width="100%  width="1200px" height="1000px" ></iframe>
       actions: []
       type: section_content
       image: images/cool annimation.gif
@@ -219,8 +219,8 @@ sections:
       image_alt: tools
       image_position: left
       content: |
-          <br><br><iframe class="block-content" width="100%  width="1200px"  height="1000px" src="https://bgoonz.github.io/BGOONZ_BLOG_2.0/"></iframe><br><br>
-          <br><br><iframe class="block-content" width="100%  width="1200px" height="1000px"  src="https://cheatsheets-42.netlify.app/"></iframe><br><br>
+          <iframe class="block-content" width="100%  width="1200px"  height="1000px" src="https://bgoonz.github.io/BGOONZ_BLOG_2.0/" ></iframe><br><br>
+          <iframe class="block-content" width="100%  width="1200px" height="1000px"  src="https://cheatsheets-42.netlify.app/" ></iframe>
       actions: []
       type: section_content
       title: Tools Showcase

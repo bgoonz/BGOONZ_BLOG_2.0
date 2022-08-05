@@ -2,20 +2,26 @@
 title: Front End Interview Questions Part 2
 template: post
 subtitle: These will focus more on vocabulary and concepts than the application
-    driven approach in my last post!
+  driven approach in my last post!
 excerpt: ­­­­If you were to describe semantic HTML to the next cohort of
-    students, what would you say
+  students, what would you say
 date: 2022-05-23T08:41:53.757Z
 image: https://camo.githubusercontent.com/22121fcc4ed529e7fdaea851db57c0e7dbee2ceeffe6f62b536039b71c7362c0/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f302a4433795149343267426b59706e4c58592e6a7067
 thumb_image: https://camo.githubusercontent.com/22121fcc4ed529e7fdaea851db57c0e7dbee2ceeffe6f62b536039b71c7362c0/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f302a4433795149343267426b59706e4c58592e6a7067
 image_position: right
 author: src/data/authors/bgoonz.yaml
+categories:
+  - src/data/categories/ds-algo.yaml
+  - src/data/categories/awesome-lists.yaml
+  - src/data/categories/html.yaml
 tags:
-    - src/data/tags/career-1.yaml
-    - src/data/tags/javascript.yaml
+  - src/data/tags/career-1.yaml
+  - src/data/tags/javascript.yaml
 show_author_bio: true
 related_posts:
-    - src/pages/blog/python-quiz.md
+  - src/pages/blog/python-quiz.md
+  - src/pages/blog/10-essential-react-interview-questions.md
+  - src/pages/blog/awesome-resources.md
 cmseditable: true
 ---
 

@@ -7,12 +7,20 @@
 const React = require("react");
 const withPrefix = require("./src/utils/withPrefix").default;
 
+<<<<<<< HEAD
 exports.onRenderBody = function ({ setHeadComponents, setPostBodyComponents }) {
+=======
+exports.onRenderBody = function({
+    setHeadComponents,
+    setPostBodyComponents
+}) {
+>>>>>>> 217d551e709e0a3855c273c4474405cc96110325
 
     setHeadComponents([
 
     ]);
 
+<<<<<<< HEAD
     setPostBodyComponents([
         <React.Fragment>
             <script src={withPrefix('js/plugins.js')} />
@@ -27,7 +35,26 @@ exports.onRenderBody = function ({ setHeadComponents, setPostBodyComponents }) {
             <script src={withPrefix('js/prism.js')} />
             <script src={withPrefix('js/analytics.js')} />
             <script src={withPrefix('js/plugins.js')} />
+=======
+
+    setPostBodyComponents([
+        <React.Fragment>
+
+
+             <script src={withPrefix('js/main.js')}/>
+   
+             <script src={withPrefix('js/page-load.js')}/>
+             <script src={withPrefix('js/page-unload.js')}/>
+             <script src={withPrefix('js/plugins.js')}/>
+
+             <script src={withPrefix('js/prism.js')}/>
+
+             <script src={withPrefix('js/syntax.js')}/>
+             <script src={withPrefix('js/ukraine.js')}/>
+            
+>>>>>>> 217d551e709e0a3855c273c4474405cc96110325
         </React.Fragment>
+
     ]);
 
 };

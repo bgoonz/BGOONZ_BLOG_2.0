@@ -16,7 +16,11 @@
         "chokidar": "3.4.0",
         "classnames": "2.2.6",
         "fs-extra": "7.0.1",
+<<<<<<< HEAD
         "gatsby": "2.25.4",
+=======
+        "gatsby": "^2.32.13",
+>>>>>>> 217d551e709e0a3855c273c4474405cc96110325
         "gatsby-plugin-disqus": "^1.2.3",
         "gatsby-plugin-react-helmet": "3.3.3",
         "gatsby-plugin-sass": "2.8.0",
@@ -36,6 +40,15 @@
         "react-html-parser": "2.0.2",
         "react-script-tag": "1.1.2",
         "rehype-react": "3.0.2",
+<<<<<<< HEAD
         "sprintf-js": "1.1.2"
+=======
+        "remark-mdx": "^2.1.2",
+        "sprintf-js": "1.1.2",
+        "web-dev-utils": "^1.0.4"
+    },
+    "devDependencies": {
+        "prettier": "^2.7.1"
+>>>>>>> 217d551e709e0a3855c273c4474405cc96110325
     }
 }
