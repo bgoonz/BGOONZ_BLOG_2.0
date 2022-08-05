@@ -18,7 +18,6 @@ related_posts:
   - src/pages/blog/psql-cheat-sheet.md
 cmseditable: true
 ---
-
 # 💻 PSQL💻
 
 > source
@@ -36,7 +35,7 @@ psql -U myuser -h myhost "dbname=mydb sslmode=require" # ssl connection
 
 ### Default Admin Login
 
-```console
+```sql
 sudo -u postgres psql -U postgres
 sudo -u postgres psql
 ```
@@ -45,7 +44,7 @@ sudo -u postgres psql
 
 ### Determine system tables
 
-```console
+```plsql
 select * from pg_tables where tableowner = 'postgres';
 ```
 
@@ -61,7 +60,7 @@ select * from pg_tables where tableowner = 'postgres';
 
 ### Reset a user password as admin
 
-```console
+```sql
 alter user usertochange with password 'new_passwd';
 ```
 
@@ -73,25 +72,25 @@ alter user usertochange with password 'new_passwd';
 
 ### Load data into postgresql
 
-```console
+```sql
 psql -W -U username -H hostname < file.sql
 ```
 
 ### Dump (Backup) Data into file
 
-```console
+```plsql
 pg_dump -W -U username -h hostname database_name > file.sql
 ```
 
 ### Increment a sequence
 
-```console
+```plsql
 SELECT nextval('my_id_seq');
 ```
 
 ### Create new user
 
-```console
+```plsql
 CREATE USER lemmy WITH PASSWORD 'myPassword';
 # or
 
@@ -100,19 +99,19 @@ sudo -u postgres createuser lemmy -W
 
 ### Change user password
 
-```console
+```plsql
 ALTER USER Postgres WITH PASSWORD 'mypass';
 ```
 
 ### Grant user createdb privilege
 
-```console
+```plsql
 ALTER USER myuser WITH createdb;
 ```
 
 ### Create a superuser user
 
-```console
+```plsql
 create user mysuper with password '1234' SUPERUSER
 # or even better
 create user mysuper with password '1234' SUPERUSER CREATEDB CREATEROLE INHERIT LOGIN REPLICATION;
@@ -122,7 +121,7 @@ sudo -u postgres createuser lemmy -W -s
 
 ### Upgrade an existing user to superuser
 
-```console
+```plsql
 alter user mysuper with superuser;
 # or even better
 alter user mysuper with SUPERUSER CREATEDB CREATEROLE INHERIT LOGIN REPLICATION
@@ -132,19 +131,19 @@ alter user mysuper with SUPERUSER CREATEDB CREATEROLE INHERIT LOGIN REPLICATION
 
 ### Change Database Owner
 
-```console
+```plsql
 alter database database_name owner to new_owner;
 ```
 
 ### Copy a database
 
-```console
+```plsql
 CREATE DATABASE newdb WITH TEMPLATE originaldb;
 ```
 
 ### View Database Connections
 
-```console
+```sql
 SELECT * FROM pg_stat_activity;
 ```
 
@@ -262,7 +261,7 @@ SELECT * FROM pg_stat_activity WHERE waiting='t';
 
 ### Query analysis
 
-```console
+```plsql
 -- See the query plan for the given query
 EXPLAIN __query__
 
@@ -277,7 +276,7 @@ ANALYZE [__table__]
 
 ### From a Single Table
 
-```console
+```plsql
 -- Query data in columns c1, c2 from a table
 SELECT c1, c2 FROM t;
 
@@ -392,6 +391,6 @@ WHERE c1 IS [NOT] NULL;
 
 ## Source
 
-- [PostgreSQL 9.6.0 Documentation](https://www.postgresql.org/docs/9.6/static/app-psql.html)
-- [PostgreSQL Exercises](https://pgexercises.com)
-- [PostgreSQL Tutorial](http://www.postgresqltutorial.com/postgresql-cheat-sheets)
+* [PostgreSQL 9.6.0 Documentation](https://www.postgresql.org/docs/9.6/static/app-psql.html)
+* [PostgreSQL Exercises](https://pgexercises.com)
+* [PostgreSQL Tutorial](http://www.postgresqltutorial.com/postgresql-cheat-sheets)
