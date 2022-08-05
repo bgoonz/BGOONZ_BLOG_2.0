@@ -1,4 +1,3 @@
-
 ---
 title: JS-Intervew-2
 subtitle: Object Oriented JavaScript
