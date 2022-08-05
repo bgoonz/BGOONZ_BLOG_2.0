@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 self = 'undefined' != typeof window ? window : 'undefined' != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? self : {};
 var Prism = (function () {
     var e = /\blang(?:uage)?-(?!\*)(\w+)\b/i,
@@ -437,12 +437,11 @@ var _self = 'undefined' != typeof window ? window : 'undefined' != typeof Worker
                                         reach: W
                                     };
                                     o(e, n, t, w.prev, A, I), g && I.reach > g.reach && (g.reach = I.reach);
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
+
                                 }
                             }
                         }
                     }
-<<<<<<< HEAD
                 return r;
             },
             hooks: {
@@ -694,12 +693,12 @@ var _self = 'undefined' != typeof window ? window : 'undefined' != typeof Worker
                 pattern: /[^\s>\/]+/,
                 inside: {
                     namespace: /^[^\s>\/:]+:/
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
+
                 }
             }
         }
     },
-<<<<<<< HEAD
+
     entity: /\&#?[\da-z]{1,8};/gi
 }),
     Prism.hooks.add('wrap', function (t) {
