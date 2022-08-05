@@ -1,5 +1,5 @@
 ---
-title: " ESLint Rules"
+title: ' ESLint Rules'
 template: post
 subtitle: Rules in ESLint are grouped by type to help you understand their purpose
 excerpt: These rules relate to possible logic errors in cod
@@ -9,16 +9,17 @@ thumb_image: https://i.ytimg.com/vi/SydnKbGc7W8/maxresdefault.jpg
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:
-  - src/data/categories/js.yaml
-  - src/data/categories/git.yaml
+    - src/data/categories/js.yaml
+    - src/data/categories/git.yaml
 tags:
-  - src/data/tags/cms.yaml
-  - src/data/tags/javascript.yaml
-  - src/data/tags/links.yaml
-  - src/data/tags/resources.yaml
+    - src/data/tags/cms.yaml
+    - src/data/tags/javascript.yaml
+    - src/data/tags/links.yaml
+    - src/data/tags/resources.yaml
 show_author_bio: true
 cmseditable: true
 ---
+
 <!--StartFragment-->
 
 # Rules
@@ -241,7 +242,7 @@ These rules suggest alternate ways of doing things:
 |     | 🔧  |     | [sort-imports](https://eslint.org/docs/rules/sort-imports)                                     | enforce sorted import declarations within modules                                                                      |
 |     |     |     | [sort-keys](https://eslint.org/docs/rules/sort-keys)                                           | require object keys to be sorted                                                                                       |
 |     | 🔧  |     | [sort-vars](https://eslint.org/docs/rules/sort-vars)                                           | require variables within the same declaration block to be sorted                                                       |
-|     | 🔧  |     | [spaced-comment](https://eslint.org/docs/rules/spaced-comment)                                 | enforce consistent spacing after the \`//\` or \`/*\` in a comment                                                     |
+|     | 🔧  |     | [spaced-comment](https://eslint.org/docs/rules/spaced-comment)                                 | enforce consistent spacing after the \`//\` or \`/\*\` in a comment                                                    |
 |     | 🔧  |     | [strict](https://eslint.org/docs/rules/strict)                                                 | require or disallow strict mode directives                                                                             |
 |     |     |     | [symbol-description](https://eslint.org/docs/rules/symbol-description)                         | require symbol descriptions                                                                                            |
 |     |     |     | [vars-on-top](https://eslint.org/docs/rules/vars-on-top)                                       | require \`var\` declarations be placed at the top of their containing scope                                            |
@@ -269,7 +270,7 @@ These rules care about how the code looks rather than how it executes:
 |     | 🔧  |     | [func-call-spacing](https://eslint.org/docs/rules/func-call-spacing)                               | require or disallow spacing between function identifiers and their invocations           |
 |     | 🔧  |     | [function-call-argument-newline](https://eslint.org/docs/rules/function-call-argument-newline)     | enforce line breaks between arguments of a function call                                 |
 |     | 🔧  |     | [function-paren-newline](https://eslint.org/docs/rules/function-paren-newline)                     | enforce consistent line breaks inside function parentheses                               |
-|     | 🔧  |     | [generator-star-spacing](https://eslint.org/docs/rules/generator-star-spacing)                     | enforce consistent spacing around \`*\` operators in generator functions                 |
+|     | 🔧  |     | [generator-star-spacing](https://eslint.org/docs/rules/generator-star-spacing)                     | enforce consistent spacing around \`\*\` operators in generator functions                |
 |     | 🔧  |     | [implicit-arrow-linebreak](https://eslint.org/docs/rules/implicit-arrow-linebreak)                 | enforce the location of arrow function bodies                                            |
 |     | 🔧  |     | [indent](https://eslint.org/docs/rules/indent)                                                     | enforce consistent indentation                                                           |
 |     | 🔧  |     | [jsx-quotes](https://eslint.org/docs/rules/jsx-quotes)                                             | enforce the consistent use of either double or single quotes in JSX attributes           |
