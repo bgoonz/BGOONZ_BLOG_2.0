@@ -341,6 +341,7 @@ Here's A Linkedin Checklist I will be using before I return to the job hunt!
 
 #### Experience Section
 
+<<<<<<< HEAD
 - <span id="a517">\[ \] I **have** listed all professional roles included on my resume in this section and any that I had to cut from my resume for space</span>
 - <span id="eca7">\[ \] I **have** written 2-4 power statements for each experience listed (okay to copy and paste from resume)</span>
 - <span id="d298">\[ \] My power statements for each experience <a href="https://www.linkedin.com/pulse/update-how-add-bullet-points-your-linkedin-profile-erin-dore-miller/" class="markup--anchor markup--li-anchor">are bulleted</a>, not in paragraph form.</span>
@@ -351,6 +352,18 @@ Here's A Linkedin Checklist I will be using before I return to the job hunt!
 - <span id="3616">\[ \] **Optional:** Bootcamp student experience and projects can be listed under your experience section if you have no (or almost no) prior work experience.</span>
 - <span id="7fa1">\[ \] If I listed my Bootcamp student experience, my title is \[name of program\] Student (example: Data Science Student)</span>
 - <span id="c928">\[ \] I copied and pasted my Lambda projects in my student description and also included them in the Accomplishments section</span>
+=======
+-   <span id="a517">\[ \] I **have** listed all professional roles included on my resume in this section and any that I had to cut from my resume for space</span>
+-   <span id="eca7">\[ \] I **have** written 2-4 power statements for each experience listed (okay to copy and paste from resume)</span>
+-   <span id="d298">\[ \] My power statements for each experience <a href="https://www.linkedin.com/pulse/update-how-add-bullet-points-your-linkedin-profile-erin-dore-miller/" class="markup--anchor markup--li-anchor">are bulleted</a>, not in paragraph form.</span>
+-   <span id="ec6c">\[ \] I **did** list responsibilities in bullet point format (I **did not** leave in paragraph format)</span>
+-   <span id="f472">\[ \] I **did** start each bullet point with <a href="https://docs.google.com/document/d/1wZkDPBWtQZDGGdvStD61iRx_jOWVlIyyQl9UOYHtZgA/edit?usp=sharing" class="markup--anchor markup--li-anchor">an action verb</a> and I **did not** use phrases such as: `Assisted with...` `Worked on...` `Helped with...` (`Solely responsible for...` ok)</span>
+-   <span id="9a26">\[ \] I **did** describe past projects in past tense and current projects in present tense</span>
+-   <span id="0f5a">\[ \] I **did not** use pronouns such as: “I,” “we,” “they, “you,” “me,” “us”</span>
+-   <span id="3616">\[ \] **Optional:** Bootcamp student experience and projects can be listed under your experience section if you have no (or almost no) prior work experience.</span>
+-   <span id="7fa1">\[ \] If I listed my Bootcamp student experience, my title is \[name of program\] Student (example: Data Science Student)</span>
+-   <span id="c928">\[ \] I copied and pasted my Lambda projects in my student description and also included them in the Accomplishments section</span>
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
 
 ### Do's:
 

@@ -57,15 +57,23 @@ Accepts the same parameters as the longest form of the constructor (i.e. 2 to 7)
 
 ## Instance methods
 
+<<<<<<< HEAD:src/pages/docs/js-tips/date.md
 [`Date.prototype.getDate()`](date/getdate)
 Returns the day of the month (`1`-`31`) for the specified date according to local time.
 
 [`Date.prototype.getDay()`](date/getday)
+=======
+[`Date.prototype.getDate()`](date/getdate)  
+Returns the day of the month (`1`-`31`) for the specified date according to local time.
+
+[`Date.prototype.getDay()`](date/getday)  
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2:notes/JS-DOC/date.md
 Returns the day of the week (`0`-`6`) for the specified date according to local time.
 
 [`Date.prototype.getFullYear()`](date/getfullyear)
 Returns the year (4 digits for 4-digit years) of the specified date according to local time.
 
+<<<<<<< HEAD:src/pages/docs/js-tips/date.md
 [`Date.prototype.getHours()`](date/gethours)
 Returns the hour (`0`-`23`) in the specified date according to local time.
 
@@ -79,6 +87,21 @@ Returns the minutes (`0`-`59`) in the specified date according to local time.
 Returns the month (`0`-`11`) in the specified date according to local time.
 
 [`Date.prototype.getSeconds()`](date/getseconds)
+=======
+[`Date.prototype.getHours()`](date/gethours)  
+Returns the hour (`0`-`23`) in the specified date according to local time.
+
+[`Date.prototype.getMilliseconds()`](date/getmilliseconds)  
+Returns the milliseconds (`0`-`999`) in the specified date according to local time.
+
+[`Date.prototype.getMinutes()`](date/getminutes)  
+Returns the minutes (`0`-`59`) in the specified date according to local time.
+
+[`Date.prototype.getMonth()`](date/getmonth)  
+Returns the month (`0`-`11`) in the specified date according to local time.
+
+[`Date.prototype.getSeconds()`](date/getseconds)  
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2:notes/JS-DOC/date.md
 Returns the seconds (`0`-`59`) in the specified date according to local time.
 
 [`Date.prototype.getTime()`](date/gettime)
@@ -87,15 +110,23 @@ Returns the numeric value of the specified date as the number of milliseconds si
 [`Date.prototype.getTimezoneOffset()`](date/gettimezoneoffset)
 Returns the time-zone offset in minutes for the current locale.
 
+<<<<<<< HEAD:src/pages/docs/js-tips/date.md
 [`Date.prototype.getUTCDate()`](date/getutcdate)
 Returns the day (date) of the month (`1`-`31`) in the specified date according to universal time.
 
 [`Date.prototype.getUTCDay()`](date/getutcday)
+=======
+[`Date.prototype.getUTCDate()`](date/getutcdate)  
+Returns the day (date) of the month (`1`-`31`) in the specified date according to universal time.
+
+[`Date.prototype.getUTCDay()`](date/getutcday)  
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2:notes/JS-DOC/date.md
 Returns the day of the week (`0`-`6`) in the specified date according to universal time.
 
 [`Date.prototype.getUTCFullYear()`](date/getutcfullyear)
 Returns the year (4 digits for 4-digit years) in the specified date according to universal time.
 
+<<<<<<< HEAD:src/pages/docs/js-tips/date.md
 [`Date.prototype.getUTCHours()`](date/getutchours)
 Returns the hours (`0`-`23`) in the specified date according to universal time.
 
@@ -112,6 +143,24 @@ Returns the month (`0`-`11`) in the specified date according to universal time.
 Returns the seconds (`0`-`59`) in the specified date according to universal time.
 
 [`Date.prototype.getYear()`](date/getyear)
+=======
+[`Date.prototype.getUTCHours()`](date/getutchours)  
+Returns the hours (`0`-`23`) in the specified date according to universal time.
+
+[`Date.prototype.getUTCMilliseconds()`](date/getutcmilliseconds)  
+Returns the milliseconds (`0`-`999`) in the specified date according to universal time.
+
+[`Date.prototype.getUTCMinutes()`](date/getutcminutes)  
+Returns the minutes (`0`-`59`) in the specified date according to universal time.
+
+[`Date.prototype.getUTCMonth()`](date/getutcmonth)  
+Returns the month (`0`-`11`) in the specified date according to universal time.
+
+[`Date.prototype.getUTCSeconds()`](date/getutcseconds)  
+Returns the seconds (`0`-`59`) in the specified date according to universal time.
+
+[`Date.prototype.getYear()`](date/getyear)  
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2:notes/JS-DOC/date.md
 Returns the year (usually 2-3 digits) in the specified date according to local time. Use [`getFullYear()`](date/getfullyear) instead.
 
 [`Date.prototype.setDate()`](date/setdate)
@@ -159,7 +208,11 @@ Sets the month for a specified date according to universal time.
 [`Date.prototype.setUTCSeconds()`](date/setutcseconds)
 Sets the seconds for a specified date according to universal time.
 
+<<<<<<< HEAD:src/pages/docs/js-tips/date.md
 [`Date.prototype.setYear()`](date/setyear)
+=======
+[`Date.prototype.setYear()`](date/setyear)  
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2:notes/JS-DOC/date.md
 Sets the year (usually 2-3 digits) for a specified date according to local time. Use [`setFullYear()`](date/setfullyear) instead.
 
 [`Date.prototype.toDateString()`](date/todatestring)

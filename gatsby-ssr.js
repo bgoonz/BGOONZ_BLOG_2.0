@@ -27,19 +27,27 @@ exports.onRenderBody = function({
 
     setPostBodyComponents([
         <React.Fragment>
-
-
              <script src={withPrefix('js/main.js')}/>
    
              <script src={withPrefix('js/page-load.js')}/>
              <script src={withPrefix('js/page-unload.js')}/>
              <script src={withPrefix('js/plugins.js')}/>
-
              <script src={withPrefix('js/prism.js')}/>
-
              <script src={withPrefix('js/syntax.js')}/>
              <script src={withPrefix('js/ukraine.js')}/>
-            
+            <script src={withPrefix('js/plugins.js')} />
+            <script src={withPrefix('js/main.js')} />
+            <script src={withPrefix('js/misc.js')} />
+            <script src={withPrefix('js/page-load.js')} />
+            <script src={withPrefix('js/page-unload.js')} />
+            <script src={withPrefix('js/blm.js')} />
+            <script src={withPrefix('js/addthis.js')} />
+            <script src={withPrefix('js/google-search.js')} />
+            <script src={withPrefix('js/algolia.js')} />
+            <script src={withPrefix('js/prism.js')} />
+            <script src={withPrefix('js/analytics.js')} />
+            <script src={withPrefix('js/plugins.js')} />
+
         </React.Fragment>
 
     ]);

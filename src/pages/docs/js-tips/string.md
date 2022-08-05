@@ -173,6 +173,7 @@ Special characters can be encoded using escape sequences:
 <code>\uXXXX</code>
 <br/>
 
+<<<<<<< HEAD:src/pages/docs/js-tips/string.md
 …where <code>XXXX</code> is exactly 4 hex digits in the range <code>0000</code>-<code>FFFF</code>; e.g., <code>\u000A</code> is the same as <code>\n</code> (LINE FEED); <code>\u0021</code> is "<code>!</code>"</td>
 <td>Unicode code point between <code>U+0000</code> and <code>U+FFFF</code> (the Unicode Basic Multilingual Plane)</td>
 </tr>
@@ -194,6 +195,15 @@ Special characters can be encoded using escape sequences:
 </tr>
 </tbody>
 </table>
+=======
+…where <code>XXXX</code> is exactly 4 hex digits in the range <code>0000</code>-<code>FFFF</code>; e.g., <code>\u000A</code> is the same as <code>\n</code> (LINE FEED); <code>\u0021</code> is "<code>!</code>"</td><td>Unicode code point between <code>U+0000</code> and <code>U+FFFF</code> (the Unicode Basic Multilingual Plane)</td></tr><tr class="even"><td><code>\u{X}</code>…<code>\u{XXXXXX}</code>
+<br/>
+
+…where <code>X</code>…<code>XXXXXX</code> is 1-6 hex digits in the range <code>0</code>-<code>10FFFF</code>; e.g., <code>\u{A}</code> is the same as <code>\n</code> (LINE FEED); <code>\u{21}</code> is "<code>!</code>"</td><td>Unicode code point between <code>U+0000</code> and <code>U+10FFFF</code> (the entirety of Unicode)</td></tr><tr class="odd"><td><code>\xXX</code>
+<br/>
+
+…where <code>XX</code> is exactly 2 hex digits in the range <code>00</code>-<code>FF</code>; e.g., <code>\x0A</code> is the same as <code>\n</code> (LINE FEED); <code>\x21</code> is "<code>!</code>"</td><td>Unicode code point between <code>U+0000</code> and <code>U+00FF</code> (the Basic Latin and Latin-1 Supplement blocks; equivalent to ISO-8859-1)</td></tr></tbody></table>
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2:notes/JS-DOC/string.md
 
 ### Long literal strings
 

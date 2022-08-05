@@ -49,3 +49,52 @@ Because `acos()` is a static method of `Math`, you always use it as `Math.acos()
     Math.acos(2);   // NaN
 
 For values less than -1 or greater than 1, `Math.acos()` returns [`NaN`](../nan).
+<<<<<<< HEAD:src/pages/docs/js-tips/acos.md
+=======
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.acos">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+<span class="small">#sec-math.acos</span></a></td></tr></tbody></table>
+
+`acos`
+
+1
+
+12
+
+1
+
+3
+
+3
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`Math.asin()`](asin)
+-   [`Math.atan()`](atan)
+-   [`Math.atan2()`](atan2)
+-   [`Math.cos()`](cos)
+-   [`Math.sin()`](sin)
+-   [`Math.tan()`](tan)
+
+© 2005-2021 MDN contributors.  
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/acos" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/acos</a>
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2:notes/JS-DOC/acos.md

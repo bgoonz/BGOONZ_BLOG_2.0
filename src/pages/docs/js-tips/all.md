@@ -191,3 +191,48 @@ It is possible to change this behavior by handling possible rejections:
       console.log(values[0]) // "p1_delayed_resolution"
       console.error(values[1]) // "Error: p2_immediate_rejection"
     })
+<<<<<<< HEAD:src/pages/docs/js-tips/all.md
+=======
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.all">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+<span class="small">#sec-promise.all</span></a></td></tr></tbody></table>
+
+`all`
+
+32
+
+12
+
+29
+
+No
+
+19
+
+8
+
+4.4.3
+
+32
+
+29
+
+19
+
+8
+
+2.0
+
+## See also
+
+-   [`Promise`](../promise)
+-   [`Promise.race()`](race)
+
+© 2005-2021 MDN contributors.  
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all</a>
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2:notes/JS-DOC/all.md

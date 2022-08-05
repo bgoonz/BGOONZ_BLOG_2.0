@@ -8,7 +8,13 @@ export default class Header extends React.Component {
     render() {
         return (
             <header id="masthead" className="site-header outer">
+<<<<<<< HEAD
                 <br/>
+=======
+                {/* <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" /> */}
+            
+                <br />
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
                 <div className="inner">
                     <div className="site-header-inside">
                         <div className="site-branding">
@@ -104,6 +110,7 @@ export default class Header extends React.Component {
                     </div>
                 </>
 
+<<<<<<< HEAD
                 <a className="github-corner" href="https://github.com/bgoonz/BGOONZ_BLOG_2.0" aria-label="View source on Github">
                     <svg aria-hidden="true"
                         width={30}
@@ -111,6 +118,29 @@ export default class Header extends React.Component {
                         viewBox="0 0 250 250"
                         style={
                             {
+=======
+                <div>
+                    <div id="sb-search-example" >
+
+                        {/* style={{
+                        position: 'fixed',
+                        top: '20px',
+                        border: 0,
+                        left: '100px',
+                    }} */}
+                        <div className="sb-search-icon" id="myCustomSearchButtonID">
+                            <i className="sb-icon"></i>
+                            <p>Search</p>
+                        </div>
+                    </div>
+                    <a className="github-corner" href="https://github.com/bgoonz/BGOONZ_BLOG_2.0" aria-label="View source on Github">
+                        <svg
+                            aria-hidden="true"
+                            width={40}
+                            height={40}
+                            viewBox="0 0 250 250"
+                            style={{
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
                                 zIndex: 100000,
                                 fill: 'black',
                                 color: '#fff',

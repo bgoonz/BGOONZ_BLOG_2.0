@@ -4,7 +4,12 @@
         "logo_img": "images/home-button.png",
         "logo_img_alt": "webdevhub logo",
         "has_nav": true,
+<<<<<<< HEAD
         "nav_links": [{
+=======
+        "nav_links": [
+            {
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
                 "url": "/docs/sitemap",
                 "label": "Navigation🗺️",
                 "style": "primary",
@@ -12,7 +17,12 @@
                 "new_window": false,
                 "no_follow": false,
                 "has_subnav": true,
+<<<<<<< HEAD
                 "subnav_links": [{
+=======
+                "subnav_links": [
+                    {
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
                         "label": "Docs",
                         "url": "/docs",
                         "style": "primary",
@@ -50,6 +60,7 @@
                     },
                     {
                         "label": "JavaScript",
+<<<<<<< HEAD
                         "url": "docs/javascript",
                         "style": "primary",
                         "icon_class": "dev",
@@ -59,6 +70,9 @@
                     {
                         "label": "Internal Use💻",
                         "url": "/docs/about/internal-use",
+=======
+                        "url": "/docs/javascript",
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
@@ -72,21 +86,52 @@
                 "url": "/blog/",
                 "style": "primary",
                 "has_subnav": true,
+<<<<<<< HEAD
                 "subnav_links": [{
+=======
+                "subnav_links": [
+                    {
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
                         "label": "Blog-Post-Archive",
                         "url": "https://bgoonz.blogspot.com/",
                         "style": "primary",
                         "icon_class": "dev",
+<<<<<<< HEAD
                         "new_window": false,
+=======
+                        "new_window": true,
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
                         "no_follow": false,
                         "type": "action"
                     },
                     {
+<<<<<<< HEAD
                         "label": "Top Blog Posts📰",
+=======
+                        "label": "platform docs",
+                        "url": "blog/platform-docs/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": true,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "nodejs",
+                        "url": "docs/articles/nodejs/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": true,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Blog with Comments",
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
                         "url": "https://blog-w-comments.vercel.app/",
                         "style": "primary",
                         "icon_class": "dev",
-                        "new_window": false,
+                        "new_window": true,
                         "no_follow": false,
                         "type": "action"
                     }
@@ -101,15 +146,23 @@
                 "new_window": false,
                 "no_follow": false,
                 "has_subnav": true,
+<<<<<<< HEAD
                 "subnav_links": [{
                         "label": "Job Boards💰",
                         "url": "docs/career/job-boards",
+=======
+                "subnav_links": [
+                    {
+                        "label": "Job Boards",
+                        "url": "interview/job-boards",
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false
                     },
                     {
+<<<<<<< HEAD
                         "label": "Do's and Don'ts of interviews✅🚯",
                         "url": "interview/dos-and-donts",
                         "style": "primary",
@@ -129,6 +182,11 @@
                         "label": "Interview Questions❓",
                         "url": "docs/interview/interview-questions",
                         "style": "primary",
+=======
+                        "label": "lorem-ipsum",
+                        "url": "#",
+                        "style": "link",
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false
@@ -143,8 +201,14 @@
                 "type": "action_menu",
                 "no_follow": false,
                 "has_subnav": true,
+<<<<<<< HEAD
                 "subnav_links": [{
                         "label": "Resource-Archive-Server📂",
+=======
+                "subnav_links": [
+                    {
+                        "label": "Resource-Archive-Server",
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
                         "url": "https://github.com/bgoonz/Learning-Assets",
                         "style": "primary",
                         "icon_class": "dev",
@@ -175,10 +239,18 @@
                         "url": "https://web-dev-resource-hub.netlify.app/",
                         "style": "primary",
                         "icon_class": "dev",
+<<<<<<< HEAD
                         "new_window": false,
                         "no_follow": false,
                         "type": "action"
                     },
+=======
+                        "new_window": true,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                 
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
                     {
                         "label": "Top Repos",
                         "url": "/docs/docs/git-repos/",
@@ -197,7 +269,12 @@
                         "no_follow": false
                     }
                 ],
+<<<<<<< HEAD
                 "new_window": false
+=======
+                "type": "action_menu",
+                "url": "/docs/tools/archive/"
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
             },
             {
                 "label": "Projects",
@@ -207,7 +284,12 @@
                 "new_window": false,
                 "no_follow": false,
                 "has_subnav": true,
+<<<<<<< HEAD
                 "subnav_links": [{
+=======
+                "subnav_links": [
+                    {
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
                         "label": "Potluck Planner",
                         "url": "https://potluck-landing.netlify.app/",
                         "style": "primary",
@@ -226,6 +308,7 @@
                         "type": "action"
                     },
                     {
+<<<<<<< HEAD
                         "label": "WebAudioLab",
                         "url": "https://bgoonz.github.io/WebAudioDaw/",
                         "style": "primary",
@@ -235,6 +318,8 @@
                         "type": "action"
                     },
                     {
+=======
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
                         "label": "SearchAwesome",
                         "url": "https://search-awesome.vercel.app/",
                         "style": "primary",
@@ -358,9 +443,16 @@
                 "type": "action_menu",
                 "no_follow": false,
                 "has_subnav": true,
+<<<<<<< HEAD
                 "subnav_links": [{
                         "label": "Write Docs📰",
                         "url": "https://bgoonz-blog.netlify.app//admin/#/collections/docs",
+=======
+                "subnav_links": [
+                    {
+                        "label": "Github HTML Previewer",
+                        "url": "https://githtmlpreview.netlify.app/",
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
@@ -472,7 +564,12 @@
     },
     "footer": {
         "has_social": true,
+<<<<<<< HEAD
         "social_links": [{
+=======
+        "social_links": [
+            {
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
                 "label": "Twitter",
                 "url": "https://twitter.com/bgooonz",
                 "style": "icon",
@@ -521,6 +618,7 @@
                 "type": "action"
             }
         ],
+<<<<<<< HEAD
         "links": [{
             "label": "BLM",
             "url": "https://random-static-html-deploys.netlify.app/blm.html",
@@ -535,4 +633,30 @@
     "title": "webdevhub",
     "domain": "https://bgoonz-blog.netlify.app//",
     "favicon": "images/logo-final-touchup.PNG"
+=======
+        "links": [
+            {
+                "label": "BLM",
+                "url": "https://random-static-html-deploys.netlify.app/blm.html",
+                "style": "primary",
+                "icon_class": "dev",
+                "new_window": true,
+                "no_follow": false,
+                "type": "action"
+            },
+            {
+                "label": "lorem-ipsum",
+                "url": "#",
+                "style": "link",
+                "icon_class": "dev",
+                "new_window": false,
+                "no_follow": false
+            }
+        ],
+        "content": "@bgoonz on almost every platform"
+    },
+    "title": "webdevhub",
+    "domain": "https://bgoonz-blog.netlify.app/",
+    "favicon": "images/favicon-750d4390.png"
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
 }

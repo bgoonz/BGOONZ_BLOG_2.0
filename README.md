@@ -2,6 +2,7 @@
 
 <div align="centered">
 
+<<<<<<< HEAD
 ### [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app)
 
 
@@ -22,6 +23,13 @@
 
 
 [![Demo](https://img.youtube.com/vi/OGCcq1_Tbzk/0.jpg)](https://www.youtube.com/watch?v=OGCcq1_Tbzk)
+=======
+  
+  https://testmysite.io/61e5ff836a840eeeef7e78e9/bgoonz-blog.netlify.app
+  
+  
+##### [⇨Privacy policy⇦](https://codepen.io/bgoonz/pen/LYLJZrW)
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
 
 </div>
 ---
@@ -90,6 +98,10 @@
 
 npm i @stackbit/gatsby-plugin-menus babel-runtime chokidar classnames fs-extra gatsby gatsby-image gatsby-plugin-netlify gatsby-plugin-netlify-cms gatsby-plugin-sass gatsby-plugin-react-helmet gatsby-plugin-typescript  --legacy-peer-deps
 
+<<<<<<< HEAD
+=======
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys)[![CodeFactor](https://www.codefactor.io/repository/github/webdevhub42/bgoonz_blog_2.0/badge)](https://www.codefactor.io/repository/github/webdevhub42/bgoonz_blog_2.0)[![CodeScene System Mastery**](https://codescene.io/projects/17026/status-badges/system-mastery)](https://codescene.io/projects/17026)![Profile views**](https://views.whatilearened.today/views/github/bgoonz/views.svg)[![Gitter**](https://badges.gitter.im/bgoonz/community.svg)](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)[![CodeScene Code Health](https://codescene.io/projects/17026/status-badges/code-health)](https://codescene.io/projects/17026)[![CodeQL](https://github.com/bgoonz/BGOONZ_BLOG_2.0/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/bgoonz/BGOONZ_BLOG_2.0/actions/workflows/codeql-analysis.yml)[![CircleCI](https://circleci.com/gh/bgoonz/BGOONZ_BLOG_2.0/tree/master.svg?style=svg)](https://circleci.com/gh/bgoonz/BGOONZ_BLOG_2.0/tree/master)
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
 
 git checkout 307a5cd        # check out the commit that you want to reset to
 git checkout -b fixy        # create a branch named fixy to do the work
@@ -98,6 +110,7 @@ git checkout master         # switch back to master
 git merge fixy              # and merge in the fixed branch
 git push                    # done, no need to force push!
 
+<<<<<<< HEAD
 
 
 ```
@@ -110,6 +123,12 @@ git push                    # done, no need to force push!
 ---
 
 ## Web Dev Setup
+=======
+  
+![preview](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/screencapture-bgoonz-blog-netlify-app-2022-01-20-23_58_59.png?raw=true)
+  
+</div>
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
 
 <details>
 
