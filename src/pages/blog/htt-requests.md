@@ -192,7 +192,11 @@ We see that in the path we have to pass in a string with the target user’s use
 We're given the URL for this API:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ```consoleell
+=======
+```console
+>>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
 =======
 ```console
 >>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
@@ -242,7 +246,11 @@ Now we're ready to make our request! The documentation tells us we should pass i
 We're given the URL for this API:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ```consoleell
+=======
+```console
+>>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
 =======
 ```console
 >>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
@@ -293,7 +301,11 @@ We didn’t actually pass a description to our Gist when we created it, so we ca
 We're given the URL for this API:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ```consoleell
+=======
+```console
+>>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
 =======
 ```console
 >>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
@@ -337,7 +349,11 @@ Let's delete the Gist we created. We should pass in the header and the Gist ID.
 We're given the URL for this API:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ```consoleell
+=======
+```console
+>>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
 =======
 ```console
 >>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9

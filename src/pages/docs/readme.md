@@ -927,7 +927,11 @@ This page contains links that give the impression that some of the site contents
     Use the Gatsby CLI to create a new site, specifying the default starter.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     ```consoleell
+=======
+    ```console
+>>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
 =======
     ```console
 >>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
@@ -943,7 +947,11 @@ This page contains links that give the impression that some of the site contents
     Navigate into your new site's directory and start it up.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     ```consoleell
+=======
+    ```console
+>>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
 =======
     ```console
 >>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9

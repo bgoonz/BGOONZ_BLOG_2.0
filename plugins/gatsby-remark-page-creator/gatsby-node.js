@@ -8,18 +8,24 @@ const _ = require("lodash");
 function findFileNode({ node, getNode }) {
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 const { createFilePath } = require("gatsby-source-filesystem");
 const _ = require("lodash");
 
 
 function findFileNode({ node, getNode }) {
 =======
+=======
+>>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
 const {createFilePath} = require("gatsby-source-filesystem");
 const _ = require("lodash");
 
 
 function findFileNode({node, getNode}) {
 >>>>>>> 217d551e709e0a3855c273c4474405cc96110325
+<<<<<<< HEAD
+>>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
+=======
 >>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
     let fileNode = node;
     let ids = [fileNode.id];
@@ -49,9 +55,19 @@ function findFileNode({node, getNode}) {
 
 <<<<<<< HEAD
 exports.onCreateNode = ({ node, getNode, actions }, options) => {
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 exports.onCreateNode = ({ node, getNode, actions }, options) => {
+=======
+
+    const { createNodeField } = actions;
+
+    if (node.internal.type === "MarkdownRemark") {
+        let fileNode = findFileNode({ node, getNode });
+=======
+exports.onCreateNode = ({node, getNode, actions}, options) => {
+>>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
 
     const { createNodeField } = actions;
 
@@ -69,6 +85,9 @@ exports.onCreateNode = ({node, getNode, actions}, options) => {
 =======
         let fileNode = findFileNode({node, getNode});
 >>>>>>> 217d551e709e0a3855c273c4474405cc96110325
+<<<<<<< HEAD
+>>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
+=======
 >>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
         if (!fileNode) {
             throw new Error('could not find parent File node for MarkdownRemark node: ' + node);
@@ -81,9 +100,12 @@ exports.onCreateNode = ({node, getNode, actions}, options) => {
             url = path.join(fileNode.relativeDirectory, fileNode.name + '.html');
         } else {
 <<<<<<< HEAD
+<<<<<<< HEAD
             url = createFilePath({ node, getNode });
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
 =======
 <<<<<<< HEAD
             url = createFilePath({ node, getNode });
@@ -131,6 +153,9 @@ exports.createPages = ({ graphql, getNode, actions, getNodesByType }) => {
 exports.createPages = ({graphql, getNode, actions, getNodesByType}) => {
     const {createPage, deletePage} = actions;
 >>>>>>> 217d551e709e0a3855c273c4474405cc96110325
+<<<<<<< HEAD
+>>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
+=======
 >>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
 
     // Use GraphQL to bring only the "id" and "html" (added by gatsby-transformer-remark)
@@ -159,7 +184,12 @@ exports.createPages = ({graphql, getNode, actions, getNodesByType}) => {
         const nodes = result.data.allMarkdownRemark.edges.map(({ node }) => node);
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
         const nodes = result.data.allMarkdownRemark.edges.map(({ node }) => node);
+=======
+        const nodes = result.data.allMarkdownRemark.edges.map(({node}) => node);
+>>>>>>> 217d551e709e0a3855c273c4474405cc96110325
+>>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
 =======
         const nodes = result.data.allMarkdownRemark.edges.map(({node}) => node);
 >>>>>>> 217d551e709e0a3855c273c4474405cc96110325
