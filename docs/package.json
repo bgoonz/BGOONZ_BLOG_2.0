@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "notes",
   "version": "1.0.0",
   "description": "",
@@ -16,19 +15,4 @@
   "dependencies": {
     "docky": "^1.5.4"
   }
-=======
-    "name": "docs",
-    "version": "1.0.0",
-    "description": "Bgoonzblog",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "docky": "^1.5.4"
-    }
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }

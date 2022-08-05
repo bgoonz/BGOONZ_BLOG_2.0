@@ -1,265 +1,404 @@
-<<<<<<< HEAD
-# Data Structures & Algorithms Resource List Part 1
+npm i @stackbit/gatsby-plugin-menus babel-runtime chokidar classnames fs-extra gatsby gatsby-image gatsby-plugin-netlify gatsby-plugin-netlify-cms gatsby-plugin-sass gatsby-plugin-react-helmet gatsby-plugin-typescript  -f
 
-Guess the author of the following quotes:
+  
 
-## Data Structures & Algorithms Resource List Part 1 <a id="60dd">
 
-</a>
+git add ./docs/
 
-Guess the author of the following quotes:
+git add ./favicon.ico
 
-> *Talk is cheap. Show me the code.*
->
-> *Software is like sex: it's better when it's free.*
->
-> *Microsoft isn't evil, they just make really crappy operating systems.*
+git add ./favicon.png
 
-![big o](https://cdn-images-1.medium.com/max/800/0*rbMyH5LxQQFozL7F "big o scaling")
+git add ./functions/
 
-## Update: <a id="4129">
+git add ./gatsby-browser.js     
 
-</a>
+git add ./gatsby-config.js      
 
-### Here's some more: <a id="42ff">
+git add ./gatsby-node.js        
 
-</a>
+git add ./gatsby-ssr.js
 
-- [The Framework for Learning Algorithms and intense problem solving exercises](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/Framework%20and%20thoughts%20about%20learning%20data%20structure%20and%20algorithm.md)
+git add ./gitpod.yml
 
-- \[Algs4: Recommended book for Learning Algorithms and Data Structures](<https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/why_i_recommend_algs4.md>)
+git add ./googled2b1865dedd985a4.html
 
-- [An analysis of Dynamic Programming](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/AnalysisOfDynamicProgramming.md)
-- [Dynamic Programming Q&A — What is Optimal Substructure](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/OptimalSubstructure.md)
-- [The Framework for Backtracking Algorithm](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/DetailsaboutBacktracking.md)
-- [Binary Search in Detail: I wrote a Poem](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/DetailedBinarySearch.md)
-- [The Sliding Window Technique](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/SlidingWindowTechnique.md)
-- [Difference Between Process and Thread in Linux](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/common_knowledge/linuxProcess.md)
-- [Some Good Online Practice Platforms](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/common_knowledge/OnlinePraticePlatform.md)
-- [Dynamic Programming in Details](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/AnalysisOfDynamicProgramming.md)
-- [Dynamic Programming Q&A — What is Optimal Substructure](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/OptimalSubstructure.md)
-- [Classic DP: Longest Common Subsequence](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/LongestCommonSubsequence.md)
-- [Classic DP: Edit Distance](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/EditDistance.md)
-- [Classic DP: Super Egg](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/ThrowingEggsinHighBuildings.md)
-- [Classic DP: Super Egg (Advanced Solution)](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/SuperEggDropAdvanced.md)
-- [The Strategies of Subsequence Problem](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/StrategiesForSubsequenceProblem.md)
-- [Classic DP: Game Problems](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/GameProblemsInDynamicProgramming.md)
-- [Greedy: Interval Scheduling](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/IntervalScheduling.md)
-- [KMP Algorithm In Detail](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/KMPCharacterMatchingAlgorithmInDynamicProgramming.md)
-- [A solution to all Buy Time to Buy and Sell Stock Problems](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/BestTimeToBuyAndSellStock.md)
-- [A solution to all House Robber Problems](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/HouseRobber.md)
-- [4 Keys Keyboard](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/FourKeysKeyboard.md)
-- [Regular Expression](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/RegularExpression.md)
-- [Longest Increasing Subsequence](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/LongestIncreasingSubsequence.md)
-- [The Framework for Learning Algorithms and intense problem solving exercises](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/Framework%20and%20thoughts%20about%20learning%20data%20structure%20and%20algorithm.md)
-- [Algs4: Recommended book for Learning Algorithms and Data Structures](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/why_i_recommend_algs4.md)
-- [Binary Heap and Priority Queue](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/data_structure/binary_heap_implements_priority_queues.md)
-- [LRU Cache Strategy in Detail](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/LRU_algorithm.md)
-- [Collections of Binary Search Operations](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/data_structure/The_Manipulation_Collection_of_Binary_Search_Tree.md)
-- [Special Data Structure: Monotonic Stack](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/data_structure/MonotonicStack.md)
-- [Special Data Structure: Monotonic Stack](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/data_structure/Monotonic_queue.md)
-- [Design Twitter](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/data_structure/design_Twitter.md)
-- [Reverse Part of Linked List via Recursion](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/data_structure/reverse_part_of_a_linked_list_via_recursion.md)
-- [Queue Implement Stack/Stack implement Queue](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/data_structure/ImplementQueueUsingStacksImplementStackUsingQueues.md)
-- [My Way to Learn Algorithm](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/ThewaytoAlgorithmlearning.md)
-- [The Framework of Backtracking Algorithm](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/DetailsaboutBacktracking.md)
-- [Binary Search in Detail](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/DetailedBinarySearch.md)
-- [Backtracking Solve Subset/Permutation/Combination](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/Subset_Permutation_Combination.md)
-- [Diving into the technical parts of Double Pointers](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/double_pointer.md)
-- [Sliding Window Technique](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/SlidingWindowTechnique.md)
-- [The Core Concept of TwoSum Problems](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/The_key_to_resolving_TwoSum_problems.md)
-- [Common Bit Manipulations](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/CommonBitManipulation.md)
-- [Breaking down a Complicated Problem: Implement a Calculator](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/data_structure/Implementing_the_functions_of_a_calculator.md)
-- [Pancake Sorting Algorithm](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/PancakesSorting.md)
-- [Prefix Sum: Intro and Concept](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/prefix_sum.md)
-- [String Multiplication](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/string_multiplication.md)
-- [FloodFill Algorithm in Detail](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/flood_fill.md)
-- [Interval Scheduling: Interval Merging](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/IntervalMerging.md)
-- [Interval Scheduling: Intersections of Intervals](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/IntervalIntersection.md)
-- [Russian Doll Envelopes Problem](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/RussianDollEnvelopes.md)
-- [A collection of counter-intuitive Probability Problems](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/several_counter_intuitive_probability_problems.md)
-- [Shuffle Algorithm](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/Shuffle_Algorithm.md)
-- [Recursion In Detail](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/data_structure/RecursionInDetail.md)
-- [How to Implement LRU Cache](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/LRU_algorithm.md)
-- [How to Find Prime Number Efficiently](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/Print_PrimeNumbers.md)
-- [How to Calculate Minimium Edit Distance](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/EditDistance.md)
-- [How to use Binary Search](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/UsingBinarySearchAlgorithm.md)
-- [How to efficiently solve Trapping Rain Water Problem](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/Trapping_Rain_Water.md)
-- [How to Remove Duplicates From Sorted Array](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/RemoveDuplicatesfromSortedArray.md)
-- [How to Find Longest Palindromic Substring](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/TheLongestPalindromicSubstring.md)
-- [How to Reverse Linked List in K Group](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/reverse-nodes-in-k-group.md)
-- [How to Check the Validation of Parenthesis](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/valid-parentheses.md)
-- [How to Find Missing Element](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/missing_elements.md)
-- [How to Find Duplicates and Missing Elements](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/Find-Duplicate-and-Missing-Element.md)
-- [How to Check Palindromic LinkedList](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/check_palindromic_linkedlist.md)
-- [How to Pick Elements From an Infinite Arbitrary Sequence](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/ReservoirSampling.md)
-- [How to Schedule Seats for Students](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/Seatscheduling.md)
-- [Union-Find Algorithm in Detail](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/Union-find-Explanation.md)
-- [Union-Find Application](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/Union-Find-Application.md)
-- [Problems that can be solved in one line](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/one-line-code-puzzles.md)
-- [Find Subsequence With Binary Search](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/findSebesquenceWithBinarySearch.md)
-- [Difference Between Process and Thread in Linux](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/common_knowledge/linuxProcess.md)
-- [You Must Know About Linux Shell](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/common_knowledge/linuxshell.md)
-- [You Must Know About Cookie and Session](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/common_knowledge/SessionAndCookie.md)
-- [Cryptology Algorithm](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/common_knowledge/Cryptology.md)
-- [Some Good Online Practice Platforms](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/common_knowledge/OnlinePraticePlatform.md)
+git add ./lambda/
 
-## Algorithms
+git add ./LICENSE
 
-###### \[100 days of algorithms](<https://github.com/coells/100days>)
+git add ./makefile
 
-- [Algorithms](https://github.com/marcosfede/algorithms) — Solved algorithms and data structures problems in many languages.
-- [Algorithms by Jeff Erickson](http://jeffe.cs.illinois.edu/teaching/algorithms/) (\[Code](https://github.com/jeffgerickson/algorithms)) (\[HN](https://news.ycombinator.com/item?id=26074289))
-- [Top algos/DS to learn](https://www.reddit.com/r/compsci/comments/5uz9lb/top_algorithmsdata_structuresconcepts_every/ddy8azz/)
-- [Some neat algorithms](https://www.nayuki.io/category/programming)
-- [Mathematical Proof of Algorithm Correctness and Efficiency (2019)](https://stackabuse.com/mathematical-proof-of-algorithm-correctness-and-efficiency/)
-- [Algorithm Visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer) — Interactive online platform that visualizes algorithms from code.
-- [Algorithms for Optimization book](https://mitpress.mit.edu/books/algorithms-optimization)
-- [Collaborative book on algorithms](https://www.algorithm-archive.org/) (\[Code](https://github.com/algorithm-archivists/algorithm-archive))
-- [Algorithms in C by Robert Sedgewick](http://index-of.co.uk/Algorithms/Algorithms%20in%20C.pdf)
-- [Algorithm Design Manual](http://mimoza.marmara.edu.tr/~msakalli/cse706_12/SkienaTheAlgorithmDesignManual.pdf)
-- [MIT Introduction to Algorithms course (2011)](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/)
-- [How to implement an algorithm from a scientific paper (2012)](http://codecapsule.com/2012/01/18/how-to-implement-a-paper/)
-- [Quadsort](https://github.com/scandum/quadsort) — Stable non-recursive merge sort named quadsort.
-- [System design algorithms](https://github.com/resumejob/system-design-algorithms) — Algorithms you should know before system design.
-- [Algorithms Design book](http://www.cs.sjtu.edu.cn/~jiangli/teaching/CS222/files/materials/Algorithm%20Design.pdf)
-- [Think Complexity](http://greenteapress.com/complexity/html/index.html)
-- [All Algorithms implemented in Rust](https://github.com/TheAlgorithms/Rust)
-- [Solutions to Introduction to Algorithms book](https://walkccc.github.io/CLRS/) (\[Code](https://github.com/walkccc/CLRS))
-- [Maze Algorithms (2011)](https://www.jamisbuck.org/mazes/) (\[HN](https://news.ycombinator.com/item?id=23429368))
-- [Algorithmic Design Paradigms book](https://page.skerritt.blog/algorithms/) (\[Code](https://github.com/brandonskerritt/AlgorithmsBook))
-- [Words and buttons Online Blog](https://wordsandbuttons.online/) (\[Code](https://github.com/akalenuk/wordsandbuttons))
-- [Algorithms animated](https://www.chrislaux.com/)
-- [Cache Oblivious Algorithms (2020)](https://jiahai-feng.github.io/posts/cache-oblivious-algorithms/) (\[HN](https://news.ycombinator.com/item?id=23662434))
-- [You could have invented fractional cascading (2012)](http://blog.ezyang.com/2012/03/you-could-have-invented-fractional-cascading/)
-- [Guide to learning algorithms through LeetCode](https://labuladong.gitbook.io/algo-en/) (\[Code](https://github.com/labuladong/fucking-algorithm/tree/english)) (\[HN](https://news.ycombinator.com/item?id=24167297))
-- [How hard is unshuffling a string?](https://cstheory.stackexchange.com/questions/34/how-hard-is-unshuffling-a-string)
-- [Optimization Algorithms on Matrix Manifolds](https://sites.uclouvain.be/absil/amsbook/)
-- [Problem Solving with Algorithms and Data Structures](https://runestone.academy/runestone/books/published/pythonds/index.html) (\[HN](https://news.ycombinator.com/item?id=24287622)) (\[PDF](https://www.cs.auckland.ac.nz/compsci105s1c/resources/ProblemSolvingwithAlgorithmsandDataStructures.pdf))
-- [Algorithms implemented in Python](https://github.com/TheAlgorithms/Python)
-- [Algorithms implemented in JavaScript](https://github.com/TheAlgorithms/Javascript)
-- [Algorithms & Data Structures in Java](https://github.com/williamfiset/Algorithms)
-- [Wolfsort](https://github.com/scandum/wolfsort) — Stable adaptive hybrid radix / merge sort.
-- [Evolutionary Computation Bestiary](https://github.com/fcampelo/EC-Bestiary) — Bestiary of evolutionary, swarm and other metaphor-based algorithms.
-- [Elements of Programming book](http://elementsofprogramming.com/) — Decomposing programs into a system of algorithmic components. (\[Review](http://www.pathsensitive.com/2020/09/book-review-elements-of-programmnig.html)) (\[HN](https://news.ycombinator.com/item?id=24635947)) (\[Lobsters](https://lobste.rs/s/bqnhbo/book_review_elements_programmnig))
-- [Competitive Programming Algorithms](https://cp-algorithms.com/)
-- [CPP/C](https://github.com/akshitagit/CPP) — C/C++ algorithms/DS problems.
-- [How to design an algorithm (2018)](https://www.adamconrad.dev/blog/how-to-design-an-algorithm/)
-- [CSE 373 — Introduction to Algorithms, by Steven Skiena (2020)](https://www.youtube.com/playlist?list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx)
-- [Computer Algorithms II course (2020)](http://homepages.math.uic.edu/~lreyzin/f20_mcs501/)
-- [Improving Binary Search by Guessing (2019)](https://notebook.drmaciver.com/posts/2019-04-30-13:03.html)
-- [The case for a learned sorting algorithm (2020)](https://blog.acolyer.org/2020/10/19/the-case-for-a-learned-sorting-algorithm/) (\[HN](https://news.ycombinator.com/item?id=24823611))
-- [Elementary Algorithms](https://github.com/liuxinyu95/AlgoXY) — Introduces elementary algorithms and data structures. Includes side-by-side comparisons of purely functional realization and their imperative counterpart.
-- [Combinatorics Algorithms for Coding Interviews (2018)](https://sahandsaba.com/combinatorial-generation-for-coding-interviews-in-python.html)
-- [Algorithms written in different programming languages](https://github.com/ZoranPandovski/al-go-rithms) (\[Web](https://zoranpandovski.github.io/al-go-rithms/))
-- [Solving the Sequence Alignment problem in Python (2020)](https://johnlekberg.com/blog/2020-10-25-seq-align.html)
-- [The Sound of Sorting](https://github.com/bingmann/sound-of-sorting) — Visualization and “Audibilization” of Sorting Algorithms. (\[Web](https://panthema.net/2013/sound-of-sorting/))
-- [Miniselect: Practical and Generic Selection Algorithms (2020)](https://danlark.org/2020/11/11/miniselect-practical-and-generic-selection-algorithms/)
-- [The Slowest Quicksort (2019)](https://chasewilson.dev/blog/slowest-quicksort/)
-- [Functional Algorithm Design (2020)](https://blog.sigplan.org/2020/11/17/functional-algorithm-design-part-0/)
-- [Algorithms To Live By — Book Notes](https://milofultz.com/2020/12/27/atlb-notes)
-- [Numerical Algorithms (2015)](http://people.csail.mit.edu/jsolomon/share/book/numerical_book.pdf)
-- [Using approximate nearest neighbor search in real world applications (2020)](https://blog.vespa.ai/using-approximate-nearest-neighbor-search-in-real-world-applications/)
-- [In search of the fastest concurrent Union-Find algorithm (2019)](https://arxiv.org/pdf/1911.06347.pdf)
-- [Computer Science 521 Advanced Algorithm Design](https://www.cs.princeton.edu/courses/archive/fall13/cos521/)
+git add ./netlify/
 
-![](https://cdn-images-1.medium.com/max/800/0*2fb7io8VD9z8080F.jpg)
+git add ./netlify.toml
 
-## Data Structures
+git add ./node_modules/
 
-- [Data Structures and Algorithms implementation in Go](https://github.com/floyernick/Data-Structures-and-Algorithms)
-- [Which algorithms/data structures should I “recognize” and know by name?](https://softwareengineering.stackexchange.com/questions/155639/which-algorithms-data-structures-should-i-recognize-and-know-by-name)
-- [Dictionary of Algorithms and Data Structures](https://xlinux.nist.gov/dads/)
-- [Phil's Data Structure Zoo](https://g1thubhub.github.io/data-structure-zoo.html)
-- [The Periodic Table of Data Structures](https://stratos.seas.harvard.edu/files/stratos/files/periodictabledatastructures.pdf) (\[HN](https://news.ycombinator.com/item?id=18314555))
-- [Data Structure Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html) (\[HN](https://news.ycombinator.com/item?id=19082943))
-- [Data structures to name-drop when you want to sound smart in an interview](http://blog.amynguyen.net/?p=853)
-- [On lists, cache, algorithms, and microarchitecture (2019)](https://pdziepak.github.io/2019/05/02/on-lists-cache-algorithms-and-microarchitecture/)
-- [Topics in Advanced Data Structures (2019)](http://web.stanford.edu/class/cs166/handouts/100%20Suggested%20Final%20Project%20Topics.pdf) (\[HN](https://news.ycombinator.com/item?id=19780387))
-- [CS166 Advanced DS Course (2019)](http://web.stanford.edu/class/cs166/)
-- [Advanced Data Structures (2017)](https://courses.csail.mit.edu/6.851/fall17/) (\[HN](https://news.ycombinator.com/item?id=20044876))
-- [Write a hash table in C](https://github.com/jamesroutley/write-a-hash-table)
-- [Python Data Structures and Algorithms](https://github.com/prabhupant/python-ds)
-- [HAMTs from Scratch (2018)](https://vaibhavsagar.com/blog/2018/07/29/hamts-from-scratch/)
-- [JavaScript Data Structures and Algorithms](https://github.com/JoeKarlsson/data-structures)
-- [Implementing a Key-Value Store series](http://codecapsule.com/2012/11/07/ikvs-implementing-a-key-value-store-table-of-contents/)
-- [Open Data Structures](https://opendatastructures.org/) — Provide a high-quality open content data structures textbook that is both mathematically rigorous and provides complete implementations. (\[Code](https://github.com/patmorin/ods))
-- [A new analysis of the false positive rate of a Bloom filter (2009)](https://www.csee.usf.edu/~kchriste/energy/ipl10.pdf)
-- [Ideal Hash Trees](https://lampwww.epfl.ch/papers/idealhashtrees.pdf)
-- [RRB-Trees: Efficient Immutable Vectors](http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=0265C1992F573129BCC7D4AF7734DBF7?doi=10.1.1.592.5377&rep=rep1&type=pdf)
-- [Some data structures and algorithms written in OCaml](https://github.com/jdan/ocaml-data-structures)
-- [Let's Invent B(+)-Trees](https://shachaf.net/w/b-trees) (\[HN](https://news.ycombinator.com/item?id=23001831))
-- [Anna](https://github.com/hydro-project/anna) — Low-latency, cloud-native KVS.
-- [Persistent data structures thanks to recursive type aliases (2019)](https://www.aleksandra.codes/persistent-data-structures)
-- [Log-Structured Merge-Trees (2020)](https://yetanotherdevblog.com/lsm/)
-- [Bloom Filters for the Perplexed (2017)](https://sagi.io/bloom-filters-for-the-perplexed/)
-- [Understanding Bloom Filters (2020)](https://yetanotherdevblog.com/bloom-filters/)
-- [Dense vs. Sparse Indexes (2020)](https://yetanotherdevblog.com/dense-vs-sparse-indexes/)
-- [Data Structures and Algorithms Problems](https://www.techiedelight.com/list-of-problems/)
-- [Data Structures & Algorithms I Actually Used Working at Tech Companies (2020)](https://blog.pragmaticengineer.com/data-structures-and-algorithms-i-actually-used-day-to-day/) (\[Lobsters](https://lobste.rs/s/n8tyip/data_structures_algorithms_i_actually)) (\[HN](https://news.ycombinator.com/item?id=23841491))
-- [Let's implement a Bloom Filter (2020)](https://onatm.dev/2020/08/10/let-s-implement-a-bloom-filter/) (\[HN](https://news.ycombinator.com/item?id=24102617))
-- [Data Structures Part 1: Bulk Data (2019)](https://ourmachinery.com/post/data-structures-part-1-bulk-data/) (\[Lobsters](https://lobste.rs/s/t8mrxn/data_structures_part_1_bulk_data))
-- [Data Structures Explained](https://www.freecodecamp.org/news/learn-all-about-data-structures-used-in-computer-science/)
-- [Introduction to Cache-Oblivious Data Structures (2018)](https://rcoh.me/posts/cache-oblivious-datastructures/)
-- [The Daily Coding newsletter](https://thedailycoding.com/) — Master JavaScript and Data Structures.
-- [Lectures Note for Data Structures and Algorithms (2019)](https://www.cs.bham.ac.uk/~jxb/DSA/dsa.pdf)
-- [Mechanically Deriving Binary Tree Iterators with Continuation Defunctionalization (2020)](https://abhinavsarkar.net/posts/continuation-defunctionalization/)
-- [Segment Tree data structure](https://cp-algorithms.com/data_structures/segment_tree.html)
-- [Structure of a binary state tree (2020)](https://medium.com/@gballet/structure-of-a-binary-state-tree-part-1-48c587836d2f)
-- [Introductory data structures and algorithms](https://github.com/sushinoya/fundamentals)
-- [Applying Textbook Data Structures for Real Life Wins (2020)](https://heap.io/blog/engineering/applying-textbook-data-structures-for-real-life-wins) (\[HN](https://news.ycombinator.com/item?id=24761105))
-- [Michael Scott — Nonblocking data structures lectures (2020)](https://www.youtube.com/watch?v=9XAx279s7gs) — Nonblocking concurrent data structures are an increasingly valuable tool for shared-memory parallel programming.
-- [Scal](https://github.com/cksystemsgroup/scal) — High-performance multicore-scalable data structures and benchmarks. (\[Web](http://scal.cs.uni-salzburg.at/))
-- [Hyperbolic embedding implementations](https://github.com/HazyResearch/hyperbolics)
-- [Morphisms of Computational Constructs](https://github.com/prathyvsh/morphisms-of-computational-structures) — Visual catalogue + story of morphisms displayed across computational structures.
-- [What is key-value store? (build-your-own-x) (2020)](http://djkooks.github.io/build-your-own-kv-store)
-- [Lesser Known but Useful Data Structures](https://stackoverflow.com/questions/500607/what-are-the-lesser-known-but-useful-data-structures)
-- [Using Bloom filters to efficiently synchronize hash graphs (2020)](https://martin.kleppmann.com/2020/12/02/bloom-filter-hash-graph-sync.html)
-- [Bloom Filters by Example](https://llimllib.github.io/bloomfilter-tutorial/) (\[Code](https://github.com/llimllib/bloomfilter-tutorial))
-- [Binary Decision Diagrams](https://crypto.stanford.edu/pbc/notes/zdd/) (\[HN](https://news.ycombinator.com/item?id=25342922))
-- [3 Steps to Designing Better Data Structures (2020)](https://mochromatic.com/3-steps-to-designing-better-data-structures-in-elixir/)
-- [Sparse Matrices (2019)](https://matteding.github.io/2019/04/25/sparse-matrices/) (\[HN](https://news.ycombinator.com/item?id=25601288))
-- [Algorithms & Data Structures in C++](https://github.com/xtaci/algorithms)
-- [Fancy Tree Traversals (2019)](https://drs.is/post/fancy-tree-traversals/)
-- [The Robson Tree Traversal (2019)](https://drs.is/post/robson-traversal/)
-- [Data structures and program structures](http://cr.yp.to/data.html)
-- [cdb](http://cr.yp.to/cdb.html) — Fast, reliable, simple package for creating and reading constant databases.
-- [PGM-index](https://pgm.di.unipi.it/) — Learned indexes that match B-tree performance with 83x less space. (\[HN](https://news.ycombinator.com/item?id=25899286)) (\[Code](https://github.com/gvinciguerra/PGM-index))
-- [Structural and pure attributes](https://minimalmodeling.substack.com/p/structural-and-pure-attributes)
-- [Cache-Tries: O(1) Concurrent Lock-Free Hash Tries (2018)](http://aleksandar-prokopec.com/resources/docs/p137-prokopec.pdf)
-=======
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
-<script type="text/javascript">
-  algoliasearchNetlify({
-    appId: '949NYEDSIQ',
-    apiKey: '4481f47882b21c3b05de5780fe166222',
-    siteId: '865c330e-e1e9-40b8-8420-bf603640b0fe',
-    branch: 'master',
-    selector: 'div#search',
-  });
-</script>
+git add ./notes/
 
-<div id="search">search</div>
-Step 1: Clone the repository or update your local repository with the latest changes.
+git add ./package.json
 
-git pull origin master
+git add ./stackbit.yml
 
-git checkout renovate/node-sass-4.x
+git add ./static/
 
-git merge master
+git add ./temp.md
 
-git push -u origin renovate/node-sass-4.x
+git add ./TODO.md
 
-If you want to do this and revert the master to the previous commit:
+git add ./vercel.json
 
-git checkout master~4a98420          # Checkout previous commit on master
-git checkout -b new_master       # Create branch for new master
-git branch -D master             # Delete old master
-git branch -mv new_master master # Make new_master master
-Alternatively:
 
-git reset --hard master~1        # Reset current branch to one commit ago on master
 
-4a98420
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
+
+
+git commit -m   "blueprint.md"
+git commit -m   "cloudflared.deb       "
+git commit -m   "docs/"
+git commit -m   "favicon.ico"
+git commit -m   "favicon.png"
+git commit -m   "functions/"
+git commit -m   "gatsby-browser.js     "
+git commit -m   "gatsby-config.js      "
+git commit -m   "gatsby-node.js        "
+git commit -m   "gatsby-ssr.js"
+git commit -m   "gitpod.yml"
+git commit -m   "googled2b1865dedd985a4.html"
+git commit -m   "lambda/"
+git commit -m   "LICENSE"
+git commit -m   "makefile"
+git commit -m   "netlify/"
+git commit -m   "netlify.toml"
+git commit -m   "node_modules/"
+git commit -m   "notes/"
+git commit -m   "package.json"
+git commit -m   "stackbit.yml"
+git commit -m   "static/"
+git commit -m   "temp.md"
+git commit -m   "TODO.md"
+git commit -m   "vercel.json"
+
+
+
+
+
+
+
+http://www.google.com/schemas/sitemap-news/0.9"
+http://www.w3.org/1999/xhtml"
+http://www.google.com/schemas/sitemap-mobile/1.0"
+http://www.google.com/schemas/sitemap-image/1.1"
+http://www.google.com/schemas/sitemap-video/1.1">
+https://bgoonz-blog.netlify.app/
+https://bgoonz-blog.netlify.app/admin
+https://bgoonz-blog.netlify.app/blog
+https://bgoonz-blog.netlify.app/docs
+https://bgoonz-blog.netlify.app/interview-questions-js
+https://bgoonz-blog.netlify.app/privacy-policy
+https://bgoonz-blog.netlify.app/readme
+https://bgoonz-blog.netlify.app/showcase
+https://bgoonz-blog.netlify.app/blog/300-react-questions
+https://bgoonz-blog.netlify.app/blog/adding-css-to-your-html
+https://bgoonz-blog.netlify.app/blog/awesome-graphql
+https://bgoonz-blog.netlify.app/blog/big-o-complexity
+https://bgoonz-blog.netlify.app/blog/blog-archive
+https://bgoonz-blog.netlify.app/blog/data-structures
+https://bgoonz-blog.netlify.app/blog/data-structures-algorithms-resources
+https://bgoonz-blog.netlify.app/blog/date-component
+https://bgoonz-blog.netlify.app/blog/event-handeling
+https://bgoonz-blog.netlify.app/blog/expressjs-apis
+https://bgoonz-blog.netlify.app/blog/flow-control-in-python
+https://bgoonz-blog.netlify.app/blog/functions-in-python
+https://bgoonz-blog.netlify.app/blog/git-gateway
+https://bgoonz-blog.netlify.app/blog/grep-in-linuz
+https://bgoonz-blog.netlify.app/blog/hoisting
+https://bgoonz-blog.netlify.app/blog/htt-requests
+https://bgoonz-blog.netlify.app/blog/interview-questions-js
+https://bgoonz-blog.netlify.app/blog/interview-questions-js-p2
+https://bgoonz-blog.netlify.app/blog/interview-questions-js-p3
+https://bgoonz-blog.netlify.app/blog/intro-01-data-structures
+https://bgoonz-blog.netlify.app/blog/netlify-cms
+https://bgoonz-blog.netlify.app/blog/passing-arguments-to-a-callback-in-js
+https://bgoonz-blog.netlify.app/blog/platform-docs
+https://bgoonz-blog.netlify.app/blog/psql-cheat-sheet
+https://bgoonz-blog.netlify.app/blog/python-for-js-dev
+https://bgoonz-blog.netlify.app/blog/python-resources
+https://bgoonz-blog.netlify.app/blog/react-semantics
+https://bgoonz-blog.netlify.app/blog/using-the-dom
+https://bgoonz-blog.netlify.app/blog/vs-code-extensions
+https://bgoonz-blog.netlify.app/blog/vscode-extensions
+https://bgoonz-blog.netlify.app/blog/web-dev-trends
+https://bgoonz-blog.netlify.app/blog/web-scraping
+https://bgoonz-blog.netlify.app/docs/about
+https://bgoonz-blog.netlify.app/docs/archive
+https://bgoonz-blog.netlify.app/docs/articles
+https://bgoonz-blog.netlify.app/docs/audio
+https://bgoonz-blog.netlify.app/docs/career
+https://bgoonz-blog.netlify.app/docs/community
+https://bgoonz-blog.netlify.app/docs/content
+https://bgoonz-blog.netlify.app/docs/css
+https://bgoonz-blog.netlify.app/docs/docs
+https://bgoonz-blog.netlify.app/docs/ds-algo
+https://bgoonz-blog.netlify.app/docs/faq
+https://bgoonz-blog.netlify.app/docs/git
+https://bgoonz-blog.netlify.app/docs/glossary
+https://bgoonz-blog.netlify.app/docs/google-hosted-libraries
+https://bgoonz-blog.netlify.app/docs/interact
+https://bgoonz-blog.netlify.app/docs/javascript
+https://bgoonz-blog.netlify.app/docs/js-tips
+https://bgoonz-blog.netlify.app/docs/leetcode
+https://bgoonz-blog.netlify.app/docs/netlify-cms-jamstack
+https://bgoonz-blog.netlify.app/docs/overflow
+https://bgoonz-blog.netlify.app/docs/privacy-policy
+https://bgoonz-blog.netlify.app/docs/projects
+https://bgoonz-blog.netlify.app/docs/python
+https://bgoonz-blog.netlify.app/docs/quick-ref
+https://bgoonz-blog.netlify.app/docs/react
+https://bgoonz-blog.netlify.app/docs/reference
+https://bgoonz-blog.netlify.app/docs/sitemap
+https://bgoonz-blog.netlify.app/docs/sitemap-april
+https://bgoonz-blog.netlify.app/docs/tips
+https://bgoonz-blog.netlify.app/docs/tools
+https://bgoonz-blog.netlify.app/docs/tutorials
+https://bgoonz-blog.netlify.app/docs/about/eng-portfolio
+https://bgoonz-blog.netlify.app/docs/about/intrests
+https://bgoonz-blog.netlify.app/docs/about/job-search
+https://bgoonz-blog.netlify.app/docs/about/readme
+https://bgoonz-blog.netlify.app/docs/about/resume
+https://bgoonz-blog.netlify.app/docs/articles/basic-web-dev
+https://bgoonz-blog.netlify.app/docs/articles/buffers
+https://bgoonz-blog.netlify.app/docs/articles/common-modules
+https://bgoonz-blog.netlify.app/docs/articles/dev-dep
+https://bgoonz-blog.netlify.app/docs/articles/event-loop
+https://bgoonz-blog.netlify.app/docs/articles/fs-module
+https://bgoonz-blog.netlify.app/docs/articles/how-search-engines-work
+https://bgoonz-blog.netlify.app/docs/articles/how-the-web-works
+https://bgoonz-blog.netlify.app/docs/articles/intro
+https://bgoonz-blog.netlify.app/docs/articles/jamstack
+https://bgoonz-blog.netlify.app/docs/articles/nextjs
+https://bgoonz-blog.netlify.app/docs/articles/node-api-express
+https://bgoonz-blog.netlify.app/docs/articles/npm
+https://bgoonz-blog.netlify.app/docs/articles/os-module
+https://bgoonz-blog.netlify.app/docs/articles/reading-files
+https://bgoonz-blog.netlify.app/docs/articles/semantic
+https://bgoonz-blog.netlify.app/docs/articles/semantic-html
+https://bgoonz-blog.netlify.app/docs/articles/url
+https://bgoonz-blog.netlify.app/docs/articles/web-standards-checklist
+https://bgoonz-blog.netlify.app/docs/articles/webdev-tools
+https://bgoonz-blog.netlify.app/docs/articles/writing-files
+https://bgoonz-blog.netlify.app/docs/audio/dfft
+https://bgoonz-blog.netlify.app/docs/audio/discrete-fft
+https://bgoonz-blog.netlify.app/docs/audio/dtw-python-explained
+https://bgoonz-blog.netlify.app/docs/audio/dynamic-time-warping
+https://bgoonz-blog.netlify.app/docs/audio/web-audio-api
+https://bgoonz-blog.netlify.app/docs/career/job-boards
+https://bgoonz-blog.netlify.app/docs/career/my-websites
+https://bgoonz-blog.netlify.app/docs/career/projects
+https://bgoonz-blog.netlify.app/docs/community/an-open-letter-2-future-developers
+https://bgoonz-blog.netlify.app/docs/community/bookmarks
+https://bgoonz-blog.netlify.app/docs/community/video-chat
+https://bgoonz-blog.netlify.app/docs/content/algo
+https://bgoonz-blog.netlify.app/docs/content/archive
+https://bgoonz-blog.netlify.app/docs/content/data-structures-in-python
+https://bgoonz-blog.netlify.app/docs/content/gatsby-Queries-Mutations
+https://bgoonz-blog.netlify.app/docs/content/gists
+https://bgoonz-blog.netlify.app/docs/content/history-api
+https://bgoonz-blog.netlify.app/docs/content/main-projects
+https://bgoonz-blog.netlify.app/docs/content/native-data-structures-in-js
+https://bgoonz-blog.netlify.app/docs/content/trouble-shooting
+https://bgoonz-blog.netlify.app/docs/docs/appendix
+https://bgoonz-blog.netlify.app/docs/docs/bash
+https://bgoonz-blog.netlify.app/docs/docs/css
+https://bgoonz-blog.netlify.app/docs/docs/es-6-features
+https://bgoonz-blog.netlify.app/docs/docs/git-reference
+https://bgoonz-blog.netlify.app/docs/docs/git-repos
+https://bgoonz-blog.netlify.app/docs/docs/glossary
+https://bgoonz-blog.netlify.app/docs/docs/html-tags
+https://bgoonz-blog.netlify.app/docs/docs/markdown
+https://bgoonz-blog.netlify.app/docs/docs/no-whiteboarding
+https://bgoonz-blog.netlify.app/docs/docs/node-docs-complete
+https://bgoonz-blog.netlify.app/docs/docs/regex-in-js
+https://bgoonz-blog.netlify.app/docs/docs/sitemap
+https://bgoonz-blog.netlify.app/docs/ds-algo/big-o
+https://bgoonz-blog.netlify.app/docs/ds-algo/data-structures-docs
+https://bgoonz-blog.netlify.app/docs/ds-algo/ds-algo-interview
+https://bgoonz-blog.netlify.app/docs/ds-algo/ds-by-example
+https://bgoonz-blog.netlify.app/docs/ds-algo/ds-overview
+https://bgoonz-blog.netlify.app/docs/ds-algo/free-code-camp
+https://bgoonz-blog.netlify.app/docs/ds-algo/graph
+https://bgoonz-blog.netlify.app/docs/ds-algo/heaps
+https://bgoonz-blog.netlify.app/docs/ds-algo/tree
+https://bgoonz-blog.netlify.app/docs/faq/contact
+https://bgoonz-blog.netlify.app/docs/faq/plug-ins
+https://bgoonz-blog.netlify.app/docs/git/git-cheatsheet
+https://bgoonz-blog.netlify.app/docs/glossary/folders-in-npm
+https://bgoonz-blog.netlify.app/docs/glossary/mathfloor
+https://bgoonz-blog.netlify.app/docs/interact/callstack-visual
+https://bgoonz-blog.netlify.app/docs/interact/clock
+https://bgoonz-blog.netlify.app/docs/interact/jupyter-notebooks
+https://bgoonz-blog.netlify.app/docs/interact/other-sites
+https://bgoonz-blog.netlify.app/docs/interact/react-testing-library
+https://bgoonz-blog.netlify.app/docs/interact/video-chat
+https://bgoonz-blog.netlify.app/docs/javascript/arrow-functions
+https://bgoonz-blog.netlify.app/docs/javascript/asyncjs
+https://bgoonz-blog.netlify.app/docs/javascript/await-keyword
+https://bgoonz-blog.netlify.app/docs/javascript/bigo
+https://bgoonz-blog.netlify.app/docs/javascript/clean-code
+https://bgoonz-blog.netlify.app/docs/javascript/constructor-functions
+https://bgoonz-blog.netlify.app/docs/javascript/cs-basics-in-js
+https://bgoonz-blog.netlify.app/docs/javascript/for-loops
+https://bgoonz-blog.netlify.app/docs/javascript/js-expressions
+https://bgoonz-blog.netlify.app/docs/javascript/js-objects
+https://bgoonz-blog.netlify.app/docs/javascript/part2-pojo
+https://bgoonz-blog.netlify.app/docs/javascript/promises
+https://bgoonz-blog.netlify.app/docs/javascript/review
+https://bgoonz-blog.netlify.app/docs/javascript/snippets
+https://bgoonz-blog.netlify.app/docs/javascript/this-is-about-this
+https://bgoonz-blog.netlify.app/docs/javascript/variables
+https://bgoonz-blog.netlify.app/docs/js-tips/abs
+https://bgoonz-blog.netlify.app/docs/js-tips/acos
+https://bgoonz-blog.netlify.app/docs/js-tips/acosh
+https://bgoonz-blog.netlify.app/docs/js-tips/addition
+https://bgoonz-blog.netlify.app/docs/js-tips/all
+https://bgoonz-blog.netlify.app/docs/js-tips/allsettled
+https://bgoonz-blog.netlify.app/docs/js-tips/any
+https://bgoonz-blog.netlify.app/docs/js-tips/array
+https://bgoonz-blog.netlify.app/docs/js-tips/array-methods
+https://bgoonz-blog.netlify.app/docs/js-tips/arrow_functions
+https://bgoonz-blog.netlify.app/docs/js-tips/async_function
+https://bgoonz-blog.netlify.app/docs/js-tips/bad_radix
+https://bgoonz-blog.netlify.app/docs/js-tips/bind
+https://bgoonz-blog.netlify.app/docs/js-tips/classes
+https://bgoonz-blog.netlify.app/docs/js-tips/concat
+https://bgoonz-blog.netlify.app/docs/js-tips/conditional_operator
+https://bgoonz-blog.netlify.app/docs/js-tips/const
+https://bgoonz-blog.netlify.app/docs/js-tips/create
+https://bgoonz-blog.netlify.app/docs/js-tips/date
+https://bgoonz-blog.netlify.app/docs/js-tips/eval
+https://bgoonz-blog.netlify.app/docs/js-tips/every
+https://bgoonz-blog.netlify.app/docs/js-tips/filter
+https://bgoonz-blog.netlify.app/docs/js-tips/for...of
+https://bgoonz-blog.netlify.app/docs/js-tips/foreach
+https://bgoonz-blog.netlify.app/docs/js-tips/functions
+https://bgoonz-blog.netlify.app/docs/js-tips/import
+https://bgoonz-blog.netlify.app/docs/js-tips/insert-into-array
+https://bgoonz-blog.netlify.app/docs/js-tips/map
+https://bgoonz-blog.netlify.app/docs/js-tips/object
+https://bgoonz-blog.netlify.app/docs/js-tips/reduce
+https://bgoonz-blog.netlify.app/docs/js-tips/regexp
+https://bgoonz-blog.netlify.app/docs/js-tips/sort
+https://bgoonz-blog.netlify.app/docs/js-tips/sorting-strings
+https://bgoonz-blog.netlify.app/docs/js-tips/string
+https://bgoonz-blog.netlify.app/docs/js-tips/this
+https://bgoonz-blog.netlify.app/docs/js-tips/var
+https://bgoonz-blog.netlify.app/docs/leetcode/ContaineWitMosWater
+https://bgoonz-blog.netlify.app/docs/leetcode/DividTwIntegers
+https://bgoonz-blog.netlify.app/docs/leetcode/GeneratParentheses
+https://bgoonz-blog.netlify.app/docs/leetcode/LetteCombinationoPhonNumber
+https://bgoonz-blog.netlify.app/docs/leetcode/LongesCommoPrefix
+https://bgoonz-blog.netlify.app/docs/leetcode/MediaoTwSorteArrays
+https://bgoonz-blog.netlify.app/docs/leetcode/NexPermutation
+https://bgoonz-blog.netlify.app/docs/leetcode/PalindromNumber
+https://bgoonz-blog.netlify.app/docs/leetcode/RegulaExpressioMatching
+https://bgoonz-blog.netlify.app/docs/leetcode/RemovDuplicatefroSorteArray
+https://bgoonz-blog.netlify.app/docs/leetcode/RemovNtNodFroEnoList
+https://bgoonz-blog.netlify.app/docs/leetcode/RomatInteger
+https://bgoonz-blog.netlify.app/docs/leetcode/SearciRotateSorteArray
+https://bgoonz-blog.netlify.app/docs/leetcode/StrintIntege(atoi)
+https://bgoonz-blog.netlify.app/docs/leetcode/ValiParentheses
+https://bgoonz-blog.netlify.app/docs/leetcode/ZigZaConversion
+https://bgoonz-blog.netlify.app/docs/netlify-cms-jamstack/jamstack-templates
+https://bgoonz-blog.netlify.app/docs/netlify-cms-jamstack/serverlessjs
+https://bgoonz-blog.netlify.app/docs/overflow/html-spec
+https://bgoonz-blog.netlify.app/docs/overflow/http
+https://bgoonz-blog.netlify.app/docs/overflow/install
+https://bgoonz-blog.netlify.app/docs/overflow/modules
+https://bgoonz-blog.netlify.app/docs/overflow/node-cli-args
+https://bgoonz-blog.netlify.app/docs/overflow/node-js-language
+https://bgoonz-blog.netlify.app/docs/overflow/node-package-manager
+https://bgoonz-blog.netlify.app/docs/overflow/node-repl
+https://bgoonz-blog.netlify.app/docs/overflow/node-run-cli
+https://bgoonz-blog.netlify.app/docs/overflow/nodejs
+https://bgoonz-blog.netlify.app/docs/overflow/nodevsbrowser
+https://bgoonz-blog.netlify.app/docs/overflow/understanding-firebase
+https://bgoonz-blog.netlify.app/docs/overflow/v8
+https://bgoonz-blog.netlify.app/docs/projects/archive
+https://bgoonz-blog.netlify.app/docs/projects/mini-projects
+https://bgoonz-blog.netlify.app/docs/projects/mini-projects2
+https://bgoonz-blog.netlify.app/docs/projects/recent
+https://bgoonz-blog.netlify.app/docs/python/at-length
+https://bgoonz-blog.netlify.app/docs/python/cheat-sheet
+https://bgoonz-blog.netlify.app/docs/python/comprehensive-guide
+https://bgoonz-blog.netlify.app/docs/python/examples
+https://bgoonz-blog.netlify.app/docs/python/flow-control
+https://bgoonz-blog.netlify.app/docs/python/functions
+https://bgoonz-blog.netlify.app/docs/python/google-sheets-api
+https://bgoonz-blog.netlify.app/docs/python/intro-for-js-devs
+https://bgoonz-blog.netlify.app/docs/python/python-ds
+https://bgoonz-blog.netlify.app/docs/python/python-quiz
+https://bgoonz-blog.netlify.app/docs/python/snippets
+https://bgoonz-blog.netlify.app/docs/quick-ref/Emmet
+https://bgoonz-blog.netlify.app/docs/quick-ref/all-emojis
+https://bgoonz-blog.netlify.app/docs/quick-ref/create-react-app
+https://bgoonz-blog.netlify.app/docs/quick-ref/fetch
+https://bgoonz-blog.netlify.app/docs/quick-ref/git-bash
+https://bgoonz-blog.netlify.app/docs/quick-ref/git-tricks
+https://bgoonz-blog.netlify.app/docs/quick-ref/google-firebase
+https://bgoonz-blog.netlify.app/docs/quick-ref/heroku-error-codes
+https://bgoonz-blog.netlify.app/docs/quick-ref/installation
+https://bgoonz-blog.netlify.app/docs/quick-ref/markdown-dropdowns
+https://bgoonz-blog.netlify.app/docs/quick-ref/minifiction
+https://bgoonz-blog.netlify.app/docs/quick-ref/new-repo-instructions
+https://bgoonz-blog.netlify.app/docs/quick-ref/pull-request-rubric
+https://bgoonz-blog.netlify.app/docs/quick-ref/quick-links
+https://bgoonz-blog.netlify.app/docs/quick-ref/topRepos
+https://bgoonz-blog.netlify.app/docs/quick-ref/understanding-path
+https://bgoonz-blog.netlify.app/docs/quick-ref/vscode-themes
+https://bgoonz-blog.netlify.app/docs/react/accessibility
+https://bgoonz-blog.netlify.app/docs/react/ajax-n-apis
+https://bgoonz-blog.netlify.app/docs/react/cheatsheet
+https://bgoonz-blog.netlify.app/docs/react/complete-react
+https://bgoonz-blog.netlify.app/docs/react/createReactApp
+https://bgoonz-blog.netlify.app/docs/react/demo
+https://bgoonz-blog.netlify.app/docs/react/dont-use-index-as-keys
+https://bgoonz-blog.netlify.app/docs/react/jsx
+https://bgoonz-blog.netlify.app/docs/react/quiz
+https://bgoonz-blog.netlify.app/docs/react/react-docs
+https://bgoonz-blog.netlify.app/docs/react/react-in-depth
+https://bgoonz-blog.netlify.app/docs/react/react-patterns-by-usecase
+https://bgoonz-blog.netlify.app/docs/react/react2
+https://bgoonz-blog.netlify.app/docs/react/render-elements
+https://bgoonz-blog.netlify.app/docs/reference/art-of-command-line
+https://bgoonz-blog.netlify.app/docs/reference/awesome-lists
+https://bgoonz-blog.netlify.app/docs/reference/awesome-nodejs
+https://bgoonz-blog.netlify.app/docs/reference/awesome-static
+https://bgoonz-blog.netlify.app/docs/reference/bash-commands
+https://bgoonz-blog.netlify.app/docs/reference/bookmarks
+https://bgoonz-blog.netlify.app/docs/reference/embed-the-web
+https://bgoonz-blog.netlify.app/docs/reference/github-resources
+https://bgoonz-blog.netlify.app/docs/reference/github-search
+https://bgoonz-blog.netlify.app/docs/reference/google-cloud
+https://bgoonz-blog.netlify.app/docs/reference/how-2-reinstall-npm
+https://bgoonz-blog.netlify.app/docs/reference/how-to-kill-a-process
+https://bgoonz-blog.netlify.app/docs/reference/installing-node
+https://bgoonz-blog.netlify.app/docs/reference/intro-to-nodejs
+https://bgoonz-blog.netlify.app/docs/reference/markdown-styleguide
+https://bgoonz-blog.netlify.app/docs/reference/notes-template
+https://bgoonz-blog.netlify.app/docs/reference/psql
+https://bgoonz-blog.netlify.app/docs/reference/resources
+https://bgoonz-blog.netlify.app/docs/reference/vscode
+https://bgoonz-blog.netlify.app/docs/reference/web-api's
+https://bgoonz-blog.netlify.app/docs/tips/7-tips-to-become-a-better-web-developer
+https://bgoonz-blog.netlify.app/docs/tips/regex-tips
+https://bgoonz-blog.netlify.app/docs/tips/storybook
+https://bgoonz-blog.netlify.app/docs/tools/dev-utilities
+https://bgoonz-blog.netlify.app/docs/tools/markdown-html
+https://bgoonz-blog.netlify.app/docs/tutorials/algolia-search
+https://bgoonz-blog.netlify.app/docs/tutorials/bash
+https://bgoonz-blog.netlify.app/docs/tutorials/bash-commands-my
+https://bgoonz-blog.netlify.app/docs/tutorials/effect-hook
+https://bgoonz-blog.netlify.app/docs/tutorials/get-file-extension
+https://bgoonz-blog.netlify.app/docs/tutorials/how-2-ubuntu
+https://bgoonz-blog.netlify.app/docs/tutorials/psql-setup
+https://bgoonz-blog.netlify.app/docs/projects/archive/embeded-websites
