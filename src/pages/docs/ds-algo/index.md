@@ -25,18 +25,8 @@ seo:
 template: docs
 weight: 0
 ---
-# Data structures
+Data structures
 
-
-<h1> Data Structures</h1>
-<br>
-
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://determined-dijkstra-ee7390.netlify.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
-</iframe>
-<br>
-
-<br>
-<br>
 <br>
 <br>
 <br>

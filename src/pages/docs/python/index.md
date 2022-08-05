@@ -3,8 +3,8 @@ title: Python
 weight: 0
 excerpt: Python
 seo:
-    title: ''
-    description: ''
+    title: 'Python'
+    description: 'Python programming language'
     robots: []
     extra: []
     type: stackbit_page_meta
