@@ -86,18 +86,6 @@
                         "url": "https://blog-w-comments.vercel.app/",
                         "style": "primary",
                         "icon_class": "dev",
-<<<<<<< HEAD
-=======
-                        "new_window": true,
-                        "no_follow": false,
-                        "type": "action"
-                    },
-                    {
-                        "label": "Blog w Comments📰",
-                        "url": "/blogWcomments/",
-                        "style": "primary",
-                        "icon_class": "dev",
->>>>>>> fb14820408efc9fef569093d1a3b9ca213a5653d
                         "new_window": false,
                         "no_follow": false,
                         "type": "action"
@@ -131,11 +119,7 @@
                     },
                     {
                         "label": "Career-Tips🎓",
-<<<<<<< HEAD
                         "url": "https://bgoonz-blog.netlify.app//docs/career/",
-=======
-                        "url": "https://bgoonz-blog.netlify.app/docs/career/",
->>>>>>> fb14820408efc9fef569093d1a3b9ca213a5653d
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
