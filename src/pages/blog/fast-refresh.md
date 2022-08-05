@@ -6,8 +6,8 @@ subtitle: Fast Refresh is a React Native feature that allows you to get
 excerpt: Fast Refresh is a React Native feature that allows you to get
   near-instant feedback for changes in your React components.
 date: 2022-06-06T17:42:17.258Z
-image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/react%20(1).png?raw=true
-thumb_image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/react%20(1).png?raw=true
+image: /blog/react-1-.gif
+thumb_image: /blog/react-1-.gif
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:
