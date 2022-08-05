@@ -4,17 +4,18 @@ template: post
 subtitle: Basic Commands
 excerpt: Login to postgresql
 date: 2022-04-04T17:27:00.746Z
-image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/psql-diagram.jpg?raw=true
-thumb_image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/psql-diagram.jpg?raw=true
-image_position: right
+image: /blog/psql.jpg
+thumb_image: /blog/psql.jpg
+image_position: top
 author: src/data/authors/bgoonz.yaml
 categories:
   - src/data/categories/db.yaml
 tags:
   - src/data/tags/psql.yaml
+  - src/data/tags/databases.yaml
 show_author_bio: true
 related_posts:
-    - src/pages/blog/psql-cheat-sheet.md
+  - src/pages/blog/psql-cheat-sheet.md
 cmseditable: true
 ---
 
