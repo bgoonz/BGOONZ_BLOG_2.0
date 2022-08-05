@@ -18,6 +18,7 @@ We want to make this open-source project available for people all around the wor
 
 [Help to translate](translate.html) the content of this tutorial to your language!
 
+<<<<<<< HEAD
 <a href="index.html" class="sitetoolbar__link sitetoolbar__link_logo">
 <img src="img/sitetoolbar__logo_en.svg" class="sitetoolbar__logo sitetoolbar__logo_normal" width="200" />
 <img src="img/sitetoolbar__logo_small_en.svg" class="sitetoolbar__logo sitetoolbar__logo_small" width="70" />
@@ -25,6 +26,11 @@ We want to make this open-source project available for people all around the wor
 
 <a href="ebook.html" class="buy-book-button">
 <span class="buy-book-button__extra-text">Buy</span>EPUB/PDF</a>
+=======
+<a href="index.html" class="sitetoolbar__link sitetoolbar__link_logo"><img src="img/sitetoolbar__logo_en.svg" class="sitetoolbar__logo sitetoolbar__logo_normal" width="200" /><img src="img/sitetoolbar__logo_small_en.svg" class="sitetoolbar__logo sitetoolbar__logo_small" width="70" /></a>
+
+<a href="ebook.html" class="buy-book-button"><span class="buy-book-button__extra-text">Buy</span>EPUB/PDF</a>
+>>>>>>> f4594b19594599756372b62212ee4796747e0825
 
 Search
 
@@ -32,6 +38,7 @@ Search
 
 <a href="tutorial/map.html" class="map">
 
+<<<<<<< HEAD
 <span class="share-icons__title">Share</span>
 <a href="https://twitter.com/share?url=https%3A%2F%2Fjavascript.info%2Freference-type" class="share share_tw">
 </a>
@@ -48,6 +55,13 @@ Search
 <a href="js-misc.html" Miscellaneous</span>
 </a>
 </span>
+=======
+<span class="share-icons__title">Share</span><a href="https://twitter.com/share?url=https%3A%2F%2Fjavascript.info%2Freference-type" class="share share_tw"></a><a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=https%3A%2F%2Fjavascript.info%2Freference-type" </a>
+
+1.  <a href="index.html" class="breadcrumbs__link"><span class="breadcrumbs__hidden-text">Tutorial</span></a>
+2.  <span id="breadcrumb-1"><a href="js.html" The JavaScript language</span></a></span>
+3.  <span id="breadcrumb-2"><a href="js-misc.html" Miscellaneous</span></a></span>
+>>>>>>> f4594b19594599756372b62212ee4796747e0825
 
 30th April 2021
 
@@ -57,7 +71,11 @@ Search
 
 This article covers an advanced topic, to understand certain edge-cases better.
 
+<<<<<<< HEAD
 It's not important. Many experienced developers live fine without knowing it. Read on if you want to know how things work under the hood.
+=======
+It’s not important. Many experienced developers live fine without knowing it. Read on if you want to know how things work under the hood.
+>>>>>>> f4594b19594599756372b62212ee4796747e0825
 
 A dynamically evaluated method call can lose `this`.
 
@@ -79,7 +97,11 @@ For instance:
 
 On the last line there is a conditional operator that chooses either `user.hi` or `user.bye`. In this case the result is `user.hi`.
 
+<<<<<<< HEAD
 Then the method is immediately called with parentheses `()`. But it doesn't work correctly!
+=======
+Then the method is immediately called with parentheses `()`. But it doesn’t work correctly!
+>>>>>>> f4594b19594599756372b62212ee4796747e0825
 
 As you can see, the call results in an error, because the value of `"this"` inside the call becomes `undefined`.
 
@@ -87,11 +109,19 @@ This works (object dot method):
 
     user.hi();
 
+<<<<<<< HEAD
 This doesn't (evaluated method):
 
     (user.name == "John" ? user.hi : user.bye)(); // Error!
 
 Why? If we want to understand why it happens, let's get under the hood of how `obj.method()` call works.
+=======
+This doesn’t (evaluated method):
+
+    (user.name == "John" ? user.hi : user.bye)(); // Error!
+
+Why? If we want to understand why it happens, let’s get under the hood of how `obj.method()` call works.
+>>>>>>> f4594b19594599756372b62212ee4796747e0825
 
 ## <a href="reference-type.html#reference-type-explained" id="reference-type-explained" class="main__anchor">Reference type explained</a>
 
@@ -116,11 +146,19 @@ If we put these operations on separate lines, then `this` will be lost for sure:
     let hi = user.hi;
     hi(); // Error, because this is undefined
 
+<<<<<<< HEAD
 Here `hi = user.hi` puts the function into the variable, and then on the last line it is completely standalone, and so there's no `this`.
 
 **To make `user.hi()` calls work, JavaScript uses a trick - the dot `'.'` returns not a function, but a value of the special [Reference Type](https://tc39.github.io/ecma262/#sec-reference-specification-type).**
 
 The Reference Type is a "specification type". We can't explicitly use it, but it is used internally by the language.
+=======
+Here `hi = user.hi` puts the function into the variable, and then on the last line it is completely standalone, and so there’s no `this`.
+
+**To make `user.hi()` calls work, JavaScript uses a trick - the dot `'.'` returns not a function, but a value of the special [Reference Type](https://tc39.github.io/ecma262/#sec-reference-specification-type).**
+
+The Reference Type is a “specification type”. We can’t explicitly use it, but it is used internally by the language.
+>>>>>>> f4594b19594599756372b62212ee4796747e0825
 
 The value of Reference Type is a three-value combination `(base, name, strict)`, where:
 
@@ -135,9 +173,15 @@ The result of a property access `user.hi` is not a function, but a value of Refe
 
 When parentheses `()` are called on the Reference Type, they receive the full information about the object and its method, and can set the right `this` (`=user` in this case).
 
+<<<<<<< HEAD
 Reference type is a special "intermediary" internal type, with the purpose to pass information from dot `.` to calling parentheses `()`.
 
 Any other operation like assignment `hi = user.hi` discards the reference type as a whole, takes the value of `user.hi` (a function) and passes it on. So any further operation "loses" `this`.
+=======
+Reference type is a special “intermediary” internal type, with the purpose to pass information from dot `.` to calling parentheses `()`.
+
+Any other operation like assignment `hi = user.hi` discards the reference type as a whole, takes the value of `user.hi` (a function) and passes it on. So any further operation “loses” `this`.
+>>>>>>> f4594b19594599756372b62212ee4796747e0825
 
 So, as the result, the value of `this` is only passed the right way if the function is called directly using a dot `obj.method()` or square brackets `obj['method']()` syntax (they do the same here). There are various ways to solve this problem such as [func.bind()](bind.html#solution-2-bind).
 
@@ -145,9 +189,15 @@ So, as the result, the value of `this` is only passed the right way if the funct
 
 Reference Type is an internal type of the language.
 
+<<<<<<< HEAD
 Reading a property, such as with dot `.` in `obj.method()` returns not exactly the property value, but a special "reference type" value that stores both the property value and the object it was taken from.
 
 That's for the subsequent method call `()` to get the object and set `this` to it.
+=======
+Reading a property, such as with dot `.` in `obj.method()` returns not exactly the property value, but a special “reference type” value that stores both the property value and the object it was taken from.
+
+That’s for the subsequent method call `()` to get the object and set `this` to it.
+>>>>>>> f4594b19594599756372b62212ee4796747e0825
 
 For all other operations, the reference type automatically becomes the property value (a function in our case).
 
@@ -157,8 +207,12 @@ The whole mechanics is hidden from our eyes. It only matters in subtle cases, su
 
 ### <a href="reference-type.html#syntax-check" id="syntax-check" class="main__anchor">Syntax check</a>
 
+<<<<<<< HEAD
 <a href="task/check-syntax.html" class="task__open-link">
 </a>
+=======
+<a href="task/check-syntax.html" class="task__open-link"></a>
+>>>>>>> f4594b19594599756372b62212ee4796747e0825
 
 <span class="task__importance" title="How important is the task, from 1 to 5">importance: 2</span>
 
@@ -171,7 +225,11 @@ What is the result of this code?
 
     (user.go)()
 
+<<<<<<< HEAD
 P.S. There's a pitfall :)
+=======
+P.S. There’s a pitfall :)
+>>>>>>> f4594b19594599756372b62212ee4796747e0825
 
 solution
 
@@ -211,12 +269,20 @@ If we insert the semicolon, all is fine:
 
     (user.go)() // John
 
+<<<<<<< HEAD
 Please note that parentheses around `(user.go)` do nothing here. Usually they setup the order of operations, but here the dot `.` works first anyway, so there's no effect. Only the semicolon thing matters.
 
 ### <a href="reference-type.html#explain-the-value-of-this" id="explain-the-value-of-this" class="main__anchor">Explain the value of "this"</a>
 
 <a href="task/why-this.html" class="task__open-link">
 </a>
+=======
+Please note that parentheses around `(user.go)` do nothing here. Usually they setup the order of operations, but here the dot `.` works first anyway, so there’s no effect. Only the semicolon thing matters.
+
+### <a href="reference-type.html#explain-the-value-of-this" id="explain-the-value-of-this" class="main__anchor">Explain the value of "this"</a>
+
+<a href="task/why-this.html" class="task__open-link"></a>
+>>>>>>> f4594b19594599756372b62212ee4796747e0825
 
 <span class="task__importance" title="How important is the task, from 1 to 5">importance: 3</span>
 
@@ -243,9 +309,15 @@ But calls `(1)` and `(2)` works differently from `(3)` and `(4)`. Why?
 
 solution
 
+<<<<<<< HEAD
 Here's the explanations.
 
 1.  That's a regular object method call.
+=======
+Here’s the explanations.
+
+1.  That’s a regular object method call.
+>>>>>>> f4594b19594599756372b62212ee4796747e0825
 
 2.  The same, parentheses do not change the order of operations here, the dot is first anyway.
 
@@ -262,6 +334,7 @@ To explain the behavior of `(3)` and `(4)` we need to recall that property acces
 
 Any operation on it except a method call (like assignment `=` or `||`) turns it into an ordinary value, which does not carry the information allowing to set `this`.
 
+<<<<<<< HEAD
 <a href="currying-partials.html" class="page__nav page__nav_prev">
 <span class="page__nav-text">
 <span class="page__nav-text-shortcut">
@@ -281,6 +354,11 @@ Any operation on it except a method call (like assignment `=` or `||`) turns it 
 <a href="https://twitter.com/share?url=https%3A%2F%2Fjavascript.info%2Freference-type" class="share share_tw">
 </a>
 <a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=https%3A%2F%2Fjavascript.info%2Freference-type" </a>
+=======
+<a href="currying-partials.html" class="page__nav page__nav_prev"><span class="page__nav-text"><span class="page__nav-text-shortcut"></span></span><span class="page__nav-text-alternate">Previous lesson</span></a><a href="bigint.html" class="page__nav page__nav_next"><span class="page__nav-text"><span class="page__nav-text-shortcut"></span></span><span class="page__nav-text-alternate">Next lesson</span></a>
+
+<span class="share-icons__title">Share</span><a href="https://twitter.com/share?url=https%3A%2F%2Fjavascript.info%2Freference-type" class="share share_tw"></a><a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=https%3A%2F%2Fjavascript.info%2Freference-type" </a>
+>>>>>>> f4594b19594599756372b62212ee4796747e0825
 
 <a href="tutorial/map.html" class="map">
 
@@ -292,8 +370,12 @@ Any operation on it except a method call (like assignment `=` or `||`) turns it 
 -   If you can't understand something in the article - please elaborate.
 -   To insert few words of code, use the `<code>` tag, for several lines - wrap them in `<pre>` tag, for more than 10 lines - use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
+<<<<<<< HEAD
 <a href="tutorial/map.html" class="map">
 </a>
+=======
+<a href="tutorial/map.html" class="map"></a>
+>>>>>>> f4594b19594599756372b62212ee4796747e0825
 
 #### Chapter
 
@@ -309,10 +391,14 @@ Any operation on it except a method call (like assignment `=` or `||`) turns it 
 
 Share
 
+<<<<<<< HEAD
 <a href="https://twitter.com/share?url=https%3A%2F%2Fjavascript.info%2Freference-type" class="share share_tw sidebar__share">
 </a>
 <a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=https%3A%2F%2Fjavascript.info%2Freference-type" class="share share_fb sidebar__share">
 </a>
+=======
+<a href="https://twitter.com/share?url=https%3A%2F%2Fjavascript.info%2Freference-type" class="share share_tw sidebar__share"></a><a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Burl%5D=https%3A%2F%2Fjavascript.info%2Freference-type" class="share share_fb sidebar__share"></a>
+>>>>>>> f4594b19594599756372b62212ee4796747e0825
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/99-js-misc/04-reference-type" class="sidebar__link">Edit on GitHub</a>
 
