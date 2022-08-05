@@ -17,10 +17,6 @@ export default class Body extends React.Component {
                     <meta name="viewport" content="width=device-width, initialScale=1.0"/>
                     <meta name="google-site-verification" content="q5W83EYchlVTyA-iYRE4ElQGcbD_vukQF0NKW12N3qU"/>
                     <meta charset="UTF-8"/>
-<<<<<<< HEAD
-=======
-                    <meta name="google-site-verification" content="W6SJ3S45yhnjzV6ISUMCTXl_QVX5woQZ7jO3bsahONQ" />
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
                     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
                     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
                     <link rel="apple-touch-icon" href="logo-circle.png"/>

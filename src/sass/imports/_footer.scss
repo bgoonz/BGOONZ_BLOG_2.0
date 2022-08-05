@@ -3,11 +3,7 @@
     background-image: url('https://i.imgur.com/CEYEZp8.jpeg');
     padding-bottom: 5em;
     padding-top: 5em;
-<<<<<<< HEAD
     color: white !important;
-=======
-    color: white;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
     border: 4px solid black;
 }
 
@@ -47,11 +43,7 @@
     text-align: center;
 
     .copyright,
-<<<<<<< HEAD
     >a {
-=======
-    > a {
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
         margin: 0 4px 0.2em 0;
     }
 }
@@ -76,7 +68,6 @@
         align-items: flex-start;
         display: -ms-flexbox;
         display: flex;
-<<<<<<< HEAD
     }
 
     .site-info {
@@ -101,29 +92,3 @@
         }
     }
 }
-=======
-    }
-
-    .site-info {
-        -ms-flex-pack: start;
-        justify-content: flex-start;
-        text-align: left;
-    }
-
-    .social-links {
-        -ms-flex: 0 0 auto;
-        flex: 0 0 auto;
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-        -ms-flex-pack: start;
-        justify-content: flex-start;
-        margin-left: auto;
-        margin-top: 0;
-
-        a {
-            margin-left: 20px;
-            margin-right: 0;
-        }
-    }
-}
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05

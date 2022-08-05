@@ -8,7 +8,6 @@ https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javasc
 
 code[class*='language-'],
 pre[class*='language-'] {
-<<<<<<< HEAD
   -moz-tab-size: 4;
   -o-tab-size: 4;
   tab-size: 4;
@@ -21,27 +20,12 @@ pre[class*='language-'] {
 :not(pre)>code[class*='language-'] {
   background: $gray-700;
   color: $gray-100;
-=======
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
-    tab-size: 4;
-    -webkit-hyphens: none;
-    -moz-hyphens: none;
-    -ms-hyphens: none;
-    hyphens: none;
-}
-
-:not(pre) > code[class*='language-'] {
-    background: $gray-700;
-    color: $gray-100;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 .token.comment,
 .token.prolog,
 .token.doctype,
 .token.cdata {
-<<<<<<< HEAD
   color: #8292a2;
 }
 
@@ -51,17 +35,6 @@ pre[class*='language-'] {
 
 .token.namespace {
   opacity: 0.7;
-=======
-    color: #8292a2;
-}
-
-.token.punctuation {
-    color: #f8f8f2;
-}
-
-.token.namespace {
-    opacity: 0.7;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 .token.property,
@@ -69,20 +42,12 @@ pre[class*='language-'] {
 .token.constant,
 .token.symbol,
 .token.deleted {
-<<<<<<< HEAD
   color: #f92672;
-=======
-    color: #f92672;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 .token.boolean,
 .token.number {
-<<<<<<< HEAD
   color: #ae81ff;
-=======
-    color: #ae81ff;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 .token.selector,
@@ -91,11 +56,7 @@ pre[class*='language-'] {
 .token.char,
 .token.builtin,
 .token.inserted {
-<<<<<<< HEAD
   color: #a6e22e;
-=======
-    color: #a6e22e;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 .token.operator,
@@ -104,44 +65,27 @@ pre[class*='language-'] {
 .language-css .token.string,
 .style .token.string,
 .token.variable {
-<<<<<<< HEAD
   color: #f8f8f2;
-=======
-    color: #f8f8f2;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 .token.atrule,
 .token.attr-value,
 .token.function,
 .token.class-name {
-<<<<<<< HEAD
   color: #e6db74;
 }
 
 .token.keyword {
   color: #66d9ef;
-=======
-    color: #e6db74;
-}
-
-.token.keyword {
-    color: #66d9ef;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 .token.regex,
 .token.important {
-<<<<<<< HEAD
   color: #fd971f;
-=======
-    color: #fd971f;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 .token.important,
 .token.bold {
-<<<<<<< HEAD
   font-weight: bold;
 }
 .token.italic {
@@ -197,61 +141,4 @@ div.code-toolbar>.toolbar span {
   line-height: 1.5;
   padding: 0.25em 0.5em;
   text-decoration: none;
-=======
-    font-weight: bold;
-}
-.token.italic {
-    font-style: italic;
-}
-
-.token.entity {
-    cursor: help;
-}
-
-div.code-toolbar {
-    position: relative;
-}
-
-div.code-toolbar > .toolbar {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-div.code-toolbar > .toolbar .toolbar-item {
-    display: block;
-}
-
-div.code-toolbar > .toolbar a {
-    border: 0;
-    cursor: pointer;
-}
-
-div.code-toolbar > .toolbar button {
-    background: none;
-    border: 0;
-    border-radius: 0;
-    box-shadow: none;
-    color: inherit;
-    font: inherit;
-    line-height: normal;
-    overflow: visible;
-    padding: 0;
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-}
-
-div.code-toolbar > .toolbar a,
-div.code-toolbar > .toolbar button,
-div.code-toolbar > .toolbar span {
-    background: $gray-600;
-    color: $gray-300;
-    display: block;
-    font-size: 0.75em;
-    line-height: 1.5;
-    padding: 0.25em 0.5em;
-    text-decoration: none;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
