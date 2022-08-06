@@ -50,11 +50,6 @@ a {
     border-radius: 10px;
 }
 
-#sb-search-input-example {
-    position: absolute;
-    top: 200px;
-    lef: 200px;
-}
 
 iframe {
     overflow-y: scroll;
@@ -64,7 +59,7 @@ iframe {
     height: 1200px;
     box-shadow: inset 0px 4px 4px -10px black, inset 0px -11px 8px -10px black;
     width: 1000px;
-    resize: both !important;
+    resize: both;
     overflow: scroll;
 }
 
