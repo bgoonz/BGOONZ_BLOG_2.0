@@ -17,6 +17,9 @@
 
 ![GitHub visitors](https://visitor-badge-reloaded.herokuapp.com/badge?page_id=bgoonz.visitor.badge.reloaded&color=00bbbb&style=for-the-badge&logo=github)
 
+
+[![.github/workflows/pages.yml](https://github.com/permission-squad/BGOONZ_BLOG_2.0/actions/workflows/pages.yml/badge.svg?branch=master&event=deployment)](https://github.com/permission-squad/BGOONZ_BLOG_2.0/actions/workflows/pages.yml)
+
 ---
 ### Stable Deploys
 
