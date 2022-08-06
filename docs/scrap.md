@@ -1,7 +1,7 @@
 ---
-title:
+title: 
 weight: 0
-excerpt:
+excerpt: 
 seo:
     title: ''
     description: ''
