@@ -1,3 +1,7 @@
+/**
+ * It reads all the files in the data directory, parses them, and creates a single node with the data
+ * @param changedFile - The file that was changed.
+ */
 const path = require('path');
 const yaml = require('js-yaml');
 const fse = require('fs-extra');

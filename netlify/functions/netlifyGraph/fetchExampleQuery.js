@@ -1,3 +1,4 @@
+/* A generated file that contains the code for the Netlify GraphQL API. */
 // GENERATED VIA NETLIFY AUTOMATED DEV TOOLS, EDIT WITH CAUTION!
 const buffer = require('buffer');
 const crypto = require('crypto');
