@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: React Interview Questions & Answers
 subtitle: lorem-ipsum
 date: '2021-11-24'
@@ -11,6 +12,20 @@ seo:
     extra: []
 template: post
 thumb_image: images/es6.jpg
+=======
+title: React Questions
+subtitle: react excel sheet
+date: '2022-01-17'
+thumb_image_alt: es6
+excerpt: lorem-ipsum
+seo:
+  title: ''
+  description: ''
+  robots: []
+  extra: []
+template: post
+thumb_image: images/web-development-abstract.jpg
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
 ---
 
 ## React Interview Questions & Answers

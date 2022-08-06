@@ -6850,6 +6850,7 @@ var e, t;
         : 'object' == typeof exports
         ? (exports.algoliasearchNetlify = t())
         : (e.algoliasearchNetlify = t());
+<<<<<<< HEAD
 =======
 
 
@@ -6861,3 +6862,5 @@ var e, t;
     selector: 'div#search',
   });
 >>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
+=======
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2

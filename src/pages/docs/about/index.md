@@ -5,6 +5,7 @@ seo:
   title: About
   description: Bryan Guner personal blog about page
   extra:
+<<<<<<< HEAD
     - name: og:type
       value: website
       keyName: property
@@ -19,8 +20,26 @@ seo:
     - name: twitter:title
       value: About
     - name: twitter:description
+=======
+    - name: 'og:type'
+      value: website
+      keyName: property
+    - name: 'og:title'
+      value: About
+      keyName: property
+    - name: 'og:description'
+      value: This is the About page
+      keyName: property
+    - name: 'twitter:card'
+      value: summary
+    - name: 'twitter:title'
+      value: About
+    - name: 'twitter:description'
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
       value: This is the About page
 template: docs
+thumb_img: images/chrome_z7gswAaLMg.png
+date: '2022-01-21'
 ---
 <div align="center">
 
@@ -46,6 +65,17 @@ template: docs
 [![Portfolio](https://img.shields.io/badge/-❤_Portfolio-f58?style=flat-square&logo=a&logoColor=white&link=https://bgoonz-blog.netlify.app/)](https://bgoonz-blog.netlify.app/)<a href="https://1drv.ms/b/s!AkGiZ9n9CRDSquIDCW3sdtgIghzpeg?e=GcgN10" download>![Resume PDF](https://img.shields.io/badge/-Resume-f00?style=flat-square&logo=adobe-acrobat-reader&logoColor=white)</a>[![Bryan's email](https://img.shields.io/badge/bryan.guner@gmail.com-f4b400?style=flat-square&logo=gmail&logoColor=black&link=mailto:bryan.guner@gmail.com)](mailto:bryan.guner@gmail.com)[![Blog](https://img.shields.io/badge/-Blog-21759b?style=flat-square&logo=WordPress&logoColor=white&link=https://bgoonz-blog.netlify.app/)](https://bgoonz-blog.netlify.app/)[![Linkedin](https://img.shields.io/badge/-LinkedIn-0077b5?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/bryan-guner-046199128/)](https://www.linkedin.com/in/bryan-guner-046199128/)[![AngelList](https://img.shields.io/badge/-AngelList-black?style=flat-square&logo=AngelList&logoColor=white&link=https://angel.co/u/bryan-guner)](https://angel.co/u/bryan-guner)[![GitHub bgoonz](https://img.shields.io/github/followers/bgoonz?label=follow&style=social)](https://github.com/bgoonz)
 
 <h4 align="center">A passionate Web Developer, Electrical Engineer, Musician & Producer</h4>
+
+
+
+
+
+
+
+<details>
+
+<summary>  See More </summary>   
+
 
 <img align="center" src="https://readme-jokes.vercel.app/api" stye="width:570; height:420;">
 <h3 align="center">Languages and Tools:</h3>
@@ -237,8 +267,13 @@ Creating things that change my every day life.
 
 # ➤ Education
 
+<<<<<<< HEAD
 | **B.S. Electrical Engineering, TCNJ,** Ewing NJ | 2014 - 2019 |
 | ----------------------------------------------- | ----------- |
+=======
+| **B.S. Electrical Engineering, TCNJ, ** Ewing NJ | 2014 - 2019 |
+| ------------------------------------------------ | ----------- |
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
 
 **Capstone Project - Team Lead**
 
@@ -371,3 +406,11 @@ Creating things that change my every day life.
 
 ![Express](https://img.shields.io/badge/-Express-blue?style=flat&logo=express) ![Nodejs](https://img.shields.io/badge/-Nodejs-green?style=flat&logo=Node.js)![Python](https://img.shields.io/badge/-Python-lightyellow?style=flat&logo=python&logoColor=blue) ![Bootstrap](https://img.shields.io/badge/-Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white) ![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat&logo=javascript)
 
+<<<<<<< HEAD
+=======
+</details>
+
+</center>
+
+</details>
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
