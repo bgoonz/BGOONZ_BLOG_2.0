@@ -11,7 +11,7 @@
         "prettydock": "npm i docky --location=global && npm i prettier --location=global",
         "docky": "docky src/pages/docs/*.md   --watch 'src/pages/*.js','./README.md'    --use-readme=true",
         "pretty": "prettier --write ./static && prettier --write ./docs && prettier --write ./notes",
-        "git": "git add . && git commit -m 'update' && git pull && git push"
+        "git": "git add . && git commit -m 'update' && git pull --ff && git push"
     },
     "dependencies": {
         "@cloudflare/pages-plugin-cloudflare-access": "^1.0.0",
