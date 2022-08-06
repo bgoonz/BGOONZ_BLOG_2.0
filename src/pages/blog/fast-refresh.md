@@ -8,7 +8,7 @@ excerpt: Fast Refresh is a React Native feature that allows you to get
 date: 2022-06-06T17:42:17.258Z
 image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/react%20(1).png?raw=true
 thumb_image: https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/react%20(1).png?raw=true
-image_position: right
+image_position: top
 author: src/data/authors/bgoonz.yaml
 categories:
   - src/data/categories/react.yaml
