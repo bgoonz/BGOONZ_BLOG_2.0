@@ -926,15 +926,7 @@ This page contains links that give the impression that some of the site contents
 
     Use the Gatsby CLI to create a new site, specifying the default starter.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
     ```consoleell
-=======
-    ```console
->>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
-=======
-    ```bash
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
     # create a new Gatsby site using the default starter
 
@@ -946,15 +938,7 @@ This page contains links that give the impression that some of the site contents
 
     Navigate into your new site's directory and start it up.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
     ```consoleell
-=======
-    ```console
->>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
-=======
-    ```bash
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
     cd my-default-starter/
 
@@ -6292,11 +6276,7 @@ punctuation: /[{}[\];(),.:]/
 
 Prism.languages.clike['class-name'],
 
-<<<<<<< HEAD
 { pattern: /(^|[^$\w\xa0-\uffff])(?!\s)[\_$A-Z\xA0-\uFFFF][<?:(?!\s]($\w\xA0-\uFFFF)>)\_(?=\.(?:prototype|constructor))/, lookbehind: !0 }
-=======
-{ pattern: /(^|[^$\w\xa0-\uffff])[?!\s](\_$A-Z\xA0-\uFFFF)[<?:(?!\s]($\w\xA0-\uFFFF)>)\_(?=\.(?:prototype|constructor))/, lookbehind: !0 }
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 ],
 
@@ -6354,11 +6334,7 @@ pattern:
 
 pattern:
 
-<<<<<<< HEAD
 /#?(?!\s)[\_$a-zA-Z\xA0-\uFFFF][<?:(?!\s]($\w\xA0-\uFFFF)>)_(?=\s_[=:]\s*(?:async\s*)?(?:\bfunction\b|(?:\((?:[^()]|\([^()]_\))_\)|(?!\s)[\_$a-zA-Z\xA0-\uFFFF][<?:(?!\s]($\w\xA0-\uFFFF)>)_)\s_=>))/,
-=======
-/#?[?!\s](\_$a-zA-Z\xA0-\uFFFF)[<?:(?!\s]($\w\xA0-\uFFFF)>)_(?=\s_[=:]\s*(?:async\s*)?(?:\bfunction\b|(?:\((?:[^()]|\([^()]_\))_\)|[?!\s](\_$a-zA-Z\xA0-\uFFFF)[<?:(?!\s]($\w\xA0-\uFFFF)>)_)\s_=>))/,
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 alias: 'function'
 
@@ -6368,11 +6344,7 @@ parameter: [
 
 {
 
-<<<<<<< HEAD
 pattern: /(function(?:\s+(?!\s)[\_$a-zA-Z\xA0-\uFFFF][<?:(?!\s]($\w\xA0-\uFFFF)>)_)?\s_\(\s*)(?!\s)(?:[^()\s]|\s+(?![\s)])|\([^()]*\))+(?=\s\*\))/,
-=======
-pattern: /[function(?:\s+(?!\s](\_$a-zA-Z\xA0-\uFFFF)[<?:(?!\s]($\w\xA0-\uFFFF)>)_)?\s_\(\s*)(?!\s)(?:[^()\s]|\s+(?![\s)])|\([^()]*\))+(?=\s\*\))/,
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 lookbehind: !0,
 
@@ -6382,11 +6354,7 @@ inside: Prism.languages.javascript
 
 {
 
-<<<<<<< HEAD
 pattern: /(^|[^$\w\xa0-\uffff])(?!\s)[\_$a-z\xA0-\uFFFF][<?:(?!\s]($\w\xA0-\uFFFF)>)_(?=\s_=>)/i,
-=======
-pattern: /(^|[^$\w\xa0-\uffff])[?!\s](\_$a-z\xA0-\uFFFF)[<?:(?!\s]($\w\xA0-\uFFFF)>)_(?=\s_=>)/i,
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 lookbehind: !0,
 
@@ -6400,11 +6368,7 @@ inside: Prism.languages.javascript
 
 pattern:
 
-<<<<<<< HEAD
 /((?:\b|\s|^)(?!(?:as|async|await|break|case|catch|class|const|continue|debugger|default|delete|do|else|enum|export|extends|finally|for|from|function|get|if|implements|import|in|instanceof|interface|let|new|null|of|package|private|protected|public|return|set|static|super|switch|this|throw|try|typeof|undefined|var|void|while|with|yield)(?![$\w\xA0-\uFFFF]))(?:(?!\s)[\_$a-zA-Z\xA0-\uFFFF][<?:(?!\s]($\w\xA0-\uFFFF)>)_\s_)\(\s*|\]\s*\(\s*)(?!\s)(?:[^()\s]|\s+(?![\s)])|\([^()]*\))+(?=\s*\)\s*\{)/,
-=======
-/((?:\b|\s|^)(?!(?:as|async|await|break|case|catch|class|const|continue|debugger|default|delete|do|else|enum|export|extends|finally|for|from|function|get|if|implements|import|in|instanceof|interface|let|new|null|of|package|private|protected|public|return|set|static|super|switch|this|throw|try|typeof|undefined|var|void|while|with|yield)(?![$\w\xA0-\uFFFF]))[?:(?!\s](\_$a-zA-Z\xA0-\uFFFF)[<?:(?!\s]($\w\xA0-\uFFFF)>)_\s_)\(\s*|\]\s*\(\s*)(?!\s)(?:[^()\s]|\s+(?![\s)])|\([^()]*\))+(?=\s*\)\s*\{)/,
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 lookbehind: !0,
 
@@ -11189,7 +11153,6 @@ See also [the documentation for the action `createPage`](https://www.gatsbyjs.co
 
     See the [documentation for `Node API Helpers` for more details](https://www.gatsbyjs.com/docs/node-api-helpers)
 
-<<<<<<< HEAD
 -   ######
 
             `actions` Actions
@@ -11211,21 +11174,6 @@ See also [the documentation for the action `createPage`](https://www.gatsbyjs.co
 -   ######
 
             `reporter` GatsbyReporter
-=======
--   ###### `actions` Actions
-
-            See the [list of documented actions](https://www.gatsbyjs.com/docs/actions)
-
--   ######   `createPage` function
-
-                [Documentation for this action](https://www.gatsbyjs.com/docs/actions/#createPage)
-
--   ###### `graphql` function
-
-            : Query GraphQL API. See [examples here](https://www.gatsbyjs.com/docs/creating-and-modifying-pages/#creating-pages-in-gatsby-nodejs)
-
--   ###### `reporter` GatsbyReporter
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
             Log issues. See [GatsbyReporter documentation](https://www.gatsbyjs.com/docs/node-api-helpers/#GatsbyReporter) for more details
 
@@ -11351,7 +11299,6 @@ For fuller examples, see [`using-type-definitions`](https://github.com/gatsbyjs/
 
     destructured object
 
-<<<<<<< HEAD
 -   ######
 
             `intermediateSchema` GraphQLSchema
@@ -11361,13 +11308,6 @@ For fuller examples, see [`using-type-definitions`](https://github.com/gatsbyjs/
 -   ######
 
             `createResolvers` function
-=======
--   ###### `intermediateSchema` GraphQLSchema
-
-            Current GraphQL schema
-
--   ###### `createResolvers` function
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
             Add custom resolvers to GraphQL field configs
 
@@ -11375,7 +11315,6 @@ For fuller examples, see [`using-type-definitions`](https://github.com/gatsbyjs/
 
     `$1` object
 
-<<<<<<< HEAD
 -   ######
 
             `resolvers` object
@@ -11391,17 +11330,6 @@ For fuller examples, see [`using-type-definitions`](https://github.com/gatsbyjs/
 -   ######
 
                 `ignoreNonexistentTypes` object
-=======
--   ###### `resolvers` object
-
-            An object map of GraphQL type names to custom resolver functions
-
--   ###### `options` object
-
-            Optional createResolvers options
-
--   ######   `ignoreNonexistentTypes` object
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
                 Silences the warning when trying to add resolvers for types that don't exist. Useful for optional extensions.
 
@@ -11456,7 +11384,6 @@ This API runs immediately before schema generation. For modifications of the gen
 
     destructured object
 
-<<<<<<< HEAD
 -   ######
 
             `actions` object
@@ -11472,15 +11399,6 @@ This API runs immediately before schema generation. For modifications of the gen
 -   ######
 
                 `addThirdPartySchema` object
-=======
--   ###### `actions` object
-
--   ######   `createTypes` object
-
--   ######   `createFieldExtension` object
-
--   ######   `addThirdPartySchema` object
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 #### Example
 
@@ -11539,7 +11457,6 @@ Let plugins extend/mutate the site's Babel configuration by calling [`setBabelPl
 
     destructured object
 
-<<<<<<< HEAD
 -   ######
 
             `stage` string
@@ -11549,13 +11466,6 @@ Let plugins extend/mutate the site's Babel configuration by calling [`setBabelPl
 -   ######
 
             `actions` object
-=======
--   ###### `stage` string
-
-            The current build stage. One of 'develop', 'develop-html', 'build-javascript', or 'build-html'
-
--   ###### `actions` object
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 -   #####
 
@@ -11590,13 +11500,9 @@ Run when the `gatsby develop` server is started. It can be used for adding proxi
 
     destructured object
 
-<<<<<<< HEAD
 -   ######
 
             `app` Express
-=======
--   ###### `app` Express
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
             The [Express app](https://expressjs.com/en/4x/api.html#app) used to run the dev server
 
@@ -11668,7 +11574,6 @@ See also the documentation for [`setWebpackConfig`](https://www.gatsbyjs.com/doc
 
     destructured object
 
-<<<<<<< HEAD
 -   ######
 
             `stage` string
@@ -11702,29 +11607,6 @@ See also the documentation for [`setWebpackConfig`](https://www.gatsbyjs.com/doc
 -   ######
 
             `actions` object
-=======
--   ###### `stage` string
-
-            The current build stage. One of 'develop', 'develop-html', 'build-javascript', or 'build-html'
-
--   ###### `getConfig` function
-
-            Returns the current webpack config
-
--   ###### `rules` object
-
-            A set of preconfigured webpack config rules
-
--   ###### `loaders` object
-
-            A set of preconfigured webpack config loaders
-
--   ###### `plugins` object
-
-            A set of preconfigured webpack config plugins
-
--   ###### `actions` object
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 #### Example
 
@@ -11830,13 +11712,9 @@ Run during the bootstrap phase. Plugins can use this to define a schema for thei
 
     destructured object
 
-<<<<<<< HEAD
 -   ######
 
             `Joi` Joi
-=======
--   ###### `Joi` Joi
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
             The instance of [Joi](https://joi.dev/) to define the schema
 
@@ -11903,13 +11781,9 @@ Many transformer plugins use this to add fields that take arguments.
 
     destructured object
 
-<<<<<<< HEAD
 -   ######
 
             `type` object
-=======
--   ###### `type` object
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
             Object containing `name` and `nodes`
 
@@ -12104,7 +11978,6 @@ Called after every page Gatsby server renders while building HTML so you can rep
 
     destructured object
 
-<<<<<<< HEAD
 -   ######
 
             `pathname` string
@@ -12144,33 +12017,6 @@ Called after every page Gatsby server renders while building HTML so you can rep
 -   ######
 
             `replacePostBodyComponents` function
-=======
--   ###### `pathname` string
-
-            The pathname of the page currently being rendered.
-
--   ###### `getHeadComponents` ReactNode[]
-
-            Returns the current `headComponents` array.
-
--   ###### `replaceHeadComponents` function
-
-            Takes an array of components as its first argument which replace the `headComponents` array which is passed to the `html.js` component. **WARNING** if multiple plugins implement this API it's the last plugin that "wins".
-
--   ###### `getPreBodyComponents` ReactNode[]
-
-            Returns the current `preBodyComponents` array.
-
--   ###### `replacePreBodyComponents` function
-
-            Takes an array of components as its first argument which replace the `preBodyComponents` array which is passed to the `html.js` component. **WARNING** if multiple plugins implement this API it's the last plugin that "wins".
-
--   ###### `getPostBodyComponents` ReactNode[]
-
-            Returns the current `postBodyComponents` array.
-
--   ###### `replacePostBodyComponents` function
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
             Takes an array of components as its first argument which replace the `postBodyComponents` array which is passed to the `html.js` component. **WARNING** if multiple plugins implement this API it's the last plugin that "wins".
 
@@ -12238,7 +12084,6 @@ Using this API over [`replaceRenderer`](https://www.gatsbyjs.com/docs/reference/
 
     destructured object
 
-<<<<<<< HEAD
 -   ######
 
             `pathname` string
@@ -12278,33 +12123,6 @@ Using this API over [`replaceRenderer`](https://www.gatsbyjs.com/docs/reference/
 -   ######
 
             `setBodyProps` function
-=======
--   ###### `pathname` string
-
-            The pathname of the page currently being rendered.
-
--   ###### `setHeadComponents` function
-
-            Takes an array of components as its first argument which are added to the `headComponents` array which is passed to the `html.js` component.
-
--   ###### `setHtmlAttributes` function
-
-            Takes an object of props which will spread into the `<html>` component.
-
--   ###### `setBodyAttributes` function
-
-            Takes an object of props which will spread into the `<body>` component.
-
--   ###### `setPreBodyComponents` function
-
-            Takes an array of components as its first argument which are added to the `preBodyComponents` array which is passed to the `html.js` component.
-
--   ###### `setPostBodyComponents` function
-
-            Takes an array of components as its first argument which are added to the `postBodyComponents` array which is passed to the `html.js` component.
-
--   ###### `setBodyProps` function
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
             Takes an object of data which is merged with other body props and passed to `html.js` as `bodyProps`.
 
@@ -12378,7 +12196,6 @@ Replace the default server renderer. This is useful for integration with Redux, 
 
     destructured object
 
-<<<<<<< HEAD
 -   ######
 
             `pathname` string
@@ -12430,41 +12247,6 @@ Replace the default server renderer. This is useful for integration with Redux, 
 -   ######
 
             `setBodyProps` function
-=======
--   ###### `pathname` string
-
-            The pathname of the page currently being rendered.
-
--   ###### `bodyComponent` ReactNode
-
-            The React element to be rendered as the page body
-
--   ###### `replaceBodyHTMLString` function
-
-            Call this with the HTML string you render. **WARNING** if multiple plugins implement this API it's the last plugin that "wins". TODO implement an automated warning against this.
-
--   ###### `setHeadComponents` function
-
-            Takes an array of components as its first argument which are added to the `headComponents` array which is passed to the `html.js` component.
-
--   ###### `setHtmlAttributes` function
-
-            Takes an object of props which will spread into the `<html>` component.
-
--   ###### `setBodyAttributes` function
-
-            Takes an object of props which will spread into the `<body>` component.
-
--   ###### `setPreBodyComponents` function
-
-            Takes an array of components as its first argument which are added to the `preBodyComponents` array which is passed to the `html.js` component.
-
--   ###### `setPostBodyComponents` function
-
-            Takes an array of components as its first argument which are added to the `postBodyComponents` array which is passed to the `html.js` component.
-
--   ###### `setBodyProps` function
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
             Takes an object of data which is merged with other body props and passed to `html.js` as `bodyProps`.
 
@@ -12518,7 +12300,6 @@ _Note:_ There is an equivalent hook in Gatsby's [Browser API](https://www.gatsby
 
     destructured object
 
-<<<<<<< HEAD
 -   ######
 
             `element` ReactNode
@@ -12528,13 +12309,6 @@ _Note:_ There is an equivalent hook in Gatsby's [Browser API](https://www.gatsby
 -   ######
 
             `props` object
-=======
--   ###### `element` ReactNode
-
-            The "Page" React Element built by Gatsby.
-
--   ###### `props` object
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
             Props object used by page.
 
@@ -12594,13 +12368,9 @@ _Note:_ There is an equivalent hook in Gatsby's [Browser API](https://www.gatsby
 
     destructured object
 
-<<<<<<< HEAD
 -   ######
 
             `element` ReactNode
-=======
--   ###### `element` ReactNode
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
             The "Root" React Element built by Gatsby.
 

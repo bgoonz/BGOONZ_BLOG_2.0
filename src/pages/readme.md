@@ -933,15 +933,7 @@ This page contains links that give the impression that some of the site contents
 
     Use the Gatsby CLI to create a new site, specifying the default starter.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
     ```consoleell
-=======
-    ```console
->>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
-=======
-    ```bash
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
     # create a new Gatsby site using the default starter
 
@@ -953,15 +945,7 @@ This page contains links that give the impression that some of the site contents
 
     Navigate into your new site's directory and start it up.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
     ```consoleell
-=======
-    ```console
->>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
-=======
-    ```bash
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
     cd my-default-starter/
 
@@ -6297,11 +6281,7 @@ punctuation: /[{}[\];(),.:]/
 
 Prism.languages.clike['class-name'],
 
-<<<<<<< HEAD
 { pattern: /(^|[^$\w\xa0-\uffff])(?!\s)[\_$A-Z\xA0-\uFFFF][<?:(?!\s]($\w\xA0-\uFFFF)>)\_(?=\.(?:prototype|constructor))/, lookbehind: !0 }
-=======
-{ pattern: /(^|[^$\w\xa0-\uffff])[?!\s](\_$A-Z\xA0-\uFFFF)[<?:(?!\s]($\w\xA0-\uFFFF)>)\_(?=\.(?:prototype|constructor))/, lookbehind: !0 }
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 ],
 
@@ -6359,11 +6339,7 @@ pattern:
 
 pattern:
 
-<<<<<<< HEAD
 /#?(?!\s)[\_$a-zA-Z\xA0-\uFFFF][<?:(?!\s]($\w\xA0-\uFFFF)>)_(?=\s_[=:]\s*(?:async\s*)?(?:\bfunction\b|(?:\((?:[^()]|\([^()]_\))_\)|(?!\s)[\_$a-zA-Z\xA0-\uFFFF][<?:(?!\s]($\w\xA0-\uFFFF)>)_)\s_=>))/,
-=======
-/#?[?!\s](\_$a-zA-Z\xA0-\uFFFF)[<?:(?!\s]($\w\xA0-\uFFFF)>)_(?=\s_[=:]\s*(?:async\s*)?(?:\bfunction\b|(?:\((?:[^()]|\([^()]_\))_\)|[?!\s](\_$a-zA-Z\xA0-\uFFFF)[<?:(?!\s]($\w\xA0-\uFFFF)>)_)\s_=>))/,
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 alias: 'function'
 
@@ -6373,11 +6349,7 @@ parameter: [
 
 {
 
-<<<<<<< HEAD
 pattern: /(function(?:\s+(?!\s)[\_$a-zA-Z\xA0-\uFFFF][<?:(?!\s]($\w\xA0-\uFFFF)>)_)?\s_\(\s*)(?!\s)(?:[^()\s]|\s+(?![\s)])|\([^()]*\))+(?=\s\*\))/,
-=======
-pattern: /[function(?:\s+(?!\s](\_$a-zA-Z\xA0-\uFFFF)[<?:(?!\s]($\w\xA0-\uFFFF)>)_)?\s_\(\s*)(?!\s)(?:[^()\s]|\s+(?![\s)])|\([^()]*\))+(?=\s\*\))/,
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 lookbehind: !0,
 
@@ -6387,11 +6359,7 @@ inside: Prism.languages.javascript
 
 {
 
-<<<<<<< HEAD
 pattern: /(^|[^$\w\xa0-\uffff])(?!\s)[\_$a-z\xA0-\uFFFF][<?:(?!\s]($\w\xA0-\uFFFF)>)_(?=\s_=>)/i,
-=======
-pattern: /(^|[^$\w\xa0-\uffff])[?!\s](\_$a-z\xA0-\uFFFF)[<?:(?!\s]($\w\xA0-\uFFFF)>)_(?=\s_=>)/i,
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 lookbehind: !0,
 
@@ -6405,11 +6373,7 @@ inside: Prism.languages.javascript
 
 pattern:
 
-<<<<<<< HEAD
 /((?:\b|\s|^)(?!(?:as|async|await|break|case|catch|class|const|continue|debugger|default|delete|do|else|enum|export|extends|finally|for|from|function|get|if|implements|import|in|instanceof|interface|let|new|null|of|package|private|protected|public|return|set|static|super|switch|this|throw|try|typeof|undefined|var|void|while|with|yield)(?![$\w\xA0-\uFFFF]))(?:(?!\s)[\_$a-zA-Z\xA0-\uFFFF][<?:(?!\s]($\w\xA0-\uFFFF)>)_\s_)\(\s*|\]\s*\(\s*)(?!\s)(?:[^()\s]|\s+(?![\s)])|\([^()]*\))+(?=\s*\)\s*\{)/,
-=======
-/((?:\b|\s|^)(?!(?:as|async|await|break|case|catch|class|const|continue|debugger|default|delete|do|else|enum|export|extends|finally|for|from|function|get|if|implements|import|in|instanceof|interface|let|new|null|of|package|private|protected|public|return|set|static|super|switch|this|throw|try|typeof|undefined|var|void|while|with|yield)(?![$\w\xA0-\uFFFF]))[?:(?!\s](\_$a-zA-Z\xA0-\uFFFF)[<?:(?!\s]($\w\xA0-\uFFFF)>)_\s_)\(\s*|\]\s*\(\s*)(?!\s)(?:[^()\s]|\s+(?![\s)])|\([^()]*\))+(?=\s*\)\s*\{)/,
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
 lookbehind: !0,
 
@@ -12368,11 +12332,7 @@ ReactNode
 Wrapped element
 
 #### Example
-<<<<<<< HEAD
  
-=======
-
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 ```js
 //
 
@@ -12435,11 +12395,7 @@ ReactNode
 Wrapped element
 
 #### Example
-<<<<<<< HEAD
  
-=======
-
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 ```js
 //
 

@@ -7,15 +7,9 @@
  */
 
 html {
-<<<<<<< HEAD
   font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
-=======
-    font-family: sans-serif; /* 1 */
-    -ms-text-size-adjust: 100%; /* 2 */
-    -webkit-text-size-adjust: 100%; /* 2 */
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 /**
@@ -23,11 +17,7 @@ html {
  */
 
 body {
-<<<<<<< HEAD
   margin: 0;
-=======
-    margin: 0;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 /* HTML5 display definitions
@@ -53,11 +43,7 @@ menu,
 nav,
 section,
 summary {
-<<<<<<< HEAD
   display: block;
-=======
-    display: block;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 /**
@@ -69,13 +55,8 @@ audio,
 canvas,
 progress,
 video {
-<<<<<<< HEAD
   display: inline-block; /* 1 */
   vertical-align: baseline; /* 2 */
-=======
-    display: inline-block; /* 1 */
-    vertical-align: baseline; /* 2 */
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 /**
@@ -84,13 +65,8 @@ video {
  */
 
 audio:not([controls]) {
-<<<<<<< HEAD
   display: none;
   height: 0;
-=======
-    display: none;
-    height: 0;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 /**
@@ -100,11 +76,7 @@ audio:not([controls]) {
 
 [hidden],
 template {
-<<<<<<< HEAD
   display: none;
-=======
-    display: none;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 /* Links
@@ -115,11 +87,7 @@ template {
  */
 
 a {
-<<<<<<< HEAD
   background-color: transparent;
-=======
-    background-color: transparent;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 /**
@@ -129,11 +97,7 @@ a {
 
 a:active,
 a:hover {
-<<<<<<< HEAD
   outline: 0;
-=======
-    outline: 0;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 /* Text-level semantics
@@ -144,11 +108,7 @@ a:hover {
  */
 
 abbr[title] {
-<<<<<<< HEAD
   border-bottom: 1px dotted;
-=======
-    border-bottom: 1px dotted;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 /**
@@ -157,11 +117,7 @@ abbr[title] {
 
 b,
 strong {
-<<<<<<< HEAD
   font-weight: bold;
-=======
-    font-weight: bold;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 /**
@@ -169,11 +125,7 @@ strong {
  */
 
 dfn {
-<<<<<<< HEAD
   font-style: italic;
-=======
-    font-style: italic;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 /**
@@ -182,13 +134,8 @@ dfn {
  */
 
 h1 {
-<<<<<<< HEAD
   font-size: 2em;
   margin: 0.67em 0;
-=======
-    font-size: 2em;
-    margin: 0.67em 0;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 /**
@@ -196,13 +143,8 @@ h1 {
  */
 
 mark {
-<<<<<<< HEAD
   background: #ff0;
   color: #000;
-=======
-    background: #ff0;
-    color: #000;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 /**
@@ -210,11 +152,7 @@ mark {
  */
 
 small {
-<<<<<<< HEAD
   font-size: 80%;
-=======
-    font-size: 80%;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 /**
@@ -223,7 +161,6 @@ small {
 
 sub,
 sup {
-<<<<<<< HEAD
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -236,20 +173,6 @@ sup {
 
 sub {
   bottom: -0.25em;
-=======
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
-}
-
-sup {
-    top: -0.5em;
-}
-
-sub {
-    bottom: -0.25em;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 /* Embedded content
@@ -260,11 +183,7 @@ sub {
  */
 
 img {
-<<<<<<< HEAD
   border: 0;
-=======
-    border: 0;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 /**
@@ -272,11 +191,7 @@ img {
  */
 
 svg:not(:root) {
-<<<<<<< HEAD
   overflow: hidden;
-=======
-    overflow: hidden;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 /* Grouping content
@@ -287,11 +202,7 @@ svg:not(:root) {
  */
 
 figure {
-<<<<<<< HEAD
   margin: 1em 40px;
-=======
-    margin: 1em 40px;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 /**
@@ -299,13 +210,8 @@ figure {
  */
 
 hr {
-<<<<<<< HEAD
   box-sizing: content-box;
   height: 0;
-=======
-    box-sizing: content-box;
-    height: 0;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 /**
@@ -313,11 +219,7 @@ hr {
  */
 
 pre {
-<<<<<<< HEAD
   overflow: auto;
-=======
-    overflow: auto;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 /**
@@ -328,12 +230,8 @@ code,
 kbd,
 pre,
 samp {
-<<<<<<< HEAD
   font-family: monospace, monospace;
   font-size: 1em;
-=======
-    font-size: 1em;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 /* Forms
@@ -356,15 +254,9 @@ input,
 optgroup,
 select,
 textarea {
-<<<<<<< HEAD
   color: inherit; /* 1 */
   font: inherit; /* 2 */
   margin: 0; /* 3 */
-=======
-    color: inherit; /* 1 */
-    font: inherit; /* 2 */
-    margin: 0; /* 3 */
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 /**
@@ -372,11 +264,7 @@ textarea {
  */
 
 button {
-<<<<<<< HEAD
   overflow: visible;
-=======
-    overflow: visible;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 /**
@@ -388,11 +276,7 @@ button {
 
 button,
 select {
-<<<<<<< HEAD
   text-transform: none;
-=======
-    text-transform: none;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 /**
@@ -407,13 +291,8 @@ button,
 html input[type="button"], /* 1 */
 input[type="reset"],
 input[type="submit"] {
-<<<<<<< HEAD
   -webkit-appearance: button; /* 2 */
   cursor: pointer; /* 3 */
-=======
-    -webkit-appearance: button; /* 2 */
-    cursor: pointer; /* 3 */
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 /**
@@ -422,11 +301,7 @@ input[type="submit"] {
 
 button[disabled],
 html input[disabled] {
-<<<<<<< HEAD
   cursor: default;
-=======
-    cursor: default;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 /**
@@ -435,13 +310,8 @@ html input[disabled] {
 
 button::-moz-focus-inner,
 input::-moz-focus-inner {
-<<<<<<< HEAD
   border: 0;
   padding: 0;
-=======
-    border: 0;
-    padding: 0;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 /**
@@ -450,11 +320,7 @@ input::-moz-focus-inner {
  */
 
 input {
-<<<<<<< HEAD
   line-height: normal;
-=======
-    line-height: normal;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 /**
@@ -465,17 +331,10 @@ input {
  * 2. Remove excess padding in IE 8/9/10.
  */
 
-<<<<<<< HEAD
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
-=======
-input[type='checkbox'],
-input[type='radio'] {
-    box-sizing: border-box; /* 1 */
-    padding: 0; /* 2 */
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 /**
@@ -484,15 +343,9 @@ input[type='radio'] {
  * decrement button to change from `default` to `text`.
  */
 
-<<<<<<< HEAD
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   height: auto;
-=======
-input[type='number']::-webkit-inner-spin-button,
-input[type='number']::-webkit-outer-spin-button {
-    height: auto;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 /**
@@ -500,15 +353,9 @@ input[type='number']::-webkit-outer-spin-button {
  * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
  */
 
-<<<<<<< HEAD
 input[type="search"] {
   -webkit-appearance: textfield; /* 1 */
   box-sizing: content-box; /* 2 */
-=======
-input[type='search'] {
-    -webkit-appearance: textfield; /* 1 */
-    box-sizing: content-box; /* 2 */
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 /**
@@ -517,15 +364,9 @@ input[type='search'] {
  * padding (and `textfield` appearance).
  */
 
-<<<<<<< HEAD
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
-=======
-input[type='search']::-webkit-search-cancel-button,
-input[type='search']::-webkit-search-decoration {
-    -webkit-appearance: none;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 /**
@@ -533,15 +374,9 @@ input[type='search']::-webkit-search-decoration {
  */
 
 fieldset {
-<<<<<<< HEAD
   border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
-=======
-    border: 1px solid #c0c0c0;
-    margin: 0 2px;
-    padding: 0.35em 0.625em 0.75em;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 /**
@@ -550,13 +385,8 @@ fieldset {
  */
 
 legend {
-<<<<<<< HEAD
   border: 0; /* 1 */
   padding: 0; /* 2 */
-=======
-    border: 0; /* 1 */
-    padding: 0; /* 2 */
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 /**
@@ -564,11 +394,7 @@ legend {
  */
 
 textarea {
-<<<<<<< HEAD
   overflow: auto;
-=======
-    overflow: auto;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 /**
@@ -577,11 +403,7 @@ textarea {
  */
 
 optgroup {
-<<<<<<< HEAD
   font-weight: bold;
-=======
-    font-weight: bold;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 /* Tables
@@ -592,20 +414,11 @@ optgroup {
  */
 
 table {
-<<<<<<< HEAD
   border-collapse: collapse;
   border-spacing: 0;
-=======
-    border-collapse: collapse;
-    border-spacing: 0;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }
 
 td,
 th {
-<<<<<<< HEAD
   padding: 0;
-=======
-    padding: 0;
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 }

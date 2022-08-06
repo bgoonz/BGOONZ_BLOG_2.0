@@ -15,21 +15,13 @@ excerpt: >-
 
 The `node` command is the one we use to run our Node.js scripts:
 
-<<<<<<< HEAD
 ```console
-=======
-```bash
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 node script.js
 ```
 
 If we omit the filename, we use it in REPL mode:
 
-<<<<<<< HEAD
 ```console
-=======
-```bash
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 node
 ```
 
@@ -37,11 +29,7 @@ node
 
 If you try it now in your terminal, this is what happens:
 
-<<<<<<< HEAD
 ```console
-=======
-```bash
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 ❯ node
 >
 ```
@@ -54,11 +42,7 @@ The REPL is waiting for us to enter some JavaScript code, to be more precise.
 
 Start simple and enter
 
-<<<<<<< HEAD
 ```console
-=======
-```bash
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 > console.log('test')
 test
 undefined

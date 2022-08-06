@@ -107,11 +107,7 @@ hashDirIn(pathB);
 
 > will replace any spaces in file names with an underscore!
 
-<<<<<<< HEAD
 ```console
-=======
-```bash
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
 
  for file in *; do mv "$file" `echo $file | tr ' ' '_'` ; done
   ## TAKING IT A STEP FURTHER:

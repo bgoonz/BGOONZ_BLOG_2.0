@@ -41,7 +41,7 @@ In order to focus on an element in our DOM, we need to tell React which element 
 
 Change the `import` statement at the top of `Todo.js` so that it includes `useRef`:
 
-```js
+```
 import React, { useRef, useState } from "react";
 ```
 
@@ -86,13 +86,13 @@ To use our refs for their intended purpose, we need to import another React hook
 
 Change the import statement of `Todo.js` again to add `useEffect`:
 
-```js
+```
 import React, { useEffect, useRef, useState } from "react";
 ```
 
 `useEffect()` takes a function as an argument; this function is executed after the component renders. Let's see this in action; put the following `useEffect()` call just above the `return` statement in the body of `Todo()`, and pass into it a function that logs the words "side effect" to your console:
 
-```js
+```
 useEffect(() => {
   console.log("side effect");
 });
@@ -120,7 +120,7 @@ Now that we know our `useEffect()` hook works, we can manage focus with it. As a
 
 Update your existing `useEffect()` hook so that it reads like this:
 
-```js
+```
 useEffect(() => {
   if (isEditing) {
     editFieldRef.current.focus();
@@ -136,7 +136,7 @@ Try it now, and you'll see that when you click an "Edit" button, focus moves to 
 
 At first glance, getting React to move focus back to our "Edit" button when the edit is saved or cancelled appears deceptively easy. Surely we could add a condition to our `useEffect` to focus on the edit button if `isEditing` is `false`? Let's try it now — update your `useEffect()` call like so:
 
-```js
+```
 useEffect(() => {
   if (isEditing) {
     editFieldRef.current.focus();
@@ -156,7 +156,7 @@ We need to refactor our approach so that focus changes only when `isEditing` cha
 
 In order to meet our refined criteria, we need to know not just the value of `isEditing`, but also _when that value has changed_. In order to do that, we need to be able to read the previous value of the `isEditing` constant. Using pseudocode, our logic should be something like this:
 
-```js
+```
 if (wasNotEditingBefore && isEditingNow) {
   focusOnEditField()
 }
@@ -170,7 +170,7 @@ The React team had discussed [ways to get a component's previous state](https://
 
 Paste the following code near the top of `Todo.js`, above your `Todo()` function.
 
-```js
+```
 function usePrevious(value) {
   const ref = useRef();
   useEffect(() => {
@@ -188,7 +188,7 @@ const wasEditing = usePrevious(isEditing);
 
 With this constant, we can update our `useEffect()` hook to implement the pseudocode we discussed before — update it as follows:
 
-```js
+```
 useEffect(() => {
   if (!wasEditing && isEditing) {
     editFieldRef.current.focus();
@@ -215,13 +215,13 @@ Sometimes, the place we want to send our focus to is obvious: when we toggled ou
 
 Import the `useRef()` and `useEffect()` hooks into `App.js` — you'll need them both below:
 
-```js
+```
 import React, { useState, useRef, useEffect } from "react";
 ```
 
 Then declare a new ref inside the `App()` function. Just above the `return` statement is a good place:
 
-```js
+```
 const listHeadingRef = useRef(null);
 ```
 
@@ -231,7 +231,7 @@ Heading elements like our `<h2>` are not usually focusable. This isn't a problem
 
 Let's add the `tabindex` attribute — written as `tabIndex` in JSX — to the heading above our list of tasks, along with our `headingRef`:
 
-```jsx
+```
 <h2 id="list-heading" tabIndex="-1" ref={listHeadingRef}>
   {headingText}
 </h2>
@@ -243,7 +243,7 @@ Let's add the `tabindex` attribute — written as `tabIndex` in JSX — to the h
 
 We want to focus on the element associated with our ref (via the `ref` attribute) only when our user deletes a task from their list. That's going to require the `usePrevious()` hook we already used earlier on. Add it to the top of your `App.js` file, just below the imports:
 
-```js
+```
 function usePrevious(value) {
   const ref = useRef();
   useEffect(() => {
@@ -269,7 +269,7 @@ Now that we've stored how many tasks we previously had, we can set up a `useEffe
 
 Add the following into the body of your `App()` function, just below your previous additions:
 
-```js
+```
 useEffect(() => {
   if (tasks.length - prevTaskLength === -1) {
     listHeadingRef.current.focus();
