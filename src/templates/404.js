@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import * as React from "react"
 import {Link} from "gatsby"
 
@@ -56,3 +57,15 @@ const NotFoundPage = () => {
 
 export default NotFoundPage
 
+=======
+import React from 'react'
+
+const NotFoundPage = () => (
+      <div>
+            <h1>NOT FOUND</h1>
+            <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+      </div>
+)
+
+export default NotFoundPage
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2

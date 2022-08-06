@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
 backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
@@ -14,6 +17,7 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
+<<<<<<< HEAD
       - {label: "Body", name: "body", widget: "markdown"}
 =======
 # Configuration file for NetlifyCMS visual editor
@@ -201,3 +205,6 @@ collections:
                 hint: 'Short description, will be shown in page listing (ie, listing all posts with this tag)'
             }
 >>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
+=======
+      - {label: "Body", name: "body", widget: "markdown"}
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2

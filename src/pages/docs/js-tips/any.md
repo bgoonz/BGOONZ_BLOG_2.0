@@ -112,3 +112,50 @@ In this example, we have a function that fetches an image and returns a blob. We
     .catch(e => {
       console.log(e.message);
     });
+<<<<<<< HEAD:src/pages/docs/js-tips/any.md
+=======
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.any">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+<span class="small">#sec-promise.any</span></a></td></tr></tbody></table>
+
+`any`
+
+85
+
+85
+
+79
+
+No
+
+No
+
+14
+
+85
+
+85
+
+79
+
+No
+
+14
+
+No
+
+## See also
+
+-   [`Promise`](../promise)
+-   [`Promise.allSettled()`](allsettled)
+-   [`Promise.all()`](all)
+-   [`Promise.race()`](race)
+
+© 2005-2021 MDN contributors.  
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/any" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/any</a>
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2:notes/JS-DOC/any.md

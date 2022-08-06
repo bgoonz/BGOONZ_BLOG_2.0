@@ -8,6 +8,11 @@ export default class Header extends React.Component {
     render() {
         return (
             <header id="masthead" className="site-header outer">
+<<<<<<< HEAD
+=======
+                {/* <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" /> */}
+            
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
                 <br />
                 <div className="inner">
                     <div className="site-header-inside">
@@ -79,6 +84,7 @@ export default class Header extends React.Component {
                         )}
                     </div>
                 </div>
+<<<<<<< HEAD
                 <>
                     <div id="sb-search-input-example">
                         <div className="sb-content sb-hero">
@@ -101,6 +107,38 @@ export default class Header extends React.Component {
                         <style
                             dangerouslySetInnerHTML={{
                                 __html: "\n        @font-face {\n            font-family: font-sb;\n            src: url(https://api.searchbar.org/fonts/sb.eot?39450784);\n            src: url(https://api.searchbar.org/fonts/sb.eot?39450784#iefix) format('embedded-opentype'), url(https://api.searchbar.org/fonts/sb.woff?39450784) format('woff'), url(https://api.searchbar.org/fonts/?39450784) format('truetype'), url(https://api.searchbar.org/fonts/sb.svg?39450784#font-sb) format('svg');\n            font-weight: 400;\n            font-style: normal\n        }\n\n        #sb-search-input-example {\n            position: static;\n            top: 0;\n            width: 100%;\n            height: 90px;\n            place-content: center;\n            display: flex;\n        }\n\n        #sb-search-input-example a, #sb-search-input-example button, #sb-search-input-example div, #sb-search-input-example em, #sb-search-input-example h1, #sb-search-input-example h2, #sb-search-input-example h3, #sb-search-input-example h4, #sb-search-input-example h5, #sb-search-input-example input, #sb-search-input-example p, #sb-search-input-example span {\n            all: initial;\n            font-family: Roboto, Helvetica, Arial;\n            font-size: 0px;\n        }\n\n        #sb-search-input-example div, #sb-search-input-example h1, #sb-search-input-example h2, #sb-search-input-example h3, #sb-search-input-example h4, #sb-search-input-example h5, #sb-search-input-example p {\n            display: block\n        }\n\n        #sb-search-input-example div, #sb-search-input-example em, #sb-search-input-example h1, #sb-search-input-example h2, #sb-search-input-example h3, #sb-search-input-example h4, #sb-search-input-example h5, #sb-search-input-example p, #sb-search-input-example span {\n            font-size: inherit;\n            font-weight: inherit;\n            text-transform: inherit;\n            color: inherit\n        }\n\n        #sb-search-input-example a, #sb-search-input-example a * {\n            cursor: pointer;\n            user-select: none\n        }\n\n        #sb-search-input-example * {\n            box-sizing: border-box\n        }\n\n\n        #sb-search-input-example .sb-content {\n            background: rgba(238, 238, 238, .82);\n            backdrop-filter: blur(30px);\n            -webkit-backdrop-filter: blur(30px);\n            border-radius: 46px;\n            display: block;\n            text-align: left;\n            width: 100%;\n            top: calc(120px - 92px);\n            margin-bottom: 0;\n            overflow: hidden;\n            z-index: 1000\n        }\n\n        #sb-search-input-example .sb-content.sb-hero {\n            top: 0px;\n            max-width: 660px;\n            height: auto;\n            z-index: 800;\n            background-color: rgba(202, 202, 202, 0.2);\n            -webkit-backdrop-filter: blur(30px);\n            backdrop-filter: blur(30px)\n        }\n\n        #sb-search-input-example .sb-search {\n            background: rgba(255, 255, 255, 0.7);\n            backdrop-filter: blur(30px);\n            -webkit-backdrop-filter: blur(30px);\n            border-radius: 116px;\n            border: 0 none;\n            height: 58px;\n            width: auto;\n            margin: 16px;\n            display: flex;\n            z-index: 999;\n            position: relative;\n        }\n\n        #sb-search-input-example .sb-search.sb-hero {\n            padding: 0 0 0 16px;\n            background-color: white;\n        }\n\n        #sb-search-input-example .sb-input {\n            align-items: center;\n            display: flex;\n            height: 100%;\n            width: 100%;\n            border-radius: 100%;\n            padding: 0 0 0 8px\n        }\n\n        #sb-search-input-example input {\n            outline: 0;\n            color: #007cff;\n            background-color: rgba(0, 0, 0, 0);\n            -webkit-appearance: none\n        }\n\n        #sb-search-input-example ::placeholder {\n            color: #8a8a8a;\n            opacity: 1\n\n        }\n\n        #sb-search-input-example input[type=search]::-ms-clear {\n            display: none;\n            width: 0;\n            height: 0\n        }\n\n        #sb-search-input-example input[type=search]::-ms-reveal {\n            display: none;\n            width: 0;\n            height: 0\n        }\n\n        #sb-search-input-example input[type=search]::-webkit-search-cancel-button, #sb-search-input-example input[type=search]::-webkit-search-decoration, #sb-search-input-example input[type=search]::-webkit-search-results-button, #sb-search-input-example input[type=search]::-webkit-search-results-decoration {\n            display: none\n        }\n\n        #sb-search-input-example .sb-search-field {\n            border: 0 none;\n            height: 100%;\n            width: 100%;\n            font-size: 18px;\n            display: block\n        }\n\n        #sb-search-input-example .sb-icon {\n            font: normal normal 400 26px font-sb;\n            line-height: 26px;\n            align-items: center;\n            padding: 10px;\n            speak: none;\n            display: inline-block;\n            text-decoration: inherit;\n            text-align: center;\n            text-transform: none;\n            cursor: pointer;\n            margin: 0;\n        }\n\n        #sb-search-input-example .sb-search-icon {\n            box-sizing: border-box;\n            border: 0px;\n            margin-right: 7px;\n            align-items: center;\n            border-radius: 50%;\n            background: #007cff;\n            color: #fff;\n            cursor: pointer;\n            display: flex;\n        }\n\n        @media (prefers-color-scheme: dark) {\n\n            #sb-search-input-example .sb-search.sb-hero {\n                background-color: rgba(0, 0, 0, 0.7);\n            }\n\n            #sb-search-input-example .sb-content {\n                background: rgba(20, 20, 20, .8);\n            }\n\n\n            #sb-search-input-example .sb-search {\n                background: rgba(0, 0, 0, 0.7);\n            }\n\n            #sb-search-input-example .sb-icon {\n                color: #fff;\n            }\n\n            #sb-search-input-example input {\n                outline: 0;\n                color: #5eb2fe;\n                -webkit-appearance: none;\n            }\n\n            #sb-search-input-example ::placeholder {\n                color: #b5b5b5;\n                opacity: 1;\n            }\n\n        }\n\t"
+=======
+
+                <div>
+                    <div id="sb-search-example" >
+
+                        {/* style={{
+                        position: 'fixed',
+                        top: '20px',
+                        border: 0,
+                        left: '100px',
+                    }} */}
+                        <div className="sb-search-icon" id="myCustomSearchButtonID">
+                            <i className="sb-icon"></i>
+                            <p>Search</p>
+                        </div>
+                    </div>
+                    <a className="github-corner" href="https://github.com/bgoonz/BGOONZ_BLOG_2.0" aria-label="View source on Github">
+                        <svg
+                            aria-hidden="true"
+                            width={40}
+                            height={40}
+                            viewBox="0 0 250 250"
+                            style={{
+                                zIndex: 100000,
+                                fill: 'black',
+                                color: '#fff',
+                                position: 'fixed',
+                                top: '0px',
+                                border: 0,
+                                left: '0px',
+                                transform: 'scale(-1.5, 1.5)'
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
                             }}
                         />
                     </div>
