@@ -1,0 +1,11 @@
+<<<<<<< HEAD
+User-Agent: *
+Disallow: 
+Allow: /https://master--trusting-dijkstra-4d3b17.netlify.app/
+=======
+User-agent: Googlebot
+Disallow: /nogooglebot/
+User-agent: *
+Allow: /
+Sitemap: https://bgoonz-blog.netlify.app/sitemap.xml
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
