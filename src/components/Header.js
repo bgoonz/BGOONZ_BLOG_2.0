@@ -91,7 +91,8 @@ export default class Header extends React.Component {
                         )}
                     </div>
                 </div>
-                <>
+
+                <div id="autocomplete">
                     <div className="sb-input">
                         <input
                             className="sb-search-field"
@@ -103,8 +104,7 @@ export default class Header extends React.Component {
                         />
                         <i className="sb-icon"></i>
                     </div>
-                    <div id="autocomplete"></div>
-                </>
+                </div>
 
                 <a className="github-corner" href="https://github.com/bgoonz/BGOONZ_BLOG_2.0" aria-label="View source on Github">
                     <svg
