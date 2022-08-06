@@ -95,3 +95,49 @@ The following code concatenates nested arrays and demonstrates retention of refe
 
     console.log(numbers);
     // results in [[1, 4], 2, [3]]
+<<<<<<< HEAD:src/pages/docs/js-tips/concat.md
+=======
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.concat">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+<span class="small">#sec-array.prototype.concat</span></a></td></tr></tbody></table>
+
+`concat`
+
+1
+
+12
+
+1
+
+5.5
+
+4
+
+1
+
+1
+
+18
+
+4
+
+10.1
+
+1
+
+1.0
+
+## See also
+
+-   [`push`](push) / [`pop`](pop) — add/remove elements from the end of the array
+-   [`unshift`](unshift) / [`shift`](shift) — add/remove elements from the beginning of the array
+-   [`splice`](splice) — add/remove elements from the specified location of the array
+-   [`String.prototype.concat()`](../string/concat)
+-   [`Symbol.isConcatSpreadable`](../symbol/isconcatspreadable) - control flattening.
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat</a>
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2:notes/JS-DOC/concat.md
