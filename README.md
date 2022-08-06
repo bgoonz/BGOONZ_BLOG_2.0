@@ -2,7 +2,6 @@
 
 ### [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app)
 
-
 ### [CHANGELOG](./CHANGELOG.md)
 
 ##### [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app) [⇨**Cloudfare-Backup**⇦](https://bgoonz-blog-2-0.pages.dev/) [⇨**search**⇦](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) [⇨**Backup Repo Deploy**⇦](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) [⇨**Github pages**⇦](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) [⇨**Go To Site Wiki**⇦](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki) [⇨**Gatsby Cloud Version**⇦](https://bgoonzblog20master.gatsbyjs.io/) [⇨**Vercel Version**⇦](https://bgoonz-blog-2-0.vercel.app/) [⇨**Cloudfare-Domain**⇦](www.webdevhub.us) [⇨**gh-pages**⇦](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) [⇨**backup netlify deploy**⇦](https://bgoonz-blog20-backup.netlify.app/)
@@ -19,6 +18,260 @@
 ![GitHub visitors](https://visitor-badge-reloaded.herokuapp.com/badge?page_id=bgoonz.visitor.badge.reloaded&color=00bbbb&style=for-the-badge&logo=github)
 
 ---
+### Stable Deploys
+
+<details>
+
+<summary>Stable Deploys & Links To Remember</summary>
+
+- [stable 8-13-2021](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/0c09a707f4bfddd974a31d97a4f8d716f1858ef8) or [or maybe](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/68fba78e36fffcf21288ea0e90e1075bf31b2a82)
+
+- [Stable September 11](https://github.com/side-projects-42/BGOONZ_BLOG_2.0)
+
+- [October Stable](https://github.com/Web-Dev-Collaborative/october-stable)
+
+- [November 2021 stable](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/9ae5da5813cc9b48d2a57c84cd32cf4309078524)
+
+- [Late November Stable](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/40ecc95f000a848710c39e166961b8da7fca306b)
+
+- [December](https://github.com/bgoonz/BGOONZ_BLOG_2.0/tree/fc4a6ba1d61a3ef0b893cc5a44e41672547a3cc6)
+
+- [Late December](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/848a8505eece492bfd9856eb63bd4acbee8bced6)
+
+- [Late Febuary](https://deploy-preview-1697--bgoonz-blog.netlify.app/)
+- [Late January](https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1447)
+
+- [Good stable point](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/90f70928a145c8a784899baf62efc2a0d5697bf4)
+
+- [Stable March 13th 2022](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/c3f30229ac3dcd19ff54798227ce065c216e0c11)
+
+- [Stable March 13th 2022](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/99db7b97282d7190556b2a1b1ac61d6d9c67f970)
+
+[netlify-deploy-preview](https://deploy-preview-2280--bgoonz-blog.netlify.app/docs/tools/)
+
+- [May fix](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/736d38cdcdd3692d6a3bf1d5485ac2b0a3824d02)
+<https://6272b75c7b3c4c0009cacd01--bgoonz-blog.netlify.app/>
+
+- [Syntax hilighting working most recent](https://github.com/bgoonz/BGOONZ_BLOG_2.0/tree/db4d36067c1483c079389f1bd0e456c473c56710)
+
+- [FINALLY FIXED](https://62b5863dd06870000889c5cf--bgoonz-blog.netlify.app/)
+- [deploy](https://62b5863dd06870000889c5cf--bgoonz-blog.netlify.app/)
+
+- [Good deploy early Aug](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/a6bb13adf39305b7292a88bb1b37bb4bb2e5e76c)
+
+---
+
+#### Things to remember
+
+- [Algolia Search UI](https://www.algolia.com/interface-demos/6ed0c3de-f9e4-4cc8-a7b2-c6c7c979cc5e)
+- [Most recent stable commit](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/2448c20614bfef5491240d7da5b5e5873db8b586)
+- [sitemap](https://www.xml-sitemaps.com/download/bgoonz-blog.netlify.app-ee43723d7/sitemap.xml?view=1)
+- [initial commit](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/e8f12effd461b560b366ee0bde5231f2c1ce0a4c)
+- [Static Html Version](https://github.com/Archive-42/bgoonz-blog-static)
+- [commit pages](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commits/master?after=496dfce7e627bc81c80f7c0b5c41ecf420500b4a+34&branch=master)
+- [alt blog contact page](https://bgoonz-blog-v3-0.netlify.app/contact/)
+- [Resource Archive](https://resourcerepo2.netlify.app/)
+- [starter](https://codesandbox.io/s/ecstatic-wozniak-gj31v?autoresize=1&expanddevtools=1&fontsize=12&hidenavigation=1&theme=dark)
+- [Instant Search Demo](https://codesandbox.io/s/magical-davinci-l4hq6)
+- [midway-commit](https://github.com/bgoonz/BGOONZ_BLOG_2.0/tree/92d88002bebcde66b47d8109222ac62c64fa9909)
+- [blog2.0 backups](https://gist.github.com/bgoonz/68203bca236305d93d75e87533c7e8b8)
+- [backup repo](https://github.com/bgoonz/BGOONZ_BLOG_2.0)
+- [Bookmark website](https://github.com/side-projects-42/superb-celery)
+- [stable stackbit](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/69a617bbce1113e65390d90e0085be422e7f23e1)
+- [repl.it for questions](https://comments-3.bgoonz.repl.co/)
+- [rotate pages](https://random-static-html-deploys.netlify.app/rotate.html)
+- [More widgets](https://webdevhub-1.disqus.com/)
+![validation-screenshot](https://i.imgur.com/Gnel8uY.png)
+
+<script async src="//jsfiddle.net/bgoonz/xdo0ygf2/embed/result/"></script>
+
+- [web archive feed](https://archive.org/services/collection-rss.php?collection=books&query=%28%28openlibrary_edition%3A%2A%20OR%20sponsor%3AGoogle%20OR%20collection%3Adigitallibraryindia%29%20AND%20mediatype%3Atexts%20AND%20-repub_state%3A%28%27-2%27%20OR%20%27-1%27%20OR%200%20OR%2010%20OR%2011%20OR%2012%20OR%2013%20OR%2018%29%29%20AND%20-mediatype%3Acollection)
+- [Blog starter](https://github.com/Portfolio-Projects42/BLOG2.oStarter)
+
+<iframe src="https://trinket.io/embed/python/40e4c71864" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+Search feature
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="OJxPJrr" data-user="bgoonz" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/bgoonz/pen/OJxPJrr">
+  Search Box</a> by Bryan C Guner (<a href="https://codepen.io/bgoonz">@bgoonz</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+- [http://plnkr.co/account/plunks](http://plnkr.co/account/plunks)
+- [https://1drv.ms/b/s!AkGiZ9n9CRDSquIDCW3sdtgIghzpeg?e=GcgN10](https://1drv.ms/b/s!AkGiZ9n9CRDSquIDCW3sdtgIghzpeg?e=GcgN10)
+- [https://a.familypromiseservicetracker.dev/](https://a.familypromiseservicetracker.dev/)
+- [https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js%22%3E%3C/script%3E](https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js%22%3E%3C/script%3E)
+- [https://angel.co/u/bryan-guner](https://angel.co/u/bryan-guner)
+- [https://app.archbee.io/public/lI1AR-3-Ys9iITwuhct3i/treT9kilaJkzSjozhixGi](https://app.archbee.io/public/lI1AR-3-Ys9iITwuhct3i/treT9kilaJkzSjozhixGi)
+- [https://app.contentful.com/spaces/lelpu0ihaz11/assets?id=MocOPmmNliLn6PPv](https://app.contentful.com/spaces/lelpu0ihaz11/assets?id=MocOPmmNliLn6PPv)
+- [https://app.netlify.com/user/settings#profile](https://app.netlify.com/user/settings#profile)
+- [https://aws.amazon.com/](https://aws.amazon.com/)
+- [https://azure.microsoft.com/en-in/](https://azure.microsoft.com/en-in/)
+- [https://babeljs.io/](https://babeljs.io/)
+- [https://bg-portfolio.netlify.app/](https://bg-portfolio.netlify.app/)
+- [https://bgoonz-blog.netlify.app/](https://bgoonz-blog.netlify.app/)
+- [https://bgoonz-blog.netlify.app/docs/interact/](https://bgoonz-blog.netlify.app/docs/interact/)
+- [https://bgoonz-blog.netlify.app/docs/interact/other-sites/](https://bgoonz-blog.netlify.app/docs/interact/other-sites/)
+- [https://bgoonz-blog.netlify.app/docs/interact/video-chat/](https://bgoonz-blog.netlify.app/docs/interact/video-chat/)
+- [https://bgoonz-blog.netlify.app/docs/tools/](https://bgoonz-blog.netlify.app/docs/tools/)
+- [https://bgoonzgist.netlify.app/](https://bgoonzgist.netlify.app/)
+- [https://bitbucket.org/bgoonz/](https://bitbucket.org/bgoonz/)
+- [https://bryan-guner.gitbook.io/lambda-labs/navigation/roadmap](https://bryan-guner.gitbook.io/lambda-labs/navigation/roadmap)
+- [https://bryan-guner.gitbook.io/my-docs/](https://bryan-guner.gitbook.io/my-docs/)
+- [https://bryan-guner.gitbook.io/my-docs/v/electrical-engineering/](https://bryan-guner.gitbook.io/my-docs/v/electrical-engineering/)
+- [https://bryan-guner.gitbook.io/my-docs/v/lambda-labs/](https://bryan-guner.gitbook.io/my-docs/v/lambda-labs/)
+- [https://bryan-guner.gitbook.io/web-dev-hub-docs/](https://bryan-guner.gitbook.io/web-dev-hub-docs/)
+- [https://bryanguner.medium.com/](https://bryanguner.medium.com/)
+- [https://cloud.google.com/](https://cloud.google.com/)
+- [https://codepen.io/bgoonz](https://codepen.io/bgoonz)
+- [https://d3js.org/](https://d3js.org/)
+- [https://dev.to/bgoonz](https://dev.to/bgoonz)
+- [https://developer.mozilla.org/en-US/docs/Web/JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [https://developers.google.com/profile/u/100803355943326309646?utm_source=developers.google.com](https://developers.google.com/profile/u/100803355943326309646?utm_source=developers.google.com)
+- [https://dribbble.com/bgoonz4242?onboarding=true](https://dribbble.com/bgoonz4242?onboarding=true)
+- [https://drive.google.com/drive/folders/1USAQtiQ3jLm3fiRCxIm4TEkWGlq4fO6j?usp=sharing](https://drive.google.com/drive/folders/1USAQtiQ3jLm3fiRCxIm4TEkWGlq4fO6j?usp=sharing)
+- [https://ds-algo-official.netlify.app/](https://ds-algo-official.netlify.app/)
+- [https://ds-algo-official.netlify.app/sitemap.html](https://ds-algo-official.netlify.app/sitemap.html)
+- [https://ds-algo-official.netlify.app/sitemap.xml](https://ds-algo-official.netlify.app/sitemap.xml)
+- [https://edabit.com/user/dsRcx6yCwAgYwZbRB](https://edabit.com/user/dsRcx6yCwAgYwZbRB)
+- [https://electrical-computerengineering.tcnj.edu/](https://electrical-computerengineering.tcnj.edu/)
+- [https://emberjs.com/](https://emberjs.com/)
+- [https://expressjs.com/](https://expressjs.com/)
+- [https://familypromise.org/](https://familypromise.org/)
+- [https://firebase.google.com/](https://firebase.google.com/)
+- [https://forthebadge.com/](https://forthebadge.com/)
+- [https://frontendmasters.com/guides/front-end-handbook/2019/](https://frontendmasters.com/guides/front-end-handbook/2019/)
+- [https://getbootstrap.com/](https://getbootstrap.com/)
+- [https://giphy.com/channel/bryanguner](https://giphy.com/channel/bryanguner)
+- [https://git-scm.com/](https://git-scm.com/)
+- [https://gitee.com/bgoonz](https://gitee.com/bgoonz)
+- [https://giters.com/bgoonz?page=6](https://giters.com/bgoonz?page=6)
+- [https://githtmlpreview.netlify.app/](https://githtmlpreview.netlify.app/)
+- [https://github.com/bgoonz/random-static-html-page-deploy](https://github.com/bgoonz/random-static-html-page-deploy)
+- [https://github.com/bgoonz/React-movie-app](https://github.com/bgoonz/React-movie-app)
+- [https://github.com/bgoonz/react-redux-medium-clone](https://github.com/bgoonz/react-redux-medium-clone)
+- [https://github.com/bgoonz/react-redux-notes-v5](https://github.com/bgoonz/react-redux-notes-v5)
+- [https://github.com/bgoonz/react-redux-registration-login-example](https://github.com/bgoonz/react-redux-registration-login-example)
+- [https://github.com/bgoonz/React_Notes_V3](https://github.com/bgoonz/React_Notes_V3)
+- [https://github.com/bgoonz/Recursion-Practice-Website](https://github.com/bgoonz/Recursion-Practice-Website)
+- [https://github.com/bgoonz/Regex-and-Express-JS](https://github.com/bgoonz/Regex-and-Express-JS)
+- [https://github.com/bgoonz/repo-utils](https://github.com/bgoonz/repo-utils)
+- [https://github.com/bgoonz/resume-cv-portfolio-samples](https://github.com/bgoonz/resume-cv-portfolio-samples)
+- [https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering](https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering)
+- [https://github.com/bgoonz/scope-closure-context](https://github.com/bgoonz/scope-closure-context)
+- [https://github.com/bgoonz/Shell-Script-Practice](https://github.com/bgoonz/Shell-Script-Practice)
+- [https://github.com/bgoonz/site-analysis](https://github.com/bgoonz/site-analysis)
+- [https://github.com/bgoonz/sorting-algorithms](https://github.com/bgoonz/sorting-algorithms)
+- [https://github.com/bgoonz/sorting-algos](https://github.com/bgoonz/sorting-algos)
+- [https://github.com/bgoonz/sqlite3-nodejs-demo](https://github.com/bgoonz/sqlite3-nodejs-demo)
+- [https://github.com/bgoonz/stalk-photos-web-assets](https://github.com/bgoonz/stalk-photos-web-assets)
+- [https://github.com/bgoonz/Standalone-Metranome](https://github.com/bgoonz/Standalone-Metranome)
+- [https://github.com/bgoonz/Star-wars-API-Promise-take2](https://github.com/bgoonz/Star-wars-API-Promise-take2)
+- [https://github.com/bgoonz/Static-Study-Site](https://github.com/bgoonz/Static-Study-Site)
+- [https://github.com/bgoonz/styling-templates](https://github.com/bgoonz/styling-templates)
+- [https://github.com/bgoonz/supertemp](https://github.com/bgoonz/supertemp)
+- [https://github.com/bgoonz/Ternary-converter](https://github.com/bgoonz/Ternary-converter)
+- [https://github.com/bgoonz/TetrisJS](https://github.com/bgoonz/TetrisJS)
+- [https://github.com/bgoonz/TexTools](https://github.com/bgoonz/TexTools)
+- [https://github.com/bgoonz/The-Algorithms](https://github.com/bgoonz/The-Algorithms)
+- [https://github.com/bgoonz/TRASH](https://github.com/bgoonz/TRASH)
+- [https://github.com/bgoonz/Triggered-Guitar-Effects-Platform](https://github.com/bgoonz/Triggered-Guitar-Effects-Platform)
+- [https://github.com/bgoonz/Useful-Snippets-js](https://github.com/bgoonz/Useful-Snippets-js)
+- [https://github.com/bgoonz/UsefulResourceRepo2.0](https://github.com/bgoonz/UsefulResourceRepo2.0)
+- [https://github.com/bgoonz/vscode-customized-config](https://github.com/bgoonz/vscode-customized-config)
+- [https://github.com/bgoonz/vscode-Extension-readmes](https://github.com/bgoonz/vscode-Extension-readmes)
+- [https://github.com/bgoonz/web-crawler-node](https://github.com/bgoonz/web-crawler-node)
+- [https://github.com/bgoonz/web-dev-interview-prep-quiz-website](https://github.com/bgoonz/web-dev-interview-prep-quiz-website)
+- [https://github.com/bgoonz/web-dev-notes-resource-site](https://github.com/bgoonz/web-dev-notes-resource-site)
+- [https://github.com/bgoonz/web-dev-setup-checker](https://github.com/bgoonz/web-dev-setup-checker)
+- [https://github.com/bgoonz/WEB-DEV-TOOLS-HUB](https://github.com/bgoonz/WEB-DEV-TOOLS-HUB)
+- [https://github.com/bgoonz/web-dev-utils-package](https://github.com/bgoonz/web-dev-utils-package)
+- [https://github.com/bgoonz/WebAudioDaw](https://github.com/bgoonz/WebAudioDaw)
+- [https://gitlab.com/bryan.guner.dev](https://gitlab.com/bryan.guner.dev)
+- [https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+- [https://glitch.com/@bgoonz](https://glitch.com/@bgoonz)
+- [https://goofy-euclid-1cd736.netlify.app/core-site/index.html](https://goofy-euclid-1cd736.netlify.app/core-site/index.html)
+- [https://hackmd.io/5DeYj2oXTvGJ1-Xvp1Jo2Q](https://hackmd.io/5DeYj2oXTvGJ1-Xvp1Jo2Q)
+- [https://hashnode.com/@bgoonz/joinme](https://hashnode.com/@bgoonz/joinme)
+- [https://heroku.com/](https://heroku.com/)
+- [https://hubpages.com/@bryanguner](https://hubpages.com/@bryanguner)
+- [https://jekyllrb.com/](https://jekyllrb.com/)
+- [https://jsfiddle.net/user/bgoonz/](https://jsfiddle.net/user/bgoonz/)
+- [https://ko-fi.com/bgoonz](https://ko-fi.com/bgoonz)
+- [https://meta.stackexchange.com/users/936785/bryan-guner](https://meta.stackexchange.com/users/936785/bryan-guner)
+- [https://mihirbegmusic.netlify.app/](https://mihirbegmusic.netlify.app/)
+- [https://mochajs.org/](https://mochajs.org/)
+- [https://nextjs.org/](https://nextjs.org/)
+- [https://nodejs.org/](https://nodejs.org/)
+- [https://observablehq.com/@bgoonz?tab=profile](https://observablehq.com/@bgoonz?tab=profile)
+- [https://open.spotify.com/user/bgoonz?si=ShH9wYbIQWab5Jz_30BKFw](https://open.spotify.com/user/bgoonz?si=ShH9wYbIQWab5Jz_30BKFw)
+- [https://portfolio42.netlify.app/](https://portfolio42.netlify.app/)
+- [https://postman.com/](https://postman.com/)
+- [https://project-showcase-bgoonz.netlify.app/](https://project-showcase-bgoonz.netlify.app/)
+- [https://pugjs.org/](https://pugjs.org/)
+- [https://pypi.python.org/pypi/ansicolortags/](https://pypi.python.org/pypi/ansicolortags/)
+- [https://reactjs.org/](https://reactjs.org/)
+- [https://reactnative.dev/](https://reactnative.dev/)
+- [https://repl.it/@bgoonz/](https://repl.it/@bgoonz/)
+- [https://runkit.com/bgoonz](https://runkit.com/bgoonz)
+- [https://shields.io/](https://shields.io/)
+- [https://stackblitz.com/@bgoonz](https://stackblitz.com/@bgoonz)
+- [https://stackshare.io/bryanguner](https://stackshare.io/bryanguner)
+- [https://tetris42.netlify.app/](https://tetris42.netlify.app/)
+- [https://trusting-dijkstra-4d3b17.netlify.app/](https://trusting-dijkstra-4d3b17.netlify.app/)
+- [https://twitter.com/bgooonz](https://twitter.com/bgooonz)
+- [https://vercel.com/bgoonz](https://vercel.com/bgoonz)
+- [https://vimeo.com/user128661018](https://vimeo.com/user128661018)
+- [https://wakatime.com/@bgoonz42](https://wakatime.com/@bgoonz42)
+- [https://web-dev-hub.com/](https://web-dev-hub.com/)
+- [https://web-dev-resource-hub.netlify.app/](https://web-dev-resource-hub.netlify.app/)
+- [https://webcomponents.dev/user/bgoonz](https://webcomponents.dev/user/bgoonz)
+- [https://webdevhub.ghost.io/ghost/#/tags/new](https://webdevhub.ghost.io/ghost/#/tags/new)
+- [https://webpack.js.org/](https://webpack.js.org/)
+- [https://www.adobe.com/products/xd.html](https://www.adobe.com/products/xd.html)
+- [https://www.arduino.cc/](https://www.arduino.cc/)
+- [https://www.cembre.com/](https://www.cembre.com/)
+- [https://www.cembre.com/family/details/5202](https://www.cembre.com/family/details/5202)
+- [https://www.codewars.com/users/bgoonz](https://www.codewars.com/users/bgoonz)
+- [https://www.credly.com/badges/bd145ba3-0f09-42fc-8d1f-a3bc4e0a46b4/public_url](https://www.credly.com/badges/bd145ba3-0f09-42fc-8d1f-a3bc4e0a46b4/public_url)
+- [https://www.docker.com/](https://www.docker.com/)
+- [https://www.elastic.co/](https://www.elastic.co/)
+- [https://www.facebook.com/bryan.guner/](https://www.facebook.com/bryan.guner/)
+- [https://www.gatsbyjs.com/](https://www.gatsbyjs.com/)
+- [https://www.githubstatus.com/](https://www.githubstatus.com/)
+- [https://www.gnu.org/software/bash/](https://www.gnu.org/software/bash/)
+- [https://www.google.com/maps/search/?api=1&query=Weehawken%2C%20NJ](https://www.google.com/maps/search/?api=1&query=Weehawken%2C%20NJ)
+- [https://www.instagram.com/bgoonz/?hl=en](https://www.instagram.com/bgoonz/?hl=en)
+- [https://www.jsdelivr.com/github](https://www.jsdelivr.com/github)
+- [https://www.linkedin.com/in/bryan-guner-046199128/](https://www.linkedin.com/in/bryan-guner-046199128/)
+- [https://www.linux.org/](https://www.linux.org/)
+- [https://www.mongodb.com/](https://www.mongodb.com/)
+- [https://www.notion.so/Overview-Of-Css-5d88b0bc9a73422a9be1481d599a56ba](https://www.notion.so/Overview-Of-Css-5d88b0bc9a73422a9be1481d599a56ba)
+- [https://www.npmjs.com/~bgoonz11](https://www.npmjs.com/~bgoonz11)
+- [https://www.photoshop.com/en](https://www.photoshop.com/en)
+- [https://www.postgresql.org/](https://www.postgresql.org/)
+- [https://www.python.org/](https://www.python.org/)
+- [https://www.quora.com/q/webdevresourcehub?invite_code=qwZOqbpAhgQ6hjjGl8NN](https://www.quora.com/q/webdevresourcehub?invite_code=qwZOqbpAhgQ6hjjGl8NN)
+- [https://www.reddit.com/user/bgoonz1](https://www.reddit.com/user/bgoonz1)
+- [https://www.typescriptlang.org/](https://www.typescriptlang.org/)
+- [https://www.upwork.com/freelancers/~01bb1a3627e1e9c630?viewMode=1&s=1110580755057594368](https://www.upwork.com/freelancers/~01bb1a3627e1e9c630?viewMode=1&s=1110580755057594368)
+- [https://www.vagrantup.com/](https://www.vagrantup.com/)
+- [https://www.w3.org/html/](https://www.w3.org/html/)
+- [https://www.w3schools.com/cpp/](https://www.w3schools.com/cpp/)
+- [https://www.w3schools.com/css/](https://www.w3schools.com/css/)
+- [https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/featured](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/featured)
+- [https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/videos](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/videos)
+- [https://youtu.be/krRVGoK9NcA](https://youtu.be/krRVGoK9NcA)
+- [https://youtu.be/onquAh1Bl0g](https://youtu.be/onquAh1Bl0g)
+- [https://youtu.be/pRKjaprdWx4](https://youtu.be/pRKjaprdWx4)
+- [https://zapier.com/](https://zapier.com/)
+- [mailto:bryan.guner@gmail.com](mailto:bryan.guner@gmail.com)
+
+</details>
+---
+
+---
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
@@ -29,48 +282,48 @@
     - [CHANGELOG](#changelogchangelogmd)
         - [⇨WEBSITE🗺️⇦ ⇨**Cloudfare-Backup**⇦ ⇨**search**⇦ ⇨**Backup Repo Deploy**⇦ ⇨**Github pages**⇦ ⇨**Go To Site Wiki**⇦ ⇨**Gatsby Cloud Version**⇦ ⇨**Vercel Version**⇦ ⇨**Cloudfare-Domain**⇦ ⇨**gh-pages**⇦ ⇨**backup netlify deploy**⇦](#website️httpsbgoonz-blognetlifyapp-cloudfare-backuphttpsbgoonz-blog-2-0pagesdev-searchhttpswwwalgoliacomrealtime-search-demoweb-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4-backup-repo-deployhttpsbgoonzblog20-backupnetlifyappgsctab0-github-pageshttpsbgoonzgithubiobgoonz_blog_20-go-to-site-wikihttpsgithubcombgoonzbgoonz_blog_20wiki-gatsby-cloud-versionhttpsbgoonzblog20mastergatsbyjsio-vercel-versionhttpsbgoonz-blog-2-0vercelapp-cloudfare-domainwwwwebdevhubus-gh-pageshttpsbgoonzgithubiobgoonz_blog_20-backup-netlify-deployhttpsbgoonz-blog20-backupnetlifyapp)
     - [Repos](#repos)
-      - [⇨Privacy policy⇦](#privacy-policyhttpscodepeniobgoonzpenlyljzrw)
-  - [Useful Commands (internal use)](#useful-commands-internal-use)
-  - [Web Dev Setup](#web-dev-setup)
-  - [Bash Cheat Sheet (MY COMMANDS)](#bash-cheat-sheet-my-commands)
-      - [Find](#find)
-  - [To find files by case-insensitive extension (ex: .jpg, .JPG, .jpG)](#to-find-files-by-case-insensitive-extension-ex-jpg-jpg-jpg)
-  - [To find directories](#to-find-directories)
-  - [To find files](#to-find-files)
-  - [To find files by octal permission](#to-find-files-by-octal-permission)
-  - [To find files with setuid bit set](#to-find-files-with-setuid-bit-set)
-  - [To find files with extension '.txt' and remove them](#to-find-files-with-extension-txt-and-remove-them)
-  - [To find files with extension '.txt' and look for a string into them](#to-find-files-with-extension-txt-and-look-for-a-string-into-them)
-  - [To find files with size bigger than 5 Mebibyte and sort them by size](#to-find-files-with-size-bigger-than-5-mebibyte-and-sort-them-by-size)
-  - [To find files bigger than 2 Megabyte and list them](#to-find-files-bigger-than-2-megabyte-and-list-them)
-  - [To find files modified more than 7 days ago and list file information](#to-find-files-modified-more-than-7-days-ago-and-list-file-information)
-  - [To find symlinks owned by a user and list file information](#to-find-symlinks-owned-by-a-user-and-list-file-information)
-  - [To search for and delete empty directories](#to-search-for-and-delete-empty-directories)
-  - [To search for directories named build at a max depth of 2 directories](#to-search-for-directories-named-build-at-a-max-depth-of-2-directories)
-  - [To search all files who are not in .git directory](#to-search-all-files-who-are-not-in-git-directory)
-  - [To find all files that have the same node (hard link) as MY_FILE_HERE](#to-find-all-files-that-have-the-same-node-hard-link-as-my_file_here)
-  - [To find all files in the current directory and modify their permissions](#to-find-all-files-in-the-current-directory-and-modify-their-permissions)
-  - [Wiki Nav](#wiki-nav)
-  - [Dependencies](#dependencies)
-  - [Docs Structure](#docs-structure)
-    - [Overview](#overview)
-    - [Syntax](#syntax)
-    - [Parameters](#parameters)
-    - [Return value](#return-value)
-    - [Example](#example)
-    - [Explanation](#explanation)
-    - [Output](#output)
-  - [Technoloy](#technoloy)
-  - [SOURCECODE](#sourcecode)
-    - [Overview](#overview-1)
-    - [Syntax](#syntax-1)
-    - [Parameters](#parameters-1)
-    - [Return value](#return-value-1)
-    - [Example](#example-1)
-    - [Explanation](#explanation-1)
-    - [Output](#output-1)
-  - [Source Code](#source-code)
-  - [Component Structure](#component-structure)
+        - [⇨Privacy policy⇦](#privacy-policyhttpscodepeniobgoonzpenlyljzrw)
+    - [Useful Commands (internal use)](#useful-commands-internal-use)
+    - [Web Dev Setup](#web-dev-setup)
+    - [Bash Cheat Sheet (MY COMMANDS)](#bash-cheat-sheet-my-commands)
+        - [Find](#find)
+    - [To find files by case-insensitive extension (ex: .jpg, .JPG, .jpG)](#to-find-files-by-case-insensitive-extension-ex-jpg-jpg-jpg)
+    - [To find directories](#to-find-directories)
+    - [To find files](#to-find-files)
+    - [To find files by octal permission](#to-find-files-by-octal-permission)
+    - [To find files with setuid bit set](#to-find-files-with-setuid-bit-set)
+    - [To find files with extension '.txt' and remove them](#to-find-files-with-extension-txt-and-remove-them)
+    - [To find files with extension '.txt' and look for a string into them](#to-find-files-with-extension-txt-and-look-for-a-string-into-them)
+    - [To find files with size bigger than 5 Mebibyte and sort them by size](#to-find-files-with-size-bigger-than-5-mebibyte-and-sort-them-by-size)
+    - [To find files bigger than 2 Megabyte and list them](#to-find-files-bigger-than-2-megabyte-and-list-them)
+    - [To find files modified more than 7 days ago and list file information](#to-find-files-modified-more-than-7-days-ago-and-list-file-information)
+    - [To find symlinks owned by a user and list file information](#to-find-symlinks-owned-by-a-user-and-list-file-information)
+    - [To search for and delete empty directories](#to-search-for-and-delete-empty-directories)
+    - [To search for directories named build at a max depth of 2 directories](#to-search-for-directories-named-build-at-a-max-depth-of-2-directories)
+    - [To search all files who are not in .git directory](#to-search-all-files-who-are-not-in-git-directory)
+    - [To find all files that have the same node (hard link) as MY_FILE_HERE](#to-find-all-files-that-have-the-same-node-hard-link-as-my_file_here)
+    - [To find all files in the current directory and modify their permissions](#to-find-all-files-in-the-current-directory-and-modify-their-permissions)
+    - [Wiki Nav](#wiki-nav)
+    - [Dependencies](#dependencies)
+    - [Docs Structure](#docs-structure)
+        - [Overview](#overview)
+        - [Syntax](#syntax)
+        - [Parameters](#parameters)
+        - [Return value](#return-value)
+        - [Example](#example)
+        - [Explanation](#explanation)
+        - [Output](#output)
+    - [Technoloy](#technoloy)
+    - [SOURCECODE](#sourcecode)
+        - [Overview](#overview-1)
+        - [Syntax](#syntax-1)
+        - [Parameters](#parameters-1)
+        - [Return value](#return-value-1)
+        - [Example](#example-1)
+        - [Explanation](#explanation-1)
+        - [Output](#output-1)
+    - [Source Code](#source-code)
+    - [Component Structure](#component-structure)
 
 <!-- /code_chunk_output -->
 
@@ -253,10 +506,8 @@ As of the time of writing of this document, WSL has an issue renaming or deletin
 
 </details>
 
-
-
 ---
-### Documentation Commands:
+### Documentation Commands
 
 documentation build src/components/DocsMenu.js  -f md> ./notes/DocsMenu.md
 documentation build src/components/Footer.js  -f md> ./notes/Footer.md
@@ -275,28 +526,15 @@ documentation build src/components/SectionGrid.js  -f md> ./notes/SectionGrid.md
 documentation build src/components/Submenu.js  -f md> ./notes/Submenu.md
 documentation build src/components/ActionLink.js  -f md> ./notes/ActionLink.md
 
+---
 
-
+## Blog Content
 
 ---
 
-## Blog Content:
-
-
-
-
-
 ---
 
-
-
----
-
-##  Bash Cheat Sheet (MY COMMANDS)
-
-
-
-
+## Bash Cheat Sheet (MY COMMANDS)
 
 <details>
 
@@ -3252,10 +3490,6 @@ The file/folder structure described above reflects Gatsby-specific files and fol
 
 ---
 
-
-
-
-
 #### Layout Components | Gatsby
 
 ## Excerpt
@@ -3482,8 +3716,6 @@ In the JavaScript tab:
 
 ---
 
-
-
 ### Overview
 
 The **`_.get()` method** in Lodash retrieves the object’s value at a specific path.
@@ -3534,7 +3766,6 @@ In the JavaScript tab:
 
 -   The `_.get()` method at **line 19** contains a valid path, and therefore the expression is resolved, and `2021` is printed on the console.
 -   The `_.get()` method at **Line 23** contains an invalid path, and therefore the expression is resolved as `undefined`.
-
 
 ---
 
@@ -4151,8 +4382,6 @@ Returns **[Array][8]**
 [8]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
 [9]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
 [10]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
-
-
 
 ```js
 import React from 'react';
