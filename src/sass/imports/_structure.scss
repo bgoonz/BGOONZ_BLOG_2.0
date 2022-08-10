@@ -3,7 +3,7 @@
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-    min-height: 110vh;
+    min-height: 100vh;
     position: relative;
 }
 
@@ -15,24 +15,24 @@
 }
 
 .outer {
-    padding-left: $container-padding;
-    padding-right: $container-padding;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 .inner {
     margin-left: auto;
     margin-right: auto;
-    max-width: 1400px;
+    max-width: 95%;
 }
 
 .inner-md {
     margin-left: auto;
     margin-right: auto;
-    max-width: $container-md;
+    max-width: 95%;
 }
 
 .inner-sm {
     margin-left: auto;
     margin-right: auto;
-    max-width: $container-sm;
+    max-width: 95%;
 }

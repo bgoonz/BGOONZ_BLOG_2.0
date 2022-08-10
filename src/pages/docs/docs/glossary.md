@@ -723,8 +723,11 @@ Since [`DOMString`](/en-US/docs/Web/API/DOMString '/en-US/docs/Web/API/DOMString
 Here are the two possible methods.
 
 ### Solution #1 - escaping the string before encoding it
+<<<<<<< HEAD
 
 ---
+=======
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
 
 ```js
 //
@@ -2537,11 +2540,19 @@ These attacks succeed if the Web app does not employ enough validation or encodi
 
 #### See also
 
+<<<<<<< HEAD
 -   [Cross-site scripting (XSS)](/en-US/docs/Web/Security/Types_of_attacks#cross-site_scripting_xss)
 -   _Interwiki("wikipedia", "Cross-site scripting"_) on Wikipedia
 -   [Cross-site scripting on OWASP](https://owasp.org/www-community/attacks/xss/)
 -   [Another article about Cross-site scripting](https://www.acunetix.com/blog/web-security-zone/articles/dom-xss-explained/)
 -   [XSS Attack - Exploit & Protection](https://secure.wphackedhelp.com/blog/wordpress-xss-attack/)
+=======
+- [Cross-site scripting (XSS)](/en-US/docs/Web/Security/Types_of_attacks#cross-site_scripting_xss)
+- _Interwiki("wikipedia", "Cross-site scripting"_) on Wikipedia
+- [Cross-site scripting on OWASP](https://owasp.org/www-community/attacks/xss/)
+- [Another article about Cross-site scripting](https://www.acunetix.com/blog/web-security-zone/articles/dom-xss-explained/)
+- [XSS Attack - Exploit & Protection](https://secure.wphackedhelp.com/blog/wordpress-xss-attack/)
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
 
 ---
 
@@ -5743,7 +5754,11 @@ In the example below we have a three-column and two-row track grid, with 20-pixe
 
 In terms of grid sizing, gaps act as if they were a regular grid track however nothing can be placed into the gap. The gap acts as if the grid line at that location has gained extra size, so any grid item placed after that line begins at the end of the gap.
 
+<<<<<<< HEAD
 The grid-gap properties are not the only thing that can cause tracks to space out. Margins, padding or the use of the space distribution properties in [Box Alignment](/en-US/docs/Web/CSS/CSS_Grid_Layout/Box_Alignment_in_CSS_Grid_Layout) can all contribute to the visible gap - therefore the grid-gap properties should not be seen as equal to "the gutter size" unless you know that your design has not introduced any additional space with one of these methods.
+=======
+The grid-gap properties are not the only thing that can cause tracks to space out. Margins, padding or the use of the space distribution properties in [Box Alignment](/en-US/docs/Web/CSS/CSS_Grid_Layout/Box_Alignment_in_CSS_Grid_Layout) can all contribute to the visible gap - therefore the grid-gap properties should not be seen as equal to “the gutter size” unless you know that your design has not introduced any additional space with one of these methods.
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
 
 #### See also
 
@@ -8363,7 +8378,11 @@ Web frameworks such as [AngularJS](https://en.wikipedia.org/wiki/AngularJS) and 
 
 #### See also
 
+<<<<<<< HEAD
 -   _interwiki("wikipedia", "Model-view-controller"_) on Wikipedia
+=======
+- _interwiki("wikipedia", "Model-view-controller"_) on Wikipedia
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
 
 ---
 

@@ -17,6 +17,11 @@ template: docs
 
 ---
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
 # Lists and Keys - React
 
 > ## Excerpt

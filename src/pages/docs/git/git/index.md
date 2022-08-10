@@ -1241,12 +1241,4 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 
 <a href="https://medium.com/@bryanguner/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107" class="p-canonical">Canonical link</a>
 
-<<<<<<< HEAD
  on September 23, 2021.
-=======
-<<<<<<< HEAD:notes/articles/medium/markdown/Understanding-Git--A-Beginners-Guide-Containing-Cheat-Sheets---Resources-.md
-Exported from [Medium](https://medium.com) on August 31, 2021.
-=======
-on September 23, 2021.
->>>>>>> 217d551e709e0a3855c273c4474405cc96110325:src/pages/docs/git/git/index.md
->>>>>>> f4594b19594599756372b62212ee4796747e0825
