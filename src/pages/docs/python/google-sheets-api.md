@@ -91,11 +91,7 @@ Next, let's try to add a new value to the spreadsheet. After all, this is the se
 
 The code below shows how to add a row to the existing data with the values \[6, f]. Similar to reading values from an existing sheet, we need to start with establishing the connection to the API and identifying the spreadsheet ID. Because we are now writing new data to the spreadsheet, it is essential to make sure that you have not specified read-only permission in your SCOPES list (line 5).
 
-<<<<<<< HEAD
 The main functionalities to append new data to an existing spreadsheet are provided by \*sheet.values().append().execute() _on lines 17-22_. \*Note that this is where we pass the spreadsheet ID, spreadsheet range, and several other parameters that specify how the data has to be inserted and what data has to be inserted. The _body_ parameter takes a dictionary with values to append to the existing data table, using the same list-of-list format we saw before.
-=======
-The main functionalities to append new data to an existing spreadsheet are provided by \*sheet.values().append().execute() *on lines 17-22*. \*Note that this is where we pass the spreadsheet ID, spreadsheet range, and several other parameters that specify how the data has to be inserted and what data has to be inserted. The *body* parameter takes a dictionary with values to append to the existing data table, using the same list-of-list format we saw before.
->>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
 
 After running the code, the spreadsheet is automatically updated with our new entry. The new row is neatly appended to the data that we manually wrote in the spreadsheet.
 
