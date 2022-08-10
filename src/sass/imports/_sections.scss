@@ -2,11 +2,7 @@
     padding-top: 3.75em;
 
     &:not(.block-hero) {
-<<<<<<< HEAD
         background: $gray-100;
-=======
-        background: white;
->>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
     }
 
     &:last-child {
@@ -23,10 +19,6 @@
 }
 
 .block-title {
-<<<<<<< HEAD
-=======
-    align-self: center;
->>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
     margin: 0;
 }
 
@@ -95,7 +87,6 @@
 
     .block-title {
         font-size: 1.875em;
-<<<<<<< HEAD
     }
 }
 
@@ -112,45 +103,20 @@
 }
 
 @media only screen and (min-width: 1201px) {
-=======
-    }
-}
-
-@media only screen and (min-width: 641px) {
-    .block-text {
-        .block-content {
-            font-size: 1.125em;
-        }
-
-        .block-title {
-            font-size: 2.125em;
-        }
-    }
-}
-
-@media only screen and (min-width: 801px) {
->>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
     .block-text {
         .grid-item {
             &:not(:only-child) {
                 -ms-flex: 0 0 50%;
                 flex: 0 0 50%;
-<<<<<<< HEAD
                 max-width: 50%;
-=======
-                max-width: 90%;
->>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
             }
         }
     }
 
     .block-body {
         &:not(:only-child) {
-<<<<<<< HEAD
             text-align: left;
 
-=======
->>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
             .block-buttons {
                 -ms-flex-pack: start;
                 justify-content: flex-start;
@@ -167,22 +133,14 @@
 @media only screen and (min-width: 1001px) {
     .block-image {
         &:not(:only-child) {
-<<<<<<< HEAD
             padding-right: 2.5em;
-=======
-            padding-right: 0.5em;
->>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
         }
     }
 
     .grid-swap {
         .block-image {
             &:not(:only-child) {
-<<<<<<< HEAD
                 padding-left: 2.5em;
-=======
-                padding-left: 0.5em;
->>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
                 padding-right: 0.9375em;
             }
         }
@@ -232,28 +190,17 @@
         }
 
         .block-buttons {
-<<<<<<< HEAD
             -ms-flex: 0 0 33.333%;
             flex: 0 0 33.333%;
             margin-top: 0;
             max-width: 33.333%;
-=======
-            -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
-            margin-top: 0;
-            max-width: 50%;
->>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
         }
     }
 }
 
 // Grid section
 .block-grid {
-<<<<<<< HEAD
     .block-hero+& {
-=======
-    .block-hero + & {
->>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
         &:not(.has-header) {
             background: 0;
             padding-top: 0;
@@ -270,11 +217,6 @@
     }
 
     .grid-item {
-<<<<<<< HEAD
-=======
-        text-align: center;
-
->>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
         display: -ms-flexbox;
         display: flex;
         -ms-flex-direction: column;
@@ -335,11 +277,7 @@
         &:not(.button) {
             &:after {
                 font-size: 1.125em;
-<<<<<<< HEAD
                 content: "\2192";
-=======
-                content: '\2192';
->>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
                 line-height: 1.5;
                 margin-left: 5px;
             }
@@ -374,33 +312,9 @@
         line-height: 1.5;
     }
 
-<<<<<<< HEAD
     &+.block {
         margin-top: -5em;
         position: relative;
-=======
-    & + .block {
-        margin-top: -5em;
-        position: relative;
-    }
-}
-
-@media only screen and (min-width: 641px) {
-    .block-hero {
-        .block-title {
-            font-size: 3em;
-        }
-
-        .block-content {
-            font-size: 1.25em;
-        }
-
-        .block-buttons {
-            a {
-                font-size: 1em;
-            }
-        }
->>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
     }
 }
 

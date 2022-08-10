@@ -17,7 +17,7 @@ pre[class*='language-'] {
     hyphens: none;
 }
 
-:not(pre) > code[class*='language-'] {
+:not(pre)>code[class*='language-'] {
     background: $gray-700;
     color: $gray-100;
 }
@@ -35,6 +35,7 @@ pre[class*='language-'] {
 
 .token.namespace {
     opacity: 0.7;
+    >>>>>>>master
 }
 
 .token.property,
@@ -77,6 +78,7 @@ pre[class*='language-'] {
 
 .token.keyword {
     color: #66d9ef;
+    >>>>>>>master
 }
 
 .token.regex,
@@ -88,6 +90,7 @@ pre[class*='language-'] {
 .token.bold {
     font-weight: bold;
 }
+
 .token.italic {
     font-style: italic;
 }
@@ -100,22 +103,22 @@ div.code-toolbar {
     position: relative;
 }
 
-div.code-toolbar > .toolbar {
+div.code-toolbar>.toolbar {
     position: absolute;
     top: 0;
     right: 0;
 }
 
-div.code-toolbar > .toolbar .toolbar-item {
+div.code-toolbar>.toolbar .toolbar-item {
     display: block;
 }
 
-div.code-toolbar > .toolbar a {
+div.code-toolbar>.toolbar a {
     border: 0;
     cursor: pointer;
 }
 
-div.code-toolbar > .toolbar button {
+div.code-toolbar>.toolbar button {
     background: none;
     border: 0;
     border-radius: 0;
@@ -130,9 +133,9 @@ div.code-toolbar > .toolbar button {
     -ms-user-select: none;
 }
 
-div.code-toolbar > .toolbar a,
-div.code-toolbar > .toolbar button,
-div.code-toolbar > .toolbar span {
+div.code-toolbar>.toolbar a,
+div.code-toolbar>.toolbar button,
+div.code-toolbar>.toolbar span {
     background: $gray-600;
     color: $gray-300 !important;
     display: block;
