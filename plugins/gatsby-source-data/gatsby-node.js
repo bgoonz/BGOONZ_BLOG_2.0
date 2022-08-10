@@ -1,3 +1,7 @@
+/**
+ * It reads all the files in the data directory, parses them, and creates a single node with the data
+ * @param changedFile - The file that was changed.
+ */
 const path = require('path');
 const yaml = require('js-yaml');
 const fse = require('fs-extra');
@@ -8,7 +12,9 @@ const _ = require('lodash');
 const metadataFileName = 'site-metadata.json';
 
 const parsers = {
-    yaml: (data) => yaml.safeLoad(data, { schema: yaml.JSON_SCHEMA }),
+    yaml: (data) => yaml.safeLoad(data, {
+        schema: yaml.JSON_SCHEMA
+    }),
     json: (data) => JSON.parse(data)
 };
 
@@ -20,7 +26,9 @@ const supportedExtensions = {
 
 exports.sourceNodes = (props, pluginOptions = {}) => {
     const createContentDigest = props.createContentDigest;
-    const { createNode } = props.actions;
+    const {
+        createNode
+    } = props.actions;
     const reporter = props.reporter;
 
     if (!_.get(pluginOptions, 'path')) {
@@ -34,7 +42,12 @@ exports.sourceNodes = (props, pluginOptions = {}) => {
     reporter.info(`[gatsby-source-data] setup file watcher and create site data`);
 
     const dataPath = pluginOptions.path;
-    const createSiteDataFromFilesPartial = _.partial(createSiteDataFromFiles, { dataPath, createNode, createContentDigest, reporter });
+    const createSiteDataFromFilesPartial = _.partial(createSiteDataFromFiles, {
+        dataPath,
+        createNode,
+        createContentDigest,
+        reporter
+    });
     const watcher = chokidar.watch([dataPath, metadataFileName], {
         cwd: '.',
         ignoreInitial: true
@@ -43,10 +56,20 @@ exports.sourceNodes = (props, pluginOptions = {}) => {
     watcher.on('change', createSiteDataFromFilesPartial);
     watcher.on('unlink', createSiteDataFromFilesPartial);
 
-    return createSiteDataFromFiles({ dataPath, createNode, createContentDigest, reporter }, null);
+    return createSiteDataFromFiles({
+        dataPath,
+        createNode,
+        createContentDigest,
+        reporter
+    }, null);
 };
 
-async function createSiteDataFromFiles({ dataPath, createNode, createContentDigest, reporter }, changedFile) {
+async function createSiteDataFromFiles({
+    dataPath,
+    createNode,
+    createContentDigest,
+    reporter
+}, changedFile) {
     reporter.info(`[gatsby-source-data] create site data from files, updated path: ${changedFile}`);
     let dataFiles = [];
 
@@ -84,7 +107,9 @@ async function readDirRecursively(dir, options) {
         const filePath = path.join(dir, file);
         const stats = await fse.stat(filePath);
         if (stats.isDirectory()) {
-            return readDirRecursively(filePath, { rootDir });
+            return readDirRecursively(filePath, {
+                rootDir
+            });
         } else if (stats.isFile()) {
             return path.relative(rootDir, filePath);
         } else {
