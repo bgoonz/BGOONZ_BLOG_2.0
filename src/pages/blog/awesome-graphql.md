@@ -340,17 +340,7 @@ image: images/https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_
 
 - [batch-loader](https://github.com/exaspark/batch-loader) - A powerful tool to avoid N+1 queries without extra dependencies or primitives.
 
-<<<<<<< HEAD
 - [graphql-guard](https://github.com/exAspArk/graphql-guard) - A simple field-level authorization for the graphql gem.
-=======
--   [graphql-client](https://github.com/github/graphql-client) - A Ruby library for declaring, composing and executing GraphQL queries.
-
--   [graphql-batch](https://github.com/Shopify/graphql-batch) - A query batching executor for the graphql gem.
-
--   [batch-loader](https://github.com/exaspark/batch-loader) - A powerful tool to avoid N+1 queries without extra dependencies or primitives.
-
--   [graphql-guard](https://github.com/exAspArk/graphql-guard) - A simple field-level authorization for the graphql gem.
->>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
 
 ### PHP Libraries
 
@@ -384,27 +374,7 @@ image: images/https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_
 
 - [Zend Expressive GraphiQL Extension](https://github.com/stefanorg/zend-expressive-graphiql) - GraphiQL extension for zend expressive
 
-<<<<<<< HEAD
 - [GraphQL for PHP7](https://github.com/digiaonline/graphql-php) - A batteries-included, standard-compliant and easy to work with implementation of the GraphQL specification in PHP7 (based on the reference implementation).
-=======
--   [overblog/graphql-bundle](https://github.com/overblog/GraphQLBundle) - This bundle provides tools to build a complete GraphQL server in your Symfony App. Supports react-relay.
-
--   [GraphQL](https://github.com/Youshido/GraphQL) - Well documented PHP implementation with no dependencies.
-
--   [GraphQL Symfony Bundle](https://github.com/Youshido/GraphQLBundle) - GraphQL Bundle for the Symfony 3 (supports 2.6+).
-
--   [WPGraphQL](https://github.com/wp-graphql/wp-graphql) - WordPress plugin that exposes a Relay compliant GraphQL endpoint
-
--   [graphql-wp](https://github.com/tim-field/graphql-wp) - a WordPress plugin that exposes a GraphQL endpoint.
-
--   [eZ Platform GraphQL Bundle](https://www.symfony.fi/entry/graphql-bundle-adds-protocol-support-to-ez-platform-symfony-cms) - GraphQL Bundle for the eZ Platform Symfony CMS.
-
--   [GraphQL Middleware](https://github.com/stefanorg/graphql-middleware) - GraphQL Psr7 Middleware
-
--   [Zend Expressive GraphiQL Extension](https://github.com/stefanorg/zend-expressive-graphiql) - GraphiQL extension for zend expressive
-
--   [GraphQL for PHP7](https://github.com/digiaonline/graphql-php) - A batteries-included, standard-compliant and easy to work with implementation of the GraphQL specification in PHP7 (based on the reference implementation).
->>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
 
 ### Python Libraries
 
@@ -680,45 +650,7 @@ image: images/https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_
 
 - [Insomnia](https://insomnia.rest/) - An full-featured API client with first-party GraphQL query editor
 
-<<<<<<< HEAD
 - [RAN Toolkit](https://github.com/sly777/ran) - Production-ready toolkit/boilerplate with support for GraphQL, SSR, Hot-reload, CSS-in-JS, caching, and more.
-=======
--   [GraphQL CMS](https://github.com/sarkistlt/graphql-auto-generating-cms) - Use your existing GraphQL schema to generate simple for use, fully functional CMS in a couple steps.
-
--   [graphdoc](https://github.com/2fd/graphdoc) - Static page generator for documenting GraphQL Schema.
-
--   [graphql-autocomplete](https://github.com/orionsoft/atom-graphql-autocomplete) - Autocomplete and lint from a GraphQL endpoint in Atom.
-
--   [GraphQL IDE](https://github.com/redound/graphql-ide) - An extensive IDE for exploring GraphQL API's.
-
--   [Swagger to GraphQL](https://github.com/yarax/swagger-to-graphql) - GraphQL types builder based on REST API described in Swagger. Allows to migrate to GraphQL from REST for 5 minutes
-
--   [GraphQL Voyager](https://github.com/APIs-guru/graphql-voyager) - Represent any GraphQL API as an interactive graph.
-
--   [GraphQL Docs](https://graphql-docs.com/) - Instantly create beautiful GraphQL API docs hosted online.
-
--   [GraphQL Faker](https://github.com/APIs-guru/graphql-faker) - 🎲 Mock or extend your GraphQL API with faked data. No coding required.
-
--   [ts-graphql-plugin](https://github.com/Quramy/ts-graphql-plugin) - A language service plugin complete and validate GraphQL query in TypeScript template strings.
-
--   [Apollo Launchpad](https://launchpad.graphql.com/) - Like JSFiddle for GraphQL server code, write and deploy a GraphQL API directly from your browser.
-
--   [Apollo Tracing](https://github.com/apollographql/apollo-tracing) - GraphQL extension that enables you to easily get resolver-level performance information as part of a GraphQL response.
-
--   [Altair GraphQL Client](https://github.com/imolorhe/altair) - A beautiful feature-rich GraphQL Client for all platforms.
-
--   [Apollo Storybook Decorator](https://github.com/abhiaiyer91/apollo-storybook-decorator) - Wrap your React Storybook stories with Apollo Client, provide mocks for isolated UI testing with GraphQL
-
--   [GraphQL Metrics](https://github.com/Workpop/graphql-metrics) - instrument GraphQL resolvers, logging response times and statuses (if there was an error or not) to the console as well as to InfluxDB.
-
--   [GraphQL Rover](https://github.com/Brbb/graphql-rover) - GraphQL schema interactive navigation, rearrange nodes, search and explore types and fields.
-
--   [json-graphql-server](https://github.com/marmelab/json-graphql-server) - Get a full fake GraphQL API with zero coding in less than 30 seconds, based on a JSON data file.
-
--   [Insomnia](https://insomnia.rest/) - An full-featured API client with first-party GraphQL query editor
-
--   [RAN Toolkit](https://github.com/sly777/ran) - Production-ready toolkit/boilerplate with support for GraphQL, SSR, Hot-reload, CSS-in-JS, caching, and more.
->>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
 
 ## Databases
 

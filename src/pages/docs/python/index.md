@@ -232,12 +232,6 @@ You can think of this as roughly equivalent to the slice method called on a Java
 
 ---
 
-
-<details>
-
-<summary>  See More </summary>   
-
-
 ### Variables and Expressions
 
 -   <span id="a255">**Duck-Typing** : Programming Style which avoids checking an object's type to figure out what it can do.</span>
@@ -995,16 +989,9 @@ Or Checkout my personal Resource Site:
 <a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
 </a>
 
-<<<<<<< HEAD
 <a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz">
 <strong>bgoonz — Overview</strong>
 <br />
 <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a>
 <a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
 </a>
-=======
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
-<em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
-
-</details>
->>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
