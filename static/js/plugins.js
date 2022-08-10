@@ -151,14 +151,10 @@ window.Element &&
             },
             H = function (e, t, n, o) {
                 if (t.emitEvents && 'function' == typeof q.CustomEvent) {
-<<<<<<< HEAD
                     var a = new CustomEvent(e, {
                         bubbles: !0,
                         detail: { anchor: n, toggle: o }
                     });
-=======
-                    var a = new CustomEvent(e, { bubbles: !0, detail: { anchor: n, toggle: o } });
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
                     document.dispatchEvent(a);
                 }
             };
@@ -287,14 +283,10 @@ window.Element &&
                                     var t = q.location.hash;
                                     (t = t || ''),
                                         history.replaceState(
-<<<<<<< HEAD
                                             {
                                                 smoothScroll: JSON.stringify(e),
                                                 anchor: t || q.pageYOffset
                                             },
-=======
-                                            { smoothScroll: JSON.stringify(e), anchor: t || q.pageYOffset },
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
                                             document.title,
                                             t || q.location.href
                                         );
@@ -358,7 +350,6 @@ Element.prototype.closest ||
             : (t.Gumshoe = e(t));
     })('undefined' != typeof global ? global : 'undefined' != typeof window ? window : this, function (t) {
         'use strict';
-<<<<<<< HEAD
         var e = {
                 navClass: 'active',
                 contentClass: 'active',
@@ -375,12 +366,6 @@ Element.prototype.closest ||
                         cancelable: !0,
                         detail: n
                     });
-=======
-        var e = { navClass: 'active', contentClass: 'active', nested: !1, nestedClass: 'active', offset: 0, reflow: !1, events: !0 },
-            n = function (t, e, n) {
-                if (n.settings.events) {
-                    var o = new CustomEvent(t, { bubbles: !0, cancelable: !0, detail: n });
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
                     e.dispatchEvent(o);
                 }
             },
@@ -438,15 +423,11 @@ Element.prototype.closest ||
                         (o.classList.remove(e.navClass),
                         t.content.classList.remove(e.contentClass),
                         l(o, e),
-<<<<<<< HEAD
                         n('gumshoeDeactivate', o, {
                             link: t.nav,
                             content: t.content,
                             settings: e
                         }));
-=======
-                        n('gumshoeDeactivate', o, { link: t.nav, content: t.content, settings: e }));
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
                 }
             },
             u = function (t, e) {
@@ -483,15 +464,11 @@ Element.prototype.closest ||
                                       (o.classList.add(e.navClass),
                                       t.content.classList.add(e.contentClass),
                                       u(o, e),
-<<<<<<< HEAD
                                       n('gumshoeActivate', o, {
                                           link: t.nav,
                                           content: t.content,
                                           settings: e
                                       }));
-=======
-                                      n('gumshoeActivate', o, { link: t.nav, content: t.content, settings: e }));
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
                               }
                           })(t, m),
                           (f = t))
@@ -567,22 +544,17 @@ Element.prototype.closest ||
                 r.o(t, e) || Object.defineProperty(t, e, { enumerable: !0, get: n });
             }),
             (r.r = function (t) {
-<<<<<<< HEAD
                 'undefined' != typeof Symbol &&
                     Symbol.toStringTag &&
                     Object.defineProperty(t, Symbol.toStringTag, {
                         value: 'Module'
                     }),
-=======
-                'undefined' != typeof Symbol && Symbol.toStringTag && Object.defineProperty(t, Symbol.toStringTag, { value: 'Module' }),
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
                     Object.defineProperty(t, '__esModule', { value: !0 });
             }),
             (r.t = function (e, t) {
                 if ((1 & t && (e = r(e)), 8 & t)) return e;
                 if (4 & t && 'object' == typeof e && e && e.__esModule) return e;
                 var n = Object.create(null);
-<<<<<<< HEAD
                 if (
                     (r.r(n),
                     Object.defineProperty(n, 'default', {
@@ -591,9 +563,6 @@ Element.prototype.closest ||
                     }),
                     2 & t && 'string' != typeof e)
                 )
-=======
-                if ((r.r(n), Object.defineProperty(n, 'default', { enumerable: !0, value: e }), 2 & t && 'string' != typeof e))
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
                     for (var o in e)
                         r.d(
                             n,
@@ -663,7 +632,6 @@ Element.prototype.closest ||
                 return (
                     (function (t, e) {
                         if ('function' != typeof e && null !== e) throw new TypeError('Super expression must either be null or a function, not ' + typeof e);
-<<<<<<< HEAD
                         (t.prototype = Object.create(e && e.prototype, {
                             constructor: {
                                 value: t,
@@ -672,9 +640,6 @@ Element.prototype.closest ||
                                 configurable: !0
                             }
                         })),
-=======
-                        (t.prototype = Object.create(e && e.prototype, { constructor: { value: t, enumerable: !1, writable: !0, configurable: !0 } })),
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
                             e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : (t.__proto__ = e));
                     })(o, c.default),
                     i(

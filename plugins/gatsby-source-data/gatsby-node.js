@@ -1,7 +1,3 @@
-/**
- * It reads all the files in the data directory, parses them, and creates a single node with the data
- * @param changedFile - The file that was changed.
- */
 const path = require('path');
 const yaml = require('js-yaml');
 const fse = require('fs-extra');
@@ -12,7 +8,7 @@ const _ = require('lodash');
 const metadataFileName = 'site-metadata.json';
 
 const parsers = {
-    yaml: (data) => yaml.safeLoad(data, {schema: yaml.JSON_SCHEMA}),
+    yaml: (data) => yaml.safeLoad(data, { schema: yaml.JSON_SCHEMA }),
     json: (data) => JSON.parse(data)
 };
 
@@ -88,7 +84,7 @@ async function readDirRecursively(dir, options) {
         const filePath = path.join(dir, file);
         const stats = await fse.stat(filePath);
         if (stats.isDirectory()) {
-            return readDirRecursively(filePath, {rootDir});
+            return readDirRecursively(filePath, { rootDir });
         } else if (stats.isFile()) {
             return path.relative(rootDir, filePath);
         } else {
