@@ -13,15 +13,9 @@
 
   &.page-header,
   &.post-header {
-<<<<<<< HEAD
       padding-bottom: 9.5em;
       padding-top: 3.75em;
       text-align: center;
-=======
-    padding-bottom: 9.5em;
-    padding-top: 3.75em;
-    text-align: center;
->>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
   }
 
   .page-title,
@@ -75,11 +69,7 @@
 
 .post-full {
   .post-content {
-<<<<<<< HEAD
       padding: 1.5em;
-=======
-    padding: 2.5em 1.5em;
->>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
   }
 
   .post-meta {
@@ -141,11 +131,7 @@
   }
 }
 
-<<<<<<< HEAD
 @media only screen and (min-width: 841px) {
-=======
-@media only screen and (min-width: 641px) {
->>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
   .has-gradient {
 
       .page-title,
@@ -175,7 +161,7 @@
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
   .post {
       margin-bottom: 4vw;
   }

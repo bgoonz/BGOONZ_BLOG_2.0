@@ -845,11 +845,7 @@ template: docs
 
 - [Opbeat](https://opbeat.com/jobs#seniorbackendengineer) | Copenhagen, Denmark | Pairing on a real-world problem
 
-<<<<<<< HEAD
 - [Openmind](https://www.openmindonline.it/) | Monza, Italy | On-site interviews
-=======
--   [Nanobox](https://nanobox.io/) | Lehi, UT; Remote | A phone/video/person-to-person interview with a look at past projects (github, bitbucket, source code, etc.)
->>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
 
 - [Optoro](http://www.optoro.com/open_position_item/?oid=134960) | Washington, DC | Take home exercise. Review your code onsite.
 
@@ -863,91 +859,7 @@ template: docs
 
 - [The Nerdery](https://www.nerdery.com/careers) | Minneapolis, MN; Chicago, IL; Phoenix, AZ; Kansas City, KS | Take-home exercise
 
-<<<<<<< HEAD
 - [The Outline](https://boards.greenhouse.io/theoutline) | New York, NY | Take-home exercise
-=======
--   [Netlandish](https://www.netlandish.com/) | Los Angeles, CA; Remote | Takehome exercise, chat interview, video interview
-
--   [Netlify](https://www.netlify.com/careers) | San Francisco, CA | Paid takehome project and online/onsite discussion
-
--   [New Relic](https://newrelic.com/about/careers) | San Francisco, CA | Takehome exercise &/ or pair programming session depending on the team
-
--   [NewStore](https://www.newstore.com/careers/) | Berlin, Germany; Hannover, Germany; Erfurt, Germany; Boston, MA | Telephone technical interview, code sample submission or takeaway coding exercise, on-site pair programming, design session (1/2 day)
-
--   [NewVoiceMedia](https://www.newvoicemedia.com/about-newvoicemedia/careers) | Basingstoke, England; Wroclaw, Poland | Telephone interview, takeaway coding exercise, on-site pair programming, code review & technical discussion (1/2 day)
-
--   [Nexcess.net](https://nexcess.net/) | Southfield, MI | We mostly chat to get a feel on both ends if there's a good cultural fit. We ask questions to see what experience you have and how you think as a programmer. At some point we look at some of your code or have you work on some of ours (1 hour).
-
--   [Nimbl3](https://www.workhiro.com/companies/nimbl3) | Bangkok, Thailand | Takehome exercise and specific role discussion
-
--   [Niteoweb](http://www.niteoweb.com/careers) | Ljubljana, Slovenia | Join us for a week to see if we fit
-
--   [Nitro](https://www.gonitro.com/about/jobs) | Dublin, Ireland; San Francisco, CA | Phone Call, Take Home Test, Hiring Manager Phone Interview followed by an onsite discussion
-
--   [Noa](https://www.noa.one/) | Berlin, Germany; San Francisco, CA | 1 technical chat, 2-3 cultural chats with colleagues from different departments in the team, if these work a pair programming exercise
-
--   [NodeSource](http://nodesource.com/careers) | Remote | A person-to-person walk through of a past project of yours
-
--   [Nomoko,camera](https://www.nomoko.world/jobs) | Zurich, Switzerland | Three interrogations
-
--   [Nord Software](https://www.nordsoftware.com/en/jobs) | Helsinki, Finland; Tampere, Finland; Stockholm, Sweden | Take-home exercise & interview with CEO and senior developer
-
--   [NoRedInk](https://www.noredink.com/jobs) | San Francisco, CA | Take-home exercise & pair programming session
-
--   [NoviCap](https://novicap.com/en/careers.html) | Barcelona, Spain | Takehome exercise & discussion on-site
-
--   [Novoda](https://novoda.com/hiring) | London, UK; Liverpool, UK; Berlin, Germany; Barcelona, Spain; Remote | 2 x Pairing sessions & conversational interviews [(public repo)](https://github.com/novoda/dojos)
-
--   [Novus Partners](https://www.novus.com/jobs) | New York, NY | Take-home exercise & on-site exercises (choice of laptop or whiteboard)
-
--   [Nozbe](https://nozbe.com/jobs) | Remote | Take-home exercise & interview with the team
-
--   [npm, Inc](https://npmjs.com/jobs) | Oakland, CA / Remote | No technical challenges. Just interview conversations.
-
--   [Nubank](https://nubank.workable.com/) | São Paulo, BR | Phone conversation, take-home exercise, code walkthrough, on-site code pairing.
-
--   [numberly](https://www.numberly.com/) | Paris, France | Series of interviews, that go over technical background, past experiences and cultural knowledge
-
--   [numer.ai](https://angel.co/numerai/jobs) | San Francisco, CA
-
--   [Nutshell](https://www.nutshell.com/jobs) | Ann Arbor, MI, US | Email screen / take-home programming excercise ([public repo](https://github.com/nutshellcrm/join-the-team))
-
--   [Nyon](https://www.nyon.nl/vacatures) | Amsterdam, The Netherlands | 1. Skype (or real life) interview 2. Take home exercise (3-4 hours) 3. Meet entire team and pair programming sessions
-
--   [O'Reilly Media](https://oreilly.com/jobs) | Sebastopol, CA; Boston, MA; Remote | Phone conversation, take-home exercise or pair programming session, team interview, all via Google Hangout
-
--   [Object Partners, Inc.](https://objectpartners.com/careers/) | Minneapolis, MN; Omaha, NE | Phone interview to gauge mutual interest, followed by a slightly more in-depth technical round-table interview
-
--   [Objective, Inc.](https://www.objectiveinc.com/careers) | Salt Lake City, UT | Take-home programming exercise, then onsite friendly chat with team
-
--   [OCTO Technology](http://rejoins.octo.com/) | Paris, France | HR interview to go over your experiences and cultural knowledge. Then more or less informal discussion with two future team members about architecture design, agile practices, take-home project, pair programming...
-
--   [Olist](https://olist.com/) | Curitiba, Brazil | Take-home project and remote or on-site interviews
-
--   [Omada Health](https://www.omadahealth.com/jobs) | San Francisco, CA | Take home exercise and/or pair programming session.
-
--   [Onfido](https://onfido.com/jobs) | London, UK; Lisbon, Portugal | Take-home exercise and on-site interview/discussion with potential team
-
--   [Ontame.io](https://ontame.io/) | Copenhagen, Denmark | Take home exercise and specific role discussion
-
--   [Opbeat](https://opbeat.com/jobs#seniorbackendengineer) | Copenhagen, Denmark | Pairing on a real-world problem
-
--   [Openmind](https://www.openmindonline.it/) | Monza, Italy | On-site interviews
-
--   [Optoro](http://www.optoro.com/open_position_item/?oid=134960) | Washington, DC | Take home exercise. Review your code onsite.
-
--   [Ostmodern](http://www.ostmodern.co.uk/) | London, UK | Take-home exercise & discussion on-site
-
--   [Outbrain](https://www.outbrain.com/jobs) | NYC, Israel | Take-home exercise & discussion
-
--   [Outlandish](https://outlandish.com/) | London, UK | Take-home exercise, real-world pair programming session, friendly chat with team
-
--   [Outlook iOS & Android](https://github.com/outlook/jobs) | San Francisco, CA / New York, NY | Take-home project & online / onsite discussion
-
--   [The Nerdery](https://www.nerdery.com/careers) | Minneapolis, MN; Chicago, IL; Phoenix, AZ; Kansas City, KS | Take-home exercise
-
--   [The Outline](https://boards.greenhouse.io/theoutline) | New York, NY | Take-home exercise
->>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
 
 ## P - R
 
@@ -1235,11 +1147,7 @@ template: docs
 
 - [Toucan Toco](http://toucantoco.com/fr/team#jobs) | Paris, France | Pair-programming and TDD
 
-<<<<<<< HEAD
 - [Touché](https://gotouche.com/) | Singapore, Singapore; Barcelona, Spain | Skype / Phone / on-site interview, take-home project, technical interview to discuss the project, team interview.
-=======
--   [Softwear](http://nl.softwear.nl/vacatures) | Amsterdam, Netherlands | Writing software for the fashion industry - remotely - in an international team.
->>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
 
 - [TrademarkVision](https://trademark.vision/) | Brisbane, Australia | On site interview and quick take-home excercise
 
