@@ -1,0 +1,31 @@
+name: Lint Docs
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  checks: write
+
+jobs:
+  lint-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v3
+
+      - name: Download styles
+        run: |
+          curl -s https://vale-library.netlify.app/styles.zip -o styles.zip
+          unzip styles.zip -d .github/styles
+          rm styles.zip
+
+      - name: Vale
+        uses: errata-ai/vale-action@v2
+        with:
+          files: '["docs", "src", "README.md", "CODE_OF_CONDUCT.md", "CONTRIBUTING.md"]'
+          fail_on_error: true
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}

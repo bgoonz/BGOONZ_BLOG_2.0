@@ -4,57 +4,29 @@
  * See: https://www.gatsbyjs.org/docs/ssr-apis/
  */
 
-const React = require("react");
-const withPrefix = require("./src/utils/withPrefix").default;
+const React = require('react');
+const withPrefix = require('./src/utils/withPrefix').default;
 
-<<<<<<< HEAD
 exports.onRenderBody = function ({ setHeadComponents, setPostBodyComponents }) {
-=======
-exports.onRenderBody = function({
-    setHeadComponents,
-    setPostBodyComponents
-}) {
->>>>>>> 217d551e709e0a3855c273c4474405cc96110325
+    setHeadComponents([]);
 
-    setHeadComponents([
-
-    ]);
-
-<<<<<<< HEAD
     setPostBodyComponents([
         <React.Fragment>
-            <script src={withPrefix('js/plugins.js')} />
+            <script src={withPrefix('js/algolia.js')} />
+            <script src={withPrefix('js/analytics.js')} />
+            <script src={withPrefix('js/blm.js')} />
+            <script src={withPrefix('js/goog-search.js')} />
             <script src={withPrefix('js/main.js')} />
-            <script src={withPrefix('js/misc.js')} />
+            <script src={withPrefix('js/netlify-identity.js')} />
             <script src={withPrefix('js/page-load.js')} />
             <script src={withPrefix('js/page-unload.js')} />
-            <script src={withPrefix('js/blm.js')} />
-            <script src={withPrefix('js/addthis.js')} />
-            <script src={withPrefix('js/google-search.js')} />
-            <script src={withPrefix('js/algolia.js')} />
-            <script src={withPrefix('js/prism.js')} />
-            <script src={withPrefix('js/analytics.js')} />
             <script src={withPrefix('js/plugins.js')} />
-=======
-
-    setPostBodyComponents([
-        <React.Fragment>
-
-
-             <script src={withPrefix('js/main.js')}/>
-   
-             <script src={withPrefix('js/page-load.js')}/>
-             <script src={withPrefix('js/page-unload.js')}/>
-             <script src={withPrefix('js/plugins.js')}/>
-
-             <script src={withPrefix('js/prism.js')}/>
-
-             <script src={withPrefix('js/syntax.js')}/>
-             <script src={withPrefix('js/ukraine.js')}/>
-            
->>>>>>> 217d551e709e0a3855c273c4474405cc96110325
+            <script src={withPrefix('js/prettier.js')} />
+            <script src={withPrefix('js/prism.js')} />
+            <script src={withPrefix('js/searchbar.js')} />
+            <script src={withPrefix('js/search-create.js')} />
+            <script src={withPrefix('js/syntax.js')} />
+            <script src={withPrefix('js/ukraine.js')} />
         </React.Fragment>
-
     ]);
-
 };
