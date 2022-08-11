@@ -1,10 +1,22 @@
+/**
+ * If the link is internal, use Gatsby Link, otherwise use a regular <a> tag
+ * @returns A function that takes in props and returns a GatsbyLink or an anchor tag.
+ */
 import React from 'react';
-import { Link as GatsbyLink } from "gatsby"
+import {
+    Link as GatsbyLink
+} from "gatsby"
 
 // Since DOM elements <a> cannot receive activeClassName
 // and partiallyActive, destructure the prop here and
 // pass it only to GatsbyLink
-export default function Link({ children, to, activeClassName, partiallyActive, ...other }) {
+export default function Link({
+    children,
+    to,
+    activeClassName,
+    partiallyActive,
+    ...other
+}) {
     // Tailor the following test to your environment.
     // This example assumes that any internal link (intended for Gatsby)
     // will start with exactly one slash, and that anything else is external.
@@ -12,20 +24,32 @@ export default function Link({ children, to, activeClassName, partiallyActive, .
 
     // Use Gatsby Link for internal links, and <a> for others
     if (internal) {
-        return (
-            <GatsbyLink
-                to={to}
-                activeClassName={activeClassName}
-                partiallyActive={partiallyActive}
-                {...other}
-            >
-                {children}
-            </GatsbyLink>
+        return ( <
+            GatsbyLink to = {
+                to
+            }
+            activeClassName = {
+                activeClassName
+            }
+            partiallyActive = {
+                partiallyActive
+            } {
+                ...other
+            } >
+            {
+                children
+            } <
+            /GatsbyLink>
         )
     }
-    return (
-        <a href={to} {...other}>
-            {children}
-        </a>
+    return ( <
+        a href = {
+            to
+        } {
+            ...other
+        } > {
+            children
+        } <
+        /a>
     )
 }

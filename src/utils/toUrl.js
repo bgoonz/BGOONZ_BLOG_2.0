@@ -1,3 +1,9 @@
+/**
+ * It takes a page path and returns the URL of the page
+ * @param pages - the pages object from the site config
+ * @param pagePath - the path to the page you want to link to
+ * @returns The url of the page.
+ */
 import _ from 'lodash';
 import getPage from './getPage';
 
