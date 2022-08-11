@@ -7,20 +7,20 @@ reframe(videoEmbeds.join(','));
 
 // Handle main navigation menu toggling on small screens
 function menuToggleHandler(e) {
-    e.preventDefault();
-    document.body.classList.toggle('menu--opened');
+  e.preventDefault();
+  document.body.classList.toggle("menu--opened");
 }
 
 // Handle docs navigation menu toggling on small screens
 function docsNavToggleHandler(e) {
-    e.preventDefault();
-    document.body.classList.toggle('docs-menu--opened');
+  e.preventDefault();
+  document.body.classList.toggle("docs-menu--opened");
 }
 
 // Handle submenu toggling
 function submenuToggleHandler(e) {
-    e.preventDefault();
-    this.parentNode.classList.toggle('active');
+  e.preventDefault();
+  this.parentNode.classList.toggle("active");
 }
 
 window.addMainNavigationHandlers = () => {
@@ -30,6 +30,7 @@ window.addMainNavigationHandlers = () => {
             element.addEventListener('click', menuToggleHandler, false);
         }
     }
+  }
 
     const submenuToggle = document.querySelectorAll('.submenu-toggle');
     if (submenuToggle) {
@@ -37,6 +38,7 @@ window.addMainNavigationHandlers = () => {
             element.addEventListener('click', submenuToggleHandler, false);
         }
     }
+  }
 };
 
 window.removeMainNavigationHandlers = () => {
@@ -49,6 +51,7 @@ window.removeMainNavigationHandlers = () => {
             elementener('click', menuToggleHandler, false);
         }
     }
+  }
 
     const submenuToggle = document.querySelectorAll('.submenu-toggle');
     if (submenuToggle) {
@@ -56,6 +59,7 @@ window.removeMainNavigationHandlers = () => {
             element.removeEventListener('click', submenuToggleHandler, false);
         }
     }
+  }
 };
 
 window.addDocsNavigationHandlers = () =>  const docsNavToggle = document.getElementById('docs-nav-toggle');
@@ -69,15 +73,16 @@ window.addDocsNavigationHandlers = () =>  const docsNavToggle = document.getElem
             element.addEventListener('click', submenuToggleHandler, false);
         }
     }
+  }
 };
 
 window.removeDocsNavigationHandlers = () =>  // Remove docs nav related classes on page load
     document.body.classList.remove('docs-menu--opened');
 
-    const docsNavToggle = document.getElementById('docs-nav-toggle');
-    if (docsNavToggle) {
-        docsNavToggle.removeEventListener('click', docsNavToggleHandler, false);
-    }
+  const docsNavToggle = document.getElementById("docs-nav-toggle");
+  if (docsNavToggle) {
+    docsNavToggle.removeEventListener("click", docsNavToggleHandler, false);
+  }
 
     const docsSubmenuToggle = document.querySelectorAll('.docs-submenu-toggle');
     if (docsSubmenuToggle) {
@@ -85,6 +90,7 @@ window.removeDocsNavigationHandlers = () =>  // Remove docs nav related classes 
             elementlick
         }
     }
+  }
 };
 
 window.addPageNavLinks = () => {
@@ -94,14 +100,8 @@ window.addPageNavLinks = () => {
     if (pageToc && pageTocContainer) {
         const pageContent = document.querySelector('.type-docs .post-content');
 
-        // Create in-page navigation
-        const headerLinks = getHeaderLinks({
-            root: pageContent
-        });
-        if (headerLinks.length > 0) {
-            pageToc.classList.add('has-links');
-            renderHeaderLinks(pageTocContainer, headerLinks);
-        }
+  if (pageToc && pageTocContainer) {
+    const pageContent = document.querySelector(".type-docs .post-content");
 
         // Scroll to anchors
         const scroll = new SmoothScroll('[data-scroll]');
@@ -125,6 +125,7 @@ ist.remove('has-links');
             pageTocContainer.removeChild(pageTocContainer.firstChild);
         }
     }
+  }
 };
 
 function getElementsByTagNames(root, tagNames) {
@@ -136,7 +137,9 @@ function getElementsByTagNames(root, tagNames) {
         }
         elements = elements.concat(getElementsByTagNames(element, tagNames));
     }
-    return elements;
+    elements = elements.concat(getElementsByTagNames(element, tagNames));
+  }
+  return elements;
 }
 
 function createLinksForHeaderElements(elements) {
@@ -191,28 +194,29 @@ function createLinksForHeaderElements(elements) {
 }
 
 function renderHeaderLinks(element, links) {
-    if (links.length === 0) {
-        return;
+  if (links.length === 0) {
+    return;
+  }
+  let ulElm = document.createElement("ul");
+  for (let i = 0; i < links.length; i++) {
+    let liElm = document.createElement("li");
+    liElm.append(links[i].link);
+    if (links[i].children.length > 0) {
+      renderHeaderLinks(liElm, links[i].children);
     }
-    let ulElm = document.createElement('ul');
-    for (let i = 0; i < links.length; i++) {
-        let liElm = document.createElement('li');
-        liElm.append(links[i].link);
-        if (links[i].children.length > 0) {
-            renderHeaderLinks(liElm, links[i].children);
-        }
-        ulElm.appendChild(liElm);
-    }
-    element.appendChild(ulElm);
+    ulElm.appendChild(liElm);
+  }
+  element.appendChild(ulElm);
 }
 
 function anchorForId(id) {
-    let anchor = document.createElement('a');
-    anchor.setAttribute('class', 'hash-link');
-    anchor.setAttribute('data-scroll', '');
-    anchor.href = '#' + id;
-    anchor.innerHTML = '<span class="icon-copy" aria-hidden="true"></span><span class="screen-reader-text">Copy</span>';
-    return anchor;
+  let anchor = document.createElement("a");
+  anchor.setAttribute("class", "hash-link");
+  anchor.setAttribute("data-scroll", "");
+  anchor.href = "#" + id;
+  anchor.innerHTML =
+    '<span class="icon-copy" aria-hidden="true"></span><span class="screen-reader-text">Copy</span>';
+  return anchor;
 }
 
 // Syntax Highlighter
