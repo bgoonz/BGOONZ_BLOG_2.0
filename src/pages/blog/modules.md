@@ -3,6 +3,7 @@ title: "Modules "
 template: post
 subtitle: "Imports & Modules "
 date: 2022-08-11T04:43:40.615Z
+image: /blog/28b10adb-7a99-4ef1-ae2a-4a74484fc50d.jpeg
 thumb_image: /blog/28b10adb-7a99-4ef1-ae2a-4a74484fc50d.jpeg
 image_position: top
 tags:
