@@ -18,6 +18,7 @@
 
 ![GitHub visitors](https://visitor-badge-reloaded.herokuapp.com/badge?page_id=bgoonz.visitor.badge.reloaded&color=00bbbb&style=for-the-badge&logo=github)
 
+[![Deploy Gatsby site to Pages](https://github.com/DUKE42web/BGOONZ_BLOG_2.0/actions/workflows/pa7ges.yml/badge.svg?branch=master&event=deployment)](https://github.com/DUKE42web/BGOONZ_BLOG_2.0/actions/workflows/pa7ges.yml)
 
 [![.github/workflows/pages.yml](https://github.com/permission-squad/BGOONZ_BLOG_2.0/actions/workflows/pages.yml/badge.svg?branch=master&event=deployment)](https://github.com/permission-squad/BGOONZ_BLOG_2.0/actions/workflows/pages.yml)
 
@@ -347,6 +348,7 @@ fs.writeFile('output.md', cat, err => {
 });
 
 ```
+
 
 ---
 
