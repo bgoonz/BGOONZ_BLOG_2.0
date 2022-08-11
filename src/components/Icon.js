@@ -3,7 +3,7 @@ import React from 'react';
 
 export default class Icon extends React.Component {
     render() {
-        let icon = _.get(this.props, 'icon', null);
+        const icon = _.get(this.props, 'icon', null);
         return (
             <svg className="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 {icon === 'dev' ? (
