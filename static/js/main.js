@@ -1,10 +1,10 @@
 /* eslint-disable no-undef */
-window.onGatsbyInitialClientRender = () => {
+window.onGatsbyInitialClientRender = function () {
     /**
      * Main JS file for theme behaviours
      */
     // Responsive video embeds
-    const videoEmbeds = ['iframe[src*="youtube.com"]', 'iframe[src*="vimeo.com"]'];
+    let videoEmbeds = ['iframe[src*="youtube.com"]', 'iframe[src*="vimeo.com"]'];
     reframe(videoEmbeds.join(','));
 
     // Handle main navigation menu toggling on small screens
@@ -25,42 +25,42 @@ window.onGatsbyInitialClientRender = () => {
         this.parentNode.classList.toggle('active');
     }
 
-    window.addMainNavigationHandlers = () => {
+    window.addMainNavigationHandlers = function () {
         const menuToggle = document.querySelectorAll('.menu-toggle');
         if (menuToggle) {
-            for (const element of menuToggle) {
-                element.addEventListener('click', menuToggleHandler, false);
+            for (let i = 0; i < menuToggle.length; i++) {
+                menuToggle[i].addEventListener('click', menuToggleHandler, false);
             }
         }
 
         const submenuToggle = document.querySelectorAll('.submenu-toggle');
         if (submenuToggle) {
-            for (const element of submenuToggle) {
-                element.addEventListener('click', submenuToggleHandler, false);
+            for (let i = 0; i < submenuToggle.length; i++) {
+                submenuToggle[i].addEventListener('click', submenuToggleHandler, false);
             }
         }
     };
 
-    window.removeMainNavigationHandlers = () => {
+    window.removeMainNavigationHandlers = function () {
         // Remove nav related classes on page load
         document.body.classList.remove('menu--opened');
 
         const menuToggle = document.querySelectorAll('.menu-toggle');
         if (menuToggle) {
-            for (const element of menuToggle) {
-                element.removeEventListener('click', menuToggleHandler, false);
+            for (let i = 0; i < menuToggle.length; i++) {
+                menuToggle[i].removeEventListener('click', menuToggleHandler, false);
             }
         }
 
         const submenuToggle = document.querySelectorAll('.submenu-toggle');
         if (submenuToggle) {
-            for (const element of submenuToggle) {
-                element.removeEventListener('click', submenuToggleHandler, false);
+            for (let i = 0; i < submenuToggle.length; i++) {
+                submenuToggle[i].removeEventListener('click', submenuToggleHandler, false);
             }
         }
     };
 
-    window.addDocsNavigationHandlers = () => {
+    window.addDocsNavigationHandlers = function () {
         const docsNavToggle = document.getElementById('docs-nav-toggle');
         if (docsNavToggle) {
             docsNavToggle.addEventListener('click', docsNavToggleHandler, false);
@@ -68,13 +68,13 @@ window.onGatsbyInitialClientRender = () => {
 
         const docsSubmenuToggle = document.querySelectorAll('.docs-submenu-toggle');
         if (docsSubmenuToggle) {
-            for (const element of docsSubmenuToggle) {
-                element.addEventListener('click', submenuToggleHandler, false);
+            for (let i = 0; i < docsSubmenuToggle.length; i++) {
+                docsSubmenuToggle[i].addEventListener('click', submenuToggleHandler, false);
             }
         }
     };
 
-    window.removeDocsNavigationHandlers = () => {
+    window.removeDocsNavigationHandlers = function () {
         // Remove docs nav related classes on page load
         document.body.classList.remove('docs-menu--opened');
 
@@ -85,13 +85,13 @@ window.onGatsbyInitialClientRender = () => {
 
         const docsSubmenuToggle = document.querySelectorAll('.docs-submenu-toggle');
         if (docsSubmenuToggle) {
-            for (const element of docsSubmenuToggle) {
-                element.removeEventListener('click', submenuToggleHandler, false);
+            for (let i = 0; i < docsSubmenuToggle.length; i++) {
+                docsSubmenuToggle[i].removeEventListener('click', submenuToggleHandler, false);
             }
         }
     };
 
-    window.addPageNavLinks = () => {
+    window.addPageNavLinks = function () {
         const pageToc = document.getElementById('page-nav-inside');
         const pageTocContainer = document.getElementById('page-nav-link-container');
 
@@ -108,28 +108,45 @@ window.onGatsbyInitialClientRender = () => {
             }
 
             // Scroll to anchors
-            const scroll = new SmoothScroll('[data-scroll]');
-            const hash = window.decodeURI(location.hash.replace('#', ''));
+            let scroll = new SmoothScroll('[data-scroll]');
+            let hash = window.decodeURI(location.hash.replace('#', ''));
             if (hash !== '') {
-                window.setTimeout(() => {
-                    const anchor = document.getElementById(hash);
+                window.setTimeout(function () {
+                    let anchor = document.getElementById(hash);
                     if (anchor) {
                         scroll.animateScroll(anchor);
                     }
                 }, 0);
             }
 
+            // Highlight current anchor
+            let pageTocLinks = pageTocContainer.getElementsByTagName('a');
+            if (pageTocLinks.length > 0) {
+                let spy = new Gumshoe('#page-nav-inside a', {
+                    nested: true,
+                    nestedClass: 'active-parent'
+                });
+            }
+
             // Add link to page content headings
-            const pageHeadings = getElementsByTagNames(pageContent, ['h2', 'h3']);
-            for (let heading of pageHeadings) {
+            let pageHeadings = getElementsByTagNames(pageContent, ['h2', 'h3']);
+            for (let i = 0; i < pageHeadings.length; i++) {
+                let heading = pageHeadings[i];
                 if (typeof heading.id !== 'undefined' && heading.id !== '') {
                     heading.insertBefore(anchorForId(heading.id), heading.firstChild);
                 }
             }
+
+            // Copy link url
+            let clipboard = new ClipboardJS('.hash-link', {
+                text: function (trigger) {
+                    return window.location.href.replace(window.location.hash, '') + trigger.getAttribute('href');
+                }
+            });
         }
     };
 
-    window.removePageNavLinks = () => {
+    window.removePageNavLinks = function () {
         const pageToc = document.getElementById('page-nav-inside');
         const pageTocContainer = document.getElementById('page-nav-link-container');
 
@@ -143,8 +160,9 @@ window.onGatsbyInitialClientRender = () => {
 
     function getElementsByTagNames(root, tagNames) {
         let elements = [];
-        for (let element of root.children) {
-            const tagName = element.nodeName.toLowerCase();
+        for (let i = 0; i < root.children.length; i++) {
+            let element = root.children[i];
+            let tagName = element.nodeName.toLowerCase();
             if (tagNames.includes(tagName)) {
                 elements.push(element);
             }
@@ -154,22 +172,23 @@ window.onGatsbyInitialClientRender = () => {
     }
 
     function createLinksForHeaderElements(elements) {
-        const result = [];
-        const stack = [
+        let result = [];
+        let stack = [
             {
                 level: 0,
                 children: result
             }
         ];
-        const re = /^h(\d)$/;
-        for (let element of elements) {
-            const tagName = element.nodeName.toLowerCase();
-            const match = re.exec(tagName);
+        let re = /^h(\d)$/;
+        for (let i = 0; i < elements.length; i++) {
+            let element = elements[i];
+            let tagName = element.nodeName.toLowerCase();
+            let match = re.exec(tagName);
             if (!match) {
                 console.warn('can not create links to non header element');
                 continue;
             }
-            const headerLevel = parseInt(match[1], 10);
+            let headerLevel = parseInt(match[1], 10);
             if (!element.id) {
                 if (!element.textContent) {
                     console.warn('can not create link to element without id and without text content');
@@ -181,33 +200,36 @@ window.onGatsbyInitialClientRender = () => {
                     .replace(/^_/, '')
                     .replace(/_$/, '');
             }
-            const link = document.createElement('a');
-            link.href = `#${element.id}`;
+            let link = document.createElement('a');
+            link.href = '#' + element.id;
             link.setAttribute('data-scroll', '');
             link.appendChild(document.createTextNode(element.textContent));
-            const obj = {
+            let obj = {
                 id: element.id,
                 level: headerLevel,
                 textContent: element.textContent,
-                element,
-                link,
+                element: element,
+                link: link,
                 children: []
             };
-            if (!(headerLevel > stack[stack.length - 1].level)) {
+            if (headerLevel > stack[stack.length - 1].level) {
+                stack[stack.length - 1].children.push(obj);
+                stack.push(obj);
+            } else {
                 while (headerLevel <= stack[stack.length - 1].level && stack.length > 1) {
                     stack.pop();
                 }
+                stack[stack.length - 1].children.push(obj);
+                stack.push(obj);
             }
-            stack[stack.length - 1].children.push(obj);
-            stack.push(obj);
         }
         return result;
     }
 
     function getHeaderLinks(options = {}) {
-        const tagNames = options.tagNames || ['h2', 'h3'];
-        const root = options.root || document.body;
-        const headerElements = getElementsByTagNames(root, tagNames);
+        let tagNames = options.tagNames || ['h2', 'h3'];
+        let root = options.root || document.body;
+        let headerElements = getElementsByTagNames(root, tagNames);
         return createLinksForHeaderElements(headerElements);
     }
 
@@ -215,12 +237,12 @@ window.onGatsbyInitialClientRender = () => {
         if (links.length === 0) {
             return;
         }
-        const ulElm = document.createElement('ul');
-        for (const link of links) {
-            const liElm = document.createElement('li');
-            liElm.append(link.link);
-            if (link.children.length > 0) {
-                renderHeaderLinks(liElm, link.children);
+        let ulElm = document.createElement('ul');
+        for (let i = 0; i < links.length; i++) {
+            let liElm = document.createElement('li');
+            liElm.append(links[i].link);
+            if (links[i].children.length > 0) {
+                renderHeaderLinks(liElm, links[i].children);
             }
             ulElm.appendChild(liElm);
         }
@@ -228,14 +250,14 @@ window.onGatsbyInitialClientRender = () => {
     }
 
     function anchorForId(id) {
-        const anchor = document.createElement('a');
+        let anchor = document.createElement('a');
         anchor.setAttribute('class', 'hash-link');
         anchor.setAttribute('data-scroll', '');
-        anchor.href = `#${id}`;
+        anchor.href = '#' + id;
         anchor.innerHTML = '<span class="screen-reader-text">Copy</span>';
         return anchor;
     }
 
     // Syntax Highlighter
-    Prism.highlightAll();
+    // Prism.highlightAll();
 };
