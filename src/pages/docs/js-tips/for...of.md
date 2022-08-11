@@ -11,6 +11,7 @@ seo:
 template: docs
 ---
 
+
 # for...of
 
 The `for...of` creates a loop iterating over [iterable objects](../iteration_protocols#the_iterable_protocol), including: built-in [`String`](../global_objects/string), [`Array`](../global_objects/array), array-like objects (e.g., [`arguments`](../functions/arguments) or [`NodeList`](https://developer.mozilla.org/en-US/docs/Web/API/NodeList)), [`TypedArray`](../global_objects/typedarray), [`Map`](../global_objects/map), [`Set`](../global_objects/set), and user-defined iterables. It invokes a custom iteration hook with statements to be executed for the value of each distinct property of the object.
@@ -267,10 +268,12 @@ This loop is similar to the first one, but it uses [`hasOwnProperty()`](../globa
     }
 
 This loop iterates and logs **values** that `iterable`, as an [iterable object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators#iterables), defines to be iterated over. The object's **elements** `3`, `5`, `7` are shown, but none of the object's **properties**.
+<<<<<<< HEAD:src/pages/docs/js-tips/for...of.md
+=======
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-for-in-and-for-of-statements">ECMAScript Language Specification (ECMAScript)
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-for-in-and-for-of-statements">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
 <span class="small">#sec-for-in-and-for-of-statements</span></a></td></tr></tbody></table>
@@ -363,6 +366,7 @@ No
 -   [`Map.prototype.forEach()`](../global_objects/map/foreach)
 -   [`Object.entries()`](../global_objects/object/entries) - Useful when using `for...of` over an object.
 
-© 2005-2021 MDN contributors.
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+© 2005-2021 MDN contributors.  
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of</a>
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2:notes/JS-DOC/for...of.md

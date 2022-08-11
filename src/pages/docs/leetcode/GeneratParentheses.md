@@ -11,6 +11,7 @@ seo:
 template: docs
 ---
 
+
 ## [22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/)
 
 ### Problem:
@@ -35,7 +36,8 @@ For example, given n = 3, a solution set is:
 
 Recursive DFS backtracking.
 
-```javascript
+```js
+//
 /**
  * @param {number} n
  * @return {string[]}
@@ -68,7 +70,8 @@ function dfs(n, nopen, nclose, path, result) {
 
 BFS.
 
-```javascript
+```js
+//
 /**
  * @param {number} n
  * @return {string[]}

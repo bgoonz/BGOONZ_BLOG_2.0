@@ -11,6 +11,7 @@ seo:
 template: docs
 ---
 
+
 # Promise.allSettled()
 
 The `Promise.allSettled()` method returns a promise that resolves after all of the given promises have either fulfilled or rejected, with an array of objects that each describes the outcome of each promise.
@@ -54,3 +55,51 @@ For each outcome object, a `status` string is present. If the status is `fulfill
     //   {status: "fulfilled", value: 99},
     //   {status: "rejected",  reason: Error: an error}
     // ]
+<<<<<<< HEAD:src/pages/docs/js-tips/allsettled.md
+=======
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-promise.allsettled">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+<span class="small">#sec-promise.allsettled</span></a></td></tr></tbody></table>
+
+`allSettled`
+
+76
+
+79
+
+71
+
+No
+
+63
+
+13
+
+76
+
+76
+
+79
+
+54
+
+13
+
+12.0
+
+## See also
+
+-   [Promises](https://developer.mozilla.org/en-US/docs/Archive/Add-ons/Techniques/Promises)
+-   [Using promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
+-   [Graceful asynchronous programming with promises](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises)
+-   [`Promise`](../promise)
+-   [`Promise.all()`](all)
+
+© 2005-2021 MDN contributors.  
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/allSettled" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/allSettled</a>
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2:notes/JS-DOC/allsettled.md

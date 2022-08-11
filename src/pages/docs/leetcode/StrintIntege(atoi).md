@@ -11,6 +11,7 @@ seo:
 template: docs
 ---
 
+
 ## [8. String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/description/)
 
 ### Problem:
@@ -76,7 +77,8 @@ Explanation: The number "-91283472332" is out of the range of a 32-bit signed in
 
 #### ONE
 
-```javascript
+```js
+//
 /**
  * @param {string} str
  * @return {number}
@@ -90,7 +92,8 @@ let myAtoi = function (str) {
 
 Looks like `Number()` is faster than `parseInt()`.
 
-```javascript
+```js
+//
 /**
  * @param {string} str
  * @return {number}
@@ -104,7 +107,8 @@ let myAtoi = function (str) {
 
 General solution.
 
-```javascript
+```js
+//
 /**
  * @param {string} str
  * @return {number}

@@ -1,7 +1,7 @@
 ---
 title: Math.acosh()
 weight: 0
-excerpt: 
+excerpt:
 seo:
     title: 'Math.acosh()'
     description: ''
@@ -10,6 +10,8 @@ seo:
     type: stackbit_page_meta
 template: docs
 ---
+
+
 # Math.acosh()
 
 The `Math.acosh()` function returns the hyperbolic arc-cosine of a number, that is
@@ -52,3 +54,51 @@ For all *x* ≥ 1, we have $\\operatorname{arcosh}(x) = \\ln\\left( {x + \\s
     Math.acosh = Math.acosh || function(x) {
       return Math.log(x + Math.sqrt(x * x - 1));
     };
+<<<<<<< HEAD:src/pages/docs/js-tips/acosh.md
+=======
+
+## Specifications
+
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-math.acosh">ECMAScript Language Specification (ECMAScript) 
+<br/>
+
+<span class="small">#sec-math.acosh</span></a></td></tr></tbody></table>
+
+`acosh`
+
+38
+
+12
+
+25
+
+No
+
+25
+
+8
+
+38
+
+38
+
+25
+
+25
+
+8
+
+3.0
+
+## See also
+
+-   [`Math.asinh()`](asinh)
+-   [`Math.atanh()`](atanh)
+-   [`Math.cosh()`](cosh)
+-   [`Math.sinh()`](sinh)
+-   [`Math.tanh()`](tanh)
+
+© 2005-2021 MDN contributors.  
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/acosh" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/acosh</a>
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2:notes/JS-DOC/acosh.md

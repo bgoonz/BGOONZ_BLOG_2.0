@@ -1,5 +1,5 @@
 ---
-title: Array.prototype.sort()
+title: Array.sort()
 weight: 0
 excerpt: Javascript articles  and docs
 seo:
@@ -10,6 +10,7 @@ seo:
     type: stackbit_page_meta
 template: docs
 ---
+
 
 # Array.prototype.sort()
 
@@ -54,10 +55,10 @@ If `compareFunction` is not supplied, all non-`undefined` array elements are sor
 
 If `compareFunction` is supplied, all non-`undefined` array elements are sorted according to the return value of the compare function (all `undefined` elements are sorted to the end of the array, with no call to `compareFunction`). If `a` and `b` are two elements being compared, then:
 
--   If `compareFunction(a, b)` returns less than 0, leave `a` and `b` unchanged.
--   If `compareFunction(a, b)` returns 0, leave `a` and `b` unchanged with respect to each other, but sorted with respect to all different elements. Note: the ECMAScript standard only started guaranteeing this behavior [in 2019](https://www.ecma-international.org/ecma-262/10.0/index.html#sec-intro), thus, older browsers may not respect this.
--   If `compareFunction(a, b)` returns greater than 0, sort `b` before `a`.
--   `compareFunction(a, b)` must always return the same value when given a specific pair of elements `a` and `b` as its two arguments. If inconsistent results are returned, then the sort order is undefined.
+- If `compareFunction(a, b)` returns less than 0, leave `a` and `b` unchanged.
+- If `compareFunction(a, b)` returns 0, leave `a` and `b` unchanged with respect to each other, but sorted with respect to all different elements. Note: the ECMAScript standard only started guaranteeing this behavior [in 2019](https://www.ecma-international.org/ecma-262/10.0/index.html#sec-intro), thus, older browsers may not respect this.
+- If `compareFunction(a, b)` returns greater than 0, sort `b` before `a`.
+- `compareFunction(a, b)` must always return the same value when given a specific pair of elements `a` and `b` as its two arguments. If inconsistent results are returned, then the sort order is undefined.
 
 So, the compare function has the following form:
 
@@ -231,102 +232,3 @@ Before version 10 (or EcmaScript 2019), sort stabiliy was not guaranteed, meanin
       { name: "Devlin", grade: 15 }, // original order not maintained
       { name: "Alex",   grade: 15 }, // original order not maintained
     ];
-
-## Specifications
-
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.sort">ECMAScript Language Specification (ECMAScript)
-<br/>
-
-<span class="small">#sec-array.prototype.sort</span></a></td></tr></tbody></table>
-
-## Browser compatibility
-
-Desktop
-
-Mobile
-
-Chrome
-
-Edge
-
-Firefox
-
-Internet Explorer
-
-Opera
-
-Safari
-
-WebView Android
-
-Chrome Android
-
-Firefox for Android
-
-Opera Android
-
-Safari on IOS
-
-Samsung Internet
-
-`sort`
-
-1
-
-12
-
-1
-
-5.5
-
-4
-
-1
-
-1
-
-18
-
-4
-
-10.1
-
-1
-
-1.0
-
-`stable`
-
-70
-
-79
-
-3
-
-No
-
-57
-
-10.1
-
-70
-
-70
-
-4
-
-49
-
-10.3
-
-10.0
-
-## See also
-
--   [`Array.prototype.reverse()`](reverse)
--   [`String.prototype.localeCompare()`](../string/localecompare)
--   [About the stability of the algorithm used by V8 engine](https://v8.dev/blog/array-sort)
--   [V8 sort stability](https://v8.dev/features/stable-sort)
--   [Mathias Bynens' sort stability demo](https://mathiasbynens.be/demo/sort-stability)
-
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort</a>

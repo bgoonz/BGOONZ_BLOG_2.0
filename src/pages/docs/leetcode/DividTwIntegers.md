@@ -11,6 +11,7 @@ seo:
 template: docs
 ---
 
+
 ## [29. Divide Two Integers](https://leetcode.com/problems/divide-two-integers/description/)
 
 ### Problem:
@@ -30,7 +31,7 @@ Output: 3
 
 **Example 2:**
 
-```
+```txt
 Input: dividend = 7, divisor = -3
 Output: -2
 ```
@@ -39,7 +40,7 @@ Output: -2
 
 - Both dividend and divisor will be 32-bit signed integers.
 - The divisor will never be 0.
-- Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range: [−231,  231 − 1]. For the purpose of this problem, assume that your function returns 231 − 1 when the division result overflows.
+- Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range: [−231, 231 − 1]. For the purpose of this problem, assume that your function returns 231 − 1 when the division result overflows.
 
 ### Solution:
 
@@ -47,44 +48,39 @@ Every decimal number can be represented as `a0*2^0 + a1*2^1 + a2*2^2 + ... + an*
 
 Replace multiplication and division with binary shifting.
 
-```javascript
+```js
+//
 /**
  * @param {number} dividend
  * @param {number} divisor
  * @return {number}
  */
 let divide = function (dividend, divisor) {
-  if (
-    divisor === 0 ||
-    (divisor === -1 && dividend < -2147483647) ||
-    dividend > 2147483647 ||
-    dividend < -2147483648
-  ) {
-    return 2147483647;
-  }
+    if (divisor === 0 || (divisor === -1 && dividend < -2147483647) || dividend > 2147483647 || dividend < -2147483648) {
+        return 2147483647;
+    }
 
-  const isNegative =
-    (dividend < 0 && divisor >= 0) || (dividend >= 0 && divisor < 0);
-  const pDividend = Math.abs(dividend);
-  const pDivisor = Math.abs(divisor);
+    const isNegative = (dividend < 0 && divisor >= 0) || (dividend >= 0 && divisor < 0);
+    const pDividend = Math.abs(dividend);
+    const pDivisor = Math.abs(divisor);
 
-  if (dividend === 0 || pDividend < pDivisor) {
-    return 0;
-  }
+    if (dividend === 0 || pDividend < pDivisor) {
+        return 0;
+    }
 
-  let doubling = pDivisor;
-  let count = 1;
-  while (doubling < pDividend && !(doubling & (1 << 30))) {
-    doubling <<= 1;
-    count <<= 1;
-  }
-  if (doubling > pDividend) {
-    doubling >>>= 1;
-    count >>>= 1;
-  }
+    let doubling = pDivisor;
+    let count = 1;
+    while (doubling < pDividend && !(doubling & (1 << 30))) {
+        doubling <<= 1;
+        count <<= 1;
+    }
+    if (doubling > pDividend) {
+        doubling >>>= 1;
+        count >>>= 1;
+    }
 
-  const result = count + divide(pDividend - doubling, pDivisor);
-  return isNegative ? -result : result;
+    const result = count + divide(pDividend - doubling, pDivisor);
+    return isNegative ? -result : result;
 };
 ```
 

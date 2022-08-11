@@ -11,6 +11,7 @@ seo:
 template: docs
 ---
 
+
 # async function
 
 An async function is a function declared with the `async` keyword, and the `await` keyword is permitted within them. The `async` and `await` keywords enable asynchronous, promise-based behavior to be written in a cleaner style, avoiding the need to explicitly configure promise chains.
@@ -264,10 +265,12 @@ Consider the following rewrite of the above code. It returns `null` if `processD
 Writing `return processDataInWorker(v)` would have caused the [`Promise`](../global_objects/promise) returned by the function to reject, instead of resolving to `null` if `processDataInWorker(v)` rejects.
 
 This highlights the subtle difference between `return foo;` and `return await foo;` — `return foo` immediately returns `foo` and never throws, even if `foo` is a Promise that rejects. `return await foo` will _wait_ for `foo` to resolve or reject if it's a Promise, and throws **before returning** if it rejects.
+<<<<<<< HEAD:src/pages/docs/js-tips/async_function.md
+=======
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-async-function-definitions">ECMAScript Language Specification (ECMAScript)
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-async-function-definitions">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
 <span class="small">#sec-async-function-definitions</span></a></td></tr></tbody></table>
@@ -305,6 +308,7 @@ No
 -   [`await`](../operators/await)
 -   ["Decorating Async Javascript Functions" on "innolitics.com"](https://innolitics.com/10x/javascript-decorators-for-promise-returning-functions/)
 
-© 2005-2021 MDN contributors.
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+© 2005-2021 MDN contributors.  
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function</a>
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2:notes/JS-DOC/async_function.md

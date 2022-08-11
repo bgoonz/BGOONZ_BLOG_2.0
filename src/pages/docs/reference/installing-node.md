@@ -3,12 +3,13 @@ title: Installing Node
 weight: 0
 excerpt: Installing Node
 seo:
-    title: ''
-    description: ''
+    title: 'Installing Node'
+    description: 'Installing Node'
     robots: []
     extra: []
 template: docs
 ---
+
 
 ## Android[](https://nodejs.org/en/download/package-manager/#android)
 

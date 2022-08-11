@@ -1,5 +1,5 @@
 ---
-title: Array.prototype.forEach()
+title: Array.forEach()
 weight: 0
 excerpt:
 seo:
@@ -10,6 +10,7 @@ seo:
     type: stackbit_page_meta
 template: docs
 ---
+
 
 # Array.prototype.forEach()
 
@@ -75,12 +76,12 @@ The range of elements processed by `forEach()` is set before the first invocatio
 
 Early termination may be accomplished with:
 
--   A simple [for](../../statements/for) loop
--   A [for...of](../../statements/for...of) / [for...in](../../statements/for...in) loops
--   [`Array.prototype.every()`](every)
--   [`Array.prototype.some()`](some)
--   [`Array.prototype.find()`](find)
--   [`Array.prototype.findIndex()`](findindex)
+- A simple [for](../../statements/for) loop
+- A [for...of](../../statements/for...of) / [for...in](../../statements/for...in) loops
+- [`Array.prototype.every()`](every)
+- [`Array.prototype.some()`](some)
+- [`Array.prototype.find()`](find)
+- [`Array.prototype.findIndex()`](findindex)
 
 Array methods: [`every()`](every), [`some()`](some), [`find()`](find), and [`findIndex()`](findindex) test the array elements with a predicate returning a truthy value to determine if further iteration is required.
 
@@ -310,49 +311,3 @@ The following example is only here for learning purpose. If you want to flatten 
     const nested = [1, 2, 3, [4, 5, [6, 7], 8, 9]]
 
     flatten(nested) // [1, 2, 3, 4, 5, 6, 7, 8, 9]
-
-## Specifications
-
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.foreach">ECMAScript Language Specification (ECMAScript)
-<br/>
-
-<span class="small">#sec-array.prototype.foreach</span></a></td></tr></tbody></table>
-
-`forEach`
-
-1
-
-12
-
-1.5
-
-9
-
-9.5
-
-3
-
-≤37
-
-18
-
-4
-
-10.1
-
-1
-
-1.0
-
-## See also
-
--   [`Array.prototype.find()`](find)
--   [`Array.prototype.findIndex()`](findindex)
--   [`Array.prototype.map()`](map)
--   [`Array.prototype.filter()`](filter)
--   [`Array.prototype.every()`](every)
--   [`Array.prototype.some()`](some)
--   [`Map.prototype.forEach()`](../map/foreach)
--   [`Set.prototype.forEach()`](../set/foreach)
-
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach</a>

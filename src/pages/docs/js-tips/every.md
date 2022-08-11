@@ -1,5 +1,5 @@
 ---
-title: Array.prototype.every()
+title: Array.every()
 weight: 0
 excerpt:
 seo:
@@ -10,6 +10,7 @@ seo:
     type: stackbit_page_meta
 template: docs
 ---
+
 
 # Array.prototype.every()
 
@@ -214,45 +215,3 @@ The following examples tests the behavior of the `every` method when the array i
     //
     // 1st iteration: [1,2,3][0] -> 1
     // 2nd iteration: [1,2][1] -> 2
-
-## Specifications
-
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.every">ECMAScript Language Specification (ECMAScript)
-<br/>
-
-<span class="small">#sec-array.prototype.every</span></a></td></tr></tbody></table>
-
-`every`
-
-1
-
-12
-
-1.5
-
-9
-
-9.5
-
-3
-
-≤37
-
-18
-
-4
-
-10.1
-
-1
-
-1.0
-
-## See also
-
--   [`Array.prototype.forEach()`](foreach)
--   [`Array.prototype.some()`](some)
--   [`Array.prototype.find()`](find)
--   [`TypedArray.prototype.every()`](../typedarray/every)
-
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every</a>

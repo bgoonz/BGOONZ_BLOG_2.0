@@ -75,6 +75,7 @@ Normally the upstream server is not down (i.e. furnishes no response to the gate
 ## Example
 
 ```js
+//
 class ImplementAbstraction {
     // method to set values of internal members
     set(x, y) {
@@ -138,9 +139,9 @@ Browsers convert markup into an internal representation called the _[DOM tree](/
 There are four things in an accessibility tree object:
 
 -   **name**
-    -   : How can we refer to this thing? For instance, a link with the text "Read more" will have "Read more" as its name (find more on how names are computed in the [Accessible Name and Description Computation spec](https://www.w3.org/TR/accname-1.1/)).
+-   -   : How can we refer to this thing? For instance, a link with the text "Read more" will have "Read more" as its name (find more on how names are computed in the [Accessible Name and Description Com
 -   **description**
-    -   : How do we describe this thing, if we want to provide more description beyond the name? The description of a table could explain what kind of information the table contains.
+-   -   : How do we describe this thing, if we want to provide more description beyond the name? The description of a table could explain what kind of information the table contains.
 -   **role**
     -   : What kind of thing is it? For example, is it a button, a nav bar, or a list of items?
 -   **state**
@@ -309,7 +310,7 @@ For _cssxref("justify-self"_) and _cssxref("align-self"_), the alignment subject
 For _cssxref("justify-content"_) and _cssxref("align-content"_), the writing mode of the box is also used. The definition of the alignment subject depends on the layout mode being used.
 
 -   Block containers (including table cells)
-    -   : The entire content of the block as a single unit.
+-   -   : The entire content of the block as a single unit.
 -   Multicol containers
     -   : The column boxes, with any spacing inserted between column boxes added to the relevant column gaps.
 -   Flex containers
@@ -350,45 +351,6 @@ For example, the color `#8921F2` (also described as `rgb(137, 33, 242)` or `hsl(
 ![Image showing the effect of an alpha channel on a color.](alpha-channel-example.png)
 
 As you can see, the color without an alpha channel completely blocks the background text, while the box with the alpha channel leaves it visible through the purple background color.
-
-#### See also
-
--   _interwiki("wikipedia", "Alpha compositing"_) on Wikipedia
--   _interwiki("wikipedia", "RGBA color model"_) on Wikipedia
--   _interwiki("wikipedia", "Channel (digital image)"_) on Wikipedia
--   [CSS color](/en-US/docs/Web/CSS/CSS_Color)
-
----
-
-## Term: ALPN
-
--   ALPN
--   Draft
--   Glossary
--   NeedsContent
--   TLS
-
----
-
-> **Application-Layer _Glossary("Protocol"_) Negotiation** (**ALPN**) is a _Glossary("TLS"_) extension which indicates what application layer protocol is negotiating the encrypted connection without requiring additional round trips.
-
-| Protocol                                | Identification sequence                                |
-| --------------------------------------- | ------------------------------------------------------ |
-| _Glossary("HTTP"_)/1.1                  | `0x68 0x74 0x74 0x70 0x2F 0x31 0x2E 0x31` ("http/1.1") |
-| _Glossary("HTTP 2", "HTTP/2"_)          | `0x68 0x32` ("h2")                                     |
-| HTTP/2 over cleartext _Glossary("TCP"_) | `0x68 0x32 0x63` ("h2c")                               |
-
-## Specifications
-
-| Specification | Status   | Notes               |
-| ------------- | -------- | ------------------- |
-| _RFC(7301_)   | IETF RFC | Initial definition. |
-
-#### See also
-
--   [IANA registered ALPN identifiers](https://www.iana.org/assignments/tls-extensiontype-values/tls-extensiontype-values.xhtml#alpn-protocol-ids)
-
----
 
 ## Term: API
 
@@ -533,6 +495,7 @@ Each item in an array has a number attached to it, called a numeric index, that 
 What an array in JavaScript looks like:
 
 ```js
+//
 let myArray = [1, 2, 3, 4];
 let catNamesArray = ['Jacqueline', 'Sophia', 'Autumn'];
 //Arrays in JavaScript can hold different types of data, as shown above.
@@ -650,6 +613,7 @@ Considering the following HTML:
 We can check the reflection between _domxref("HTMLInputElement.placeholder"_) and the attribute using:
 
 ```js
+//
 let input = document.getElementsByTagName('input')[0];
 let attr = input.getAttributeNode('placeholder');
 console.log(attr.value);
@@ -659,6 +623,7 @@ console.log(input.placeholder); //Returns the same value as `attr.value`
 and
 
 ```js
+//
 let input2 = document.getElementsByTagName('input')[0];
 let attr2 = input.getAttributeNode('placeholder');
 console.log(attr2.value); // Returns `Original placeholder`
@@ -758,8 +723,15 @@ Since [`DOMString`](/en-US/docs/Web/API/DOMString '/en-US/docs/Web/API/DOMString
 Here are the two possible methods.
 
 ### Solution #1 - escaping the string before encoding it
+<<<<<<< HEAD
+
+---
+=======
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
 
 ```js
+//
+
 function utf8_to_b64(str) {
     return window.btoa(unescape(encodeURIComponent(str)));
 }
@@ -777,7 +749,11 @@ This solution has been proposed by [Johan Sundström](http://ecmanaut.blogspot.c
 
 Another possible solution without utilizing the now deprecated 'unescape' and 'escape' functions.
 
+---
+
 ```js
+//
+
 function b64EncodeUnicode(str) {
     return btoa(
         encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, function (match, p1) {
@@ -793,6 +769,7 @@ b64EncodeUnicode('✓ à la mode'); // "4pyTIMOgIGxhIG1vZGU="
 > **Note:** The following code is also useful to get an [ArrayBuffer](/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) from a Base64 string and/or viceversa ([see below](#appendix_decode_a_base64_string_to_uint8array_or_arraybuffer)).
 
 ```js
+//
 'use strict';
 
 /*\
@@ -972,6 +949,7 @@ function strToUTF8Arr(sDOMStr) {
 ### Tests
 
 ```js
+//
 /* Tests */
 
 var sMyInput = 'Base 64 \u2014 Mozilla Developer Network';
@@ -994,6 +972,7 @@ alert(sMyOutput);
 These function let us to create also [uint8Arrays](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array) or [arrayBuffers](/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) from Base64-encoded strings:
 
 ```js
+//
 // "Base 64 \u2014 Mozilla Developer Network"
 var myArray = base64DecToArr('QmFzZSA2NCDigJQgTW96aWxsYSBEZXZlbG9wZXIgTmV0d29yaw==');
 
@@ -1156,6 +1135,7 @@ For example, in JavaScript, Boolean conditionals are often used to decide which 
 Below is some JavaScript pseudocode (it's not truly executable code) demonstrating this concept.
 
 ```js
+//
 /* JavaScript if statement */
 if (boolean conditional) {
    // code to execute if the conditional is true
@@ -1472,7 +1452,11 @@ Cache-Control: no-cache
 
 ## Example
 
+---
+
 ```js
+//
+
 function greeting() {
     // [1] Some code here
     sayHi();
@@ -1542,7 +1526,11 @@ In summary, then, we start with an empty Call Stack. Whenever we invoke a functi
 
 Here is a quick example:
 
+---
+
 ```js
+//
+
 function greeting(name) {
     alert('Hello ' + name);
 }
@@ -2086,6 +2074,7 @@ In UTF-16 (the encoding system used for JavaScript strings) code units are 16-bi
 For example, sometimes characters with diacritics such as accents are represented using two Unicode code points:
 
 ```js
+//
 const myString = 'ñ';
 myString.length;
 // 2
@@ -2094,6 +2083,7 @@ myString.length;
 Also, since not all of the code points defined by Unicode fit into 16 bits, many Unicode code points are encoded as a pair of UTF-16 code units, which is called a _surrogate pair_:
 
 ```js
+//
 const face = '🥵';
 face.length;
 // 2
@@ -2102,6 +2092,7 @@ face.length;
 The _jsxref("String/codePointAt", "codePointAt()"_) method of the JavaScript _jsxref("String"_) object enables you to retrieve the Unicode code point from its encoded form:
 
 ```js
+//
 const face = '🥵';
 face.codePointAt(0);
 // 129397
@@ -2245,6 +2236,7 @@ Like variables, some constants are bound to identifiers. For example, the identi
 ## Syntax
 
 ```js
+//
 // This is a generic default constructor class Default
 function Default() {
 }
@@ -2257,7 +2249,11 @@ function Overloaded(arg1, arg2, ..., argN){
 
 To call the constructor of the class in JavaScript, use a `new` operator to assign a new _glossary("object reference"_) to a _glossary("variable"_).
 
+---
+
 ```js
+//
+
 function Default() {}
 
 // A new reference of a Default object assigned to a
@@ -2463,13 +2459,13 @@ The [same-origin security policy](/en-US/docs/Web/Security/Same-origin_policy) f
 ### CORS headers
 
 -   _HTTPHeader("Access-Control-Allow-Origin"_)
-    -   : Indicates whether the response can be shared.
+-   -   : Indicates whether the response can be shared.
 -   _HTTPHeader("Access-Control-Allow-Credentials"_)
-    -   : Indicates whether or not the response to the request can be exposed when the credentials flag is true.
+-   -   : Indicates whether or not the response to the request can be exposed when the credentials flag is true.
 -   _HTTPHeader("Access-Control-Allow-Headers"_)
-    -   : Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request.
+-   -   : Used in response to a preflight request to indicate which HTTP headers can be used when making the actual reques
 -   _HTTPHeader("Access-Control-Allow-Methods"_)
-    -   : Specifies the method or methods allowed when accessing the resource in response to a preflight request.
+-   -   : Specifies the method or methods allowed when accessing the resource in response to a preflight request.
 -   _HTTPHeader("Access-Control-Expose-Headers"_)
     -   : Indicates which headers can be exposed as part of the response by listing their names.
 -   _HTTPHeader("Access-Control-Max-Age"_)
@@ -2544,11 +2540,19 @@ These attacks succeed if the Web app does not employ enough validation or encodi
 
 #### See also
 
+<<<<<<< HEAD
 -   [Cross-site scripting (XSS)](/en-US/docs/Web/Security/Types_of_attacks#cross-site_scripting_xss)
 -   _Interwiki("wikipedia", "Cross-site scripting"_) on Wikipedia
 -   [Cross-site scripting on OWASP](https://owasp.org/www-community/attacks/xss/)
 -   [Another article about Cross-site scripting](https://www.acunetix.com/blog/web-security-zone/articles/dom-xss-explained/)
 -   [XSS Attack - Exploit & Protection](https://secure.wphackedhelp.com/blog/wordpress-xss-attack/)
+=======
+- [Cross-site scripting (XSS)](/en-US/docs/Web/Security/Types_of_attacks#cross-site_scripting_xss)
+- _Interwiki("wikipedia", "Cross-site scripting"_) on Wikipedia
+- [Cross-site scripting on OWASP](https://owasp.org/www-community/attacks/xss/)
+- [Another article about Cross-site scripting](https://www.acunetix.com/blog/web-security-zone/articles/dom-xss-explained/)
+- [XSS Attack - Exploit & Protection](https://secure.wphackedhelp.com/blog/wordpress-xss-attack/)
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
 
 ---
 
@@ -3003,12 +3007,14 @@ For example, when describing how far an object on the screen moves left-to-right
 Likewise, given the new value of _X_ and its old value, you might compute the delta like this:
 
 ```js
+//
 let deltaX = newX - oldX;
 ```
 
 More commonly, you receive the delta and use it to update a saved previous condition:
 
 ```js
+//
 let newX = oldX + deltaX;
 ```
 
@@ -3087,7 +3093,7 @@ Current browsers provide integrated developer tools, which allow to inspect a we
 -   [Firebug](https://getfirebug.com/) (former developer tool for Firefox)
 -   [Chrome DevTools](https://developer.chrome.com/devtools) on chrome.com
 -   [Safari Web Inspector](https://developer.apple.com/library/content/documentation/AppleApplications/Conceptual/Safari_Developer_Guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007874-CH1-SW1) on apple.com
--   [Edge Dev Tools](https://docs.microsoft.com/en-us/microsoft-edge/f12-devtools-guide) on microsoft.com
+-   [Edge Dev Tools](https://docs.microsoft.com/microsoft-edge/f12-devtools-guide) on microsoft.com
 
 ---
 
@@ -3580,6 +3586,7 @@ The values of '`slow-2g`', '`2g`', '`3g`', and '`4g`' are determined using obser
 [effectiveType](/en-US/docs/Web/API/NetworkInformation/effectiveType) is a property of the [Network Information API](/en-US/docs/Web/API/Network_Information_API), exposed to JavaScript via the [navigator.connection](/en-US/docs/Web/API/Navigator/connection) object. To see your effective connection type, open the console of the developer tools of a supporting browser and enter the following:
 
 ```js
+//
 navigator.connection.effectiveType;
 ```
 
@@ -3624,7 +3631,7 @@ navigator.connection.effectiveType;
 
 The [HTML](https://html.spec.whatwg.org/multipage/), [SVG](https://www.w3.org/TR/SVG2/), and [MathML](https://www.w3.org/TR/MathML3/) specifications define very precisely what each element can contain. Many combinations have no semantic meaning, for example an _HTMLElement("audio"_) element nested inside an _HTMLElement("hr"_) element.
 
-In HTML, using a closing tag on an empty element is usually invalid. For example, `<input type="text"></input>` is invalid HTML.
+In HTML, using a closing tag on an empty element is usually invalid. For example, `<input type="text"> </input>` is invalid HTML.
 
 The empty elements in HTML are as follows:
 
@@ -3845,6 +3852,7 @@ To display these characters as text, replace them with their corresponding chara
 > Expando properties are properties added to _glossary("DOM"_) nodes with _glossary("JavaScript"_), where those properties are not part of the _glossary("object","object's"_) DOM specification:
 
 ```js
+//
 window.document.foo = 5; // foo is an expando
 ```
 
@@ -3863,11 +3871,11 @@ The term may also be applied to properties added to objects without respecting t
 > In [CSS Box Alignment](/en-US/docs/Web/CSS/CSS_Box_Alignment), a fallback alignment is specified in order to deal with cases where the requested alignment cannot be fulfilled. For example, if you specify `justify-content: space-between` there must be more than one [alignment subject](/en-US/docs/Glossary/Alignment_Subject). If there is not, the fallback alignment is used. This is specified per alignment method, as detailed below.
 
 -   First baseline
-    -   : `start`
+-   -   : `start`
 -   Last baseline
-    -   : `safe end`
+-   -   : `safe end`
 -   Baseline
-    -   : `start`
+-   -   : `start`
 -   Space-between
     -   : `flex-start` (start)
 -   Space-around
@@ -3914,6 +3922,7 @@ The following table provides a complete list of JavaScript falsy values:
 Examples of _falsy_ values in JavaScript (which are coerced to false in Boolean contexts, and thus _bypass_ the `if` block):
 
 ```js
+//
 if (false)
 if (null)
 if (undefined)
@@ -3929,6 +3938,7 @@ if ("")
 If the first object is falsy, it returns that object
 
 ```js
+//
 false && 'dog';
 // ↪ false
 
@@ -4089,6 +4099,7 @@ Firewalls can be as simple as a single piece of software, or more complex, like 
 ### JavaScript
 
 ```js
+//
 const foo = function () {
     console.log('foobar');
 };
@@ -4104,7 +4115,11 @@ We assigned an **Anonymous Function** in a _glossary("Variable"_), then we used 
 
 ### JavaScript
 
+---
+
 ```js
+//
+
 function sayHello() {
     return 'Hello, ';
 }
@@ -4124,7 +4139,11 @@ We are passing our `sayHello()` function as an argument to the `greeting()` func
 
 ### JavaScript
 
+---
+
 ```js
+//
+
 function sayHello() {
     return function () {
         console.log('Hello!');
@@ -4141,6 +4160,7 @@ Back to our example; Now, we need to invoke `sayHello` function and its returned
 ### 1- Using a variable
 
 ```js
+//
 const sayHello = function () {
     return function () {
         console.log('Hello!');
@@ -4157,7 +4177,11 @@ This way, it returns the `Hello!` message.
 
 ### 2- Using double parentheses
 
+---
+
 ```js
+//
+
 function sayHello() {
     return function () {
         console.log('Hello!');
@@ -4632,6 +4656,7 @@ A function name is an _Glossary("identifier"_) included as part of a function de
 An **anonymous function** is a function without a function name. Only function expressions can be anonymous, function declarations must have a name:
 
 ```js
+//
 // When used as a function expression
 (function () {});
 // or using the ECMAScript 2015 arrow notation
@@ -4643,6 +4668,7 @@ The following terms are not used in the ECMAScript language specification, they'
 A **named function** is a function with a function name:
 
 ```js
+//
 // Function declaration
 function foo() {}
 // Named function expression
@@ -4653,7 +4679,11 @@ const foo = () => {};
 
 An **inner function** is a function inside another function (`square` in this case). An **outer function** is a function containing a function (`addSquares` in this case):
 
+---
+
 ```js
+//
+
 function addSquares(a, b) {
     function square(x) {
         return x * x;
@@ -4669,7 +4699,11 @@ const addSquares = (a, b) => {
 
 A **recursive function** is a function that calls itself. See _Glossary("Recursion", "recursion"_).
 
+---
+
 ```js
+//
+
 function loop(x) {
     if (x >= 10) return;
     loop(x + 1);
@@ -4684,6 +4718,7 @@ const loop = (x) => {
 An **Immediately Invoked Function Expressions** (_glossary("IIFE"_)) is a function that is called directly after the function is loaded into the browser's compiler. The way to identify an IIFE is by locating the extra left and right parenthesis at the end of the function's definition.
 
 ```js
+//
 // Declared functions can't be called immediately this way
 // Error (https://en.wikipedia.org/wiki/Immediately-invoked_function_expression)
 /*
@@ -4845,6 +4880,7 @@ The `window` object is the Global Object in the Browser. Any Global Variables or
 ### Access Global Variables
 
 ```js
+//
 var foo = 'foobar';
 foo === window.foo; // Returns: true
 ```
@@ -4856,12 +4892,17 @@ After defining a Global Variable `foo`, we can access its value directly from th
 The global variable `foo` was stored in the `window` object, like this:
 
 ```js
+//
 foo: 'foobar';
 ```
 
 ### Access Global Functions
 
+---
+
 ```js
+//
+
 function greeting() {
     console.log('Hi!');
 }
@@ -4876,6 +4917,7 @@ The example above explains how Global Functions are stored as _properties_ in th
 The global function `greeting` was stored in the `window` object, like this:
 
 ```js
+//
 greeting: function greeting() {
     console.log('Hi!');
 }
@@ -5712,7 +5754,11 @@ In the example below we have a three-column and two-row track grid, with 20-pixe
 
 In terms of grid sizing, gaps act as if they were a regular grid track however nothing can be placed into the gap. The gap acts as if the grid line at that location has gained extra size, so any grid item placed after that line begins at the end of the gap.
 
+<<<<<<< HEAD
 The grid-gap properties are not the only thing that can cause tracks to space out. Margins, padding or the use of the space distribution properties in [Box Alignment](/en-US/docs/Web/CSS/CSS_Grid_Layout/Box_Alignment_in_CSS_Grid_Layout) can all contribute to the visible gap - therefore the grid-gap properties should not be seen as equal to "the gutter size" unless you know that your design has not introduced any additional space with one of these methods.
+=======
+The grid-gap properties are not the only thing that can cause tracks to space out. Margins, padding or the use of the space distribution properties in [Box Alignment](/en-US/docs/Web/CSS/CSS_Grid_Layout/Box_Alignment_in_CSS_Grid_Layout) can all contribute to the visible gap - therefore the grid-gap properties should not be seen as equal to “the gutter size” unless you know that your design has not introduced any additional space with one of these methods.
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
 
 #### See also
 
@@ -5840,6 +5886,7 @@ Note that doing so can lead to unexpected errors, and is not generally recommend
 One of the advantages of hoisting is that it lets you use a function before you declare it in your code.
 
 ```js
+//
 catName('Tiger');
 
 function catName(name) {
@@ -5852,7 +5899,11 @@ The result of the code above is: "My cat's name is Tiger"
 
 Without hoisting you would _have_ to write the same code like this:
 
+---
+
 ```js
+//
+
 function catName(name) {
     console.log("My cat's name is " + name);
 }
@@ -5882,6 +5933,7 @@ Here we declare then initialize the value of a `var` after using it.
 The default initialization of the `var` is `undefined`.
 
 ```js
+//
 console.log(num); // Returns 'undefined' from hoisted var declaration (not 6)
 var num; // Declaration
 num = 6; // Initialization
@@ -5891,6 +5943,7 @@ console.log(num); // Returns 6 after the line with initialization is executed.
 The same thing happens if we declare and initialize the variable in the same line.
 
 ```js
+//
 console.log(num); // Returns 'undefined' from hoisted var declaration (not 6)
 var num = 6; // Initialization and declaration.
 console.log(num); // Returns 6 after the line with initialization is executed.
@@ -5900,6 +5953,7 @@ If we forget the declaration altogether (and only initialize the value) the vari
 Trying to read the variable before it is initialized results in `ReferenceError` exception.
 
 ```js
+//
 console.log(num); // Throws ReferenceError exception - the interpreter doesn't know about `num`.
 num = 6; // Initialization
 ```
@@ -5908,6 +5962,7 @@ Note however that initialization also causes declaration (if not already declare
 The code snippet below will work, because even though it isn't hoisted, the variable is initialized and effectively declared before it is used.
 
 ```js
+//
 a = 'Cran'; // Initialize a
 b = 'berry'; // Initialize b
 
@@ -5920,6 +5975,7 @@ Variables declared with `let` and `const` are also hoisted but, unlike `var`, ar
 An exception will be thrown if a variable declared with `let` or `const` is read before it is initialized.
 
 ```js
+//
 console.log(num); // Throws ReferenceError exception as the variable value is uninitialized
 let num = 6; // Initialization
 ```
@@ -6596,6 +6652,7 @@ The IETF is open, run by volunteers, and sponsored by the [Internet Society](htt
 > The name IIFE is promoted by Ben Alman in [his blog](https://web.archive.org/web/20171201033208/http://benalman.com/news/2010/11/immediately-invoked-function-expression/#iife).
 
 ```js
+//
 (function () {
     statements;
 })();
@@ -6616,6 +6673,7 @@ again, we could use the IIFE pattern. As we will not reuse the code again, using
 using a function declaration or a function expression.
 
 ```js
+//
 (function () {
     // some initiation code
     let firstVariable;
@@ -6631,6 +6689,7 @@ We would also use IIFE to create private and public variables and methods. For a
 pattern and other use of IIFE, you could see the book Learning JavaScript Design Patterns by Addy Osmani.
 
 ```js
+//
 const makeWithdraw = (balance) =>
     (function (copyBalance) {
         let balance = copyBalance; // This variable is private
@@ -6668,6 +6727,7 @@ Suppose we want to create 2 buttons with the texts Button 0 and Button 1 and we 
 them, we would like them to alert 0 and 1. The following code doesn't work:
 
 ```js
+//
 for (var i = 0; i < 2; i++) {
     const button = document.createElement('button');
     button.innerText = 'Button ' + i;
@@ -6683,6 +6743,7 @@ When clicked, both Button 0 and Button 1 alert 2 because `i` is global,
 with the last value 2. To fix this problem before ES6, we could use the IIFE pattern:
 
 ```js
+//
 for (var i = 0; i < 2; i++) {
     const button = document.createElement('button');
     button.innerText = 'Button ' + i;
@@ -6701,6 +6762,7 @@ The variable `i` is globally defined.
 Using the statement **let**, we could simply do:
 
 ```js
+//
 for (let i = 0; i < 2; i++) {
     const button = document.createElement('button');
     button.innerText = 'Button ' + i;
@@ -6790,7 +6852,10 @@ _LearnBox({"title":"Learn a new word ..."}_)
 
 <section id="Quick_links">
  <ol>
-  <li><strong><a href="/en-US/docs/Glossary">MDN Web Docs Glossary</a></strong>_ListSubpagesForSidebar("/en-us/docs/Glossary", 1_)</li>
+  <li>
+<strong>
+<a href="/en-US/docs/Glossary">MDN Web Docs Glossary</a>
+</strong>_ListSubpagesForSidebar("/en-us/docs/Glossary", 1_)</li>
  </ol>
 </section>
 
@@ -7202,6 +7267,7 @@ JPEG compression is composed of three compression techniques applied in successi
 jQuery uses a format, `$(selector).action()` to assign an element(s) to an event. To explain it in detail, `$(selector)` will call jQuery to select `selector` element(s), and assign it to an event _Glossary("API"_) called `.action()`.
 
 ```js
+//
 $(document).ready(function () {
     alert('Hello World!');
     $('#blackBox').hide();
@@ -7211,6 +7277,7 @@ $(document).ready(function () {
 The above code carries out the same function as the following code:
 
 ```js
+//
 window.onload = function () {
     alert('Hello World!');
     document.getElementById('blackBox').style.display = 'none';
@@ -7220,6 +7287,7 @@ window.onload = function () {
 Or:
 
 ```js
+//
 window.addEventListener('load', () => {
     alert('Hello World!');
     document.getElementById('blackBox').style.display = 'none';
@@ -7456,6 +7524,7 @@ A string literal is zero or more characters enclosed in double (`"`) or single q
 The following are examples of string literals:
 
 ```js
+//
 'foo';
 'bar';
 '1234';
@@ -7470,6 +7539,7 @@ An object literal is a list of zero or more pairs of property names and associat
 The following is an example of an object literal. The first element of the `car` object defines a property, `myCar`, and assigns to it a new string, "`Toyota`"; the second element, the `getCar` property, is immediately assigned the result of invoking the function `carTypes('Honda')`; the third element, the `special` property, uses an existing variable (`sales`).
 
 ```js
+//
 var sales = 'BMW';
 
 function carTypes(name) {
@@ -7522,6 +7592,7 @@ console.log(car.special); // BMW
 ## Example
 
 ```js
+//
 var global = 5; //is a global variable
 
 function fun() {
@@ -7636,6 +7707,7 @@ It is an uninterrupted period where the [main UI thread](/en-US/docs/Glossary/Ma
 #### Example:
 
 ```js
+//
 for (var i = 0; i < 10; i++) {
     console.log(i);
 }
@@ -7661,6 +7733,7 @@ For the above example, the syntax is as follows:
 #### Example:
 
 ```js
+//
 var i = 0;
 while (i < 5) {
     console.log(i);
@@ -7858,7 +7931,7 @@ Unless intentionally using a [web worker](/en-US/docs/Web/API/Web_Workers_API/Us
 ## Types of markup language
 
 -   **Presentational Markup:**
-    -   : Used by traditional word processing system with WYSIWYG (what you see it is what you get); this is hidden from human authors, users and editors.
+-   -   : Used by traditional word processing system with WYSIWYG (what you see it is what you get); this is hidden from human authors, users and editors.
 -   **Procedural Markup:**
     -   : Combined with text to provide instructions on text processing to programs. This text is visibly manipulated by the author.
 -   **Descriptive Markup:**
@@ -8305,7 +8378,11 @@ Web frameworks such as [AngularJS](https://en.wikipedia.org/wiki/AngularJS) and 
 
 #### See also
 
+<<<<<<< HEAD
 -   _interwiki("wikipedia", "Model-view-controller"_) on Wikipedia
+=======
+- _interwiki("wikipedia", "Model-view-controller"_) on Wikipedia
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
 
 ---
 
@@ -8579,6 +8656,7 @@ In _Glossary("JavaScript"_), `null` is marked as one of the _Glossary("Primitive
 But in certain cases, `null` is not as "primitive" as it first seems! Every Object is derived from `null` value, and therefore `typeof` operator returns `object` for it:
 
 ```js
+//
 typeof null === 'object'; // true
 ```
 
@@ -8886,7 +8964,11 @@ These are not same origin because they use different ports:
 
 > A Proxy Auto-Configuration file (**PAC file**) is a file which contains a function, `FindProxyForURL()`, which is used by the browser to determine whether requests (including HTTP, HTTPS, and FTP) should go directly to the destination or if they need to be forwarded through a web proxy server.
 
+---
+
 ```js
+//
+
 function FindProxyForURL(url, host) {
     /* ... */
 }
@@ -8964,6 +9046,7 @@ Payload is the data that is carried on behalf of an application. It is usually o
 > **Page load time** is the time it takes for a page to load, measured from [navigation start](/en-US/docs/Web/API/PerformanceTiming/navigationStart) to the [start of the load event](/en-US/docs/Web/API/PerformanceTiming/loadEventStart).
 
 ```js
+//
 let time = performance.timing;
 
 let pageloadtime = time.loadEventStart - time.navigationStart;
@@ -9013,7 +9096,11 @@ Although browser page prediction and prediction services enable faster page load
 
 For example:
 
+---
+
 ```js
+//
+
 function example(parameter) {
     console.log(parameter); // Output = foo
 }
@@ -9032,7 +9119,7 @@ Note the difference between _parameters_ and _arguments_:
 Two kinds of parameters:
 
 -   input parameters
-    -   : the most common kind; they pass values into functions. Depending on programming language, input parameters can be passed several ways (e.g., call-by-value, call-by-address, call-by-reference).
+-   -   : the most common kind; they pass values into functions. Depending on programming language, input parameters can be passed several ways (e.g., call-by-value, call-by-address, call-by-reference).
 -   output/return parameters
     -   : primarily return multiple values from a function, but not recommended since they cause confusion
 
@@ -9632,6 +9719,7 @@ This example will help you understand that primitive values are **immutable.**
 ### JavaScript
 
 ```js
+//
 // Using a string method doesn't mutate the string
 var bar = 'baz';
 console.log(bar); // baz
@@ -10103,9 +10191,9 @@ There is limited browser and server support for QUIC today.
 > **RAIL**, an acronym for **Response, Animation, Idle, and Load**, is a performance model originated by the Google Chrome team in 2015, focused on user experience and performance within the browser. The performance mantra of RAIL is "Focus on the user; the end goal isn't to make your site perform fast on any specific device, it's to make users happy." There are 4 stages of interaction: page load, idle, response to input, and scrolling and animation. In acronym order, the main tenets are:
 
 -   **Response**
-    -   : Respond to users immediately, acknowledging any user input in **100ms** or less.
+-   -   : Respond to users immediately, acknowledging any user input in **100ms** or less.
 -   **Animation**
-    -   : When animating, render each frame in under **16ms**, aiming for consistency and avoiding jank.
+-   -   : When animating, render each frame in under **16ms**, aiming for consistency and avoiding jank.
 -   **Idle**
     -   : When using the main JavaScript thread, work in chunks for less than **50ms** to free up the thread for user interactions.
 -   **Load**
@@ -10193,6 +10281,7 @@ Raster image files usually contain one set of dimensions, but the ICO and CUR fo
 The following Python code defines a function that takes a number, prints it, and then calls itself again with the number's value -1. It keeps going until the number is equal to 0, in which case it stops.
 
 ```js
+//
 def recurse(x):
    if x > 0:
        print(x)
@@ -10390,7 +10479,7 @@ In addition, [CORS](/en-US/docs/Glossary/CORS) defines a subset of request heade
 
 The HTTP message below shows a few request headers after a _HTTPMethod("GET"_) request:
 
-```bash
+```console
 GET /home.html HTTP/1.1
 Host: developer.mozilla.org
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:50.0) Gecko/20100101 Firefox/50.0
@@ -10490,7 +10579,7 @@ x-frame-options: DENY
 
 -   [Summary and resources](/en-US/docs/Web/Progressive_web_apps)
 -   [Pros and cons of going responsive](/en-US/docs/Web/Progressive_web_apps)
--   [Responsive Web Design](https://msdn.microsoft.com/en-us/magazine/hh653584.aspx)
+-   [Responsive Web Design](https://msdn.microsoft.com/magazine/hh653584.aspx)
 
 ---
 
@@ -10619,7 +10708,7 @@ For example, the site admin can forbid crawlers to visit a certain folder (and a
 
 > **Round Trip Time (RTT)** is the length time it takes for a data packet to be sent to a destination plus the time it takes for an acknowledgment of that packet to be received back at the origin. The RTT between a network and server can be determined by using the `ping` command.
 
-```bash
+```console
 $ ping example.com
 PING example.com (216.58.194.174): 56 data bytes
 64 bytes from 216.58.194.174: icmp_seq=0 ttl=55 time=25.050 ms
@@ -10694,7 +10783,7 @@ For SPA in application layer context, most of the popular SPA frameworks has its
 
 A basic command looks like this:
 
-```bash
+```console
 rsync [-options] SOURCE user@x.x.x.x:DESTINATION
 ```
 
@@ -10706,7 +10795,7 @@ rsync [-options] SOURCE user@x.x.x.x:DESTINATION
 
 You can also make a connection over SSH using the `-e` option as shown:
 
-```bash
+```console
 rsync [-options] -e "ssh [SSH DETAILS GO HERE]" SOURCE user@x.x.x.x:DESTINATION
 ```
 
@@ -10913,7 +11002,11 @@ Some SCM systems include CVS, SVN, GIT.
 
 A **_glossary("function"_)** serves as a **closure** in _glossary("JavaScript"_), and thus creates a scope, so that (for example) a variable defined exclusively within the function cannot be accessed from outside the function or within other functions. For instance, the following is invalid:
 
+---
+
 ```js
+//
+
 function exampleFunction() {
     var x = 'declared inside function'; // x can only be used in exampleFunction
     console.log('Inside function');
@@ -10926,6 +11019,7 @@ console.log(x); // Causes error
 However, the following code is valid due to the variable being declared outside the function, making it global:
 
 ```js
+//
 var x = 'declared outside function';
 
 exampleFunction();
@@ -11354,7 +11448,7 @@ Search engines give some guidelines for SEO, but big search engines keep result 
 SEO methods fall into three broad classes:
 
 -   technical
-    -   : Tag the content using semantic _Glossary("HTML"_). When exploring the website, crawlers should only find the content you want indexed.
+-   -   : Tag the content using semantic _Glossary("HTML"_). When exploring the website, crawlers should only find the content you want indexed.
 -   copywriting
     -   : Write content using your visitors' vocabulary. Use text as well as images so that crawlers can understand the subject.
 -   popularity
@@ -11887,10 +11981,15 @@ To make speculative loads of linked scripts, style sheets and images successful,
 
 Speculative tree building fails when `document.write()` changes the tree builder state such that the speculative state after the `</script>` tag no longer holds when all the content inserted by `document.write()` has been parsed. However, only unusual uses of `document.write()` cause trouble. Here are the things to avoid:
 
--   Don't write unbalanced trees. `<script>document.write("<div>");</script>` is bad. `<script>document.write("<div></div>");</script>` is OK.
--   Don't write an unfinished token. `<script>document.write("<div></div");</script>` is bad.
+-   Don't write unbalanced trees. `<script>document.write("<div>");</script>` is bad. `<script>document.write("<div>
+</div>");</script>` is OK.
+-   Don't write an unfinished token. `<script>document.write("<div> </div");</script>` is bad.
 -   Don't finish your writing with a carriage return. `<script>document.write("Hello World!\r");</script>` is bad. `<script>document.write("Hello World!\n");</script>` is OK.
--   Don't format part of a table. `<table><script>document.write("<tr><td>Hello World!</td></tr>");</script></table>` is bad.
+-   Don't format part of a table. `<table>
+    <script>document.write("<tr>
+    <td>Hello World!</td>
+    </tr>");</script>
+    </table>` is bad.
 
 ---
 
@@ -12084,7 +12183,7 @@ Looking at the final state, you can discern something about the series of inputs
 There are two types of basic state machines:
 
 -   deterministic finite state machine
-    -   : This kind allows only one possible transition for any allowed input. This is like the "if" _Glossary("statement"_) in that `if x == true then doThis else doThat` is not possible. The computer must perform _one_ of the two options.
+-   -   : This kind allows only one possible transition for any allowed input. This is like the "if" _Glossary("statement"_) in that `if x == true then doThis else doThat` is not possible. The computer must perform _one_ of the two options.
 -   non-deterministic finite state machine
     -   : Given some state, an input can lead to more than one different state.
 
@@ -12150,12 +12249,14 @@ Methods called on object instances are called _instance methods_.
 In the [Notifications API](/en-US/docs/Web/API/Notifications_API), the _domxref("Notification.requestPermission()"_) method is called on the actual _domxref("Notification"_) constructor itself — it is a static method:
 
 ```js
+//
 let promise = Notification.requestPermission();
 ```
 
 The _domxref("Notification.close()"_) method on the other hand, is an instance method — it is called on an specific notification object instance to close the system notification it represents:
 
 ```js
+//
 let myNotification = new Notification('This is my notification');
 
 myNotification.close();
@@ -12282,7 +12383,7 @@ In _Glossary("JavaScript"_), a String is one of the _Glossary("Primitive", "prim
 > In _Glossary("CSS"_), there are three categories of sources for style changes. These categories are called **style origins**. They are the **user agent origin**, **user origin**, and the **author origin**.
 
 -   User-agent origin
-    -   : The user agent origin is the style origin comprised of the default styles used by the user's web browser. If no other styles are applied to content, the user agent origin's styles are used while rendering elements.
+-   -   : The user agent origin is the style origin comprised of the default styles used by the user's web browser. If no other styles are applied to content, the user agent origin's styles are used while rendering elements.
 -   User origin
     -   : The user origin is the style origin containing any CSS that the user of the web browser has added. These may be from adding styles using a developer tool or from a browser extension that automatically applies custom styles to content, such as [Stylus](https://add0n.com/stylus.html) or [Stylish](https://userstyles.org/).
 -   Author origin
@@ -12376,6 +12477,7 @@ Symbol can have an optional description, but for debugging purposes only.
 A **Symbol** value represents a unique identifier. For example:
 
 ```js
+//
 // Here are two symbols with the same description:
 let Sym1 = Symbol('Sym');
 let Sym2 = Symbol('Sym');
@@ -12399,6 +12501,7 @@ Most values in JavaScript support implicit conversion to a string. For instance,
 For example:
 
 ```js
+//
 let Sym = Symbol('Sym');
 alert(Sym); // TypeError: Cannot convert a Symbol value to a string
 ```
@@ -12408,6 +12511,7 @@ That's a "language guard" against messing up, because strings and symbols are fu
 If you really want to show a symbol, we need to call `.toString()` on it.
 
 ```js
+//
 let Sym = Symbol('Sym');
 alert(Sym.toString()); // Symbol(Sym), now it works
 ```
@@ -12415,6 +12519,7 @@ alert(Sym.toString()); // Symbol(Sym), now it works
 Or you can use the `symbol.description` property to get its description:
 
 ```js
+//
 let _Sym = Symbol('Sym');
 
 alert(_Sym.description); // Sym
@@ -12441,6 +12546,7 @@ There is a global symbol registry holding all available symbols. The methods tha
 The method `Symbol.for(tokenString)` returns a symbol value from the registry, and `Symbol.keyFor(symbolValue)` returns a token string from the registry; each is the other's inverse, so the following is `true`:
 
 ```js
+//
 Symbol.keyFor(Symbol.for('tokenString')) === 'tokenString'; // true
 ```
 
@@ -12860,11 +12966,11 @@ Here org is the TLD; mozilla.org is the second-level domain name; and developer 
 _Glossary("IANA"_) today distinguishes the following groups of top-level domains:
 
 -   country-code top-level domains (ccTLD)
-    -   : Two-character domains established for countries or territories. Example: _.us_ for United States.
+-   -   : Two-character domains established for countries or territories. Example: _.us_ for United States.
 -   internationalized country code top-level domains (IDN ccTLD)
-    -   : ccTLDs in non-Latin character sets (e.g., Arabic or Chinese).
+-   -   : ccTLDs in non-Latin character sets (e.g., Arabic or Chinese).
 -   generic top-level domains (gTLD)
-    -   : Top-level domains with three or more characters.
+-   -   : Top-level domains with three or more characters.
 -   unsponsored top-level domains
     -   : Domains that operate directly under policies established by ICANN processes for the global Internet community, for example "com" and "edu".
 -   sponsored top-level domains (sTLD)
@@ -12960,6 +13066,7 @@ The _jsxref("Uint8Array"_) is copied (duplicated) in the worker while its buffer
 After transfer any attempt to read or write `uInt8Array` from the main thread will throw, but you can still check the `byteLength` to confirm it is now zero.
 
 ```js
+//
 // Create an 8MB "file" and fill it.
 var uInt8Array = new Uint8Array(1024 * 1024 * 8); // 8MB
 for (var i = 0; i < uInt8Array.length; ++i) {
@@ -12981,6 +13088,7 @@ console.log(uInt8Array.byteLength); // 0
 The code below shows a _domxref("structuredClone()"_) operation where the underlying buffer is copied from the original object to the clone.
 
 ```js
+//
 const original = new Uint8Array(1024);
 const clone = structuredClone(original);
 console.log(original.byteLength); // 1024
@@ -13109,6 +13217,7 @@ _Glossary("JavaScript"_) uses _Glossary("Type_Coercion", "type coercion"_) in Bo
 Examples of _truthy_ values in JavaScript (which will be coerced to `true` in boolean contexts, and thus execute the `if` block):
 
 ```js
+//
 if (true)
 if ({})
 if ([])
@@ -13129,6 +13238,7 @@ if (-Infinity)
 If the first object is truthy, the [logical AND operator](/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND) returns the second operand:
 
 ```js
+//
 true && "dog"
 // returns "dog"
 
@@ -13207,6 +13317,7 @@ In the context of caching, TTL (as an unsigned 32-bit integer) being a part of t
 ## Examples
 
 ```js
+//
 const value1 = '5';
 const value2 = 9;
 let sum = value1 + value2;
@@ -13219,6 +13330,7 @@ In the above example, JavaScript has _coerced_ the `9` from a number into a stri
 The compiler could have coerced the `5` into a number and returned a sum of `14`, but it did not. To return this result, you'd have to explicitly convert the `5` to a number using the _jsxref("Global_Objects/Number", "Number()"_) method:
 
 ```js
+//
 sum = Number(value1) + value2;
 ```
 
@@ -13340,6 +13452,7 @@ UDP is suitable for purposes where error checking and correction are either not 
 ## Example
 
 ```js
+//
 var x; //create a variable but assign it no value
 
 console.log("x's value is", x); //logs "x's value is undefined"
@@ -13660,6 +13773,7 @@ The prefixes for properties and methods are lower-case:
 Sample usage:
 
 ```js
+//
 var requestAnimationFrame =
     window.requestAnimationFrame ||
     window.mozRequestAnimationFrame ||
@@ -14056,7 +14170,7 @@ WebKit is an Apple trademark, and the framework is distributed under a BSD-form 
 WebRTC consists mainly of these parts:
 
 -   _domxref("MediaDevices.getUserMedia", "getUserMedia()"_)
-    -   : Grants access to a device's camera and/or microphone, and can plug in their signals to a RTC connection.
+-   -   : Grants access to a device's camera and/or microphone, and can plug in their signals to a
 -   _domxref("RTCPeerConnection"_)
     -   : An interface to configure video chat or voice calls.
 -   _domxref("RTCDataChannel"_)
@@ -14293,21 +14407,6 @@ For example, SDK Libraries for AWS are examples of wrappers.
 
 > **XHTML** is a term that was historically used to describe HTML documents written to conform with _Glossary("XML"_) syntax rules.
 
-#### See also
-
--   [XHTML](/en-US/docs/Web/Guide/HTML/XHTML)
-
----
-
-## Term: XInclude
-
--   CodingScripting
--   Glossary
-
----
-
-> [XML Inclusions (XInclude)](https://www.w3.org/TR/xinclude/#text-included-items) is a W3C Recommendation to allow inclusion of XML more different sources in a more convenient fashion than XML external entities. When used in conjunction with XPointer (Firefox supports a subset of it, and is used in the code sample below), XInclude can also target just specific portions of a document for inclusion. Firefox does not support it natively, but the following function aims to allow its use with documents passed into it.
-
 ### Code sample
 
 (Note that this has not been thoroughly tested for all circumstances and may not necessarily reflect the standard behavior completely.)
@@ -14315,10 +14414,15 @@ For example, SDK Libraries for AWS are examples of wrappers.
 Note also that if you wish to allow xml:base, you will need the [xml:base function](/en-US/docs/Archive/Add-ons/Code_snippets/XML/base_function), and the line beginning `var href = ...` should become:
 
 ```js
+//
 var href = getXmlBaseLink(/* XLink sans xml:base */ xinclude.getAttribute('href'), /* Element to query from */ xinclude);
 ```
 
+---
+
 ```js
+//
+
 function resolveXIncludes(docu) {
     // http://www.w3.org/TR/xinclude/#xml-included-items
     var xincludes = docu.getElementsByTagNameNS('http://www.w3.org/2001/XInclude', 'include');

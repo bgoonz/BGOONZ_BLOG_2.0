@@ -11,6 +11,7 @@ seo:
 template: docs
 ---
 
+
 # Object.create()
 
 The `Object.create()` method creates a new object, using an existing object as the prototype of the newly created object.
@@ -36,8 +37,8 @@ A new object with the specified prototype object and properties.
 
 The `proto` parameter has to be either
 
--   [`null`](../null) or
--   an [`Object`](../object) excluding [primitive wrapper objects](https://developer.mozilla.org/en-US/docs/Glossary/Primitive#primitive_wrapper_objects_in_javascript).
+- [`null`](../null) or
+- an [`Object`](../object) excluding [primitive wrapper objects](https://developer.mozilla.org/en-US/docs/Glossary/Primitive#primitive_wrapper_objects_in_javascript).
 
 If `proto` is neither of these a [`TypeError`](../typeerror) is thrown.
 
@@ -341,10 +342,12 @@ If you wish to inherit from multiple objects, then mixins are a possibility.
     /* is not equivalent to:
     This will create an object with prototype : {p: 42 }
     o2 = Object.create({p: 42}) */
+<<<<<<< HEAD:src/pages/docs/js-tips/create.md
+=======
 
 ## Specifications
 
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.create">ECMAScript Language Specification (ECMAScript)
+<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-object.create">ECMAScript Language Specification (ECMAScript) 
 <br/>
 
 <span class="small">#sec-object.create</span></a></td></tr></tbody></table>
@@ -383,6 +386,7 @@ If you wish to inherit from multiple objects, then mixins are a possibility.
 -   [`Reflect.construct()`](../reflect/construct)
 -   John Resig's post on [getPrototypeOf()](http://ejohn.org/blog/objectgetprototypeof/)
 
-© 2005-2021 MDN contributors.
-Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.
+© 2005-2021 MDN contributors.  
+Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create</a>
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2:notes/JS-DOC/create.md

@@ -13,7 +13,7 @@ image: images/theme.png
 subtitle: how we introduce modularity into our code in the node ecosystem
 ---
 
-## # Nextjs for everyone — with some basic knowledge of React
+## Nextjs for everyone — with some basic knowledge of React
 
 > ## Excerpt
 >
@@ -33,11 +33,11 @@ In this article, we are going to explore the great features and tricks of Next.j
 
 Here are some great websites built with Next.js:
 
--   [Syntaxt.fm](https://syntax.fm/)
--   [npmjs](https://www.npmjs.com/)
--   [material-ui.io](https://material-ui.com/)
--   [expo.io](https://expo.io/)
--   [codemenitor.io](https://www.codementor.io/)
+- [Syntaxt.fm](https://syntax.fm/)
+- [npmjs](https://www.npmjs.com/)
+- [material-ui.io](https://material-ui.com/)
+- [expo.io](https://expo.io/)
+- [codemenitor.io](https://www.codementor.io/)
 
 I even used Nextjs to build my personal website [saidhayani.me](https://www.saidhayani.me/) — you can get the source code on GitHub [here](https://github.com/hayanisaid/said-hayani-nextjs).
 
@@ -63,13 +63,13 @@ Next, we have to install our dependencies.
 
 Installing Next.js
 
--   using Yarn, type
+- using Yarn, type
 
 ```
 yarn add next
 ```
 
--   using npm, type:
+- using npm, type:
 
 ```
 npm i next --save

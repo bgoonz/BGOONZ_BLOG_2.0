@@ -23,8 +23,15 @@ PostgreSQL commands
 
 #### **Each table is made up of rows and columns. If you think of a table as a grid, the column go from left to right across the grid and each entry of data is listed down as a row.**
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*ZLWhY1d1jdboZh_s.png" class="graf-image" /></figure><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>ALLOFMYOTHERARTICLES</strong><br />
-bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*ZLWhY1d1jdboZh_s.png" class="graf-image" />
+</figure>
+<a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b">
+<strong>ALLOFMYOTHERARTICLES</strong>
+<br />
+bryanguner.medium.com</a>
+<a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock">
+</a>
 
 Each row in a relational is uniquely identified by a primary key. This can be by one or more sets of column values. In most scenarios it is a single column, such as employeeID.
 
@@ -36,7 +43,18 @@ Although both UNIQUE and <a href="https://www.sqlservertutorial.net/sql-server-b
 
 Different from PRIMARY KEY constraints, UNIQUE constraints allow NULL. Moreover, UNIQUE constraints treat the NULL as a regular value, therefore, it only allows one NULL per column.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*kgzq5NoL5ejBGvuZ4qLDaQ.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/1*hr8DccnpiR2Uj5UI3iLsOQ.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/1*RiWJpwpVMdge3Sqofn3srA.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/1*GN5aSwENOvntpfk90rHYFg.png" class="graf-image" /></figure>Create a new <a href="https://www.postgresqltutorial.com/postgresql-roles/" class="markup--anchor markup--p-anchor">role</a>:
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*kgzq5NoL5ejBGvuZ4qLDaQ.png" class="graf-image" />
+</figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*hr8DccnpiR2Uj5UI3iLsOQ.png" class="graf-image" />
+</figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*RiWJpwpVMdge3Sqofn3srA.png" class="graf-image" />
+</figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*GN5aSwENOvntpfk90rHYFg.png" class="graf-image" />
+</figure>Create a new <a href="https://www.postgresqltutorial.com/postgresql-roles/" class="markup--anchor markup--p-anchor">role</a>:
 
     CREATE ROLE role_name;
 
@@ -339,7 +357,9 @@ Lets see everything inside the table books:
 
 Output:
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*GOQQ0qNGak2yIrtQ" class="graf-image" /></figure>### `->` operator returns values out of JSON columns
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*GOQQ0qNGak2yIrtQ" class="graf-image" />
+</figure>### `->` operator returns values out of JSON columns
 
 Selecting 1 column:
 
@@ -349,7 +369,9 @@ Selecting 1 column:
 
 Output:
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*OIVYOfYcbVh65Mt5" class="graf-image" /></figure>Selecting 2 columns:
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*OIVYOfYcbVh65Mt5" class="graf-image" />
+</figure>Selecting 2 columns:
 
     SELECT client,
        data->'title' AS title, data->'author' AS author
@@ -357,7 +379,9 @@ Output:
 
 Output:
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*fEzPkSY8yGexKOk4" class="graf-image" /></figure>### `->` vs `->>`
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*fEzPkSY8yGexKOk4" class="graf-image" />
+</figure>### `->` vs `->>`
 
 The `->` operator returns the original JSON type (which might be an object), whereas `->>` returns text.
 
@@ -371,7 +395,9 @@ You can use the `->` to return a nested object and thus chain the operators:
 
 Output:
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*lwy8bR7igaroMXeb" class="graf-image" /></figure>### Filtering
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*lwy8bR7igaroMXeb" class="graf-image" />
+</figure>### Filtering
 
 Select rows based on a value inside your JSON:
 
@@ -387,7 +413,9 @@ Or we could use `->>` and compare to `'Bryan Guner'`
 
 Output:
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*poASndLoU71qlXqE" class="graf-image" /></figure>### Nested filtering
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*poASndLoU71qlXqE" class="graf-image" />
+</figure>### Nested filtering
 
 Find rows based on the value of a nested JSON object:
 
@@ -399,7 +427,9 @@ Find rows based on the value of a nested JSON object:
 
 Output:
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*R1kOhDK19ntdUYkq" class="graf-image" /></figure>### A real world example
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*R1kOhDK19ntdUYkq" class="graf-image" />
+</figure>### A real world example
 
     CREATE TABLE events (
       name varchar(200),
@@ -447,7 +477,9 @@ Now lets select everything:
 
 Output:
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*ZPHfB4FxjSIlAVxL" class="graf-image" /></figure>### JSON operators + PostgreSQL aggregate functions
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*ZPHfB4FxjSIlAVxL" class="graf-image" />
+</figure>### JSON operators + PostgreSQL aggregate functions
 
 Using the JSON operators, combined with traditional PostgreSQL aggregate functions, we can pull out whatever we want. You have the full might of an RDBMS at your disposal.
 
@@ -456,35 +488,57 @@ Using the JSON operators, combined with traditional PostgreSQL aggregate functio
 
 Output:
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*4lEv2DgUk33FeUgo" class="graf-image" /></figure>-   <span id="946c">Total revenue per visitor:</span>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*4lEv2DgUk33FeUgo" class="graf-image" />
+</figure>- <span id="946c">Total revenue per visitor:</span>
 
 `SELECT visitor_id, SUM(CAST(properties->>'amount' AS integer)) AS total FROM events WHERE CAST(properties->>'amount' AS integer) > 0 GROUP BY visitor_id;`
 
 Output:
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*HxOS3CgwXBJ6A2FP" class="graf-image" /></figure>-   <span id="9850">Average screen resolution</span>
--   <span id="132f">`SELECT AVG(CAST(browser->'resolution'->>'x' AS integer)) AS width, AVG(CAST(browser->'resolution'->>'y' AS integer)) AS height FROM events;`</span>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*HxOS3CgwXBJ6A2FP" class="graf-image" />
+</figure>- <span id="9850">Average screen resolution</span>
+- <span id="132f">`SELECT AVG(CAST(browser->'resolution'->>'x' AS integer)) AS width, AVG(CAST(browser->'resolution'->>'y' AS integer)) AS height FROM events;`</span>
 
 Output:
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*iyv4Iv4Rc8M8mwt1" class="graf-image" /></figure>#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*iyv4Iv4Rc8M8mwt1" class="graf-image" />
+</figure>#### If you found this guide helpful feel free to checkout my github/gists where I host similar content:
 
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz's gists · GitHub</a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
-<em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz">
+<strong>bgoonz — Overview</strong>
+<br />
+<em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a>
+<a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
 Or Checkout my personal Resource Site:
 
-<a href="https://goofy-euclid-1cd736.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://goofy-euclid-1cd736.netlify.app/"><strong>a/A-Student-Resources</strong><br />
-<em>Edit description</em>goofy-euclid-1cd736.netlify.app</a><a href="https://goofy-euclid-1cd736.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<a href="https://bgoonzblog20master.gtsb.io/docs/sitemap" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonzblog20master.gtsb.io/docs/sitemap">
+<strong>a/A-Student-Resources</strong>
+<br />
+<em>Edit description</em>goofy-euclid-1cd736.netlify.app</a>
+<a href="https://bgoonzblog20master.gtsb.io/docs/sitemap" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
-<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz's gists</strong><br />
-<em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz">
+<strong>bgoonz's gists</strong>
+<br />
+<em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a>
+<a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
-<em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz">
+<strong>bgoonz — Overview</strong>
+<br />
+<em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a>
+<a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
 ### Or Checkout my personal Resource Site:

@@ -1,5 +1,5 @@
 ---
-title: Array.prototype.filter()
+title: Array.filter()
 weight: 0
 excerpt:
 seo:
@@ -10,6 +10,7 @@ seo:
     type: stackbit_page_meta
 template: docs
 ---
+
 
 # Array.prototype.filter()
 
@@ -250,46 +251,3 @@ The following examples tests the behavior of the `filter` method when the array 
     console.log(deleteWords)
     // Notice 'elite' is not even obtained as its been popped off `words` before filter can even get there
     // ["spray" ,"limit"]
-
-## Specifications
-
-<table><thead><tr class="header"><th>Specification</th></tr></thead><tbody><tr class="odd"><td><a href="https://tc39.es/ecma262/#sec-array.prototype.filter">ECMAScript Language Specification (ECMAScript)
-<br/>
-
-<span class="small">#sec-array.prototype.filter</span></a></td></tr></tbody></table>
-
-`filter`
-
-1
-
-12
-
-1.5
-
-9
-
-9.5
-
-3
-
-≤37
-
-18
-
-4
-
-10.1
-
-1
-
-1.0
-
-## See also
-
--   [`Array.prototype.forEach()`](foreach)
--   [`Array.prototype.every()`](every)
--   [`Array.prototype.some()`](some)
--   [`Array.prototype.reduce()`](reduce)
--   [`Array.prototype.find()`](find)
-
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter</a>

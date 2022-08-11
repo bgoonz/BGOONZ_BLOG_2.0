@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var e, t;
 (e = self),
     (t = function () {
@@ -6849,3 +6850,17 @@ var e, t;
         : 'object' == typeof exports
         ? (exports.algoliasearchNetlify = t())
         : (e.algoliasearchNetlify = t());
+<<<<<<< HEAD
+=======
+
+
+ algoliasearchNetlify({
+    appId: 'N6ETRP7SGS',
+    apiKey: '842a47eb7f31e1b926a798f74d15daf5',
+    siteId: 'a1b7ee1a-11a7-4bd2-a341-2260656e216f',
+    branch: 'master',
+    selector: 'div#search',
+  });
+>>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
+=======
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2

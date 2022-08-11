@@ -1,8 +1,9 @@
 ---
+<<<<<<< HEAD
 title: React Interview Questions & Answers
 subtitle: lorem-ipsum
 date: '2021-11-24'
-thumb_image_alt: lorem-ipsum
+thumb_image_alt: image of
 excerpt: lorem-ipsum
 seo:
     title: 'React Interview Questions & Answers'
@@ -11,10 +12,27 @@ seo:
     extra: []
 template: post
 thumb_image: images/es6.jpg
+=======
+title: React Questions
+subtitle: react excel sheet
+date: '2022-01-17'
+thumb_image_alt: es6
+excerpt: lorem-ipsum
+seo:
+  title: ''
+  description: ''
+  robots: []
+  extra: []
+template: post
+thumb_image: images/web-development-abstract.jpg
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
 ---
+
 ## React Interview Questions & Answers
 
-<iframe sandbox="allow-scripts"  width="700" height="800" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=D21009FDD967A241%21738451&authkey=%21AOsv3osLtuIzGr0&em=2&AllowTyping=True&ActiveCell='Sheet1'!C5&wdDownloadButton=True&wdInConfigurator=True"></iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    width="700" height="800" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=D21009FDD967A241%21738451&authkey=%21AOsv3osLtuIzGr0&em=2&AllowTyping=True&ActiveCell='Sheet1'!C5&wdDownloadButton=True&wdInConfigurator=True">
+</iframe>
+<br>
 
 <details>
 

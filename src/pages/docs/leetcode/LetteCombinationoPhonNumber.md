@@ -43,39 +43,40 @@ JavaScript specific optimization.
 
 Also, appending string is faster than prepending.
 
-```javascript
+```js
+//
 /**
  * @param {string} digits
  * @return {string[]}
  */
 let letterCombinations = function (digits) {
-  if (digits.length <= 0) {
-    return [];
-  }
+    if (digits.length <= 0) {
+        return [];
+    }
 
-  const letters = [
-    ,
-    ,
-    ["a", "b", "c"],
-    ["d", "e", "f"],
-    ["g", "h", "i"],
-    ["j", "k", "l"],
-    ["m", "n", "o"],
-    ["p", "q", "r", "s"],
-    ["t", "u", "v"],
-    ["w", "x", "y", "z"],
-  ];
+    const letters = [
+        ,
+        ,
+        ['a', 'b', 'c'],
+        ['d', 'e', 'f'],
+        ['g', 'h', 'i'],
+        ['j', 'k', 'l'],
+        ['m', 'n', 'o'],
+        ['p', 'q', 'r', 's'],
+        ['t', 'u', 'v'],
+        ['w', 'x', 'y', 'z']
+    ];
 
-  let result = [""];
+    let result = [''];
 
-  for (let i = 0; i < digits.length; i++) {
-    const arr = letters[digits[i]];
-    let newResult = [];
-    arr.forEach((c) => newResult.push(...result.map((r) => r + c)));
-    result = newResult;
-  }
+    for (let i = 0; i < digits.length; i++) {
+        const arr = letters[digits[i]];
+        let newResult = [];
+        arr.forEach((c) => newResult.push(...result.map((r) => r + c)));
+        result = newResult;
+    }
 
-  return result;
+    return result;
 };
 ```
 
@@ -83,40 +84,30 @@ let letterCombinations = function (digits) {
 
 General recursive DFS solution.
 
-```javascript
+```js
+//
 /**
  * @param {string} digits
  * @return {string[]}
  */
 let letterCombinations = function (digits) {
-  const letters = [
-    ,
-    ,
-    "abc",
-    "def",
-    "ghi",
-    "jkl",
-    "mno",
-    "pqrs",
-    "tuv",
-    "wxyz",
-  ];
-  const result = [];
-  if (digits.length > 0) {
-    dfs(digits, 0, "", letters, result);
-  }
-  return result;
+    const letters = [, , 'abc', 'def', 'ghi', 'jkl', 'mno', 'pqrs', 'tuv', 'wxyz'];
+    const result = [];
+    if (digits.length > 0) {
+        dfs(digits, 0, '', letters, result);
+    }
+    return result;
 };
 
 function dfs(digits, idigit, path, letters, result) {
-  if (idigit >= digits.length) {
-    result.push(path);
-    return;
-  }
-  const str = letters[digits[idigit]];
-  for (let i = 0; i < str.length; i++) {
-    dfs(digits, idigit + 1, path + str[i], letters, result);
-  }
+    if (idigit >= digits.length) {
+        result.push(path);
+        return;
+    }
+    const str = letters[digits[idigit]];
+    for (let i = 0; i < str.length; i++) {
+        dfs(digits, idigit + 1, path + str[i], letters, result);
+    }
 }
 ```
 

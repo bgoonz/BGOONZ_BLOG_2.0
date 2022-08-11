@@ -7,7 +7,6 @@ seo:
         install an npm package using npm install you are installing it as a
         dependency. (npm install --production) to avoid installing those development
         dependencies.
-
     robots: []
     extra:
         - name: 'og:image'
@@ -19,7 +18,6 @@ seo:
               install an npm package using npm install you are installing it as a
               dependency. (npm install --production) to avoid installing those
               development dependencies.
-
           keyName: property
           relativeUrl: false
         - name: 'og:type'
@@ -41,6 +39,7 @@ seo:
     type: stackbit_page_meta
 template: docs
 ---
+
 
 When you install an npm package using `npm install <package-name>`, you are installing it as a **dependency**.
 
