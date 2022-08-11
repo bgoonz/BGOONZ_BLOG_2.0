@@ -3,8 +3,8 @@
  * @param props - The props passed to the component.
  * @returns A React component that returns an HTML element.
  */
-import React from "react"
 import PropTypes from "prop-types"
+import React from "react"
 
 
 export default function HTML(props) {
