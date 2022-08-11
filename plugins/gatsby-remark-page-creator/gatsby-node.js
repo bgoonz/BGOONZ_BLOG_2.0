@@ -1,32 +1,15 @@
+/**
+ * It creates a page for each Markdown file, using the file's frontmatter to determine the page's
+ * template
+ * @returns a promise.
+ */
 const path = require("path");
 const fs = require("fs");
-<<<<<<< HEAD
-const { createFilePath } = require("gatsby-source-filesystem");
-const _ = require("lodash");
-
-
-function findFileNode({ node, getNode }) {
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-const { createFilePath } = require("gatsby-source-filesystem");
-const _ = require("lodash");
-
-
-function findFileNode({ node, getNode }) {
-=======
-=======
->>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
 const {createFilePath} = require("gatsby-source-filesystem");
 const _ = require("lodash");
 
 
 function findFileNode({node, getNode}) {
->>>>>>> 217d551e709e0a3855c273c4474405cc96110325
-<<<<<<< HEAD
->>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
-=======
->>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
     let fileNode = node;
     let ids = [fileNode.id];
 
@@ -50,45 +33,15 @@ function findFileNode({node, getNode}) {
         return null;
     }
 
-    return fileNode
+    return fileNode;
 }
 
-<<<<<<< HEAD
-exports.onCreateNode = ({ node, getNode, actions }, options) => {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-exports.onCreateNode = ({ node, getNode, actions }, options) => {
-=======
-
-    const { createNodeField } = actions;
-
-    if (node.internal.type === "MarkdownRemark") {
-        let fileNode = findFileNode({ node, getNode });
-=======
 exports.onCreateNode = ({node, getNode, actions}, options) => {
->>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
 
-    const { createNodeField } = actions;
-
-    if (node.internal.type === "MarkdownRemark") {
-        let fileNode = findFileNode({ node, getNode });
-=======
-exports.onCreateNode = ({node, getNode, actions}, options) => {
->>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
-
-    const { createNodeField } = actions;
+    const {createNodeField} = actions;
 
     if (node.internal.type === "MarkdownRemark") {
-<<<<<<< HEAD
-        let fileNode = findFileNode({ node, getNode });
-=======
         let fileNode = findFileNode({node, getNode});
->>>>>>> 217d551e709e0a3855c273c4474405cc96110325
-<<<<<<< HEAD
->>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
-=======
->>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
         if (!fileNode) {
             throw new Error('could not find parent File node for MarkdownRemark node: ' + node);
         }
@@ -99,64 +52,22 @@ exports.onCreateNode = ({node, getNode, actions}, options) => {
         } else if (_.get(options, 'uglyUrls', false)) {
             url = path.join(fileNode.relativeDirectory, fileNode.name + '.html');
         } else {
-<<<<<<< HEAD
-<<<<<<< HEAD
-            url = createFilePath({ node, getNode });
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
-=======
-<<<<<<< HEAD
-            url = createFilePath({ node, getNode });
-        }
-
-        createNodeField({ node, name: "url", value: url });
-        createNodeField({ node, name: "absolutePath", value: fileNode.absolutePath });
-        createNodeField({ node, name: "relativePath", value: fileNode.relativePath });
-        createNodeField({ node, name: "absoluteDir", value: fileNode.dir });
-        createNodeField({ node, name: "relativeDir", value: fileNode.relativeDirectory });
-        createNodeField({ node, name: "base", value: fileNode.base });
-        createNodeField({ node, name: "ext", value: fileNode.ext });
-        createNodeField({ node, name: "name", value: fileNode.name });
-    }
-};
-
-exports.createPages = ({ graphql, getNode, actions, getNodesByType }) => {
-    const { createPage, deletePage } = actions;
-=======
-            if (_.get(options, 'uglyUrls', false)) {
-                url = path.join(fileNode.relativeDirectory, `${fileNode.name}.html`);
-                return;
-            }
-
->>>>>>> f4594b19594599756372b62212ee4796747e0825
             url = createFilePath({node, getNode});
->>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
         }
 
-        createNodeField({ node, name: "url", value: url });
-        createNodeField({ node, name: "absolutePath", value: fileNode.absolutePath });
-        createNodeField({ node, name: "relativePath", value: fileNode.relativePath });
-        createNodeField({ node, name: "absoluteDir", value: fileNode.dir });
-        createNodeField({ node, name: "relativeDir", value: fileNode.relativeDirectory });
-        createNodeField({ node, name: "base", value: fileNode.base });
-        createNodeField({ node, name: "ext", value: fileNode.ext });
-        createNodeField({ node, name: "name", value: fileNode.name });
+        createNodeField({node, name: "url", value: url});
+        createNodeField({node, name: "absolutePath", value: fileNode.absolutePath});
+        createNodeField({node, name: "relativePath", value: fileNode.relativePath});
+        createNodeField({node, name: "absoluteDir", value: fileNode.dir});
+        createNodeField({node, name: "relativeDir", value: fileNode.relativeDirectory});
+        createNodeField({node, name: "base", value: fileNode.base});
+        createNodeField({node, name: "ext", value: fileNode.ext});
+        createNodeField({node, name: "name", value: fileNode.name});
     }
 };
 
-<<<<<<< HEAD
-exports.createPages = ({ graphql, getNode, actions, getNodesByType }) => {
-    const { createPage, deletePage } = actions;
-=======
 exports.createPages = ({graphql, getNode, actions, getNodesByType}) => {
     const {createPage, deletePage} = actions;
->>>>>>> 217d551e709e0a3855c273c4474405cc96110325
-<<<<<<< HEAD
->>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
-=======
->>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
 
     // Use GraphQL to bring only the "id" and "html" (added by gatsby-transformer-remark)
     // properties of the MarkdownRemark nodes. Don't bring additional fields
@@ -180,20 +91,7 @@ exports.createPages = ({graphql, getNode, actions, getNodesByType}) => {
             return Promise.reject(result.errors);
         }
 
-<<<<<<< HEAD
-        const nodes = result.data.allMarkdownRemark.edges.map(({ node }) => node);
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        const nodes = result.data.allMarkdownRemark.edges.map(({ node }) => node);
-=======
         const nodes = result.data.allMarkdownRemark.edges.map(({node}) => node);
->>>>>>> 217d551e709e0a3855c273c4474405cc96110325
->>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
-=======
-        const nodes = result.data.allMarkdownRemark.edges.map(({node}) => node);
->>>>>>> 217d551e709e0a3855c273c4474405cc96110325
->>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
         const siteNode = getNode('Site');
         const siteDataNode = getNode('SiteData');
         const sitePageNodes = getNodesByType('SitePage');
@@ -219,7 +117,7 @@ exports.createPages = ({graphql, getNode, actions, getNodesByType}) => {
         nodes.forEach(graphQLNode => {
             const node = getNode(graphQLNode.id);
             const url = node.fields.url;
-
+            
             const template = node.frontmatter.template;
             if (!template) {
                 console.error(`Error: undefined template for ${url}`);
