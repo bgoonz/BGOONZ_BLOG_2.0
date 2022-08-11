@@ -1,17 +1,10 @@
 ---
 title: Python Functions
 weight: 0
-<<<<<<< HEAD
 excerpt: When creating a function using the def statement, you can specify what the return value should be with a return statement. A return statement consists of the following
 seo:
     title: 'Python Functions'
     description: ''
-=======
-excerpt: When creating a function using the def statement, you can specify what the return value should be with a return statement.
-seo:
-    title: ''
-    description: 'When creating a function using the def statement, you can specify what the return value should be with a return statement.'
->>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
     robots: []
     extra: []
 template: docs

@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 title: React By Usecase
 weight: 0
 excerpt: cheat sheet
@@ -10,30 +9,6 @@ seo:
     extra: []
 template: docs
 ---
-=======
-title: React Patterns & Use Cases
-weight: 0
-excerpt: React Patterns & Use Cases
-seo:
-    title: React Patterns & Use Cases
-    description: React Patterns & Use Cases
-    robots: []
-    extra:
-        - name: 'og:image'
-          value: images/py-code.png
-          keyName: property
-          relativeUrl: true
-        - name: 'twitter:title'
-          value: python cheat sheet
-          keyName: name
-          relativeUrl: false
-template: docs
----
-
-
-
-
->>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
 
 
 ## Wrapping/Mirroring
@@ -1029,13 +1004,7 @@ let result = Option(6) // Some<number>
 
 // or:
 let result = ask() // Option<string>
-<<<<<<< HEAD
     .flatMap(parse) // Option<Date>
     .flatMap((d) => new Some(d.toISOString())) // Option<string>
     .getOrElse('error parsing string');
-=======
-  .flatMap(parse) // Option<Date>
-  .flatMap((d) => new Some(d.toISOString())) // Option<string>
-  .getOrElse("error parsing string");
->>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
 ```

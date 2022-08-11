@@ -100,11 +100,7 @@ If used prefix, with operator before operand (for example, `--x`), the decrement
 -   [Unary negation operator](unary_negation)
 -   [Unary plus operator](unary_plus)
 
-<<<<<<< HEAD:src/pages/docs/tips/decrement/index.md
  
-=======
-© 2005-2021 MDN contributors.  
->>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2:notes/JS-DOC/decrement.md
 Licensed under the Creative Commons Attribution-ShareAlike License v2.5 or later.  
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Decrement" class="_attribution-link">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Decrement</a>
 <<<<<<< HEAD
