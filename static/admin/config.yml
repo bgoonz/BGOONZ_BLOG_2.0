@@ -26,7 +26,7 @@ collections:
       label: Docs
       folder: src/pages/docs
       create: true
-      path: '/'  # allows to walk inside folders, see https://www.netlifycms.org/docs/beta-features/#folder-collections-path and https://github.com/netlify/netlify-cms/issues/513 and nested collections which allow for recursive subfolders walking without requiring a specific path template: https://www.netlifycms.org/docs/beta-features/#nested-collections
+      #path: '/'  # allows to walk inside folders, see https://www.netlifycms.org/docs/beta-features/#folder-collections-path and https://github.com/netlify/netlify-cms/issues/513 and nested collections which allow for recursive subfolders walking without requiring a specific path template: https://www.netlifycms.org/docs/beta-features/#nested-collections
       slug: '{{title}}/{{title}}'
       preview_path: 'src/pages/doc/{{slug}}'
       extension: md
@@ -35,7 +35,7 @@ collections:
       summary: '{{title}} (last modified {{commit_date}})' # text displayed as the name of each entry in the UI listing
       nested:
           depth: 100 # max depth to show in the collection tree
-          summary: '{{title}}' # optional summary for a tree node, defaults to the inferred title field
+          #summary: '{{title}}' # optional summary for a tree node, defaults to the inferred title field
       fields:
           - { name: title, label: Title, widget: string }
           - { name: template, label: Template, widget: hidden, default: 'docs' }
