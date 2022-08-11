@@ -1,10 +1,10 @@
 ---
-title: Comprehensive Python Guide
+title: lorem-ipsum
 weight: 0
-excerpt:  Code in the global scope cannot use any local variables.
+excerpt: lorem-ipsum
 seo:
-    title: 'Comprehensive Python Guide'
-    description: ' Code in the global scope cannot use any local variables.'
+    title: ''
+    description: ''
     robots: []
     extra: []
 template: docs
@@ -4001,7 +4001,7 @@ with open("filename.yaml") as f:
 
 Install it with:
 
-```bash
+```console
 pip install anyconfig
 ```
 
@@ -4487,7 +4487,7 @@ The `setup.py` file is at the heart of a Python project. It describes all of the
 
 This allows you to easily install Python packages. Often it's enough to write:
 
-```bash
+```console
 python setup.py install
 ```
 

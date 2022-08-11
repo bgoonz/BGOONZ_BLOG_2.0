@@ -10460,7 +10460,7 @@ In addition, [CORS](/en-US/docs/Glossary/CORS) defines a subset of request heade
 
 The HTTP message below shows a few request headers after a _HTTPMethod("GET"_) request:
 
-```bash
+```console
 GET /home.html HTTP/1.1
 Host: developer.mozilla.org
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:50.0) Gecko/20100101 Firefox/50.0
@@ -10689,7 +10689,7 @@ For example, the site admin can forbid crawlers to visit a certain folder (and a
 
 > **Round Trip Time (RTT)** is the length time it takes for a data packet to be sent to a destination plus the time it takes for an acknowledgment of that packet to be received back at the origin. The RTT between a network and server can be determined by using the `ping` command.
 
-```bash
+```console
 $ ping example.com
 PING example.com (216.58.194.174): 56 data bytes
 64 bytes from 216.58.194.174: icmp_seq=0 ttl=55 time=25.050 ms
@@ -10764,7 +10764,7 @@ For SPA in application layer context, most of the popular SPA frameworks has its
 
 A basic command looks like this:
 
-```bash
+```console
 rsync [-options] SOURCE user@x.x.x.x:DESTINATION
 ```
 
@@ -10776,7 +10776,7 @@ rsync [-options] SOURCE user@x.x.x.x:DESTINATION
 
 You can also make a connection over SSH using the `-e` option as shown:
 
-```bash
+```console
 rsync [-options] -e "ssh [SSH DETAILS GO HERE]" SOURCE user@x.x.x.x:DESTINATION
 ```
 

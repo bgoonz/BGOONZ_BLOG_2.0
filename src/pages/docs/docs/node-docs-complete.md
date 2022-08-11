@@ -18,7 +18,7 @@ description: "REPL stands for Read-Evaluate-Print-Loop, and it's a great way to 
 
 The `node` command is the one we use to run our Node.js scripts:
 
-```bash
+```console
 
 node script.js
 
@@ -26,7 +26,7 @@ node script.js
 
 If we omit the filename, we use it in REPL mode:
 
-```bash
+```console
 
 node
 
@@ -36,7 +36,7 @@ node
 
 If you try it now in your terminal, this is what happens:
 
-```bash
+```console
 
 ❯ node
 
@@ -52,7 +52,7 @@ The REPL is waiting for us to enter some JavaScript code, to be more precise.
 
 Start simple and enter
 
-```bash
+```console
 
 > console.log('test')
 
@@ -140,7 +140,7 @@ description: 'How to accept arguments in a Node.js program passed from the comma
 
 You can pass any number of arguments when invoking a Node.js application using
 
-```bash
+```console
 
 node app.js
 
@@ -150,7 +150,7 @@ Arguments can be standalone or have a key and a value.
 
 For example:
 
-```bash
+```console
 
 node app.js joe
 
@@ -158,7 +158,7 @@ node app.js joe
 
 or
 
-```bash
+```console
 
 node app.js name=joe
 
@@ -194,7 +194,7 @@ const args = process.argv.slice(2);
 
 If you have one argument without an index name, like this:
 
-```bash
+```console
 
 node app.js joe
 
@@ -211,7 +211,7 @@ args[0];
 
 In this case:
 
-```bash
+```console
 
 node app.js name=joe
 
@@ -230,7 +230,7 @@ args['name']; //joe
 
 Install the required `minimist` package using `npm` (lesson about the package manager comes [later on](images/https://nodejs.dev/learn/an-introduction-to-the-npm-package-manager)).
 
-```bash
+```console
 
 npm install minimist
 
@@ -238,7 +238,7 @@ npm install minimist
 
 This time you need to use double dashes before each argument name:
 
-```bash
+```console
 
 node app.js --name=joe
 
@@ -407,7 +407,7 @@ function1();
 
 This will print the stack trace. This is what's printed if we try this in the Node.js REPL:
 
-```bash
+```console
 
 Trace
 
@@ -692,7 +692,7 @@ There are many things that `npm` does.
 
 If a project has a `package.json` file, by running
 
-```bash
+```console
 
 npm install
 
@@ -704,7 +704,7 @@ it will install everything the project needs, in the `node_modules` folder, crea
 
 You can also install a specific package by running
 
-```bash
+```console
 
 npm install <package-name>
 
@@ -738,7 +738,7 @@ As for the _optionalDependencies_ the difference is that build failure of the de
 
 Updating is also made easy, by running
 
-```bash
+```console
 
 npm update
 
@@ -748,7 +748,7 @@ npm update
 
 You can specify a single package to update as well:
 
-```bash
+```console
 
 npm update <package-name>
 
@@ -770,7 +770,7 @@ In all those cases, versioning helps a lot, and `npm` follows the semantic versi
 
 The package.json file supports a format for specifying command line tasks that can be run by using
 
-```bash
+```console
 
 npm run <task-name>
 
@@ -806,7 +806,7 @@ It's very common to use this feature to run Webpack:
 
 So instead of typing those long commands, which are easy to forget or mistype, you can run
 
-```bash
+```console
 
 $ npm run watch
 
@@ -828,7 +828,7 @@ When you install a package using `npm` you can perform 2 types of installation:
 
 By default, when you type an `npm install` command, like:
 
-```bash
+```console
 
 npm install lodash
 
@@ -840,7 +840,7 @@ As this happens, `npm` also adds the `lodash` entry in the `dependencies` proper
 
 A global installation is performed using the `-g` flag:
 
-```bash
+```console
 
 npm install -g lodash
 
@@ -868,7 +868,7 @@ When you install a package into your `node_modules` folder using `npm` , or also
 
 Say you install `lodash`, the popular JavaScript utility library, using
 
-```bash
+```console
 
 npm install lodash
 
@@ -903,7 +903,7 @@ How do you execute those?
 
 You can of course type `./node_modules/.bin/cowsay` to run it, and it works, but `npx`, included in the recent versions of `npm` (since 5.2), is a much better option. You just run:
 
-```bash
+```console
 
 npx cowsay
 
@@ -1416,7 +1416,7 @@ Sets a list of `npm` packages installed as dependencies.
 
 When you install a package using npm or yarn:
 
-```bash
+```console
 
 npm install <PACKAGENAME>
 
@@ -1447,7 +1447,7 @@ They differ from `dependencies` because they are meant to be installed only on a
 
 When you install a package using npm or yarn:
 
-```bash
+```console
 
 npm install --save-dev <PACKAGENAME>
 
@@ -1828,7 +1828,7 @@ With this server running, connect to it using your system's command-line TCP int
 
 In another terminal connect to the running TCP server:
 
-```bash
+```console
 
 telnet localhost 8124
 
@@ -1932,7 +1932,7 @@ description: 'How to find out which version of a particular package you have ins
 
 To see the version of all installed npm packages, including their dependencies:
 
-```bash
+```console
 
 npm list
 
@@ -1940,7 +1940,7 @@ npm list
 
 For example:
 
-```bash
+```console
 
 ❯ npm list
 
@@ -1974,7 +1974,7 @@ You can also just open the `package-lock.json` file, but this involves some visu
 
 To get only your top-level packages (basically, the ones you told npm to install and you listed in the `package.json`), run `npm list --depth=0`:
 
-```bash
+```console
 
 ❯ npm list --depth=0
 
@@ -1986,7 +1986,7 @@ To get only your top-level packages (basically, the ones you told npm to install
 
 You can get the version of a specific package by specifying its name:
 
-```bash
+```console
 
 ❯ npm list cowsay
 
@@ -1998,7 +1998,7 @@ You can get the version of a specific package by specifying its name:
 
 This also works for dependencies of packages you installed:
 
-```bash
+```console
 
 ❯ npm list minimist
 
@@ -2014,7 +2014,7 @@ This also works for dependencies of packages you installed:
 
 If you want to see what's the latest available version of the package on the npm repository, run `npm view [package_name] version`:
 
-```bash
+```console
 
 ❯ npm view cowsay version
 
@@ -2028,7 +2028,7 @@ description: 'Learn how to install an older version of an npm package, something
 
 You can install an old version of an npm package using the `@` syntax:
 
-```bash
+```console
 
 npm install <package>@<version>
 
@@ -2036,7 +2036,7 @@ npm install <package>@<version>
 
 Example:
 
-```bash
+```console
 
 npm install cowsay
 
@@ -2046,7 +2046,7 @@ installs version 1.3.1 (at the time of writing).
 
 Install version 1.2.0 with:
 
-```bash
+```console
 
 npm install cowsay@1.2.0
 
@@ -2054,7 +2054,7 @@ npm install cowsay@1.2.0
 
 The same can be done with global packages:
 
-```bash
+```console
 
 npm install -g webpack@4.16.4
 
@@ -2062,7 +2062,7 @@ npm install -g webpack@4.16.4
 
 You might also be interested in listing all the previous versions of a package. You can do it with `npm view <package> versions`:
 
-```bash
+```console
 
 ❯ npm view cowsay versions
 
@@ -2172,7 +2172,7 @@ Some of those updates are major releases. Running `npm update` won't update the 
 
 To update all packages to a new major version, install the `npm-check-updates` package globally:
 
-```bash
+```console
 
 npm install -g npm-check-updates
 
@@ -2180,7 +2180,7 @@ npm install -g npm-check-updates
 
 then run it:
 
-```bash
+```console
 
 ncu -u
 
@@ -2190,7 +2190,7 @@ this will upgrade all the version hints in the `package.json` file, to `dependen
 
 You are now ready to run the update:
 
-```bash
+```console
 
 npm update
 
@@ -2198,7 +2198,7 @@ npm update
 
 If you just downloaded the project without the `node_modules` dependencies and you want to install the shiny new versions first, just run
 
-```bash
+```console
 
 npm install
 
@@ -2286,7 +2286,7 @@ description: 'How to uninstall an npm Node.js package, locally or globally'
 
 To uninstall a package you have previously installed **locally** (using `npm install <package-name>` in the `node_modules` folder, run
 
-```bash
+```console
 
 npm uninstall <package-name>
 
@@ -2300,7 +2300,7 @@ package.json will be automatically updated with devDependency and dependency onc
 
 If the package is installed **globally**, you need to add the `-g` / `--global` flag:
 
-```bash
+```console
 
 npm uninstall -g <package-name>
 
@@ -2308,7 +2308,7 @@ npm uninstall -g <package-name>
 
 for example:
 
-```bash
+```console
 
 npm uninstall -g webpack
 
@@ -2369,7 +2369,7 @@ Great examples of popular global packages which you might know are
 
 You probably have some packages installed globally already on your system. You can see them by running
 
-```bash
+```console
 
 npm list -g --depth 0
 
@@ -2425,7 +2425,7 @@ A typical demonstration of using `npx` is through the `cowsay` command. `cowsay`
 
 `cowsay "Hello"` will print
 
-```bash
+```console
 
  _______
 
@@ -2449,7 +2449,7 @@ This only works if you have the `cowsay` command globally installed from npm pre
 
 `npx` allows you to run that npm command without installing it first. If the command isn't found, `npx` will install it into a central cache:
 
-```bash
+```console
 
 npx cowsay "Hello"
 
@@ -2471,7 +2471,7 @@ and many more.
 
 Use the `@` to specify the version, and combine that with the [`node` npm package](images/https://www.npmjs.com/package/node):
 
-```bash
+```console
 
 npx node@10 -v #v10.18.1
 
@@ -2487,7 +2487,7 @@ This helps to avoid tools like `nvm` or the other Node.js version management too
 
 You can run code that sits in a GitHub gist, for example:
 
-```bash
+```console
 
 npx https://gist.github.com/zkat/4bc19503fe9e9309e2bfaa2c58074d32
 
@@ -2623,7 +2623,7 @@ foo()
 
 This code prints, maybe surprisingly:
 
-```bash
+```console
 
 foo
 
@@ -2952,7 +2952,7 @@ console.log(' before ');
 
 This code will print
 
-```bash
+```console
 
 before
 
@@ -4620,7 +4620,7 @@ In this case the `remove()` method is what you want.
 
 Install it using
 
-```bash
+```console
 
 npm install fs-extra
 
@@ -6289,7 +6289,7 @@ You can signal Node.js that you are running in production by setting the `NODE_E
 
 This is usually done by executing the command
 
-```bash
+```console
 
 export NODE_ENV=production
 
@@ -6299,7 +6299,7 @@ in the shell, but it's better to put it in your shell configuration file (e.g. `
 
 You can also apply the environment variable by prepending it to your application initialization command:
 
-```bash
+```console
 
 NODE_ENV=production node app.js
 
@@ -6656,7 +6656,7 @@ Okay, so we have some TypeScript code. Now how do we run it?
 
 First thing to do is to install TypeScript in our project:
 
-```bash
+```console
 
 npm i -D typescript
 
@@ -6666,7 +6666,7 @@ Now we can compile it to JavaScript using `tsc` command in the terminal. Let's d
 
 Assuming that our file is named `example.ts`, the command would look like:
 
-```bash
+```console
 
 tsc example.ts
 
@@ -6852,7 +6852,7 @@ The usual way to run a Node.js program is to run the `node` globally available c
 
 If your main Node.js application file is `app.js`, you can call it by typing:
 
-```bash
+```console
 
 node app.js
 
@@ -6860,7 +6860,7 @@ node app.js
 
 Above, you are explicitly telling the shell to run your script with `node`. You can also embed this information into your JavaScript file with a "shebang" line. The "shebang" is the first line in the file, and tells the OS which interpreter to use for running the script. Below is the first line of JavaScript:
 
-```bash
+```console
 
 #!/usr/bin/node
 
@@ -6868,7 +6868,7 @@ Above, you are explicitly telling the shell to run your script with `node`. You 
 
 Above, we are explicitly giving the absolute path of interpreter. Not all operating systems have `node` in the bin folder, but all should have `env`. You can tell the OS to run `env` with node as parameter:
 
-```bash
+```console
 
 #!/usr/bin/env node
 
@@ -6878,7 +6878,7 @@ Above, we are explicitly giving the absolute path of interpreter. Not all operat
 
 To use a shebang, your file should have executable permission. You can give `app.js` the executable permission by running:
 
-```bash
+```console
 
 chmod u+x app.js
 
@@ -6989,7 +6989,7 @@ The `process` core module of Node.js provides the `env` property which hosts all
 
 The below code runs `app.js` and set `USER_ID` and `USER_KEY`.
 
-```bash
+```console
 
 USER_ID=239482 USER_KEY=foobar node app.js
 
@@ -7012,7 +7012,7 @@ In the same way you can access any custom environment variable you set.
 
 If you have multiple environment variables in your node project, you can also create an `.env` file in the root directory of your project, and then use the [dotenv](images/https://www.npmjs.com/package/dotenv) package to load them during runtime.
 
-```bash
+```console
 
 # .env file
 

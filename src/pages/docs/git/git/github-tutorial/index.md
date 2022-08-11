@@ -130,7 +130,9 @@ To create a new repo on GitHub, log in and go to the GitHub home page. You can f
 
 ![Git_1](https://product.hubspot.com/hs-fs/hubfs/Git_1.png?width=600&name=Git_1.png)
 
-After clicking the button, GitHub will ask you to name your repo and provide a brief description:
+
+
+After clicking the button, GitHub will ask you to name your repo and provide a brief description:
 
 ![Git_2](https://product.hubspot.com/hs-fs/hubfs/Git_2.png?width=512&name=Git_2.png)
 
