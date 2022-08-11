@@ -33,18 +33,13 @@ template: docs
 weight: 0
 ---
 
+# My Codepens
+
 <h1> Network Visualization </h1>
-<iframe
-  height="300"
-  style="width: 100%"
-  scrolling="no"
-  title="Neural Network Visualization (animated SVG)"
-  src="https://codepen.io/bgoonz/embed/NWjrEWV?default-tab=html%2Cresult"
-  frameborder="no"
-  loading="lazy"
-  allowtransparency="true"
-  allowfullscreen="true"
->
+<iframe height="300" style="width: 100%;" scrolling="no" title="Neural Network Visualization (animated SVG)" src="https://codepen.io/bgoonz/embed/ExmQgao?default-tab=result&editable=true&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/bgoonz/pen/ExmQgao">
+  Neural Network Visualization (animated SVG)</a> by Bryan C Guner (<a href="https://codepen.io/bgoonz">@bgoonz</a>)
+  on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 <br>
  <br>
@@ -87,7 +82,7 @@ weight: 0
   style="width: 100%"
   scrolling="no"
   title="Neural Network Visualization (animated SVG)"
-  src="https://codepen.io/bgoonz/embed/BaWEVqg?default-tab=html%2Cresult"
+  src="https://codepen.io/bgoonz/embed/BaWEVqg?default-tab=result"
   frameborder="no"
   loading="lazy"
   allowtransparency="true"
