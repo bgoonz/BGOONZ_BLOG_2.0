@@ -1,3 +1,4 @@
+/* It's a React component that renders a button or a link. */
 import React from 'react';
 import _ from 'lodash';
 
@@ -5,7 +6,7 @@ import {Link, withPrefix, classNames} from '../utils';
 
 export default class CtaButtons extends React.Component {
     render() {
-        let actions = _.get(this.props, 'actions', null);
+        const actions = _.get(this.props, 'actions', null);
         return (
             _.map(actions, (action, action_idx) => (
             <Link key={action_idx} to={withPrefix(_.get(action, 'url', null))}
