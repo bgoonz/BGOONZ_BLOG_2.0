@@ -5,7 +5,7 @@ const chokidar = require('chokidar');
 const _ = require('lodash');
 
 
-const metadataFileName = `site-metadata.json`;
+const metadataFileName = 'site-metadata.json';
 
 const parsers = {
     yaml: (data) => yaml.safeLoad(data, {schema: yaml.JSON_SCHEMA}),

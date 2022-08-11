@@ -39,7 +39,7 @@ npm start
 
 #### Babel can translate between different versions of javascript so that your code can run on browsers that are limited to ES5 compatibility... included by default with every new react project.
 
-```bash
+```console
 |15:25:30|bryan@LAPTOP-9LGJ3JGS:[05-installing-nodejs] 05-installing-nodejs_exitstatus:0__________________________________________________________o>
 
 npx create-react-app my-app

@@ -1,2 +1,0 @@
-# networking\_cheatsheet
-

@@ -111,7 +111,7 @@ sections:
                 Planner" is king. This is your place for all things pot luck.
             actions: []
             type: grid_item
-            image: images/potluck-planner.JPG
+            image: images/potluck-planner.jpg
           - title: Zumzi Video Conferencing
             title_url: 'https://github.com/bgoonz/zumzi-chat-messenger'
             image_alt: video chat
@@ -151,7 +151,7 @@ sections:
                   no_follow: false
                   type: action
             type: grid_item
-            image: images/royal-kangaroo.JPG
+            image: images/royal-kangaroo.jpg
 seo:
     title: Showcase
     extra:

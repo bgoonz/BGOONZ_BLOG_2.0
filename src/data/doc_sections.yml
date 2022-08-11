@@ -1,3 +1,5 @@
+
+
 root_docs_path: /docs
 sections:
     - about
@@ -10,6 +12,7 @@ sections:
     - ds-algo
     - docs
     - faq
+    - git
     - interact
     - javascript
     - js-tips
@@ -24,3 +27,4 @@ sections:
     - tools
     - tips
     - tutorials
+    - typescript

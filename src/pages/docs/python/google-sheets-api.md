@@ -10,17 +10,18 @@ seo:
 template: docs
 ---
 
-**If you're maintaining a dataset that frequently has to be updated in a predictable and consistent manner, automating that process has obvious benefits. It might cost some time to set up the code to automate the work, but you'll likely save time in the long run. And, if you're like me, writing the code will be less mind-numbing than repeatedly updating the same spreadsheet over and over again!**![](https://miro.medium.com/max/30/1*5RtrFThuAvHiqxxwPp5Ptg.png?q=20)
 
-![](https://miro.medium.com/max/709/1*5RtrFThuAvHiqxxwPp5Ptg.png)
+**If you're maintaining a dataset that frequently has to be updated in a predictable and consistent manner, automating that process has obvious benefits. It might cost some time to set up the code to automate the work, but you'll likely save time in the long run. And, if you're like me, writing the code will be less mind-numbing than repeatedly updating the same spreadsheet over and over again!**![medium blog image](https://miro.medium.com/max/30/1*5RtrFThuAvHiqxxwPp5Ptg.png?q=20)
 
-Screenshot of Google Cloud Console edited by the author.![](https://miro.medium.com/max/30/1*ahdHCrx8ngiDP0dBANKvgg.png?q=20)![](https://miro.medium.com/max/709/1*ahdHCrx8ngiDP0dBANKvgg.png)
+![medium blog image](https://miro.medium.com/max/709/1*5RtrFThuAvHiqxxwPp5Ptg.png)
 
-taken after successfully running the quickstart script.![](https://miro.medium.com/max/30/1*E_PHwbLycJ7mQSad2QszKw.png?q=20)![](https://miro.medium.com/max/709/1*E_PHwbLycJ7mQSad2QszKw.png)
+Screenshot of Google Cloud Console edited by the author.![medium blog image](https://miro.medium.com/max/30/1*ahdHCrx8ngiDP0dBANKvgg.png?q=20)![medium blog image](https://miro.medium.com/max/709/1*ahdHCrx8ngiDP0dBANKvgg.png)
 
-![](https://miro.medium.com/max/709/1*cN14i55zhZfg_X63kQcBEw.png)
+taken after successfully running the quickstart script.![medium blog image](https://miro.medium.com/max/30/1*E_PHwbLycJ7mQSad2QszKw.png?q=20)![medium blog image](https://miro.medium.com/max/709/1*E_PHwbLycJ7mQSad2QszKw.png)
 
-.![](https://miro.medium.com/max/30/1*wH0Dop5RSg3tS3sEnfIY4g.png?q=20)![](https://miro.medium.com/max/709/1*wH0Dop5RSg3tS3sEnfIY4g.png)
+![medium blog image](https://miro.medium.com/max/709/1*cN14i55zhZfg_X63kQcBEw.png)
+
+.![medium blog image](https://miro.medium.com/max/30/1*wH0Dop5RSg3tS3sEnfIY4g.png?q=20)![medium blog image](https://miro.medium.com/max/709/1*wH0Dop5RSg3tS3sEnfIY4g.png)
 
 Google spreadsheets provide excellent functionality for maintaining basic datasets. Some of the obvious advantages are that they are free, easy to access, and easy to share. Moreover, Google spreadsheets can be especially powerful because of their ability to connect with tools like [Zapier](https://zapier.com/) or [Phantombuster](https://phantombuster.com/) that can create automated workflows between a plethora of different online applications.
 

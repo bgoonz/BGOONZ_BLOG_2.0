@@ -29,6 +29,7 @@ seo:
 template: docs
 ---
 
+
 # Frequency and the fast Fourier transform
 
 > If you want to find the secrets of the universe, think in terms of energy,
@@ -139,7 +140,7 @@ of goals.
 Let's start with one of the most common applications, converting a sound signal (consisting of variations of air pressure over time) to a _spectrogram_.
 You might have seen spectrograms on your music player's equalizer view, or even on an old-school stereo.
 
-![The Numark EQ2600 Stereo Equalizer; image used with permission from the author, Sergey Gerasimuk. Source: http://sgerasimuk.blogspot.com/2014/06/numark-eq-2600-10-band-stereo-graphic.html](../images/sergey_gerasimuk_numark-eq-2600-IMG_0236.JPG)
+![The Numark EQ2600 Stereo Equalizer; image used with permission from the author, Sergey Gerasimuk. Source: http://sgerasimuk.blogspot.com/2014/06/numark-eq-2600-10-band-stereo-graphic.html](../images/sergey_gerasimuk_numark-eq-2600-IMG_0236.jpg)
 
 Listen to the following snippet of nightingale birdsong (released under CC BY 4.0 at
 http://www.orangefreesounds.com/nightingale-sound/):

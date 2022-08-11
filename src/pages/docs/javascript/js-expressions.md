@@ -10,6 +10,7 @@ seo:
     type: stackbit_page_meta
 template: docs
 ---
+
 Like many C-like programming languages, most operators JavaScript are binary or
 unary, and written in infix notation, i.e. `a op b`.
 
@@ -39,11 +40,13 @@ both of which are explained in more detail in the next slides.
 
 <div class="callout secondary">
 
-<i class="fa fa-info-circle" aria-hidden="true"></i> **ES2016**
+<i class="fa fa-info-circle" aria-hidden="true">
+</i> **ES2016**
 
 ES2016 introduces the _[exponentiation operator][pow]_:
 
 ```js
+//
 var result = 5 ** 2; // equivalent to Math.pow(5, 2)
 ```
 

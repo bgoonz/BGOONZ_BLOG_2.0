@@ -1,2 +1,0 @@
-# 🛐 Heroku Cheat Sheet
-

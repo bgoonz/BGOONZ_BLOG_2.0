@@ -17,18 +17,18 @@ template: docs
 
 <!-- code_chunk_output -->
 
-- [Bookmarks](#bookmarks)
-    - [NORWEX](#norwex)
-    - [RESOURCES](#resources)
-    - [a/A](#aa)
-    - [netlify](#netlify)
-    - [PYTHON](#python)
-    - [React-Redux](#react-redux)
-    - [AMAZON](#amazon)
-    - [GITHUB](#github)
-    - [MISC](#misc)
-    - [AMAZINGGGG](#amazingggg)
-    - [free-stuff](#free-stuff)
+-   [Bookmarks](#bookmarks)
+    -   [NORWEX](#norwex)
+    -   [RESOURCES](#resources)
+    -   [a/A](#aa)
+    -   [netlify](#netlify)
+    -   [PYTHON](#python)
+    -   [React-Redux](#react-redux)
+    -   [AMAZON](#amazon)
+    -   [GITHUB](#github)
+    -   [MISC](#misc)
+    -   [AMAZINGGGG](#amazingggg)
+    -   [free-stuff](#free-stuff)
 
 <!-- /code_chunk_output -->
 
@@ -327,9 +327,13 @@ template: docs
 
 ---
 
+<details>
+
+<summary> NORWEX </summary>
+
 <br>
 
-### NORWEX {#norwex add_date="1640716651" last_modified="1640717143"}
+### Projects
 
 -   [✅] [_**Clusters \| Atlas: MongoDBAtlas**_](https://cloud.mongodb.com/v2/602ab21c5ea9a66164cb9ea6#clusters)
 -   [✅] [_**sample-react - DigitalOcean AppPlatform**_](https://cloud.digitalocean.com/apps/2dbced50-862f-4cc5-ad63-2d4ce73e7591?i=cf4d7b)
@@ -447,11 +451,17 @@ template: docs
 -   [✅] [_**Abu Sayed -- Best Web, Game, XR \| Developer \| Engineer \|BANGLADESH**_](https://sayed.cyou/#resume)
     <br>
 
+</details>
+
 ---
 
 <br>
 
-### RESOURCES {#resources add_date="1640717067" last_modified="1640718980"}### Lambda {#lambda add_date="1640716651" last_modified="1640717406"}
+<details>
+
+<summary>RESOURCES  </summary>
+
+### RESOURCES
 
 -   [✅] [_**JavaScript Guide**_](http://javascriptguide.herokuapp.com/)
 -   [✅] [_**App Academy Open**_](https://open.appacademy.io/login)
@@ -674,6 +684,8 @@ template: docs
 -   [✅] [_**Error -- Dataflow -- My Project 78672 -- Google CloudPlatform**_](https://console.cloud.google.com/navigation-error;errorUrl=%2Fdataflow%2Fcreatejob%3Ftemplate%3DGCS_Text_to_Cloud_PubSub&jobName%3Dweb-serve&inputFilePattern%3Dgs:%252F%252Fweb-serve%252F*&confirmMsg%3Dtrue&project%3Dstudious-pulsar-298821?project=studious-pulsar-298821)
 -   [✅] [_**gs://potluck - GoogleSearch**_](https://www.google.com/search?q=gs%3A%2F%2Fpotluck&oq=gs%3A%2F%2Fpotluck&aqs=chrome..69i57j69i58.604j0j7&sourceid=chrome&ie=UTF-8)
     <br>
+
+</details>
 
 ---
 
@@ -1076,7 +1088,7 @@ template: docs
 -   [✅] [_**Cheat Sheets - MyDocs**_](https://bryan-guner.gitbook.io/my-docs/v/cheat-sheets/?q=)
 -   [✅] [_**Home -Post-Bootcamp-Job-Search**_](https://bryan-guner.gitbook.io/copy-of-job-search-1/)
 -   [✅] [_**Introduction - MyDocs**_](https://bryan-guner.gitbook.io/my-docs/v/snippets/)
--   [✅] [_**Web-Dev-Hub**_](https://bgoonzblog20master.gatsbyjs.io/)
+-   [✅] [_**Web-Dev-Hub**_](https://bgoonzblog20master.gtsb.io/)
 -   [✅] [_**bgoonz/pure-markdown-blog**_](https://github.com/bgoonz/pure-markdown-blog)
 -   [✅] [_**SyntaxError: Unexpected token - } catch { · Issue \#13838 ·eslint/eslint**_](https://github.com/eslint/eslint/issues/13838)
 -   [✅] [_**Visual Studio Code - Terminal Blank Screen - StackOverflow**_](https://stackoverflow.com/questions/54092486/visual-studio-code-terminal-blank-screen)
@@ -1120,7 +1132,7 @@ template: docs
 -   [✅] [_**Introducing our new navigation \| AlgoliaBlog**_](https://www.algolia.com/blog/product/introducing-our-new-navigation/?utm_medium=page_link&utm_source=dashboard)
 -   [✅] [_**IndeedResume**_](https://resumecontacts.indeed.com/contacted/interested?rAKey=f1567b217820b5d4&sAKey=8cae3679df59469e&uid=1flsslcd2mvoh800&ecmi=%3C1flsslcd2mvoh800%40indeedemail.com%3E&h=e435741e82904126b7285e8a42565127&hl=en&co=US&el=en_US&name=Michael+Mcarthy&company=Capital+One&jt=Software+Engineer+Full+Stack&mailAgent=MESSAGES__WEB)
 -   [✅] [_**Gatsby-Experiments/package.json at439a322efc543abb21471db2dbb18361e460ec98 ·bgoonz/Gatsby-Experiments**_](https://github.com/bgoonz/Gatsby-Experiments/blob/439a322efc543abb21471db2dbb18361e460ec98/package.json)
--   [✅] [_**Tools**_](https://bgoonzblog20master.gatsbyjs.io/docs/tools/)
+-   [✅] [_**Tools**_](https://bgoonzblog20master.gtsb.io/docs/tools/)
 -   [✅] [_**Stackbit App**_](https://app.stackbit.com/dashboard)
 -   [✅] [_**Comparing preview\...master ·bgoonz/BGOONZ_BLOG_2.0**_](https://github.com/bgoonz/BGOONZ_BLOG_2.0/compare/preview...master)
 -   [✅] [_**Pull requests ·bgoonz/BGOONZ_BLOG_2.0**_](https://github.com/bgoonz/BGOONZ_BLOG_2.0/pulls)
@@ -1945,7 +1957,7 @@ template: docs
 -   [✅] [_**Text-Shadow Exposed: Make cool and clever text effects with csstext-shadow ¦kremalicious**_](https://kremalicious.com/make-cool-and-clever-text-effects-with-css-text-shadow)
 -   [✅] [_**javascript you could add to any html page - GoogleSearch**_](https://www.google.com/search?sxsrf=ALeKk00GsCpoNdbGMrR03FlrgOrmApOpLw%3A1611975508435&ei=VMsUYJiPGqfG5gKzpp-QCQ&q=javascript+you+could+add+to+any+html+page&oq=javascript+you+could+add+to+any+html+page&gs_lcp=CgZwc3ktYWIQAzIFCCEQqwIyBQghEKsCMgUIIRCrAjoECAAQRzoECCMQJzoFCAAQkQI6BAgAEEM6CwguELEDEIMBEIsDOg4ILhCxAxDHARCjAhCLAzoICAAQsQMQiwM6FAguELEDEIMBEIsDEKgDEJsDEJoDOgcIABBDEIsDOhQILhCxAxCDARCLAxCoAxCaAxCbAzoHCAAQsQMQQzoLCAAQsQMQgwEQiwM6CggAELEDEEMQiwM6AggAOggIABAWEAoQHjoGCAAQFhAeOggIIRAWEB0QHjoFCCEQoAFQwSRY_39g_oEBaAJwBXgAgAGzA4gBoyuSAQo3LjMwLjMuMC4xmAEAoAEBqgEHZ3dzLXdpesgBCLgBAsABAQ&sclient=psy-ab&ved=0ahUKEwiYicTc1MLuAhUno1kKHTPTB5IQ4dUDCA0&uact=5)
 -   [✅] [_**Share Buttons - AddToAny**_](https://www.addtoany.com/buttons/)
--   [✅] [_**Share \"https://goofy-euclid-1cd736.netlify.app/\" -AddToAny**_](https://www.addtoany.com/share#url=https%3A%2F%2Fgoofy-euclid-1cd736.netlify.app%2F)
+-   [✅] [_**Share \"https://bgoonzblog20master.gtsb.io/docs/sitemap\" -AddToAny**_](https://www.addtoany.com/share#url=https%3A%2F%2Fgoofy-euclid-1cd736.netlify.app%2F)
 -   [✅] [_**How Javascript Implementation Adds Dynamic Interactivity \|Pluralsight**_](https://www.pluralsight.com/guides/how-javascript-implementation-adds-dynamic-interactivity)
 -   [✅] [_**Editing bgoonz/README.md at master ·bgoonz/bgoonz**_](https://github.com/bgoonz/bgoonz/edit/master/README.md)
 -   [✅] [_**Add a \'Like\' Button to Your Blogposts Using This Simple JavaScriptTechnique \| London Academy ofIT**_](https://www.londonacademyofit.co.uk/blog/add-like-button-blogposts-simple-javascript)
@@ -2634,7 +2646,7 @@ template: docs
 -   [✅] [_**Internet Archive: Digital Library of Free & Borrowable Books, Movies,Music & Wayback Machine**_](https://archive.org/)
 -   [✅] [_**Commits ·BrentOzarULTD/BrentOzar.com-Demos**_](https://github.com/BrentOzarULTD/BrentOzar.com-Demos/commits?author=BrentOzar)
 -   [✅] [_**SQL ConstantCare® - Brent OzarUnlimited®**_](https://www.brentozar.com/sql-constantcare/)
--   [✅] [_**Web Development ResourcesSite**_](https://web-dev-hub.com/2021/05/05/585/comment-page-1/?unapproved=1&moderation-hash=63c29acaf8530be4e2d08321f02915b9#comment-1)
+-   [✅] [_**Web Development ResourcesSite**_](https://bgoonz-blog.netlify.app/2021/05/05/585/comment-page-1/?unapproved=1&moderation-hash=63c29acaf8530be4e2d08321f02915b9#comment-1)
 -   [✅] [_**stack overflow postgres database - GoogleSearch**_](https://www.google.com/search?q=stack+overflow+postgres+database&oq=stack+overflow+postgres+database&aqs=chrome..69i57j69i64l2.6496j0j7&sourceid=chrome&ie=UTF-8)
 -   [✅] [_**stackoverflow-to-postgresql.pdf**_](https://www.bortzmeyer.org/stackoverflow-to-postgresql.pdf)
 -   [✅] [_**Improve database performance with connection pooling - Stack OverflowBlog**_](https://stackoverflow.blog/2020/10/14/improve-database-performance-with-connection-pooling/)
@@ -2959,7 +2971,7 @@ template: docs
 -   [✅] [_**Interactive Scenario: PostgreSQL Fundamentals: HashIndex**_](https://learning.oreilly.com/scenarios/postgresql-fundamentals-hash/9781098114381/)
 -   [✅] [_**Interactive Scenario: PostgreSQL Fundamentals: Block RangeIndex**_](https://learning.oreilly.com/scenarios/postgresql-fundamentals-block/9781098114398/)
 -   [✅] [_**Referred memberships -- Medium HelpCenter**_](https://help.medium.com/hc/en-us/articles/4405927192215?source=post_page-----4c5a06ac3507--------------------------------)
--   [✅] [_**Paste to Markdown**_](https://euangoddard.github.io/clipboard2markdown/)
+-   [✅] [_**Paste to Markdown**_](https://bgoonz.github.io/paste-2-markdown-web/)
 -   [✅] [_**Webflow - Bryan\'s SpectacularProject**_](https://webflow.com/design/bryans-spectacular-project-fae067)
 -   [✅] [_**Webflow - Section ScrollInteraction**_](https://preview.webflow.com/preview/section-scroll-interaction?utm_medium=preview_link&utm_source=showcase_slider&utm_content=section-scroll-interaction&preview=c958906377274cc9d25a9c596fb2983d)
 -   [✅] [_**ruby on rails - How to fix: error: \'\<filename\>\' does not have acommit checked out fatal: adding files failed when inputting \"git add.\" in command prompt - StackOverflow**_](https://stackoverflow.com/questions/56873278/how-to-fix-error-filename-does-not-have-a-commit-checked-out-fatal-adding)

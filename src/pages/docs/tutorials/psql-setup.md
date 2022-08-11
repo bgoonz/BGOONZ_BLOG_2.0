@@ -3,17 +3,18 @@ title: PostgreSQL Setup
 weight: 0
 excerpt: PostgreSQL Setup
 seo:
-    title: ''
-    description: ''
-    robots: []
-    extra: []
-    type: stackbit_page_meta
+  title: ""
+  description: ""
+  robots: []
+  extra: []
+  type: stackbit_page_meta
 template: docs
 ---
 
 # PostgreSQL Setup For Windows & WSL/Ubuntu
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://onedrive.live.com/embed?cid=D21009FDD967A241&amp;resid=D21009FDD967A241%21538624&amp;authkey=ALjsoYXNZpaUagA&amp;em=2&amp;wdAr=1.7777777777777777" width="1186px" height="691px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://onedrive.live.com/embed?cid=D21009FDD967A241&amp;resid=D21009FDD967A241%21538624&amp;authkey=ALjsoYXNZpaUagA&amp;em=2&amp;wdAr=1.7777777777777777" width="1186px" height="691px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+<br>
 
 If you follow this guide to a tee… you will install PostgreSQL itself on your Windows installation. Then, you will install psql in your…
 
@@ -21,7 +22,9 @@ If you follow this guide to a tee… you will install PostgreSQL itself on your 
 
 ### PostgreSQL Setup For Windows & WSL/Ubuntu
 
-<figure><img src="https://cdn-images-1.medium.com/max/600/0*mhTM08D1J612VW7J" class="graf-image" /></figure>If you follow this guide to a tee… you will install PostgreSQL itself on your Windows installation. Then, you will install `psql` in your Ubuntu installation. Then you will also install Postbird, a cross-platform graphical user interface that makes working with SQL and PostgreSQL 'allegedly' …(personally I prefer to just use the command line but PG Admin makes for an immeasurably more complicated tutorial than postbird)… better than just using the **command line tool** `psql`**.**
+<figure>
+<img src="https://cdn-images-1.medium.com/max/600/0*mhTM08D1J612VW7J" class="graf-image" />
+</figure>If you follow this guide to a tee… you will install PostgreSQL itself on your Windows installation. Then, you will install `psql` in your Ubuntu installation. Then you will also install Postbird, a cross-platform graphical user interface that makes working with SQL and PostgreSQL 'allegedly' …(personally I prefer to just use the command line but PG Admin makes for an immeasurably more complicated tutorial than postbird)… better than just using the **command line tool** `psql`**.**
 
 ### Important Distinction: PSQL is the frontend interface for PostgreSQL … they are not synonymous!
 
@@ -41,28 +44,34 @@ When you read "installation", that means the actual OS that's running on your ma
 
 ### Other Noteworthy Distinctions:
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*um8fm6FDTYYOXZrLudddpg.png" class="graf-image" /></figure>### Installing PostgreSQL 12
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*um8fm6FDTYYOXZrLudddpg.png" class="graf-image" />
+</figure>### Installing PostgreSQL 12
 
 To install PostgreSQL 12, you need to download the installer from the Internet. PostgreSQL's commercial company, Enterprise DB, offers installers for PostgreSQL for every major platform.
 
 Open <a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloads" class="markup--anchor markup--p-anchor">https://www.enterprisedb.com/downloads/postgres-postgresql-downloads</a>. Click the link for PostgreSQL 12 for Windows x86-64.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*wi4EbaVo-mamG_tH.png" class="graf-image" /></figure>Once that installer downloads, run it. You need to go through the normal steps of installing software.
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*wi4EbaVo-mamG_tH.png" class="graf-image" />
+</figure>Once that installer downloads, run it. You need to go through the normal steps of installing software.
 
--   <span id="a223">Yes, Windows, let the installer make changes to _my_ device.</span>
--   <span id="d4d0">Thanks for the welcome. Next.</span>
--   <span id="1283">Yeah, that's a good place to install it. Next.</span>
--   <span id="79cc">I don't want that pgAdmin nor the Stack Builder things. Uncheck. Uncheck. Next.</span>
+- <span id="a223">Yes, Windows, let the installer make changes to _my_ device.</span>
+- <span id="d4d0">Thanks for the welcome. Next.</span>
+- <span id="1283">Yeah, that's a good place to install it. Next.</span>
+- <span id="79cc">I don't want that pgAdmin nor the Stack Builder things. Uncheck. Uncheck. Next.</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*PSDmTsaD37MgFJ-A.png" class="graf-image" /></figure>- <span id="e09d">Also, great looking directory. Thanks. Next.</span>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*PSDmTsaD37MgFJ-A.png" class="graf-image" />
+</figure>- <span id="e09d">Also, great looking directory. Thanks. Next.</span>
 
 ### Oooh! A password! I'll enter **\*\*\*\***. I sure won't forget that because, if I do, I'll have to uninstall and reinstall PostgreSQL and lose all of my hard work. **Seriously, write down this password or use one you will not forget!!!!!!!!!!!!!!!**
 
 ### I REALLY CANNOT STRESS THE ABOVE POINT ENOUGH… Experience is a great teacher but in this case … it's not worth it.
 
--   <span id="25b7">Sure. 5432. Good to go. Next.</span>
--   <span id="28be">Not even sure what that means. Default! Next.</span>
--   <span id="b378">Yep. Looks good. Next.</span>
+- <span id="25b7">Sure. 5432. Good to go. Next.</span>
+- <span id="28be">Not even sure what that means. Default! Next.</span>
+- <span id="b378">Yep. Looks good. Next.</span>
 
 Insert pop culture reference to pass the time
 
@@ -147,13 +156,19 @@ Now, try connecting to PostreSQL by typing `psql postgres`. Because you added th
 
 Head over to the <a href="https://github.com/Paxa/postbird/releases" class="markup--anchor markup--p-anchor">Postbird releases page on GitHub</a>. Click the installer for Windows which you can recognize because it's the only file in the list that ends with ".exe".
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*ZdKurvQ4bHs3vDLT.png" class="graf-image" /></figure>After that installer downloads, run it. You will get a warning from Windows that this is from an unidentified developer. If you don't want to install this, find a PostgreSQL GUI client that you do trust and install it or do everything from the command line.
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*ZdKurvQ4bHs3vDLT.png" class="graf-image" />
+</figure>After that installer downloads, run it. You will get a warning from Windows that this is from an unidentified developer. If you don't want to install this, find a PostgreSQL GUI client that you do trust and install it or do everything from the command line.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*EWpFEwM0YUDQCW_i.png" class="graf-image" /></figure>You should get used to seeing this because many open-source applications aren't signed with the Microsoft Store for monetary and philosophical reasons.
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*EWpFEwM0YUDQCW_i.png" class="graf-image" />
+</figure>You should get used to seeing this because many open-source applications aren't signed with the Microsoft Store for monetary and philosophical reasons.
 
 Otherwise, if you trust Paxa like web-dev-hub and tens of thousands of other developers do, then click the link that reads "More info" and the "Run anyway" button.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*9pDpx8XsYt2KnMku.png" class="graf-image" /></figure>When it's done installing, it will launch itself. Test it out by typing the "postgres" into the "Username" field and the password from your installation in the "Password" field. Click the Connect button. It should properly connect to the running
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*9pDpx8XsYt2KnMku.png" class="graf-image" />
+</figure>When it's done installing, it will launch itself. Test it out by typing the "postgres" into the "Username" field and the password from your installation in the "Password" field. Click the Connect button. It should properly connect to the running
 
 You can close it for now. It also installed an icon on your desktop. You can launch it from there or your Start Menu at any time.
 
@@ -320,16 +335,24 @@ In the next example, we select all rows from the database table.
 
 <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz's gists · GitHub</a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
-<em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz">
+<strong>bgoonz — Overview</strong>
+<br />
+<em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a>
+<a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
 Or Checkout my personal Resource Site:
 
-<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Stackbit Web-Dev-HubTheme</strong><br />
-<em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/">
+<strong>Stackbit Web-Dev-HubTheme</strong>
+<br />
+<em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a>
+<a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [March 6, 2021](https://medium.com/p/801672ab7089).
 
 <a href="https://medium.com/@bryanguner/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089" class="p-canonical">Canonical link</a>
 
- August 6, 2021.
+August 6, 2021.
