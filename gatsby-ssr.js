@@ -1,3 +1,4 @@
+/* It's adding the scripts to the page. */
 /**
  * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
  *
