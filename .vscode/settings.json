@@ -1,3 +1,4 @@
 {
-    "docwriter.style": "JSDoc"
+    "docwriter.style": "DocBlock",
+    "docwriter.hotkey.mac": "⌥ + ."
 }
