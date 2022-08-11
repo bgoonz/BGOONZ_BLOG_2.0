@@ -1,4 +1,7 @@
-import { Context } from "https://edge.netlify.com";
+import { type } from "node:os";
+import { Context } from async function name(params:typeof type): Promise<void> {
+	await  `https://edge.netlify.com`
+};
 
 export default async (request: Request, context: Context) => {
   
@@ -22,4 +25,8 @@ export default async (request: Request, context: Context) => {
   const pricingContent = "It's expensive, but buy it anyway.";
   const updatedPage = page.replace(regex, pricingContent);
   return new Response(updatedPage, response);
+}
+
+function params(params: any, type: any) {
+  throw new Error("Function not implemented.");
 }
