@@ -1,9 +1,3 @@
-/**
- * It takes a string like `color: red; font-size: 12px;` and returns an object like `{color: 'red',
- * fontSize: '12px'}`
- * @param styleAttr - The style attribute string to convert to an object.
- * @returns An object with the style attributes as keys and the values as values.
- */
 import _ from "lodash";
 
 export default function toStyleObj(styleAttr) {

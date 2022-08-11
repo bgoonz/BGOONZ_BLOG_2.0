@@ -1,8 +1,9 @@
 /**
- * It takes a page path and returns the URL of the page
- * @param pages - the pages object from the site config
- * @param pagePath - the path to the page you want to link to
- * @returns The url of the page.
+ * If the url starts with a hash, http, or https, return the url as is. Otherwise, use the
+ * gatsbyWithPrefix function
+ * @param url - The URL to be prefixed.
+ * @returns A function that takes a url as an argument and returns the url if it is falsy, starts with
+ * a #, or starts with http:// or https://. Otherwise, it returns the url with the gatsby prefix.
  */
 import _ from 'lodash';
 import getPage from './getPage';

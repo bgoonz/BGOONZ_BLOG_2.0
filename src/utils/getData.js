@@ -1,9 +1,4 @@
-/**
- * It takes a data path and returns the data
- * @param siteData - The site data object.
- * @param dataPath - The path to the data file, relative to the src/data directory.
- * @returns The data from the dataPath
- */
+/* Exporting the function cycler. */
 import _ from 'lodash';
 
 export default function getData(siteData, dataPath) {

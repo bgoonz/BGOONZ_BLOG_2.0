@@ -1,9 +1,8 @@
 /**
- * It takes an array of page objects and a file path, and returns the page object that matches the file
- * path
+ * It returns all the pages that are located under the provided URL path
  * @param pages - An array of page objects. All pages must have 'url' field.
- * @param filePath - The file path of the page you want to find.
- * @returns The page object that matches the filePath.
+ * @param urlPath - The URL path of the page you want to get the children of.
+ * @returns An array of objects that have a url property that starts with the urlPath.
  */
 import _ from 'lodash';
 
