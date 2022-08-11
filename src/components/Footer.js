@@ -94,7 +94,7 @@ export default class Footer extends React.Component {
                                             acceptCharset="utf-8"
                                             target="_self">
                                             <input type="hidden" name="si"
-                                                defaultValue={14_588_965} />
+                                                defaultValue={14588965} />
                                             <input type="hidden" name="pid" defaultValue="r" />
                                             <input type="hidden" name="n"
                                                 defaultValue={0} />
@@ -145,7 +145,7 @@ export default class Footer extends React.Component {
 <a href = "//pdfcrowd.com/url_to_pdf/?" onclick = {`if(!this.p)href+='&url='+encodeURIComponent(location.href);this.p=1`} > Save to PDF </a>
                 </div>
                 <div className="inner">
-                    <div id="search" className="inner" />
+                    <div id="search" className="inner"></div>
                     <div className="site-footer-inside">
                         <p className="site-info">
                             {
@@ -159,8 +159,8 @@ export default class Footer extends React.Component {
                             {
                                 _.map(_.get(this.props, 'pageContext.site.siteMetadata.footer.links', null), (action, action_idx) => (
                                     <ActionLink key={action_idx}
-                                    {...this.props}
-                                    action={action} />
+                                        {...this.props}
+                                        action={action}></ActionLink>
                                 ))
                             }
                           </p>

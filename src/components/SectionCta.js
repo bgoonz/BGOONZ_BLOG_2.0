@@ -6,7 +6,7 @@ import CtaButtons from './CtaButtons';
 
 export default class SectionCta extends React.Component {
     render() {
-        const section = _.get(this.props, 'section', null);
+        let section = _.get(this.props, 'section', null);
         return (
             <section id={_.get(section, 'section_id', null)} className="block block-cta outer">
               <div className="inner">
