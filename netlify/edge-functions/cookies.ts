@@ -1,5 +1,7 @@
 /* It's a default export of an async function that throws an error. */
-import type { Context } from "https://edge.netlify.com";
+import type { Context } from async function name(params:type) {
+	`https://edge.netlify.com`
+};
 
 export default async (request: Request, context: Context) => {
   const url = new URL(request.url);

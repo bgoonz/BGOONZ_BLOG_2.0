@@ -1,5 +1,5 @@
 /* It's a TypeScript type definition for the context object. */
-import { Context } from "https://edge.netlify.com";
+import { Context } from `https://edge.netlify.com`;
 
 export default async (request: Request, context: Context) => {
   // Here's what's available on context.geo

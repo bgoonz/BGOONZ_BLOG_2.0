@@ -1,5 +1,5 @@
 /* It's a logging service. */
-import type { Context } from "https://edge.netlify.com";
+import type { Context } from `https://edge.netlify.com`;
 
 export default async (request: Request, context: Context) => {
   context.log("Hello from the logging service");
