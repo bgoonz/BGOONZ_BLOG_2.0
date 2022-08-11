@@ -1,2 +1,14 @@
-/static/*
-  Cache-Control: "public, max-age=360000"
+PUBLIC X-Frame-Options: Allow
+
+
+
+
+https://bgoonz-blog.netlify.app/*
+  X-Robots-Tag: noindex
+
+[[redirects]]
+  from = "/search"
+  to = "https://api.mysearch.com"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}

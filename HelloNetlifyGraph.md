@@ -1,1 +1,0 @@
-Thank you for checking out Netlify Graph, we hope you like it!
