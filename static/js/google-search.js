@@ -4,134 +4,84 @@
       Copyright The Closure Library Authors.
       SPDX-License-Identifier: Apache-2.0
      */
-  var g = this || self,
-    k = function (a, b) {
-      function d() {}
-      d.prototype = b.prototype;
-      a.l = b.prototype;
-      a.prototype = new d();
-      a.prototype.constructor = a;
-      a.j = function (e, c, f) {
-        for (
-          var h = Array(arguments.length - 2), q = 2;
-          q < arguments.length;
-          q++
-        )
-          h[q - 2] = arguments[q];
-        return b.prototype[c].apply(e, h);
-      };
+    const g = this || self,
+        k = function(a, b) {
+        function d() {}
+        d.prototype = b.prototype;
+        a.l = b.prototype;
+        a.prototype = new d();
+        a.prototype.constructor = a;
+        a.j = function(e, c, f) {
+            for (var h = Array(arguments.length - 2), q = 2; q < arguments.length; q++) h[q - 2] = arguments[q];
+            return b.prototype[c].apply(e, h);
+        };
     },
-    l = function (a) {
-      return a;
-    };
-
-  function m(a) {
-    if (Error.captureStackTrace) Error.captureStackTrace(this, m);
-    else {
-      var b = Error().stack;
-      b && (this.stack = b);
-    }
-    a && (this.message = String(a));
-  }
-  k(m, Error);
-  m.prototype.name = "CustomError";
-  var n = function (a, b) {
-    a = a.split("%s");
-    for (var d = "", e = a.length - 1, c = 0; c < e; c++)
-      d += a[c] + (c < b.length ? b[c] : "%s");
-    m.call(this, d + a[e]);
-  };
-  k(n, m);
-  n.prototype.name = "AssertionError";
-  var p = function (a, b, d) {
-      if (!a) {
-        var e = "Assertion failed";
-        if (b) {
-          e += ": " + b;
-          var c = Array.prototype.slice.call(arguments, 2);
+        l = function(a) {
+        return a;
+captureStackTrace) Error.captureStackTrace(this, m);
+        else {
+            var b = Error().stack;
+            b && (this.stack = b);
         }
-        throw new n("" + e, c || []);
-      }
-    },
-    r = function (a, b) {
-      throw new n(
-        "Failure" + (a ? ": " + a : ""),
-        Array.prototype.slice.call(arguments, 1)
-      );
-    };
-  var t;
-  var w = function (a, b) {
-    this.h = (a === u && b) || "";
+        a && (this.message = String(a));
+    }
+    k(m, Error);
+    m.prototype.name = 'CustomError';
+const n = function(a, b) {
+    a = a.split('%s');
+    for (var d = '', e = a.length - 1, c = 0; c < e; c++) d += a[c] + (c < b.length ? b[c] : '%s');
+    m.call(this, d + a[e]);
+};
+    k(n, m);
+    n.prototype.name = 'AssertionError';
+    var p = function(a, b, d) {
+            if (!a) {
+                var e = 'Assertion failed';
+                if (b) {
+                    e += ': ' + b;
+                    var c = Array.prototype.slice.call(arguments, 2);
+                }
+                throw new n('' + e, c || []);
+            }
+        },
+        r = function(a, b) {
+            throw new n('Failure' + (a ? ': ' + a : ''), Array.prototype.slice.call(arguments, 1));
+        };
+    var t;
+const w = function(a, b) {
+    this.h = (a === u && b) || '';
     this.i = v;
-  };
-  w.prototype.toString = function () {
-    return "Const{" + this.h + "}";
-  };
-  var x = function (a) {
-      if (a instanceof w && a.constructor === w && a.i === v) return a.h;
-      r("expected object of type Const, got '" + a + "'");
-      return "type_error:Const";
-    },
-    v = {},
-    u = {};
-  var z = function (a, b) {
-    this.g = b === y ? a : "";
-  };
-  z.prototype.toString = function () {
-    return this.g + "";
-  };
-  var A = function (a) {
-      if (a instanceof z && a.constructor === z) return a.g;
-      var b = typeof a;
-      r(
-        "expected object of type TrustedResourceUrl, got '" +
-          a +
-          "' of type " +
-          ("object" != b ? b : a ? (Array.isArray(a) ? "array" : b) : "null")
-      );
-      return "type_error:TrustedResourceUrl";
-    },
-    E = function (a, b) {
-      var d = x(a);
-      if (!B.test(d)) throw Error("Invalid TrustedResourceUrl format: " + d);
-      a = d.replace(C, function (e, c) {
-        if (!Object.prototype.hasOwnProperty.call(b, c))
-          throw Error(
-            'Found marker, "' +
-              c +
-              '", in format string, "' +
-              d +
-              '", but no valid label mapping found in args: ' +
-              JSON.stringify(b)
-          );
-        e = b[c];
-        return e instanceof w ? x(e) : encodeURIComponent(String(e));
-      });
-      return D(a);
-    },
-    C = /%{(\w+)}/g,
-    B =
-      /^((https:)?\/\/[0-9a-z.:[\]-]+\/|\/[^/\\]|[^:/\\%]+\/|[^:/\\%]*[?#]|about:blank#)/i,
-    F = /^([^?#]*)(\?[^#]*)?(#[\s\S]*)?/,
-    J = function (a) {
-      var b = G;
-      a = E(H, a);
-      a = A(a).toString();
-      a = F.exec(a);
-      var d = a[3] || "";
-      return D(a[1] + I("?", a[2] || "", b) + I("#", d, void 0));
-    },
-    y = {},
-    D = function (a) {
-      if (void 0 === t) {
-        var b = null;
-        var d = g.trustedTypes;
-        if (d && d.createPolicy)
-          try {
-            b = d.createPolicy("goog#html", {
-              createHTML: l,
-              createScript: l,
-              createScriptURL: l,
+};
+    w.prototype.toString = function() {
+        return 'Const{' + this.h + '}';
+    };
+    var x = function(a) {
+            if (a instanceof w && a.constructor === w && a.i === v) return a.h;
+            r("expected object of type Const, got '" + a + "'");
+            return 'type_error:Const';
+        },
+        v = {},
+        u = {};
+    var z = function(a, b) {
+        this.g = b === y ? a : '';
+    };
+    z.prototype.toString = function() {
+        return this.g + '';
+    };
+    var A = function(a) {
+            if (a instanceof z && a.constructor === z) return a.g;
+            var b = typeof a;
+            r("expected object of type TrustedResourceUrl, got '" + a + "' of type " + ('object' != b ? b : a ? (Array.isArray(a) ? 'array' : b) : 'null'));
+            return 'type_error:TrustedResourceUrl';
+        },
+        E = function(a, b) {
+            const d = x(a);
+            if (!B.test(d)) throw Error(`Invalid TrustedResourceUrl format: ${d}`);
+            a = d.replace(C, (e, c) => {
+                if (!Object.prototype.hasOwnProperty.call(b, c))
+                    throw Error(`Found marker, "${c}", in format string, "${d}", but no valid label mapping found in args: ${JSON.stringify(b)}`);
+                e = b[c];
+                return e instanceof w ? x(e) : encodeURIComponent(String(e));
             });
           } catch (e) {
             g.console && g.console.error(e.message);
@@ -325,41 +275,80 @@
       versionSlash: Z ? L : "",
       theme: da,
     });
-    document.getElementsByTagName("head")[0].appendChild(N(W));
-  }
+    var Q = window.__gcse.scb,
+        R = document.createElement('script');
+    R.src = A(O);
+let S;
+var T;
+var U = ((R.ownerDocument?.defaultView) || window).document;
+const V = null === (T = U.querySelector) || undefined === T ? undefined : T.call(U, 'script[nonce]');
+    (S = V ? V.nonce || V.getAttribute('nonce') || '' : '') && R.setAttribute('nonce', S);
+    R.type = 'text/javascript';
+    if (Q) R.onload = Q;
+    document.getElementsByTagName('head')[0].appendChild(R);
+    if (M()) {
+        document
+            .getElementsByTagName('head')[0]
+            .appendChild(
+                N(
+                    opts_.cselibVersion ?
+                    E(K, {
+                        versionDir: opts_.cselibVersion,
+                        versionSlash: L,
+                        experiment: '',
+                        lang: opts_.language
+                    }) :
+                    E(K, {
+                        versionDir: '',
+                        versionSlash: '',
+                        experiment: '',
+                        lang: opts_.language
+                    })
+                )
+            );
+        let W;
+        var X = opts_.uiOptions.cssThemeVersion || 2;
+        var Y = opts_.theme.toLowerCase();
+        var Z = X ? 'v' + X : Y.match(/v2_/g) ? 'v2' : '';
+        var da = Y.replace('v2_', '');
+        W = E(ba, {
+            versionDir: Z,
+            versionSlash: Z ? L : '',
+            theme: da
+        });
+        document.getElementsByTagName('head')[0].appendChild(N(W));
+    }
 })({
-  cx: "54896af6e2f16ea45",
-  language: "en",
-  theme: "V2_DEFAULT",
-  uiOptions: {
-    resultsUrl: "",
-    enableAutoComplete: true,
-    enableImageSearch: true,
-    imageSearchLayout: "popup",
-    resultSetSize: "filtered_cse",
-    enableOrderBy: true,
-    orderByOptions: [
-      {
-        label: "Relevance",
-        key: "",
-      },
-      {
-        label: "Date",
-        key: "date",
-      },
-    ],
-    overlayResults: true,
-    numTopRefinements: -1,
-    hideElementBranding: false,
-    cssThemeVersion: 4,
-    isSafeSearchActive: true,
-  },
-  protocol: "https",
-  rawCss:
-    ".gsc-control-cse{font-family:arial, sans-serif}.gsc-control-cse .gsc-table-result{font-family:arial, sans-serif}.gsc-refinementsGradient{background:linear-gradient(to left,rgba(255,255,255,1),rgba(255,255,255,0))}",
-  cse_token: "AJvRUv0-sBpklfS8nj5FY16GCTPF:1638319172452",
-  isHostedPage: false,
-  exp: ["csqr", "cc"],
-  cselibVersion: "54e62135847a1703",
-  usqp: "CAI\u003d",
+    cx: '54896af6e2f16ea45',
+    language: 'en',
+    theme: 'V2_DEFAULT',
+    uiOptions: {
+        resultsUrl: '',
+        enableAutoComplete: true,
+        enableImageSearch: true,
+        imageSearchLayout: 'popup',
+        resultSetSize: 'filtered_cse',
+        enableOrderBy: true,
+        orderByOptions: [{
+                label: 'Relevance',
+                key: ''
+            },
+            {
+                label: 'Date',
+                key: 'date'
+            }
+        ],
+        overlayResults: true,
+        numTopRefinements: -1,
+        hideElementBranding: false,
+        cssThemeVersion: 4,
+        isSafeSearchActive: true
+    },
+    protocol: 'https',
+    rawCss: '.gsc-control-cse{font-family:arial, sans-serif}.gsc-control-cse .gsc-table-result{font-family:arial, sans-serif}.gsc-refinementsGradient{background:linear-gradient(to left,rgba(255,255,255,1),rgba(255,255,255,0))}',
+    cse_token: 'AJvRUv0-sBpklfS8nj5FY16GCTPF:1638319172452',
+    isHostedPage: false,
+    exp: ['csqr', 'cc'],
+    cselibVersion: '54e62135847a1703',
+    usqp: 'CAI\u003d'
 });
