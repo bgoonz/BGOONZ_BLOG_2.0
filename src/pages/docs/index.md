@@ -27,7 +27,9 @@ weight: 900
 excerpt: docs quick reference
 ---
 
-# Go To [SITEMAP -->](./docs/sitemap/)
+## Go To [Navigation SITEMAP->](./docs/sitemap/)
+
+### OR... [the auto generated xml sitemap](https://bgoonz-blog.netlify.app/sitemap.xml)
 
 ---
 
