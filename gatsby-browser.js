@@ -1,4 +1,4 @@
-
+/* eslint-disable linebreak-style */
 /**
  * Implement Gatsby's Browser APIs in this file.
  *
@@ -32,4 +32,3 @@ exports.onPreRouteUpdate = () => {
         window.onGatsbyPreRouteUpdate();
     }
 };
-

@@ -1,10 +1,10 @@
 ---
-title: HTTPS Error Codes
+title: lorem-ipsum
 weight: 0
-excerpt: HTTPS Error Codes
+excerpt: lorem-ipsum
 seo:
-    title: 'HTTPS Error Codes'
-    description: ' can act as a gateway or proxy (go-between) between a client (like your Web browser) and another'
+    title: ''
+    description: ''
     robots: []
     extra: []
 template: docs
@@ -43,7 +43,7 @@ template: docs
 
 > An _Glossary("HTTP"_) error code meaning "Bad Gateway".
 
- _Glossary("Server", "server"_) can act as a gateway or proxy (go-between) between a client (like your Web browser) and another, upstream server. When you request to access a _Glossary("URL"_), the gateway server can relay your request to the upstream server. "502" means that the upstream server has returned an invalid response.
+A _Glossary("Server", "server"_) can act as a gateway or proxy (go-between) between a client (like your Web browser) and another, upstream server. When you request to access a _Glossary("URL"_), the gateway server can relay your request to the upstream server. "502" means that the upstream server has returned an invalid response.
 
 Normally the upstream server is not down (i.e. furnishes no response to the gateway/proxy), but does not understand the same data-exchange protocol as the gateway/proxy. Internet _Glossary("Protocol", "protocols"_) are quite explicit, and so a 502 usually means that one or both machines were incorrectly or incompletely programmed.
 
@@ -723,8 +723,11 @@ Since [`DOMString`](/en-US/docs/Web/API/DOMString '/en-US/docs/Web/API/DOMString
 Here are the two possible methods.
 
 ### Solution #1 - escaping the string before encoding it
+<<<<<<< HEAD
 
 ---
+=======
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
 
 ```js
 //
@@ -2537,11 +2540,19 @@ These attacks succeed if the Web app does not employ enough validation or encodi
 
 #### See also
 
+<<<<<<< HEAD
 -   [Cross-site scripting (XSS)](/en-US/docs/Web/Security/Types_of_attacks#cross-site_scripting_xss)
 -   _Interwiki("wikipedia", "Cross-site scripting"_) on Wikipedia
 -   [Cross-site scripting on OWASP](https://owasp.org/www-community/attacks/xss/)
 -   [Another article about Cross-site scripting](https://www.acunetix.com/blog/web-security-zone/articles/dom-xss-explained/)
 -   [XSS Attack - Exploit & Protection](https://secure.wphackedhelp.com/blog/wordpress-xss-attack/)
+=======
+- [Cross-site scripting (XSS)](/en-US/docs/Web/Security/Types_of_attacks#cross-site_scripting_xss)
+- _Interwiki("wikipedia", "Cross-site scripting"_) on Wikipedia
+- [Cross-site scripting on OWASP](https://owasp.org/www-community/attacks/xss/)
+- [Another article about Cross-site scripting](https://www.acunetix.com/blog/web-security-zone/articles/dom-xss-explained/)
+- [XSS Attack - Exploit & Protection](https://secure.wphackedhelp.com/blog/wordpress-xss-attack/)
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
 
 ---
 
@@ -5743,7 +5754,11 @@ In the example below we have a three-column and two-row track grid, with 20-pixe
 
 In terms of grid sizing, gaps act as if they were a regular grid track however nothing can be placed into the gap. The gap acts as if the grid line at that location has gained extra size, so any grid item placed after that line begins at the end of the gap.
 
+<<<<<<< HEAD
 The grid-gap properties are not the only thing that can cause tracks to space out. Margins, padding or the use of the space distribution properties in [Box Alignment](/en-US/docs/Web/CSS/CSS_Grid_Layout/Box_Alignment_in_CSS_Grid_Layout) can all contribute to the visible gap - therefore the grid-gap properties should not be seen as equal to "the gutter size" unless you know that your design has not introduced any additional space with one of these methods.
+=======
+The grid-gap properties are not the only thing that can cause tracks to space out. Margins, padding or the use of the space distribution properties in [Box Alignment](/en-US/docs/Web/CSS/CSS_Grid_Layout/Box_Alignment_in_CSS_Grid_Layout) can all contribute to the visible gap - therefore the grid-gap properties should not be seen as equal to “the gutter size” unless you know that your design has not introduced any additional space with one of these methods.
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
 
 #### See also
 
@@ -8363,7 +8378,11 @@ Web frameworks such as [AngularJS](https://en.wikipedia.org/wiki/AngularJS) and 
 
 #### See also
 
+<<<<<<< HEAD
 -   _interwiki("wikipedia", "Model-view-controller"_) on Wikipedia
+=======
+- _interwiki("wikipedia", "Model-view-controller"_) on Wikipedia
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
 
 ---
 
@@ -10461,7 +10480,6 @@ In addition, [CORS](/en-US/docs/Glossary/CORS) defines a subset of request heade
 The HTTP message below shows a few request headers after a _HTTPMethod("GET"_) request:
 
 ```console
-
 GET /home.html HTTP/1.1
 Host: developer.mozilla.org
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:50.0) Gecko/20100101 Firefox/50.0
@@ -10691,7 +10709,6 @@ For example, the site admin can forbid crawlers to visit a certain folder (and a
 > **Round Trip Time (RTT)** is the length time it takes for a data packet to be sent to a destination plus the time it takes for an acknowledgment of that packet to be received back at the origin. The RTT between a network and server can be determined by using the `ping` command.
 
 ```console
-
 $ ping example.com
 PING example.com (216.58.194.174): 56 data bytes
 64 bytes from 216.58.194.174: icmp_seq=0 ttl=55 time=25.050 ms
@@ -10767,7 +10784,6 @@ For SPA in application layer context, most of the popular SPA frameworks has its
 A basic command looks like this:
 
 ```console
-
 rsync [-options] SOURCE user@x.x.x.x:DESTINATION
 ```
 
@@ -10780,7 +10796,6 @@ rsync [-options] SOURCE user@x.x.x.x:DESTINATION
 You can also make a connection over SSH using the `-e` option as shown:
 
 ```console
-
 rsync [-options] -e "ssh [SSH DETAILS GO HERE]" SOURCE user@x.x.x.x:DESTINATION
 ```
 
