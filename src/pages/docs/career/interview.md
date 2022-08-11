@@ -16,7 +16,7 @@ template: docs
 
 # Interview:
 
-<iframe src="https://web-dev-interview-prep-quiz-website.netlify.app/" height="800px" width="1000px"></iframe>
+<iframe src="https://web-dev-interview-prep-quiz-website.netlify.app/" height="650px" width="600px"></iframe>
 
 <details>
 

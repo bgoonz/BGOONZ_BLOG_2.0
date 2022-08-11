@@ -1906,7 +1906,7 @@ weight: 0
  <br>
  <br>
 
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    height="300" style="width: 90%;" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0"  title="searchblog2.0"
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    height="300" style="width: 90%;" height="650px" width="600px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0"  title="searchblog2.0"
 src="https://codepen.io/bgoonz/embed/LYyBwEp?default-tab=result&theme-id=dark"   frameborder="yes" loading="lazy"
  allowfullscreen="true">
 See the Pen <a href="https://codepen.io/bgoonz/pen/LYyBwEp">
@@ -1927,7 +1927,7 @@ on <a href="https://codepen.io">CodePen</a>.
 <br>
 <br>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    height="300" style="width: 90%;" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0"  title="Fibonacci Carousel" src="" frameborder="no"
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    height="300" style="width: 90%;" height="650px" width="600px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0"  title="Fibonacci Carousel" src="" frameborder="no"
 loading="lazy"  allowfullscreen="true">
 See the Pen <a href="https://replit.com/@bgoonz/Comments-1#index.html">
 Fibonacci Carousel</a> by Bryan C Guner (<a href="https://codepen.io/bgoonz">@bgoonz</a>)
@@ -1979,7 +1979,7 @@ on <a href="https://codepen.io">CodePen</a>.
 <br>
 <br>
 
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    height="300" style="width: 90%;" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0"  title="Fibonacci Carousel"
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    height="300" style="width: 90%;" height="650px" width="600px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0"  title="Fibonacci Carousel"
 src="https://codepen.io/bgoonz/embed/JjNagJo?default-tab=result&theme-id=dark"   frameborder="yes" loading="lazy"
  allowfullscreen="true">
 See the Pen <a href="https://codepen.io/bgoonz/pen/JjNagJo">
@@ -2000,7 +2000,7 @@ on <a href="https://codepen.io">CodePen</a>.
 <br>
 <br>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    height="300" style="width: 90%;" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0"  title="embed-twitter-feed"
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    height="300" style="width: 90%;" height="650px" width="600px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0"  title="embed-twitter-feed"
 src="https://codepen.io/bgoonz/embed/poPOqEO?default-tab=result&theme-id=dark"   frameborder="yes" loading="lazy"
  allowfullscreen="true">
 See the Pen <a href="https://codepen.io/bgoonz/pen/poPOqEO">
@@ -2021,7 +2021,7 @@ on <a href="https://codepen.io">CodePen</a>.
 <br>
 <br>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    height="300" style="width: 90%;" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0"  src="//jsfiddle.net/bgoonz/j4xt839d/embedded/result/"
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    height="300" style="width: 90%;" height="650px" width="600px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0"  src="//jsfiddle.net/bgoonz/j4xt839d/embedded/result/"
 allowfullscreen="allowfullscreen" frameborder="0">
 </iframe>
 <br>
@@ -2038,7 +2038,7 @@ allowfullscreen="allowfullscreen" frameborder="0">
 <br>
 <br>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    height="300" style="width: 90%;" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0"  src="//jsfiddle.net/bgoonz/76osauer/1/embedded/result/"
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    height="300" style="width: 90%;" height="650px" width="600px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0"  src="//jsfiddle.net/bgoonz/76osauer/1/embedded/result/"
 allowfullscreen="allowfullscreen" frameborder="0">
 </iframe>
 <br>
@@ -2055,7 +2055,7 @@ allowfullscreen="allowfullscreen" frameborder="0">
 <br>
 <br>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    height="300" style="width: 90%;" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0"  src="//jsfiddle.net/bgoonz/vtz7820m/embedded/result/dark/"
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    height="300" style="width: 90%;" height="650px" width="600px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0"  src="//jsfiddle.net/bgoonz/vtz7820m/embedded/result/dark/"
 allowfullscreen="allowfullscreen" frameborder="0">
 </iframe>
 <br>
@@ -2072,7 +2072,7 @@ allowfullscreen="allowfullscreen" frameborder="0">
 <br>
 <br>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    height="300" style="width: 90%;" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    height="300" style="width: 90%;" height="650px" width="600px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
 </iframe>
 <br>
  <br>
@@ -2102,7 +2102,7 @@ frameborder="0">
 <br>
 <br>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    height="300" style="width: 90%;" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0"  src="//jsfiddle.net/bgoonz/3mpgzkx7/1/embedded/"
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    height="300" style="width: 90%;" height="650px" width="600px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0"  src="//jsfiddle.net/bgoonz/3mpgzkx7/1/embedded/"
 allowfullscreen="allowfullscreen" frameborder="0">
 </iframe>
 <br>

@@ -33,7 +33,7 @@ template: docs
 
 # Examples
 
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codesandbox.io/embed/react-embeds-w6oec?fontsize=14&hidenavigation=1&theme=dark" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"   allowfullscreen>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codesandbox.io/embed/react-embeds-w6oec?fontsize=14&hidenavigation=1&theme=dark" height="650px" width="600px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"   allowfullscreen>
 </iframe>
 <br>
 
@@ -52,7 +52,7 @@ Here I will walk through a demo…. skip down below for more fundamental example
 
 ## Learn Redux:
 
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     src="https://learning-redux42.netlify.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"   allowfullscreen>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     src="https://learning-redux42.netlify.app/" height="650px" width="600px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"   allowfullscreen>
 </iframe>
 <br>
 
