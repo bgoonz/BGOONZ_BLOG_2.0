@@ -4,24 +4,21 @@
       Copyright The Closure Library Authors.
       SPDX-License-Identifier: Apache-2.0
      */
-    var g = this || self,
+    const g = this || self,
         k = function(a, b) {
-            function d() {}
-            d.prototype = b.prototype;
-            a.l = b.prototype;
-            a.prototype = new d();
-            a.prototype.constructor = a;
-            a.j = function(e, c, f) {
-                for (var h = Array(arguments.length - 2), q = 2; q < arguments.length; q++) h[q - 2] = arguments[q];
-                return b.prototype[c].apply(e, h);
-            };
-        },
-        l = function(a) {
-            return a;
+        function d() {}
+        d.prototype = b.prototype;
+        a.l = b.prototype;
+        a.prototype = new d();
+        a.prototype.constructor = a;
+        a.j = function(e, c, f) {
+            for (var h = Array(arguments.length - 2), q = 2; q < arguments.length; q++) h[q - 2] = arguments[q];
+            return b.prototype[c].apply(e, h);
         };
-
-    function m(a) {
-        if (Error.captureStackTrace) Error.captureStackTrace(this, m);
+    },
+        l = function(a) {
+        return a;
+captureStackTrace) Error.captureStackTrace(this, m);
         else {
             var b = Error().stack;
             b && (this.stack = b);
@@ -30,11 +27,11 @@
     }
     k(m, Error);
     m.prototype.name = 'CustomError';
-    var n = function(a, b) {
-        a = a.split('%s');
-        for (var d = '', e = a.length - 1, c = 0; c < e; c++) d += a[c] + (c < b.length ? b[c] : '%s');
-        m.call(this, d + a[e]);
-    };
+const n = function(a, b) {
+    a = a.split('%s');
+    for (var d = '', e = a.length - 1, c = 0; c < e; c++) d += a[c] + (c < b.length ? b[c] : '%s');
+    m.call(this, d + a[e]);
+};
     k(n, m);
     n.prototype.name = 'AssertionError';
     var p = function(a, b, d) {
@@ -51,10 +48,10 @@
             throw new n('Failure' + (a ? ': ' + a : ''), Array.prototype.slice.call(arguments, 1));
         };
     var t;
-    var w = function(a, b) {
-        this.h = (a === u && b) || '';
-        this.i = v;
-    };
+const w = function(a, b) {
+    this.h = (a === u && b) || '';
+    this.i = v;
+};
     w.prototype.toString = function() {
         return 'Const{' + this.h + '}';
     };
@@ -78,11 +75,11 @@
             return 'type_error:TrustedResourceUrl';
         },
         E = function(a, b) {
-            var d = x(a);
-            if (!B.test(d)) throw Error('Invalid TrustedResourceUrl format: ' + d);
-            a = d.replace(C, function(e, c) {
+            const d = x(a);
+            if (!B.test(d)) throw Error(`Invalid TrustedResourceUrl format: ${d}`);
+            a = d.replace(C, (e, c) => {
                 if (!Object.prototype.hasOwnProperty.call(b, c))
-                    throw Error('Found marker, "' + c + '", in format string, "' + d + '", but no valid label mapping found in args: ' + JSON.stringify(b));
+                    throw Error(`Found marker, "${c}", in format string, "${d}", but no valid label mapping found in args: ${JSON.stringify(b)}`);
                 e = b[c];
                 return e instanceof w ? x(e) : encodeURIComponent(String(e));
             });
@@ -227,13 +224,13 @@
     var Q = window.__gcse.scb,
         R = document.createElement('script');
     R.src = A(O);
-    var S,
-        T,
-        U = ((R.ownerDocument && R.ownerDocument.defaultView) || window).document,
-        V = null === (T = U.querySelector) || void 0 === T ? void 0 : T.call(U, 'script[nonce]');
+let S;
+var T;
+var U = ((R.ownerDocument?.defaultView) || window).document;
+const V = null === (T = U.querySelector) || undefined === T ? undefined : T.call(U, 'script[nonce]');
     (S = V ? V.nonce || V.getAttribute('nonce') || '' : '') && R.setAttribute('nonce', S);
     R.type = 'text/javascript';
-    Q && (R.onload = Q);
+    if (Q) R.onload = Q;
     document.getElementsByTagName('head')[0].appendChild(R);
     if (M()) {
         document
@@ -255,11 +252,11 @@
                     })
                 )
             );
-        var W,
-            X = opts_.uiOptions.cssThemeVersion || 2,
-            Y = opts_.theme.toLowerCase(),
-            Z = X ? 'v' + X : Y.match(/v2_/g) ? 'v2' : '',
-            da = Y.replace('v2_', '');
+        let W;
+        var X = opts_.uiOptions.cssThemeVersion || 2;
+        var Y = opts_.theme.toLowerCase();
+        var Z = X ? 'v' + X : Y.match(/v2_/g) ? 'v2' : '';
+        var da = Y.replace('v2_', '');
         W = E(ba, {
             versionDir: Z,
             versionSlash: Z ? L : '',
