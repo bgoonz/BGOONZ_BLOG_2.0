@@ -2,7 +2,7 @@
  * Main JS file for theme behaviours
  */
 // Responsive video embeds
-let videoEmbeds = ['iframe[src*="youtube.com"]', 'iframe[src*="vimeo.com"]'];
+consnst videoEmbeds = ['iframe[src*="youtube.com"]', 'iframe[src*="vimeo.com"]'];
 reframe(videoEmbeds.join(','));
 
 // Handle main navigation menu toggling on small screens
@@ -23,57 +23,55 @@ function submenuToggleHandler(e) {
     this.parentNode.classList.toggle('active');
 }
 
-window.addMainNavigationHandlers = function() {
+window.addMainNavigationHandlers = () => {
     const menuToggle = document.querySelectorAll('.menu-toggle');
     if (menuToggle) {
-        for (let i = 0; i < menuToggle.length; i++) {
-            menuToggle[i].addEventListener('click', menuToggleHandler, false);
+        for (const element of menuToggle) {
+            element.addEventListener('click', menuToggleHandler, false);
         }
     }
 
     const submenuToggle = document.querySelectorAll('.submenu-toggle');
     if (submenuToggle) {
-        for (let i = 0; i < submenuToggle.length; i++) {
-            submenuToggle[i].addEventListener('click', submenuToggleHandler, false);
+        for (const element of submenuToggle) {
+            element.addEventListener('click', submenuToggleHandler, false);
         }
     }
 };
 
-window.removeMainNavigationHandlers = function() {
+window.removeMainNavigationHandlers = () => {
     // Remove nav related classes on page load
     document.body.classList.remove('menu--opened');
 
     const menuToggle = document.querySelectorAll('.menu-toggle');
     if (menuToggle) {
-        for (let i = 0; i < menuToggle.length; i++) {
-            menuToggle[i].removeEventListener('click', menuToggleHandler, false);
+        for (const element of menuToggle) {
+            elementener('click', menuToggleHandler, false);
         }
     }
 
     const submenuToggle = document.querySelectorAll('.submenu-toggle');
     if (submenuToggle) {
-        for (let i = 0; i < submenuToggle.length; i++) {
-            submenuToggle[i].removeEventListener('click', submenuToggleHandler, false);
+        for (const element of submenuToggle) {
+            element.removeEventListener('click', submenuToggleHandler, false);
         }
     }
 };
 
-window.addDocsNavigationHandlers = function() {
-    const docsNavToggle = document.getElementById('docs-nav-toggle');
+window.addDocsNavigationHandlers = () =>  const docsNavToggle = document.getElementById('docs-nav-toggle');
     if (docsNavToggle) {
         docsNavToggle.addEventListener('click', docsNavToggleHandler, false);
     }
 
     const docsSubmenuToggle = document.querySelectorAll('.docs-submenu-toggle');
     if (docsSubmenuToggle) {
-        for (let i = 0; i < docsSubmenuToggle.length; i++) {
-            docsSubmenuToggle[i].addEventListener('click', submenuToggleHandler, false);
+        for (const element of docsSubmenuToggle) {
+            element.addEventListener('click', submenuToggleHandler, false);
         }
     }
 };
 
-window.removeDocsNavigationHandlers = function() {
-    // Remove docs nav related classes on page load
+window.removeDocsNavigationHandlers = () =>  // Remove docs nav related classes on page load
     document.body.classList.remove('docs-menu--opened');
 
     const docsNavToggle = document.getElementById('docs-nav-toggle');
@@ -83,13 +81,13 @@ window.removeDocsNavigationHandlers = function() {
 
     const docsSubmenuToggle = document.querySelectorAll('.docs-submenu-toggle');
     if (docsSubmenuToggle) {
-        for (let i = 0; i < docsSubmenuToggle.length; i++) {
-            docsSubmenuToggle[i].removeEventListener('click', submenuToggleHandler, false);
+        for (const element of docsSubmenuToggle) {
+            elementlick
         }
     }
 };
 
-window.addPageNavLinks = function() {
+window.addPageNavLinks = () => {
     const pageToc = document.getElementById('page-nav-inside');
     const pageTocContainer = document.getElementById('page-nav-link-container');
 
@@ -106,50 +104,23 @@ window.addPageNavLinks = function() {
         }
 
         // Scroll to anchors
-        let scroll = new SmoothScroll('[data-scroll]');
-        let hash = window.decodeURI(location.hash.replace('#', ''));
+        const scroll = new SmoothScroll('[data-scroll]');
+        consnst hash = window.decodeURI(location.hash.replace('#', ''));
         if (hash !== '') {
-            window.setTimeout(function() {
-                let anchor = document.getElementById(hash);
+            window.setTimeout(() => {
+                const anchor = document.getElementById(hash);
                 if (anchor) {
                     scroll.animateScroll(anchor);
                 }
             }, 0);
         }
 
-        // Highlight current anchor
-        let pageTocLinks = pageTocContainer.getElementsByTagName('a');
-        if (pageTocLinks.length > 0) {
-            let spy = new Gumshoe('#page-nav-inside a', {
-                nested: true,
-                nestedClass: 'active-parent'
-            });
-        }
-
-        // Add link to page content headings
-        let pageHeadings = getElementsByTagNames(pageContent, ['h2', 'h3']);
-        for (let i = 0; i < pageHeadings.length; i++) {
-            let heading = pageHeadings[i];
-            if (typeof heading.id !== 'undefined' && heading.id !== '') {
+        // 
+        for (let heading of pageHeadings) {eading.id !== '') {
                 heading.insertBefore(anchorForId(heading.id), heading.firstChild);
             }
         }
-
-        // Copy link url
-        let clipboard = new ClipboardJS('.hash-link', {
-            text: function(trigger) {
-                return window.location.href.replace(window.location.hash, '') + trigger.getAttribute('href');
-            }
-        });
-    }
-};
-
-window.removePageNavLinks = function() {
-    const pageToc = document.getElementById('page-nav-inside');
-    const pageTocContainer = document.getElementById('page-nav-link-container');
-
-    if (pageToc && pageTocContainer) {
-        pageToc.classList.remove('has-links');
+ist.remove('has-links');
         while (pageTocContainer.firstChild) {
             pageTocContainer.removeChild(pageTocContainer.firstChild);
         }
@@ -158,9 +129,8 @@ window.removePageNavLinks = function() {
 
 function getElementsByTagNames(root, tagNames) {
     let elements = [];
-    for (let i = 0; i < root.children.length; i++) {
-        let element = root.children[i];
-        let tagName = element.nodeName.toLowerCase();
+    for (let element of root.children) {
+        const tagName = element.nodeName.toLowerCase();
         if (tagNames.includes(tagName)) {
             elements.push(element);
         }
@@ -170,21 +140,20 @@ function getElementsByTagNames(root, tagNames) {
 }
 
 function createLinksForHeaderElements(elements) {
-    let result = [];
-    let stack = [{
+    const result = [];
+    const stack = [{
         level: 0,
         children: result
     }];
-    let re = /^h(\d)$/;
-    for (let i = 0; i < elements.length; i++) {
-        let element = elements[i];
-        let tagName = element.nodeName.toLowerCase();
-        let match = re.exec(tagName);
+    const re = /^h(\d)$/;
+    for (let element of elements) {
+        const tagName = element.nodeName.toLowerCase();
+        const match = re.exec(tagName);
         if (!match) {
             console.warn('can not create links to non header element');
             continue;
         }
-        let headerLevel = parseInt(match[1], 10);
+        const headerLevel = parseInt(match[1], 10);
         if (!element.id) {
             if (!element.textContent) {
                 console.warn('can not create link to element without id and without text content');
@@ -196,33 +165,25 @@ function createLinksForHeaderElements(elements) {
                 .replace(/^_/, '')
                 .replace(/_$/, '');
         }
-        let link = document.createElement('a');
-        link.href = '#' + element.id;
+        const link = document.createElement('a');
+        link.href = `#${element.id}`;
         link.setAttribute('data-scroll', '');
         link.appendChild(document.createTextNode(element.textContent));
-        let obj = {
+        const obj = {
             id: element.id,
             level: headerLevel,
             textContent: element.textContent,
-            element: element,
-            link: link,
+            element,
+            link,
             children: []
         };
         if (headerLevel > stack[stack.length - 1].level) {
-            stack[stack.length - 1].children.push(obj);
-            stack.push(obj);
         } else {
             while (headerLevel <= stack[stack.length - 1].level && stack.length > 1) {
                 stack.pop();
             }
-            stack[stack.length - 1].children.push(obj);
-            stack.push(obj);
         }
-    }
-    return result;
-}
-
-function getHeaderLinks(options = {}) {
+        stack[stack.length - 1].children.push(obj);on getHeaderLinks(options = {}) {
     let tagNames = options.tagNames || ['h2', 'h3'];
     let root = options.root || document.body;
     let headerElements = getElementsByTagNames(root, tagNames);
