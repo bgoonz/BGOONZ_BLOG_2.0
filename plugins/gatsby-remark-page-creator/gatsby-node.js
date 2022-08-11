@@ -1,8 +1,3 @@
-/**
- * It creates a page for each Markdown file, using the file's frontmatter to determine the page's
- * template
- * @returns a promise.
- */
 const path = require("path");
 const fs = require("fs");
 const {createFilePath} = require("gatsby-source-filesystem");
@@ -33,7 +28,7 @@ function findFileNode({node, getNode}) {
         return null;
     }
 
-    return fileNode;
+    return fileNode
 }
 
 exports.onCreateNode = ({node, getNode, actions}, options) => {
