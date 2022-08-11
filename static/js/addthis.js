@@ -18102,14 +18102,12 @@ AddThis - v8.28.7 - 20201026;
                   customMessages: e.customMessages,
                 }),
                   _ate.ed.after("addthis-internal.frame.ready", function () {
-                    l.default
-                      .getPostMan()
-                      .post(
-                        JSON.stringify({
-                          remoteEvent: "addthis.lojson.response",
-                          data: e,
-                        })
-                      ),
+                    l.default.getPostMan().post(
+                      JSON.stringify({
+                        remoteEvent: "addthis.lojson.response",
+                        data: e,
+                      })
+                    ),
                       r || o(),
                       s();
                   });
