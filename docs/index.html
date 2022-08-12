@@ -23,10 +23,16 @@
         </header>
         <ul class="grouped">
           <li class="heading"><a href="#introduction">Introduction</a></li>
-          <li class="heading"><a href="#my-commands">My Commands</a></li>
+          <li class="heading"><a href="#useful-commands-internal-use">Useful Commands (internal use</a></li>
+          <li class="heading"><a href="#web-dev-setup">Web Dev Setup</a></li>
+          <li class="heading"><a href="#basic-web-development-environment-setup">Basic Web Development Environment Setup</a></li>
+          <li class="heading"><a href="#blog-content">Blog Content</a></li>
+          <li class="heading"><a href="#bash-cheat-sheet-my-commands"> Bash Cheat Sheet (MY COMMANDS</a></li>
+          <li class="heading"><a href="#1-remove-spaces-from-file-and-folder-names-and-then-remove-numbers-from-files-and-folder-names">1. Remove spaces from file and folder names and then remove numbers from files and folder names</a></li>
           <li class="heading"><a href="#2-download-website-using-wget">2. Download Website Using Wget</a></li>
           <li class="heading"><a href="#3-clean-out-messy-git-repo">3. Clean Out Messy Git Repo</a></li>
           <li class="heading"><a href="#4-clone-all-of-a-users-git-repositories">4. clone all of a user's git repositories</a></li>
+          <li class="heading"><a href="#generalized">Generalized</a></li>
           <li class="heading"><a href="#clone-all-git-user">Clone all Git User</a></li>
           <li class="heading"><a href="#clone-all-git-organization">Clone all Git Organization</a></li>
           <li class="heading"><a href="#5-git-workflow">5. Git Workflow</a></li>
@@ -47,6 +53,11 @@
           <li class="heading"><a href="#20-remove-duplicate-lines-from-a-text-file">20. Remove duplicate lines from a text file</a></li>
           <li class="heading"><a href="#21-remove-lines-containing-string">21. Remove lines containing string</a></li>
           <li class="heading"><a href="#22-zip-directory-excluding-git-and-node-modules-all-the-way-down-linux">22. Zip directory excluding .git and node_modules all the way down (Linux</a></li>
+          <li class="heading"><a href="#usage">usage</a></li>
+          <li class="heading"><a href="#zipdir-thedir">- zipdir thedir</a></li>
+          <li class="heading"><a href="#zip-thedir-x-anotherexcludedsubdir-important-the-double-quotes-to-prevent-glob-expansion">- zip thedir -x &quot;anotherexcludedsubdir&quot;    (important the double quotes to prevent glob expansion</a></li>
+          <li class="heading"><a href="#if-in-windows-git-bash-add-zip-command-this-way">if in windows/git-bash, add 'zip' command this way</a></li>
+          <li class="heading"><a href="#https-stackoverflow-com-a-55749636-1482990">https://stackoverflow.com/a/55749636/1482990</a></li>
           <li class="heading"><a href="#23-delete-files-containing-a-certain-string">23. Delete files containing a certain string</a></li>
           <li class="heading"><a href="#24-generate-sitemap">24 Generate sitemap</a></li>
           <li class="heading"><a href="#find-grep-i-files">find ./ | grep -i &quot;\.*$&quot; &gt;files</a></li>
@@ -84,6 +95,43 @@
           <li class="heading"><a href="#description">Description</a></li>
           <li class="heading"><a href="#97-embed-repl-it-in-medium-post">97. Embed Repl.it In Medium Post</a></li>
           <li class="heading"><a href="#98-r-rmove-text-target-parent-from-files-called-right-html">98 rRmove text target=&quot;parent&quot; from files called right.html</a></li>
+          <li class="heading"><a href="#99-cheat-sheet">99. Cheat Sheet</a></li>
+          <li class="heading"><a href="#shortcuts-and-history">SHORTCUTS and HISTORY</a></li>
+          <li class="heading"><a href="#bash-basics">BASH BASICS</a></li>
+          <li class="heading"><a href="#file-commands">FILE COMMANDS</a></li>
+          <li class="heading"><a href="#directory-commands">DIRECTORY COMMANDS</a></li>
+          <li class="heading"><a href="#ssh-system-info-network-commands">SSH, SYSTEM INFO &amp; NETWORK COMMANDS</a></li>
+          <li class="heading"><a href="#variables">VARIABLES</a></li>
+          <li class="heading"><a href="#functions">FUNCTIONS</a></li>
+          <li class="heading"><a href="#the-function-refers-to-passed-arguments-by-position-as-if-they-were-positional-parameters-that-is-1-2-and-so-forth">The function refers to passed arguments by position (as if they were positional parameters), that is, $1, $2, and so forth</a></li>
+          <li class="heading"><a href="#is-equal-to-1-2-n-where-n-is-the-number-of-positional-parameters-holds-the-number-of-positional-parameters">$@ is equal to &quot;$1&quot; &quot;$2&quot;... &quot;$N&quot;, where N is the number of positional parameters. $# holds the number of positional parameters</a></li>
+          <li class="heading"><a href="#flow-controls">FLOW CONTROLS</a></li>
+          <li class="heading"><a href="#strings">STRINGS</a></li>
+          <li class="heading"><a href="#files">FILES</a></li>
+          <li class="heading"><a href="#numbers">NUMBERS</a></li>
+          <li class="heading"><a href="#command-line-processing-cycle">COMMAND-LINE PROCESSING CYCLE</a></li>
+          <li class="heading"><a href="#the-default-order-for-command-lookup-is-functions-followed-by-built-ins-with-scripts-and-executables-last">The default order for command lookup is functions, followed by built-ins, with scripts and executables last</a></li>
+          <li class="heading"><a href="#there-are-three-built-ins-that-you-can-use-to-override-this-order-command-builtin-and-enable">There are three built-ins that you can use to override this order: `command`, `builtin` and `enable</a></li>
+          <li class="heading"><a href="#input-output-redirectors">INPUT/OUTPUT REDIRECTORS</a></li>
+          <li class="heading"><a href="#process-handling">PROCESS HANDLING</a></li>
+          <li class="heading"><a href="#to-suspend-a-job-type-ctrl-z-while-it-is-running-you-can-also-suspend-a-job-with-ctrl-y">To suspend a job, type CTRL+Z while it is running. You can also suspend a job with CTRL+Y</a></li>
+          <li class="heading"><a href="#this-is-slightly-different-from-ctrl-z-in-that-the-process-is-only-stopped-when-it-attempts-to-read-input-from-terminal">This is slightly different from CTRL+Z in that the process is only stopped when it attempts to read input from terminal</a></li>
+          <li class="heading"><a href="#of-course-to-interrupt-a-job-type-ctrl-c">Of course, to interrupt a job, type CTRL+C</a></li>
+          <li class="heading"><a href="#tips-tricks">TIPS &amp; TRICKS</a></li>
+          <li class="heading"><a href="#set-an-alias">set an alias</a></li>
+          <li class="heading"><a href="#to-quickly-go-to-a-specific-directory">to quickly go to a specific directory</a></li>
+          <li class="heading"><a href="#debugging-shell-programs">DEBUGGING SHELL PROGRAMS</a></li>
+          <li class="heading"><a href="#section-of-code-in-which-the-problem-occurs">...section of code in which the problem occurs</a></li>
+          <li class="heading"><a href="#colors-and-backgrounds">COLORS AND BACKGROUNDS</a></li>
+          <li class="heading"><a href="#note-e-or-x-1-b-also-work-instead-of-033">note: \e or \x1B also work instead of \033</a></li>
+          <li class="heading"><a href="#reset">Reset</a></li>
+          <li class="heading"><a href="#regular-colors">Regular Colors</a></li>
+          <li class="heading"><a href="#additional-colors">Additional colors</a></li>
+          <li class="heading"><a href="#bold">Bold</a></li>
+          <li class="heading"><a href="#underline">Underline</a></li>
+          <li class="heading"><a href="#background">Background</a></li>
+          <li class="heading"><a href="#example-of-usage">Example of usage</a></li>
+          <li class="heading"><a href="#option-e-is-mandatory-it-enable-interpretation-of-backslash-escapes">option -e is mandatory, it enable interpretation of backslash escapes</a></li>
           <li class="heading"><a href="#to-find-files-by-case-insensitive-extension-ex-jpg-jpg-jp-g">To find files by case-insensitive extension (ex: .jpg, .JPG, .jpG</a></li>
           <li class="heading"><a href="#to-find-directories">To find directories</a></li>
           <li class="heading"><a href="#to-find-files">To find files</a></li>
@@ -129,8 +177,8 @@
         <div class="container" id="readme">
           <h2 id="introduction">Introduction</h2>
           <div><h1 id="bgoonz-blog-readme">Bgoonz Blog Readme</h1>
-<h1 id="-website-"><a href="https://bgoonz-blog.netlify.app/">⇨WEBSITE🗺️⇦</a></h1>
-<h5 id="-privacy-policy-"><a href="https://codepen.io/bgoonz/pen/LYLJZrW">⇨Privacy policy⇦</a></h5>
+<h3 id="-website-"><a href="https://bgoonz-blog.netlify.app">⇨WEBSITE🗺️⇦</a></h3>
+<h3 id="changelog"><a href="./CHANGELOG.md">CHANGELOG</a></h3>
 <h5 id="-website-cloudfare-backup-search-backup-repo-deploy-github-pages-go-to-site-wiki-gatsby-cloud-version-vercel-version-cloudfare-domain-gh-pages-backup-netlify-deploy-"><a href="https://bgoonz-blog.netlify.app">⇨WEBSITE🗺️⇦</a> <a href="https://bgoonz-blog-2-0.pages.dev/">⇨<strong>Cloudfare-Backup</strong>⇦</a> <a href="https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4">⇨<strong>search</strong>⇦</a> <a href="https://bgoonzblog20-backup.netlify.app/#gsc.tab=0">⇨<strong>Backup Repo Deploy</strong>⇦</a> <a href="https://bgoonz.github.io/BGOONZ_BLOG_2.0/">⇨<strong>Github pages</strong>⇦</a> <a href="https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki">⇨<strong>Go To Site Wiki</strong>⇦</a> <a href="https://bgoonzblog20master.gatsbyjs.io/">⇨<strong>Gatsby Cloud Version</strong>⇦</a> <a href="https://bgoonz-blog-2-0.vercel.app/">⇨<strong>Vercel Version</strong>⇦</a> <a href="www.webdevhub.us">⇨<strong>Cloudfare-Domain</strong>⇦</a> <a href="https://bgoonz.github.io/BGOONZ_BLOG_2.0/">⇨<strong>gh-pages</strong>⇦</a> <a href="https://bgoonz-blog20-backup.netlify.app/">⇨<strong>backup netlify deploy</strong>⇦</a></h5>
 <h3 id="repos">Repos</h3>
 <p><a href="https://github.com/BGOOONZ-BLOG/bgoonz-blog2.0-v-5">Alt Backup</a>
@@ -138,62 +186,272 @@
 <h4 id="-privacy-policy-"><a href="https://codepen.io/bgoonz/pen/LYLJZrW">⇨Privacy policy⇦</a></h4>
 <p><a href="https://app.netlify.com/sites/bgoonz-blog/deploys"><img src="https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status" alt="Netlify Status"></a><a href="https://www.codefactor.io/repository/github/bgoonz/bgoonz_blog_2.0"><img src="https://www.codefactor.io/repository/github/bgoonz/bgoonz_blog_2.0/badge" alt="CodeFactor"></a></p>
 <p><img src="https://visitor-badge-reloaded.herokuapp.com/badge?page_id=bgoonz.visitor.badge.reloaded&amp;color=00bbbb&amp;style=for-the-badge&amp;logo=github" alt="GitHub visitors"></p>
+<p><a href="https://github.com/DUKE42web/BGOONZ_BLOG_2.0/actions/workflows/pa7ges.yml"><img src="https://github.com/DUKE42web/BGOONZ_BLOG_2.0/actions/workflows/pa7ges.yml/badge.svg?branch=master&amp;event=deployment" alt="Deploy Gatsby site to Pages"></a></p>
 <p><a href="https://github.com/permission-squad/BGOONZ_BLOG_2.0/actions/workflows/pages.yml"><img src="https://github.com/permission-squad/BGOONZ_BLOG_2.0/actions/workflows/pages.yml/badge.svg?branch=master&amp;event=deployment" alt=".github/workflows/pages.yml"></a></p>
 <hr>
-<div align="center">
-
-##### <a href="https://bgoonz-blog-2-0.pages.dev/">Cloudfare-Backup</a> ⇨ <a href="https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4">search</a> ⇨ <a href="https://bgoonzblog20-backup.netlify.app/#gsc.tab=0">Backup Repo Deploy</a> ⇨ <a href="https://bgoonz.github.io/BGOONZ_BLOG_2.0/">Github pages</a> ⇨ <a href="https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki">Go To Site Wiki</a>  ⇨ <a href="https://bgoonzblog20master.gatsbyjs.io/">Gatsby Cloud Version</a>
-
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+<!-- code_chunk_output -->
+<ul>
+<li><a href="#bgoonz-blog-readme">Bgoonz Blog Readme</a><ul>
+<li><a href="#website️httpsbgoonz-blognetlifyapp">⇨WEBSITE🗺️⇦</a></li>
+<li><a href="#changelogchangelogmd">CHANGELOG</a><ul>
+<li><a href="#website️httpsbgoonz-blognetlifyapp-cloudfare-backuphttpsbgoonz-blog-2-0pagesdev-searchhttpswwwalgoliacomrealtime-search-demoweb-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4-backup-repo-deployhttpsbgoonzblog20-backupnetlifyappgsctab0-github-pageshttpsbgoonzgithubiobgoonz_blog_20-go-to-site-wikihttpsgithubcombgoonzbgoonz_blog_20wiki-gatsby-cloud-versionhttpsbgoonzblog20mastergatsbyjsio-vercel-versionhttpsbgoonz-blog-2-0vercelapp-cloudfare-domainwwwwebdevhubus-gh-pageshttpsbgoonzgithubiobgoonz_blog_20-backup-netlify-deployhttpsbgoonz-blog20-backupnetlifyapp">⇨WEBSITE🗺️⇦ ⇨<strong>Cloudfare-Backup</strong>⇦ ⇨<strong>search</strong>⇦ ⇨<strong>Backup Repo Deploy</strong>⇦ ⇨<strong>Github pages</strong>⇦ ⇨<strong>Go To Site Wiki</strong>⇦ ⇨<strong>Gatsby Cloud Version</strong>⇦ ⇨<strong>Vercel Version</strong>⇦ ⇨<strong>Cloudfare-Domain</strong>⇦ ⇨<strong>gh-pages</strong>⇦ ⇨<strong>backup netlify deploy</strong>⇦</a></li>
+</ul>
+</li>
+<li><a href="#repos">Repos</a><ul>
+<li><a href="#privacy-policyhttpscodepeniobgoonzpenlyljzrw">⇨Privacy policy⇦</a></li>
+<li><a href="#useful-commands-internal-use">Useful Commands (internal use)</a></li>
+<li><a href="#web-dev-setup">Web Dev Setup</a></li>
+<li><a href="#bash-cheat-sheet-my-commands">Bash Cheat Sheet (MY COMMANDS)</a></li>
+<li><a href="#find">Find</a></li>
+<li><a href="#to-find-files-by-case-insensitive-extension-ex-jpg-jpg-jpg">To find files by case-insensitive extension (ex: .jpg, .JPG, .jpG)</a></li>
+<li><a href="#to-find-directories">To find directories</a></li>
+<li><a href="#to-find-files">To find files</a></li>
+<li><a href="#to-find-files-by-octal-permission">To find files by octal permission</a></li>
+<li><a href="#to-find-files-with-setuid-bit-set">To find files with setuid bit set</a></li>
+<li><a href="#to-find-files-with-extension-txt-and-remove-them">To find files with extension &#39;.txt&#39; and remove them</a></li>
+<li><a href="#to-find-files-with-extension-txt-and-look-for-a-string-into-them">To find files with extension &#39;.txt&#39; and look for a string into them</a></li>
+<li><a href="#to-find-files-with-size-bigger-than-5-mebibyte-and-sort-them-by-size">To find files with size bigger than 5 Mebibyte and sort them by size</a></li>
+<li><a href="#to-find-files-bigger-than-2-megabyte-and-list-them">To find files bigger than 2 Megabyte and list them</a></li>
+<li><a href="#to-find-files-modified-more-than-7-days-ago-and-list-file-information">To find files modified more than 7 days ago and list file information</a></li>
+<li><a href="#to-find-symlinks-owned-by-a-user-and-list-file-information">To find symlinks owned by a user and list file information</a></li>
+<li><a href="#to-search-for-and-delete-empty-directories">To search for and delete empty directories</a></li>
+<li><a href="#to-search-for-directories-named-build-at-a-max-depth-of-2-directories">To search for directories named build at a max depth of 2 directories</a></li>
+<li><a href="#to-search-all-files-who-are-not-in-git-directory">To search all files who are not in .git directory</a></li>
+<li><a href="#to-find-all-files-that-have-the-same-node-hard-link-as-my_file_here">To find all files that have the same node (hard link) as MY_FILE_HERE</a></li>
+<li><a href="#to-find-all-files-in-the-current-directory-and-modify-their-permissions">To find all files in the current directory and modify their permissions</a></li>
+<li><a href="#wiki-nav">Wiki Nav</a></li>
+<li><a href="#dependencies">Dependencies</a></li>
+<li><a href="#docs-structure">Docs Structure</a></li>
+</ul>
+</li>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#syntax">Syntax</a></li>
+<li><a href="#parameters">Parameters</a></li>
+<li><a href="#return-value">Return value</a></li>
+<li><a href="#example">Example</a></li>
+<li><a href="#explanation">Explanation</a></li>
+<li><a href="#output">Output</a><ul>
+<li><a href="#technoloy">Technoloy</a></li>
+<li><a href="#sourcecode">SOURCECODE</a></li>
+</ul>
+</li>
+<li><a href="#overview-1">Overview</a></li>
+<li><a href="#syntax-1">Syntax</a></li>
+<li><a href="#parameters-1">Parameters</a></li>
+<li><a href="#return-value-1">Return value</a></li>
+<li><a href="#example-1">Example</a></li>
+<li><a href="#explanation-1">Explanation</a></li>
+<li><a href="#output-1">Output</a><ul>
+<li><a href="#source-code">Source Code</a></li>
+<li><a href="#component-structure">Component Structure</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- /code_chunk_output -->
+<p><img src="https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/blog-may-2022.png?raw=true" alt="preview"></p>
+<hr>
 </div>
-<div align="center">
+          <h2 id="useful-commands-internal-use">Useful Commands (internal use</h2>
+          <div><p>)</p>
+<pre><code class="lang-bash">
+npm i @stackbit/gatsby-plugin-menus babel-runtime chokidar classnames fs-extra gatsby gatsby-image gatsby-plugin-netlify gatsby-plugin-netlify-cms gatsby-plugin-sass gatsby-plugin-react-helmet gatsby-plugin-typescript  --legacy-peer-deps
 
-<a href="https://app.netlify.com/sites/bgoonz-blog/deploys"><img src="https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status" alt="Netlify Status"></a><a href="https://www.codefactor.io/repository/github/webdevhub42/bgoonz_blog_2.0"><img src="https://www.codefactor.io/repository/github/webdevhub42/bgoonz_blog_2.0/badge" alt="CodeFactor"></a><a href="https://codescene.io/projects/17026"><img src="https://codescene.io/projects/17026/status-badges/system-mastery" alt="CodeScene System Mastery**"></a><img src="https://views.whatilearened.today/views/github/bgoonz/views.svg" alt="Profile views**"><a href="https://gitter.im/bgoonz/community?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge"><img src="https://badges.gitter.im/bgoonz/community.svg" alt="Gitter**"></a><a href="https://codescene.io/projects/17026"><img src="https://codescene.io/projects/17026/status-badges/code-health" alt="CodeScene Code Health"></a><a href="https://github.com/bgoonz/BGOONZ_BLOG_2.0/actions/workflows/codeql-analysis.yml"><img src="https://github.com/bgoonz/BGOONZ_BLOG_2.0/actions/workflows/codeql-analysis.yml/badge.svg" alt="CodeQL"></a><a href="https://circleci.com/gh/bgoonz/BGOONZ_BLOG_2.0/tree/master"><img src="https://circleci.com/gh/bgoonz/BGOONZ_BLOG_2.0/tree/master.svg?style=svg" alt="CircleCI"></a>
 
-<a href="https://app.getpostman.com/run-collection/aac9892cd5e6fe8241ce?action=collection%2Fimport#?env%5Bblog%5D=dW5kZWZpbmVk"><img src="https://run.pstmn.io/button.svg" alt="Run in Postman"></a><img src="https://visitor-badge-reloaded.herokuapp.com/badge?page_id=bgoonz.visitor.badge.reloaded&amp;color=00bbbb&amp;style=for-the-badge&amp;logo=github" alt="GitHub visitors">
+git checkout 307a5cd        # check out the commit that you want to reset to
+git checkout -b fixy        # create a branch named fixy to do the work
+git merge -s ours master    # merge master&#39;s history without changing any files
+git checkout master         # switch back to master
+git merge fixy              # and merge in the fixed branch
+git push                    # done, no need to force push!
 
+
+
+</code></pre>
+<hr>
+<p><a href="https://testmysite.io/61e5ff836a840eeeef7e78e9/bgoonz-blog.netlify.app" rel="Test My Site Results">
+<img src="https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/Screenshot%202022-03-30%20at%2012-37-24%20Website%20Speed%20Test%20Tool%20-%20Testmysite.io%20by%20Netlify.png?raw=true" alt="Test My Site"></a></p>
+<hr>
 </div>
+          <h2 id="web-dev-setup">Web Dev Setup</h2>
+          <div><details>
 
+<summary>Web Dev Setup</summary>
+
+<hr>
+<p>title: WebDev Setup
+template: post
+subtitle: Basic Web Development Environment Setup
+excerpt: Windows Subsystem for Linux (WSL) and Ubuntu
+date: 2022-05-08T18:10:03.296Z
+image: <a href="https://cdn-images-1.medium.com/max/800/0">https://cdn-images-1.medium.com/max/800/0</a><em>aqKP1drNHmNm34zz.jpg
+thumb_image: <a href="https://cdn-images-1.medium.com/max/800/0">https://cdn-images-1.medium.com/max/800/0</a></em>aqKP1drNHmNm34zz.jpg
+image_position: right
+author: src/data/authors/bgoonz.yaml
+categories: - src/data/categories/js.yaml - src/data/categories/javascript.yaml
+tags: - src/data/tags/links.yaml - src/data/tags/resources.yaml
+show_author_bio: true
+related_posts: - src/pages/blog/vs-code-extensions.md - src/pages/blog/code-playgrounds-of-2021.md - src/pages/blog/adding-css-to-your-html.md - src/pages/blog/deploy-react-app-to-heroku.md
+cmseditable: true</p>
+<hr>
+</div>
+          <h2 id="basic-web-development-environment-setup">Basic Web Development Environment Setup</h2>
+          <div><p>Windows Subsystem for Linux (WSL) and Ubuntu</p>
+<hr>
+<h3 id="basic-web-development-environment-setup">Basic Web Development Environment Setup</h3>
+<h4 id="windows-subsystem-for-linux-wsl-and-ubuntu">Windows Subsystem for Linux (WSL) and Ubuntu</h4>
+<p><figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*aqKP1drNHmNm34zz.jpg" class="graf-image" />
+</figure>Test if you have Ubuntu installed by typing &quot;Ubuntu&quot; in the search box in the bottom app bar that reads &quot;Type here to search&quot;. If you see a search result that reads <strong>&quot;Ubuntu 20.04 LTS&quot;</strong> with &quot;App&quot; under it, then you have it installed.</p>
+<pre><code>1.  In the application search box in the bottom bar, type &quot;PowerShell&quot; to find the application named &quot;Windows PowerShell&quot;
+2.  Right-click on &quot;Windows PowerShell&quot; and choose &quot;Run as administrator&quot; from the popup menu
+3.  In the blue PowerShell window, type the following: `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`
+4.  Restart your computer
+5.  In the application search box in the bottom bar, type &quot;Store&quot; to find the application named &quot;Microsoft Store&quot;
+6.  Click &quot;Microsoft Store&quot;
+7.  Click the &quot;Search&quot; button in the upper-right corner of the window
+8.  Type in &quot;Ubuntu&quot;
+9.  Click &quot;Run Linux on Windows (Get the apps)&quot;
+10. Click the orange tile labeled **&quot;Ubuntu&quot;** Note that there are 3 versions in the Microsoft Store… you want the one just entitled &#39;Ubuntu&#39;
+11. Click &quot;Install&quot;
+12. After it downloads, click &quot;Launch&quot;
+13. If you get the option, pin the application to the task bar. Otherwise, right-click on the orange Ubuntu icon in the task bar and choose &quot;Pin to taskbar&quot;
+14. When prompted to &quot;Enter new UNIX username&quot;, type your first name with no spaces
+15. When prompted, enter and retype a password for this UNIX user (it can be the same as your Windows password)
+16. Confirm your installation by typing the command `whoami &#39;as in who-am-i&#39;`followed by Enter at the prompt (it should print your first name)
+17. You need to update your packages, so type `sudo apt update` (if prompted for your password, enter it)
+18. You need to upgrade your packages, so type `sudo apt upgrade` (if prompted for your password, enter it)
+</code></pre><h3 id="git">Git</h3>
+<p>Git comes with Ubuntu, so there&#39;s nothing to install. However, you should configure it using the following instructions.</p>
+<p>Open an Ubuntu terminal if you don&#39;t have one open already.</p>
+<ol>
+<li><blockquote>
+<p>You need to configure Git, so type <code>git config --global user.name &quot;Your Name&quot;</code> with replacing &quot;Your Name&quot; with your real name.</p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>You need to configure Git, so type <code>git config --global user.email your@email.com</code> with replacing &quot;<a href="mailto:your@email.com" class="markup--anchor markup--li-anchor">your@email.com</a>&quot; with your real email.</p>
+</blockquote>
+</li>
+</ol>
+<p><strong>Note: if you want git to remember your login credentials type:</strong></p>
+<pre><code>git config --global credential.helper store
+</code></pre><h3 id="google-chrome">Google Chrome</h3>
+<p>Test if you have Chrome installed by typing &quot;Chrome&quot; in the search box in the bottom app bar that reads &quot;Type here to search&quot;. If you see a search result that reads &quot;Chrome&quot; with &quot;App&quot; under it, then you have it installed. Otherwise, follow these instructions to install Google Chrome.</p>
+<h3 id="node-js">Node.js</h3>
+<p>Test if you have Node.js installed by opening an Ubuntu terminal and typing <code>node --version</code>. If it reports &quot;Command &#39;node&#39; not found&quot;, then you need to follow these directions.</p>
+<ol>
+<li><blockquote>
+<p>In the Ubuntu terminal, type <code>sudo apt update</code> and press Enter</p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>In the Ubuntu terminal, type <code>sudo apt install build-essential</code> and press Enter</p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>In the Ubuntu terminal, type <code>curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash</code> and press Enter</p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>In the Ubuntu terminal, type <code>. ./.bashrc</code> and press Enter</p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>In the Ubuntu terminal, type <code>nvm install --lts</code> and press Enter</p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>Confirm that <strong>node</strong> is installed by typing <code>node --version</code> and seeing it print something that is not &quot;Command not found&quot;!</p>
+</blockquote>
+</li>
+</ol>
+<h3 id="unzip">Unzip</h3>
+<p>You will often have to download a zip file and unzip it. It is easier to do this from the command line. So we need to install a linux unzip utility.</p>
+<p>In the Ubuntu terminal type: <code>sudo apt install unzip</code> and press Enter</p>
+<p>Mocha.js</p>
+<p>Test if you have Mocha.js installed by opening an Ubuntu terminal and typing <code>which mocha</code>. If it prints a path, then you&#39;re good. Otherwise, if it prints nothing, install Mocha.js by typing <code>npm install -g mocha</code>.</p>
+<h3 id="python-3">Python 3</h3>
+<p>Ubuntu does not come with Python 3. Install it using the command <code>sudo apt install python3</code>. Test it by typing <code>python3 --version</code> and seeing it print a number.</p>
+<h3 id="note-about-wsl">Note about WSL</h3>
+<p>As of the time of writing of this document, WSL has an issue renaming or deleting files if Visual Studio Code is open. So before doing any linux commands which manipulate files, make sure you <strong>close</strong> Visual Studio Code before running those commands in the Ubuntu terminal.</p>
+<h3 id="some-other-common-instillations">Some other common instillations</h3>
+<pre><code class="lang-bash">    # Installing build essentials
+    sudo apt-get install -y build-essential libssl-dev
+    # Nodejs and NVM
+    curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
+    source ~/.profile
+    sudo nvm install 7.10.0
+    sudo nvm use 7.10.0
+    node -v
+    #nodemon
+    sudo npm install -g nodemon
+    sudo npm install -g loopback-cli
+    # Forever to run nodejs scripts forever
+    sudo npm install forever -g
+    # Git - a version control system
+    sudo apt-get update
+    sudo apt-get install -y git xclip
+    # Grunt - an automated task runner
+    sudo npm install -g grunt-cli
+    # Bower - a dependency manager
+    sudo npm install -g bower
+    # Yeoman - for generators
+    sudo npm install -g yo
+    # maven
+    sudo apt-get install maven -y
+    # Gulp - an automated task runner
+    sudo npm install -g gulp-cli
+    # Angular FullStack - My favorite MEAN boilerplate (MEAN = MongoDB, Express, Angularjs, Nodejs)
+    sudo npm install -g generator-angular-fullstack
+    # Vim, Curl, Python - Some random useful stuff
+    sudo apt-get install -y vim curl python-software-properties
+    sudo apt-get install -y python-dev, python-pip
+    sudo apt-get install -y libkrb5-dev
+    # Installing JDK and JRE
+    sudo apt-get install -y default-jre
+    sudo apt-get install -y default-jdk
+    # Archive Extractors
+    sudo apt-get install -y unace unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller
+    # FileZilla - a FTP client
+    sudo apt-get install -y filezilla
+</code></pre>
+<p></details></p>
+<hr>
+<h3 id="documentation-commands-">Documentation Commands:</h3>
+<p>documentation build src/components/DocsMenu.js  -f md&gt; ./notes/DocsMenu.md
+documentation build src/components/Footer.js  -f md&gt; ./notes/Footer.md
+documentation build src/components/Header.js  -f md&gt; ./notes/Header.md
+documentation build src/components/index.js  -f md&gt; ./notes/index.md
+documentation build src/components/SectionContent.js  -f md&gt; ./notes/SectionContent.md
+documentation build src/components/SectionDocs.js  -f md&gt; ./notes/SectionDocs.md
+documentation build src/components/SectionHero.js  -f md&gt; ./notes/SectionHero.md
+documentation build src/components/CtaButtons.js  -f md&gt; ./notes/CtaButtons.md
+documentation build src/components/DocsSubmenu.js  -f md&gt; ./notes/DocsSubmenu.md
+documentation build src/components/FormField.js  -f md&gt; ./notes/FormField.md
+documentation build src/components/Icon.js  -f md&gt; ./notes/Icon.md
+documentation build src/components/Layout.js  -f md&gt; ./notes/Layout.md
+documentation build src/components/SectionCta.js  -f md&gt; ./notes/SectionCta.md
+documentation build src/components/SectionGrid.js  -f md&gt; ./notes/SectionGrid.md
+documentation build src/components/Submenu.js  -f md&gt; ./notes/Submenu.md
+documentation build src/components/ActionLink.js  -f md&gt; ./notes/ActionLink.md</p>
+<hr>
+</div>
+          <h2 id="blog-content">Blog Content</h2>
+          <div><p>:</p>
+<hr>
+<hr>
+</div>
+          <h2 id="bash-cheat-sheet-my-commands"> Bash Cheat Sheet (MY COMMANDS</h2>
+          <div><p>)</p>
 <details>
 
-<summary>Bash Commands</summary>
-
+<p><summary> Bash Cheat Sheet (MY COMMANDS) &lt;/summary</p>
 </div>
-          <h2 id="my-commands">My Commands</h2>
-          <div><h4 id="find">Find</h4>
-<h1 id="to-find-files-by-case-insensitive-extension-ex-jpg-jpg-jpg-">To find files by case-insensitive extension (ex: .jpg, .JPG, .jpG)</h1>
-<p>find . -iname &quot;*.jpg&quot;</p>
-<h1 id="to-find-directories">To find directories</h1>
-<p>find . -type d</p>
-<h1 id="to-find-files">To find files</h1>
-<p>find . -type f</p>
-<h1 id="to-find-files-by-octal-permission">To find files by octal permission</h1>
-<p>find . -type f -perm 777</p>
-<h1 id="to-find-files-with-setuid-bit-set">To find files with setuid bit set</h1>
-<p>find . -xdev ( -perm -4000 ) -type f -print0 | xargs -0 ls -l</p>
-<h1 id="to-find-files-with-extension-txt-and-remove-them">To find files with extension &#39;.txt&#39; and remove them</h1>
-<p>find ./path/ -name &#39;*.txt&#39; -exec rm &#39;{}&#39; \;</p>
-<h1 id="to-find-files-with-extension-txt-and-look-for-a-string-into-them">To find files with extension &#39;.txt&#39; and look for a string into them</h1>
-<p>find ./path/ -name &#39;*.txt&#39; | xargs grep &#39;string&#39;</p>
-<h1 id="to-find-files-with-size-bigger-than-5-mebibyte-and-sort-them-by-size">To find files with size bigger than 5 Mebibyte and sort them by size</h1>
-<p>find . -size +5M -type f -print0 | xargs -0 ls -Ssh | sort -z</p>
-<h1 id="to-find-files-bigger-than-2-megabyte-and-list-them">To find files bigger than 2 Megabyte and list them</h1>
-<p>find . -type f -size +200000000c -exec ls -lh {} \; | awk &#39;{ print $9 &quot;: &quot; $5 }&#39;</p>
-<h1 id="to-find-files-modified-more-than-7-days-ago-and-list-file-information">To find files modified more than 7 days ago and list file information</h1>
-<p>find . -type f -mtime +7d -ls</p>
-<h1 id="to-find-symlinks-owned-by-a-user-and-list-file-information">To find symlinks owned by a user and list file information</h1>
-<p>find . -type l -user <username-or-userid> -ls</p>
-<h1 id="to-search-for-and-delete-empty-directories">To search for and delete empty directories</h1>
-<p>find . -type d -empty -exec rmdir {} \;</p>
-<h1 id="to-search-for-directories-named-build-at-a-max-depth-of-2-directories">To search for directories named build at a max depth of 2 directories</h1>
-<p>find . -maxdepth 2 -name build -type d</p>
-<h1 id="to-search-all-files-who-are-not-in-git-directory">To search all files who are not in .git directory</h1>
-<p>find . ! -iwholename &#39;<em>.git</em>&#39; -type f</p>
-<h1 id="to-find-all-files-that-have-the-same-node-hard-link-as-my_file_here">To find all files that have the same node (hard link) as MY_FILE_HERE</h1>
-<p>find . -type f -samefile MY_FILE_HERE 2&gt;/dev/null</p>
-<h1 id="to-find-all-files-in-the-current-directory-and-modify-their-permissions">To find all files in the current directory and modify their permissions</h1>
-<p>find . -type f -exec chmod 644 {} \;</p>
-<h1 id="1-remove-spaces-from-file-and-folder-names-and-then-remove-numbers-from-files-and-folder-names">1. Remove spaces from file and folder names and then remove numbers from files and folder names</h1>
-<h3 id="description-need-to-sudo-apt-install-rename">Description: need to : <code>sudo apt install rename</code></h3>
+          <h2 id="1-remove-spaces-from-file-and-folder-names-and-then-remove-numbers-from-files-and-folder-names">1. Remove spaces from file and folder names and then remove numbers from files and folder names</h2>
+          <div><h3 id="description-need-to-sudo-apt-install-rename">Description: need to : <code>sudo apt install rename</code></h3>
 <blockquote>
 <p>Notes: Issue when renaming file without numbers collides with existing file name...</p>
 </blockquote>
@@ -265,10 +523,9 @@ find . \( -name &quot;*SECURITY.txt&quot; -o -name &quot;*RELEASE.txt&quot; -o  
 <p>Notes:</p>
 </blockquote>
 <h6 id="code">code</h6>
-<h1 id="generalized">Generalized</h1>
-<pre><code class="lang-sh">
-
-
+</div>
+          <h2 id="generalized">Generalized</h2>
+          <div><pre><code class="lang-bash">
 CNTX={users|orgs}; NAME={username|orgname}; PAGE=1
 curl &quot;https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&amp;per_page=100&quot; |
   grep -e &#39;git_url*&#39; |
@@ -644,22 +901,25 @@ sudo sed -i &#39;/right\.html/d&#39; ./right.html
 <p>Notes:</p>
 </blockquote>
 <h6 id="code">code</h6>
-<pre><code class="lang-bash">
-#!/bin/bash
-TSTAMP=`date &#39;+%Y%m%d-%H%M%S&#39;`
-zip -r $1.$TSTAMP.zip $1 -x &quot;**.git/*&quot; -x &quot;**node_modules/*&quot; `shift; echo $@;`
-
-printf &quot;\nCreated: $1.$TSTAMP.zip\n&quot;
-
-# usage:
-# - zipdir thedir
-# - zip thedir -x &quot;**anotherexcludedsubdir/*&quot;    (important the double quotes to prevent glob expansion)
-
-# if in windows/git-bash, add &#39;zip&#39; command this way:
-# https://stackoverflow.com/a/55749636/1482990
-
-
-</code></pre>
+<p><code>`</code>bash</p>
+<p>#!/bin/bash
+TSTAMP=<code>date &#39;+%Y%m%d-%H%M%S&#39;</code>
+zip -r $1.$TSTAMP.zip $1 -x &quot;<strong>.git/*&quot; -x &quot;</strong>node_modules/*&quot; <code>shift; echo $@;</code></p>
+<p>printf &quot;\nCreated: $1.$TSTAMP.zip\n&quot;</p>
+</div>
+          <h2 id="usage">usage</h2>
+          <div><p>:</p>
+</div>
+          <h2 id="zipdir-thedir">- zipdir thedir</h2>
+          <div></div>
+          <h2 id="zip-thedir-x-anotherexcludedsubdir-important-the-double-quotes-to-prevent-glob-expansion">- zip thedir -x &quot;anotherexcludedsubdir&quot;    (important the double quotes to prevent glob expansion</h2>
+          <div><p>)</p>
+</div>
+          <h2 id="if-in-windows-git-bash-add-zip-command-this-way">if in windows/git-bash, add 'zip' command this way</h2>
+          <div><p>:</p>
+</div>
+          <h2 id="https-stackoverflow-com-a-55749636-1482990">https://stackoverflow.com/a/55749636/1482990</h2>
+          <div><p><code>`</code></p>
 <hr>
 </div>
           <h2 id="23-delete-files-containing-a-certain-string">23. Delete files containing a certain string</h2>
@@ -1162,10 +1422,475 @@ find . -name *right.html  -type f -exec sed -i &#39;s/target=&quot;_parent&quot;
 
 find . -name *right.html  -type f -exec sed -i &#39;s/target=&quot;_parent&quot;//g&#39; {} +
 
-
-find . -name *right.html  -type f -exec sed -i &#39;s/target=&quot;_parent&quot;//g&#39; {} +
-
 </code></pre>
+</div>
+          <h2 id="99-cheat-sheet">99. Cheat Sheet</h2>
+          <div><h3 id="description">Description</h3>
+<blockquote>
+<p>Notes:</p>
+</blockquote>
+<h6 id="code">code</h6>
+<p><code>`</code>bash</p>
+<p>#!/bin/bash
+revert</p>
+</div>
+          <h2 id="shortcuts-and-history">SHORTCUTS and HISTORY</h2>
+          <div><p>CTRL+A  # move to beginning of line
+CTRL+B  # moves backward one character
+CTRL+C  # halts the current command
+CTRL+D  # deletes one character backward or logs out of current session, similar to exit
+CTRL+E  # moves to end of line
+CTRL+F  # moves forward one character
+CTRL+G  # aborts the current editing command and ring the terminal bell
+CTRL+H  # deletes one character under cursor (same as DELETE)
+CTRL+J  # same as RETURN
+CTRL+K  # deletes (kill) forward to end of line
+CTRL+L  # clears screen and redisplay the line
+CTRL+M  # same as RETURN
+CTRL+N  # next line in command history
+CTRL+O  # same as RETURN, then displays next line in history file
+CTRL+P  # previous line in command history
+CTRL+Q  # resumes suspended shell output
+CTRL+R  # searches backward
+CTRL+S  # searches forward or suspends shell output
+CTRL+T  # transposes two characters
+CTRL+U  # kills backward from point to the beginning of line
+CTRL+V  # makes the next character typed verbatim
+CTRL+W  # kills the word behind the cursor
+CTRL+X  # lists the possible filename completions of the current word
+CTRL+Y  # retrieves (yank) last item killed
+CTRL+Z  # stops the current command, resume with fg in the foreground or bg in the background</p>
+<p>ALT+B   # moves backward one word
+ALT+D   # deletes next word
+ALT+F   # moves forward one word
+ALT+H   # deletes one character backward
+ALT+T   # transposes two words
+ALT+.   # pastes last word from the last command. Pressing it repeatedly traverses through command history.
+ALT+U   # capitalizes every character from the current cursor position to the end of the word
+ALT+L   # uncapitalizes every character from the current cursor position to the end of the word
+ALT+C   # capitalizes the letter under the cursor. The cursor then moves to the end of the word.
+ALT+R   # reverts any changes to a command you&#39;ve pulled from your history if you&#39;ve edited it.
+ALT+?   # list possible completions to what is typed
+ALT+^   # expand line to most recent match from history</p>
+<p>CTRL+X then (   # start recording a keyboard macro
+CTRL+X then )   # finish recording keyboard macro
+CTRL+X then E   # recall last recorded keyboard macro
+CTRL+X then CTRL+E   # invoke text editor (specified by $EDITOR) on current command line then execute resultes as shell commands</p>
+<p>BACKSPACE  # deletes one character backward
+DELETE     # deletes one character under cursor</p>
+<p>history   # shows command line history
+!!        # repeats the last command
+!<n>      # refers to command line &#39;n&#39;
+!<string> # refers to command starting with &#39;string&#39;</p>
+<p>exit      # logs out of current session</p>
+</div>
+          <h2 id="bash-basics">BASH BASICS</h2>
+          <div><p>env                 # displays all environment variables</p>
+<p>echo $SHELL         # displays the shell you&#39;re using
+echo $BASH_VERSION  # displays bash version</p>
+<p>bash                # if you want to use bash (type exit to go back to your previously opened shell)
+whereis bash        # locates the binary, source and manual-page for a command
+which bash          # finds out which program is executed as &#39;bash&#39; (default: /bin/bash, can change across environments)</p>
+<p>clear               # clears content on window (hide displayed lines)</p>
+</div>
+          <h2 id="file-commands">FILE COMMANDS</h2>
+          <div><p>ls                            # lists your files in current directory, ls <dir> to print files in a specific directory
+ls -l                         # lists your files in &#39;long format&#39;, which contains the exact size of the file, who owns the file and who has the right to look at it, and when it was last modified
+ls -a                         # lists all files in &#39;long format&#39;, including hidden files (name beginning with &#39;.&#39;)
+ln -s <filename> <link>       # creates symbolic link to file
+readlink <filename>           # shows where a symbolic links points to
+tree                          # show directories and subdirectories in easilly readable file tree
+mc                            # terminal file explorer (alternative to ncdu)
+touch <filename>              # creates or updates (edit) your file
+mktemp -t <filename>            # make a temp file in /tmp/ which is deleted at next boot (-d to make directory)
+cat <filename>                # prints file raw content (will not be interpreted)
+any_command &gt; <filename>      # &#39;&gt;&#39; is used to perform redirections, it will set any_command&#39;s stdout to file instead of &quot;real stdout&quot; (generally /dev/stdout)
+more <filename>               # shows the first part of a file (move with space and type q to quit)
+head <filename>               # outputs the first lines of file (default: 10 lines)
+tail <filename>               # outputs the last lines of file (useful with -f option) (default: 10 lines)
+vim <filename>                # opens a file in VIM (VI iMproved) text editor, will create it if it doesn&#39;t exist
+mv <filename1> <dest>         # moves a file to destination, behavior will change based on &#39;dest&#39; type (dir: file is placed into dir; file: file will replace dest (tip: useful for renaming))
+cp <filename1> <dest>         # copies a file
+rm <filename>                 # removes a file
+find . -name <name> <type>    # searches for a file or a directory in the current directory and all its sub-directories by its name
+diff <filename1> <filename2>  # compares files, and shows where they differ
+wc <filename>                 # tells you how many lines, words and characters there are in a file. Use -lwc (lines, word, character) to ouput only 1 of those informations
+sort <filename>               # sorts the contents of a text file line by line in alphabetical order, use -n for numeric sort and -r for reversing order.
+sort -t -k <filename>         # sorts the contents on specific sort key field starting from 1, using the field separator t.
+rev                           # reverse string characters (hello becomes olleh)
+chmod -options <filename>     # lets you change the read, write, and execute permissions on your files (more infos: SUID, GUID)
+gzip <filename>               # compresses files using gzip algorithm
+gunzip <filename>             # uncompresses files compressed by gzip
+gzcat <filename>              # lets you look at gzipped file without actually having to gunzip it
+lpr <filename>                # prints the file
+lpq                           # checks out the printer queue
+lprm <jobnumber>              # removes something from the printer queue
+genscript                     # converts plain text files into postscript for printing and gives you some options for formatting
+dvips <filename>              # prints .dvi files (i.e. files produced by LaTeX)
+grep <pattern> <filenames>    # looks for the string in the files
+grep -r <pattern> <dir>       # search recursively for pattern in directory
+head -n file_name | tail +n   # Print nth line from file.
+head -y lines.txt | tail +x   # want to display all the lines from x to y. This includes the xth and yth lines.</p>
+</div>
+          <h2 id="directory-commands">DIRECTORY COMMANDS</h2>
+          <div><p>mkdir <dirname>               # makes a new directory
+rmdir <dirname>               # remove an empty directory
+rmdir -rf <dirname>           # remove a non-empty directory
+mv <dir1> <dir2>              # rename a directory from <dir1> to <dir2>
+cd                            # changes to home
+cd ..                         # changes to the parent directory
+cd <dirname>                  # changes directory
+cp -r <dir1> <dir2>           # copy <dir1> into <dir2> including sub-directories
+pwd                           # tells you where you currently are
+cd ~                          # changes to home.
+cd -                        # changes to previous working directory</p>
+</div>
+          <h2 id="ssh-system-info-network-commands">SSH, SYSTEM INFO &amp; NETWORK COMMANDS</h2>
+          <div><p>ssh user@host            # connects to host as user
+ssh -p <port> user@host  # connects to host on specified port as user
+ssh-copy-id user@host    # adds your ssh key to host for user to enable a keyed or passwordless login</p>
+<p>whoami                   # returns your username
+passwd                   # lets you change your password
+quota -v                 # shows what your disk quota is
+date                     # shows the current date and time
+cal                      # shows the month&#39;s calendar
+uptime                   # shows current uptime
+w                        # displays whois online
+finger <user>            # displays information about user
+uname -a                 # shows kernel information
+man <command>            # shows the manual for specified command
+df                       # shows disk usage
+du <filename>            # shows the disk usage of the files and directories in filename (du -s give only a total)
+last <yourUsername>      # lists your last logins
+ps -u yourusername       # lists your processes
+kill <PID>               # kills the processes with the ID you gave
+killall <processname>    # kill all processes with the name
+top                      # displays your currently active processes
+lsof                     # lists open files
+bg                       # lists stopped or background jobs ; resume a stopped job in the background
+fg                       # brings the most recent job in the foreground
+fg <job>                 # brings job to the foreground</p>
+<p>ping <host>              # pings host and outputs results
+whois <domain>           # gets whois information for domain
+dig <domain>             # gets DNS information for domain
+dig -x <host>            # reverses lookup host
+wget <file>              # downloads file</p>
+<p>time <command>             # report time consumed by command execution</p>
+</div>
+          <h2 id="variables">VARIABLES</h2>
+          <div><p>varname=value                # defines a variable
+varname=value command        # defines a variable to be in the environment of a particular subprocess
+echo $varname                # checks a variable&#39;s value
+echo $$                      # prints process ID of the current shell
+echo $!                      # prints process ID of the most recently invoked background job
+echo $?                      # displays the exit status of the last command
+read <varname>               # reads a string from the input and assigns it to a variable
+read -p &quot;prompt&quot; <varname>   # same as above but outputs a prompt to ask user for value
+column -t <filename>         # display info in pretty columns (often used with pipe)
+let <varname> = <equation>   # performs mathematical calculation using operators like +, -, *, /, %
+export VARNAME=value         # defines an environment variable (will be available in subprocesses)</p>
+<p>array[0]=valA                # how to define an array
+array[1]=valB
+array[2]=valC
+array=([2]=valC [0]=valA [1]=valB)  # another way
+array=(valA valB valC)              # and another</p>
+<p>${array[i]}                  # displays array&#39;s value for this index. If no index is supplied, array element 0 is assumed
+${#array[i]}                 # to find out the length of any element in the array
+${#array[@]}                 # to find out how many values there are in the array</p>
+<p>declare -a                   # the variables are treated as arrays
+declare -f                   # uses function names only
+declare -F                   # displays function names without definitions
+declare -i                   # the variables are treated as integers
+declare -r                   # makes the variables read-only
+declare -x                   # marks the variables for export via the environment</p>
+<p>${varname:-word}             # if varname exists and isn&#39;t null, return its value; otherwise return word
+${varname:word}              # if varname exists and isn&#39;t null, return its value; otherwise return word
+${varname:=word}             # if varname exists and isn&#39;t null, return its value; otherwise set it word and then return its value
+${varname:?message}          # if varname exists and isn&#39;t null, return its value; otherwise print varname, followed by message and abort the current command or script
+${varname:+word}             # if varname exists and isn&#39;t null, return word; otherwise return null
+${varname:offset:length}     # performs substring expansion. It returns the substring of $varname starting at offset and up to length characters</p>
+<p>${variable#pattern}          # if the pattern matches the beginning of the variable&#39;s value, delete the shortest part that matches and return the rest
+${variable##pattern}         # if the pattern matches the beginning of the variable&#39;s value, delete the longest part that matches and return the rest
+${variable%pattern}          # if the pattern matches the end of the variable&#39;s value, delete the shortest part that matches and return the rest
+${variable%%pattern}         # if the pattern matches the end of the variable&#39;s value, delete the longest part that matches and return the rest
+${variable/pattern/string}   # the longest match to pattern in variable is replaced by string. Only the first match is replaced
+${variable//pattern/string}  # the longest match to pattern in variable is replaced by string. All matches are replaced</p>
+<p>${#varname}                  # returns the length of the value of the variable as a character string</p>
+<p>*(patternlist)               # matches zero or more occurrences of the given patterns
++(patternlist)               # matches one or more occurrences of the given patterns
+?(patternlist)               # matches zero or one occurrence of the given patterns
+@(patternlist)               # matches exactly one of the given patterns
+!(patternlist)               # matches anything except one of the given patterns</p>
+<p>$(UNIX command)              # command substitution: runs the command and returns standard output</p>
+</div>
+          <h2 id="functions">FUNCTIONS</h2>
+          <div></div>
+          <h2 id="the-function-refers-to-passed-arguments-by-position-as-if-they-were-positional-parameters-that-is-1-2-and-so-forth">The function refers to passed arguments by position (as if they were positional parameters), that is, $1, $2, and so forth</h2>
+          <div><p>.</p>
+</div>
+          <h2 id="is-equal-to-1-2-n-where-n-is-the-number-of-positional-parameters-holds-the-number-of-positional-parameters">$@ is equal to &quot;$1&quot; &quot;$2&quot;... &quot;$N&quot;, where N is the number of positional parameters. $# holds the number of positional parameters</h2>
+          <div><p>.</p>
+<p>function functname() {
+  shell commands
+}</p>
+<p>unset -f functname  # deletes a function definition
+declare -f          # displays all defined functions in your login session</p>
+</div>
+          <h2 id="flow-controls">FLOW CONTROLS</h2>
+          <div><p>statement1 &amp;&amp; statement2  # and operator
+statement1 || statement2  # or operator</p>
+<p>-a                        # and operator inside a test conditional expression
+-o                        # or operator inside a test conditional expression</p>
+</div>
+          <h2 id="strings">STRINGS</h2>
+          <div><p>str1 == str2               # str1 matches str2
+str1 != str2               # str1 does not match str2
+str1 &lt; str2                # str1 is less than str2 (alphabetically)
+str1 &gt; str2                # str1 is greater than str2 (alphabetically)
+str1 > str2               # str1 is sorted after str2
+str1 \&lt; str2               # str1 is sorted before str2
+-n str1                    # str1 is not null (has length greater than 0)
+-z str1                    # str1 is null (has length 0)</p>
+</div>
+          <h2 id="files">FILES</h2>
+          <div><p>-a file                   # file exists or its compilation is successful
+-d file                   # file exists and is a directory
+-e file                   # file exists; same -a
+-f file                   # file exists and is a regular file (i.e., not a directory or other special type of file)
+-r file                   # you have read permission
+-s file                   # file exists and is not empty
+-w file                   # your have write permission
+-x file                   # you have execute permission on file, or directory search permission if it is a directory
+-N file                   # file was modified since it was last read
+-O file                   # you own file
+-G file                   # file&#39;s group ID matches yours (or one of yours, if you are in multiple groups)
+file1 -nt file2           # file1 is newer than file2
+file1 -ot file2           # file1 is older than file2</p>
+</div>
+          <h2 id="numbers">NUMBERS</h2>
+          <div><p>-lt                       # less than
+-le                       # less than or equal
+-eq                       # equal
+-ge                       # greater than or equal
+-gt                       # greater than
+-ne                       # not equal</p>
+<p>if condition
+then
+  statements
+[elif condition
+  then statements...]
+[else
+  statements]
+fi</p>
+<p>for x in {1..10}
+do
+  statements
+done</p>
+<p>for name [in list]
+do
+  statements that can use $name
+done</p>
+<p>for (( initialisation ; ending condition ; update ))
+do
+  statements...
+done</p>
+<p>case expression in
+  pattern1 )
+    statements ;;
+  pattern2 )
+    statements ;;
+esac</p>
+<p>select name [in list]
+do
+  statements that can use $name
+done</p>
+<p>while condition; do
+  statements
+done</p>
+<p>until condition; do
+  statements
+done</p>
+</div>
+          <h2 id="command-line-processing-cycle">COMMAND-LINE PROCESSING CYCLE</h2>
+          <div></div>
+          <h2 id="the-default-order-for-command-lookup-is-functions-followed-by-built-ins-with-scripts-and-executables-last">The default order for command lookup is functions, followed by built-ins, with scripts and executables last</h2>
+          <div><p>.</p>
+</div>
+          <h2 id="there-are-three-built-ins-that-you-can-use-to-override-this-order-command-builtin-and-enable">There are three built-ins that you can use to override this order: `command`, `builtin` and `enable</h2>
+          <div><p>`.</p>
+<p>command  # removes alias and function lookup. Only built-ins and commands found in the search path are executed
+builtin  # looks up only built-in commands, ignoring functions and commands found in PATH
+enable   # enables and disables shell built-ins</p>
+<p>eval     # takes arguments and run them through the command-line processing steps all over again</p>
+</div>
+          <h2 id="input-output-redirectors">INPUT/OUTPUT REDIRECTORS</h2>
+          <div><p>cmd1|cmd2  # pipe; takes standard output of cmd1 as standard input to cmd2
+&lt; file     # takes standard input from file</p>
+<blockquote>
+<p>file     # directs standard output to file</p>
+<blockquote>
+<p>file    # directs standard output to file; append to file if it already exists
+|file     # forces standard output to file even if noclobber is set
+n&gt;|file    # forces output to file from file descriptor n even if noclobber is set
+&lt;&gt; file    # uses file as both standard input and standard output
+n&lt;&gt;file    # uses file as both input and output for file descriptor n
+n&gt;file     # directs file descriptor n to file
+n<file     # takes file descriptor n from file
+n>&gt;file    # directs file description n to file; append to file if it already exists
+n&gt;&amp;        # duplicates standard output to file descriptor n
+n&lt;&amp;        # duplicates standard input from file descriptor n
+n&gt;&amp;m       # file descriptor n is made to be a copy of the output file descriptor
+n&lt;&amp;m       # file descriptor n is made to be a copy of the input file descriptor
+&amp;&gt;file     # directs standard output and standard error to file
+&lt;&amp;-      # closes the standard input
+&amp;-      # closes the standard output
+n&gt;&amp;-     # closes the ouput from file descriptor n
+n&lt;&amp;-     # closes the input from file descripor n</p>
+</blockquote>
+</blockquote>
+<p>|tee <file># output command to both terminal and a file (-a to append to file)</p>
+</div>
+          <h2 id="process-handling">PROCESS HANDLING</h2>
+          <div></div>
+          <h2 id="to-suspend-a-job-type-ctrl-z-while-it-is-running-you-can-also-suspend-a-job-with-ctrl-y">To suspend a job, type CTRL+Z while it is running. You can also suspend a job with CTRL+Y</h2>
+          <div><p>.</p>
+</div>
+          <h2 id="this-is-slightly-different-from-ctrl-z-in-that-the-process-is-only-stopped-when-it-attempts-to-read-input-from-terminal">This is slightly different from CTRL+Z in that the process is only stopped when it attempts to read input from terminal</h2>
+          <div><p>.</p>
+</div>
+          <h2 id="of-course-to-interrupt-a-job-type-ctrl-c">Of course, to interrupt a job, type CTRL+C</h2>
+          <div><p>.</p>
+<p>myCommand &amp;  # runs job in the background and prompts back the shell</p>
+<p>jobs         # lists all jobs (use with -l to see associated PID)</p>
+<p>fg           # brings a background job into the foreground
+fg %+        # brings most recently invoked background job
+fg %-      # brings second most recently invoked background job
+fg %N        # brings job number N
+fg %string   # brings job whose command begins with string
+fg %?string  # brings job whose command contains string</p>
+<p>kill -l               # returns a list of all signals on the system, by name and number
+kill PID              # terminates process with specified PID
+kill -s SIGKILL 4500  # sends a signal to force or terminate the process
+kill -15 913          # Ending PID 913 process with signal 15 (TERM)
+kill %1               # Where %1 is the number of job as read from &#39;jobs&#39; command.</p>
+<p>ps           # prints a line of information about the current running login shell and any processes running under it
+ps -a        # selects all processes with a tty except session leaders</p>
+<p>trap cmd sig1 sig2  # executes a command when a signal is received by the script
+trap &quot;&quot; sig1 sig2   # ignores that signals
+trap - sig1 sig2    # resets the action taken when the signal is received to the default</p>
+<p>disown &lt;PID|JID&gt;    # removes the process from the list of jobs</p>
+<p>wait                # waits until all background jobs have finished
+sleep <number>      # wait # of seconds before continuing</p>
+<p>pv                  # display progress bar for data handling commands. often used with pipe like |pv
+yes                 # give yes response everytime an input is requested from script/process</p>
+</div>
+          <h2 id="tips-tricks">TIPS &amp; TRICKS</h2>
+          <div></div>
+          <h2 id="set-an-alias">set an alias</h2>
+          <div><p>cd; nano .bash_profile</p>
+<blockquote>
+<p>alias gentlenode=&#39;ssh <a href="mailto:admin@gentlenode.com">admin@gentlenode.com</a> -p 3404&#39;  # add your alias in .bash_profile</p>
+</blockquote>
+</div>
+          <h2 id="to-quickly-go-to-a-specific-directory">to quickly go to a specific directory</h2>
+          <div><p>cd; nano .bashrc</p>
+<blockquote>
+<p>shopt -s cdable_vars
+export websites=&quot;/Users/mac/Documents/websites&quot;</p>
+</blockquote>
+<p>source .bashrc
+cd $websites</p>
+</div>
+          <h2 id="debugging-shell-programs">DEBUGGING SHELL PROGRAMS</h2>
+          <div><p>bash -n scriptname  # don&#39;t run commands; check for syntax errors only
+set -o noexec       # alternative (set option in script)</p>
+<p>bash -v scriptname  # echo commands before running them
+set -o verbose      # alternative (set option in script)</p>
+<p>bash -x scriptname  # echo commands after command-line processing
+set -o xtrace       # alternative (set option in script)</p>
+<p>trap &#39;echo $varname&#39; EXIT  # useful when you want to print out the values of variables at the point that your script exits</p>
+<p>function errtrap {
+  es=$?
+  echo &quot;ERROR line $1: Command exited with status $es.&quot;
+}</p>
+<p>trap &#39;errtrap $LINENO&#39; ERR  # is run whenever a command in the surrounding script or function exits with non-zero status</p>
+<p>function dbgtrap {
+  echo &quot;badvar is $badvar&quot;
+}</p>
+<p>trap dbgtrap DEBUG  # causes the trap code to be executed before every statement in a function or script</p>
+</div>
+          <h2 id="section-of-code-in-which-the-problem-occurs">...section of code in which the problem occurs</h2>
+          <div><p>...
+trap - DEBUG  # turn off the DEBUG trap</p>
+<p>function returntrap {
+  echo &quot;A return occurred&quot;
+}</p>
+<p>trap returntrap RETURN  # is executed each time a shell function or a script executed with the . or source commands finishes executing</p>
+</div>
+          <h2 id="colors-and-backgrounds">COLORS AND BACKGROUNDS</h2>
+          <div></div>
+          <h2 id="note-e-or-x-1-b-also-work-instead-of-033">note: \e or \x1B also work instead of \033</h2>
+          <div></div>
+          <h2 id="reset">Reset</h2>
+          <div><p>Color_Off=&#39;\033[0m&#39; # Text Reset</p>
+</div>
+          <h2 id="regular-colors">Regular Colors</h2>
+          <div><p>Black=&#39;\033[0;30m&#39;  # Black
+Red=&#39;\033[0;31m&#39;    # Red
+Green=&#39;\033[0;32m&#39;  # Green
+Yellow=&#39;\033[0;33m&#39; # Yellow
+Blue=&#39;\033[0;34m&#39;   # Blue
+Purple=&#39;\033[0;35m&#39; # Purple
+Cyan=&#39;\033[0;36m&#39;   # Cyan
+White=&#39;\033[0;97m&#39;  # White</p>
+</div>
+          <h2 id="additional-colors">Additional colors</h2>
+          <div><p>LGrey=&#39;\033[0;37m&#39;  # Ligth Gray
+DGrey=&#39;\033[0;90m&#39;  # Dark Gray
+LRed=&#39;\033[0;91m&#39;   # Ligth Red
+LGreen=&#39;\033[0;92m&#39; # Ligth Green
+LYellow=&#39;\033[0;93m&#39;# Ligth Yellow
+LBlue=&#39;\033[0;94m&#39;  # Ligth Blue
+LPurple=&#39;\033[0;95m&#39;# Light Purple
+LCyan=&#39;\033[0;96m&#39;  # Ligth Cyan</p>
+</div>
+          <h2 id="bold">Bold</h2>
+          <div><p>BBlack=&#39;\033[1;30m&#39; # Black
+BRed=&#39;\033[1;31m&#39;   # Red
+BGreen=&#39;\033[1;32m&#39; # Green
+BYellow=&#39;\033[1;33m&#39;# Yellow
+BBlue=&#39;\033[1;34m&#39;  # Blue
+BPurple=&#39;\033[1;35m&#39;# Purple
+BCyan=&#39;\033[1;36m&#39;  # Cyan
+BWhite=&#39;\033[1;37m&#39; # White</p>
+</div>
+          <h2 id="underline">Underline</h2>
+          <div><p>UBlack=&#39;\033[4;30m&#39; # Black
+URed=&#39;\033[4;31m&#39;   # Red
+UGreen=&#39;\033[4;32m&#39; # Green
+UYellow=&#39;\033[4;33m&#39;# Yellow
+UBlue=&#39;\033[4;34m&#39;  # Blue
+UPurple=&#39;\033[4;35m&#39;# Purple
+UCyan=&#39;\033[4;36m&#39;  # Cyan
+UWhite=&#39;\033[4;37m&#39; # White</p>
+</div>
+          <h2 id="background">Background</h2>
+          <div><p>On_Black=&#39;\033[40m&#39; # Black
+On_Red=&#39;\033[41m&#39;   # Red
+On_Green=&#39;\033[42m&#39; # Green
+On_Yellow=&#39;\033[43m&#39;# Yellow
+On_Blue=&#39;\033[44m&#39;  # Blue
+On_Purple=&#39;\033[45m&#39;# Purple
+On_Cyan=&#39;\033[46m&#39;  # Cyan
+On_White=&#39;\033[47m&#39; # White</p>
+</div>
+          <h2 id="example-of-usage">Example of usage</h2>
+          <div><p>echo -e &quot;${Green}This is GREEN text${Color_Off} and normal text&quot;
+echo -e &quot;${Red}${On_White}This is Red test on White background${Color_Off}&quot;</p>
+</div>
+          <h2 id="option-e-is-mandatory-it-enable-interpretation-of-backslash-escapes">option -e is mandatory, it enable interpretation of backslash escapes</h2>
+          <div><p>printf &quot;${Red} This is red \n&quot;</p>
+<p><code>`</code></p>
 <p></details></p>
 <blockquote>
 </blockquote>
@@ -2641,7 +3366,6 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
 
 <p><details></p>
 <summary>  Click To See Component Sourcecode  </summary>
-
 </div>
           <h2 id="component-structure">Component Structure</h2>
           <div><pre><code>.
