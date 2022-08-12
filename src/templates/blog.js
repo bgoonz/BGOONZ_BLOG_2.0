@@ -15,7 +15,7 @@ export const query = graphql `
 `;
 export default class Blog extends React.Component {
     render() {
-        let display_posts = _.orderBy(getPages(this.props.pageContext.pages, '/blog'), 'frontmatter.date', 'desc');
+        const display_posts = _.orderBy(getPages(this.props.pageContext.pages, '/blog'), 'frontmatter.date', 'desc');
         return (
             <Layout {...this.props}>
                 <header className="page-header has-gradient outer">
@@ -23,7 +23,7 @@ export default class Blog extends React.Component {
                     _.get(this.props, 'pageContext.frontmatter.image', null) && (
                         <div className="bg-img"
                             style={
-                                toStyleObj("background-image: url('" + withPrefix(_.get(this.props, 'pageContext.frontmatter.image', null)) + "')")
+                                toStyleObj(`background-image: url('${withPrefix(_.get(this.props, 'pageContext.frontmatter.image', null))}')`)
                             }/>
                     )
                 }
@@ -107,7 +107,7 @@ export default class Blog extends React.Component {
                         ))
                     } </div>
                 </div>
-                <div className="gcse-search"></div>
+                <div className="gcse-search" />
             </Layout>
         );
     }

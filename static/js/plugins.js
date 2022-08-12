@@ -151,10 +151,7 @@ window.Element &&
             },
             H = function (e, t, n, o) {
                 if (t.emitEvents && 'function' == typeof q.CustomEvent) {
-                    var a = new CustomEvent(e, {
-                        bubbles: !0,
-                        detail: { anchor: n, toggle: o }
-                    });
+                    var a = new CustomEvent(e, { bubbles: !0, detail: { anchor: n, toggle: o } });
                     document.dispatchEvent(a);
                 }
             };
@@ -283,10 +280,7 @@ window.Element &&
                                     var t = q.location.hash;
                                     (t = t || ''),
                                         history.replaceState(
-                                            {
-                                                smoothScroll: JSON.stringify(e),
-                                                anchor: t || q.pageYOffset
-                                            },
+                                            { smoothScroll: JSON.stringify(e), anchor: t || q.pageYOffset },
                                             document.title,
                                             t || q.location.href
                                         );
@@ -350,22 +344,10 @@ Element.prototype.closest ||
             : (t.Gumshoe = e(t));
     })('undefined' != typeof global ? global : 'undefined' != typeof window ? window : this, function (t) {
         'use strict';
-        var e = {
-                navClass: 'active',
-                contentClass: 'active',
-                nested: !1,
-                nestedClass: 'active',
-                offset: 0,
-                reflow: !1,
-                events: !0
-            },
+        var e = { navClass: 'active', contentClass: 'active', nested: !1, nestedClass: 'active', offset: 0, reflow: !1, events: !0 },
             n = function (t, e, n) {
                 if (n.settings.events) {
-                    var o = new CustomEvent(t, {
-                        bubbles: !0,
-                        cancelable: !0,
-                        detail: n
-                    });
+                    var o = new CustomEvent(t, { bubbles: !0, cancelable: !0, detail: n });
                     e.dispatchEvent(o);
                 }
             },
@@ -423,11 +405,7 @@ Element.prototype.closest ||
                         (o.classList.remove(e.navClass),
                         t.content.classList.remove(e.contentClass),
                         l(o, e),
-                        n('gumshoeDeactivate', o, {
-                            link: t.nav,
-                            content: t.content,
-                            settings: e
-                        }));
+                        n('gumshoeDeactivate', o, { link: t.nav, content: t.content, settings: e }));
                 }
             },
             u = function (t, e) {
@@ -464,11 +442,7 @@ Element.prototype.closest ||
                                       (o.classList.add(e.navClass),
                                       t.content.classList.add(e.contentClass),
                                       u(o, e),
-                                      n('gumshoeActivate', o, {
-                                          link: t.nav,
-                                          content: t.content,
-                                          settings: e
-                                      }));
+                                      n('gumshoeActivate', o, { link: t.nav, content: t.content, settings: e }));
                               }
                           })(t, m),
                           (f = t))
@@ -544,25 +518,14 @@ Element.prototype.closest ||
                 r.o(t, e) || Object.defineProperty(t, e, { enumerable: !0, get: n });
             }),
             (r.r = function (t) {
-                'undefined' != typeof Symbol &&
-                    Symbol.toStringTag &&
-                    Object.defineProperty(t, Symbol.toStringTag, {
-                        value: 'Module'
-                    }),
+                'undefined' != typeof Symbol && Symbol.toStringTag && Object.defineProperty(t, Symbol.toStringTag, { value: 'Module' }),
                     Object.defineProperty(t, '__esModule', { value: !0 });
             }),
             (r.t = function (e, t) {
                 if ((1 & t && (e = r(e)), 8 & t)) return e;
                 if (4 & t && 'object' == typeof e && e && e.__esModule) return e;
                 var n = Object.create(null);
-                if (
-                    (r.r(n),
-                    Object.defineProperty(n, 'default', {
-                        enumerable: !0,
-                        value: e
-                    }),
-                    2 & t && 'string' != typeof e)
-                )
+                if ((r.r(n), Object.defineProperty(n, 'default', { enumerable: !0, value: e }), 2 & t && 'string' != typeof e))
                     for (var o in e)
                         r.d(
                             n,
@@ -632,14 +595,7 @@ Element.prototype.closest ||
                 return (
                     (function (t, e) {
                         if ('function' != typeof e && null !== e) throw new TypeError('Super expression must either be null or a function, not ' + typeof e);
-                        (t.prototype = Object.create(e && e.prototype, {
-                            constructor: {
-                                value: t,
-                                enumerable: !1,
-                                writable: !0,
-                                configurable: !0
-                            }
-                        })),
+                        (t.prototype = Object.create(e && e.prototype, { constructor: { value: t, enumerable: !1, writable: !0, configurable: !0 } })),
                             e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : (t.__proto__ = e));
                     })(o, c.default),
                     i(
