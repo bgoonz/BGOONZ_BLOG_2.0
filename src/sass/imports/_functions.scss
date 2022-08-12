@@ -1,7 +1,15 @@
 // Gets a value from a map.
 @function map-deep-get($map, $keys...) {
+<<<<<<< HEAD
   @each $key in $keys {
     $map: map-get($map, $key);
   }
+
   @return $map;
+=======
+    @each $key in $keys {
+        $map: map-get($map, $key);
+    }
+    @return $map;
+>>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
 }
