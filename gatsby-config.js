@@ -1,3 +1,4 @@
+/* Importing the site-metadata.json file and exporting it as a module. */
 const siteMetadata = require('./site-metadata.json');
 module.exports = {
     pathPrefix: '/',
@@ -16,8 +17,8 @@ module.exports = {
         {
             resolve: 'gatsby-transformer-remark',
             options: {
-                plugins: ['gatsby-remark-prismjs']
-            }
+                plugins: ['gatsby-remark-prismjs'],
+            },
         },
         {
             resolve: 'gatsby-remark-code-buttons',
@@ -45,16 +46,16 @@ module.exports = {
                 toasterText: 'customToasterText',
                 // Optional toaster duration. Defaults to 3500.
                 toasterDuration: 5000
-            }
+            },
         },
         {
             resolve: 'gatsby-plugin-disqus',
             options: {
-                shortname: 'webdevhub-1'
+                shortname: 'webdevhub-1',
             }
         },
         {
-            resolve: 'gatsby-plugin-no-sourcemaps'
+            resolve: 'gatsby-plugin-no-sourcemaps',
         },
         {
             resolve: 'gatsby-plugin-sass',
@@ -68,14 +69,14 @@ module.exports = {
             resolve: '@stackbit/gatsby-plugin-menus',
             options: {
                 sourceUrlPath: 'fields.url',
-                pageContextProperty: 'menus'
-            }
+                pageContextProperty: 'menus',
+            },
         },
         {
             resolve: 'gatsby-plugin-disqus',
             options: {
                 shortname: 'webdevhub-1'
             }
-        }
+        },
     ]
 };

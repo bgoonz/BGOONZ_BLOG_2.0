@@ -1,5 +1,4 @@
 {
     "docwriter.style": "JSDoc",
-    "docwriter.hotkey.mac": "⌥ + .",
-    "gitdoc.enabled": true
+    "docwriter.hotkey.mac": "⌥ + ."
 }
