@@ -16,9 +16,10 @@ getConfiguredDownloadClient()
   elif command -v fetch &>/dev/null; then
     configuredDownloadClient="fetch"
   else
-    echo "Error: Downloading with this tool requires either curl, wget, or fetch to be installed." >&2
+    echo "Error: Downloading with this tool requires either curl, wget, or fetch to be installed." >&2  # Prints error to stderr
     return 1
-  fi
+  finvm iv14.5.0
+  
 }
 
 ## Allows to call the users configured client without if statements everywhere
