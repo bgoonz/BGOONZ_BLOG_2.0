@@ -21,7 +21,15 @@ description:
 
 ### Regular Expressions
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*VdDVM2Nzv6oGC5I0.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/1*D83R_a0SSgMR0hI4jP6Asw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/1*vk5n412Bs-dx6UdgyUywdg.png" class="graf-image" /></figure>### description:
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*VdDVM2Nzv6oGC5I0.png" class="graf-image" />
+</figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*D83R_a0SSgMR0hI4jP6Asw.png" class="graf-image" />
+</figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*vk5n412Bs-dx6UdgyUywdg.png" class="graf-image" />
+</figure>### description:
 
 _Regular expressions are patterns used to match character combinations in strings. In JavaScript, regular expressions are also objects. These patterns are used with the_ `exec()` _and_ `test()` _methods of_ `RegExp`_, and with the_ `match()`_,_ `matchAll()`_,_ `replace()`_,_ `replaceAll()`_,_ `search()`_, and_ `split()` _methods of_ `String`_. This chapter describes JavaScript regular expressions._
 
@@ -67,19 +75,31 @@ For example, to match _a single_ `"a"` _followed by zero or more_ `"b"`_s follow
 
 > the `*` after `"b"` means "0 or more occurrences of the preceding item." In the string `"cbbabbbbcdebc"`, this pattern will match the substring `"abbbbc"`.
 
-<a href="https://github.com/bgoonz/Cheat-Sheets/blob/master/Regular_Expressions/Assertions.html" class="markup--anchor markup--p-anchor"><strong>Assertions</strong></a>** : Assertions include boundaries, which indicate the beginnings and endings of lines and words, and other patterns indicating in some way that a match is possible (including look-ahead, look-behind, and conditional expressions).**
+<a href="https://github.com/bgoonz/Cheat-Sheets/blob/master/Regular_Expressions/Assertions.html" class="markup--anchor markup--p-anchor">
+<strong>Assertions</strong>
+</a>** : Assertions include boundaries, which indicate the beginnings and endings of lines and words, and other patterns indicating in some way that a match is possible (including look-ahead, look-behind, and conditional expressions).**
 
-<a href="https://github.com/bgoonz/Cheat-Sheets/blob/master/Regular_Expressions/Character_Classes.html" class="markup--anchor markup--p-anchor"><strong>Character classes</strong></a>** : Distinguish different types of characters. For example, distinguishing between letters and digits.**
+<a href="https://github.com/bgoonz/Cheat-Sheets/blob/master/Regular_Expressions/Character_Classes.html" class="markup--anchor markup--p-anchor">
+<strong>Character classes</strong>
+</a>** : Distinguish different types of characters. For example, distinguishing between letters and digits.**
 
-<a href="https://github.com/bgoonz/Cheat-Sheets/blob/master/Regular_Expressions/Groups_and_Ranges.html" class="markup--anchor markup--p-anchor"><strong>Groups and ranges</strong></a>** : Indicate groups and ranges of expression characters.**
+<a href="https://github.com/bgoonz/Cheat-Sheets/blob/master/Regular_Expressions/Groups_and_Ranges.html" class="markup--anchor markup--p-anchor">
+<strong>Groups and ranges</strong>
+</a>** : Indicate groups and ranges of expression characters.**
 
-<a href="https://github.com/bgoonz/Cheat-Sheets/blob/master/Regular_Expressions/Quantifiers.html" class="markup--anchor markup--p-anchor"><strong>Quantifiers</strong></a>** : Indicate numbers of characters or expressions to match.**
+<a href="https://github.com/bgoonz/Cheat-Sheets/blob/master/Regular_Expressions/Quantifiers.html" class="markup--anchor markup--p-anchor">
+<strong>Quantifiers</strong>
+</a>** : Indicate numbers of characters or expressions to match.**
 
-<a href="https://github.com/bgoonz/Cheat-Sheets/blob/master/Regular_Expressions/Unicode_Property_Escapes.html" class="markup--anchor markup--p-anchor"><strong>Unicode property escapes</strong></a>** : Distinguish based on unicode character properties, for example, upper- and lower-case letters, math symbols, and punctuation.**
+<a href="https://github.com/bgoonz/Cheat-Sheets/blob/master/Regular_Expressions/Unicode_Property_Escapes.html" class="markup--anchor markup--p-anchor">
+<strong>Unicode property escapes</strong>
+</a>** : Distinguish based on unicode character properties, for example, upper- and lower-case letters, math symbols, and punctuation.**
 
 If you want to look at all the special characters that can be used in regular expressions in a single table, see the following:
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*Wk5zFr1IHJxacq2a2zi5RQ.png" class="graf-image" /></figure>### Special characters in regular expressions.
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*Wk5zFr1IHJxacq2a2zi5RQ.png" class="graf-image" />
+</figure>### Special characters in regular expressions.
 
 ### Escaping
 
@@ -339,20 +359,31 @@ The `Change` event activated when the user presses Enter sets the value of `RegE
 
 ### Cheat Sheet
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*VmpGy_BYCekOncdyrgSrxw.png" class="graf-image" /></figure>#### If you found this guide helpful feel free to checkout my GitHub/gist's where I host similar content:
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*VmpGy_BYCekOncdyrgSrxw.png" class="graf-image" />
+</figure>#### If you found this guide helpful feel free to checkout my GitHub/gist's where I host similar content:
 
-> <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--blockquote-anchor"><strong>bgoonz's</strong> gists · GitHub</a>
+> <a href="https://gist.github.com/bgoonz" class="markup--anchor markup--blockquote-anchor">
+> <strong>bgoonz's</strong> gists · GitHub</a>
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br />
-<em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz">
+<strong>bgoonz — Overview</strong>
+<br />
+<em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a>
+<a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
 Or Checkout my personal Resource Site:
 
-<a href="https://goofy-euclid-1cd736.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://goofy-euclid-1cd736.netlify.app/"><strong>a/A-Student-Resources</strong><br />
-<em>Edit description</em>goofy-euclid-1cd736.netlify.app</a><a href="https://goofy-euclid-1cd736.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<a href="https://bgoonzblog20master.gtsb.io/docs/sitemap" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonzblog20master.gtsb.io/docs/sitemap">
+<strong>a/A-Student-Resources</strong>
+<br />
+<em>Edit description</em>goofy-euclid-1cd736.netlify.app</a>
+<a href="https://bgoonzblog20master.gtsb.io/docs/sitemap" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [March 6, 2021](https://medium.com/p/4d8fb3eb146b).
 
 <a href="https://medium.com/@bryanguner/regular-expressions-4d8fb3eb146b" class="p-canonical">Canonical link</a>
 
-Exported from [Medium](https://medium.com) on August 17, 2021.
+August 17, 2021.

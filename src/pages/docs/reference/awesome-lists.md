@@ -3,8 +3,8 @@ title: Awesome Lists
 weight: 0
 excerpt: this is an awesome list of awesome lists
 seo:
-    title: ''
-    description: ''
+    title: 'Awesome Lists'
+    description: 'Search Awesome Lists'
     robots: []
     extra: []
     type: stackbit_page_meta
@@ -13,7 +13,9 @@ template: docs
 
 ## Awesome Lists:
 
-<iframe src="https://search-awesome.vercel.app/" height="1000px" width="1400px" scrolling="yes" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://search-awesome.vercel.app/" height="800px" width="1000px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"   allowfullscreen>
+</iframe>
+<br>
 
 -   [**sindresorhus/awesome-nodejs**](https://github.com/sindresorhus/awesome-nodejs)
 -   [**bcoe/awesome-cross-platform-nodejs**](https://github.com/bcoe/awesome-cross-platform-nodejs)

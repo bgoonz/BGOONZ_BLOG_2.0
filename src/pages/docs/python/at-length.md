@@ -10,7 +10,9 @@ seo:
 template: docs
 ---
 
-#### Understanding variables <a id="understanding-variables"></a>
+
+#### Understanding variables <a id="understanding-variables">
+</a>
 
 Variables are simply declarations that are used to store certain values. For instance, the variable `name` can hold the value of `John Smith.` Several rules need to be considered when declaring variable names. For starters, a variable name cannot begin with a number.
 
@@ -31,7 +33,7 @@ Let's talk about the different data types.
 Strings are usually presented in a text format. We will declare a string variable, as shown below.
 
 ```python
-name = “john”school = “Alliance Francaise”
+name = "john"school = "Alliance Francaise"
 ```
 
 When we run `print(name)`, the output will be `john`.
@@ -90,7 +92,8 @@ This data type consists of numbers that have a decimal place. A perfect example 
 Bmi = 45.7
 ```
 
-#### Understanding lists <a id="understanding-lists"></a>
+#### Understanding lists <a id="understanding-lists">
+</a>
 
 Lists allow us to store numerous elements in a particular variable. For instance, we can have a list that stores all the student names in a class. We use `[]` to define a list.
 
@@ -101,7 +104,7 @@ students = [] #list example
 Elements in a list are usually separated by a comma, as shown below.
 
 ```python
-students = [“john”, “Mary Thomas”, “John Smith”]
+students = ["john", "Mary Thomas", "John Smith"]
 ```
 
 Each element in the above `students` list has an index. By default, the first index is 0. So the item at index \[0\] is `john`, while the value at index `1` is `Mary Thomas`. A list of integers will look as follows.
@@ -132,7 +135,8 @@ student_marks.remove(90)print(student_marks)
 
 In lists, negative indices allow us to count elements starting from the last one. For instance, the element with an index of `-1` in the above `student_marks` list is `"Guardian Angel"`. The second last element `78` has an index of `-2`.
 
-#### Understanding functions or methods <a id="understanding-functions-or-methods"></a>
+#### Understanding functions or methods <a id="understanding-functions-or-methods">
+</a>
 
 Methods are quite critical in programming. They help store reusable code. This means that a person can call already declared methods rather than writing statements from scratch repeatedly. This saves significant time, that can be invested in other productive activities.
 
@@ -162,14 +166,15 @@ The `return` keyword ensures that the method returns a result after execution.
 def readData(chem, bio):    return chem+bio​def getTotal():    print(readData(90,80)) #calls the readData method​getTotal()
 ```
 
-#### Understanding loops <a id="understanding-loops"></a>
+#### Understanding loops <a id="understanding-loops">
+</a>
 
 Loops are critical because they allow us to iterate through lists, check for different conditions, and continuously execute various statements. The main loops are `for` and `while`.
 
 1. For loops As noted, we can use a for loop to iterate through a list, as shown below:
 
 ```python
-student_list = [“John Doore”,”Matu Smith”]for x in student_list:    print(x)
+student_list = ["John Doore","Matu Smith"]for x in student_list:    print(x)
 ```
 
 The `for` loop above will print every item in the student_list.
@@ -182,7 +187,8 @@ isChecked = falsewhile isChecked == true:    print('Hallo there')
 
 > Note that the while loop above will be executed indefinitely until isChecked is set to false. You can press ctrl+c to stop the loop.
 
-#### Classes <a id="classes"></a>
+#### Classes <a id="classes">
+</a>
 
 Classes are a vital component of object-oriented programming. When creating a class, you must use the `class` keyword. Other elements are then nested in the class. Here is an example of a Python class.
 
@@ -204,7 +210,8 @@ You can also declare a method in a class and use it later, as shown below.
 class Farmer:  def __init__(self, farmername, produce):    self.farmername = farmername    self.produce = produce​  def printDetails(self): # Method      print(self.farmername, self.produce)​farmer = Farmer("Carry Sminson", "10,000kgs")​farmer.printDetails()
 ```
 
-## Python syntax was made for readability, and easy editing. For example, the python language uses a `:` and indented code, while javascript and others generally use `{}` and indented code. <a id="python-syntax-was-made-for-readability-and-easy-editing-for-example-the-python-language-uses-a-and-indented-code-while-javascript-and-others-generally-use-and-indented-code"></a>
+## Python syntax was made for readability, and easy editing. For example, the python language uses a `:` and indented code, while javascript and others generally use `{}` and indented code. <a id="python-syntax-was-made-for-readability-and-easy-editing-for-example-the-python-language-uses-a-and-indented-code-while-javascript-and-others-generally-use-and-indented-code">
+</a>
 
 Lets create a [python 3](https://repl.it/languages/python3) repl, and call it _Hello World_. Now you have a blank file called _main.py_. Now let us write our first line of code:
 
@@ -214,7 +221,7 @@ _helloworld.py_
 print('Hello world!')
 ```
 
-> Brian Kernighan actually wrote the first “Hello, World!” program as part of the documentation for the BCPL programming language developed by Martin Richards.
+> Brian Kernighan actually wrote the first "Hello, World!" program as part of the documentation for the BCPL programming language developed by Martin Richards.
 
 Now, press the run button, which obviously runs the code. If you are not using replit, this will not work. You should research how to run a file with your text editor.
 
@@ -304,7 +311,8 @@ x = 'hello' # Goodx = "hello" # Goodx = "hello' # ERRORRR!!!
 
 _slicing.py_
 
-#### String Slicing <a id="string-slicing"></a>
+#### String Slicing <a id="string-slicing">
+</a>
 
 You can look at only certain parts of the string by slicing it, using `[num:num]`. The first number stands for how far in you go from the front, and the second stands for how far in you go from the back.
 
@@ -312,7 +320,8 @@ You can look at only certain parts of the string by slicing it, using `[num:num]
 x = 'Hello everybody!'x[1] # 'e'x[-1] # '!'x[5] # ' 'x[1:] # 'ello everybody!'x[:-1] # 'Hello everybod'x[2:-3] # 'llo everyb'
 ```
 
-#### Methods and Functions <a id="methods-and-functions"></a>
+#### Methods and Functions <a id="methods-and-functions">
+</a>
 
 Here is a list of functions/methods we will go over:
 
@@ -461,19 +470,21 @@ _functions.py_
 import randomdef r(t):     print(random.randint(1, 9))     print(t)r('Wow that was interesting.')r('Look at the number above ^')r('All of these have been interesting numbers.')r("these random.randint's are getting annoying to type")r('Hi')r('j')
 ```
 
-### Chapter 01 - Getting Ready with Python <a id="chapter-01-getting-ready-with-python"></a>
+### Chapter 01 - Getting Ready with Python <a id="chapter-01-getting-ready-with-python">
+</a>
 
-#### Installing Python 3, And Launching Python Shell <a id="installing-python-3-and-launching-python-shell"></a>
+#### Installing Python 3, And Launching Python Shell <a id="installing-python-3-and-launching-python-shell">
+</a>
 
 This video should help you get up and running with Python 3
 
 -   ​[Installing Python 3 and Launch Python Shell](https://www.youtube.com/watch?v=Ji1WW4Suaww)​
 
-Installing Python is really a cakewalk. Search for “Python download” on [www.google.com](http://www.google.com/). Download the installable and install it.
+Installing Python is really a cakewalk. Search for "Python download" on [www.google.com](http://www.google.com/). Download the installable and install it.
 
 A quick word of caution on Windows
 
--   Make sure that you have the check-box “Add Python 3.6 to PATH”, checked.
+-   Make sure that you have the check-box "Add Python 3.6 to PATH", checked.
 
 Once you have installed Python, you can launch the Python Shell.
 
@@ -493,7 +504,8 @@ You can execute the code, and the shell would immediately give you output.
 
 Using the the Python Shell is an awesome way to learn Python.
 
-### Chapter 02 - Introduction To Python Programming <a id="chapter-02-introduction-to-python-programming"></a>
+### Chapter 02 - Introduction To Python Programming <a id="chapter-02-introduction-to-python-programming">
+</a>
 
 Most programmers find programming a lot of fun, and besides, it also gets their work done.
 
@@ -516,7 +528,8 @@ In this step, we:
 -   Were introduced to the concept of problem solving
 -   Understood how good programmers approach problem solving
 
-#### Step 01: Our First Programming Challenge <a id="step-01-our-first-programming-challenge"></a>
+#### Step 01: Our First Programming Challenge <a id="step-01-our-first-programming-challenge">
+</a>
 
 Our first _programming challenge_ aims to do, what every kid does in math class: read out a multiplication table. We now want to give this task to the computer. Here is the statement of our problem:
 
@@ -566,7 +579,8 @@ In this step, we:
 -   Stated our first programming challenge
 -   Identified what programming concepts we need to learn, to solve this challenge
 
-#### Step 02: Breaking Down _PMT-Challenge_ <a id="step-02-breaking-down-pmt-challenge"></a>
+#### Step 02: Breaking Down _PMT-Challenge_ <a id="step-02-breaking-down-pmt-challenge">
+</a>
 
 Typically when we do programming, we have problems. Solving the problem typically need a step-by -step approach. Common sense tells us that to solve a complex problem, we break it into smaller parts, and solve each part one by one. Here is how any good programmer worth her salt, would solve a problem:
 
@@ -591,7 +605,8 @@ In this step, we:
 -   Learned that breaking down a problem into sub-problems is a great help
 -   Found a way to break down the _PMT-Challenge_ problem
 
-#### Step 03: Introducing Operators And Expressions <a id="step-03-introducing-operators-and-expressions"></a>
+#### Step 03: Introducing Operators And Expressions <a id="step-03-introducing-operators-and-expressions">
+</a>
 
 Let's focus on solving the first sub-problem of _PMT-Challenge_, the numeric computation. We want the computer to calculate `5 * 5` for example, and print `25` for us. How do we get it to do that? That's what we would be looking at in this step.
 
@@ -605,13 +620,13 @@ Using our knowledge of school math, let's try `5 X 5`.
     >>> 5 X 5    File "< stdin >", line 1    5 X 5      ^    SyntaxError: invalid syntax
 ```
 
-The Python Shell hits back at us, saying “_invalid syntax_”. This is how Python complains, when it doesn't fully understand the code you type in. Here, it says our code has a “**SyntaxError**”.
+The Python Shell hits back at us, saying "_invalid syntax_". This is how Python complains, when it doesn't fully understand the code you type in. Here, it says our code has a "**SyntaxError**".
 
 The reason why it complains, is because '`X`' is not a valid **operator** in Python.
 
 The way you can do multiplication is by using the '`*`' _operator_ .
 
-“_5 into 5_” is achieved by the code `5 * 5`, and you can see the result `25` being printed. Similarly, `5 * 6` gives us `30`.
+"_5 into 5_" is achieved by the code `5 * 5`, and you can see the result `25` being printed. Similarly, `5 * 6` gives us `30`.
 
 ```python
     >>> 5 * 6    30
@@ -626,13 +641,13 @@ There are a wide range of other operators in Python:
     >>> 5 + 611>>> 5 - 6-1
     ```
 
-`10 / 2`, gives an output of `5.0` . There is one interesting operator, `**`. Let's try `10 ** 3`. We ran this code, and the result we get is `1000`. Yes you guessed right, the operator performs “to the power of”. “`10` to the power of `3`” is `10 * 10 * 10`, or `1000`.
+`10 / 2`, gives an output of `5.0` . There is one interesting operator, `**`. Let's try `10 ** 3`. We ran this code, and the result we get is `1000`. Yes you guessed right, the operator performs "to the power of". "`10` to the power of `3`" is `10 * 10 * 10`, or `1000`.
 
 ```python
     >>> 10 / 2    5.0    >>> 10 ** 3    1000
 ```
 
-Another interesting operator is `%`, called “_modulo_”, which computes the remainder on integer division. If we do `10 % 3`, what is the remainder when `10` is divided by `3`? `3 * 3` is `9`, and `10 - 9` is `1`, which is what `%` returns in this case.
+Another interesting operator is `%`, called "_modulo_", which computes the remainder on integer division. If we do `10 % 3`, what is the remainder when `10` is divided by `3`? `3 * 3` is `9`, and `10 - 9` is `1`, which is what `%` returns in this case.
 
 Let's look at some terminology:
 
@@ -656,7 +671,8 @@ In this step, we:
 -   Understood that Python has a predefined set of operators
 -   Used a few types of basic operators and their operands, to form expressions
 
-#### Step 04: Programming Exercise IN-PE-01 <a id="step-04-programming-exercise-in-pe-01"></a>
+#### Step 04: Programming Exercise IN-PE-01 <a id="step-04-programming-exercise-in-pe-01">
+</a>
 
 At this stage, your smile tells us that you enjoy evaluating Python expressions. What if we tickle your mind a bit, to make sure it hasn't fallen asleep? Here is your first programming exercise.
 
@@ -705,7 +721,8 @@ In this step, we:
     -   Operators
     -   Literals
 
-#### Step 05: Puzzles On Expressions <a id="step-05-puzzles-on-expressions"></a>
+#### Step 05: Puzzles On Expressions <a id="step-05-puzzles-on-expressions">
+</a>
 
 Let's look at a few puzzles related to expressions, in this step. Before that, let's revise some of the terminology we had learned earlier.
 
@@ -729,7 +746,7 @@ Let's say we type in `5+6+10`, without any spaces between the operands, and the 
 
 In an expression, using spaces makes it easier for you to read it, but it's not mandatory. `5 + 6 + 10` is easier to read than `5+6+10`, but does not make any difference to the Python compiler.
 
-The next puzzle tries to evaluate `5 / 2`, which is “`5` divided by `2`”. What would be the output? `2.5`.
+The next puzzle tries to evaluate `5 / 2`, which is "`5` divided by `2`". What would be the output? `2.5`.
 
 ```python
     >>> 5/2    2.5
@@ -782,7 +799,8 @@ In this step, we went about solving a few puzzles about expressions, touching co
 -   Operator Precedence
 -   Using parentheses
 
-#### Step 06: Printing Text <a id="step-06-printing-text"></a>
+#### Step 06: Printing Text <a id="step-06-printing-text">
+</a>
 
 In the previous step, we learned how to use expressions to compute values. In this step, let's see how we can actually print multiplication table entries, that are readable by the user.
 
@@ -810,7 +828,7 @@ There are a number of in-built functions in Python to help print strings. One of
     >>> print Hello      File "<stdin>", line 1        print Hello                  ^    SyntaxError: Missing parentheses in call to 'print'. Did you mean print(Hello)?
 ```
 
-The Python compiler gives you an error, that says “missing parentheses”.
+The Python compiler gives you an error, that says "missing parentheses".
 
 Will `print(Hello)` work?
 
@@ -861,7 +879,8 @@ In this step, we:
 -   Learned about the `print()` function, that is used to print text in Python.
 -   Found a way to print the text `"5 * 6 = 30"` on the console, by hard-coding values in a string
 
-#### Step 07: Puzzles On Utility Methods, And Strings <a id="step-07-puzzles-on-utility-methods-and-strings"></a>
+#### Step 07: Puzzles On Utility Methods, And Strings <a id="step-07-puzzles-on-utility-methods-and-strings">
+</a>
 
 In the previous step, we learned how to print `5 * 6 = 30`. It was not a perfect solution, because we hard-coded everything. we used an in-built function named `print()`, passed a string to it, and invoked the method.
 
@@ -895,13 +914,13 @@ Consider `abs()` \(which stands for absolute value\), a method that accepts a nu
     >>> abs 10.5      File "<stdin>", line 1        abs 10.5               ^    SyntaxError: invalid syntax    >>> abs(10.5)    10.5
 ```
 
-If you pass in a string value, will it work? It complains, “`abs()` function will not work with a string, it only works with numeric values”.
+If you pass in a string value, will it work? It complains, "`abs()` function will not work with a string, it only works with numeric values".
 
 ```python
     >>> abs("10.5")    Traceback (most recent call last):      File "<stdin>", line 1, in <module>    TypeError: bad operand type for abs(): 'str'
 ```
 
-Let's say you want to use a function that computes “to the power of”, for instance “`2` to the power of `5`”. In Python, there's an in-built function named `pow()`, which does just what we need. To `pow()`, you can pass two parameters and calculate the result. How do you do that?
+Let's say you want to use a function that computes "to the power of", for instance "`2` to the power of `5`". In Python, there's an in-built function named `pow()`, which does just what we need. To `pow()`, you can pass two parameters and calculate the result. How do you do that?
 
 Will this work: `pow 2 5`? No, not at all. This code does not work as well: `pow(2 5)`. `pow(2, 5)` is the correct syntax.
 
@@ -911,7 +930,7 @@ Will this work: `pow 2 5`? No, not at all. This code does not work as well: `pow
 
 You'll see that `32` is printed.
 
-Let's see another example, “`10` to the power of `3`”. `pow(10,3)` is the alternative to saying `10 ** 3`. This gives us `1000`, similar to how `pow()` would.
+Let's see another example, "`10` to the power of `3`". `pow(10,3)` is the alternative to saying `10 ** 3`. This gives us `1000`, similar to how `pow()` would.
 
 ```python
     >>> pow(10, 3)    1000    >>> 10 ** 3    1000
@@ -1000,7 +1019,8 @@ In this step, we:
     -   The role played by whitespace
     -   The escape character, and common escape sequences
 
-#### Step 08: Formatted Output With print\(\) <a id="step-08-formatted-output-with-print"></a>
+#### Step 08: Formatted Output With print\(\) <a id="step-08-formatted-output-with-print">
+</a>
 
 In the previous step, we learned how to print a hard-coded string, such as `"5 * 6 = 30"`.
 
@@ -1074,7 +1094,8 @@ In this step, we:
 -   Looked at the `format()` function, and saw how to call it within `print()`
 -   Observed how we could work only with the indexes of parameters to `format()`, and change the parameters we pass without changing the code
 
-#### Step 09: Puzzles On format\(\) and print\(\) <a id="step-09-puzzles-on-format-and-print"></a>
+#### Step 09: Puzzles On format\(\) and print\(\) <a id="step-09-puzzles-on-format-and-print">
+</a>
 
 In this step, let's look at a few puzzles related to the format, and the print methods.
 
@@ -1102,7 +1123,7 @@ Now let's take a different scenario. We remove all the parameters passed to `for
     >>> print("{0} * {1} = {4}".format(5,8))    Traceback (most recent call last):      File "<stdin>", line 1, in <module>    IndexError: tuple index out of range
 ```
 
-It says `IndexError`, which means :“you are asking me to fetch the value at index `4`, but only passing in two values. How can I do what you want?”
+It says `IndexError`, which means :"you are asking me to fetch the value at index `4`, but only passing in two values. How can I do what you want?"
 
 Let's look at a few more things related to other data types. We try to format the following inside `print()`: `{0} * {1} = {2}`, and would pass in `2.5`, `2`, and `2.5 * 2` . Here, `2` is an integer value, but `2.5` is a floating point value. You can see that it prints `2.5 * 2 = 5.0`. So this approach of formatting values with `print()`, works also with floating point data as well.
 
@@ -1129,7 +1150,8 @@ In this step, we:
     -   Are less than the indexes accessed by `print()`
     -   Are of type integer, floating-point or string
 
-#### Step 10: Introducing Variables <a id="step-10-introducing-variables"></a>
+#### Step 10: Introducing Variables <a id="step-10-introducing-variables">
+</a>
 
 We are slowly making progress toward our main goal, which is to print the `5` multiplication table.
 
@@ -1143,7 +1165,7 @@ Let's try a different approach.
 
 What would happen if you replace `1` with `index`, and `5 * 1` with `5 * index`, and try to run it?
 
-It gives an error! It says: “index is not defined”.
+It gives an error! It says: "index is not defined".
 
 Let's try and fix this, and execute `index = 2`. What would happen?
 
@@ -1230,7 +1252,8 @@ In this step, we:
 -   Were introduced to variables, or names, in Python
 -   Observed how we could pass in values of variables to the `format()` function
 
-#### Step 11: Puzzles On Variables <a id="step-11-puzzles-on-variables"></a>
+#### Step 11: Puzzles On Variables <a id="step-11-puzzles-on-variables">
+</a>
 
 In the previous step, we were introduced to the concept of variables in Python.
 
@@ -1244,7 +1267,7 @@ What if I try to refer to a variable which is not yet created?
     >>> count    Traceback (most recent call last):      File "<stdin>", line 1, in <module>    NameError: name 'count' is not defined    >>> print(count)    Traceback (most recent call last):      File "<stdin>", line 1, in <module>    NameError: name 'count' is not defined
 ```
 
-Before using a variable, you need to have it assigned a value. If you have not defined a variable before, then you cannot use it. Consider `print(count)`, it does not know what count is. So it would throw an error, saying: “`count` is not defined, I have no idea what count is.”
+Before using a variable, you need to have it assigned a value. If you have not defined a variable before, then you cannot use it. Consider `print(count)`, it does not know what count is. So it would throw an error, saying: "`count` is not defined, I have no idea what count is."
 
 Once you assign a value to a variable, you can use it.
 
@@ -1290,7 +1313,8 @@ In this step, we:
 -   Understood that a variable needs to be defined before it is used
 -   Learned that there are certain rules to be followed while giving names to variables
 
-#### Step 12: Introducing Assignment <a id="step-12-introducing-assignment"></a>
+#### Step 12: Introducing Assignment <a id="step-12-introducing-assignment">
+</a>
 
 In this step, we will look at an important concept in Python, called **assignment**. In previous steps, we created variables, like `i = 5`.
 
@@ -1316,13 +1340,13 @@ Let's try `j = 2 * i`.
 
 In mathematics, When we execute `j = i`, it means `j` and `i` are equal.
 
-In prgramming, the value of the expression on right hand side is assigned to the variable on the right hand side. Can you use a constant on the left hand side of an assignment? The answer is “No”!
+In prgramming, the value of the expression on right hand side is assigned to the variable on the right hand side. Can you use a constant on the left hand side of an assignment? The answer is "No"!
 
 ```python
     >>> 5 = j      File "<stdin>", line 1    SyntaxError: can't assign to literal
 ```
 
-The Python Shell throws an error, saying “Can't assign to literal”, as `5` is a literal.
+The Python Shell throws an error, saying "Can't assign to literal", as `5` is a literal.
 
 Let's create a couple of variables. `num1 = 5` and `num2 = 3`. We would want to add these and create a fresh variable. Let's say the name of the variable is `sum`.
 
@@ -1345,7 +1369,8 @@ In this step, we:
 -   Learned what happens when you assign a value to a variable, which may or may not exist
 -   Discovered that literal constants cannot be placed on the left hand side of the assignment\(`=`\) operator
 
-#### Step 13: Introducing Formatted Printing <a id="step-13-introducing-formatted-printing"></a>
+#### Step 13: Introducing Formatted Printing <a id="step-13-introducing-formatted-printing">
+</a>
 
 Until now, we have been using the `format()` method to format and print values. Let's see a better approach to printing values.
 
@@ -1381,7 +1406,8 @@ Let's get back to the original problem we wanted to solve: printing `5 + 6 + 7 =
 
 You can see how easy it turns out to be!
 
-#### Step 14: The PMT-Challenge Revisited <a id="step-14-the-pmt-challenge-revisited"></a>
+#### Step 14: The PMT-Challenge Revisited <a id="step-14-the-pmt-challenge-revisited">
+</a>
 
 We want to print the `5`-table from `5 * 1 = 5` onward, until we reach to `5 * 10 = 50`. The best solution we have right now, is shown below:
 
@@ -1447,7 +1473,8 @@ Now, how do we get it to print `5 * 1 = 5` to `5 * 10 = 50`?
 
 `print(f"5 * {i} = {5 * i}")` prints a specific multiple of 5.
 
-#### Step 15: Loops <a id="step-15-loops"></a>
+#### Step 15: Loops <a id="step-15-loops">
+</a>
 
 In a previous step, we took a major step in programming. We wrote our first for loop with Python. In this step, let's try a few puzzles to understand the for loop even further.
 
@@ -1520,7 +1547,8 @@ In this step, we:
     -   Indentation
     -   Variations of the `range()` function
 
-#### Step 16: Programming Exercise PE-BA-02 <a id="step-16-programming-exercise-pe-ba-02"></a>
+#### Step 16: Programming Exercise PE-BA-02 <a id="step-16-programming-exercise-pe-ba-02">
+</a>
 
 In the previous step, after initially exploring the Python `for` loop, we looked at a number of puzzles.
 
@@ -1597,13 +1625,14 @@ In this video, we: \* Tried out a few exercises involving the for loop, by playi
 
 -   Used the for loop to simplify the solution to the _PMT-Challenge_ problem.
 
-#### Step 17: Review: The Basics Of Python <a id="step-17-review-the-basics-of-python"></a>
+#### Step 17: Review: The Basics Of Python <a id="step-17-review-the-basics-of-python">
+</a>
 
 It must have been a roller-coaster ride to solve the multiplication table challenge so far. If you're new to programming, there are a wide range of topics and concepts, that you would have learned during this small journey.
 
 Let's quickly revise the important concepts we have learned during this small journey.
 
--   `1`, `11`, `5`, … are all called literals because these are constant values. Their values don't really change. \_Consider `` 5 _ 4 _ 50`. This is an expression. `_`is an operator, and`5`, `4`and`50 `` are operands.
+-   `1`, `11`, `5`, … are all called literals because these are constant values. Their values don't really change. \_Consider `` 5 _4_ 50`. This is an expression. `_`is an operator, and`5`, `4`and`50 `` are operands.
 -   The name `i` in `i = 1`, is called a variable. It can refer to different values, at different points in time.
 -   `range()` and `print()` are in-built Python functions.
 -   Every complete line of code is called statement. The specific statement `print()`, is invoking a method. The other statement which we looked at earlier, was an assignment statement. `index = index + 1` would evaluate `index + 1`, and have the `index` variable refer to that value.
@@ -1611,7 +1640,8 @@ Let's quickly revise the important concepts we have learned during this small jo
 
 So that, in a nutshell, is what we have learned over the course of our first section.
 
-### Chapter 03 - Introducing Methods <a id="chapter-03-introducing-methods"></a>
+### Chapter 03 - Introducing Methods <a id="chapter-03-introducing-methods">
+</a>
 
 In the last section, we introduced you to the basics of python. We learned those concepts by applying them to solve the _PMT-Challenge_ problem. The code below is what we ended up with as we solved that chellenge.
 
@@ -1639,7 +1669,8 @@ To be able to do this, we need to create a **method**, or a **function**. Creati
 
 In this section, we take an in-depth look at methods.
 
-#### Step 01: Defining Your First Method <a id="step-01-defining-your-first-method"></a>
+#### Step 01: Defining Your First Method <a id="step-01-defining-your-first-method">
+</a>
 
 Methods are very important building blocks in Python programming. In this step, we will create a simple method that prints `"Hello World"`, twice.
 
@@ -1692,7 +1723,8 @@ In this step, we:
 -   Understood how to define a method, and all its syntax elements
 -   Saw how we can invoke a method we write
 
-#### Step 02: Programming Exercise PE-MD-01 <a id="step-02-programming-exercise-pe-md-01"></a>
+#### Step 02: Programming Exercise PE-MD-01 <a id="step-02-programming-exercise-pe-md-01">
+</a>
 
 We will now leave you with two exercises, based on what we have learned about methods so far.
 
@@ -1700,10 +1732,10 @@ We will now leave you with two exercises, based on what we have learned about me
 
 1. Write a method called `print_hello_world_thrice()`. It should print `"Hello World"` thrice to the output. Define this method, and also invoke it.
 2. Write and execute a method, that prints four statements:
-    1. “I have created my first variable.”
-    2. “I've created in my first loop.”
-    3. “I've created my first method.”
-    4. “I am excited to learn Python.” You need to print these four statements on four consecutive lines.
+    1. "I have created my first variable."
+    2. "I've created in my first loop."
+    3. "I've created my first method."
+    4. "I am excited to learn Python." You need to print these four statements on four consecutive lines.
 
 **Solutions**
 
@@ -1746,7 +1778,8 @@ In this step, we:
     -   The way to invoke a method, to run its code
     -   The difference between the two
 
-#### Step 03: Passing Parameters To Methods <a id="step-03-passing-parameters-to-methods"></a>
+#### Step 03: Passing Parameters To Methods <a id="step-03-passing-parameters-to-methods">
+</a>
 
 In the previous step,we created methods. We defined `print_hello_world_twice()`, and this printed `"Hello World"` twice. In this step, let's talk about _method arguments_, or _parameters_.
 
@@ -1760,7 +1793,7 @@ Earlier, we wrote code for `print_hello_world_thrice()`, which prints the messag
 
 Let's say you want to print it five times. You would need to write another method that does what you need. Doesn't that seem monotonous?
 
-Instead of that, Won't it be great if I can call the method by the same name, say `print_hello_world(5)`, and it would print “Hello World” five times?
+Instead of that, Won't it be great if I can call the method by the same name, say `print_hello_world(5)`, and it would print "Hello World" five times?
 
 The `5` which we are passing here is called an **argument**.
 
@@ -1778,7 +1811,7 @@ Although we are not doing exactly what we set out to, let's see what would happe
     >>> print_hello_world()    Traceback (most recent call last):      File "<stdin>", line 1, in <module>    TypeError: print_hello_world() missing 1 required positional argument: 'no_of_times'
 ```
 
-Error! Something like “Hey, you have created `print_hello_world` with a parameter, but not passing anything in here! Go ahead and pass a value”. Let's pass in a value, such as `5`.
+Error! Something like "Hey, you have created `print_hello_world` with a parameter, but not passing anything in here! Go ahead and pass a value". Let's pass in a value, such as `5`.
 
 ```python
     >>> print_hello_world(5)    Hello World    5    >>> print_hello_world(10)    Hello World    10    >>> print_hello_world(100)    Hello World    100
@@ -1834,7 +1867,8 @@ In this step, we:
 -   Understood that the method definition needs to have parameters coded in
 -   Observed that arguments passed during a method call can be accessed inside a methods body
 
-#### Step 04: Classroom Exercise CE-MD-01 <a id="step-04-classroom-exercise-ce-md-01"></a>
+#### Step 04: Classroom Exercise CE-MD-01 <a id="step-04-classroom-exercise-ce-md-01">
+</a>
 
 In this step, Let's look at a few exercises related to the method parameter.
 
@@ -1851,7 +1885,7 @@ In this step, Let's look at a few exercises related to the method parameter.
     >>> def print_numbers(n):    ...    for i in range(1, n+1):    ...       print(i)    ...    >>> print_numbers(5)    1    2    3    4    5    >>>
 ```
 
-If you are programming in other languages such as Java, you are used to naming methods in this way: `printNumbers()`. This convention is popularly known as “Camel Case”.
+If you are programming in other languages such as Java, you are used to naming methods in this way: `printNumbers()`. This convention is popularly known as "Camel Case".
 
 That's NOT how Python programmers name their methods. Pythonic way is to use underscore `_` to separate words in the method name, as in `print_numbers()`.
 
@@ -1875,13 +1909,14 @@ How is a parameter different from an argument?
 
 In this step, we looked at a few simple exercises related to passing method arguments
 
-#### Step 05: Methods With Multiple Parameters <a id="step-05-methods-with-multiple-parameters"></a>
+#### Step 05: Methods With Multiple Parameters <a id="step-05-methods-with-multiple-parameters">
+</a>
 
 In this step, let's look at creating a method with multiple parameters.
 
 **Snippet-01:**
 
-`print_hello_world` accepts one parameter and prints “Hello World” the specified number of times.
+`print_hello_world` accepts one parameter and prints "Hello World" the specified number of times.
 
 ```python
     >>> def print_hello_world(no_of_times):    ...    for i in range(1,no_of_times+1):    ...       print("Hello World")    ...
@@ -1901,7 +1936,7 @@ A good programmer tries to create a more generic solution.
 
 The good programmer that you are, you created a new method called `print_string(str, no_of_times)` accepting a text parameter, in addition to `no_of_times`.
 
-Syntax rules for method parameters are quite strict. If we say `print_string("Welcome to Python")` and run it, we get an error! Python Shell says: “I need `no_of_times` to be present in here”.
+Syntax rules for method parameters are quite strict. If we say `print_string("Welcome to Python")` and run it, we get an error! Python Shell says: "I need `no_of_times` to be present in here".
 
 ```python
     >>> print_string("Welcome to Python")    Traceback (most recent call last):      File "<stdin>", line 1, in <module>    TypeError: print_string() missing 1 required positional argument: 'no_of_times'
@@ -1943,7 +1978,8 @@ In this step, we:
 -   Learned how you can define default values for those parameters
 -   Observed we could pass default arguments for none, some or all of those parameters
 
-#### Step 06: Back To Multiplication Table - Using Methods <a id="step-06-back-to-multiplication-table-using-methods"></a>
+#### Step 06: Back To Multiplication Table - Using Methods <a id="step-06-back-to-multiplication-table-using-methods">
+</a>
 
 Let's get back to our original goal, of why we needed methods. We wanted to create a multiplication table for a number, and observed that each time we needed to we needed change that number, we were forced to make a change in the code. This is not something we liked, and that's why we started investigating how methods can be used.
 
@@ -1993,7 +2029,8 @@ In this step, we:
 -   Looked at how to enhance this method to make table printing more flexible
 -   Further enhanced that method to accept default arguments while printing a table
 
-#### Step 07: Indentation Is King <a id="step-07-indentation-is-king"></a>
+#### Step 07: Indentation Is King <a id="step-07-indentation-is-king">
+</a>
 
 In Python, indentation denote blocks of code. So if you want to put something in a `for` loop, or outside it, proper indentation would be sufficient. In this step, let's explore indentation in depth. Let's start by creating a simple method.
 
@@ -2037,7 +2074,8 @@ In this step, we:
 
 -   Ran through a few examples to see how indentation works in Python
 
-#### Step 08: Puzzles on Methods - Named Parameters <a id="step-08-puzzles-on-methods-named-parameters"></a>
+#### Step 08: Puzzles on Methods - Named Parameters <a id="step-08-puzzles-on-methods-named-parameters">
+</a>
 
 In this step, let's look at a variety of puzzles related to methods.
 
@@ -2122,9 +2160,9 @@ Methods and variables cannot be named using Python keywords.
 
 Now, what is a keyword? For example, when we talked about `for` loop, as in:
 
-````python
+```python
 ```for i in range(1, 11): print(i)```...
-````
+```
 
 -   **`for`** is a keyword
 -   **`in`** is a keyword
@@ -2144,7 +2182,8 @@ In this step, we:
 -   Explored the typical naming rules and conventions for methods in Python
 -   Observed that reserved keywords cannot be used to name variables or methods
 
-#### Step 09: Methods - Return Values <a id="step-09-methods-return-values"></a>
+#### Step 09: Methods - Return Values <a id="step-09-methods-return-values">
+</a>
 
 Let's try and understand the importance of return values from a method. We will learn how to return a value from a method.
 
@@ -2203,7 +2242,8 @@ In this step, we:
 -   Learned how to return values from inside a method
 -   Observed how we can store the values returned by a method call
 
-#### Step 10: Programming Exercise PE-MD-02 <a id="step-10-programming-exercise-pe-md-02"></a>
+#### Step 10: Programming Exercise PE-MD-02 <a id="step-10-programming-exercise-pe-md-02">
+</a>
 
 In this step let's look at a couple of exercises about returning values from methods.
 
@@ -2247,7 +2287,8 @@ In this step, we:
 -   Looked at a couple of exercises related to returning values from methods
 -   Observed that returning expressions avoids creating unnecessary variables, and shortens method definitions
 
-### Chapter 04 - Introduction To Python Platform <a id="chapter-04-introduction-to-python-platform"></a>
+### Chapter 04 - Introduction To Python Platform <a id="chapter-04-introduction-to-python-platform">
+</a>
 
 Until now we had been using Python Shell to execute all our code.
 
@@ -2262,7 +2303,8 @@ Here are a few videos you might want to look at.
 -   ​[Writing and Executing your First Python Script](https://www.youtube.com/watch?v=ORmDD1R7lNc)​
 -   ​[Understanding Python Virtual Machine and bytecode](https://www.youtube.com/watch?v=HE-FC0csG68)​
 
-#### Step 01 - Writing and Executing Python Shell Programs <a id="step-01-writing-and-executing-python-shell-programs"></a>
+#### Step 01 - Writing and Executing Python Shell Programs <a id="step-01-writing-and-executing-python-shell-programs">
+</a>
 
 Here's a recommended video to watch - [Writing and Executing your First Python Script](https://www.youtube.com/watch?v=ORmDD1R7lNc)​
 
@@ -2300,7 +2342,8 @@ In this small step, we tried to create a simple python script, and we ran it fro
 
 As an exercise, try and add a few more methods and try to run those methods as well, as part of this script.
 
-#### Step 02 - Python virtual machine and bytecode <a id="step-02-python-virtual-machine-and-bytecode"></a>
+#### Step 02 - Python virtual machine and bytecode <a id="step-02-python-virtual-machine-and-bytecode">
+</a>
 
 In this step, let's try and understand what's happening in the background.
 
@@ -2329,7 +2372,8 @@ It's very important for you to understand the process. What's happening is you w
 
 The idea behind this quick section, is to give you a little bit of background on what's happening behind the scenes. I'll see you in the next section. Until then, bye-bye!
 
-### Chapter 05 - Introduction To VSCode <a id="chapter-05-introduction-to-vscode"></a>
+### Chapter 05 - Introduction To VSCode <a id="chapter-05-introduction-to-vscode">
+</a>
 
 Let's start using the IDE VSCode to write our Python Code
 
@@ -2339,7 +2383,8 @@ Here are recommended videos to watch
 -   ​[Write and Execute a Python File with VSCode](https://www.youtube.com/watch?v=Na05tSP21Jg)​
 -   ​[Write Your First Python Program with VSCode](https://www.youtube.com/watch?v=PvYSlWbXuCw)​
 
-#### Step 01 - Installing and Introduction to VSCode <a id="step-01-installing-and-introduction-to-vscode"></a>
+#### Step 01 - Installing and Introduction to VSCode <a id="step-01-installing-and-introduction-to-vscode">
+</a>
 
 In this quick step, we'll help you install VSCode.
 
@@ -2347,7 +2392,7 @@ Here's the video guide for this step
 
 -   ​[Installing VSCode](https://www.youtube.com/watch?v=pI_cnCXpCTU)​
 
-Go to Google and type in “VSCode Community Edition Download”. Click the link which comes up first: [https://www.jetbrains.com/VSCode/download](https://www.jetbrains.com/VSCode/download).
+Go to Google and type in "VSCode Community Edition Download". Click the link which comes up first: [https://www.jetbrains.com/VSCode/download](https://www.jetbrains.com/VSCode/download).
 
 You'll go to a page where you can choose the operating system: whether you are on Windows, Mac, or Linux.
 
@@ -2365,7 +2410,8 @@ You're all set to go ahead with the next step in the course.
 
 VSCode is an awesome IDE, and I'm sure you learn a lot about it.
 
-#### Step 02 - Write and Execute a Python File with VSCode <a id="step-02-write-and-execute-a-python-file-with-vscode"></a>
+#### Step 02 - Write and Execute a Python File with VSCode <a id="step-02-write-and-execute-a-python-file-with-vscode">
+</a>
 
 In this step, let's launch up the VSCode IDE, and create our first Python project with a Python script. We want to be able to launch a Python script by the end of this step.
 
@@ -2391,7 +2437,8 @@ You can do a right-click here, and say 'Run hello_world'.
 
 A small window comes up below, which shows the output. It says `'Hello World'`.
 
-#### Step 03 - Execise - Write Multiplication Table Method with VSCode <a id="step-03-execise-write-multiplication-table-method-with-vscode"></a>
+#### Step 03 - Execise - Write Multiplication Table Method with VSCode <a id="step-03-execise-write-multiplication-table-method-with-vscode">
+</a>
 
 Let's start with a simple exercise. We created the multiplication table method in the Python Shell. What we do now, is we'll create the same thing but in a Python file of its own.
 
@@ -2399,11 +2446,13 @@ Here's the video guide for this step:
 
 -   ​[Write Your First Python Program with VSCode](https://www.youtube.com/watch?v=PvYSlWbXuCw)​
 
-### Chapter 06 - Introducing Data Types and Conditionals <a id="chapter-06-introducing-data-types-and-conditionals"></a>
+### Chapter 06 - Introducing Data Types and Conditionals <a id="chapter-06-introducing-data-types-and-conditionals">
+</a>
 
 Welcome to this section, where we will talk about numeric data types, and conditional program execution. After looking at the numeric and boolean data types, we will turn our attention to executing code, based on logical conditions.
 
-#### Step 01: Numeric Data Types <a id="step-01-numeric-data-types"></a>
+#### Step 01: Numeric Data Types <a id="step-01-numeric-data-types">
+</a>
 
 In previous sections, we created variables of this kind: `number = 5` , `value = 2.5`, etc. The `5` here is an integer, and integers represent numbers, such as `1`, `2`, `6`, `-1` and `-2`. In Python, the `class` for this particular data type is `int`.
 
@@ -2456,7 +2505,8 @@ In this step, we:
 -   Looked at the two basic numeric types: `int` and `float`.
 -   Saw the basic operations you can do among `int`s, among `float`s, and also between `int`s and `float`s.
 
-#### Step 02: Programming Exercise PE-DT-01 <a id="step-02-programming-exercise-pe-dt-01"></a>
+#### Step 02: Programming Exercise PE-DT-01 <a id="step-02-programming-exercise-pe-dt-01">
+</a>
 
 In this step, let's do a simple exercise with numeric values.
 
@@ -2478,7 +2528,8 @@ In this step, we:
 
 -   Wrote a very simple method to do a simple interest calculation
 
-#### Step 03: Puzzles On Numeric Types <a id="step-03-puzzles-on-numeric-types"></a>
+#### Step 03: Puzzles On Numeric Types <a id="step-03-puzzles-on-numeric-types">
+</a>
 
 In this section, we are looking at numeric types. In this specific step, we would be looking at a few puzzles related to values of these types.
 
@@ -2570,15 +2621,16 @@ In this step, we:
 -   Examined the different operators available for use with values of numeric types
 -   Learned about the usage of type conversion functions
 
-#### Step 04: Introducing Boolean Type <a id="step-04-introducing-boolean-type"></a>
+#### Step 04: Introducing Boolean Type <a id="step-04-introducing-boolean-type">
+</a>
 
 We will now shift our attention to the `bool` data type.
 
-A boolean value is something which can be either “true” or “false”.
+A boolean value is something which can be either "true" or "false".
 
 **Snippet-01:**
 
-In Python, “true” is represented by `True`, and “false” by `False`. It's important to remember that it's `True` with a capital `'T'`, and `False` with a capital `'F'`.
+In Python, "true" is represented by `True`, and "false" by `False`. It's important to remember that it's `True` with a capital `'T'`, and `False` with a capital `'F'`.
 
 ```python
     >>> True    True    >>> False    False    >>> true    Traceback (most recent call last):      File "<stdin>", line 1, in <module>    NameError: name 'true' is not defined    >>> false    Traceback (most recent call last):      File "<stdin>", line 1, in <module>    NameError: name 'false' is not defined
@@ -2617,7 +2669,8 @@ In this step, we:
 -   Were introduced to the `bool` data type
 -   Learned that `bool` variables are useful handy while testing logical conditions
 
-#### Step 05: Introducing Conditionals <a id="step-05-introducing-conditionals"></a>
+#### Step 05: Introducing Conditionals <a id="step-05-introducing-conditionals">
+</a>
 
 In this step, let's look at `if` statement.
 
@@ -2660,7 +2713,8 @@ In this step, we:
 -   Were introduced to the `if` statement, the simplest Python conditional
 -   Understood how an `if` helps in implementing conditional program logic
 
-#### Step 06: Classroom Exercise CE-DT-01 <a id="step-06-classroom-exercise-ce-dt-01"></a>
+#### Step 06: Classroom Exercise CE-DT-01 <a id="step-06-classroom-exercise-ce-dt-01">
+</a>
 
 In this step, let's look at a couple of exercises with the if statement.
 
@@ -2692,7 +2746,8 @@ In this step, we:
 
 -   Looked at a few exercises related to the if statement, for writing and testing conditions.
 
-#### Step 07 - Logical Operators - and or not <a id="step-07-logical-operators-and-or-not"></a>
+#### Step 07 - Logical Operators - and or not <a id="step-07-logical-operators-and-or-not">
+</a>
 
 In this step, let's look at the different operators that can be used on `bool` values. These operators are called logical operators - `and`, `or` , `not` and `^` \(xor\).
 
@@ -2729,7 +2784,8 @@ In this step, we:
 -   Looked at the logical operators that act on boolean values, such as `and`, `or`, `not` and `^`
 -   Explored each of these operators, finding out when they return `True`, and when `False`.
 
-#### Step 08: Puzzles On Logical Operators <a id="step-08-puzzles-on-logical-operators"></a>
+#### Step 08: Puzzles On Logical Operators <a id="step-08-puzzles-on-logical-operators">
+</a>
 
 In this step, Let's look at a few simple puzzles to look at the logical operators.
 
@@ -2810,7 +2866,8 @@ In this step, we:
 -   Looked at a few puzzles related to the logical operators
 -   Looked at conversion functions such as `bool()` and `int()` to convert between boolean and integer data
 
-#### Step 09: <a id="step-09"></a>
+#### Step 09: <a id="step-09">
+</a>
 
 In this step, let's look at two other important components of an `if` statement: `else` and `elif`. Let's start with `else`.
 
@@ -2849,7 +2906,8 @@ In this step, we:
 -   Looked at two important components of the `if` statement: `else` and `elif`.
 -   Understood that the `elif` clauses and the final `else` clause provide alternative conditions to check, when earlier if conditions are true.
 
-#### Step 10: Classroom Exercise CE-DT-02 <a id="step-10-classroom-exercise-ce-dt-02"></a>
+#### Step 10: Classroom Exercise CE-DT-02 <a id="step-10-classroom-exercise-ce-dt-02">
+</a>
 
 In this step, let's do a simple exercise with `if`, `else` and `elif`.
 
@@ -2929,7 +2987,8 @@ In this step, we:
 -   Learned that `input()` always returns what the user enters, as a string
 -   We can convert the string from `input()`, to the data type we expect by invoking conversion functions
 
-#### Step 11: Continued - Classroom Exercise CE-DT-02 <a id="step-11-continued-classroom-exercise-ce-dt-02"></a>
+#### Step 11: Continued - Classroom Exercise CE-DT-02 <a id="step-11-continued-classroom-exercise-ce-dt-02">
+</a>
 
 **Exercises**
 
@@ -2956,7 +3015,8 @@ In this step, we:
 -   Augmented the Menu Exercise to get all the input from the console, and compute a value from them
 -   Corrected the logic to handle incorrect input
 
-#### Step 12: Puzzles On Conditionals <a id="step-12-puzzles-on-conditionals"></a>
+#### Step 12: Puzzles On Conditionals <a id="step-12-puzzles-on-conditionals">
+</a>
 
 In this step, let's look at a few puzzles related to these `if`, `elif` and `else` clauses.
 
@@ -3037,7 +3097,8 @@ In this step, we:
 -   Looked at a few puzzles related to `if`, `elif` and `else`
 -   Explored the importance of indentation and the different condition clauses inside an `if` statement
 
-#### Step 01: The Python Type To Denote Text <a id="step-01-the-python-type-to-denote-text"></a>
+#### Step 01: The Python Type To Denote Text <a id="step-01-the-python-type-to-denote-text">
+</a>
 
 Let's start looking at another important data type in Python, that's used to represent strings. Not surprisingly, it is in fact named `str`!
 
@@ -3143,7 +3204,8 @@ If you are searching for `'Ello'` with a capital `'E'` ,you'll not be able to fi
     >>> 'Hello World'.find('Ello')    -1    >>> 'Hello World'.find('bello')    -1    >>> 'Hello World'.find('Ello')    -1
 ```
 
-#### Step 02: Type Conversion Puzzles <a id="step-02-type-conversion-puzzles"></a>
+#### Step 02: Type Conversion Puzzles <a id="step-02-type-conversion-puzzles">
+</a>
 
 We'll now try and convert values from one type to another, and try and play around with them.
 
@@ -3171,7 +3233,7 @@ Let's do the reverse.
     >>> int('45')    45    >>> int('45.56')    ValueError: invalid literal for int()
 ```
 
-if we do `int('45.56')`, you can see that it throws an error. It says “I cannot convert this to an `int`, as `45.56` is an invalid integer”.
+if we do `int('45.56')`, you can see that it throws an error. It says "I cannot convert this to an `int`, as `45.56` is an invalid integer".
 
 You can also pass an additional parameter to `int` indicating the numeric system - 16 for Hexa decimal, 8 for Octal etc. Default is 10 - Decimal.
 
@@ -3189,7 +3251,8 @@ You can also convert string to float.
 
 In this quick step, we looked at converting different types to strings, and converting strings to different types. So we looked at `int`, `bool` and `float` values, and we looked at how to convert them to string, and how to convert strings back to these specific types.
 
-#### Step 02: Strings Are Immutable <a id="step-02-strings-are-immutable"></a>
+#### Step 02: Strings Are Immutable <a id="step-02-strings-are-immutable">
+</a>
 
 In this step, let's learn an important fact about strings in Python.
 
@@ -3209,7 +3272,7 @@ When we execute `message.upper()`, a new string is created, and it is returned b
 
 Once you define a string in Python, you'll not be able to change the value of it.
 
-You can use - “OK. I can do something of this kind: `message = message.upper()`”.
+You can use - "OK. I can do something of this kind: `message = message.upper()`".
 
 What would happen now?
 
@@ -3241,7 +3304,8 @@ Summary : The original value at location `A` has not changed and cannot be chang
 
 Variables are just names referring to a location. They don't really contain the value. Variables contain a reference to the location that contains the object.
 
-#### Step 03: Python Has No Separate Character Type <a id="step-03-python-has-no-separate-character-type"></a>
+#### Step 03: Python Has No Separate Character Type <a id="step-03-python-has-no-separate-character-type">
+</a>
 
 One of the things that surprises people new to Python, is that there is no character data type in Python.
 
@@ -3265,7 +3329,7 @@ In Python, whether you're talking about a string, or you're talking about a sing
     >>> message[0]    'H'    >>> message[1]    'e'    >>> message[2]    'l'    >>> message[3]    'l'    >>> message[100]    IndexError: string index out of range
 ```
 
-It says: “The given index is out of the range of the value of that specific string”.
+It says: "The given index is out of the range of the value of that specific string".
 
 Let's say we would want to print all the characters in this string.
 
@@ -3275,7 +3339,8 @@ The way you could do that, is by saying: `for ch in message: print(ch)`.
 
 In this short step, we looked at the fact that there is no separate character class, or data type in Python. We also looked at how do we loop over a given string, and print all the characters present inside this string.
 
-#### Step 04: The `string` `module` <a id="step-04-the-string-module"></a>
+#### Step 04: The `string` `module` <a id="step-04-the-string-module">
+</a>
 
 In this step, we will introduce you to the `string` `module`.
 
@@ -3315,7 +3380,8 @@ You can check a text value against any of these
 
 In this step, we explored more exercises involving the `str` module of Python.
 
-#### Step 05: More Exercises With The `str` Module <a id="step-05-more-exercises-with-the-str-module"></a>
+#### Step 05: More Exercises With The `str` Module <a id="step-05-more-exercises-with-the-str-module">
+</a>
 
 Let's start with an Exercise - find if a specific character is a vowel or not.
 
@@ -3359,7 +3425,8 @@ A consonant is an alphabet which is not a vowel, so any alphabet which is not in
     >>> vowel_string = 'aeiou'    >>> char = 'b'    >>> char.isalpha() and char.lower() not in vowel_string    True
 ```
 
-#### Step 06: More Exercises On Strings <a id="step-06-more-exercises-on-strings"></a>
+#### Step 06: More Exercises On Strings <a id="step-06-more-exercises-on-strings">
+</a>
 
 In the step, let's look at a few more puzzles and exercises related to strings. Let's say we have a simple string, `string_example`, and this is contains an English sentence. `'This is a great thing.'`
 
@@ -3422,11 +3489,13 @@ In this step, we explored a few exercises on strings, covering areas such as:
 -   The string multiplication pattern, `*`
 -   The use of the `==` operator to compare strings
 
-### Chapter 07 - Introducing Loops <a id="chapter-07-introducing-loops"></a>
+### Chapter 07 - Introducing Loops <a id="chapter-07-introducing-loops">
+</a>
 
 Welcome to the section on Loops. In this section, we will look at a variety of loops that are available in Python. We will look mainly at the **`for`** loop, and the **`while`** loop.
 
-#### Step 01: Revisited: The for Loop <a id="step-01-revisited-the-for-loop"></a>
+#### Step 01: Revisited: The for Loop <a id="step-01-revisited-the-for-loop">
+</a>
 
 Let's start with revising the basics of the for loop, we have learned in the previous steps.
 
@@ -3470,7 +3539,8 @@ In the call to the `range()` function, the second parameter is exclusive. We are
 
 In this step, we started with discussing and revising basic concepts about the `for` loop
 
-#### Step 02: Programming Exercise PE-LO-01 <a id="step-02-programming-exercise-pe-lo-01"></a>
+#### Step 02: Programming Exercise PE-LO-01 <a id="step-02-programming-exercise-pe-lo-01">
+</a>
 
 Welcome back to this step, where we would do a lot of exercises with the `for` loop.
 
@@ -3533,7 +3603,8 @@ Here is the entire code at one place, for your reference:
 def is_prime(number):    if(number < 2):        return False    for divisor in range(2,number):        if number % divisor == 0:            return False    return Trueprint(is_prime(5));
 ```
 
-#### Step 03: Continued - Programming Exercise PE-LO-01 <a id="step-03-continued-programming-exercise-pe-lo-01"></a>
+#### Step 03: Continued - Programming Exercise PE-LO-01 <a id="step-03-continued-programming-exercise-pe-lo-01">
+</a>
 
 In the previous step, we looked at solving the `is_prime()` exercise. In this step, let's look at an implementation of `sum_up_to_n()`. Here is the entire code for this exercise:
 
@@ -3547,7 +3618,8 @@ In this step, we:
 
 -   Wrote a Python function to compute the sum of all integers, from `1`, up to the input integer `n`.
 
-#### Step 04: Continued - Programming Exercise PE-LO-01 <a id="step-04-continued-programming-exercise-pe-lo-01"></a>
+#### Step 04: Continued - Programming Exercise PE-LO-01 <a id="step-04-continued-programming-exercise-pe-lo-01">
+</a>
 
 Let's focus on the third exercise, `sum_of_divisors`.
 
@@ -3559,7 +3631,8 @@ You want to find out if a number is dividing `15`, and if it's dividing `15`, wi
 def calculate_sum_of_divisors(number):    sum = 0    if(number < 2):        return sum    for divisor in range(1,number+1):        if number % divisor == 0:            sum = sum + divisor    return sumprint(calculate_sum_of_divisors(6))print(calculate_sum_of_divisors(15))
 ```
 
-#### Step 05: Continued - Programming Exercise PE-LO-01 <a id="step-05-continued-programming-exercise-pe-lo-01"></a>
+#### Step 05: Continued - Programming Exercise PE-LO-01 <a id="step-05-continued-programming-exercise-pe-lo-01">
+</a>
 
 In this step, Let's look at the last exercise - `print_a_number_triangle`.
 
@@ -3645,7 +3718,8 @@ In this step, we:
 
 -   Presented a solution to the exercise for printing a number triangle.
 
-#### Step 06: Introducing The while Loop <a id="step-06-introducing-the-while-loop"></a>
+#### Step 06: Introducing The while Loop <a id="step-06-introducing-the-while-loop">
+</a>
 
 Let's look at one of the other loops which is present in Python, called the **`while`** loop.
 
@@ -3706,7 +3780,8 @@ In this video, we:
 -   Understood the importance of a control variable being incremented inside the loop
 -   Observed differences between the working of a `while`, and a `for` loop
 
-#### Step 07: Programming Exercise PE-LO-02 <a id="step-07-programming-exercise-pe-lo-02"></a>
+#### Step 07: Programming Exercise PE-LO-02 <a id="step-07-programming-exercise-pe-lo-02">
+</a>
 
 In the previous step, we were introduced to `while` loop. In this step, let's look at a couple of exercises using the `while` loop.
 
@@ -3737,7 +3812,8 @@ Typically, we use a `for` loop when we know how many times the loop will be exec
 
 If we do not know, how many times a loop will run, `while` is a better option.
 
-#### Step 08: While Example <a id="step-08-while-example"></a>
+#### Step 08: While Example <a id="step-08-while-example">
+</a>
 
 Earlier we used `if` statement to implement a solution for this:
 
@@ -3804,8 +3880,8 @@ Let's talk about the different data types.
 Strings are usually presented in a text format. We will declare a string variable, as shown below.
 
 ```python
-name = “john”
-school = “Alliance Francaise”
+name = "john"
+school = "Alliance Francaise"
 ```
 
 When we run `print(name)`, the output will be `john`.
@@ -3885,7 +3961,7 @@ students = [] #list example
 Elements in a list are usually separated by a comma, as shown below.
 
 ```python
-students = [“john”, “Mary Thomas”, “John Smith”]
+students = ["john", "Mary Thomas", "John Smith"]
 ```
 
 Each element in the above `students` list has an index. By default, the first index is 0. So the item at index \[0\] is `john`, while the value at index `1` is `Mary Thomas`. A list of integers will look as follows.
@@ -3966,7 +4042,7 @@ Loops are critical because they allow us to iterate through lists, check for dif
 1. For loops As noted, we can use a for loop to iterate through a list, as shown below:
 
 ```python
-student_list = [“John Doore”,”Matu Smith”]
+student_list = ["John Doore","Matu Smith"]
 for x in student_list:
     print(x)
 ```
@@ -4027,7 +4103,7 @@ farmer = Farmer("Carry Sminson", "10,000kgs")
 farmer.printDetails()
 ```
 
-### Python syntax was made for readability, and easy editing. For example, the python language uses a `:` and indented code, while javascript and others generally use `{}` and indented code.
+### Python syntax was made for readability, and easy editing. For example, the python language uses a `:` and indented code, while javascript and others generally use `{}` and indented code
 
 Lets create a [python 3](https://repl.it/languages/python3) repl, and call it _Hello World_. Now you have a blank file called _main.py_. Now let us write our first line of code:
 
@@ -4037,7 +4113,7 @@ _helloworld.py_
 print('Hello world!')
 ```
 
-> Brian Kernighan actually wrote the first “Hello, World!” program as part of the documentation for the BCPL programming language developed by Martin Richards.
+> Brian Kernighan actually wrote the first "Hello, World!" program as part of the documentation for the BCPL programming language developed by Martin Richards.
 
 Now, press the run button, which obviously runs the code. If you are not using replit, this will not work. You should research how to run a file with your text editor.
 
@@ -4410,11 +4486,11 @@ This video should help you get up and running with Python 3
 
 -   [Installing Python 3 and Launch Python Shell](https://www.youtube.com/watch?v=Ji1WW4Suaww)
 
-Installing Python is really a cakewalk. Search for “Python download” on [www.google.com](http://www.google.com/). Download the installable and install it.
+Installing Python is really a cakewalk. Search for "Python download" on [www.google.com](http://www.google.com/). Download the installable and install it.
 
 A quick word of caution on Windows
 
--   Make sure that you have the check-box “Add Python 3.6 to PATH”, checked.
+-   Make sure that you have the check-box "Add Python 3.6 to PATH", checked.
 
 Once you have installed Python, you can launch the Python Shell.
 
@@ -4550,13 +4626,13 @@ Using our knowledge of school math, let's try `5 X 5`.
     SyntaxError: invalid syntax
 ```
 
-The Python Shell hits back at us, saying “_invalid syntax_”. This is how Python complains, when it doesn't fully understand the code you type in. Here, it says our code has a “**SyntaxError**”.
+The Python Shell hits back at us, saying "_invalid syntax_". This is how Python complains, when it doesn't fully understand the code you type in. Here, it says our code has a "**SyntaxError**".
 
 The reason why it complains, is because '`X`' is not a valid **operator** in Python.
 
 The way you can do multiplication is by using the '`*`' _operator_ .
 
-“_5 into 5_” is achieved by the code `5 * 5`, and you can see the result `25` being printed. Similarly, `5 * 6` gives us `30`.
+"_5 into 5_" is achieved by the code `5 * 5`, and you can see the result `25` being printed. Similarly, `5 * 6` gives us `30`.
 
 ```python
     >>> 5 * 6
@@ -4575,7 +4651,7 @@ There are a wide range of other operators in Python:
     -1
     ```
 
-`10 / 2`, gives an output of `5.0` . There is one interesting operator, `**`. Let's try `10 ** 3`. We ran this code, and the result we get is `1000`. Yes you guessed right, the operator performs “to the power of”. “`10` to the power of `3`” is `10 * 10 * 10`, or `1000`.
+`10 / 2`, gives an output of `5.0` . There is one interesting operator, `**`. Let's try `10 ** 3`. We ran this code, and the result we get is `1000`. Yes you guessed right, the operator performs "to the power of". "`10` to the power of `3`" is `10 * 10 * 10`, or `1000`.
 
 ```python
     >>> 10 / 2
@@ -4584,7 +4660,7 @@ There are a wide range of other operators in Python:
     1000
 ```
 
-Another interesting operator is `%`, called “_modulo_”, which computes the remainder on integer division. If we do `10 % 3`, what is the remainder when `10` is divided by `3`? `3 * 3` is `9`, and `10 - 9` is `1`, which is what `%` returns in this case.
+Another interesting operator is `%`, called "_modulo_", which computes the remainder on integer division. If we do `10 % 3`, what is the remainder when `10` is divided by `3`? `3 * 3` is `9`, and `10 - 9` is `1`, which is what `%` returns in this case.
 
 Let's look at some terminology:
 
@@ -4698,7 +4774,7 @@ Let's say we type in `5+6+10`, without any spaces between the operands, and the 
 
 In an expression, using spaces makes it easier for you to read it, but it's not mandatory. `5 + 6 + 10` is easier to read than `5+6+10`, but does not make any difference to the Python compiler.
 
-The next puzzle tries to evaluate `5 / 2`, which is “`5` divided by `2`”. What would be the output? `2.5`.
+The next puzzle tries to evaluate `5 / 2`, which is "`5` divided by `2`". What would be the output? `2.5`.
 
 ```python
     >>> 5/2
@@ -4794,7 +4870,7 @@ There are a number of in-built functions in Python to help print strings. One of
     SyntaxError: Missing parentheses in call to 'print'. Did you mean print(Hello)?
 ```
 
-The Python compiler gives you an error, that says “missing parentheses”.
+The Python compiler gives you an error, that says "missing parentheses".
 
 Will `print(Hello)` work?
 
@@ -4896,7 +4972,7 @@ Consider `abs()` \(which stands for absolute value\), a method that accepts a nu
     10.5
 ```
 
-If you pass in a string value, will it work? It complains, “`abs()` function will not work with a string, it only works with numeric values”.
+If you pass in a string value, will it work? It complains, "`abs()` function will not work with a string, it only works with numeric values".
 
 ```python
     >>> abs("10.5")
@@ -4905,7 +4981,7 @@ If you pass in a string value, will it work? It complains, “`abs()` function w
     TypeError: bad operand type for abs(): 'str'
 ```
 
-Let's say you want to use a function that computes “to the power of”, for instance “`2` to the power of `5`”. In Python, there's an in-built function named `pow()`, which does just what we need. To `pow()`, you can pass two parameters and calculate the result. How do you do that?
+Let's say you want to use a function that computes "to the power of", for instance "`2` to the power of `5`". In Python, there's an in-built function named `pow()`, which does just what we need. To `pow()`, you can pass two parameters and calculate the result. How do you do that?
 
 Will this work: `pow 2 5`? No, not at all. This code does not work as well: `pow(2 5)`. `pow(2, 5)` is the correct syntax.
 
@@ -4926,7 +5002,7 @@ Will this work: `pow 2 5`? No, not at all. This code does not work as well: `pow
 
 You'll see that `32` is printed.
 
-Let's see another example, “`10` to the power of `3`”. `pow(10,3)` is the alternative to saying `10 ** 3`. This gives us `1000`, similar to how `pow()` would.
+Let's see another example, "`10` to the power of `3`". `pow(10,3)` is the alternative to saying `10 ** 3`. This gives us `1000`, similar to how `pow()` would.
 
 ```python
     >>> pow(10, 3)
@@ -5177,7 +5253,7 @@ Now let's take a different scenario. We remove all the parameters passed to `for
     IndexError: tuple index out of range
 ```
 
-It says `IndexError`, which means :“you are asking me to fetch the value at index `4`, but only passing in two values. How can I do what you want?”
+It says `IndexError`, which means :"you are asking me to fetch the value at index `4`, but only passing in two values. How can I do what you want?"
 
 Let's look at a few more things related to other data types. We try to format the following inside `print()`: `{0} * {1} = {2}`, and would pass in `2.5`, `2`, and `2.5 * 2` . Here, `2` is an integer value, but `2.5` is a floating point value. You can see that it prints `2.5 * 2 = 5.0`. So this approach of formatting values with `print()`, works also with floating point data as well.
 
@@ -5225,7 +5301,7 @@ Let's try a different approach.
 
 What would happen if you replace `1` with `index`, and `5 * 1` with `5 * index`, and try to run it?
 
-It gives an error! It says: “index is not defined”.
+It gives an error! It says: "index is not defined".
 
 Let's try and fix this, and execute `index = 2`. What would happen?
 
@@ -5358,7 +5434,7 @@ What if I try to refer to a variable which is not yet created?
     NameError: name 'count' is not defined
 ```
 
-Before using a variable, you need to have it assigned a value. If you have not defined a variable before, then you cannot use it. Consider `print(count)`, it does not know what count is. So it would throw an error, saying: “`count` is not defined, I have no idea what count is.”
+Before using a variable, you need to have it assigned a value. If you have not defined a variable before, then you cannot use it. Consider `print(count)`, it does not know what count is. So it would throw an error, saying: "`count` is not defined, I have no idea what count is."
 
 Once you assign a value to a variable, you can use it.
 
@@ -5458,7 +5534,7 @@ Let's try `j = 2 * i`.
 
 In mathematics, When we execute `j = i`, it means `j` and `i` are equal.
 
-In prgramming, the value of the expression on right hand side is assigned to the variable on the right hand side. Can you use a constant on the left hand side of an assignment? The answer is “No”!
+In prgramming, the value of the expression on right hand side is assigned to the variable on the right hand side. Can you use a constant on the left hand side of an assignment? The answer is "No"!
 
 ```python
     >>> 5 = j
@@ -5466,7 +5542,7 @@ In prgramming, the value of the expression on right hand side is assigned to the
     SyntaxError: can't assign to literal
 ```
 
-The Python Shell throws an error, saying “Can't assign to literal”, as `5` is a literal.
+The Python Shell throws an error, saying "Can't assign to literal", as `5` is a literal.
 
 Let's create a couple of variables. `num1 = 5` and `num2 = 3`. We would want to add these and create a fresh variable. Let's say the name of the variable is `sum`.
 
@@ -5945,7 +6021,7 @@ It must have been a roller-coaster ride to solve the multiplication table challe
 
 Let's quickly revise the important concepts we have learned during this small journey.
 
--   `1`, `11`, `5`, … are all called literals because these are constant values. Their values don't really change. \_Consider `` 5 _ 4 _ 50`. This is an expression. `_`is an operator, and`5`, `4`and`50 `` are operands.
+-   `1`, `11`, `5`, … are all called literals because these are constant values. Their values don't really change. \_Consider `` 5 _4_ 50`. This is an expression. `_`is an operator, and`5`, `4`and`50 `` are operands.
 -   The name `i` in `i = 1`, is called a variable. It can refer to different values, at different points in time.
 -   `range()` and `print()` are in-built Python functions.
 -   Every complete line of code is called statement. The specific statement `print()`, is invoking a method. The other statement which we looked at earlier, was an assignment statement. `index = index + 1` would evaluate `index + 1`, and have the `index` variable refer to that value.
@@ -6063,10 +6139,10 @@ We will now leave you with two exercises, based on what we have learned about me
 
 1. Write a method called `print_hello_world_thrice()`. It should print `"Hello World"` thrice to the output. Define this method, and also invoke it.
 2. Write and execute a method, that prints four statements:
-    1. “I have created my first variable.”
-    2. “I've created in my first loop.”
-    3. “I've created my first method.”
-    4. “I am excited to learn Python.” You need to print these four statements on four consecutive lines.
+    1. "I have created my first variable."
+    2. "I've created in my first loop."
+    3. "I've created my first method."
+    4. "I am excited to learn Python." You need to print these four statements on four consecutive lines.
 
 **Solutions**
 
@@ -6160,7 +6236,7 @@ Earlier, we wrote code for `print_hello_world_thrice()`, which prints the messag
 
 Let's say you want to print it five times. You would need to write another method that does what you need. Doesn't that seem monotonous?
 
-Instead of that, Won't it be great if I can call the method by the same name, say `print_hello_world(5)`, and it would print “Hello World” five times?
+Instead of that, Won't it be great if I can call the method by the same name, say `print_hello_world(5)`, and it would print "Hello World" five times?
 
 The `5` which we are passing here is called an **argument**.
 
@@ -6184,7 +6260,7 @@ Although we are not doing exactly what we set out to, let's see what would happe
     TypeError: print_hello_world() missing 1 required positional argument: 'no_of_times'
 ```
 
-Error! Something like “Hey, you have created `print_hello_world` with a parameter, but not passing anything in here! Go ahead and pass a value”. Let's pass in a value, such as `5`.
+Error! Something like "Hey, you have created `print_hello_world` with a parameter, but not passing anything in here! Go ahead and pass a value". Let's pass in a value, such as `5`.
 
 ```python
     >>> print_hello_world(5)
@@ -6314,7 +6390,7 @@ In this step, Let's look at a few exercises related to the method parameter.
     >>>
 ```
 
-If you are programming in other languages such as Java, you are used to naming methods in this way: `printNumbers()`. This convention is popularly known as “Camel Case”.
+If you are programming in other languages such as Java, you are used to naming methods in this way: `printNumbers()`. This convention is popularly known as "Camel Case".
 
 That's NOT how Python programmers name their methods. Pythonic way is to use underscore `_` to separate words in the method name, as in `print_numbers()`.
 
@@ -6353,7 +6429,7 @@ In this step, let's look at creating a method with multiple parameters.
 
 **Snippet-01:**
 
-`print_hello_world` accepts one parameter and prints “Hello World” the specified number of times.
+`print_hello_world` accepts one parameter and prints "Hello World" the specified number of times.
 
 ```python
     >>> def print_hello_world(no_of_times):
@@ -6383,7 +6459,7 @@ A good programmer tries to create a more generic solution.
 
 The good programmer that you are, you created a new method called `print_string(str, no_of_times)` accepting a text parameter, in addition to `no_of_times`.
 
-Syntax rules for method parameters are quite strict. If we say `print_string("Welcome to Python")` and run it, we get an error! Python Shell says: “I need `no_of_times` to be present in here”.
+Syntax rules for method parameters are quite strict. If we say `print_string("Welcome to Python")` and run it, we get an error! Python Shell says: "I need `no_of_times` to be present in here".
 
 ```python
     >>> print_string("Welcome to Python")
@@ -6765,9 +6841,9 @@ Methods and variables cannot be named using Python keywords.
 
 Now, what is a keyword? For example, when we talked about `for` loop, as in:
 
-````python
+```python
 ```for i in range(1, 11): print(i)```...
-````
+```
 
 -   **`for`** is a keyword
 -   **`in`** is a keyword
@@ -7045,7 +7121,7 @@ Here's the video guide for this step
 
 -   [Installing VSCode](https://www.youtube.com/watch?v=pI_cnCXpCTU)
 
-Go to Google and type in “VSCode Community Edition Download”. Click the link which comes up first: [https://www.jetbrains.com/VSCode/download](https://www.jetbrains.com/VSCode/download).
+Go to Google and type in "VSCode Community Edition Download". Click the link which comes up first: [https://www.jetbrains.com/VSCode/download](https://www.jetbrains.com/VSCode/download).
 
 You'll go to a page where you can choose the operating system: whether you are on Windows, Mac, or Linux.
 
@@ -7341,11 +7417,11 @@ In this step, we:
 
 We will now shift our attention to the `bool` data type.
 
-A boolean value is something which can be either “true” or “false”.
+A boolean value is something which can be either "true" or "false".
 
 **Snippet-01:**
 
-In Python, “true” is represented by `True`, and “false” by `False`. It's important to remember that it's `True` with a capital `'T'`, and `False` with a capital `'F'`.
+In Python, "true" is represented by `True`, and "false" by `False`. It's important to remember that it's `True` with a capital `'T'`, and `False` with a capital `'F'`.
 
 ```python
     >>> True
@@ -8288,7 +8364,7 @@ Let's do the reverse.
     ValueError: invalid literal for int()
 ```
 
-if we do `int('45.56')`, you can see that it throws an error. It says “I cannot convert this to an `int`, as `45.56` is an invalid integer”.
+if we do `int('45.56')`, you can see that it throws an error. It says "I cannot convert this to an `int`, as `45.56` is an invalid integer".
 
 You can also pass an additional parameter to `int` indicating the numeric system - 16 for Hexa decimal, 8 for Octal etc. Default is 10 - Decimal.
 
@@ -8344,7 +8420,7 @@ When we execute `message.upper()`, a new string is created, and it is returned b
 
 Once you define a string in Python, you'll not be able to change the value of it.
 
-You can use - “OK. I can do something of this kind: `message = message.upper()`”.
+You can use - "OK. I can do something of this kind: `message = message.upper()`".
 
 What would happen now?
 
@@ -8415,7 +8491,7 @@ In Python, whether you're talking about a string, or you're talking about a sing
     IndexError: string index out of range
 ```
 
-It says: “The given index is out of the range of the value of that specific string”.
+It says: "The given index is out of the range of the value of that specific string".
 
 Let's say we would want to print all the characters in this string.
 

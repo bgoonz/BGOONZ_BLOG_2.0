@@ -53,22 +53,24 @@ The most common example Hello World of Node.js is a web server:
   alt="nodejs-dev-0001-01 on Glitch"
   style="height: 400px; width: 100%; border: 0;">
 </iframe>
+<br>
 
-<!--```js
-const http = require('http')
+```js
+//
+const http = require('http');
 
-const hostname = '127.0.0.1'
-const port = 3000
+const hostname = '127.0.0.1';
+const port = 3000;
 
 const server = http.createServer((req, res) => {
-  res.statusCode = 200
-  res.setHeader('Content-Type', 'text/plain')
-  res.end('Hello World\n')
-})
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'text/plain');
+    res.end('Hello World\n');
+});
 
 server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`)
-})
+    console.log(`Server running at http://${hostname}:${port}/`);
+});
 ```
 
 To run this snippet, save it as a `server.js` file and run `node server.js` in your terminal.-->
@@ -92,6 +94,7 @@ The second is used to return data to the caller.
 In this case with:
 
 ```js
+//
 res.statusCode = 200;
 ```
 
@@ -100,12 +103,14 @@ we set the statusCode property to 200, to indicate a successful response.
 We set the Content-Type header:
 
 ```js
+//
 res.setHeader('Content-Type', 'text/plain');
 ```
 
 and we close the response, adding the content as an argument to `end()`:
 
 ```js
+//
 res.end('Hello World\n');
 ```
 

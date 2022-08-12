@@ -1,3 +1,4 @@
+/* This class renders a list of links to child pages of the current page. */
 import React from 'react';
 import _ from 'lodash';
 
@@ -5,7 +6,7 @@ import {classNames, Link, withPrefix} from '../utils';
 
 export default class DocsSubmenu extends React.Component {
     render() {
-        let child_pages = _.get(this.props, 'child_pages', null);
+        const child_pages = _.get(this.props, 'child_pages', null);
         let page = _.get(this.props, 'page', null);
         return (
             <ul className="docs-submenu">
