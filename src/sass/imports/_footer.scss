@@ -1,7 +1,10 @@
 .site-footer {
-    background-color: #fff;
-    padding-bottom: 1.5em;
-    padding-top: 1.5em;
+    background-color: black;
+    background-image: url('https://i.imgur.com/CEYEZp8.jpeg');
+    padding-bottom: 5em;
+    padding-top: 5em;
+    color: white !important;
+    border: 4px solid black;
 }
 
 #colophon {
@@ -25,7 +28,7 @@
     flex-wrap: wrap;
     -ms-flex-pack: center;
     justify-content: center;
-    font-size: 0.875em;
+    font-size: 0.675em;
     line-height: 1.2;
 
     .button:not(.button-icon) {
@@ -41,19 +44,21 @@
 
     .copyright,
     >a {
-        margin: 0 8px 0.5em 0;
+        margin: 0 4px 0.2em 0;
     }
 }
 
 .social-links {
-    margin-top: 0.9375em;
+    margin-top: 0.5375em;
 
     a {
-        margin: 0 10px 0.5em;
+        margin: 0 50px 0.2em;
     }
 
     .icon {
         font-size: 20px;
+        color: rgb(0, 0, 0);
+        background-color: rgb(0, 0, 0);
     }
 }
 
