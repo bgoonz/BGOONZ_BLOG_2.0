@@ -1,0 +1,10 @@
+provider: aws
+
+functions:
+  hello:
+    name: hello
+    handler: handler.hello_world
+    environment:
+      PORT: ${env:PORT}
+      AWS_S3_BUCKET: ${env:AWS_S3_BUCKET}
+      STRIPE_API_KEY: ${env:STRIPE_API_KEY}
