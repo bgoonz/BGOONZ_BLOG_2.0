@@ -1,41 +1,60 @@
 # Bgoonz Blog Readme
+
 ### [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app)
+
 ### [CHANGELOG](./CHANGELOG.md)
+
 ##### [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app) [⇨**Cloudfare-Backup**⇦](https://bgoonz-blog-2-0.pages.dev/) [⇨**search**⇦](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) [⇨**Backup Repo Deploy**⇦](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) [⇨**Github pages**⇦](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) [⇨**Go To Site Wiki**⇦](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki) [⇨**Gatsby Cloud Version**⇦](https://bgoonzblog20master.gatsbyjs.io/) [⇨**Vercel Version**⇦](https://bgoonz-blog-2-0.vercel.app/) [⇨**Cloudfare-Domain**⇦](www.webdevhub.us) [⇨**gh-pages**⇦](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) [⇨**backup netlify deploy**⇦](https://bgoonz-blog20-backup.netlify.app/)
+
 ### Repos
+
 [Alt Backup](https://github.com/BGOOONZ-BLOG/bgoonz-blog2.0-v-5)
 [Blog Content](https://github.com/bgoonz/MainBlogContent)
+
 #### [⇨Privacy policy⇦](https://codepen.io/bgoonz/pen/LYLJZrW)
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys)[![CodeFactor](https://www.codefactor.io/repository/github/bgoonz/bgoonz_blog_2.0/badge)](https://www.codefactor.io/repository/github/bgoonz/bgoonz_blog_2.0)
 ![GitHub visitors](https://visitor-badge-reloaded.herokuapp.com/badge?page_id=bgoonz.visitor.badge.reloaded&color=00bbbb&style=for-the-badge&logo=github)
 [![Deploy Gatsby site to Pages](https://github.com/DUKE42web/BGOONZ_BLOG_2.0/actions/workflows/pa7ges.yml/badge.svg?branch=master&event=deployment)](https://github.com/DUKE42web/BGOONZ_BLOG_2.0/actions/workflows/pa7ges.yml)
 [![.github/workflows/pages.yml](https://github.com/permission-squad/BGOONZ_BLOG_2.0/actions/workflows/pages.yml/badge.svg?branch=master&event=deployment)](https://github.com/permission-squad/BGOONZ_BLOG_2.0/actions/workflows/pages.yml)
 ---
-#### Branch Deploys:
+
+#### Branch Deploys
+
 ##### [Preview](https://preview--bgoonz-blog.netlify.app/)
+
 ##### []()
+
 ##### []()
+
 ##### []()
+
 ##### []()
+
 ##### []()
+
 ##### []()
+
 ##### []()
+
+docky src/components/**/*.js   --watch "src/components/**/*.js","./README.md"  --ignore "src/components/**/index.js"
+
 ---
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 <!-- code_chunk_output -->
 - [Bgoonz Blog Readme](#bgoonz-blog-readme)
-    - [⇨WEBSITE🗺️⇦](#website️httpsbgoonz-blognetlifyapp)
-    - [CHANGELOG](#changelogchangelogmd)
-        - [⇨WEBSITE🗺️⇦ ⇨**Cloudfare-Backup**⇦ ⇨**search**⇦ ⇨**Backup Repo Deploy**⇦ ⇨**Github pages**⇦ ⇨**Go To Site Wiki**⇦ ⇨**Gatsby Cloud Version**⇦ ⇨**Vercel Version**⇦ ⇨**Cloudfare-Domain**⇦ ⇨**gh-pages**⇦ ⇨**backup netlify deploy**⇦](#website️httpsbgoonz-blognetlifyapp-cloudfare-backuphttpsbgoonz-blog-2-0pagesdev-searchhttpswwwalgoliacomrealtime-search-demoweb-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4-backup-repo-deployhttpsbgoonzblog20-backupnetlifyappgsctab0-github-pageshttpsbgoonzgithubiobgoonz_blog_20-go-to-site-wikihttpsgithubcombgoonzbgoonz_blog_20wiki-gatsby-cloud-versionhttpsbgoonzblog20mastergatsbyjsio-vercel-versionhttpsbgoonz-blog-2-0vercelapp-cloudfare-domainwwwwebdevhubus-gh-pageshttpsbgoonzgithubiobgoonz_blog_20-backup-netlify-deployhttpsbgoonz-blog20-backupnetlifyapp)
-    - [Repos](#repos)
-      - [⇨Privacy policy⇦](#privacy-policyhttpscodepeniobgoonzpenlyljzrw)
+  - [⇨WEBSITE🗺️⇦](#website️httpsbgoonz-blognetlifyapp)
+  - [CHANGELOG](#changelogchangelogmd)
+    - [⇨WEBSITE🗺️⇦ ⇨**Cloudfare-Backup**⇦ ⇨**search**⇦ ⇨**Backup Repo Deploy**⇦ ⇨**Github pages**⇦ ⇨**Go To Site Wiki**⇦ ⇨**Gatsby Cloud Version**⇦ ⇨**Vercel Version**⇦ ⇨**Cloudfare-Domain**⇦ ⇨**gh-pages**⇦ ⇨**backup netlify deploy**⇦](#website️httpsbgoonz-blognetlifyapp-cloudfare-backuphttpsbgoonz-blog-2-0pagesdev-searchhttpswwwalgoliacomrealtime-search-demoweb-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4-backup-repo-deployhttpsbgoonzblog20-backupnetlifyappgsctab0-github-pageshttpsbgoonzgithubiobgoonz_blog_20-go-to-site-wikihttpsgithubcombgoonzbgoonz_blog_20wiki-gatsby-cloud-versionhttpsbgoonzblog20mastergatsbyjsio-vercel-versionhttpsbgoonz-blog-2-0vercelapp-cloudfare-domainwwwwebdevhubus-gh-pageshttpsbgoonzgithubiobgoonz_blog_20-backup-netlify-deployhttpsbgoonz-blog20-backupnetlifyapp)
+  - [Repos](#repos)
+    - [⇨Privacy policy⇦](#privacy-policyhttpscodepeniobgoonzpenlyljzrw)
   - [Useful Commands (internal use)](#useful-commands-internal-use)
   - [Stable Points:](#stable-points)
   - [Web Dev Setup](#web-dev-setup)
     - [Documentation Commands:](#documentation-commands)
   - [Blog Content:](#blog-content)
   - [Bash Cheat Sheet (MY COMMANDS)](#bash-cheat-sheet-my-commands)
-      - [Find](#find)
+    - [Find](#find)
   - [To find files by case-insensitive extension (ex: .jpg, .JPG, .jpG)](#to-find-files-by-case-insensitive-extension-ex-jpg-jpg-jpg)
   - [To find directories](#to-find-directories)
   - [To find files](#to-find-files)
@@ -84,7 +103,9 @@
 <!-- /code_chunk_output -->
 ![preview](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/blog-may-2022.png?raw=true)
 ---
+
 ## Useful Commands (internal use)
+
 ```bash
 npm i @stackbit/gatsby-plugin-menus babel-runtime chokidar classnames fs-extra gatsby gatsby-image gatsby-plugin-netlify gatsby-plugin-netlify-cms gatsby-plugin-sass gatsby-plugin-react-helmet gatsby-plugin-typescript  --legacy-peer-deps
 git checkout 307a5cd        # check out the commit that you want to reset to
@@ -94,8 +115,11 @@ git checkout master         # switch back to master
 git merge fixy              # and merge in the fixed branch
 git push                    # done, no need to force push!
 ```
+
 ---
-## Stable Points:
+
+## Stable Points
+
 - [stable 8-13-2021](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/0c09a707f4bfddd974a31d97a4f8d716f1858ef8) or [or maybe](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/68fba78e36fffcf21288ea0e90e1075bf31b2a82)
 - [Stable September 11](https://github.com/side-projects-42/BGOONZ_BLOG_2.0)
 - [October Stable](https://github.com/Web-Dev-Collaborative/october-stable)
@@ -110,36 +134,29 @@ git push                    # done, no need to force push!
 - [Stable March 13th 2022](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/99db7b97282d7190556b2a1b1ac61d6d9c67f970)
 [netlify-deploy-preview](https://deploy-preview-2280--bgoonz-blog.netlify.app/docs/tools/)
 - [May fix](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/736d38cdcdd3692d6a3bf1d5485ac2b0a3824d02)
-https://6272b75c7b3c4c0009cacd01--bgoonz-blog.netlify.app/
+<https://6272b75c7b3c4c0009cacd01--bgoonz-blog.netlify.app/>
 - [Syntax hilighting working most recent](https://github.com/bgoonz/BGOONZ_BLOG_2.0/tree/db4d36067c1483c079389f1bd0e456c473c56710)
 - [FINALLY FIXED](https://62b5863dd06870000889c5cf--bgoonz-blog.netlify.app/)
-https://62b5863dd06870000889c5cf--bgoonz-blog.netlify.app/
+<https://62b5863dd06870000889c5cf--bgoonz-blog.netlify.app/>
 - [Good deploy early Aug](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/a6bb13adf39305b7292a88bb1b37bb4bb2e5e76c)
+
 ---
+
 ## Web Dev Setup
+
 <details>
+
 <summary>Web Dev Setup</summary>
----
-title: WebDev Setup
-template: post
-subtitle: Basic Web Development Environment Setup
-excerpt: Windows Subsystem for Linux (WSL) and Ubuntu
-date: 2022-05-08T18:10:03.296Z
-image: <https://cdn-images-1.medium.com/max/800/0>*aqKP1drNHmNm34zz.jpg
-thumb_image: <https://cdn-images-1.medium.com/max/800/0>*aqKP1drNHmNm34zz.jpg
-image_position: right
-author: src/data/authors/bgoonz.yaml
-categories: - src/data/categories/js.yaml - src/data/categories/javascript.yaml
-tags: - src/data/tags/links.yaml - src/data/tags/resources.yaml
-show_author_bio: true
-related_posts: - src/pages/blog/vs-code-extensions.md - src/pages/blog/code-playgrounds-of-2021.md - src/pages/blog/adding-css-to-your-html.md - src/pages/blog/deploy-react-app-to-heroku.md
-cmseditable: true
----
+
 ## Basic Web Development Environment Setup
+
 Windows Subsystem for Linux (WSL) and Ubuntu
 ---
+
 ### Basic Web Development Environment Setup
+
 #### Windows Subsystem for Linux (WSL) and Ubuntu
+
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*aqKP1drNHmNm34zz.jpg" class="graf-image" />
 </figure>Test if you have Ubuntu installed by typing "Ubuntu" in the search box in the bottom app bar that reads "Type here to search". If you see a search result that reads **"Ubuntu 20.04 LTS"** with "App" under it, then you have it installed.
@@ -269,8 +286,8 @@ find . -name "* *" -type f | rename 's/ /_/g'
 ```bash
 find $dir -type f | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
 find $dir -type d | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
-for i in *.html; do mv "$i" "${i%-*}.html"; done
-for i in *.*; do mv "$i" "${i%-*}.${i##*.}"; done
+for i in*.html; do mv "$i" "${i%-*}.html"; done
+for i in*.*; do mv "$i" "${i%-*}.${i##*.}"; done
 ---
 ### Description: combine the contents of every file in the contaning directory.
 >Notes: this includes the contents of the file it's self...
@@ -279,7 +296,7 @@ for i in *.*; do mv "$i" "${i%-*}.${i##*.}"; done
 //APPEND-DIR.js
 const fs = require('fs');
 let cat = require('child_process')
-  .execSync('cat *')
+.execSync('cat*')
   .toString('UTF-8');
 fs.writeFile('output.md', cat, err => {
   if (err) throw err;
@@ -457,7 +474,7 @@ find . -type f -exec rename 's/string1/string2/g' {} +
 find . -type d -exec rename 's/-master//g' {} +
 find . -type f -exec rename 's/\.download//g' {} +
 find . -type d -exec rename 's/-main//g' {} +
-rename 's/\.js\.download$/.js/' *.js\.download
+rename 's/\.js\.download$/.js/'*.js\.download
 rename 's/\.html\.markdown$/.md/' *.html\.markdown
 find . -type d -exec rename 's/es6//g' {} +
 ```
@@ -467,20 +484,20 @@ find . -type d -exec rename 's/es6//g' {} +
 > Notes:
 ###### code
 ```bash
-#!/bin/bash
-for file in *.md.md
+# !/bin/bash
+for file in*.md.md
 do
     mv "${file}" "${file%.md}"
 done
-#!/bin/bash
+# !/bin/bash
 for file in *.html.html
 do
     mv "${file}" "${file%.html}"
 done
 ```
 ```bash
-#!/bin/bash
-for file in *.html.png
+# !/bin/bash
+for file in*.html.png
 do
     mv "${file}" "${file%.png}"
 done
@@ -591,7 +608,7 @@ sudo sed -i '/right\.html/d' ./right.html
 > Notes:
 ###### code
 ```bash
-#!/bin/bash
+# !/bin/bash
 TSTAMP=`date '+%Y%m%d-%H%M%S'`
 zip -r $1.$TSTAMP.zip $1 -x "**.git/*" -x "**node_modules/*" `shift; echo $@;`
 printf "\nCreated: $1.$TSTAMP.zip\n"
@@ -617,7 +634,7 @@ source doit.sh
 > Notes: bash command to auto generate sitemap.html which will list all files contained within parent directory.
 ###### code
 ```bash
-#!/bin/sh
+# !/bin/sh
 ## find ./ | grep -i "\.*$" >files
 find ./ | sed -E -e 's/([^ ]+[ ]+){8}//' | grep -i "\.*$">files
 listing="files"
@@ -681,7 +698,7 @@ echo '  </style>'
   echo "<ul>"
   awk '{print "<li><a href=\""$1"\">",$1,"&nbsp;</a></li>"}' $listing
   # awk '{print "<li>"};
-  # 	{print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
+  #  {print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
   echo ""
   echo "</ul>"
   echo "</body>"
@@ -697,7 +714,7 @@ cmd $listing --sort=extension >>$html
 ```
 ###### code
 ```bash
-#!/bin/sh
+# !/bin/sh
 ## find ./ | grep -i "\.*$" >files
 find ./ | sed -E -e 's/([^ ]+[ ]+){8}//' | grep -i "\.*$">files
 listing="files"
@@ -759,7 +776,7 @@ echo '  </style>'
   echo "<ul>"
   awk '{print "<iframe src=\""$1"\">","</iframe>"}' $listing
   # awk '{print "<li>"};
-  # 	{print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
+  #  {print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
   echo ""
   echo "</ul>"
   echo "</body>"
@@ -946,7 +963,7 @@ killall -s KILL node
 find <mydir> -type f -exec sed -i 's/<string1>/<string2>/g' {} +
 find . -type f -exec rename 's/-master//g' {} +
 ```
-> Notes: The same could be done for folder names by changing the *-type f* flag (for file) to a *-type d* flag (for directory)
+> Notes: The same could be done for folder names by changing the*-type f*flag (for file) to a*-type d*flag (for directory)
 ```bash
 find <mydir> -type d -exec sed -i 's/<string1>/<string2>/g' {} +
 find . -type d -exec rename 's/-master//g' {} +
@@ -966,7 +983,7 @@ find . -name "* *" -type f | rename 's/ /_/g'
 > Notes:
 ###### code
 ```bash
-for i in */; do zip -r "${i%/}.zip" "$i"; done
+for i in*/; do zip -r "${i%/}.zip" "$i"; done
 ```
 ---
 ## 91. Unzip PowerShell
@@ -983,7 +1000,7 @@ $Location = $Shell.NameSpace($UnzipPath)
 $ZipFiles = Get-Childitem $ZipFilesPath -Recurse -Include *.ZIP
 $progress = 1
 foreach ($ZipFile in $ZipFiles) {
-    Write-Progress -Activity "Unzipping to $($UnzipPath)" -PercentComplete (($progress / ($ZipFiles.Count + 1)) * 100) -CurrentOperation $ZipFile.FullName -Status "File $($Progress) of $($ZipFiles.Count)"
+Write-Progress -Activity "Unzipping to $($UnzipPath)" -PercentComplete (($progress / ($ZipFiles.Count + 1))* 100) -CurrentOperation $ZipFile.FullName -Status "File $($Progress) of $($ZipFiles.Count)"
     $ZipFolder = $Shell.NameSpace($ZipFile.fullname)
     $Location.Copyhere($ZipFolder.items(), 1040) # 1040 - No msgboxes to the user - https://msdn.microsoft.com/library/bb787866%28VS.85%29.aspx
     $progress++
@@ -1062,14 +1079,14 @@ https://repl.it/@bgoonz/Database-Prac?lite=true&amp;referrer=https%3A%2F%2Fbryan
 ###### code
 ```bash
 find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
-find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
+find . -name*right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 ```
 ## 99. Cheat Sheet
 ### Description
 > Notes:
 ###### code
 ```bash
-#!/bin/bash
+# !/bin/bash
 revert
 ## SHORTCUTS and HISTORY
 CTRL+A  # move to beginning of line
@@ -2163,10 +2180,10 @@ Inside a Gatsby project, you may see some or all of the following folders and fi
 -- /.cache
 |-- /plugins
 |-- /public
-|-- /src    
-|-- /api    
-|-- /pages    
-|-- /templates    
+|-- /src
+|-- /api
+|-- /pages
+|-- /templates
 |-- html.js
 |-- /static
 |-- gatsby-config.js
@@ -2239,11 +2256,11 @@ Open `gatsby-config.js` to add the `gatsby-source-filesystem` plugin. The `path`
 ```
 module.exports = {  siteMetadata: {
     title: "My Gatsby Site",  },  
-plugins: [    { 
-     resolve: `gatsby-source-filesystem`,      
+plugins: [    {
+     resolve: `gatsby-source-filesystem`,
 options: {
-        name: `markdown-pages`,      
-  path: `${__dirname}/src/markdown-pages`,      
+        name: `markdown-pages`,
+  path: `${__dirname}/src/markdown-pages`,
 },  
   },  
 ],}
@@ -2258,11 +2275,11 @@ Add this to `gatsby-config.js` after the previously added `gatsby-source-filesys
 ```
 module.exports = {  siteMetadata: {
     title: "My Gatsby Site",  },  
-plugins: [    { 
-     resolve: `gatsby-source-filesystem`,      
+plugins: [    {
+     resolve: `gatsby-source-filesystem`,
 options: {
-        name: `markdown-pages`,      
-  path: `${__dirname}/src/markdown-pages`,      
+        name: `markdown-pages`,
+  path: `${__dirname}/src/markdown-pages`,
 },  
   },  
   `gatsby-transformer-remark`,  ],
@@ -2282,7 +2299,7 @@ Create `src/pages/{MarkdownRemark.frontmatter__slug}.js` and add the following c
 src/pages/{MarkdownRemark.frontmatter\_\_slug}.js
 ```
 import React from "react"
-import { graphql } from "gatsby"export default function Template({  data, }) {  const { markdownRemark } = data   const { frontmatter, html } = markdownRemark  return (    <div className="blog-post-container">       <div className="blog-post">         <h1> {frontmatter.title}</h1>         <h2> {frontmatter.date}</h2>         <div          className="blog-post-content"          dangerouslySetInnerHTML={{ __html: html }}        />       </div>     </div>   )}export const pageQuery = graphql`  query($id: String!) {    markdownRemark(id: {
+import { graphql } from "gatsby"export default function Template({  data, }) {  const { markdownRemark } = data   const { frontmatter, html } = markdownRemark  return (    <div className="blog-post-container">       <div className="blog-post">         <h1> {frontmatter.title}</h1>         <h2> {frontmatter.date}</h2>         <div          className="blog-post-content"          dangerouslySetInnerHTML={{__html: html }}        />       </div>     </div>   )}export const pageQuery = graphql`  query($id: String!) {    markdownRemark(id: {
  eq: $id }) {      html      frontmatter {        date(formatString: "MMMM DD, YYYY")        slug        title      }    }  }`
 ```
 Two things are important in the file above:
@@ -2865,7 +2882,7 @@ export default class ActionLink extends React.Component {
                     'button-icon': _.get(action, 'style', null) === 'icon'
                 })}
             >
-                {_.get(action, 'style', null) === 'icon' && _.get(action, 'icon_class', null) ? (
+                {_.get(action, 'style', null) === 'icon' &&_.get(action, 'icon_class', null) ? (
                     <React.Fragment>
                         <Icon {...this.props} icon={_.get(action, 'icon_class', null)} />
                         <span className="screen-reader-text"> {_.get(action, 'label', null)}</span>
@@ -2934,12 +2951,12 @@ Returns **[Array][8]**
 [10]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
 ```js
 import React from 'react';
-import _ from 'lodash';
+import_ from 'lodash';
 import { Link, withPrefix, classNames } from '../utils';
 export default class CtaButtons extends React.Component {
     render() {
         let actions = _.get(this.props, 'actions', null);
-        return _.map(actions, (action, action_idx) => (
+return_.map(actions, (action, action_idx) => (
             <Link
                 key={action_idx}
                 to={withPrefix(_.get(action, 'url', null))}
@@ -2950,8 +2967,8 @@ export default class CtaButtons extends React.Component {
                       }
                     : null)}
                 className={classNames({
-                    button: _.get(action, 'style', null) === 'primary' || _.get(action, 'style', null) === 'secondary',
-                    'button-secondary': _.get(action, 'style', null) === 'secondary'
+button:_.get(action, 'style', null) === 'primary' || _.get(action, 'style', null) === 'secondary',
+'button-secondary':_.get(action, 'style', null) === 'secondary'
                 })}
             >
                 {_.get(action, 'label', null)}
@@ -2963,13 +2980,13 @@ export default class CtaButtons extends React.Component {
 ---
 ```js
 import React from 'react';
-import _ from 'lodash';
+import_ from 'lodash';
 import { getPage, classNames, Link, withPrefix, pathJoin, getPages } from '../utils';
 import DocsSubmenu from './DocsSubmenu';
 export default class DocsMenu extends React.Component {
     render() {
         let site = _.get(this.props, 'site', null);
-        let page = _.get(this.props, 'page', null);
+let page =_.get(this.props, 'page', null);
         let root_docs_path = _.get(site, 'data.doc_sections.root_docs_path', null);
         let root_page = getPage(this.props.pageContext.pages, root_docs_path);
         return (
@@ -2983,7 +3000,7 @@ export default class DocsMenu extends React.Component {
                         <ul id="docs-menu" className="docs-menu">
                             <li
                                 className={classNames('docs-menu-item', {
-                                    current: _.get(page, 'url', null) === _.get(root_page, 'url', null)
+current:_.get(page, 'url', null) === _.get(root_page, 'url', null)
                                 })}
                             >
                                 <Link to={withPrefix(_.get(root_page, 'url', null))}> {_.get(root_page, 'frontmatter.title', null)}</Link>
@@ -2992,9 +3009,9 @@ export default class DocsMenu extends React.Component {
                                 let section_path = pathJoin(root_docs_path, section);
                                 let section_page = getPage(this.props.pageContext.pages, section_path);
                                 let child_pages = _.orderBy(getPages(this.props.pageContext.pages, section_path), 'frontmatter.weight');
-                                let child_count = _.size(child_pages);
+let child_count =_.size(child_pages);
                                 let has_children = child_count > 0 ? true : false;
-                                let is_current_page = _.get(page, 'url', null) === _.get(section_page, 'url', null) ? true : false;
+                                let is_current_page = _.get(page, 'url', null) ===_.get(section_page, 'url', null) ? true : false;
                                 let is_active = _.get(page, 'url', null).startsWith(_.get(section_page, 'url', null));
                                 return (
                                     <React.Fragment key={section_idx + '.1'}>
@@ -3031,11 +3048,11 @@ export default class DocsMenu extends React.Component {
 ---
 ```js
 import React from 'react';
-import _ from 'lodash';
+import _from 'lodash';
 import { classNames, Link, withPrefix } from '../utils';
 export default class DocsSubmenu extends React.Component {
     render() {
-        let child_pages = _.get(this.props, 'child_pages', null);
+let child_pages =_.get(this.props, 'child_pages', null);
         let page = _.get(this.props, 'page', null);
         return (
             <ul className="docs-submenu">
@@ -3043,7 +3060,7 @@ export default class DocsSubmenu extends React.Component {
                     <li
                         key={child_page_idx}
                         className={classNames('docs-menu-item', {
-                            current: _.get(page, 'url', null) === _.get(child_page, 'url', null)
+                            current: _.get(page, 'url', null) ===_.get(child_page, 'url', null)
                         })}
                     >
                         <Link to={withPrefix(_.get(child_page, 'url', null))}> {_.get(child_page, 'frontmatter.title', null)}</Link>
@@ -3231,7 +3248,7 @@ export default class Footer extends React.Component {
 ---
 ```js
 import React from 'react';
-import _ from 'lodash';
+import_ from 'lodash';
 import { Link, withPrefix, classNames } from '../utils';
 import ActionLink from './ActionLink';
 import Submenu from './Submenu';
@@ -3239,7 +3256,7 @@ export default class Header extends React.Component {
     render() {
         return (
             <header id="masthead" className="site-header outer">
-                {/* <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />  */}
+                {/*<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />*/}
                 <br />
                 <div className="inner">
                     <div className="site-header-inside">
@@ -3276,19 +3293,19 @@ export default class Header extends React.Component {
                                         </button>
                                         <ul className="menu">
                                             {_.map(_.get(this.props, 'pageContext.site.siteMetadata.header.nav_links', null), (action, action_idx) => {
-                                                let page_url = _.trim(_.get(this.props, 'pageContext.url', null), '/');
-                                                let action_url = _.trim(_.get(action, 'url', null), '/');
+let page_url =_.trim(_.get(this.props, 'pageContext.url', null), '/');
+let action_url =_.trim(_.get(action, 'url', null), '/');
                                                 return (
                                                     <li
                                                         key={action_idx}
                                                         className={classNames('menu-item', {
-                                                            'has-children': _.get(action, 'has_subnav', null) && _.get(action, 'subnav_links', null),
+'has-children':_.get(action, 'has_subnav', null) && _.get(action, 'subnav_links', null),
                                                             current: page_url === action_url,
-                                                            'menu-button': _.get(action, 'style', null) !== 'link'
+'menu-button':_.get(action, 'style', null) !== 'link'
                                                         })}
                                                     >
                                                         <ActionLink {...this.props} action={action} />
-                                                        {_.get(action, 'has_subnav', null) && _.get(action, 'subnav_links', null) && (
+                                                        {_.get(action, 'has_subnav', null) &&_.get(action, 'subnav_links', null) && (
                                                             <React.Fragment>
                                                                 <button className="submenu-toggle">
                                                                     <span className="icon-angle-right" aria-hidden="true" />
@@ -3361,10 +3378,10 @@ export default class Header extends React.Component {
 ---
 ```js
 import React from 'react';
-import _ from 'lodash';
+import _from 'lodash';
 export default class Icon extends React.Component {
     render() {
-        let icon = _.get(this.props, 'icon', null);
+let icon =_.get(this.props, 'icon', null);
         return (
             <svg className="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 {icon === 'dev' ? (
