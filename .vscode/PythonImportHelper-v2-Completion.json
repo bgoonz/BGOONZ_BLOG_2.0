@@ -1,29 +1,24 @@
-[
-    {
+[{
         "label": "argparse",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "argparse",
-        "description": "argparse",
-        "detail": "argparse",
+        "detail": "flask",
         "documentation": {}
     },
     {
-        "label": "datetime",
-        "kind": 6,
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
         "isExtraImport": true,
-        "importPath": "datetime",
-        "description": "datetime",
-        "detail": "datetime",
+        "detail": "flask",
         "documentation": {}
     },
     {
-        "label": "os",
-        "kind": 6,
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
         "isExtraImport": true,
-        "importPath": "os",
-        "description": "os",
-        "detail": "os",
+        "detail": "flask",
         "documentation": {}
     },
     {
