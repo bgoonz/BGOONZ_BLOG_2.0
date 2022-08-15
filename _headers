@@ -1,14 +1,11 @@
-PUBLIC X-Frame-Options: Allow
+/secure/page
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
 
+/static/*
+  Access-Control-Allow-Origin: *
+  X-Robots-Tag: nosnippet
 
-
-
-https://bgoonz-blog.netlify.app/*
+https://myproject.pages.dev/*
   X-Robots-Tag: noindex
-
-[[redirects]]
-  from = "/search"
-  to = "https://api.mysearch.com"
-  status = 200
-  force = true
-  headers = {X-From = "Netlify"}
