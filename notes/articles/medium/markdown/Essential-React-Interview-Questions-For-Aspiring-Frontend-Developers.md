@@ -1,3 +1,29 @@
+<<<<<<< HEAD:notes/articles/medium/markdown/Essential-React-Interview-Questions-For-Aspiring-Frontend-Developers.md
+=======
+---
+title: 10 Essential React Interview Questions
+template: post
+subtitle: For Aspiring Frontend Developers
+excerpt: Comprehensive React Cheatsheet included at the bottom of this article!
+date: 2022-05-08T18:44:35.533Z
+image: https://deploy-preview-2286--bgoonz-blog.netlify.app/images/react.gif
+thumb_image: https://deploy-preview-2286--bgoonz-blog.netlify.app/images/react.gif
+image_position: right
+author: src/data/authors/bgoonz.yaml
+categories:
+  - src/data/categories/react.yaml
+  - src/data/categories/js.yaml
+tags:
+  - src/data/tags/react.yaml
+  - src/data/tags/javascript.yaml
+show_author_bio: true
+related_posts:
+  - src/pages/blog/react-semantics.md
+  - src/pages/blog/react-state.md
+cmseditable: true
+---
+
+>>>>>>> master:src/pages/blog/10-essential-react-interview-questions.md
 # 10 Essential React Interview Questions For Aspiring Frontend Developers
 
 Comprehensive React Cheatsheet included at the bottom of this article!

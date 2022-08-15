@@ -32,6 +32,13 @@ seo:
 template: docs
 weight: 0
 ---
+<<<<<<< HEAD
+=======
+
+
+https://bgoonz-blog-v3-0.netlify.app/embeds/
+
+>>>>>>> master
 
 <br>
 <h1>  Links: </h1>
@@ -157,7 +164,25 @@ weight: 0
 <br>
 <br>
 <br>
+<<<<<<< HEAD
 <hr>
+=======
+
+
+<br>
+<h1>  Useful Snippets </h1>
+<br>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://bgoonz.github.io/Useful-Snippets/" height="800px" width="800px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"
+       frameborder="0" >
+</iframe>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+
+>>>>>>> master
 <br>
 <br>
 <br>

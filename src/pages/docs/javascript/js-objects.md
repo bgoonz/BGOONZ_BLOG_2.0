@@ -64,6 +64,10 @@ ES2015 adds two extensions to object values and object literals:
 
 - Object literals can contain _[computed property names][computed properties]_:
     ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
     var foo = 42;
     var obj = {
         [foo]: 0

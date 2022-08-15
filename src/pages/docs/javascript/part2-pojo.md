@@ -27,7 +27,7 @@ Javascript considers most data types to be ‘primitive', these data types are i
 - <span id="64c8">Function — Reference</span>
 
 #### 2. Identify when to use . vs \[\] when accessing values of an object
-
+```js
     let obj = {
         "one": 1,
         "two": 2
@@ -40,9 +40,10 @@ Javascript considers most data types to be ‘primitive', these data types are i
 
     // Choose the dot property accessor when the property name is known ahead of time.
     console.log(obj.two);
+```
+#### 3. Write an object literal with a variable key using interpolation```js
 
-#### 3. Write an object literal with a variable key using interpolation
-
+```js
     let keyName = "two";
 
     // If the key is not known, you can use an alternative `[]` syntax for
@@ -51,14 +52,15 @@ Javascript considers most data types to be ‘primitive', these data types are i
         [keyName]: 2
     }
     console.log(obj2);
+```
+#### 4. Use the obj\[key\] !== undefined pattern to check if a given variable that contains a key exists in an object```js
 
-#### 4. Use the obj\[key\] !== undefined pattern to check if a given variable that contains a key exists in an object
-
-    function doesKeyExist(obj, key) {
+```js
+    function  doesKeyExist(obj, key) {
         // obj[key] !== undefined
         // or:
         return key in obj;
-    }
+    }```js
 
     let course = {
         bootcamp: 'Lambda',
@@ -66,14 +68,14 @@ Javascript considers most data types to be ‘primitive', these data types are i
     }
     console.log(doesKeyExist(course, 'course')); // => true
     console.log(doesKeyExist(course, 'name')); // => false
-
-#### 5. Utilize Object.keys and Object.values in a function
-
-    function printKeys(object) {
+```
+#### 5. Utilize Object`.keys and Object.values in a function```js
+```js
+    function  printKeys(object) {
         return Object.keys(object);
-    }
+    }```js
 
-    function printValues(object) {
+    function  printValues(object) {
         return Object.values(object);
     }
 
@@ -85,9 +87,9 @@ Javascript considers most data types to be ‘primitive', these data types are i
         dog: "Strelka",
         dog2: "Belka"
     }));
-
-#### 6. Iterate through an object using a for in loop
-
+```
+#### 6. Iterate through an object using a for in loop```js
+```js
     let player = {
         name: "Sergey",
         skill: "hockey"
@@ -98,10 +100,10 @@ Javascript considers most data types to be ‘primitive', these data types are i
     }
 
     console.log(Object.entries(player));
-
-#### 7. Define a function that utilizes …rest syntax to accept an arbitrary number of arguments
-
-    function restSum(...otherNums) {
+```
+#### 7. Define a function that utilizes …rest syntax to accept an arbitrary number of arguments```js
+```js
+    function  restSum(...otherNums) {
         let sum = 0;
         console.log(otherNums);
         otherNums.forEach(function(num) {
@@ -114,13 +116,13 @@ Javascript considers most data types to be ‘primitive', these data types are i
     console.log(restSum(3, 5, 6)); // => 14
     console.log(restSum(1, 2, 3, 4, 5, 6, 7, 8, 9)); // => 45
     console.log(restSum(0)); // => 0
-
-#### 8. Use …spread syntax for Object literals and Array literals
-
+```
+#### 8. Use …spread syntax for Object literals and Array literals```js
+```js
     let numArray = [1, 2, 3];
     let moreNums = [...numArray, 4, 5, 6]
 
-    console.log(moreNums);
+    console.log(moreNums);```js
 
     let shoe = {
         color: "red",
@@ -136,16 +138,16 @@ Javascript considers most data types to be ‘primitive', these data types are i
     console.log(newShoe);
 
     console.log(shoe);
-
-#### 9. Destructure an array to reference specific elements
-
-    let arr = ['one', 'two', 'three'];
+```
+#### 9. Destructure an array to reference specific elements```js
+```js
+    let arr = ['one', 'two', 'three'];```js
 
     let [first] = arr;
     console.log(first);
-
-#### 10. Destructure an object to reference specific values
-
+```
+#### 10. Destructure an object to reference specific values```js
+```js
     let me = {
         name: "Ian",
         instruments: ['bass', 'synth', 'guitar'],
@@ -153,7 +155,7 @@ Javascript considers most data types to be ‘primitive', these data types are i
             brothers: ['Alistair'],
             sisters: ['Meghan']
         }
-    }
+    }```js
 
     let {
         name,
@@ -166,10 +168,10 @@ Javascript considers most data types to be ‘primitive', these data types are i
     console.log(name);
     console.log(musical_instruments);
     console.log(sisters);
-
-#### 11. Write a function that accepts a string as an argument and returns an object representing the count of each character in the array
-
-    function charCount(inputString) {
+```
+#### 11. Write a function that accepts a string as an argument and returns an object representing the count of each character in the array```js
+```js
+    function  charCount(inputString) {
 
         let res = inputString.split("").reduce(function(accum, el) {
             if (el in accum) {
@@ -184,6 +186,7 @@ Javascript considers most data types to be ‘primitive', these data types are i
     }
 
     console.log(charCount('aaabbbeebbcdkjfalksdfjlkasdfasdfiiidkkdingds'));
+<<<<<<< HEAD
 
 ### Review of Concepts
 
@@ -6021,3 +6024,6 @@ We could now use`Promise.all()` to wait for all the Promises in the array to be 
     }
 
 both examples will only work if they are within functions declared async; a `for/await` loop is no different than a regular await expression in that way
+=======
+```
+>>>>>>> master

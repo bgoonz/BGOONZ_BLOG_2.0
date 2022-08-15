@@ -13,6 +13,10 @@ template: docs
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 <details>
 
 <summary> Description</summary>   
@@ -33,6 +37,10 @@ The `fetch` specification differs from `jQuery.ajax()` in the following signific
 A basic fetch request is really simple to set up. Have a look at the following code:
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 fetch('http://example.com/movies.json')
   .then(response => response.json())
   .then(data => console.log(data));
@@ -53,6 +61,10 @@ The `fetch()` method can optionally accept a second parameter, an `init` object 
 See [`fetch()`](https://developer.mozilla.org/en-US/docs/Web/API/fetch) for the full options available, and more details.
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 js
 // Example POST method implementation:
 async function postData(url = '', data = {}) {
@@ -91,6 +103,10 @@ Note that `mode: "no-cors"` only allows a limited set of headers in the request:
 To cause browsers to send a request with credentials included on both same-origin and cross-origin calls, add `credentials: 'include'` to the `init` object you pass to the `fetch()` method.
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 
 fetch('https://example.com', {
   credentials: 'include'
@@ -104,6 +120,10 @@ fetch('https://example.com', {
 If you only want to send credentials if the request URL is on the same origin as the calling script, add `credentials: 'same-origin'`.
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 
 // The calling script is on the origin 'https://example.com'
 
@@ -115,6 +135,10 @@ fetch('https://example.com', {
 To instead ensure browsers don't include credentials in the request, use `credentials: 'omit'`.
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 
 fetch('https://example.com', {
   credentials: 'omit'
@@ -126,6 +150,10 @@ fetch('https://example.com', {
 Use [`fetch()`](https://developer.mozilla.org/en-US/docs/Web/API/fetch) to POST JSON-encoded data.
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 
 const data = { username: 'example' };
 
@@ -150,6 +178,10 @@ fetch('https://example.com/profile', {
 Files can be uploaded using an HTML `<input type="file" />` input element, [`FormData()`](https://developer.mozilla.org/en-US/docs/Web/API/FormData/FormData "FormData()") and [`fetch()`](https://developer.mozilla.org/en-US/docs/Web/API/fetch).
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 
 const formData = new FormData();
 const fileField = document.querySelector('input[type="file"]');
@@ -175,6 +207,10 @@ fetch('https://example.com/profile/avatar', {
 Files can be uploaded using an HTML `<input type="file" multiple />` input element, [`FormData()`](https://developer.mozilla.org/en-US/docs/Web/API/FormData/FormData "FormData()") and [`fetch()`](https://developer.mozilla.org/en-US/docs/Web/API/fetch).
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 
 const formData = new FormData();
 const photos = document.querySelector('input[type="file"][multiple]');
@@ -202,6 +238,10 @@ fetch('https://example.com/posts', {
 The chunks that are read from a response are not broken neatly at line boundaries and are Uint8Arrays, not strings. If you want to fetch a text file and process it line by line, it is up to you to handle these complications. The following example shows one way to do this by creating a line iterator (for simplicity, it assumes the text is UTF-8, and doesn't handle fetch errors).
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 
 async function* makeTextFileLineIterator(fileURL) {
   const utf8Decoder = new TextDecoder('utf-8');
@@ -371,44 +411,80 @@ Since headers can be sent in requests and received in responses, and have variou
 # Fetch
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 fetch('/data.json')  .then(response => response.json())  .then(data => {    console.log(data)  })  .catch(err => ...)
 ```
 
 ### Response
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 fetch('/data.json').then(res => {  res.text()       // response body (=> Promise)  res.json()       // parse via JSON (=> Promise)  res.status       //=> 200  res.statusText   //=> 'OK'  res.redirected   //=> false  res.ok           //=> true  res.url          //=> 'http://site.com/data.json'  res.type         //=> 'basic'                   //   ('cors' 'default' 'error'                   //    'opaque' 'opaqueredirect')
 ```
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
   res.headers.get('Content-Type')})
 ```
 
 ### Request options
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 fetch('/data.json', {  method: 'post',  body: new FormData(form), // post body  body: JSON.stringify(...),
 ```
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
   headers: {    'Accept': 'application/json'  },
 ```
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
   credentials: 'same-origin', // send cookies  credentials: 'include',     // send cookies, even in CORS
 ```
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 })
 ```
 
 ### Catching errors
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 fetch('/data.json')  .then(checkStatus)
 ```
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 function checkStatus (res) {  if (res.status >= 200 && res.status < 300) {    return res  } else {    let err = new Error(res.statusText)    err.response = res    throw err  }}
 ```
 
@@ -417,6 +493,10 @@ Non-2xx responses are still successful requests. Use another function to turn th
 ### Using with node.js
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 const fetch = require('isomorphic-fetch')
 ```
 

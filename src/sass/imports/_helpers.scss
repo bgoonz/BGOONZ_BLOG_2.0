@@ -65,6 +65,7 @@
   color: #fff;
   position: relative;
 
+<<<<<<< HEAD
   h1,
   h2,
   h3,
@@ -104,6 +105,47 @@
   .inner-sm {
     position: relative;
   }
+=======
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: inherit !important;
+    }
+
+    a {
+        &:not(.button) {
+            color: inherit !important;
+
+            &:hover {
+                opacity: 00.8;
+            }
+          }
+        }
+
+    .button {
+        &:not(.button-secondary) {
+            background-color: #fff;
+            color: $color-primary;
+
+            &:hover,
+            &:focus,
+            &:active {
+                opacity: 00.85;
+            }
+          }
+        }
+
+    .button-secondary {
+        color: #fff !important;
+    }
+
+    .inner-sm {
+        position: relative;
+    }
+>>>>>>> master
 }
 
 // Background image

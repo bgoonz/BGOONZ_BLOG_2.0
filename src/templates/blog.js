@@ -15,16 +15,27 @@ export const query = graphql`
 `;
 export default class Blog extends React.Component {
     render() {
-        let display_posts = _.orderBy(getPages(this.props.pageContext.pages, '/blog'), 'frontmatter.date', 'desc');
+        const display_posts = _.orderBy(getPages(this.props.pageContext.pages, '/blog'), 'frontmatter.date', 'desc');
         return (
             <Layout {...this.props}>
                 <header className="page-header has-gradient outer">
+<<<<<<< HEAD
                     {_.get(this.props, 'pageContext.frontmatter.image', null) && (
                         <div
                             className="bg-img"
                             style={toStyleObj("background-image: url('" + withPrefix(_.get(this.props, 'pageContext.frontmatter.image', null)) + "')")}
                         />
                     )}
+=======
+                    {
+                    _.get(this.props, 'pageContext.frontmatter.image', null) && (
+                        <div className="bg-img"
+                            style={
+                                toStyleObj(`background-image: url('${withPrefix(_.get(this.props, 'pageContext.frontmatter.image', null))}')`)
+                            }/>
+                    )
+                }
+>>>>>>> master
                     <div className="inner-sm">
                         <h1 className="page-title">{_.get(this.props, 'pageContext.frontmatter.title', null)}</h1>
                         {_.get(this.props, 'pageContext.frontmatter.subtitle', null) && (
@@ -73,6 +84,10 @@ export default class Blog extends React.Component {
                         ))}
                     </div>
                 </div>
+<<<<<<< HEAD
+=======
+                <div className="gcse-search" />
+>>>>>>> master
             </Layout>
         );
     }

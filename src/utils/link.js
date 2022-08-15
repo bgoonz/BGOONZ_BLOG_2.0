@@ -1,5 +1,9 @@
 import React from 'react';
 import { Link as GatsbyLink } from 'gatsby';
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 // Since DOM elements <a> cannot receive activeClassName
 // and partiallyActive, destructure the prop here and
 // pass it only to GatsbyLink

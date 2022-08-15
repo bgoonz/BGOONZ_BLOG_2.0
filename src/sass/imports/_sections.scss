@@ -91,10 +91,10 @@
 }
 
 @media only screen and (min-width: 641px) {
-    .block-text {
-        .block-content {
-            font-size: 1.125em;
-        }
+  .block-text {
+    .block-content {
+      font-size: 1.125em;
+    }
 
         .block-title {
             font-size: 2.125em;
@@ -103,15 +103,15 @@
 }
 
 @media only screen and (min-width: 1201px) {
-    .block-text {
-        .grid-item {
-            &:not(:only-child) {
-                -ms-flex: 0 0 50%;
-                flex: 0 0 50%;
-                max-width: 50%;
-            }
-        }
+  .block-text {
+    .grid-item {
+      &:not(:only-child) {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
     }
+  }
 
     .block-body {
         &:not(:only-child) {
@@ -200,12 +200,12 @@
 
 // Grid section
 .block-grid {
-    .block-hero+& {
-        &:not(.has-header) {
-            background: 0;
-            padding-top: 0;
-        }
+  .block-hero+& {
+    &:not(.has-header) {
+      background: 0;
+      padding-top: 0;
     }
+  }
 
     .block-header {
         margin-bottom: 2em;
@@ -277,7 +277,7 @@
         &:not(.button) {
             &:after {
                 font-size: 1.125em;
-                content: "\2192";
+                content: '\2192';
                 line-height: 1.5;
                 margin-left: 5px;
             }

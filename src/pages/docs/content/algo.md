@@ -1407,7 +1407,12 @@ Graph
 
     //below uses the adjacency list representation.
 
+<<<<<<< HEAD
 ```js
+=======
+````js
+//
+>>>>>>> master
         function Graph() {
           this.vertices = [];
           this.edges = [];
@@ -1564,4 +1569,4 @@ Graph
         console.log('graph size (number of vertices):', graph.size()); // => 5
         console.log('graph relations (number of edges):', graph.relations()); // => 4
         console.log('path from 6 to 1:', graph.pathFromTo(6, 1)); // => 6-4-3-2-1
-```
+````

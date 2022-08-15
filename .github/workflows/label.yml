@@ -9,6 +9,7 @@ name: Labeler
 on: [pull_request]
 
 jobs:
+<<<<<<< HEAD
     label:
         runs-on: ubuntu-latest
         permissions:
@@ -19,3 +20,16 @@ jobs:
             - uses: actions/labeler@v2
               with:
                   repo-token: '${{ secrets.GITHUB_TOKEN }}'
+=======
+  label:
+
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+
+    steps:
+    - uses: actions/labeler@v4
+      with:
+        repo-token: "${{ secrets.GITHUB_TOKEN }}"
+>>>>>>> master

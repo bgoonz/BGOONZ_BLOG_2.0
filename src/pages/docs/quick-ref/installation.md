@@ -23,6 +23,10 @@ seo:
 template: docs
 ---
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 # Basic Web Development Environment Setup
 
 > Windows Subsystem for Linux (WSL) and Ubuntu
@@ -31,9 +35,15 @@ template: docs
 
 [![Bryan Guner](https://miro.medium.com/fit/c/96/96/1*ao1cHo7EQ4faDV8YNJwh_Q.png)](https://bryanguner.medium.com/?source=post_page-----9f36c3f15afe--------------------------------)
 
+<<<<<<< HEAD
 ![](https://miro.medium.com/max/60/0*aqKP1drNHmNm34zz.jpg?q=20)
 
 ![](https://miro.medium.com/max/1600/0*aqKP1drNHmNm34zz.jpg)
+=======
+![medium blog image](https://miro.medium.com/max/60/0*aqKP1drNHmNm34zz.jpg?q=20)
+
+![medium blog image](https://miro.medium.com/max/1600/0*aqKP1drNHmNm34zz.jpg)
+>>>>>>> master
 
 Test if you have Ubuntu installed by typing "Ubuntu" in the search box in the bottom app bar that reads "Type here to search". If you see a search result that reads **"Ubuntu 20.04 LTS"** with "App" under it, then you have it installed.
 

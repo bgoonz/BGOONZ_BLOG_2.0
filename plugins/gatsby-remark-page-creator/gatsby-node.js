@@ -21,6 +21,10 @@ function findFileNode({node, getNode}) {
         console.log('did not find ancestor File node');
         return null;
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
     return fileNode
 }
 exports.onCreateNode = ({node, getNode, actions}, options) => {

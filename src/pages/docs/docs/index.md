@@ -11,7 +11,11 @@ seo:
 template: docs
 ---
 
+<<<<<<< HEAD
 \\
+=======
+
+>>>>>>> master
 
 <br>
 <h1>My DevDocs Deploy</h1>

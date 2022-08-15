@@ -51,6 +51,10 @@ template: docs
     - put it in brackets to access the value of the variable, rather than just make the value that string
 
         ```js
+<<<<<<< HEAD:src/pages/docs/articles/basic-web-dev.md
+=======
+//
+>>>>>>> master:src/pages/docs/tutorials/webdev-review.md
         let a = 'b';
         let obj = { a: 'letter_a', [a]: 'letter b' };
         ```
@@ -63,6 +67,10 @@ template: docs
 - Iterate through an object using a `for in` loop
 
     ```js
+<<<<<<< HEAD:src/pages/docs/articles/basic-web-dev.md
+=======
+//
+>>>>>>> master:src/pages/docs/tutorials/webdev-review.md
     let printValues = function (obj) {
         for (let key in obj) {
             let value = obj[key];
@@ -77,6 +85,10 @@ template: docs
     - array will be empty if there are no additional arguments
 
         ```js
+<<<<<<< HEAD:src/pages/docs/articles/basic-web-dev.md
+=======
+//
+>>>>>>> master:src/pages/docs/tutorials/webdev-review.md
         let myFunction = function (str, ...strs) {
             console.log('The first string is ' + str);
             console.log('The rest of the strings are:');
@@ -91,6 +103,10 @@ template: docs
 - Use `...spread` syntax for Object literals and Array literals
 
     ```js
+<<<<<<< HEAD:src/pages/docs/articles/basic-web-dev.md
+=======
+//
+>>>>>>> master:src/pages/docs/tutorials/webdev-review.md
     let arr1 = ['a', 'b', 'c'];
     let longer = [...arr1, 'd', 'e']; // ["a", "b", "c", "d", "e"]
     // without spread syntax, this would give you a nested array
@@ -150,6 +166,10 @@ console.log(color, vegetable); //=> mauve spaghetti squash
 - Write a function that accepts a array as an argument and returns an object representing the count of each character in the array
 
     ```js
+<<<<<<< HEAD:src/pages/docs/articles/basic-web-dev.md
+=======
+//
+>>>>>>> master:src/pages/docs/tutorials/webdev-review.md
     //
     let elementCounts = function (array) {
         let obj = {};
@@ -216,6 +236,10 @@ console.log(myMapArrow([16,25,36], Math.sqrt)); // => [4, 5, 6];
 - Write a function, myFilter, that takes in an array and a callback as arguments. The function should mimic the behavior of `Array#filter`.
 
     ```js
+<<<<<<< HEAD:src/pages/docs/articles/basic-web-dev.md
+=======
+//
+>>>>>>> master:src/pages/docs/tutorials/webdev-review.md
     let myFilter = function (array, callback) {
         let filtered = [];
         for (let i = 0; i < array.length; i++) {
@@ -229,6 +253,10 @@ console.log(myMapArrow([16,25,36], Math.sqrt)); // => [4, 5, 6];
 - Write a function, myEvery, that takes in an array and a callback as arguments. The function should mimic the behavior of `Array#every`.
 
     ```js
+<<<<<<< HEAD:src/pages/docs/articles/basic-web-dev.md
+=======
+//
+>>>>>>> master:src/pages/docs/tutorials/webdev-review.md
     let myEvery = function (array, callback) {
         for (let i = 0; i < array.length; i++) {
             if (!callback(array[i], i, array)) {

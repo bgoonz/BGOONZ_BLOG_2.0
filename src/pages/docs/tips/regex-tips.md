@@ -10,6 +10,10 @@ seo:
 template: docs
 ---
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 Regular expressions make light work of **single-character delimiters**, which is why it's so easy to remove markup from a string:
 
 ```
@@ -69,6 +73,10 @@ str = str.replace(/(<\!\[CDATA\[([^\]]|(\]+[^>]))*\]+>)/gm, '');
 The `replace` function can also be **passed a callback** as its second parameter, and this is invaluable in cases where the replacement you want can't be described in a simple expression. For example:
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 isocode = isocode.replace(/^([a-z]+)(\-[a-z]+)?$/i, function (match, lang, country) {
     return lang.toLowerCase() + (country ? country.toUpperCase() : '');
 });
@@ -102,6 +110,10 @@ str.replace(/(\/\*([^*]|(\*+[^*\/]))*\*+\/)/gm,
 Since nothing is returned, the original string remains unchanged. Although if we wanted to extract _and_ remove the comments, we could simply return and assign an empty-string:
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 let comments = [];
 str = str.replace(/(\/\*([^*]|(\*+[^*\/]))*\*+\/)/gm, function (match) {
     comments.push(match);

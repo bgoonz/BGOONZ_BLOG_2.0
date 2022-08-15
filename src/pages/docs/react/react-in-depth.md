@@ -3127,7 +3127,7 @@ Simplifying the src folder
       document.getElementById("root")
     );
 
-```
+````
 
 ---
 
@@ -5350,7 +5350,7 @@ class ClassComponent extends React.Component {
 }
 
 export default ClassComponent;
-```
+````
 
 Don't forget to update your `App` component to render the new component:
 
