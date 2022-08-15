@@ -1,3 +1,8 @@
+/**
+ * A function that is called when a user visits the site.
+ * @param params - The parameters to pass to the function.
+ * @returns an object with a statusCode, body, and headers.
+ */
 const NetlifyGraph = require('./netlifyGraph');
 
 exports.handler = async (event) => {
