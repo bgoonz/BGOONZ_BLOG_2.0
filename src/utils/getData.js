@@ -1,6 +1,5 @@
 /* Exporting the function cycler. */
 import _ from 'lodash';
-
 export default function getData(siteData, dataPath) {
     dataPath = _.trim(dataPath, '/');
     if (_.startsWith(dataPath, 'src/data/')) {

@@ -10,7 +10,10 @@ seo:
 template: docs
 ---
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> master
 ## Useful config [🔗](https://w3c.github.io/git.html#config)&#xA;&#xA;
 
 - branch.autosetuprebase=always ([documentation](https://git-scm.com/docs/git-config#git-config-branchautoSetupRebase)): I find it easier to work with Git this way

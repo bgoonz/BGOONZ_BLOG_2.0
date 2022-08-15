@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 ## Promises
 
 JavaScript is single threaded, meaning that two bits of script cannot run at the same time; they have to run one after another. In browsers, JavaScript shares a thread with a load of other stuff that differs from browser to browser. But typically JavaScript is in the same queue as painting, updating styles, and handling user actions (such as highlighting text and interacting with form controls). Activity in one of these things delays the others.
@@ -20,7 +19,6 @@ As a human being, you're multithreaded. You can type with multiple fingers, you 
 You've probably used events and callbacks to get around this. Here are events:
 
 ```js
-//
 var img1 = document.querySelector('.img-1');
 img1.addEventListener('load', function () {
     // woo yey image loaded
@@ -35,7 +33,6 @@ This isn't sneezy at all. We get the image, add a couple of listeners, then Java
 Unfortunately, in the example above, it's possible that the events happened before we started listening for them, so we need to work around that using the "complete" property of images:
 
 ```js
-//
 var img1 = document.querySelector('.img-1');
 function loaded() {
 // woo yey image loaded}if (img1.complete) {
@@ -55,7 +52,6 @@ This doesn't catch images that errored before we got a chance to listen for them
 Events are great for things that can happen multiple times on the same object---`keyup`, `touchstart` etc. With those events you don't really care about what happened before you attached the listener. But when it comes to async success/failure, ideally you want something like this:
 
 ```js
-//
 img1.callThisIfLoadedOrWhenLoaded(function() {
 // loaded}).orIfFailedCallThis(function() {
 // failed
@@ -70,7 +66,6 @@ img1.callThisIfLoadedOrWhenLoaded(function() {
 This is what promises do, but with better naming. If HTML image elements had a "ready" method that returned a promise, we could do this:
 
 ```js
-//
 img1.ready().then(function() {
 // loaded}, function() {
 // failed
@@ -116,7 +111,6 @@ The above and JavaScript promises share a common, standardized behaviour called 
 Although promise implementations follow a standardized behaviour, their overall APIs differ. JavaScript promises are similar in API to RSVP.js. Here's how you create a promise:
 
 ```js
-//
 var promise = new Promise(function(resolve, reject) {
 // do a thing, possibly async, then...  if (/* everything turned out fine */) {
   resolve("Stuff worked!");
@@ -134,7 +128,6 @@ Like `throw` in plain old JavaScript, it's customary, but not required, to rejec
 Here's how you use that promise:
 
 ```js
-//
 promise.then(function (result) {
     console.log(result);
     // "Stuff worked!"}, function(err) {
@@ -164,14 +157,12 @@ The JavaScript promises API will treat anything with a `then()` method as promis
 Although, as I mentioned, jQuery's Deferreds are a bit ... unhelpful. Thankfully you can cast them to standard promises, which is worth doing as soon as possible:
 
 ```js
-//
 var jsPromise = Promise.resolve($.ajax('/whatever.json'));
 ```
 
 Here, jQuery's `$.ajax` returns a Deferred. Since it has a `then()` method, `Promise.resolve()` can turn it into a JavaScript promise. However, sometimes deferreds pass multiple arguments to their callbacks, for example:
 
 ```js
-//
 var jqDeferred = $.ajax('/whatever.json');
 jqDeferred.then(function(response, statusText, xhrObj) {
 // ...}, function(xhrObj, textStatus, err) {
@@ -181,7 +172,6 @@ jqDeferred.then(function(response, statusText, xhrObj) {
 Whereas JS promises ignore all but the first:
 
 ```js
-//
 jsPromise.then(function(response) {
 // ...}, function(xhrObj) {
 // ...})
@@ -214,7 +204,6 @@ Old APIs will be updated to use promises, if it's possible in a backwards compat
 
 
 ```js
-//
 
 
 function get(url) {
@@ -252,7 +241,6 @@ function get(url) {
 Now let's use it:
 
 ```js
-//
 get('story.json').then(
     function (response) {
         console.log('Success!', response);
@@ -274,7 +262,6 @@ Now we can make HTTP requests without manually typing `XMLHttpRequest`, which is
 You can transform values simply by returning the new value:
 
 ```js
-//
 var promise = new Promise(function (resolve, reject) {
     resolve(1);
 });
@@ -294,7 +281,6 @@ promise
 As a practical example, let's go back to:
 
 ```js
-//
 get('story.json').then(function (response) {
     console.log('Success!', response);
 });
@@ -303,7 +289,6 @@ get('story.json').then(function (response) {
 The response is JSON, but we're currently receiving it as plain text. We could alter our get function to use the JSON [`responseType`](https://developer.mozilla.org/docs/Web/API/XMLHttpRequest#responseType), but we could also solve it in promises land:
 
 ```js
-//
 get('story.json')
     .then(function (response) {
         return JSON.parse(response);
@@ -316,7 +301,6 @@ get('story.json')
 Since `JSON.parse()` takes a single argument and returns a transformed value, we can make a shortcut:
 
 ```js
-//
 get('story.json')
     .then(JSON.parse)
     .then(function (response) {
@@ -330,7 +314,6 @@ In fact, we could make a `getJSON()` function really easily:
 
 
 ```js
-//
 
 
 function getJSON(url) {
@@ -347,7 +330,6 @@ You can also chain `then`s to run async actions in sequence.
 When you return something from a `then()` callback, it's a bit magic. If you return a value, the next `then()` is called with that value. However, if you return something promise-like, the next `then()` waits on it, and is only called when that promise settles (succeeds/fails). For example:
 
 ```js
-//
 getJSON('story.json')
     .then(function (story) {
         return getJSON(story.chapterUrls[0]);
@@ -362,7 +344,6 @@ Here we make an async request to `story.json`, which gives us a set of URLs to r
 You could even make a shortcut method to get chapters:
 
 ```js
-//
 var storyPromise;
 
 function getChapter(i) {
@@ -392,7 +373,6 @@ We don't download `story.json` until `getChapter` is called, but the next time(s
 As we saw earlier, `then()` takes two arguments, one for success, one for failure (or fulfill and reject, in promises-speak):
 
 ```js
-//
 get('story.json').then(
     function (response) {
         console.log('Success!', response);
@@ -406,7 +386,6 @@ get('story.json').then(
 You can also use `catch()`:
 
 ```js
-//
 get('story.json')
     .then(function (response) {
         console.log('Success!', response);
@@ -419,7 +398,6 @@ get('story.json')
 There's nothing special about `catch()`, it's just sugar for `then(undefined, func)`, but it's more readable. Note that the two code examples above do not behave the same, the latter is equivalent to:
 
 ```js
-//
 get('story.json')
     .then(function (response) {
         console.log('Success!', response);
@@ -432,7 +410,6 @@ get('story.json')
 The difference is subtle, but extremely useful. Promise rejections skip forward to the next `then()` with a rejection callback (or `catch()`, since it's equivalent). With `then(func1, func2)`, `func1` or `func2` will be called, never both. But with `then(func1).catch(func2)`, both will be called if `func1` rejects, as they're separate steps in the chain. Take the following:
 
 ```js
-//
 asyncThing1()
     .then(function () {
         return asyncThing2();
@@ -468,7 +445,6 @@ Follow the blue lines for promises that fulfill, or the red for ones that reject
 Rejections happen when a promise is explicitly rejected, but also implicitly if an error is thrown in the constructor callback:
 
 ```js
-//
 var jsonPromise = new Promise(function (resolve, reject) {
     // JSON.parse throws an error if you feed it some  // invalid JSON, so this implicitly rejects:  resolve(JSON.parse("This ain't JSON"));
 });
@@ -498,7 +474,6 @@ get('/').then(JSON.parse).then(function() {
 With our story and chapters, we can use catch to display an error to the user:
 
 ```js
-//
 getJSON('story.json')
     .then(function (story) {
         return getJSON(story.chapterUrls[0]);
@@ -519,7 +494,6 @@ If fetching `story.chapterUrls[0]` fails (e.g., http 500 or user is offline), it
 Like JavaScript's try/catch, the error is caught and subsequent code continues, so the spinner is always hidden, which is what we want. The above becomes a non-blocking async version of:
 
 ```js
-//
 try {
     var story = getJSONSync('story.json');
     var chapter1 = getJSONSync(story.chapterUrls[0]);
@@ -536,7 +510,6 @@ You may want to `catch()` simply for logging purposes, without recovering from t
 
 
 ```js
-//
 
 
 function getJSON(url) {
@@ -556,7 +529,6 @@ So we've managed to fetch one chapter, but we want them all. Let's make that hap
 Thinking async isn't easy. If you're struggling to get off the mark, try writing the code as if it were synchronous. In this case:
 
 ```js
-//
 try {
     var story = getJSONSync('story.json');
     addHtmlToPage(story.heading);
@@ -587,7 +559,6 @@ addHtmlToPage(story.heading);
 But how can we loop through the chapter urls and fetch them in order? This doesn't work:
 
 ```js
-//
 story.chapterUrls.forEach(function(chapterUrl) {
 // Fetch chapter  getJSON(chapterUrl).then(function(chapter) {
   // and add it to the page    addHtmlToPage(chapter.html);
@@ -603,7 +574,6 @@ story.chapterUrls.forEach(function(chapterUrl) {
 We want to turn our `chapterUrls` array into a sequence of promises. We can do that using `then()`:
 
 ```js
-//
 // Start off with a promise that always resolvesvar sequence = Promise.resolve();
 // Loop through our chapter urlsstory.chapterUrls.forEach(function(chapterUrl) {
 // Add these actions to the end of the sequence  sequence = sequence.then(function() {
@@ -622,7 +592,6 @@ There's also `Promise.reject(val)`, which creates a promise that rejects with th
 We can tidy up the above code using [`array.reduce`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce):
 
 ```js
-//
 // Loop through our chapter urlsstory.chapterUrls.reduce(function(sequence, chapterUrl) {
 // Add these actions to the end of the sequence  return sequence.then(function() {
   return getJSON(chapterUrl);
@@ -638,7 +607,6 @@ This is doing the same as the previous example, but doesn't need the separate "s
 Let's put it all together:
 
 ```js
-//
 getJSON('story.json').then(function(story) {
 addHtmlToPage(story.heading);
   return story.chapterUrls.reduce(function(sequence, chapterUrl) {
@@ -662,7 +630,6 @@ And there we have it, a fully async version of the sync version. But we can do b
 Browsers are pretty good at downloading multiple things at once, so we're losing performance by downloading chapters one after the other. What we want to do is download them all at the same time, then process them when they've all arrived. Thankfully there's an API for this:
 
 ```js
-//
 Promise.all(arrayOfPromises).then(function(arrayOfResults) {
 //...})
 ```
@@ -692,7 +659,6 @@ However, we can still improve perceived performance. When chapter one arrives we
 To do this, we fetch JSON for all our chapters at the same time, then create a sequence to add them to the document:
 
 ```js
-//
 getJSON('story.json').then(function(story) {
 addHtmlToPage(story.heading);
   // Map our array of chapter urls to  // an array of chapter json promises.  // This makes sure they all download in parallel.  return story.chapterUrls.map(getJSON)    .reduce(function(sequence, chapterPromise) {
@@ -726,8 +692,7 @@ First of all we have the `async` keyword, which you put in front of a function d
 
 Try typing the following lines into your browser's JS console:
 
-```js
-//js
+```jsjs
 function hello() { return "Hello" };
 hello();
 
@@ -737,8 +702,7 @@ The function returns "Hello" — nothing special, right?
 
 But what if we turn this into an async function? Try the following:
 
-```js
-//js
+```jsjs
 async function hello() { return "Hello" };
 hello();
 
@@ -748,8 +712,7 @@ Ah. Invoking the function now returns a promise. This is one of the traits of as
 
 You can also create an [async function expression](/en-US/docs/Web/JavaScript/Reference/Operators/async_function), like so:
 
-```js
-//js
+```jsjs
 let hello = async function() { return "Hello" };
 hello();
 
@@ -757,8 +720,7 @@ hello();
 
 And you can use [arrow functions](/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions):
 
-```js
-//js
+```jsjs
 let hello = async () => "Hello";
 ```
 
@@ -766,15 +728,13 @@ These all do basically the same thing.
 
 To actually consume the value returned when the promise fulfills, since it is returning a promise, we could use a `.then()` block:
 
-```js
-//js
+```jsjs
 hello().then((value) => console.log(value))
 ```
 
 or even just shorthand such as
 
 ```js
-//
 hello().then(console.log);
 ```
 
@@ -792,8 +752,7 @@ You can use `await` when calling any function that returns a Promise, including 
 
 Here is a trivial example:
 
-```js
-//js
+```jsjs
 async function hello() {
   return await Promise.resolve("Hello");
 
@@ -809,8 +768,7 @@ Of course, the above example is not very useful, although it does serve to illus
 
 Let's look back at a simple fetch example that we saw in the previous article:
 
-```js
-//js
+```jsjs
 fetch('coffee.jpg')
   .then(response => {
     if (!response.ok) {
@@ -838,8 +796,7 @@ fetch('coffee.jpg')
 
 By now, you should have a reasonable understanding of promises and how they work, but let's convert this to use async/await to see how much simpler it makes things:
 
-```js
-//js
+```jsjs
 async function myFetch() {
   let response = await fetch('coffee.jpg');
 
@@ -871,8 +828,7 @@ It makes code much simpler and easier to understand — no more `.then()` blocks
 
 Since an `async` keyword turns a function into a promise, you could refactor your code to use a hybrid approach of promises and await, bringing the second half of the function out into a new block to make it more flexible:
 
-```js
-//js
+```jsjs
 async function myFetch() {
   let response = await fetch('coffee.jpg');
 
@@ -908,8 +864,7 @@ Inside the `myFetch()` function definition you can see that the code closely res
 
 Once that's complete, your code continues to execute starting on the next line. For example:
 
-```js
-//js
+```jsjs
 let response = await fetch('coffee.jpg');
 
 ```
@@ -926,8 +881,7 @@ And if you want to add error handling, you've got a couple of options.
 
 You can use a synchronous [`try...catch`](/en-US/docs/Web/JavaScript/Reference/Statements/try...catch) structure with `async`/`await`. This example expands on the first version of the code we showed above:
 
-```js
-//js
+```jsjs
 async function myFetch() {
   try {
     let response = await fetch('coffee.jpg');
@@ -959,8 +913,7 @@ The `catch() {}` block is passed an error object, which we've called `e`; we can
 
 If you wanted to use the second (refactored) version of the code that we showed above, you would be better off just continuing the hybrid approach and chaining a `.catch()` block onto the end of the `.then()` call, like this:
 
-```js
-//js
+```jsjs
 async function myFetch() {
   let response = await fetch('coffee.jpg');
 
@@ -999,8 +952,7 @@ async/await is built on top of [promises](/en-US/docs/Web/JavaScript/Reference/G
 
 Converting this to async/await (see [live demo](https://mdn.github.io/learning-area/javascript/asynchronous/async-await/promise-all-async-await.html) and [source code](https://github.com/mdn/learning-area/blob/master/javascript/asynchronous/async-await/promise-all-async-await.html)), this now looks like so:
 
-```js
-//js
+```jsjs
 async function fetchAndDecode(url, type) {
   let response = await fetch(url);
 
@@ -1060,8 +1012,7 @@ displayContent()
 
 You'll see that the `fetchAndDecode()` function has been converted easily into an async function with just a few changes. See the `Promise.all()` line:
 
-```js
-//js
+```jsjs
 let values = await Promise.all([coffee, tea, description]);
 
 ```
@@ -1076,8 +1027,7 @@ For error handling, we've included a `.catch()` block on our `displayContent()` 
 
 Async/await makes your code look synchronous, and in a way it makes it behave more synchronously. The `await` keyword blocks execution of all the code that follows it until the promise fulfills, exactly as it would with a synchronous operation. It does allow other tasks to continue to run in the meantime, but the awaited code is blocked. For example:
 
-```js
-//js
+```jsjs
 async function makeResult(items) {
   let newArr = [];
   for(let i = 0; i < items.length; i++) {
@@ -1099,8 +1049,7 @@ As a result, your code could be slowed down by a significant number of awaited p
 
 Let's look at two examples — [slow-async-await.html](https://mdn.github.io/learning-area/javascript/asynchronous/async-await/slow-async-await.html) (see [source code](https://github.com/mdn/learning-area/blob/master/javascript/asynchronous/async-await/slow-async-await.html)) and [fast-async-await.html](https://mdn.github.io/learning-area/javascript/asynchronous/async-await/fast-async-await.html) (see [source code](https://github.com/mdn/learning-area/blob/master/javascript/asynchronous/async-await/fast-async-await.html)). Both of them start off with a custom promise function that fakes an async process with a [`setTimeout()`](/en-US/docs/Web/API/setTimeout) call:
 
-```js
-//js
+```jsjs
 function timeoutPromise(interval) {
   return new Promise((resolve, reject) => {
     setTimeout(function(){
@@ -1115,8 +1064,7 @@ function timeoutPromise(interval) {
 
 Then each one includes a `timeTest()` async function that awaits three `timeoutPromise()` calls:
 
-```js
-//js
+```jsjs
 async function timeTest() {
   ...
 }
@@ -1124,8 +1072,7 @@ async function timeTest() {
 
 Each one ends by recording a start time, seeing how long the `timeTest()` promise takes to fulfill, then recording an end time and reporting how long the operation took in total:
 
-```js
-//js
+```jsjs
 let startTime = Date.now();
 
 timeTest()
@@ -1142,8 +1089,7 @@ It is the `timeTest()` function that differs in each case.
 
 In the `slow-async-await.html` example, `timeTest()` looks like this:
 
-```js
-//js
+```jsjs
 async function timeTest() {
   await timeoutPromise(3000);
 
@@ -1158,8 +1104,7 @@ Here we await all three `timeoutPromise()` calls directly, making each one alert
 
 In the `fast-async-await.html` example, `timeTest()` looks like this:
 
-```js
-//js
+```jsjs
 async function timeTest() {
   const timeoutPromise1 = timeoutPromise(3000);
 
@@ -1183,8 +1128,7 @@ There is an issue with the above pattern however — it could lead to unhandled 
 
 Let's update the previous examples, this time adding a rejected promise and a `catch` statement in the end:
 
-```js
-//js
+```jsjs
 function timeoutPromiseResolve(interval) {
   return new Promise((resolve, reject) => {
     setTimeout(function(){
@@ -1235,8 +1179,7 @@ In the above example, the error is handled properly, and the alert appears after
 
 Now onto the second pattern:
 
-```js
-//js
+```jsjs
 function timeoutPromiseResolve(interval) {
   return new Promise((resolve, reject) => {
     setTimeout(function(){
@@ -1290,8 +1233,7 @@ In this example, we have an unhandled error in the console (after 2 seconds), an
 
 To start the promises in parallel and catch the error properly, we could use `Promise.all()`, as discussed earlier:
 
-```js
-//js
+```jsjs
 function timeoutPromiseResolve(interval) {
   return new Promise((resolve, reject) => {
     setTimeout(function(){
@@ -1350,8 +1292,7 @@ them are rejected, you could use [`Promise.allSettled()`](/en-US/docs/Web/JavaSc
 
 As a final note before we move on, you can even add `async` in front of class/object methods to make them return promises, and `await` promises inside them. Take a look at the [ES class code we saw in our object-oriented JavaScript article](/en-US/docs/Learn/JavaScript/Objects/Inheritance#ecmascript_2015_classes), and then look at our modified version with an `async` method:
 
-```js
-//js
+```jsjs
 class Person {
   constructor(first, last, age, gender, interests) {
     this.name = {
@@ -1380,8 +1321,7 @@ let han = new Person('Han', 'Solo', 25, 'male', ['Smuggling']);
 
 The first class method could now be used something like this:
 
-```js
-//js
+```jsjs
 han.greeting().then(console.log);
 
 ```

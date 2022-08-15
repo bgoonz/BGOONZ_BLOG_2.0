@@ -1942,7 +1942,11 @@ spam.strip('ampS')
 
 First, install `pypeerclip` with pip:
 
+<<<<<<< HEAD
+```shell
+=======
 ```consoleell
+>>>>>>> master
 pip install pyperclip
 ```
 
@@ -3074,7 +3078,11 @@ with open("filename.yaml") as f:
 
 Install it with:
 
+<<<<<<< HEAD
+```bash
+=======
 ```console
+>>>>>>> master
 pip install anyconfig
 ```
 
@@ -3480,7 +3488,11 @@ The `setup.py` file is at the heart of a Python project. It describes all of the
 
 This allows you to easily install Python packages. Often it's enough to write:
 
+<<<<<<< HEAD
+```bash
+=======
 ```console
+>>>>>>> master
 python setup.py install
 ```
 

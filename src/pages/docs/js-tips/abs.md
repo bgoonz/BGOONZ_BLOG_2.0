@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 # Math.abs()
 
 The `Math.abs()` function returns the absolute value of a number. That is, it returns `x` if `x` is positive or zero, and the negation of `x` if `x` is negative.

@@ -49,22 +49,37 @@ template: docs
 
 <br>
 <br>
+<br><br>
 <br>
-<br>
-<br>
-<br>
-<br>
+<br><br>
 <br>
 <br>
 
 <details>
 
-<summary> 📰📰 BLOG 📰📰 </h6>
-</summary>
+<summary> 📰📰 BLOG 📰📰 </h6></summary>
 
 ##### [**<ins>Blog Article List</ins>**](https://bgoonz-blog.netlify.app/blog)
 
 -   [📰blog📰](https://bgoonz-blog.netlify.app/blog/web-scraping)
+<<<<<<< HEAD
+    -   [📰blog📰/300-react-questions⚛](https://bgoonz-blog.netlify.app/blog/300-react-questions)
+    -   [📰blog📰/awesome-graphql፨](https://bgoonz-blog.netlify.app/blog/awesome-graphql)
+    -   [📰blog📰/big-o-complexity](https://bgoonz-blog.netlify.app/blog/big-o-complexity)
+    -   [📰blog📰/blog-archive](https://bgoonz-blog.netlify.app/blog/blog-archive)
+    -   [📰blog📰/data-structures](https://bgoonz-blog.netlify.app/blog/data-structures)
+    -   [📰blog📰/expressjs-apis](https://bgoonz-blog.netlify.app/blog/expressjs-apis)
+    -   [📰blog📰/flow-control-in-python](https://bgoonz-blog.netlify.app/blog/flow-control-in-python)
+    -   [📰blog📰/functions-in-python](https://bgoonz-blog.netlify.app/blog/functions-in-python)
+    -   [📰blog📰/git-gateway](https://bgoonz-blog.netlify.app/blog/git-gateway)
+    -   [📰blog📰/interview-questions-js](https://bgoonz-blog.netlify.app/blog/interview-questions-js)
+    -   [📰blog📰/netlify-cms](https://bgoonz-blog.netlify.app/blog/netlify-cms)
+    -   [📰blog📰/platform-docs](https://bgoonz-blog.netlify.app/blog/platform-docs)
+    -   [📰blog📰/python-for-js-dev](https://bgoonz-blog.netlify.app/blog/python-for-js-dev)
+    -   [📰blog📰/python-resources](https://bgoonz-blog.netlify.app/blog/python-resources)
+    -   [📰blog📰/web-dev-trends](https://bgoonz-blog.netlify.app/blog/web-dev-trends)
+    -   [📰blog📰/web-scraping](https://bgoonz-blog.netlify.app/blog/web-scraping)
+=======
     - [📰300-react-questions](https://bgoonz-blog.netlify.app/blog/300-react-questions)
 - [📰adding-css-to-your-html](https://bgoonz-blog.netlify.app/blog/adding-css-to-your-html)
 - [📰awesome-graphql](https://bgoonz-blog.netlify.app/blog/awesome-graphql)
@@ -88,6 +103,7 @@ template: docs
 - [📰vs-code-extensions](https://bgoonz-blog.netlify.app/blog/vs-code-extensions)
 - [📰web-dev-trends](https://bgoonz-blog.netlify.app/blog/web-dev-trends)
 - [📰web-scraping](https://bgoonz-blog.netlify.app/blog/web-scraping)
+>>>>>>> master
 
 </details>
 

@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 # RangeError: radix must be an integer
 
 The JavaScript exception "radix must be an integer at least 2 and no greater than 36" occurs when the optional `radix` parameter of the [`Number.prototype.toString()`](../global_objects/number/tostring) or the [`BigInt.prototype.toString()`](../global_objects/bigint/tostring) method was specified and is not between 2 and 36.

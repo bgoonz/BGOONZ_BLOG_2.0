@@ -1,11 +1,19 @@
 ---
+<<<<<<< HEAD
+title: Javascript Interview Questions
+=======
 title: JS-Intervew-2
+>>>>>>> master
 subtitle: Object Oriented JavaScript
 date: '2021-09-11'
 thumb_image_alt: big o
 excerpt: What are the possible ways to create objects in JavaScript
 seo:
+<<<<<<< HEAD
+    title: ''
+=======
     title: 'Javascript Interview Questions Part 2'
+>>>>>>> master
     description: What are the possible ways to create objects in JavaScript
     robots: []
     extra:
@@ -28,7 +36,11 @@ image: images/green-spruce-4e3a1745.png
 
 ## Javascript Interview Questions
 
+<<<<<<< HEAD
+1. What are the possible ways to create objects in JavaScript
+=======
 1.  What are the possible ways to create objects in JavaScript
+>>>>>>> master
 
     There are many ways to create objects in javascript as below
 
@@ -36,7 +48,11 @@ image: images/green-spruce-4e3a1745.png
 
         The simplest way to create an empty object is using the Object constructor. Currently this approach is not recommended.
 
+<<<<<<< HEAD
+        ```js
+=======
         ```javascript
+>>>>>>> master
         var object = new Object();
         ```
 
@@ -44,7 +60,11 @@ image: images/green-spruce-4e3a1745.png
 
         The create method of Object creates a new object by passing the prototype object as a parameter
 
+<<<<<<< HEAD
+        ```js
+=======
         ```javascript
+>>>>>>> master
         var object = Object.create(null);
         ```
 
@@ -52,7 +72,11 @@ image: images/green-spruce-4e3a1745.png
 
         The object literal syntax is equivalent to create method when it passes null as parameter
 
+<<<<<<< HEAD
+        ```js
+=======
         ```javascript
+>>>>>>> master
         var object = {};
         ```
 
@@ -60,7 +84,11 @@ image: images/green-spruce-4e3a1745.png
 
         Create any function and apply the new operator to create object instances,
 
+<<<<<<< HEAD
+        ```js
+=======
         ```javascript
+>>>>>>> master
         function Person(name) {
             this.name = name;
             this.age = 21;
@@ -72,7 +100,11 @@ image: images/green-spruce-4e3a1745.png
 
         This is similar to function constructor but it uses prototype for their properties and methods,
 
+<<<<<<< HEAD
+        ```js
+=======
         ```javascript
+>>>>>>> master
         function Person() {}
         Person.prototype.name = 'Sudheer';
         var object = new Person();
@@ -80,7 +112,11 @@ image: images/green-spruce-4e3a1745.png
 
         This is equivalent to an instance created with an object create method with a function prototype and then call that function with an instance and parameters as arguments.
 
+<<<<<<< HEAD
+        ```js
+=======
         ```javascript
+>>>>>>> master
         function func {};
 
         new func(x, y, z);
@@ -88,7 +124,11 @@ image: images/green-spruce-4e3a1745.png
 
         **(OR)**
 
+<<<<<<< HEAD
+        ```js
+=======
         ```javascript
+>>>>>>> master
         // Create a new instance using function prototype.
         var newInstance = Object.create(func.prototype)
 
@@ -103,7 +143,11 @@ image: images/green-spruce-4e3a1745.png
 
         ES6 introduces class feature to create the objects
 
+<<<<<<< HEAD
+        ```js
+=======
         ```javascript
+>>>>>>> master
         class Person {
             constructor(name) {
                 this.name = name;
@@ -117,13 +161,21 @@ image: images/green-spruce-4e3a1745.png
 
         A Singleton is an object which can only be instantiated one time. Repeated calls to its constructor return the same instance and this way one can ensure that they don't accidentally create multiple instances.
 
+<<<<<<< HEAD
+        ```js
+=======
         ```javascript
+>>>>>>> master
         var object = new (function () {
             this.name = 'Sudheer';
         })();
         ```
 
+<<<<<<< HEAD
+2. What is a prototype chain
+=======
 2.  What is a prototype chain
+>>>>>>> master
 
     **Prototype chaining** is used to build new types of objects based on existing ones. It is similar to inheritance in a class based language.
 
@@ -131,13 +183,21 @@ image: images/green-spruce-4e3a1745.png
 
     ![Screenshot](images/prototype_chain.png)
 
+<<<<<<< HEAD
+3. What is the difference between Call, Apply and Bind
+=======
 3.  What is the difference between Call, Apply and Bind
+>>>>>>> master
 
     The difference between Call, Apply and Bind can be explained with below examples,
 
     **Call:** The call() method invokes a function with a given `this` value and arguments provided one by one
 
+<<<<<<< HEAD
+    ```js
+=======
     ```javascript
+>>>>>>> master
     var employee1 = { firstName: 'John', lastName: 'Rodson' };
     var employee2 = { firstName: 'Jimmy', lastName: 'Baily' };
 
@@ -151,7 +211,11 @@ image: images/green-spruce-4e3a1745.png
 
     **Apply:** Invokes the function with a given `this` value and allows you to pass in arguments as an array
 
+<<<<<<< HEAD
+    ```js
+=======
     ```javascript
+>>>>>>> master
     var employee1 = { firstName: 'John', lastName: 'Rodson' };
     var employee2 = { firstName: 'Jimmy', lastName: 'Baily' };
 
@@ -165,7 +229,11 @@ image: images/green-spruce-4e3a1745.png
 
     **bind:** returns a new function, allowing you to pass any number of arguments
 
+<<<<<<< HEAD
+    ```js
+=======
     ```javascript
+>>>>>>> master
     var employee1 = { firstName: 'John', lastName: 'Rodson' };
     var employee2 = { firstName: 'Jimmy', lastName: 'Baily' };
 
@@ -183,29 +251,49 @@ image: images/green-spruce-4e3a1745.png
 
     Whereas Bind creates a new function that will have `this` set to the first parameter passed to bind().
 
+<<<<<<< HEAD
+4. What is JSON and its common operations
+=======
 4.  What is JSON and its common operations
+>>>>>>> master
 
     **JSON** is a text-based data format following JavaScript object syntax, which was popularized by `Douglas Crockford`. It is useful when you want to transmit data across a network and it is basically just a text file with an extension of .json, and a MIME type of application/json
 
     **Parsing:** Converting a string to a native object
 
+<<<<<<< HEAD
+    ```js
+=======
     ```javascript
+>>>>>>> master
     JSON.parse(text);
     ```
 
     **Stringification:** converting a native object to a string so it can be transmitted across the network
 
+<<<<<<< HEAD
+    ```js
+    JSON.stringify(object);
+    ```
+
+5. What is the purpose of the array slice method
+=======
     ```javascript
     JSON.stringify(object);
     ```
 
 5.  What is the purpose of the array slice method
+>>>>>>> master
 
     The **slice()** method returns the selected elements in an array as a new array object. It selects the elements starting at the given start argument, and ends at the given optional end argument without including the last element. If you omit the second argument then it selects till the end.
 
     Some of the examples of this method are,
 
+<<<<<<< HEAD
+    ```js
+=======
     ```javascript
+>>>>>>> master
     let arrayIntegers = [1, 2, 3, 4, 5];
     let arrayIntegers1 = arrayIntegers.slice(0, 2); // returns [1,2]
     let arrayIntegers2 = arrayIntegers.slice(2, 3); // returns [3]
@@ -214,13 +302,21 @@ image: images/green-spruce-4e3a1745.png
 
     **Note:** Slice method won't mutate the original array but it returns the subset as a new array.
 
+<<<<<<< HEAD
+6. What is the purpose of the array splice method
+=======
 6.  What is the purpose of the array splice method
+>>>>>>> master
 
     The **splice()** method is used either adds/removes items to/from an array, and then returns the removed item. The first argument specifies the array position for insertion or deletion whereas the optional second argument indicates the number of elements to be deleted. Each additional argument is added to the array.
 
     Some of the examples of this method are,
 
+<<<<<<< HEAD
+    ```js
+=======
     ```javascript
+>>>>>>> master
     let arrayIntegersOriginal1 = [1, 2, 3, 4, 5];
     let arrayIntegersOriginal2 = [1, 2, 3, 4, 5];
     let arrayIntegersOriginal3 = [1, 2, 3, 4, 5];
@@ -232,7 +328,11 @@ image: images/green-spruce-4e3a1745.png
 
     **Note:** Splice method modifies the original array and returns the deleted array.
 
+<<<<<<< HEAD
+7. What is the difference between slice and splice
+=======
 7.  What is the difference between slice and splice
+>>>>>>> master
 
     Some of the major difference in a tabular form
 
@@ -242,7 +342,11 @@ image: images/green-spruce-4e3a1745.png
     | Returns the subset of original array         | Returns the deleted elements as array           |
     | Used to pick the elements from array         | Used to insert or delete elements to/from array |
 
+<<<<<<< HEAD
+8. How do you compare Object and Map
+=======
 8.  How do you compare Object and Map
+>>>>>>> master
 
     **Objects** are similar to **Maps** in that both let you set keys to values, retrieve those values, delete keys, and detect whether something is stored at a key. Due to this reason, Objects have been used as Maps historically. But there are important differences that make using a Map preferable in certain cases.
 
@@ -253,7 +357,11 @@ image: images/green-spruce-4e3a1745.png
     5. An Object has a prototype, so there are default keys in the map that could collide with your keys if you're not careful. As of ES5 this can be bypassed by using map = Object.create(null), but this is seldom done.
     6. A Map may perform better in scenarios involving frequent addition and removal of key pairs.
 
+<<<<<<< HEAD
+9. What is the difference between == and === operators
+=======
 9.  What is the difference between == and === operators
+>>>>>>> master
 
     JavaScript provides both strict(===, !==) and type-converting(==, !=) equality comparison. The strict operators take type of variable in consideration, while non-strict operators make type correction/conversion based upon values of variables. The strict operators follow the below conditions for different types,
 
@@ -269,7 +377,11 @@ image: images/green-spruce-4e3a1745.png
 
     Some of the example which covers the above cases,
 
+<<<<<<< HEAD
+    ```js
+=======
     ```javascript
+>>>>>>> master
     0 == false   // true
     0 === false  // false
     1 == "1"     // true
@@ -292,7 +404,11 @@ image: images/green-spruce-4e3a1745.png
 
     For example, in such a language, a function can be passed as an argument to other functions, can be returned by another function and can be assigned as a value to a variable. For example, in the below example, handler functions assigned to a listener
 
+<<<<<<< HEAD
+    ```js
+=======
     ```javascript
+>>>>>>> master
     const handler = () => console.log('This is a click handler function');
     document.addEventListener('click', handler);
     ```
@@ -301,7 +417,11 @@ image: images/green-spruce-4e3a1745.png
 
     First-order function is a function that doesn't accept another function as an argument and doesn't return a function as its return value.
 
+<<<<<<< HEAD
+    ```js
+=======
     ```javascript
+>>>>>>> master
     const firstOrder = () => console.log('I am a first order function!');
     ```
 
@@ -309,7 +429,11 @@ image: images/green-spruce-4e3a1745.png
 
     Higher-order function is a function that accepts another function as an argument or returns a function as a return value or both.
 
+<<<<<<< HEAD
+    ```js
+=======
     ```javascript
+>>>>>>> master
     const firstOrderFunc = () => console.log('Hello, I am a First order function');
     const higherOrder = (ReturnFirstOrderFunc) => ReturnFirstOrderFunc();
     higherOrder(firstOrderFunc);
@@ -321,7 +445,11 @@ image: images/green-spruce-4e3a1745.png
 
     Let us take an example of unary function,
 
+<<<<<<< HEAD
+    ```js
+=======
     ```javascript
+>>>>>>> master
     const unaryFunction = (a) => console.log(a + 10); // Add 10 to the given argument and display the value
     ```
 
@@ -331,7 +459,11 @@ image: images/green-spruce-4e3a1745.png
 
     Let's take an example of n-ary function and how it turns into a currying function,
 
+<<<<<<< HEAD
+    ```js
+=======
     ```javascript
+>>>>>>> master
     const multiArgFunction = (a, b, c) => a + b + c;
     console.log(multiArgFunction(1, 2, 3)); // 6
 
@@ -349,7 +481,11 @@ image: images/green-spruce-4e3a1745.png
 
     Let's take an example to see the difference between pure and impure functions,
 
+<<<<<<< HEAD
+    ```js
+=======
     ```javascript
+>>>>>>> master
     //Impure
     let numberArray = [];
     const impureAddNumber = (number) => numberArray.push(number);
@@ -373,7 +509,11 @@ image: images/green-spruce-4e3a1745.png
 
     Let's take an example to demonstrate the usage,
 
+<<<<<<< HEAD
+    ```js
+=======
     ```javascript
+>>>>>>> master
     let counter = 30;
     if (counter === 30) {
         let counter = 31;
@@ -394,7 +534,11 @@ image: images/green-spruce-4e3a1745.png
 
     Let's take an example to see the difference,
 
+<<<<<<< HEAD
+    ```js
+=======
     ```javascript
+>>>>>>> master
     function userDetails(username) {
         if (username) {
             console.log(salary); // undefined due to hoisting
@@ -416,7 +560,11 @@ image: images/green-spruce-4e3a1745.png
 
     If you try to redeclare variables in a `switch block` then it will cause errors because there is only one block. For example, the below code block throws a syntax error as below,
 
+<<<<<<< HEAD
+    ```js
+=======
     ```javascript
+>>>>>>> master
     let counter = 1;
     switch (x) {
         case 0:
@@ -431,7 +579,11 @@ image: images/green-spruce-4e3a1745.png
 
     To avoid this error, you can create a nested block inside a case clause and create a new block scoped lexical environment.
 
+<<<<<<< HEAD
+    ```js
+=======
     ```javascript
+>>>>>>> master
     let counter = 1;
     switch (x) {
         case 0: {
@@ -451,7 +603,11 @@ image: images/green-spruce-4e3a1745.png
 
     Let's see this behavior with an example,
 
+<<<<<<< HEAD
+    ```js
+=======
     ```javascript
+>>>>>>> master
     function somemethod() {
         console.log(counter1); // undefined
         console.log(counter2); // ReferenceError
@@ -464,7 +620,11 @@ image: images/green-spruce-4e3a1745.png
 
     IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined. The signature of it would be as below,
 
+<<<<<<< HEAD
+    ```js
+=======
     ```javascript
+>>>>>>> master
     (function () {
         // logic here
     })();
@@ -472,7 +632,11 @@ image: images/green-spruce-4e3a1745.png
 
     The primary reason to use an IIFE is to obtain data privacy because any variables declared within the IIFE cannot be accessed by the outside world. i.e, If you try to access variables with IIFE then it throws an error as below,
 
+<<<<<<< HEAD
+    ```js
+=======
     ```javascript
+>>>>>>> master
     (function () {
         var message = 'IIFE';
         console.log(message);
@@ -493,7 +657,11 @@ image: images/green-spruce-4e3a1745.png
     Memoization is a programming technique which attempts to increase a function's performance by caching its previously computed results. Each time a memoized function is called, its parameters are used to index the cache. If the data is present, then it can be returned, without executing the entire function. Otherwise the function is executed and then the result is added to the cache.
     Let's take an example of adding function with memoization,
 
+<<<<<<< HEAD
+    ```js
+=======
     ```javascript
+>>>>>>> master
     const memoizAddition = () => {
         let cache = {};
         return (value) => {
@@ -519,14 +687,22 @@ image: images/green-spruce-4e3a1745.png
     Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution. Remember that JavaScript only hoists declarations, not initialisation.
     Let's take a simple example of variable hoisting,
 
+<<<<<<< HEAD
+    ```js
+=======
     ```javascript
+>>>>>>> master
     console.log(message); //output : undefined
     var message = 'The variable Has been hoisted';
     ```
 
     The above code looks like as below to the interpreter,
 
+<<<<<<< HEAD
+    ```js
+=======
     ```javascript
+>>>>>>> master
     var message;
     console.log(message);
     message = 'The variable Has been hoisted';
@@ -537,7 +713,11 @@ image: images/green-spruce-4e3a1745.png
     In ES6, Javascript classes are primarily syntactic sugar over JavaScript's existing prototype-based inheritance.
     For example, the prototype based inheritance written in function expression as below,
 
+<<<<<<< HEAD
+    ```js
+=======
     ```javascript
+>>>>>>> master
     function Bike(model, color) {
         this.model = model;
         this.color = color;
@@ -550,7 +730,11 @@ image: images/green-spruce-4e3a1745.png
 
     Whereas ES6 classes can be defined as an alternative
 
+<<<<<<< HEAD
+    ```js
+=======
     ```javascript
+>>>>>>> master
     class Bike {
         constructor(color, model) {
             this.color = color;
@@ -573,7 +757,11 @@ image: images/green-spruce-4e3a1745.png
 
     Let's take an example of closure concept,
 
+<<<<<<< HEAD
+    ```js
+=======
     ```javascript
+>>>>>>> master
     function Welcome(name) {
         var greetingInfo = function (message) {
             console.log(message + ' ' + name);
@@ -635,7 +823,11 @@ image: images/green-spruce-4e3a1745.png
     A cookie is a piece of data that is stored on your computer to be accessed by your browser. Cookies are saved as key/value pairs.
     For example, you can create a cookie named username as below,
 
+<<<<<<< HEAD
+    ```js
+=======
     ```javascript
+>>>>>>> master
     document.cookie = 'username=John';
     ```
 
@@ -654,13 +846,21 @@ image: images/green-spruce-4e3a1745.png
 
     1. By default, the cookie is deleted when the browser is closed but you can change this behavior by setting expiry date (in UTC time).
 
+<<<<<<< HEAD
+    ```js
+=======
     ```javascript
+>>>>>>> master
     document.cookie = 'username=John; expires=Sat, 8 Jun 2019 12:00:00 UTC';
     ```
 
     1. By default, the cookie belongs to a current page. But you can tell the browser what path the cookie belongs to using a path parameter.
 
+<<<<<<< HEAD
+    ```js
+=======
     ```javascript
+>>>>>>> master
     document.cookie = 'username=John; path=/services';
     ```
 
@@ -669,7 +869,11 @@ image: images/green-spruce-4e3a1745.png
     You can delete a cookie by setting the expiry date as a passed date. You don't need to specify a cookie value in this case.
     For example, you can delete a username cookie in the current page as below.
 
+<<<<<<< HEAD
+    ```js
+=======
     ```javascript
+>>>>>>> master
     document.cookie = 'username=; expires=Fri, 07 Jun 2019 00:00:00 UTC; path=/;';
     ```
 
@@ -689,6 +893,8 @@ image: images/green-spruce-4e3a1745.png
 42. What is the main difference between localStorage and sessionStorage
 
     LocalStorage is the same as SessionStorage but it persists the data even when the browser is closed and reopened(i.e it has no expiration time) whereas in sessionStorage data gets cleared when the page session ends.
+<<<<<<< HEAD
+=======
 
 43. How do you access web storage
 
@@ -8088,3 +8294,4 @@ Whereas the second console.log logs 10 by capturing the count variable from oute
 ---
 
 ---
+>>>>>>> master

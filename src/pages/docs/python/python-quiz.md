@@ -18,7 +18,6 @@ seo:
 template: docs
 ---
 
-
 ### zQ1. What is an abstract class?
 
 -   [ ] An abstract class is the name for any class from which you can instantiate an object.

@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 # Array
 
 Arrays are everywhere in JavaScript and with the new [spread operators](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Spread_operator) introduced in ECMAScript 6, you can do awesome things with them. In this post I will show you 3 useful tricks you can use when programming.
@@ -21,7 +20,6 @@ Arrays are everywhere in JavaScript and with the new [spread operators](https://
 JavaScript arrays are sparse in nature in that there are a lot of holes in them. Try creating an array using the Array's constructor and you will see what I mean.
 
 ```js
-//
 const arr = new Array(4);
 [undefined, undefined, undefined, undefined];
 ```
@@ -29,7 +27,6 @@ const arr = new Array(4);
 You may find that iterating over a sparse array to apply a certain transformation is hard.
 
 ```js
-//
  const arr = new Array(4);
 > arr.map((elem, index) => index);
 [undefined, undefined, undefined, undefined]
@@ -38,7 +35,6 @@ You may find that iterating over a sparse array to apply a certain transformatio
 To solve this, you can use `Array.apply` when creating the array.
 
 ```js
-//
  const arr = Array.apply(null, new Array(4));
 > arr.map((elem, index) => index);
 [0, 1, 2, 3]
@@ -49,7 +45,6 @@ To solve this, you can use `Array.apply` when creating the array.
 If you want to call a method and ignore one of its parameters, then JavaScript will complain if you keep it empty.
 
 ```js
-//
  method('parameter1', , 'parameter3');
 Uncaught SyntaxError: Unexpected token ,
 ```
@@ -57,7 +52,6 @@ Uncaught SyntaxError: Unexpected token ,
 A workaround that people usually resort to is to pass either `null` or `undefined`.
 
 ```js
-//
 method('parameter1', null, 'parameter3'); // or
 method('parameter1', undefined, 'parameter3');
 ```
@@ -65,7 +59,6 @@ method('parameter1', undefined, 'parameter3');
 I personally don't like using `null` since JavaScript treats it as an object and that's just weird. With the introduction of spread operators in ES6, there is a neater way of passing empty parameters to a method. As previously mentioned, arrays are sparse in nature and so passing empty values to it is totally okay. We'll use this to our advantage.
 
 ```js
-//
 method(...['parameter1', , 'parameter3']); // works!
 ```
 
@@ -74,7 +67,6 @@ method(...['parameter1', , 'parameter3']); // works!
 I always wonder why the Array constructor does not have a designated method to facilitate the use of unique array values. Spread operators are here for the rescue. Use spread operators with the `Set` constructor to generate unique array values.
 
 ```js
-//
 const arr = [...new Set([1, 2, 3, 3])];
 [1, 2, 3];
 ```
@@ -253,65 +245,19 @@ To help explain these properties and elements, see this example and then refer t
 
 The properties and elements returned from this match are as follows:
 
-<table>
-<thead>
-<tr class="header">
-<th>Property/Element</th>
-<th>Description</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>
-<code>input</code>
+<table><thead><tr class="header"><th>Property/Element</th><th>Description</th><th>Example</th></tr></thead><tbody><tr class="odd"><td><code>input</code>
 <br/>
 
-<span class="badge inline readonly">Read only </span>
-</td>
-<td>The original string against which the regular expression was matched.</td>
-<td>
-<code>"cdbBdbsbz"</code>
-</td>
-</tr>
-<tr class="even">
-<td>
-<code>index</code>
+<span class="badge inline readonly">Read only </span></td><td>The original string against which the regular expression was matched.</td><td><code>"cdbBdbsbz"</code></td></tr><tr class="even"><td><code>index</code>
 <br/>
 
-<span class="badge inline readonly">Read only </span>
-</td>
-<td>The zero-based index of the match in the string.</td>
-<td>
-<code>1</code>
-</td>
-</tr>
-<tr class="odd">
-<td>
-<code>[0]</code>
+<span class="badge inline readonly">Read only </span></td><td>The zero-based index of the match in the string.</td><td><code>1</code></td></tr><tr class="odd"><td><code>[0]</code>
 <br/>
 
-<span class="badge inline readonly">Read only </span>
-</td>
-<td>The last matched characters.</td>
-<td>
-<code>"dbBd"</code>
-</td>
-</tr>
-<tr class="even">
-<td>
-<code>[1], ...[n]</code>
+<span class="badge inline readonly">Read only </span></td><td>The last matched characters.</td><td><code>"dbBd"</code></td></tr><tr class="even"><td><code>[1], ...[n]</code>
 <br/>
 
-<span class="badge inline readonly">Read only </span>
-</td>
-<td>Elements that specify the parenthesized substring matches (if included) in the regular expression. The number of possible parenthesized substrings is unlimited.</td>
-<td>
-<code>[1]: "bB" [2]: "d"</code>
-</td>
-</tr>
-</tbody>
-</table>
+<span class="badge inline readonly">Read only </span></td><td>Elements that specify the parenthesized substring matches (if included) in the regular expression. The number of possible parenthesized substrings is unlimited.</td><td><code>[1]: "bB" [2]: "d"</code></td></tr></tbody></table>
 
 ## Constructor
 

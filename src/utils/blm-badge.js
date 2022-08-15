@@ -162,3 +162,7 @@ MakerBadge.prototype = {
         }
     }
 };
+<<<<<<< HEAD
+var BLMBadge = new MakerBadge();
+=======
+>>>>>>> master

@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 # for...of
 
 The `for...of` creates a loop iterating over [iterable objects](../iteration_protocols#the_iterable_protocol), including: built-in [`String`](../global_objects/string), [`Array`](../global_objects/array), array-like objects (e.g., [`arguments`](../functions/arguments) or [`NodeList`](https://developer.mozilla.org/en-US/docs/Web/API/NodeList)), [`TypedArray`](../global_objects/typedarray), [`Map`](../global_objects/map), [`Set`](../global_objects/set), and user-defined iterables. It invokes a custom iteration hook with statements to be executed for the value of each distinct property of the object.

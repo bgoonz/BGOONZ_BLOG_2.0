@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 ## 1\. Why are frameworks useful?
 
 Essentially the allure of these is the amount of time that is saved and the resulting efficiency in getting a project rolled out faster because there's a lot less of the initial work to be done.

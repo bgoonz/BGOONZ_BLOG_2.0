@@ -10,18 +10,17 @@ seo:
 template: docs
 ---
 
-
 # A Very Quick Guide To Calculating Big O Computational Complexity&#xA;&#xA;
 
 **Big O**: big picture, broad strokes, not details
 
-![medium blog image](https://miro.medium.com/max/630/0*lte81mEvgEPYXodB.png)
+![](https://miro.medium.com/max/630/0*lte81mEvgEPYXodB.png)
 
-![medium blog image](https://miro.medium.com/max/304/1*5t2u8n1uKhioIzZIXX2zbg.png)
+![](https://miro.medium.com/max/304/1*5t2u8n1uKhioIzZIXX2zbg.png)
 
-![medium blog image](https://miro.medium.com/max/563/1*HhXmG2cNdg8y4ZCCQGTyuQ.png)
+![](https://miro.medium.com/max/563/1*HhXmG2cNdg8y4ZCCQGTyuQ.png)
 
-![medium blog image](https://miro.medium.com/max/630/1*ULeXxVCDkF73GwhsxyM_2g.png)![medium blog image](https://miro.medium.com/max/900/1*hkZWlUgFyOSaLD5Uskv0tQ.png)![medium blog image](https://miro.medium.com/max/1115/1*COjzunj0-FsMJ0d7v7Z-6g.png)
+![](https://miro.medium.com/max/630/1*ULeXxVCDkF73GwhsxyM_2g.png)![](https://miro.medium.com/max/900/1*hkZWlUgFyOSaLD5Uskv0tQ.png)![](https://miro.medium.com/max/1115/1*COjzunj0-FsMJ0d7v7Z-6g.png)
 
 For a more complete guide… checkout :
 

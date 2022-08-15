@@ -9,4 +9,4 @@ export default function cycler() {
     return {
         next: () => args[index++ % args.length]
     };
-};
+}

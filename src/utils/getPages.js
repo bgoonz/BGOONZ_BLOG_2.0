@@ -5,7 +5,6 @@
  * @returns An array of objects that have a url property that starts with the urlPath.
  */
 import _ from 'lodash';
-
 /**
  * Get all the pages located under the provided `urlPath`, not including the
  * index page. I.e.: All pages having their URLs start with `urlPath` excluding
@@ -31,6 +30,16 @@ import _ from 'lodash';
  * @param {string} urlPath The url path to filter pages by
  * @return {Array}
  */
+<<<<<<< HEAD
+export default function getPages(pages, urlPath) {
+    urlPath = _.trim(urlPath, '/');
+    const urlPathParts = _.split(urlPath, '/');
+    return _.filter(pages, (page) => {
+        const pageUrlPath = _.trim(page.url, '/');
+        const pageUrlParts = _.split(pageUrlPath, '/');
+        return pageUrlParts.length > urlPathParts.length && _.isEqual(pageUrlParts.slice(0, urlPathParts.length), urlPathParts);
+    });
+=======
 export default function getPages( pages, urlPath ) {
   urlPath = _.trim( urlPath, '/' );
   const urlPathParts = _.split( urlPath, '/' );
@@ -39,4 +48,5 @@ export default function getPages( pages, urlPath ) {
     const pageUrlParts = _.split( pageUrlPath, '/' );
     return pageUrlParts.length > urlPathParts.length && _.isEqual( pageUrlParts.slice( 0, urlPathParts.length ), urlPathParts );
   } );
+>>>>>>> master
 }

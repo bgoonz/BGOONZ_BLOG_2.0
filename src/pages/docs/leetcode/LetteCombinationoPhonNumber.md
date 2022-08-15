@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 ## [17. Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/)
 
 ### Problem:
@@ -44,7 +43,6 @@ JavaScript specific optimization.
 Also, appending string is faster than prepending.
 
 ```js
-//
 /**
  * @param {string} digits
  * @return {string[]}
@@ -85,7 +83,6 @@ let letterCombinations = function (digits) {
 General recursive DFS solution.
 
 ```js
-//
 /**
  * @param {string} digits
  * @return {string[]}

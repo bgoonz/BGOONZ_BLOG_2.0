@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 ## [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/)
 
 ### Problem:
@@ -71,7 +70,6 @@ That is why we use stack to store open brackets: first in, last out.
 And since there is only bracket characters, the last open bracket happens to be the last character.
 
 ```js
-//
 /**
  * @param {string} s
  * @return {boolean}

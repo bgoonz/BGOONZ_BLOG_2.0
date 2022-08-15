@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 You can pass any number of arguments when invoking a Node.js application using
 
 Arguments can be standalone or have a key and a value.
