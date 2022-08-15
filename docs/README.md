@@ -79,7 +79,6 @@
   - [Component Structure](#component-structure)
 
 <!-- /code_chunk_output -->
-
 ![preview](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/blog-may-2022.png?raw=true)
 
 ---
@@ -89,6 +88,15 @@
 ```bash
 
 npm i @stackbit/gatsby-plugin-menus babel-runtime chokidar classnames fs-extra gatsby gatsby-image gatsby-plugin-netlify gatsby-plugin-netlify-cms gatsby-plugin-sass gatsby-plugin-react-helmet gatsby-plugin-typescript  --legacy-peer-deps
+
+
+git checkout 307a5cd        # check out the commit that you want to reset to
+git checkout -b fixy        # create a branch named fixy to do the work
+git merge -s ours master    # merge master's history without changing any files
+git checkout master         # switch back to master
+git merge fixy              # and merge in the fixed branch
+git push                    # done, no need to force push!
+
 
 
 git checkout 307a5cd        # check out the commit that you want to reset to
@@ -468,7 +476,6 @@ git add .
 git commit -m"update"
 git push -u origin gh-pages
 ```
-
 ```bash
 git init
 git add .
@@ -483,7 +490,6 @@ git push -u origin preview
 ### Description: recursively unzips folders and then deletes the zip file by the same name
 
 > Notes:
-
 ###### code
 
 ```bash
@@ -2243,7 +2249,9 @@ find . -type f -exec chmod 644 {} \;
 
 ![Preview](https://i.imgur.com/nieW1vp.png)
 
+
 ## Wiki Nav
+
 
 -   [Home](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
 -   [add copy to code blocks.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/add-copy-to-code-blocks.md)
@@ -3023,11 +3031,13 @@ find . -type f -exec chmod 644 {} \;
 
 <details>
 <summary>  ↞↠ Getting Started With GatsbyJS ↞↠  </summary>
+
 #
 
 ---
 
 ## 🚀 Quick start
+
 
 1. **Create a Gatsby site.**
 
@@ -3259,6 +3269,7 @@ The file/folder structure described above reflects Gatsby-specific files and fol
 ---
 
 
+## Excerpt
 
 
 
