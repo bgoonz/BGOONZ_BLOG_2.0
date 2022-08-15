@@ -1,0 +1,135 @@
+query ExampleQuery @netlify(id: """9d091d59-0d10-400f-8417-f171e588dfc2""", doc: """An example query to start with.""") {
+  me(
+    auths: {brexAuth: "", airtableApiKey: "", clearbitAuth: "", crunchbaseUserKey: "", cloudflareUserAuth: {key: "", email: ""}, dribbbleOAuthToken: "", dropboxOAuthToken: "", facebookOAuthToken: "", firebaseOAuthToken: "", gitHubOAuthToken: "", gmailOAuthToken: "", googleCalendarOAuthToken: "", gongAuth: {basic: {accessKeySecret: "", accessKey: ""}, oauthToken: ""}, googleComputeOAuthToken: "", googleMapsKey: "", googleDocsOAuthToken: "", googleOAuthToken: "", intercomOAuthToken: "", hubspotOAuthToken: "", googleSearchConsoleOAuthToken: "", zendeskAPITokenAuth: {token: "", email: "", subdomain: ""}, zeitOAuthToken: "", youtubeOAuthToken: "", wordpressBearerToken: "", upsAPIAuth: {accessToken: "", password: "", username: ""}, stripeOAuthToken: "", spotifyOAuthToken: "", slackOAuthToken: "", productHuntOAuthToken: "", openCollective: {apiKey: ""}, onegraphToken: "", graphCmsToken: "", googleTranslateOAuthToken: ""}
+  ) {
+    github {
+      bio
+      bioHTML
+      company
+      companyHTML
+      createdAt
+      email
+      hasSponsorsListing
+      isBountyHunter
+      login
+      name
+      oneGraphId
+      organizationVerifiedDomainEmails(login: "")
+      url
+      websiteUrl
+    }
+  }
+  emailNode(email: "") {
+    salesforceContact {
+      assistantName
+      accountId
+    }
+  }
+  npm
+  oneGraphNode(oneGraphId: "") {
+    oneGraphId
+    oneGraphLinkedNodes {
+      nodes {
+        oneGraphId
+        ... on ApolloSequence {
+          id
+          name
+        }
+        ... on ApolloAccount {
+          id
+          name
+        }
+        ... on ApolloContact {
+          id
+          email
+          lastName
+        }
+        ... on ApolloPerson {
+          id
+          email
+          accountId
+          city
+          country
+          emailStatus
+        }
+      }
+    }
+  }
+  gitHub(
+    auths: {airtableApiKey: "", clearbitAuth: "", crunchbaseUserKey: "", dribbbleOAuthToken: "", facebookOAuthToken: "", gitHubOAuthToken: "", gmailOAuthToken: "", gongAuth: {oauthToken: ""}, logdnaServiceAuth: {serviceKey: ""}, mixpanelApiSecret: "", productHuntOAuthToken: ""}
+  ) {
+    makeRestCall {
+      get(path: "", accept: "", allowUnauthenticated: false, query: "") {
+        jsonBody
+        response {
+          headers
+          httpVersion
+          rawBody(as: PLAIN)
+          statusCode
+        }
+      }
+    }
+    search(query: "", type: ISSUE) {
+      edges {
+        node
+      }
+    }
+    resource(url: "")
+    repositoryOwner(login: "") {
+      id
+    }
+    repository(name: "", owner: "") {
+      autoMergeAllowed
+      branchProtectionRules(after: "", before: "", first: 10, last: 10) {
+        totalCount
+        edges {
+          cursor
+          node {
+            allowsDeletions
+            allowsForcePushes
+            creator {
+              avatarUrl(size: 10)
+              login
+              resourcePath
+              url
+              ... on GitHubUser {
+                id
+                email
+                bioHTML
+                commitComments(after: "", before: "", last: 10) {
+                  edges {
+                    cursor
+                  }
+                }
+                company
+                companyHTML
+                createdAt
+                databaseId
+                followers(after: "", last: 10, first: 10, before: "") {
+                  totalCount
+                  edges {
+                    cursor
+                  }
+                }
+                login
+                issues {
+                  edges {
+                    node {
+                      id
+                    }
+                  }
+                }
+              }
+              ... on GitHubBot {
+                id
+                avatarUrl
+                login
+                oneGraphId
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
