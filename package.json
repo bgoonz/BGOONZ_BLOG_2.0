@@ -1,1 +1,6 @@
-{}
+{
+  "name": "BGOONZ_BLOG_2.0",
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
