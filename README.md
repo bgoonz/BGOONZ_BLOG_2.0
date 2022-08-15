@@ -63,6 +63,7 @@ docky src/components/**/*.js   --watch "src/components/**/*.js","./README.md"  -
   - [](#-7)
   - [Useful Commands (internal use)](#useful-commands-internal-use)
   - [Stable Points](#stable-points)
+    - [Links To Remember:](#links-to-remember)
   - [Web Dev Setup](#web-dev-setup)
   - [Basic Web Development Environment Setup](#basic-web-development-environment-setup)
     - [Basic Web Development Environment Setup](#basic-web-development-environment-setup-1)
@@ -348,6 +349,34 @@ git push                    # done, no need to force push!
 - [FINALLY FIXED](https://62b5863dd06870000889c5cf--bgoonz-blog.netlify.app/)
 <https://62b5863dd06870000889c5cf--bgoonz-blog.netlify.app/>
 - [Good deploy early Aug](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/a6bb13adf39305b7292a88bb1b37bb4bb2e5e76c)
+
+---
+
+### Links To Remember:
+
+
+- [Algolia Search UI](https://www.algolia.com/interface-demos/6ed0c3de-f9e4-4cc8-a7b2-c6c7c979cc5e)
+- [Most recent stable commit](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/2448c20614bfef5491240d7da5b5e5873db8b586)
+- [sitemap](https://www.xml-sitemaps.com/download/bgoonz-blog.netlify.app-ee43723d7/sitemap.xml?view=1)
+- [initial commit](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/e8f12effd461b560b366ee0bde5231f2c1ce0a4c)
+- [Static Html Version](https://github.com/Archive-42/bgoonz-blog-static)
+- [commit pages](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commits/master?after=496dfce7e627bc81c80f7c0b5c41ecf420500b4a+34&branch=master)
+- [alt blog contact page](https://bgoonz-blog-v3-0.netlify.app/contact/)
+- [Resource Archive](https://resourcerepo2.netlify.app/)
+- [starter](https://codesandbox.io/s/ecstatic-wozniak-gj31v?autoresize=1&expanddevtools=1&fontsize=12&hidenavigation=1&theme=dark)
+- [Instant Search Demo](https://codesandbox.io/s/magical-davinci-l4hq6)
+- [midway-commit](https://github.com/bgoonz/BGOONZ_BLOG_2.0/tree/92d88002bebcde66b47d8109222ac62c64fa9909)
+- [blog2.0 backups](https://gist.github.com/bgoonz/68203bca236305d93d75e87533c7e8b8)
+- [backup repo](https://github.com/bgoonz/BGOONZ_BLOG_2.0)
+- [Bookmark website](https://github.com/side-projects-42/superb-celery)
+- [stable stackbit](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/69a617bbce1113e65390d90e0085be422e7f23e1)
+- [repl.it for questions](https://comments-3.bgoonz.repl.co/)
+- [rotate pages](https://random-static-html-deploys.netlify.app/rotate.html)
+- [More widgets](https://webdevhub-1.disqus.com/)
+
+
+
+
 
 ---
 
