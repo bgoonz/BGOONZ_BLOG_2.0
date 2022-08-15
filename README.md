@@ -35,7 +35,10 @@
     - [Repos](#repos)
       - [⇨Privacy policy⇦](#privacy-policyhttpscodepeniobgoonzpenlyljzrw)
   - [Useful Commands (internal use)](#useful-commands-internal-use)
+  - [Stable Points:](#stable-points)
   - [Web Dev Setup](#web-dev-setup)
+    - [Documentation Commands:](#documentation-commands)
+  - [Blog Content:](#blog-content)
   - [Bash Cheat Sheet (MY COMMANDS)](#bash-cheat-sheet-my-commands)
       - [Find](#find)
   - [To find files by case-insensitive extension (ex: .jpg, .JPG, .jpG)](#to-find-files-by-case-insensitive-extension-ex-jpg-jpg-jpg)
@@ -75,6 +78,14 @@
     - [Output](#output-1)
   - [Source Code](#source-code)
   - [Component Structure](#component-structure)
+    - [Table of Contents](#table-of-contents)
+  - [getPage](#getpage)
+    - [Parameters](#parameters-2)
+  - [getPageByFilePath](#getpagebyfilepath)
+    - [Parameters](#parameters-3)
+  - [getPages](#getpages)
+    - [Parameters](#parameters-4)
+    - [Examples](#examples)
 
 <!-- /code_chunk_output -->
 
@@ -102,8 +113,59 @@ git push                    # done, no need to force push!
 
 ---
 
-<a href="https://testmysite.io/61e5ff836a840eeeef7e78e9/bgoonz-blog.netlify.app" rel="Test My Site Results">
-![Test My Site](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/Screenshot%202022-03-30%20at%2012-37-24%20Website%20Speed%20Test%20Tool%20-%20Testmysite.io%20by%20Netlify.png?raw=true)</a>
+## Stable Points:
+
+
+- [stable 8-13-2021](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/0c09a707f4bfddd974a31d97a4f8d716f1858ef8) or [or maybe](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/68fba78e36fffcf21288ea0e90e1075bf31b2a82)
+
+
+- [Stable September 11](https://github.com/side-projects-42/BGOONZ_BLOG_2.0)
+
+
+- [October Stable](https://github.com/Web-Dev-Collaborative/october-stable)
+
+
+- [November 2021 stable](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/9ae5da5813cc9b48d2a57c84cd32cf4309078524)
+
+- [Late November Stable](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/40ecc95f000a848710c39e166961b8da7fca306b)
+
+- [December](https://github.com/bgoonz/BGOONZ_BLOG_2.0/tree/fc4a6ba1d61a3ef0b893cc5a44e41672547a3cc6)
+
+- [Late December](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/848a8505eece492bfd9856eb63bd4acbee8bced6)
+
+
+
+- [Late Febuary](https://deploy-preview-1697--bgoonz-blog.netlify.app/)
+- [Late January](https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1447)
+
+
+- [Good stable point](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/90f70928a145c8a784899baf62efc2a0d5697bf4)
+
+
+- [Stable March 13th 2022](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/c3f30229ac3dcd19ff54798227ce065c216e0c11)
+
+- [Stable March 13th 2022](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/99db7b97282d7190556b2a1b1ac61d6d9c67f970)
+
+
+[netlify-deploy-preview](https://deploy-preview-2280--bgoonz-blog.netlify.app/docs/tools/)
+
+
+- [May fix](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/736d38cdcdd3692d6a3bf1d5485ac2b0a3824d02)
+https://6272b75c7b3c4c0009cacd01--bgoonz-blog.netlify.app/
+
+
+
+- [Syntax hilighting working most recent](https://github.com/bgoonz/BGOONZ_BLOG_2.0/tree/db4d36067c1483c079389f1bd0e456c473c56710)
+
+
+
+- [FINALLY FIXED](https://62b5863dd06870000889c5cf--bgoonz-blog.netlify.app/)
+https://62b5863dd06870000889c5cf--bgoonz-blog.netlify.app/
+
+
+
+- [Good deploy early Aug](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/a6bb13adf39305b7292a88bb1b37bb4bb2e5e76c)
+
 
 ---
 
