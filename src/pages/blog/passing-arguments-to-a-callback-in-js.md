@@ -18,9 +18,11 @@ related_posts:
     - src/pages/blog/data-structures-algorithms-resources.md
 cmseditable: true
 ---
+
 By default you cannot pass arguments to a callback function. For example:
 
 ```js
+//
 function callback() {
     console.log('Hi human');
 }
@@ -31,6 +33,7 @@ document.getElementById('someelem').addEventListener('click', callback);
 You can take advantage of the closure scope in Javascript to pass arguments to callback functions. Check this example:
 
 ```js
+//
 function callback(a, b) {
     return function () {
         console.log('sum = ', a + b);
@@ -51,6 +54,7 @@ So this way the arguments `x` and `y` are in scope of the callback function when
 Another method to do this is using the `bind` method. For example:
 
 ```js
+//
 var alertText = function (text) {
     alert(text);
 };

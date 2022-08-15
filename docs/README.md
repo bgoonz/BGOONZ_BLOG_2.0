@@ -16,9 +16,7 @@
 
 #### [⇨Privacy policy⇦](https://codepen.io/bgoonz/pen/LYLJZrW)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys)[![CodeFactor](https://www.codefactor.io/repository/github/bgoonz/bgoonz_blog_2.0/badge)](https://www.codefactor.io/repository/github/bgoonz/bgoonz_blog_2.0)
-
-![GitHub visitors](https://visitor-badge-reloaded.herokuapp.com/badge?page_id=bgoonz.visitor.badge.reloaded&color=00bbbb&style=for-the-badge&logo=github)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys)[![CodeFactor](https://www.codefactor.io/repository/github/bgoonz/bgoonz_blog_2.0/badge)](https://www.codefactor.io/repository/github/bgoonz/bgoonz_blog_2.0)[![Tests: `nvm install-latest-npm`](https://github.com/bgoonz/BGOONZ_BLOG_2.0/actions/workflows/latest-npm.yml/badge.svg?branch=2022)](https://github.com/bgoonz/BGOONZ_BLOG_2.0/actions/workflows/latest-npm.yml)[![pages-build-deployment](https://github.com/bgoonz/BGOONZ_BLOG_2.0/actions/workflows/pages/pages-build-deployment/badge.svg?branch=master)](https://github.com/bgoonz/BGOONZ_BLOG_2.0/actions/workflows/pages/pages-build-deployment)[![Tests: `nvm install-latest-npm`](https://github.com/bgoonz/BGOONZ_BLOG_2.0/actions/workflows/latest-npm.yml/badge.svg?branch=restyled%2Fcms%2Fblog%2Fadding-css-to-your-html)](https://github.com/bgoonz/BGOONZ_BLOG_2.0/actions/workflows/latest-npm.yml)<a href='https://github.com/bgoonz/BGOONZ_BLOG_2.0/' target="_blank"><img alt='GitHub' src='https://img.shields.io/badge/github-100000?style=flat&logo=GitHub&logoColor=0C002F&labelColor=FFFFFF&color=black'/></a>![GitHub visitors](https://visitor-badge-reloaded.herokuapp.com/badge?page_id=bgoonz.visitor.badge.reloaded&color=00bbbb&style=for-the-badge&logo=github)
 
 
 
@@ -81,7 +79,6 @@
   - [Component Structure](#component-structure)
 
 <!-- /code_chunk_output -->
-
 ![preview](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/blog-may-2022.png?raw=true)
 
 ---
@@ -91,6 +88,15 @@
 ```bash
 
 npm i @stackbit/gatsby-plugin-menus babel-runtime chokidar classnames fs-extra gatsby gatsby-image gatsby-plugin-netlify gatsby-plugin-netlify-cms gatsby-plugin-sass gatsby-plugin-react-helmet gatsby-plugin-typescript  --legacy-peer-deps
+
+
+git checkout 307a5cd        # check out the commit that you want to reset to
+git checkout -b fixy        # create a branch named fixy to do the work
+git merge -s ours master    # merge master's history without changing any files
+git checkout master         # switch back to master
+git merge fixy              # and merge in the fixed branch
+git push                    # done, no need to force push!
+
 
 
 git checkout 307a5cd        # check out the commit that you want to reset to
@@ -470,7 +476,6 @@ git add .
 git commit -m"update"
 git push -u origin gh-pages
 ```
-
 ```bash
 git init
 git add .
@@ -485,7 +490,6 @@ git push -u origin preview
 ### Description: recursively unzips folders and then deletes the zip file by the same name
 
 > Notes:
-
 ###### code
 
 ```bash
@@ -2245,7 +2249,9 @@ find . -type f -exec chmod 644 {} \;
 
 ![Preview](https://i.imgur.com/nieW1vp.png)
 
+
 ## Wiki Nav
+
 
 -   [Home](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
 -   [add copy to code blocks.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/add-copy-to-code-blocks.md)
@@ -3025,11 +3031,13 @@ find . -type f -exec chmod 644 {} \;
 
 <details>
 <summary>  ↞↠ Getting Started With GatsbyJS ↞↠  </summary>
+
 #
 
 ---
 
 ## 🚀 Quick start
+
 
 1. **Create a Gatsby site.**
 
@@ -3261,6 +3269,7 @@ The file/folder structure described above reflects Gatsby-specific files and fol
 ---
 
 
+## Excerpt
 
 
 
