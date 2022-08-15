@@ -4,13 +4,13 @@ label {
     line-height: 1.5;
     margin-bottom: 0.25em;
 
-  input[type='checkbox']+&,
-  input[type='radio']+& {
-    font-weight: normal;
-    cursor: pointer;
-    padding-left: 0.25em;
-    padding-right: 1em;
-  }
+    input[type='checkbox'] + &,
+    input[type='radio'] + & {
+        font-weight: normal;
+        cursor: pointer;
+        padding-left: 0.25em;
+        padding-right: 1em;
+    }
 }
 
 input[type='text'],

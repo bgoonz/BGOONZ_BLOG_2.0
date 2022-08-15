@@ -1,8 +1,5 @@
 import _ from 'lodash';
-<<<<<<< HEAD
-=======
 
->>>>>>> master
 export default function toStyleObj(styleAttr) {
     return styleAttr.split(';').reduce((accumulator, pair) => {
         pair = pair.trim();

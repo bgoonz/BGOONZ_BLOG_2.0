@@ -3,8 +3,8 @@ title: Privacy Policy
 weight: 0
 excerpt: Privacy Policy
 seo:
-    title: ''
-    description: ''
+    title: 'Privacy Policy'
+    description: 'Privacy Policy'
     robots: []
     extra: []
 template: docs

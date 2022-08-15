@@ -7,6 +7,7 @@
  */
 import _ from 'lodash';
 import getPage from './getPage';
+
 export default function toUrl(pages, pagePath) {
     if (_.startsWith(pagePath, '#')) {
         return pagePath;
