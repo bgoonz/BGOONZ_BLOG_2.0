@@ -5,7 +5,7 @@ excerpt: Its always good to have a look at worst-case time complexities of
     common data structure operations frequently.
 ---
 
-# ![alt-text](ds-cheat-sheet-operations.png)
+# ![](ds-cheat-sheet-operations.png)
 
 > Its always good to have a look at worst-case time complexities of common data structure operations frequently.
 
@@ -33,7 +33,7 @@ In Queue for Enqueue, Dequeue & Peek operations it takes only Constant time.
 
 ![Image for post](https://miro.medium.com/max/3942/1*amq4OYYapQjaN2QXIG5eUw.png)
 
-Here we are considering we are using tails for all single linked lists (Some implementations might not have it).  
+Here we are considering we are using tails for all single linked lists (Some implementations might not have it).
 Linked List is the data structure that comes with a lot of different operational scenarios, we have to think about head & tail usage in every operation we are doing. And operation logic and complexity changes at the head, tail, and middle. Typically insertion at head & tail takes constant time and insertion in middle takes linear time. Search can take linear time. Deletion at the head takes constant time and it can take linear time in remaining scenarios.
 
 ---
@@ -44,7 +44,7 @@ A tree is a data structure where a node can have zero or more children. Each nod
 
 These data structures are called "trees" because the data structure resembles a tree 🌳. It starts with a **root** node and **branch** off with its descendants, and finally, there are **leaves**.
 
-![alt-text](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/images/tree-parts.jpg)
+![](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/images/tree-parts.jpg)
 
 Here are some properties of trees:
 
@@ -71,7 +71,7 @@ We can create a tree with 3 descendents as follows:
 
 That's all; we have a tree data structure!
 
-![alt-text](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/images/simpson2-tree.jpg 'Simpson tree data structure')
+![](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/images/simpson2-tree.jpg 'Simpson tree data structure')
 
 The node `abe` is the **root** and `bart`, `lisa` and `maggie` are the **leaf** nodes of the tree. Notice that the tree's node can have a different number of descendants: 0, 1, 3, or any other value.
 
@@ -98,7 +98,7 @@ Depending on how nodes are arranged in a binary tree, it can be **full**, **comp
 
 Look at these examples:
 
-![bin tree](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/images/full-complete-perfect-binary-tree.jpg 'Full vs. Complete vs. Perfect Binary Tree')
+![](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/images/full-complete-perfect-binary-tree.jpg 'Full vs. Complete vs. Perfect Binary Tree')
 
 These properties are not always mutually exclusive. You can have more than one:
 
@@ -108,7 +108,7 @@ These properties are not always mutually exclusive. You can have more than one:
     -   Like in our "complete" example, since it has a parent with only one child. If we remove the rightmost gray node, then we would have a **complete** and **full** tree but not perfect.
 -   A full tree is not always complete and perfect.
 
-## [bin search](#Binary-Search-Tree-BST 'Binary Search Tree (BST)')Binary Search Tree (BST)
+## [](#Binary-Search-Tree-BST 'Binary Search Tree (BST)')Binary Search Tree (BST)
 
 Binary Search Trees or BST for short are a particular application of binary trees. BST has at most two nodes (like all binary trees). However, the values are in such a way that the left children value must be less than the parent, and the right children is must be higher.
 
@@ -147,7 +147,7 @@ To insert a node in a binary tree, we do the following:
 
 Let's do an illustration how to insert 30, 40, 10, 15, 12, 50:
 
-![alt-text](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/images/bst2.gif 'Inserting nodes on a Binary Search Tree (BST)')
+![](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/images/bst2.gif 'Inserting nodes on a Binary Search Tree (BST)')
 
 We can implement insert as follows:
 
@@ -199,7 +199,7 @@ Deleting the root is very similar to removing nodes with 0, 1, or 2 children tha
 
 Here's an animation of what we discussed.
 
-![alt-text](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/images/bst-remove.gif 'Removing a node with 0, 1, 2 children from a binary search tree')
+![](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/images/bst-remove.gif 'Removing a node with 0, 1, 2 children from a binary search tree')
 
 In the animation, it moves up the left child/subtree and keeps the right child/subtree in place.
 
@@ -287,7 +287,7 @@ So far, we have discussed how to `add`, `remove` and `find` elements. However, w
 
 Let's say that we want to add numbers in ascending order.
 
-![alt-text](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/images/bst-asc.gif 'Inserting values in ascending order in a Binary Search Tree')
+![](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/images/bst-asc.gif 'Inserting values in ascending order in a Binary Search Tree')
 
 We will end up with all the nodes on the left side! This unbalanced tree is no better than a LinkedList, so finding an element would take _O(n)_. 😱
 
@@ -297,7 +297,7 @@ We need to find a way to balance the tree!
 
 If the tree was **balanced**, then we could find elements in _O(log n)_ instead of going through each node. Let's talk about what balanced tree means.
 
-![alt-text](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/images/balanced-vs-non-balanced-tree.jpg 'Balanced vs unbalanced Tree')
+![](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/images/balanced-vs-non-balanced-tree.jpg 'Balanced vs unbalanced Tree')
 
 If we are searching for `7` in the non-balanced tree, we have to go from 1 to 7. However, in the balanced tree, we visit: `4`, `6`, and `7`. It gets even worse with larger trees. If you have one million nodes, searching for a non-existing element might require to visit all million while on a balanced tree it just requires 20 visits! That's a huge difference!
 
@@ -1546,7 +1546,7 @@ class BinarySearchTree {
 
 **depth-first** _vs_ **breadth-first** : they both **timeComplexity is same** but **spaceComplexity is different** if we got **a wide tree** like this:
 
-![alt-text](./assets/Z20M5iE.png)
+![](./assets/Z20M5iE.png)
 
 **breadth-first take up more space.** cuz we adding more element to queue.
 
@@ -1895,15 +1895,15 @@ A graph data structure consists of a finite (and possibly mutable) set of vertic
 
 -   weighted/ unweighted graph:
     in weighted graph there is a weight associated by edges but in unweighted graph no weight assigned to edges
-    ![alt-text](./assets/3.-Weithened-Graph.png)
+    ![](./assets/3.-Weithened-Graph.png)
 
 ### adjacency matrix
 
-![alt-text](./assets/GahiR.jpg)
+![](./assets/GahiR.jpg)
 
 ## adjacency list
 
-![alt-text](./assets/268857bd-bb32-4fa5-88c9-66d7787952e9.png)
+![](./assets/268857bd-bb32-4fa5-88c9-66d7787952e9.png)
 
 ## adjacency list vs adjacency matrix
 
@@ -2116,7 +2116,7 @@ class Graph {
 
 Finding shortest path between two vertices in a **weighted graph**.
 
-![alt-text](./assets/Dijkstra_Animation.gif)
+![](./assets/Dijkstra_Animation.gif)
 
 ```javascript
 interface Value {
@@ -2262,7 +2262,7 @@ function fib(n: number): number {
 }
 ```
 
-![alt-text](./assets/2-Figure3.1-1.png)
+![](./assets/2-Figure3.1-1.png)
 
 As you see we calculate f(5) two times with current implementation.
 

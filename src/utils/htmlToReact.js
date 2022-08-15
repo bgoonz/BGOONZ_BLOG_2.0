@@ -13,17 +13,13 @@ export default function htmlToReact(html) {
     return ReactHtmlParser(html, {
         transform: (node, index) => {
             if (node.type === 'script') {
-                if (!_.isEmpty(node.children)) {
-                    return (
-                        <ScriptTag key={index} {...node.attribs}>
-                            {convertChildren(node.children, index)}
-                        </ScriptTag>
-                    );
-                } else {
-                    return <ScriptTag key={index} {...node.attribs} />;
-                }
+                return !_.isEmpty(node.children) ? (
+                    <ScriptTag key={index} {...node.attribs}>
+                        {convertChildren(node.children, index)}
+                    </ScriptTag>
+                ) : <ScriptTag key={index} {...node.attribs}/>;
             } else if (node.type === 'tag' && node.name === 'a') {
-                const href = node.attribs.href;
+                const { href } = node.attribs;
                 const props = _.omit(node.attribs, 'href');
                 // use Link only if there are no custom attributes like style, class, and what's not that might break react
                 if (_.isEmpty(props)) {
