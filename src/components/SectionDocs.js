@@ -3,7 +3,7 @@ import React from 'react';
 import { classNames, getPage, htmlToReact, Link, pathJoin, withPrefix } from '../utils';
 export default class SectionDocs extends React.Component {
     render() {
-        const section = _.get(this.props, 'section', null);
+        let section = _.get(this.props, 'section', null);
         return (
             <section
                 id={_.get(section, 'section_id', null)}
@@ -26,8 +26,8 @@ export default class SectionDocs extends React.Component {
                             })}
                         >
                             {_.map(_.get(this.props, 'pageContext.site.data.doc_sections.sections', null), (doc_section, doc_section_idx) => {
-                                const doc_section_path = pathJoin(_.get(this.props, 'pageContext.site.data.doc_sections.root_docs_path', null), doc_section);
-                                const doc_section_page = getPage(this.props.pageContext.pages, doc_section_path);
+                                let doc_section_path = pathJoin(_.get(this.props, 'pageContext.site.data.doc_sections.root_docs_path', null), doc_section);
+                                let doc_section_page = getPage(this.props.pageContext.pages, doc_section_path);
                                 return (
                                     <div key={doc_section_idx} className="grid-item">
                                         <div className="grid-item-inside">
