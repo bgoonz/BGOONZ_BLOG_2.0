@@ -33,9 +33,12 @@ thumb_image: images/superb-amaranth.png
 thumb_image_alt: python logo
 ---
 
-# Beginners Guide To Python[**Basic Web Development Environment Setup**&#xA;*Windows Subsystem for Linux (WSL) and Ubuntu*levelup.gitconnected.com](https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe)![](https://cdn-images-1.medium.com/max/600/1*59V2ZNbyJfsdGR2N20PM7w.png)![](https://cdn-images-1.medium.com/max/800/0*oVIDxWdgJXoIt7CI.jpg)[**Put Python Anywhere on the Web**&#xA;*Python in the browser. No installation required.*trinket.io](https://trinket.io/python3/2b693977e7)&#xA;&#xA;
+# Beginners Guide To Python
 
-<iframe src="https://py-prac-42.netlify.app/" width="100%" height="1200px"><iframe>
+
+
+[**Basic Web Development Environment Setup**&#xA;*Windows Subsystem for Linux (WSL) and Ubuntu*levelup.gitconnected.com](https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe)![](https://cdn-images-1.medium.com/max/600/1*59V2ZNbyJfsdGR2N20PM7w.png)![](https://cdn-images-1.medium.com/max/800/0*oVIDxWdgJXoIt7CI.jpg)[**Put Python Anywhere on the Web**&#xA;*Python in the browser. No installation required.*trinket.io](https://trinket.io/python3/2b693977e7)&#xA;&#xA;
+
 
 My favorite language for maintainability is Python. It has simple, clean syntax, object encapsulation, good library support, and optional named parameters.
 
@@ -43,14 +46,14 @@ My favorite language for maintainability is Python. It has simple, clean syntax,
 
 Article on basic web development setup… it is geared towards web but VSCode is an incredibly versitile editor and this stack really could suit just about anyone working in the field of computer science.
 
-### The Repository & Live Site Behind This Article:
+### The Repository & Live Site Behind This Article:
 
-### About Python(Taken From Tutorial Page Of Docs):
+### About Python(Taken From Tutorial Page Of Docs):
 
 [Python enables programs to be written compactly and readably. Programs written in Python are typically much shorter than equivalent C, C++, or Java programs, for several reasons:](https://docs.python.org/3/tutorial/appetite.html)
 
 -   the high-level data types allow you to express complex operations in a single statement;
-
+-
 -   statement grouping is done by indentation instead of beginning and ending brackets;
 
 -   no variable or argument declarations are necessary.
@@ -69,15 +72,15 @@ To determine if your Windows computer already has Python 3:
 
 python --version
 
-1.  Running python --version may not return a value, or may return an error message stating *'python' is not recognized as an internal or external command, operable program or batch file.* This indicates Python is not installed on your Windows system.
+1.  Running python --version may not return a value, or may return an error message stating _'python' is not recognized as an internal or external command, operable program or batch file._ This indicates Python is not installed on your Windows system.
 
-2.  If you see the word Python with a set of numbers separated by . characters, some version of Python is installed.
+2.  If you see the word Python with a set of numbers separated by . characters, some version of Python is installed.
 
 #### i.e.
 
 > Python 3.8.0
 
-**As long as the first number is 3**, you have Python 3 installed.
+**As long as the first number is 3**, you have Python 3 installed.
 
 > Download Page:
 >
@@ -91,66 +94,66 @@ python --version
 
 ### pip
 
-If you use pip, you can install it with:
+If you use pip, you can install it with:
 
-If installing using pip install --user, you must add the user-level bin directory to your PATH environment variable in order to launch jupyter lab. If you are using a Unix derivative (FreeBSD, GNU / Linux, OS X), you can achieve this by using export PATH="$HOME/.local/bin:$PATH" command.
+If installing using pip install --user, you must add the user-level bin directory to your PATH environment variable in order to launch jupyter lab. If you are using a Unix derivative (FreeBSD, GNU / Linux, OS X), you can achieve this by using export PATH="$HOME/.local/bin:$PATH" command.
 
 ### pipenv
 
-If you use pipenv, you can install it as:
+If you use pipenv, you can install it as:
 
 or from a git checkout:
 
-When using pipenv, in order to launch jupyter lab, you must activate the project’s virtualenv. For example, in the directory where pipenv’s Pipfile and Pipfile.lock live (i.e., where you ran the above commands):
+When using pipenv, in order to launch jupyter lab, you must activate the project's virtualenv. For example, in the directory where pipenv's Pipfile and Pipfile.lock live (i.e., where you ran the above commands):
 
-Alternatively, you can run jupyter lab inside the virtualenv with
+Alternatively, you can run jupyter lab inside the virtualenv with
 
 [Jupyter Notebook Viewer](https://nbviewer.jupyter.org/github/bgoonz/Jupyter-Notebooks/tree/master/)
 
 ### Python Syntax
 
-Python syntax was made for readability, and easy editing. For example, the python language uses a : and indented code, while javascript and others generally use {} and indented code.
+Python syntax was made for readability, and easy editing. For example, the python language uses a : and indented code, while javascript and others generally use {} and indented code.
 
 ### First Program
 
-Lets create a [python 3](https://repl.it/languages/python3) repl, and call it *Hello World*. Now you have a blank file called *main.py*. Now let us write our first line of code:
+Lets create a [python 3](https://repl.it/languages/python3) repl, and call it _Hello World_. Now you have a blank file called _main.py_. Now let us write our first line of code:
 
-> _Brian Kernighan actually wrote the first “Hello, World!” program as part of the documentation for the BCPL programming language developed by Martin Richards._
+> _Brian Kernighan actually wrote the first "Hello, World!" program as part of the documentation for the BCPL programming language developed by Martin Richards._
 
 Now, press the run button, which obviously runs the code. If you are not using replit, this will not work. You should research how to run a file with your text editor.
 
 ### Command Line
 
-If you look to your left at the console where hello world was just printed, you can see a >, >>>, or $ depending on what you are using. After the prompt, try typing a line of code.
+If you look to your left at the console where hello world was just printed, you can see a >, >>>, or $ depending on what you are using. After the prompt, try typing a line of code.
 
 The command line allows you to execute single lines of code at a time. It is often used when trying out a new function or method in the language.
 
 ### New: Comments!
 
-Another cool thing that you can generally do with all languages, are comments. In python, a comment starts with a #. The computer ignores all text starting after the #.
+Another cool thing that you can generally do with all languages, are comments. In python, a comment starts with a #. The computer ignores all text starting after the #.
 
 \# Write some comments!
 
-If you have a huge comment, do **not** comment all the 350 lines, just put ''' before it, and ''' at the end. Technically, this is not a comment but a string, but the computer still ignores it, so we will use it.
+If you have a huge comment, do **not** comment all the 350 lines, just put ''' before it, and ''' at the end. Technically, this is not a comment but a string, but the computer still ignores it, so we will use it.
 
 ### New: Variables!
 
-Unlike many other languages, there is no var, let, or const to declare a variable in python. You simply go name = 'value'.
+Unlike many other languages, there is no var, let, or const to declare a variable in python. You simply go name = 'value'.
 
-Remember, there is a difference between integers and strings. *Remember: String = "".* To convert between these two, you can put an int in a str() function, and a string in a int() function. There is also a less used one, called a float. Mainly, these are integers with decimals. Change them using the float() command.
+Remember, there is a difference between integers and strings. _Remember: String = ""._ To convert between these two, you can put an int in a str() function, and a string in a int() function. There is also a less used one, called a float. Mainly, these are integers with decimals. Change them using the float() command.
 
 <https://repl.it/@bgoonz/second-scr?lite=true&referrer=https%3A%2F%2Fbryanguner.medium.com>
 
-Instead of using the , in the print function, you can put a + to combine the variables and string.
+Instead of using the , in the print function, you can put a + to combine the variables and string.
 
 ### Operators
 
 There are many operators in python:
 
 -   \+
-
+-
 -   \-
-
+-
 -   /
 
 -   \*
@@ -164,16 +167,16 @@ You should already know everything shown above, as it is similar to other langua
 _complexop.py_
 
 The ones above are to edit the current value of the variable.
-Sorry to JS users, as there is no i++; or anything.
+Sorry to JS users, as there is no i++; or anything.
 
-### _Fun Fact:&#xA;The python language was named after Monty Python._
+### _Fun Fact:&#xA;The python language was named after Monty Python._
 
-If you really want to know about the others, view [Py Operators](https://www.tutorialspoint.com/python/python_basic_operators.htm)
+If you really want to know about the others, view [Py Operators](https://www.tutorialspoint.com/python/python_basic_operators.htm)
 
-### More Things With Strings
+### More Things With Strings
 
 Like the title?
-Anyways, a ' and a " both indicate a string, but **do not combine them!**
+Anyways, a ' and a " both indicate a string, but **do not combine them!**
 
 _quotes.py_
 
@@ -181,7 +184,7 @@ _slicing.py_
 
 ### String Slicing
 
-You can look at only certain parts of the string by slicing it, using \[num:num].
+You can look at only certain parts of the string by slicing it, using \[num:num].
 The first number stands for how far in you go from the front, and the second stands for how far in you go from the back.
 
 ### Methods and Functions
@@ -189,11 +192,11 @@ The first number stands for how far in you go from the front, and the second sta
 Here is a list of functions/methods we will go over:
 
 -   .strip()
-
+-
 -   len()
-
+-
 -   .lower()
-
+-
 -   .upper()
 
 -   .replace()
@@ -217,17 +220,17 @@ _inp2.py_
 
 ### New: Importing Modules
 
-Python has created a lot of functions that are located in other .py files. You need to import these **modules** to gain access to the,, You may wonder why python did this. The purpose of separate modules is to make python faster. Instead of storing millions and millions of functions, , it only needs a few basic ones. To import a module, you must write input \<modulename>. Do not add the .py extension to the file name. In this example , we will be using a python created module named random.
+Python has created a lot of functions that are located in other .py files. You need to import these **modules** to gain access to the,, You may wonder why python did this. The purpose of separate modules is to make python faster. Instead of storing millions and millions of functions, , it only needs a few basic ones. To import a module, you must write input \<modulename>. Do not add the .py extension to the file name. In this example , we will be using a python created module named random.
 
 _module.py_
 
-Now, I have access to all functions in the random.py file. To access a specific function in the module, you would do \<module>.\<function>. For example:
+Now, I have access to all functions in the random.py file. To access a specific function in the module, you would do \<module>.\<function>. For example:
 
 _module2.py_
 
 > \*Pro Tip:
-> Do from random import randint to not have to do random.randint(), just randint()
-> To import all functions from a module, you could do from random import \*\*
+> Do from random import randint to not have to do random.randint(), just randint()
+> To import all functions from a module, you could do from random import \*\*
 
 >
 
@@ -235,22 +238,22 @@ _module2.py_
 
 Loops allow you to repeat code over and over again. This is useful if you want to print Hi with a delay of one second 100 times.
 
-#### for Loop
+#### for Loop
 
 The for loop goes through a list of variables, making a seperate variable equal one of the list every time.
-Let’s say we wanted to create the example above.
+Let's say we wanted to create the example above.
 
 _loop.py_
 
-This will print Hello with a .3 second delay 100 times. This is just one way to use it, but it is usually used like this:
+This will print Hello with a .3 second delay 100 times. This is just one way to use it, but it is usually used like this:
 
 _loop2.py_
 
 <https://storage.googleapis.com/replit/images/1539649280875_37d22e6d49e8e8fbc453631def345387.pn>
 
-#### while Loop
+#### while Loop
 
-The while loop runs the code while something stays true. You would put while \<expression>. Every time the loop runs, it evaluates if the expression is True. It it is, it runs the code, if not it continues outside of the loop. For example:
+The while loop runs the code while something stays true. You would put while \<expression>. Every time the loop runs, it evaluates if the expression is True. It it is, it runs the code, if not it continues outside of the loop. For example:
 
 _while.py_
 
@@ -258,17 +261,17 @@ Or you could do:
 
 _while2.py_
 
-### New: if Statement
+### New: if Statement
 
-The if statement allows you to check if something is True. If so, it runs the code, if not, it continues on. It is kind of like a while loop, but it executes **only once**. An if statement is written:
+The if statement allows you to check if something is True. If so, it runs the code, if not, it continues on. It is kind of like a while loop, but it executes **only once**. An if statement is written:
 
 _if.py_
 
-Now, you may think that it would be better if you could make it print only one message. Not as many that are True. You can do that with an elif statement:
+Now, you may think that it would be better if you could make it print only one message. Not as many that are True. You can do that with an elif statement:
 
 _elif.py_
 
-Now, you may wonder how to run code if none work. Well, there is a simple statement called else:
+Now, you may wonder how to run code if none work. Well, there is a simple statement called else:
 
 _else.py_
 
@@ -289,60 +292,60 @@ _functions.py_
 
 ### Project Based Learning:
 
-The following is a modified version of a tutorial posted By: [InvisibleOne ](https://replit.com/@InvisibleOne)
+The following is a modified version of a tutorial posted By: [InvisibleOne ](https://replit.com/@InvisibleOne)
 
-I would cite the original tutorial it’s self but at the time of this writing I can no longer find it on his repl.it profile and so the only reference I have are my own notes from following the tutorial when I first found it.
+I would cite the original tutorial it's self but at the time of this writing I can no longer find it on his repl.it profile and so the only reference I have are my own notes from following the tutorial when I first found it.
 
 ### 1. Adventure Story
 
 The first thing you need with an adventure story is a great storyline, something that is exciting and fun. The idea is, that at each pivotal point in the story, you give the player the opportunity to make a choice.
-First things first, let’s import the stuff that we need, like this:
+First things first, let's import the stuff that we need, like this:
 
 Now, we need some variables to hold some of the player data.
 
-Ok, now we have the player’s name and nickname, let’s welcome them to the game
+Ok, now we have the player's name and nickname, let's welcome them to the game
 
-Now for the story. The most important part of all stories is the introduction, so let’s print our introduction
+Now for the story. The most important part of all stories is the introduction, so let's print our introduction
 
-Now, we’ll give the player their first choice
+Now, we'll give the player their first choice
 
 There you have it, a pretty simple choose your own ending story. You can make it as complex or uncomplex as you like.
 
-### 2. TEXT ENCODER
+### 2. TEXT ENCODER
 
-Ever make secret messages as a kid? I used to. Anyways, here’s the way you can make a program to encode messages! It’s pretty simple. First things first, let’s get the message the user wants to encode, we’ll use input() for that:
+Ever make secret messages as a kid? I used to. Anyways, here's the way you can make a program to encode messages! It's pretty simple. First things first, let's get the message the user wants to encode, we'll use input() for that:
 
 Now we need to split that string into a list of characters, this part is a bit more complicated.
 
 Now we need to convert the characters into code, well do this with a for loop:
 
-Once we’ve encoded the text, we’ll print it back for the user
+Once we've encoded the text, we'll print it back for the user
 
 And if you want to decode something, it is this same process but in reverse!
 
-### 3. Guess my Number
+### 3. Guess my Number
 
 Number guessing games are fun and pretty simple, all you need are a few loops. To start, we need to import random.
 
-That is pretty simple. Now we’ll make a list with the numbers were want available for the game
+That is pretty simple. Now we'll make a list with the numbers were want available for the game
 
 Next, we get a random number from the list
 
-Now, we need to ask the user for input, we’ll to this with a while loop
+Now, we need to ask the user for input, we'll to this with a while loop
 
 Have fun with this!
 
 ### 4. Notes
 
-Here is a more advanced project, but still pretty easy. This will be using a txt file to save some notes. The first thing we need to do is to create a txt file in your repl, name it ‘notes.txt’
-Now, to open a file in python we use open(‘filename’, type) The type can be ‘r’ for read, or ‘w’ for write. There is another option, but we won’t be using that here. Now, the first thing we are going to do is get what the user would like to save:
+Here is a more advanced project, but still pretty easy. This will be using a txt file to save some notes. The first thing we need to do is to create a txt file in your repl, name it 'notes.txt'
+Now, to open a file in python we use open('filename', type) The type can be 'r' for read, or 'w' for write. There is another option, but we won't be using that here. Now, the first thing we are going to do is get what the user would like to save:
 
-Now we’ll open our file and save that text
+Now we'll open our file and save that text
 
-There we go, now the information is in the file. Next, we’ll retrieve it
+There we go, now the information is in the file. Next, we'll retrieve it
 
-There we go, that’s how you can open files and close files with python
+There we go, that's how you can open files and close files with python
 
 ### 5. Random Dare Generator
 
-Who doesn’t love a good dare? Here is a program that can generate random dares. The first thing we’ll need to do is as always, import random. Then we’ll make some lists of dares
+Who doesn't love a good dare? Here is a program that can generate random dares. The first thing we'll need to do is as always, import random. Then we'll make some lists of dares

@@ -1,0 +1,71 @@
+id: Google
+title: Google Apis Services And Tools
+description: "### [Chrome
+  DevTools](https://developer.chrome.com/docs/devtools/)\r
+
+  \r
+
+  The Chrome DevTools are a set of web authoring and debugging tools built
+  into Google Chrome. Use the DevTools to iterate, debug and profile your
+  site.\r
+
+  \r
+
+  ### [Lighthouse](https://developers.google.com/web/tools/lighthouse)\r
+
+  \r
+
+  Lighthouse is an open-source, automated tool for improving the quality of
+  your web apps. It is integrated directly into the Chrome DevTools Audits
+  panel. You can also run Lighthouse from the command line or install the Chrome
+  Extension.\r
+
+  \r
+
+  ### [Puppeteer](https://developers.google.com/web/tools/puppeteer)\r
+
+  \r
+
+  Puppeteer is a Node library which provides a high-level API to control
+  headless Chrome over the DevTools Protocol. It can also be configured to use
+  full (non-headless) Chrome or Chromium.\r
+
+  \r
+
+  ### [Workbox](https://developers.google.com/web/tools/workbox)\r
+
+  \r
+
+  Workbox is a set of service worker libraries and tools that make it easy to
+  build an offline PWA and take advantage of the service worker APIs.\r
+
+  \r
+
+  ### [Lit](https://lit.dev/)\r
+
+  \r
+
+  Lit is a simple library for building fast, lightweight web components. You
+  can use Lit to build web components that work in any framework, or with no
+  framework at all.\r
+
+  \r
+
+  ### [Angular](https://angular.io/)\r
+
+  \r
+
+  Angular is a development platform for building applications across web,
+  mobile, and desktop. With simple, declarative templates, reusable components,
+  and support for all parts of the development experience, Angular makes it easy
+  to write, test, and deploy high performing applications at any scale.\r
+
+  \r
+
+  ### [PageSpeed
+  Module](https://developers.google.com/speed/pagespeed/module)\r
+
+  \r
+
+  The PageSpeed modules are open-source server modules that optimize your site
+  automatically."

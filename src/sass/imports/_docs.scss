@@ -1,33 +1,31 @@
 .docs-content {
     padding-top: 2.5em;
-    width: 95%;
 }
-.post-content {
-    width: 85%;
-}
+
 .post {
     &.type-docs {
-        margin-bottom: 3.625em;
+        margin-bottom: 5.625em;
+        max-width: $container-md;
 
         h1 {
-            font-size: 1.975em;
+            font-size: 1.875em;
         }
 
         h2 {
-            font-size: 1.6em;
+            font-size: 1.5em;
         }
 
         h3 {
-            font-size: 1.45em;
+            font-size: 1.25em;
         }
 
         h4 {
-            font-size: 1.35em;
+            font-size: 1.125em;
         }
 
         h5,
         h6 {
-            font-size: 1.2em;
+            font-size: 1em;
         }
 
         .hash-link {
@@ -40,7 +38,7 @@
             text-align: center;
             text-decoration: none;
             -webkit-transition: opacity 0.2s;
-            transition: opacity 0.4s;
+            transition: opacity 0.2s;
             width: 1em;
 
             &:before {
@@ -81,8 +79,7 @@
             border: 1px solid $gray-300;
             border-radius: $border-radius;
             box-shadow: $box-shadow;
-            padding: 0.3em;
-            width: 70vw;
+            padding: 2.5em 0;
         }
 
         .post-title {
@@ -92,8 +89,7 @@
         }
 
         .post-content {
-            padding: 0.775em;
-            word-wrap: break-word;
+            padding: 0 1.875em;
         }
     }
 }
@@ -140,8 +136,9 @@
         color: $gray-700;
         font-size: 1.125em;
         margin: 0;
-        padding-right: 15px;
+        padding-right: 30px;
         text-align: left;
+        width: 100%;
     }
 
     .docs-submenu-toggle {
@@ -157,14 +154,11 @@
     font-weight: bold;
     line-height: 1.5;
     list-style: none;
-    margin: 0.5em;
+    margin: 0;
     padding: 0;
 
     & > .docs-menu-item > a {
         padding: 0.1875em 0;
-        border-radius: 20px;
-
-        margin: auto;
     }
 
     a {
@@ -191,7 +185,7 @@
     font-weight: normal;
     list-style: none;
     margin-top: 0.625rem;
-    padding-left: 1rem;
+    padding-left: 1.25rem;
 }
 
 .docs-menu-item {
@@ -218,7 +212,7 @@
 }
 
 #page-nav {
-    text-overflow: wrap;
+    display: none;
 
     .page-nav-title {
         font-size: 1em;
@@ -256,41 +250,44 @@
         }
     }
 
-    .page-nav-title {
-        &:only-child {
-            display: none;
+    .page-nav-inside {
+        display: none;
+
+        &.has-links {
+            display: block;
         }
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 641px) {
     .post {
         &.type-docs {
             .post-title,
             .post-content {
-                padding-left: 8%;
+                padding-left: 7%;
                 padding-right: 7%;
             }
         }
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 801px) {
     .docs-content {
         display: -ms-flexbox;
         display: flex;
         padding-top: 3.75em;
-        width: 100%;
     }
 
     .post.type-docs {
         -ms-flex: 1 1 auto;
-        align-content: center;
+        flex: 1 1 auto;
+        overflow: hidden;
     }
 
     .docs-nav,
     .page-nav {
         -ms-flex-negative: 0;
+        flex-shrink: 0;
         margin-bottom: 5.625em;
 
         .sticky {
@@ -301,12 +298,13 @@
     }
 
     .docs-nav {
-        width: 8.5em;
+        padding-right: 1.5em;
+        width: 12.5em;
     }
 
     #page-nav {
-        font-size: 12px;
-        margin: 4em;
+        padding-left: 1.5em;
+        width: 9.5em;
     }
 
     #docs-nav-toggle {
@@ -328,7 +326,7 @@
         box-shadow: $box-shadow;
         box-sizing: border-box;
         margin-bottom: 5%;
-        padding: 1em 1em;
+        padding: 0.75em 1em;
     }
 
     .docs-nav-menu {

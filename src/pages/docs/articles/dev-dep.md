@@ -2,20 +2,46 @@
 title: Dev Dependencies
 sections: []
 seo:
-  title: Dependencies
-  description: >+
-    When you install an npm package using npm install <package-name>, you are
-    installing it as a dependency.
+    title: Dependencies
+    description: >+
+        install an npm package using npm install you are installing it as a
+        dependency. (npm install --production) to avoid installing those development
+        dependencies.
 
-  robots: []
-  extra:
-    - name: 'og:image'
-      value: images/react2.jpg
-      keyName: property
-      relativeUrl: true
-  type: stackbit_page_meta
+    robots: []
+    extra:
+        - name: 'og:image'
+          value: images/react2.jpg
+          keyName: property
+          relativeUrl: true
+        - name: 'og:description'
+          value: >+
+              install an npm package using npm install you are installing it as a
+              dependency. (npm install --production) to avoid installing those
+              development dependencies.
+
+          keyName: property
+          relativeUrl: false
+        - name: 'og:type'
+          value: website
+          keyName: property
+          relativeUrl: false
+        - name: 'twitter:image'
+          value: images/browserify-25532eef.png
+          keyName: property
+          relativeUrl: true
+        - name: 'twitter:card'
+          value: summary_large_image
+          keyName: name
+          relativeUrl: false
+        - name: 'og:title'
+          value: Dev Dependencies
+          keyName: property
+          relativeUrl: false
+    type: stackbit_page_meta
 template: docs
 ---
+
 
 When you install an npm package using `npm install <package-name>`, you are installing it as a **dependency**.
 

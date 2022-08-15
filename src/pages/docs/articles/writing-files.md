@@ -27,11 +27,13 @@ seo:
 template: docs
 ---
 
+
 The easiest way to write to files in Node.js is to use the `fs.writeFile()` API.
 
 Example:
 
 ```js
+//
 const fs = require('fs');
 
 const content = 'Some content!';
@@ -48,6 +50,7 @@ fs.writeFile('/Users/joe/test.txt', content, (err) => {
 Alternatively, you can use the synchronous version `fs.writeFileSync()`:
 
 ```js
+//
 const fs = require('fs');
 
 const content = 'Some content!';
@@ -65,15 +68,16 @@ By default, this API will **replace the contents of the file** if it does alread
 You can modify the default by specifying a flag:
 
 ```js
+//
 fs.writeFile('/Users/joe/test.txt', content, { flag: 'a+' }, (err) => {});
 ```
 
 The flags you'll likely use are
 
--   `r+` open the file for reading and writing
--   `w+` open the file for reading and writing, positioning the stream at the beginning of the file. The file is created if not existing
--   `a` open the file for writing, positioning the stream at the end of the file. The file is created if not existing
--   `a+` open the file for reading and writing, positioning the stream at the end of the file. The file is created if not existing
+- `r+` open the file for reading and writing
+- `w+` open the file for reading and writing, positioning the stream at the beginning of the file. The file is created if not existing
+- `a` open the file for writing, positioning the stream at the end of the file. The file is created if not existing
+- `a+` open the file for reading and writing, positioning the stream at the end of the file. The file is created if not existing
 
 (you can find more flags at <https://nodejs.org/api/fs.html#fs_file_system_flags>)
 
@@ -82,6 +86,7 @@ The flags you'll likely use are
 A handy method to append content to the end of a file is `fs.appendFile()` (and its `fs.appendFileSync()` counterpart):
 
 ```js
+//
 const content = 'Some content!';
 
 fs.appendFile('file.log', content, (err) => {
@@ -98,3 +103,42 @@ fs.appendFile('file.log', content, (err) => {
 All those methods write the full content to the file before returning the control back to your program (in the async version, this means executing the callback)
 
 In this case, a better option is to write the file content using streams.
+
+72
+
+[](https://stackoverflow.com/posts/11194896/timeline)
+
+Here's a sketch. Error handling is left as an exercise for the reader.
+
+```js
+//
+let fs = require('fs'),
+    path = require('path');
+
+function dirTree(filename) {
+    let stats = fs.lstatSync(filename),
+        info = {
+            path: filename,
+            name: path.basename(filename)
+        };
+
+    if (stats.isDirectory()) {
+        info.type = 'folder';
+        info.children = fs.readdirSync(filename).map(function (child) {
+            return dirTree(filename + '/' + child);
+        });
+    } else {
+        // Assuming it's a file. In real life it could be a symlink or
+        // something else!
+        info.type = 'file';
+    }
+
+    return info;
+}
+
+if (module.parent == undefined) {
+    // node dirTree.js ~/foo/bar
+    let util = require('util');
+    console.log(util.inspect(dirTree(process.argv[2]), false, null));
+}
+```

@@ -1,6 +1,6 @@
 ---
 title: Engineering Portfolio
-weight: 2
+weight: 0
 seo:
     title: Engineering Portfolio
     description: >-
@@ -27,4 +27,15 @@ template: docs
 
 # Portfolio
 
-<iframe src="https://onedrive.live.com/embed?resid=D21009FDD967A241%21459307&amp;authkey=%21ABwIG4Hz-hsgPLU&amp;em=2&amp;wdAr=1.7777777777777777&amp;wdEaa=1" width="800px" height="691px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://onedrive.live.com/embed?cid=D21009FDD967A241&resid=D21009FDD967A241%21940107&authkey=ABhIgEQ32UYlvMU" width="1000" height="800" frameborder="0" scrolling="no">
+</iframe>
+<br>
+
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codesandbox.io/embed/bold-surf-xfsiq?fontsize=14&hidenavigation=1&theme=dark&view=preview"
+style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+title="bold-surf-xfsiq"
+ ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+>
+</iframe>
+<br>
