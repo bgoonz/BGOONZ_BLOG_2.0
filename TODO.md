@@ -12,4 +12,4 @@
 10. Fix blog images and get rid of duplicates
 11. add copy to clipboard to codeblocks
 12. get prism or some sort of syntax highlighting working
-13. <https://bgoonz.github.io/PROJECTS/>
+13.
