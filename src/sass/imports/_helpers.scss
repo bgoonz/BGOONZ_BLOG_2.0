@@ -1,17 +1,17 @@
 // Text for screen readers
 .screen-reader-text {
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute !important;
-  width: 1px;
-  word-wrap: normal !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
 }
 
 // Heading decorations
 .line-left {
-  position: relative;
+    position: relative;
 
   &:after {
     background: $color-primary;
@@ -27,34 +27,34 @@
 
 // Responsive video wrappers
 .js-reframe {
-  margin: 1.875em 0;
+    margin: 1.875em 0;
 
-  &:first-child {
-    margin-top: 0;
-  }
+    &:first-child {
+        margin-top: 0;
+    }
 }
 
 // Notifications, allerts
 .note,
 .important {
-  border-radius: $border-radius;
-  color: $gray-700;
-  margin: 1.875em 0;
-  padding: 1em 1.125em;
+    border-radius: $border-radius;
+    color: $gray-700;
+    margin: 1.875em 0;
+    padding: 1em 1.125em;
 
-  &:first-child {
-    margin-top: 0;
-  }
+    &:first-child {
+        margin-top: 0;
+    }
 }
 
 .note {
-  background: $yellow-pale;
-  border-left: 5px solid $yellow;
+    background: $yellow-pale;
+    border-left: 5px solid $yellow;
 }
 
 .important {
-  background: $red-pale;
-  border-left: 5px solid $red;
+    background: $red-pale;
+    border-left: 5px solid $red;
 }
 
 // Background gradients
@@ -65,45 +65,45 @@
   color: #fff;
   position: relative;
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    color: inherit !important;
-  }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: inherit !important;
+    }
 
-  a {
-    &:not(.button) {
-      color: inherit !important;
+    a {
+        &:not(.button) {
+            color: inherit !important;
 
-      &:hover {
-        opacity: 0.8;
-      }
-      }
-      }
+            &:hover {
+                opacity: 00.8;
+            }
+          }
+        }
 
-  .button {
-    &:not(.button-secondary) {
-      background-color: #fff;
-      color: $color-primary;
+    .button {
+        &:not(.button-secondary) {
+            background-color: #fff;
+            color: $color-primary;
 
-      &:hover,
-      &:focus,
-      &:active {
-        opacity: 0.85;
-      }
-      }
-      }
+            &:hover,
+            &:focus,
+            &:active {
+                opacity: 00.85;
+            }
+          }
+        }
 
-  .button-secondary {
-    color: #fff !important;
-  }
+    .button-secondary {
+        color: #fff !important;
+    }
 
-  .inner-sm {
-    position: relative;
-  }
+    .inner-sm {
+        position: relative;
+    }
 }
 
 // Background image
@@ -142,48 +142,48 @@
 }
 
 .grid-center {
-  -ms-flex-pack: center;
-  justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .grid-swap {
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
 }
 
 .grid-middle {
-  -ms-flex-align: center;
-  align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 @media only screen and (min-width: 641px) {
-  .grid-col-2 {
-    .grid-item {
-      -ms-flex: 0 0 50%;
-      flex: 0 0 50%;
-      max-width: 50%;
+    .grid-col-2 {
+        .grid-item {
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
     }
-  }
 }
 
 @media only screen and (min-width: 761px) {
-  .grid-col-3 {
-    .grid-item {
-      -ms-flex: 0 0 33.333%;
-      flex: 0 0 33.333%;
-      max-width: 33.333%;
+    .grid-col-3 {
+        .grid-item {
+            -ms-flex: 0 0 33.333%;
+            flex: 0 0 33.333%;
+            max-width: 33.333%;
+        }
     }
-  }
 }
 
 @media only screen and (max-width: 600px) {
-  .grid {
-    margin-left: -$container-padding / 2;
-    margin-right: -$container-padding / 2;
-  }
+    .grid {
+        margin-left: -$container-padding / 2;
+        margin-right: -$container-padding / 2;
+    }
 
-  .grid-item {
-    padding-left: $container-padding / 2;
-    padding-right: $container-padding / 2;
-  }
+    .grid-item {
+        padding-left: $container-padding / 2;
+        padding-right: $container-padding / 2;
+    }
 }
