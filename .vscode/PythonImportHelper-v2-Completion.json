@@ -1,8 +1,6 @@
-[
-    {
-        "label": "Flask",
-        "importPath": "flask",
-        "description": "flask",
+[{
+        "label": "argparse",
+        "kind": 6,
         "isExtraImport": true,
         "detail": "flask",
         "documentation": {}
