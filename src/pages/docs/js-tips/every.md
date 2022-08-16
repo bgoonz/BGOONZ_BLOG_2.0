@@ -4,7 +4,7 @@ weight: 0
 excerpt:
 seo:
     title: 'Array.prototype.every()'
-    description: ''
+    description: ' method tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value'
     robots: []
     extra: []
     type: stackbit_page_meta

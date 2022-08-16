@@ -1,0 +1,17 @@
+id: Css
+title: CSS
+description: CSS is designed to enable the separation of presentation and
+    content, including [layout](https://en.m.wikipedia.org/wiki/Page_layout "Page
+    layout"), [colors](https://en.m.wikipedia.org/wiki/Color "Color"),
+    and [fonts](https://en.m.wikipedia.org/wiki/Typeface
+    "Typeface").[\[3]](https://en.m.wikipedia.org/wiki/CSS#cite_note-3) This
+    separation can improve
+    content [accessibility](https://en.m.wikipedia.org/wiki/Accessibility
+    "Accessibility"); provide more flexibility and control in the specification of
+    presentation characteristics; enable multiple [web
+    pages](https://en.m.wikipedia.org/wiki/Web_page "Web page") to share
+    formatting by specifying the relevant CSS in a separate .css file, which
+    reduces complexity and repetition in the structural content; and enable the
+    .css file to be [cached](https://en.m.wikipedia.org/wiki/Cache_(computing)
+    "Cache (computing)") to improve the page load speed between the pages that
+    share the file and its formatting.
