@@ -46,20 +46,12 @@ export function Button(props: ButtonProps) {
 
 In future, the need to `forwardRef` may go away in React 17+, but for now we still have to deal with this. 🙃
 
-
 <details>
-
-
 <summary>
-
 
 Why not `ComponentProps` or `IntrinsicElements` or `[Element]HTMLAttributes` or `HTMLProps` or `HTMLAttributes`?
 
-
-
 </summary>
-
-
 
 ## `ComponentProps`
 
@@ -441,18 +433,10 @@ type NumbersChildren = number[];
 type TwoNumbersChildren = [number, number];
 ```
 
-
 <details>
-
-
 <summary>
-
 Don't forget that you can also use `prop-types` if TS fails you.
-
-
 </summary>
-
-
 
 ```ts
 Parent.propTypes = {
@@ -564,18 +548,10 @@ function RouterLink(props: LinkProps | AnchorProps) {
 }
 ```
 
-
 <details>
-
-  
-<summary>
-
+  <summary>
 <b>Approach: Generic Components</b>
-
-
 </summary>
-
-
 
 Here is an example solution, see the further discussion for other solutions. _thanks to [@jpavon](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet/issues/12#issuecomment-394440577)_
 
@@ -601,18 +577,10 @@ const Link = <T extends {}>(props: LinkProps & T extends RouterLinkProps ? Route
 
 </details>
 
-
 <details>
-
-  
-<summary>
-
+  <summary>
 <b>Approach: Composition</b>
-
-
 </summary>
-
-
 
 If you want to conditionally render a component, sometimes is better to use [React's composition model](https://reactjs.org/docs/composition-vs-inheritance.html) to have simpler components and better to understand typings:
 
@@ -673,18 +641,10 @@ function handle(event: UserEvent) {
 }
 ```
 
-
 <details>
-
-  
-<summary>
-
+  <summary>
   Take care: TypeScript does not narrow the type of a Discriminated Union on the basis of typeof checks. The type guard has to be on the value of a key and not it's type.
-  
-
-</summary>
-
-
+  </summary>
 
 ```ts
 type UserTextEvent = { value: string; target: HTMLInputElement };
@@ -705,20 +665,12 @@ The above example does not work as we are not checking the value of `event.value
 
 </details>
 
-
 <details>
-
-  
-<summary>
-
+  <summary>
   Discriminated Unions in TypeScript can also work with hook dependencies in React. The type matched is automatically updated when the corresponding union member based on which a hook depends, changes. Expand more to see an example usecase.
    <br/>
 <br/>
-  
-
-</summary>
-
-
+  </summary>
 
 ```tsx
 type SingleElement = {

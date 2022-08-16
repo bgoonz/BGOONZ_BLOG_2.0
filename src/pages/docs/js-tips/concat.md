@@ -4,7 +4,7 @@ weight: 0
 excerpt:
 seo:
     title: 'Array.prototype.concat()'
-    description: 'method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array'
+    description: ''
     robots: []
     extra: []
 template: docs

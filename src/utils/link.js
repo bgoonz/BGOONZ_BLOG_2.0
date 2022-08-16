@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link as GatsbyLink } from 'gatsby';
+import { Link as GatsbyLink } from "gatsby"
 
 // Since DOM elements <a> cannot receive activeClassName
 // and partiallyActive, destructure the prop here and
@@ -13,14 +13,19 @@ export default function Link({ children, to, activeClassName, partiallyActive, .
     // Use Gatsby Link for internal links, and <a> for others
     if (internal) {
         return (
-            <GatsbyLink to={to} activeClassName={activeClassName} partiallyActive={partiallyActive} {...other}>
+            <GatsbyLink
+                to={to}
+                activeClassName={activeClassName}
+                partiallyActive={partiallyActive}
+                {...other}
+            >
                 {children}
             </GatsbyLink>
-        );
+        )
     }
     return (
         <a href={to} {...other}>
             {children}
         </a>
-    );
+    )
 }
