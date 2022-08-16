@@ -10,6 +10,7 @@ seo:
 template: docs
 ---
 
+
 # Understand Firebase projects
 
 **Note:** If you're using the [Firebase Management REST API](https://firebase.google.com/docs/projects/api/reference/rest?authuser=0) to programmatically create a Firebase project, you must first [create a Google Cloud project](https://cloud.google.com/resource-manager/reference/rest/v1/projects?authuser=0), then [add Firebase services](https://firebase.google.com/docs/projects/api/reference/rest/v1beta1/projects/addFirebase?authuser=0) to the existing project.**Note:** The [project number](https://firebase.google.com/docs/projects/learn-more?authuser=0#project-number) and the [project ID](https://firebase.google.com/docs/projects/learn-more?authuser=0#project-id) are the truly _unique identifiers_ for a project across all of Firebase and Google Cloud.**After Firebase provisions resources for a Firebase project, you cannot change its project ID.** To use a specific identifier for Firebase resources, you must edit the project ID during the initial creation of the project.**Caution:** We do not recommend manually modifying an app's Firebase config file or object. If you initialize an app with invalid or missing values for any of these required "Firebase options", then your end users may experience serious issues.**Note:** For each Android app, if you provide a SHA-1 key for the app, you need to provide a package name and SHA-1 key combination that is globally unique across all of Google Cloud.

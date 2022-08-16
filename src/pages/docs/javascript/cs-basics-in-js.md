@@ -10,11 +10,13 @@ seo:
 template: docs
 ---
 
+
 ### Anonymous Closures
 
 This is the fundamental construct that makes it all possible, and really is the single **best feature of JavaScript**. We'll simply create an anonymous function, and execute it immediately. All of the code that runs inside the function lives in a **closure**, which provides **privacy** and **state** throughout the lifetime of our application.
 
 ```js
+//
 (function () {
     // ... all vars and functions are in this scope only
     // still maintains access to all globals
@@ -40,6 +42,7 @@ JavaScript has a feature known as **implied globals**. Whenever a name is used, 
 Sometimes you don't just want to _use_ globals, but you want to _declare_ them. We can easily do this by exporting them, using the anonymous function's **return value**. Doing so will complete the basic module pattern, so here's a complete example:
 
 ```js
+//
 let MODULE = (function () {
     let my = {},
         privateVariable = 1;
@@ -68,6 +71,7 @@ While the above is enough for many uses, we can take this pattern farther and cr
 One limitation of the module pattern so far is that the entire module must be in one file. Anyone who has worked in a large code-base understands the value of splitting among multiple files. Luckily, we have a nice solution to **augment modules**. First, we import the module, then we add properties, then we export it. Here's an example, augmenting our `MODULE` from above:
 
 ```js
+//
 let MODULE = (function (my) {
     my.anotherMethod = function () {
         // added method...
@@ -98,6 +102,7 @@ In this pattern, the `var` statement is always necessary. Note that the import w
 While loose augmentation is great, it does place some limitations on your module. Most importantly, you cannot override module properties safely. You also cannot use module properties from other files during initialization (but you can at run-time after intialization). **Tight augmentation** implies a set loading order, but allows **overrides**. Here is a simple example (augmenting our original `MODULE`):
 
 ```js
+//
 let MODULE = (function (my) {
     let old_moduleMethod = my.moduleMethod;
 
@@ -114,6 +119,7 @@ Here we've overridden `MODULE.moduleMethod`, but maintain a reference to the ori
 ### Cloning and Inheritance
 
 ```js
+//
 let MODULE_TWO = (function (old) {
     let my = {},
         key;
@@ -140,6 +146,7 @@ This pattern is perhaps the **least flexible** option. It does allow some neat c
 One severe limitation of splitting a module across multiple files is that each file maintains its own private state, and does not get access to the private state of the other files. This can be fixed. Here is an example of a loosely augmented module that will **maintain private state** across all augmentations:
 
 ```js
+//
 let MODULE = (function (my) {
     let _private = (my._private = my._private || {}),
         _seal = (my._seal =
@@ -170,6 +177,7 @@ Any file can set properties on their local variable `_private`, and it will be i
 Our final advanced pattern is actually the simplest. There are many good cases for creating sub-modules. It is just like creating regular modules:
 
 ```js
+//
 MODULE.sub = (function () {
     let my = {};
     // ...
@@ -189,6 +197,7 @@ Most of the advanced patterns can be combined with each other to create more use
 ###### To close, here's an example of a sub-module that loads itself dynamically to its parent (creating it if it does not exist). I've left out private state for brevity, but including it would be simple. This code pattern allows an entire complex heirarchical code-base to be loaded completely in parallel with itself, sub-modules and all.
 
 ```js
+//
 let UTIL = (function (parent, $) {
     let my = (parent.ajax = parent.ajax || {});
 
@@ -205,13 +214,22 @@ let UTIL = (function (parent, $) {
 
 # Summary:
 
+
 <details>
 
-<summary> recitation  </summary>
+
+
+<summary>
+ recitation  
+
+</summary>
+
+
 
 ### Anonymous Closures
 
 ```js
+//
 (function () {
     // ... all vars and functions are in this scope only
     // still maintains access to all globals
@@ -221,6 +239,7 @@ let UTIL = (function (parent, $) {
 ### Global Import
 
 ```js
+//
 (function ($, YAHOO) {
     // now have access to globals jQuery (as $) and YAHOO in this code
 })(jQuery, YAHOO);
@@ -229,6 +248,7 @@ let UTIL = (function (parent, $) {
 ### Module Export
 
 ```js
+//
 let MODULE = (function () {
     let my = {},
         privateVariable = 1;
@@ -251,6 +271,7 @@ let MODULE = (function () {
 ### Augmentation
 
 ```js
+//
 let MODULE = (function (my) {
     my.anotherMethod = function () {
         // added method...
@@ -265,6 +286,7 @@ let MODULE = (function (my) {
 In this pattern, the let statement is always necessary. Note that the import will create the module if it does not already exist. This means you can use a tool like LABjs and load all of your module files in parallel, without needing to block.
 
 ###### ```js
+//
 
 let MODULE = (function (my) {
 // add capabilities...
@@ -280,6 +302,7 @@ let MODULE = (function (my) {
 Here we've overridden MODULE.moduleMethod, but maintain a reference to the original method, if needed.
 
 ###### ```js
+//
 let MODULE = (function (my) {
     let old_moduleMethod = my.moduleMethod;
 
@@ -294,6 +317,7 @@ let MODULE = (function (my) {
 ### Cloning and Inheritance
 
 ```js
+//
 let MODULE_TWO = (function (old) {
     let my = {},
         key;
@@ -316,6 +340,7 @@ let MODULE_TWO = (function (old) {
 ### Cross-File Private State
 
 ```js
+//
 let MODULE = (function (my) {
     let _private = (my._private = my._private || {}),
         _seal = (my._seal =
@@ -342,6 +367,7 @@ let MODULE = (function (my) {
 ### Sub-modules
 
 ```js
+//
 MODULE.sub = (function () {
     let my = {};
     // ...

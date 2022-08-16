@@ -17,31 +17,42 @@ template: docs
      title="react patterns"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-   ></iframe>
+   >
+</iframe>
+<br>
 
 ## React Cheat Sheet
 
 ---
+
 ---
+
 
 <details>
 
-<summary>  See More </summary>   
+
+
+<summary>
+  See More 
+
+</summary>
+
+
 
 ### Components
 
-```jsx
-import React from 'react'
-import ReactDOM from 'react-dom'
+```js
+//x
+import React from 'react';
+import ReactDOM from 'react-dom';
 ```
 
-```jsx
+```js
+//x
 class Hello extends React.Component {
-  render () {
-    return <div className='message-box'>
-      Hello {this.props.name}
-    </div>
-  }
+    render() {
+        return <div className="message-box">Hello {this.props.name}</div>;
+    }
 }
 ```
 
@@ -268,7 +279,7 @@ See: [Component API](https://facebook.github.io/react/docs/component-api.html)
 ### Mounting
 
 | Method                   | Description                                                                                          |
-|--------------------------|------------------------------------------------------------------------------------------------------|
+| ------------------------ | ---------------------------------------------------------------------------------------------------- |
 | `constructor` _(props)_  | Before rendering [#](https://reactjs.org/docs/react-component.html#constructor)                      |
 | `componentWillMount()`   | _Don't use this_ [#](https://reactjs.org/docs/react-component.html#componentwillmount)               |
 | `render()`               | Render [#](https://reactjs.org/docs/react-component.html#render)                                     |
@@ -281,7 +292,7 @@ Set initial the state on `constructor()`. Add DOM event handlers, timers (etc) o
 ### Updating
 
 | Method                                                  | Description                                          |
-|---------------------------------------------------------|------------------------------------------------------|
+| ------------------------------------------------------- | ---------------------------------------------------- |
 | `componentDidUpdate` _(prevProps, prevState, snapshot)_ | Use `setState()` here, but remember to compare props |
 | `shouldComponentUpdate` _(newProps, newState)_          | Skips `render()` if returns false                    |
 | `render()`                                              | Render                                               |
@@ -410,7 +421,7 @@ Also see: [Hooks FAQ](https://reactjs.org/docs/hooks-faq.html)
 #### Basic Hooks
 
 | Hook                       | Description                               |
-|----------------------------|-------------------------------------------|
+| -------------------------- | ----------------------------------------- |
 | `useState`_(initialState)_ |                                           |
 | `useEffect`_(() => { … })_ |                                           |
 | `useContext`_(MyContext)_  | value returned from `React.createContext` |
@@ -420,7 +431,7 @@ Full details: [Basic Hooks](https://reactjs.org/docs/hooks-reference.html#basic-
 #### Additional Hooks
 
 | Hook                                      | Description                                                                  |
-|-------------------------------------------|------------------------------------------------------------------------------|
+| ----------------------------------------- | ---------------------------------------------------------------------------- |
 | `useReducer`_(reducer, initialArg, init)_ |                                                                              |
 | `useCallback`_(() => { … })_              |                                                                              |
 | `useMemo`_(() => { … })_                  |                                                                              |
@@ -520,11 +531,13 @@ See: [React top-level API](https://reactjs.org/docs/react-api.html)
 
 ```
 const style = { height: 10 }
-return <div style={style}></div>
+return <div style={style}>
+</div>
 ```
 
 ```
-return <div style={{ margin: 0, padding: 0 }}></div>
+return <div style={{ margin: 0, padding: 0 }}>
+</div>
 ```
 
 See: [Inline styles](https://reactjs.org/tips/inline-styles.html)
@@ -672,13 +685,13 @@ import PropTypes from 'prop-types'
 See: [Typechecking with PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
 
 | Key   | Description |
-|-------|-------------|
+| ----- | ----------- |
 | `any` | Anything    |
 
 #### Basic
 
 | Key      | Description   |
-|----------|---------------|
+| -------- | ------------- |
 | `string` |               |
 | `number` |               |
 | `func`   | Function      |
@@ -687,21 +700,21 @@ See: [Typechecking with PropTypes](https://reactjs.org/docs/typechecking-with-pr
 #### Enum
 
 | Key                       | Description |
-|---------------------------|-------------|
+| ------------------------- | ----------- |
 | `oneOf`_(any)_            | Enum types  |
 | `oneOfType`_(type array)_ | Union       |
 
 #### Array
 
 | Key            | Description |
-|----------------|-------------|
+| -------------- | ----------- |
 | `array`        |             |
 | `arrayOf`_(…)_ |             |
 
 #### Object
 
 | Key               | Description                          |
-|-------------------|--------------------------------------|
+| ----------------- | ------------------------------------ |
 | `object`          |                                      |
 | `objectOf`_(…)_   | Object with values of a certain type |
 | `instanceOf`_(…)_ | Instance of a class                  |
@@ -710,14 +723,14 @@ See: [Typechecking with PropTypes](https://reactjs.org/docs/typechecking-with-pr
 #### Elements
 
 | Key       | Description   |
-|-----------|---------------|
+| --------- | ------------- |
 | `element` | React element |
 | `node`    | DOM node      |
 
 #### Required
 
 | Key                | Description |
-|--------------------|-------------|
+| ------------------ | ----------- |
 | `(···).isRequired` | Required    |
 
 ### Basic types
@@ -797,40 +810,42 @@ MyCo.propTypes = {
 }
 ```
 
-
-
 ---
+
 ---
 
 # React:
 
-- `<script src="https://unpkg.com/react@15/dist/react.js"></script>`
-- `$ npm install react --save`
-- `$ bower install react --save`
+-   `<script src="https://unpkg.com/react@15/dist/react.js"> </script>`
+-   `$ npm install react --save`
+-   `$ bower install react --save`
 
 React DOM:
 
-- `<script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>`
-- `$ npm install react-dom`
-- `$ bower install react-dom --save`
+-   `<script src="https://unpkg.com/react-dom@15/dist/react-dom.js"> </script>`
+-   `$ npm install react-dom`
+-   `$ bower install react-dom --save`
 
 ## Rendering
 
 ### Rendering (ES5)
 
 ```js
+//
 ReactDOM.render(React.createElement(Link, { name: 'HackHall.com' }), document.getElementById('menu'));
 ```
 
 ### Rendering (ES5+JSX)
 
 ```js
+//
 ReactDOM.render(<Link name="HackHall.com" />, document.getElementById('menu'));
 ```
 
 ## Server-side Rendering
 
 ```js
+//
 var ReactDOMServer = require('react-dom/server');
 ReactDOMServer.renderToString(Link, { name: 'HackHall.com' });
 ReactDOMServer.renderToStaticMarkup(Link, { name: 'HackHall.com' });
@@ -841,6 +856,7 @@ ReactDOMServer.renderToStaticMarkup(Link, { name: 'HackHall.com' });
 ### ES5
 
 ```js
+//
 var Link = React.createClass({
     displayName: 'Link',
     render: function () {
@@ -852,6 +868,7 @@ var Link = React.createClass({
 ### ES5 + JSX
 
 ```js
+//
 var Link = React.createClass({
     render: function () {
         return (
@@ -866,6 +883,7 @@ var Link = React.createClass({
 ### ES6 + JSX
 
 ```js
+//
 class Link extends React.Component {
     render() {
         return (
@@ -883,17 +901,19 @@ class Link extends React.Component {
 
 ---
 
+
 <details>
 
-<summary>  </summary>   
-
-<<<<<<< HEAD
 
 
-```sh
-=======
-```console
->>>>>>> master
+<summary>
+  
+
+</summary>
+
+
+
+```shell
 
 npm install --save react       // declarative and flexible JavaScript library for building UI
 npm install --save react-dom   // serves as the entry point of the DOM-related rendering paths
@@ -903,6 +923,7 @@ npm install --save prop-types  // runtime type checking for React props and simi
 // notes: don't forget the command lines
 
 ```js
+//
 
 /* *******************************************************************************************
  * REACT
@@ -951,7 +972,8 @@ React.Children.only(children)
 React.Children.toArray(children)
 
 // The React.Fragment component lets you return multiple elements in a render() method without creating an additional DOM element
-// You can also use it with the shorthand <></> syntax.
+// You can also use it with the shorthand <>
+</> syntax.
 React.Fragment
 
 /* *******************************************************************************************
@@ -1229,13 +1251,14 @@ MyComponent.propTypes = {
 
 ### Options (ES5)
 
-- `propTypes object`: Type validation in development mode
-- `getDefaultProps function()`: object of default props
-- `getInitialState function()`: object of the initial state
+-   `propTypes object`: Type validation in development mode
+-   `getDefaultProps function()`: object of default props
+-   `getInitialState function()`: object of the initial state
 
 ES5:
 
 ```js
+//
 var Link = React.createClass({
     propTypes: { name: React.PropTypes.string },
     getDefaultProps: function () {
@@ -1262,6 +1285,7 @@ var Link = React.createClass({
 ES5 + JSX:
 
 ```js
+//
 var Link = React.createClass({
     propTypes: { name: React.PropTypes.string },
     getDefaultProps: function () {
@@ -1287,6 +1311,7 @@ var Link = React.createClass({
 ES6 + JSX:
 
 ```js
+//
 export class Link extends React.Component {
     constructor(props) {
         super(props);
@@ -1315,13 +1340,13 @@ Modern React lifecycle methods (v16+)
 
 Legacy Lifecycle Events:
 
-- `componentWillMount function()`
-- `componentDidMount function()`
-- `componentWillReceiveProps function(nextProps)`
-- `shouldComponentUpdate function(nextProps, nextState)-> bool`
-- `componentWillUpdate function(nextProps, nextState)`
-- `componentDidUpdate function(prevProps, prevState)`
-- `componentWillUnmount function()`
+-   `componentWillMount function()`
+-   `componentDidMount function()`
+-   `componentWillReceiveProps function(nextProps)`
+-   `shouldComponentUpdate function(nextProps, nextState)-> bool`
+-   `componentWillUpdate function(nextProps, nextState)`
+-   `componentDidUpdate function(prevProps, prevState)`
+-   `componentWillUnmount function()`
 
 Sequence of lifecycle events:
 
@@ -1331,40 +1356,41 @@ Inspired by <http://react.tips>
 
 ## Special Props
 
-- `key`: Unique identifier for an element to turn arrays/lists into hashes for better performance, e.g., `key={id}`
-- `ref`: Reference to an element via `this.refs.NAME`, e.g., `ref="email"` will create `this.refs.email` DOM node or `ReactDOM.findDOMNode(this.refs.email)`
-- `style`: Accept an object of styles, instead of a string (immutable since v0.14), e.g., `style={{color: red}}`
-- `className`: the HTML `class` attribute, e.g., `className="btn"`
-- `htmlFor`: the HTML `for` attribute, e.g., `htmlFor="email"`
-- `dangerouslySetInnerHTML`: raw HTML by providing an object with the key `__html`
-- `children`: content of the element via `this.props.children`, e.g., `this.props.children[0]`
-- `data-NAME`: custom attribute, e.g., `data-tooltip-text="..."`
+-   `key`: Unique identifier for an element to turn arrays/lists into hashes for better performance, e.g., `key={id}`
+-   `ref`: Reference to an element via `this.refs.NAME`, e.g., `ref="email"` will create `this.refs.email` DOM node or `ReactDOM.findDOMNode(this.refs.email)`
+-   `style`: Accept an object of styles, instead of a string (immutable since v0.14), e.g., `style={{color: red}}`
+-   `className`: the HTML `class` attribute, e.g., `className="btn"`
+-   `htmlFor`: the HTML `for` attribute, e.g., `htmlFor="email"`
+-   `dangerouslySetInnerHTML`: raw HTML by providing an object with the key `__html`
+-   `children`: content of the element via `this.props.children`, e.g., `this.props.children[0]`
+-   `data-NAME`: custom attribute, e.g., `data-tooltip-text="..."`
 
 ## propTypes
 
 Types available under `React.PropTypes`:
 
-- `any`
-- `array`
-- `bool`
-- `element`
-- `func`
-- `node`
-- `number`
-- `object`
-- `string`
+-   `any`
+-   `array`
+-   `bool`
+-   `element`
+-   `func`
+-   `node`
+-   `number`
+-   `object`
+-   `string`
 
 To make required, append `.isRequired`.
 
 More methods:
 
-- `instanceOf(constructor)`
-- `oneOf(['News', 'Photos'])`
-- `oneOfType([propType, propType])`
+-   `instanceOf(constructor)`
+-   `oneOf(['News', 'Photos'])`
+-   `oneOfType([propType, propType])`
 
 ### Custom Validation
 
 ```js
+//
 propTypes: {
   customProp: function(props, propName, componentName) {
     if (!/regExPattern/.test(props[propName])) {
@@ -1378,41 +1404,41 @@ propTypes: {
 
 Properties:
 
-- `this.refs`: Lists components with a `ref` prop
-- `this.props`: Any props passed to an element (immutable)
-- `this.state`: State set by setState and getInitialState (muttable) — avoid setting state manually with `this.state=...`
-- `this.isMounted`: Flag whether the element has a corresponding DOM node or not
+-   `this.refs`: Lists components with a `ref` prop
+-   `this.props`: Any props passed to an element (immutable)
+-   `this.state`: State set by setState and getInitialState (muttable) — avoid setting state manually with `this.state=...`
+-   `this.isMounted`: Flag whether the element has a corresponding DOM node or not
 
 Methods:
 
-- `setState(changes)`: Change state (partially) to `this.state` and trigger re-render
-- `replaceState(newState)`: Replace `this.state` and trigger re-render
-- `forceUpdate()`: Trigger DOM re-render immediately
+-   `setState(changes)`: Change state (partially) to `this.state` and trigger re-render
+-   `replaceState(newState)`: Replace `this.state` and trigger re-render
+-   `forceUpdate()`: Trigger DOM re-render immediately
 
 ## React Addons
 
 As npm modules:
 
-- [`react-addons-css-transition-group`](http://facebook.github.io/react/docs/animation.html)
-- [`react-addons-perf`](http://facebook.github.io/react/docs/perf.html)
-- [`react-addons-test-utils`](http://facebook.github.io/react/docs/test-utils.html)
-- [`react-addons-pure-render-mixin`](http://facebook.github.io/react/docs/pure-render-mixin.html)
-- [`react-addons-linked-state-mixin`](http://facebook.github.io/react/docs/two-way-binding-helpers.html)
-- `react-addons-clone-with-props`
-- `react-addons-create-fragment`
-- `react-addons-css-transition-group`
-- `react-addons-linked-state-mixin`
-- `react-addons-pure-render-mixin`
-- `react-addons-shallow-compare`
-- `react-addons-transition-group`
-- [`react-addons-update`](http://facebook.github.io/react/docs/update.html)
+-   [`react-addons-css-transition-group`](http://facebook.github.io/react/docs/animation.html)
+-   [`react-addons-perf`](http://facebook.github.io/react/docs/perf.html)
+-   [`react-addons-test-utils`](http://facebook.github.io/react/docs/test-utils.html)
+-   [`react-addons-pure-render-mixin`](http://facebook.github.io/react/docs/pure-render-mixin.html)
+-   [`react-addons-linked-state-mixin`](http://facebook.github.io/react/docs/two-way-binding-helpers.html)
+-   `react-addons-clone-with-props`
+-   `react-addons-create-fragment`
+-   `react-addons-css-transition-group`
+-   `react-addons-linked-state-mixin`
+-   `react-addons-pure-render-mixin`
+-   `react-addons-shallow-compare`
+-   `react-addons-transition-group`
+-   [`react-addons-update`](http://facebook.github.io/react/docs/update.html)
 
 ## React Components
 
-- <https://github.com/brillout/awesome-react-components> and <http://devarchy.com/react-components>: List of React components
-- [Material-UI](http://www.material-ui.com): Material design React components
-- <http://react-toolbox.com>: Set of React components that implement Google Material Design specification
-- <https://js.coach>: Opinionated catalog of open source JS (mostly React) packages
-- <https://react.rocks>: Catalog of React components
-- <https://khan.github.io/react-components>: Khan Academy React components
-- <http://www.reactjsx.com>: Registry of React components
+-   <https://github.com/brillout/awesome-react-components> and <http://devarchy.com/react-components>: List of React components
+-   [Material-UI](http://www.material-ui.com): Material design React components
+-   <http://react-toolbox.com>: Set of React components that implement Google Material Design specification
+-   <https://js.coach>: Opinionated catalog of open source JS (mostly React) packages
+-   <https://react.rocks>: Catalog of React components
+-   <https://khan.github.io/react-components>: Khan Academy React components
+-   <http://www.reactjsx.com>: Registry of React components

@@ -10,6 +10,7 @@ seo:
 template: docs
 ---
 
+
 # Search
 
 > The GitHub Search API lets you to search for the specific item efficiently.

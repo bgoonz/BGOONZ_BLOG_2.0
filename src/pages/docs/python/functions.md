@@ -10,6 +10,7 @@ seo:
 template: docs
 ---
 
+
 ## Functions
 
 ```python

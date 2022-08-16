@@ -1,14 +1,15 @@
 ---
 title: How To Reinstall NPM and Node.js On Your System
 weight: 0
-excerpt: lorem-ipsum
+excerpt: How To Reinstall NPM and Node.js On Your System
 seo:
-    title: ''
-    description: ''
+    title: 'How To Reinstall NPM and Node.js On Your System'
+    description: 'How To Reinstall NPM and Node.js On Your System'
     robots: []
     extra: []
 template: docs
 ---
+
 
 The Node Package Manager (usually shortened to npm) and Node.js are popular technologies among JavaScript developers. npm is the default package management utility that is installed automatically on your machine when you download and install Node.js.
 

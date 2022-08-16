@@ -49,37 +49,30 @@ template: docs
 
 <br>
 <br>
-<br><br>
-<br>
-<br><br>
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 
 <details>
 
-<summary> 📰📰 BLOG 📰📰 </h6></summary>
+
+
+<summary>
+ 📰📰 BLOG 📰📰 </h6>
+
+
+</summary>
+
+
 
 ##### [**<ins>Blog Article List</ins>**](https://bgoonz-blog.netlify.app/blog)
 
 -   [📰blog📰](https://bgoonz-blog.netlify.app/blog/web-scraping)
-<<<<<<< HEAD
-    -   [📰blog📰/300-react-questions⚛](https://bgoonz-blog.netlify.app/blog/300-react-questions)
-    -   [📰blog📰/awesome-graphql፨](https://bgoonz-blog.netlify.app/blog/awesome-graphql)
-    -   [📰blog📰/big-o-complexity](https://bgoonz-blog.netlify.app/blog/big-o-complexity)
-    -   [📰blog📰/blog-archive](https://bgoonz-blog.netlify.app/blog/blog-archive)
-    -   [📰blog📰/data-structures](https://bgoonz-blog.netlify.app/blog/data-structures)
-    -   [📰blog📰/expressjs-apis](https://bgoonz-blog.netlify.app/blog/expressjs-apis)
-    -   [📰blog📰/flow-control-in-python](https://bgoonz-blog.netlify.app/blog/flow-control-in-python)
-    -   [📰blog📰/functions-in-python](https://bgoonz-blog.netlify.app/blog/functions-in-python)
-    -   [📰blog📰/git-gateway](https://bgoonz-blog.netlify.app/blog/git-gateway)
-    -   [📰blog📰/interview-questions-js](https://bgoonz-blog.netlify.app/blog/interview-questions-js)
-    -   [📰blog📰/netlify-cms](https://bgoonz-blog.netlify.app/blog/netlify-cms)
-    -   [📰blog📰/platform-docs](https://bgoonz-blog.netlify.app/blog/platform-docs)
-    -   [📰blog📰/python-for-js-dev](https://bgoonz-blog.netlify.app/blog/python-for-js-dev)
-    -   [📰blog📰/python-resources](https://bgoonz-blog.netlify.app/blog/python-resources)
-    -   [📰blog📰/web-dev-trends](https://bgoonz-blog.netlify.app/blog/web-dev-trends)
-    -   [📰blog📰/web-scraping](https://bgoonz-blog.netlify.app/blog/web-scraping)
-=======
     - [📰300-react-questions](https://bgoonz-blog.netlify.app/blog/300-react-questions)
 - [📰adding-css-to-your-html](https://bgoonz-blog.netlify.app/blog/adding-css-to-your-html)
 - [📰awesome-graphql](https://bgoonz-blog.netlify.app/blog/awesome-graphql)
@@ -103,7 +96,6 @@ template: docs
 - [📰vs-code-extensions](https://bgoonz-blog.netlify.app/blog/vs-code-extensions)
 - [📰web-dev-trends](https://bgoonz-blog.netlify.app/blog/web-dev-trends)
 - [📰web-scraping](https://bgoonz-blog.netlify.app/blog/web-scraping)
->>>>>>> master
 
 </details>
 
@@ -111,9 +103,17 @@ template: docs
 <br>
 <br>
 
+
 <details>
 
-<summary>📚Docs📚 - About</summary>
+
+
+<summary>
+📚Docs📚 - About
+
+</summary>
+
+
 
 -   [📚docs📚/about](https://bgoonz-blog.netlify.app/docs/about)
     -   [📚docs📚/about/README](https://bgoonz-blog.netlify.app/docs/about/README)
@@ -128,9 +128,17 @@ template: docs
 <br>
 <br>
 
+
 <details>
 
-<summary>📚Docs📚 - 🗞️Artices🗞️</summary>
+
+
+<summary>
+📚Docs📚 - 🗞️Artices🗞️
+
+</summary>
+
+
 
 -   [📚docs📚/🗞️articles🗞️](https://bgoonz-blog.netlify.app/docs/articles)
     -   [📚docs📚/🗞️articles🗞️basic-web-dev](https://bgoonz-blog.netlify.app/docs/articles/basic-web-dev)
@@ -162,9 +170,17 @@ template: docs
 <br>
 <br>
 
+
 <details>
 
-<summary>📚Docs📚 - 🔊 Audio</summary>
+
+
+<summary>
+📚Docs📚 - 🔊 Audio
+
+</summary>
+
+
 
 -   [📚Docs - Audio🔊](https://bgoonz-blog.netlify.app/docs/audio)
     -   [📚docs📚/audio/dfft](https://bgoonz-blog.netlify.app/docs/audio/dfft)
@@ -179,9 +195,17 @@ template: docs
 <br>
 <br>
 
+
 <details>
 
-<summary>📚Docs📚 -  Career </summary>
+
+
+<summary>
+📚Docs📚 -  Career 
+
+</summary>
+
+
 
 -   [📚docs📚/career](https://bgoonz-blog.netlify.app/docs/career)
     -   [📚docs📚/career/dev-interview](https://bgoonz-blog.netlify.app/docs/career/dev-interview)
@@ -201,9 +225,17 @@ template: docs
 <br>
 <br>
 
+
 <details>
 
-<summary>📚Docs📚 -  👫👫Community👫👫 </summary>
+
+
+<summary>
+📚Docs📚 -  👫👫Community👫👫 
+
+</summary>
+
+
 
 -   [📚docs📚/👫👫community👫👫](https://bgoonz-blog.netlify.app/docs/community)
     -   [📚docs📚/community/an-open-letter-2-future-developers](https://bgoonz-blog.netlify.app/docs/community/an-open-letter-2-future-developers)
@@ -216,9 +248,17 @@ template: docs
 <br>
 <br>
 
+
 <details>
 
-<summary>📚Docs📚 - 💼Content💼</summary>
+
+
+<summary>
+📚Docs📚 - 💼Content💼
+
+</summary>
+
+
 
 -   [📚docs📚/💼content💼](https://bgoonz-blog.netlify.app/docs/content/)
     -   [📚docs📚/💼content💼/archive](https://bgoonz-blog.netlify.app/docs/content/archive)
@@ -234,9 +274,17 @@ template: docs
 <br>
 <br>
 
+
 <details>
 
-<summary>📚Docs📚 - 📓Documentation📓</summary>
+
+
+<summary>
+📚Docs📚 - 📓Documentation📓
+
+</summary>
+
+
 
 -   [📚docs📚/docs](https://bgoonz-blog.netlify.app/docs/docs)
     -   [📚docs📚/docs/appendix](https://bgoonz-blog.netlify.app/docs/docs/appendix)
@@ -262,10 +310,18 @@ template: docs
 <br>
 <br>
 
+
 <details>
 
+
+
 <summary>
- <ins>📚Docs📚 - 🕸Data Structures & Algorithms🕸</summary>
+
+ <ins>📚Docs📚 - 🕸Data Structures & Algorithms🕸
+
+</summary>
+
+
 
 -   [📚docs📚/🕸ds-algo🕸](https://bgoonz-blog.netlify.app/docs/ds-algo)
     -   [📚docs📚/🕸ds-algo🕸/big-o](https://bgoonz-blog.netlify.app/docs/ds-algo/big-o)
@@ -278,9 +334,17 @@ template: docs
 <br>
 <br>
 
+
 <details>
 
-<summary>📚Docs📚 - ❓FAQ❓</summary>
+
+
+<summary>
+📚Docs📚 - ❓FAQ❓
+
+</summary>
+
+
 
 -   [📚docs📚/faq](https://bgoonz-blog.netlify.app/docs/faq)
     -   [📚docs📚/❓faq❓/contact](https://bgoonz-blog.netlify.app/docs/faq/contact)
@@ -292,9 +356,17 @@ template: docs
 <br>
 <br>
 
+
 <details>
 
-<summary>📚Docs📚 - 🧑‍🔬Interactive🧑‍🔬 </summary>
+
+
+<summary>
+📚Docs📚 - 🧑‍🔬Interactive🧑‍🔬 
+
+</summary>
+
+
 
 -   [📚docs📚/interact](https://bgoonz-blog.netlify.app/docs/interact)
     -   [📚docs📚/🧑‍🔬interact🧑‍🔬/callstack-visual](https://bgoonz-blog.netlify.app/docs/interact/callstack-visual)
@@ -309,9 +381,17 @@ template: docs
 <br>
 <br>
 
+
 <details>
 
-<summary>📚Docs📚 - 💻Javascript💻</summary>
+
+
+<summary>
+📚Docs📚 - 💻Javascript💻
+
+</summary>
+
+
 
 -   [📚docs📚/💻javascript💻](https://bgoonz-blog.netlify.app/docs/javascript)
     -   [📚docs📚/💻javascript💻/arrow-functions](https://bgoonz-blog.netlify.app/docs/javascript/arrow-functions)
@@ -333,9 +413,17 @@ template: docs
 <br>
 <br>
 
+
 <details>
 
-<summary>📚Docs📚 -  💸JS-Tips💸</summary>
+
+
+<summary>
+📚Docs📚 -  💸JS-Tips💸
+
+</summary>
+
+
 
 -   [📚docs📚/💸js-tips💸](https://bgoonz-blog.netlify.app/docs/js-tips)
     -   [📚docs📚/💸js-tips💸/abs](https://bgoonz-blog.netlify.app/docs/js-tips/abs)
@@ -381,9 +469,17 @@ template: docs
 <br>
 <br>
 
+
 <details>
 
-<summary>📚Docs📚 - 🏆Leetcode🏆 </summary>
+
+
+<summary>
+📚Docs📚 - 🏆Leetcode🏆 
+
+</summary>
+
+
 
 -   [📚docs📚/🏆leetcode🏆](https://bgoonz-blog.netlify.app/docs/leetcode)
     -   [📚docs📚/🏆leetcode🏆/ContaineWitMosWater](https://bgoonz-blog.netlify.app/docs/leetcode/ContaineWitMosWater)
@@ -409,9 +505,17 @@ template: docs
 <br>
 <br>
 
+
 <details>
 
-<summary>📚Docs📚 -  🌊 Overflow🌊     </summary>
+
+
+<summary>
+📚Docs📚 -  🌊 Overflow🌊     
+
+</summary>
+
+
 
 -   [📚docs📚/🌊overflow🌊](https://bgoonz-blog.netlify.app/docs/overflow)
     -   [📚docs📚/🌊overflow🌊/html-spec](https://bgoonz-blog.netlify.app/docs/overflow/html-spec)
@@ -433,9 +537,17 @@ template: docs
 <br>
 <br>
 
+
 <details>
 
-<summary>📚Docs📚 - Projects  </summary>
+
+
+<summary>
+📚Docs📚 - Projects  
+
+</summary>
+
+
 
 -   [📚docs📚/projects](https://bgoonz-blog.netlify.app/docs/projects)
     -   [📚docs📚/projects/embeded-websites](https://bgoonz-blog.netlify.app/docs/projects/embeded-websites)
@@ -450,9 +562,17 @@ template: docs
 <br>
 <br>
 
+
 <details>
 
-<summary>📚Docs📚 - 🐍Python🐍  </summary>
+
+
+<summary>
+📚Docs📚 - 🐍Python🐍  
+
+</summary>
+
+
 
 -   [📚docs📚/🐍python🐍](https://bgoonz-blog.netlify.app/docs/python)
     -   [📚docs📚/🐍python🐍/at-length](https://bgoonz-blog.netlify.app/docs/python/at-length)
@@ -473,9 +593,17 @@ template: docs
 <br>
 <br>
 
+
 <details>
 
-<summary>📚Docs📚 - 📚🏃‍♂️Quick Reference📚🏃‍♂️   </summary>
+
+
+<summary>
+📚Docs📚 - 📚🏃‍♂️Quick Reference📚🏃‍♂️   
+
+</summary>
+
+
 
 -   [📚docs📚/quick-ref](https://bgoonz-blog.netlify.app/docs/quick-ref)
     -   [📚docs📚/🏃‍♂️📚quick-ref📚🏃‍♂️/Emmet](https://bgoonz-blog.netlify.app/docs/quick-ref/Emmet)
@@ -503,9 +631,17 @@ template: docs
 <br>
 <br>
 
+
 <details>
 
-<summary>📚Docs📚 - ⚛️React⚛️ </summary>
+
+
+<summary>
+📚Docs📚 - ⚛️React⚛️ 
+
+</summary>
+
+
 
 -   [📚docs📚/⚛️react⚛️](https://bgoonz-blog.netlify.app/docs/react)
     -   [📚docs📚/⚛️react⚛️/ajax-n-apis](https://bgoonz-blog.netlify.app/docs/react/ajax-n-apis)
@@ -527,9 +663,17 @@ template: docs
 <br>
 <br>
 
+
 <details>
 
-<summary>📚Docs📚 -  ※🕮Reference Materials🕮※</summary>
+
+
+<summary>
+📚Docs📚 -  ※🕮Reference Materials🕮※
+
+</summary>
+
+
 
 -   [📚docs📚/※reference※](https://bgoonz-blog.netlify.app/docs/reference)
     -   [📚docs📚/※🕮reference※🕮/awesome-lists](https://bgoonz-blog.netlify.app/docs/reference/awesome-lists)
@@ -560,9 +704,17 @@ template: docs
 <br>
 <br>
 
+
 <details>
 
-<summary>📚Docs📚 - 🔊 Mini Web Dev Tips </summary>
+
+
+<summary>
+📚Docs📚 - 🔊 Mini Web Dev Tips 
+
+</summary>
+
+
 
 -   [📚docs📚/tips](https://bgoonz-blog.netlify.app/docs/tips)
     -   [📚docs📚/tips/regex-tips](https://bgoonz-blog.netlify.app/docs/tips/regex-tips)
@@ -573,9 +725,17 @@ template: docs
 <br>
 <br>
 
+
 <details>
 
-<summary>📚Docs📚 - ⚒Tools⚒ </summary>
+
+
+<summary>
+📚Docs📚 - ⚒Tools⚒ 
+
+</summary>
+
+
 
 -   [📚docs📚/⚒Tools⚒/](https://bgoonz-blog.netlify.app/docs/tools)
     -   [📚docs📚/⚒Tools⚒/all](https://bgoonz-blog.netlify.app/docs/tools/all)
@@ -590,9 +750,17 @@ template: docs
 <br>
 <br>
 
+
 <details>
 
-<summary>📚Docs📚 - 📑Tutorials📑</summary>
+
+
+<summary>
+📚Docs📚 - 📑Tutorials📑
+
+</summary>
+
+
 
 -   [📚docs📚/tutorials](https://bgoonz-blog.netlify.app/docs/tutorials)
     -   [📚docs📚/📑tutorials📑/enviorment-setup](https://bgoonz-blog.netlify.app/docs/tutorials/enviorment-setup)
