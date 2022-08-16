@@ -1,12 +1,12 @@
 ### Table of Contents
 
--   [getPage][1]
-    -   [Parameters][2]
--   [getPageByFilePath][3]
-    -   [Parameters][4]
--   [getPages][5]
-    -   [Parameters][6]
-    -   [Examples][7]
+- [getPage](#getpage)
+  - [Parameters](#parameters)
+- [getPageByFilePath](#getpagebyfilepath)
+  - [Parameters](#parameters-1)
+- [getPages](#getpages)
+  - [Parameters](#parameters-2)
+  - [Examples](#examples)
 
 ## getPage
 
@@ -71,3 +71,6 @@ Returns **[Array][8]**
 [8]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
 [9]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
 [10]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+
+
