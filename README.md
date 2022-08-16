@@ -45,6 +45,9 @@
 
 docky src/components/**/*.js   --watch "src/components/**/*.js","./README.md"  --ignore "src/components/**/index.js"
 
+
+<https://dev2--bgoonz-blog.netlify.app/>
+
 ---
 
 ### Table Of Contents

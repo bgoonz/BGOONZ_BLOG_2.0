@@ -262,13 +262,7 @@ Creating things that change my every day life.
 <br>
 <br>
 
-
-<summary>
- My Projects
-
-</summary>
-
-
+<summary> My Projects</summary>
 
 <table>
   <thead>

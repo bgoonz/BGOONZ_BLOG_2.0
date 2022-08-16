@@ -327,17 +327,9 @@ template: docs
 
 ---
 
-
 <details>
 
-
-
-<summary>
- NORWEX 
-
-</summary>
-
-
+<summary> NORWEX </summary>
 
 <br>
 
@@ -465,17 +457,9 @@ template: docs
 
 <br>
 
-
 <details>
 
-
-
-<summary>
-RESOURCES  
-
-</summary>
-
-
+<summary>RESOURCES  </summary>
 
 ### RESOURCES
 
