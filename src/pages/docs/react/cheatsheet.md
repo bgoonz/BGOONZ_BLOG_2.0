@@ -27,9 +27,17 @@ template: docs
 
 ---
 
+
 <details>
 
-<summary>  See More </summary>
+
+
+<summary>
+  See More 
+
+</summary>
+
+
 
 ### Components
 
@@ -893,11 +901,19 @@ class Link extends React.Component {
 
 ---
 
+
 <details>
 
-<summary>  </summary>
 
-```console
+
+<summary>
+  
+
+</summary>
+
+
+
+```shell
 
 npm install --save react       // declarative and flexible JavaScript library for building UI
 npm install --save react-dom   // serves as the entry point of the DOM-related rendering paths

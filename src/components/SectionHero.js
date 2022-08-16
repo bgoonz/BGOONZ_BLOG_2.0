@@ -1,3 +1,4 @@
+/* It renders a section with a background image, a title, some content, and a set of buttons */
 import React from 'react';
 import _ from 'lodash';
 
