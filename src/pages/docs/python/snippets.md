@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 # Python Snippets
 
 ---

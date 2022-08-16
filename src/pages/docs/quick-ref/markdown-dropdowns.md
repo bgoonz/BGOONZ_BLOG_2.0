@@ -10,7 +10,10 @@ seo:
 template: docs
 ---
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> master
 # Markdown Dropdown:
 
 <details>

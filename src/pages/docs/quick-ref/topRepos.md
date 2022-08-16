@@ -23,7 +23,10 @@ seo:
 template: docs
 ---
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> master
 # My Top Repos / Websites:
 
 - [Python Practice](https://github.com/bgoonz/PYTHON_PRAC)

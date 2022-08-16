@@ -10,7 +10,10 @@ seo:
 template: docs
 ---
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> master
 ## Flow Control:
 
 ## Read It

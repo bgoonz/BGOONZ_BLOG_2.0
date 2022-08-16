@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 # What are data structures
 
 Data structures, at a high level, are techniques for storing and organizing data that make it easier to modify, navigate, and access. Data structures determine how data is collected, the functions we can use to access it, and the relationships between data.
@@ -232,7 +231,6 @@ There are two ways you could solve this coding problem in an interview. Let's di
 ---
 
 ```js
-//
 
 
 function removeEven(arr) {
@@ -255,7 +253,6 @@ This approach starts with the first element of the array. If that current elemen
 ---
 
 ```js
-//
 
 
 function removeEven(arr) {
@@ -276,7 +273,6 @@ Problem statement: Implement the `isBalanced()` function to take a string contai
 Input: A string consisting solely of `(`, `)`, `{`, `}`, `[` and `]`
 
 ```js
-//
 exp = '{[({})]}';
 ```
 
@@ -293,7 +289,6 @@ index.js
 Stack.js
 
 ```js
-//
 
 "use strict";
 module.exports = class Stack {
@@ -340,14 +335,12 @@ Problem statement: Implement a function `findBin(n)`, which will generate binary
 Input: A positive integer n
 
 ```js
-//
 n = 3;
 ```
 
 Output: Returns binary numbers in the form of strings from `1` up to `n`
 
 ```js
-//
 result = ['1', '10', '11'];
 ```
 
@@ -358,7 +351,6 @@ index.js
 Queue.js
 
 ```js
-//
 
 "use strict";
 module.exports = class Queue {
@@ -409,14 +401,12 @@ Problem statement: Write the `reverse` function to take a singly linked list and
 Input: a singly linked list
 
 ```js
-//
 LinkedList = 0->1->2->3-4
 ```
 
 Output: a reverse linked list
 
 ```js
-//
 LinkedList = 4->3->2->1->0
 ```
 
@@ -429,7 +419,6 @@ LinkedList.js
 Node.js
 
 ```js
-//
 
 "use strict";
 const Node = require( './Node.js' );
@@ -480,7 +469,6 @@ Problem statement: Use the `findMin(root)` function to find the minimum value in
 Input: a root node for a binary search tree
 
 ```js
-//
 bst = {    6 -> 4,9    4 -> 2,5    9 -> 8,12    12 -> 10,14}where parent -> leftChild,rightChild
 ```
 
@@ -503,7 +491,6 @@ BinarySearchTree.js
 Node.js
 
 ```js
-//
 'use strict';
 const Node = require('./Node.js');
 module.exports = class BinarySearchTree {
@@ -553,7 +540,6 @@ Input: A graph, a source, and a destination
 Output: A graph with the edge between the source and the destination removed.
 
 ```js
-//
 removeEdge(graph, 2, 3);
 ```
 
@@ -572,7 +558,6 @@ LinkedList.js
 Node.js
 
 ```js
-//
 const LinkedList = require('./LinkedList.js');
 const Node = require('./Node.js');
 module.exports = class Graph {
@@ -610,14 +595,12 @@ Problem statement: Implement the function `convertMax(maxHeap)` to convert a bin
 Input: a Max-Heap
 
 ```js
-//
 maxHeap = [9, 4, 7, 1, -2, 6, 5];
 ```
 
 Output: returns the converted array
 
 ```js
-//
 result = [-2, 1, 5, 9, 4, 6, 7];
 ```
 
@@ -626,7 +609,6 @@ To solve this problem, we must min heapify all parent nodes. Take a look.
 ---
 
 ```js
-//
 
 
 function minHeapify(heap, index) {
@@ -652,7 +634,6 @@ function minHeapify(heap, index) {
 ---
 
 ```js
-//
 
 
 function convertMax(maxHeap) {

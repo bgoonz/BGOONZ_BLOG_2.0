@@ -10,5 +10,8 @@ seo:
 template: docs
 ---
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> master
 ## Lorem ipsum

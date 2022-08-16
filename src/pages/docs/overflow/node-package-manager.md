@@ -37,7 +37,6 @@ seo:
 template: docs
 ---
 
-
 ## Sorting Algorithms
 
 ### Sorting Algorithms
@@ -54,7 +53,6 @@ template: docs
 
 
 ```js
-//
 
 
 function bubbleSort(array) {
@@ -95,7 +93,6 @@ function bubbleSort(array) {
 
 
 ```js
-//
 
 
 function selectionSort(arr) {
@@ -133,7 +130,6 @@ function selectionSort(arr) {
 
 
 ```js
-//
 
 
 function insertionSort(arr) {
@@ -159,7 +155,6 @@ function insertionSort(arr) {
 - Code example for mergeSort:
 
 ```js
-//
 // The merge function is what is combining our sorted sub-arrays
 function merge(array1, array2) {
     let merged = [];
@@ -221,7 +216,6 @@ function mergeSort(array) {
 
 
 ```js
-//
 
 
 function quickSort(array) {
@@ -254,7 +248,6 @@ function quickSort(array) {
 - Code example for binarySearch and binarySearchIndex:
 
 ```js
-//
 // Returns simply true/false for presence
 function binarySearch(array, target) {
     if (array.length === 0) {

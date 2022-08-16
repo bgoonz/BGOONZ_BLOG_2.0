@@ -11,7 +11,10 @@ seo:
 template: docs
 ---
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> master
 # Heroku Error Codes
 
 Last updated August 04, 2021

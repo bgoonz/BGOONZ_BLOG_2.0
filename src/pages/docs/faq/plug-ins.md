@@ -23,7 +23,6 @@ seo:
 template: docs
 ---
 
-
 <div class="note">
   <strong>Note:</strong> These are the gatsby plugins that power the file system of this website! <strong>See more in the Docs</strong> section.
 </div>
@@ -209,12 +208,10 @@ template: docs
 ```
 <pre>
 ```js
-//
 
 ```
 
 ```js
-//
 const path = require('path');
 const yaml = require('js-yaml');
 const fse = require('fs-extra');
@@ -345,6 +342,5 @@ function convertDataFilesToJSON(dataFiles, dataDirPath, reporter) {
 ```
 
 ```js
-//
 </pre>
 ```

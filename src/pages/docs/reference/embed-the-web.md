@@ -110,9 +110,7 @@ solution.addEventListener('click', function() {
   updateCode();
 });
 
-const htmlSolution = '<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    width="420" height="315" src="https://www.youtube.com/embed/QH2-TGUlwu4" frameborder="0" allowfullscreen>\n</iframe>
-<br>\n\n<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37995.65748333395!2d-2.273568166412784!3d53.473310471916975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bae6c05743d3d%3A0xf82fddd1e49fc0a1!2sThe+Lowry!5e0!3m2!1sen!2suk!4v1518171785211" width="600" height="450" frameborder="0" style="border:0" allowfullscreen>\n</iframe>
-<br>';
+const htmlSolution = '<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    width="420" height="315" src="https://www.youtube.com/embed/QH2-TGUlwu4" frameborder="0" allowfullscreen>\n</iframe>\n\n<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37995.65748333395!2d-2.273568166412784!3d53.473310471916975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bae6c05743d3d%3A0xf82fddd1e49fc0a1!2sThe+Lowry!5e0!3m2!1sen!2suk!4v1518171785211" width="600" height="450" frameborder="0" style="border:0" allowfullscreen>\n</iframe>';
 let solutionEntry = htmlSolution;
 
 textarea.addEventListener('input', updateCode);
@@ -166,7 +164,7 @@ There are some serious [Security concerns](https://developer.mozilla.org/en-US/d
   <style> iframe { border: none } </style>
 </head>
 <body>
-  <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://developer.mozilla.org/en-US/docs/Glossary"
+  <iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://developer.mozilla.org/en-US/docs/Glossary"
           width="100%" height="500" allowfullscreen sandbox>
     <p>
       <a href="/en-US/docs/Glossary">
@@ -174,7 +172,6 @@ There are some serious [Security concerns](https://developer.mozilla.org/en-US/d
       </a>
     </p>
   </iframe>
-<br>
 </body>
 ```
 
@@ -198,9 +195,7 @@ These attributes specify the width and height you want the iframe to be.
 
 Fallback content
 
-In the same way as other similar elements like [`<video>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video), you can include fallback content between the opening and closing `<iframe>
-</iframe>
-<br>` tags that will appear if the browser doesn't support the `<iframe>`. In this case, we have included a link to the page instead. It is unlikely that you'll come across any browser that doesn't support `<iframe>`s these days.
+In the same way as other similar elements like [`<video>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video), you can include fallback content between the opening and closing `<iframe></iframe>` tags that will appear if the browser doesn't support the `<iframe>`. In this case, we have included a link to the page instead. It is unlikely that you'll come across any browser that doesn't support `<iframe>`s these days.
 
 [`sandbox`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-sandbox)
 

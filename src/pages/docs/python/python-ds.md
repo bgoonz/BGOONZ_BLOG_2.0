@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 ## Python Notes
 
 | <https://lambda-6.gitbook.io/python/> | This Gitbook As A Website |

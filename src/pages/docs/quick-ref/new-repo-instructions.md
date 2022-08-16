@@ -23,7 +23,10 @@ seo:
 template: docs
 ---
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> master
 ### ...or create a new repository on the command line
 
 ```

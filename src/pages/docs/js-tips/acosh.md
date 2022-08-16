@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 # Math.acosh()
 
 The `Math.acosh()` function returns the hyperbolic arc-cosine of a number, that is

@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 ## > ## Excerpt
 
 >
@@ -291,15 +290,15 @@ It looks elegant and it does get rid of the warning (which was the ‘real' issu
 
 Let me explain, a _key_ is the only thing React uses to identify DOM elements. What happens if you push an item to the list or remove something in the middle? If the _key_ is same as before React assumes that the DOM element represents the same component as before. But that is no longer true.
 
-![medium blog image](https://miro.medium.com/max/27/1*9N62zUlyJcQet8kr7e_FVg.png?q=20)
+![](https://miro.medium.com/max/27/1*9N62zUlyJcQet8kr7e_FVg.png?q=20)
 
-![medium blog image](https://miro.medium.com/max/630/1*9N62zUlyJcQet8kr7e_FVg.png)
+![](https://miro.medium.com/max/630/1*9N62zUlyJcQet8kr7e_FVg.png)
 
 Stephen describes the problem he run into on [egghead.io](https://egghead.io/forums/lesson-discussion/topics/break-up-components-into-smaller-pieces-using-functional-components#post-6310)
 
 To demonstrate the potential danger I created [a simple example](https://jsbin.com/wohima/edit?output) ([with source](http://jsbin.com/wohima/edit?js,output)).
 
-![medium blog image](https://miro.medium.com/max/630/1*GFYGPdDFLYcLFzx-E-GEcw.jpeg)
+![](https://miro.medium.com/max/630/1*GFYGPdDFLYcLFzx-E-GEcw.jpeg)
 
 Screenshot of the example showing the danger of using the index as key.
 

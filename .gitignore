@@ -1,3 +1,25 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Logs
 logs
 *.log
@@ -52,11 +74,15 @@ typings/
 *.tgz
 
 # dotenv environment variables file
-.env
 
 
 # gatsby files
+<<<<<<< HEAD
+# .cache/
+# public
+=======
 
+>>>>>>> master
 
 # Mac files
 .DS_Store
@@ -72,6 +98,10 @@ node_modules/
 public/
 .cache/
 
-
-
-package.lock.json
+<<<<<<< HEAD
+.package-lock.json
+*.cache
+*public
+src/pages/docs/tools/Archive.md
+=======
+>>>>>>> master

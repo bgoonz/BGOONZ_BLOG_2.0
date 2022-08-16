@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 ## Javascript
 
 <details>
@@ -19,7 +18,6 @@ template: docs
 <summary>  Cheatsheet </summary>
 
 ```js
-//
 
 // Single-line comments start with two slashes.
 /* Multiline comments start with slash-star,
@@ -697,9 +695,7 @@ Plain Old JS Object Lesson Concepts
 
 ### Plain Old JS Object Lesson Concepts
 
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/0*bEuahctJRS_qCQgV.jpg" class="graf-image" />
-</figure>- <span id="d911">Label variables as either Primitive vs. Reference</span>
+<figure><img src="https://cdn-images-1.medium.com/max/800/0*bEuahctJRS_qCQgV.jpg" class="graf-image" /></figure>- <span id="d911">Label variables as either Primitive vs. Reference</span>
 - <span id="42a0">primitives: strings, booleans, numbers, null and undefined</span>
 - <span id="4423">primitives are immutable</span>
 - <span id="fd1a">refereces: objects (including arrays)</span>

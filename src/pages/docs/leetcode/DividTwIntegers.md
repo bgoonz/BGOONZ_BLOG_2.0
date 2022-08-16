@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 ## [29. Divide Two Integers](https://leetcode.com/problems/divide-two-integers/description/)
 
 ### Problem:
@@ -31,7 +30,7 @@ Output: 3
 
 **Example 2:**
 
-```txt
+```
 Input: dividend = 7, divisor = -3
 Output: -2
 ```
@@ -49,7 +48,6 @@ Every decimal number can be represented as `a0*2^0 + a1*2^1 + a2*2^2 + ... + an*
 Replace multiplication and division with binary shifting.
 
 ```js
-//
 /**
  * @param {number} dividend
  * @param {number} divisor
