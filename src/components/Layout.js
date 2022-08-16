@@ -33,7 +33,8 @@ export default class Body extends React.Component {
                     <meta name="twitter:image:src" content="/logo-circle.png"/>
                     <meta name="twitter:title" content="Web Development Resource Hub Bryan Guner"/>
                     <meta property="twitter:card" content="summary_large_image"/>
-                    <link href="https://instructure-uploads-pdx.s3.us-west-2.amazonaws.com/account_168550000000000001/attachments/537/logo-canvas.png" rel="apple-touch-icon"/>
+                   <meta name="google-site-verification" content="JzC5eRJ3cpAJk6gfrMzLwxEhOd3QnM6c6AYP8-1EWiw" />
+ <link href="https://instructure-uploads-pdx.s3.us-west-2.amazonaws.com/account_168550000000000001/attachments/537/logo-canvas.png" rel="apple-touch-icon"/>
                     <link type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet"/>
                     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
                     <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
