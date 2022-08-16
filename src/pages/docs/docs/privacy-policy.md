@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
     PRIVACY NOTICE
 
 - Visit our website at <https://bgoonz-blog.netlify.app/>
@@ -75,94 +74,94 @@ template: docs
 - 
 - **Administer prize draws and competitions.** We may use your information to administer prize draws and competitions when you elect to participate in our competitions.
 
-- **To deliver and facilitate delivery of services to the user.** We may use your information to provide you with the requested service.
+-   **To deliver and facilitate delivery of services to the user.** We may use your information to provide you with the requested service.
 
-- **To respond to user inquiries/offer support to users.** We may use your information to respond to your inquiries and solve any potential issues you might have with the use of our Services.
-
-<!---->
-
-- **To send you marketing and promotional communications.** We and/or our third-party marketing partners may use the personal information you send to us for our marketing purposes, if this is in accordance with your marketing preferences. For example, when expressing an interest in obtaining information about us or our Services, subscribing to marketing or otherwise contacting us, we will collect personal information from you. You can opt-out of our marketing emails at any time (see the "[WHAT ARE YOUR PRIVACY RIGHTS?](https://cdpn.io/bgoonz/fullpage/LYLJZrW#privacyrights)" below).
+-   **To respond to user inquiries/offer support to users.** We may use your information to respond to your inquiries and solve any potential issues you might have with the use of our Services.
 
 <!---->
 
-- **Deliver targeted advertising to you.** We may use your information to develop and display personalized content and advertising (and work with third parties who do so) tailored to your interests and/or location and to measure its effectiveness.
+-   **To send you marketing and promotional communications.** We and/or our third-party marketing partners may use the personal information you send to us for our marketing purposes, if this is in accordance with your marketing preferences. For example, when expressing an interest in obtaining information about us or our Services, subscribing to marketing or otherwise contacting us, we will collect personal information from you. You can opt-out of our marketing emails at any time (see the "[WHAT ARE YOUR PRIVACY RIGHTS?](https://cdpn.io/bgoonz/fullpage/LYLJZrW#privacyrights)" below).
 
 <!---->
 
-- **Consent:** We may process your data if you have given us specific consent to use your personal information for a specific purpose.
+-   **Deliver targeted advertising to you.** We may use your information to develop and display personalized content and advertising (and work with third parties who do so) tailored to your interests and/or location and to measure its effectiveness.
 
 <!---->
 
-- **Legitimate Interests:** We may process your data when it is reasonably necessary to achieve our legitimate business interests.
+-   **Consent:** We may process your data if you have given us specific consent to use your personal information for a specific purpose.
 
 <!---->
 
-- **Performance of a Contract:** Where we have entered into a contract with you, we may process your personal information to fulfill the terms of our contract.
+-   **Legitimate Interests:** We may process your data when it is reasonably necessary to achieve our legitimate business interests.
 
 <!---->
 
-- **Legal Obligations:** We may disclose your information where we are legally required to do so in order to comply with applicable law, governmental requests, a judicial proceeding, court order, or legal process, such as in response to a court order or a subpoena (including in response to public authorities to meet national security or law enforcement requirements).
+-   **Performance of a Contract:** Where we have entered into a contract with you, we may process your personal information to fulfill the terms of our contract.
 
 <!---->
 
-- **Vital Interests:** We may disclose your information where we believe it is necessary to investigate, prevent, or take action regarding potential violations of our policies, suspected fraud, situations involving potential threats to the safety of any person and illegal activities, or as evidence in litigation in which we are involved.
+-   **Legal Obligations:** We may disclose your information where we are legally required to do so in order to comply with applicable law, governmental requests, a judicial proceeding, court order, or legal process, such as in response to a court order or a subpoena (including in response to public authorities to meet national security or law enforcement requirements).
 
 <!---->
 
-- **Business Transfers.** We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.
+-   **Vital Interests:** We may disclose your information where we believe it is necessary to investigate, prevent, or take action regarding potential violations of our policies, suspected fraud, situations involving potential threats to the safety of any person and illegal activities, or as evidence in litigation in which we are involved.
 
 <!---->
 
-- Receiving help through our customer support channels;
+-   **Business Transfers.** We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.
 
 <!---->
 
-- Participation in customer surveys or contests; and
+-   Receiving help through our customer support channels;
 
 <!---->
 
-- Facilitation in the delivery of our Services and to respond to your inquiries.
+-   Participation in customer surveys or contests; and
 
 <!---->
 
-- whether we collect and use your personal information;
+-   Facilitation in the delivery of our Services and to respond to your inquiries.
 
 <!---->
 
-- the categories of personal information that we collect;
+-   whether we collect and use your personal information;
 
 <!---->
 
-- the purposes for which the collected personal information is used;
+-   the categories of personal information that we collect;
 
 <!---->
 
-- whether we sell your personal information to third parties;
+-   the purposes for which the collected personal information is used;
 
 <!---->
 
-- the categories of personal information that we sold or disclosed for a business purpose;
+-   whether we sell your personal information to third parties;
 
 <!---->
 
-- the categories of third parties to whom the personal information was sold or disclosed for a business purpose; and
+-   the categories of personal information that we sold or disclosed for a business purpose;
 
 <!---->
 
-- the business or commercial purpose for collecting or selling personal information.
+-   the categories of third parties to whom the personal information was sold or disclosed for a business purpose; and
 
 <!---->
 
-- you may object to the processing of your personal data
+-   the business or commercial purpose for collecting or selling personal information.
 
 <!---->
 
-- you may request correction of your personal data if it is incorrect or no longer relevant, or ask to restrict the processing of the data
+-   you may object to the processing of your personal data
 
 <!---->
 
-- you can designate an authorized agent to make a request under the CCPA on your behalf. We may deny a request from an authorized agent that does not submit proof that they have been validly authorized to act on your behalf in accordance with the CCPA.
+-   you may request correction of your personal data if it is incorrect or no longer relevant, or ask to restrict the processing of the data
 
 <!---->
 
-- you may request to opt-out from future selling of your personal information to third parties. Upon receiving a request to opt-out, we will act upon the request as soon as feasibly possible, but no later than 15 days from the date of the request submission.
+-   you can designate an authorized agent to make a request under the CCPA on your behalf. We may deny a request from an authorized agent that does not submit proof that they have been validly authorized to act on your behalf in accordance with the CCPA.
+
+<!---->
+
+-   you may request to opt-out from future selling of your personal information to third parties. Upon receiving a request to opt-out, we will act upon the request as soon as feasibly possible, but no later than 15 days from the date of the request submission.

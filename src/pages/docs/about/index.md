@@ -2,26 +2,27 @@
 title: About
 excerpt: Web-Dev-Hub is my personal blogand documentation site
 seo:
-  title: About
-  description: Bryan Guner personal blog about page
-  extra:
-    - name: og:type
-      value: website
-      keyName: property
-    - name: og:title
-      value: About
-      keyName: property
-    - name: og:description
-      value: This is the About page
-      keyName: property
-    - name: twitter:card
-      value: summary
-    - name: twitter:title
-      value: About
-    - name: twitter:description
-      value: This is the About page
+    title: About
+    description: Bryan Guner personal blog about page
+    extra:
+        - name: og:type
+          value: website
+          keyName: property
+        - name: og:title
+          value: About
+          keyName: property
+        - name: og:description
+          value: This is the About page
+          keyName: property
+        - name: twitter:card
+          value: summary
+        - name: twitter:title
+          value: About
+        - name: twitter:description
+          value: This is the About page
 template: docs
 ---
+
 <div align="center">
 
 <h1>Hi 👋, I'm Bryan</h1>
@@ -31,7 +32,7 @@ template: docs
 
 ## ➤ _📧_ [bryan.guner@gmail.com](📲) _☎️_ [551-254-5505](551-254-5505)
 
-![Profile views](https://views.whatilearened.today/views/github/bgoonz/views.svg)
+![Profile views](https://github.com/bgoonz/bgoonz/blob/master/circle-small-sharp.png?raw=true?raw=true "profile image")
 
 [![Gitter](https://badges.gitter.im/bgoonz/community.svg)](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
@@ -103,27 +104,19 @@ template: docs
 
 </div>
 
----
-
+- - -
 
 ### About Me
 
-- 🔭 Contract Web Development **Duke Energy**
-
-- 🌱 I'm currently learning **React/Redux, Python, Java, Express, jQuery**
-
-- 👯 I'm looking to collaborate on [Any web audio or open source educational tools.](<https://goofy-e>
-- 🤝 I'm looking for help with [L
-
-- 👨‍💻 All of my projects are available at [https://bgoonz.github.io/](https://bgoonz.github.io/)
-
-- 📝 I regularly write articles on [medium](https://bryanguner.medium.com/) && [Web-Dev-Resource-Hub](https://web-dev-resource-hub.netlify.app/)
-
-- 💬 Ask me about **Anything:**
-
-- 📫 How to reach me **bryan.guner@gmail.com**
-
-- ⚡ Fun fact **I played Bamboozle Music Festival at the Meadowlands Stadium Complex when I was 14.**
+* 🔭 Contract Web Development **Duke Energy**
+* 🌱 I'm currently learning **React/Redux, Python, Java, Express, jQuery**
+* 👯 I'm looking to collaborate on \[Any web audio or open source educational tools.](<https://goofy-e>
+* 🤝 I'm looking for help with [L
+* 👨‍💻 All of my projects are available at <https://bgoonz.github.io/>
+* 📝 I regularly write articles on [medium](https://bryanguner.medium.com/) && [Web-Dev-Resource-Hub](https://web-dev-resource-hub.netlify.app/)
+* 💬 Ask me about **Anything:**
+* 📫 How to reach me **bryan.guner@gmail.com**
+* ⚡ Fun fact **I played Bamboozle Music Festival at the Meadowlands Stadium Complex when I was 14.**
 
 ### i really like music :headphones
 
@@ -177,9 +170,7 @@ Creating things that change my every day life.
 
 > Mahatma Gandhi
 
----
-
-
+- - -
 
 ## Resume (Old):
 
@@ -204,15 +195,15 @@ Creating things that change my every day life.
 | **Front End Web Developer**           |
 |                                       |
 
-- Responsible for front-end development for a custom real estate application which provides sophisticated and fully customizable filtering to allow investors and real estate professionals to narrow in on exact search targets.
-- Designed mock-up screens, wireframes, and workflows for intuitive user experience.
-- Migrated existing multi-page user experience into singular page interfaces using React components.
-- Participated in every stage of the design from conception through development and iterative improvement.
-- Produced user stories and internal documentation for future site development and maintenance.
-- Implemented modern frameworks including Bootstrap and Font-Awesome to give the site an aesthetic overhaul.
-- Managed all test deployments using a combination of Digital Ocean and Netlify.
-- Produced unit tests using a combination of Mocha and Chai.
-- Injected Google Analytics to capture pertinent usage data to produce an insightful dashboard experience.
+* Responsible for front-end development for a custom real estate application which provides sophisticated and fully customizable filtering to allow investors and real estate professionals to narrow in on exact search targets.
+* Designed mock-up screens, wireframes, and workflows for intuitive user experience.
+* Migrated existing multi-page user experience into singular page interfaces using React components.
+* Participated in every stage of the design from conception through development and iterative improvement.
+* Produced user stories and internal documentation for future site development and maintenance.
+* Implemented modern frameworks including Bootstrap and Font-Awesome to give the site an aesthetic overhaul.
+* Managed all test deployments using a combination of Digital Ocean and Netlify.
+* Produced unit tests using a combination of Mocha and Chai.
+* Injected Google Analytics to capture pertinent usage data to produce an insightful dashboard experience.
 
 | **Environment:** | **JavaScript, JQuery, React, HTML5 &amp; CSS, Bootstrap, DOJO, Google Cloud, Bash Script** |
 | ---------------- | ------------------------------------------------------------------------------------------ |
@@ -222,11 +213,11 @@ Creating things that change my every day life.
 | **Product Development Engineer** |
 |                                  |
 
-- Converted client&#39;s product needs into technical specs to be sent to the development team in Italy.
-- Reorganized internal file server structure.
-- Conducted remote / in person system integration and product demonstrations.
-- Presided over internal and end user software trainings in addition to producing the corresponding documentation.
-- Served as the primary point of contact for troubleshooting railroad hardware and software in the North America.
+* Converted client&#39;s product needs into technical specs to be sent to the development team in Italy.
+* Reorganized internal file server structure.
+* Conducted remote / in person system integration and product demonstrations.
+* Presided over internal and end user software trainings in addition to producing the corresponding documentation.
+* Served as the primary point of contact for troubleshooting railroad hardware and software in the North America.
 
 | **Environment:** | **Excel, AutoCAD, PowerPoint, Word** |
 | ---------------- | ------------------------------------ |
@@ -242,8 +233,8 @@ Creating things that change my every day life.
 
 **Capstone Project - Team Lead**
 
-- Successfully completed and delivered a platform to digitize a guitar signal and perform filtering before executing frequency &amp; time domain analysis to track a current performance against prerecorded performance.
-- Implemented the Dynamic Time Warping algorithm in C++ and Python to autonomously activate or adjust guitar effect at multiple pre-designated section of performance.
+* Successfully completed and delivered a platform to digitize a guitar signal and perform filtering before executing frequency &amp; time domain analysis to track a current performance against prerecorded performance.
+* Implemented the Dynamic Time Warping algorithm in C++ and Python to autonomously activate or adjust guitar effect at multiple pre-designated section of performance.
 
 | **Environment:** | **C++, Python, MATLAB, PureData** |
 | ---------------- | --------------------------------- |
@@ -253,11 +244,9 @@ Creating things that change my every day life.
 <br>
 <br>
 
----
+- - -
 
-
-
----
+- - -
 
 <br>
 <br>

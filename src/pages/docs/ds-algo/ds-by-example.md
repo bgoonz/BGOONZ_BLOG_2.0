@@ -591,7 +591,7 @@ replacing the "current" value with the "previous" value and storing the
    this.memory[address] = previous;
    previous = current;
     }
-````
+```
 
 Add the last item in a new position at the end of the list.
 
@@ -885,7 +885,7 @@ class Stack {
     this.length++;
     this.list.push(value);
   }
-````
+```
 
 - And pop to remove items from the top of the stack.
 
@@ -1147,7 +1147,7 @@ Find the nodes for each value.
     if (!startNode || !endNode) {
    throw new Error('Both nodes need to exist');
     }
-````
+```
 
 And add a reference to the endNode from the startNode.
 
@@ -1480,7 +1480,7 @@ class Tree {
  // then recursively call the walk function on all of its children.
    node.children.forEach(walk);
     }
-````
+```
 
 Now kick the traversal process off.
 
