@@ -1,1 +1,0 @@
-cat *.html > example.html
