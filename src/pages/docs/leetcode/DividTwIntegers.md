@@ -83,15 +83,3 @@ let divide = function (dividend, divisor) {
     return isNegative ? -result : result;
 };
 ```
-
----
-
-☆*: .｡. o(≧▽≦)o .｡.:*☆☆*: .｡. o(≧▽≦)o .｡.:*☆☆*: .｡. o(≧▽≦)o .｡.:*☆
-
----
-
----
-
-☆*: .｡. o(≧▽≦)o .｡.:*☆☆*: .｡. o(≧▽≦)o .｡.:*☆
-
----
