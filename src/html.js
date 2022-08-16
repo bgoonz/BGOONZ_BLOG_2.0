@@ -7,6 +7,7 @@ import PropTypes from "prop-types"
 import React from "react"
 
 
+
 export default function HTML(props) {
     return (
         <html {...props.htmlAttributes}>
