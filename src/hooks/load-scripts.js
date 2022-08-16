@@ -1,21 +1,15 @@
-/**
- * The `useLoadScript` hook loads an external script tag on the client-side.
- * @param src - The URL of the script to load.
- * @param options - {
- * @returns The return value is a promise.
- */
 "use strict";
-const __awaiter =
-  this?.__awaiter ||
-  ((thisArg, _arguments, P, generator) => {
+var __awaiter =
+  (this && this.__awaiter) ||
+  function (thisArg, _arguments, P, generator) {
     function adopt(value) {
       return value instanceof P
         ? value
-        : new P((resolve) => {
+        : new P(function (resolve) {
             resolve(value);
           });
     }
-    return new (P || (P = Promise))((resolve, reject) => {
+    return new (P || (P = Promise))(function (resolve, reject) {
       function fulfilled(value) {
         try {
           step(generator.next(value));
@@ -31,31 +25,29 @@ const __awaiter =
         }
       }
       function step(result) {
-        if (result.done) {
-          resolve(result.value);
-        } else {
-          adopt(result.value).then(fulfilled, rejected);
-        }
+        result.done
+          ? resolve(result.value)
+          : adopt(result.value).then(fulfilled, rejected);
       }
       step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
-  });
-const __generator =
-  this?.__generator ||
-  ((thisArg, body) => {
-    let _ = {
-      label: 0,
-      sent() {
-        if (t[0] & 1) throw t[1];
-        return t[1];
+  };
+var __generator =
+  (this && this.__generator) ||
+  function (thisArg, body) {
+    var _ = {
+        label: 0,
+        sent() {
+          if (t[0] & 1) throw t[1];
+          return t[1];
+        },
+        trys: [],
+        ops: [],
       },
-      trys: [],
-      ops: [],
-    };
-    let f;
-    let y;
-    var t;
-    let g;
+      f,
+      y,
+      t,
+      g;
     return (
       (g = { next: verb(0), throw: verb(1), return: verb(2) }),
       typeof Symbol === "function" &&
@@ -65,7 +57,9 @@ const __generator =
       g
     );
     function verb(n) {
-      return (v) => step([n, v]);
+      return function (v) {
+        return step([n, v]);
+      };
     }
     function step(op) {
       if (f) throw new TypeError("Generator is already executing.");
@@ -135,28 +129,28 @@ const __generator =
           f = t = 0;
         }
       if (op[0] & 5) throw op[1];
-      return { value: op[0] ? op[1] : undefined, done: true };
+      return { value: op[0] ? op[1] : void 0, done: true };
     }
-  });
+  };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.useLoadScript = exports.loadScript = undefined;
-const react_1 = require("react");
-const SCRIPTS_LOADED = {};
+exports.useLoadScript = exports.loadScript = void 0;
+var react_1 = require("react");
+var SCRIPTS_LOADED = {};
 function loadScript(src, options) {
-  const isScriptLoaded = SCRIPTS_LOADED[src];
+  var isScriptLoaded = SCRIPTS_LOADED[src];
   if (isScriptLoaded) {
     return isScriptLoaded;
   }
-  const promise = new Promise((resolve, reject) => {
-    const script = document.createElement("script");
-    if (options == null ? undefined : options.module) {
+  var promise = new Promise(function (resolve, reject) {
+    var script = document.createElement("script");
+    if (options === null || options === void 0 ? void 0 : options.module) {
       script.type = "module";
     }
     script.src = src;
-    script.onload = () => {
+    script.onload = function () {
       resolve(true);
     };
-    script.onerror = () => {
+    script.onerror = function () {
       reject(false);
     };
     document.body.appendChild(script);
@@ -169,34 +163,38 @@ exports.loadScript = loadScript;
  * The `useLoadScript` hook loads an external script tag on the client-side.
  */
 function useLoadScript(url, options) {
-  const _a = (0, react_1.useState)("loading");
-  const status = _a[0];
-  (0, react_1.useEffect)(() => {
-    function loadScriptWrapper() {
-      return __awaiter(this, undefined, undefined, function () {
-        let error_1;
-        return __generator(this, (_a) => {
-          switch (_a.label) {
-            case 0:
-              _a.trys.push([0, 2, , 3]);
-              _a[1]("loading");
-              return [4 /*yield*/, loadScript(url, options)];
-            case 1:
-              _a.sent();
-              _a[1]("done");
-              return [3 /*break*/, 3];
-            case 2:
-              error_1 = _a.sent();
-              _a[1]("error");
-              return [3 /*break*/, 3];
-            case 3:
-              return [2 /*return*/];
-          }
+  var _a = (0, react_1.useState)("loading"),
+    status = _a[0],
+    setStatus = _a[1];
+  (0, react_1.useEffect)(
+    function () {
+      function loadScriptWrapper() {
+        return __awaiter(this, void 0, void 0, function () {
+          var error_1;
+          return __generator(this, function (_a) {
+            switch (_a.label) {
+              case 0:
+                _a.trys.push([0, 2, , 3]);
+                setStatus("loading");
+                return [4 /*yield*/, loadScript(url, options)];
+              case 1:
+                _a.sent();
+                setStatus("done");
+                return [3 /*break*/, 3];
+              case 2:
+                error_1 = _a.sent();
+                setStatus("error");
+                return [3 /*break*/, 3];
+              case 3:
+                return [2 /*return*/];
+            }
+          });
         });
-      });
-    }
-    loadScriptWrapper();
-  }, [url, JSON.stringify(options)]);
+      }
+      loadScriptWrapper();
+    },
+    [url, JSON.stringify(options)]
+  );
   return status;
 }
 exports.useLoadScript = useLoadScript;
