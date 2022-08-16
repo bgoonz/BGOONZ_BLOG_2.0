@@ -1,4 +1,9 @@
 {
-    "docwriter.style": "DocBlock",
-    "docwriter.hotkey.mac": "⌥ + ."
+    "files.exclude": {
+        "**/.git": false
+    },
+    "search.useGlobalIgnoreFiles": true,
+    "search.useIgnoreFiles": false,
+    "python.pythonPath": "/bin/python3",
+    "liveServer.settings.port": 5501
 }

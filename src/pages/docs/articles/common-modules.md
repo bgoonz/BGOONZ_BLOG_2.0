@@ -20,7 +20,7 @@ template: docs
 
 In the Node.js module system, each file is treated as a separate module. For example, consider a file named `foo.js`:
 
-```
+```js
 const circle = require('./circle.js');
 console.log(`The area of a circle of radius 4 is ${circle.area(4)}`);
 ```
@@ -29,7 +29,7 @@ On the first line, `foo.js` loads the module `circle.js` that is in the same dir
 
 Here are the contents of `circle.js`:
 
-```
+```js
 const { PI } = Math;
 
 exports.area = (r) => PI * r ** 2;
@@ -45,7 +45,7 @@ The `module.exports` property can be assigned a new value (such as a function or
 
 Below, `bar.js` makes use of the `square` module, which exports a Square class:
 
-```
+```js
 const Square = require('./square.js');
 const mySquare = new Square(2);
 console.log(`The area of mySquare is ${mySquare.area()}`);
@@ -53,7 +53,7 @@ console.log(`The area of mySquare is ${mySquare.area()}`);
 
 The `square` module is defined in `square.js`:
 
-```
+```js
 // Assigning to exports will not modify module, must use module.exports
 module.exports = class Square {
   constructor(width) {
@@ -251,7 +251,7 @@ Consider this situation:
 
 `a.js`:
 
-```
+```js
 console.log('a starting');
 exports.done = false;
 const b = require('./b.js');
@@ -262,7 +262,7 @@ console.log('a done');
 
 `b.js`:
 
-```
+```js
 console.log('b starting');
 exports.done = false;
 const a = require('./a.js');
@@ -273,7 +273,7 @@ console.log('b done');
 
 `main.js`:
 
-```
+```js
 console.log('main starting');
 const a = require('./a.js');
 const b = require('./b.js');
@@ -284,7 +284,7 @@ When `main.js` loads `a.js`, then `a.js` in turn loads `b.js`. At that point, `b
 
 By the time `main.js` has loaded both modules, they're both finished. The output of this program would thus be:
 
-```
+```shell
 $ node main.js
 main starting
 a starting
@@ -318,7 +318,7 @@ It is convenient to organize programs and libraries into self-contained director
 
 The first is to create a [`package.json`](https://nodejs.org/api/packages.html#packages_node_js_package_json_field_definitions) file in the root of the folder, which specifies a `main` module. An example [`package.json`](https://nodejs.org/api/packages.html#packages_node_js_package_json_field_definitions) file might look like this:
 
-```
+```json
 { "name" : "some-library",
   "main" : "./lib/some-library.js" }
 ```
@@ -406,7 +406,7 @@ The directory name of the current module. This is the same as the [`path.dirname
 
 Example: running `node example.js` from `/Users/mjr`
 
-```
+```js
 console.log(__dirname);
 // Prints: /Users/mjr
 console.log(path.dirname(__filename));
@@ -429,7 +429,7 @@ Examples:
 
 Running `node example.js` from `/Users/mjr`
 
-```
+```js
 console.log(__filename);
 // Prints: /Users/mjr/example.js
 console.log(__dirname);
@@ -468,7 +468,7 @@ Added in: v0.1.13
 
 Used to import modules, `JSON`, and local files. Modules can be imported from `node_modules`. Local modules and JSON files can be imported using a relative path (e.g. `./`, `./foo`, `./bar/baz`, `../foo`) that will be resolved against the directory named by [`__dirname`](https://nodejs.org/api/modules.html#modules_dirname) (if defined) or the current working directory. The relative paths of POSIX style are resolved in an OS independent fashion, meaning that the examples above will work on Windows in the same way they would on Unix systems.
 
-```
+```js
 // Importing a local module with a path relative to the `__dirname` or current
 // working directory. (On Windows, this would resolve to .\path\myLocalModule.)
 const myLocalModule = require('./path/myLocalModule');
@@ -490,7 +490,7 @@ Modules are cached in this object when they are required. By deleting a key valu
 
 Adding or replacing entries is also possible. This cache is checked before native modules and if a name matching a native module is added to the cache, only `node:`-prefixed require calls are going to receive the native module. Use with care!
 
-```
+```js
 const assert = require('assert');
 const realFs = require('fs');
 
@@ -513,7 +513,7 @@ Instruct `require` on how to handle certain file extensions.
 
 Process files with the extension `.sjs` as `.js`:
 
-```
+```js
 require.extensions['.sjs'] = require.extensions['.js'];
 ```
 
@@ -531,15 +531,15 @@ The `Module` object representing the entry script loaded when the Node.js proces
 
 In `entry.js` script:
 
-```
+```js
 console.log(require.main);
 ```
 
-```
+```js
 node entry.js
 ```
 
-```
+```js
 Module {
   id: '.',
   path: '/absolute/path/to',
@@ -602,7 +602,7 @@ The `module.exports` object is created by the `Module` system. Sometimes this is
 
 For example, suppose we were making a module called `a.js`:
 
-```
+```js
 const EventEmitter = require('events');
 
 module.exports = new EventEmitter();
@@ -616,7 +616,7 @@ setTimeout(() => {
 
 Then in another file we could do:
 
-```
+```js
 const a = require('./a');
 a.on('ready', () => {
   console.log('module "a" is ready');
@@ -627,7 +627,7 @@ Assignment to `module.exports` must be done immediately. It cannot be done in an
 
 `x.js`:
 
-```
+```js
 setTimeout(() => {
   module.exports = { a: 'hello' };
 }, 0);
@@ -635,7 +635,7 @@ setTimeout(() => {
 
 `y.js`:
 
-```
+```js
 const x = require('./x');
 console.log(x.a);
 ```
@@ -648,14 +648,14 @@ The `exports` variable is available within a module's file-level scope, and is a
 
 It allows a shortcut, so that `module.exports.f = ...` can be written more succinctly as `exports.f = ...`. However, be aware that like any variable, if a new value is assigned to `exports`, it is no longer bound to `module.exports`:
 
-```
+```js
 module.exports.hello = true; // Exported from require of module
 exports = { hello: false };  // Not exported, only available in the module
 ```
 
 When the `module.exports` property is being completely replaced by a new object, it is common to also reassign `exports`:
 
-```
+```js
 module.exports = exports = function Constructor() {
   // ... etc.
 };
@@ -663,7 +663,7 @@ module.exports = exports = function Constructor() {
 
 To illustrate the behavior, imagine this hypothetical implementation of `require()`, which is quite similar to what is actually done by `require()`:
 
-```
+```js
 function require(/* ... */) {
   const module = { exports: {} };
   ((module, exports) => {
@@ -679,78 +679,3 @@ function require(/* ... */) {
   return module.exports;
 }
 ```
-
-#### `module.filename`[#](https://nodejs.org/api/modules.html#modules_module_filename)
-
-Added in: v0.1.16
-
-- [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
-
-The fully resolved filename of the module.
-
-#### `module.id`[#](https://nodejs.org/api/modules.html#modules_module_id)
-
-Added in: v0.1.16
-
-- [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
-
-The identifier for the module. Typically this is the fully resolved filename.
-
-#### `module.isPreloading`[#](https://nodejs.org/api/modules.html#modules_module_ispreloading)
-
-Added in: v15.4.0
-
-- Type: [<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type) `true` if the module is running during the Node.js preload phase.
-
-#### `module.loaded`[#](https://nodejs.org/api/modules.html#modules_module_loaded)
-
-Added in: v0.1.16
-
-- [<boolean>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type)
-
-Whether or not the module is done loading, or is in the process of loading.
-
-#### `module.parent`[#](https://nodejs.org/api/modules.html#modules_module_parent)
-
-Added in: v0.1.16Deprecated since: v14.6.0, v12.19.0
-
-[Stability: 0](https://nodejs.org/api/documentation.html#documentation_stability_index) - Deprecated: Please use [`require.main`](https://nodejs.org/api/modules.html#modules_require_main) and [`module.children`](https://nodejs.org/api/modules.html#modules_module_children) instead.
-
-- [<module>](https://nodejs.org/api/modules.html#modules_the_module_object) | [<null>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Null_type) | [<undefined>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Undefined_type)
-
-The module that first required this one, or `null` if the current module is the entry point of the current process, or `undefined` if the module was loaded by something that is not a CommonJS module (E.G.: REPL or `import`).
-
-#### `module.path`[#](https://nodejs.org/api/modules.html#modules_module_path)
-
-Added in: v11.14.0
-
-- [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
-
-The directory name of the module. This is usually the same as the [`path.dirname()`](https://nodejs.org/api/path.html#path_path_dirname_path) of the [`module.id`](https://nodejs.org/api/modules.html#modules_module_id).
-
-#### `module.paths`[#](https://nodejs.org/api/modules.html#modules_module_paths)
-
-Added in: v0.4.0
-
-- [<string[]>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
-
-The search paths for the module.
-
-#### `module.require(id)`[#](https://nodejs.org/api/modules.html#modules_module_require_id)
-
-Added in: v0.5.1
-
-- `id` [<string>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
-- Returns: [<any>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Data_types) exported module content
-
-The `module.require()` method provides a way to load a module as if `require()` was called from the original module.
-
-In order to do this, it is necessary to get a reference to the `module` object. Since `require()` returns the `module.exports`, and the `module` is typically _only_ available within a specific module's code, it must be explicitly exported in order to be used.
-
-### The `Module` object[#](https://nodejs.org/api/modules.html#modules_the_module_object_1)
-
-This section was moved to [Modules: `module` core module](https://nodejs.org/api/module.html#module_the_module_object).
-
-- [`module.builtinModules`](https://nodejs.org/api/module.html#module_module_builtinmodules)
-- [`module.createRequire(filename)`](https://nodejs.org/api/module.html#module_module_createrequire_filename)
-- [](https://nodejs.org/api/module.html#module_module_syncbuiltinesmexports)
