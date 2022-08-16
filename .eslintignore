@@ -1,0 +1,11 @@
+.cache
+.parcel-cache
+build
+coverage
+dist
+node_modules
+examples/twitter-compose-with-typeahead
+examples/slack-with-emojis-and-commands
+examples/react-instantsearch-hooks
+examples/vue-instantsearch
+examples/react-18

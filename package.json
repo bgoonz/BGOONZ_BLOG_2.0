@@ -14,14 +14,17 @@
         "git": "git add . && git commit -m 'update' && git pull && git push"
     },
     "dependencies": {
+        "@algolia/autocomplete-js": "1.7.1",
+        "@algolia/autocomplete-theme-classic": "1.7.1",
         "@stackbit/gatsby-plugin-menus": "0.0.4",
+        "algoliasearch": "4.9.1",
         "axios": "^0.21.2",
         "babel-runtime": "6.26.0",
         "chokidar": "3.4.0",
         "classnames": "2.2.6",
         "docky": "^1.5.4",
         "fs-extra": "7.0.1",
-        "gatsby": "^2.0.0",
+        "gatsby": "^4.21.0",
         "gatsby-plugin-disqus": "^1.2.3",
         "gatsby-plugin-no-sourcemaps": "^4.17.0",
         "gatsby-plugin-offline": "^5.9.0",
@@ -30,15 +33,16 @@
         "gatsby-remark-code-buttons": "^2.0.7",
         "gatsby-remark-prismjs": "^6.16.0",
         "gatsby-remark-prismjs-copy-button": "^0.3.1",
-        "gatsby-source-filesystem": "2.3.10",
-        "gatsby-transformer-remark": "2.8.14",
-        "js-yaml": "3.12.2",
+        "gatsby-source-filesystem": "^4.21.0",
+        "gatsby-transformer-remark": "^5.21.0",
+        "js-yaml": "^4.1.0",
         "lodash": "^4.17.21",
-        "marked": "0.6.1",
+        "marked": "^4.0.18",
         "moment": "^2.29.3",
         "moment-strftime": "0.5.0",
-        "node-sass": "^4.14.0",
+        "node-sass": "^7.0.1",
         "node-sass-utils": "1.1.2",
+        "preact": "10.5.13",
         "prismjs": "^1.28.0",
         "react": "16.5.1  || ^17.0.0",
         "react-dom": "^16.13.1",
@@ -47,13 +51,11 @@
         "react-script-tag": "1.1.2",
         "rehype-react": "3.0.2",
         "sprintf-js": "1.1.2",
-        "web-dev-utils": "^1.0.4",
-        "@algolia/autocomplete-js": "1.7.1",
-        "@algolia/autocomplete-theme-classic": "1.7.1",
-        "algoliasearch": "4.9.1",
-        "preact": "10.5.13"
+        "web-dev-utils": "^1.0.4"
     },
     "devDependencies": {
-        "prettier": "^2.7.1"
+        "prettier": "^2.7.1",
+        "@algolia/client-search": "4.9.1",
+        "parcel": "2.5.0"
     }
 }

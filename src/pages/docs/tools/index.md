@@ -161,12 +161,7 @@ template: docs
 <br>
 <br>
 <br>
-<h1> Text Tools     </h1>
-<br>
 
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://devtools42.netlify.app/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
-</iframe>
-<br>
 
 <br>
 
