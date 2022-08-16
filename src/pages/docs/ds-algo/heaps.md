@@ -19,17 +19,9 @@ Heap is one efficient implementation of an abstract data structure called a [pri
 
 ## Priority Queue
 
-
 <details>
 
-
-
-<summary>
- Click To Learn About Priority Queues 
-
-</summary>
-
-
+<summary> Click To Learn About Priority Queues </summary>
 
 What is priority queue?
 -----------------------

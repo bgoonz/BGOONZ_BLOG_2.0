@@ -72,70 +72,34 @@ This is the code you need to align images to the right:
 
 Collapsing large blocks of text can make your markdown much easier to digest
 
-
 <details>
-
-
-<summary>
-"Click to expand"
-
-</summary>
-
-
+<summary>"Click to expand"</summary>
 this is hidden block
 </details>
 
 ```
-
 <details>
-
-
-<summary>
-"Click to expand"
-
-</summary>
-
-
+<summary>"Click to expand"</summary>
 this is hidden
 </details>
 ```
 
 Collapsing large blocks of Markdown text
 
-
 <details>
+<summary>To make sure markdown is rendered correctly in the collapsed section...</summary>
 
-
-<summary>
-To make sure markdown is rendered correctly in the collapsed section...
-
-</summary>
-
-
-
-1.  Put an **empty line** after the `
-<summary>
-` block.
+1.  Put an **empty line** after the `<summary>` block.
 2.  _Insert your markdown syntax_
 3.  Put an **empty line** before the `</details>` tag
 
 </details>
 
 ```
-
 <details>
+<summary>To make sure markdown is rendered correctly in the collapsed section...</summary>
 
-
-<summary>
-To make sure markdown is rendered correctly in the collapsed section...
-
-</summary>
-
-
-
- 1. Put an **empty line** after the `
-<summary>
-` block.
+ 1. Put an **empty line** after the `<summary>` block.
  2. *Insert your markdown syntax*
  3. Put an **empty line** before the `</details>` tag
 
