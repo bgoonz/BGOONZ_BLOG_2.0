@@ -30,7 +30,8 @@ seo:
 template: docs
 ---
 
-# [**➡️🏠🏠HOME🏠🏠⬅️**](https://bgoonz-blog.netlify.app/)
+
+# [**➡️🏠🏠HOME🏠🏠⬅️**](https://syntax-highlight.netlify.app/)
 
 <center>
 
@@ -63,30 +64,30 @@ template: docs
 
 ##### [**<ins>Blog Article List</ins>**](https://bgoonz-blog.netlify.app/blog)
 
--   [📰blog📰](https://bgoonz-blog.netlify.app/blog/web-scraping)
-    -   [📰300-react-questions](https://bgoonz-blog.netlify.app/blog/300-react-questions)
--   [📰adding-css-to-your-html](https://bgoonz-blog.netlify.app/blog/adding-css-to-your-html)
--   [📰awesome-graphql](https://bgoonz-blog.netlify.app/blog/awesome-graphql)
--   [📰big-o-complexity](https://bgoonz-blog.netlify.app/blog/big-o-complexity)
--   [📰blog-archive](https://bgoonz-blog.netlify.app/blog/blog-archive)
--   [📰data-structures](https://bgoonz-blog.netlify.app/blog/data-structures)
--   [📰data-structures-algorithms-resources](https://bgoonz-blog.netlify.app/blog/data-structures-algorithms-resources)
--   [📰expressjs-apis](https://bgoonz-blog.netlify.app/blog/expressjs-apis)
--   [📰flow-control-in-python](https://bgoonz-blog.netlify.app/blog/flow-control-in-python)
--   [📰functions-in-python](https://bgoonz-blog.netlify.app/blog/functions-in-python)
--   [📰git-gateway](https://bgoonz-blog.netlify.app/blog/git-gateway)
--   [📰hoisting](https://bgoonz-blog.netlify.app/blog/hoisting)
--   [📰interview-questions-js](https://bgoonz-blog.netlify.app/blog/interview-questions-js)
--   [📰interview-questions-js-p2](https://bgoonz-blog.netlify.app/blog/interview-questions-js-p2)
--   [📰interview-questions-js-p3](https://bgoonz-blog.netlify.app/blog/interview-questions-js-p3)
--   [📰netlify-cms](https://bgoonz-blog.netlify.app/blog/netlify-cms)
--   [📰platform-docs](https://bgoonz-blog.netlify.app/blog/platform-docs)
--   [📰psql-cheat-sheet](https://bgoonz-blog.netlify.app/blog/psql-cheat-sheet)
--   [📰python-for-js-dev](https://bgoonz-blog.netlify.app/blog/python-for-js-dev)
--   [📰python-resources](https://bgoonz-blog.netlify.app/blog/python-resources)
--   [📰vs-code-extensions](https://bgoonz-blog.netlify.app/blog/vs-code-extensions)
--   [📰web-dev-trends](https://bgoonz-blog.netlify.app/blog/web-dev-trends)
--   [📰web-scraping](https://bgoonz-blog.netlify.app/blog/web-scraping)
+-   [📰blog📰](https://syntax-highlight.netlify.app/blog/web-scraping)
+    - [📰300-react-questions](https://syntax-highlight.netlify.app/blog/300-react-questions)
+- [📰adding-css-to-your-html](https://syntax-highlight.netlify.app/blog/adding-css-to-your-html)
+- [📰awesome-graphql](https://syntax-highlight.netlify.app/blog/awesome-graphql)
+- [📰big-o-complexity](https://syntax-highlight.netlify.app/blog/big-o-complexity)
+- [📰blog-archive](https://syntax-highlight.netlify.app/blog/blog-archive)
+- [📰data-structures](https://syntax-highlight.netlify.app/blog/data-structures)
+- [📰data-structures-algorithms-resources](https://syntax-highlight.netlify.app/blog/data-structures-algorithms-resources)
+- [📰expressjs-apis](https://syntax-highlight.netlify.app/blog/expressjs-apis)
+- [📰flow-control-in-python](https://syntax-highlight.netlify.app/blog/flow-control-in-python)
+- [📰functions-in-python](https://syntax-highlight.netlify.app/blog/functions-in-python)
+- [📰git-gateway](https://syntax-highlight.netlify.app/blog/git-gateway)
+- [📰hoisting](https://syntax-highlight.netlify.app/blog/hoisting)
+- [📰interview-questions-js](https://syntax-highlight.netlify.app/blog/interview-questions-js)
+- [📰interview-questions-js-p2](https://syntax-highlight.netlify.app/blog/interview-questions-js-p2)
+- [📰interview-questions-js-p3](https://syntax-highlight.netlify.app/blog/interview-questions-js-p3)
+- [📰netlify-cms](https://syntax-highlight.netlify.app/blog/netlify-cms)
+- [📰platform-docs](https://syntax-highlight.netlify.app/blog/platform-docs)
+- [📰psql-cheat-sheet](https://syntax-highlight.netlify.app/blog/psql-cheat-sheet)
+- [📰python-for-js-dev](https://syntax-highlight.netlify.app/blog/python-for-js-dev)
+- [📰python-resources](https://syntax-highlight.netlify.app/blog/python-resources)
+- [📰vs-code-extensions](https://syntax-highlight.netlify.app/blog/vs-code-extensions)
+- [📰web-dev-trends](https://syntax-highlight.netlify.app/blog/web-dev-trends)
+- [📰web-scraping](https://syntax-highlight.netlify.app/blog/web-scraping)
 
 </details>
 

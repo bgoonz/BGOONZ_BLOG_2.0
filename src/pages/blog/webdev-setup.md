@@ -146,3 +146,4 @@ As of the time of writing of this document, WSL has an issue renaming or deletin
     sudo apt-get install -y unace unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller
     # FileZilla - a FTP client
     sudo apt-get install -y filezilla
+

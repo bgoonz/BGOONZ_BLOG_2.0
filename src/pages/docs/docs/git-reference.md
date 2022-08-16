@@ -123,7 +123,7 @@ of heads.
 Create an empty Git repository. The Git repository's settings, stored
 information, and more is stored in a directory (a folder) named ".git".
 
-```bash
+```console
 $ git init
 ```
 
@@ -132,7 +132,7 @@ $ git init
 To configure settings. Whether it be for the repository, the system itself,
 or global configurations ( global config file is `~/.gitconfig` ).
 
-```bash
+```console
 # Print & Set Some Basic Config Variables (Global)
  git config --global user.email "bryan.guner@gmail.com"
  git config --global user.name "bryan"
@@ -145,7 +145,7 @@ or global configurations ( global config file is `~/.gitconfig` ).
 To give you quick access to an extremely detailed guide of each command. Or to
 just give you a quick reminder of some semantics.
 
-```bash
+```console
 # Quickly check available commands
 $ git help
 
@@ -168,7 +168,7 @@ $ git init --help
 To intentionally untrack file(s) & folder(s) from git. Typically meant for
 private & temp files which would otherwise be shared in the repository.
 
-```bash
+```console
 $ echo "temp/" >> .gitignore
 $ echo "private_key" >> .gitignore
 ```
@@ -178,7 +178,7 @@ $ echo "private_key" >> .gitignore
 To show differences between the index file (basically your working copy/repo)
 and the current HEAD commit.
 
-```bash
+```console
 # Will display the branch, untracked files, changes and other differences
 $ git status
 
@@ -191,7 +191,7 @@ $ git help status
 To add files to the staging area/index. If you do not `git add` new files to
 the staging area/index, they will not be included in commits!
 
-```bash
+```console
 # add a file in your current working directory
 $ git add HelloWorld.java
 
@@ -213,7 +213,7 @@ working directory/repo.
 Manage your branches. You can view, edit, create, delete branches using this
 command.
 
-```bash
+```console
 # list existing branches & remotes
 $ git branch -a
 
@@ -235,7 +235,7 @@ $ git branch myBranchName --edit-description
 
 Manage your tags
 
-```bash
+```console
 # List tags
 $ git tag
 
@@ -262,7 +262,7 @@ $ git push origin --tags
 Updates all files in the working tree to match the version in the index, or
 specified tree.
 
-```bash
+```console
 # Checkout a repo - defaults to master branch
 $ git checkout
 
@@ -281,7 +281,7 @@ Clones, or copies, an existing repository into a new directory. It also adds
 remote-tracking branches for each branch in the cloned repo, which allows you
 to push to a remote branch.
 
-```bash
+```console
 # Clone learnxinyminutes-docs
 $ git clone https://github.com/adambard/learnxinyminutes-docs.git
 
@@ -297,7 +297,7 @@ $ git clone -b master-cn https://github.com/adambard/learnxinyminutes-docs.git -
 Stores the current contents of the index in a new "commit." This commit
 contains the changes made and a message created by the user.
 
-```bash
+```console
 # commit with a message
 $ git commit -m "Added multiplyNumbers() function to HelloWorld.c"
 
@@ -316,7 +316,7 @@ $ git commit --amend -m "Correct message"
 
 Shows differences between a file in the working directory, index and commits.
 
-```bash
+```console
 # Show difference between your working dir and the index
 $ git diff
 
@@ -333,7 +333,7 @@ Allows you to quickly search a repository.
 
 Optional Configurations:
 
-```bash
+```console
 # Thanks to Travis Jeffery for these
 # Set line numbers to be shown in grep search results
 $ git config --global grep.lineNumber true
@@ -342,7 +342,7 @@ $ git config --global grep.lineNumber true
 $ git config --global alias.g "grep --break --heading --line-number"
 ```
 
-```bash
+```console
 # Search for "variableName" in all java files
 $ git grep 'variableName' -- '*.java'
 
@@ -357,7 +357,7 @@ Google is your friend; for more examples
 
 Display commits to the repository.
 
-```bash
+```console
 # Show all commits
 $ git log
 
@@ -375,7 +375,7 @@ $ git log --graph
 
 "Merge" in changes from external commits into the current branch.
 
-```bash
+```console
 # Merge the specified branch into the current.
 $ git merge branchName
 
@@ -387,7 +387,7 @@ $ git merge --no-ff branchName
 
 Rename or move a file
 
-```bash
+```console
 # Renaming a file
 $ git mv HelloWorld.c HelloNewWorld.c
 
@@ -403,7 +403,7 @@ $ git mv -f myFile existingFile
 
 Pulls from a repository and merges it with another branch.
 
-```bash
+```console
 # Update your local repo, by merging in new changes
 # from the remote "origin" and "master" branch.
 # git pull <remote> <branch>
@@ -423,7 +423,7 @@ $ git pull origin master --rebase
 
 Push and merge changes from a branch to a remote & branch.
 
-```bash
+```console
 # Push and merge changes from a local repo to a
 # remote named "origin" and "master" branch.
 # git push <remote> <branch>
@@ -449,7 +449,7 @@ from the remote. Since you have dirty (uncommitted) changes to some files, you
 are not able to run `git pull`. Instead, you can run `git stash` to save your
 changes onto a stack!
 
-```bash
+```console
 $ git stash
 Saved working directory and index state \
   "WIP on master: 049d078 added the index file"
@@ -459,7 +459,7 @@ Saved working directory and index state \
 
 Now you can pull!
 
-```bash
+```console
 git pull
 ```
 
@@ -467,7 +467,7 @@ git pull
 
 Now check that everything is OK
 
-```bash
+```console
 $ git status
 # On branch master
 nothing to commit, working directory clean
@@ -477,7 +477,7 @@ You can see what "hunks" you've stashed so far using `git stash list`.
 Since the "hunks" are stored in a Last-In-First-Out stack, our most recent
 change will be at top.
 
-```bash
+```console
 $ git stash list
 stash@{0}: WIP on master: 049d078 added the index file
 stash@{1}: WIP on master: c264051 Revert "added file_size"
@@ -486,7 +486,7 @@ stash@{2}: WIP on master: 21d80a5 added number to log
 
 Now let's apply our dirty changes back by popping them off the stack.
 
-```bash
+```console
 $ git stash pop
 # On branch master
 # Changes not staged for commit:
@@ -509,7 +509,7 @@ Take all changes that were committed on one branch, and replay them onto
 another branch.
 _Do not rebase commits that you have pushed to a public repo_.
 
-```bash
+```console
 # Rebase experimentBranch onto master
 # git rebase <basebranch> <topicbranch>
 $ git rebase master experimentBranch
@@ -523,7 +523,7 @@ Reset the current HEAD to the specified state. This allows you to undo merges,
 pulls, commits, adds, and more. It's a great command but also dangerous if you
 don't know what you are doing.
 
-```bash
+```console
 # Reset the staging area, to match the latest commit (leaves dir unchanged)
 $ git reset
 
@@ -573,7 +573,7 @@ Revert can be used to undo a commit. It should not be confused with reset which
 restores the state of a project to a previous point. Revert will add a new
 commit which is the inverse of the specified commit, thus reverting it.
 
-```bash
+```console
 # Revert a specified commit
 $ git revert <commit>
 ```
@@ -582,7 +582,7 @@ $ git revert <commit>
 
 The opposite of git add, git rm removes files from the current working tree.
 
-```bash
+```console
 # remove HelloWorld.c
 $ git rm HelloWorld.c
 

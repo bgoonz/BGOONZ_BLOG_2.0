@@ -68,7 +68,7 @@
                 "type": "action_menu"
             },
             {
-                "label": "Blog📰",
+                "label": "Blog",
                 "url": "/blog/",
                 "style": "primary",
                 "has_subnav": true,
@@ -82,8 +82,17 @@
                         "type": "action"
                     },
                     {
-                        "label": "Top Blog Posts📰",
+                        "label": "Top Blog Posts",
                         "url": "https://blog-w-comments.vercel.app/",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": true,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
+                        "label": "Blog w Comments📰",
+                        "url": "/blogWcomments/",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
@@ -94,7 +103,7 @@
                 "new_window": false
             },
             {
-                "label": "Job Search🎓",
+                "label": "Job Search",
                 "url": "docs/career/",
                 "style": "primary",
                 "icon_class": "dev",
@@ -110,7 +119,7 @@
                         "no_follow": false
                     },
                     {
-                        "label": "Do's and Don'ts of interviews✅🚯",
+                        "label": "Do's and Don'ts of interviews",
                         "url": "interview/dos-and-donts",
                         "style": "primary",
                         "icon_class": "dev",
@@ -119,14 +128,14 @@
                     },
                     {
                         "label": "Career-Tips🎓",
-                        "url": "https://bgoonz-blog.netlify.app//docs/career/",
+                        "url": "https://syntax-highlight.netlify.app/docs/career/",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
                         "no_follow": false
                     },
                     {
-                        "label": "Interview Questions❓",
+                        "label": "Interview Questions",
                         "url": "docs/interview/interview-questions",
                         "style": "primary",
                         "icon_class": "dev",
@@ -153,7 +162,7 @@
                         "type": "action"
                     },
                     {
-                        "label": "Bootcamp Resources🥾🏕",
+                        "label": "Bootcamp Resources",
                         "url": "https://lambda-resources.netlify.app/",
                         "style": "primary",
                         "icon_class": "dev",
@@ -162,8 +171,8 @@
                         "type": "action"
                     },
                     {
-                        "label": "Web Dev Setup👶",
-                        "url": "https://bgoonz-blog.netlify.app//blog/webdev-setup/",
+                        "label": "Web Dev Setup",
+                        "url": "https://syntax-highlight.netlify.app/blog/webdev-setup/",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
@@ -180,8 +189,17 @@
                         "type": "action"
                     },
                     {
+                        "label": "Gallery",
+                        "url": "/docs/gallery",
+                        "style": "primary",
+                        "icon_class": "dev",
+                        "new_window": false,
+                        "no_follow": false,
+                        "type": "action"
+                    },
+                    {
                         "label": "Top Repos",
-                        "url": "/docs/docs/git-repos/",
+                        "url": "/docs",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
@@ -197,6 +215,7 @@
                         "no_follow": false
                     }
                 ],
+
                 "new_window": false
             },
             {
@@ -269,7 +288,7 @@
                     },
                     {
                         "label": "Embeds Blog",
-                        "url": "https://bgoonz-blog-v3-0.netlify.app/embeds/",
+                        "url": "https://friendly-panda-b61ab.netlify.app/",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
@@ -323,7 +342,7 @@
                     },
                     {
                         "label": "Wordpress Blog",
-                        "url": "https://bgoonz-blog.netlify.app//",
+                        "url": "https://syntax-highlight.netlify.app/",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
@@ -351,16 +370,16 @@
                 "type": "action_menu"
             },
             {
-                "label": "Admin🛇",
-                "url": "https://bgoonz-blog.netlify.app//admin/",
+                "label": "Admin",
+                "url": "https://syntax-highlight.netlify.app/admin/",
                 "style": "primary",
                 "icon_class": "github",
                 "type": "action_menu",
                 "no_follow": false,
                 "has_subnav": true,
                 "subnav_links": [{
-                        "label": "Write Docs📰",
-                        "url": "https://bgoonz-blog.netlify.app//admin/#/collections/docs",
+                        "label": "Write Docs",
+                        "url": "https://syntax-highlight.netlify.app/admin/#/collections/docs",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
@@ -368,8 +387,8 @@
                         "type": "action"
                     },
                     {
-                        "label": "Write Blog📰",
-                        "url": "https://bgoonz-blog.netlify.app//admin/#/collections/blog/new",
+                        "label": "Write Blog",
+                        "url": "https://syntax-highlight.netlify.app/admin/#/collections/blog/new",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
@@ -377,8 +396,8 @@
                         "type": "action"
                     },
                     {
-                        "label": "Webmaster🧲",
-                        "url": "https://bgoonz-blog.netlify.app//admin/#/collections/blog/new",
+                        "label": "Webmaster",
+                        "url": "https://syntax-highlight.netlify.app/admin/#/collections/blog/new",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
@@ -386,10 +405,10 @@
                         "type": "action"
                     }
                 ],
-                "new_window": false
+                "new_window": true
             },
             {
-                "label": "Tools🧰",
+                "label": "Tools",
                 "url": "/docs/tools",
                 "style": "primary",
                 "has_subnav": true,
@@ -421,8 +440,8 @@
                         "type": "action"
                     },
                     {
-                        "label": "Web Dev Utility Tools",
-                        "url": "hps://web-dev-utility-tools-bgoonz.netlify.app/",
+                        "label": "Job Search Resources",
+                        "url": "https://determined-dijkstra-ee7390.netlify.app/",
                         "style": "primary",
                         "icon_class": "dev",
                         "new_window": false,
@@ -533,6 +552,6 @@
         "content": "@bgoonz on almost every platform"
     },
     "title": "webdevhub",
-    "domain": "https://bgoonz-blog.netlify.app//",
+    "domain": "https://syntax-highlight.netlify.app/",
     "favicon": "images/logo-final-touchup.PNG"
 }
