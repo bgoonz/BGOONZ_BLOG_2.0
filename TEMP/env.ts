@@ -1,4 +1,4 @@
-import * as preact from 'preact';
+import preact from 'preact';
 
 // Parcel picks the `source` field of the monorepo packages and thus doesn't
 // apply the Babel config. We therefore need to manually override the constants
