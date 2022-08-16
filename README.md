@@ -21,6 +21,9 @@
 
 [![.github/workflows/pages.yml](https://github.com/permission-squad/BGOONZ_BLOG_2.0/actions/workflows/pages.yml/badge.svg?branch=master&event=deployment)](https://github.com/permission-squad/BGOONZ_BLOG_2.0/actions/workflows/pages.yml)
 
+
+<https://dev2--bgoonz-blog.netlify.app/>
+
 ---
 
 ### Table Of Contents
