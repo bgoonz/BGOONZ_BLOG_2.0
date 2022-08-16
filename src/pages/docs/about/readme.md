@@ -32,6 +32,4 @@ template: docs
 
 </div>
 
-
 <details>
-

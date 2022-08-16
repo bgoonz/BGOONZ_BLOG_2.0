@@ -50,9 +50,7 @@ HTML Elements
     2. [`<datalist>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist)
     3. [`<dd>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dd)
     4. [`<del>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del)
-    5. [`
-<details>
-`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details)
+    5. [`<details>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details)
     6. [`<dfn>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn)
     7. [`<dialog>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog)
     8. ~~[`<dir>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dir)~~
@@ -151,9 +149,7 @@ HTML Elements
     13. [`<strong>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong)
     14. [`<style>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style)
     15. [`<sub>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub)
-    16. [`
-<summary>
-`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary)
+    16. [`<summary>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary)
     17. [`<sup>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup)
 18. T
     1. [`<table>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table)
