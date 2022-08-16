@@ -5,7 +5,9 @@
 ### [CHANGELOG](./CHANGELOG.md)
 
 ##### [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app) [⇨**Cloudfare-Backup**⇦](https://bgoonz-blog-2-0.pages.dev/) [⇨**search**⇦](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) [⇨**Backup Repo Deploy**⇦](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) [⇨**Github pages**⇦](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) [⇨**Go To Site Wiki**⇦](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki) [⇨**Gatsby Cloud Version**⇦](https://bgoonzblog20master.gatsbyjs.io/) [⇨**Vercel Version**⇦](https://bgoonz-blog-2-0.vercel.app/) [⇨**Cloudfare-Domain**⇦](www.webdevhub.us) [⇨**gh-pages**⇦](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) [⇨**backup netlify deploy**⇦](https://bgoonz-blog20-backup.netlify.app/)
+##### [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app) [⇨**Cloudfare-Backup**⇦](https://bgoonz-blog-2-0.pages.dev/) [⇨**search**⇦](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) [⇨**Backup Repo Deploy**⇦](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) [⇨**Github pages**⇦](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) [⇨**Go To Site Wiki**⇦](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki) [⇨**Gatsby Cloud Version**⇦](https://bgoonzblog20master.gatsbyjs.io/) [⇨**Vercel Version**⇦](https://bgoonz-blog-2-0.vercel.app/) [⇨**Cloudfare-Domain**⇦](www.webdevhub.us) [⇨**gh-pages**⇦](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) [⇨**backup netlify deploy**⇦](https://bgoonz-blog20-backup.netlify.app/)
 
+### Repos
 ### Repos
 
 [Alt Backup](https://github.com/BGOOONZ-BLOG/bgoonz-blog2.0-v-5)
@@ -14,9 +16,10 @@
 #### [⇨Privacy policy⇦](https://codepen.io/bgoonz/pen/LYLJZrW)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys)[![CodeFactor](https://www.codefactor.io/repository/github/bgoonz/bgoonz_blog_2.0/badge)](https://www.codefactor.io/repository/github/bgoonz/bgoonz_blog_2.0)
+
 ![GitHub visitors](https://visitor-badge-reloaded.herokuapp.com/badge?page_id=bgoonz.visitor.badge.reloaded&color=00bbbb&style=for-the-badge&logo=github)
+
 [![Deploy Gatsby site to Pages](https://github.com/DUKE42web/BGOONZ_BLOG_2.0/actions/workflows/pa7ges.yml/badge.svg?branch=master&event=deployment)](https://github.com/DUKE42web/BGOONZ_BLOG_2.0/actions/workflows/pa7ges.yml)
-[![Lint Code Base](https://github.com/bgoonz/BGOONZ_BLOG_2.0/actions/workflows/super-linter.yml/badge.svg)](https://github.com/bgoonz/BGOONZ_BLOG_2.0/actions/workflows/super-linter.yml)
 
 [![Deploy Gatsby site to Pages](https://github.com/bgoonz/BGOONZ_BLOG_2.0/actions/workflows/pages.yml/badge.svg)](https://github.com/bgoonz/BGOONZ_BLOG_2.0/actions/workflows/pages.yml)
 
@@ -52,26 +55,12 @@ docky src/components/**/*.js   --watch "src/components/**/*.js","./README.md"  -
         - [⇨WEBSITE🗺️⇦ ⇨**Cloudfare-Backup**⇦ ⇨**search**⇦ ⇨**Backup Repo Deploy**⇦ ⇨**Github pages**⇦ ⇨**Go To Site Wiki**⇦ ⇨**Gatsby Cloud Version**⇦ ⇨**Vercel Version**⇦ ⇨**Cloudfare-Domain**⇦ ⇨**gh-pages**⇦ ⇨**backup netlify deploy**⇦](#website️-cloudfare-backup-search-backup-repo-deploy-github-pages-go-to-site-wiki-gatsby-cloud-version-vercel-version-cloudfare-domain-gh-pages-backup-netlify-deploy)
     - [Repos](#repos)
       - [⇨Privacy policy⇦](#privacy-policy)
-  - [](#)
-      - [Branch Deploys](#branch-deploys)
-        - [Preview](#preview)
-        - [local](#local)
-        - [](#-1)
-        - [](#-2)
-        - [](#-3)
-        - [](#-4)
-        - [](#-5)
-        - [](#-6)
     - [Table Of Contents](#table-of-contents)
-  - [](#-7)
   - [Useful Commands (internal use)](#useful-commands-internal-use)
-  - [Stable Points](#stable-points)
-    - [Links To Remember:](#links-to-remember)
   - [Web Dev Setup](#web-dev-setup)
   - [Basic Web Development Environment Setup](#basic-web-development-environment-setup)
     - [Basic Web Development Environment Setup](#basic-web-development-environment-setup-1)
       - [Windows Subsystem for Linux (WSL) and Ubuntu](#windows-subsystem-for-linux-wsl-and-ubuntu)
-          - [Test if you have Ubuntu installed by typing "Ubuntu" in the search box in the bottom app bar that reads "Type here to search". If you see a search result that reads **"Ubuntu 20.04 LTS"** with "App" under it, then you have it installed.](#test-if-you-have-ubuntu-installed-by-typing-ubuntu-in-the-search-box-in-the-bottom-app-bar-that-reads-type-here-to-search-if-you-see-a-search-result-that-reads-ubuntu-2004-lts-with-app-under-it-then-you-have-it-installed)
     - [Git](#git)
     - [Google Chrome](#google-chrome)
     - [Node.js](#nodejs)
@@ -79,10 +68,7 @@ docky src/components/**/*.js   --watch "src/components/**/*.js","./README.md"  -
     - [Python 3](#python-3)
     - [Note about WSL](#note-about-wsl)
     - [Some other common instillations](#some-other-common-instillations)
-  - [](#-8)
-    - [Documentation Commands:](#documentation-commands)
-  - [documentation build src/components/ActionLink.js  -f md\> ./notes/ActionLink.md](#documentation-build-srccomponentsactionlinkjs---f-md-notesactionlinkmd)
-  - [Blog Content:](#blog-content)
+  - [Blog Content](#blog-content)
   - [Bash Cheat Sheet (MY COMMANDS)](#bash-cheat-sheet-my-commands)
   - [1. Remove spaces from file and folder names and then remove numbers from files and folder names](#1-remove-spaces-from-file-and-folder-names-and-then-remove-numbers-from-files-and-folder-names)
     - [Description: need to : `sudo apt install rename`](#description-need-to--sudo-apt-install-rename)
@@ -226,7 +212,6 @@ docky src/components/**/*.js   --watch "src/components/**/*.js","./README.md"  -
     - [Description](#description-28)
           - [code](#code-45)
   - [96. URL To Subscribe To YouTube Channel](#96-url-to-subscribe-to-youtube-channel)
-  - [| JavaScript libraries | Lodash ; Dojo ; core-js ; jQuery                         |](#-javascript-libraries--lodash--dojo--core-js--jquery-------------------------)
   - [96. URL To Subscribe To YouTube Channel](#96-url-to-subscribe-to-youtube-channel-1)
   - [Description](#description-29)
           - [code](#code-46)
@@ -255,20 +240,15 @@ docky src/components/**/*.js   --watch "src/components/**/*.js","./README.md"  -
   - [To search all files who are not in .git directory](#to-search-all-files-who-are-not-in-git-directory)
   - [To find all files that have the same node (hard link) as MY\_FILE\_HERE](#to-find-all-files-that-have-the-same-node-hard-link-as-my_file_here)
   - [To find all files in the current directory and modify their permissions](#to-find-all-files-in-the-current-directory-and-modify-their-permissions)
-  - [find . -type f -exec chmod 644 {} ;](#find---type-f--exec-chmod-644--)
-  - [](#-9)
   - [Wiki Nav](#wiki-nav)
   - [Dependencies](#dependencies)
-  - [](#-10)
   - [Docs Structure](#docs-structure)
   - [SITEMAP](#sitemap)
-  - [](#-11)
-- [](#-12)
+- [](#)
   - [🚀 Quick start](#-quick-start)
   - [🧐 What's inside?](#-whats-inside)
   - [🎓 Learning Gatsby](#-learning-gatsby)
   - [💫 Deploy](#-deploy)
-  - [](#-13)
     - [Gatsby With Netlify CMS](#gatsby-with-netlify-cms)
   - [Prerequisites](#prerequisites)
   - [Set up a Netlify CMS-managed Gatsby site in 5 steps](#set-up-a-netlify-cms-managed-gatsby-site-in-5-steps)
@@ -281,11 +261,9 @@ docky src/components/**/*.js   --watch "src/components/**/*.js","./README.md"  -
       - [Benefits of Netlify CMS, GitHub, and Netlify Workflow](#benefits-of-netlify-cms-github-and-netlify-workflow)
   - [You can learn more about Netlify CMS and how to configure it further in the Netlify CMS documentation](#you-can-learn-more-about-netlify-cms-and-how-to-configure-it-further-in-the-netlify-cms-documentation)
   - [Gatsby Project Structure | Gatsby](#gatsby-project-structure--gatsby)
-  - [The file/folder structure described above reflects Gatsby-specific files and folders. Since Gatsby sites are also React apps, it's common to use standard React code organization patterns such as folders like `/components` and `/utils` inside `/src`. The React docs have more information on a typical React app folder structure.](#the-filefolder-structure-described-above-reflects-gatsby-specific-files-and-folders-since-gatsby-sites-are-also-react-apps-its-common-to-use-standard-react-code-organization-patterns-such-as-folders-like-components-and-utils-inside-src-the-react-docs-have-more-information-on-a-typical-react-app-folder-structure)
       - [Layout Components | Gatsby](#layout-components--gatsby)
   - [Excerpt](#excerpt)
   - [Adding Markdown Pages | Gatsby](#adding-markdown-pages--gatsby)
-  - [](#-14)
     - [Overview](#overview)
     - [Syntax](#syntax)
     - [Parameters](#parameters)
@@ -294,7 +272,6 @@ docky src/components/**/*.js   --watch "src/components/**/*.js","./README.md"  -
     - [Explanation](#explanation)
     - [Output](#output)
   - [Technoloy](#technoloy)
-  - [](#-15)
   - [SOURCECODE](#sourcecode)
     - [Overview](#overview-1)
     - [Syntax](#syntax-1)
@@ -314,72 +291,34 @@ docky src/components/**/*.js   --watch "src/components/**/*.js","./README.md"  -
     - [Parameters](#parameters-4)
     - [Examples](#examples)
 
+---
+
 ![preview](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/blog-may-2022.png?raw=true)
+
 ---
 
 ## Useful Commands (internal use)
 
 ```bash
+
 npm i @stackbit/gatsby-plugin-menus babel-runtime chokidar classnames fs-extra gatsby gatsby-image gatsby-plugin-netlify gatsby-plugin-netlify-cms gatsby-plugin-sass gatsby-plugin-react-helmet gatsby-plugin-typescript  --legacy-peer-deps
+
+
 git checkout 307a5cd        # check out the commit that you want to reset to
 git checkout -b fixy        # create a branch named fixy to do the work
 git merge -s ours master    # merge master's history without changing any files
 git checkout master         # switch back to master
 git merge fixy              # and merge in the fixed branch
 git push                    # done, no need to force push!
+
+
+
 ```
 
 ---
 
-## Stable Points
-
-- [stable 8-13-2021](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/0c09a707f4bfddd974a31d97a4f8d716f1858ef8) or [or maybe](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/68fba78e36fffcf21288ea0e90e1075bf31b2a82)
-- [Stable September 11](https://github.com/side-projects-42/BGOONZ_BLOG_2.0)
-- [October Stable](https://github.com/Web-Dev-Collaborative/october-stable)
-- [November 2021 stable](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/9ae5da5813cc9b48d2a57c84cd32cf4309078524)
-- [Late November Stable](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/40ecc95f000a848710c39e166961b8da7fca306b)
-- [December](https://github.com/bgoonz/BGOONZ_BLOG_2.0/tree/fc4a6ba1d61a3ef0b893cc5a44e41672547a3cc6)
-- [Late December](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/848a8505eece492bfd9856eb63bd4acbee8bced6)
-- [Late Febuary](https://deploy-preview-1697--bgoonz-blog.netlify.app/)
-- [Late January](https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1447)
-- [Good stable point](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/90f70928a145c8a784899baf62efc2a0d5697bf4)
-- [Stable March 13th 2022](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/c3f30229ac3dcd19ff54798227ce065c216e0c11)
-- [Stable March 13th 2022](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/99db7b97282d7190556b2a1b1ac61d6d9c67f970)
-[netlify-deploy-preview](https://deploy-preview-2280--bgoonz-blog.netlify.app/docs/tools/)
-- [May fix](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/736d38cdcdd3692d6a3bf1d5485ac2b0a3824d02)
-<https://6272b75c7b3c4c0009cacd01--bgoonz-blog.netlify.app/>
-- [Syntax hilighting working most recent](https://github.com/bgoonz/BGOONZ_BLOG_2.0/tree/db4d36067c1483c079389f1bd0e456c473c56710)
-- [FINALLY FIXED](https://62b5863dd06870000889c5cf--bgoonz-blog.netlify.app/)
-<https://62b5863dd06870000889c5cf--bgoonz-blog.netlify.app/>
-- [Good deploy early Aug](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/a6bb13adf39305b7292a88bb1b37bb4bb2e5e76c)
-
----
-
-### Links To Remember:
-
-
-- [Algolia Search UI](https://www.algolia.com/interface-demos/6ed0c3de-f9e4-4cc8-a7b2-c6c7c979cc5e)
-- [Most recent stable commit](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/2448c20614bfef5491240d7da5b5e5873db8b586)
-- [sitemap](https://www.xml-sitemaps.com/download/bgoonz-blog.netlify.app-ee43723d7/sitemap.xml?view=1)
-- [initial commit](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/e8f12effd461b560b366ee0bde5231f2c1ce0a4c)
-- [Static Html Version](https://github.com/Archive-42/bgoonz-blog-static)
-- [commit pages](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commits/master?after=496dfce7e627bc81c80f7c0b5c41ecf420500b4a+34&branch=master)
-- [alt blog contact page](https://bgoonz-blog-v3-0.netlify.app/contact/)
-- [Resource Archive](https://resourcerepo2.netlify.app/)
-- [starter](https://codesandbox.io/s/ecstatic-wozniak-gj31v?autoresize=1&expanddevtools=1&fontsize=12&hidenavigation=1&theme=dark)
-- [Instant Search Demo](https://codesandbox.io/s/magical-davinci-l4hq6)
-- [midway-commit](https://github.com/bgoonz/BGOONZ_BLOG_2.0/tree/92d88002bebcde66b47d8109222ac62c64fa9909)
-- [blog2.0 backups](https://gist.github.com/bgoonz/68203bca236305d93d75e87533c7e8b8)
-- [backup repo](https://github.com/bgoonz/BGOONZ_BLOG_2.0)
-- [Bookmark website](https://github.com/side-projects-42/superb-celery)
-- [stable stackbit](https://github.com/bgoonz/BGOONZ_BLOG_2.0/commit/69a617bbce1113e65390d90e0085be422e7f23e1)
-- [repl.it for questions](https://comments-3.bgoonz.repl.co/)
-- [rotate pages](https://random-static-html-deploys.netlify.app/rotate.html)
-- [More widgets](https://webdevhub-1.disqus.com/)
-
-
-
-
+<a href="https://testmysite.io/61e5ff836a840eeeef7e78e9/bgoonz-blog.netlify.app" rel="Test My Site Results">
+![Test My Site](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/Screenshot%202022-03-30%20at%2012-37-24%20Website%20Speed%20Test%20Tool%20-%20Testmysite.io%20by%20Netlify.png?raw=true)</a>
 
 ---
 
@@ -402,11 +341,7 @@ Windows Subsystem for Linux (WSL) and Ubuntu
 
 <figure>
 
-![Web Dev Setup](https://cdn-images-1.medium.com/max/800/0*aqKP1drNHmNm34zz.jpg)
-
-</figure>
-
-###### Test if you have Ubuntu installed by typing "Ubuntu" in the search box in the bottom app bar that reads "Type here to search". If you see a search result that reads **"Ubuntu 20.04 LTS"** with "App" under it, then you have it installed.
+</figure>Test if you have Ubuntu installed by typing "Ubuntu" in the search box in the bottom app bar that reads "Type here to search". If you see a search result that reads **"Ubuntu 20.04 LTS"** with "App" under it, then you have it installed.
 ```
 1.  In the application search box in the bottom bar, type "PowerShell" to find the application named "Windows PowerShell"
 2.  Right-click on "Windows PowerShell" and choose "Run as administrator" from the popup menu
@@ -428,32 +363,53 @@ Windows Subsystem for Linux (WSL) and Ubuntu
 18. You need to upgrade your packages, so type `sudo apt upgrade` (if prompted for your password, enter it)
 ```
 ### Git
+
 Git comes with Ubuntu, so there's nothing to install. However, you should configure it using the following instructions.
+
 Open an Ubuntu terminal if you don't have one open already.
-1.  > You need to configure Git, so type `git config --global user.name "Your Name"` with replacing "Your Name" with your real name.
-2.  > You need to configure Git, so type `git config --global user.email your@email.com` with replacing "<a href="mailto:your@email.com" class="markup--anchor markup--li-anchor">your@email.com</a>" with your real email.
+
+1. > You need to configure Git, so type `git config --global user.name "Your Name"` with replacing "Your Name" with your real name.
+2. > You need to configure Git, so type `git config --global user.email your@email.com` with replacing "<a href="mailto:your@email.com" class="markup--anchor markup--li-anchor">your@email.com</a>" with your real email.
+
 **Note: if you want git to remember your login credentials type:**
+```
     git config --global credential.helper store
+```
 ### Google Chrome
+
 Test if you have Chrome installed by typing "Chrome" in the search box in the bottom app bar that reads "Type here to search". If you see a search result that reads "Chrome" with "App" under it, then you have it installed. Otherwise, follow these instructions to install Google Chrome.
+
 ### Node.js
+
 Test if you have Node.js installed by opening an Ubuntu terminal and typing `node --version`. If it reports "Command 'node' not found", then you need to follow these directions.
-1.  > In the Ubuntu terminal, type `sudo apt update` and press Enter
-2.  > In the Ubuntu terminal, type `sudo apt install build-essential` and press Enter
-3.  > In the Ubuntu terminal, type `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash` and press Enter
-4.  > In the Ubuntu terminal, type `. ./.bashrc` and press Enter
-5.  > In the Ubuntu terminal, type `nvm install --lts` and press Enter
-6.  > Confirm that **node** is installed by typing `node --version` and seeing it print something that is not "Command not found"!
+
+1. > In the Ubuntu terminal, type `sudo apt update` and press Enter
+2. > In the Ubuntu terminal, type `sudo apt install build-essential` and press Enter
+3. > In the Ubuntu terminal, type `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash` and press Enter
+4. > In the Ubuntu terminal, type `. ./.bashrc` and press Enter
+5. > In the Ubuntu terminal, type `nvm install --lts` and press Enter
+6. > Confirm that **node** is installed by typing `node --version` and seeing it print something that is not "Command not found"!
+
 ### Unzip
+
 You will often have to download a zip file and unzip it. It is easier to do this from the command line. So we need to install a linux unzip utility.
+
 In the Ubuntu terminal type: `sudo apt install unzip` and press Enter
+
 Mocha.js
+
 Test if you have Mocha.js installed by opening an Ubuntu terminal and typing `which mocha`. If it prints a path, then you're good. Otherwise, if it prints nothing, install Mocha.js by typing `npm install -g mocha`.
+
 ### Python 3
+
 Ubuntu does not come with Python 3. Install it using the command `sudo apt install python3`. Test it by typing `python3 --version` and seeing it print a number.
+
 ### Note about WSL
+
 As of the time of writing of this document, WSL has an issue renaming or deleting files if Visual Studio Code is open. So before doing any linux commands which manipulate files, make sure you **close** Visual Studio Code before running those commands in the Ubuntu terminal.
+
 ### Some other common instillations
+
 ```bash
     # Installing build essentials
     sudo apt-get install -y build-essential libssl-dev
@@ -495,89 +451,100 @@ As of the time of writing of this document, WSL has an issue renaming or deletin
     # FileZilla - a FTP client
     sudo apt-get install -y filezilla
 ```
+
 </details>
+
 ---
-### Documentation Commands:
-documentation build src/components/DocsMenu.js  -f md> ./notes/DocsMenu.md
-documentation build src/components/Footer.js  -f md> ./notes/Footer.md
-documentation build src/components/Header.js  -f md> ./notes/Header.md
-documentation build src/components/index.js  -f md> ./notes/index.md
-documentation build src/components/SectionContent.js  -f md> ./notes/SectionContent.md
-documentation build src/components/SectionDocs.js  -f md> ./notes/SectionDocs.md
-documentation build src/components/SectionHero.js  -f md> ./notes/SectionHero.md
-documentation build src/components/CtaButtons.js  -f md> ./notes/CtaButtons.md
-documentation build src/components/DocsSubmenu.js  -f md> ./notes/DocsSubmenu.md
-documentation build src/components/FormField.js  -f md> ./notes/FormField.md
-documentation build src/components/Icon.js  -f md> ./notes/Icon.md
-documentation build src/components/Layout.js  -f md> ./notes/Layout.md
-documentation build src/components/SectionCta.js  -f md> ./notes/SectionCta.md
-documentation build src/components/SectionGrid.js  -f md> ./notes/SectionGrid.md
-documentation build src/components/Submenu.js  -f md> ./notes/Submenu.md
-documentation build src/components/ActionLink.js  -f md> ./notes/ActionLink.md
+
+
+
 ---
-## Blog Content:
+
+## Blog Content
+
 ---
+
 ---
-##  Bash Cheat Sheet (MY COMMANDS)
+
+## Bash Cheat Sheet (MY COMMANDS)
 
 <details>
 
-
-
-<summary> Bash Cheat Sheet (MY COMMANDS) </summary>
+<summary> Bash Cheat Sheet (MY COMMANDS) </summary
 
 ## 1. Remove spaces from file and folder names and then remove numbers from files and folder names
+
 ### Description: need to : `sudo apt install rename`
+
 > Notes: Issue when renaming file without numbers collides with existing file name...
+
 ###### code
+
 ```bash
 find . -name "* *" -type d | rename 's/ /_/g'
 find . -name "* *" -type f | rename 's/ /_/g'
 ```
+
 ```bash
+
 ```bash
 find $dir -type f | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
+
 find $dir -type d | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
 for i in*.html; do mv "$i" "${i%-*}.html"; done
 for i in*.*; do mv "$i" "${i%-*}.${i##*.}"; done
 ---
 ### Description: combine the contents of every file in the contaning directory.
+
 >Notes: this includes the contents of the file it's self...
+
 ###### code:
 ```js
 //APPEND-DIR.js
 const fs = require('fs');
 let cat = require('child_process')
-.execSync('cat*')
+  .execSync('cat *')
   .toString('UTF-8');
 fs.writeFile('output.md', cat, err => {
   if (err) throw err;
 });
+
 ```
+
 ---
 ## 2. Download Website Using Wget
 ### Description
 > Notes: ==> sudo apt install wget
 ###### code
+
 ```bash
 wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e robots=off -U mozilla https://bootcamp42.gitbook.io/python/
+
 ```
+
 ---
 ## 3. Clean Out Messy Git Repo
 ### Description: recursively removes git related folders as well as internal use files / attributions in addition to empty folders
 > Notes: To clear up clutter in repositories that only get used on your local machine.
 ###### code
+
 ```bash
 find . -empty -type d -print -delete
+
 find . \( -name ".git" -o -name ".gitignore" -o -name ".gitmodules" -o -name ".gitattributes" \) -exec rm -rf -- {} +
+
 find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o  -name "*CHANGELOG.txt" -o -name "*LICENSE.txt" -o -name "*CONTRIBUTING.txt" -name "*HISTORY.md" -o -name "*LICENSE" -o -name "*SECURITY.md" -o -name "*RELEASE.md" -o  -name "*CHANGELOG.md" -o -name "*LICENSE.md" -o -name "*CODE_OF_CONDUCT.md" -o -name "*CONTRIBUTING.md" \) -exec rm -rf -- {} +
+
 ```
+
 ---
 ## 4. clone all of a user's git repositories
 ### Description: clone all of a user or organization's git repositories
 > Notes:
 ###### code
+
 ## Generalized
+
 ```bash
 CNTX={users|orgs}; NAME={username|orgname}; PAGE=1
 curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
@@ -586,25 +553,33 @@ curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
   xargs -L1 git clone
 ```
 ## Clone all Git User
+
 ```bash
 CNTX={users}; NAME={bgoonz}; PAGE=1
 curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=master |
   grep -e 'git_url*' |
   cut -d \" -f 4 |
   xargs -L1 git clone
+
 ```
 ## Clone all Git Organization
+
 ```bash
 CNTX={organizations}; NAME={TheAlgorithms}; PAGE=1
 curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=master |
   grep -e 'git_url*' |
   cut -d \" -f 4 |
   xargs -L1 git clone
+
 ```
+
 ---
 ## 5. Git Workflow
+
 ### Description
+
 ###### code
+
 ```bash
 git pull
 git init
@@ -636,49 +611,67 @@ git add .
 git commit -m"update"
 git push -u origin preview
 ```
+
 ---
 ## 6. Recursive Unzip In Place
 ### Description: recursively unzips folders and then deletes the zip file by the same name
 > Notes:
 ###### code
+
 ```bash
 find . -name "*.zip" | while read filename; do unzip -o -d "`dirname "$filename"`" "$filename"; done;
+
 find . -name "*.zip" -type f -print -delete
+
 ```
+
 ---
 ## 7. git pull keeping local changes
 ### Description
 > Notes:
 ###### code
+
 ```bash
 git stash
 git pull
 git stash pop
+
 ```
+
 ---
 ## 8. Prettier Code Formatter
 ### Description
 > Notes:
 ###### code
+
 ```bash
 sudo npm i prettier -g
+
 prettier --write .
+
 ```
+
 ---
 ## 9. Pandoc
 ### Description
 > Notes:
 ###### code
+
 ```bash
 find ./ -iname "*.md" -type f -exec sh -c 'pandoc --standalone "${0}" -o "${0%.md}.html"' {} \;
+
 find ./ -iname "*.html" -type f -exec sh -c 'pandoc --wrap=none --from html --to markdown_strict "${0}" -o "${0%.html}.md"' {} \;
+
 find ./ -iname "*.docx" -type f -exec sh -c 'pandoc "${0}" -o "${0%.docx}.md"' {} \;
+
 ```
+
 ---
 ## 10. Gitpod Installs
 ### Description
 > Notes:
 ###### code
+
 ```bash
 sudo apt install tree
 sudo apt install pandoc -y
@@ -691,45 +684,66 @@ npm i npm-recursive-install -g
 ```
 ```bash
 black .
+
 prettier --write .
 npm-recursive-install
 ```
+
 ---
 ## 11. Repo Utils Package
 ### Description: my standard repo utis package
 > Notes:
 ###### code
+
 ```bash
 npm i @bgoonz11/repoutils
+
 ```
+
 ---
 ## 12. Unix Tree Package Usage
 ### Description
 > Notes:
 ###### code
+
 ```bash
 tree -d -I  'node_modules'
+
 tree  -I  'node_modules'
 tree -f  -I  'node_modules' >TREE.md
+
 tree -f -L 2  >README.md
+
 tree -f  -I  'node_modules' >listing-path.md
+
 tree -f  -I  'node_modules' -d >TREE.md
+
 tree -f >README.md
 ```
+
 ---
 ## 13. Find & Replace string in file & folder names recursively
 ### Description
 > Notes:
 ###### code
+
 ```bash
 find . -type f -exec rename 's/string1/string2/g' {} +
+
 find . -type d -exec rename 's/-master//g' {} +
+
 find . -type f -exec rename 's/\.download//g' {} +
+
 find . -type d -exec rename 's/-main//g' {} +
-rename 's/\.js\.download$/.js/'*.js\.download
+
+rename 's/\.js\.download$/.js/' *.js\.download
+
 rename 's/\.html\.markdown$/.md/' *.html\.markdown
+
 find . -type d -exec rename 's/es6//g' {} +
+
 ```
+
 ---
 ## 14. Remove double extensions
 ### Description
@@ -741,7 +755,9 @@ for file in*.md.md
 do
     mv "${file}" "${file%.md}"
 done
-# !/bin/bash
+
+#!/bin/bash
+
 for file in *.html.html
 do
     mv "${file}" "${file%.html}"
@@ -753,19 +769,28 @@ for file in*.html.png
 do
     mv "${file}" "${file%.png}"
 done
+
 for file in *.jpg.jpg
 do
     mv "${file}" "${file%.png}"
 done
+
 ```
+
 ---
 ## 15. Truncate folder names down to 12 characters
+
 ### Description: Truncate folder names down to 12 characters
+
 > Notes: Truncate folder names down to 12 characters
+
 ###### code
+
 ```bash
 for d in ./*; do mv $d ${d:0:12}; done
+
 ```
+
 ---
 ## 16.Appendir.js
 ### Description: combine the contents of every file in the contaning directory
@@ -779,29 +804,43 @@ fs.writeFile('output.md', cat, (err) => {
     if (err) throw err;
 });
 ```
+
 ---
 ## 17. Replace space in filename with underscore
 ### Description: followed by replace `'#' with '_'` in directory name
 > Notes: Can be re-purposed to find and replace any set of strings in file or folder names.
 ###### code
+
 ```bash
 find . -name "* *" -type f | rename 's/_//g'
+
 find . -name "* *" -type d | rename 's/#/_/g'
+
 ```
+
 ---
 ## 18. Filter & delete files by name and extension
 ### Description
 > Notes:
 ###### code
+
 ```bash
 find . -name '.bin' -type d -prune -exec rm -rf '{}' +
+
 find . -name '*.html' -type d -prune -exec rm -rf '{}' +
+
 find . -name 'nav-index' -type d -prune -exec rm -rf '{}' +
+
 find . -name 'node-gyp' -type d -prune -exec rm -rf '{}' +
+
 find . -name 'deleteme.txt' -type f -prune -exec rm -rf '{}' +
+
 find . -name 'right.html' -type f -prune -exec rm -rf '{}' +
+
 find . -name 'left.html' -type f -prune -exec rm -rf '{}' +
+
 ```
+
 ---
 ## 19. Remove lines containing string
 ### Description
@@ -810,50 +849,70 @@ find . -name 'left.html' -type f -prune -exec rm -rf '{}' +
 sudo sed -i '/\.js/!d' ./*scrap2.md
 ```
 ###### code
+
 ```bash
 sudo sed -i '/githubusercontent/d' ./*sandbox.md
+
 sudo sed -i '/githubusercontent/d' ./*scrap2.md
+
 sudo sed -i '/github\.com/d' ./*out.md
+
 sudo sed -i '/author/d' ./*
+
 ```
+
 ---
 ## 20. Remove duplicate lines from a text file
+
 ### Description
 > Notes:
 > //...syntax of uniq...//
 > $uniq [OPTION] [INPUT[OUTPUT]]
 > The syntax of this is quite easy to understand. Here, INPUT refers to the input file in which repeated lines need to be filtered out and if INPUT isn't specified then uniq reads from the standard input. OUTPUT refers to the output file in which you can store the filtered output generated by uniq command and as in case of INPUT if OUTPUT isn't specified then uniq writes to the standard output.
+
 Now, let's understand the use of this with the help of an example. Suppose you have a text file named kt.txt which contains repeated lines that needs to be omitted. This can simply be done with uniq.
 ###### code
+
 ```bash
 sudo apt install uniq
 uniq -u input.txt output.txt
+
 ```
+
 ---
 ## 21. Remove lines containing string
 ### Description
 > Notes:
 ###### code
+
 ```bash
 sudo sed -i '/githubusercontent/d' ./*sandbox.md
+
 sudo sed -i '/githubusercontent/d' ./*scrap2.md
+
 sudo sed -i '/github\.com/d' ./*out.md
+
 ---
 title: add_days
 tags: date,intermediate
 firstSeen: 2020-10-28T16:19:04+02:00
 lastUpdated: 2020-10-28T16:19:04+02:00
 ---
+
 sudo sed -i '/title:/d' ./*output.md
 sudo sed -i '/firstSeen/d' ./*output.md
 sudo sed -i '/lastUpdated/d' ./*output.md
 sudo sed -i '/tags:/d' ./*output.md
+
 sudo sed -i '/badstring/d' ./*
+
 sudo sed -i '/stargazers/d' ./repo.txt
 sudo sed -i '/node_modules/d' ./index.html
 sudo sed -i '/right\.html/d' ./index.html
 sudo sed -i '/right\.html/d' ./right.html
+
 ```
+
 ---
 ## 22. Zip directory excluding .git and node_modules all the way down (Linux)
 ### Descriptio: zip up an entire git directory
@@ -863,18 +922,22 @@ sudo sed -i '/right\.html/d' ./right.html
 # !/bin/bash
 TSTAMP=`date '+%Y%m%d-%H%M%S'`
 zip -r $1.$TSTAMP.zip $1 -x "**.git/*" -x "**node_modules/*" `shift; echo $@;`
+
 printf "\nCreated: $1.$TSTAMP.zip\n"
 ## usage:
 ## - zipdir thedir
 ## - zip thedir -x "anotherexcludedsubdir"    (important the double quotes to prevent glob expansion)
+
 ## if in windows/git-bash, add 'zip' command this way:
 ## https://stackoverflow.com/a/55749636/1482990
 ```
+
 ---
 ## 23. Delete files containing a certain string
 ### Description
 > Notes:
 ###### code
+
 ```bash
 find . | xargs grep -l www.redhat.com | awk '{print "rm "$1}' > doit.sh
 vi doit.sh // check for murphy and his law
@@ -1041,35 +1104,50 @@ cmd $listing --sort=extension >>$html
 ### Description
 > Notes:
 ###### code
+
 ```bash
 git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch assets/_index.html' HEAD
+
 ```
+
 ---
 ## 27. OVERWRITE LOCAL CHANGES
+
 ### Description
 Important: If you have any local changes, they will be lost. With or without --hard option, any local commits that haven't been pushed will be lost.[*]
 If you have any files that are not tracked by Git (e.g. uploaded user content), these files will not be affected.
+
 > Notes:
 > First, run a fetch to update all origin/<branch> refs to latest:
 ###### code
+
 ```bash
+
 git fetch --all
 ## Backup your current branch:
+
 git branch backup-master
 ## Then, you have two options:
+
 git reset --hard origin/master
 ## OR If you are on some other branch:
+
 git reset --hard origin/<branch_name>
 ## Explanation:
 ## git fetch downloads the latest from remote without trying to merge or rebase anything.
+
 ## Then the git reset resets the master branch to what you just fetched. The --hard option changes all the files in your working tree to match the files in origin/master
 git fetch --all
 git reset --hard origin/master
+
 ```
+
 ---
 ## 28. Remove Submodules
+
 ### Description: To remove a submodule you need to
 > Notes:
+
 > Delete the relevant section from the .gitmodules file.
 > Stage the .gitmodules changes git add .gitmodules
 > Delete the relevant section from .git/config.
@@ -1078,50 +1156,69 @@ git reset --hard origin/master
 > Commit git commit -m "Removed submodule "
 > Delete the now untracked submodule files rm -rf path_to_submodule
 ###### code
+
 ```bash
 git submodule deinit
 ```
+
 ---
 ## 29. GET GISTS
 ### Description
 > Notes:
 ###### code
+
 ```bash
 sudo apt install wget
+
 wget -q -O - https://api.github.com/users/bgoonz/gists | grep raw_url | awk -F\" '{print $4}' | xargs -n3 wget
+
 wget -q -O - https://api.github.com/users/amitness/gists | grep raw_url | awk -F\" '{print $4}' | xargs -n3 wget
+
 wget -q -O - https://api.github.com/users/drodsou/gists | grep raw_url | awk -F\" '{print $4}' | xargs -n1 wget
+
 wget -q -O - https://api.github.com/users/thomasmb/gists | grep raw_url | awk -F\" '{print $4}' | xargs -n1 wget
+
 ```
+
 ---
 ## 30. Remove Remote OriginL
 ### Description
 > Notes:
 ###### code
+
 ```bash
 git remote remove origin
+
 ```
+
 ---
 ## 31. just clone .git folder
 ### Description
 > Notes:
 ###### code
+
 ```bash
 git clone --bare --branch=master --single-branch https://github.com/bgoonz/My-Web-Dev-Archive.git
+
 ```
+
 ---
 ## 32. Undo recent pull request
 ### Description
 > Notes:
 ###### code
+
 ```bash
 git reset --hard master@{"10 minutes ago"}
+
 ```
+
 ---
 ## 33. Lebab
 ### Description: ES5 --> ES6
 > Notes:
 ###### code
+
 ```bash
 ## Safe:
  lebab --replace ./ --transform arrow
@@ -1163,72 +1260,99 @@ lebab --replace ./ --transform template
 lebab --replace ./ --transform default-param
 lebab --replace ./ --transform  destruct-param
 lebab --replace ./ --transform includes
+
 ```
+
 ---
 ## 34. Troubleshoot Ubuntu Input/Output Error
 ### Description: Open Powershell as Administrator
 > Notes:
 ###### code
 ```ps1
+
  wsl.exe --shutdown
+
  Get-Service LxssManager | Restart-Service
+
 ```
+
 ---
 ## 35. Export Medium as Markdown
 ### Description
 > Notes:
 ###### code
+
 ```bash
 npm i mediumexporter -g
+
 mediumexporter https://medium.com/codex/fundamental-data-structures-in-javascript-8f9f709c15b4 >ds.md
 ```
+
 ---
 ## 36. Delete files in violation of a given size range (100MB for git)
 ### Description
 > Notes:
 ###### code
+
 ```bash
 find . -size +75M -a -print -a -exec rm -f {} \;
+
 find . -size +98M -a -print -a -exec rm -f {} \;
+
 ```
+
 ---
 ## 37. download all links of given file type
 ### Description
 > Notes:
 ###### code
+
 ```bash
 wget -r -A.pdf https://overapi.com/git
+
 ```
+
 ---
 ## 38. Kill all node processes
 ### Description
 > Notes:
 ###### code
+
 ```bash
 killall -s KILL node
+
 ```
+
 ---
 ## 39. Remove string from file names recursively
+
 ### Description: In the example below I am using this command to remove the string "-master" from all file names in the working directory and all of it's sub directories
+
 ###### code
+
 ```bash
 find <mydir> -type f -exec sed -i 's/<string1>/<string2>/g' {} +
 find . -type f -exec rename 's/-master//g' {} +
+
 ```
 > Notes: The same could be done for folder names by changing the*-type f*flag (for file) to a*-type d*flag (for directory)
 ```bash
 find <mydir> -type d -exec sed -i 's/<string1>/<string2>/g' {} +
 find . -type d -exec rename 's/-master//g' {} +
+
 ```
+
 ---
 ## 40. Remove spaces from file and folder names recursively
 ### Description: replaces spaces in file and folder names with an `_` underscore
 > Notes: need to run `sudo apt install rename` to use this command
 ###### code
+
 ```bash
 find . -name "* *" -type d | rename 's/ /_/g'
 find . -name "* *" -type f | rename 's/ /_/g'
 ```
+
 ---
 ## 41. Zip Each subdirectories in a given directory into their own zip file
 ### Description
@@ -1237,60 +1361,79 @@ find . -name "* *" -type f | rename 's/ /_/g'
 ```bash
 for i in*/; do zip -r "${i%/}.zip" "$i"; done
 ```
+
 ---
 ## 91. Unzip PowerShell
 ### Description
 > Notes:
 ###### code
 ```ps1
+
 PARAM (
     [string] $ZipFilesPath = "./",
     [string] $UnzipPath = "./RESULT"
 )
+
 $Shell = New-Object -com Shell.Application
 $Location = $Shell.NameSpace($UnzipPath)
+
 $ZipFiles = Get-Childitem $ZipFilesPath -Recurse -Include *.ZIP
+
 $progress = 1
 foreach ($ZipFile in $ZipFiles) {
-Write-Progress -Activity "Unzipping to $($UnzipPath)" -PercentComplete (($progress / ($ZipFiles.Count + 1))* 100) -CurrentOperation $ZipFile.FullName -Status "File $($Progress) of $($ZipFiles.Count)"
+    Write-Progress -Activity "Unzipping to $($UnzipPath)" -PercentComplete (($progress / ($ZipFiles.Count + 1)) * 100) -CurrentOperation $ZipFile.FullName -Status "File $($Progress) of $($ZipFiles.Count)"
     $ZipFolder = $Shell.NameSpace($ZipFile.fullname)
     $Location.Copyhere($ZipFolder.items(), 1040) # 1040 - No msgboxes to the user - https://msdn.microsoft.com/library/bb787866%28VS.85%29.aspx
     $progress++
 }
+
 ```
+
 ---
 ## 92. return to bash from zsh
 ### Description
 > Notes:
 ###### code
+
 ```bash
  sudo apt --purge remove zsh
+
 ```
+
 ---
 ## 93. Symbolic Link
 ### Description: to working directory
 > Notes:
 ###### code
+
 ```bash
 ln -s "$(pwd)" ~/NameOfLink
+
 ln -s "$(pwd)" ~/Downloads
+
 ```
+
 ---
 ## 94. auto generate readme
 ### Description: rename existing readme to blueprint.md
 > Notes:
 ###### code
+
 ```bash
 npx @appnest/readme generate
+
 ```
+
 ---
 ## 95. Log into postgres
 ### Description
 > Notes:
 ###### code
+
 ```bash
 sudo -u postgres psql
 ```
+
 ---
 ## 96. URL To Subscribe To YouTube Channel
 | URL                  | <https://bgoonz-blog.netlify.app>                        |
@@ -1310,20 +1453,31 @@ sudo -u postgres psql
 ---
 ## 96. URL To Subscribe To YouTube Channel
 ## Description
+
 > Notes:
 ###### code
 ```txt
+
 https://www.youtube.com/channel/UC1HDa0wWnIKUf-b4yY9JecQ?sub_confirmation=1
+
 ```
+
 ---
 ## 97. Embed Repl.it In Medium Post
+
 ###### code
 ```txt
+
 https://repl.it/@bgoonz/Data-Structures-Algos-Codebase?lite=true&amp;referrer=https%3A%2F%2Fbryanguner.medium.com
+
 https://repl.it/@bgoonz/node-db1-project?lite=true&amp;referrer=https%3A%2F%2Fbryanguner.medium.com
+
 https://repl.it/@bgoonz/interview-prac?lite=true&amp;referrer=https%3A%2F%2Fbryanguner.medium.com
+
 https://repl.it/@bgoonz/Database-Prac?lite=true&amp;referrer=https%3A%2F%2Fbryanguner.medium.com
+
 ```
+
 ---
 ## 98 rRmove text target="parent" from files called right.html
 ### Description
@@ -1331,16 +1485,22 @@ https://repl.it/@bgoonz/Database-Prac?lite=true&amp;referrer=https%3A%2F%2Fbryan
 ###### code
 ```bash
 find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
-find . -name*right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
+
 ```
 ## 99. Cheat Sheet
+
 ### Description
+
 > Notes:
+
 ###### code
+
 ```bash
-# !/bin/bash
+#!/bin/bash
 revert
 ## SHORTCUTS and HISTORY
+
+
 CTRL+A  # move to beginning of line
 CTRL+B  # moves backward one character
 CTRL+C  # halts the current command
@@ -1366,6 +1526,7 @@ CTRL+W  # kills the word behind the cursor
 CTRL+X  # lists the possible filename completions of the current word
 CTRL+Y  # retrieves (yank) last item killed
 CTRL+Z  # stops the current command, resume with fg in the foreground or bg in the background
+
 ALT+B   # moves backward one word
 ALT+D   # deletes next word
 ALT+F   # moves forward one word
@@ -1378,26 +1539,41 @@ ALT+C   # capitalizes the letter under the cursor. The cursor then moves to the 
 ALT+R   # reverts any changes to a command you've pulled from your history if you've edited it.
 ALT+?   # list possible completions to what is typed
 ALT+^   # expand line to most recent match from history
+
 CTRL+X then (   # start recording a keyboard macro
 CTRL+X then )   # finish recording keyboard macro
 CTRL+X then E   # recall last recorded keyboard macro
 CTRL+X then CTRL+E   # invoke text editor (specified by $EDITOR) on current command line then execute resultes as shell commands
+
 BACKSPACE  # deletes one character backward
 DELETE     # deletes one character under cursor
+
 history   # shows command line history
 !!        # repeats the last command
 !<n>      # refers to command line 'n'
 !<string> # refers to command starting with 'string'
+
 exit      # logs out of current session
+
+
 ## BASH BASICS
+
+
 env                 # displays all environment variables
+
 echo $SHELL         # displays the shell you're using
 echo $BASH_VERSION  # displays bash version
+
 bash                # if you want to use bash (type exit to go back to your previously opened shell)
 whereis bash        # locates the binary, source and manual-page for a command
 which bash          # finds out which program is executed as 'bash' (default: /bin/bash, can change across environments)
+
 clear               # clears content on window (hide displayed lines)
+
+
 ## FILE COMMANDS
+
+
 ls                            # lists your files in current directory, ls <dir> to print files in a specific directory
 ls -l                         # lists your files in 'long format', which contains the exact size of the file, who owns the file and who has the right to look at it, and when it was last modified
 ls -a                         # lists all files in 'long format', including hidden files (name beginning with '.')
@@ -1435,7 +1611,11 @@ grep <pattern> <filenames>    # looks for the string in the files
 grep -r <pattern> <dir>       # search recursively for pattern in directory
 head -n file_name | tail +n   # Print nth line from file.
 head -y lines.txt | tail +x   # want to display all the lines from x to y. This includes the xth and yth lines.
+
+
 ## DIRECTORY COMMANDS
+
+
 mkdir <dirname>               # makes a new directory
 rmdir <dirname>               # remove an empty directory
 rmdir -rf <dirname>           # remove a non-empty directory
@@ -1447,10 +1627,15 @@ cp -r <dir1> <dir2>           # copy <dir1> into <dir2> including sub-directorie
 pwd                           # tells you where you currently are
 cd ~                          # changes to home.
 cd -                        # changes to previous working directory
+
+
 ## SSH, SYSTEM INFO & NETWORK COMMANDS
+
+
 ssh user@host            # connects to host as user
 ssh -p <port> user@host  # connects to host on specified port as user
 ssh-copy-id user@host    # adds your ssh key to host for user to enable a keyed or passwordless login
+
 whoami                   # returns your username
 passwd                   # lets you change your password
 quota -v                 # shows what your disk quota is
@@ -1472,13 +1657,19 @@ lsof                     # lists open files
 bg                       # lists stopped or background jobs ; resume a stopped job in the background
 fg                       # brings the most recent job in the foreground
 fg <job>                 # brings job to the foreground
+
 ping <host>              # pings host and outputs results
 whois <domain>           # gets whois information for domain
 dig <domain>             # gets DNS information for domain
 dig -x <host>            # reverses lookup host
 wget <file>              # downloads file
+
 time <command>             # report time consumed by command execution
+
+
 ## VARIABLES
+
+
 varname=value                # defines a variable
 varname=value command        # defines a variable to be in the environment of a particular subprocess
 echo $varname                # checks a variable's value
@@ -1490,53 +1681,74 @@ read -p "prompt" <varname>   # same as above but outputs a prompt to ask user fo
 column -t <filename>         # display info in pretty columns (often used with pipe)
 let <varname> = <equation>   # performs mathematical calculation using operators like +, -, *, /, %
 export VARNAME=value         # defines an environment variable (will be available in subprocesses)
+
 array[0]=valA                # how to define an array
 array[1]=valB
 array[2]=valC
 array=([2]=valC [0]=valA [1]=valB)  # another way
 array=(valA valB valC)              # and another
+
 ${array[i]}                  # displays array's value for this index. If no index is supplied, array element 0 is assumed
 ${#array[i]}                 # to find out the length of any element in the array
 ${#array[@]}                 # to find out how many values there are in the array
+
 declare -a                   # the variables are treated as arrays
 declare -f                   # uses function names only
 declare -F                   # displays function names without definitions
 declare -i                   # the variables are treated as integers
 declare -r                   # makes the variables read-only
 declare -x                   # marks the variables for export via the environment
+
 ${varname:-word}             # if varname exists and isn't null, return its value; otherwise return word
 ${varname:word}              # if varname exists and isn't null, return its value; otherwise return word
 ${varname:=word}             # if varname exists and isn't null, return its value; otherwise set it word and then return its value
 ${varname:?message}          # if varname exists and isn't null, return its value; otherwise print varname, followed by message and abort the current command or script
 ${varname:+word}             # if varname exists and isn't null, return word; otherwise return null
 ${varname:offset:length}     # performs substring expansion. It returns the substring of $varname starting at offset and up to length characters
+
 ${variable#pattern}          # if the pattern matches the beginning of the variable's value, delete the shortest part that matches and return the rest
 ${variable##pattern}         # if the pattern matches the beginning of the variable's value, delete the longest part that matches and return the rest
 ${variable%pattern}          # if the pattern matches the end of the variable's value, delete the shortest part that matches and return the rest
 ${variable%%pattern}         # if the pattern matches the end of the variable's value, delete the longest part that matches and return the rest
 ${variable/pattern/string}   # the longest match to pattern in variable is replaced by string. Only the first match is replaced
 ${variable//pattern/string}  # the longest match to pattern in variable is replaced by string. All matches are replaced
+
 ${#varname}                  # returns the length of the value of the variable as a character string
+
 *(patternlist)               # matches zero or more occurrences of the given patterns
 +(patternlist)               # matches one or more occurrences of the given patterns
 ?(patternlist)               # matches zero or one occurrence of the given patterns
 @(patternlist)               # matches exactly one of the given patterns
 !(patternlist)               # matches anything except one of the given patterns
+
 $(UNIX command)              # command substitution: runs the command and returns standard output
+
+
 ## FUNCTIONS
+
+
 ## The function refers to passed arguments by position (as if they were positional parameters), that is, $1, $2, and so forth.
 ## $@ is equal to "$1" "$2"... "$N", where N is the number of positional parameters. $# holds the number of positional parameters.
+
 function functname() {
   shell commands
 }
+
 unset -f functname  # deletes a function definition
 declare -f          # displays all defined functions in your login session
+
+
 ## FLOW CONTROLS
+
+
 statement1 && statement2  # and operator
 statement1 || statement2  # or operator
+
 -a                        # and operator inside a test conditional expression
 -o                        # or operator inside a test conditional expression
+
 ## STRINGS
+
 str1 == str2               # str1 matches str2
 str1 != str2               # str1 does not match str2
 str1 < str2                # str1 is less than str2 (alphabetically)
@@ -1545,7 +1757,9 @@ str1 \> str2               # str1 is sorted after str2
 str1 \< str2               # str1 is sorted before str2
 -n str1                    # str1 is not null (has length greater than 0)
 -z str1                    # str1 is null (has length 0)
+
 ## FILES
+
 -a file                   # file exists or its compilation is successful
 -d file                   # file exists and is a directory
 -e file                   # file exists; same -a
@@ -1559,13 +1773,16 @@ str1 \< str2               # str1 is sorted before str2
 -G file                   # file's group ID matches yours (or one of yours, if you are in multiple groups)
 file1 -nt file2           # file1 is newer than file2
 file1 -ot file2           # file1 is older than file2
+
 ## NUMBERS
+
 -lt                       # less than
 -le                       # less than or equal
 -eq                       # equal
 -ge                       # greater than or equal
 -gt                       # greater than
 -ne                       # not equal
+
 if condition
 then
   statements
@@ -1574,42 +1791,59 @@ then
 [else
   statements]
 fi
+
 for x in {1..10}
 do
   statements
 done
+
 for name [in list]
 do
   statements that can use $name
 done
+
 for (( initialisation ; ending condition ; update ))
 do
   statements...
 done
+
 case expression in
   pattern1 )
     statements ;;
   pattern2 )
     statements ;;
 esac
+
 select name [in list]
 do
   statements that can use $name
 done
+
 while condition; do
   statements
 done
+
 until condition; do
   statements
 done
+
+
 ## COMMAND-LINE PROCESSING CYCLE
+
+
 ## The default order for command lookup is functions, followed by built-ins, with scripts and executables last.
 ## There are three built-ins that you can use to override this order: `command`, `builtin` and `enable`.
+
 command  # removes alias and function lookup. Only built-ins and commands found in the search path are executed
 builtin  # looks up only built-in commands, ignoring functions and commands found in PATH
 enable   # enables and disables shell built-ins
+
 eval     # takes arguments and run them through the command-line processing steps all over again
+
+
 ## INPUT/OUTPUT REDIRECTORS
+
+
 cmd1|cmd2  # pipe; takes standard output of cmd1 as standard input to cmd2
 < file     # takes standard input from file
 > file     # directs standard output to file
@@ -1630,71 +1864,108 @@ n<&m       # file descriptor n is made to be a copy of the input file descriptor
 >&-      # closes the standard output
 n>&-     # closes the ouput from file descriptor n
 n<&-     # closes the input from file descripor n
+
 |tee <file># output command to both terminal and a file (-a to append to file)
+
+
 ## PROCESS HANDLING
+
+
 ## To suspend a job, type CTRL+Z while it is running. You can also suspend a job with CTRL+Y.
 ## This is slightly different from CTRL+Z in that the process is only stopped when it attempts to read input from terminal.
 ## Of course, to interrupt a job, type CTRL+C.
+
 myCommand &  # runs job in the background and prompts back the shell
+
 jobs         # lists all jobs (use with -l to see associated PID)
+
 fg           # brings a background job into the foreground
 fg %+        # brings most recently invoked background job
 fg %-      # brings second most recently invoked background job
 fg %N        # brings job number N
 fg %string   # brings job whose command begins with string
 fg %?string  # brings job whose command contains string
+
 kill -l               # returns a list of all signals on the system, by name and number
 kill PID              # terminates process with specified PID
 kill -s SIGKILL 4500  # sends a signal to force or terminate the process
 kill -15 913          # Ending PID 913 process with signal 15 (TERM)
 kill %1               # Where %1 is the number of job as read from 'jobs' command.
+
 ps           # prints a line of information about the current running login shell and any processes running under it
 ps -a        # selects all processes with a tty except session leaders
+
 trap cmd sig1 sig2  # executes a command when a signal is received by the script
 trap "" sig1 sig2   # ignores that signals
 trap - sig1 sig2    # resets the action taken when the signal is received to the default
+
 disown <PID|JID>    # removes the process from the list of jobs
+
 wait                # waits until all background jobs have finished
 sleep <number>      # wait # of seconds before continuing
+
 pv                  # display progress bar for data handling commands. often used with pipe like |pv
 yes                 # give yes response everytime an input is requested from script/process
+
+
 ## TIPS & TRICKS
+
+
 ## set an alias
 cd; nano .bash_profile
 > alias gentlenode='ssh admin@gentlenode.com -p 3404'  # add your alias in .bash_profile
+
 ## to quickly go to a specific directory
 cd; nano .bashrc
 > shopt -s cdable_vars
 > export websites="/Users/mac/Documents/websites"
+
 source .bashrc
 cd $websites
+
+
 ## DEBUGGING SHELL PROGRAMS
+
+
 bash -n scriptname  # don't run commands; check for syntax errors only
 set -o noexec       # alternative (set option in script)
+
 bash -v scriptname  # echo commands before running them
 set -o verbose      # alternative (set option in script)
+
 bash -x scriptname  # echo commands after command-line processing
 set -o xtrace       # alternative (set option in script)
+
 trap 'echo $varname' EXIT  # useful when you want to print out the values of variables at the point that your script exits
+
 function errtrap {
   es=$?
   echo "ERROR line $1: Command exited with status $es."
 }
+
 trap 'errtrap $LINENO' ERR  # is run whenever a command in the surrounding script or function exits with non-zero status
+
 function dbgtrap {
   echo "badvar is $badvar"
 }
+
 trap dbgtrap DEBUG  # causes the trap code to be executed before every statement in a function or script
 ## ...section of code in which the problem occurs...
 trap - DEBUG  # turn off the DEBUG trap
+
 function returntrap {
   echo "A return occurred"
 }
+
 trap returntrap RETURN  # is executed each time a shell function or a script executed with the . or source commands finishes executing
+
+
 ## COLORS AND BACKGROUNDS
+
 ## note: \e or \x1B also work instead of \033
 ## Reset
 Color_Off='\033[0m' # Text Reset
+
 ## Regular Colors
 Black='\033[0;30m'  # Black
 Red='\033[0;31m'    # Red
@@ -1704,6 +1975,7 @@ Blue='\033[0;34m'   # Blue
 Purple='\033[0;35m' # Purple
 Cyan='\033[0;36m'   # Cyan
 White='\033[0;97m'  # White
+
 ## Additional colors
 LGrey='\033[0;37m'  # Ligth Gray
 DGrey='\033[0;90m'  # Dark Gray
@@ -1713,6 +1985,7 @@ LYellow='\033[0;93m'# Ligth Yellow
 LBlue='\033[0;94m'  # Ligth Blue
 LPurple='\033[0;95m'# Light Purple
 LCyan='\033[0;96m'  # Ligth Cyan
+
 ## Bold
 BBlack='\033[1;30m' # Black
 BRed='\033[1;31m'   # Red
@@ -1722,6 +1995,7 @@ BBlue='\033[1;34m'  # Blue
 BPurple='\033[1;35m'# Purple
 BCyan='\033[1;36m'  # Cyan
 BWhite='\033[1;37m' # White
+
 ## Underline
 UBlack='\033[4;30m' # Black
 URed='\033[4;31m'   # Red
@@ -1731,6 +2005,7 @@ UBlue='\033[4;34m'  # Blue
 UPurple='\033[4;35m'# Purple
 UCyan='\033[4;36m'  # Cyan
 UWhite='\033[4;37m' # White
+
 ## Background
 On_Black='\033[40m' # Black
 On_Red='\033[41m'   # Red
@@ -1740,51 +2015,92 @@ On_Blue='\033[44m'  # Blue
 On_Purple='\033[45m'# Purple
 On_Cyan='\033[46m'  # Cyan
 On_White='\033[47m' # White
+
 ## Example of usage
 echo -e "${Green}This is GREEN text${Color_Off} and normal text"
 echo -e "${Red}${On_White}This is Red test on White background${Color_Off}"
 ## option -e is mandatory, it enable interpretation of backslash escapes
 printf "${Red} This is red \n"
+
 ```
+
 </details>
+
 >
+
 #### Find
+
 ## To find files by case-insensitive extension (ex: .jpg, .JPG, .jpG)
+
 find . -iname "\*.jpg"
+
 ## To find directories
+
 find . -type d
+
 ## To find files
+
 find . -type f
+
 ## To find files by octal permission
+
 find . -type f -perm 777
+
 ## To find files with setuid bit set
+
 find . -xdev \( -perm -4000 \) -type f -print0 | xargs -0 ls -l
+
 ## To find files with extension '.txt' and remove them
+
 find ./path/ -name '\*.txt' -exec rm '{}' \;
+
 ## To find files with extension '.txt' and look for a string into them
+
 find ./path/ -name '\*.txt' | xargs grep 'string'
+
 ## To find files with size bigger than 5 Mebibyte and sort them by size
+
 find . -size +5M -type f -print0 | xargs -0 ls -Ssh | sort -z
+
 ## To find files bigger than 2 Megabyte and list them
+
 find . -type f -size +200000000c -exec ls -lh {} \; | awk '{ print $9 ": " $5 }'
+
 ## To find files modified more than 7 days ago and list file information
+
 find . -type f -mtime +7d -ls
+
 ## To find symlinks owned by a user and list file information
+
 find . -type l -user <username-or-userid> -ls
+
 ## To search for and delete empty directories
+
 find . -type d -empty -exec rmdir {} \;
+
 ## To search for directories named build at a max depth of 2 directories
+
 find . -maxdepth 2 -name build -type d
+
 ## To search all files who are not in .git directory
+
 find . ! -iwholename '*.git*' -type f
+
 ## To find all files that have the same node (hard link) as MY_FILE_HERE
+
 find . -type f -samefile MY_FILE_HERE 2>/dev/null
+
 ## To find all files in the current directory and modify their permissions
+
 find . -type f -exec chmod 644 {} \;
+
 ---
 </details>
+
 ---
+
 ![Preview](https://i.imgur.com/nieW1vp.png)
+
 ## Wiki Nav
 -   [Home](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
 -   [add copy to code blocks.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/add-copy-to-code-blocks.md)
@@ -1821,73 +2137,119 @@ find . -type f -exec chmod 644 {} \;
 -   [web archive.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/web-archive.md)
 -   [wordpress vs headless cms.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/wordpress-vs-headless-cms.md)
 ---
+
 ## Dependencies
 
 <details>
+  <summary>Click to expand!
+</summary>
 
 
-  <summary>Click to expand!</summary>
 [![@algolia**](https://avatars.githubusercontent.com/u/2034458?s=40&v=4)](https://github.com/algolia)[algolia / algoliasearch-client-javascript](https://github.com/algolia/algoliasearch-client-javascript)@algolia/client-search
 `^ 4.10.3`
+
 [![@algolia**](https://avatars.githubusercontent.com/u/2034458?s=40&v=4)](https://github.com/algolia)[algolia / algoliasearch-client-javascript](https://github.com/algolia/algoliasearch-client-javascript)@algolia/client-common
 `4.10.5`
+
 ![@ghost**](https://avatars.githubusercontent.com/u/10137?s=40&v=4)@algolia/requester-common
 `4.10.5`
+
 [![@algolia**](https://avatars.githubusercontent.com/u/2034458?s=40&v=4)](https://github.com/algolia)[algolia / algoliasearch-client-javascript](https://github.com/algolia/algoliasearch-client-javascript)@algolia/transporter
 `4.10.5`
+
 [![@stackbit**](https://avatars.githubusercontent.com/u/38996451?s=40&v=4)](https://github.com/stackbit)[stackbit / gatsby-plugin-menus](https://github.com/stackbit/gatsby-plugin-menus)@stackbit/gatsby-plugin-menus
 `0.0.4`
+
 [![@facebook**](https://avatars.githubusercontent.com/u/69631?s=40&v=4)](https://github.com/facebook)[facebook / jest](https://github.com/facebook/jest)babel-jest
 `^ 24.7.1`
+
 [![@gatsbyjs**](https://avatars.githubusercontent.com/u/12551863?s=40&v=4)](https://github.com/gatsbyjs)[gatsbyjs / gatsby](https://github.com/gatsbyjs/gatsby)babel-preset-gatsby
 `^ 0.1.11`
+
 [![@gatsbyjs**](https://avatars.githubusercontent.com/u/12551863?s=40&v=4)](https://github.com/gatsbyjs)[gatsbyjs / gatsby](https://github.com/gatsbyjs/gatsby) `^ 2.5.0`
+
 [![@keyz**](https://avatars.githubusercontent.com/u/2268452?s=40&u=c3f56fe1d943474ffe4577a82ad79c1a79d7eb6e&v=4)](https://github.com/keyz)[keyz / identity-obj-proxy](https://github.com/keyz/identity-obj-proxy) `^ 3.0.0`
+
 [![@facebook**](https://avatars.githubusercontent.com/u/69631?s=40&v=4)](https://github.com/facebook)[facebook / jest](https://github.com/facebook/jest) `^ 24.7.1`
+
 [![@lodash**](https://avatars.githubusercontent.com/u/2565403?s=40&v=4)](https://github.com/lodash)[lodash / lodash](https://github.com/lodash/lodash) `^ 4.17.11`
+
 [![@facebook**](https://avatars.githubusercontent.com/u/69631?s=40&v=4)](https://github.com/facebook)[facebook / react](https://github.com/facebook/react)react-test-renderer
 `^ 16.8.6`
+
 [![@getkirby-v2**](https://avatars.githubusercontent.com/u/6985611?s=40&v=4)](https://github.com/getkirby-v2)[getkirby-v2 / algolia-plugin](https://github.com/getkirby-v2/algolia-plugin)algolia
 `0.0.0`
+
 [![@ecomfe**](https://avatars.githubusercontent.com/u/2268460?s=40&v=4)](https://github.com/ecomfe)[ecomfe / babel-runtime](https://github.com/ecomfe/babel-runtime) `6.26.0`
+
 [![@paulmillr**](https://avatars.githubusercontent.com/u/574696?s=40&u=7f4396380d73af134b898c8eaf7bb171f448f40f&v=4)](https://github.com/paulmillr)[paulmillr / chokidar](https://github.com/paulmillr/chokidar) `3.4.0`
+
 [![@DefinitelyTyped**](https://avatars.githubusercontent.com/u/3637556?s=40&v=4)](https://github.com/DefinitelyTyped)[DefinitelyTyped / DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)@types/node
 `^ 13`
+
 [![@micromatch**](https://avatars.githubusercontent.com/u/26890389?s=40&v=4)](https://github.com/micromatch)[micromatch / anymatch](https://github.com/micromatch/anymatch) `~ 3.1.1`
+
 [![@micromatch**](https://avatars.githubusercontent.com/u/26890389?s=40&v=4)](https://github.com/micromatch)[micromatch / braces](https://github.com/micromatch/braces) `~ 3.0.2`
+
 [![@chaijs**](https://avatars.githubusercontent.com/u/1515293?s=40&v=4)](https://github.com/chaijs)[chaijs / chai](https://github.com/chaijs/chai) `^ 4.2`
+
 [![@microsoft**](https://avatars.githubusercontent.com/u/6154722?s=40&v=4)](https://github.com/microsoft)[microsoft / dtslint](https://github.com/microsoft/dtslint) `^ 3.3.0`
+
 [![@eslint**](https://avatars.githubusercontent.com/u/6019716?s=40&v=4)](https://github.com/eslint)[eslint / eslint](https://github.com/eslint/eslint) `^ 6.6.0`
+
 [![@fsevents**](https://avatars.githubusercontent.com/u/48760001?s=40&v=4)](https://github.com/fsevents)[fsevents / fsevents](https://github.com/fsevents/fsevents) `~ 2.1.2`
+
 [![@gulpjs**](https://avatars.githubusercontent.com/u/6200624?s=40&v=4)](https://github.com/gulpjs)[gulpjs / glob-parent](https://github.com/gulpjs/glob-parent) `~ 5.1.0`
+
 [![@sindresorhus**](https://avatars.githubusercontent.com/u/170270?s=40&u=34acd557a042ac478d273a4621570cadb6b0bd89&v=4)](https://github.com/sindresorhus)[sindresorhus / is-binary-path](https://github.com/sindresorhus/is-binary-path) `~ 2.1.0`
+
 [![@micromatch**](https://avatars.githubusercontent.com/u/26890389?s=40&v=4)](https://github.com/micromatch)[micromatch / is-glob](https://github.com/micromatch/is-glob) `~ 4.0.1`
+
 [![@mochajs**](https://avatars.githubusercontent.com/u/8770005?s=40&v=4)](https://github.com/mochajs)[mochajs / mocha](https://github.com/mochajs/mocha) `^ 7.0.0`
+
 [![@jonschlinkert**](https://avatars.githubusercontent.com/u/383994?s=40&u=335f06277f72722162e89bd5516849f2e82f37cf&v=4)](https://github.com/jonschlinkert)[jonschlinkert / normalize-path](https://github.com/jonschlinkert/normalize-path) `~ 3.0.0`
+
 [![@istanbuljs**](https://avatars.githubusercontent.com/u/13523395?s=40&v=4)](https://github.com/istanbuljs)[istanbuljs / nyc](https://github.com/istanbuljs/nyc) `^ 15.0.0`
+
 [![@paulmillr**](https://avatars.githubusercontent.com/u/574696?s=40&u=7f4396380d73af134b898c8eaf7bb171f448f40f&v=4)](https://github.com/paulmillr)[paulmillr / readdirp](https://github.com/paulmillr/readdirp) `~ 3.4.0`
+
 [![@isaacs**](https://avatars.githubusercontent.com/u/9287?s=40&u=60a280618307ae965cadbe52da4baa7e351c848c&v=4)](https://github.com/isaacs)[isaacs / rimraf](https://github.com/isaacs/rimraf) `^ 3.0.0`
+
 [![@sinonjs**](https://avatars.githubusercontent.com/u/6570253?s=40&v=4)](https://github.com/sinonjs)[sinonjs / sinon](https://github.com/sinonjs/sinon) `^ 9.0.1`
+
 [![@domenic**](https://avatars.githubusercontent.com/u/617481?s=40&v=4)](https://github.com/domenic)[domenic / sinon-chai](https://github.com/domenic/sinon-chai) `^ 3.3.0`
+
 [![@anodynos**](https://avatars.githubusercontent.com/u/856453?s=40&v=4)](https://github.com/anodynos)[anodynos / upath](https://github.com/anodynos/upath) `^ 1.2.0`
+
 [![@JedWatson**](https://avatars.githubusercontent.com/u/872310?s=40&u=9548676d01f104232ee42e5ac0d985db77e6a5a4&v=4)](https://github.com/JedWatson)[JedWatson / classnames](https://github.com/JedWatson/classnames) `2.2.6`
+
 [![@bestiejs**](https://avatars.githubusercontent.com/u/802850?s=40&v=4)](https://github.com/bestiejs)[bestiejs / benchmark.js](https://github.com/bestiejs/benchmark.js)benchmark
 `^ 1.0.0`
+
 [![@browserify**](https://avatars.githubusercontent.com/u/6320506?s=40&v=4)](https://github.com/browserify)[browserify / browserify](https://github.com/browserify/browserify) `^ 14.1.0`
+
 [![@mochajs**](https://avatars.githubusercontent.com/u/8770005?s=40&v=4)](https://github.com/mochajs)[mochajs / mocha](https://github.com/mochajs/mocha) `^ 2.1.0`
+
 [![@jeromedecoster**](https://avatars.githubusercontent.com/u/158071?s=40&u=470a733fdc34a9fedab18ae4cf5109d2ea357425&v=4)](https://github.com/jeromedecoster)[jeromedecoster / opn-cli](https://github.com/jeromedecoster/opn-cli) `^ 3.1.0`
+
 [![@documentationjs**](https://avatars.githubusercontent.com/u/11415556?s=40&v=4)](https://github.com/documentationjs)[documentationjs / documentation](https://github.com/documentationjs/documentation) `^ 13.2.5`
+
 [![@babel**](https://avatars.githubusercontent.com/u/9637642?s=40&v=4)](https://github.com/babel)[babel / babel](https://github.com/babel/babel)@babel/core
 `7.12.3`
+
 [Cloudfare-Backup](https://bgoonz-blog-2-0.pages.dev/) ↞↠ Search Website: [search](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) ↞↠ [Backup Repo Deploy](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) ↞↠ [Github pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) ↞↠ [Go To Site Wiki](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
+
 </details>
+
 ---
+
 ## Docs Structure
 
 <details>
+<summary>  Docs Structure  
+</summary>
 
 
-<summary>  Docs Structure  </summary>
 ```
 ├── blog
 │     ├── 300-react-questions.md
@@ -2114,7 +2476,9 @@ find . -type f -exec chmod 644 {} \;
 ├── readme.md
 ├── showcase.md
 └── tree.md
+
 23 directories, 202 files
+
 ```
 ## SITEMAP
 [**🌍⇒https://bgoonz-blog.netlify.app/🗺️**](https://bgoonz-blog.netlify.app/)
@@ -2313,329 +2677,122 @@ find . -type f -exec chmod 644 {} \;
 [**🌍⇒docs/tools/more-tools🗺️**](https://bgoonz-blog.netlify.app/docs/tools/more-tools)
 [**🌍⇒docs/tutorials/google-lighthouse-cli🗺️**](https://bgoonz-blog.netlify.app/docs/tutorials/google-lighthouse-cli)
 </details>
----
----
----
-
-<details>
 
 
-<summary>  ↞↠ Getting Started With GatsbyJS ↞↠  </summary>
-#
----
-## 🚀 Quick start
-1. **Create a Gatsby site.**
-    Use the Gatsby CLI to create a new site, specifying the default starter.
-```bashell
-   # create a new Gatsby site using the default starter
-   gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-```
-1. **Start developing.**
-    Navigate into your new site's directory and start it up.
-```bashell
-   cd my-default-starter/
-   gatsby develop
-```
-1. **Open the source code and start editing!**
-    Your site is now running at `http://localhost:8000`!
-    *Note: You'll also see a second link:*`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
-## 🧐 What's inside?
-A quick look at the top-level files and directories you'll see in a Gatsby project.
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
-1. **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
-2. **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for "source code".
-3. **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
-4. **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
-5. **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
-6. **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you'd like to include, etc. (Check out the [config docs](https://www.gatsbyjs.com/docs/gatsby-config/) for more detail).
-7. **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
-8. **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
-9. **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won't change this file directly).**
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project's name, author, etc). This manifest is how npm knows which packages to install for your project.
-12. **`README.md`**: A text file containing useful reference information about your project.
-## 🎓 Learning Gatsby
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
--   **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby**](https://www.gatsbyjs.com/tutorial/).\*\* It starts with zero assumptions about your level of ability and walks through every step of the process.
--
--   **To dive straight into code samples, head [to our documentation**](https://www.gatsbyjs.com/docs/).\*\* In particular, check out the *Guides*, *API Reference*, and *Advanced Tutorials* sections in the sidebar.
-## 💫 Deploy
-[![Deploy to Netlify**](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/BGOONZ_BLOG_2.0.git)
-[![Deploy with Vercel**](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/BGOONZ_BLOG_2.0.git)
----
-### Gatsby With Netlify CMS
-This tutorial will use [gatsby-personal-starter-blog](https://github.com/thomaswang/gatsby-personal-starter-blog), a Gatsby starter based on the official [gatsby-starter-blog](/starters/gatsbyjs/gatsby-starter-blog/). The differences are that `gatsby-personal-starter-blog` is configured to run the blog on a subdirectory, `/blog`, and comes pre-installed with [Netlify CMS](https://www.netlifycms.org/) for content editing. It also adds VS Code highlighting for code blocks.
-## Prerequisites
-- A GitHub account
-- The [Gatsby CLI](/docs/reference/gatsby-cli/) installed
-## Set up a Netlify CMS-managed Gatsby site in 5 steps
-### Step 1
-Open your Terminal and run the following command from the Gatsby CLI to create a new Gatsby site using [gatsby-personal-starter-blog](https://github.com/thomaswang/gatsby-personal-starter-blog).
-```shell
-gatsby new [your-project-name] https://github.com/thomaswangio/gatsby-personal-starter-blog
-```
-### Step 2
-Once the Gatsby site is finished installing all the packages and dependencies, you can now go into the directory and run the site locally.
-```shell
-cd [your-project-name]
-gatsby develop
-```
-Now you can go to `http://localhost:8000` to see your new site, but what's extra cool is that Netlify CMS is pre-installed and you can access it at `http://localhost:8000/admin`
-A CMS, or content management system, is useful because you can add content like blog posts from a dashboard on your site, instead of having to add posts manually with Markdown. However, you'll likely want to be able to access the CMS from a deployed website, not just locally. For that, you'll need to deploy to Netlify through GitHub, set up continuous deployment, and do a few configurations. You'll go over this in [Step-5](#step-5).
-### Step 3
-Open the project in your code editor and open `static/admin/config.yml`. Replace `your-username/your-repo-name` with your GitHub username and project name. This step is important for managing and deploying the Netlify CMS interface.
-```diff
-backend:
--  name: test-repo
-+  name: github
-+  repo: your-username/your-repo-name
-```
-#### Customizing your site
-Head into `gatsby-config.js` and you can edit your siteMetadata, add a Google Analytics tracking ID, and your app icon/favicon. Test out the edits for the deployed build by quitting the development server and running `gatsby build && gatsby serve`.
-You'll likely also want to edit the `README.md` and `package.json` files to include your own project details.
-### Step 4
-Open [github.com](https://github.com) and create a new repository, with the same name as your project. Push your new Gatsby site's code to GitHub using the following Terminal commands:
-```shell
-git init
-git add .
-git commit -m "initial commit"
-git remote add origin https://github.com/[your-username]/[your-repo-name].git
-git push -u origin master
-```
-Then, open [app.netlify.com](https://app.netlify.com) and add a "New site from Git". Choose your newly created repo and click on "Deploy site" with the default deployment settings.
-> *Note: if you don't see the correct repo listed, you may need to install or reconfigure the Netlify app on GitHub.*
-![Netlify Dashboard for Creating a new site](netlify-dashboard.png)
-### Step 5
-To make sure that Netlify CMS has access to your GitHub repo, you need to set up an OAuth application on GitHub. The instructions for that are here: [Netlify's Using an Authorization Provider](https://www.netlify.com/docs/authentication-providers/#using-an-authentication-provider).
-For the "Homepage URL" – you can use your Netlify subdomain, `[name-of-your-site].netlify.com`, or you can use a custom domain. To customize the subdomain, look for the "Edit site name" field under "Domain Management" for your project on the [Netlify app](https://app.netlify.com). To connect your Netlify site to your custom domain instead, see [Netlify’s instructions on custom domains](https://www.netlify.com/docs/custom-domains/).
-Once you've configured an authentication provider then you'll be able to use Netlify CMS at your deployed site to add new posts.
-![Netlify and GitHub Authorization](https://cdn.netlify.com/67edd5b656c432888d736cd40125cb61376905bb/c1cba/img/docs/github-oauth-config.png)
-Copy the credentials of your new app listed on [GitHub OAuth Apps](https://github.com/settings/developers) and install a new auth provider on Netlify using them.
-![Setting up access control](netlify-install-oauth-provider.png)
-#### Benefits of Netlify CMS, GitHub, and Netlify Workflow
-Congrats! Now that Netlify CMS is successfully configured to your project, every time you add a new post, the content will be stored in your repository and versioned on GitHub because Netlify CMS is Git-based. Also, thanks to [Netlify's Continuous Deployment](https://www.netlify.com/docs/continuous-deployment/), a new version will be deployed every time you add or edit a post.
-You can learn more about Netlify CMS and how to configure it further in the [Netlify CMS documentation](https://www.netlifycms.org/docs/intro/)
----
----
-## Gatsby Project Structure | Gatsby
-> ## Excerpt
->
-> Inside a Gatsby project, you may see some or all of the following folders and files: Folders /.cache Automatically generated. This folder…
----
-Inside a Gatsby project, you may see some or all of the following folders and files:
-```
-/|
--- /.cache
-|-- /plugins
-|-- /public
-|-- /src
-|-- /api
-|-- /pages
-|-- /templates
-|-- html.js
-|-- /static
-|-- gatsby-config.js
-|-- gatsby-node.js
-|-- gatsby-ssr.js
-|-- gatsby-browser.js
-```
-[Folders](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#folders)
--   **`/.cache`** *Automatically generated.* This folder is an internal cache created automatically by Gatsby. The files inside this folder are not meant for modification. Should be added to the `.gitignore` file if not added already.
--   **`/plugins`** This folder hosts any project-specific ("local") plugins that aren't published as an `npm` package. Check out the [plugin docs](https://www.gatsbyjs.com/docs/plugins/) for more detail.
--   **`/public`** *Automatically generated.* The output of the build process will be exposed inside this folder. Should be added to the `.gitignore` file if not added already.
--   **`/src`** This directory will contain all of the code related to what you will see on the frontend of your site (what you see in the browser), like your site header, or a page template. "src" is a convention for "source code".
-    -   **`/api`** JavaScript and TypeScript files under `src/api` become functions automatically with paths based on their file name. Check out the [functions guide](https://www.gatsbyjs.com/docs/reference/functions/) for more detail.
-    -   **`/pages`** Components under `src/pages` become pages automatically with paths based on their file name. Check out the [pages recipes](https://www.gatsbyjs.com/docs/recipes/pages-layouts) for more detail.
-    -   **`/templates`** Contains templates for programmatically creating pages. Check out the [templates docs](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#page-template-components) for more detail.
-    -   **`html.js`** For custom configuration of default `.cache/default_html.js`. Check out the [custom HTML docs](https://www.gatsbyjs.com/docs/custom-html/) for more detail.
--   **`/static`** If you put a file into the static folder, it will not be processed by webpack. Instead it will be copied into the public folder untouched. Check out the [assets docs](https://www.gatsbyjs.com/docs/how-to/images-and-media/static-folder/#adding-assets-outside-of-the-module-system) for more detail.
-[Files](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#files)
--   **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
--   **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you'd like to include, etc. Check out the [config docs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/) for more detail.
--   **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby node APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
--   **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
-[Misc](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#miscellaneous)
-[Misc](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#miscellaneous)
-The file/folder structure described above reflects Gatsby-specific files and folders. Since Gatsby sites are also React apps, it's common to use standard React code organization patterns such as folders like `/components` and `/utils` inside `/src`. The [React docs](https://reactjs.org/docs/faq-structure.html) have more information on a typical React app folder structure.
----
-#### Layout Components | Gatsby
-## Excerpt
-> In this guide, you'll learn Gatsby's approach to layouts, how to create and use layout components, and how to prevent layout components from…
----
-In this guide, you'll learn Gatsby's approach to layouts, how to create and use layout components, and how to prevent layout components from unmounting.
-[Gatsby's approach to layouts](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#gatsbys-approach-to-layouts)
-Gatsby does not, by default, automatically apply layouts to pages (there are, however, ways to do so which will be covered in a later section). Instead, Gatsby follows React's compositional model of importing and using components. This makes it possible to create multiple levels of layouts, e.g. a global header and footer, and then on some pages, a sidebar menu. It also makes it possible to pass data between layout and page components.
-[What are layout components?](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#what-are-layout-components)
-Layout components are for sections of your site that you want to share across multiple pages. For example, Gatsby sites will commonly have a layout component with a shared header and footer. Other common things to add to layouts are a sidebar and/or navigation menu. On this page for example, the header at the top is part of gatsbyjs.com's layout component.
-[How to create layout components](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-create-layout-components)
-It is recommended to create your layout components alongside the rest of your components (e.g. into `src/components/`).
-Here is an example of a very basic layout component at `src/components/layout.js`:
-```
-import React from "react"export default function Layout({ children }) {  return (    <div style={{ margin: `0 auto`, maxWidth: 650, padding: `0 1rem` }}>       {children}    </div>   )}
-```
-[](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-import-and-add-layout-components-to-pages)How to import and add layout components to pages
-If you want to apply a layout to a page, you will need to include the `Layout` component and wrap your page in it. For example, here is how you would apply your layout to the front page:
-```
-import React from "react"import Layout from "../components/layout"export default function Home() {  return (    <Layout>       <h1> I'm in a layout!</h1>     </Layout>   );}
-```
-Repeat for every page and template that needs this layout.
-[How to prevent layout components from unmounting](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-prevent-layout-components-from-unmounting)
-As mentioned earlier, Gatsby does not, by default, automatically wrap pages in a layout component. The "top level" component is the page itself. As a result, when the "top level" component changes between pages, React will re-render all children. This means that shared components like navigations will unmount and remount. This will break CSS transitions or React state within those shared components.
-If you need to set a wrapper component around page components that won't get unmounted on page changes, use the **`wrapPageElement`** [browser API](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/#wrapPageElement) and the [SSR equivalent](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/#wrapPageElement).
-Alternatively, you can prevent your layout component from unmounting by using [gatsby-plugin-layout](https://www.gatsbyjs.com/plugins/gatsby-plugin-layout/), which implements the `wrapPageElement` APIs for you.
-## Adding Markdown Pages | Gatsby
-> ## Excerpt
->
-> Gatsby can use Markdown files to create pages in your site.
-> You add plugins to read and understand folders with Markdown files and from them…
----
-Gatsby can use Markdown files to create pages in your site. You add plugins to read and understand folders with Markdown files and from them create pages automatically.
-Here are the steps Gatsby follows for making this happen.
-1. Read files into Gatsby from the filesystem
-2. Transform Markdown to HTML and [frontmatter](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#frontmatter-for-metadata-in-markdown-files) to data
-3. Add a Markdown file
-4. Create a Collection Route component for the Markdown files
-[](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#read-files-into-gatsby-from-the-filesystem)Read files into Gatsby from the filesystem
-Use the plugin [`gatsby-source-filesystem`](https://www.gatsbyjs.com/plugins/gatsby-source-filesystem/#gatsby-source-filesystem) to read files.
-[](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#install)Install
-`npm install gatsby-source-filesystem`
-[Add Plugin](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#add-plugin)Add plugin
-Open `gatsby-config.js` to add the `gatsby-source-filesystem` plugin. The `path` option is how you set the directory to search for files.
-```
-module.exports = {  siteMetadata: {
-    title: "My Gatsby Site",  },  
-plugins: [    {
-     resolve: `gatsby-source-filesystem`,
-options: {
-        name: `markdown-pages`,
-  path: `${__dirname}/src/markdown-pages`,
-},  
-  },  
-],}
-```
-Completing the above step means that you've "sourced" the Markdown files from the filesystem. You can now "transform" the Markdown to HTML and the YAML frontmatter to JSON.
-[Transform Markdown to HTML and frontmatter to data using `gatsby-transformer-remark`](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#transform-markdown-to-html-and-frontmatter-to-data-using-gatsby-transformer-remark)
-You'll use the plugin [`gatsby-transformer-remark`](https://www.gatsbyjs.com/plugins/gatsby-transformer-remark/) to recognize files which are Markdown and read their content. The plugin will convert the frontmatter metadata part of your Markdown files as `frontmatter` and the content part as HTML.
-[Install transformer plugin](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#install-transformer-plugin)
-`npm install gatsby-transformer-remark`
-[Configure plugin](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#configure-plugin)
-Add this to `gatsby-config.js` after the previously added `gatsby-source-filesystem`.
-```
-module.exports = {  siteMetadata: {
-    title: "My Gatsby Site",  },  
-plugins: [    {
-     resolve: `gatsby-source-filesystem`,
-options: {
-        name: `markdown-pages`,
-  path: `${__dirname}/src/markdown-pages`,
-},  
-  },  
-  `gatsby-transformer-remark`,  ],
-}
-```
-[Add a Markdown file](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#add-a-markdown-file)
-Create a folder in the `/src` directory of your Gatsby application called `markdown-pages`. Now create a Markdown file inside it with the name `post-1.md`.
-[Frontmatter for metadata in Markdown files](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#frontmatter-for-metadata-in-markdown-files)
-When you create a Markdown file, you can include a set of key/value pairs that can be used to provide additional data relevant to specific pages in the GraphQL data layer. This data is called "frontmatter" and is denoted by the triple dashes at the start and end of the block. This block will be parsed by `gatsby-transformer-remark` as YAML. You can then query the data through the GraphQL API from your React components.
-src/markdown-pages/post-1.md
-```
----slug: "/blog/my-first-post"date: "2019-05-04"title: "My first blog post"---
-```
-What is important in this step is the key pair `slug`. The value that is assigned to the key `slug` is used in order to navigate to your post.
-[](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#create-a-collection-route-for-the-markdown-files)Create a Collection Route for the Markdown files
-Create `src/pages/{MarkdownRemark.frontmatter__slug}.js` and add the following code:
-src/pages/{MarkdownRemark.frontmatter\_\_slug}.js
-```
-import React from "react"
-import { graphql } from "gatsby"export default function Template({  data, }) {  const { markdownRemark } = data   const { frontmatter, html } = markdownRemark  return (    <div className="blog-post-container">       <div className="blog-post">         <h1> {frontmatter.title}</h1>         <h2> {frontmatter.date}</h2>         <div          className="blog-post-content"          dangerouslySetInnerHTML={{__html: html }}        />       </div>     </div>   )}export const pageQuery = graphql`  query($id: String!) {    markdownRemark(id: {
- eq: $id }) {      html      frontmatter {        date(formatString: "MMMM DD, YYYY")        slug        title      }    }  }`
-```
-Two things are important in the file above:
-1. A GraphQL query is made in the second half of the file to get the Markdown data. Gatsby has automagically given you all the Markdown metadata and HTML in this query's result.
-    **Note: To learn more about GraphQL, consider this [excellent resource](https://www.howtographql.com/)**
-2. The result of the query is injected by Gatsby into the component as the `data` prop. `props.data.markdownRemark` is the property that has all the details of the Markdown file.
-Next you could create a page component at `src/pages/blog/index.js` to serve as a listing page for all your blog posts.
-This should get you started on some basic Markdown functionality in your Gatsby site. You can further customize the frontmatter and the component file to get desired effects!
-For more information, have a look in the working example `using-markdown-pages`. You can find it in the [Gatsby examples section](https://github.com/gatsbyjs/gatsby/tree/master/examples).
-[Other tutorials](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#other-tutorials)
-</details>
 ---
 ### Overview
+
 The **`_.get()` method** in Lodash retrieves the object’s value at a specific path.
+
 If the value is not present at the object’s specific path, it will be resolved as `undefined`. This method will return the default value if specified in such a case.
+
 ### Syntax
+
 ```js
 _.get(object, path, defaultValue)
 ```
+
 ### Parameters
+
 This method accepts the following parameters:
--   **`object`**: The object in which the given path will be queried.
--   **`path`**: The path used to retrieve the value from the object.
--   **`defaultValue`**: The default value that will be returned for resolved values that are undefined.
+
+- **`object`**: The object in which the given path will be queried.
+- **`path`**: The path used to retrieve the value from the object.
+- **`defaultValue`**: The default value that will be returned for resolved values that are undefined.
+
 ### Return value
+
 This method will return the value at the specified path if found. Otherwise, it will return the default value if specified.
+
 ### Example
+
 Let’s look at an example of the `_.get()` method in the code snippet below:
+
 ### Explanation
+
 In the HTML tab:
--   **Line 5**: We import the `lodash` script.
+
+- **Line 5**: We import the `lodash` script.
+
 In the JavaScript tab:
--   **Lines 2 to 15**: We create an object to perform a query.
--   **Line 18**: We define a variable `collegeYopPath` to get the value.
--   **Lines 19**: We use the `_.get()` method and pass the `object`, `collegeYopPath`, and a default value as parameters.
--   **Line 22**: We define a variable `falsyPath` to get the value.
--   **Lines 23**: We use the `_.get()` method and pass the `object`, `falsyPath` and a `default value` as parameters.
+
+- **Lines 2 to 15**: We create an object to perform a query.
+
+- **Line 18**: We define a variable `collegeYopPath` to get the value.
+
+- **Lines 19**: We use the `_.get()` method and pass the `object`, `collegeYopPath`, and a default value as parameters.
+
+- **Line 22**: We define a variable `falsyPath` to get the value.
+
+- **Lines 23**: We use the `_.get()` method and pass the `object`, `falsyPath` and a `default value` as parameters.
+
 ### Output
--   The `_.get()` method at **line 19** contains a valid path, and therefore the expression is resolved, and `2021` is printed on the console.
--   The `_.get()` method at **Line 23** contains an invalid path, and therefore the expression is resolved as `undefined`.
+
+- The `_.get()` method at **line 19** contains a valid path, and therefore the expression is resolved, and `2021` is printed on the console.
+- The `_.get()` method at **Line 23** contains an invalid path, and therefore the expression is resolved as `undefined`.
+
 ## Technoloy
 ![tech-stack](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/madewith.png?raw=true)
+
 ---
 ## SOURCECODE
+
 ---
+
 ### Overview
+
 The **`_.get()` method** in Lodash retrieves the object’s value at a specific path.
+
 If the value is not present at the object’s specific path, it will be resolved as `undefined`. This method will return the default value if specified in such a case.
+
 ### Syntax
+
 ```js
 _.get(object, path, defaultValue)
 ```
+
 ### Parameters
+
 This method accepts the following parameters:
--   **`object`**: The object in which the given path will be queried.
--   **`path`**: The path used to retrieve the value from the object.
--   **`defaultValue`**: The default value that will be returned for resolved values that are undefined.
+
+- **`object`**: The object in which the given path will be queried.
+- **`path`**: The path used to retrieve the value from the object.
+- **`defaultValue`**: The default value that will be returned for resolved values that are undefined.
+
 ### Return value
+
 This method will return the value at the specified path if found. Otherwise, it will return the default value if specified.
+
 ### Example
+
 Let’s look at an example of the `_.get()` method in the code snippet below:
+
 ### Explanation
+
 In the HTML tab:
--   **Line 5**: We import the `lodash` script.
+
+- **Line 5**: We import the `lodash` script.
+
 In the JavaScript tab:
--   **Lines 2 to 15**: We create an object to perform a query.
--   **Line 18**: We define a variable `collegeYopPath` to get the value.
--   **Lines 19**: We use the `_.get()` method and pass the `object`, `collegeYopPath`, and a default value as parameters.
--   **Line 22**: We define a variable `falsyPath` to get the value.
--   **Lines 23**: We use the `_.get()` method and pass the `object`, `falsyPath` and a `default value` as parameters.
+
+- **Lines 2 to 15**: We create an object to perform a query.
+
+- **Line 18**: We define a variable `collegeYopPath` to get the value.
+
+- **Lines 19**: We use the `_.get()` method and pass the `object`, `collegeYopPath`, and a default value as parameters.
+
+- **Line 22**: We define a variable `falsyPath` to get the value.
+
+- **Lines 23**: We use the `_.get()` method and pass the `object`, `falsyPath` and a `default value` as parameters.
+
 ### Output
--   The `_.get()` method at **line 19** contains a valid path, and therefore the expression is resolved, and `2021` is printed on the console.
--   The `_.get()` method at **Line 23** contains an invalid path, and therefore the expression is resolved as `undefined`.
+
+- The `_.get()` method at **line 19** contains a valid path, and therefore the expression is resolved, and `2021` is printed on the console.
+- The `_.get()` method at **Line 23** contains an invalid path, and therefore the expression is resolved as `undefined`.
+
 ---
 ```
+
 bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$ tree -f
 .
 ├── ./components
@@ -2778,6 +2935,7 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$ tree -f
     ├── ./utils/toStyleObj.js
     ├── ./utils/toUrl.js
     └── ./utils/withPrefix.js
+
 21 directories, 119 files
 bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
 ```
@@ -2785,9 +2943,10 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
 ## Source Code
 
 <details>
+<summary>  Folder Structure (src)  
+</summary>
 
 
-<summary>  Folder Structure (src)  </summary>
 ```
 .
 ├── Combined_____-_____Doc.md
@@ -3094,8 +3253,10 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
     ├── toStyleObj.js
     ├── toUrl.js
     └── withPrefix.js
+
 32 directories, 272 files
 ```
+
 </details>
 
 <details>
@@ -3124,13 +3285,17 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
 ├── Submenu.js
 ├── global.css
 └── index.js
+
 ```
+
 ---
+
 ```js
 import React from 'react';
 import _ from 'lodash';
 import { Link, withPrefix, classNames } from '../utils';
 import Icon from './Icon';
+
 export default class ActionLink extends React.Component {
     render() {
         let action = _.get(this.props, 'action', null);
@@ -3149,7 +3314,7 @@ export default class ActionLink extends React.Component {
                     'button-icon': _.get(action, 'style', null) === 'icon'
                 })}
             >
-                {_.get(action, 'style', null) === 'icon' &&_.get(action, 'icon_class', null) ? (
+                {_.get(action, 'style', null) === 'icon' && _.get(action, 'icon_class', null) ? (
                     <React.Fragment>
                         <Icon {...this.props} icon={_.get(action, 'icon_class', null)} />
                         <span className="screen-reader-text"> {_.get(action, 'label', null)}</span>
@@ -3162,6 +3327,7 @@ export default class ActionLink extends React.Component {
     }
 }
 ```
+
 ---
 ### Table of Contents
 -   [getPage][1]
@@ -3172,25 +3338,40 @@ export default class ActionLink extends React.Component {
     -   [Parameters][6]
     -   [Examples][7]
 ## getPage
+
 Get the page at the provided `urlPath`.
+
 ### Parameters
--   `pages` **[Array][8]** Array of page objects. All pages must have 'url' field.
--   `urlPath` **[string][9]** The url path to find the page by
+
+- `pages` **[Array][8]** Array of page objects. All pages must have 'url' field.
+- `urlPath` **[string][9]** The url path to find the page by
+
 Returns **[Object][10]**
+
 ## getPageByFilePath
+
 Get the page at the provided `filePath`.
+
 ### Parameters
--   `pages` **[Array][8]** Array of page objects. All pages must have 'url' field.
--   `filePath` **[string][9]** The file path to find the page by
+
+- `pages` **[Array][8]** Array of page objects. All pages must have 'url' field.
+- `filePath` **[string][9]** The file path to find the page by
+
 Returns **[Object][10]**
+
 ## getPages
+
 Get all the pages located under the provided `urlPath`, not including the
 index page. I.e.: All pages having their URLs start with `urlPath` excluding
 the page having its URL equal to `urlPath`.
+
 ### Parameters
--   `pages` **[Array][8]** Array of page objects. All pages must have 'url' field.
--   `urlPath` **[string][9]** The url path to filter pages by
+
+- `pages` **[Array][8]** Array of page objects. All pages must have 'url' field.
+- `urlPath` **[string][9]** The url path to filter pages by
+
 ### Examples
+
 ```javascript
 pages => [
   {url: '/'},
@@ -3199,13 +3380,16 @@ pages => [
   {url: '/posts/hello'},
   {url: '/posts/world'}
 ]
+
 getPages(pages, /posts')
 => [
   {url: '/posts/hello'},
   {url: '/posts/world'}
 ]
 ```
+
 Returns **[Array][8]**
+
 [1]: #getpage
 [2]: #parameters
 [3]: #getpagebyfilepath
@@ -3216,14 +3400,16 @@ Returns **[Array][8]**
 [8]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
 [9]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
 [10]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
+
 ```js
 import React from 'react';
 import_ from 'lodash';
 import { Link, withPrefix, classNames } from '../utils';
+
 export default class CtaButtons extends React.Component {
     render() {
         let actions = _.get(this.props, 'actions', null);
-return_.map(actions, (action, action_idx) => (
+        return _.map(actions, (action, action_idx) => (
             <Link
                 key={action_idx}
                 to={withPrefix(_.get(action, 'url', null))}
@@ -3234,8 +3420,8 @@ return_.map(actions, (action, action_idx) => (
                       }
                     : null)}
                 className={classNames({
-button:_.get(action, 'style', null) === 'primary' || _.get(action, 'style', null) === 'secondary',
-'button-secondary':_.get(action, 'style', null) === 'secondary'
+                    button: _.get(action, 'style', null) === 'primary' || _.get(action, 'style', null) === 'secondary',
+                    'button-secondary': _.get(action, 'style', null) === 'secondary'
                 })}
             >
                 {_.get(action, 'label', null)}
@@ -3244,16 +3430,19 @@ button:_.get(action, 'style', null) === 'primary' || _.get(action, 'style', null
     }
 }
 ```
+
 ---
+
 ```js
 import React from 'react';
 import_ from 'lodash';
 import { getPage, classNames, Link, withPrefix, pathJoin, getPages } from '../utils';
 import DocsSubmenu from './DocsSubmenu';
+
 export default class DocsMenu extends React.Component {
     render() {
         let site = _.get(this.props, 'site', null);
-let page =_.get(this.props, 'page', null);
+        let page = _.get(this.props, 'page', null);
         let root_docs_path = _.get(site, 'data.doc_sections.root_docs_path', null);
         let root_page = getPage(this.props.pageContext.pages, root_docs_path);
         return (
@@ -3267,7 +3456,7 @@ let page =_.get(this.props, 'page', null);
                         <ul id="docs-menu" className="docs-menu">
                             <li
                                 className={classNames('docs-menu-item', {
-current:_.get(page, 'url', null) === _.get(root_page, 'url', null)
+                                    current: _.get(page, 'url', null) === _.get(root_page, 'url', null)
                                 })}
                             >
                                 <Link to={withPrefix(_.get(root_page, 'url', null))}> {_.get(root_page, 'frontmatter.title', null)}</Link>
@@ -3276,9 +3465,9 @@ current:_.get(page, 'url', null) === _.get(root_page, 'url', null)
                                 let section_path = pathJoin(root_docs_path, section);
                                 let section_page = getPage(this.props.pageContext.pages, section_path);
                                 let child_pages = _.orderBy(getPages(this.props.pageContext.pages, section_path), 'frontmatter.weight');
-let child_count =_.size(child_pages);
+                                let child_count = _.size(child_pages);
                                 let has_children = child_count > 0 ? true : false;
-                                let is_current_page = _.get(page, 'url', null) ===_.get(section_page, 'url', null) ? true : false;
+                                let is_current_page = _.get(page, 'url', null) === _.get(section_page, 'url', null) ? true : false;
                                 let is_active = _.get(page, 'url', null).startsWith(_.get(section_page, 'url', null));
                                 return (
                                     <React.Fragment key={section_idx + '.1'}>
@@ -3312,14 +3501,17 @@ let child_count =_.size(child_pages);
     }
 }
 ```
+
 ---
+
 ```js
 import React from 'react';
 import _from 'lodash';
 import { classNames, Link, withPrefix } from '../utils';
+
 export default class DocsSubmenu extends React.Component {
     render() {
-let child_pages =_.get(this.props, 'child_pages', null);
+        let child_pages = _.get(this.props, 'child_pages', null);
         let page = _.get(this.props, 'page', null);
         return (
             <ul className="docs-submenu">
@@ -3327,7 +3519,7 @@ let child_pages =_.get(this.props, 'child_pages', null);
                     <li
                         key={child_page_idx}
                         className={classNames('docs-menu-item', {
-                            current: _.get(page, 'url', null) ===_.get(child_page, 'url', null)
+                            current: _.get(page, 'url', null) === _.get(child_page, 'url', null)
                         })}
                     >
                         <Link to={withPrefix(_.get(child_page, 'url', null))}> {_.get(child_page, 'frontmatter.title', null)}</Link>
@@ -3338,10 +3530,13 @@ let child_pages =_.get(this.props, 'child_pages', null);
     }
 }
 ```
+
 ---
+
 ```js
 import _ from 'lodash';
 import React from 'react';
+
 import { htmlToReact } from '../utils';
 import ActionLink from './ActionLink';
 import addScript from './../hooks/addScript';
@@ -3355,8 +3550,11 @@ export default class Footer extends React.Component {
                 <div>
                     <center>
                         <br />
+
                         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+
                         <br />
+
                         <table cellPadding={0} cellSpacing={0} border={0}>
                             <tbody>
                                 <tr>
@@ -3416,6 +3614,7 @@ export default class Footer extends React.Component {
                                                 </tbody>
                                             </table>
                                         </center>
+
                                         <form
                                             style={{
                                                 margin: '0px',
@@ -3485,6 +3684,7 @@ export default class Footer extends React.Component {
                         </a>
                     </center>
                 </div>
+
                 <div className="inner">
                     <div id="search" className="inner">
                         {' '}
@@ -3512,19 +3712,24 @@ export default class Footer extends React.Component {
     }
 }
 ```
+
 ---
+
 ```js
 import React from 'react';
 import_ from 'lodash';
 import { Link, withPrefix, classNames } from '../utils';
 import ActionLink from './ActionLink';
 import Submenu from './Submenu';
+
 export default class Header extends React.Component {
     render() {
         return (
             <header id="masthead" className="site-header outer">
-                {/*<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />*/}
+                {/* <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />  */}
+
                 <br />
+
                 <div className="inner">
                     <div className="site-header-inside">
                         <div className="site-branding">
@@ -3560,19 +3765,19 @@ export default class Header extends React.Component {
                                         </button>
                                         <ul className="menu">
                                             {_.map(_.get(this.props, 'pageContext.site.siteMetadata.header.nav_links', null), (action, action_idx) => {
-let page_url =_.trim(_.get(this.props, 'pageContext.url', null), '/');
-let action_url =_.trim(_.get(action, 'url', null), '/');
+                                                let page_url = _.trim(_.get(this.props, 'pageContext.url', null), '/');
+                                                let action_url = _.trim(_.get(action, 'url', null), '/');
                                                 return (
                                                     <li
                                                         key={action_idx}
                                                         className={classNames('menu-item', {
-'has-children':_.get(action, 'has_subnav', null) && _.get(action, 'subnav_links', null),
+                                                            'has-children': _.get(action, 'has_subnav', null) && _.get(action, 'subnav_links', null),
                                                             current: page_url === action_url,
-'menu-button':_.get(action, 'style', null) !== 'link'
+                                                            'menu-button': _.get(action, 'style', null) !== 'link'
                                                         })}
                                                     >
                                                         <ActionLink {...this.props} action={action} />
-                                                        {_.get(action, 'has_subnav', null) &&_.get(action, 'subnav_links', null) && (
+                                                        {_.get(action, 'has_subnav', null) && _.get(action, 'subnav_links', null) && (
                                                             <React.Fragment>
                                                                 <button className="submenu-toggle">
                                                                     <span className="icon-angle-right" aria-hidden="true" />
@@ -3600,6 +3805,7 @@ let action_url =_.trim(_.get(action, 'url', null), '/');
                         )}
                     </div>
                 </div>
+
                 <div>
                     <a className="github-corner" href="https://github.com/bgoonz/BGOONZ_BLOG_2.0" aria-label="View source on Github">
                         <svg
@@ -3642,13 +3848,16 @@ let action_url =_.trim(_.get(action, 'url', null), '/');
     }
 }
 ```
+
 ---
+
 ```js
 import React from 'react';
-import _from 'lodash';
+import _ from 'lodash';
+
 export default class Icon extends React.Component {
     render() {
-let icon =_.get(this.props, 'icon', null);
+        let icon = _.get(this.props, 'icon', null);
         return (
             <svg className="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 {icon === 'dev' ? (
