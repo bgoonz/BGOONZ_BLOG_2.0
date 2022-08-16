@@ -47,7 +47,11 @@
         "react-script-tag": "1.1.2",
         "rehype-react": "3.0.2",
         "sprintf-js": "1.1.2",
-        "web-dev-utils": "^1.0.4"
+        "web-dev-utils": "^1.0.4",
+        "@algolia/autocomplete-js": "1.7.1",
+        "@algolia/autocomplete-theme-classic": "1.7.1",
+        "algoliasearch": "4.9.1",
+        "preact": "10.5.13"
     },
     "devDependencies": {
         "prettier": "^2.7.1"
