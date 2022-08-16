@@ -201,17 +201,9 @@ Each hash table can be very different, from the types of the keys and values, to
 
 ## Data structure interview questions
 
-
 <details>
 
-
-
-<summary>
- 🔥See Interview Questions 
-
-</summary>
-
-
+<summary> 🔥See Interview Questions </summary>
 
 For many developers and programmers, data structures are most important for [cracking Javascript coding interviews](https://www.educative.io/blog/acing-the-javascript-interview-top-questions-explained). Questions and problems on data structures are fundamental to modern-day coding interviews. In fact, they have a lot to say over your hireability and entry-level rate as a candidate.
 

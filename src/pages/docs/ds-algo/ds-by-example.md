@@ -13,17 +13,9 @@ template: docs
 
 # Data Structures
 
-
 <details>
 
-
-
-<summary>
-All Code From This Writeup
-
-</summary>
-
-
+<summary>All Code From This Writeup</summary>
 
 ```js
 //

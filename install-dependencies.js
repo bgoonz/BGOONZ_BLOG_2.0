@@ -1,14 +1,11 @@
-/**
- * It installs all the dependencies in the current directory and all the subdirectories
- * @param cwd - The current working directory of the child process
- */
-/* eslint-disable eol-last */
-const fs = require('fs/promises');
+let fs;
+fs = require('fs/promises');
 const {
     spawn
 } = require('child_process');
 const path = require('path');
-const root = process.cwd();
+console.log(path)
+
 // eslint-disable-next-line func-style
 function npmInstall(cwd) {
     return new Promise((resolve) => {
@@ -18,9 +15,10 @@ function npmInstall(cwd) {
         childProcess.on('exit', resolve);
     });
 }
+
 // eslint-disable-next-line func-style
 async function install() {
-    const base = path.resolve(root);
+    const base = path.resolve(process.cwd());
     const ignoreFolders = ['node_modules'];
     const deps = (await fs.readdir(base, {
             withFileTypes: true
