@@ -1,6 +1,15 @@
 // Fonts
-$font-primary: 'Lato', Helvetica, Arial, sans-serif !default;
-$font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace !default;
+$font-primary: 'Lato',
+Helvetica,
+Arial,
+sans-serif !default;
+$font-monospace: SFMono-Regular,
+Menlo,
+Monaco,
+Consolas,
+'Liberation Mono',
+'Courier New',
+monospace !default;
 
 // Colors
 $color-primary: #00c6ff !default;
@@ -38,17 +47,158 @@ $container-padding: 3vw !default;
 $grid-gap: 1.875em !default;
 
 // Alternative theme palettes
-$theme-palettes: (
-    green: (
-        primary: #20c86e,
-        secondary: #1ba65b
-    ),
-    navy: (
-        primary: #1b2024,
-        secondary: #000428
-    ),
-    violet: (
-        primary: #8e2de2,
-        secondary: #4a00e0
-    )
-);
+$theme-palettes: (green: (primary: #20c86e,
+        secondary: #1ba65b),
+    navy: (primary: #1b2024,
+        secondary: #000428),
+    violet: (primary: #8e2de2,
+        secondary: #4a00e0));
+
+
+// VARIABLES
+
+// Colors
+$primary: black;
+$radius: 4px;
+$line-speed: 1s;
+$line-easing: cubic-bezier(0.65, 0.05, 0.36, 1);
+
+// Pastel Colors
+$pastel-green: #58B3B2;
+$pastel-pink: #E0B0C2;
+$pastel-orange: #E19C7D;
+
+// COLORS
+$navy: #2c3e50;
+$pink: #DA5269;
+$black-pearl: #1F2529;
+$blue: #0087ff;
+$deep-blue: #373F81;
+$gradient: #0060FF,
+#0031FF;
+$light-grey: #ADB1BF;
+$border-grey: #eeeeee;
+$text-grey: darken(#9BA0B1, 10%);
+$dark: #323B46;
+$bg-grey: rgb(246, 246, 249);
+$background: white;
+$menu-links: $light-grey;
+$green: #1abc9c;
+$blue-gradient: (#005FFF, 0.09, #0031FF, 0.5);
+
+
+// Nav
+$nav-width: 270px;
+$nav-color: black;
+$nav-easing: cubic-bezier(0.6, 0, 0.2, 1);
+$nav-timing: 0.6s;
+$nav-delay: 1s;
+
+// Devices
+$xs-device: 767px;
+$sm-device: 768px;
+$md-device: 992px;
+$lg-device: 1200px;
+
+// Projects
+$overlay-opacity: 0.6;
+
+
+// MIXINS
+@mixin logo-font {
+    font-family: $logo-font, sans-serif;
+}
+
+@mixin primary-gradient {
+    background-image: linear-gradient(-45deg,
+            nth($gradient, 1),
+            nth($gradient, 2));
+}
+
+@mixin xs-device {
+    @media (max-width: $xs-device) {
+        @content;
+    }
+}
+
+/// Target small devices
+@mixin sm-device {
+    @media (min-width: $sm-device) and (max-width: $md-device) {
+        @content;
+    }
+}
+
+/// Target medium size devices
+@mixin md-device {
+    @media (min-width: $md-device) and (max-width: $lg-device) {
+        @content;
+    }
+}
+
+/// Target large devices
+@mixin lg-device {
+    @media (min-width: $lg-device) {
+        @content;
+    }
+}
+
+/// Target multiple devices at once
+@mixin devices($xs: false, $sm: false, $md: false, $lg: false) {
+    @if $xs==true {
+        @include xs-device {
+            @content;
+        }
+    }
+
+    @if $sm==true {
+        @include sm-device {
+            @content;
+        }
+    }
+
+    @if $md==true {
+        @include md-device {
+            @content;
+        }
+    }
+
+    @if $lg==true {
+        @include lg-device {
+            @content;
+        }
+    }
+}
+
+@mixin createAnimation($name) {
+    .#{$name} {
+        animation-name: $name;
+        animation-duration: 0.75s;
+        animation-timing-function: $nav-easing;
+        animation-fill-mode: both;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 200px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@include createAnimation(fadeIn);
+@include createAnimation(fadeInUp);

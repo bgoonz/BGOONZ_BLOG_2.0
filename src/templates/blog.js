@@ -4,6 +4,7 @@ import moment from 'moment-strftime';
 import React from 'react';
 import {Layout} from '../components/index';
 import {getPages, Link, toStyleObj, withPrefix} from '../utils';
+import Tags from './tags'
 // this minimal GraphQL query ensures that when 'gatsby develop' is running,
 // any changes to content files are reflected in browser
 export const query = graphql `
@@ -13,6 +14,19 @@ export const query = graphql `
         }
     }
 `;
+
+const Tags = ({ tags }) =>
+  tags && tags.length > 0 ? (
+    <Flex>
+      {tags.map((tag) => (
+        <Tag key={tag} to={`/tags/${kebabCase(tag)}/`}>
+          {tag}
+        </Tag>
+      ))}
+    </Flex>
+  ) : null;
+
+
 export default class Blog extends React.Component {
     render() {
         let display_posts = _.orderBy(getPages(this.props.pageContext.pages, '/blog'), 'frontmatter.date', 'desc');
@@ -29,6 +43,7 @@ export default class Blog extends React.Component {
                 }
                     <div className="inner-sm">
                         <h1 className="page-title">
+                            <Tags />
                             {
                             _.get(this.props, 'pageContext.frontmatter.title', null)
                         }</h1>
