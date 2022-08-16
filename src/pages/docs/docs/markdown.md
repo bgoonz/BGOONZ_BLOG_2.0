@@ -78,7 +78,9 @@ Collapsing large blocks of text can make your markdown much easier to digest
 
 <summary>
 "Click to expand"
+
 </summary>
+
 
 this is hidden block
 </details>
@@ -90,7 +92,9 @@ this is hidden block
 
 <summary>
 "Click to expand"
+
 </summary>
+
 
 this is hidden
 </details>
@@ -104,7 +108,9 @@ Collapsing large blocks of Markdown text
 
 <summary>
 To make sure markdown is rendered correctly in the collapsed section...
+
 </summary>
+
 
 
 1.  Put an **empty line** after the `
@@ -122,7 +128,9 @@ To make sure markdown is rendered correctly in the collapsed section...
 
 <summary>
 To make sure markdown is rendered correctly in the collapsed section...
+
 </summary>
+
 
 
  1. Put an **empty line** after the `

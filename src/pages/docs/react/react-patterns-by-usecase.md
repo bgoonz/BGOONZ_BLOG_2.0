@@ -56,7 +56,9 @@ In future, the need to `forwardRef` may go away in React 17+, but for now we sti
 Why not `ComponentProps` or `IntrinsicElements` or `[Element]HTMLAttributes` or `HTMLProps` or `HTMLAttributes`?
 
 
+
 </summary>
+
 
 
 ## `ComponentProps`
@@ -447,7 +449,9 @@ type TwoNumbersChildren = [number, number];
 
 Don't forget that you can also use `prop-types` if TS fails you.
 
+
 </summary>
+
 
 
 ```ts
@@ -568,7 +572,9 @@ function RouterLink(props: LinkProps | AnchorProps) {
 
 <b>Approach: Generic Components</b>
 
+
 </summary>
+
 
 
 Here is an example solution, see the further discussion for other solutions. _thanks to [@jpavon](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet/issues/12#issuecomment-394440577)_
@@ -603,7 +609,9 @@ const Link = <T extends {}>(props: LinkProps & T extends RouterLinkProps ? Route
 
 <b>Approach: Composition</b>
 
+
 </summary>
+
 
 
 If you want to conditionally render a component, sometimes is better to use [React's composition model](https://reactjs.org/docs/composition-vs-inheritance.html) to have simpler components and better to understand typings:
@@ -673,7 +681,9 @@ function handle(event: UserEvent) {
 
   Take care: TypeScript does not narrow the type of a Discriminated Union on the basis of typeof checks. The type guard has to be on the value of a key and not it's type.
   
+
 </summary>
+
 
 
 ```ts
@@ -705,7 +715,9 @@ The above example does not work as we are not checking the value of `event.value
    <br/>
 <br/>
   
+
 </summary>
+
 
 
 ```tsx

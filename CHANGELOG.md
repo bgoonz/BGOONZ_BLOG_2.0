@@ -4,7 +4,9 @@ Git History on master by all authors
 
 <summary>
  Original
+
 </summary>
+
 
 Merge pull request #1564 from bgoonz/master
 3e3b8baab (HEAD -> master, origin/master, origin/HEAD) by Bryan C Guner <66654881+bgoonz@users.noreply.github.com>, Sat Jan 22 2022 (2 days ago)
@@ -1116,7 +1118,9 @@ Merge pull request #1478 from bgoonz/preview
 
 <summary>
   April-4-2022-stable
+
 </summary>
+
 
 ## What's Changed
 

@@ -21,7 +21,9 @@ template: docs
 
 <summary>
  From #250 Onward 
+
 </summary>
+
 
 250.    What is the advantage of a comma operator
 
@@ -3329,7 +3331,9 @@ function Vehicle(model, color, year, country) {
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -3373,7 +3377,9 @@ c ole.log(foo(), typeof x, typeof y);
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -3425,7 +3431,9 @@ m();
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -3465,7 +3473,9 @@ c ole.log(0.1 + 0.2 === 0.3);
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -3503,7 +3513,9 @@ c ole.log(y);
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -3562,7 +3574,9 @@ c ole.log(foo());
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -3614,7 +3628,9 @@ c ole.log(myChars.length);
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -3656,7 +3672,9 @@ c ole.log(array3);
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -3704,7 +3722,9 @@ c ole.log(obj.prop3());
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -3738,7 +3758,9 @@ c ole.log(3 > 2 > 1);
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -3791,7 +3813,9 @@ p tNumbers(1, 2, 3);
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -3830,7 +3854,9 @@ p tNumbersArrow(1, 2, 3);
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -3864,7 +3890,9 @@ c ole.log(arrowFunc(1, 2, 3));
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -3914,7 +3942,9 @@ c ole.log(String.prototype.trimLeft.name === 'trimStart');
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -3947,7 +3977,9 @@ c ole.log(Math.max());
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -3982,7 +4014,9 @@ c ole.log(10 == [[[[[[[10]]]]]]]);
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -4023,7 +4057,9 @@ c ole.log(10 - '10');
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -4061,7 +4097,9 @@ if ([0]) {
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -4092,7 +4130,9 @@ c ole.log([1, 2] + [3, 4]);
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -4129,7 +4169,9 @@ c ole.log(browser);
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -4160,7 +4202,9 @@ c ole.log(NaN === NaN);
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -4194,7 +4238,9 @@ c ole.log(numbers.indexOf(NaN));
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -4237,7 +4283,9 @@ c ole.log(a, b);
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -4280,7 +4328,9 @@ c ole.log(func());
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -4326,7 +4376,9 @@ c ole.log(func());
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -4388,7 +4440,9 @@ p essArray([1, 2, 3, 4]);
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -4441,7 +4495,9 @@ p ess([1, 2, 3, 5]);
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -4488,7 +4544,9 @@ c ole.log(set);
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -4530,7 +4588,9 @@ c oe.log(sym1 === sym2, sym3 === sym4);
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -4570,7 +4630,9 @@ c ole.log(sym1);
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -4617,7 +4679,9 @@ if (!typeof myString === 'number') {
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -4652,7 +4716,9 @@ c ole.log(JSON.stringify({ [Symbol.for('one')]: 'one' }, [Symbol.for('one')]));
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -4700,7 +4766,9 @@ n B();
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -4735,7 +4803,9 @@ c ole.log(x, y);
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -4772,7 +4842,9 @@ c ole.log(y);
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -4816,7 +4888,9 @@ a();
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -4887,7 +4961,9 @@ c ole.log(name);
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -4932,7 +5008,9 @@ c kType(null);
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -4979,7 +5057,9 @@ c ole.log(add('Apple'));
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -5020,7 +5100,9 @@ g t('Hello', 'John', 'Good morning!');
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -5061,7 +5143,9 @@ o r();
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -5104,7 +5188,9 @@ m n(1, 2);
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -5140,7 +5226,9 @@ c ole.log(array);
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -5184,7 +5272,9 @@ c ole.log(myGenObj.next().value);
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -5231,7 +5321,9 @@ c ole.log(myGenObj.next());
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -5277,7 +5369,9 @@ for (const value of myGenerator) {
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -5310,7 +5404,9 @@ c ole.log(num);
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -5357,7 +5453,9 @@ class Square {
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -5412,7 +5510,9 @@ c ole.log(run());
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -5464,7 +5564,9 @@ c ole.log(car.start());
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -5500,7 +5602,9 @@ c ole.log(USER.age);
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -5532,7 +5636,9 @@ c ole.log('🙂' === '🙂');
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -5566,7 +5672,9 @@ c ole.log(typeof typeof typeof true);
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -5606,7 +5714,9 @@ if (zero) {
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -5647,7 +5757,9 @@ c ole.log(msg.name);
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 
@@ -5689,7 +5801,9 @@ let count = 10;
 
 <b>Answer</b>
 
+
 </summary>
+
 
 <p>
 

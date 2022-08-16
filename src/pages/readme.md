@@ -933,7 +933,7 @@ This page contains links that give the impression that some of the site contents
 
     Use the Gatsby CLI to create a new site, specifying the default starter.
 
-    ```console
+    ```shell
 
     # create a new Gatsby site using the default starter
 
@@ -945,7 +945,7 @@ This page contains links that give the impression that some of the site contents
 
     Navigate into your new site's directory and start it up.
 
-    ```console
+    ```shell
 
     cd my-default-starter/
 
@@ -1340,7 +1340,9 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
   
 <summary>
 <h1>Click to see React Components (src folder)!</h1>
+
 </summary>
+
 
 
 
@@ -1350,7 +1352,9 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
   
 <summary>
 ActionLink!
+
 </summary>
+
 
 
 ## ActionLink
@@ -1435,7 +1439,9 @@ button: *.get(action, 'style', null) !== 'link',
   
 <summary>
 CtaButtons!
+
 </summary>
+
 
 
 ## CtaButtons
@@ -1486,7 +1492,9 @@ export default class CtaButtons extends React.Component {
   
 <summary>
 Click to expand!
+
 </summary>
+
 
 
 ## DocsMenu
@@ -1593,7 +1601,9 @@ export default class DocsMenu extends React.Component {
   
 <summary>
 Click to expand!
+
 </summary>
+
 
 
 ## DocsSubmenu
@@ -1641,7 +1651,9 @@ export default class DocsSubmenu extends React.Component {
   
 <summary>
 Click to expand!
+
 </summary>
+
 
 
 ## Footer
@@ -1855,7 +1867,9 @@ export default class Header extends React.Component {
   
 <summary>
 Click to expand!
+
 </summary>
+
 
 
 ## Icon
@@ -1912,7 +1926,9 @@ export default class Icon extends React.Component {
   
 <summary>
 Click to expand!
+
 </summary>
+
 
 
 ## Body
@@ -2010,7 +2026,9 @@ export default class Body extends React.Component {
   
 <summary>
 Click to expand!
+
 </summary>
+
 
 
 ## SectionContent
@@ -2077,7 +2095,9 @@ export default class SectionContent extends React.Component {
   
 <summary>
 Click to expand!
+
 </summary>
+
 
 
 ## SectionCta
@@ -2134,7 +2154,9 @@ export default class SectionCta extends React.Component {
   
 <summary>
 Click to expand!
+
 </summary>
+
 
 
 ## SectionDocs
@@ -2222,7 +2244,9 @@ export default class SectionDocs extends React.Component {
   
 <summary>
 Click to expand!
+
 </summary>
+
 
 
 ## SectionGrid
@@ -2318,7 +2342,9 @@ export default class SectionGrid extends React.Component {
   
 <summary>
 Click to expand!
+
 </summary>
+
 
 
 ## SectionHero
@@ -2375,7 +2401,9 @@ export default class SectionHero extends React.Component {
   
 <summary>
 Click to expand!
+
 </summary>
+
 
 
 ## Submenu
@@ -2431,7 +2459,9 @@ export default class Submenu extends React.Component {
   
 <summary>
 Click to expand!
+
 </summary>
+
 
 
 ## Index.js
@@ -2531,7 +2561,9 @@ export default {
   
 <summary>
 Static Javascript:!
+
 </summary>
+
 
 
 # main.js

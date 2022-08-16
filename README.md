@@ -302,7 +302,9 @@ git push                    # done, no need to force push!
 
 <details>
 
-<summary>Web Dev Setup</summary>
+<summary>Web Dev Setup
+</summary>
+
 
 
 
@@ -2426,7 +2428,9 @@ find . -type f -exec chmod 644 {} \;
 ## Dependencies
 
 <details>
-  <summary>Click to expand!</summary>
+  <summary>Click to expand!
+</summary>
+
 
 [![@algolia**](https://avatars.githubusercontent.com/u/2034458?s=40&v=4)](https://github.com/algolia)[algolia / algoliasearch-client-javascript](https://github.com/algolia/algoliasearch-client-javascript)@algolia/client-search
 `^ 4.10.3`
@@ -2529,7 +2533,9 @@ find . -type f -exec chmod 644 {} \;
 ## Docs Structure
 
 <details>
-<summary>  Docs Structure  </summary>
+<summary>  Docs Structure  
+</summary>
+
 
 ```
 ├── blog
@@ -3163,7 +3169,9 @@ find . -type f -exec chmod 644 {} \;
 ---
 
 <details>
-<summary>  ↞↠ Getting Started With GatsbyJS ↞↠  </summary>
+<summary>  ↞↠ Getting Started With GatsbyJS ↞↠  
+</summary>
+
 #
 
 ---
@@ -3833,7 +3841,9 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
 ## Source Code
 
 <details>
-<summary>  Folder Structure (src)  </summary>
+<summary>  Folder Structure (src)  
+</summary>
+
 
 ```
 .
@@ -4148,7 +4158,9 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
 </details>
 
 <details>
-<summary>  Click To See Component Sourcecode  </summary>
+<summary>  Click To See Component Sourcecode  
+</summary>
+
 
 ## Component Structure
 

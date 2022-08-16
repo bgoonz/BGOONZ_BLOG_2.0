@@ -3457,7 +3457,7 @@ Cons
 
         TypeScript is a typed superset of JavaScript created by Microsoft that adds optional types, classes, async/await, and many other features, and compiles to plain JavaScript. Angular built entirely in TypeScript and used as a primary language. You can install it globally as
 
-        ```console
+        ```shell
         npm install -g typescript
         ```
 
@@ -4257,7 +4257,7 @@ Cons
 
         No, you cannot redeclare let and const variables. If you do, it throws below error
 
-        ```console
+        ```shell
         Uncaught SyntaxError: Identifier 'someVariable' has already been declared
         ```
 
@@ -5421,7 +5421,7 @@ Cons
 
         and the output would be in
 
-        ```console
+        ```shell
         Script loaded
         My script is initialized
         ```
@@ -5438,7 +5438,7 @@ Cons
 
         and the output is,
 
-        ```console
+        ```shell
         My script is initialized
         Script loaded
         ```
@@ -6173,7 +6173,9 @@ function Vehicle(model, color, year, country) {
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -6209,7 +6211,9 @@ c ole.log(foo(), typeof x, typeof y);
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -6253,7 +6257,9 @@ m();
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -6289,7 +6295,9 @@ c ole.log(0.1 + 0.2 === 0.3);
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -6323,7 +6331,9 @@ c ole.log(y);
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -6373,7 +6383,9 @@ c ole.log(foo());
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -6417,7 +6429,9 @@ c ole.log(myChars.length);
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -6455,7 +6469,9 @@ c ole.log(array3);
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -6499,7 +6515,9 @@ c ole.log(obj.prop3());
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -6529,7 +6547,9 @@ c ole.log(3 > 2 > 1);
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -6574,7 +6594,9 @@ p tNumbers(1, 2, 3);
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -6609,7 +6631,9 @@ p tNumbersArrow(1, 2, 3);
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -6639,7 +6663,9 @@ c ole.log(arrowFunc(1, 2, 3));
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -6683,7 +6709,9 @@ c ole.log(String.prototype.trimLeft.name === 'trimStart');
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -6712,7 +6740,9 @@ c ole.log(Math.max());
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -6743,7 +6773,9 @@ c ole.log(10 == [[[[[[[10]]]]]]]);
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -6779,7 +6811,9 @@ c ole.log(10 - '10');
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -6813,7 +6847,9 @@ if ([0]) {
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -6840,7 +6876,9 @@ c ole.log([1, 2] + [3, 4]);
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -6873,7 +6911,9 @@ c ole.log(browser);
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -6900,7 +6940,9 @@ c ole.log(NaN === NaN);
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -6930,7 +6972,9 @@ c ole.log(numbers.indexOf(NaN));
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -6968,7 +7012,9 @@ c ole.log(a, b);
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -7006,7 +7052,9 @@ c ole.log(func());
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -7044,7 +7092,9 @@ c ole.log(func());
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -7094,7 +7144,9 @@ p essArray([1, 2, 3, 4]);
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -7139,7 +7191,9 @@ p ess([1, 2, 3, 5]);
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -7181,7 +7235,9 @@ c ole.log(set);
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -7219,7 +7275,9 @@ c oe.log(sym1 === sym2, sym3 === sym4);
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -7255,7 +7313,9 @@ c ole.log(sym1);
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -7298,7 +7358,9 @@ if (!typeof myString === 'number') {
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -7329,7 +7391,9 @@ c ole.log(JSON.stringify({ [Symbol.for('one')]: 'one' }, [Symbol.for('one')]));
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -7373,7 +7437,9 @@ n B();
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -7404,7 +7470,9 @@ c ole.log(x, y);
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -7437,7 +7505,9 @@ c ole.log(y);
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -7474,7 +7544,9 @@ a();
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -7533,7 +7605,9 @@ c ole.log(name);
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -7570,7 +7644,9 @@ c kType(null);
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -7609,7 +7685,9 @@ c ole.log(add('Apple'));
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -7642,7 +7720,9 @@ g t('Hello', 'John', 'Good morning!');
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -7675,7 +7755,9 @@ o r();
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -7710,7 +7792,9 @@ m n(1, 2);
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -7742,7 +7826,9 @@ c ole.log(array);
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -7778,7 +7864,9 @@ c ole.log(myGenObj.next().value);
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -7817,7 +7905,9 @@ c ole.log(myGenObj.next());
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -7859,7 +7949,9 @@ for (const value of myGenerator) {
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -7888,7 +7980,9 @@ c ole.log(num);
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -7931,7 +8025,9 @@ class Square {
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -7978,7 +8074,9 @@ c ole.log(run());
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -8026,7 +8124,9 @@ c ole.log(car.start());
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -8058,7 +8158,9 @@ c ole.log(USER.age);
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -8086,7 +8188,9 @@ c ole.log('🙂' === '🙂');
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -8116,7 +8220,9 @@ c ole.log(typeof typeof typeof true);
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -8152,7 +8258,9 @@ if (zero) {
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -8189,7 +8297,9 @@ c ole.log(msg.name);
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 
@@ -8227,7 +8337,9 @@ let count = 10;
 
 <summary>
 <b>Answer</b>
+
 </summary>
+
 
 <p>
 

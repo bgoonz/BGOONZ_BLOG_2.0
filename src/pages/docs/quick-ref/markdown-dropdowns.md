@@ -19,7 +19,9 @@ template: docs
 
 <summary>
 How do I dropdown?
+
 </summary>
+
 
 <br>
 This is how you dropdown.
@@ -40,7 +42,9 @@ This is how you dropdown.
 
 <summary>
 Want to ruin the surprise?
+
 </summary>
+
 
 <br>
 Well, you asked for it!

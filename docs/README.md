@@ -54,7 +54,9 @@ npm i @stackbit/gatsby-plugin-menus babel-runtime chokidar classnames fs-extra g
 
 <summary>
 Web Dev Setup
+
 </summary>
+
 
 [webpack](https://webpack.js.org/)
 
@@ -497,7 +499,9 @@ get in touch! +1 (551) - 254 - 5505
 
 <summary>
  Bash Commands
+
 </summary>
+
 
 ## My Commands
 ## # Find
@@ -537,7 +541,7 @@ find . -type f -exec chmod 644 {} \;
 ## Description: need to : `sudo apt install rename`
 > Notes: Issue when renaming file without numbers collides with existing file name...
 ## # code
-````console
+````shell
 find $dir -type f | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
 find $dir -type d | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
 for i in *.html; do mv "$i" "${i%-*}.html"; done
@@ -2046,7 +2050,9 @@ find . -type f -exec chmod 644 {} \;
 
 <summary>
 Click to expand!
+
 </summary>
+
 
 [![@algolia**](https://avatars.githubusercontent.com/u/2034458?s=40&v=4)](https://github.com/algolia)[algolia / algoliasearch-client-javascript](https://github.com/algolia/algoliasearch-client-javascript)@algolia/client-search
 `^ 4.10.3`
@@ -2150,7 +2156,9 @@ Click to expand!
 
 <summary>
   Docs Structure  
+
 </summary>
+
 
 ```
 ├── blog
@@ -2757,7 +2765,9 @@ docky ./../src/components/pages/**/*.md \ # specify the components to parse
 
 <summary>
   ↞↠ Getting Started With GatsbyJS ↞↠  
+
 </summary>
+
 
 
 #
@@ -2986,7 +2996,9 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
 
 <summary>
   Folder Structure (src)  
+
 </summary>
+
 
 ```
 .
@@ -3304,7 +3316,9 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
 
 <summary>
   Click To See Component Sourcecode  
+
 </summary>
+
 
 ## Component Structure
 
