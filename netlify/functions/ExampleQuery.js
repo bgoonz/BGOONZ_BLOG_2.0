@@ -3,7 +3,7 @@
  * @param params - The parameters to pass to the function.
  * @returns an object with a statusCode, body, and headers.
  */
-const NetlifyGraph = require('./netlifyGraph');
+const NetlifyGraph = require('./netlifyGraph/netlifyGraph');
 
 exports.handler = async (event) => {
     // By default, all API calls use no authentication
