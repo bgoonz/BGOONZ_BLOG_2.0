@@ -3,8 +3,8 @@ title: Bash Commands That Save Me Time and Frustration
 weight: 0
 excerpt: Bash Commands That Save Me Time and Frustration
 seo:
-    title: ''
-    description: ''
+    title: 'Bash Commands That Save Me Time and Frustration'
+    description: 'Bash Commands That Save Me Time and Frustration'
     robots: []
     extra: []
 template: docs
