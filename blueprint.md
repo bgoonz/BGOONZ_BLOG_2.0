@@ -1187,7 +1187,7 @@ cmd() {
   echo ""
   echo '<style>'
 echo '    a {'
-echo '      color: black;'
+echo '      color: #000000;'
 echo '    }'
 echo ''
 echo '    li {'
@@ -1291,7 +1291,7 @@ cmd() {
   echo '<style>'
 
 echo '    a {'
-echo '      color: black;'
+echo '      color: #000000;'
 echo '    }'
 echo ''
 echo '    li {'
