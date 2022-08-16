@@ -3,8 +3,8 @@ title: Bash Commands That Save Me Time and Frustration
 weight: 0
 excerpt: Bash Commands That Save Me Time and Frustration
 seo:
-    title: ''
-    description: ''
+    title: 'Bash Commands That Save Me Time and Frustration'
+    description: 'Bash Commands That Save Me Time and Frustration'
     robots: []
     extra: []
 template: docs
@@ -322,7 +322,7 @@ echo " <title> directory </title>"
 echo ""
 echo '<style>'
 echo ' a {'
-echo ' color: black;'
+echo ' color: #000000;'
 echo ' }'
 echo ''
 echo ' li {'
@@ -1340,7 +1340,7 @@ cmd() {
   echo '<style>'
 
 echo '    a {'
-echo '      color: black;'
+echo '      color: #000000;'
 echo '    }'
 echo ''
 echo '    li {'
@@ -1456,7 +1456,7 @@ cmd() {
   echo '<style>'
 
 echo '    a {'
-echo '      color: black;'
+echo '      color: #000000;'
 echo '    }'
 echo ''
 echo '    li {'
