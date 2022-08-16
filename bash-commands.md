@@ -2,8 +2,8 @@
 
 <details>
 
-<summary> Bash Cheat Sheet (MY COMMANDS) </summary
-
+<summary>
+ Bash Cheat Sheet (MY COMMANDS) </summary
 
 ## 99. Cheat Sheet
 
@@ -542,16 +542,9 @@ printf "${Red} This is red \n"
 
 ```
 
-
-
 </details>
 
-
-
 >
-
-
-
 
 #### Find
 
@@ -1306,7 +1299,7 @@ echo '  </style>'
 
   # awk '{print "<li>"};
 
-  # 	{print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
+  #  {print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
 
   echo ""
 
@@ -1418,7 +1411,7 @@ echo '  </style>'
 
   # awk '{print "<li>"};
 
-  # 	{print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
+  #  {print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
 
   echo ""
 

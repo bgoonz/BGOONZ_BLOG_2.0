@@ -209,10 +209,12 @@ template: docs
 ```
 <pre>
 ```js
+//
 
 ```
 
 ```js
+//
 const path = require('path');
 const yaml = require('js-yaml');
 const fse = require('fs-extra');
@@ -343,5 +345,6 @@ function convertDataFilesToJSON(dataFiles, dataDirPath, reporter) {
 ```
 
 ```js
+//
 </pre>
 ```

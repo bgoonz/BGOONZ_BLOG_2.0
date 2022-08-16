@@ -1,6 +1,6 @@
 id: Html
 title: HTML
-description: " [Web browsers](https://en.m.wikipedia.org/wiki/Web_browser) receive HTML documents from a [web
-  server](https://en.m.wikipedia.org/wiki/Web_server) or from local
-  storage and [render](https://en.m.wikipedia.org/wiki/Browser_engine) the documents into multimedia web pages. HTML describes the structure
-  of a [web page](https://en.m.wikipedia.org/wiki/Web_page) [semantically](https://en.m.wikipedia.org/wiki/Semantic_Web) and originally included cues for the appearance of the document."
+description: The HyperText Markup Language or HTML is the standard markup
+    language for documents designed to be displayed in a web browser. It can be
+    assisted by technologies such as Cascading Style Sheets (CSS) and scripting
+    languages such as JavaScript.

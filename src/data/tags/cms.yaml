@@ -1,46 +1,25 @@
 id: CMS
-title: Content Managment System
-description: "
+title: Content Management System
+description: >-
+  <!--StartFragment-->
 
 
-
-  A content management system, often abbreviated as **CMS**, is software that helps users create, manage, and modify content on a website without the need for specialized technical knowledge.
-
-
-  In simpler language, a content management system is a tool that helps you build a website without needing to write all the code from scratch (or even know how to code at all).
+  # Content management system
 
 
-  Instead of building your own system for creating web pages, storing images, and other functions, the content management system handles all that basic infrastructure stuff for you so that you can focus on more forward-facing parts of your website.
+  From Wikipedia, the free encyclopedia
 
 
-  Beyond websites, you can also find content management systems for other functions – like document management.
+  [Jump to navigation](https://en.wikipedia.org/wiki/Content_management_system#mw-head)[Jump to search](https://en.wikipedia.org/wiki/Content_management_system#searchInput)
 
 
-  * [How Does a Content Management System Work?](https://kinsta.com/knowledgebase/content-management-system/#how-cms-works)
-
-  * [What Are Examples of Popular Content Management Systems?](https://kinsta.com/knowledgebase/content-management-system/#popular-cms)
-
-  * [What Is the Best CMS Platform?](https://kinsta.com/knowledgebase/content-management-system/#best-cms)
-
-  * [How to Build a Website with a Content Management System](https://kinsta.com/knowledgebase/content-management-system/#build-website-cms)
+  A **content management system** (**CMS**) is [computer software](https://en.wikipedia.org/wiki/Computer_software "Computer software") used to manage the creation and modification of digital content ([content management](https://en.wikipedia.org/wiki/Content_management "Content management")).[\[1]](https://en.wikipedia.org/wiki/Content_management_system#cite_note-MEC-UCS-1)[\[2]](https://en.wikipedia.org/wiki/Content_management_system#cite_note-2)[\[3]](https://en.wikipedia.org/wiki/Content_management_system#cite_note-3) A CMS is typically used for [enterprise content management](https://en.wikipedia.org/wiki/Enterprise_content_management "Enterprise content management") (ECM) and [web content management](https://en.wikipedia.org/wiki/Web_content_management "Web content management") (WCM).
 
 
-##  How Does a Content Management System Work?[](https://kinsta.com/knowledgebase/content-management-system/#how-cms-works)
+  ECM typically supports multiple users in a [collaborative environment](https://en.wikipedia.org/wiki/Collaborative_software "Collaborative software")[\[4]](https://en.wikipedia.org/wiki/Content_management_system#cite_note-4) by integrating [document management](https://en.wikipedia.org/wiki/Document_management_system "Document management system"), [digital asset management](https://en.wikipedia.org/wiki/Digital_asset_management "Digital asset management"), and record retention.[\[5]](https://en.wikipedia.org/wiki/Content_management_system#cite_note-techtarget-5)
 
 
-  To give you an idea of how a content management system works, we’re going to take a whirlwind tour of the WordPress interface ([WordPress](https://kinsta.com/knowledgebase/what-is-wordpress/) is a good example of a content management system).
+  Alternatively, WCM is the collaborative authoring for websites and may include text and embed graphics, photos, video, audio, maps, and program code that display content and interact with the user.[\[6]](https://en.wikipedia.org/wiki/Content_management_system#cite_note-6)[\[7]](https://en.wikipedia.org/wiki/Content_management_system#cite_note-7) ECM typically includes a WCM function. CMS is a web template to create your own website.
 
 
-  Let’s start with creating a piece of content. **Without** a content management system, you’d need to write a static [HTML file and upload it to your server](https://kinsta.com/knowledgebase/how-to-upload-html-file-to-wordpress/) (*sounds complicated, right?*).
-
-
-  **With** a content management system like WordPress, you can just write your content in an interface that looks a good bit like Microsoft Word:
-
-
-  ![WordPress editor](https://kinsta.com/wp-content/uploads/2018/03/what-is-a-content-management-system-1.png)
-
-
-  How you create content with the WordPress content management system
-
-
-
+  <!--EndFragment-->
