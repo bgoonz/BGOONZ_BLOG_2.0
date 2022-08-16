@@ -14,7 +14,7 @@ exports.onRenderBody = function ({ setHeadComponents, setPostBodyComponents }) {
     setPostBodyComponents([
         <React.Fragment>
             <script src={withPrefix('js/algolia.js')} />
-            <script src={withPrefix('js/analytics.js')} />
+            <script src={withPrefix('js/google-analytics.js')} />
             <script src={withPrefix('js/blm.js')} />
             <script src={withPrefix('js/goog-search.js')} />
             <script src={withPrefix('js/main.js')} />

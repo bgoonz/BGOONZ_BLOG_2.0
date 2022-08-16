@@ -15,8 +15,16 @@ template: docs
 # My Repos:
 
 
+
 <details>
-<summary><span style="align-self: center; margin: auto; font-family: papyrus; font-size: 2em;"> ===➤(_CLICK TO SEE MORE_)➤</span></summary>
+
+
+<summary>
+<span style="align-self: center; margin: auto; font-family: papyrus; font-size: 2em;"> ===➤(_CLICK TO SEE MORE_)➤</span>
+
+</summary>
+
+
 
 | [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=bgoonz&repo=a-whole-bunch-o-gatsby-templates)](https://github.com/bgoonz/a-whole-bunch-o-gatsby-templates) | [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=bgoonz&repo=Comments)](https://github.com/bgoonz/Comments)                                                                                       | [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=bgoonz&repo=EXPRESS-NOTES)](https://github.com/bgoonz/EXPRESS-NOTES)                                                          | [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=bgoonz&repo=INTERVIEW-PREP-COMPLETE)](https://github.com/bgoonz/INTERVIEW-PREP-COMPLETE)                       |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
