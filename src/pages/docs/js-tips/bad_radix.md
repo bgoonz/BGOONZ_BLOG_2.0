@@ -4,7 +4,7 @@ weight: 0
 excerpt:
 seo:
     title: 'RangeError radix must be an integer'
-    description: 'The JavaScript exception'
+    description: ''
     robots: []
     extra: []
     type: stackbit_page_meta

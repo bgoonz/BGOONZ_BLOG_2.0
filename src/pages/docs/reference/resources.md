@@ -16,20 +16,12 @@ template: docs
 
 
 
-
 <details>
-
   
-  
-<summary>
-
+  <summary>
     JS RESOURCES
     
-  
-
-</summary>
-
-
+  </summary>
   
   
 - [Worth Reading](#worth-reading)
