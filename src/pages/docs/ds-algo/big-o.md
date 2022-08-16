@@ -1399,9 +1399,17 @@ console.log(fibTab(50)); //12586269025 |
 
 [view raw](https://gist.github.com/bgoonz/af844eda5a20b0fdc0b813304401602b/raw/a5bd8a34d26c2b6cff9232c7f6218463122ff7ef/algo-time-complexity-by-example.js)[algo-time-complexity-by-example.js ](https://gist.github.com/bgoonz/af844eda5a20b0fdc0b813304401602b#file-algo-time-complexity-by-example-js)hosted with ❤ by [GitHub](https://github.com/)
 
+
 <details>
 
-<summary> Big O Examples In JavaScript  </summary>
+
+
+<summary>
+ Big O Examples In JavaScript  
+
+</summary>
+
+
 
 ```js
 //

@@ -7,7 +7,7 @@ import Icon from './Icon';
 
 export default class ActionLink extends React.Component {
     render() {
-        const action = _.get(this.props, 'action', null);
+        let action = _.get(this.props, 'action', null);
         return (
             <Link to={withPrefix(_.get(action, 'url', null))}
               {...(_.get(action, 'new_window', null) ? ({target: '_blank'}) : null)}
