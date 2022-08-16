@@ -11,10 +11,11 @@ seo:
 template: docs
 ---
 
+
 <details>
 
 <summary>  Update </summary>
-
+ 
 
 
 - [Home](https://bgoonz-blog.netlify.app/)

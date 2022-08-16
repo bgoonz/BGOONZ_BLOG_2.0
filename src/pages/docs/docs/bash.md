@@ -715,9 +715,9 @@ find . -name "* *" -type d | rename 's/ /_/g'
 find . -name "* *" -type f | rename 's/ /_/g'
 ```
 
-```bash
+````console
 
-```bash
+```console
 find $dir -type f | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
 
 find $dir -type d | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
@@ -744,7 +744,7 @@ fs.writeFile('output.md', cat, err => {
   if (err) throw err;
 });
 
-```
+````
 
 ---
 

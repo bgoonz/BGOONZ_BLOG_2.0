@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 ## Comprehensive Python Guide
 
 -   [Comprehensive Python Guide](#comprehensive-python-guide)
