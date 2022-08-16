@@ -38,6 +38,10 @@ image: images/js-questions-n-answers.png
 
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 
 
 
@@ -56,7 +60,12 @@ c ole.log(myGenObj.next().value);
 - 3: SyntaxError
 - 4: TypeError
 
+<<<<<<< HEAD
 <details><summary>Answer</summary>
+=======
+<details>
+<summary>Answer</summary>
+>>>>>>> master
 
 <p>
 
@@ -80,6 +89,10 @@ Generators are not constructible type. But if you still proceed to do, there wil
 
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 
 
 
@@ -100,7 +113,12 @@ c ole.log(myGenObj.next());
 - 3: { value: 1, done: false }, { value: 2, done: true }, { value: 3, done: true }
 - 4: { value: 1, done: false }, { value: 2, done: false }, { value: 3, done: true }
 
+<<<<<<< HEAD
 <details><summary>Answer</summary>
+=======
+<details>
+<summary>Answer</summary>
+>>>>>>> master
 
 <p>
 
@@ -119,6 +137,10 @@ A return statement in a generator function will make the generator finish. If a 
 
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 
 const myGenerator = (function* () {
     yield 1;
@@ -138,7 +160,12 @@ for (const value of myGenerator) {
 - 3: 1 and 1
 - 4: 1
 
+<<<<<<< HEAD
 <details><summary>Answer</summary>
+=======
+<details>
+<summary>Answer</summary>
+>>>>>>> master
 
 <p>
 
@@ -157,6 +184,10 @@ The generator should not be re-used once the iterator is closed. i.e, Upon exiti
 
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 
 const num = 0o38;
 c ole.log(num);
@@ -166,7 +197,12 @@ c ole.log(num);
 - 1: SyntaxError
 - 2: 38
 
+<<<<<<< HEAD
 <details><summary>Answer</summary>
+=======
+<details>
+<summary>Answer</summary>
+>>>>>>> master
 
 <p>
 
@@ -185,6 +221,10 @@ If you use an invalid number(outside of 0-7 range) in the octal literal, JavaScr
 
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 
 const squareObj = new Square(10);
 console.log(squareObj.area);
@@ -203,7 +243,12 @@ class Square {
 - 1: 100
 - 2: ReferenceError
 
+<<<<<<< HEAD
 <details><summary>Answer</summary>
+=======
+<details>
+<summary>Answer</summary>
+>>>>>>> master
 
 <p>
 
@@ -228,6 +273,10 @@ Unlike function declarations, class declarations are not hoisted. i.e, First You
 
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 
 
 
@@ -251,7 +300,12 @@ c ole.log(run());
 - 3: SyntaxError
 - 4: Window, Window
 
+<<<<<<< HEAD
 <details><summary>Answer</summary>
+=======
+<details>
+<summary>Answer</summary>
+>>>>>>> master
 
 <p>
 
@@ -270,6 +324,10 @@ When a regular or prototype method is called without a value for **this**, the m
 
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 
 class Vehicle {
     constructor(name) {
@@ -295,7 +353,12 @@ c ole.log(car.start());
 - 3: BMW car started, BMW vehicle started
 - 4: BMW car started, BMW car started
 
+<<<<<<< HEAD
 <details><summary>Answer</summary>
+=======
+<details>
+<summary>Answer</summary>
+>>>>>>> master
 
 <p>
 
@@ -314,6 +377,10 @@ The super keyword is used to call methods of a superclass. Unlike other language
 
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 
 const USER = { age: 30 };
 USER.age = 25;
@@ -326,7 +393,12 @@ c ole.log(USER.age);
 - 3: Uncaught TypeError
 - 4: SyntaxError
 
+<<<<<<< HEAD
 <details><summary>Answer</summary>
+=======
+<details>
+<summary>Answer</summary>
+>>>>>>> master
 
 <p>
 
@@ -345,6 +417,10 @@ Even though we used constant variables, the content of it is an object and the o
 
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 
 c ole.log('🙂' === '🙂');
 
@@ -353,7 +429,12 @@ c ole.log('🙂' === '🙂');
 - 1: false
 - 2: true
 
+<<<<<<< HEAD
 <details><summary>Answer</summary>
+=======
+<details>
+<summary>Answer</summary>
+>>>>>>> master
 
 <p>
 
@@ -372,6 +453,10 @@ Emojis are unicodes and the unicode for smile symbol is "U+1F642". The unicode c
 
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 
 c ole.log(typeof typeof typeof true);
 
@@ -382,7 +467,12 @@ c ole.log(typeof typeof typeof true);
 - 3: NaN
 - 4: number
 
+<<<<<<< HEAD
 <details><summary>Answer</summary>
+=======
+<details>
+<summary>Answer</summary>
+>>>>>>> master
 
 <p>
 
@@ -401,6 +491,10 @@ The typeof operator on any primitive returns a string value. So even if you appl
 
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 
 let zero = new Number(0);
 if (zero) {
@@ -417,7 +511,12 @@ if (zero) {
 - 3: NaN
 - 4: SyntaxError
 
+<<<<<<< HEAD
 <details><summary>Answer</summary>
+=======
+<details>
+<summary>Answer</summary>
+>>>>>>> master
 
 <p>
 
@@ -438,6 +537,10 @@ Hence the above code block always goes to if section.
 
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 
 let msg = 'Good morning!!';
 msg.name = 'John';
@@ -450,7 +553,12 @@ c ole.log(msg.name);
 - 3: John
 - 4: Undefined
 
+<<<<<<< HEAD
 <details><summary>Answer</summary>
+=======
+<details>
+<summary>Answer</summary>
+>>>>>>> master
 
 <p>
 
@@ -469,6 +577,10 @@ It returns undefined for non-strict mode and returns Error for strict mode. In n
 
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 
 let count = 10;
 (function innerFunc() {
@@ -486,7 +598,12 @@ let count = 10;
 - 3: 10, 11
 - 4: 10, 10
 
+<<<<<<< HEAD
 <details><summary>Answer</summary>
+=======
+<details>
+<summary>Answer</summary>
+>>>>>>> master
 
 <p>
 

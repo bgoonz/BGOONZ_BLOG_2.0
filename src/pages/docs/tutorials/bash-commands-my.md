@@ -3,11 +3,11 @@ title: Bash Commands Tutorial
 weight: 0
 excerpt: Here's a list of bash commands that stand between me and insanity.
 seo:
-    title: 'Bash Commands Tutorial'
-    description: 'Bash Commands That Save Me Time and Frustration'
-    robots: []
-    extra: []
-    type: stackbit_page_meta
+  title: "Bash Commands Tutorial"
+  description: "Bash Commands That Save Me Time and Frustration"
+  robots: []
+  extra: []
+  type: stackbit_page_meta
 template: docs
 ---
 
@@ -26,7 +26,7 @@ Here's a list of bash commands that stand between me and insanity.
 **This article will be accompanied by the following** [**github repository**](https://github.com/bgoonz/bash-commands-walkthrough) **which will contain all the commands listed as well as folders that demonstrate before and after usage!**
 
 [**bgoonz/bash-commands-walkthrough**\
-*to accompany the medium article I am writing. Contribute to bgoonz/bash-commands-walkthrough development by creating an...*github.com](https://github.com/bgoonz/bash-commands-walkthrough 'https://github.com/bgoonz/bash-commands-walkthrough')[](https://github.com/bgoonz/bash-commands-walkthrough)
+*to accompany the medium article I am writing. Contribute to bgoonz/bash-commands-walkthrough development by creating an...*github.com](https://github.com/bgoonz/bash-commands-walkthrough "https://github.com/bgoonz/bash-commands-walkthrough")[](https://github.com/bgoonz/bash-commands-walkthrough)
 
 > The [readme](https://github.com/bgoonz/bash-commands-walkthrough#readme) for this git repo will provide a much more condensed list... whereas this article will break up the commands with explanations... images & links!
 
@@ -56,8 +56,8 @@ To see the list of files and directories in the current directory use `ls` comma
 
 Shows all of my files and directories of my Desktop directory.
 
--   To show the contents of a directory pass the directory name to the `ls` command i.e. `ls directory_name`.
--   Some useful `ls` command options:-
+- To show the contents of a directory pass the directory name to the `ls` command i.e. `ls directory_name`.
+- Some useful `ls` command options:-
 
 OptionDescriptionls -alist all files including hidden file starting with '.'ls -llist with the long formatls -lalist long format including hidden files
 
@@ -137,13 +137,13 @@ Renamed my hello.txt file to the hi.txt file and html directory to the folder di
 
 To do this, we use the `cp` command.
 
--   You can copy a file by entering `cp file_to_copy new_file_name`.
+- You can copy a file by entering `cp file_to_copy new_file_name`.
 
 [![](https://camo.githubusercontent.com/9b67b2ef374ba0f1457b24007824ea5b65ca861a100397322d1a13f30a70818f/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6b434c56744b4e396f4b5062486652462e676966)](https://camo.githubusercontent.com/9b67b2ef374ba0f1457b24007824ea5b65ca861a100397322d1a13f30a70818f/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6b434c56744b4e396f4b5062486652462e676966)
 
 Copied my hi.txt file content into hello.txt file. For confirmation open your hello.txt file in your text editor.
 
--   You can also copy a directory by adding the `-r` option, like `cp -r directory_to_copy new_directory_name`.
+- You can also copy a directory by adding the `-r` option, like `cp -r directory_to_copy new_directory_name`.
 
 _The_ `-r` _option for "recursive" means that it will copy all of the files including the files inside of subfolders._
 
@@ -155,13 +155,13 @@ Here I copied all of the files from the folder to folder-copy.
 
 To do this, we use the `rm` command.
 
--   To remove a file, you can use the command like `rm file_to_remove`.
+- To remove a file, you can use the command like `rm file_to_remove`.
 
 [![](https://camo.githubusercontent.com/e35ef5a179966ed8271639d381b997455862bb77794f0b8c219f7ffada7168da/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6f68436d6474686439325f4841365a652e676966)](https://camo.githubusercontent.com/e35ef5a179966ed8271639d381b997455862bb77794f0b8c219f7ffada7168da/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6f68436d6474686439325f4841365a652e676966)
 
 Here I removed my hi.txt file.
 
--   To remove a directory, use the command like `rm -r directory_to_remove`.
+- To remove a directory, use the command like `rm -r directory_to_remove`.
 
 [![](https://camo.githubusercontent.com/5622af09767bfd626db8e52f5e040afeaf16be692b75a3069f7b01d74c1c4ee6/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a766f44627a7753707732344132526a512e676966)](https://camo.githubusercontent.com/5622af09767bfd626db8e52f5e040afeaf16be692b75a3069f7b01d74c1c4ee6/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a766f44627a7753707732344132526a512e676966)
 
@@ -230,12 +230,12 @@ find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o -name "*CHANGELOG.txt
 The following output from my bash shell corresponds to the directory:
 
 [**bgoonz/bash-commands-walkthrough**\
-*Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes...*github.com](https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master 'https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master')[](https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master)
+*Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes...*github.com](https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master "https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master")[](https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master)
 
 #### which was created by running the aforementioned commands in in a perfect copy of this directory
 
 [**bgoonz/DS-ALGO-OFFICIAL**\
-*Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes...*github.com](https://github.com/bgoonz/DS-ALGO-OFFICIAL 'https://github.com/bgoonz/DS-ALGO-OFFICIAL')[](https://github.com/bgoonz/DS-ALGO-OFFICIAL)
+*Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes...*github.com](https://github.com/bgoonz/DS-ALGO-OFFICIAL "https://github.com/bgoonz/DS-ALGO-OFFICIAL")[](https://github.com/bgoonz/DS-ALGO-OFFICIAL)
 
 > **.....below is the terminal output for the following commands:**
 
@@ -383,7 +383,7 @@ cmd $listing --sort=extension >>$html
 **I will use this copy of my Data Structures Practice Site to demonstrate the result:**
 
 [**side-projects-42/DS-Bash-Examples-Deploy**\
-*Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes...*github.com](https://github.com/side-projects-42/DS-Bash-Examples-Deploy 'https://github.com/side-projects-42/DS-Bash-Examples-Deploy')[](https://github.com/side-projects-42/DS-Bash-Examples-Deploy)
+*Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes...*github.com](https://github.com/side-projects-42/DS-Bash-Examples-Deploy "https://github.com/side-projects-42/DS-Bash-Examples-Deploy")[](https://github.com/side-projects-42/DS-Bash-Examples-Deploy)
 
 [![](https://camo.githubusercontent.com/0f97bdb9d1167b14f340044bcdca3eb0472acc4c80dcc9c1db4f13ad6900bf20/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a5075754454557669583547366d6a612d35654b5549772e706e67)](https://camo.githubusercontent.com/0f97bdb9d1167b14f340044bcdca3eb0472acc4c80dcc9c1db4f13ad6900bf20/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a5075754454557669583547366d6a612d35654b5549772e706e67)
 
@@ -392,7 +392,7 @@ cmd $listing --sort=extension >>$html
 > here is a link to and photo of the resulting html file:
 
 [**index.html**\
-*CONTENT/DS-n-Algos/*quirky-meninsky-4181b5.netlify.app](https://quirky-meninsky-4181b5.netlify.app/ 'https://quirky-meninsky-4181b5.netlify.app/')[](https://quirky-meninsky-4181b5.netlify.app/)
+*CONTENT/DS-n-Algos/*quirky-meninsky-4181b5.netlify.app](https://quirky-meninsky-4181b5.netlify.app/ "https://quirky-meninsky-4181b5.netlify.app/")[](https://quirky-meninsky-4181b5.netlify.app/)
 
 [![](https://camo.githubusercontent.com/ce04a06e4fc2c23c62fd6a9dbea96125b5920b8c53a1c62434325989768cd1a7/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a414f5962577655474e39794a3463654e7a41474773772e706e67)](https://camo.githubusercontent.com/ce04a06e4fc2c23c62fd6a9dbea96125b5920b8c53a1c62434325989768cd1a7/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a414f5962577655474e39794a3463654e7a41474773772e706e67)
 
@@ -505,7 +505,7 @@ Posted Thursday, April 22, 2021 by Teon Brooks
 **the test.txt and result.md files can be found here:**
 
 [**bgoonz/bash-commands-walkthrough**\
-*to accompany the medium article I am writing. Contribute to bgoonz/bash-commands-walkthrough development by creating an...*github.com](https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text 'https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text')[](https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text)
+*to accompany the medium article I am writing. Contribute to bgoonz/bash-commands-walkthrough development by creating an...*github.com](https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text "https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text")[](https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text)
 
 ---
 
@@ -694,12 +694,12 @@ find . -name '*.md' | cpio -pdm './../outputFolder'
 ### Discover More
 
 [**Web-Dev-Hub**\
-*Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of...*bgoonz-blog.netlify.app](https://bgoonz-blog.netlify.app/ 'https://bgoonz-blog.netlify.app/')[](https://bgoonz-blog.netlify.app/)
+*Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of...*bgoonz-blog.netlify.app](https://bgoonz-blog.netlify.app/ "https://bgoonz-blog.netlify.app/")[](https://bgoonz-blog.netlify.app/)
 
 ### Part 2 of this series
 
 [**Medium**\
-_Continued!!!medium.com_](https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682 'https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682')[](https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682)
+_Continued!!!medium.com_](https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682 "https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682")[](https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682)
 
 ---
 

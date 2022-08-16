@@ -664,7 +664,15 @@ There should no be knex code in the endpoints themselves.
 
 ![](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5ecaf43d-ee27-4da1-aa3c-aa1d9d96cc40/Untitled.png)
 
+<<<<<<< HEAD
 ## **Overview**
+=======
+### Part    4
+
+![](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5ecaf43d-ee27-4da1-aa3c-aa1d9d96cc40/Untitled.png)
+
+#### **Overview**
+>>>>>>> master
 
 Normalization is the process of designing or refactoring database tables for maximum consistency and minimum redundancy.
 

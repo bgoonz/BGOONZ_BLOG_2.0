@@ -621,8 +621,13 @@ In contrast, this function is impure because it changes its own input:
 
 ---
 
+<<<<<<< HEAD
 
 ```js
+=======
+````js
+//
+>>>>>>> master
 
 
 function withdraw(account, amount) {
@@ -658,7 +663,7 @@ function tick() {
 
 setInterval(tick, 1000);
 
-```
+````
 
 **[Try it on CodePen](https://codepen.io/gaearon/pen/gwoJZk?editors=0010)**
 

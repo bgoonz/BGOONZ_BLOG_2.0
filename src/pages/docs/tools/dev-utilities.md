@@ -73,6 +73,7 @@ template: docs
 <iframe height="1000px" width="1200px" scrolling="yes" src="https://ternary42.netlify.app/"     loading="lazy"  allowfullscreen="true"></iframe>
 
 <br>
+<<<<<<< HEAD
 <hr>
 <br>
 <br>
@@ -82,3 +83,10 @@ template: docs
   Dashed Border Generator</a> by Bryan C Guner (<a href="https://codepen.io/bgoonz">@bgoonz</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
+=======
+
+<br>
+<br>
+<br>
+<br>
+>>>>>>> master

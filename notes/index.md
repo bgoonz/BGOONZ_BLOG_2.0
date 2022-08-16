@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: Web Dev Hub Home
 sections:
@@ -320,3 +321,5 @@ seo:
       relativeUrl: true
 template: advanced
 ---
+=======
+>>>>>>> master

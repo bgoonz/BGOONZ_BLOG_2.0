@@ -14,10 +14,17 @@ template: docs
 
 ## Term: '404'
 
+<<<<<<< HEAD
 - Glossary
 - HTTP Errors
 - Infrastructure
 - Navigation
+=======
+-   Glossary
+-   HTTP Errors
+-   Infrastructure
+-   Navigation
+>>>>>>> master
 
 ---
 
@@ -25,19 +32,33 @@ template: docs
 
 #### See also
 
+<<<<<<< HEAD
 - [list of HTTP response codes](/en-US/docs/Web/HTTP/Status)
 - [advice for beginners on avoiding 404 errors](/en-US/docs/Learn/Common_questions/Checking_that_your_web_site_is_working_properly)
+=======
+-   [list of HTTP response codes](/en-US/docs/Web/HTTP/Status)
+-   [advice for beginners on avoiding 404 errors](/en-US/docs/Learn/Common_questions/Checking_that_your_web_site_is_working_properly)
+>>>>>>> master
 
 ---
 
 ## Term: '502'
 
+<<<<<<< HEAD
 - '502'
 - Bad Gateway
 - Glossary
 - HTTP Errors
 - Infrastructure
 - Navigation
+=======
+-   '502'
+-   Bad Gateway
+-   Glossary
+-   HTTP Errors
+-   Infrastructure
+-   Navigation
+>>>>>>> master
 
 ---
 
@@ -49,17 +70,29 @@ Normally the upstream server is not down (i.e. furnishes no response to the gate
 
 #### See also
 
+<<<<<<< HEAD
 - [list of HTTP response codes](/en-US/docs/Web/HTTP/Status)
+=======
+-   [list of HTTP response codes](/en-US/docs/Web/HTTP/Status)
+>>>>>>> master
 
 ---
 
 ## Term: Abstraction
 
+<<<<<<< HEAD
 - Abstraction
 - Coding
 - CodingScripting
 - Glossary
 - Programming Language
+=======
+-   Abstraction
+-   Coding
+-   CodingScripting
+-   Glossary
+-   Programming Language
+>>>>>>> master
 
 ---
 
@@ -67,14 +100,25 @@ Normally the upstream server is not down (i.e. furnishes no response to the gate
 
 ## Advantages of Data Abstraction
 
+<<<<<<< HEAD
 - Helps the user to avoid writing low level code.
 - Avoids code duplication and increases reusability.
 - Can change internal implementation of class independently without affecting the user.
 - Helps to increase security of an application or program as only important details are provided to the user.
+=======
+-   Helps the user to avoid writing low level code.
+-   Avoids code duplication and increases reusability.
+-   Can change internal implementation of class independently without affecting the user.
+-   Helps to increase security of an application or program as only important details are provided to the user.
+>>>>>>> master
 
 ## Example
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 class ImplementAbstraction {
     // method to set values of internal members
     set(x, y) {
@@ -97,15 +141,25 @@ obj.display();
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Abstraction (computer science)", "Abstraction"_) on Wikipedia
+=======
+-   _interwiki("wikipedia", "Abstraction (computer science)", "Abstraction"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: accent
 
+<<<<<<< HEAD
 - Glossary
 - Input
 - accent
+=======
+-   Glossary
+-   Input
+-   accent
+>>>>>>> master
 
 ---
 
@@ -123,11 +177,19 @@ You can set the color of the accent for a given element by setting the element's
 
 ## Term: Accessibility tree
 
+<<<<<<< HEAD
 - AOM
 - Accessibility
 - DOM
 - Glossary
 - Reference
+=======
+-   AOM
+-   Accessibility
+-   DOM
+-   Glossary
+-   Reference
+>>>>>>> master
 
 ---
 
@@ -137,6 +199,7 @@ Browsers convert markup into an internal representation called the _[DOM tree](/
 
 There are four things in an accessibility tree object:
 
+<<<<<<< HEAD
 - **name**
 - - : How can we refer to this thing? For instance, a link with the text "Read more" will have "Read more" as its name (find more on how names are computed in the [Accessible Name and Description Com
 - **description**
@@ -145,6 +208,16 @@ There are four things in an accessibility tree object:
     - : What kind of thing is it? For example, is it a button, a nav bar, or a list of items?
 - **state**
     - : Does it have a state? Examples include checked or unchecked for checkboxes, and collapsed or expanded for the [`<summary>`](/en-US/docs/Web/HTML/Element/summary) element.
+=======
+-   **name**
+-   -   : How can we refer to this thing? For instance, a link with the text "Read more" will have "Read more" as its name (find more on how names are computed in the [Accessible Name and Description Com
+-   **description**
+-   -   : How do we describe this thing, if we want to provide more description beyond the name? The description of a table could explain what kind of information the table contains.
+-   **role**
+    -   : What kind of thing is it? For example, is it a button, a nav bar, or a list of items?
+-   **state**
+    -   : Does it have a state? Examples include checked or unchecked for checkboxes, and collapsed or expanded for the [`<summary>`](/en-US/docs/Web/HTML/Element/summary) element.
+>>>>>>> master
 
 Additionally, the accessibility tree often contains information on what can be done with an element: a link can be _followed_, a text input can be _typed into_, etc.
 
@@ -152,17 +225,29 @@ While still in draft form within the Web Incubator Community Group, the **[Acces
 
 #### See also
 
+<<<<<<< HEAD
 - [Glossary](/en-US/docs/Glossary)
 
     - _Glossary("Accessibility"_)
     - _Glossary("ARIA"_)
+=======
+-   [Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("Accessibility"_)
+    -   _Glossary("ARIA"_)
+>>>>>>> master
 
 ---
 
 ## Term: Accessibility
 
+<<<<<<< HEAD
 - Accessibility
 - Glossary
+=======
+-   Accessibility
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -170,6 +255,7 @@ While still in draft form within the Web Incubator Community Group, the **[Acces
 
 #### See also
 
+<<<<<<< HEAD
 - [Accessibility resources at MDN](/en-US/docs/Web/Accessibility)
 - _Interwiki("wikipedia", "Web accessibility"_) on Wikipedia
 - [Learn accessibility on MDN](/en-US/docs/Learn/Accessibility)
@@ -177,6 +263,15 @@ While still in draft form within the Web Incubator Community Group, the **[Acces
 - [The ARIA documentation on MDN](/en-US/docs/Web/Accessibility/ARIA)
 - [The Web Accessibility Initiative homepage](https://www.w3.org/WAI/)
 - [The WAI-ARIA recommendation](https://www.w3.org/TR/wai-aria/)
+=======
+-   [Accessibility resources at MDN](/en-US/docs/Web/Accessibility)
+-   _Interwiki("wikipedia", "Web accessibility"_) on Wikipedia
+-   [Learn accessibility on MDN](/en-US/docs/Learn/Accessibility)
+-   [Web Accessibility In Mind](https://webaim.org/)
+-   [The ARIA documentation on MDN](/en-US/docs/Web/Accessibility/ARIA)
+-   [The Web Accessibility Initiative homepage](https://www.w3.org/WAI/)
+-   [The WAI-ARIA recommendation](https://www.w3.org/TR/wai-aria/)
+>>>>>>> master
 
 ---
 
@@ -190,17 +285,29 @@ As of 2021, Flash is no longer supported by Adobe or any major web browsers.
 
 #### See also
 
+<<<<<<< HEAD
 - [Adobe Flash end-of-life announcement](https://blog.adobe.com/en/publish/2017/07/25/adobe-flash-update#gs.g8mmgf)
 - [Saying goodbye to Flash in Chrome](https://www.blog.google/products/chrome/saying-goodbye-flash-chrome/)
 - [Firefox Roadmap for Flash End-of-Life](https://blog.mozilla.org/futurereleases/2017/07/25/firefox-roadmap-flash-end-life/)
 - [Microsoft Windows Flash Player removal](https://blogs.windows.com/msedgedev/2020/09/04/update-adobe-flash-end-support/)
+=======
+-   [Adobe Flash end-of-life announcement](https://blog.adobe.com/en/publish/2017/07/25/adobe-flash-update#gs.g8mmgf)
+-   [Saying goodbye to Flash in Chrome](https://www.blog.google/products/chrome/saying-goodbye-flash-chrome/)
+-   [Firefox Roadmap for Flash End-of-Life](https://blog.mozilla.org/futurereleases/2017/07/25/firefox-roadmap-flash-end-life/)
+-   [Microsoft Windows Flash Player removal](https://blogs.windows.com/msedgedev/2020/09/04/update-adobe-flash-end-support/)
+>>>>>>> master
 
 ---
 
 ## Term: Advance measure
 
+<<<<<<< HEAD
 - Accessibility
 - Glossary
+=======
+-   Accessibility
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -212,17 +319,29 @@ For a horizontal inline axis, this will be the width of the character.
 
 #### See also
 
+<<<<<<< HEAD
 - _cssxref("&lt;length&gt;"_)
+=======
+-   _cssxref("&lt;length&gt;"_)
+>>>>>>> master
 
 ---
 
 ## Term: Ajax
 
+<<<<<<< HEAD
 - AJAX
 - CodingScripting
 - Glossary
 - Infrastructure
 - l10n:priority
+=======
+-   AJAX
+-   CodingScripting
+-   Glossary
+-   Infrastructure
+-   l10n:priority
+>>>>>>> master
 
 ---
 
@@ -234,6 +353,7 @@ With interactive websites and modern web standards, Ajax is gradually being repl
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "AJAX"_) on Wikipedia
 - [Ajax](/en-US/docs/Web/Guide/AJAX)
 - [Ajax - Getting started](/en-US/docs/Web/Guide/AJAX/Getting_Started)
@@ -245,13 +365,31 @@ With interactive websites and modern web standards, Ajax is gradually being repl
 - _DOMxRef("Fetch API"_)
 - [Using Fetch API](/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 - [Synchronous vs. Asynchronous Communications](https://peoplesofttutorial.com/difference-between-synchronous-and-asynchronous-messaging/)
+=======
+-   _interwiki("wikipedia", "AJAX"_) on Wikipedia
+-   [Ajax](/en-US/docs/Web/Guide/AJAX)
+-   [Ajax - Getting started](/en-US/docs/Web/Guide/AJAX/Getting_Started)
+-   [Glossary](/en-US/docs/Glossary):
+
+    -   _Glossary("XHR_(XMLHttpRequest)","XMLHttpRequest"\_)
+
+-   _DOMxRef("XMLHttpRequest"_)
+-   _DOMxRef("Fetch API"_)
+-   [Using Fetch API](/en-US/docs/Web/API/Fetch_API/Using_Fetch)
+-   [Synchronous vs. Asynchronous Communications](https://peoplesofttutorial.com/difference-between-synchronous-and-asynchronous-messaging/)
+>>>>>>> master
 
 ---
 
 ## Term: Algorithm
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
+=======
+-   CodingScripting
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -261,8 +399,13 @@ In other words, an algorithm is a means of describing a way to solve a problem s
 
 For example:
 
+<<<<<<< HEAD
 - A cooking recipe is a simple algorithm for humans.
 - A sorting algorithm is often used in computer programming to explain a machine how to sort data.
+=======
+-   A cooking recipe is a simple algorithm for humans.
+-   A sorting algorithm is often used in computer programming to explain a machine how to sort data.
+>>>>>>> master
 
 Common algorithms are Pathfinding algorithms such as the Traveling Salesman Problem, Tree Traversal algorithms and so on.
 
@@ -270,18 +413,31 @@ There are also Machine Learning algorithms such as Linear Regression, Logistic R
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Algorithm", "Algorithm"_) on Wikipedia
 - [Explanations of sorting algorithms](https://www.toptal.com/developers/sorting-algorithms)
 - [Explanations of algorithmic complexity](https://bigocheatsheet.com/)
+=======
+-   _Interwiki("wikipedia", "Algorithm", "Algorithm"_) on Wikipedia
+-   [Explanations of sorting algorithms](https://www.toptal.com/developers/sorting-algorithms)
+-   [Explanations of algorithmic complexity](https://bigocheatsheet.com/)
+>>>>>>> master
 
 ---
 
 ## Term: Alignment container
 
+<<<<<<< HEAD
 - Alignment container
 - CSS
 - Glossary
 - alignment
+=======
+-   Alignment container
+-   CSS
+-   Glossary
+-   alignment
+>>>>>>> master
 
 ---
 
@@ -289,16 +445,27 @@ There are also Machine Learning algorithms such as Linear Regression, Logistic R
 
 #### See also
 
+<<<<<<< HEAD
 - [CSS Box Alignment](/en-US/docs/Web/CSS/CSS_Box_Alignment)
+=======
+-   [CSS Box Alignment](/en-US/docs/Web/CSS/CSS_Box_Alignment)
+>>>>>>> master
 
 ---
 
 ## Term: Alignment subject
 
+<<<<<<< HEAD
 - Alignment subject
 - CSS
 - Glossary
 - alignment
+=======
+-   Alignment subject
+-   CSS
+-   Glossary
+-   alignment
+>>>>>>> master
 
 ---
 
@@ -308,6 +475,7 @@ For _cssxref("justify-self"_) and _cssxref("align-self"_), the alignment subject
 
 For _cssxref("justify-content"_) and _cssxref("align-content"_), the writing mode of the box is also used. The definition of the alignment subject depends on the layout mode being used.
 
+<<<<<<< HEAD
 - Block containers (including table cells)
 - - : The entire content of the block as a single unit.
 - Multicol containers
@@ -321,11 +489,27 @@ For _cssxref("justify-content"_) and _cssxref("align-content"_), the writing mod
 #### See also
 
 - [CSS Box Alignment](/en-US/docs/Web/CSS/CSS_Box_Alignment)
+=======
+-   Block containers (including table cells)
+-   -   : The entire content of the block as a single unit.
+-   Multicol containers
+    -   : The column boxes, with any spacing inserted between column boxes added to the relevant column gaps.
+-   Flex containers
+    -   : For _cssxref("justify-content"_), the flex items in each flex line.
+        For _cssxref("align-content"_), the flex lines. Note, this only has an effect on multi-line flex containers.
+-   Grid containers
+    -   : The grid tracks in the appropriate axis, with any spacing inserted between tracks added to the relevant gutters. Collapsed gutters are treated as a single opportunity for space insertion.
+
+#### See also
+
+-   [CSS Box Alignment](/en-US/docs/Web/CSS/CSS_Box_Alignment)
+>>>>>>> master
 
 ---
 
 ## Term: Alpha (alpha channel)
 
+<<<<<<< HEAD
 - Alpha
 - Alpha Channel
 - Drawing
@@ -340,6 +524,22 @@ For _cssxref("justify-content"_) and _cssxref("align-content"_), the writing mod
 - channel
 - color
 - pixel
+=======
+-   Alpha
+-   Alpha Channel
+-   Drawing
+-   Glossary
+-   Graphics
+-   Translucency
+-   Translucent
+-   Transparency
+-   Transparent
+-   WebGL
+-   WebXR
+-   channel
+-   color
+-   pixel
+>>>>>>> master
 
 ---
 
@@ -353,9 +553,15 @@ As you can see, the color without an alpha channel completely blocks the backgro
 
 ## Term: API
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - Infrastructure
+=======
+-   CodingScripting
+-   Glossary
+-   Infrastructure
+>>>>>>> master
 
 ---
 
@@ -365,6 +571,7 @@ In Web development, an API is generally a set of code features (e.g. _glossary("
 
 For example:
 
+<<<<<<< HEAD
 - The [getUserMedia](/en-US/docs/Web/API/MediaDevices/getUserMedia) API can be used to grab audio and video from a user's webcam, which can then be used in any way the developer likes, for example, recording video and audio, broadcasting it to another user in a conference call, or capturing image stills from the video.
 - The [Geolocation API](/en-US/docs/Web/API/Geolocation) can be used to retrieve location information from whatever service the user has available on their device (e.g. GPS), which can then be used in conjunction with the [Google Maps APIs](https://developers.google.com/maps/) to for example plot the user's location on a custom map and show them what tourist attractions are in their area.
 - The [Twitter APIs](https://dev.twitter.com/overview/api) can be used to retrieve data from a user's twitter accounts, for example, to display their latest tweets on a web page.
@@ -374,14 +581,31 @@ For example:
 
 - _Interwiki("wikipedia", "API", "API"_) on Wikipedia
 - [Web API reference](/en-US/docs/Web/API)
+=======
+-   The [getUserMedia](/en-US/docs/Web/API/MediaDevices/getUserMedia) API can be used to grab audio and video from a user's webcam, which can then be used in any way the developer likes, for example, recording video and audio, broadcasting it to another user in a conference call, or capturing image stills from the video.
+-   The [Geolocation API](/en-US/docs/Web/API/Geolocation) can be used to retrieve location information from whatever service the user has available on their device (e.g. GPS), which can then be used in conjunction with the [Google Maps APIs](https://developers.google.com/maps/) to for example plot the user's location on a custom map and show them what tourist attractions are in their area.
+-   The [Twitter APIs](https://dev.twitter.com/overview/api) can be used to retrieve data from a user's twitter accounts, for example, to display their latest tweets on a web page.
+-   The [Web Animations API](/en-US/docs/Web/API/Web_Animations_API) can be used to animate parts of a web page — for example, to make images move around or rotate.
+
+#### See also
+
+-   _Interwiki("wikipedia", "API", "API"_) on Wikipedia
+-   [Web API reference](/en-US/docs/Web/API)
+>>>>>>> master
 
 ---
 
 ## Term: Apple Safari
 
+<<<<<<< HEAD
 - Glossary
 - Navigation
 - WebMechanics
+=======
+-   Glossary
+-   Navigation
+-   WebMechanics
+>>>>>>> master
 
 ---
 
@@ -389,18 +613,31 @@ For example:
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Safari (web browser)", "Safari"_) on Wikipedia
 - [Safari on apple.com](https://www.apple.com/safari/)
 - [The WebKit project](https://webkit.org/)
 - [WebKit nightly build](https://nightly.webkit.org/)
 - [Reporting a bug for Safari](https://bugs.webkit.org/)
+=======
+-   _Interwiki("wikipedia", "Safari (web browser)", "Safari"_) on Wikipedia
+-   [Safari on apple.com](https://www.apple.com/safari/)
+-   [The WebKit project](https://webkit.org/)
+-   [WebKit nightly build](https://nightly.webkit.org/)
+-   [Reporting a bug for Safari](https://bugs.webkit.org/)
+>>>>>>> master
 
 ---
 
 ## Term: Application Context
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
+=======
+-   CodingScripting
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -414,9 +651,15 @@ Please note that the start URL is not necessarily the value of the start_url mem
 
 ## Term: Argument
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - JavaScript
+=======
+-   CodingScripting
+-   Glossary
+-   JavaScript
+>>>>>>> master
 
 ---
 
@@ -424,15 +667,25 @@ Please note that the start URL is not necessarily the value of the start_url mem
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Parameter_(computer*programming)", "Difference between Parameter and Argument"*) on Wikipedia
 - The _jsxref("Functions/arguments","arguments"_) object in _glossary("JavaScript"_)
+=======
+-   _Interwiki("wikipedia", "Parameter_(computer*programming)", "Difference between Parameter and Argument"*) on Wikipedia
+-   The _jsxref("Functions/arguments","arguments"_) object in _glossary("JavaScript"_)
+>>>>>>> master
 
 ---
 
 ## Term: ARIA
 
+<<<<<<< HEAD
 - Accessibility
 - Glossary
+=======
+-   Accessibility
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -442,14 +695,23 @@ For example, you could add the attribute `role="alert"` to a _HTMLElement("p"_) 
 
 #### See also
 
+<<<<<<< HEAD
 - [ARIA](/en-US/docs/Web/Accessibility/ARIA)
+=======
+-   [ARIA](/en-US/docs/Web/Accessibility/ARIA)
+>>>>>>> master
 
 ---
 
 ## Term: ARPA
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
+=======
+-   Glossary
+-   Infrastructure
+>>>>>>> master
 
 ---
 
@@ -457,15 +719,25 @@ For example, you could add the attribute `role="alert"` to a _HTMLElement("p"_) 
 
 #### See also
 
+<<<<<<< HEAD
 - [Official website](https://www.iana.org/domains/arpa)
 - _Interwiki("wikipedia", ".arpa"_) on Wikipedia
+=======
+-   [Official website](https://www.iana.org/domains/arpa)
+-   _Interwiki("wikipedia", ".arpa"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: ARPANET
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
+=======
+-   Glossary
+-   Infrastructure
+>>>>>>> master
 
 ---
 
@@ -473,17 +745,29 @@ For example, you could add the attribute `role="alert"` to a _HTMLElement("p"_) 
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "ARPANET"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "ARPANET"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Array
 
+<<<<<<< HEAD
 - Array
 - CodingScripting
 - Glossary
 - JavaScript
 - programming
+=======
+-   Array
+-   CodingScripting
+-   Glossary
+-   JavaScript
+-   programming
+>>>>>>> master
 
 ---
 
@@ -494,6 +778,10 @@ Each item in an array has a number attached to it, called a numeric index, that 
 What an array in JavaScript looks like:
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 let myArray = [1, 2, 3, 4];
 let catNamesArray = ['Jacqueline', 'Sophia', 'Autumn'];
 //Arrays in JavaScript can hold different types of data, as shown above.
@@ -501,15 +789,25 @@ let catNamesArray = ['Jacqueline', 'Sophia', 'Autumn'];
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Array data structure", "Array"_) on Wikipedia
 - JavaScript _jsxref("Array"_) on MDN
+=======
+-   _Interwiki("wikipedia", "Array data structure", "Array"_) on Wikipedia
+-   JavaScript _jsxref("Array"_) on MDN
+>>>>>>> master
 
 ---
 
 ## Term: ASCII
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
+=======
+-   Glossary
+-   Infrastructure
+>>>>>>> master
 
 ---
 
@@ -523,42 +821,73 @@ _Interwiki("wikipedia", "ASCII"_) on Wikipedia
 
 ## Term: Asynchronous
 
+<<<<<<< HEAD
 - Glossary
 - Web
 - WebMechanics
 - asynchronous
+=======
+-   Glossary
+-   Web
+-   WebMechanics
+-   asynchronous
+>>>>>>> master
 
 ---
 
 > The term **asynchronous** refers to two or more objects or events **not** existing or happening at the same time (or multiple related things happening without waiting for the previous one to complete). In computing, the word "asynchronous" is used in two major contexts.
 
+<<<<<<< HEAD
 - Networking and communications
 
     - : Asynchronous communication is a method of exchanging messages between two or more parties in which each party receives and processes messages whenever it's convenient or possible to do so, rather than doing so immediately upon receipt. Additionally, messages may be sent without waiting for acknowledgement, with the understanding that if a problem occurs, the recipient will request corrections or otherwise handle the situation.
+=======
+-   Networking and communications
+
+    -   : Asynchronous communication is a method of exchanging messages between two or more parties in which each party receives and processes messages whenever it's convenient or possible to do so, rather than doing so immediately upon receipt. Additionally, messages may be sent without waiting for acknowledgement, with the understanding that if a problem occurs, the recipient will request corrections or otherwise handle the situation.
+>>>>>>> master
 
         For humans, e-mail is an asynchronous communication method; the sender sends an email and the recipient will read and reply to the message when it's convenient to do so, rather than doing so at once. And both sides can continue to send and receive messages whenever they wish, instead of having to schedule them around each other.
 
         When software communicates asynchronously, a program may make a request for information from another piece of software (such as a server), and continue to do other things while waiting for a reply. For example, the [AJAX](/en-US/docs/Web/Guide/AJAX) (Asynchronous JavaScript and _Glossary("XML"_)) programming technique—now usually "Ajax", even though _Glossary("JSON"_) is usually used rather than XML in modern applications—is a mechanism that requests relatively small amounts of data from the server using _Glossary("HTTP"_), with the result being returned when available rather than immediately.
 
+<<<<<<< HEAD
 - Software design
 
     - : Asynchronous software design expands upon the concept by building code that allows a program to ask that a task be performed alongside the original task (or tasks), without stopping to wait for the task to complete. When the secondary task is completed, the original task is notified using an agreed-upon mechanism so that it knows the work is done, and that the result, if any, is available.
+=======
+-   Software design
+
+    -   : Asynchronous software design expands upon the concept by building code that allows a program to ask that a task be performed alongside the original task (or tasks), without stopping to wait for the task to complete. When the secondary task is completed, the original task is notified using an agreed-upon mechanism so that it knows the work is done, and that the result, if any, is available.
+>>>>>>> master
 
         There are a number of programming techniques for implementing asynchronous software. See the article [Asynchronous JavaScript](/en-US/docs/Learn/JavaScript/Asynchronous) for an introduction to them.
 
 #### See also
 
+<<<<<<< HEAD
 - [Fetching data from the server](/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data) (Learning Area)
 - _glossary("Synchronous"_)
+=======
+-   [Fetching data from the server](/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data) (Learning Area)
+-   _glossary("Synchronous"_)
+>>>>>>> master
 
 ---
 
 ## Term: ATAG
 
+<<<<<<< HEAD
 - ATAG
 - Accessibility
 - Authoring Tool Accessibility Guidelines
 - Glossary
+=======
+-   ATAG
+-   Accessibility
+-   Authoring Tool Accessibility Guidelines
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -566,17 +895,29 @@ _Interwiki("wikipedia", "ASCII"_) on Wikipedia
 
 #### See also
 
+<<<<<<< HEAD
 - [ATAG as part of the Web Accessibility Initiative](https://en.wikipedia.org/wiki/Web_Accessibility_Initiative#Authoring_Tools_Accessibility_Guidelines_.28ATAG.29) on WikiPedia
 - [Authoring Tool Accessibility Guidelines (ATAG) Overview](https://www.w3.org/WAI/intro/atag.php)
 - [The ATAG 2.0 recommendation](https://www.w3.org/TR/ATAG20/)
+=======
+-   [ATAG as part of the Web Accessibility Initiative](https://en.wikipedia.org/wiki/Web_Accessibility_Initiative#Authoring_Tools_Accessibility_Guidelines_.28ATAG.29) on WikiPedia
+-   [Authoring Tool Accessibility Guidelines (ATAG) Overview](https://www.w3.org/WAI/intro/atag.php)
+-   [The ATAG 2.0 recommendation](https://www.w3.org/TR/ATAG20/)
+>>>>>>> master
 
 ---
 
 ## Term: Attribute
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - HTML
+=======
+-   CodingScripting
+-   Glossary
+-   HTML
+>>>>>>> master
 
 ---
 
@@ -611,6 +952,10 @@ Considering the following HTML:
 We can check the reflection between _domxref("HTMLInputElement.placeholder"_) and the attribute using:
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 let input = document.getElementsByTagName('input')[0];
 let attr = input.getAttributeNode('placeholder');
 console.log(attr.value);
@@ -620,6 +965,10 @@ console.log(input.placeholder); //Returns the same value as `attr.value`
 and
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 let input2 = document.getElementsByTagName('input')[0];
 let attr2 = input.getAttributeNode('placeholder');
 console.log(attr2.value); // Returns `Original placeholder`
@@ -629,18 +978,31 @@ console.log(attr2.value); // Returns `Modified placeholder`
 
 #### See also
 
+<<<<<<< HEAD
 - [HTML attribute reference](/en-US/docs/Web/HTML/Attributes)
 - Information about HTML's [global attributes](/en-US/docs/Web/HTML/Global_attributes)
+=======
+-   [HTML attribute reference](/en-US/docs/Web/HTML/Attributes)
+-   Information about HTML's [global attributes](/en-US/docs/Web/HTML/Global_attributes)
+>>>>>>> master
 
 ---
 
 ## Term: Media (Audio-visual presentation)
 
+<<<<<<< HEAD
 - Audio
 - Glossary
 - Media
 - Multimedia
 - Video
+=======
+-   Audio
+-   Glossary
+-   Media
+-   Multimedia
+-   Video
+>>>>>>> master
 
 ---
 
@@ -652,17 +1014,29 @@ Media content can be recorded, played back, presented, and at times interacted w
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Multimedia"_) on Wikipedia
 - [Web media technologies](/en-US/docs/Web/Media): a guide to all the ways media can be used in web content
 - [Multimedia and Embedding](/en-US/docs/Learn/HTML/Multimedia_and_embedding) in the MDN learning area
 - _HTMLElement("audio"_) and _HTMLElement("video"_) elements, used to present media in _Glossary("HTML"_) documents
+=======
+-   _interwiki("wikipedia", "Multimedia"_) on Wikipedia
+-   [Web media technologies](/en-US/docs/Web/Media): a guide to all the ways media can be used in web content
+-   [Multimedia and Embedding](/en-US/docs/Learn/HTML/Multimedia_and_embedding) in the MDN learning area
+-   _HTMLElement("audio"_) and _HTMLElement("video"_) elements, used to present media in _Glossary("HTML"_) documents
+>>>>>>> master
 
 ---
 
 ## Term: Bandwidth
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
+=======
+-   Glossary
+-   Infrastructure
+>>>>>>> master
 
 ---
 
@@ -670,12 +1044,17 @@ Media content can be recorded, played back, presented, and at times interacted w
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Bandwidth"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Bandwidth"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Base64
 
+<<<<<<< HEAD
 - Advanced
 - Base64
 - JavaScript
@@ -685,6 +1064,17 @@ Media content can be recorded, played back, presented, and at times interacted w
 - Unicode Problem
 - atob()
 - btoa()
+=======
+-   Advanced
+-   Base64
+-   JavaScript
+-   Typed Arrays
+-   URI
+-   URL
+-   Unicode Problem
+-   atob()
+-   btoa()
+>>>>>>> master
 
 ---
 
@@ -696,8 +1086,13 @@ One common application of Base64 encoding on the web is to encode binary data so
 
 In JavaScript there are two functions respectively for decoding and encoding Base64 strings:
 
+<<<<<<< HEAD
 - [`btoa()`](/en-US/docs/Web/API/btoa): creates a Base64-encoded ASCII string from a "string" of binary data ("btoa" should be read as "binary to ASCII").
 - [`atob()`](/en-US/docs/Web/API/atob): decodes a Base64-encoded string("atob" should be read as "ASCII to binary").
+=======
+-   [`btoa()`](/en-US/docs/Web/API/btoa): creates a Base64-encoded ASCII string from a "string" of binary data ("btoa" should be read as "binary to ASCII").
+-   [`atob()`](/en-US/docs/Web/API/atob): decodes a Base64-encoded string("atob" should be read as "ASCII to binary").
+>>>>>>> master
 
 The algorithm used by `atob()` and `btoa()` is specified in [RFC 4648](https://datatracker.ietf.org/doc/html/rfc4648), section 4.
 
@@ -713,8 +1108,13 @@ This means that the Base64 version of a string or file will be at least 133% the
 
 Since [`DOMString`](/en-US/docs/Web/API/DOMString '/en-US/docs/Web/API/DOMString')s are 16-bit-encoded strings, in most browsers calling `window.btoa` on a Unicode string will cause a `Character Out Of Range` exception if a character exceeds the range of a 8-bit ASCII-encoded character. There are two possible methods to solve this problem:
 
+<<<<<<< HEAD
 - the first one is to escape the whole string and then encode it;
 - the second one is to convert the UTF-16 [`DOMString`](/en-US/docs/Web/API/DOMString '/en-US/docs/Web/API/DOMString') to an UTF-8 array of characters and then encode it.
+=======
+-   the first one is to escape the whole string and then encode it;
+-   the second one is to convert the UTF-16 [`DOMString`](/en-US/docs/Web/API/DOMString '/en-US/docs/Web/API/DOMString') to an UTF-8 array of characters and then encode it.
+>>>>>>> master
 
 Here are the two possible methods.
 
@@ -722,9 +1122,14 @@ Here are the two possible methods.
 
 ---
 
+<<<<<<< HEAD
 
 ```js
 
+=======
+```js
+//
+>>>>>>> master
 
 function utf8_to_b64(str) {
     return window.btoa(unescape(encodeURIComponent(str)));
@@ -745,9 +1150,14 @@ Another possible solution without utilizing the now deprecated 'unescape' and 'e
 
 ---
 
+<<<<<<< HEAD
 
 ```js
 
+=======
+```js
+//
+>>>>>>> master
 
 function b64EncodeUnicode(str) {
     return btoa(
@@ -764,6 +1174,10 @@ b64EncodeUnicode('✓ à la mode'); // "4pyTIMOgIGxhIG1vZGU="
 > **Note:** The following code is also useful to get an [ArrayBuffer](/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) from a Base64 string and/or viceversa ([see below](#appendix_decode_a_base64_string_to_uint8array_or_arraybuffer)).
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 'use strict';
 
 /*\
@@ -943,6 +1357,10 @@ function strToUTF8Arr(sDOMStr) {
 ### Tests
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 /* Tests */
 
 var sMyInput = 'Base 64 \u2014 Mozilla Developer Network';
@@ -965,6 +1383,10 @@ alert(sMyOutput);
 These function let us to create also [uint8Arrays](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array) or [arrayBuffers](/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) from Base64-encoded strings:
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 // "Base 64 \u2014 Mozilla Developer Network"
 var myArray = base64DecToArr('QmFzZSA2NCDigJQgTW96aWxsYSBEZXZlbG9wZXIgTmV0d29yaw==');
 
@@ -980,11 +1402,19 @@ alert(myBuffer.byteLength);
 
 ## Term: Baseline
 
+<<<<<<< HEAD
 - CSS
 - Glossary
 - SVG
 - alignment
 - typography
+=======
+-   CSS
+-   Glossary
+-   SVG
+-   alignment
+-   typography
+>>>>>>> master
 
 ---
 
@@ -996,17 +1426,29 @@ East Asian scripts have no baseline. Their glyphs are placed in a square box wit
 
 #### See also
 
+<<<<<<< HEAD
 - [Baseline](<https://en.wikipedia.org/wiki/Baseline_(typography)>) on Wikipedia
 - [CSS Box Alignment](/en-US/docs/Web/CSS/CSS_Box_Alignment#types_of_alignment) on MDN
+=======
+-   [Baseline](<https://en.wikipedia.org/wiki/Baseline_(typography)>) on Wikipedia
+-   [CSS Box Alignment](/en-US/docs/Web/CSS/CSS_Box_Alignment#types_of_alignment) on MDN
+>>>>>>> master
 
 ---
 
 ## Term: beacon
 
+<<<<<<< HEAD
 - Beacon
 - Glossary
 - Reference
 - Web Performance
+=======
+-   Beacon
+-   Glossary
+-   Reference
+-   Web Performance
+>>>>>>> master
 
 ---
 
@@ -1016,14 +1458,23 @@ There is a [W3C Draft Beacon Specification](https://w3c.github.io/beacon/) to st
 
 #### See also
 
+<<<<<<< HEAD
 - [Real User Monitoring (RUM)](/en-US/docs/Glossary/Real_User_Monitoring)
+=======
+-   [Real User Monitoring (RUM)](/en-US/docs/Glossary/Real_User_Monitoring)
+>>>>>>> master
 
 ---
 
 ## Term: BiDi
 
+<<<<<<< HEAD
 - Accessibility
 - Glossary
+=======
+-   Accessibility
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -1031,17 +1482,29 @@ There is a [W3C Draft Beacon Specification](https://w3c.github.io/beacon/) to st
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Bi-directional text"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Bi-directional text"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: BigInt
 
+<<<<<<< HEAD
 - BigInt
 - Glossary
 - JavaScript
 - Reference
 - arbitrary precision format
+=======
+-   BigInt
+-   Glossary
+-   JavaScript
+-   Reference
+-   arbitrary precision format
+>>>>>>> master
 
 ---
 
@@ -1049,18 +1512,31 @@ There is a [W3C Draft Beacon Specification](https://w3c.github.io/beacon/) to st
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Data type#Numeric_types", "Numeric types"_) on Wikipedia
 - The JavaScript type: [`BigInt`](/en-US/docs/Web/JavaScript/Data_structures#bigint_type)
 - The JavaScript global object _jsxref("BigInt"_)
+=======
+-   _Interwiki("wikipedia", "Data type#Numeric_types", "Numeric types"_) on Wikipedia
+-   The JavaScript type: [`BigInt`](/en-US/docs/Web/JavaScript/Data_structures#bigint_type)
+-   The JavaScript global object _jsxref("BigInt"_)
+>>>>>>> master
 
 ---
 
 ## Term: Blink
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
 - Layout
 - Rendering engine
+=======
+-   Glossary
+-   Infrastructure
+-   Layout
+-   Rendering engine
+>>>>>>> master
 
 ---
 
@@ -1068,6 +1544,7 @@ There is a [W3C Draft Beacon Specification](https://w3c.github.io/beacon/) to st
 
 #### See also
 
+<<<<<<< HEAD
 - Blink project [home page](https://www.chromium.org/blink)
 - [Blink](<https://en.wikipedia.org/wiki/Blink_(browser_engine)>) on Wikipedia
 - [FAQ](https://www.chromium.org/blink/developer-faq) on Blink
@@ -1078,15 +1555,34 @@ There is a [W3C Draft Beacon Specification](https://w3c.github.io/beacon/) to st
     - _glossary("Trident"_)
     - _glossary("WebKit"_)
     - _glossary("Rendering engine"_)
+=======
+-   Blink project [home page](https://www.chromium.org/blink)
+-   [Blink](<https://en.wikipedia.org/wiki/Blink_(browser_engine)>) on Wikipedia
+-   [FAQ](https://www.chromium.org/blink/developer-faq) on Blink
+-   [Glossary](/en-US/docs/Glossary)
+
+    -   _glossary("Google Chrome"_)
+    -   _glossary("Gecko"_)
+    -   _glossary("Trident"_)
+    -   _glossary("WebKit"_)
+    -   _glossary("Rendering engine"_)
+>>>>>>> master
 
 ---
 
 ## Term: Block cipher mode of operation
 
+<<<<<<< HEAD
 - Block cipher mode of operation
 - Cryptography
 - Glossary
 - Security
+=======
+-   Block cipher mode of operation
+-   Cryptography
+-   Glossary
+-   Security
+>>>>>>> master
 
 ---
 
@@ -1098,8 +1594,13 @@ Most symmetric-key algorithms currently in use are block ciphers: this means tha
 
 ## Term: Block
 
+<<<<<<< HEAD
 - Disambiguation
 - Glossary
+=======
+-   Disambiguation
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -1111,12 +1612,21 @@ Most symmetric-key algorithms currently in use are block ciphers: this means tha
 
 ## Term: Boolean
 
+<<<<<<< HEAD
 - Boolean
 - CodingScripting
 - Glossary
 - JavaScript
 - Programming Languages
 - data types
+=======
+-   Boolean
+-   CodingScripting
+-   Glossary
+-   JavaScript
+-   Programming Languages
+-   data types
+>>>>>>> master
 
 ---
 
@@ -1127,6 +1637,10 @@ For example, in JavaScript, Boolean conditionals are often used to decide which 
 Below is some JavaScript pseudocode (it's not truly executable code) demonstrating this concept.
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 /* JavaScript if statement */
 if (boolean conditional) {
    // code to execute if the conditional is true
@@ -1152,20 +1666,35 @@ The Boolean value is named after English mathematician _interwiki("wikipedia", "
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Boolean data type", "Boolean"_) on Wikipedia
 - The JavaScript global object: _jsxref("Boolean"_)
 - [JavaScript data types and data structures](/en-US/docs/Web/JavaScript/Data_structures)
+=======
+-   _Interwiki("wikipedia", "Boolean data type", "Boolean"_) on Wikipedia
+-   The JavaScript global object: _jsxref("Boolean"_)
+-   [JavaScript data types and data structures](/en-US/docs/Web/JavaScript/Data_structures)
+>>>>>>> master
 
 ---
 
 ## Term: Boot2Gecko
 
+<<<<<<< HEAD
 - B2G
 - Boot2Gecko
 - Firefox OS
 - Glossary
 - Infrastructure
 - Intro
+=======
+-   B2G
+-   Boot2Gecko
+-   Firefox OS
+-   Glossary
+-   Infrastructure
+-   Intro
+>>>>>>> master
 
 ---
 
@@ -1175,11 +1704,19 @@ The Boolean value is named after English mathematician _interwiki("wikipedia", "
 
 ## Term: Bootstrap
 
+<<<<<<< HEAD
 - Bootstrap
 - CSS
 - Glossary
 - Intro
 - framework
+=======
+-   Bootstrap
+-   CSS
+-   Glossary
+-   Intro
+-   framework
+>>>>>>> master
 
 ---
 
@@ -1189,18 +1726,31 @@ Initially, Bootstrap was called Twitter Blueprint and was developed by a team wo
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Bootstrap (front-end framework)", "Bootstrap"_) on Wikipedia
 - [Download Bootstrap](https://getbootstrap.com/)
 - [Get started with the latest version](https://www.w3schools.com/bootstrap4/bootstrap_get_started.asp)
+=======
+-   _interwiki("wikipedia", "Bootstrap (front-end framework)", "Bootstrap"_) on Wikipedia
+-   [Download Bootstrap](https://getbootstrap.com/)
+-   [Get started with the latest version](https://www.w3schools.com/bootstrap4/bootstrap_get_started.asp)
+>>>>>>> master
 
 ---
 
 ## Term: Bounding Box
 
+<<<<<<< HEAD
 - Bounding Box
 - CodingScripting
 - Design
 - Glossary
+=======
+-   Bounding Box
+-   CodingScripting
+-   Design
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -1210,12 +1760,21 @@ Initially, Bootstrap was called Twitter Blueprint and was developed by a team wo
 
 ## Term: Breadcrumb
 
+<<<<<<< HEAD
 - Accessibility
 - Glossary
 - Navigation
 - Search
 - Site map
 - breadcrumb
+=======
+-   Accessibility
+-   Glossary
+-   Navigation
+-   Search
+-   Site map
+-   breadcrumb
+>>>>>>> master
 
 ---
 
@@ -1231,11 +1790,19 @@ Breadcrumb trails enable users to be aware of their location within a website. T
 
 ## Term: Brotli
 
+<<<<<<< HEAD
 - Brotli
 - Glossary
 - Reference
 - Web Performance
 - compression
+=======
+-   Brotli
+-   Glossary
+-   Reference
+-   Web Performance
+-   compression
+>>>>>>> master
 
 ---
 
@@ -1247,17 +1814,29 @@ Brotli is compatible with most modern browsers, but you may want to consider a f
 
 #### See also
 
+<<<<<<< HEAD
 - [brotli.org](https://brotli.org/)
 - [Brotli Github repository](https://github.com/google/brotli)
 - _interwiki("wikipedia", "Brotli"_) on Wikipedia
 - [Brotli on Caniuse](https://caniuse.com/#feat=brotli)
+=======
+-   [brotli.org](https://brotli.org/)
+-   [Brotli Github repository](https://github.com/google/brotli)
+-   _interwiki("wikipedia", "Brotli"_) on Wikipedia
+-   [Brotli on Caniuse](https://caniuse.com/#feat=brotli)
+>>>>>>> master
 
 ---
 
 ## Term: Browser
 
+<<<<<<< HEAD
 - Glossary
 - Navigation
+=======
+-   Glossary
+-   Navigation
+>>>>>>> master
 
 ---
 
@@ -1265,6 +1844,7 @@ Brotli is compatible with most modern browsers, but you may want to consider a f
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Web browser"_) on Wikipedia
 - [The evolution of the web](http://www.evolutionoftheweb.com/)
 - _Glossary("user agent"_) (Glossary)
@@ -1275,12 +1855,28 @@ Brotli is compatible with most modern browsers, but you may want to consider a f
     - [Google Chrome](https://www.google.com/chrome/)
     - [Microsoft Edge](https://www.microsoft.com/en-us/edge)
     - [Opera Browser](https://www.opera.com/)
+=======
+-   _Interwiki("wikipedia", "Web browser"_) on Wikipedia
+-   [The evolution of the web](http://www.evolutionoftheweb.com/)
+-   _Glossary("user agent"_) (Glossary)
+-   _HTTPHeader("User-agent"_) (HTTP Header)
+-   Download a browser
+
+    -   [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/)
+    -   [Google Chrome](https://www.google.com/chrome/)
+    -   [Microsoft Edge](https://www.microsoft.com/en-us/edge)
+    -   [Opera Browser](https://www.opera.com/)
+>>>>>>> master
 
 ---
 
 ## Term: Browsing context
 
+<<<<<<< HEAD
 - Glossary
+=======
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -1292,16 +1888,27 @@ Communication between browsing context is severely constrained. Between browsing
 
 #### See also
 
+<<<<<<< HEAD
 - See _glossary("origin"_)
+=======
+-   See _glossary("origin"_)
+>>>>>>> master
 
 ---
 
 ## Term: buffer
 
+<<<<<<< HEAD
 - Buffer
 - CodingScripting
 - Glossary
 - NeedsContent
+=======
+-   Buffer
+-   CodingScripting
+-   Glossary
+-   NeedsContent
+>>>>>>> master
 
 ---
 
@@ -1309,16 +1916,27 @@ Communication between browsing context is severely constrained. Between browsing
 
 #### See also
 
+<<<<<<< HEAD
 - [Data buffer](https://en.wikipedia.org/wiki/Data_buffer) on Wikipedia
+=======
+-   [Data buffer](https://en.wikipedia.org/wiki/Data_buffer) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Bézier curve
 
+<<<<<<< HEAD
 - Bézier curve
 - Glossary
 - Graphics
 - Reference
+=======
+-   Bézier curve
+-   Glossary
+-   Graphics
+-   Reference
+>>>>>>> master
 
 ---
 
@@ -1332,24 +1950,41 @@ To draw the curve, two imaginary lines are drawn, one from P<sub>0</sub> to P<su
 
 #### See also
 
+<<<<<<< HEAD
 - [Bézier curve on Wikipedia](https://en.wikipedia.org/wiki/B%C3%A9zier_curve)
 - [Cubic Bézier timing functions in CSS](</en-US/docs/Web/CSS/easing-function#the_cubic-bezier()_class_of_timing_functions>)
 - _SVGAttr("keySplines"_) SVG attribute
+=======
+-   [Bézier curve on Wikipedia](https://en.wikipedia.org/wiki/B%C3%A9zier_curve)
+-   [Cubic Bézier timing functions in CSS](</en-US/docs/Web/CSS/easing-function#the_cubic-bezier()_class_of_timing_functions>)
+-   _SVGAttr("keySplines"_) SVG attribute
+>>>>>>> master
 
 ---
 
 ## Term: Cacheable
 
+<<<<<<< HEAD
 - Glossary
 - WebMechanics
+=======
+-   Glossary
+-   WebMechanics
+>>>>>>> master
 
 ---
 
 > A **cacheable** response is an HTTP response that can be cached, that is stored to be retrieved and used later, saving a new request to the server. Not all HTTP responses can be cached, these are the following constraints for an HTTP response to be cached:
 
+<<<<<<< HEAD
 - The method used in the request is itself _cacheable_, that is either a _HTTPMethod("GET"_) or a _HTTPMethod("HEAD"_) method. A response to a _HTTPMethod("POST"_) or _HTTPMethod("PATCH"_) request can also be cached if freshness is indicated and the _HTTPHeader("Content-Location"_) header is set, but this is rarely implemented. (For example, Firefox does not support it per <https://bugzilla.mozilla.org/show_bug.cgi?id=109553>.) Other methods, like _HTTPMethod("PUT"_) or _HTTPMethod("DELETE"_) are not cacheable and their result cannot be cached.
 - The status code of the response is _known_ by the application caching, and it is considered _cacheable_. The following status code are cacheable: _HTTPStatus("200"_), _HTTPStatus("203"_), _HTTPStatus("204"_), _HTTPStatus("206"_), _HTTPStatus("300"_), _HTTPStatus("301"_), _HTTPStatus("404"_), _HTTPStatus("405"_), _HTTPStatus("410"_), _HTTPStatus("414"_), and _HTTPStatus("501"_).
 - There are _specific headers_ in the response, like _HTTPHeader("Cache-Control"_), that prevents caching.
+=======
+-   The method used in the request is itself _cacheable_, that is either a _HTTPMethod("GET"_) or a _HTTPMethod("HEAD"_) method. A response to a _HTTPMethod("POST"_) or _HTTPMethod("PATCH"_) request can also be cached if freshness is indicated and the _HTTPHeader("Content-Location"_) header is set, but this is rarely implemented. (For example, Firefox does not support it per <https://bugzilla.mozilla.org/show_bug.cgi?id=109553>.) Other methods, like _HTTPMethod("PUT"_) or _HTTPMethod("DELETE"_) are not cacheable and their result cannot be cached.
+-   The status code of the response is _known_ by the application caching, and it is considered _cacheable_. The following status code are cacheable: _HTTPStatus("200"_), _HTTPStatus("203"_), _HTTPStatus("204"_), _HTTPStatus("206"_), _HTTPStatus("300"_), _HTTPStatus("301"_), _HTTPStatus("404"_), _HTTPStatus("405"_), _HTTPStatus("410"_), _HTTPStatus("414"_), and _HTTPStatus("501"_).
+-   There are _specific headers_ in the response, like _HTTPHeader("Cache-Control"_), that prevents caching.
+>>>>>>> master
 
 Note that some non-cacheable requests/responses to a specific URI may invalidate previously cached responses on the same URI. For example, a _HTTPMethod("PUT"_) to pageX.html will invalidate all cached _HTTPMethod("GET"_) or _HTTPMethod("HEAD"_) requests to the same URI.
 
@@ -1386,16 +2021,27 @@ Cache-Control: no-cache
 
 #### See also
 
+<<<<<<< HEAD
 - Definition of [cacheable](https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.3) in the HTTP specification.
 - Description of common cacheable methods: _HTTPMethod("GET"_), _HTTPMethod("HEAD"_)
 - Description of common non-cacheable methods: _HTTPMethod("PUT"_), _HTTPMethod("DELETE"_), often _HTTPMethod("POST"_)
+=======
+-   Definition of [cacheable](https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.3) in the HTTP specification.
+-   Description of common cacheable methods: _HTTPMethod("GET"_), _HTTPMethod("HEAD"_)
+-   Description of common non-cacheable methods: _HTTPMethod("PUT"_), _HTTPMethod("DELETE"_), often _HTTPMethod("POST"_)
+>>>>>>> master
 
 ---
 
 ## Term: Cache
 
+<<<<<<< HEAD
 - Glossary
 - HTTP
+=======
+-   Glossary
+-   HTTP
+>>>>>>> master
 
 ---
 
@@ -1403,15 +2049,25 @@ Cache-Control: no-cache
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Web cache"_) on Wikipedia
+=======
+-   _interwiki("wikipedia", "Web cache"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: CalDAV
 
+<<<<<<< HEAD
 - CalDAV
 - Glossary
 - Infrastructure
+=======
+-   CalDAV
+-   Glossary
+-   Infrastructure
+>>>>>>> master
 
 ---
 
@@ -1419,35 +2075,60 @@ Cache-Control: no-cache
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "CalDAV"_) on Wikipedia
 - [RFC 4791: Calendaring extensions to WebDAV (CalDAV)](https://datatracker.ietf.org/doc/html/rfc4791)
 - [RFC 6638: Scheduling Extensions to CalDAV](https://datatracker.ietf.org/doc/html/rfc6638)
+=======
+-   _Interwiki("wikipedia", "CalDAV"_) on Wikipedia
+-   [RFC 4791: Calendaring extensions to WebDAV (CalDAV)](https://datatracker.ietf.org/doc/html/rfc4791)
+-   [RFC 6638: Scheduling Extensions to CalDAV](https://datatracker.ietf.org/doc/html/rfc6638)
+>>>>>>> master
 
 ---
 
 ## Term: Call stack
 
+<<<<<<< HEAD
 - Call Stack
 - CodingScripting
 - Glossary
 - JavaScript
+=======
+-   Call Stack
+-   CodingScripting
+-   Glossary
+-   JavaScript
+>>>>>>> master
 
 ---
 
 > A **call stack** is a mechanism for an interpreter (like the JavaScript interpreter in a web browser) to keep track of its place in a script that calls multiple _glossary("function","functions"_) — what function is currently being run and what functions are called from within that function, etc.
 
+<<<<<<< HEAD
 - When a script calls a function, the interpreter adds it to the call stack and then starts carrying out the function.
 - Any functions that are called by that function are added to the call stack further up, and run where their calls are reached.
 - When the current function is finished, the interpreter takes it off the stack and resumes execution where it left off in the last code listing.
 - If the stack takes up more space than it had assigned to it, it results in a "stack overflow" error.
+=======
+-   When a script calls a function, the interpreter adds it to the call stack and then starts carrying out the function.
+-   Any functions that are called by that function are added to the call stack further up, and run where their calls are reached.
+-   When the current function is finished, the interpreter takes it off the stack and resumes execution where it left off in the last code listing.
+-   If the stack takes up more space than it had assigned to it, it results in a "stack overflow" error.
+>>>>>>> master
 
 ## Example
 
 ---
 
+<<<<<<< HEAD
 
 ```js
 
+=======
+```js
+//
+>>>>>>> master
 
 function greeting() {
     // [1] Some code here
@@ -1497,20 +2178,35 @@ In summary, then, we start with an empty Call Stack. Whenever we invoke a functi
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Call stack"_) on Wikipedia
 - [Glossary](/en-US/docs/Glossary)
 
     - _Glossary("Call stack"_)
     - _Glossary("Function"_)
+=======
+-   _Interwiki("wikipedia", "Call stack"_) on Wikipedia
+-   [Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("Call stack"_)
+    -   _Glossary("Function"_)
+>>>>>>> master
 
 ---
 
 ## Term: Callback function
 
+<<<<<<< HEAD
 - Callback
 - Callback function
 - CodingScripting
 - Glossary
+=======
+-   Callback
+-   Callback function
+-   CodingScripting
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -1520,9 +2216,14 @@ Here is a quick example:
 
 ---
 
+<<<<<<< HEAD
 
 ```js
 
+=======
+```js
+//
+>>>>>>> master
 
 function greeting(name) {
     alert('Hello ' + name);
@@ -1542,15 +2243,25 @@ Note, however, that callbacks are often used to continue code execution after an
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Callback_(computer*programming)", "Callback"*) on Wikipedia
+=======
+-   _interwiki("wikipedia", "Callback_(computer*programming)", "Callback"*) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Canonical order
 
+<<<<<<< HEAD
 - Canonical order
 - CodingScripting
 - Glossary
+=======
+-   Canonical order
+-   CodingScripting
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -1571,18 +2282,31 @@ Furthermore, its syntax defines, that if a value for the _cssxref("background-si
 
 #### See also
 
+<<<<<<< HEAD
 - [What does "canonical order" mean with respect to CSS properties?](https://stackoverflow.com/questions/28963536/what-does-canonical-order-mean-with-respect-to-css-properties) on Stack Overflow provides useful further discussion.
 - The [description of the formal syntax used for CSS values](/en-US/docs/Web/CSS/Value_definition_syntax) on MDN
+=======
+-   [What does "canonical order" mean with respect to CSS properties?](https://stackoverflow.com/questions/28963536/what-does-canonical-order-mean-with-respect-to-css-properties) on Stack Overflow provides useful further discussion.
+-   The [description of the formal syntax used for CSS values](/en-US/docs/Web/CSS/Value_definition_syntax) on MDN
+>>>>>>> master
 
 ---
 
 ## Term: Canvas
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - Graphics
 - HTML
 - JavaScript
+=======
+-   CodingScripting
+-   Glossary
+-   Graphics
+-   HTML
+-   JavaScript
+>>>>>>> master
 
 ---
 
@@ -1592,20 +2316,35 @@ It is a low level, procedural model that updates a [bitmap](https://en.wikipedia
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Canvas element", "Canvas"_) on Wikipedia
 - [The Canvas tutorial on MDN](/en-US/docs/Web/API/Canvas_API/Tutorial)
 - The HTML _HTMLElement("canvas"_) element on MDN
 - [The Canvas general documentation on MDN](/en-US/docs/Web/API/Canvas_API)
 - _domxref("CanvasRenderingContext2D"_): The canvas 2D drawing API
 - [The Canvas 2D API specification](https://www.w3.org/TR/2dcontext/)
+=======
+-   _Interwiki("wikipedia", "Canvas element", "Canvas"_) on Wikipedia
+-   [The Canvas tutorial on MDN](/en-US/docs/Web/API/Canvas_API/Tutorial)
+-   The HTML _HTMLElement("canvas"_) element on MDN
+-   [The Canvas general documentation on MDN](/en-US/docs/Web/API/Canvas_API)
+-   _domxref("CanvasRenderingContext2D"_): The canvas 2D drawing API
+-   [The Canvas 2D API specification](https://www.w3.org/TR/2dcontext/)
+>>>>>>> master
 
 ---
 
 ## Term: Card sorting
 
+<<<<<<< HEAD
 - Card sorting
 - Design
 - Glossary
+=======
+-   Card sorting
+-   Design
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -1613,15 +2352,25 @@ It is a low level, procedural model that updates a [bitmap](https://en.wikipedia
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Card_sorting", "Card sorting"_) on Wikipedia
+=======
+-   _interwiki("wikipedia", "Card_sorting", "Card sorting"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: CardDAV
 
+<<<<<<< HEAD
 - CardDAV
 - Glossary
 - Infrastructure
+=======
+-   CardDAV
+-   Glossary
+-   Infrastructure
+>>>>>>> master
 
 ---
 
@@ -1629,13 +2378,19 @@ It is a low level, procedural model that updates a [bitmap](https://en.wikipedia
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "CardDAV"_) on Wikipedia
 - [RFC 6352: vCard Extensions to Web Distributed Authoring and Versioning (WebDAV)](https://datatracker.ietf.org/doc/html/rfc6352)
+=======
+-   _Interwiki("wikipedia", "CardDAV"_) on Wikipedia
+-   [RFC 6352: vCard Extensions to Web Distributed Authoring and Versioning (WebDAV)](https://datatracker.ietf.org/doc/html/rfc6352)
+>>>>>>> master
 
 ---
 
 ## Term: caret
 
+<<<<<<< HEAD
 - Cursor
 - Glossary
 - Input
@@ -1645,6 +2400,17 @@ It is a low level, procedural model that updates a [bitmap](https://en.wikipedia
 - text entry
 - text input
 - text insertion point
+=======
+-   Cursor
+-   Glossary
+-   Input
+-   caret
+-   insertion point
+-   text cursor
+-   text entry
+-   text input
+-   text insertion point
+>>>>>>> master
 
 ---
 
@@ -1656,7 +2422,11 @@ On the web, a caret is used to represent the insertion point in _HTMLElement("in
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Caret navigation"_) on Wikipedia
+=======
+-   _interwiki("wikipedia", "Caret navigation"_) on Wikipedia
+>>>>>>> master
 
 ### CSS related to the caret
 
@@ -1666,6 +2436,7 @@ You can set the color of the caret for a given element's editable content by set
 
 These elements provide text entry fields or boxes and therefore make use of the caret.
 
+<<<<<<< HEAD
 - [`<input type="text">`](/en-US/docs/Web/HTML/Element/input/text)
 - [`<input type="password">`](/en-US/docs/Web/HTML/Element/input/password)
 - [`<input type="search">`](/en-US/docs/Web/HTML/Element/input/search)
@@ -1674,13 +2445,28 @@ These elements provide text entry fields or boxes and therefore make use of the 
 - [`<input type="email">`](/en-US/docs/Web/HTML/Element/input/email), [`<input type="tel">`](/en-US/docs/Web/HTML/Element/input/tel), and [`<input type="url">`](/en-US/docs/Web/HTML/Element/input/url)
 - _HTMLElement("textarea"_)
 - Any element with its _htmlattrxref("contenteditable"_) attribute set
+=======
+-   [`<input type="text">`](/en-US/docs/Web/HTML/Element/input/text)
+-   [`<input type="password">`](/en-US/docs/Web/HTML/Element/input/password)
+-   [`<input type="search">`](/en-US/docs/Web/HTML/Element/input/search)
+-   [`<input type="date">`](/en-US/docs/Web/HTML/Element/input/date), [`<input type="time">`](/en-US/docs/Web/HTML/Element/input/time), [`<input type="datetime">`](/en-US/docs/Web/HTML/Element/input/datetime), and [`<input type="datetime-local">`](/en-US/docs/Web/HTML/Element/input/datetime-local)
+-   [`<input type="number">`](/en-US/docs/Web/HTML/Element/input/number)[, ](/en-US/docs/Web/HTML/Element/input/number)[`<input type="range">`](/en-US/docs/Web/HTML/Element/input/range)
+-   [`<input type="email">`](/en-US/docs/Web/HTML/Element/input/email), [`<input type="tel">`](/en-US/docs/Web/HTML/Element/input/tel), and [`<input type="url">`](/en-US/docs/Web/HTML/Element/input/url)
+-   _HTMLElement("textarea"_)
+-   Any element with its _htmlattrxref("contenteditable"_) attribute set
+>>>>>>> master
 
 ---
 
 ## Term: CDN
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
+=======
+-   Glossary
+-   Infrastructure
+>>>>>>> master
 
 ---
 
@@ -1688,17 +2474,29 @@ These elements provide text entry fields or boxes and therefore make use of the 
 
 CDNs are used widely for delivering stylesheets and Javascript files (static assets) of libraries like Bootstrap, jQuery etc. Using CDN for those library files is preferable for a number of reasons:
 
+<<<<<<< HEAD
 - Serving libraries' static assets over CDN lowers the request burden on an organization's own servers.
 - Most CDNs have servers all over the globe, so CDN servers may be geographically nearer to your users than your own servers. Geographical distance affects latency proportionally.
 - CDNs are already configured with proper cache settings. Using a CDN saves further configuration for static assets on your own servers.
+=======
+-   Serving libraries' static assets over CDN lowers the request burden on an organization's own servers.
+-   Most CDNs have servers all over the globe, so CDN servers may be geographically nearer to your users than your own servers. Geographical distance affects latency proportionally.
+-   CDNs are already configured with proper cache settings. Using a CDN saves further configuration for static assets on your own servers.
+>>>>>>> master
 
 ---
 
 ## Term: Certificate authority
 
+<<<<<<< HEAD
 - Cryptography
 - Glossary
 - Security
+=======
+-   Cryptography
+-   Glossary
+-   Security
+>>>>>>> master
 
 ---
 
@@ -1712,20 +2510,35 @@ Certificate authorities are the part of the Internet [public key infrastructure]
 
 #### See also
 
+<<<<<<< HEAD
 - [Certificate authority](https://en.wikipedia.org/wiki/Certificate_authority) on Wikipedia
 - [Public key infrastructure](https://en.wikipedia.org/wiki/Public_key_infrastructure) on Wikipedia
 - [Mozilla Included CA Certificate List](https://wiki.mozilla.org/CA/Included_Certificates)
+=======
+-   [Certificate authority](https://en.wikipedia.org/wiki/Certificate_authority) on Wikipedia
+-   [Public key infrastructure](https://en.wikipedia.org/wiki/Public_key_infrastructure) on Wikipedia
+-   [Mozilla Included CA Certificate List](https://wiki.mozilla.org/CA/Included_Certificates)
+>>>>>>> master
 
 ---
 
 ## Term: Certified
 
+<<<<<<< HEAD
 - Apps
 - B2G
 - Firefox OS
 - Glossary
 - Security
 - Trustworthy
+=======
+-   Apps
+-   B2G
+-   Firefox OS
+-   Glossary
+-   Security
+-   Trustworthy
+>>>>>>> master
 
 ---
 
@@ -1735,13 +2548,21 @@ For details on certification in _glossary("Cryptography"_), please refer to _glo
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Professional_certification_(computer*technology)#Information_systems_security", "Certification"*) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Professional_certification_(computer*technology)#Information_systems_security", "Certification"*) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Challenge-response authentication
 
+<<<<<<< HEAD
 - Security
+=======
+-   Security
+>>>>>>> master
 
 ---
 
@@ -1751,14 +2572,23 @@ The [HTTP authentication protocol](/en-US/docs/Web/HTTP/Authentication) is chall
 
 #### See also
 
+<<<<<<< HEAD
 - [Challenge-response authentication](https://en.wikipedia.org/wiki/Challenge%E2%80%93response_authentication) on Wikipedia.
+=======
+-   [Challenge-response authentication](https://en.wikipedia.org/wiki/Challenge%E2%80%93response_authentication) on Wikipedia.
+>>>>>>> master
 
 ---
 
 ## Term: Character encoding
 
+<<<<<<< HEAD
 - Composing
 - Glossary
+=======
+-   Composing
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -1774,16 +2604,27 @@ This ensures that you can use characters from just about any human language in y
 
 #### See also
 
+<<<<<<< HEAD
 - [Character encoding on W3C](https://www.w3.org/International/articles/definitions-characters/)
 - _Interwiki("wikipedia", "Character encoding"_) on Wikipedia
+=======
+-   [Character encoding on W3C](https://www.w3.org/International/articles/definitions-characters/)
+-   _Interwiki("wikipedia", "Character encoding"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Character set
 
+<<<<<<< HEAD
 - Glossary
 - character encoding
 - character set
+=======
+-   Glossary
+-   character encoding
+-   character set
+>>>>>>> master
 
 ---
 
@@ -1795,20 +2636,35 @@ If a character set is used incorrectly (For example, Unicode for an article enco
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Character encoding"_) (Wikipedia)
 - _Interwiki("wikipedia", "Mojibake"_) (Wikipedia)
 - [Glossary](/en-US/docs/Glossary)
 
     - _Glossary("Character"_)
     - _Glossary("Unicode"_)
+=======
+-   _Interwiki("wikipedia", "Character encoding"_) (Wikipedia)
+-   _Interwiki("wikipedia", "Mojibake"_) (Wikipedia)
+-   [Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("Character"_)
+    -   _Glossary("Unicode"_)
+>>>>>>> master
 
 ---
 
 ## Term: Character
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - strings
+=======
+-   CodingScripting
+-   Glossary
+-   strings
+>>>>>>> master
 
 ---
 
@@ -1816,20 +2672,35 @@ If a character set is used incorrectly (For example, Unicode for an article enco
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Character (computing)"_) on Wikipedia
 - _interwiki("wikipedia", "Character encoding"_) on Wikipedia
 - _interwiki("wikipedia", "ASCII"_) on Wikipedia
 - _interwiki("wikipedia", "UTF-8"_) on Wikipedia
 - _interwiki("wikipedia", "Unicode"_) on Wikipedia
+=======
+-   _interwiki("wikipedia", "Character (computing)"_) on Wikipedia
+-   _interwiki("wikipedia", "Character encoding"_) on Wikipedia
+-   _interwiki("wikipedia", "ASCII"_) on Wikipedia
+-   _interwiki("wikipedia", "UTF-8"_) on Wikipedia
+-   _interwiki("wikipedia", "Unicode"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Chrome
 
+<<<<<<< HEAD
 - Browser
 - Chrome
 - Glossary
 - WebMechanics
+=======
+-   Browser
+-   Chrome
+-   Glossary
+-   WebMechanics
+>>>>>>> master
 
 ---
 
@@ -1837,14 +2708,23 @@ If a character set is used incorrectly (For example, Unicode for an article enco
 
 #### See also
 
+<<<<<<< HEAD
 - [Browser and GUI Chrome](https://www.nngroup.com/articles/browser-and-gui-chrome/)
+=======
+-   [Browser and GUI Chrome](https://www.nngroup.com/articles/browser-and-gui-chrome/)
+>>>>>>> master
 
 ---
 
 ## Term: CIA
 
+<<<<<<< HEAD
 - Glossary
 - Security
+=======
+-   Glossary
+-   Security
+>>>>>>> master
 
 ---
 
@@ -1852,15 +2732,25 @@ If a character set is used incorrectly (For example, Unicode for an article enco
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Information_security#Key_concepts", "CIA"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Information_security#Key_concepts", "CIA"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Cipher suite
 
+<<<<<<< HEAD
 - Cryptography
 - Glossary
 - Security
+=======
+-   Cryptography
+-   Glossary
+-   Security
+>>>>>>> master
 
 ---
 
@@ -1868,6 +2758,7 @@ If a character set is used incorrectly (For example, Unicode for an article enco
 
 In a _Glossary("cryptosystem"_) like _Glossary("TLS"_), the client and server must agree on a cipher suite before they can begin communicating securely. A typical cipher suite looks like ECDHE_RSA_WITH_AES_128_GCM_SHA256 or ECDHE-RSA-AES128-GCM-SHA256, indicating:
 
+<<<<<<< HEAD
 - ECDHE (elliptic curve Diffie-Hellman ephemeral) for key exchange
 - RSA for authentication
 - AES-128 as the cipher, with Galois/Counter Mode (GCM) as the block cipher mode of operation
@@ -1876,15 +2767,32 @@ In a _Glossary("cryptosystem"_) like _Glossary("TLS"_), the client and server mu
 #### See also
 
 - [Mozilla recommended cipher suite choices for TLS](https://wiki.mozilla.org/Security/Server_Side_TLS)
+=======
+-   ECDHE (elliptic curve Diffie-Hellman ephemeral) for key exchange
+-   RSA for authentication
+-   AES-128 as the cipher, with Galois/Counter Mode (GCM) as the block cipher mode of operation
+-   SHA-256 as the hash-based message authentication code (HMAC)
+
+#### See also
+
+-   [Mozilla recommended cipher suite choices for TLS](https://wiki.mozilla.org/Security/Server_Side_TLS)
+>>>>>>> master
 
 ---
 
 ## Term: Cipher
 
+<<<<<<< HEAD
 - Cryptography
 - Glossary
 - Privacy
 - Security
+=======
+-   Cryptography
+-   Glossary
+-   Privacy
+-   Security
+>>>>>>> master
 
 ---
 
@@ -1898,6 +2806,7 @@ Ciphers operate two ways, either as [block ciphers](https://en.wikipedia.org/wik
 
 They also are classified according to how their _glossary("key", "keys"_) are handled:
 
+<<<<<<< HEAD
 - [symmetric key](https://en.wikipedia.org/wiki/Symmetric_key_algorithm) algorithms use the same key to encode and decode a message. The key also must be sent securely if the message is to stay confidential.
 - [asymmetric key](https://en.wikipedia.org/wiki/Asymmetric_key_algorithm) algorithms use a different key for encryption and decryption.
 
@@ -1919,15 +2828,45 @@ They also are classified according to how their _glossary("key", "keys"_) are ha
     - _Glossary("Plaintext"_)
     - _Glossary("Public-key cryptography"_)
     - _Glossary("Symmetric-key cryptography"_)
+=======
+-   [symmetric key](https://en.wikipedia.org/wiki/Symmetric_key_algorithm) algorithms use the same key to encode and decode a message. The key also must be sent securely if the message is to stay confidential.
+-   [asymmetric key](https://en.wikipedia.org/wiki/Asymmetric_key_algorithm) algorithms use a different key for encryption and decryption.
+
+#### See also
+
+-   _Interwiki("wikipedia", "Cipher"_) on Wikipedia
+-   [Encryption and Decryption](/en-US/docs/Archive/Security/Encryption_and_Decryption)
+-   [MDN Web Docs Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("Block cipher mode of operation"_)
+    -   _Glossary("Cipher"_)
+    -   _Glossary("Ciphertext"_)
+    -   _Glossary("Cipher suite"_)
+    -   _Glossary("Cryptanalysis"_)
+    -   _Glossary("Cryptography"_)
+    -   _Glossary("Decryption"_)
+    -   _Glossary("Encryption"_)
+    -   _Glossary("Key"_)
+    -   _Glossary("Plaintext"_)
+    -   _Glossary("Public-key cryptography"_)
+    -   _Glossary("Symmetric-key cryptography"_)
+>>>>>>> master
 
 ---
 
 ## Term: Ciphertext
 
+<<<<<<< HEAD
 - Cryptography
 - Glossary
 - Privacy
 - Security
+=======
+-   Cryptography
+-   Glossary
+-   Privacy
+-   Security
+>>>>>>> master
 
 ---
 
@@ -1935,14 +2874,23 @@ They also are classified according to how their _glossary("key", "keys"_) are ha
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Ciphertext"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Ciphertext"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Class
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
+=======
+-   CodingScripting
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -1950,21 +2898,37 @@ They also are classified according to how their _glossary("key", "keys"_) are ha
 
 #### See also
 
+<<<<<<< HEAD
 - [Class-based vs. prototype-based programming languages](/en-US/docs/Web/JavaScript/Guide/Details_of_the_Object_Model#class-based_vs._prototype-based_languages) (like JavaScript)
 - [Using functions as classes in JavaScript](/en-US/docs/Learn/JavaScript/Objects#the_class)
 - [Class-based programming](https://en.wikipedia.org/wiki/Class-based_programming) on Wikipedia
 - [Object-oriented programming](https://en.wikipedia.org/wiki/Object-oriented_programming) on Wikipedia
+=======
+-   [Class-based vs. prototype-based programming languages](/en-US/docs/Web/JavaScript/Guide/Details_of_the_Object_Model#class-based_vs._prototype-based_languages) (like JavaScript)
+-   [Using functions as classes in JavaScript](/en-US/docs/Learn/JavaScript/Objects#the_class)
+-   [Class-based programming](https://en.wikipedia.org/wiki/Class-based_programming) on Wikipedia
+-   [Object-oriented programming](https://en.wikipedia.org/wiki/Object-oriented_programming) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Clickjacking
 
+<<<<<<< HEAD
 - Clickjacking
 - Interface-based attack
 - Glossary
 - Security
 - vulnerability
 - exploit
+=======
+-   Clickjacking
+-   Interface-based attack
+-   Glossary
+-   Security
+-   vulnerability
+-   exploit
+>>>>>>> master
 
 ---
 
@@ -1974,16 +2938,27 @@ Clickjacking can be prevented by implementing a [Content Security Policy (frame-
 
 ## Learn more
 
+<<<<<<< HEAD
 - [Web security: clickjacking protection](/en-US/docs/Web/Security#clickjacking_protection)
 - [Clickjacking](https://en.wikipedia.org/wiki/Clickjacking) on Wikipedia
 - [Clickjacking](https://owasp.org/www-community/attacks/Clickjacking) on OWASP
+=======
+-   [Web security: clickjacking protection](/en-US/docs/Web/Security#clickjacking_protection)
+-   [Clickjacking](https://en.wikipedia.org/wiki/Clickjacking) on Wikipedia
+-   [Clickjacking](https://owasp.org/www-community/attacks/Clickjacking) on OWASP
+>>>>>>> master
 
 ---
 
 ## Term: Closure
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
+=======
+-   CodingScripting
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -1991,17 +2966,29 @@ Clickjacking can be prevented by implementing a [Content Security Policy (frame-
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Closure_%28computer*programming%29", "Closure"*) on Wikipedia
 - [Closure](/en-US/docs/Web/JavaScript/Closures) on MDN
+=======
+-   _Interwiki("wikipedia", "Closure_%28computer*programming%29", "Closure"*) on Wikipedia
+-   [Closure](/en-US/docs/Web/JavaScript/Closures) on MDN
+>>>>>>> master
 
 ---
 
 ## Term: CMS
 
+<<<<<<< HEAD
 - CMS
 - Composing
 - Content management system
 - Glossary
+=======
+-   CMS
+-   Composing
+-   Content management system
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -2009,13 +2996,21 @@ Clickjacking can be prevented by implementing a [Content Security Policy (frame-
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Content management system"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Content management system"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Code point
 
+<<<<<<< HEAD
 - Glossary
+=======
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -2025,17 +3020,29 @@ Character encoding forms, such as UTF-8 and UTF-16, determine how a Unicode code
 
 #### See also
 
+<<<<<<< HEAD
 - [The Unicode Standard: Code Points and Characters](https://www.unicode.org/versions/Unicode14.0.0/ch02.pdf#G25564)
+=======
+-   [The Unicode Standard: Code Points and Characters](https://www.unicode.org/versions/Unicode14.0.0/ch02.pdf#G25564)
+>>>>>>> master
 
 ---
 
 ## Term: Code splitting
 
+<<<<<<< HEAD
 - Glossary
 - Reference
 - Web Performance
 - code splitting
 - latency
+=======
+-   Glossary
+-   Reference
+-   Web Performance
+-   code splitting
+-   latency
+>>>>>>> master
 
 ---
 
@@ -2047,16 +3054,27 @@ Code splitting is a feature supported by bundlers like [Webpack](https://webpack
 
 #### See also
 
+<<<<<<< HEAD
 - Bundling
 - [Lazy loading](/en-US/docs/Web/Performance/Lazy_loading)
 - [HTTP/2](/en-US/docs/Glossary/HTTP_2)
 - [Tree shaking](/en-US/docs/Glossary/Tree_shaking)
+=======
+-   Bundling
+-   [Lazy loading](/en-US/docs/Web/Performance/Lazy_loading)
+-   [HTTP/2](/en-US/docs/Glossary/HTTP_2)
+-   [Tree shaking](/en-US/docs/Glossary/Tree_shaking)
+>>>>>>> master
 
 ---
 
 ## Term: Code unit
 
+<<<<<<< HEAD
 - Glossary
+=======
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -2067,6 +3085,10 @@ In UTF-16 (the encoding system used for JavaScript strings) code units are 16-bi
 For example, sometimes characters with diacritics such as accents are represented using two Unicode code points:
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 const myString = 'ñ';
 myString.length;
 // 2
@@ -2075,6 +3097,10 @@ myString.length;
 Also, since not all of the code points defined by Unicode fit into 16 bits, many Unicode code points are encoded as a pair of UTF-16 code units, which is called a _surrogate pair_:
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 const face = '🥵';
 face.length;
 // 2
@@ -2083,6 +3109,10 @@ face.length;
 The _jsxref("String/codePointAt", "codePointAt()"_) method of the JavaScript _jsxref("String"_) object enables you to retrieve the Unicode code point from its encoded form:
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 const face = '🥵';
 face.codePointAt(0);
 // 129397
@@ -2090,14 +3120,23 @@ face.codePointAt(0);
 
 #### See also
 
+<<<<<<< HEAD
 - [Unicode encoding FAQ](https://www.unicode.org/faq/utf_bom.html)
+=======
+-   [Unicode encoding FAQ](https://www.unicode.org/faq/utf_bom.html)
+>>>>>>> master
 
 ---
 
 ## Term: Codec
 
+<<<<<<< HEAD
 - Glossary
 - WebMechanics
+=======
+-   Glossary
+-   WebMechanics
+>>>>>>> master
 
 ---
 
@@ -2105,18 +3144,31 @@ face.codePointAt(0);
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Codec"_) on Wikipedia
 - [Web video codec guide](/en-US/docs/Web/Media/Formats/Video_codecs)
 - [Web audio codec guide](/en-US/docs/Web/Media/Formats/Audio_codecs)
 - [Guide to media types and formats on the web](/en-US/docs/Web/Media/Formats)
+=======
+-   _Interwiki("wikipedia", "Codec"_) on Wikipedia
+-   [Web video codec guide](/en-US/docs/Web/Media/Formats/Video_codecs)
+-   [Web audio codec guide](/en-US/docs/Web/Media/Formats/Audio_codecs)
+-   [Guide to media types and formats on the web](/en-US/docs/Web/Media/Formats)
+>>>>>>> master
 
 ---
 
 ## Term: Compile time
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - JavaScript
+=======
+-   CodingScripting
+-   Glossary
+-   JavaScript
+>>>>>>> master
 
 ---
 
@@ -2124,14 +3176,23 @@ face.codePointAt(0);
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Compile time"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Compile time"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Compile
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
+=======
+-   CodingScripting
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -2149,18 +3210,31 @@ Compilers may also translate among higher-level languages — for example, from 
 
 #### See also
 
+<<<<<<< HEAD
 - [Compiling from C/C++ to WebAssembly](/en-US/docs/WebAssembly/C_to_wasm)
 - [Compiling from Rust to WebAssembly](/en-US/docs/WebAssembly/Rust_to_wasm)
 - Wikipedia: _Interwiki("wikipedia", "Compiler"_)
+=======
+-   [Compiling from C/C++ to WebAssembly](/en-US/docs/WebAssembly/C_to_wasm)
+-   [Compiling from Rust to WebAssembly](/en-US/docs/WebAssembly/Rust_to_wasm)
+-   Wikipedia: _Interwiki("wikipedia", "Compiler"_)
+>>>>>>> master
 
 ---
 
 ## Term: Computer Programming
 
+<<<<<<< HEAD
 - CodingScripting
 - Computer Programming
 - Programming Language
 - programming
+=======
+-   CodingScripting
+-   Computer Programming
+-   Programming Language
+-   programming
+>>>>>>> master
 
 ---
 
@@ -2170,16 +3244,27 @@ Using an appropriate language, you can program/create all sorts of software. For
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Computer programming"_) on Wikipedia
 - [List of Programming Languages: Wikipedia](https://en.wikipedia.org/wiki/List_of_programming_languages)
+=======
+-   _Interwiki("wikipedia", "Computer programming"_) on Wikipedia
+-   [List of Programming Languages: Wikipedia](https://en.wikipedia.org/wiki/List_of_programming_languages)
+>>>>>>> master
 
 ---
 
 ## Term: Conditional
 
+<<<<<<< HEAD
 - Beginner
 - CodingScripting
 - Glossary
+=======
+-   Beginner
+-   CodingScripting
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -2189,18 +3274,31 @@ An instruction or a set of instructions is executed if a specific condition is f
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Exception_handling#Condition_systems", "Condition"_) on Wikipedia
 - [Control flow](/en-US/docs/Glossary/Control_flow) on MDN
 - [Making decisions in your code — conditionals](/en-US/docs/Learn/JavaScript/Building_blocks/conditionals)
 - [Control flow and error handling in JavaScript](/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling) on MDN
+=======
+-   _interwiki("wikipedia", "Exception_handling#Condition_systems", "Condition"_) on Wikipedia
+-   [Control flow](/en-US/docs/Glossary/Control_flow) on MDN
+-   [Making decisions in your code — conditionals](/en-US/docs/Learn/JavaScript/Building_blocks/conditionals)
+-   [Control flow and error handling in JavaScript](/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling) on MDN
+>>>>>>> master
 
 ---
 
 ## Term: Constant
 
+<<<<<<< HEAD
 - CodingScripting
 - Constant
 - Glossary
+=======
+-   CodingScripting
+-   Constant
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -2210,14 +3308,23 @@ Like variables, some constants are bound to identifiers. For example, the identi
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Constant_(computer*programming)", "Constant"*) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Constant_(computer*programming)", "Constant"*) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Constructor
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
+=======
+-   CodingScripting
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -2226,6 +3333,10 @@ Like variables, some constants are bound to identifiers. For example, the identi
 ## Syntax
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 // This is a generic default constructor class Default
 function Default() {
 }
@@ -2240,9 +3351,14 @@ To call the constructor of the class in JavaScript, use a `new` operator to assi
 
 ---
 
+<<<<<<< HEAD
 
 ```js
 
+=======
+```js
+//
+>>>>>>> master
 
 function Default() {}
 
@@ -2253,16 +3369,27 @@ var defaultReference = new Default();
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Constructor_%28object-oriented*programming%29", "Constructor"*) on Wikipedia
 - [The constructor in object oriented programming for JavaScript](/en-US/docs/Learn/JavaScript/Objects#the_constructor) on MDN
 - [New operator in JavaScript](/en-US/docs/Web/JavaScript/Reference/Operators/new) on MDN
+=======
+-   _Interwiki("wikipedia", "Constructor_%28object-oriented*programming%29", "Constructor"*) on Wikipedia
+-   [The constructor in object oriented programming for JavaScript](/en-US/docs/Learn/JavaScript/Objects#the_constructor) on MDN
+-   [New operator in JavaScript](/en-US/docs/Web/JavaScript/Reference/Operators/new) on MDN
+>>>>>>> master
 
 ---
 
 ## Term: Continuous Media
 
+<<<<<<< HEAD
 - Glossary
 - Media
+=======
+-   Glossary
+-   Media
+>>>>>>> master
 
 ---
 
@@ -2276,9 +3403,15 @@ Continuous Media, therefore, identifies a context where the content is not broke
 
 ## Term: Control flow
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - JavaScript
+=======
+-   CodingScripting
+-   Glossary
+-   JavaScript
+>>>>>>> master
 
 ---
 
@@ -2302,16 +3435,27 @@ Control flow means that when you read a script, you must not only read from star
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Control flow"_) on Wikipedia
 - [JavaScript Reference - Control flow](/en-US/docs/Web/JavaScript/Reference#control_flow) on MDN
 - [Statements (Control flow)](/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling) on MDN
+=======
+-   _Interwiki("wikipedia", "Control flow"_) on Wikipedia
+-   [JavaScript Reference - Control flow](/en-US/docs/Web/JavaScript/Reference#control_flow) on MDN
+-   [Statements (Control flow)](/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling) on MDN
+>>>>>>> master
 
 ---
 
 ## Term: Cookie
 
+<<<<<<< HEAD
 - Glossary
 - WebMechanics
+=======
+-   Glossary
+-   WebMechanics
+>>>>>>> master
 
 ---
 
@@ -2323,16 +3467,27 @@ Cookies can be set and modified at the server level using the `Set-Cookie` [HTTP
 
 #### See also
 
+<<<<<<< HEAD
 - [HTTP cookie](https://en.wikipedia.org/wiki/HTTP_cookie) on Wikipedia
+=======
+-   [HTTP cookie](https://en.wikipedia.org/wiki/HTTP_cookie) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Copyleft
 
+<<<<<<< HEAD
 - Glossary
 - OpenPractices
 - Remixing
 - Sharing
+=======
+-   Glossary
+-   OpenPractices
+-   Remixing
+-   Sharing
+>>>>>>> master
 
 ---
 
@@ -2340,23 +3495,39 @@ Cookies can be set and modified at the server level using the `Set-Cookie` [HTTP
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Copyleft"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Copyleft"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: CORS-safelisted request header
 
+<<<<<<< HEAD
 - CORS
 - Fetch
+=======
+-   CORS
+-   Fetch
+>>>>>>> master
 
 ---
 
 > A [CORS-safelisted request header](https://fetch.spec.whatwg.org/#cors-safelisted-request-header) is one of the following [HTTP headers](/en-US/docs/Web/HTTP/Headers):
 
+<<<<<<< HEAD
 - _HTTPHeader("Accept"_),
 - _HTTPHeader("Accept-Language"_),
 - _HTTPHeader("Content-Language"_),
 - _HTTPHeader("Content-Type"_).
+=======
+-   _HTTPHeader("Accept"_),
+-   _HTTPHeader("Accept-Language"_),
+-   _HTTPHeader("Content-Language"_),
+-   _HTTPHeader("Content-Type"_).
+>>>>>>> master
 
 When containing only these headers (and values that meet the additional requirements laid out below), a requests doesn't need to send a _glossary("preflight request"_) in the context of [CORS](/en-US/docs/Glossary/CORS).
 
@@ -2366,6 +3537,7 @@ You can safelist more headers using the _HTTPHeader("Access-Control-Allow-Header
 
 CORS-safelisted headers must also fulfill the following requirements in order to be a CORS-safelisted request header:
 
+<<<<<<< HEAD
 - For _HTTPHeader("Accept-Language"_) and _HTTPHeader("Content-Language"_): can only have values consisting of `0-9`, `A-Z`, `a-z`, space or `*,-.;=`.
 - For _HTTPHeader("Accept"_) and _HTTPHeader("Content-Type"_): can't contain a _CORS-unsafe request header byte_: `0x00-0x1F` (except for `0x09 (HT)`, which is allowed), `"():<>?@[\]{}`, and `0x7F (DEL)`.
 - For _HTTPHeader("Content-Type"_): needs to have a MIME type of its parsed value (ignoring parameters) of either `application/x-www-form-urlencoded`, `multipart/form-data`, or `text/plain`.
@@ -2376,15 +3548,34 @@ CORS-safelisted headers must also fulfill the following requirements in order to
 - _Glossary("CORS-safelisted response header"_)
 - _Glossary("Forbidden header name"_)
 - _Glossary("Request header"_)
+=======
+-   For _HTTPHeader("Accept-Language"_) and _HTTPHeader("Content-Language"_): can only have values consisting of `0-9`, `A-Z`, `a-z`, space or `*,-.;=`.
+-   For _HTTPHeader("Accept"_) and _HTTPHeader("Content-Type"_): can't contain a _CORS-unsafe request header byte_: `0x00-0x1F` (except for `0x09 (HT)`, which is allowed), `"():<>?@[\]{}`, and `0x7F (DEL)`.
+-   For _HTTPHeader("Content-Type"_): needs to have a MIME type of its parsed value (ignoring parameters) of either `application/x-www-form-urlencoded`, `multipart/form-data`, or `text/plain`.
+-   For any header: the value's length can't be greater than 128.
+
+#### See also
+
+-   _Glossary("CORS-safelisted response header"_)
+-   _Glossary("Forbidden header name"_)
+-   _Glossary("Request header"_)
+>>>>>>> master
 
 ---
 
 ## Term: CORS-safelisted response header
 
+<<<<<<< HEAD
 - CORS
 - Fetch
 - Glossary
 - HTTP
+=======
+-   CORS
+-   Fetch
+-   Glossary
+-   HTTP
+>>>>>>> master
 
 ---
 
@@ -2392,6 +3583,7 @@ CORS-safelisted headers must also fulfill the following requirements in order to
 
 By default, the safelist includes the following response headers:
 
+<<<<<<< HEAD
 - _HTTPHeader("Cache-Control"_)
 - _HTTPHeader("Content-Language"_)
 - _HTTPHeader("Content-Length"_)
@@ -2399,6 +3591,15 @@ By default, the safelist includes the following response headers:
 - _HTTPHeader("Expires"_)
 - _HTTPHeader("Last-Modified"_)
 - _HTTPHeader("Pragma"_)
+=======
+-   _HTTPHeader("Cache-Control"_)
+-   _HTTPHeader("Content-Language"_)
+-   _HTTPHeader("Content-Length"_)
+-   _HTTPHeader("Content-Type"_)
+-   _HTTPHeader("Expires"_)
+-   _HTTPHeader("Last-Modified"_)
+-   _HTTPHeader("Pragma"_)
+>>>>>>> master
 
 Additional headers can be added to the safelist using _HTTPHeader("Access-Control-Expose-Headers"_).
 
@@ -2416,6 +3617,7 @@ Access-Control-Expose-Headers: X-Custom-Header, Content-Encoding
 
 #### See also
 
+<<<<<<< HEAD
 - [HTTP](/en-US/docs/Web/HTTP)
 - [HTTP headers](/en-US/docs/Web/HTTP/Headers)
 - _HTTPHeader("Access-Control-Expose-Headers"_)
@@ -2425,14 +3627,31 @@ Access-Control-Expose-Headers: X-Custom-Header, Content-Encoding
     - _Glossary("CORS-safelisted_request_header", "CORS-safelisted request header"_)
     - _Glossary("Forbidden header name"_)
     - _Glossary("Request header"_)
+=======
+-   [HTTP](/en-US/docs/Web/HTTP)
+-   [HTTP headers](/en-US/docs/Web/HTTP/Headers)
+-   _HTTPHeader("Access-Control-Expose-Headers"_)
+-   [Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("CORS"_)
+    -   _Glossary("CORS-safelisted_request_header", "CORS-safelisted request header"_)
+    -   _Glossary("Forbidden header name"_)
+    -   _Glossary("Request header"_)
+>>>>>>> master
 
 ---
 
 ## Term: CORS
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
 - Security
+=======
+-   Glossary
+-   Infrastructure
+-   Security
+>>>>>>> master
 
 ---
 
@@ -2442,6 +3661,7 @@ The [same-origin security policy](/en-US/docs/Web/Security/Same-origin_policy) f
 
 #### See also
 
+<<<<<<< HEAD
 - [Cross-Origin Resource Sharing (CORS)](/en-US/docs/Web/HTTP/CORS) on MDN
 - _Interwiki("wikipedia", "Cross-origin resource sharing"_) on Wikipedia
 - [Fetch specification](https://fetch.spec.whatwg.org)
@@ -2466,15 +3686,48 @@ The [same-origin security policy](/en-US/docs/Web/Security/Same-origin_policy) f
     - : Used when issuing a preflight request to let the server know which [HTTP method](/en-US/docs/Web/HTTP/Methods) will be used when the actual request is made.
 - _HTTPHeader("Origin"_)
     - : Indicates where a fetch originates from.
+=======
+-   [Cross-Origin Resource Sharing (CORS)](/en-US/docs/Web/HTTP/CORS) on MDN
+-   _Interwiki("wikipedia", "Cross-origin resource sharing"_) on Wikipedia
+-   [Fetch specification](https://fetch.spec.whatwg.org)
+
+### CORS headers
+
+-   _HTTPHeader("Access-Control-Allow-Origin"_)
+-   -   : Indicates whether the response can be shared.
+-   _HTTPHeader("Access-Control-Allow-Credentials"_)
+-   -   : Indicates whether or not the response to the request can be exposed when the credentials flag is true.
+-   _HTTPHeader("Access-Control-Allow-Headers"_)
+-   -   : Used in response to a preflight request to indicate which HTTP headers can be used when making the actual reques
+-   _HTTPHeader("Access-Control-Allow-Methods"_)
+-   -   : Specifies the method or methods allowed when accessing the resource in response to a preflight request.
+-   _HTTPHeader("Access-Control-Expose-Headers"_)
+    -   : Indicates which headers can be exposed as part of the response by listing their names.
+-   _HTTPHeader("Access-Control-Max-Age"_)
+    -   : Indicates how long the results of a preflight request can be cached.
+-   _HTTPHeader("Access-Control-Request-Headers"_)
+    -   : Used when issuing a preflight request to let the server know which HTTP headers will be used when the actual request is made.
+-   _HTTPHeader("Access-Control-Request-Method"_)
+    -   : Used when issuing a preflight request to let the server know which [HTTP method](/en-US/docs/Web/HTTP/Methods) will be used when the actual request is made.
+-   _HTTPHeader("Origin"_)
+    -   : Indicates where a fetch originates from.
+>>>>>>> master
 
 ---
 
 ## Term: Crawler
 
+<<<<<<< HEAD
 - Browser
 - Crawler
 - Glossary
 - Infrastructure
+=======
+-   Browser
+-   Crawler
+-   Glossary
+-   Infrastructure
+>>>>>>> master
 
 ---
 
@@ -2482,13 +3735,19 @@ The [same-origin security policy](/en-US/docs/Web/Security/Same-origin_policy) f
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Web crawler"_) on Wikipedia
 - _Glossary("Search engine"_) (Glossary)
+=======
+-   _Interwiki("wikipedia", "Web crawler"_) on Wikipedia
+-   _Glossary("Search engine"_) (Glossary)
+>>>>>>> master
 
 ---
 
 ## Term: CRLF
 
+<<<<<<< HEAD
 - CR
 - CRLF
 - Glossary
@@ -2496,31 +3755,59 @@ The [same-origin security policy](/en-US/docs/Web/Security/Same-origin_policy) f
 - LF
 - carriage return
 - line feed
+=======
+-   CR
+-   CRLF
+-   Glossary
+-   Infrastructure
+-   LF
+-   carriage return
+-   line feed
+>>>>>>> master
 
 ---
 
 > CR and LF are [control characters](https://en.wikipedia.org/wiki/Control_character) or [bytecode](https://en.wikipedia.org/wiki/Bytecode) that can be used to mark a line break in a text file.
 
+<<<<<<< HEAD
 - CR = **Carriage Return** (`\r`, `0x0D` in hexadecimal, 13 in decimal) — moves the cursor to the beginning of the line without advancing to the next line.
 - LF = **Line Feed** (`\n`, `0x0A` in hexadecimal, 10 in decimal) — moves the cursor down to the next line without returning to the beginning of the line.
+=======
+-   CR = **Carriage Return** (`\r`, `0x0D` in hexadecimal, 13 in decimal) — moves the cursor to the beginning of the line without advancing to the next line.
+-   LF = **Line Feed** (`\n`, `0x0A` in hexadecimal, 10 in decimal) — moves the cursor down to the next line without returning to the beginning of the line.
+>>>>>>> master
 
 A CR immediately followed by a LF (CRLF, `\r\n`, or `0x0D0A`) moves the cursor down to the next line and then to the beginning of the line.
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Newline#In_programming_languages", "Newline"_) on Wikipedia
 - _interwiki("wikipedia", "Carriage_return#Computers", "Carriage return"_) on Wikipedia
+=======
+-   _interwiki("wikipedia", "Newline#In_programming_languages", "Newline"_) on Wikipedia
+-   _interwiki("wikipedia", "Carriage_return#Computers", "Carriage return"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Cross-site scripting
 
+<<<<<<< HEAD
 - Cross Site Scripting
 - DOM
 - Glossary
 - Security
 - XSS
 - exploit
+=======
+-   Cross Site Scripting
+-   DOM
+-   Glossary
+-   Security
+-   XSS
+-   exploit
+>>>>>>> master
 
 ---
 
@@ -2530,20 +3817,35 @@ These attacks succeed if the Web app does not employ enough validation or encodi
 
 #### See also
 
+<<<<<<< HEAD
 - [Cross-site scripting (XSS)](/en-US/docs/Web/Security/Types_of_attacks#cross-site_scripting_xss)
 - _Interwiki("wikipedia", "Cross-site scripting"_) on Wikipedia
 - [Cross-site scripting on OWASP](https://owasp.org/www-community/attacks/xss/)
 - [Another article about Cross-site scripting](https://www.acunetix.com/blog/web-security-zone/articles/dom-xss-explained/)
 - [XSS Attack - Exploit & Protection](https://secure.wphackedhelp.com/blog/wordpress-xss-attack/)
+=======
+-   [Cross-site scripting (XSS)](/en-US/docs/Web/Security/Types_of_attacks#cross-site_scripting_xss)
+-   _Interwiki("wikipedia", "Cross-site scripting"_) on Wikipedia
+-   [Cross-site scripting on OWASP](https://owasp.org/www-community/attacks/xss/)
+-   [Another article about Cross-site scripting](https://www.acunetix.com/blog/web-security-zone/articles/dom-xss-explained/)
+-   [XSS Attack - Exploit & Protection](https://secure.wphackedhelp.com/blog/wordpress-xss-attack/)
+>>>>>>> master
 
 ---
 
 ## Term: Cross Axis
 
+<<<<<<< HEAD
 - CSS
 - Glossary
 - cross axis
 - flexbox
+=======
+-   CSS
+-   Glossary
+-   cross axis
+-   flexbox
+>>>>>>> master
 
 ---
 
@@ -2561,6 +3863,7 @@ Alignment of items on the cross axis is achieved with the `align-items` property
 
 ### Property reference
 
+<<<<<<< HEAD
 - _cssxref("align-content"_)
 - _cssxref("align-items"_)
 - _cssxref("align-self"_)
@@ -2585,13 +3888,44 @@ Alignment of items on the cross axis is achieved with the `align-items` property
     - _Glossary("Flex Container"_)
     - _Glossary("Flex Item"_)
     - _Glossary("Grid"_)
+=======
+-   _cssxref("align-content"_)
+-   _cssxref("align-items"_)
+-   _cssxref("align-self"_)
+-   _cssxref("flex-wrap"_)
+-   _cssxref("flex-direction"_)
+-   _cssxref("flex"_)
+-   _cssxref("flex-basis"_)
+-   _cssxref("flex-flow"_)
+-   _cssxref("flex-grow"_)
+-   _cssxref("flex-shrink"_)
+-   _cssxref("justify-content"_)
+-   _cssxref("order"_)
+
+### Further reading
+
+-   CSS Flexbox Guide: _[Basic Concepts of Flexbox](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)_
+-   CSS Flexbox Guide: _[Aligning items in a flex container](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container)_
+-   CSS Flexbox Guide: _[Mastering wrapping of flex items](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Mastering_Wrapping_of_Flex_Items)_
+-   [Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("Flex"_)
+    -   _Glossary("Flex Container"_)
+    -   _Glossary("Flex Item"_)
+    -   _Glossary("Grid"_)
+>>>>>>> master
 
 ---
 
 ## Term: CRUD
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
+=======
+-   Glossary
+-   Infrastructure
+>>>>>>> master
 
 ---
 
@@ -2599,16 +3933,27 @@ Alignment of items on the cross axis is achieved with the `align-items` property
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "CRUD"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "CRUD"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Cryptanalysis
 
+<<<<<<< HEAD
 - Cryptography
 - Glossary
 - Privacy
 - Security
+=======
+-   Cryptography
+-   Glossary
+-   Privacy
+-   Security
+>>>>>>> master
 
 ---
 
@@ -2616,15 +3961,25 @@ Alignment of items on the cross axis is achieved with the `align-items` property
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Cryptanalysis"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Cryptanalysis"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Cryptographic hash function
 
+<<<<<<< HEAD
 - Cryptography
 - Glossary
 - Security
+=======
+-   Cryptography
+-   Glossary
+-   Security
+>>>>>>> master
 
 ---
 
@@ -2632,28 +3987,49 @@ Alignment of items on the cross axis is achieved with the `align-items` property
 
 To be used for cryptography, a hash function must have these qualities:
 
+<<<<<<< HEAD
 - quick to compute (because they are generated frequently)
 - not invertible (each digest could come from a very large number of messages, and only brute-force can generate a message that leads to a given digest)
 - tamper-resistant (any change to a message leads to a different digest)
 - collision-resistant (it should be impossible to find two different messages that produce the same digest)
+=======
+-   quick to compute (because they are generated frequently)
+-   not invertible (each digest could come from a very large number of messages, and only brute-force can generate a message that leads to a given digest)
+-   tamper-resistant (any change to a message leads to a different digest)
+-   collision-resistant (it should be impossible to find two different messages that produce the same digest)
+>>>>>>> master
 
 Cryptographic hash functions such as MD5 and SHA-1 are considered broken, as attacks have been found that significantly reduce their collision resistance.
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Cryptographic hash function", "Cryptographic hash function"_) on Wikipedia
 - [MDN Web Docs Glossary](/en-US/docs/Glossary)
 
     - _Glossary("Symmetric-key cryptography"_)
+=======
+-   _interwiki("wikipedia", "Cryptographic hash function", "Cryptographic hash function"_) on Wikipedia
+-   [MDN Web Docs Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("Symmetric-key cryptography"_)
+>>>>>>> master
 
 ---
 
 ## Term: Cryptography
 
+<<<<<<< HEAD
 - Cryptography
 - Glossary
 - Privacy
 - Security
+=======
+-   Cryptography
+-   Glossary
+-   Privacy
+-   Security
+>>>>>>> master
 
 ---
 
@@ -2663,6 +4039,7 @@ More than just **data confidentiality**, cryptography also tackles **identificat
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Cryptography"_) on Wikipedia
 - [Information security tutorial](/en-US/docs/Web/Security/Information_Security_Basics)
 - [Encrypting and Decrypting](/en-US/docs/Archive/Security/Encryption_and_Decryption)
@@ -2680,14 +4057,39 @@ More than just **data confidentiality**, cryptography also tackles **identificat
     - _Glossary("Plaintext"_)
     - _Glossary("Public-key cryptography"_)
     - _Glossary("Symmetric-key cryptography"_)
+=======
+-   _Interwiki("wikipedia", "Cryptography"_) on Wikipedia
+-   [Information security tutorial](/en-US/docs/Web/Security/Information_Security_Basics)
+-   [Encrypting and Decrypting](/en-US/docs/Archive/Security/Encryption_and_Decryption)
+-   [MDN Web Docs Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("Block cipher mode of operation"_)
+    -   _Glossary("Cipher"_)
+    -   _Glossary("Ciphertext"_)
+    -   _Glossary("Cipher suite"_)
+    -   _Glossary("Cryptanalysis"_)
+    -   _Glossary("Cryptography"_)
+    -   _Glossary("Decryption"_)
+    -   _Glossary("Encryption"_)
+    -   _Glossary("Key"_)
+    -   _Glossary("Plaintext"_)
+    -   _Glossary("Public-key cryptography"_)
+    -   _Glossary("Symmetric-key cryptography"_)
+>>>>>>> master
 
 ---
 
 ## Term: CSP
 
+<<<<<<< HEAD
 - Glossary
 - HTTP
 - Infrastructure
+=======
+-   Glossary
+-   HTTP
+-   Infrastructure
+>>>>>>> master
 
 ---
 
@@ -2697,15 +4099,25 @@ The implementation is based on an _Glossary("HTTP"_) header called _HTTPHeader("
 
 #### See also
 
+<<<<<<< HEAD
 - [Content Security Policy on Wikipedia](https://en.wikipedia.org/wiki/Content_Security_Policy)
 - [Content Security Policy documentation on MDN](/en-US/docs/Web/HTTP/CSP)
+=======
+-   [Content Security Policy on Wikipedia](https://en.wikipedia.org/wiki/Content_Security_Policy)
+-   [Content Security Policy documentation on MDN](/en-US/docs/Web/HTTP/CSP)
+>>>>>>> master
 
 ---
 
 ## Term: CSRF
 
+<<<<<<< HEAD
 - Glossary
 - Security
+=======
+-   Glossary
+-   Security
+>>>>>>> master
 
 ---
 
@@ -2723,13 +4135,19 @@ There are many ways to prevent CSRF, such as implementing _glossary("REST", "RES
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Cross-site request forgery"_) on Wikipedia
 - [Prevention measures](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html)
+=======
+-   _Interwiki("wikipedia", "Cross-site request forgery"_) on Wikipedia
+-   [Prevention measures](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html)
+>>>>>>> master
 
 ---
 
 ## Term: CSS pixel
 
+<<<<<<< HEAD
 - CSS
 - CSS Pixel
 - Glossary
@@ -2739,6 +4157,17 @@ There are many ways to prevent CSRF, such as implementing _glossary("REST", "RES
 - size
 - unit
 - width
+=======
+-   CSS
+-   CSS Pixel
+-   Glossary
+-   height
+-   length
+-   pixel
+-   size
+-   unit
+-   width
+>>>>>>> master
 
 ---
 
@@ -2746,14 +4175,23 @@ There are many ways to prevent CSRF, such as implementing _glossary("REST", "RES
 
 #### See also
 
+<<<<<<< HEAD
 - [CSS Length Explained](https://hacks.mozilla.org/2013/09/css-length-explained/) on the MDN Hacks Blog
+=======
+-   [CSS Length Explained](https://hacks.mozilla.org/2013/09/css-length-explained/) on the MDN Hacks Blog
+>>>>>>> master
 
 ---
 
 ## Term: CSS preprocessor
 
+<<<<<<< HEAD
 - CSS
 - Glossary
+=======
+-   CSS
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -2765,6 +4203,7 @@ To use a CSS preprocessor, you must install a CSS compiler on your web _Glossary
 
 #### See also
 
+<<<<<<< HEAD
 - A few of most popular CSS preprocessors:
 
     - [Sass](https://sass-lang.com/)
@@ -2775,17 +4214,38 @@ To use a CSS preprocessor, you must install a CSS compiler on your web _Glossary
 - [MDN Web Docs Glossary](/en-US/docs/Glossary)
 
     - _Glossary("CSS"_)
+=======
+-   A few of most popular CSS preprocessors:
+
+    -   [Sass](https://sass-lang.com/)
+    -   [LESS](https://lesscss.org/)
+    -   [Stylus](https://stylus-lang.com/)
+    -   [PostCSS](https://postcss.org/)
+
+-   [MDN Web Docs Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("CSS"_)
+>>>>>>> master
 
 ---
 
 ## Term: Selector (CSS)
 
+<<<<<<< HEAD
 - CSS
 - CSS Selector
 - CodingScripting
 - Glossary
 - HTML
 - Selector
+=======
+-   CSS
+-   CSS Selector
+-   CodingScripting
+-   Glossary
+-   HTML
+-   Selector
+>>>>>>> master
 
 ---
 
@@ -2835,6 +4295,7 @@ _EmbedLiveSample("Example", 640, 240_)
 
 #### See also
 
+<<<<<<< HEAD
 - [Learn more about CSS selectors](/en-US/docs/Learn/CSS/Building_blocks/Selectors) in our introduction to CSS.
 - Basic selectors
 
@@ -2860,15 +4321,49 @@ _EmbedLiveSample("Example", 640, 240_)
 
     - [Pseudo classes](/en-US/docs/Web/CSS/Pseudo-classes) `:`
     - [Pseudo elements](/en-US/docs/Web/CSS/Pseudo-elements) `::`
+=======
+-   [Learn more about CSS selectors](/en-US/docs/Learn/CSS/Building_blocks/Selectors) in our introduction to CSS.
+-   Basic selectors
+
+    -   [Type selectors](/en-US/docs/Web/CSS/Type_selectors) `elementname`
+    -   [Class selectors](/en-US/docs/Web/CSS/Class_selectors) `.classname`
+    -   [ID selectors](/en-US/docs/Web/CSS/ID_selectors) `#idname`
+    -   [Universal selectors](/en-US/docs/Web/CSS/Universal_selectors) `* ns|* *|*`
+    -   [Attribute selectors](/en-US/docs/Web/CSS/Attribute_selectors) `[attr=value]`
+    -   [State selectors](/en-US/docs/Web/CSS/Pseudo-classes) `a:active, a:visited`
+
+-   Grouping selectors
+
+    -   [Selector list](/en-US/docs/Web/CSS/Selector_list) `A, B`
+
+-   Combinators
+
+    -   [Adjacent sibling selectors](/en-US/docs/Web/CSS/Adjacent_sibling_combinator) `A + B`
+    -   [General sibling selectors](/en-US/docs/Web/CSS/General_sibling_combinator) `A ~ B`
+    -   [Child selectors](/en-US/docs/Web/CSS/Child_combinator) `A > B`
+    -   [Descendant selectors](/en-US/docs/Web/CSS/Descendant_combinator) `A B`
+
+-   Pseudo
+
+    -   [Pseudo classes](/en-US/docs/Web/CSS/Pseudo-classes) `:`
+    -   [Pseudo elements](/en-US/docs/Web/CSS/Pseudo-elements) `::`
+>>>>>>> master
 
 ---
 
 ## Term: Media (CSS)
 
+<<<<<<< HEAD
 - CSS
 - Glossary
 - Intro
 - Media
+=======
+-   CSS
+-   Glossary
+-   Intro
+-   Media
+>>>>>>> master
 
 ---
 
@@ -2880,19 +4375,33 @@ CSS offers several features that allow you to tweak your document's styles—or 
 
 #### See also
 
+<<<<<<< HEAD
 - [Using media queries](/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
 - [Media queries](/en-US/docs/Web/CSS/Media_Queries)
 - _cssxref("@media"_) [at-rule](/en-US/docs/Web/CSS/At-rule): Conditionally apply part of a [stylesheet](/en-US/docs/Learn/CSS/First_steps/How_CSS_works#how_to_apply_your_css_to_your_html), based on the result of a media query.
 - _domxref("Window.matchMedia()"_): Test the viewing device against a media query
+=======
+-   [Using media queries](/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
+-   [Media queries](/en-US/docs/Web/CSS/Media_Queries)
+-   _cssxref("@media"_) [at-rule](/en-US/docs/Web/CSS/At-rule): Conditionally apply part of a [stylesheet](/en-US/docs/Learn/CSS/First_steps/How_CSS_works#how_to_apply_your_css_to_your_html), based on the result of a media query.
+-   _domxref("Window.matchMedia()"_): Test the viewing device against a media query
+>>>>>>> master
 
 ---
 
 ## Term: CSS Object Model (CSSOM)
 
+<<<<<<< HEAD
 - CSS
 - CSSOM
 - DOM
 - Glossary
+=======
+-   CSS
+-   CSSOM
+-   DOM
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -2900,15 +4409,25 @@ CSS offers several features that allow you to tweak your document's styles—or 
 
 #### See also
 
+<<<<<<< HEAD
 - [Populating the page: how browsers work](/en-US/docs/Web/Performance/How_browsers_work)
+=======
+-   [Populating the page: how browsers work](/en-US/docs/Web/Performance/How_browsers_work)
+>>>>>>> master
 
 ---
 
 ## Term: Data structure
 
+<<<<<<< HEAD
 - CodingScripting
 - Data structure
 - Glossary
+=======
+-   CodingScripting
+-   Data structure
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -2916,15 +4435,25 @@ CSS offers several features that allow you to tweak your document's styles—or 
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Data_structure", "Data structure"_) on Wikipedia
+=======
+-   _interwiki("wikipedia", "Data_structure", "Data structure"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Database
 
+<<<<<<< HEAD
 - Database
 - Glossary
 - Sql
+=======
+-   Database
+-   Glossary
+-   Sql
+>>>>>>> master
 
 ---
 
@@ -2938,20 +4467,35 @@ Browsers also have their own database system called _glossary("IndexedDB"_).
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Database"_) on Wikipedia
 - Glossary
 
     - _Glossary("IndexedDB"_)
     - _Glossary("SQL"_)
+=======
+-   _Interwiki("wikipedia", "Database"_) on Wikipedia
+-   Glossary
+
+    -   _Glossary("IndexedDB"_)
+    -   _Glossary("SQL"_)
+>>>>>>> master
 
 ---
 
 ## Term: Decryption
 
+<<<<<<< HEAD
 - Cryptography
 - Glossary
 - Privacy
 - Security
+=======
+-   Cryptography
+-   Glossary
+-   Privacy
+-   Security
+>>>>>>> master
 
 ---
 
@@ -2965,16 +4509,27 @@ Decryption is the reverse of _glossary("encryption"_) and if the key stays secre
 
 #### See also
 
+<<<<<<< HEAD
 - [Encryption and Decryption](/en-US/docs/Encryption_and_Decryption)
+=======
+-   [Encryption and Decryption](/en-US/docs/Encryption_and_Decryption)
+>>>>>>> master
 
 ---
 
 ## Term: Delta
 
+<<<<<<< HEAD
 - Delta
 - Glossary
 - difference
 - value
+=======
+-   Delta
+-   Glossary
+-   difference
+-   value
+>>>>>>> master
 
 ---
 
@@ -2989,28 +4544,48 @@ For example, when describing how far an object on the screen moves left-to-right
 Likewise, given the new value of _X_ and its old value, you might compute the delta like this:
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 let deltaX = newX - oldX;
 ```
 
 More commonly, you receive the delta and use it to update a saved previous condition:
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 let newX = oldX + deltaX;
 ```
 
 #### See also
 
+<<<<<<< HEAD
 - Mouse wheel events (_domxref("WheelEvent"_) offer the amount the wheel moved since the last event in its _domxref("WheelEvent.deltaX", "deltaX"_), _domxref("WheelEvent.deltaY", "deltaY"_), and _domxref("WheelEvent.deltaZ", "deltaZ"_) properties, for example.
+=======
+-   Mouse wheel events (_domxref("WheelEvent"_) offer the amount the wheel moved since the last event in its _domxref("WheelEvent.deltaX", "deltaX"_), _domxref("WheelEvent.deltaY", "deltaY"_), and _domxref("WheelEvent.deltaZ", "deltaZ"_) properties, for example.
+>>>>>>> master
 
 ---
 
 ## Term: Denial of Service
 
+<<<<<<< HEAD
 - Attack
 - Denial of Service
 - Glossary
 - Intro
 - Security
+=======
+-   Attack
+-   Denial of Service
+-   Glossary
+-   Intro
+-   Security
+>>>>>>> master
 
 ---
 
@@ -3020,27 +4595,47 @@ let newX = oldX + deltaX;
 
 ## Term: Descriptor (CSS)
 
+<<<<<<< HEAD
 - CSS
 - CodingScripting
 - Glossary
 - NeedsContent
+=======
+-   CSS
+-   CodingScripting
+-   Glossary
+-   NeedsContent
+>>>>>>> master
 
 ---
 
 > A **CSS descriptor** defines the characteristics of an _cssxref("at-rule"_). At-rules may have one or multiple descriptors. Each descriptor has:
 
+<<<<<<< HEAD
 - A name
 - A value, which holds the component values
 - An "!important" flag, which in its default state is unset
+=======
+-   A name
+-   A value, which holds the component values
+-   An "!important" flag, which in its default state is unset
+>>>>>>> master
 
 ---
 
 ## Term: Deserialization
 
+<<<<<<< HEAD
 - Deserialization
 - Deserialize
 - Glossary
 - JavaScript
+=======
+-   Deserialization
+-   Deserialize
+-   Glossary
+-   JavaScript
+>>>>>>> master
 
 ---
 
@@ -3050,15 +4645,25 @@ In _Glossary("JavaScript"_), for example, you can deserialize a _Glossary("JSON"
 
 #### See also
 
+<<<<<<< HEAD
 - [Serialization](https://en.wikipedia.org/wiki/Serialization) on Wikipedia
+=======
+-   [Serialization](https://en.wikipedia.org/wiki/Serialization) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Developer Tools
 
+<<<<<<< HEAD
 - CodingScripting
 - Developer Tools
 - Glossary
+=======
+-   CodingScripting
+-   Developer Tools
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -3068,21 +4673,37 @@ Current browsers provide integrated developer tools, which allow to inspect a we
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Web development tools", "Web development tools"_) on Wikipedia
 - [Firefox Developer Tools](/en-US/docs/Tools) on MDN
 - [Firebug](https://getfirebug.com/) (former developer tool for Firefox)
 - [Chrome DevTools](https://developer.chrome.com/devtools) on chrome.com
 - [Safari Web Inspector](https://developer.apple.com/library/content/documentation/AppleApplications/Conceptual/Safari_Developer_Guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007874-CH1-SW1) on apple.com
 - [Edge Dev Tools](https://docs.microsoft.com/microsoft-edge/f12-devtools-guide) on microsoft.com
+=======
+-   _interwiki("wikipedia", "Web development tools", "Web development tools"_) on Wikipedia
+-   [Firefox Developer Tools](/en-US/docs/Tools) on MDN
+-   [Firebug](https://getfirebug.com/) (former developer tool for Firefox)
+-   [Chrome DevTools](https://developer.chrome.com/devtools) on chrome.com
+-   [Safari Web Inspector](https://developer.apple.com/library/content/documentation/AppleApplications/Conceptual/Safari_Developer_Guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007874-CH1-SW1) on apple.com
+-   [Edge Dev Tools](https://docs.microsoft.com/microsoft-edge/f12-devtools-guide) on microsoft.com
+>>>>>>> master
 
 ---
 
 ## Term: DHTML
 
+<<<<<<< HEAD
 - CodingScripting
 - DHTML
 - Glossary
 - HTML
+=======
+-   CodingScripting
+-   DHTML
+-   Glossary
+-   HTML
+>>>>>>> master
 
 ---
 
@@ -3090,16 +4711,27 @@ Current browsers provide integrated developer tools, which allow to inspect a we
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Dynamic HTML", "DHTML"_) on Wikipedia
+=======
+-   _interwiki("wikipedia", "Dynamic HTML", "DHTML"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Digest
 
+<<<<<<< HEAD
 - Cryptography
 - Glossary
 - Privacy
 - Security
+=======
+-   Cryptography
+-   Glossary
+-   Privacy
+-   Security
+>>>>>>> master
 
 ---
 
@@ -3107,26 +4739,45 @@ Current browsers provide integrated developer tools, which allow to inspect a we
 
 A digest can be used to perform several tasks:
 
+<<<<<<< HEAD
 - in non-cryptographic applications (e.g., the index of hash tables, or a fingerprint used to detect duplicate data or to uniquely identify files)
 - verify message integrity (a tampered message will have a different hash)
 - store passwords so that they can't be retrieved, but can still be checked (To do this securely, you also need to salt the password.)
 - generate pseudo-random numbers
 - generate _glossary("key","keys"_)
+=======
+-   in non-cryptographic applications (e.g., the index of hash tables, or a fingerprint used to detect duplicate data or to uniquely identify files)
+-   verify message integrity (a tampered message will have a different hash)
+-   store passwords so that they can't be retrieved, but can still be checked (To do this securely, you also need to salt the password.)
+-   generate pseudo-random numbers
+-   generate _glossary("key","keys"_)
+>>>>>>> master
 
 It is critical to choose the proper hash function for your use case to avoid collisions and predictability.
 
 #### See also
 
+<<<<<<< HEAD
 - See _glossary("Cryptographic hash function"_)
 - _interwiki("wikipedia", "Cryptographic_hash_function", "Hash function"_) on Wikipedia
+=======
+-   See _glossary("Cryptographic hash function"_)
+-   _interwiki("wikipedia", "Cryptographic_hash_function", "Hash function"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Digital certificate
 
+<<<<<<< HEAD
 - Cryptography
 - Glossary
 - Security
+=======
+-   Cryptography
+-   Glossary
+-   Security
+>>>>>>> master
 
 ---
 
@@ -3136,18 +4787,31 @@ A digital certificate contains information about an organization, such as the co
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Public_key_certificate", "Digital certificate "_) on Wikipedia
+=======
+-   _interwiki("wikipedia", "Public_key_certificate", "Digital certificate "_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Distributed Denial of Service
 
+<<<<<<< HEAD
 - Attack
 - DDoS
 - Denial of Service
 - Glossary
 - Intro
 - Security
+=======
+-   Attack
+-   DDoS
+-   Denial of Service
+-   Glossary
+-   Intro
+-   Security
+>>>>>>> master
 
 ---
 
@@ -3163,6 +4827,7 @@ A computer under an intruder's control is called a zombie or bot. A network of c
 
 The United States Computer Emergency Readiness Team (US-CERT) defines symptoms of denial-of-service attacks to include:
 
+<<<<<<< HEAD
 - Unusually slow network performance (opening files or accessing websites)
 - Unavailability of a particular website
 - Inability to access any website
@@ -3173,14 +4838,32 @@ The United States Computer Emergency Readiness Team (US-CERT) defines symptoms o
 #### See also
 
 - _interwiki("wikipedia", "Denial-of-service_attack", "Denial-of-service attack"_) on Wikipedia
+=======
+-   Unusually slow network performance (opening files or accessing websites)
+-   Unavailability of a particular website
+-   Inability to access any website
+-   Dramatic increase in the number of spam emails received—(this type of DoS attack is considered an email bomb)
+-   Disconnection of a wireless or wired internet connection
+-   Longterm denial of access to the Web or any internet services
+
+#### See also
+
+-   _interwiki("wikipedia", "Denial-of-service_attack", "Denial-of-service attack"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: DMZ
 
+<<<<<<< HEAD
 - Glossary
 - Networking
 - Security
+=======
+-   Glossary
+-   Networking
+-   Security
+>>>>>>> master
 
 ---
 
@@ -3190,16 +4873,27 @@ It exposes only certain defined endpoints, while denying access to the internal 
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "DMZ (computing)", "DMZ"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "DMZ (computing)", "DMZ"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: DNS
 
+<<<<<<< HEAD
 - DNS
 - Domain Name System
 - Glossary
 - Infrastructure
+=======
+-   DNS
+-   Domain Name System
+-   Glossary
+-   Infrastructure
+>>>>>>> master
 
 ---
 
@@ -3209,19 +4903,33 @@ The most prominent function of DNS is the translation of human-friendly domain n
 
 #### See also
 
+<<<<<<< HEAD
 - [Understanding domain names](/en-US/docs/Learn/Common_questions/What_is_a_domain_name)
 - _Interwiki("wikipedia", "Domain_Name_System", "Domain Name System"_) on Wikipedia
+=======
+-   [Understanding domain names](/en-US/docs/Learn/Common_questions/What_is_a_domain_name)
+-   _Interwiki("wikipedia", "Domain_Name_System", "Domain Name System"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Doctype
 
+<<<<<<< HEAD
 - Browser
 - CodingScripting
 - DOCTYPE
 - Glossary
 - HTML
 - Intro
+=======
+-   Browser
+-   CodingScripting
+-   DOCTYPE
+-   Glossary
+-   HTML
+-   Intro
+>>>>>>> master
 
 ---
 
@@ -3229,20 +4937,35 @@ The most prominent function of DNS is the translation of human-friendly domain n
 
 #### See also
 
+<<<<<<< HEAD
 - [Definition of the DOCTYPE in the HTML specification](https://html.spec.whatwg.org/multipage/syntax.html#the-doctype)
 - [Quirks Mode and Standards Mode](/en-US/docs/Web/HTML/Quirks_Mode_and_Standards_Mode)
 - [Document.doctype](/en-US/docs/Web/API/Document/doctype), a JavaScript method that returns the doctype
+=======
+-   [Definition of the DOCTYPE in the HTML specification](https://html.spec.whatwg.org/multipage/syntax.html#the-doctype)
+-   [Quirks Mode and Standards Mode](/en-US/docs/Web/HTML/Quirks_Mode_and_Standards_Mode)
+-   [Document.doctype](/en-US/docs/Web/API/Document/doctype), a JavaScript method that returns the doctype
+>>>>>>> master
 
 ---
 
 ## Term: Document directive
 
+<<<<<<< HEAD
 - CSP
 - Directive
 - Document
 - Glossary
 - HTTP
 - Security
+=======
+-   CSP
+-   Directive
+-   Document
+-   Glossary
+-   HTTP
+-   Security
+>>>>>>> master
 
 ---
 
@@ -3254,6 +4977,7 @@ See [Document directives](/en-US/docs/Web/HTTP/Headers/Content-Security-Policy#d
 
 #### See also
 
+<<<<<<< HEAD
 - [Glossary](/en-US/docs/Glossary)
 
     - _Glossary("CSP"_)
@@ -3268,14 +4992,36 @@ See [Document directives](/en-US/docs/Web/HTTP/Headers/Content-Security-Policy#d
     - _HTTPHeader("Content-Security-Policy/block-all-mixed-content", "block-all-mixed-content"_)
     - _HTTPHeader("Content-Security-Policy/require-sri-for", "require-sri-for"_) \_Deprecated_Inline}}
     - _HTTPHeader("Content-Security-Policy"_)
+=======
+-   [Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("CSP"_)
+    -   _Glossary("Reporting directive"_)
+    -   _Glossary("Fetch directive"_)
+    -   _Glossary("Navigation directive"_)
+
+-   Reference
+
+    -   <https://www.w3.org/TR/CSP/#directives-document>
+    -   _HTTPHeader("Content-Security-Policy/upgrade-insecure-requests", "upgrade-insecure-requests"_)
+    -   _HTTPHeader("Content-Security-Policy/block-all-mixed-content", "block-all-mixed-content"_)
+    -   _HTTPHeader("Content-Security-Policy/require-sri-for", "require-sri-for"_) \_Deprecated_Inline}}
+    -   _HTTPHeader("Content-Security-Policy"_)
+>>>>>>> master
 
 ---
 
 ## Term: document environment
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - JavaScript
+=======
+-   CodingScripting
+-   Glossary
+-   JavaScript
+>>>>>>> master
 
 ---
 
@@ -3283,16 +5029,27 @@ See [Document directives](/en-US/docs/Web/HTTP/Headers/Content-Security-Policy#d
 
 #### See also
 
+<<<<<<< HEAD
 - [document environment](https://html.spec.whatwg.org/multipage/webappapis.html#document-environment) in the HTML specification
+=======
+-   [document environment](https://html.spec.whatwg.org/multipage/webappapis.html#document-environment) in the HTML specification
+>>>>>>> master
 
 ---
 
 ## Term: Domain name
 
+<<<<<<< HEAD
 - Domain Name
 - Glossary
 - Protocol
 - WebMechanics
+=======
+-   Domain Name
+-   Glossary
+-   Protocol
+-   WebMechanics
+>>>>>>> master
 
 ---
 
@@ -3300,19 +5057,33 @@ See [Document directives](/en-US/docs/Web/HTTP/Headers/Content-Security-Policy#d
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Domain_name", "Domain name"_) on Wikipedia
 - [Understanding domain names](/en-US/docs/Learn/Common_questions/What_is_a_domain_name)
+=======
+-   _interwiki("wikipedia", "Domain_name", "Domain name"_) on Wikipedia
+-   [Understanding domain names](/en-US/docs/Learn/Common_questions/What_is_a_domain_name)
+>>>>>>> master
 
 ---
 
 ## Term: Domain sharding
 
+<<<<<<< HEAD
 - DNS
 - Glossary
 - HTTP
 - Reference
 - Web Performance
 - latency
+=======
+-   DNS
+-   Glossary
+-   HTTP
+-   Reference
+-   Web Performance
+-   latency
+>>>>>>> master
 
 ---
 
@@ -3326,19 +5097,33 @@ HTTP2 supports unlimited concurrent requests making domain sharding an obsolete 
 
 #### See also
 
+<<<<<<< HEAD
 - _Glossary("TLS"_)
 - [DNS](/en-US/docs/Glossary/DNS)
 - [HTTP/2](/en-US/docs/Glossary/HTTP_2)
+=======
+-   _Glossary("TLS"_)
+-   [DNS](/en-US/docs/Glossary/DNS)
+-   [HTTP/2](/en-US/docs/Glossary/HTTP_2)
+>>>>>>> master
 
 ---
 
 ## Term: Domain
 
+<<<<<<< HEAD
 - Browser
 - Domain
 - Glossary
 - Infrastructure
 - Networking
+=======
+-   Browser
+-   Domain
+-   Glossary
+-   Infrastructure
+-   Networking
+>>>>>>> master
 
 ---
 
@@ -3354,14 +5139,23 @@ For example, in "developer.mozilla.org":
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Domain_name", "Domain Name"_) on Wikipedia
+=======
+-   _interwiki("wikipedia", "Domain_name", "Domain Name"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Dominator
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
+=======
+-   CodingScripting
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -3371,17 +5165,29 @@ This concept is important for _Glossary("garbage collection"_) because it means 
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Dominator (graph theory)", "Dominator"_) on Wikipedia
 - [Dominators](/en-US/docs/Tools/Memory/Dominators)
 - [Garbage collection](/en-US/docs/Web/JavaScript/Memory_Management#garbage_collection)
+=======
+-   _interwiki("wikipedia", "Dominator (graph theory)", "Dominator"_) on Wikipedia
+-   [Dominators](/en-US/docs/Tools/Memory/Dominators)
+-   [Garbage collection](/en-US/docs/Web/JavaScript/Memory_Management#garbage_collection)
+>>>>>>> master
 
 ---
 
 ## Term: DOM (Document Object Model)
 
+<<<<<<< HEAD
 - CodingScripting
 - DOM
 - Glossary
+=======
+-   CodingScripting
+-   DOM
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -3393,6 +5199,7 @@ DOM was not originally specified—it came about when browsers began implementin
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Document_Object_Model", "The Document Object Model"_) on Wikipedia
 - [The DOM documentation on MDN](/en-US/docs/Web/API/Document_Object_Model)
 - [The DOM Standard](https://dom.spec.whatwg.org/)
@@ -3402,13 +5209,29 @@ DOM was not originally specified—it came about when browsers began implementin
     - _Glossary("HTML"_)
     - _Glossary("XML"_)
     - _Glossary("World Wide Web"_)
+=======
+-   _interwiki("wikipedia", "Document_Object_Model", "The Document Object Model"_) on Wikipedia
+-   [The DOM documentation on MDN](/en-US/docs/Web/API/Document_Object_Model)
+-   [The DOM Standard](https://dom.spec.whatwg.org/)
+-   [Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("API"_)
+    -   _Glossary("HTML"_)
+    -   _Glossary("XML"_)
+    -   _Glossary("World Wide Web"_)
+>>>>>>> master
 
 ---
 
 ## Term: DoS attack
 
+<<<<<<< HEAD
 - Glossary
 - Security
+=======
+-   Glossary
+-   Security
+>>>>>>> master
 
 ---
 
@@ -3420,6 +5243,7 @@ There are also Distributed Denial of Service (DDoS) Attacks in which a multitude
 
 DoS attacks are more of a category than a particular kind of attack. Here is a non-exhaustive list of DoS attack types:
 
+<<<<<<< HEAD
 - bandwidth attack
 - service request flood
 - SYN flooding attack
@@ -3433,13 +5257,33 @@ DoS attacks are more of a category than a particular kind of attack. Here is a n
 - _interwiki("wikipedia", "Denial-of-service_attack", "Denial-of-service attack"_) on Wikipedia
 - [Denial-of-service on OWASP](https://www.owasp.org/index.php/Denial_of_Service)
 - _Glossary("Distributed Denial of Service","DDoS"_)
+=======
+-   bandwidth attack
+-   service request flood
+-   SYN flooding attack
+-   ICMP flood attack
+-   peer-to-peer attack
+-   permanent DoS attack
+-   application level flood attack
+
+#### See also
+
+-   _interwiki("wikipedia", "Denial-of-service_attack", "Denial-of-service attack"_) on Wikipedia
+-   [Denial-of-service on OWASP](https://www.owasp.org/index.php/Denial_of_Service)
+-   _Glossary("Distributed Denial of Service","DDoS"_)
+>>>>>>> master
 
 ---
 
 ## Term: DTLS (Datagram Transport Layer Security)
 
+<<<<<<< HEAD
 - DTLS
 - Intro
+=======
+-   DTLS
+-   Intro
+>>>>>>> master
 
 ---
 
@@ -3449,6 +5293,7 @@ These features are especially useful for one of the most common areas in which D
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Datagram Transport Layer Security"_) on Wikipedia
 - Specifications:
 
@@ -3463,14 +5308,36 @@ These features are especially useful for one of the most common areas in which D
     - _RFC(8261, "Datagram Transport Layer Security (DTLS) Encapsulation of SCTP Packets"_)
     - _RFC(7350, "Datagram Transport Layer Security (DTLS) as Transport for Session Traversal Utilities for NAT (STUN)"_)
     - _RFC(7925, "TLS / DTLS Profiles for the Internet of Things"_)
+=======
+-   _Interwiki("wikipedia", "Datagram Transport Layer Security"_) on Wikipedia
+-   Specifications:
+
+    -   _RFC(6347, "Datagram Transport Layer Security Version 1.2"_)
+    -   [Datagram Transport Layer Security Protocol Version 1.3 _draft specification_](https://datatracker.ietf.org/doc/html/draft-ietf-tls-dtls13)
+
+-   Related specification
+
+    -   _RFC(5763, "Framework for Establishing a Secure Real-time Transport Protocol (SRTP) Security Context Using DTLS"_)
+    -   _RFC(5764, "DTLS Extension to Establish Keys for the Secure Real-time Transport Protocol (SRTP)"_)
+    -   _RFC(6083, "DTLS for Stream Control Transmission Protocol (SCTP)"_)
+    -   _RFC(8261, "Datagram Transport Layer Security (DTLS) Encapsulation of SCTP Packets"_)
+    -   _RFC(7350, "Datagram Transport Layer Security (DTLS) as Transport for Session Traversal Utilities for NAT (STUN)"_)
+    -   _RFC(7925, "TLS / DTLS Profiles for the Internet of Things"_)
+>>>>>>> master
 
 ---
 
 ## Term: DTMF (Dual-Tone Multi-Frequency signaling)
 
+<<<<<<< HEAD
 - DTMF
 - Glossary
 - WebRTC
+=======
+-   DTMF
+-   Glossary
+-   WebRTC
+>>>>>>> master
 
 ---
 
@@ -3480,16 +5347,27 @@ Computers may make use of DTMF when dialing a modem, or when sending commands to
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Dual-tone multi-frequency signaling"_) on Wikipedia
 - _interwiki("wikipedia", "Pulse dialing"_) on Wikipedia
+=======
+-   _interwiki("wikipedia", "Dual-tone multi-frequency signaling"_) on Wikipedia
+-   _interwiki("wikipedia", "Pulse dialing"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Dynamic typing
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - ProgrammingLanguage
+=======
+-   CodingScripting
+-   Glossary
+-   ProgrammingLanguage
+>>>>>>> master
 
 ---
 
@@ -3497,16 +5375,27 @@ Computers may make use of DTMF when dialing a modem, or when sending commands to
 
 #### See also
 
+<<<<<<< HEAD
 - [JavaScript data types and data structures](/en-US/docs/Web/JavaScript/Data_structures)
 - _interwiki("wikipedia", "Type_system#DYNAMIC", "Type system"_) on Wikipedia
+=======
+-   [JavaScript data types and data structures](/en-US/docs/Web/JavaScript/Data_structures)
+-   _interwiki("wikipedia", "Type_system#DYNAMIC", "Type system"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: ECMA
 
+<<<<<<< HEAD
 - Glossary
 - Stub
 - WebMechanics
+=======
+-   Glossary
+-   Stub
+-   WebMechanics
+>>>>>>> master
 
 ---
 
@@ -3516,15 +5405,25 @@ On the web it is famous for being the organization which maintain [the ECMA-262 
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Ecma_International", "Ecma International"_) on Wikipedia
 - [The Ecma International web site](https://www.ecma-international.org/)
+=======
+-   _interwiki("wikipedia", "Ecma_International", "Ecma International"_) on Wikipedia
+-   [The Ecma International web site](https://www.ecma-international.org/)
+>>>>>>> master
 
 ---
 
 ## Term: ECMAScript
 
+<<<<<<< HEAD
 - Glossary
 - WebMechanics
+=======
+-   Glossary
+-   WebMechanics
+>>>>>>> master
 
 ---
 
@@ -3532,13 +5431,19 @@ On the web it is famous for being the organization which maintain [the ECMA-262 
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "ECMAScript"_) on Wikipedia
 - [ECMAScript](http://www.ecmascript.org/)
+=======
+-   _Interwiki("wikipedia", "ECMAScript"_) on Wikipedia
+-   [ECMAScript](http://www.ecmascript.org/)
+>>>>>>> master
 
 ---
 
 ## Term: Effective connection type
 
+<<<<<<< HEAD
 - Glossary
 - Navigator
 - Network Information API
@@ -3549,6 +5454,18 @@ On the web it is famous for being the organization which maintain [the ECMA-262 
 - connect
 - effective connection type
 - effectiveType
+=======
+-   Glossary
+-   Navigator
+-   Network Information API
+-   NetworkInformation
+-   Performance
+-   Reference
+-   Web Performance
+-   connect
+-   effective connection type
+-   effectiveType
+>>>>>>> master
 
 ---
 
@@ -3566,23 +5483,40 @@ The values of '`slow-2g`', '`2g`', '`3g`', and '`4g`' are determined using obser
 [effectiveType](/en-US/docs/Web/API/NetworkInformation/effectiveType) is a property of the [Network Information API](/en-US/docs/Web/API/Network_Information_API), exposed to JavaScript via the [navigator.connection](/en-US/docs/Web/API/Navigator/connection) object. To see your effective connection type, open the console of the developer tools of a supporting browser and enter the following:
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 navigator.connection.effectiveType;
 ```
 
 #### See also
 
+<<<<<<< HEAD
 - [Network Information API](/en-US/docs/Web/API/Network_Information_API)
 - _domxref('NetworkInformation'_)
 - _domxref('NetworkInformation.effectiveType'_)
 - _HTTPHeader("ECT"_)
+=======
+-   [Network Information API](/en-US/docs/Web/API/Network_Information_API)
+-   _domxref('NetworkInformation'_)
+-   _domxref('NetworkInformation.effectiveType'_)
+-   _HTTPHeader("ECT"_)
+>>>>>>> master
 
 ---
 
 ## Term: Element
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - HTML
+=======
+-   CodingScripting
+-   Glossary
+-   HTML
+>>>>>>> master
 
 ---
 
@@ -3592,17 +5526,29 @@ navigator.connection.effectiveType;
 
 #### See also
 
+<<<<<<< HEAD
 - [Getting started with HTML](/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started)
 - [Defining custom elements](/en-US/docs/Web/Web_Components/Using_custom_elements)
 - The _domxref("Element"_) interface, representing an element in the DOM.
+=======
+-   [Getting started with HTML](/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started)
+-   [Defining custom elements](/en-US/docs/Web/Web_Components/Using_custom_elements)
+-   The _domxref("Element"_) interface, representing an element in the DOM.
+>>>>>>> master
 
 ---
 
 ## Term: Empty element
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - Intermediate
+=======
+-   CodingScripting
+-   Glossary
+-   Intermediate
+>>>>>>> master
 
 ---
 
@@ -3610,6 +5556,7 @@ navigator.connection.effectiveType;
 
 The [HTML](https://html.spec.whatwg.org/multipage/), [SVG](https://www.w3.org/TR/SVG2/), and [MathML](https://www.w3.org/TR/MathML3/) specifications define very precisely what each element can contain. Many combinations have no semantic meaning, for example an _HTMLElement("audio"_) element nested inside an _HTMLElement("hr"_) element.
 
+<<<<<<< HEAD
 In HTML, using a closing tag on an empty element is usually invalid. For example, `<input type="text"></input>` is invalid HTML.
 
 The empty elements in HTML are as follows:
@@ -3629,13 +5576,39 @@ The empty elements in HTML are as follows:
 - _HTMLElement("source"_)
 - _HTMLElement("track"_)
 - _HTMLElement("wbr"_)
+=======
+In HTML, using a closing tag on an empty element is usually invalid. For example, `<input type="text"> </input>` is invalid HTML.
+
+The empty elements in HTML are as follows:
+
+-   _HTMLElement("area"_)
+-   _HTMLElement("base"_)
+-   _HTMLElement("br"_)
+-   _HTMLElement("col"_)
+-   _HTMLElement("embed"_)
+-   _HTMLElement("hr"_)
+-   _HTMLElement("img"_)
+-   _HTMLElement("input"_)
+-   _HTMLElement("keygen"_)(HTML 5.2 Draft removed)
+-   _HTMLElement("link"_)
+-   _HTMLElement("meta"_)
+-   _HTMLElement("param"_)
+-   _HTMLElement("source"_)
+-   _HTMLElement("track"_)
+-   _HTMLElement("wbr"_)
+>>>>>>> master
 
 ---
 
 ## Term: Encapsulation
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
+=======
+-   CodingScripting
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -3643,16 +5616,27 @@ The empty elements in HTML are as follows:
 
 #### See also
 
+<<<<<<< HEAD
 - [Encapsulation](<https://en.wikipedia.org/wiki/Encapsulation_(object-oriented_programming)>) on Wikipedia
+=======
+-   [Encapsulation](<https://en.wikipedia.org/wiki/Encapsulation_(object-oriented_programming)>) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Encryption
 
+<<<<<<< HEAD
 - Cryptography
 - Glossary
 - Privacy
 - Security
+=======
+-   Cryptography
+-   Glossary
+-   Privacy
+-   Security
+>>>>>>> master
 
 ---
 
@@ -3668,9 +5652,15 @@ Without knowing the secret, the reverse operation, _glossary("decryption"_), is 
 
 ## Term: Endianness
 
+<<<<<<< HEAD
 - Coding
 - CodingScripting
 - Glossary
+=======
+-   Coding
+-   CodingScripting
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -3682,6 +5672,7 @@ Naturally, **big-endian** is the opposite order, comparable to an ISO date (2050
 
 Examples with the number `0x12345678` (i.e. 305 419 896 in decimal):
 
+<<<<<<< HEAD
 - _little-endian_: `0x78 0x56 0x34 0x12`
 - _big-endian_: `0x12 0x34 0x56 0x78`
 - _mixed-endian_ (historic and very rare): `0x34 0x12 0x78 0x56`
@@ -3693,14 +5684,33 @@ Examples with the number `0x12345678` (i.e. 305 419 896 in decimal):
 - [Typed Arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
 - _Interwiki("wikipedia", "Endianness"_) (Wikipedia)
 - _Glossary("Data structure"_) (Glossary)
+=======
+-   _little-endian_: `0x78 0x56 0x34 0x12`
+-   _big-endian_: `0x12 0x34 0x56 0x78`
+-   _mixed-endian_ (historic and very rare): `0x34 0x12 0x78 0x56`
+
+#### See also
+
+-   _jsxref("ArrayBuffer"_)
+-   _jsxref("DataView"_)
+-   [Typed Arrays](/en-US/docs/Web/JavaScript/Typed_arrays)
+-   _Interwiki("wikipedia", "Endianness"_) (Wikipedia)
+-   _Glossary("Data structure"_) (Glossary)
+>>>>>>> master
 
 ---
 
 ## Term: Engine
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - NeedsContent
+=======
+-   CodingScripting
+-   Glossary
+-   NeedsContent
+>>>>>>> master
 
 ---
 
@@ -3708,14 +5718,23 @@ Examples with the number `0x12345678` (i.e. 305 419 896 in decimal):
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "JavaScript engine"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "JavaScript engine"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Entity header
 
+<<<<<<< HEAD
 - Glossary
 - WebMechanics
+=======
+-   Glossary
+-   WebMechanics
+>>>>>>> master
 
 ---
 
@@ -3734,16 +5753,27 @@ Content-Length: 128
 
 #### See also
 
+<<<<<<< HEAD
 - _Glossary("Representation header"_)
+=======
+-   _Glossary("Representation header"_)
+>>>>>>> master
 
 ---
 
 ## Term: Entity
 
+<<<<<<< HEAD
 - CodingScripting
 - Composing
 - Glossary
 - HTML
+=======
+-   CodingScripting
+-   Composing
+-   Glossary
+-   HTML
+>>>>>>> master
 
 ---
 
@@ -3766,14 +5796,23 @@ To display these characters as text, replace them with their corresponding chara
 
 #### See also
 
+<<<<<<< HEAD
 - [Official list of character entities](https://html.spec.whatwg.org/multipage/named-characters.html#named-character-references)
+=======
+-   [Official list of character entities](https://html.spec.whatwg.org/multipage/named-characters.html#named-character-references)
+>>>>>>> master
 
 ---
 
 ## Term: Event
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
+=======
+-   CodingScripting
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -3781,17 +5820,29 @@ To display these characters as text, replace them with their corresponding chara
 
 #### See also
 
+<<<<<<< HEAD
 - [Event documentation on MDN](/en-US/docs/Web/API/Event)
 - [Official website](https://www.w3.org/TR/DOM-Level-2-Events/events.html)
 - _Interwiki("wikipedia", "DOM Events"_) on Wikipedia
+=======
+-   [Event documentation on MDN](/en-US/docs/Web/API/Event)
+-   [Official website](https://www.w3.org/TR/DOM-Level-2-Events/events.html)
+-   _Interwiki("wikipedia", "DOM Events"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Exception
 
+<<<<<<< HEAD
 - Beginner
 - CodingScripting
 - Glossary
+=======
+-   Beginner
+-   CodingScripting
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -3799,14 +5850,23 @@ To display these characters as text, replace them with their corresponding chara
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Exception handling"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Exception handling"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: EXIF
 
+<<<<<<< HEAD
 - EXIF
 - Image
+=======
+-   EXIF
+-   Image
+>>>>>>> master
 
 ---
 
@@ -3814,23 +5874,39 @@ To display these characters as text, replace them with their corresponding chara
 
 #### See also
 
+<<<<<<< HEAD
 - [EXIF](https://en.wikipedia.org/wiki/Exif) (Wikipedia)
 - [CIPA Standards, including "CIPA DC-008-Translation-2019 Exchangeable image file format for digital still cameras : Exif Version 2.32"](https://www.cipa.jp/std/std-sec_e.html)
+=======
+-   [EXIF](https://en.wikipedia.org/wiki/Exif) (Wikipedia)
+-   [CIPA Standards, including "CIPA DC-008-Translation-2019 Exchangeable image file format for digital still cameras : Exif Version 2.32"](https://www.cipa.jp/std/std-sec_e.html)
+>>>>>>> master
 
 ---
 
 ## Term: Expando
 
+<<<<<<< HEAD
 - CodingScripting
 - JavaScript
 - Reference
 - expando
+=======
+-   CodingScripting
+-   JavaScript
+-   Reference
+-   expando
+>>>>>>> master
 
 ---
 
 > Expando properties are properties added to _glossary("DOM"_) nodes with _glossary("JavaScript"_), where those properties are not part of the _glossary("object","object's"_) DOM specification:
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 window.document.foo = 5; // foo is an expando
 ```
 
@@ -3840,14 +5916,21 @@ The term may also be applied to properties added to objects without respecting t
 
 ## Term: Fallback alignment
 
+<<<<<<< HEAD
 - CSS
 - Glossary
 - alignment
+=======
+-   CSS
+-   Glossary
+-   alignment
+>>>>>>> master
 
 ---
 
 > In [CSS Box Alignment](/en-US/docs/Web/CSS/CSS_Box_Alignment), a fallback alignment is specified in order to deal with cases where the requested alignment cannot be fulfilled. For example, if you specify `justify-content: space-between` there must be more than one [alignment subject](/en-US/docs/Glossary/Alignment_Subject). If there is not, the fallback alignment is used. This is specified per alignment method, as detailed below.
 
+<<<<<<< HEAD
 - First baseline
 - - : `start`
 - Last baseline
@@ -3866,14 +5949,40 @@ The term may also be applied to properties added to objects without respecting t
 #### See also
 
 - [CSS Box Alignment](/en-US/docs/Web/CSS/CSS_Box_Alignment)
+=======
+-   First baseline
+-   -   : `start`
+-   Last baseline
+-   -   : `safe end`
+-   Baseline
+-   -   : `start`
+-   Space-between
+    -   : `flex-start` (start)
+-   Space-around
+    -   : `center`
+-   Space-evenly
+    -   : `center`
+-   Stretch
+    -   : `flex-start` (start)
+
+#### See also
+
+-   [CSS Box Alignment](/en-US/docs/Web/CSS/CSS_Box_Alignment)
+>>>>>>> master
 
 ---
 
 ## Term: Falsy
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - JavaScript
+=======
+-   CodingScripting
+-   Glossary
+-   JavaScript
+>>>>>>> master
 
 ---
 
@@ -3900,6 +6009,10 @@ The following table provides a complete list of JavaScript falsy values:
 Examples of _falsy_ values in JavaScript (which are coerced to false in Boolean contexts, and thus _bypass_ the `if` block):
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 if (false)
 if (null)
 if (undefined)
@@ -3915,6 +6028,10 @@ if ("")
 If the first object is falsy, it returns that object
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 false && 'dog';
 // ↪ false
 
@@ -3924,18 +6041,31 @@ false && 'dog';
 
 #### See also
 
+<<<<<<< HEAD
 - _Glossary("Truthy"_)
 - _Glossary("Type_coercion", "Coercion"_)
 - _Glossary("Boolean"_)
+=======
+-   _Glossary("Truthy"_)
+-   _Glossary("Type_coercion", "Coercion"_)
+-   _Glossary("Boolean"_)
+>>>>>>> master
 
 ---
 
 ## Term: Favicon
 
+<<<<<<< HEAD
 - Glossary
 - Intro
 - favicon
 - user agent
+=======
+-   Glossary
+-   Intro
+-   favicon
+-   user agent
+>>>>>>> master
 
 ---
 
@@ -3949,19 +6079,33 @@ They are used to improve user experience and enforce brand consistency. When a f
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Favicon", "Favicon"_) on Wikipedia
 - Tools
 
     - [Free favicon generator](https://favicon.io/)
     - [Favicon.ico and & app icon generator](https://www.favicon-generator.org/)
+=======
+-   _interwiki("wikipedia", "Favicon", "Favicon"_) on Wikipedia
+-   Tools
+
+    -   [Free favicon generator](https://favicon.io/)
+    -   [Favicon.ico and & app icon generator](https://www.favicon-generator.org/)
+>>>>>>> master
 
 ---
 
 ## Term: Fetch directive
 
+<<<<<<< HEAD
 - CSP
 - HTTP
 - Security
+=======
+-   CSP
+-   HTTP
+-   Security
+>>>>>>> master
 
 ---
 
@@ -3973,6 +6117,7 @@ See [Fetch directives](/en-US/docs/Web/HTTP/Headers/Content-Security-Policy#fetc
 
 #### See also
 
+<<<<<<< HEAD
 - [Glossary](/en-US/docs/Glossary)
 
     - _Glossary("CSP"_)
@@ -3987,13 +6132,34 @@ See [Fetch directives](/en-US/docs/Web/HTTP/Headers/Content-Security-Policy#fetc
     - _HTTPHeader("Content-Security-Policy/block-all-mixed-content", "block-all-mixed-content"_)
     - _HTTPHeader("Content-Security-Policy/require-sri-for", "require-sri-for"_) \_Deprecated_Inline}}
     - _HTTPHeader("Content-Security-Policy"_)
+=======
+-   [Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("CSP"_)
+    -   _Glossary("Reporting directive"_)
+    -   _Glossary("Document directive"_)
+    -   _Glossary("Navigation directive"_)
+
+-   Reference
+
+    -   <https://www.w3.org/TR/CSP/#directives-fetch>
+    -   _HTTPHeader("Content-Security-Policy/upgrade-insecure-requests", "upgrade-insecure-requests"_)
+    -   _HTTPHeader("Content-Security-Policy/block-all-mixed-content", "block-all-mixed-content"_)
+    -   _HTTPHeader("Content-Security-Policy/require-sri-for", "require-sri-for"_) \_Deprecated_Inline}}
+    -   _HTTPHeader("Content-Security-Policy"_)
+>>>>>>> master
 
 ---
 
 ## Term: Fetch metadata request header
 
+<<<<<<< HEAD
 - Fetch Metadata Request Headers
 - Glossary
+=======
+-   Fetch Metadata Request Headers
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -4005,6 +6171,7 @@ These headers are prefixed with `Sec-`, and hence have _Glossary("Forbidden head
 
 The fetch metadata request headers are:
 
+<<<<<<< HEAD
 - _HTTPHeader("Sec-Fetch-Site"_)
 - _HTTPHeader("Sec-Fetch-Mode"_)
 - _HTTPHeader("Sec-Fetch-User"_)
@@ -4022,17 +6189,45 @@ The fetch metadata request headers are:
     - _Glossary("HTTP_header","HTTP header"_)
     - _Glossary("Response header"_)
     - _Glossary("Request header"_)
+=======
+-   _HTTPHeader("Sec-Fetch-Site"_)
+-   _HTTPHeader("Sec-Fetch-Mode"_)
+-   _HTTPHeader("Sec-Fetch-User"_)
+-   _HTTPHeader("Sec-Fetch-Dest"_)
+
+#### See also
+
+-   [Protect your resources from web attacks with Fetch Metadata](https://web.dev/fetch-metadata/) (web.dev)
+-   [Fetch Metadata Request Headers playground](https://secmetadata.appspot.com/) (secmetadata.appspot.com)
+-   [List of all HTTP headers](/en-US/docs/Web/HTTP/Headers)
+-   [List of all HTTP headers > Fetch metadata request headers](/en-US/docs/Web/HTTP/Headers#fetch_metadata_request_headers)
+-   [Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("Representation header"_)
+    -   _Glossary("HTTP_header","HTTP header"_)
+    -   _Glossary("Response header"_)
+    -   _Glossary("Request header"_)
+>>>>>>> master
 
 ---
 
 ## Term: Firefox OS
 
+<<<<<<< HEAD
 - B2G
 - Boot2Gecko
 - Firefox OS
 - Glossary
 - Infrastructure
 - Intro
+=======
+-   B2G
+-   Boot2Gecko
+-   Firefox OS
+-   Glossary
+-   Infrastructure
+-   Intro
+>>>>>>> master
 
 ---
 
@@ -4042,11 +6237,19 @@ The fetch metadata request headers are:
 
 ## Term: firewall
 
+<<<<<<< HEAD
 - DDoS
 - Firewall
 - Glossary
 - Security
 - computer network
+=======
+-   DDoS
+-   Firewall
+-   Glossary
+-   Security
+-   computer network
+>>>>>>> master
 
 ---
 
@@ -4056,15 +6259,25 @@ Firewalls can be as simple as a single piece of software, or more complex, like 
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Firewall (computing)"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Firewall (computing)"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: First-class Function
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - JavaScript
+=======
+-   CodingScripting
+-   Glossary
+-   JavaScript
+>>>>>>> master
 
 ---
 
@@ -4075,6 +6288,10 @@ Firewalls can be as simple as a single piece of software, or more complex, like 
 ### JavaScript
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 const foo = function () {
     console.log('foobar');
 };
@@ -4092,9 +6309,14 @@ We assigned an **Anonymous Function** in a _glossary("Variable"_), then we used 
 
 ---
 
+<<<<<<< HEAD
 
 ```js
 
+=======
+```js
+//
+>>>>>>> master
 
 function sayHello() {
     return 'Hello, ';
@@ -4117,9 +6339,14 @@ We are passing our `sayHello()` function as an argument to the `greeting()` func
 
 ---
 
+<<<<<<< HEAD
 
 ```js
 
+=======
+```js
+//
+>>>>>>> master
 
 function sayHello() {
     return function () {
@@ -4137,6 +6364,10 @@ Back to our example; Now, we need to invoke `sayHello` function and its returned
 ### 1- Using a variable
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 const sayHello = function () {
     return function () {
         console.log('Hello!');
@@ -4155,9 +6386,14 @@ This way, it returns the `Hello!` message.
 
 ---
 
+<<<<<<< HEAD
 
 ```js
 
+=======
+```js
+//
+>>>>>>> master
 
 function sayHello() {
     return function () {
@@ -4172,21 +6408,37 @@ We are using double parentheses `()()` to invoke the returned function as well.
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "First-class_function", "First-class functions"_) on Wikipedia
 - [MDN Web Docs Glossary](/en-US/docs/Glossary)
 
     - _glossary("Callback function"_)
     - _glossary("Function"_)
     - _glossary("Variable"_)
+=======
+-   _Interwiki("wikipedia", "First-class_function", "First-class functions"_) on Wikipedia
+-   [MDN Web Docs Glossary](/en-US/docs/Glossary)
+
+    -   _glossary("Callback function"_)
+    -   _glossary("Function"_)
+    -   _glossary("Variable"_)
+>>>>>>> master
 
 ---
 
 ## Term: First contentful paint
 
+<<<<<<< HEAD
 - Glossary
 - Performance
 - Reference
 - Web Performance
+=======
+-   Glossary
+-   Performance
+-   Reference
+-   Web Performance
+>>>>>>> master
 
 ---
 
@@ -4196,17 +6448,29 @@ _The First Contentful Paint_ time stamp is when the browser first rendered any t
 
 #### See also
 
+<<<<<<< HEAD
 - [First Meaningful Paint](/en-US/docs/Glossary/first_meaningful_paint)
 - [Paint Timing specification](https://w3c.github.io/paint-timing/#first-contentful-paint)
+=======
+-   [First Meaningful Paint](/en-US/docs/Glossary/first_meaningful_paint)
+-   [Paint Timing specification](https://w3c.github.io/paint-timing/#first-contentful-paint)
+>>>>>>> master
 
 ---
 
 ## Term: First CPU idle
 
+<<<<<<< HEAD
 - Glossary
 - Lighthouse
 - Performance
 - Web Performance
+=======
+-   Glossary
+-   Lighthouse
+-   Performance
+-   Web Performance
+>>>>>>> master
 
 ---
 
@@ -4216,9 +6480,15 @@ _The First Contentful Paint_ time stamp is when the browser first rendered any t
 
 ## Term: First input delay
 
+<<<<<<< HEAD
 - Glossary
 - Reference
 - Web Performance
+=======
+-   Glossary
+-   Reference
+-   Web Performance
+>>>>>>> master
 
 ---
 
@@ -4230,16 +6500,27 @@ The time between when content is painted to the page and when all the functional
 
 #### See also
 
+<<<<<<< HEAD
 - [requestIdleCallback](/en-US/docs/Web/API/Window/requestIdleCallback)
 - [lazy loading](/en-US/docs/Web/Performance/Lazy_loading)
+=======
+-   [requestIdleCallback](/en-US/docs/Web/API/Window/requestIdleCallback)
+-   [lazy loading](/en-US/docs/Web/Performance/Lazy_loading)
+>>>>>>> master
 
 ---
 
 ## Term: First interactive
 
+<<<<<<< HEAD
 - Glossary
 - Lighthouse
 - Web Performance
+=======
+-   Glossary
+-   Lighthouse
+-   Web Performance
+>>>>>>> master
 
 ---
 
@@ -4257,9 +6538,15 @@ First interactive is a variation of [Time to Interactive](/en-US/docs/Glossary/T
 
 ## Term: First Meaningful Paint
 
+<<<<<<< HEAD
 - Glossary
 - Reference
 - Web Performance
+=======
+-   Glossary
+-   Reference
+-   Web Performance
+>>>>>>> master
 
 ---
 
@@ -4267,16 +6554,27 @@ First interactive is a variation of [Time to Interactive](/en-US/docs/Glossary/T
 
 #### See also
 
+<<<<<<< HEAD
 - [First contentful paint](/en-US/docs/Glossary/First_contentful_paint)
+=======
+-   [First contentful paint](/en-US/docs/Glossary/First_contentful_paint)
+>>>>>>> master
 
 ---
 
 ## Term: First paint
 
+<<<<<<< HEAD
 - Beginner
 - Glossary
 - Performance
 - Web Performance
+=======
+-   Beginner
+-   Glossary
+-   Performance
+-   Web Performance
+>>>>>>> master
 
 ---
 
@@ -4284,18 +6582,31 @@ First interactive is a variation of [Time to Interactive](/en-US/docs/Glossary/T
 
 #### See also
 
+<<<<<<< HEAD
 - [First meaningful paint](/en-US/docs/Glossary/first_meaningful_paint)
 - [First contentful paint](/en-US/docs/Glossary/First_contentful_paint)
 - [Paint Timing API](/en-US/docs/Web/PerformancePaintTiming)
+=======
+-   [First meaningful paint](/en-US/docs/Glossary/first_meaningful_paint)
+-   [First contentful paint](/en-US/docs/Glossary/First_contentful_paint)
+-   [Paint Timing API](/en-US/docs/Web/PerformancePaintTiming)
+>>>>>>> master
 
 ---
 
 ## Term: Flex Container
 
+<<<<<<< HEAD
 - CSS
 - Glossary
 - flex container
 - flexbox
+=======
+-   CSS
+-   Glossary
+-   flex container
+-   flexbox
+>>>>>>> master
 
 ---
 
@@ -4307,6 +6618,7 @@ A value of `flex` causes the element to become a block level flex container, and
 
 ### Property reference
 
+<<<<<<< HEAD
 - _cssxref("align-content"_)
 - _cssxref("align-items"_)
 - _cssxref("flex"_)
@@ -4321,15 +6633,38 @@ A value of `flex` causes the element to become a block level flex container, and
 - CSS Flexbox Guide: _[Aligning items in a flex container](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container)_
 - CSS Flexbox Guide: _[Mastering wrapping of flex items](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Mastering_Wrapping_of_Flex_Items)_
 - Firefox Developer Tools > How to: _[CSS Flexbox Inspector: Examine Flexbox layouts](/en-US/docs/Tools/Page_Inspector/How_to/Examine_Flexbox_layouts)_
+=======
+-   _cssxref("align-content"_)
+-   _cssxref("align-items"_)
+-   _cssxref("flex"_)
+-   _cssxref("flex-direction"_)
+-   _cssxref("flex-flow"_)
+-   _cssxref("flex-wrap"_)
+-   _cssxref("justify-content"_)
+
+### Further reading
+
+-   CSS Flexbox Guide: _[Basic Concepts of Flexbox](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)_
+-   CSS Flexbox Guide: _[Aligning items in a flex container](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container)_
+-   CSS Flexbox Guide: _[Mastering wrapping of flex items](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Mastering_Wrapping_of_Flex_Items)_
+-   Firefox Developer Tools > How to: _[CSS Flexbox Inspector: Examine Flexbox layouts](/en-US/docs/Tools/Page_Inspector/How_to/Examine_Flexbox_layouts)_
+>>>>>>> master
 
 ---
 
 ## Term: Flex Item
 
+<<<<<<< HEAD
 - CSS
 - Glossary
 - flex item
 - flexbox
+=======
+-   CSS
+-   Glossary
+-   flex item
+-   flexbox
+>>>>>>> master
 
 ---
 
@@ -4341,6 +6676,7 @@ Continuous runs of text inside flex containers will also become flex items.
 
 ### Property reference
 
+<<<<<<< HEAD
 - _cssxref("align-self"_)
 - _cssxref("flex-basis"_)
 - _cssxref("flex-grow"_)
@@ -4352,15 +6688,35 @@ Continuous runs of text inside flex containers will also become flex items.
 - CSS Flexbox Guide: _[Basic Concepts of Flexbox](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)_
 - CSS Flexbox Guide: _[Ordering flex items](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Ordering_Flex_Items)_
 - CSS Flexbox Guide: _[Controlling Ratios of flex items along the main axis](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Controlling_Ratios_of_Flex_Items_Along_the_Main_Ax)_
+=======
+-   _cssxref("align-self"_)
+-   _cssxref("flex-basis"_)
+-   _cssxref("flex-grow"_)
+-   _cssxref("flex-shrink"_)
+-   _cssxref("order"_)
+
+### Further reading
+
+-   CSS Flexbox Guide: _[Basic Concepts of Flexbox](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)_
+-   CSS Flexbox Guide: _[Ordering flex items](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Ordering_Flex_Items)_
+-   CSS Flexbox Guide: _[Controlling Ratios of flex items along the main axis](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Controlling_Ratios_of_Flex_Items_Along_the_Main_Ax)_
+>>>>>>> master
 
 ---
 
 ## Term: Flexbox
 
+<<<<<<< HEAD
 - CSS
 - Glossary
 - Intro
 - flexbox
+=======
+-   CSS
+-   Glossary
+-   Intro
+-   flexbox
+>>>>>>> master
 
 ---
 
@@ -4374,6 +6730,7 @@ Flexbox also enables alignment of items on the main or cross axis, thus providin
 
 ### Property reference
 
+<<<<<<< HEAD
 - _cssxref("align-content"_)
 - _cssxref("align-items"_)
 - _cssxref("align-self"_)
@@ -4397,15 +6754,47 @@ Flexbox also enables alignment of items on the main or cross axis, thus providin
 - CSS Flexbox Guide: _[Controlling Ratios of flex items along the main axis](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Controlling_Ratios_of_Flex_Items_Along_the_Main_Ax)_
 - CSS Flexbox Guide: _[Mastering wrapping of flex items](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Mastering_Wrapping_of_Flex_Items)_
 - CSS Flexbox Guide: _[Typical use cases of flexbox](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Typical_Use_Cases_of_Flexbox)_
+=======
+-   _cssxref("align-content"_)
+-   _cssxref("align-items"_)
+-   _cssxref("align-self"_)
+-   _cssxref("flex"_)
+-   _cssxref("flex-basis"_)
+-   _cssxref("flex-direction"_)
+-   _cssxref("flex-flow"_)
+-   _cssxref("flex-grow"_)
+-   _cssxref("flex-shrink"_)
+-   _cssxref("flex-wrap"_)
+-   _cssxref("justify-content"_)
+-   _cssxref("order"_)
+
+### Further reading
+
+-   _[CSS Flexible Box Layout Module Level 1 Specification](https://www.w3.org/TR/css-flexbox-1/)_
+-   CSS Flexbox Guide: _[Basic Concepts of Flexbox](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)_
+-   CSS Flexbox Guide: _[Relationship of flexbox to other layout methods](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Relationship_of_Flexbox_to_Other_Layout_Methods)_
+-   CSS Flexbox Guide: _[Aligning items in a flex container](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container)_
+-   CSS Flexbox Guide: _[Ordering flex items](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Ordering_Flex_Items)_
+-   CSS Flexbox Guide: _[Controlling Ratios of flex items along the main axis](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Controlling_Ratios_of_Flex_Items_Along_the_Main_Ax)_
+-   CSS Flexbox Guide: _[Mastering wrapping of flex items](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Mastering_Wrapping_of_Flex_Items)_
+-   CSS Flexbox Guide: _[Typical use cases of flexbox](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Typical_Use_Cases_of_Flexbox)_
+>>>>>>> master
 
 ---
 
 ## Term: Flex
 
+<<<<<<< HEAD
 - CSS
 - Flex
 - Glossary
 - flexbox
+=======
+-   CSS
+-   Flex
+-   Glossary
+-   flexbox
+>>>>>>> master
 
 ---
 
@@ -4419,6 +6808,7 @@ In addition `<flex>` can refer to [a flexible length](/en-US/docs/Web/CSS/flex_v
 
 ### Property reference
 
+<<<<<<< HEAD
 - _cssxref("align-content"_)
 - _cssxref("align-items"_)
 - _cssxref("align-self"_)
@@ -4442,16 +6832,49 @@ In addition `<flex>` can refer to [a flexible length](/en-US/docs/Web/CSS/flex_v
 - CSS Flexbox Guide: _[Controlling Ratios of flex items along the main axis](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Controlling_Ratios_of_Flex_Items_Along_the_Main_Ax)_
 - CSS Flexbox Guide: _[Mastering wrapping of flex items](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Mastering_Wrapping_of_Flex_Items)_
 - CSS Flexbox Guide: _[Typical use cases of flexbox](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Typical_Use_Cases_of_Flexbox)_
+=======
+-   _cssxref("align-content"_)
+-   _cssxref("align-items"_)
+-   _cssxref("align-self"_)
+-   _cssxref("flex"_)
+-   _cssxref("flex-basis"_)
+-   _cssxref("flex-direction"_)
+-   _cssxref("flex-flow"_)
+-   _cssxref("flex-grow"_)
+-   _cssxref("flex-shrink"_)
+-   _cssxref("flex-wrap"_)
+-   _cssxref("justify-content"_)
+-   _cssxref("order"_)
+
+### Further reading
+
+-   _[CSS Flexible Box Layout Module Level 1 Specification](https://www.w3.org/TR/css-flexbox-1/)_
+-   CSS Flexbox Guide: _[Basic Concepts of Flexbox](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)_
+-   CSS Flexbox Guide: _[Relationship of flexbox to other layout methods](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Relationship_of_Flexbox_to_Other_Layout_Methods)_
+-   CSS Flexbox Guide: _[Aligning items in a flex container](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container)_
+-   CSS Flexbox Guide: _[Ordering flex items](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Ordering_Flex_Items)_
+-   CSS Flexbox Guide: _[Controlling Ratios of flex items along the main axis](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Controlling_Ratios_of_Flex_Items_Along_the_Main_Ax)_
+-   CSS Flexbox Guide: _[Mastering wrapping of flex items](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Mastering_Wrapping_of_Flex_Items)_
+-   CSS Flexbox Guide: _[Typical use cases of flexbox](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Typical_Use_Cases_of_Flexbox)_
+>>>>>>> master
 
 ---
 
 ## Term: Forbidden header name
 
+<<<<<<< HEAD
 - Fetch
 - Glossary
 - HTTP
 - Headers
 - forbidden
+=======
+-   Fetch
+-   Glossary
+-   HTTP
+-   Headers
+-   forbidden
+>>>>>>> master
 
 ---
 
@@ -4461,6 +6884,7 @@ Modifying such headers is forbidden because the user agent retains full control 
 
 Forbidden header names start with `Proxy-` or `Sec-`, or are one of the following names:
 
+<<<<<<< HEAD
 - `Accept-Charset`
 - `Accept-Encoding`
 - `Access-Control-Request-Headers`
@@ -4484,6 +6908,31 @@ Forbidden header names start with `Proxy-` or `Sec-`, or are one of the followin
 - `Transfer-Encoding`
 - `Upgrade`
 - `Via`
+=======
+-   `Accept-Charset`
+-   `Accept-Encoding`
+-   `Access-Control-Request-Headers`
+-   `Access-Control-Request-Method`
+-   `Connection`
+-   `Content-Length`
+-   `Cookie`
+-   `Cookie2`
+-   `Date`
+-   `DNT`
+-   `Expect`
+-   `Feature-Policy`
+-   `Host`
+-   `Keep-Alive`
+-   `Origin`
+-   `Proxy-`
+-   `Sec-`
+-   `Referer`
+-   `TE`
+-   `Trailer`
+-   `Transfer-Encoding`
+-   `Upgrade`
+-   `Via`
+>>>>>>> master
 
 > **Note:** The `User-Agent` header is no longer forbidden, [as per spec](https://fetch.spec.whatwg.org/#terminology-headers) — see forbidden header name list (this was implemented in Firefox 43) — it can now be set in a Fetch [Headers](/en-US/docs/Web/API/Headers) object, or via XHR [setRequestHeader()](/en-US/docs/Web/API/XMLHttpRequest#setrequestheader%28%29). However, Chrome will silently drop the header from Fetch requests (see [Chromium bug 571722](https://bugs.chromium.org/p/chromium/issues/detail?id=571722)).
 
@@ -4495,10 +6944,17 @@ _Glossary("Forbidden response header name"_) (Glossary)
 
 ## Term: Forbidden response header name
 
+<<<<<<< HEAD
 - Glossary
 - HTTP
 - Response
 - forbidden
+=======
+-   Glossary
+-   HTTP
+-   Response
+-   forbidden
+>>>>>>> master
 
 ---
 
@@ -4506,16 +6962,27 @@ _Glossary("Forbidden response header name"_) (Glossary)
 
 #### See also
 
+<<<<<<< HEAD
 - [Fetch specification: forbidden response-header name](https://fetch.spec.whatwg.org/#forbidden-response-header-name)
+=======
+-   [Fetch specification: forbidden response-header name](https://fetch.spec.whatwg.org/#forbidden-response-header-name)
+>>>>>>> master
 
 ---
 
 ## Term: Fork
 
+<<<<<<< HEAD
 - Fork
 - Glossary
 - Tools
 - git
+=======
+-   Fork
+-   Glossary
+-   Tools
+-   git
+>>>>>>> master
 
 ---
 
@@ -4527,6 +6994,7 @@ Forks are often seen in free and open source software development. This is now a
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Fork_(software*development)","Fork"*) on Wikipedia
 - [How to fork a GitHub repo](https://help.github.com/articles/fork-a-repo/) (fork as in a Git context)
 - _Glossary("Fork"_) (Glossary)
@@ -4535,15 +7003,32 @@ Forks are often seen in free and open source software development. This is now a
     - [Linux distributions](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg)
     - [Node.js and io.js (which have been merged together back)](https://nodejs.org/en/blog/announcements/foundation-v4-announce/)
     - [LibreOffice, a fork of OpenOffice](https://www.libreoffice.org/about-us/who-are-we/)
+=======
+-   _interwiki("wikipedia", "Fork_(software*development)","Fork"*) on Wikipedia
+-   [How to fork a GitHub repo](https://help.github.com/articles/fork-a-repo/) (fork as in a Git context)
+-   _Glossary("Fork"_) (Glossary)
+-   Various "well-known" forks
+
+    -   [Linux distributions](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg)
+    -   [Node.js and io.js (which have been merged together back)](https://nodejs.org/en/blog/announcements/foundation-v4-announce/)
+    -   [LibreOffice, a fork of OpenOffice](https://www.libreoffice.org/about-us/who-are-we/)
+>>>>>>> master
 
 ---
 
 ## Term: frame rate (FPS)
 
+<<<<<<< HEAD
 - Animation
 - Glossary
 - Web Performance
 - requestAnimationFrame
+=======
+-   Animation
+-   Glossary
+-   Web Performance
+-   requestAnimationFrame
+>>>>>>> master
 
 ---
 
@@ -4553,17 +7038,29 @@ Movies generally have a frame rate of 24 fps. They are able to have fewer frames
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Frame rate"_) (Wikipedia)
 - _glossary("FPS"_) (Glossary)
+=======
+-   _Interwiki("wikipedia", "Frame rate"_) (Wikipedia)
+-   _glossary("FPS"_) (Glossary)
+>>>>>>> master
 
 ---
 
 ## Term: Fragmentainer
 
+<<<<<<< HEAD
 - CSS
 - CSS Fragmentation Specification
 - Glossary
 - fragmentainer
+=======
+-   CSS
+-   CSS Fragmentation Specification
+-   Glossary
+-   fragmentainer
+>>>>>>> master
 
 ---
 
@@ -4577,10 +7074,17 @@ Fragmented contexts are found in CSS Paged Media, where the fragmentainer would 
 
 ## Term: FTP
 
+<<<<<<< HEAD
 - CodingScripting
 - FTP
 - Glossary
 - Protocol
+=======
+-   CodingScripting
+-   FTP
+-   Glossary
+-   Protocol
+>>>>>>> master
 
 ---
 
@@ -4590,13 +7094,19 @@ For many years it was the defacto standard way of transferring files, but as it 
 
 #### See also
 
+<<<<<<< HEAD
 - [Beginner's guide to uploading files via FTP](/en-US/docs/Learn/Common_questions/Upload_files_to_a_web_server)
 - _interwiki("wikipedia", "File Transfer Protocol", "FTP"_) on Wikipedia
+=======
+-   [Beginner's guide to uploading files via FTP](/en-US/docs/Learn/Common_questions/Upload_files_to_a_web_server)
+-   _interwiki("wikipedia", "File Transfer Protocol", "FTP"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: FTU
 
+<<<<<<< HEAD
 - FTU
 - Firefox OS
 - First time use
@@ -4604,6 +7114,15 @@ For many years it was the defacto standard way of transferring files, but as it 
 - Glossary
 - Infrastructure
 - Intro
+=======
+-   FTU
+-   Firefox OS
+-   First time use
+-   Gaia
+-   Glossary
+-   Infrastructure
+-   Intro
+>>>>>>> master
 
 ---
 
@@ -4615,12 +7134,21 @@ You can use FTU to set many important options (e.g. timezone, WiFi details, defa
 
 ## Term: Function
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - IIFE
 - Immediately Invoked Function Expressions (IIFE)
 - Intro
 - JavaScript
+=======
+-   CodingScripting
+-   Glossary
+-   IIFE
+-   Immediately Invoked Function Expressions (IIFE)
+-   Intro
+-   JavaScript
+>>>>>>> master
 
 ---
 
@@ -4633,6 +7161,10 @@ A function name is an _Glossary("identifier"_) included as part of a function de
 An **anonymous function** is a function without a function name. Only function expressions can be anonymous, function declarations must have a name:
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 // When used as a function expression
 (function () {});
 // or using the ECMAScript 2015 arrow notation
@@ -4644,6 +7176,10 @@ The following terms are not used in the ECMAScript language specification, they'
 A **named function** is a function with a function name:
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 // Function declaration
 function foo() {}
 // Named function expression
@@ -4656,9 +7192,14 @@ An **inner function** is a function inside another function (`square` in this ca
 
 ---
 
+<<<<<<< HEAD
 
 ```js
 
+=======
+```js
+//
+>>>>>>> master
 
 function addSquares(a, b) {
     function square(x) {
@@ -4677,9 +7218,14 @@ A **recursive function** is a function that calls itself. See _Glossary("Recursi
 
 ---
 
+<<<<<<< HEAD
 
 ```js
 
+=======
+```js
+//
+>>>>>>> master
 
 function loop(x) {
     if (x >= 10) return;
@@ -4695,6 +7241,10 @@ const loop = (x) => {
 An **Immediately Invoked Function Expressions** (_glossary("IIFE"_)) is a function that is called directly after the function is loaded into the browser's compiler. The way to identify an IIFE is by locating the extra left and right parenthesis at the end of the function's definition.
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 // Declared functions can't be called immediately this way
 // Error (https://en.wikipedia.org/wiki/Immediately-invoked_function_expression)
 /*
@@ -4719,35 +7269,61 @@ If you'd like to know more about IIFEs, check out the following page on Wikipedi
 
 #### See also
 
+<<<<<<< HEAD
 - [Functions](/en-US/docs/Web/JavaScript/Guide/Functions)
 - [Arrow Functions](/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+=======
+-   [Functions](/en-US/docs/Web/JavaScript/Guide/Functions)
+-   [Arrow Functions](/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+>>>>>>> master
 
 ---
 
 ## Term: Fuzz testing
 
+<<<<<<< HEAD
 - Firefox
 - Fuzzing
 - Mozilla
 - QA
 - Security
 - Testing
+=======
+-   Firefox
+-   Fuzzing
+-   Mozilla
+-   QA
+-   Security
+-   Testing
+>>>>>>> master
 
 ---
 
 > **Fuzzing** is a technique for testing software using automated tools to provide invalid or unexpected input to a program or function in a program, then checking the results to see if the program crashes or otherwise acts inappropriately. This is an important way to ensure that software is stable, reliable, and secure, and we use fuzzing a lot at Mozilla.
 
+<<<<<<< HEAD
 - [Jesse's blog posts about fuzzing](https://www.squarefree.com/categories/fuzzing/)
 - [Wikipedia: Fuzz testing](https://en.wikipedia.org/wiki/Fuzz_testing)
 - [fuzzdb](https://github.com/fuzzdb-project/fuzzdb)
 - [jsfuzz - coverage guided javascript fuzzer](https://github.com/fuzzitdev/jsfuzz)
+=======
+-   [Jesse's blog posts about fuzzing](https://www.squarefree.com/categories/fuzzing/)
+-   [Wikipedia: Fuzz testing](https://en.wikipedia.org/wiki/Fuzz_testing)
+-   [fuzzdb](https://github.com/fuzzdb-project/fuzzdb)
+-   [jsfuzz - coverage guided javascript fuzzer](https://github.com/fuzzitdev/jsfuzz)
+>>>>>>> master
 
 ---
 
 ## Term: Garbage collection
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
+=======
+-   CodingScripting
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -4757,21 +7333,37 @@ In other words, garbage collection is the process of removing any objects which 
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Memory management"_) on Wikipedia
 - _interwiki("wikipedia", "Garbage collection (computer science)"_) on Wikipedia
 - [Garbage collection](/en-US/docs/Web/JavaScript/Memory_Management#garbage_collection) in the MDN JavaScript guide.
 - [Memory management in JavaScript](/en-US/docs/Web/JavaScript/Memory_Management)
+=======
+-   _interwiki("wikipedia", "Memory management"_) on Wikipedia
+-   _interwiki("wikipedia", "Garbage collection (computer science)"_) on Wikipedia
+-   [Garbage collection](/en-US/docs/Web/JavaScript/Memory_Management#garbage_collection) in the MDN JavaScript guide.
+-   [Memory management in JavaScript](/en-US/docs/Web/JavaScript/Memory_Management)
+>>>>>>> master
 
 ---
 
 ## Term: Gecko
 
+<<<<<<< HEAD
 - Firefox OS
 - Gecko
 - Glossary
 - Infrastructure
 - Intro
 - Mozilla
+=======
+-   Firefox OS
+-   Gecko
+-   Glossary
+-   Infrastructure
+-   Intro
+-   Mozilla
+>>>>>>> master
 
 ---
 
@@ -4783,14 +7375,23 @@ Since all Firefox OS apps are Web apps, Firefox OS uses Gecko as its app runtime
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Gecko (software)", "Gecko"_) on Wikipedia
+=======
+-   _interwiki("wikipedia", "Gecko (software)", "Gecko"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: General header
 
+<<<<<<< HEAD
 - Glossary
 - WebMechanics
+=======
+-   Glossary
+-   WebMechanics
+>>>>>>> master
 
 ---
 
@@ -4802,8 +7403,13 @@ Since all Firefox OS apps are Web apps, Firefox OS uses Gecko as its app runtime
 
 ## Term: GIF
 
+<<<<<<< HEAD
 - Composing
 - Glossary
+=======
+-   Composing
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -4811,14 +7417,23 @@ Since all Firefox OS apps are Web apps, Firefox OS uses Gecko as its app runtime
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "GIF"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "GIF"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Git
 
+<<<<<<< HEAD
 - Collaborating
 - Glossary
+=======
+-   Collaborating
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -4826,16 +7441,27 @@ Since all Firefox OS apps are Web apps, Firefox OS uses Gecko as its app runtime
 
 #### See also
 
+<<<<<<< HEAD
 - [Official website with documentation](https://git-scm.com/)
 - [GitHub](https://github.com/), a Git-based graphical project host
+=======
+-   [Official website with documentation](https://git-scm.com/)
+-   [GitHub](https://github.com/), a Git-based graphical project host
+>>>>>>> master
 
 ---
 
 ## Term: Global object
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - NeedsContent
+=======
+-   CodingScripting
+-   Glossary
+-   NeedsContent
+>>>>>>> master
 
 ---
 
@@ -4843,9 +7469,15 @@ Since all Firefox OS apps are Web apps, Firefox OS uses Gecko as its app runtime
 
 In JavaScript, there's always a global object defined. In a web browser, when scripts create global variables defined with the [`var`](/en-US/docs/Web/JavaScript/Reference/Statements/var) keyword, they're created as members of the global object. (In _Glossary("Node.js"_) this is not the case.) The global object's _Glossary("interface"_) depends on the execution context in which the script is running. For example:
 
+<<<<<<< HEAD
 - In a web browser, any code which the script doesn't specifically start up as a background task has a _domxref("Window"_) as its global object. This is the vast majority of JavaScript code on the Web.
 - Code running in a _domxref("Worker"_) has a _domxref("WorkerGlobalScope"_) object as its global object.
 - Scripts running under _Glossary("Node.js"_) have an object called [`global`](https://nodejs.org/api/globals.html#globals_global) as their global object.
+=======
+-   In a web browser, any code which the script doesn't specifically start up as a background task has a _domxref("Window"_) as its global object. This is the vast majority of JavaScript code on the Web.
+-   Code running in a _domxref("Worker"_) has a _domxref("WorkerGlobalScope"_) object as its global object.
+-   Scripts running under _Glossary("Node.js"_) have an object called [`global`](https://nodejs.org/api/globals.html#globals_global) as their global object.
+>>>>>>> master
 
 > **Note**: Unlike _jsxref("Statements/var", "var"_), the statements _jsxref("Statements/let", "let"_) and _jsxref("Statements/const", "const"_) do not create properties of the global object.
 
@@ -4856,6 +7488,10 @@ The `window` object is the Global Object in the Browser. Any Global Variables or
 ### Access Global Variables
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 var foo = 'foobar';
 foo === window.foo; // Returns: true
 ```
@@ -4867,6 +7503,10 @@ After defining a Global Variable `foo`, we can access its value directly from th
 The global variable `foo` was stored in the `window` object, like this:
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 foo: 'foobar';
 ```
 
@@ -4874,9 +7514,14 @@ foo: 'foobar';
 
 ---
 
+<<<<<<< HEAD
 
 ```js
 
+=======
+```js
+//
+>>>>>>> master
 
 function greeting() {
     console.log('Hi!');
@@ -4892,6 +7537,10 @@ The example above explains how Global Functions are stored as _properties_ in th
 The global function `greeting` was stored in the `window` object, like this:
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 greeting: function greeting() {
     console.log('Hi!');
 }
@@ -4899,6 +7548,7 @@ greeting: function greeting() {
 
 #### See also
 
+<<<<<<< HEAD
 - [MDN Web Docs Glossary](/en-US/docs/Glossary)
 
     - _glossary("global scope"_)
@@ -4907,14 +7557,30 @@ greeting: function greeting() {
 - _domxref("Window"_)
 - _domxref("WorkerGlobalScope"_)
 - [`global`](https://nodejs.org/api/globals.html#globals_global)
+=======
+-   [MDN Web Docs Glossary](/en-US/docs/Glossary)
+
+    -   _glossary("global scope"_)
+    -   _glossary("object"_)
+
+-   _domxref("Window"_)
+-   _domxref("WorkerGlobalScope"_)
+-   [`global`](https://nodejs.org/api/globals.html#globals_global)
+>>>>>>> master
 
 ---
 
 ## Term: Global scope
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - NeedsContent
+=======
+-   CodingScripting
+-   Glossary
+-   NeedsContent
+>>>>>>> master
 
 ---
 
@@ -4924,15 +7590,25 @@ In client-side JavaScript, the global scope is generally the web page inside whi
 
 #### See also
 
+<<<<<<< HEAD
 - [Introduction to variable scope in JavaScript](/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#variable_scope)
 - _interwiki("wikipedia", "Scope (computer science)", "Scope"_) on Wikipedia
+=======
+-   [Introduction to variable scope in JavaScript](/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#variable_scope)
+-   _interwiki("wikipedia", "Scope (computer science)", "Scope"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Global variable
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
+=======
+-   CodingScripting
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -4942,15 +7618,25 @@ In JavaScript it is a _glossary("property"_) of the _glossary("global object"_).
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Global variable"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Global variable"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Glyph
 
+<<<<<<< HEAD
 - Glossary
 - SVG
 - typography
+=======
+-   Glossary
+-   SVG
+-   typography
+>>>>>>> master
 
 ---
 
@@ -4960,13 +7646,19 @@ The fonts used by a website contain different sets of glyphs, which represent th
 
 #### See also
 
+<<<<<<< HEAD
 - [Glyph](https://en.wikipedia.org/wiki/Glyph) on Wikipedia
 - [Glyph, character and grapheme](https://www.quora.com/Whats-the-difference-between-a-character-a-glyph-and-a-grapheme/answer/Thomas-Phinney) on Quora
+=======
+-   [Glyph](https://en.wikipedia.org/wiki/Glyph) on Wikipedia
+-   [Glyph, character and grapheme](https://www.quora.com/Whats-the-difference-between-a-character-a-glyph-and-a-grapheme/answer/Thomas-Phinney) on Quora
+>>>>>>> master
 
 ---
 
 ## Term: Google Chrome
 
+<<<<<<< HEAD
 - Browser
 - Chrome canary
 - Chrome stable
@@ -4974,6 +7666,15 @@ The fonts used by a website contain different sets of glyphs, which represent th
 - Glossary
 - WebMechanics
 - google chrome
+=======
+-   Browser
+-   Chrome canary
+-   Chrome stable
+-   Chromium
+-   Glossary
+-   WebMechanics
+-   google chrome
+>>>>>>> master
 
 ---
 
@@ -4981,33 +7682,57 @@ The fonts used by a website contain different sets of glyphs, which represent th
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Google Chrome", "Google Chrome"_) on Wikipedia
+=======
+-   _interwiki("wikipedia", "Google Chrome", "Google Chrome"_) on Wikipedia
+>>>>>>> master
 
 ### For Chrome Users
 
 Use one of these links if you're an everyday user.
 
+<<<<<<< HEAD
 - [Android](https://play.google.com/store/apps/details?id=com.android.chrome)
 - [iOS](https://apps.apple.com/us/app/chrome-web-browser-by-google/id535886823)
 - [Desktop](https://www.google.com/chrome/)
+=======
+-   [Android](https://play.google.com/store/apps/details?id=com.android.chrome)
+-   [iOS](https://apps.apple.com/us/app/chrome-web-browser-by-google/id535886823)
+-   [Desktop](https://www.google.com/chrome/)
+>>>>>>> master
 
 ### For Web Developers
 
 If you want to try the latest Chrome features, install one of the pre-stable builds. Google pushes updates frequently and has designed the distributions to run side-by-side with the stable version. Visit the [Chrome Releases Blog](https://chromereleases.googleblog.com) to learn what's new.
 
+<<<<<<< HEAD
 - [Chrome Dev for Android](https://play.google.com/store/apps/details?id=com.chrome.dev)
 - [Chrome Canary for desktop](https://www.google.com/chrome/browser/canary.html).
+=======
+-   [Chrome Dev for Android](https://play.google.com/store/apps/details?id=com.chrome.dev)
+-   [Chrome Canary for desktop](https://www.google.com/chrome/browser/canary.html).
+>>>>>>> master
 
 ---
 
 ## Term: GPL
 
+<<<<<<< HEAD
 - GPL
 - Glossary
 - License
 - OpenPractices
 - Remixing
 - Sharing
+=======
+-   GPL
+-   Glossary
+-   License
+-   OpenPractices
+-   Remixing
+-   Sharing
+>>>>>>> master
 
 ---
 
@@ -5015,17 +7740,29 @@ If you want to try the latest Chrome features, install one of the pre-stable bui
 
 #### See also
 
+<<<<<<< HEAD
 - [FAQ](https://www.gnu.org/licenses/gpl-faq.html) on GNU licenses
 - [GNU GPL](https://en.wikipedia.org/wiki/GNU_General_Public_License) on Wikipedia
 - [GPL License](https://gnu.org/licenses/gpl.html) text
+=======
+-   [FAQ](https://www.gnu.org/licenses/gpl-faq.html) on GNU licenses
+-   [GNU GPL](https://en.wikipedia.org/wiki/GNU_General_Public_License) on Wikipedia
+-   [GPL License](https://gnu.org/licenses/gpl.html) text
+>>>>>>> master
 
 ---
 
 ## Term: GPU
 
+<<<<<<< HEAD
 - Glossary
 - Graphics
 - Infrastructure
+=======
+-   Glossary
+-   Graphics
+-   Infrastructure
+>>>>>>> master
 
 ---
 
@@ -5035,9 +7772,15 @@ If you want to try the latest Chrome features, install one of the pre-stable bui
 
 ## Term: Graceful degradation
 
+<<<<<<< HEAD
 - Design
 - Glossary
 - graceful degradation
+=======
+-   Design
+-   Glossary
+-   graceful degradation
+>>>>>>> master
 
 ---
 
@@ -5049,6 +7792,7 @@ It is a useful technique that allows Web developers to focus on developing the b
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Graceful degradation"_) on Wikipedia
 - [Handling common HTML and CSS problems](/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/HTML_and_CSS)
 - [Implementing feature detection](/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection)
@@ -5057,14 +7801,30 @@ It is a useful technique that allows Web developers to focus on developing the b
     - _Glossary("Graceful degradation"_)
     - _Glossary("Polyfill"_)
     - _Glossary("Progressive enhancement"_)
+=======
+-   _Interwiki("wikipedia", "Graceful degradation"_) on Wikipedia
+-   [Handling common HTML and CSS problems](/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/HTML_and_CSS)
+-   [Implementing feature detection](/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection)
+-   [MDN Web Docs Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("Graceful degradation"_)
+    -   _Glossary("Polyfill"_)
+    -   _Glossary("Progressive enhancement"_)
+>>>>>>> master
 
 ---
 
 ## Term: Grid Areas
 
+<<<<<<< HEAD
 - CSS
 - CSS Grids
 - Reference
+=======
+-   CSS
+-   CSS Grids
+-   Reference
+>>>>>>> master
 
 ---
 
@@ -5128,6 +7888,7 @@ In the example below I have a grid container with two grid items. I have named t
 
 ### Property reference
 
+<<<<<<< HEAD
 - _cssxref("grid-template-columns"_)
 - _cssxref("grid-template-rows"_)
 - _cssxref("grid-auto-rows"_)
@@ -5140,13 +7901,32 @@ In the example below I have a grid container with two grid items. I have named t
 - CSS Grid Layout Guide: _[Basic concepts of grid layout](/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout)_
 - CSS Grid Layout Guide: _[Grid template areas](/en-US/docs/Web/CSS/CSS_Grid_Layout/Grid_Template_Areas)_
 - [Definition of Grid Areas in the CSS Grid Layout specification](https://drafts.csswg.org/css-grid/#grid-area-concept)
+=======
+-   _cssxref("grid-template-columns"_)
+-   _cssxref("grid-template-rows"_)
+-   _cssxref("grid-auto-rows"_)
+-   _cssxref("grid-auto-columns"_)
+-   _cssxref("grid-template-areas"_)
+-   _cssxref("grid-area"_)
+
+### Further reading
+
+-   CSS Grid Layout Guide: _[Basic concepts of grid layout](/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout)_
+-   CSS Grid Layout Guide: _[Grid template areas](/en-US/docs/Web/CSS/CSS_Grid_Layout/Grid_Template_Areas)_
+-   [Definition of Grid Areas in the CSS Grid Layout specification](https://drafts.csswg.org/css-grid/#grid-area-concept)
+>>>>>>> master
 
 ---
 
 ## Term: Grid Axis
 
+<<<<<<< HEAD
 - CSS
 - CSS Grids
+=======
+-   CSS
+-   CSS Grids
+>>>>>>> master
 
 ---
 
@@ -5166,15 +7946,25 @@ The physical direction of these axes can change according to the [writing mode](
 
 #### See also
 
+<<<<<<< HEAD
 - CSS Grid Layout Guide: _[Basic concepts of grid layout](/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout)_
 - CSS Grid Layout Guide: _[Box alignment in Grid Layout](/en-US/docs/Web/CSS/CSS_Grid_Layout/Box_Alignment_in_CSS_Grid_Layout)_
 - CSS Grid Layout Guide: _[Grids, logical values and writing modes](/en-US/docs/Web/CSS/CSS_Grid_Layout/CSS_Grid_Logical_Values_and_Writing_Modes)_
+=======
+-   CSS Grid Layout Guide: _[Basic concepts of grid layout](/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout)_
+-   CSS Grid Layout Guide: _[Box alignment in Grid Layout](/en-US/docs/Web/CSS/CSS_Grid_Layout/Box_Alignment_in_CSS_Grid_Layout)_
+-   CSS Grid Layout Guide: _[Grids, logical values and writing modes](/en-US/docs/Web/CSS/CSS_Grid_Layout/CSS_Grid_Logical_Values_and_Writing_Modes)_
+>>>>>>> master
 
 ---
 
 ## Term: Grid Cell
 
+<<<<<<< HEAD
 - CSS Grids
+=======
+-   CSS Grids
+>>>>>>> master
 
 ---
 
@@ -5232,6 +8022,7 @@ In the example we have created a three column track grid. The five items are pla
 
 ### Property reference
 
+<<<<<<< HEAD
 - _cssxref("grid-template-columns"_)
 - _cssxref("grid-template-rows"_)
 - _cssxref("grid-auto-rows"_)
@@ -5241,13 +8032,29 @@ In the example we have created a three column track grid. The five items are pla
 
 - CSS Grid Layout Guide: _[Basic concepts of grid layout](/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout)_
 - [Definition of Grid Cells in the CSS Grid Layout specification](https://drafts.csswg.org/css-grid/#grid-track-concept)
+=======
+-   _cssxref("grid-template-columns"_)
+-   _cssxref("grid-template-rows"_)
+-   _cssxref("grid-auto-rows"_)
+-   _cssxref("grid-auto-columns"_)
+
+### Further reading
+
+-   CSS Grid Layout Guide: _[Basic concepts of grid layout](/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout)_
+-   [Definition of Grid Cells in the CSS Grid Layout specification](https://drafts.csswg.org/css-grid/#grid-track-concept)
+>>>>>>> master
 
 ---
 
 ## Term: Grid Column
 
+<<<<<<< HEAD
 - CSS
 - CodingScripting
+=======
+-   CSS
+-   CodingScripting
+>>>>>>> master
 
 ---
 
@@ -5261,6 +8068,7 @@ When working with alignment in [CSS Grid Layout](/en-US/docs/Web/CSS/CSS_Grid_La
 
 ### Property reference
 
+<<<<<<< HEAD
 - _cssxref("grid-template-columns"_)
 - _cssxref("grid-auto-columns"_)
 - _cssxref("grid"_)
@@ -5269,14 +8077,30 @@ When working with alignment in [CSS Grid Layout](/en-US/docs/Web/CSS/CSS_Grid_La
 ### Further reading
 
 - CSS Grid Layout Guide: _[Basic concepts of grid layout](/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout)_
+=======
+-   _cssxref("grid-template-columns"_)
+-   _cssxref("grid-auto-columns"_)
+-   _cssxref("grid"_)
+-   _cssxref("grid-template"_)
+
+### Further reading
+
+-   CSS Grid Layout Guide: _[Basic concepts of grid layout](/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout)_
+>>>>>>> master
 
 ---
 
 ## Term: Grid container
 
+<<<<<<< HEAD
 - CSS
 - Glossary
 - grid
+=======
+-   CSS
+-   Glossary
+-   grid
+>>>>>>> master
 
 ---
 
@@ -5288,6 +8112,7 @@ When an element becomes a grid container it establishes a **grid formatting cont
 
 ### Property reference
 
+<<<<<<< HEAD
 - _cssxref("grid-template-columns"_)
 - _cssxref("grid-template-rows"_)
 - _cssxref("grid-auto-columns"_)
@@ -5298,12 +8123,28 @@ When an element becomes a grid container it establishes a **grid formatting cont
 ### Further reading
 
 - CSS Grid Layout guide: _[Basic concepts of grid layout](/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout)_
+=======
+-   _cssxref("grid-template-columns"_)
+-   _cssxref("grid-template-rows"_)
+-   _cssxref("grid-auto-columns"_)
+-   _cssxref("grid-auto-rows"_)
+-   _cssxref("grid"_)
+-   _cssxref("grid-template"_)
+
+### Further reading
+
+-   CSS Grid Layout guide: _[Basic concepts of grid layout](/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout)_
+>>>>>>> master
 
 ---
 
 ## Term: Grid Lines
 
+<<<<<<< HEAD
 - CSS Grids
+=======
+-   CSS Grids
+>>>>>>> master
 
 ---
 
@@ -5464,6 +8305,7 @@ The lines created in the _explicit grid_ can be named, by adding the name in squ
 
 ### Property reference
 
+<<<<<<< HEAD
 - _cssxref("grid-template-columns"_)
 - _cssxref("grid-template-rows"_)
 - _cssxref("grid-column-start"_)
@@ -5480,12 +8322,34 @@ The lines created in the _explicit grid_ can be named, by adding the name in squ
 - CSS Grid Layout Guide: _[Layout using named grid lines](/en-US/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines)_
 - CSS Grid Layout Guide: _[CSS Grids, Logical Values and Writing Modes](/en-US/docs/Web/CSS/CSS_Grid_Layout/CSS_Grid_Logical_Values_and_Writing_Modes)_
 - [Definition of Grid Lines in the CSS Grid Layout specification](https://drafts.csswg.org/css-grid/#grid-line-concept)
+=======
+-   _cssxref("grid-template-columns"_)
+-   _cssxref("grid-template-rows"_)
+-   _cssxref("grid-column-start"_)
+-   _cssxref("grid-column-end"_)
+-   _cssxref("grid-column"_)
+-   _cssxref("grid-row-start"_)
+-   _cssxref("grid-row-end"_)
+-   _cssxref("grid-row"_)
+
+### Further reading
+
+-   CSS Grid Layout Guide: _[Basic concepts of grid layout](/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout)_
+-   CSS Grid Layout Guide: _[Line-based placement with CSS Grid](/en-US/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid)_
+-   CSS Grid Layout Guide: _[Layout using named grid lines](/en-US/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines)_
+-   CSS Grid Layout Guide: _[CSS Grids, Logical Values and Writing Modes](/en-US/docs/Web/CSS/CSS_Grid_Layout/CSS_Grid_Logical_Values_and_Writing_Modes)_
+-   [Definition of Grid Lines in the CSS Grid Layout specification](https://drafts.csswg.org/css-grid/#grid-line-concept)
+>>>>>>> master
 
 ---
 
 ## Term: Grid Row
 
+<<<<<<< HEAD
 - CSS Grids
+=======
+-   CSS Grids
+>>>>>>> master
 
 ---
 
@@ -5499,6 +8363,7 @@ When working with alignment in [CSS Grid Layout](/en-US/docs/Web/CSS/CSS_Grid_La
 
 ### Property reference
 
+<<<<<<< HEAD
 - _cssxref("grid-template-rows"_)
 - _cssxref("grid-auto-rows"_)
 - _cssxref("grid"_)
@@ -5507,12 +8372,26 @@ When working with alignment in [CSS Grid Layout](/en-US/docs/Web/CSS/CSS_Grid_La
 ### Further reading
 
 - CSS Grid Layout Guide: _[Basic concepts of grid layout](/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout)_
+=======
+-   _cssxref("grid-template-rows"_)
+-   _cssxref("grid-auto-rows"_)
+-   _cssxref("grid"_)
+-   _cssxref("grid-template"_)
+
+### Further reading
+
+-   CSS Grid Layout Guide: _[Basic concepts of grid layout](/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout)_
+>>>>>>> master
 
 ---
 
 ## Term: Grid Tracks
 
+<<<<<<< HEAD
 - CSS Grids
+=======
+-   CSS Grids
+>>>>>>> master
 
 ---
 
@@ -5575,6 +8454,7 @@ Tracks created in the implicit grid are auto-sized by default, however you can d
 
 #### See also
 
+<<<<<<< HEAD
 - [Basic concepts of grid layout](/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout)
 - [Definition of Grid Tracks in the CSS Grid Layout specification](https://drafts.csswg.org/css-grid/#grid-track-concept)
 - Property reference
@@ -5583,14 +8463,30 @@ Tracks created in the implicit grid are auto-sized by default, however you can d
     - _cssxref("grid-template-rows"_)
     - _cssxref("grid"_)
     - _cssxref("grid-template"_)
+=======
+-   [Basic concepts of grid layout](/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout)
+-   [Definition of Grid Tracks in the CSS Grid Layout specification](https://drafts.csswg.org/css-grid/#grid-track-concept)
+-   Property reference
+
+    -   _cssxref("grid-template-columns"_)
+    -   _cssxref("grid-template-rows"_)
+    -   _cssxref("grid"_)
+    -   _cssxref("grid-template"_)
+>>>>>>> master
 
 ---
 
 ## Term: Grid
 
+<<<<<<< HEAD
 - CSS
 - CSS Grid
 - Glossary
+=======
+-   CSS
+-   CSS Grid
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -5649,6 +8545,7 @@ In the example below I have created an _explicit grid_ of three columns and two 
 
 #### See also
 
+<<<<<<< HEAD
 - [Basic concepts of grid layout](/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout)
 - Property reference:
 
@@ -5656,15 +8553,31 @@ In the example below I have created an _explicit grid_ of three columns and two 
     - _cssxref("grid-template-rows"_)
     - _cssxref("grid"_)
     - _cssxref("grid-template"_)
+=======
+-   [Basic concepts of grid layout](/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout)
+-   Property reference:
+
+    -   _cssxref("grid-template-columns"_)
+    -   _cssxref("grid-template-rows"_)
+    -   _cssxref("grid"_)
+    -   _cssxref("grid-template"_)
+>>>>>>> master
 
 ---
 
 ## Term: Guard
 
+<<<<<<< HEAD
 - API
 - CodingScripting
 - Glossary
 - guard
+=======
+-   API
+-   CodingScripting
+-   Glossary
+-   guard
+>>>>>>> master
 
 ---
 
@@ -5674,7 +8587,11 @@ In the example below I have created an _explicit grid_ of three columns and two 
 
 ## Term: Gutters
 
+<<<<<<< HEAD
 - CSS Grids
+=======
+-   CSS Grids
+>>>>>>> master
 
 ---
 
@@ -5734,6 +8651,7 @@ The grid-gap properties are not the only thing that can cause tracks to space ou
 
 ### Property reference
 
+<<<<<<< HEAD
 - _cssxref("column-gap"_)
 - _cssxref("row-gap"_)
 - _cssxref("gap"_)
@@ -5742,14 +8660,30 @@ The grid-gap properties are not the only thing that can cause tracks to space ou
 
 - CSS Grid Layout Guide: _[Basic concepts of grid layout](/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout)_
 - [Definition of gutters in the CSS Grid Layout specification](https://drafts.csswg.org/css-grid/#gutters)
+=======
+-   _cssxref("column-gap"_)
+-   _cssxref("row-gap"_)
+-   _cssxref("gap"_)
+
+### Further reading
+
+-   CSS Grid Layout Guide: _[Basic concepts of grid layout](/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout)_
+-   [Definition of gutters in the CSS Grid Layout specification](https://drafts.csswg.org/css-grid/#gutters)
+>>>>>>> master
 
 ---
 
 ## Term: gzip compression
 
+<<<<<<< HEAD
 - Glossary
 - compression
 - gzip
+=======
+-   Glossary
+-   compression
+-   gzip
+>>>>>>> master
 
 ---
 
@@ -5757,17 +8691,29 @@ The grid-gap properties are not the only thing that can cause tracks to space ou
 
 #### See also
 
+<<<<<<< HEAD
 - [The gzip home page](http://www.gzip.org/)
 - [gzip on Wikipedia](https://en.wikipedia.org/wiki/Gzip)
+=======
+-   [The gzip home page](http://www.gzip.org/)
+-   [gzip on Wikipedia](https://en.wikipedia.org/wiki/Gzip)
+>>>>>>> master
 
 ---
 
 ## Term: Hash
 
+<<<<<<< HEAD
 - CodingScripting
 - Cryptography
 - Glossary
 - Hash
+=======
+-   CodingScripting
+-   Cryptography
+-   Glossary
+-   Hash
+>>>>>>> master
 
 ---
 
@@ -5775,17 +8721,29 @@ The grid-gap properties are not the only thing that can cause tracks to space ou
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Hash function"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Hash function"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Head
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - HTML
 - head
 - metadata
+=======
+-   CodingScripting
+-   Glossary
+-   HTML
+-   head
+-   metadata
+>>>>>>> master
 
 ---
 
@@ -5793,15 +8751,25 @@ The grid-gap properties are not the only thing that can cause tracks to space ou
 
 #### See also
 
+<<<<<<< HEAD
 - _htmlelement("head"_) element reference on MDN
 - [The HTML \<head>](/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML) on the MDN Learning Area
+=======
+-   _htmlelement("head"_) element reference on MDN
+-   [The HTML \<head>](/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML) on the MDN Learning Area
+>>>>>>> master
 
 ---
 
 ## Term: High-level programming language
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
+=======
+-   CodingScripting
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -5813,10 +8781,17 @@ The idea of a language automatically translatable into machine code, but nearer 
 
 ## Term: HMAC
 
+<<<<<<< HEAD
 - Cryptography
 - Glossary
 - Hash
 - Security
+=======
+-   Cryptography
+-   Glossary
+-   Hash
+-   Security
+>>>>>>> master
 
 ---
 
@@ -5828,16 +8803,27 @@ HMAC is used to ensure both integrity and authentication.
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Hash-based message authentication code", "HMAC"_) on Wikipedia
 - [RFC 2104](https://www.ietf.org/rfc/rfc2104.txt) on IETF
+=======
+-   _Interwiki("wikipedia", "Hash-based message authentication code", "HMAC"_) on Wikipedia
+-   [RFC 2104](https://www.ietf.org/rfc/rfc2104.txt) on IETF
+>>>>>>> master
 
 ---
 
 ## Term: Hoisting
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - JavaScript
+=======
+-   CodingScripting
+-   Glossary
+-   JavaScript
+>>>>>>> master
 
 ---
 
@@ -5856,6 +8842,10 @@ Note that doing so can lead to unexpected errors, and is not generally recommend
 One of the advantages of hoisting is that it lets you use a function before you declare it in your code.
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 catName('Tiger');
 
 function catName(name) {
@@ -5870,9 +8860,14 @@ Without hoisting you would _have_ to write the same code like this:
 
 ---
 
+<<<<<<< HEAD
 
 ```js
 
+=======
+```js
+//
+>>>>>>> master
 
 function catName(name) {
     console.log("My cat's name is " + name);
@@ -5903,6 +8898,10 @@ Here we declare then initialize the value of a `var` after using it.
 The default initialization of the `var` is `undefined`.
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 console.log(num); // Returns 'undefined' from hoisted var declaration (not 6)
 var num; // Declaration
 num = 6; // Initialization
@@ -5912,6 +8911,10 @@ console.log(num); // Returns 6 after the line with initialization is executed.
 The same thing happens if we declare and initialize the variable in the same line.
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 console.log(num); // Returns 'undefined' from hoisted var declaration (not 6)
 var num = 6; // Initialization and declaration.
 console.log(num); // Returns 6 after the line with initialization is executed.
@@ -5921,6 +8924,10 @@ If we forget the declaration altogether (and only initialize the value) the vari
 Trying to read the variable before it is initialized results in `ReferenceError` exception.
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 console.log(num); // Throws ReferenceError exception - the interpreter doesn't know about `num`.
 num = 6; // Initialization
 ```
@@ -5929,6 +8936,10 @@ Note however that initialization also causes declaration (if not already declare
 The code snippet below will work, because even though it isn't hoisted, the variable is initialized and effectively declared before it is used.
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 a = 'Cran'; // Initialize a
 b = 'berry'; // Initialize b
 
@@ -5941,6 +8952,10 @@ Variables declared with `let` and `const` are also hoisted but, unlike `var`, ar
 An exception will be thrown if a variable declared with `let` or `const` is read before it is initialized.
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 console.log(num); // Throws ReferenceError exception as the variable value is uninitialized
 let num = 6; // Initialization
 ```
@@ -5965,19 +8980,33 @@ Therefore the expressions are not evaluated until the relevant line is executed.
 
 #### See also
 
+<<<<<<< HEAD
 - [`var` statement](/en-US/docs/Web/JavaScript/Reference/Statements/var) — MDN
 - [`let` statement](/en-US/docs/Web/JavaScript/Reference/Statements/let) — MDN
 - [`const` statement](/en-US/docs/Web/JavaScript/Reference/Statements/const) — MDN
 - [`function` statement](/en-US/docs/Web/JavaScript/Reference/Statements/function) — MDN
+=======
+-   [`var` statement](/en-US/docs/Web/JavaScript/Reference/Statements/var) — MDN
+-   [`let` statement](/en-US/docs/Web/JavaScript/Reference/Statements/let) — MDN
+-   [`const` statement](/en-US/docs/Web/JavaScript/Reference/Statements/const) — MDN
+-   [`function` statement](/en-US/docs/Web/JavaScript/Reference/Statements/function) — MDN
+>>>>>>> master
 
 ---
 
 ## Term: Host
 
+<<<<<<< HEAD
 - Glossary
 - Intermediate
 - Web
 - WebMechanics
+=======
+-   Glossary
+-   Intermediate
+-   Web
+-   WebMechanics
+>>>>>>> master
 
 ---
 
@@ -5987,14 +9016,23 @@ The host doesn't need to be a hardware instance. It can be generated by virtual 
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Host (network)", "Host"_) on Wikipedia
+=======
+-   _interwiki("wikipedia", "Host (network)", "Host"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Hotlink
 
+<<<<<<< HEAD
 - Glossary
 - WebMechanics
+=======
+-   Glossary
+-   WebMechanics
+>>>>>>> master
 
 ---
 
@@ -6004,18 +9042,31 @@ The practice is often frowned upon as it can cause unwanted bandwidth usage on t
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Inline linking", "Hotlink"_) on Wikipedia
 - _glossary("Hyperlink"_) (Glossary)
+=======
+-   _Interwiki("wikipedia", "Inline linking", "Hotlink"_) on Wikipedia
+-   _glossary("Hyperlink"_) (Glossary)
+>>>>>>> master
 
 ---
 
 ## Term: Houdini
 
+<<<<<<< HEAD
 - CSS
 - CSS API
 - Glossary
 - Houdini
 - Reference
+=======
+-   CSS
+-   CSS API
+-   Glossary
+-   Houdini
+-   Reference
+>>>>>>> master
 
 ---
 
@@ -6027,17 +9078,29 @@ While many of the features Houdini enables can be created with JavaScript, inter
 
 #### See also
 
+<<<<<<< HEAD
 - [Houdini](/en-US/docs/Web/Houdini)
 - [CSSOM](/en-US/docs/Web/API/CSS_Object_Model)
 - [CSS Paint API](/en-US/docs/Web/API/CSS_Painting_API)
 - [CSS Typed OM](/en-US/docs/Web/API/CSS_Typed_OM_API)
+=======
+-   [Houdini](/en-US/docs/Web/Houdini)
+-   [CSSOM](/en-US/docs/Web/API/CSS_Object_Model)
+-   [CSS Paint API](/en-US/docs/Web/API/CSS_Painting_API)
+-   [CSS Typed OM](/en-US/docs/Web/API/CSS_Typed_OM_API)
+>>>>>>> master
 
 ---
 
 ## Term: HPKP
 
+<<<<<<< HEAD
 - Glossary
 - Security
+=======
+-   Glossary
+-   Security
+>>>>>>> master
 
 ---
 
@@ -6045,17 +9108,29 @@ While many of the features Houdini enables can be created with JavaScript, inter
 
 #### See also
 
+<<<<<<< HEAD
 - _HTTPHeader("Public-Key-Pins"_)
 - _HTTPHeader("Public-Key-Pins-Report-Only"_)
 - [RFC 7469](https://datatracker.ietf.org/doc/html/rfc7469)
 - Wikipedia: [HTTP Public Key Pinning](https://en.wikipedia.org/wiki/HTTP_Public_Key_Pinning)
+=======
+-   _HTTPHeader("Public-Key-Pins"_)
+-   _HTTPHeader("Public-Key-Pins-Report-Only"_)
+-   [RFC 7469](https://datatracker.ietf.org/doc/html/rfc7469)
+-   Wikipedia: [HTTP Public Key Pinning](https://en.wikipedia.org/wiki/HTTP_Public_Key_Pinning)
+>>>>>>> master
 
 ---
 
 ## Term: HSTS
 
+<<<<<<< HEAD
 - HTTP
 - Security
+=======
+-   HTTP
+-   Security
+>>>>>>> master
 
 ---
 
@@ -6065,19 +9140,33 @@ In other words, it tells the browser that changing the protocol from HTTP to HTT
 
 #### See also
 
+<<<<<<< HEAD
 - _HTTPHeader("Strict-Transport-Security"_)
 - OWASP Article: [HTTP Strict Transport Security](https://www.owasp.org/index.php/HTTP_Strict_Transport_Security)
 - Wikipedia: _interwiki("wikipedia", "HTTP Strict Transport Security"_)
+=======
+-   _HTTPHeader("Strict-Transport-Security"_)
+-   OWASP Article: [HTTP Strict Transport Security](https://www.owasp.org/index.php/HTTP_Strict_Transport_Security)
+-   Wikipedia: _interwiki("wikipedia", "HTTP Strict Transport Security"_)
+>>>>>>> master
 
 ---
 
 ## Term: HTML5
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - HTML
 - HTML5
 - Markup
+=======
+-   CodingScripting
+-   Glossary
+-   HTML
+-   HTML5
+-   Markup
+>>>>>>> master
 
 ---
 
@@ -6091,18 +9180,31 @@ Any modern site should use the [HTML doctype](/en-US/docs/MDN/Guidelines/Code_gu
 
 #### See also
 
+<<<<<<< HEAD
 - [our HTML documentation](/en-US/docs/Web/HTML)
 - [HTML beginner's learning guides](/en-US/docs/Learn/HTML)
 - [Web APIs](/en-US/docs/Web/API)
+=======
+-   [our HTML documentation](/en-US/docs/Web/HTML)
+-   [HTML beginner's learning guides](/en-US/docs/Learn/HTML)
+-   [Web APIs](/en-US/docs/Web/API)
+>>>>>>> master
 
 ---
 
 ## Term: HTML
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - HTML
 - l10n:priority
+=======
+-   CodingScripting
+-   Glossary
+-   HTML
+-   l10n:priority
+>>>>>>> master
 
 ---
 
@@ -6122,22 +9224,39 @@ An HTML file is normally saved with an `.htm` or `.html` extension, served by a 
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "HTML", "HTML"_) on Wikipedia
 - [Our HTML tutorial](/en-US/docs/Learn/HTML)
 - [The web course on codecademy.com](https://www.codecademy.com/learn/learn-html)
 - [The HTML documentation on MDN](/en-US/docs/Web/HTML)
 - [The HTML specification](https://www.w3.org/TR/html5/)
+=======
+-   _interwiki("wikipedia", "HTML", "HTML"_) on Wikipedia
+-   [Our HTML tutorial](/en-US/docs/Learn/HTML)
+-   [The web course on codecademy.com](https://www.codecademy.com/learn/learn-html)
+-   [The HTML documentation on MDN](/en-US/docs/Web/HTML)
+-   [The HTML specification](https://www.w3.org/TR/html5/)
+>>>>>>> master
 
 ---
 
 ## Term: HTTP/2
 
+<<<<<<< HEAD
 - Glossary
 - HTTP
 - Infrastructure
 - Reference
 - Web Performance
 - l10n:priority
+=======
+-   Glossary
+-   HTTP
+-   Infrastructure
+-   Reference
+-   Web Performance
+-   l10n:priority
+>>>>>>> master
 
 ---
 
@@ -6149,20 +9268,35 @@ HTTP/2 does not modify the application semantics of HTTP in any way. All the cor
 
 #### See also
 
+<<<<<<< HEAD
 - [HTTP on MDN](/en-US/docs/Web/HTTP)
 - _interwiki("wikipedia", "HTTP/2", "HTTP/2"_) on Wikipedia
 - [Glossary](/en-US/docs/Glossary)
 
     - _glossary("HTTP"_)
     - _glossary("Latency"_)
+=======
+-   [HTTP on MDN](/en-US/docs/Web/HTTP)
+-   _interwiki("wikipedia", "HTTP/2", "HTTP/2"_) on Wikipedia
+-   [Glossary](/en-US/docs/Glossary)
+
+    -   _glossary("HTTP"_)
+    -   _glossary("Latency"_)
+>>>>>>> master
 
 ---
 
 ## Term: HTTP/3
 
+<<<<<<< HEAD
 - HTTP
 - Intro
 - NeedsContent
+=======
+-   HTTP
+-   Intro
+-   NeedsContent
+>>>>>>> master
 
 ---
 
@@ -6172,6 +9306,7 @@ The major point of HTTP/3 is that it uses a new _glossary("UDP"_) protocol named
 
 #### See also
 
+<<<<<<< HEAD
 - [HTTP on MDN](/en-US/docs/Web/HTTP)
 - _interwiki("wikipedia", "HTTP/3", "HTTP/3"_) on Wikipedia
 - [Glossary](/en-US/docs/Glossary)
@@ -6179,14 +9314,29 @@ The major point of HTTP/3 is that it uses a new _glossary("UDP"_) protocol named
     - _glossary("HTTP"_)
     - _glossary("HTTP 2"_)
     - _glossary("Latency"_)
+=======
+-   [HTTP on MDN](/en-US/docs/Web/HTTP)
+-   _interwiki("wikipedia", "HTTP/3", "HTTP/3"_) on Wikipedia
+-   [Glossary](/en-US/docs/Glossary)
+
+    -   _glossary("HTTP"_)
+    -   _glossary("HTTP 2"_)
+    -   _glossary("Latency"_)
+>>>>>>> master
 
 ---
 
 ## Term: HTTP header
 
+<<<<<<< HEAD
 - Glossary
 - HTTP Header
 - WebMechanics
+=======
+-   Glossary
+-   HTTP Header
+-   WebMechanics
+>>>>>>> master
 
 ---
 
@@ -6194,10 +9344,17 @@ The major point of HTTP/3 is that it uses a new _glossary("UDP"_) protocol named
 
 The HTTP and Fetch specifications refer to a number of header categories, including:
 
+<<<<<<< HEAD
 - _Glossary("Request header"_): Headers containing more information about the resource to be fetched or about the client itself.
 - _Glossary("Response header"_): Headers with additional information about the response, like its location or about the server itself (name, version, …).
 - _Glossary("Representation header"_): metadata about the resource in the message body (e.g. encoding, media type, etc.).
 - _Glossary("Fetch metadata request header"_): Headers with metadata about the resource in the message body (e.g. encoding, media type, etc.).
+=======
+-   _Glossary("Request header"_): Headers containing more information about the resource to be fetched or about the client itself.
+-   _Glossary("Response header"_): Headers with additional information about the response, like its location or about the server itself (name, version, …).
+-   _Glossary("Representation header"_): metadata about the resource in the message body (e.g. encoding, media type, etc.).
+-   _Glossary("Fetch metadata request header"_): Headers with metadata about the resource in the message body (e.g. encoding, media type, etc.).
+>>>>>>> master
 
 A basic request with one header:
 
@@ -6233,6 +9390,7 @@ X-Cache-Info: cached
 
 > **Note:** Older versions of the specification referred to:
 >
+<<<<<<< HEAD
 > - _Glossary("General header"_): Headers applying to both requests and responses but with no relation to the data eventually transmitted in the body.
 > - _Glossary("Entity header"_): Headers containing more information about the body of the entity, like its content length or its MIME-type (this is a superset of what are now referred to as the Representation metadata headers)
 
@@ -6251,13 +9409,38 @@ X-Cache-Info: cached
     - _Glossary("Forbidden response header name"_)
     - _Glossary("CORS-safelisted request header"_)
     - _Glossary("CORS-safelisted response header"_)
+=======
+> -   _Glossary("General header"_): Headers applying to both requests and responses but with no relation to the data eventually transmitted in the body.
+> -   _Glossary("Entity header"_): Headers containing more information about the body of the entity, like its content length or its MIME-type (this is a superset of what are now referred to as the Representation metadata headers)
+
+#### See also
+
+-   [List of all HTTP headers](/en-US/docs/Web/HTTP/Headers)
+-   Syntax of [headers](https://datatracker.ietf.org/doc/html/rfc7230#section-3.2) in the HTTP specification
+-   [Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("HTTP header"_)
+    -   _Glossary("Request header"_)
+    -   _Glossary("Response header"_)
+    -   _Glossary("Representation header"_)
+    -   _Glossary("Fetch metadata request header"_)
+    -   _Glossary("Forbidden header name"_)
+    -   _Glossary("Forbidden response header name"_)
+    -   _Glossary("CORS-safelisted request header"_)
+    -   _Glossary("CORS-safelisted response header"_)
+>>>>>>> master
 
 ---
 
 ## Term: Safe (HTTP Methods)
 
+<<<<<<< HEAD
 - Glossary
 - WebMechanics
+=======
+-   Glossary
+-   WebMechanics
+>>>>>>> master
 
 ---
 
@@ -6283,19 +9466,33 @@ A call to an idempotent but non-safe method:
 
 #### See also
 
+<<<<<<< HEAD
 - Definition of [safe](https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.1) in the HTTP specification.
 - Description of common safe methods: _HTTPMethod("GET"_), _HTTPMethod("HEAD"_), _HTTPMethod("OPTIONS"_)
 - Description of common unsafe methods: _HTTPMethod("PUT"_), _HTTPMethod("DELETE"_), _HTTPMethod("POST"_)
+=======
+-   Definition of [safe](https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.1) in the HTTP specification.
+-   Description of common safe methods: _HTTPMethod("GET"_), _HTTPMethod("HEAD"_), _HTTPMethod("OPTIONS"_)
+-   Description of common unsafe methods: _HTTPMethod("PUT"_), _HTTPMethod("DELETE"_), _HTTPMethod("POST"_)
+>>>>>>> master
 
 ---
 
 ## Term: HTTPS RR
 
+<<<<<<< HEAD
 - Glossary
 - HTTPS
 - HTTPS RR
 - Infrastructure
 - Security
+=======
+-   Glossary
+-   HTTPS
+-   HTTPS RR
+-   Infrastructure
+-   Security
+>>>>>>> master
 
 ---
 
@@ -6306,19 +9503,33 @@ Further, the presence of an _HTTPS RR_ signals that all useful _Glossary("HTTP"_
 
 ##### See also
 
+<<<<<<< HEAD
 - [Service binding and parameter specification via the DNS (DNS SVCB and HTTPS RRs)](https://datatracker.ietf.org/doc/draft-ietf-dnsop-svcb-https/00/) (Draft IETF specification: draft-ietf-dnsop-svcb-https-00)
 - [Strict Transport Security vs. HTTPS Resource Records: the showdown](https://emilymstark.com/2020/10/24/strict-transport-security-vs-https-resource-records-the-showdown.html) (Emily M. Stark blog)
 - _glossary("SSL"_)
 - _glossary("TLS"_)
+=======
+-   [Service binding and parameter specification via the DNS (DNS SVCB and HTTPS RRs)](https://datatracker.ietf.org/doc/draft-ietf-dnsop-svcb-https/00/) (Draft IETF specification: draft-ietf-dnsop-svcb-https-00)
+-   [Strict Transport Security vs. HTTPS Resource Records: the showdown](https://emilymstark.com/2020/10/24/strict-transport-security-vs-https-resource-records-the-showdown.html) (Emily M. Stark blog)
+-   _glossary("SSL"_)
+-   _glossary("TLS"_)
+>>>>>>> master
 
 ---
 
 ## Term: HTTPS
 
+<<<<<<< HEAD
 - Glossary
 - HTTPS
 - Infrastructure
 - Security
+=======
+-   Glossary
+-   HTTPS
+-   Infrastructure
+-   Security
+>>>>>>> master
 
 ---
 
@@ -6326,6 +9537,7 @@ Further, the presence of an _HTTPS RR_ signals that all useful _Glossary("HTTP"_
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "HTTPS"_) on Wikipedia
 - [Moving to HTTPS community guide](https://movingtohttps.com/)
 - [Secure Contexts](/en-US/docs/Web/Security/Secure_Contexts)
@@ -6334,15 +9546,32 @@ Further, the presence of an _HTTPS RR_ signals that all useful _Glossary("HTTP"_
     - _glossary("HTTP"_)
     - _glossary("SSL"_)
     - _glossary("TLS"_)
+=======
+-   _Interwiki("wikipedia", "HTTPS"_) on Wikipedia
+-   [Moving to HTTPS community guide](https://movingtohttps.com/)
+-   [Secure Contexts](/en-US/docs/Web/Security/Secure_Contexts)
+-   [MDN Web Docs Glossary](/en-US/docs/Glossary)
+
+    -   _glossary("HTTP"_)
+    -   _glossary("SSL"_)
+    -   _glossary("TLS"_)
+>>>>>>> master
 
 ---
 
 ## Term: Hyperlink
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - HTML
 - Navigation
+=======
+-   CodingScripting
+-   Glossary
+-   HTML
+-   Navigation
+>>>>>>> master
 
 ---
 
@@ -6350,20 +9579,35 @@ Further, the presence of an _HTTPS RR_ signals that all useful _Glossary("HTTP"_
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Hyperlink", "Hyperlink"_) on Wikipedia
 - The [Hyperlink](/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks) guide on MDN
 - [Links in HTML Documents - W3C](https://www.w3.org/TR/1999/REC-html401-19991224/struct/links.html)
 - [HTML5 a - hyperlink - W3C](https://w3c.github.io/html-reference/a.html)
 - [`<a>` on MDN](/en-US/docs/Web/HTML/Element/a)
 - [`<link>` on MDN](/en-US/docs/Web/HTML/Element/link)
+=======
+-   _interwiki("wikipedia", "Hyperlink", "Hyperlink"_) on Wikipedia
+-   The [Hyperlink](/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks) guide on MDN
+-   [Links in HTML Documents - W3C](https://www.w3.org/TR/1999/REC-html401-19991224/struct/links.html)
+-   [HTML5 a - hyperlink - W3C](https://w3c.github.io/html-reference/a.html)
+-   [`<a>` on MDN](/en-US/docs/Web/HTML/Element/a)
+-   [`<link>` on MDN](/en-US/docs/Web/HTML/Element/link)
+>>>>>>> master
 
 ---
 
 ## Term: Hypertext
 
+<<<<<<< HEAD
 - Glossary
 - Web
 - WebMechanics
+=======
+-   Glossary
+-   Web
+-   WebMechanics
+>>>>>>> master
 
 ---
 
@@ -6373,18 +9617,31 @@ The term was coined by Ted Nelson around 1965.
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Hypertext", "Hypertext"_) on Wikipedia
+=======
+-   _interwiki("wikipedia", "Hypertext", "Hypertext"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: I18N
 
+<<<<<<< HEAD
 - Beginner
 - Credibility
 - Glossary
 - Internationalization
 - OpenPractices
 - i18n
+=======
+-   Beginner
+-   Credibility
+-   Glossary
+-   Internationalization
+-   OpenPractices
+-   i18n
+>>>>>>> master
 
 ---
 
@@ -6394,6 +9651,7 @@ The term was coined by Ted Nelson around 1965.
 
 Among other things, i18n requires support for multiple
 
+<<<<<<< HEAD
 - character sets (usually via [Unicode](https://searchcio-midmarket.techtarget.com/definition/Unicode))
 - units of measure (currency, °C/°F, km/miles, etc.)
 - time and date formats
@@ -6406,13 +9664,32 @@ Among other things, i18n requires support for multiple
 - [i18n on W3C](https://www.w3.org/International/questions/qa-i18n.en#Internationalization)
 - [i18n on gala-global.org](https://www.gala-global.org/what-internationalization)
 - [i18n material on i18nguy.com](http://www.i18nguy.com/)
+=======
+-   character sets (usually via [Unicode](https://searchcio-midmarket.techtarget.com/definition/Unicode))
+-   units of measure (currency, °C/°F, km/miles, etc.)
+-   time and date formats
+-   keyboard layouts
+-   text directions
+
+#### See also
+
+-   _interwiki("wikipedia", "Internationalization and localization", "i18n"_) on Wikipedia
+-   [i18n on W3C](https://www.w3.org/International/questions/qa-i18n.en#Internationalization)
+-   [i18n on gala-global.org](https://www.gala-global.org/what-internationalization)
+-   [i18n material on i18nguy.com](http://www.i18nguy.com/)
+>>>>>>> master
 
 ---
 
 ## Term: IANA
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
+=======
+-   Glossary
+-   Infrastructure
+>>>>>>> master
 
 ---
 
@@ -6420,15 +9697,25 @@ Among other things, i18n requires support for multiple
 
 #### See also
 
+<<<<<<< HEAD
 - [Official website](https://www.iana.org/)
 - _interwiki("wikipedia", "Internet Assigned Numbers Authority", "IANA"_) on Wikipedia
+=======
+-   [Official website](https://www.iana.org/)
+-   _interwiki("wikipedia", "Internet Assigned Numbers Authority", "IANA"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: ICANN
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
+=======
+-   Glossary
+-   Infrastructure
+>>>>>>> master
 
 ---
 
@@ -6436,18 +9723,31 @@ Among other things, i18n requires support for multiple
 
 #### See also
 
+<<<<<<< HEAD
 - [Official website](https://www.icann.org/)
 - _interwiki("wikipedia", "ICANN", "ICANN"_) on Wikipedia
+=======
+-   [Official website](https://www.icann.org/)
+-   _interwiki("wikipedia", "ICANN", "ICANN"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: ICE
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - Networking
 - Protocols
 - WebRTC
+=======
+-   CodingScripting
+-   Glossary
+-   Networking
+-   Protocols
+-   WebRTC
+>>>>>>> master
 
 ---
 
@@ -6462,17 +9762,29 @@ The framework algorithm looks for the lowest-latency path for connecting the two
 
 #### See also
 
+<<<<<<< HEAD
 - [WebRTC](/en-US/docs/Web/API/WebRTC_API), the principal web-related protocol which uses ICE
 - [WebRTC protocols](/en-US/docs/Web/API/WebRTC_API/Protocols)
 - _rfc("5245"_), the IETF specification for ICE
 - _domxref("RTCIceCandidate"_), the interface representing a ICE candidate
+=======
+-   [WebRTC](/en-US/docs/Web/API/WebRTC_API), the principal web-related protocol which uses ICE
+-   [WebRTC protocols](/en-US/docs/Web/API/WebRTC_API/Protocols)
+-   _rfc("5245"_), the IETF specification for ICE
+-   _domxref("RTCIceCandidate"_), the interface representing a ICE candidate
+>>>>>>> master
 
 ---
 
 ## Term: IDE
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
+=======
+-   CodingScripting
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -6480,14 +9792,23 @@ The framework algorithm looks for the lowest-latency path for connecting the two
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Integrated_development_environment", "IDE"_) on Wikipedia
+=======
+-   _interwiki("wikipedia", "Integrated_development_environment", "IDE"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Idempotent
 
+<<<<<<< HEAD
 - Glossary
 - WebMechanics
+=======
+-   Glossary
+-   WebMechanics
+>>>>>>> master
 
 ---
 
@@ -6518,18 +9839,31 @@ Note that the idempotence of a method is not guaranteed by the server and some a
 
 #### See also
 
+<<<<<<< HEAD
 - Definition of [idempotent](https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.2) in the HTTP specification.
 - Description of common idempotent methods: _HTTPMethod("GET"_), _HTTPMethod("HEAD"_), _HTTPMethod("PUT"_), _HTTPMethod("DELETE"_), _HTTPMethod("OPTIONS"_), _HTTPMethod("TRACE"_)
 - Description of common non-idempotent methods: _HTTPMethod("POST"_),_HTTPMethod("PATCH"_), _HTTPMethod("CONNECT"_)
+=======
+-   Definition of [idempotent](https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.2) in the HTTP specification.
+-   Description of common idempotent methods: _HTTPMethod("GET"_), _HTTPMethod("HEAD"_), _HTTPMethod("PUT"_), _HTTPMethod("DELETE"_), _HTTPMethod("OPTIONS"_), _HTTPMethod("TRACE"_)
+-   Description of common non-idempotent methods: _HTTPMethod("POST"_),_HTTPMethod("PATCH"_), _HTTPMethod("CONNECT"_)
+>>>>>>> master
 
 ---
 
 ## Term: Identifier
 
+<<<<<<< HEAD
 - Beginner
 - CodingScripting
 - Glossary
 - Sharing
+=======
+-   Beginner
+-   CodingScripting
+-   Glossary
+-   Sharing
+>>>>>>> master
 
 ---
 
@@ -6541,6 +9875,7 @@ An identifier differs from a string in that a _glossary("string"_) is data, whil
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Identifier#In_computer_science", "Identifier"_) on Wikipedia
 - [Glossary](/en-US/docs/Glossary)
 
@@ -6548,15 +9883,31 @@ An identifier differs from a string in that a _glossary("string"_) is data, whil
     - _glossary("Scope"_)
     - _glossary("string"_)
     - _glossary("Unicode"_)
+=======
+-   _interwiki("wikipedia", "Identifier#In_computer_science", "Identifier"_) on Wikipedia
+-   [Glossary](/en-US/docs/Glossary)
+
+    -   _glossary("Identifier"_)
+    -   _glossary("Scope"_)
+    -   _glossary("string"_)
+    -   _glossary("Unicode"_)
+>>>>>>> master
 
 ---
 
 ## Term: IDL
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - IDL
 - Interface description language
+=======
+-   CodingScripting
+-   Glossary
+-   IDL
+-   Interface description language
+>>>>>>> master
 
 ---
 
@@ -6578,18 +9929,31 @@ IDL attributes can [reflect other types](https://www.whatwg.org/specs/web-apps/c
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Interface description language", "IDL"_) on Wikipedia
 - [HTML attribute reference](/en-US/docs/Web/HTML/Attributes)
 - [Interface Definition Language](https://www.eecs.berkeley.edu/~messer/netappc/Supplements/10-idl.pdf)
+=======
+-   _interwiki("wikipedia", "Interface description language", "IDL"_) on Wikipedia
+-   [HTML attribute reference](/en-US/docs/Web/HTML/Attributes)
+-   [Interface Definition Language](https://www.eecs.berkeley.edu/~messer/netappc/Supplements/10-idl.pdf)
+>>>>>>> master
 
 ---
 
 ## Term: IETF
 
+<<<<<<< HEAD
 - Glossary
 - IETF
 - Infrastructure
 - Internet
+=======
+-   Glossary
+-   IETF
+-   Infrastructure
+-   Internet
+>>>>>>> master
 
 ---
 
@@ -6599,17 +9963,29 @@ The IETF is open, run by volunteers, and sponsored by the [Internet Society](htt
 
 #### See also
 
+<<<<<<< HEAD
 - [Official website](https://www.ietf.org/)
+=======
+-   [Official website](https://www.ietf.org/)
+>>>>>>> master
 
 ---
 
 ## Term: IIFE
 
+<<<<<<< HEAD
 - CodingScripting
 - DesignPattern
 - Functions
 - Glossary
 - JavaScript
+=======
+-   CodingScripting
+-   DesignPattern
+-   Functions
+-   Glossary
+-   JavaScript
+>>>>>>> master
 
 ---
 
@@ -6617,6 +9993,10 @@ The IETF is open, run by volunteers, and sponsored by the [Internet Society](htt
 > The name IIFE is promoted by Ben Alman in [his blog](https://web.archive.org/web/20171201033208/http://benalman.com/news/2010/11/immediately-invoked-function-expression/#iife).
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 (function () {
     statements;
 })();
@@ -6637,6 +10017,10 @@ again, we could use the IIFE pattern. As we will not reuse the code again, using
 using a function declaration or a function expression.
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 (function () {
     // some initiation code
     let firstVariable;
@@ -6652,6 +10036,10 @@ We would also use IIFE to create private and public variables and methods. For a
 pattern and other use of IIFE, you could see the book Learning JavaScript Design Patterns by Addy Osmani.
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 const makeWithdraw = (balance) =>
     (function (copyBalance) {
         let balance = copyBalance; // This variable is private
@@ -6689,6 +10077,10 @@ Suppose we want to create 2 buttons with the texts Button 0 and Button 1 and we 
 them, we would like them to alert 0 and 1. The following code doesn't work:
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 for (var i = 0; i < 2; i++) {
     const button = document.createElement('button');
     button.innerText = 'Button ' + i;
@@ -6704,6 +10096,10 @@ When clicked, both Button 0 and Button 1 alert 2 because `i` is global,
 with the last value 2. To fix this problem before ES6, we could use the IIFE pattern:
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 for (var i = 0; i < 2; i++) {
     const button = document.createElement('button');
     button.innerText = 'Button ' + i;
@@ -6722,6 +10118,10 @@ The variable `i` is globally defined.
 Using the statement **let**, we could simply do:
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 for (let i = 0; i < 2; i++) {
     const button = document.createElement('button');
     button.innerText = 'Button ' + i;
@@ -6737,21 +10137,37 @@ When clicked, these buttons alert 0 and 1.
 
 #### See also
 
+<<<<<<< HEAD
 - [Quick example](/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript#Functions) (at the end of the "Functions" section, right before "Custom objects")
 - _interwiki("wikipedia", "Immediately-invoked function expression", "IIFE"_) (Wikipedia)
 - [Glossary](/en-US/docs/Glossary)
 
     - _Glossary("Function"_)
     - _Glossary("Self-Executing Anonymous Function"_)
+=======
+-   [Quick example](/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript#Functions) (at the end of the "Functions" section, right before "Custom objects")
+-   _interwiki("wikipedia", "Immediately-invoked function expression", "IIFE"_) (Wikipedia)
+-   [Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("Function"_)
+    -   _Glossary("Self-Executing Anonymous Function"_)
+>>>>>>> master
 
 ---
 
 ## Term: IMAP
 
+<<<<<<< HEAD
 - Beginner
 - Glossary
 - Infrastructure
 - MailNews
+=======
+-   Beginner
+-   Glossary
+-   Infrastructure
+-   MailNews
+>>>>>>> master
 
 ---
 
@@ -6763,22 +10179,34 @@ Mark Crispin initially developed IMAP in 1986 as _Interim Mail Access Protocol_.
 
 #### See also
 
+<<<<<<< HEAD
 - _RFC(3501_)
 - _Glossary("POP"_)
 - _interwiki("wikipedia", "Internet Message Access Protocol", "IMAP"_) on Wikipedia
+=======
+-   _RFC(3501_)
+-   _Glossary("POP"_)
+-   _interwiki("wikipedia", "Internet Message Access Protocol", "IMAP"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Immutable
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
+=======
+-   CodingScripting
+-   Glossary
+>>>>>>> master
 
 ---
 
 > An immutable _glossary("object"_) is one whose content cannot be changed.
 > An object can be immutable for various reasons, for example:
 
+<<<<<<< HEAD
 - To improve performance (no planning for the object's future changes)
 - To reduce memory use (make _glossary("object reference","object references"_) instead of cloning the whole object)
 - Thread-safety (multiple threads can reference the same object without interfering with one other)
@@ -6786,11 +10214,21 @@ Mark Crispin initially developed IMAP in 1986 as _Interim Mail Access Protocol_.
 #### See also
 
 - _interwiki("wikipedia", "Immutable object", "Immutable"_) on Wikipedia
+=======
+-   To improve performance (no planning for the object's future changes)
+-   To reduce memory use (make _glossary("object reference","object references"_) instead of cloning the whole object)
+-   Thread-safety (multiple threads can reference the same object without interfering with one other)
+
+#### See also
+
+-   _interwiki("wikipedia", "Immutable object", "Immutable"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: 'MDN Web Docs Glossary: Definitions of Web-related terms'
 
+<<<<<<< HEAD
 - Beginner
 - Definitions
 - Dictionary
@@ -6798,6 +10236,15 @@ Mark Crispin initially developed IMAP in 1986 as _Interim Mail Access Protocol_.
 - Index
 - Landing
 - Terminology
+=======
+-   Beginner
+-   Definitions
+-   Dictionary
+-   Glossary
+-   Index
+-   Landing
+-   Terminology
+>>>>>>> master
 
 ---
 
@@ -6811,7 +10258,14 @@ _LearnBox({"title":"Learn a new word ..."}_)
 
 <section id="Quick_links">
  <ol>
+<<<<<<< HEAD
   <li><strong><a href="/en-US/docs/Glossary">MDN Web Docs Glossary</a></strong>_ListSubpagesForSidebar("/en-us/docs/Glossary", 1_)</li>
+=======
+  <li>
+<strong>
+<a href="/en-US/docs/Glossary">MDN Web Docs Glossary</a>
+</strong>_ListSubpagesForSidebar("/en-us/docs/Glossary", 1_)</li>
+>>>>>>> master
  </ol>
 </section>
 
@@ -6819,11 +10273,19 @@ _LearnBox({"title":"Learn a new word ..."}_)
 
 ## Term: IndexedDB
 
+<<<<<<< HEAD
 - API
 - CodingScripting
 - Database
 - Glossary
 - Sql
+=======
+-   API
+-   CodingScripting
+-   Database
+-   Glossary
+-   Sql
+>>>>>>> master
 
 ---
 
@@ -6831,17 +10293,29 @@ _LearnBox({"title":"Learn a new word ..."}_)
 
 #### See also
 
+<<<<<<< HEAD
 - The _domxref('IndexedDB_API','IndexedDB API','',1_) on MDN
 - [The W3C specification for IndexedDB](https://w3c.github.io/IndexedDB/)
+=======
+-   The _domxref('IndexedDB_API','IndexedDB API','',1_) on MDN
+-   [The W3C specification for IndexedDB](https://w3c.github.io/IndexedDB/)
+>>>>>>> master
 
 ---
 
 ## Term: Index
 
+<<<<<<< HEAD
 - Glossary
 - Index
 - MDN Meta
 - Navigation
+=======
+-   Glossary
+-   Index
+-   MDN Meta
+-   Navigation
+>>>>>>> master
 
 ---
 
@@ -6851,9 +10325,15 @@ _LearnBox({"title":"Learn a new word ..."}_)
 
 ## Term: Information architecture
 
+<<<<<<< HEAD
 - Design
 - Glossary
 - information architecture
+=======
+-   Design
+-   Glossary
+-   information architecture
+>>>>>>> master
 
 ---
 
@@ -6861,16 +10341,27 @@ _LearnBox({"title":"Learn a new word ..."}_)
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Information_architecture", "Information architecture"_) on Wikipedia
+=======
+-   _interwiki("wikipedia", "Information_architecture", "Information architecture"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Inheritance
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - Inheritance
 - Programming Language
+=======
+-   CodingScripting
+-   Glossary
+-   Inheritance
+-   Programming Language
+>>>>>>> master
 
 ---
 
@@ -6880,18 +10371,27 @@ As an app developer, you can choose which of the superclass's _glossary("attribu
 
 #### See also
 
+<<<<<<< HEAD
 - [Inheritance and the prototype chain](/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
+=======
+-   [Inheritance and the prototype chain](/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
+>>>>>>> master
 
 ---
 
 ## Term: Input method editor
 
+<<<<<<< HEAD
 - Glossary
+=======
+-   Glossary
+>>>>>>> master
 
 ---
 
 > An input method editor (IME) is a program that provides a specialized user interface for text input. Input method editors are used in many situations:
 
+<<<<<<< HEAD
 - to enter Chinese, Japanese, or Korean text using a Latin keyboard
 - to enter Latin text using a numeric keypad
 - to enter text on a touch screen using handwriting recognition
@@ -6902,17 +10402,38 @@ As an app developer, you can choose which of the superclass's _glossary("attribu
 - [Glossary](/en-US/docs/Glossary)
 
     - _Glossary("I18N"_)
+=======
+-   to enter Chinese, Japanese, or Korean text using a Latin keyboard
+-   to enter Latin text using a numeric keypad
+-   to enter text on a touch screen using handwriting recognition
+
+#### See also
+
+-   _Interwiki("wikipedia", "Input method"_)
+-   [Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("I18N"_)
+>>>>>>> master
 
 ---
 
 ## Term: Instance
 
+<<<<<<< HEAD
 - Beginner
 - CodingScripting
 - Glossary
 - JavaScript
 - NeedsExample
 - OOP
+=======
+-   Beginner
+-   CodingScripting
+-   Glossary
+-   JavaScript
+-   NeedsExample
+-   OOP
+>>>>>>> master
 
 ---
 
@@ -6920,15 +10441,25 @@ As an app developer, you can choose which of the superclass's _glossary("attribu
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Instance (computer science)", "Instance"_) on Wikipedia
+=======
+-   _interwiki("wikipedia", "Instance (computer science)", "Instance"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Internationalization
 
+<<<<<<< HEAD
 - Glossary
 - Internationalization
 - Reference
+=======
+-   Glossary
+-   Internationalization
+-   Reference
+>>>>>>> master
 
 ---
 
@@ -6938,14 +10469,21 @@ Internationalization includes support for multiple character sets (usually via [
 
 #### See also
 
+<<<<<<< HEAD
 - [Internationalization extension](/en-US/docs/Mozilla/Add-ons/WebExtensions/Internationalization)
 - [Internationalization API](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl)
 - [Flexbox](/en-US/docs/Learn/CSS/CSS_layout/Flexbox) and [Grid layout](/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout)
+=======
+-   [Internationalization extension](/en-US/docs/Mozilla/Add-ons/WebExtensions/Internationalization)
+-   [Internationalization API](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl)
+-   [Flexbox](/en-US/docs/Learn/CSS/CSS_layout/Flexbox) and [Grid layout](/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout)
+>>>>>>> master
 
 ---
 
 ## Term: Internet
 
+<<<<<<< HEAD
 - Beginner
 - Glossary
 - Guide
@@ -6954,6 +10492,16 @@ Internationalization includes support for multiple character sets (usually via [
 - Tutorial
 - Web
 - WebMechanics
+=======
+-   Beginner
+-   Glossary
+-   Guide
+-   Intro
+-   NeedsContent
+-   Tutorial
+-   Web
+-   WebMechanics
+>>>>>>> master
 
 ---
 
@@ -6961,15 +10509,25 @@ Internationalization includes support for multiple character sets (usually via [
 
 #### See also
 
+<<<<<<< HEAD
 - [How the Internet works](/en-US/docs/Learn/Common_questions/How_does_the_Internet_work) (introduction for beginners)
+=======
+-   [How the Internet works](/en-US/docs/Learn/Common_questions/How_does_the_Internet_work) (introduction for beginners)
+>>>>>>> master
 
 ---
 
 ## Term: Intrinsic size
 
+<<<<<<< HEAD
 - CSS
 - Glossary
 - Intrinsic size
+=======
+-   CSS
+-   Glossary
+-   Intrinsic size
+>>>>>>> master
 
 ---
 
@@ -6987,10 +10545,17 @@ For images the intrinsic size has the same meaning — it is the size that an im
 
 ## Term: IP Address
 
+<<<<<<< HEAD
 - Beginner
 - Glossary
 - Infrastructure
 - Web
+=======
+-   Beginner
+-   Glossary
+-   Infrastructure
+-   Web
+>>>>>>> master
 
 ---
 
@@ -7000,17 +10565,29 @@ For images the intrinsic size has the same meaning — it is the size that an im
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "IP address", "IP address"_) on Wikipedia
+=======
+-   _interwiki("wikipedia", "IP address", "IP address"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: IPv4
 
+<<<<<<< HEAD
 - Glossary
 - IPv4
 - Infrastructure
 - Internet Protocol
 - Protocol
+=======
+-   Glossary
+-   IPv4
+-   Infrastructure
+-   Internet Protocol
+-   Protocol
+>>>>>>> master
 
 ---
 
@@ -7026,12 +10603,21 @@ _interwiki("wikipedia", "IPv4", "IPv4"_) on Wikipedia
 
 ## Term: IPv6
 
+<<<<<<< HEAD
 - Glossary
 - IPv6
 - Infrastructure
 - Intermediate
 - Web
 - WebMechanics
+=======
+-   Glossary
+-   IPv6
+-   Infrastructure
+-   Intermediate
+-   Web
+-   WebMechanics
+>>>>>>> master
 
 ---
 
@@ -7039,17 +10625,29 @@ _interwiki("wikipedia", "IPv4", "IPv4"_) on Wikipedia
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "IPv6", "IPv6"_) on Wikipedia
+=======
+-   _interwiki("wikipedia", "IPv6", "IPv6"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: IRC
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
 - Internet Relay Chat
 - Open Protocol
 - irc
+=======
+-   Glossary
+-   Infrastructure
+-   Internet Relay Chat
+-   Open Protocol
+-   irc
+>>>>>>> master
 
 ---
 
@@ -7061,11 +10659,19 @@ Designed in the late 1980s by Jarrko Oikarinen, IRC uses _glossary("TCP"_) and i
 
 ## Term: ISO
 
+<<<<<<< HEAD
 - Glossary
 - ISO
 - Infrastructure
 - Web Standards
 - web specifications
+=======
+-   Glossary
+-   ISO
+-   Infrastructure
+-   Web Standards
+-   web specifications
+>>>>>>> master
 
 ---
 
@@ -7073,17 +10679,29 @@ Designed in the late 1980s by Jarrko Oikarinen, IRC uses _glossary("TCP"_) and i
 
 #### See also
 
+<<<<<<< HEAD
 - [Official website](https://www.iso.org/iso/home.html)
+=======
+-   [Official website](https://www.iso.org/iso/home.html)
+>>>>>>> master
 
 ---
 
 ## Term: ISP
 
+<<<<<<< HEAD
 - Glossary
 - ISP
 - Internet Service Provider
 - Web
 - WebMechanics
+=======
+-   Glossary
+-   ISP
+-   Internet Service Provider
+-   Web
+-   WebMechanics
+>>>>>>> master
 
 ---
 
@@ -7091,17 +10709,29 @@ Designed in the late 1980s by Jarrko Oikarinen, IRC uses _glossary("TCP"_) and i
 
 #### See also
 
+<<<<<<< HEAD
 - [How the Internet works](/en-US/docs/Learn/Common_questions/How_does_the_Internet_work) (explanation for beginners)
 - _interwiki("wikipedia", "Internet service provider", "Internet service provider"_) on Wikipedia
+=======
+-   [How the Internet works](/en-US/docs/Learn/Common_questions/How_does_the_Internet_work) (explanation for beginners)
+-   _interwiki("wikipedia", "Internet service provider", "Internet service provider"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: ITU
 
+<<<<<<< HEAD
 - Glossary
 - ITU
 - Standardization
 - organization
+=======
+-   Glossary
+-   ITU
+-   Standardization
+-   organization
+>>>>>>> master
 
 ---
 
@@ -7113,18 +10743,31 @@ In the Internet Age, the ITU's role of establishing standards for video and audi
 
 #### See also
 
+<<<<<<< HEAD
 - [ITU web site](https://www.itu.int/)
 - [ITU history portal](https://www.itu.int/en/history/Pages/ITUsHistory.aspx)
+=======
+-   [ITU web site](https://www.itu.int/)
+-   [ITU history portal](https://www.itu.int/en/history/Pages/ITUsHistory.aspx)
+>>>>>>> master
 
 ---
 
 ## Term: Jank
 
+<<<<<<< HEAD
 - Beginner
 - CodingScripting
 - Glossary
 - Performance
 - Web Performance
+=======
+-   Beginner
+-   CodingScripting
+-   Glossary
+-   Performance
+-   Web Performance
+>>>>>>> master
 
 ---
 
@@ -7134,10 +10777,17 @@ In the Internet Age, the ITU's role of establishing standards for video and audi
 
 ## Term: Java
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - Java
 - Programming Language
+=======
+-   CodingScripting
+-   Glossary
+-   Java
+-   Programming Language
+>>>>>>> master
 
 ---
 
@@ -7149,16 +10799,27 @@ Programs are _glossary("Compile", "compiled"_) only once ahead of time into a pr
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Java (programming language)", "Java"_) on Wikipedia
+=======
+-   _interwiki("wikipedia", "Java (programming language)", "Java"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: JavaScript
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - JavaScript
 - l10n:priority
+=======
+-   CodingScripting
+-   Glossary
+-   JavaScript
+-   l10n:priority
+>>>>>>> master
 
 ---
 
@@ -7180,6 +10841,7 @@ Recently, JavaScript's popularity has expanded even further through the successf
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "JavaScript", "JavaScript"_) on Wikipedia
 - The _Link("/en-US/docs/Web/JavaScript/Guide"_) on MDN
 - [The "javascripting" workshop on NodeSchool](https://nodeschool.io/#workshoppers)
@@ -7187,16 +10849,33 @@ Recently, JavaScript's popularity has expanded even further through the successf
 - [The latest ECMAScript standard](https://www.ecma-international.org/publications/standards/Ecma-262.htm)
 - The _Link("/en-US/docs/Web/JavaScript/reference"_) on MDN
 - [The _Eloquent JavaScript_ book](https://eloquentjavascript.net/)
+=======
+-   _interwiki("wikipedia", "JavaScript", "JavaScript"_) on Wikipedia
+-   The _Link("/en-US/docs/Web/JavaScript/Guide"_) on MDN
+-   [The "javascripting" workshop on NodeSchool](https://nodeschool.io/#workshoppers)
+-   [The JavaScript course on codecademy.com](https://www.codecademy.com/tracks/javascript)
+-   [The latest ECMAScript standard](https://www.ecma-international.org/publications/standards/Ecma-262.htm)
+-   The _Link("/en-US/docs/Web/JavaScript/reference"_) on MDN
+-   [The _Eloquent JavaScript_ book](https://eloquentjavascript.net/)
+>>>>>>> master
 
 ---
 
 ## Term: JPEG
 
+<<<<<<< HEAD
 - Beginner
 - Composing
 - Glossary
 - Images
 - JPEG
+=======
+-   Beginner
+-   Composing
+-   Glossary
+-   Images
+-   JPEG
+>>>>>>> master
 
 ---
 
@@ -7206,15 +10885,25 @@ JPEG compression is composed of three compression techniques applied in successi
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "JPEG"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "JPEG"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: jQuery
 
+<<<<<<< HEAD
 - Glossary
 - JQuery
 - JavaScript
+=======
+-   Glossary
+-   JQuery
+-   JavaScript
+>>>>>>> master
 
 ---
 
@@ -7223,6 +10912,10 @@ JPEG compression is composed of three compression techniques applied in successi
 jQuery uses a format, `$(selector).action()` to assign an element(s) to an event. To explain it in detail, `$(selector)` will call jQuery to select `selector` element(s), and assign it to an event _Glossary("API"_) called `.action()`.
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 $(document).ready(function () {
     alert('Hello World!');
     $('#blackBox').hide();
@@ -7232,6 +10925,10 @@ $(document).ready(function () {
 The above code carries out the same function as the following code:
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 window.onload = function () {
     alert('Hello World!');
     document.getElementById('blackBox').style.display = 'none';
@@ -7241,6 +10938,10 @@ window.onload = function () {
 Or:
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 window.addEventListener('load', () => {
     alert('Hello World!');
     document.getElementById('blackBox').style.display = 'none';
@@ -7249,19 +10950,33 @@ window.addEventListener('load', () => {
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "jQuery"_) on Wikipedia
 - [jQuery Official Website](https://jquery.com/)
 - [Official API reference documentation](https://api.jquery.com/)[](https://api.jquery.com/)
+=======
+-   _Interwiki("wikipedia", "jQuery"_) on Wikipedia
+-   [jQuery Official Website](https://jquery.com/)
+-   [Official API reference documentation](https://api.jquery.com/)[](https://api.jquery.com/)
+>>>>>>> master
 
 ---
 
 ## Term: JSON
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - Intro
 - JSON
 - l10n:priority
+=======
+-   CodingScripting
+-   Glossary
+-   Intro
+-   JSON
+-   l10n:priority
+>>>>>>> master
 
 ---
 
@@ -7271,16 +10986,27 @@ JSON can represent numbers, booleans, strings, `null`, arrays (ordered sequences
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "JSON", "JSON"_) on Wikipedia
 - _Link("/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON"_) on MDN
+=======
+-   _interwiki("wikipedia", "JSON", "JSON"_) on Wikipedia
+-   _Link("/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON"_) on MDN
+>>>>>>> master
 
 ---
 
 ## Term: Key
 
+<<<<<<< HEAD
 - Cryptography
 - Glossary
 - Security
+=======
+-   Cryptography
+-   Glossary
+-   Security
+>>>>>>> master
 
 ---
 
@@ -7292,6 +11018,7 @@ In _Glossary("symmetric-key cryptography"_), the same key is used for both encry
 
 #### See also
 
+<<<<<<< HEAD
 - [Kerckhoffs's principle](https://en.wikipedia.org/wiki/Kerckhoffs%27s_principle) on Wikipedia
 - [MDN Web Docs Glossary](/en-US/docs/Glossary)
 
@@ -7307,15 +11034,39 @@ In _Glossary("symmetric-key cryptography"_), the same key is used for both encry
     - _Glossary("Plaintext"_)
     - _Glossary("Public-key cryptography"_)
     - _Glossary("Symmetric-key cryptography"_)
+=======
+-   [Kerckhoffs's principle](https://en.wikipedia.org/wiki/Kerckhoffs%27s_principle) on Wikipedia
+-   [MDN Web Docs Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("Block cipher mode of operation"_)
+    -   _Glossary("Cipher"_)
+    -   _Glossary("Ciphertext"_)
+    -   _Glossary("Cipher suite"_)
+    -   _Glossary("Cryptanalysis"_)
+    -   _Glossary("Cryptography"_)
+    -   _Glossary("Decryption"_)
+    -   _Glossary("Encryption"_)
+    -   _Glossary("Key"_)
+    -   _Glossary("Plaintext"_)
+    -   _Glossary("Public-key cryptography"_)
+    -   _Glossary("Symmetric-key cryptography"_)
+>>>>>>> master
 
 ---
 
 ## Term: Keyword
 
+<<<<<<< HEAD
 - Glossary
 - Keyword
 - Search
 - keyword search
+=======
+-   Glossary
+-   Keyword
+-   Search
+-   keyword search
+>>>>>>> master
 
 ---
 
@@ -7325,14 +11076,23 @@ When you use a search engine, you use keywords to specify what you are looking f
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Keyword_research", "Keyword"_) on Wikipedia
+=======
+-   _interwiki("wikipedia", "Keyword_research", "Keyword"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: The Khronos Group
 
+<<<<<<< HEAD
 - Glossary
 - Khronos
+=======
+-   Glossary
+-   Khronos
+>>>>>>> master
 
 ---
 
@@ -7342,13 +11102,19 @@ The organization maintains standards such as _Glossary("OpenGL"_) and the _domxr
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Khronos_Group", "The Khronos Group"_) on Wikipedia
 - [The Khronos Group web site](https://www.khronos.org/)
+=======
+-   _interwiki("wikipedia", "Khronos_Group", "The Khronos Group"_) on Wikipedia
+-   [The Khronos Group web site](https://www.khronos.org/)
+>>>>>>> master
 
 ---
 
 ## Term: Latency
 
+<<<<<<< HEAD
 - Audio
 - Glossary
 - Media
@@ -7357,6 +11123,16 @@ The organization maintains standards such as _Glossary("OpenGL"_) and the _domxr
 - Video
 - Web Performance
 - latency
+=======
+-   Audio
+-   Glossary
+-   Media
+-   Networking
+-   Reference
+-   Video
+-   Web Performance
+-   latency
+>>>>>>> master
 
 ---
 
@@ -7366,17 +11142,29 @@ Latency can be a factor in any kind of data flow, but is most commonly discussed
 
 #### See also
 
+<<<<<<< HEAD
 - [Understanding Latency](/en-US/docs/Web/Performance/Understanding_latency)
+=======
+-   [Understanding Latency](/en-US/docs/Web/Performance/Understanding_latency)
+>>>>>>> master
 
 ---
 
 ## Term: Layout viewport
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - Layout
 - layout viewport
 - viewport
+=======
+-   CodingScripting
+-   Glossary
+-   Layout
+-   layout viewport
+-   viewport
+>>>>>>> master
 
 ---
 
@@ -7386,20 +11174,35 @@ This becomes important, for example, on mobile devices, where a pinching gesture
 
 #### See also
 
+<<<<<<< HEAD
 - [Visual Viewport API](/en-US/docs/Web/API/Visual_Viewport_API)
 - _Interwiki("wikipedia", "Viewport"_) on Wikipedia
 - [A tale of two viewports](https://www.quirksmode.org/mobile/viewports.html) (Quirksmode)
 - _Glossary("Viewport"_) in the MDN Glossary
 - _Glossary("Visual viewport"_) in the MDN Glossary
+=======
+-   [Visual Viewport API](/en-US/docs/Web/API/Visual_Viewport_API)
+-   _Interwiki("wikipedia", "Viewport"_) on Wikipedia
+-   [A tale of two viewports](https://www.quirksmode.org/mobile/viewports.html) (Quirksmode)
+-   _Glossary("Viewport"_) in the MDN Glossary
+-   _Glossary("Visual viewport"_) in the MDN Glossary
+>>>>>>> master
 
 ---
 
 ## Term: Lazy load
 
+<<<<<<< HEAD
 - Glossary
 - Lazy loading
 - Reference
 - Web Performance
+=======
+-   Glossary
+-   Lazy loading
+-   Reference
+-   Web Performance
+>>>>>>> master
 
 ---
 
@@ -7409,17 +11212,29 @@ If correctly implemented, this delay in asset loading is seamless to the user ex
 
 #### See also
 
+<<<<<<< HEAD
 - [Lazy loading](/en-US/docs/Web/Performance/Lazy_loading)
+=======
+-   [Lazy loading](/en-US/docs/Web/Performance/Lazy_loading)
+>>>>>>> master
 
 ---
 
 ## Term: LGPL
 
+<<<<<<< HEAD
 - Glossary
 - License
 - OpenPractices
 - Remixing
 - Sharing
+=======
+-   Glossary
+-   License
+-   OpenPractices
+-   Remixing
+-   Sharing
+>>>>>>> master
 
 ---
 
@@ -7427,16 +11242,27 @@ If correctly implemented, this delay in asset loading is seamless to the user ex
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "GNU Lesser General Public License", "GNU LGPL"_) on Wikipedia
 - [LGPL License](https://www.gnu.org/copyleft/lesser.html) text on gnu.org
+=======
+-   _interwiki("wikipedia", "GNU Lesser General Public License", "GNU LGPL"_) on Wikipedia
+-   [LGPL License](https://www.gnu.org/copyleft/lesser.html) text on gnu.org
+>>>>>>> master
 
 ---
 
 ## Term: Ligature
 
+<<<<<<< HEAD
 - CSS
 - Design
 - Glossary
+=======
+-   CSS
+-   Design
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -7446,20 +11272,31 @@ You can implement ligatures in your webpage with _cssxref("font-variant-ligature
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Typographic ligature", "Ligature"_) on Wikipedia
+=======
+-   _interwiki("wikipedia", "Typographic ligature", "Ligature"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Literal
 
+<<<<<<< HEAD
 - Literal
 - JavaScript
 - Glossary
+=======
+-   Literal
+-   JavaScript
+-   Glossary
+>>>>>>> master
 
 ---
 
 > **Literals** represent values in JavaScript. These are fixed values—not variables—that you _literally_ provide in your script.
 
+<<<<<<< HEAD
 - [Array literals](/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#array_literals)
 - [Boolean literals](/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#boolean_literals)
 - [Floating-point literals](/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#floating-point_literals)
@@ -7467,6 +11304,15 @@ You can implement ligatures in your webpage with _cssxref("font-variant-ligature
 - [Object literals](/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#object_literals)
 - [RegExp literals](/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#regexp_literals)
 - [String literals](/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#string_literals)
+=======
+-   [Array literals](/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#array_literals)
+-   [Boolean literals](/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#boolean_literals)
+-   [Floating-point literals](/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#floating-point_literals)
+-   [Numeric literals](/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#numeric_literals)
+-   [Object literals](/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#object_literals)
+-   [RegExp literals](/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#regexp_literals)
+-   [String literals](/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#string_literals)
+>>>>>>> master
 
 ## Examples
 
@@ -7477,6 +11323,10 @@ A string literal is zero or more characters enclosed in double (`"`) or single q
 The following are examples of string literals:
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 'foo';
 'bar';
 '1234';
@@ -7491,6 +11341,10 @@ An object literal is a list of zero or more pairs of property names and associat
 The following is an example of an object literal. The first element of the `car` object defines a property, `myCar`, and assigns to it a new string, "`Toyota`"; the second element, the `getCar` property, is immediately assigned the result of invoking the function `carTypes('Honda')`; the third element, the `special` property, uses an existing variable (`sales`).
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 var sales = 'BMW';
 
 function carTypes(name) {
@@ -7510,15 +11364,25 @@ console.log(car.special); // BMW
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Literal (computer programming)", "Literal"_) on Wikipedia
+=======
+-   _interwiki("wikipedia", "Literal (computer programming)", "Literal"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Local scope
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - NeedsContent
+=======
+-   CodingScripting
+-   Glossary
+-   NeedsContent
+>>>>>>> master
 
 ---
 
@@ -7526,15 +11390,25 @@ console.log(car.special); // BMW
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Scope (computer science)", "Scope"_) on Wikipedia
+=======
+-   _interwiki("wikipedia", "Scope (computer science)", "Scope"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Local variable
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - NeedsContent
+=======
+-   CodingScripting
+-   Glossary
+-   NeedsContent
+>>>>>>> master
 
 ---
 
@@ -7543,6 +11417,10 @@ console.log(car.special); // BMW
 ## Example
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 var global = 5; //is a global variable
 
 function fun() {
@@ -7552,15 +11430,25 @@ function fun() {
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Local variable", "Local variable"_) on Wikipedia
+=======
+-   _interwiki("wikipedia", "Local variable", "Local variable"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Locale
 
+<<<<<<< HEAD
 - Composing
 - Glossary
 - Locale
+=======
+-   Composing
+-   Glossary
+-   Locale
+>>>>>>> master
 
 ---
 
@@ -7570,17 +11458,29 @@ A program draws its locale settings from the language of the host system. Among 
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Locale", "Locale"_) on Wikipedia
+=======
+-   _interwiki("wikipedia", "Locale", "Locale"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Localization
 
+<<<<<<< HEAD
 - Collaborating
 - Glossary
 - Intro
 - Localization
 - WebMechanics
+=======
+-   Collaborating
+-   Glossary
+-   Intro
+-   Localization
+-   WebMechanics
+>>>>>>> master
 
 ---
 
@@ -7588,6 +11488,7 @@ A program draws its locale settings from the language of the host system. Among 
 
 The following are common factors to consider:
 
+<<<<<<< HEAD
 - language
 - unit of measure (e.g., kilometers in Europe, miles in U.S.)
 - text direction (e.g., European languages are left-to-right, Arabic right-to-left)
@@ -7607,15 +11508,43 @@ The following are common factors to consider:
 #### See also
 
 - _interwiki("wikipedia", "Language localisation", "Localization"_) on Wikipedia
+=======
+-   language
+-   unit of measure (e.g., kilometers in Europe, miles in U.S.)
+-   text direction (e.g., European languages are left-to-right, Arabic right-to-left)
+-   capitalization in Latin script (e.g., English uses capitals for weekdays, Spanish uses lowercase)
+-   adaptation of idioms (e.g., "raining cats and dogs" makes no sense when translated literally)
+-   use of register (e.g., in Japanese respectful speech differs exceptionally from casual speech)
+-   number format (e.g., 10 000,00 in Germany vs. 10,000.00 in the U.S.)
+-   date format
+-   currency
+-   cultural references
+-   paper size
+-   color psychology
+-   compliance with local laws
+-   local holidays
+-   personal names
+
+#### See also
+
+-   _interwiki("wikipedia", "Language localisation", "Localization"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Long task
 
+<<<<<<< HEAD
 - Glossary
 - Long Tasks API
 - Reference
 - Web Performance
+=======
+-   Glossary
+-   Long Tasks API
+-   Reference
+-   Web Performance
+>>>>>>> master
 
 ---
 
@@ -7625,16 +11554,27 @@ It is an uninterrupted period where the [main UI thread](/en-US/docs/Glossary/Ma
 
 #### See also
 
+<<<<<<< HEAD
 - [Long task API](/en-US/docs/Web/API/Long_Tasks_API)
+=======
+-   [Long task API](/en-US/docs/Web/API/Long_Tasks_API)
+>>>>>>> master
 
 ---
 
 ## Term: Loop
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - control flow
 - programming
+=======
+-   CodingScripting
+-   Glossary
+-   control flow
+-   programming
+>>>>>>> master
 
 ---
 
@@ -7650,13 +11590,23 @@ It is an uninterrupted period where the [main UI thread](/en-US/docs/Glossary/Ma
      execute code block
     }
 
+<<<<<<< HEAD
 - Statement 1 is executed once before the code block is run.
 - Statement 2 defines the condition needed to execute the code block.
 - Statement 3 is executed every time the code block is run.
+=======
+-   Statement 1 is executed once before the code block is run.
+-   Statement 2 defines the condition needed to execute the code block.
+-   Statement 3 is executed every time the code block is run.
+>>>>>>> master
 
 #### Example:
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 for (var i = 0; i < 10; i++) {
     console.log(i);
 }
@@ -7665,9 +11615,15 @@ for (var i = 0; i < 10; i++) {
 
 For the above example, the syntax is as follows:
 
+<<<<<<< HEAD
 - Statement 1 sets the variable for the loop (var i = 0).
 - Statement 2 sets the loop condition (i < 10).
 - Statement 3 increases the value of i (i++) each time the code block is run.
+=======
+-   Statement 1 sets the variable for the loop (var i = 0).
+-   Statement 2 sets the loop condition (i < 10).
+-   Statement 3 increases the value of i (i++) each time the code block is run.
+>>>>>>> master
 
 ### While loop
 
@@ -7677,11 +11633,19 @@ For the above example, the syntax is as follows:
      execute code block
     }
 
+<<<<<<< HEAD
 - The code block will continue to loop as long as the condition is true.
+=======
+-   The code block will continue to loop as long as the condition is true.
+>>>>>>> master
 
 #### Example:
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 var i = 0;
 while (i < 5) {
     console.log(i);
@@ -7692,6 +11656,7 @@ while (i < 5) {
 
 For the above example, the syntax is as follows:
 
+<<<<<<< HEAD
 - The code block will continue to run as long as the variable (i) is less than 5.
 
 #### See also
@@ -7700,11 +11665,22 @@ For the above example, the syntax is as follows:
 - [MDN Web Docs Glossary](/en-US/docs/Glossary)
 
     - _Glossary("Loop"_)
+=======
+-   The code block will continue to run as long as the variable (i) is less than 5.
+
+#### See also
+
+-   _interwiki("wikipedia", "Control_flow#Loops","Control flow"_) on Wikipedia
+-   [MDN Web Docs Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("Loop"_)
+>>>>>>> master
 
 ---
 
 ## Term: Lossless compression
 
+<<<<<<< HEAD
 - Beginner
 - Composing
 - Glossary
@@ -7712,6 +11688,15 @@ For the above example, the syntax is as follows:
 - Web Performance
 - compression
 - lossless
+=======
+-   Beginner
+-   Composing
+-   Glossary
+-   Images
+-   Web Performance
+-   compression
+-   lossless
+>>>>>>> master
 
 ---
 
@@ -7721,17 +11706,27 @@ _glossary("Lossy compression"_), on the other hand, uses inexact approximations 
 
 #### See also
 
+<<<<<<< HEAD
 - [Glossary](/en-US/docs/Glossary)
 
     - _glossary("GZIP"_)
     - _glossary("Brotli"_)
     - _glossary("PNG"_)
     - _glossary("Lossy compression"_)
+=======
+-   [Glossary](/en-US/docs/Glossary)
+
+    -   _glossary("GZIP"_)
+    -   _glossary("Brotli"_)
+    -   _glossary("PNG"_)
+    -   _glossary("Lossy compression"_)
+>>>>>>> master
 
 ---
 
 ## Term: lossy compression
 
+<<<<<<< HEAD
 - Beginner
 - Composing
 - Glossary
@@ -7740,6 +11735,16 @@ _glossary("Lossy compression"_), on the other hand, uses inexact approximations 
 - Lossy
 - Web Performance
 - compression
+=======
+-   Beginner
+-   Composing
+-   Glossary
+-   Images
+-   JPEG
+-   Lossy
+-   Web Performance
+-   compression
+>>>>>>> master
 
 ---
 
@@ -7753,15 +11758,25 @@ Although there is no obvious difference quality between the two images above, th
 
 #### See also
 
+<<<<<<< HEAD
 - [Lossless compression](/en-US/docs/Glossary/Lossless_compression)
+=======
+-   [Lossless compression](/en-US/docs/Glossary/Lossless_compression)
+>>>>>>> master
 
 ---
 
 ## Term: LTR (Left To Right)
 
+<<<<<<< HEAD
 - Composing
 - Glossary
 - Localization
+=======
+-   Composing
+-   Glossary
+-   Localization
+>>>>>>> master
 
 ---
 
@@ -7773,6 +11788,7 @@ The opposite of LTR, _Glossary("RTL"_) (Right To Left) is used in other common l
 
 ## Technical reference
 
+<<<<<<< HEAD
 - [Localization and internationalization](/en-US/docs/Web/Localization)
 
 #### See also
@@ -7794,24 +11810,61 @@ The opposite of LTR, _Glossary("RTL"_) (Right To Left) is used in other common l
     - _cssxref("direction"_)
     - _cssxref("unicode-bidi"_)
     - _cssxref("writing-mode"_)
+=======
+-   [Localization and internationalization](/en-US/docs/Web/Localization)
+
+#### See also
+
+-   [MDN Web Docs Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("locale"_)
+    -   _Glossary("LTR"_)
+    -   _Glossary("RTL"_)
+
+-   [HTML global attributes](/en-US/docs/Web/HTML/Global_attributes)
+
+    -   _htmlattrxref("dir"_)
+    -   _htmlattrxref("lang"_)
+
+-   [CSS](/en-US/docs/Web/CSS)
+
+    -   _cssxref(":dir"_)
+    -   _cssxref("direction"_)
+    -   _cssxref("unicode-bidi"_)
+    -   _cssxref("writing-mode"_)
+>>>>>>> master
 
 ---
 
 ## Term: Main Axis
 
+<<<<<<< HEAD
 - CSS
 - Glossary
 - Main axis
 - flexbox
+=======
+-   CSS
+-   Glossary
+-   Main axis
+-   flexbox
+>>>>>>> master
 
 ---
 
 > The main axis in _glossary("flexbox"_) is defined by the direction set by the _cssxref("flex-direction"_) property. There are four possible values for `flex-direction`. These are:
 
+<<<<<<< HEAD
 - `row`
 - `row-reverse`
 - `column`
 - `column-reverse`
+=======
+-   `row`
+-   `row-reverse`
+-   `column`
+-   `column-reverse`
+>>>>>>> master
 
 Should you choose `row` or `row-reverse` then your main axis will run along the row in the inline direction.
 
@@ -7827,6 +11880,7 @@ On the main axis you can control the sizing of flex items by adding any availabl
 
 ### Property reference
 
+<<<<<<< HEAD
 - _cssxref("flex-basis"_)
 - _cssxref("flex-direction"_)
 - _cssxref("flex-grow"_)
@@ -7839,14 +11893,34 @@ On the main axis you can control the sizing of flex items by adding any availabl
 - CSS Flexbox Guide: _[Basic Concepts of Flexbox](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)_
 - CSS Flexbox Guide: _[Aligning items in a flex container](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container)_
 - CSS Flexbox Guide: _[Controlling Ratios of flex items along the main axis](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Controlling_Ratios_of_Flex_Items_Along_the_Main_Ax)_
+=======
+-   _cssxref("flex-basis"_)
+-   _cssxref("flex-direction"_)
+-   _cssxref("flex-grow"_)
+-   _cssxref("flex-shrink"_)
+-   _cssxref("justify-content"_)
+-   _cssxref("flex"_)
+
+### Further reading
+
+-   CSS Flexbox Guide: _[Basic Concepts of Flexbox](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)_
+-   CSS Flexbox Guide: _[Aligning items in a flex container](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container)_
+-   CSS Flexbox Guide: _[Controlling Ratios of flex items along the main axis](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Controlling_Ratios_of_Flex_Items_Along_the_Main_Ax)_
+>>>>>>> master
 
 ---
 
 ## Term: Main thread
 
+<<<<<<< HEAD
 - Glossary
 - Reference
 - Web Performance
+=======
+-   Glossary
+-   Reference
+-   Web Performance
+>>>>>>> master
 
 ---
 
@@ -7856,21 +11930,37 @@ Unless intentionally using a [web worker](/en-US/docs/Web/API/Web_Workers_API/Us
 
 #### See also
 
+<<<<<<< HEAD
 - [Asynchronous JavaScript](/en-US/docs/Learn/JavaScript/Asynchronous)
 - [Web worker API](/en-US/docs/Web/API/Web_Workers_API)
 - [Service worker API](/en-US/docs/Web/API/Service_Worker_API)
 - [Glossary](/en-US/docs/Glossary)
 
     - _Glossary("Thread"_)
+=======
+-   [Asynchronous JavaScript](/en-US/docs/Learn/JavaScript/Asynchronous)
+-   [Web worker API](/en-US/docs/Web/API/Web_Workers_API)
+-   [Service worker API](/en-US/docs/Web/API/Service_Worker_API)
+-   [Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("Thread"_)
+>>>>>>> master
 
 ---
 
 ## Term: markup
 
+<<<<<<< HEAD
 - Glossary
 - Intro
 - Markup
 - NeedsContent
+=======
+-   Glossary
+-   Intro
+-   Markup
+-   NeedsContent
+>>>>>>> master
 
 ---
 
@@ -7878,6 +11968,7 @@ Unless intentionally using a [web worker](/en-US/docs/Web/API/Web_Workers_API/Us
 
 ## Types of markup language
 
+<<<<<<< HEAD
 - **Presentational Markup:**
 - - : Used by traditional word processing system with WYSIWYG (what you see it is what you get); this is hidden from human authors, users and editors.
 - **Procedural Markup:**
@@ -7893,16 +11984,41 @@ Unless intentionally using a [web worker](/en-US/docs/Web/API/Web_Workers_API/Us
     - _Glossary("XHTML"_)
     - _Glossary("XML"_)
     - _Glossary("SVG"_)
+=======
+-   **Presentational Markup:**
+-   -   : Used by traditional word processing system with WYSIWYG (what you see it is what you get); this is hidden from human authors, users and editors.
+-   **Procedural Markup:**
+    -   : Combined with text to provide instructions on text processing to programs. This text is visibly manipulated by the author.
+-   **Descriptive Markup:**
+    -   : Labels sections of documents as to how the program should handle them. For example, the HTML _HTMLElement("td"_) defines a cell in a HTML table.
+
+#### See also
+
+-   [MDN Web Docs Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("HTML"_)
+    -   _Glossary("XHTML"_)
+    -   _Glossary("XML"_)
+    -   _Glossary("SVG"_)
+>>>>>>> master
 
 ---
 
 ## Term: MathML
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - MathML
 - Mathematical Markup Language
 - XML
+=======
+-   CodingScripting
+-   Glossary
+-   MathML
+-   Mathematical Markup Language
+-   XML
+>>>>>>> master
 
 ---
 
@@ -7910,17 +12026,29 @@ Unless intentionally using a [web worker](/en-US/docs/Web/API/Web_Workers_API/Us
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "MathML", "MathML"_) on Wikipedia
 - [MathML](/en-US/docs/Web/MathML)
 - [Authoring MathML](/en-US/docs/Web/MathML/Authoring)
 - _spec("http://www.w3.org/Math/whatIsMathML.html", "MathML", "REC"_)
+=======
+-   _interwiki("wikipedia", "MathML", "MathML"_) on Wikipedia
+-   [MathML](/en-US/docs/Web/MathML)
+-   [Authoring MathML](/en-US/docs/Web/MathML/Authoring)
+-   _spec("http://www.w3.org/Math/whatIsMathML.html", "MathML", "REC"_)
+>>>>>>> master
 
 ---
 
 ## Term: Media
 
+<<<<<<< HEAD
 - Disambiguation
 - Glossary
+=======
+-   Disambiguation
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -7930,16 +12058,27 @@ Unless intentionally using a [web worker](/en-US/docs/Web/API/Web_Workers_API/Us
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Media"_) on Wikipedia
+=======
+-   _interwiki("wikipedia", "Media"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Metadata
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - HTML
 - metadata
+=======
+-   CodingScripting
+-   Glossary
+-   HTML
+-   metadata
+>>>>>>> master
 
 ---
 
@@ -7947,16 +12086,27 @@ Unless intentionally using a [web worker](/en-US/docs/Web/API/Web_Workers_API/Us
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "metadata", "metadata"_) on Wikipedia
 - The _htmlelement("meta"_) element on MDN
+=======
+-   _interwiki("wikipedia", "metadata", "metadata"_) on Wikipedia
+-   The _htmlelement("meta"_) element on MDN
+>>>>>>> master
 
 ---
 
 ## Term: Method
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - JavaScript
+=======
+-   CodingScripting
+-   Glossary
+-   JavaScript
+>>>>>>> master
 
 ---
 
@@ -7966,6 +12116,7 @@ Unless intentionally using a [web worker](/en-US/docs/Web/API/Web_Workers_API/Us
 
 #### See also
 
+<<<<<<< HEAD
 - _InterWiki("wikipedia","Method (computer programming)"_) in Wikipedia
 - [Defining a method in JavaScript](/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions) (comparison of the traditional syntax and the new shorthand)
 - [List of JavaScript built-in methods](/en-US/docs/Web/JavaScript/Reference)
@@ -7975,14 +12126,31 @@ Unless intentionally using a [web worker](/en-US/docs/Web/API/Web_Workers_API/Us
     - _Glossary("object"_)
     - _Glossary("property"_)
     - _Glossary("static method"_)
+=======
+-   _InterWiki("wikipedia","Method (computer programming)"_) in Wikipedia
+-   [Defining a method in JavaScript](/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions) (comparison of the traditional syntax and the new shorthand)
+-   [List of JavaScript built-in methods](/en-US/docs/Web/JavaScript/Reference)
+-   [MDN Web Docs Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("function"_)
+    -   _Glossary("object"_)
+    -   _Glossary("property"_)
+    -   _Glossary("static method"_)
+>>>>>>> master
 
 ---
 
 ## Term: Microsoft Edge
 
+<<<<<<< HEAD
 - Browser
 - Glossary
 - Infrastructure
+=======
+-   Browser
+-   Glossary
+-   Infrastructure
+>>>>>>> master
 
 ---
 
@@ -7990,6 +12158,7 @@ Unless intentionally using a [web worker](/en-US/docs/Web/API/Web_Workers_API/Us
 
 #### See also
 
+<<<<<<< HEAD
 - [Official website](https://www.microsoft.com/edge)
 - [MDN Web Docs Glossary](/en-US/docs/Glossary)
 
@@ -7999,11 +12168,23 @@ Unless intentionally using a [web worker](/en-US/docs/Web/API/Web_Workers_API/Us
     - _Glossary("Mozilla Firefox"_)
     - _Glossary("Netscape Navigator"_)
     - _Glossary("Opera Browser"_)
+=======
+-   [Official website](https://www.microsoft.com/edge)
+-   [MDN Web Docs Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("Google Chrome"_)
+    -   _Glossary("Microsoft Edge"_)
+    -   _Glossary("Microsoft Internet Explorer"_)
+    -   _Glossary("Mozilla Firefox"_)
+    -   _Glossary("Netscape Navigator"_)
+    -   _Glossary("Opera Browser"_)
+>>>>>>> master
 
 ---
 
 ## Term: Microsoft Internet Explorer
 
+<<<<<<< HEAD
 - Browser
 - Glossary
 - Internet Explorer
@@ -8013,6 +12194,17 @@ Unless intentionally using a [web worker](/en-US/docs/Web/API/Web_Workers_API/Us
 - Web Browser
 - Windows
 - Windows Operating System
+=======
+-   Browser
+-   Glossary
+-   Internet Explorer
+-   Microsoft
+-   Microsoft Internet Explorer
+-   Navigation
+-   Web Browser
+-   Windows
+-   Windows Operating System
+>>>>>>> master
 
 ---
 
@@ -8024,6 +12216,7 @@ IE has gone through many releases and currently stands at version 11.0.12, with 
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Internet Explorer", "Internet Explorer"_) on Wikipedia
 - _interwiki("wikipedia", "History of Internet Explorer", "History of Internet Explorer"_) on Wikipedia
 - _interwiki("wikipedia", "Internet Explorer versions", "Internet Explorer versions"_) on Wikipedia
@@ -8034,13 +12227,30 @@ IE has gone through many releases and currently stands at version 11.0.12, with 
 - [http://windows.microsoft.com/en-us/internet-explorer/products/ie-8/system-requirements](https://windows.microsoft.com/en-us/internet-explorer/products/ie-8/system-requirements)
 - [http://windows.microsoft.com/en-us/internet-explorer/products/ie-9/system-requirements](https://windows.microsoft.com/en-us/internet-explorer/products/ie-9/system-requirements)
 - [http://support.microsoft.com/kb/969393](https://support.microsoft.com/kb/969393)
+=======
+-   _interwiki("wikipedia", "Internet Explorer", "Internet Explorer"_) on Wikipedia
+-   _interwiki("wikipedia", "History of Internet Explorer", "History of Internet Explorer"_) on Wikipedia
+-   _interwiki("wikipedia", "Internet Explorer versions", "Internet Explorer versions"_) on Wikipedia
+-   [http://windows.microsoft.com/en-us/internet-explorer/download-ie](https://windows.microsoft.com/en-us/internet-explorer/download-ie)
+-   [http://windows.microsoft.com/en-us/windows7/getting-started-with-internet-explorer-9](https://windows.microsoft.com/en-us/windows7/getting-started-with-internet-explorer-9)
+-   [http://windows.microsoft.com/en-us/internet-explorer/internet-explorer-help](https://windows.microsoft.com/en-us/internet-explorer/internet-explorer-help)
+-   [http://windows.microsoft.com/en-us/internet-explorer/make-ie-default-browser#ie=ie-11](https://windows.microsoft.com/en-us/internet-explorer/make-ie-default-browser#ie=ie-11)
+-   [http://windows.microsoft.com/en-us/internet-explorer/products/ie-8/system-requirements](https://windows.microsoft.com/en-us/internet-explorer/products/ie-8/system-requirements)
+-   [http://windows.microsoft.com/en-us/internet-explorer/products/ie-9/system-requirements](https://windows.microsoft.com/en-us/internet-explorer/products/ie-9/system-requirements)
+-   [http://support.microsoft.com/kb/969393](https://support.microsoft.com/kb/969393)
+>>>>>>> master
 
 ---
 
 ## Term: Middleware
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
+=======
+-   CodingScripting
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -8050,15 +12260,25 @@ In server-side web application frameworks, the term is often more specifically u
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Middleware_(distributed*applications)", "Middleware*(distributed*applications)"*) on Wikipedia
 - _Interwiki("wikipedia", "Middleware", "Middleware"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Middleware_(distributed*applications)", "Middleware*(distributed*applications)"*) on Wikipedia
+-   _Interwiki("wikipedia", "Middleware", "Middleware"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: MIME type
 
+<<<<<<< HEAD
 - Glossary
 - WebMechanics
+=======
+-   Glossary
+-   WebMechanics
+>>>>>>> master
 
 ---
 
@@ -8068,21 +12288,37 @@ It serves the same purpose as filename extensions traditionally do on Windows. T
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Internet media type", "Internet media type"_) on Wikipedia
 - [List of MIME types](https://www.iana.org/assignments/media-types/media-types.xhtml)
 - [Properly Configuring Server MIME Types](/en-US/docs/Learn/Server-side/Configuring_server_MIME_types)
 - Details information about the usage of [MIME Types](/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types) in a Web context.
 - [Incomplete list of MIME types](/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types)
 - [MediaRecorder.mimeType](/en-US/docs/Web/API/MediaRecorder/mimeType)
+=======
+-   _interwiki("wikipedia", "Internet media type", "Internet media type"_) on Wikipedia
+-   [List of MIME types](https://www.iana.org/assignments/media-types/media-types.xhtml)
+-   [Properly Configuring Server MIME Types](/en-US/docs/Learn/Server-side/Configuring_server_MIME_types)
+-   Details information about the usage of [MIME Types](/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types) in a Web context.
+-   [Incomplete list of MIME types](/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types)
+-   [MediaRecorder.mimeType](/en-US/docs/Web/API/MediaRecorder/mimeType)
+>>>>>>> master
 
 ---
 
 ## Term: mime
 
+<<<<<<< HEAD
 - Beginner
 - Glossary
 - Infrastructure
 - MIME
+=======
+-   Beginner
+-   Glossary
+-   Infrastructure
+-   MIME
+>>>>>>> master
 
 ---
 
@@ -8092,16 +12328,27 @@ See also [MIME-Type](/en-US/docs/Glossary/MIME_type)
 
 #### See also
 
+<<<<<<< HEAD
 - [MIME ](https://en.wikipedia.org/wiki/MIME)on Wikipedia
+=======
+-   [MIME ](https://en.wikipedia.org/wiki/MIME)on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: minification
 
+<<<<<<< HEAD
 - Glossary
 - Performance
 - Reference
 - Web Performance
+=======
+-   Glossary
+-   Performance
+-   Reference
+-   Web Performance
+>>>>>>> master
 
 ---
 
@@ -8115,8 +12362,13 @@ As minification makes code less legible to humans, developer tools have 'prettif
 
 ## Term: MitM
 
+<<<<<<< HEAD
 - Glossary
 - Security
+=======
+-   Glossary
+-   Security
+>>>>>>> master
 
 ---
 
@@ -8126,6 +12378,7 @@ Comparing this to physical mail: If you're writing letters to each other, the ma
 
 In physical mail and in online communication, MITM attacks are tough to defend. A few tips:
 
+<<<<<<< HEAD
 - Don't just ignore certificate warnings. You could be connecting to a phishing server or an imposter server.
 - Sensitive sites without HTTPS encryption on public Wi-Fi networks aren't trustworthy.
 - Check for HTTPS in your address bar and ensure encryption is in-place before logging in.
@@ -8136,16 +12389,36 @@ In physical mail and in online communication, MITM attacks are tough to defend. 
 - PortSwigger: [Latest manipulator-in-the-middle attacks news](https://portswigger.net/daily-swig/mitm)
 - Wikipedia: [Man-in-the-middle attack](https://en.wikipedia.org/wiki/Man-in-the-middle_attack)
 - The _HTTPHeader("Public-Key-Pins"_) header (_Glossary("HPKP"_)) can significantly decrease the risk of MITM by instructing browsers to require an allowlisted certificate for all subsequent connections to that website.
+=======
+-   Don't just ignore certificate warnings. You could be connecting to a phishing server or an imposter server.
+-   Sensitive sites without HTTPS encryption on public Wi-Fi networks aren't trustworthy.
+-   Check for HTTPS in your address bar and ensure encryption is in-place before logging in.
+
+#### See also
+
+-   OWASP: [Manipulator-in-the-middle attack](https://owasp.org/www-community/attacks/Manipulator-in-the-middle_attack)
+-   PortSwigger: [Latest manipulator-in-the-middle attacks news](https://portswigger.net/daily-swig/mitm)
+-   Wikipedia: [Man-in-the-middle attack](https://en.wikipedia.org/wiki/Man-in-the-middle_attack)
+-   The _HTTPHeader("Public-Key-Pins"_) header (_Glossary("HPKP"_)) can significantly decrease the risk of MITM by instructing browsers to require an allowlisted certificate for all subsequent connections to that website.
+>>>>>>> master
 
 ---
 
 ## Term: Mixin
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - Method
 - Mixin
 - Property
+=======
+-   CodingScripting
+-   Glossary
+-   Method
+-   Mixin
+-   Property
+>>>>>>> master
 
 ---
 
@@ -8159,16 +12432,27 @@ For example, the `WindowOrWorkerGlobalScope` mixin is used to provide methods an
 
 #### See also
 
+<<<<<<< HEAD
 - [Mixin](https://en.wikipedia.org/wiki/Mixin) on Wikipedia
+=======
+-   [Mixin](https://en.wikipedia.org/wiki/Mixin) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Mobile First
 
+<<<<<<< HEAD
 - Design
 - Glossary
 - Layout
 - Layout mobile
+=======
+-   Design
+-   Glossary
+-   Layout
+-   Layout mobile
+>>>>>>> master
 
 ---
 
@@ -8178,8 +12462,13 @@ For example, the `WindowOrWorkerGlobalScope` mixin is used to provide methods an
 
 ## Term: Modem
 
+<<<<<<< HEAD
 - Infrastructure
 - Navigation
+=======
+-   Infrastructure
+-   Navigation
+>>>>>>> master
 
 ---
 
@@ -8191,14 +12480,23 @@ Modems are different from _Glossary("Router","routers"_), but many companies sel
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Modem"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Modem"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Modularity
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
+=======
+-   CodingScripting
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -8206,18 +12504,31 @@ Modems are different from _Glossary("Router","routers"_), but many companies sel
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Modularity"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Modularity"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Mozilla Firefox
 
+<<<<<<< HEAD
 - Browser
 - Firefox
 - Glossary
 - Infrastructure
 - Mozilla
 - Mozilla Firefox
+=======
+-   Browser
+-   Firefox
+-   Glossary
+-   Infrastructure
+-   Mozilla
+-   Mozilla Firefox
+>>>>>>> master
 
 ---
 
@@ -8227,16 +12538,27 @@ First released in November 2004, Firefox is completely customizable with themes,
 
 #### See also
 
+<<<<<<< HEAD
 - [Mozilla Firefox official website](https://www.mozilla.org/firefox)
 - [Firefox developer documentations](/en-US/docs/Mozilla/Firefox) on MDN
+=======
+-   [Mozilla Firefox official website](https://www.mozilla.org/firefox)
+-   [Firefox developer documentations](/en-US/docs/Mozilla/Firefox) on MDN
+>>>>>>> master
 
 ---
 
 ## Term: Mutable
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - NeedsContent
+=======
+-   CodingScripting
+-   Glossary
+-   NeedsContent
+>>>>>>> master
 
 ---
 
@@ -8268,17 +12590,29 @@ On appending the "immutableString" with a string value, following events occur:
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Immutable object"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Immutable object"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: MVC
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
 - Intro
 - MVC
 - Model View Controller
+=======
+-   Glossary
+-   Infrastructure
+-   Intro
+-   MVC
+-   Model View Controller
+>>>>>>> master
 
 ---
 
@@ -8326,15 +12660,25 @@ Web frameworks such as [AngularJS](https://en.wikipedia.org/wiki/AngularJS) and 
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Model-view-controller"_) on Wikipedia
+=======
+-   _interwiki("wikipedia", "Model-view-controller"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Namespace
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - Operating System
+=======
+-   CodingScripting
+-   Glossary
+-   Operating System
+>>>>>>> master
 
 ---
 
@@ -8344,16 +12688,27 @@ In an operating system a directory is a namespace. Each file or subdirectory has
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Namespace"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Namespace"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: NaN
 
+<<<<<<< HEAD
 - CodingScripting
 - Computing
 - Glossary
 - NaN
+=======
+-   CodingScripting
+-   Computing
+-   Glossary
+-   NaN
+>>>>>>> master
 
 ---
 
@@ -8365,18 +12720,31 @@ Practically speaking, if I divide two variables in a _glossary("JavaScript"_) pr
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "NaN"_) on Wikipedia
 - [NaN in JavaScript](/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN)
+=======
+-   _Interwiki("wikipedia", "NaN"_) on Wikipedia
+-   [NaN in JavaScript](/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN)
+>>>>>>> master
 
 ---
 
 ## Term: NAT
 
+<<<<<<< HEAD
 - Beginner
 - Glossary
 - Infrastructure
 - WebMechanics
 - WebRTC
+=======
+-   Beginner
+-   Glossary
+-   Infrastructure
+-   WebMechanics
+-   WebRTC
+>>>>>>> master
 
 ---
 
@@ -8384,15 +12752,25 @@ Practically speaking, if I divide two variables in a _glossary("JavaScript"_) pr
 
 #### See also
 
+<<<<<<< HEAD
 - [WebRTC protocols](/en-US/docs/Web/API/WebRTC_API/Protocols)
 - _interwiki("wikipedia", "NAT"_) on Wikipedia
+=======
+-   [WebRTC protocols](/en-US/docs/Web/API/WebRTC_API/Protocols)
+-   _interwiki("wikipedia", "NAT"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Native
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
+=======
+-   CodingScripting
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -8404,15 +12782,25 @@ On the other hand, a Web App that runs inside a browser is not native — it is 
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Native (computing)"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Native (computing)"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Navigation directive
 
+<<<<<<< HEAD
 - CSP
 - HTTP
 - Security
+=======
+-   CSP
+-   HTTP
+-   Security
+>>>>>>> master
 
 ---
 
@@ -8424,6 +12812,7 @@ See [Navigation directives](/en-US/docs/Web/HTTP/Headers/Content-Security-Policy
 
 #### See also
 
+<<<<<<< HEAD
 - <https://www.w3.org/TR/CSP/#directives-navigation>
 - Other kinds of directives:
 
@@ -8436,16 +12825,38 @@ See [Navigation directives](/en-US/docs/Web/HTTP/Headers/Content-Security-Policy
     - [`trusted-types`](/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/trusted-types)
 
 - _HTTPHeader("Content-Security-Policy"_)
+=======
+-   <https://www.w3.org/TR/CSP/#directives-navigation>
+-   Other kinds of directives:
+
+    -   _Glossary("Fetch directive"_)
+    -   _Glossary("Document directive"_)
+    -   _Glossary("Reporting directive"_)
+    -   [`block-all-mixed-content`](/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/block-all-mixed-content)
+    -   [`upgrade-insecure-requests`](/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/upgrade-insecure-requests)
+    -   [`require-sri-for`](/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/require-sri-for)
+    -   [`trusted-types`](/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/trusted-types)
+
+-   _HTTPHeader("Content-Security-Policy"_)
+>>>>>>> master
 
 ---
 
 ## Term: Netscape Navigator
 
+<<<<<<< HEAD
 - Browser
 - Glossary
 - Navigation
 - Netscape
 - Netscape Navigator
+=======
+-   Browser
+-   Glossary
+-   Navigation
+-   Netscape
+-   Netscape Navigator
+>>>>>>> master
 
 ---
 
@@ -8455,17 +12866,29 @@ Netscape helped make the _glossary("World Wide Web","Web"_) graphical rather tha
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Netscape Navigator"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Netscape Navigator"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Network throttling
 
+<<<<<<< HEAD
 - Glossary
 - RUM
 - Reference
 - Synthetic monitoring
 - Web Performance
+=======
+-   Glossary
+-   RUM
+-   Reference
+-   Synthetic monitoring
+-   Web Performance
+>>>>>>> master
 
 ---
 
@@ -8477,14 +12900,23 @@ Browser developer tools generally have network throttling options, to allow you 
 
 #### See also
 
+<<<<<<< HEAD
 - [Synthetic monitoring](/en-US/docs/Glossary/Synthetic_monitoring)
+=======
+-   [Synthetic monitoring](/en-US/docs/Glossary/Synthetic_monitoring)
+>>>>>>> master
 
 ---
 
 ## Term: Node (networking)
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
+=======
+-   Glossary
+-   Infrastructure
+>>>>>>> master
 
 ---
 
@@ -8492,14 +12924,23 @@ Browser developer tools generally have network throttling options, to allow you 
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Node (networking)", "Node"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Node (networking)", "Node"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: NNTP
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
+=======
+-   Glossary
+-   Infrastructure
+>>>>>>> master
 
 ---
 
@@ -8507,17 +12948,29 @@ Browser developer tools generally have network throttling options, to allow you 
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Network_News_Transfer_Protocol", "NNTP"_) at Wikipedia
 - From the IETF: [RFC 3977 about NNTP](https://datatracker.ietf.org/doc/html/rfc3977) (2006)
+=======
+-   _Interwiki("wikipedia", "Network_News_Transfer_Protocol", "NNTP"_) at Wikipedia
+-   From the IETF: [RFC 3977 about NNTP](https://datatracker.ietf.org/doc/html/rfc3977) (2006)
+>>>>>>> master
 
 ---
 
 ## Term: Node.js
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
 - JavaScript
 - node.js
+=======
+-   Glossary
+-   Infrastructure
+-   JavaScript
+-   node.js
+>>>>>>> master
 
 ---
 
@@ -8529,18 +12982,31 @@ Browser developer tools generally have network throttling options, to allow you 
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("Wikipedia", "Node.js"_) on Wikipedia
 - [Node.js website](https://nodejs.org/)
 - [API reference documentation](https://nodejs.org/api/)
 - [Tutorials](https://nodejs.org/documentation/tutorials/)
 - [npm Documentation](https://docs.npmjs.com/)
+=======
+-   _Interwiki("Wikipedia", "Node.js"_) on Wikipedia
+-   [Node.js website](https://nodejs.org/)
+-   [API reference documentation](https://nodejs.org/api/)
+-   [Tutorials](https://nodejs.org/documentation/tutorials/)
+-   [npm Documentation](https://docs.npmjs.com/)
+>>>>>>> master
 
 ---
 
 ## Term: Node
 
+<<<<<<< HEAD
 - Disambiguation
 - Glossary
+=======
+-   Disambiguation
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -8554,10 +13020,17 @@ Another use of the word is when talking about _Glossary("Node.js"_)
 
 ## Term: non-normative
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
 - Specification
 - Standardization
+=======
+-   Glossary
+-   Infrastructure
+-   Specification
+-   Standardization
+>>>>>>> master
 
 ---
 
@@ -8565,16 +13038,27 @@ Another use of the word is when talking about _Glossary("Node.js"_)
 
 #### See also
 
+<<<<<<< HEAD
 - Description of [normative and informative content](https://wiki.whatwg.org/wiki/Specs/howto#Content) in WHATWG wiki
+=======
+-   Description of [normative and informative content](https://wiki.whatwg.org/wiki/Specs/howto#Content) in WHATWG wiki
+>>>>>>> master
 
 ---
 
 ## Term: Normative
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
 - Specification
 - Standardization
+=======
+-   Glossary
+-   Infrastructure
+-   Specification
+-   Standardization
+>>>>>>> master
 
 ---
 
@@ -8582,14 +13066,23 @@ Another use of the word is when talking about _Glossary("Node.js"_)
 
 #### See also
 
+<<<<<<< HEAD
 - Description of [normative and informative content](https://wiki.whatwg.org/wiki/Specs/howto#Content) in WHATWG wiki
+=======
+-   Description of [normative and informative content](https://wiki.whatwg.org/wiki/Specs/howto#Content) in WHATWG wiki
+>>>>>>> master
 
 ---
 
 ## Term: 'Null'
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
+=======
+-   CodingScripting
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -8600,11 +13093,16 @@ In _Glossary("JavaScript"_), `null` is marked as one of the _Glossary("Primitive
 But in certain cases, `null` is not as "primitive" as it first seems! Every Object is derived from `null` value, and therefore `typeof` operator returns `object` for it:
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 typeof null === 'object'; // true
 ```
 
 #### See also
 
+<<<<<<< HEAD
 - [JavaScript data types](/en-US/docs/Web/JavaScript/Data_structures)
 - The JavaScript global object: _jsxref("null"_)
 - _Interwiki("wikipedia", "Null pointer"_) on Wikipedia
@@ -8618,16 +13116,39 @@ typeof null === 'object'; // true
     - _Glossary("null"_)
     - _Glossary("undefined"_)
     - _Glossary("symbol"_)
+=======
+-   [JavaScript data types](/en-US/docs/Web/JavaScript/Data_structures)
+-   The JavaScript global object: _jsxref("null"_)
+-   _Interwiki("wikipedia", "Null pointer"_) on Wikipedia
+-   **[Glossary](/en-US/docs/Glossary)**
+
+    -   _Glossary("JavaScript"_)
+    -   _Glossary("string"_)
+    -   _Glossary("number"_)
+    -   _Glossary("bigint"_)
+    -   _Glossary("boolean"_)
+    -   _Glossary("null"_)
+    -   _Glossary("undefined"_)
+    -   _Glossary("symbol"_)
+>>>>>>> master
 
 ---
 
 ## Term: Nullish value
 
+<<<<<<< HEAD
 - Glossary
 - JavaScript
 - 'Null'
 - Primitive
 - undefined
+=======
+-   Glossary
+-   JavaScript
+-   'Null'
+-   Primitive
+-   undefined
+>>>>>>> master
 
 ---
 
@@ -8637,9 +13158,15 @@ typeof null === 'object'; // true
 
 ## Term: Number
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - JavaScript
+=======
+-   CodingScripting
+-   Glossary
+-   JavaScript
+>>>>>>> master
 
 ---
 
@@ -8647,6 +13174,7 @@ typeof null === 'object'; // true
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Data type#Numeric_types", "Numeric types"_) on Wikipedia
 - The JavaScript type: [`Number`](/en-US/docs/Web/JavaScript/Data_structures#number_type)
 - The JavaScript global object _jsxref("Number"_)
@@ -8654,13 +13182,27 @@ typeof null === 'object'; // true
 
     - _Glossary("JavaScript"_)
     - _Glossary("Primitive"_)
+=======
+-   _Interwiki("wikipedia", "Data type#Numeric_types", "Numeric types"_) on Wikipedia
+-   The JavaScript type: [`Number`](/en-US/docs/Web/JavaScript/Data_structures#number_type)
+-   The JavaScript global object _jsxref("Number"_)
+-   [Glossary:](/en-US/docs/Glossary)
+
+    -   _Glossary("JavaScript"_)
+    -   _Glossary("Primitive"_)
+>>>>>>> master
 
 ---
 
 ## Term: Object reference
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
+=======
+-   CodingScripting
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -8670,16 +13212,27 @@ The concept of object references becomes clear when assigning the same object to
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Reference (computer science)"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Reference (computer science)"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Object
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - Intro
 - Object
+=======
+-   CodingScripting
+-   Glossary
+-   Intro
+-   Object
+>>>>>>> master
 
 ---
 
@@ -8691,16 +13244,27 @@ There are two types of object properties: The [_data_ property](/en-US/docs/Web/
 
 #### See also
 
+<<<<<<< HEAD
 - [Detailed explanation of JavaScript objects](/en-US/docs/Web/JavaScript/Data_structures#objects) in the [JavaScript data types and data structures](/en-US/docs/Web/JavaScript/Data_structures) article
 - _jsxref("Object"_) in the [JavaScript reference](/en-US/docs/Web/JavaScript/Reference)
+=======
+-   [Detailed explanation of JavaScript objects](/en-US/docs/Web/JavaScript/Data_structures#objects) in the [JavaScript data types and data structures](/en-US/docs/Web/JavaScript/Data_structures) article
+-   _jsxref("Object"_) in the [JavaScript reference](/en-US/docs/Web/JavaScript/Reference)
+>>>>>>> master
 
 ---
 
 ## Term: OOP
 
+<<<<<<< HEAD
 - Beginner
 - CodingScripting
 - Glossary
+=======
+-   Beginner
+-   CodingScripting
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -8710,16 +13274,27 @@ _glossary("JavaScript"_) is heavily object-oriented. It follows a **prototype**-
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Object-oriented programming"_) on Wikipedia
 - [Introduction to object-oriented JavaScript](/en-US/docs/Learn/JavaScript/Objects)
+=======
+-   _Interwiki("wikipedia", "Object-oriented programming"_) on Wikipedia
+-   [Introduction to object-oriented JavaScript](/en-US/docs/Learn/JavaScript/Objects)
+>>>>>>> master
 
 ---
 
 ## Term: OpenGL
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - OpenGL
+=======
+-   CodingScripting
+-   Glossary
+-   OpenGL
+>>>>>>> master
 
 ---
 
@@ -8727,15 +13302,25 @@ _glossary("JavaScript"_) is heavily object-oriented. It follows a **prototype**-
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "OpenGL"_) on Wikipedia
 - [OpenGL](https://www.opengl.org/)
+=======
+-   _Interwiki("wikipedia", "OpenGL"_) on Wikipedia
+-   [OpenGL](https://www.opengl.org/)
+>>>>>>> master
 
 ---
 
 ## Term: OpenSSL
 
+<<<<<<< HEAD
 - Glossary
 - Security
+=======
+-   Glossary
+-   Security
+>>>>>>> master
 
 ---
 
@@ -8743,18 +13328,31 @@ _glossary("JavaScript"_) is heavily object-oriented. It follows a **prototype**-
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "OpenSSL"_) on Wikipedia
 - [Official website](https://www.openssl.org/)
+=======
+-   _Interwiki("wikipedia", "OpenSSL"_) on Wikipedia
+-   [Official website](https://www.openssl.org/)
+>>>>>>> master
 
 ---
 
 ## Term: Opera Browser
 
+<<<<<<< HEAD
 - Browser
 - Glossary
 - Navigation
 - Opera
 - Opera Browser
+=======
+-   Browser
+-   Glossary
+-   Navigation
+-   Opera
+-   Opera Browser
+>>>>>>> master
 
 ---
 
@@ -8762,15 +13360,25 @@ _glossary("JavaScript"_) is heavily object-oriented. It follows a **prototype**-
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Opera Browser"_) on Wikipedia
 - [Opera browser web site](https://www.opera.com/)
+=======
+-   _Interwiki("wikipedia", "Opera Browser"_) on Wikipedia
+-   [Opera browser web site](https://www.opera.com/)
+>>>>>>> master
 
 ---
 
 ## Term: Operand
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
+=======
+-   CodingScripting
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -8778,14 +13386,23 @@ _glossary("JavaScript"_) is heavily object-oriented. It follows a **prototype**-
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Operand"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Operand"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Operator
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
+=======
+-   CodingScripting
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -8793,17 +13410,29 @@ _glossary("JavaScript"_) is heavily object-oriented. It follows a **prototype**-
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Operator (computer programming)"_) on Wikipedia
 - [JavaScript operators](/en-US/docs/Web/JavaScript/Reference/Operators)
+=======
+-   _Interwiki("wikipedia", "Operator (computer programming)"_) on Wikipedia
+-   [JavaScript operators](/en-US/docs/Web/JavaScript/Reference/Operators)
+>>>>>>> master
 
 ---
 
 ## Term: Origin
 
+<<<<<<< HEAD
 - Glossary
 - Security
 - WebMechanics
 - origin
+=======
+-   Glossary
+-   Security
+-   WebMechanics
+-   origin
+>>>>>>> master
 
 ---
 
@@ -8815,6 +13444,7 @@ Some operations are restricted to same-origin content, and this restriction can 
 
 These are same origin because they have the same scheme (`http`) and hostname (`example.com`), and the different file path does not matter:
 
+<<<<<<< HEAD
 - `http://example.com/app1/index.html`
 - `http://example.com/app2/index.html`
 
@@ -8844,17 +13474,57 @@ These are not same origin because they use different ports:
 - [Same-origin policy](/en-US/docs/Web/Security/Same-origin_policy)
 - _Glossary("Site"_)
 - [HTML specification: origin](https://html.spec.whatwg.org/multipage/origin.html#origin)
+=======
+-   `http://example.com/app1/index.html`
+-   `http://example.com/app2/index.html`
+
+These are same origin because a server delivers HTTP content through port 80 by default:
+
+-   `http://Example.com:80`
+-   `http://example.com`
+
+These are not same origin because they use different schemes:
+
+-   `http://example.com/app1`
+-   `https://example.com/app2`
+
+These are not same origin because they use different hostnames:
+
+-   `http://example.com`
+-   `http://www.example.com`
+-   `http://myapp.example.com`
+
+These are not same origin because they use different ports:
+
+-   `http://example.com`
+-   `http://example.com:8080`
+
+#### See also
+
+-   [Same-origin policy](/en-US/docs/Web/Security/Same-origin_policy)
+-   _Glossary("Site"_)
+-   [HTML specification: origin](https://html.spec.whatwg.org/multipage/origin.html#origin)
+>>>>>>> master
 
 ---
 
 ## Term: OTA
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
 - Intro
 - OTA
 - Over the air
 - updates
+=======
+-   Glossary
+-   Infrastructure
+-   Intro
+-   OTA
+-   Over the air
+-   updates
+>>>>>>> master
 
 ---
 
@@ -8862,14 +13532,23 @@ These are not same origin because they use different ports:
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Over-the-air programming"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Over-the-air programming"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: OWASP
 
+<<<<<<< HEAD
 - Glossary
 - Security
+=======
+-   Glossary
+-   Security
+>>>>>>> master
 
 ---
 
@@ -8877,16 +13556,27 @@ These are not same origin because they use different ports:
 
 #### See also
 
+<<<<<<< HEAD
 - [Official website](https://www.owasp.org)
+=======
+-   [Official website](https://www.owasp.org)
+>>>>>>> master
 
 ---
 
 ## Term: P2P
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
 - Networking
 - P2P
+=======
+-   Glossary
+-   Infrastructure
+-   Networking
+-   P2P
+>>>>>>> master
 
 ---
 
@@ -8894,14 +13584,23 @@ These are not same origin because they use different ports:
 
 #### See also
 
+<<<<<<< HEAD
 - [P2P](https://en.wikipedia.org/wiki/Peer-to-peer) on Wikipedia
+=======
+-   [P2P](https://en.wikipedia.org/wiki/Peer-to-peer) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: PAC
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
+=======
+-   CodingScripting
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -8909,9 +13608,14 @@ These are not same origin because they use different ports:
 
 ---
 
+<<<<<<< HEAD
 
 ```js
 
+=======
+```js
+//
+>>>>>>> master
 
 function FindProxyForURL(url, host) {
     /* ... */
@@ -8924,13 +13628,19 @@ See [Proxy Auto-Configuration (PAC) file](/en-US/docs/Web/HTTP/Proxy_servers_and
 
 #### See also
 
+<<<<<<< HEAD
 - [PAC](https://en.wikipedia.org/wiki/Proxy_auto-config 'Read about PAC files on Wikipedia') on Wikipedia
 - [Proxy Auto-Configuration file](/en-US/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_PAC_file) on MDN
+=======
+-   [PAC](https://en.wikipedia.org/wiki/Proxy_auto-config 'Read about PAC files on Wikipedia') on Wikipedia
+-   [Proxy Auto-Configuration file](/en-US/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_PAC_file) on MDN
+>>>>>>> master
 
 ---
 
 ## Term: Packet
 
+<<<<<<< HEAD
 - Glossary
 - Network packet
 - Packet
@@ -8938,6 +13648,15 @@ See [Proxy Auto-Configuration (PAC) file](/en-US/docs/Web/HTTP/Proxy_servers_and
 - TCP
 - Web Performance
 - payload
+=======
+-   Glossary
+-   Network packet
+-   Packet
+-   Reference
+-   TCP
+-   Web Performance
+-   payload
+>>>>>>> master
 
 ---
 
@@ -8971,25 +13690,43 @@ Payload is the data that is carried on behalf of an application. It is usually o
 
 ## References used
 
+<<<<<<< HEAD
 - <https://en.wikipedia.org/wiki/Network_packet>
 - [https://en.m.wikipedia.org/wiki/Hop\_(networking)](<https://en.wikipedia.org/wiki/Hop_(networking)>)
 - <https://www.techradar.com/news/computing/how-error-detection-and-correction-works-1080736>
+=======
+-   <https://en.wikipedia.org/wiki/Network_packet>
+-   [https://en.m.wikipedia.org/wiki/Hop\_(networking)](<https://en.wikipedia.org/wiki/Hop_(networking)>)
+-   <https://www.techradar.com/news/computing/how-error-detection-and-correction-works-1080736>
+>>>>>>> master
 
 ---
 
 ## Term: Page load time
 
+<<<<<<< HEAD
 - Glossary
 - Timings
 - Web Performance
 - metrics
 - page load time
+=======
+-   Glossary
+-   Timings
+-   Web Performance
+-   metrics
+-   page load time
+>>>>>>> master
 
 ---
 
 > **Page load time** is the time it takes for a page to load, measured from [navigation start](/en-US/docs/Web/API/PerformanceTiming/navigationStart) to the [start of the load event](/en-US/docs/Web/API/PerformanceTiming/loadEventStart).
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 let time = performance.timing;
 
 let pageloadtime = time.loadEventStart - time.navigationStart;
@@ -8999,18 +13736,31 @@ While page load time 'sounds' like the perfect web performance metric, it isn't.
 
 #### See also
 
+<<<<<<< HEAD
 - [Navigation and resource timing](/en-US/docs/Web/Performance/Navigation_and_resource_timings)
 - _domxref("PerformanceNavigationTiming"_)
 - _domxref("PerformanceResourceTiming"_),
+=======
+-   [Navigation and resource timing](/en-US/docs/Web/Performance/Navigation_and_resource_timings)
+-   _domxref("PerformanceNavigationTiming"_)
+-   _domxref("PerformanceResourceTiming"_),
+>>>>>>> master
 
 ---
 
 ## Term: Page prediction
 
+<<<<<<< HEAD
 - Glossary
 - Security
 - Web Performance
 - page prediction
+=======
+-   Glossary
+-   Security
+-   Web Performance
+-   page prediction
+>>>>>>> master
 
 ---
 
@@ -9022,16 +13772,27 @@ Although browser page prediction and prediction services enable faster page load
 
 #### See also
 
+<<<<<<< HEAD
 - [prerender](/en-US/docs/Glossary/prerender)
 - [prefetch](/en-US/docs/Glossary/Prefetch)
+=======
+-   [prerender](/en-US/docs/Glossary/prerender)
+-   [prefetch](/en-US/docs/Glossary/Prefetch)
+>>>>>>> master
 
 ---
 
 ## Term: Parameter
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - JavaScript
+=======
+-   CodingScripting
+-   Glossary
+-   JavaScript
+>>>>>>> master
 
 ---
 
@@ -9041,9 +13802,14 @@ For example:
 
 ---
 
+<<<<<<< HEAD
 
 ```js
 
+=======
+```js
+//
+>>>>>>> master
 
 function example(parameter) {
     console.log(parameter); // Output = foo
@@ -9056,6 +13822,7 @@ example(argument);
 
 Note the difference between _parameters_ and _arguments_:
 
+<<<<<<< HEAD
 - Function parameters are the names listed in the function's definition.
 - Function _Glossary("argument","arguments"_) are the real values passed to the function.
 - Parameters are initialized to the values of the arguments supplied.
@@ -9072,14 +13839,38 @@ Two kinds of parameters:
 - [Difference between _parameter_ and _argument_](https://en.wikipedia.org/wiki/Parameter_%28computer_programming%29#Parameters_and_arguments) on Wikipedia
 - [Function declaration](/en-US/docs/Web/JavaScript/Reference/Statements/function)
 - [Function expression](/en-US/docs/Web/JavaScript/Reference/Operators/function)
+=======
+-   Function parameters are the names listed in the function's definition.
+-   Function _Glossary("argument","arguments"_) are the real values passed to the function.
+-   Parameters are initialized to the values of the arguments supplied.
+
+Two kinds of parameters:
+
+-   input parameters
+-   -   : the most common kind; they pass values into functions. Depending on programming language, input parameters can be passed several ways (e.g., call-by-value, call-by-address, call-by-reference).
+-   output/return parameters
+    -   : primarily return multiple values from a function, but not recommended since they cause confusion
+
+#### See also
+
+-   [Difference between _parameter_ and _argument_](https://en.wikipedia.org/wiki/Parameter_%28computer_programming%29#Parameters_and_arguments) on Wikipedia
+-   [Function declaration](/en-US/docs/Web/JavaScript/Reference/Statements/function)
+-   [Function expression](/en-US/docs/Web/JavaScript/Reference/Operators/function)
+>>>>>>> master
 
 ---
 
 ## Term: Parent object
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - NeedsContent
+=======
+-   CodingScripting
+-   Glossary
+-   NeedsContent
+>>>>>>> master
 
 ---
 
@@ -9087,12 +13878,17 @@ Two kinds of parameters:
 
 #### See also
 
+<<<<<<< HEAD
 - [Discussion of Inheritance and prototypes in JavaScript](/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
+=======
+-   [Discussion of Inheritance and prototypes in JavaScript](/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
+>>>>>>> master
 
 ---
 
 ## Term: Parse
 
+<<<<<<< HEAD
 - Browser
 - CSS
 - CodingScripting
@@ -9100,6 +13896,15 @@ Two kinds of parameters:
 - HTML
 - JavaScript
 - Web Performance
+=======
+-   Browser
+-   CSS
+-   CodingScripting
+-   Glossary
+-   HTML
+-   JavaScript
+-   Web Performance
+>>>>>>> master
 
 ---
 
@@ -9111,14 +13916,23 @@ JavaScript parsing is done during _glossary("compile time"_) or whenever the _gl
 
 #### See also
 
+<<<<<<< HEAD
 - [Parse](https://en.wikipedia.org/wiki/Parsing) on Wikipedia
+=======
+-   [Parse](https://en.wikipedia.org/wiki/Parsing) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Parser
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
+=======
+-   CodingScripting
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -9128,14 +13942,23 @@ More generally, it's a piece of software that parses text and transforms its con
 
 #### See also
 
+<<<<<<< HEAD
 - [Parser](https://en.wikipedia.org/wiki/Parsing#Parser) on Wikipedia
+=======
+-   [Parser](https://en.wikipedia.org/wiki/Parsing#Parser) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Payload body
 
+<<<<<<< HEAD
 - HTTP
 - HTTP Header
+=======
+-   HTTP
+-   HTTP Header
+>>>>>>> master
 
 ---
 
@@ -9173,10 +13996,17 @@ For more information see [RFC 7230, section 3.3: Message Body](https://datatrack
 
 ## Term: Payload header
 
+<<<<<<< HEAD
 - Glossary
 - Payload header
 - Headers
 - WebMechanics
+=======
+-   Glossary
+-   Payload header
+-   Headers
+-   WebMechanics
+>>>>>>> master
 
 ---
 
@@ -9188,6 +14018,7 @@ The payload headers include: _HTTPHeader("Content-Length"_), _HTTPHeader("Conten
 
 #### See also
 
+<<<<<<< HEAD
 - [List of all HTTP headers](/en-US/docs/Web/HTTP/Headers)
 
     - _HTTPHeader("Content-Length"_)
@@ -9197,15 +14028,33 @@ The payload headers include: _HTTPHeader("Content-Length"_), _HTTPHeader("Conten
     - _Glossary("Representation header"_)
 
 - [RFC 7231, section 3.3: Payload semantics](https://datatracker.ietf.org/doc/html/rfc7231#section-3.3)
+=======
+-   [List of all HTTP headers](/en-US/docs/Web/HTTP/Headers)
+
+    -   _HTTPHeader("Content-Length"_)
+    -   _HTTPHeader("Content-Range"_)
+    -   _HTTPHeader("Trailer"_)
+    -   _HTTPHeader("Transfer-Encoding"_)
+    -   _Glossary("Representation header"_)
+
+-   [RFC 7231, section 3.3: Payload semantics](https://datatracker.ietf.org/doc/html/rfc7231#section-3.3)
+>>>>>>> master
 
 ---
 
 ## Term: PDF
 
+<<<<<<< HEAD
 - Composing
 - Glossary
 - PDF
 - Portable Document Format
+=======
+-   Composing
+-   Glossary
+-   PDF
+-   Portable Document Format
+>>>>>>> master
 
 ---
 
@@ -9213,16 +14062,27 @@ The payload headers include: _HTTPHeader("Content-Length"_), _HTTPHeader("Conten
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Portable Document Format", "PDF"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Portable Document Format", "PDF"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Perceived performance
 
+<<<<<<< HEAD
 - Glossary
 - Perceived Performance
 - Reference
 - Web Performance
+=======
+-   Glossary
+-   Perceived Performance
+-   Reference
+-   Web Performance
+>>>>>>> master
 
 ---
 
@@ -9230,14 +14090,23 @@ The payload headers include: _HTTPHeader("Content-Length"_), _HTTPHeader("Conten
 
 #### See also
 
+<<<<<<< HEAD
 - [Perceived performance](/en-US/docs/Learn/Performance/Perceived_performance)
+=======
+-   [Perceived performance](/en-US/docs/Learn/Performance/Perceived_performance)
+>>>>>>> master
 
 ---
 
 ## Term: Percent-encoding
 
+<<<<<<< HEAD
 - Glossary
 - WebMechanics
+=======
+-   Glossary
+-   WebMechanics
+>>>>>>> master
 
 ---
 
@@ -9272,19 +14141,33 @@ Depending on the context, the character `' '` is translated to a `'+'` (like in 
 
 #### See also
 
+<<<<<<< HEAD
 - Definition of [percent-encoding](https://en.wikipedia.org/wiki/Percent-encoding) in Wikipedia.
 - _RFC(3986_), section 2.1, where this encoding is defined.
+=======
+-   Definition of [percent-encoding](https://en.wikipedia.org/wiki/Percent-encoding) in Wikipedia.
+-   _RFC(3986_), section 2.1, where this encoding is defined.
+>>>>>>> master
 
 ---
 
 ## Term: PHP
 
+<<<<<<< HEAD
 - Beginner
 - CodingScripting
 - Glossary
 - Infrastructure
 - Intro
 - PHP
+=======
+-   Beginner
+-   CodingScripting
+-   Glossary
+-   Infrastructure
+-   Intro
+-   PHP
+>>>>>>> master
 
 ---
 
@@ -9330,6 +14213,7 @@ Depending on the context, the character `' '` is translated to a `'+'` (like in 
 
 #### See also
 
+<<<<<<< HEAD
 - [Official website](https://php.net/)
 - _Interwiki("wikipedia", "PHP"_) on Wikipedia
 - [PHP](https://en.wikibooks.org/wiki/PHP_Programming) on Wikibooks
@@ -9339,14 +14223,31 @@ Depending on the context, the character `' '` is translated to a `'+'` (like in 
     - _Glossary("JavaScript"_)
     - _Glossary("Python"_)
     - _Glossary("Ruby"_)
+=======
+-   [Official website](https://php.net/)
+-   _Interwiki("wikipedia", "PHP"_) on Wikipedia
+-   [PHP](https://en.wikibooks.org/wiki/PHP_Programming) on Wikibooks
+-   [MDN Web Docs Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("Java"_)
+    -   _Glossary("JavaScript"_)
+    -   _Glossary("Python"_)
+    -   _Glossary("Ruby"_)
+>>>>>>> master
 
 ---
 
 ## Term: Pixel
 
+<<<<<<< HEAD
 - Design
 - Glossary
 - Graphics
+=======
+-   Design
+-   Glossary
+-   Graphics
+>>>>>>> master
 
 ---
 
@@ -9356,15 +14257,25 @@ Display resolution is expressed in the unit of pixels. eg: A "800 x 600" pixel r
 
 #### See also
 
+<<<<<<< HEAD
 - [Pixel ](https://en.wikipedia.org/wiki/Pixel)on Wikipedia
+=======
+-   [Pixel ](https://en.wikipedia.org/wiki/Pixel)on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Placeholder names
 
+<<<<<<< HEAD
 - Cryptography
 - Glossary
 - Security
+=======
+-   Cryptography
+-   Glossary
+-   Security
+>>>>>>> master
 
 ---
 
@@ -9372,17 +14283,29 @@ Display resolution is expressed in the unit of pixels. eg: A "800 x 600" pixel r
 
 The most commonly used names are:
 
+<<<<<<< HEAD
 - _Alice_ and _Bob_, two parties who want to send messages to each other, occasionally joined by _Carol_, a third participant
 - _Eve_, a passive attacker who is eavesdropping on Alice and Bob's conversation
 - _Mallory_, an active attacker ("man-in-the-middle") who is able to modify their conversation and replay old messages
+=======
+-   _Alice_ and _Bob_, two parties who want to send messages to each other, occasionally joined by _Carol_, a third participant
+-   _Eve_, a passive attacker who is eavesdropping on Alice and Bob's conversation
+-   _Mallory_, an active attacker ("man-in-the-middle") who is able to modify their conversation and replay old messages
+>>>>>>> master
 
 ---
 
 ## Term: Plaintext
 
+<<<<<<< HEAD
 - Cryptography
 - Glossary
 - Security
+=======
+-   Cryptography
+-   Glossary
+-   Security
+>>>>>>> master
 
 ---
 
@@ -9408,17 +14331,29 @@ Plugins should not be confused with browser extensions, which unlike plugins are
 
 #### See also
 
+<<<<<<< HEAD
 - [Adobe Flash end-of-life announcement](https://blog.adobe.com/en/publish/2017/07/25/adobe-flash-update#gs.g8mmgf)
+=======
+-   [Adobe Flash end-of-life announcement](https://blog.adobe.com/en/publish/2017/07/25/adobe-flash-update#gs.g8mmgf)
+>>>>>>> master
 
 ---
 
 ## Term: PNG
 
+<<<<<<< HEAD
 - Beginner
 - Composing
 - Glossary
 - Infrastructure
 - PNG
+=======
+-   Beginner
+-   Composing
+-   Glossary
+-   Infrastructure
+-   PNG
+>>>>>>> master
 
 ---
 
@@ -9426,17 +14361,29 @@ Plugins should not be confused with browser extensions, which unlike plugins are
 
 #### See also
 
+<<<<<<< HEAD
 - [PNG ](https://en.wikipedia.org/wiki/Portable_Network_Graphics)on Wikipedia
+=======
+-   [PNG ](https://en.wikipedia.org/wiki/Portable_Network_Graphics)on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Polyfill
 
+<<<<<<< HEAD
 - Browser Support
 - CodingScripting
 - Glossary
 - JavaScript
 - polyfill
+=======
+-   Browser Support
+-   CodingScripting
+-   Glossary
+-   JavaScript
+-   polyfill
+>>>>>>> master
 
 ---
 
@@ -9450,14 +14397,23 @@ Other times, polyfills are used to address issues where browsers implement the s
 
 #### See also
 
+<<<<<<< HEAD
 - [What is a polyfill?](https://remysharp.com/2010/10/08/what-is-a-polyfill) (article by Remy Sharp, the originator of the term)
+=======
+-   [What is a polyfill?](https://remysharp.com/2010/10/08/what-is-a-polyfill) (article by Remy Sharp, the originator of the term)
+>>>>>>> master
 
 ---
 
 ## Term: Polymorphism
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
+=======
+-   CodingScripting
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -9469,15 +14425,25 @@ In the case of _glossary("OOP"_), by making the _glossary("class"_) responsible 
 
 #### See also
 
+<<<<<<< HEAD
 - [Polymorphism](https://en.wikipedia.org/wiki/Polymorphism_%28computer_science%29) on Wikipedia
+=======
+-   [Polymorphism](https://en.wikipedia.org/wiki/Polymorphism_%28computer_science%29) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: POP3
 
+<<<<<<< HEAD
 - Beginner
 - Glossary
 - Infrastructure
+=======
+-   Beginner
+-   Glossary
+-   Infrastructure
+>>>>>>> master
 
 ---
 
@@ -9487,6 +14453,7 @@ Clients usually retrieve all messages and then delete them from the server, but 
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Post Office Protocol", "POP"_) on Wikipedia
 - [RFC 1734](https://datatracker.ietf.org/doc/html/rfc1734) (Specification of POP3 authentication mechanism)
 - [RFC 1939](https://datatracker.ietf.org/doc/html/rfc1939) (Specification of POP3)
@@ -9494,16 +14461,33 @@ Clients usually retrieve all messages and then delete them from the server, but 
 - [MDN Web Docs Glossary](/en-US/docs/Glossary):
 
     - _Glossary("IMAP"_)
+=======
+-   _Interwiki("wikipedia", "Post Office Protocol", "POP"_) on Wikipedia
+-   [RFC 1734](https://datatracker.ietf.org/doc/html/rfc1734) (Specification of POP3 authentication mechanism)
+-   [RFC 1939](https://datatracker.ietf.org/doc/html/rfc1939) (Specification of POP3)
+-   [RFC 2449](https://datatracker.ietf.org/doc/html/rfc2449) (Specification of POP3 extension mechanism)
+-   [MDN Web Docs Glossary](/en-US/docs/Glossary):
+
+    -   _Glossary("IMAP"_)
+>>>>>>> master
 
 ---
 
 ## Term: Port
 
+<<<<<<< HEAD
 - Glossary
 - Intro
 - Security
 - computer network
 - port
+=======
+-   Glossary
+-   Intro
+-   Security
+-   computer network
+-   port
+>>>>>>> master
 
 ---
 
@@ -9513,16 +14497,27 @@ For example, the default port for the _Glossary("HTTP"_) protocol is 80 and the 
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Port (computer networking)" , "Port"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Port (computer networking)" , "Port"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Prefetch
 
+<<<<<<< HEAD
 - Glossary
 - Prefetch
 - Reference
 - Web Performance
+=======
+-   Glossary
+-   Prefetch
+-   Reference
+-   Web Performance
+>>>>>>> master
 
 ---
 
@@ -9553,21 +14548,37 @@ Browsers will prefetch content when the prefetch [`<link>`](/en-US/docs/Web/HTML
 
 #### See also
 
+<<<<<<< HEAD
 - defer
 - async
 - [preload](/en-US/docs/Web/HTML/Link_types/preload)
 - [page prediction](/en-US/docs/Glossary/Page_prediction)
 - [lazy loading](/en-US/docs/Web/Performance/Lazy_loading)
+=======
+-   defer
+-   async
+-   [preload](/en-US/docs/Web/HTML/Link_types/preload)
+-   [page prediction](/en-US/docs/Glossary/Page_prediction)
+-   [lazy loading](/en-US/docs/Web/Performance/Lazy_loading)
+>>>>>>> master
 
 ---
 
 ## Term: Preflight request
 
+<<<<<<< HEAD
 - CORS
 - Glossary
 - HTTP
 - Preflight
 - request
+=======
+-   CORS
+-   Glossary
+-   HTTP
+-   Preflight
+-   request
+>>>>>>> master
 
 ---
 
@@ -9600,18 +14611,31 @@ The preflight response can be optionally cached for the requests created in the 
 
 #### See also
 
+<<<<<<< HEAD
 - _Glossary("CORS"_)
 - _HTTPMethod("OPTIONS"_)
+=======
+-   _Glossary("CORS"_)
+-   _HTTPMethod("OPTIONS"_)
+>>>>>>> master
 
 ---
 
 ## Term: Prerender
 
+<<<<<<< HEAD
 - Glossary
 - Prefetch
 - Security
 - Web Performance
 - prerender
+=======
+-   Glossary
+-   Prefetch
+-   Security
+-   Web Performance
+-   prerender
+>>>>>>> master
 
 ---
 
@@ -9623,14 +14647,23 @@ The preflight response can be optionally cached for the requests created in the 
 
 #### See also
 
+<<<<<<< HEAD
 - [prefetch](/en-US/docs/Glossary/Prefetch)
+=======
+-   [prefetch](/en-US/docs/Glossary/Prefetch)
+>>>>>>> master
 
 ---
 
 ## Term: Presto
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
+=======
+-   Glossary
+-   Infrastructure
+>>>>>>> master
 
 ---
 
@@ -9638,15 +14671,25 @@ The preflight response can be optionally cached for the requests created in the 
 
 #### See also
 
+<<<<<<< HEAD
 - [Presto layout engine](https://en.wikipedia.org/wiki/Presto_%28layout_engine%29) on Wikipedia
+=======
+-   [Presto layout engine](https://en.wikipedia.org/wiki/Presto_%28layout_engine%29) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Primitive
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - JavaScript
+=======
+-   CodingScripting
+-   Glossary
+-   JavaScript
+>>>>>>> master
 
 ---
 
@@ -9663,6 +14706,10 @@ This example will help you understand that primitive values are **immutable.**
 ### JavaScript
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 // Using a string method doesn't mutate the string
 var bar = 'baz';
 console.log(bar); // baz
@@ -9685,16 +14732,25 @@ A primitive can be replaced, but it can't be directly altered.
 
 Except for `null` and `undefined`, all primitive values have object equivalents that wrap around the primitive values:
 
+<<<<<<< HEAD
 - _jsxref("String"_) for the string primitive.
 - _jsxref("Number"_) for the number primitive.
 - _jsxref("BigInt"_) for the bigint primitive.
 - _jsxref("Boolean"_) for the boolean primitive.
 - _jsxref("Symbol"_) for the symbol primitive.
+=======
+-   _jsxref("String"_) for the string primitive.
+-   _jsxref("Number"_) for the number primitive.
+-   _jsxref("BigInt"_) for the bigint primitive.
+-   _jsxref("Boolean"_) for the boolean primitive.
+-   _jsxref("Symbol"_) for the symbol primitive.
+>>>>>>> master
 
 The wrapper's [`valueOf()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/valueOf) method returns the primitive value.
 
 #### See also
 
+<<<<<<< HEAD
 - [JavaScript data types](/en-US/docs/Web/JavaScript/Data_structures)
 - _Interwiki("wikipedia", "Primitive data type"_) (Wikipedia)
 - [Glossary](/en-US/docs/Glossary)
@@ -9707,12 +14763,30 @@ The wrapper's [`valueOf()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/
     - _Glossary("null"_)
     - _Glossary("undefined"_)
     - _Glossary("symbol"_)
+=======
+-   [JavaScript data types](/en-US/docs/Web/JavaScript/Data_structures)
+-   _Interwiki("wikipedia", "Primitive data type"_) (Wikipedia)
+-   [Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("JavaScript"_)
+    -   _Glossary("string"_)
+    -   _Glossary("number"_)
+    -   _Glossary("bigint"_)
+    -   _Glossary("boolean"_)
+    -   _Glossary("null"_)
+    -   _Glossary("undefined"_)
+    -   _Glossary("symbol"_)
+>>>>>>> master
 
 ---
 
 ## Term: privileged code
 
+<<<<<<< HEAD
 - privileged
+=======
+-   privileged
+>>>>>>> master
 
 ---
 
@@ -9724,8 +14798,13 @@ The wrapper's [`valueOf()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/
 
 ## Term: Privileged
 
+<<<<<<< HEAD
 - Glossary
 - Security
+=======
+-   Glossary
+-   Security
+>>>>>>> master
 
 ---
 
@@ -9733,16 +14812,27 @@ The wrapper's [`valueOf()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Privilege (computing)"_) on Wikipedia
 - [Information Security Tutorial](/en-US/docs/Web/Security/Information_Security_Basics)
+=======
+-   _Interwiki("wikipedia", "Privilege (computing)"_) on Wikipedia
+-   [Information Security Tutorial](/en-US/docs/Web/Security/Information_Security_Basics)
+>>>>>>> master
 
 ---
 
 ## Term: Progressive Enhancement
 
+<<<<<<< HEAD
 - Accessibility
 - Design
 - Glossary
+=======
+-   Accessibility
+-   Design
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -9758,19 +14848,33 @@ Progressive enhancement is a useful technique that allows web developers to focu
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Progressive enhancement"_) at Wikipedia
 - [What is Progressive Enhancement, and why it matters](https://www.freecodecamp.org/news/what-is-progressive-enhancement-and-why-it-matters-e80c7aaf834a/) at freeCodeCamp
 - [Progressive Enhancement reading list 2021](https://www.quirksmode.org/blog/archives/2021/02/progressive_enh_1.html) at QuirksMode
 - [Understanding Progressive Enhancement](https://alistapart.com/article/understandingprogressiveenhancement/) by Aaron Gustafson; a 2008 _A List Apart_ article which first "placed progressive enhancement at the forefront of web developer thinking"
 - [Inclusive Web Design For the Future with Progressive Enhancement](http://hesketh.com/publications/inclusive_web_design_for_the_future/) ([related article)](http://www.hesketh.com/progressive_enhancement_and_the_future_of_web_design.html) by Steve Champeon and Nick Finck; a 2003 SXSW presentation cited by Aaron Gustafson as "unveiling a blueprint for a new way of approaching web development", and naming it "progressive enhancement"
+=======
+-   _Interwiki("wikipedia", "Progressive enhancement"_) at Wikipedia
+-   [What is Progressive Enhancement, and why it matters](https://www.freecodecamp.org/news/what-is-progressive-enhancement-and-why-it-matters-e80c7aaf834a/) at freeCodeCamp
+-   [Progressive Enhancement reading list 2021](https://www.quirksmode.org/blog/archives/2021/02/progressive_enh_1.html) at QuirksMode
+-   [Understanding Progressive Enhancement](https://alistapart.com/article/understandingprogressiveenhancement/) by Aaron Gustafson; a 2008 _A List Apart_ article which first "placed progressive enhancement at the forefront of web developer thinking"
+-   [Inclusive Web Design For the Future with Progressive Enhancement](http://hesketh.com/publications/inclusive_web_design_for_the_future/) ([related article)](http://www.hesketh.com/progressive_enhancement_and_the_future_of_web_design.html) by Steve Champeon and Nick Finck; a 2003 SXSW presentation cited by Aaron Gustafson as "unveiling a blueprint for a new way of approaching web development", and naming it "progressive enhancement"
+>>>>>>> master
 
 ---
 
 ## Term: Progressive web apps
 
+<<<<<<< HEAD
 - Composing
 - Glossary
 - Progressive web apps
+=======
+-   Composing
+-   Glossary
+-   Progressive web apps
+>>>>>>> master
 
 ---
 
@@ -9780,17 +14884,29 @@ These features include being installable, working offline, and being easy to syn
 
 #### See also
 
+<<<<<<< HEAD
 - The [App Center](/en-US/docs/Web/Progressive_web_apps) on MDN
 - [Progressive web apps](https://web.dev/progressive-web-apps/) on Google Developers
+=======
+-   The [App Center](/en-US/docs/Web/Progressive_web_apps) on MDN
+-   [Progressive web apps](https://web.dev/progressive-web-apps/) on Google Developers
+>>>>>>> master
 
 ---
 
 ## Term: Promise
 
+<<<<<<< HEAD
 - Glossary
 - Promise
 - Promises
 - asynchronous
+=======
+-   Glossary
+-   Promise
+-   Promises
+-   asynchronous
+>>>>>>> master
 
 ---
 
@@ -9800,16 +14916,27 @@ When the called function finishes its work _Glossary("asynchronous", "asynchrono
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Futures and promises"_)
 - _jsxref("Promise"_) in the [JavaScript Reference](/en-US/docs/Web/JavaScript/Reference).
 - [Using promises](/en-US/docs/Web/JavaScript/Guide/Using_promises)
+=======
+-   _interwiki("wikipedia", "Futures and promises"_)
+-   _jsxref("Promise"_) in the [JavaScript Reference](/en-US/docs/Web/JavaScript/Reference).
+-   [Using promises](/en-US/docs/Web/JavaScript/Guide/Using_promises)
+>>>>>>> master
 
 ---
 
 ## Term: Property
 
+<<<<<<< HEAD
 - Disambiguation
 - Glossary
+=======
+-   Disambiguation
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -9821,9 +14948,15 @@ When the called function finishes its work _Glossary("asynchronous", "asynchrono
 
 ## Term: Protocol
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
 - Protocols
+=======
+-   Glossary
+-   Infrastructure
+-   Protocols
+>>>>>>> master
 
 ---
 
@@ -9831,6 +14964,7 @@ When the called function finishes its work _Glossary("asynchronous", "asynchrono
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Communications protocol"_) on Wikipedia
 - [RFC Official Internet Protocol Standards](https://www.rfc-editor.org/search/standards.php)
 - [HTTP overview](/en-US/docs/Web/HTTP/Overview)
@@ -9838,13 +14972,27 @@ When the called function finishes its work _Glossary("asynchronous", "asynchrono
 
     - _glossary("TCP"_)
     - _glossary("Packet"_)
+=======
+-   _Interwiki("wikipedia", "Communications protocol"_) on Wikipedia
+-   [RFC Official Internet Protocol Standards](https://www.rfc-editor.org/search/standards.php)
+-   [HTTP overview](/en-US/docs/Web/HTTP/Overview)
+-   Glossary:
+
+    -   _glossary("TCP"_)
+    -   _glossary("Packet"_)
+>>>>>>> master
 
 ---
 
 ## Term: Prototype-based programming
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
+=======
+-   CodingScripting
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -9854,15 +15002,25 @@ In simple words: this type of style allows the creation of an _Glossary('Object'
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Prototype-based programming", "Prototype-based programming"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Prototype-based programming", "Prototype-based programming"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Prototype
 
+<<<<<<< HEAD
 - Apps
 - Composing
 - Glossary
+=======
+-   Apps
+-   Composing
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -9872,15 +15030,25 @@ See [Inheritance and the prototype chain](/en-US/docs/Web/JavaScript/Inheritance
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Software Prototyping"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Software Prototyping"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Proxy server
 
+<<<<<<< HEAD
 - Glossary
 - Proxy
 - Server
+=======
+-   Glossary
+-   Proxy
+-   Server
+>>>>>>> master
 
 ---
 
@@ -9888,6 +15056,7 @@ See [Inheritance and the prototype chain](/en-US/docs/Web/JavaScript/Inheritance
 
 A proxy can be on the user's local computer, or anywhere between the user's computer and a destination server on the Internet. In general there are two main types of proxy servers:
 
+<<<<<<< HEAD
 - A **forward proxy** that handles requests from and to anywhere on the Internet.
 - A **reverse proxy** taking requests from the Internet and forwarding them to servers in an internal network.
 
@@ -9895,15 +15064,31 @@ A proxy can be on the user's local computer, or anywhere between the user's comp
 
 - [Proxy servers and tunneling](/en-US/docs/Web/HTTP/Proxy_servers_and_tunneling)
 - [Proxy server](https://en.wikipedia.org/wiki/Proxy_server) on Wikipedia
+=======
+-   A **forward proxy** that handles requests from and to anywhere on the Internet.
+-   A **reverse proxy** taking requests from the Internet and forwarding them to servers in an internal network.
+
+#### See also
+
+-   [Proxy servers and tunneling](/en-US/docs/Web/HTTP/Proxy_servers_and_tunneling)
+-   [Proxy server](https://en.wikipedia.org/wiki/Proxy_server) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Pseudo-class
 
+<<<<<<< HEAD
 - CSS
 - CodingScripting
 - Glossary
 - Selector
+=======
+-   CSS
+-   CodingScripting
+-   Glossary
+-   Selector
+>>>>>>> master
 
 ---
 
@@ -9911,15 +15096,25 @@ A proxy can be on the user's local computer, or anywhere between the user's comp
 
 #### See also
 
+<<<<<<< HEAD
 - [Pseudo-class documentation](/en-US/docs/Web/CSS/Pseudo-classes)
+=======
+-   [Pseudo-class documentation](/en-US/docs/Web/CSS/Pseudo-classes)
+>>>>>>> master
 
 ---
 
 ## Term: Pseudo-element
 
+<<<<<<< HEAD
 - CSS
 - CodingScripting
 - Glossary
+=======
+-   CSS
+-   CodingScripting
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -9927,15 +15122,25 @@ A proxy can be on the user's local computer, or anywhere between the user's comp
 
 #### See also
 
+<<<<<<< HEAD
 - [Pseudo-elements](/en-US/docs/Web/CSS/Pseudo-elements)
+=======
+-   [Pseudo-elements](/en-US/docs/Web/CSS/Pseudo-elements)
+>>>>>>> master
 
 ---
 
 ## Term: Pseudocode
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - Pseudocode
+=======
+-   CodingScripting
+-   Glossary
+-   Pseudocode
+>>>>>>> master
 
 ---
 
@@ -9943,16 +15148,27 @@ A proxy can be on the user's local computer, or anywhere between the user's comp
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Pseudocode", "Pseudocode"_) on Wikipedia.
+=======
+-   _interwiki("wikipedia", "Pseudocode", "Pseudocode"_) on Wikipedia.
+>>>>>>> master
 
 ---
 
 ## Term: Public-key cryptography
 
+<<<<<<< HEAD
 - Cryptography
 - Glossary
 - Public-key cryptography
 - Security
+=======
+-   Cryptography
+-   Glossary
+-   Public-key cryptography
+-   Security
+>>>>>>> master
 
 ---
 
@@ -9968,20 +15184,35 @@ Commonly used public-key cryptosystems are RSA (for both signing and encryption)
 
 #### See also
 
+<<<<<<< HEAD
 - [Web Crypto API](/en-US/docs/Web/API/Web_Crypto_API)
 - [MDN Web Docs Glossary](/en-US/docs/Glossary)
 
     - _Glossary("Symmetric-key cryptography"_)
+=======
+-   [Web Crypto API](/en-US/docs/Web/API/Web_Crypto_API)
+-   [MDN Web Docs Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("Symmetric-key cryptography"_)
+>>>>>>> master
 
 ---
 
 ## Term: Python
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - Language
 - Python
 - programming
+=======
+-   CodingScripting
+-   Glossary
+-   Language
+-   Python
+-   programming
+>>>>>>> master
 
 ---
 
@@ -9993,6 +15224,7 @@ Python is developed under an OSI-approved open source license, making it freely 
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki('wikipedia','Python (programming language)','Python'_) on Wikipedia
 - [Official Python docs tutorials](https://docs.python.org/3/tutorial/index.html)
 - [Tutorials Point Python tutorial](https://www.tutorialspoint.com/python/index.htm)
@@ -10005,13 +15237,32 @@ Python is developed under an OSI-approved open source license, making it freely 
     - _Glossary("PHP"_)
     - _Glossary("Python"_)
     - _Glossary("Ruby"_)
+=======
+-   _interwiki('wikipedia','Python (programming language)','Python'_) on Wikipedia
+-   [Official Python docs tutorials](https://docs.python.org/3/tutorial/index.html)
+-   [Tutorials Point Python tutorial](https://www.tutorialspoint.com/python/index.htm)
+-   [AlphaCodingSkills Python Tutorial](https://www.alphacodingskills.com/python/python-tutorial.php)
+-   [Django Web Framework (Python)](/en-US/docs/Learn/Server-side/Django) on MDN
+-   [Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("Java"_)
+    -   _Glossary("JavaScript"_)
+    -   _Glossary("PHP"_)
+    -   _Glossary("Python"_)
+    -   _Glossary("Ruby"_)
+>>>>>>> master
 
 ---
 
 ## Term: Quality values
 
+<<<<<<< HEAD
 - Glossary
 - WebMechanics
+=======
+-   Glossary
+-   WebMechanics
+>>>>>>> master
 
 ---
 
@@ -10057,19 +15308,33 @@ Starting with Firefox 18, the quality factor values are clamped to 2 decimal pla
 
 ## More information
 
+<<<<<<< HEAD
 - [HTTP headers](/en-US/docs/Web/HTTP/Headers) using q-values in their syntax: _HTTPHeader("Accept"_), _HTTPHeader("Accept-Language"_), _HTTPHeader("TE"_).
 - [Header field definitions.](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html)
+=======
+-   [HTTP headers](/en-US/docs/Web/HTTP/Headers) using q-values in their syntax: _HTTPHeader("Accept"_), _HTTPHeader("Accept-Language"_), _HTTPHeader("TE"_).
+-   [Header field definitions.](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html)
+>>>>>>> master
 
 ---
 
 ## Term: Quaternion
 
+<<<<<<< HEAD
 - Definition
 - Glossary
 - Orientation
 - Quaternion
 - WebXR
 - rotation
+=======
+-   Definition
+-   Glossary
+-   Orientation
+-   Quaternion
+-   WebXR
+-   rotation
+>>>>>>> master
 
 ---
 
@@ -10079,19 +15344,33 @@ While mathematical quaternions are more involved than this, the **unit quaternio
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Quaternions and spatial rotation"_) on Wikipedia
 - _interwiki("wikipedia", "Quaternion"_) on Wikipedia
 - _domxref("XRRigidTransform.orientation"_) in the WebXR Device API reference
+=======
+-   _interwiki("wikipedia", "Quaternions and spatial rotation"_) on Wikipedia
+-   _interwiki("wikipedia", "Quaternion"_) on Wikipedia
+-   _domxref("XRRigidTransform.orientation"_) in the WebXR Device API reference
+>>>>>>> master
 
 ---
 
 ## Term: QUIC
 
+<<<<<<< HEAD
 - Glossary
 - HTTP
 - QUIC
 - Reference
 - Web Performance
+=======
+-   Glossary
+-   HTTP
+-   QUIC
+-   Reference
+-   Web Performance
+>>>>>>> master
 
 ---
 
@@ -10103,36 +15382,61 @@ QUIC was designed to support the semantics of HTTP/2. It provides multiplexing, 
 
 Key features of QUIC include:
 
+<<<<<<< HEAD
 - Reduction in connection establishment time.
 - Improved congestion control.
 - Multiplexing without head-of-line blocking.
 - Forward error correction.
 - Connection migration.
+=======
+-   Reduction in connection establishment time.
+-   Improved congestion control.
+-   Multiplexing without head-of-line blocking.
+-   Forward error correction.
+-   Connection migration.
+>>>>>>> master
 
 There is limited browser and server support for QUIC today.
 
 ### Resources
 
+<<<<<<< HEAD
 - [Chromium Projects Documentation](https://www.chromium.org/quic)
 - [IETF Draft](https://datatracker.ietf.org/doc/html/draft-tsvwg-quic-protocol-02)
 
 #### See also
 
 - [HTTP/2](/en-US/docs/Glossary/HTTP_2)
+=======
+-   [Chromium Projects Documentation](https://www.chromium.org/quic)
+-   [IETF Draft](https://datatracker.ietf.org/doc/html/draft-tsvwg-quic-protocol-02)
+
+#### See also
+
+-   [HTTP/2](/en-US/docs/Glossary/HTTP_2)
+>>>>>>> master
 
 ---
 
 ## Term: RAIL
 
+<<<<<<< HEAD
 - Glossary
 - RAIL
 - Timings
 - Web Performance
+=======
+-   Glossary
+-   RAIL
+-   Timings
+-   Web Performance
+>>>>>>> master
 
 ---
 
 > **RAIL**, an acronym for **Response, Animation, Idle, and Load**, is a performance model originated by the Google Chrome team in 2015, focused on user experience and performance within the browser. The performance mantra of RAIL is "Focus on the user; the end goal isn't to make your site perform fast on any specific device, it's to make users happy." There are 4 stages of interaction: page load, idle, response to input, and scrolling and animation. In acronym order, the main tenets are:
 
+<<<<<<< HEAD
 - **Response**
 - - : Respond to users immediately, acknowledging any user input in **100ms** or less.
 - **Animation**
@@ -10145,11 +15449,26 @@ There is limited browser and server support for QUIC today.
 #### See also
 
 - [Recommended Web Performance Timings: How long is too long](/en-US/docs/Web/Performance/How_long_is_too_long)
+=======
+-   **Response**
+-   -   : Respond to users immediately, acknowledging any user input in **100ms** or less.
+-   **Animation**
+-   -   : When animating, render each frame in under **16ms**, aiming for consistency and avoiding jank.
+-   **Idle**
+    -   : When using the main JavaScript thread, work in chunks for less than **50ms** to free up the thread for user interactions.
+-   **Load**
+    -   : Deliver interactive content in less than **1 second**.
+
+#### See also
+
+-   [Recommended Web Performance Timings: How long is too long](/en-US/docs/Web/Performance/How_long_is_too_long)
+>>>>>>> master
 
 ---
 
 ## Term: Raster image
 
+<<<<<<< HEAD
 - CUR
 - Documents
 - Glossary
@@ -10158,6 +15477,16 @@ There is limited browser and server support for QUIC today.
 - PNG
 - gif
 - raster image
+=======
+-   CUR
+-   Documents
+-   Glossary
+-   ICO
+-   JPEG
+-   PNG
+-   gif
+-   raster image
+>>>>>>> master
 
 ---
 
@@ -10167,17 +15496,29 @@ Raster image files usually contain one set of dimensions, but the ICO and CUR fo
 
 #### See also
 
+<<<<<<< HEAD
 - _glossary("Vector images"_)
+=======
+-   _glossary("Vector images"_)
+>>>>>>> master
 
 ---
 
 ## Term: RDF
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - Infrastructure
 - OpenPractices
 - WebMechanics
+=======
+-   CodingScripting
+-   Glossary
+-   Infrastructure
+-   OpenPractices
+-   WebMechanics
+>>>>>>> master
 
 ---
 
@@ -10185,16 +15526,27 @@ Raster image files usually contain one set of dimensions, but the ICO and CUR fo
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Resource Description Framework"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Resource Description Framework"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Real User Monitoring (RUM)
 
+<<<<<<< HEAD
 - Glossary
 - RUM
 - Reference
 - Web Performance
+=======
+-   Glossary
+-   RUM
+-   Reference
+-   Web Performance
+>>>>>>> master
 
 ---
 
@@ -10202,16 +15554,27 @@ Raster image files usually contain one set of dimensions, but the ICO and CUR fo
 
 #### See also
 
+<<<<<<< HEAD
 - [Real User Monitoring (RUM) versus Synthetic Monitoring](/en-US/docs/Web/Performance/Rum-vs-Synthetic)
 - [Synthetic Monitoring](/en-US/docs/Glossary/Synthetic_monitoring)
 - [Beacon](/en-US/docs/Glossary/beacon)
+=======
+-   [Real User Monitoring (RUM) versus Synthetic Monitoring](/en-US/docs/Web/Performance/Rum-vs-Synthetic)
+-   [Synthetic Monitoring](/en-US/docs/Glossary/Synthetic_monitoring)
+-   [Beacon](/en-US/docs/Glossary/beacon)
+>>>>>>> master
 
 ---
 
 ## Term: Recursion
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
+=======
+-   CodingScripting
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -10224,6 +15587,10 @@ Raster image files usually contain one set of dimensions, but the ICO and CUR fo
 The following Python code defines a function that takes a number, prints it, and then calls itself again with the number's value -1. It keeps going until the number is equal to 0, in which case it stops.
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 def recurse(x):
    if x > 0:
        print(x)
@@ -10247,16 +15614,27 @@ The output will look like this:
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Recursion (computer science)"_) on Wikipedia
 - [More details about recursion in JavaScript](/en-US/docs/Web/JavaScript/Guide/Functions#recursion)
+=======
+-   _Interwiki("wikipedia", "Recursion (computer science)"_) on Wikipedia
+-   [More details about recursion in JavaScript](/en-US/docs/Web/JavaScript/Guide/Functions#recursion)
+>>>>>>> master
 
 ---
 
 ## Term: Reference
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - NeedsContent
+=======
+-   CodingScripting
+-   Glossary
+-   NeedsContent
+>>>>>>> master
 
 ---
 
@@ -10266,14 +15644,23 @@ In computing, a reference is a value that indirectly accesses data to retrieve a
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Reference (computer science)"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Reference (computer science)"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Reflow
 
+<<<<<<< HEAD
 - Glossary
 - WebMechanics
+=======
+-   Glossary
+-   WebMechanics
+>>>>>>> master
 
 ---
 
@@ -10281,15 +15668,25 @@ In computing, a reference is a value that indirectly accesses data to retrieve a
 
 #### See also
 
+<<<<<<< HEAD
 - [Google article "Minimizing browser reflow"](https://developers.google.com/speed/articles/reflow)
+=======
+-   [Google article "Minimizing browser reflow"](https://developers.google.com/speed/articles/reflow)
+>>>>>>> master
 
 ---
 
 ## Term: Regular expression
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - Regular Expression
+=======
+-   CodingScripting
+-   Glossary
+-   Regular Expression
+>>>>>>> master
 
 ---
 
@@ -10299,19 +15696,33 @@ Regular expressions are implemented in various languages, but the best-known imp
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Regular expressions"_) on Wikipedia
 - [Interactive tutorial](https://regexone.com/)
 - [Visualized Regular Expression](https://regexper.com/)
 - [Writing regular expressions in JavaScript](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+=======
+-   _Interwiki("wikipedia", "Regular expressions"_) on Wikipedia
+-   [Interactive tutorial](https://regexone.com/)
+-   [Visualized Regular Expression](https://regexper.com/)
+-   [Writing regular expressions in JavaScript](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+>>>>>>> master
 
 ---
 
 ## Term: Rendering engine
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
 - Rendering engine
 - Web browser engine
+=======
+-   Glossary
+-   Infrastructure
+-   Rendering engine
+-   Web browser engine
+>>>>>>> master
 
 ---
 
@@ -10319,18 +15730,31 @@ Regular expressions are implemented in various languages, but the best-known imp
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Web browser engine"_) on Wikipedia
 - [Venkatraman.R - Behind Browsers (Part 1, Basics) ](https://medium.com/@ramsunvtech/behind-browser-basics-part-1-b733e9f3c0e6)
+=======
+-   _Interwiki("wikipedia", "Web browser engine"_) on Wikipedia
+-   [Venkatraman.R - Behind Browsers (Part 1, Basics) ](https://medium.com/@ramsunvtech/behind-browser-basics-part-1-b733e9f3c0e6)
+>>>>>>> master
 
 ---
 
 ## Term: Repo
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
 - Intro
 - Repo
 - Repository
+=======
+-   Glossary
+-   Infrastructure
+-   Intro
+-   Repo
+-   Repository
+>>>>>>> master
 
 ---
 
@@ -10338,18 +15762,31 @@ Regular expressions are implemented in various languages, but the best-known imp
 
 #### See also
 
+<<<<<<< HEAD
 - [Repository](https://en.wikipedia.org/wiki/Repository_%28revision_control%29) on Wikipedia
+=======
+-   [Repository](https://en.wikipedia.org/wiki/Repository_%28revision_control%29) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Reporting directive
 
+<<<<<<< HEAD
 - CSP
 - HTTP
 - Policy
 - Reporting
 - Security
 - Violation
+=======
+-   CSP
+-   HTTP
+-   Policy
+-   Reporting
+-   Security
+-   Violation
+>>>>>>> master
 
 ---
 
@@ -10359,6 +15796,7 @@ See [Reporting directives](/en-US/docs/Web/HTTP/Headers/Content-Security-Policy#
 
 #### See also
 
+<<<<<<< HEAD
 - [Glossary](/en-US/docs/Glossary)
 
     - _Glossary("CSP"_)
@@ -10373,13 +15811,34 @@ See [Reporting directives](/en-US/docs/Web/HTTP/Headers/Content-Security-Policy#
     - _HTTPHeader("Content-Security-Policy/block-all-mixed-content", "block-all-mixed-content"_)
     - _HTTPHeader("Content-Security-Policy/require-sri-for", "require-sri-for"_) \_deprecated_inline}}
     - _HTTPHeader("Content-Security-Policy"_)
+=======
+-   [Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("CSP"_)
+    -   _Glossary("Fetch directive"_)
+    -   _Glossary("Document directive"_)
+    -   _Glossary("Navigation directive"_)
+
+-   Reference
+
+    -   <https://www.w3.org/TR/CSP/#directives-reporting>
+    -   _HTTPHeader("Content-Security-Policy/upgrade-insecure-requests", "upgrade-insecure-requests"_)
+    -   _HTTPHeader("Content-Security-Policy/block-all-mixed-content", "block-all-mixed-content"_)
+    -   _HTTPHeader("Content-Security-Policy/require-sri-for", "require-sri-for"_) \_deprecated_inline}}
+    -   _HTTPHeader("Content-Security-Policy"_)
+>>>>>>> master
 
 ---
 
 ## Term: Representation header
 
+<<<<<<< HEAD
 - Glossary
 - WebMechanics
+=======
+-   Glossary
+-   WebMechanics
+>>>>>>> master
 
 ---
 
@@ -10398,18 +15857,31 @@ Representation headers include: _HTTPHeader("Content-Type"_), _HTTPHeader("Conte
 
 #### See also
 
+<<<<<<< HEAD
 - [RFC 7231, section 3: Representations](https://datatracker.ietf.org/doc/html/rfc7231#section-3)
 - [List of all HTTP headers](/en-US/docs/Web/HTTP/Headers)
 - _Glossary("Payload header"_)
 - _glossary("Entity header"_)
 - _HTTPHeader("Digest"_)/ _HTTPHeader("Want-Digest"_)
+=======
+-   [RFC 7231, section 3: Representations](https://datatracker.ietf.org/doc/html/rfc7231#section-3)
+-   [List of all HTTP headers](/en-US/docs/Web/HTTP/Headers)
+-   _Glossary("Payload header"_)
+-   _glossary("Entity header"_)
+-   _HTTPHeader("Digest"_)/ _HTTPHeader("Want-Digest"_)
+>>>>>>> master
 
 ---
 
 ## Term: Request header
 
+<<<<<<< HEAD
 - Glossary
 - WebMechanics
+=======
+-   Glossary
+-   WebMechanics
+>>>>>>> master
 
 ---
 
@@ -10421,7 +15893,11 @@ In addition, [CORS](/en-US/docs/Glossary/CORS) defines a subset of request heade
 
 The HTTP message below shows a few request headers after a _HTTPMethod("GET"_) request:
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> master
 GET /home.html HTTP/1.1
 Host: developer.mozilla.org
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:50.0) Gecko/20100101 Firefox/50.0
@@ -10438,16 +15914,27 @@ Cache-Control: max-age=0
 
 #### See also
 
+<<<<<<< HEAD
 - [List of all HTTP headers](/en-US/docs/Web/HTTP/Headers)
 - [RFC 7231, section 5: Request header fields](https://datatracker.ietf.org/doc/html/rfc7231#section-5)
+=======
+-   [List of all HTTP headers](/en-US/docs/Web/HTTP/Headers)
+-   [RFC 7231, section 5: Request header fields](https://datatracker.ietf.org/doc/html/rfc7231#section-5)
+>>>>>>> master
 
 ---
 
 ## Term: Resource Timing
 
+<<<<<<< HEAD
 - Glossary
 - Timings
 - Web Performance
+=======
+-   Glossary
+-   Timings
+-   Web Performance
+>>>>>>> master
 
 ---
 
@@ -10455,15 +15942,25 @@ Cache-Control: max-age=0
 
 #### See also
 
+<<<<<<< HEAD
 - [Using the resource timing API](/en-US/docs/Web/API/Resource_Timing_API/Using_the_Resource_Timing_API)
 - [Server Timing](https://www.w3.org/TR/server-timing/)
+=======
+-   [Using the resource timing API](/en-US/docs/Web/API/Resource_Timing_API/Using_the_Resource_Timing_API)
+-   [Server Timing](https://www.w3.org/TR/server-timing/)
+>>>>>>> master
 
 ---
 
 ## Term: Response header
 
+<<<<<<< HEAD
 - Glossary
 - WebMechanics
+=======
+-   Glossary
+-   WebMechanics
+>>>>>>> master
 
 ---
 
@@ -10495,6 +15992,7 @@ x-frame-options: DENY
 
 #### See also
 
+<<<<<<< HEAD
 - [List of all HTTP headers](/en-US/docs/Web/HTTP/Headers)
 - [Glossary](/en-US/docs/Glossary)
 
@@ -10503,15 +16001,32 @@ x-frame-options: DENY
     - _Glossary("Response header"_)
     - _Glossary("Fetch metadata response header"_)
     - _Glossary("Request header"_)
+=======
+-   [List of all HTTP headers](/en-US/docs/Web/HTTP/Headers)
+-   [Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("Representation header"_)
+    -   _Glossary("HTTP header"_)
+    -   _Glossary("Response header"_)
+    -   _Glossary("Fetch metadata response header"_)
+    -   _Glossary("Request header"_)
+>>>>>>> master
 
 ---
 
 ## Term: Responsive web design
 
+<<<<<<< HEAD
 - Accessibility
 - Design
 - Glossary
 - Responsive web design
+=======
+-   Accessibility
+-   Design
+-   Glossary
+-   Responsive web design
+>>>>>>> master
 
 ---
 
@@ -10519,20 +16034,35 @@ x-frame-options: DENY
 
 #### See also
 
+<<<<<<< HEAD
 - [Summary and resources](/en-US/docs/Web/Progressive_web_apps)
 - [Pros and cons of going responsive](/en-US/docs/Web/Progressive_web_apps)
 - [Responsive Web Design](https://msdn.microsoft.com/magazine/hh653584.aspx)
+=======
+-   [Summary and resources](/en-US/docs/Web/Progressive_web_apps)
+-   [Pros and cons of going responsive](/en-US/docs/Web/Progressive_web_apps)
+-   [Responsive Web Design](https://msdn.microsoft.com/magazine/hh653584.aspx)
+>>>>>>> master
 
 ---
 
 ## Term: REST
 
+<<<<<<< HEAD
 - Architecture
 - Beginner
 - Glossary
 - HTTP
 - Rest
 - WebMechanics
+=======
+-   Architecture
+-   Beginner
+-   Glossary
+-   HTTP
+-   Rest
+-   WebMechanics
+>>>>>>> master
 
 ---
 
@@ -10544,19 +16074,33 @@ HTTP APIs in general are sometimes colloquially referred to as RESTful APIs, RES
 
 #### See also
 
+<<<<<<< HEAD
 - [restapitutorial.com](https://www.restapitutorial.com/)
 - [restcookbook.com](https://restcookbook.com/)
 - _Interwiki("wikipedia", "Representational_state_transfer", "REST"_) on Wikipedia
 - [REST Architecture](https://www.service-architecture.com/articles/web-services/representational_state_transfer_rest.html)
+=======
+-   [restapitutorial.com](https://www.restapitutorial.com/)
+-   [restcookbook.com](https://restcookbook.com/)
+-   _Interwiki("wikipedia", "Representational_state_transfer", "REST"_) on Wikipedia
+-   [REST Architecture](https://www.service-architecture.com/articles/web-services/representational_state_transfer_rest.html)
+>>>>>>> master
 
 ---
 
 ## Term: RGB
 
+<<<<<<< HEAD
 - Beginner
 - CSS
 - Design
 - Guide
+=======
+-   Beginner
+-   CSS
+-   Design
+-   Guide
+>>>>>>> master
 
 ---
 
@@ -10566,13 +16110,19 @@ There are many ways to describe the RGB components of a color. In _Glossary("CSS
 
 #### See also
 
+<<<<<<< HEAD
 - [RGB color model on Wikipedia](https://en.wikipedia.org/wiki/RGB_color_model)
 - [CSS data type: \<color>](/en-US/docs/Web/CSS/color_value)
+=======
+-   [RGB color model on Wikipedia](https://en.wikipedia.org/wiki/RGB_color_model)
+-   [CSS data type: \<color>](/en-US/docs/Web/CSS/color_value)
+>>>>>>> master
 
 ---
 
 ## Term: RIL
 
+<<<<<<< HEAD
 - B2G
 - Firefox OS
 - Glossary
@@ -10580,6 +16130,15 @@ There are many ways to describe the RGB components of a color. In _Glossary("CSS
 - Intro
 - Mobile
 - Telephony
+=======
+-   B2G
+-   Firefox OS
+-   Glossary
+-   Infrastructure
+-   Intro
+-   Mobile
+-   Telephony
+>>>>>>> master
 
 ---
 
@@ -10587,14 +16146,23 @@ There are many ways to describe the RGB components of a color. In _Glossary("CSS
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Radio Interface Layer"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Radio Interface Layer"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Random Number Generator
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
+=======
+-   CodingScripting
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -10604,23 +16172,39 @@ PRNGs can be used for a variety of applications, such as games.
 
 A cryptographically secure PRNG is a PRNG with certain extra properties making it suitable for use in cryptography. These include:
 
+<<<<<<< HEAD
 - that it's computationally unfeasible for an attacker (without knowledge of the seed) to predict its output
 - that if an attacker can work out its current state, this should not enable the attacker to work out previously emitted numbers.
+=======
+-   that it's computationally unfeasible for an attacker (without knowledge of the seed) to predict its output
+-   that if an attacker can work out its current state, this should not enable the attacker to work out previously emitted numbers.
+>>>>>>> master
 
 Most PRNGs are not cryptographically secure.
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Pseudorandom number generator"_) on Wikipedia
 - _jsxref("Math.random()"_), a built-in JavaScript PRNG function. Note that this is not a cryptographically secure PRNG.
 - _domxref("Crypto.getRandomValues()"_): this is intended to provide cryptographically secure numbers.
+=======
+-   _Interwiki("wikipedia", "Pseudorandom number generator"_) on Wikipedia
+-   _jsxref("Math.random()"_), a built-in JavaScript PRNG function. Note that this is not a cryptographically secure PRNG.
+-   _domxref("Crypto.getRandomValues()"_): this is intended to provide cryptographically secure numbers.
+>>>>>>> master
 
 ---
 
 ## Term: Robots.txt
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
+=======
+-   Glossary
+-   Infrastructure
+>>>>>>> master
 
 ---
 
@@ -10630,27 +16214,47 @@ For example, the site admin can forbid crawlers to visit a certain folder (and a
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Robots.txt"_) on Wikipedia
 - <https://developers.google.com/search/reference/robots_txt>
 - Standard specification draft: [https://datatracker.ietf.org/doc/html/draft-rep-wg-topic](https://datatracker.ietf.org/doc/html/draft-rep-wg-topic-00)
 - <https://www.robotstxt.org/>
+=======
+-   _Interwiki("wikipedia", "Robots.txt"_) on Wikipedia
+-   <https://developers.google.com/search/reference/robots_txt>
+-   Standard specification draft: [https://datatracker.ietf.org/doc/html/draft-rep-wg-topic](https://datatracker.ietf.org/doc/html/draft-rep-wg-topic-00)
+-   <https://www.robotstxt.org/>
+>>>>>>> master
 
 ---
 
 ## Term: Round Trip Time (RTT)
 
+<<<<<<< HEAD
 - Beginner
 - Glossary
 - Performance
 - Resource
 - Round Trip Time
 - Web Performance
+=======
+-   Beginner
+-   Glossary
+-   Performance
+-   Resource
+-   Round Trip Time
+-   Web Performance
+>>>>>>> master
 
 ---
 
 > **Round Trip Time (RTT)** is the length time it takes for a data packet to be sent to a destination plus the time it takes for an acknowledgment of that packet to be received back at the origin. The RTT between a network and server can be determined by using the `ping` command.
 
+<<<<<<< HEAD
 ```bash
+=======
+```console
+>>>>>>> master
 $ ping example.com
 PING example.com (216.58.194.174): 56 data bytes
 64 bytes from 216.58.194.174: icmp_seq=0 ttl=55 time=25.050 ms
@@ -10667,14 +16271,23 @@ In the above example, the average round trip time is shown on the final line as 
 
 #### See also
 
+<<<<<<< HEAD
 - [Time to First Byte (TTFB)](/en-US/docs/Glossary/time_to_first_byte)
 - [Latency](/en-US/docs/Glossary/Latency)
+=======
+-   [Time to First Byte (TTFB)](/en-US/docs/Glossary/time_to_first_byte)
+-   [Latency](/en-US/docs/Glossary/Latency)
+>>>>>>> master
 
 ---
 
 ## Term: Routers
 
+<<<<<<< HEAD
 - Intro
+=======
+-   Intro
+>>>>>>> master
 
 ---
 
@@ -10688,6 +16301,7 @@ In the above example, the average round trip time is shown on the final line as 
 
 For network layer context:
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Router (computing)"_) on Wikipedia
 
 For SPA in application layer context, most of the popular SPA frameworks has its routing library:
@@ -10695,16 +16309,33 @@ For SPA in application layer context, most of the popular SPA frameworks has its
 - [Angular router](https://angular.io/guide/router)
 - [React router](https://reacttraining.com/react-router)
 - [Vue router](https://router.vuejs.org)
+=======
+-   _Interwiki("wikipedia", "Router (computing)"_) on Wikipedia
+
+For SPA in application layer context, most of the popular SPA frameworks has its routing library:
+
+-   [Angular router](https://angular.io/guide/router)
+-   [React router](https://reacttraining.com/react-router)
+-   [Vue router](https://router.vuejs.org)
+>>>>>>> master
 
 ---
 
 ## Term: RSS
 
+<<<<<<< HEAD
 - Glossary
 - OpenPractices
 - RSS
 - Sharing
 - WebMechanics
+=======
+-   Glossary
+-   OpenPractices
+-   RSS
+-   Sharing
+-   WebMechanics
+>>>>>>> master
 
 ---
 
@@ -10712,8 +16343,13 @@ For SPA in application layer context, most of the popular SPA frameworks has its
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "RSS"_) on Wikipedia
 - [Latest specification](https://www.rssboard.org/rss-specification)
+=======
+-   _Interwiki("wikipedia", "RSS"_) on Wikipedia
+-   [Latest specification](https://www.rssboard.org/rss-specification)
+>>>>>>> master
 
 ---
 
@@ -10725,6 +16361,7 @@ For SPA in application layer context, most of the popular SPA frameworks has its
 
 A basic command looks like this:
 
+<<<<<<< HEAD
 ```bash
 rsync [-options] SOURCE user@x.x.x.x:DESTINATION
 ```
@@ -10738,6 +16375,21 @@ rsync [-options] SOURCE user@x.x.x.x:DESTINATION
 You can also make a connection over SSH using the `-e` option as shown:
 
 ```bash
+=======
+```console
+rsync [-options] SOURCE user@x.x.x.x:DESTINATION
+```
+
+-   `-options` is a dash followed by one or more letters, for example `-v` for verbose error messages, and `-b` to make backups. See the full list of options at the [rsync man page.](https://linux.die.net/man/1/rsync) (Search for "Options summary.")
+-   `SOURCE` is the path to the local file or directory that you want to copy or synchronize
+-   `user@` is the credentials of the user on the remote server you want to copy files over to.
+-   `x.x.x.x` is the IP address of the remote server.
+-   `DESTINATION` is the path to the location you want to copy your directory or files to on the remote server.
+
+You can also make a connection over SSH using the `-e` option as shown:
+
+```console
+>>>>>>> master
 rsync [-options] -e "ssh [SSH DETAILS GO HERE]" SOURCE user@x.x.x.x:DESTINATION
 ```
 
@@ -10747,12 +16399,21 @@ There are numerous examples on the Internet, including those at the [official we
 
 ## Term: RTCP (RTP Control Protocol)
 
+<<<<<<< HEAD
 - Glossary
 - Media
 - Networking
 - Protocol
 - RTCP
 - control
+=======
+-   Glossary
+-   Media
+-   Networking
+-   Protocol
+-   RTCP
+-   control
+>>>>>>> master
 
 ---
 
@@ -10764,19 +16425,33 @@ RTCP periodically transmits control packets to all of an RTP session's participa
 
 #### See also
 
+<<<<<<< HEAD
 - [Introduction to the Real-time Transport Protocol](/en-US/docs/Web/API/WebRTC_API/Intro_to_RTP)
 - _interwiki("wikipedia", "RTP Control Protocol"_)
 - _RFC(3550, 6, "RFC 3550 Section 6"_)
+=======
+-   [Introduction to the Real-time Transport Protocol](/en-US/docs/Web/API/WebRTC_API/Intro_to_RTP)
+-   _interwiki("wikipedia", "RTP Control Protocol"_)
+-   _RFC(3550, 6, "RFC 3550 Section 6"_)
+>>>>>>> master
 
 ---
 
 ## Term: RTF
 
+<<<<<<< HEAD
 - Composing
 - Format
 - Glossary
 - RTF
 - Rich Text Format
+=======
+-   Composing
+-   Format
+-   Glossary
+-   RTF
+-   Rich Text Format
+>>>>>>> master
 
 ---
 
@@ -10786,16 +16461,27 @@ Three programmers in the Microsoft Word team created RTF in the 1980s, and Micro
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Rich Text Format"_) on Wikipedia
 - [final specification from Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=10725)
+=======
+-   _Interwiki("wikipedia", "Rich Text Format"_) on Wikipedia
+-   [final specification from Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=10725)
+>>>>>>> master
 
 ---
 
 ## Term: RTL (Right to Left)
 
+<<<<<<< HEAD
 - Composing
 - Glossary
 - Localization
+=======
+-   Composing
+-   Glossary
+-   Localization
+>>>>>>> master
 
 ---
 
@@ -10807,20 +16493,35 @@ The opposite of RTL, LTR (Left To Right) is used in other languages, including E
 
 #### See also
 
+<<<<<<< HEAD
 - [MDN Web Docs Glossary](/en-US/docs/Glossary)
 
     - _Glossary("Localization"_)
     - _Glossary("LTR", "LTR (Left to Right)"_)
     - _Glossary("RTL", "RTL (Right to Left)"_)
+=======
+-   [MDN Web Docs Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("Localization"_)
+    -   _Glossary("LTR", "LTR (Left to Right)"_)
+    -   _Glossary("RTL", "RTL (Right to Left)"_)
+>>>>>>> master
 
 ---
 
 ## Term: RTP (Real-time Transport Protocol) and SRTP (Secure RTP)
 
+<<<<<<< HEAD
 - Glossary
 - Network
 - Protocol
 - RTP
+=======
+-   Glossary
+-   Network
+-   Protocol
+-   RTP
+>>>>>>> master
 
 ---
 
@@ -10832,18 +16533,31 @@ RTP is rarely used alone; instead, it is used in conjunction with other protocol
 
 #### See also
 
+<<<<<<< HEAD
 - [Introduction to the Real-time Transport Protocol](/en-US/docs/Web/API/WebRTC_API/Intro_to_RTP)
 - _Interwiki("wikipedia", "Real-time_Transport_Protocol","RTP"_) on Wikipedia
 - _RFC(3550_) (one of the documents that specify precisely how the protocol works)
+=======
+-   [Introduction to the Real-time Transport Protocol](/en-US/docs/Web/API/WebRTC_API/Intro_to_RTP)
+-   _Interwiki("wikipedia", "Real-time_Transport_Protocol","RTP"_) on Wikipedia
+-   _RFC(3550_) (one of the documents that specify precisely how the protocol works)
+>>>>>>> master
 
 ---
 
 ## Term: 'RTSP: Real-time streaming protocol'
 
+<<<<<<< HEAD
 - Glossary
 - Real-time streaming protocol
 - Reference
 - rtsp
+=======
+-   Glossary
+-   Real-time streaming protocol
+-   Reference
+-   rtsp
+>>>>>>> master
 
 ---
 
@@ -10851,19 +16565,33 @@ RTP is rarely used alone; instead, it is used in conjunction with other protocol
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Real_Time_Streaming_Protocol","RTSP"_) on Wikipedia
 - [RFC 7826](https://datatracker.ietf.org/doc/html/rfc7826) (one of the documents that specifies precisely how the protocol works)
 - [Glossary](/en-US/docs/Glossary)
 
     - _Glossary("RTSP"_)
+=======
+-   _Interwiki("wikipedia", "Real_Time_Streaming_Protocol","RTSP"_) on Wikipedia
+-   [RFC 7826](https://datatracker.ietf.org/doc/html/rfc7826) (one of the documents that specifies precisely how the protocol works)
+-   [Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("RTSP"_)
+>>>>>>> master
 
 ---
 
 ## Term: Ruby
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - Ruby
+=======
+-   CodingScripting
+-   Glossary
+-   Ruby
+>>>>>>> master
 
 ---
 
@@ -10873,16 +16601,27 @@ Ruby is also a method for annotating east Asian text in HTML documents to provid
 
 #### See also
 
+<<<<<<< HEAD
 - [Ruby](https://en.wikipedia.org/wiki/Ruby_%28programming_language%29) on Wikipedia
 - [Ruby's official web site](https://www.ruby-lang.org)
 - [Ruby On Rails' official web site](https://rubyonrails.org/)
+=======
+-   [Ruby](https://en.wikipedia.org/wiki/Ruby_%28programming_language%29) on Wikipedia
+-   [Ruby's official web site](https://www.ruby-lang.org)
+-   [Ruby On Rails' official web site](https://rubyonrails.org/)
+>>>>>>> master
 
 ---
 
 ## Term: Safe
 
+<<<<<<< HEAD
 - Glossary
 - Disambiguation
+=======
+-   Glossary
+-   Disambiguation
+>>>>>>> master
 
 ---
 
@@ -10894,9 +16633,15 @@ Ruby is also a method for annotating east Asian text in HTML documents to provid
 
 ## Term: Same-origin policy
 
+<<<<<<< HEAD
 - Glossary
 - Same-origin policy
 - origin
+=======
+-   Glossary
+-   Same-origin policy
+-   origin
+>>>>>>> master
 
 ---
 
@@ -10906,19 +16651,33 @@ It helps isolate potentially malicious documents, reducing possible attack vecto
 
 #### See also
 
+<<<<<<< HEAD
 - [Same-origin policy](/en-US/docs/Web/Security/Same-origin_policy)
 - [MDN Web Docs Glossary](/en-US/docs/Glossary):
 
     - _Glossary("CORS"_)
     - _Glossary("origin"_)
+=======
+-   [Same-origin policy](/en-US/docs/Web/Security/Same-origin_policy)
+-   [MDN Web Docs Glossary](/en-US/docs/Glossary):
+
+    -   _Glossary("CORS"_)
+    -   _Glossary("origin"_)
+>>>>>>> master
 
 ---
 
 ## Term: SCM
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - SCM
+=======
+-   CodingScripting
+-   Glossary
+-   SCM
+>>>>>>> master
 
 ---
 
@@ -10928,15 +16687,25 @@ Some SCM systems include CVS, SVN, GIT.
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Revision control"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Revision control"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Scope
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - JavaScript
+=======
+-   CodingScripting
+-   Glossary
+-   JavaScript
+>>>>>>> master
 
 ---
 
@@ -10946,9 +16715,14 @@ A **_glossary("function"_)** serves as a **closure** in _glossary("JavaScript"_)
 
 ---
 
+<<<<<<< HEAD
 
 ```js
 
+=======
+```js
+//
+>>>>>>> master
 
 function exampleFunction() {
     var x = 'declared inside function'; // x can only be used in exampleFunction
@@ -10962,6 +16736,10 @@ console.log(x); // Causes error
 However, the following code is valid due to the variable being declared outside the function, making it global:
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 var x = 'declared outside function';
 
 exampleFunction();
@@ -10977,17 +16755,29 @@ console.log(x);
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Scope (computer science)"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Scope (computer science)"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Screen reader
 
+<<<<<<< HEAD
 - Accessibility
 - Glossary
 - Screen reader
 - Voice Over
 - Voiceover
+=======
+-   Accessibility
+-   Glossary
+-   Screen reader
+-   Voice Over
+-   Voiceover
+>>>>>>> master
 
 ---
 
@@ -11003,6 +16793,7 @@ Desktop/laptop screen reader users navigate websites with a keyboard or other no
 
 Just like keyboard navigation without VoiceOver, you can navigate through interactive elements using the tab key and the arrow keys:
 
+<<<<<<< HEAD
 - Next interactive element: Tab
 - Previous interactive element: Shift + Tab
 - Next radio button in a same named-group: right or down arrow
@@ -11024,15 +16815,45 @@ Navigating through the content of a page is done with the tab key and a series o
 #### See also
 
 - [ARIA](/en-US/docs/Web/Accessibility/ARIA)
+=======
+-   Next interactive element: Tab
+-   Previous interactive element: Shift + Tab
+-   Next radio button in a same named-group: right or down arrow
+-   Previous radio button in a same named-group: left or up arrow
+
+Navigating through the content of a page is done with the tab key and a series of other keys along with Control + Option keys
+
+-   Next heading: Control + Option + H
+-   Next list: Control + Option + X
+-   Next graphic: Control + Option + G
+-   Next table: Control + Option + T
+-   Down an HTML hierarchical order Control + Option + right arrow
+-   Previous heading: Shift + Control + Option + H
+-   Previous list: Shift + Control + Option + X
+-   Previous graphic: Shift + Control + Option + G
+-   Previous table: Shift + Control + Option + T
+-   Up an HTML hierarchical order: Control + Option + left arrow
+
+#### See also
+
+-   [ARIA](/en-US/docs/Web/Accessibility/ARIA)
+>>>>>>> master
 
 ---
 
 ## Term: Script-supporting element
 
+<<<<<<< HEAD
 - Glossary
 - HTML
 - HTML Content Categories
 - scripts
+=======
+-   Glossary
+-   HTML
+-   HTML Content Categories
+-   scripts
+>>>>>>> master
 
 ---
 
@@ -11050,9 +16871,15 @@ _SectionOnPage("/en-US/docs/Web/HTML/Kinds_of_HTML_content", "Script-supporting 
 
 ## Term: Block (scripting)
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - JavaScript
+=======
+-   CodingScripting
+-   Glossary
+-   JavaScript
+>>>>>>> master
 
 ---
 
@@ -11060,14 +16887,23 @@ _SectionOnPage("/en-US/docs/Web/HTML/Kinds_of_HTML_content", "Script-supporting 
 
 #### See also
 
+<<<<<<< HEAD
 - [JavaScript block statement](/en-US/docs/Web/JavaScript/Reference/Statements/block)
+=======
+-   [JavaScript block statement](/en-US/docs/Web/JavaScript/Reference/Statements/block)
+>>>>>>> master
 
 ---
 
 ## Term: Scroll container
 
+<<<<<<< HEAD
 - Glossary
 - scroll container
+=======
+-   Glossary
+-   scroll container
+>>>>>>> master
 
 ---
 
@@ -11077,6 +16913,7 @@ The scroll container allows the user to scroll through parts of the overflow reg
 
 #### See also
 
+<<<<<<< HEAD
 - [MDN Web Docs Glossary](/en-US/docs/Glossary):
 
     - _glossary("Scroll container"_)
@@ -11085,13 +16922,28 @@ The scroll container allows the user to scroll through parts of the overflow reg
 - Related CSS Properties:
 
     - _cssxref("overflow"_)
+=======
+-   [MDN Web Docs Glossary](/en-US/docs/Glossary):
+
+    -   _glossary("Scroll container"_)
+    -   _glossary("Scrollport"_)
+
+-   Related CSS Properties:
+
+    -   _cssxref("overflow"_)
+>>>>>>> master
 
 ---
 
 ## Term: Scrollport
 
+<<<<<<< HEAD
 - Glossary
 - scrollport
+=======
+-   Glossary
+-   scrollport
+>>>>>>> master
 
 ---
 
@@ -11099,6 +16951,7 @@ The scroll container allows the user to scroll through parts of the overflow reg
 
 #### See also
 
+<<<<<<< HEAD
 - [MDN Web Docs Glossary](/en-US/docs/Glossary):
 
     - _glossary("Scroll container"_)
@@ -11107,15 +16960,32 @@ The scroll container allows the user to scroll through parts of the overflow reg
 - Related CSS Properties:
 
     - _cssxref("overflow"_)
+=======
+-   [MDN Web Docs Glossary](/en-US/docs/Glossary):
+
+    -   _glossary("Scroll container"_)
+    -   _glossary("Scrollport"_)
+
+-   Related CSS Properties:
+
+    -   _cssxref("overflow"_)
+>>>>>>> master
 
 ---
 
 ## Term: SCTP
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
 - SCTP
 - WebRTC
+=======
+-   Glossary
+-   Infrastructure
+-   SCTP
+-   WebRTC
+>>>>>>> master
 
 ---
 
@@ -11123,19 +16993,33 @@ The scroll container allows the user to scroll through parts of the overflow reg
 
 #### See also
 
+<<<<<<< HEAD
 - _RFC(4960, "Stream Control Transmission Protocol"_)
 - _Interwiki("wikipedia", "Stream Control Transmission Protocol"_) on Wikipedia
+=======
+-   _RFC(4960, "Stream Control Transmission Protocol"_)
+-   _Interwiki("wikipedia", "Stream Control Transmission Protocol"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: SDP
 
+<<<<<<< HEAD
 - Advanced
 - Collaborating
 - Glossary
 - Infrastructure
 - Protocol
 - WebRTC
+=======
+-   Advanced
+-   Collaborating
+-   Glossary
+-   Infrastructure
+-   Protocol
+-   WebRTC
+>>>>>>> master
 
 ---
 
@@ -11159,13 +17043,19 @@ SDP is never used alone, but by protocols like _Glossary("RTP"_) and _Glossary("
 
 #### See also
 
+<<<<<<< HEAD
 - [WebRTC protocols](/en-US/docs/Web/API/WebRTC_API/Protocols)
 - _Interwiki("wikipedia", "Session Description Protocol"_) on Wikipedia
+=======
+-   [WebRTC protocols](/en-US/docs/Web/API/WebRTC_API/Protocols)
+-   _Interwiki("wikipedia", "Session Description Protocol"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Search engine
 
+<<<<<<< HEAD
 - Definition
 - Glossary
 - Indexing
@@ -11176,6 +17066,18 @@ SDP is never used alone, but by protocols like _Glossary("RTP"_) and _Glossary("
 - World Wide Web
 - details
 - google
+=======
+-   Definition
+-   Glossary
+-   Indexing
+-   Search Engine
+-   Searching
+-   Web Crawling
+-   WebMechanics
+-   World Wide Web
+-   details
+-   google
+>>>>>>> master
 
 ---
 
@@ -11183,24 +17085,41 @@ SDP is never used alone, but by protocols like _Glossary("RTP"_) and _Glossary("
 
 A search engine conducts the following processes:
 
+<<<<<<< HEAD
 - **Web crawling:** Searching web sites by navigating _Glossary("Hyperlink", "Hyperlinks"_) on web pages, both within a site, and from one site to another. A web site owner can exclude areas of the site from being accessed by a search engine's _web crawler_ (or _spider_), by defining "robot exclusion" information in a file named `robots.txt`.
 - **Indexing:** Associating keywords and other information with specific web pages that have been crawled. This enables users to find relevant pages as quickly as possible.
 - **Searching:** Looking for relevant web pages based on queries consisting of key words and other commands to the search engine. The search engine finds the URLs of pages that match the query, and ranks them based on their relevance. It then presents results to the user in order of the ranking.
+=======
+-   **Web crawling:** Searching web sites by navigating _Glossary("Hyperlink", "Hyperlinks"_) on web pages, both within a site, and from one site to another. A web site owner can exclude areas of the site from being accessed by a search engine's _web crawler_ (or _spider_), by defining "robot exclusion" information in a file named `robots.txt`.
+-   **Indexing:** Associating keywords and other information with specific web pages that have been crawled. This enables users to find relevant pages as quickly as possible.
+-   **Searching:** Looking for relevant web pages based on queries consisting of key words and other commands to the search engine. The search engine finds the URLs of pages that match the query, and ranks them based on their relevance. It then presents results to the user in order of the ranking.
+>>>>>>> master
 
 The most popular search engine is Google. Other top search engines include Yahoo!, Bing, Baidu, and AOL.
 
 #### See also
 
+<<<<<<< HEAD
 - [Web search engine](https://en.wikipedia.org/wiki/Web_search_engine) on Wikipedia
 - [Search engine](https://www.webopedia.com/TERM/S/search_engine.html) on Webopedia
 - [How Internet search engines work](https://computer.howstuffworks.com/internet/basics/search-engine.htm) on How Stuff Works
+=======
+-   [Web search engine](https://en.wikipedia.org/wiki/Web_search_engine) on Wikipedia
+-   [Search engine](https://www.webopedia.com/TERM/S/search_engine.html) on Webopedia
+-   [How Internet search engines work](https://computer.howstuffworks.com/internet/basics/search-engine.htm) on How Stuff Works
+>>>>>>> master
 
 ---
 
 ## Term: Second-level Domain
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
+=======
+-   Glossary
+-   Infrastructure
+>>>>>>> master
 
 ---
 
@@ -11214,6 +17133,7 @@ As another example, in `developer.mozilla.org`, the `developer` subdomain is use
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Second-level domain", "SLD"_) (Wikipedia)
 - [Glossary](/en-US/docs/Glossary)
 
@@ -11221,14 +17141,29 @@ As another example, in `developer.mozilla.org`, the `developer` subdomain is use
     - _Glossary("Domain"_)
     - _Glossary("Domain name"_)
     - _Glossary("TLD"_)
+=======
+-   _Interwiki("wikipedia", "Second-level domain", "SLD"_) (Wikipedia)
+-   [Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("DNS"_)
+    -   _Glossary("Domain"_)
+    -   _Glossary("Domain name"_)
+    -   _Glossary("TLD"_)
+>>>>>>> master
 
 ---
 
 ## Term: Secure Context
 
+<<<<<<< HEAD
 - Glossary
 - Security
 - Secure contexts
+=======
+-   Glossary
+-   Security
+-   Secure contexts
+>>>>>>> master
 
 ---
 
@@ -11240,10 +17175,17 @@ For more information see: [Web > Security > Secure Contexts](/en-US/docs/Web/Sec
 
 ## Term: Signature (security)
 
+<<<<<<< HEAD
 - Cryptography
 - Glossary
 - Privacy
 - Security
+=======
+-   Cryptography
+-   Glossary
+-   Privacy
+-   Security
+>>>>>>> master
 
 ---
 
@@ -11253,21 +17195,35 @@ From the _glossary("hash"_) of a given message, the **signing process** first ge
 
 On receiving the message, the **verification process**
 
+<<<<<<< HEAD
 - _authenticates the sender -_ uses the sender's public key to _glossary("decryption","decrypt"_) the signature and recover the hash, which can only be created with the sender's private key, and
 - _checks message integrity -_ compares the hash with a newly calculated one from the received document (the two hashes will differ if the document has been tampered with)
+=======
+-   _authenticates the sender -_ uses the sender's public key to _glossary("decryption","decrypt"_) the signature and recover the hash, which can only be created with the sender's private key, and
+-   _checks message integrity -_ compares the hash with a newly calculated one from the received document (the two hashes will differ if the document has been tampered with)
+>>>>>>> master
 
 The system fails if the private key is compromised or the recipient is deceitfully given the wrong public key.
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Digital signature"_) on Wikipedia
 - See _glossary("digest"_), _glossary("encryption"_)
+=======
+-   _Interwiki("wikipedia", "Digital signature"_) on Wikipedia
+-   See _glossary("digest"_), _glossary("encryption"_)
+>>>>>>> master
 
 ---
 
 ## Term: Self-Executing Anonymous Function
 
+<<<<<<< HEAD
 - Glossary
+=======
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -11279,10 +17235,17 @@ See the IIFE glossary page linked above for more information.
 
 ## Term: Semantics
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - HTML
 - semantics
+=======
+-   CodingScripting
+-   Glossary
+-   HTML
+-   semantics
+>>>>>>> master
 
 ---
 
@@ -11318,11 +17281,19 @@ HTML should be coded to represent the _data_ that will be populated and not base
 
 Some of the benefits from writing semantic markup are as follows:
 
+<<<<<<< HEAD
 - Search engines will consider its contents as important keywords to influence the page's search rankings (see _glossary("SEO"_))
 - Screen readers can use it as a signpost to help visually impaired users navigate a page
 - Finding blocks of meaningful code is significantly easier than searching through endless `div`s with or without semantic or namespaced classes
 - Suggests to the developer the type of data that will be populated
 - Semantic naming mirrors proper custom element/component naming
+=======
+-   Search engines will consider its contents as important keywords to influence the page's search rankings (see _glossary("SEO"_))
+-   Screen readers can use it as a signpost to help visually impaired users navigate a page
+-   Finding blocks of meaningful code is significantly easier than searching through endless `div`s with or without semantic or namespaced classes
+-   Suggests to the developer the type of data that will be populated
+-   Semantic naming mirrors proper custom element/component naming
+>>>>>>> master
 
 When approaching which markup to use, ask yourself, "What element(s) best describe/represent the data that I'm going to populate?" For example, is it a list of data?; ordered, unordered?; is it an article with sections and an aside of related information?; does it list out definitions?; is it a figure or image that needs a caption?; should it have a header and a footer in addition to the global site-wide header and footer?; etc.
 
@@ -11330,6 +17301,7 @@ When approaching which markup to use, ask yourself, "What element(s) best descri
 
 These are _some_ of the roughly 100 semantic [elements](/en-US/docs/Web/HTML/Element) available:
 
+<<<<<<< HEAD
 - _htmlelement("article"_)
 - _htmlelement("aside"_)
 - _htmlelement("details"_)
@@ -11368,16 +17340,64 @@ These are _some_ of the roughly 100 semantic [elements](/en-US/docs/Web/HTML/Ele
     - _htmlelement("section"_)
     - _htmlelement("summary"_)
     - _htmlelement("time"_)
+=======
+-   _htmlelement("article"_)
+-   _htmlelement("aside"_)
+-   _htmlelement("details"_)
+-   _htmlelement("figcaption"_)
+-   _htmlelement("figure"_)
+-   _htmlelement("footer"_)
+-   _htmlelement("header"_)
+-   _htmlelement("main"_)
+-   _htmlelement("mark"_)
+-   _htmlelement("nav"_)
+-   _htmlelement("section"_)
+-   _htmlelement("summary"_)
+-   _htmlelement("time"_)
+
+#### See also
+
+-   [HTML element reference](/en-US/docs/Web/HTML/Element#inline_text_semantics) on MDN
+-   [Using HTML sections and outlines](/en-US/docs/Web/HTML/Element/Heading_Elements#problems_solved_by_html5) on MDN
+-   _interwiki("wikipedia", "Semantics#Computer_science", "The meaning of semantics in computer science"_) on Wikipedia
+-   [Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("SEO"_)
+
+-   Semantic elements in HTML:
+
+    -   _htmlelement("article"_)
+    -   _htmlelement("aside"_)
+    -   _htmlelement("details"_)
+    -   _htmlelement("figcaption"_)
+    -   _htmlelement("figure"_)
+    -   _htmlelement("footer"_)
+    -   _htmlelement("header"_)
+    -   _htmlelement("main"_)
+    -   _htmlelement("mark"_)
+    -   _htmlelement("nav"_)
+    -   _htmlelement("section"_)
+    -   _htmlelement("summary"_)
+    -   _htmlelement("time"_)
+>>>>>>> master
 
 ---
 
 ## Term: SEO
 
+<<<<<<< HEAD
 - Glossary
 - Intro
 - SEO
 - Search
 - WebMechanic
+=======
+-   Glossary
+-   Intro
+-   SEO
+-   Search
+-   WebMechanic
+>>>>>>> master
 
 ---
 
@@ -11389,6 +17409,7 @@ Search engines give some guidelines for SEO, but big search engines keep result 
 
 SEO methods fall into three broad classes:
 
+<<<<<<< HEAD
 - technical
 - - : Tag the content using semantic _Glossary("HTML"_). When exploring the website, crawlers should only find the content you want indexed.
 - copywriting
@@ -11400,15 +17421,35 @@ SEO methods fall into three broad classes:
 
 - _Interwiki("wikipedia", "SEO"_) on Wikipedia
 - [Google Search Central](https://developers.google.com/search/docs)
+=======
+-   technical
+-   -   : Tag the content using semantic _Glossary("HTML"_). When exploring the website, crawlers should only find the content you want indexed.
+-   copywriting
+    -   : Write content using your visitors' vocabulary. Use text as well as images so that crawlers can understand the subject.
+-   popularity
+    -   : You get most traffic when other established sites link to your site.
+
+#### See also
+
+-   _Interwiki("wikipedia", "SEO"_) on Wikipedia
+-   [Google Search Central](https://developers.google.com/search/docs)
+>>>>>>> master
 
 ---
 
 ## Term: Serialization
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - JavaScript
 - Serialization
+=======
+-   CodingScripting
+-   Glossary
+-   JavaScript
+-   Serialization
+>>>>>>> master
 
 ---
 
@@ -11420,16 +17461,27 @@ _Glossary("CSS"_) values are serialized by calling the function _domxref("CSSSty
 
 #### See also
 
+<<<<<<< HEAD
 - [Serialization](https://en.wikipedia.org/wiki/Serialization) on Wikipedia
+=======
+-   [Serialization](https://en.wikipedia.org/wiki/Serialization) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Server Timing
 
+<<<<<<< HEAD
 - Glossary
 - Reference
 - Server Timing
 - Web Performance
+=======
+-   Glossary
+-   Reference
+-   Server Timing
+-   Web Performance
+>>>>>>> master
 
 ---
 
@@ -11437,18 +17489,31 @@ _Glossary("CSS"_) values are serialized by calling the function _domxref("CSSSty
 
 #### See also
 
+<<<<<<< HEAD
 - <https://www.w3.org/TR/server-timing/>
 - [Resource Timing](https://www.w3.org/TR/resource-timing/)
+=======
+-   <https://www.w3.org/TR/server-timing/>
+-   [Resource Timing](https://www.w3.org/TR/resource-timing/)
+>>>>>>> master
 
 ---
 
 ## Term: Server
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
 - Networking
 - Protocol
 - Server
+=======
+-   Glossary
+-   Infrastructure
+-   Networking
+-   Protocol
+-   Server
+>>>>>>> master
 
 ---
 
@@ -11458,6 +17523,7 @@ Services are provided generally over local area networks or wide area networks s
 
 For example:
 
+<<<<<<< HEAD
 - An Internet-connected Web server is sending a _glossary("HTML"_) file to your browser software so that you can read this page
 - Local area network server for file, name, mail, print, and fax
 - Minicomputers, mainframes, and super computers at data centers
@@ -11466,14 +17532,30 @@ For example:
 
 - [Introduction to servers](/en-US/docs/Learn/Common_questions/What_is_a_web_server)
 - _Interwiki("wikipedia", "Server (computing)"_) on Wikipedia
+=======
+-   An Internet-connected Web server is sending a _glossary("HTML"_) file to your browser software so that you can read this page
+-   Local area network server for file, name, mail, print, and fax
+-   Minicomputers, mainframes, and super computers at data centers
+
+#### See also
+
+-   [Introduction to servers](/en-US/docs/Learn/Common_questions/What_is_a_web_server)
+-   _Interwiki("wikipedia", "Server (computing)"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Session Hijacking
 
+<<<<<<< HEAD
 - Glossary
 - Security
 - session hijacking
+=======
+-   Glossary
+-   Security
+-   session hijacking
+>>>>>>> master
 
 ---
 
@@ -11485,12 +17567,21 @@ Most authentication occurs only at the start of a _glossary("TCP"_) session. In 
 
 ### Session hijacking occurs because
 
+<<<<<<< HEAD
 - no account lockout for invalid session IDs
 - weak session-ID generation algorithm
 - insecure handling
 - indefinite session expiration time
 - short session IDs
 - transmission in plain text
+=======
+-   no account lockout for invalid session IDs
+-   weak session-ID generation algorithm
+-   insecure handling
+-   indefinite session expiration time
+-   short session IDs
+-   transmission in plain text
+>>>>>>> master
 
 ### Session hijacking process
 
@@ -11502,6 +17593,7 @@ Most authentication occurs only at the start of a _glossary("TCP"_) session. In 
 
 ### Protection against session hijacking
 
+<<<<<<< HEAD
 - create a secure communication channel with SSH (secure shell)
 - pass authentication cookies over HTTPS connection
 - implement logout functionality so the user can end the session
@@ -11512,15 +17604,34 @@ Most authentication occurs only at the start of a _glossary("TCP"_) session. In 
 #### See also
 
 - _Interwiki("wikipedia", "Session hijacking"_) on Wikipedia
+=======
+-   create a secure communication channel with SSH (secure shell)
+-   pass authentication cookies over HTTPS connection
+-   implement logout functionality so the user can end the session
+-   generate the session ID after successful login
+-   pass encrypted data between the users and the web server
+-   use a string or long random number as a session key
+
+#### See also
+
+-   _Interwiki("wikipedia", "Session hijacking"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: SGML
 
+<<<<<<< HEAD
 - CodingScripting
 - Composing
 - Glossary
 - SGML
+=======
+-   CodingScripting
+-   Composing
+-   Glossary
+-   SGML
+>>>>>>> master
 
 ---
 
@@ -11530,17 +17641,29 @@ On the web, _Glossary("HTML"_) 4, _Glossary("XHTML"_), and _Glossary("XML"_) are
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "SGML"_) on Wikipedia
 - [Introduction to SGML](https://www.isgmlug.org/)
+=======
+-   _Interwiki("wikipedia", "SGML"_) on Wikipedia
+-   [Introduction to SGML](https://www.isgmlug.org/)
+>>>>>>> master
 
 ---
 
 ## Term: Shadow tree
 
+<<<<<<< HEAD
 - DOM
 - Glossary
 - Shadow Tree
 - shadow dom
+=======
+-   DOM
+-   Glossary
+-   Shadow Tree
+-   shadow dom
+>>>>>>> master
 
 ---
 
@@ -11550,17 +17673,29 @@ Nodes within the shadow tree are not affected by anything applied outside the sh
 
 #### See also
 
+<<<<<<< HEAD
 - [Using shadow DOM](/en-US/docs/Web/Web_Components/Using_shadow_DOM)
 - _domxref("Element.shadowRoot"_) and _domxref("Element.attachShadow()"_)
 - _domxref("ShadowRoot"_)
 - _HTMLElement("slot"_)
+=======
+-   [Using shadow DOM](/en-US/docs/Web/Web_Components/Using_shadow_DOM)
+-   _domxref("Element.shadowRoot"_) and _domxref("Element.attachShadow()"_)
+-   _domxref("ShadowRoot"_)
+-   _HTMLElement("slot"_)
+>>>>>>> master
 
 ---
 
 ## Term: Shim
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
+=======
+-   CodingScripting
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -11568,14 +17703,23 @@ Nodes within the shadow tree are not affected by anything applied outside the sh
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Shim (computing)", "Shim"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Shim (computing)", "Shim"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Signature
 
+<<<<<<< HEAD
 - Disambiguation
 - Glossary
+=======
+-   Disambiguation
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -11585,15 +17729,25 @@ Nodes within the shadow tree are not affected by anything applied outside the sh
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Signature_(disambiguation)", "Signature"\_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Signature_(disambiguation)", "Signature"\_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: SIMD
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - JavaScript
+=======
+-   CodingScripting
+-   Glossary
+-   JavaScript
+>>>>>>> master
 
 ---
 
@@ -11603,20 +17757,35 @@ See also _Glossary("SISD"_) for a sequential architecture with no parallelism in
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "SIMD"_) on Wikipedia
 - [Glossary](/en-US/docs/Glossary)
 
     - _Glossary("SIMD"_)
     - _Glossary("SISD"_)
+=======
+-   _Interwiki("wikipedia", "SIMD"_) on Wikipedia
+-   [Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("SIMD"_)
+    -   _Glossary("SISD"_)
+>>>>>>> master
 
 ---
 
 ## Term: Simple header
 
+<<<<<<< HEAD
 - CORS
 - Glossary
 - HTTP
 - Infrastructure
+=======
+-   CORS
+-   Glossary
+-   HTTP
+-   Infrastructure
+>>>>>>> master
 
 ---
 
@@ -11626,9 +17795,15 @@ See also _Glossary("SISD"_) for a sequential architecture with no parallelism in
 
 ## Term: Simple response header
 
+<<<<<<< HEAD
 - CORS
 - Glossary
 - HTTP
+=======
+-   CORS
+-   Glossary
+-   HTTP
+>>>>>>> master
 
 ---
 
@@ -11638,8 +17813,13 @@ See also _Glossary("SISD"_) for a sequential architecture with no parallelism in
 
 ## Term: SISD
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
+=======
+-   CodingScripting
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -11649,16 +17829,27 @@ See also _Glossary("SIMD"_) for a parallel architecture that allows one same ope
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "SISD"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "SISD"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Site map
 
+<<<<<<< HEAD
 - Accessibility
 - Glossary
 - Search
 - Site map
+=======
+-   Accessibility
+-   Glossary
+-   Search
+-   Site map
+>>>>>>> master
 
 ---
 
@@ -11670,9 +17861,15 @@ Structured listings of a site's page help with [search engine optimization](/en-
 
 ## Term: Site
 
+<<<<<<< HEAD
 - Glossary
 - Security
 - WebMechanics
+=======
+-   Glossary
+-   Security
+-   WebMechanics
+>>>>>>> master
 
 ---
 
@@ -11684,6 +17881,7 @@ The concept of a _site_ is used in [SameSite cookies](/en-US/docs/Web/HTTP/Heade
 
 These are the same site because the registrable domain of _mozilla.org_ is the same (different host and files path don't matter):
 
+<<<<<<< HEAD
 - `https://developer.mozilla.org/en-US/docs/`
 - `https://support.mozilla.org/en-US/`
 
@@ -11702,13 +17900,38 @@ These are not same site because the registrable domain of the two URLs differs:
 - [What is a URL](/en-US/docs/Learn/Common_questions/What_is_a_URL)
 - _Glossary("Origin"_)
 - [Same-origin policy](/en-US/docs/Web/Security/Same-origin_policy)
+=======
+-   `https://developer.mozilla.org/en-US/docs/`
+-   `https://support.mozilla.org/en-US/`
+
+These are the same site because scheme and port are not relevant:
+
+-   `http://example.com:8080`
+-   `https://example.com`
+
+These are not same site because the registrable domain of the two URLs differs:
+
+-   `https://developer.mozilla.org/en-US/docs/`
+-   `https://example.com`
+
+#### See also
+
+-   [What is a URL](/en-US/docs/Learn/Common_questions/What_is_a_URL)
+-   _Glossary("Origin"_)
+-   [Same-origin policy](/en-US/docs/Web/Security/Same-origin_policy)
+>>>>>>> master
 
 ---
 
 ## Term: SLD
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
+=======
+-   Glossary
+-   Infrastructure
+>>>>>>> master
 
 ---
 
@@ -11720,10 +17943,17 @@ See [Second Level Domain](/en-US/docs/Glossary/Second-level_Domain) for more inf
 
 ## Term: Sloppy mode
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - JavaScript
 - Sloppy
+=======
+-   CodingScripting
+-   Glossary
+-   JavaScript
+-   Sloppy
+>>>>>>> master
 
 ---
 
@@ -11733,18 +17963,31 @@ The normal, non-strict mode of JavaScript is sometimes referred to as **sloppy m
 
 #### See also
 
+<<<<<<< HEAD
 - "[Strict Mode](http://speakingjs.com/es5/ch07.html#strict_mode)" in chapter 7 ("JavaScript Syntax") in the book Speaking _JavaScript_.
+=======
+-   "[Strict Mode](http://speakingjs.com/es5/ch07.html#strict_mode)" in chapter 7 ("JavaScript Syntax") in the book Speaking _JavaScript_.
+>>>>>>> master
 
 ---
 
 ## Term: Slug
 
+<<<<<<< HEAD
 - Community
 - Glossary
 - Intermediate
 - MDN
 - URL
 - Web
+=======
+-   Community
+-   Glossary
+-   Intermediate
+-   MDN
+-   URL
+-   Web
+>>>>>>> master
 
 ---
 
@@ -11756,11 +17999,19 @@ The normal, non-strict mode of JavaScript is sometimes referred to as **sloppy m
 
 ## Term: Smoke Test
 
+<<<<<<< HEAD
 - Composing
 - Glossary
 - Intro
 - QA
 - Testing
+=======
+-   Composing
+-   Glossary
+-   Intro
+-   QA
+-   Testing
+>>>>>>> master
 
 ---
 
@@ -11768,20 +18019,31 @@ The normal, non-strict mode of JavaScript is sometimes referred to as **sloppy m
 
 Smoke testing answers questions like
 
+<<<<<<< HEAD
 - "Does the program start up correctly?"
 - "Do the main control buttons function?"
 - "Can you save a simple blank new test user account?"
+=======
+-   "Does the program start up correctly?"
+-   "Do the main control buttons function?"
+-   "Can you save a simple blank new test user account?"
+>>>>>>> master
 
 If this basic functionality fails, there is no point investing time in more detailed QA work at this stage.
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Smoke testing (software)"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Smoke testing (software)"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: SMPTE (Society of Motion Picture and Television Engineers)
 
+<<<<<<< HEAD
 - Engineers
 - Glossary
 - Motion Picture
@@ -11790,6 +18052,16 @@ If this basic functionality fails, there is no point investing time in more deta
 - Specifications
 - Television
 - standards
+=======
+-   Engineers
+-   Glossary
+-   Motion Picture
+-   Movies
+-   SMPTE
+-   Specifications
+-   Television
+-   standards
+>>>>>>> master
 
 ---
 
@@ -11801,11 +18073,19 @@ For example, SMPTE defines the standards used for digital cinema used by modern 
 
 ## Term: SMTP
 
+<<<<<<< HEAD
 - Beginner
 - Collaboration
 - Glossary
 - Infrastructure
 - Sharing
+=======
+-   Beginner
+-   Collaboration
+-   Glossary
+-   Infrastructure
+-   Sharing
+>>>>>>> master
 
 ---
 
@@ -11815,6 +18095,7 @@ The protocol is relatively straightforward. Primary complications include suppor
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "SMTP"_) (Wikipedia)
 - [Glossary](/en-US/docs/Glossary)
 
@@ -11822,13 +18103,27 @@ The protocol is relatively straightforward. Primary complications include suppor
     - _glossary("POP"_)
     - _glossary("protocol"_)
     - _Glossary("state machine"_)
+=======
+-   _Interwiki("wikipedia", "SMTP"_) (Wikipedia)
+-   [Glossary](/en-US/docs/Glossary)
+
+    -   _glossary("NNTP"_)
+    -   _glossary("POP"_)
+    -   _glossary("protocol"_)
+    -   _Glossary("state machine"_)
+>>>>>>> master
 
 ---
 
 ## Term: Snap positions
 
+<<<<<<< HEAD
 - Glossary
 - snap positions
+=======
+-   Glossary
+-   snap positions
+>>>>>>> master
 
 ---
 
@@ -11840,10 +18135,17 @@ Defining Snap positions on the scroll container was introduced in the [CSS Scrol
 
 ## Term: SOAP
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
 - SOAP
 - WebMechanics
+=======
+-   Glossary
+-   Infrastructure
+-   SOAP
+-   WebMechanics
+>>>>>>> master
 
 ---
 
@@ -11851,16 +18153,27 @@ Defining Snap positions on the scroll container was introduced in the [CSS Scrol
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "SOAP"_) on Wikipedia
 - [Specification](https://www.w3.org/TR/soap12-part1/)
+=======
+-   _Interwiki("wikipedia", "SOAP"_) on Wikipedia
+-   [Specification](https://www.w3.org/TR/soap12-part1/)
+>>>>>>> master
 
 ---
 
 ## Term: SPA (Single-page application)
 
+<<<<<<< HEAD
 - Glossary
 - SPA
 - single-page app
+=======
+-   Glossary
+-   SPA
+-   single-page app
+>>>>>>> master
 
 ---
 
@@ -11870,6 +18183,7 @@ This therefore allows users to use websites without loading whole new pages from
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Single-page application"_) (Wikipedia)
 - [Understanding client-side JavaScript frameworks](/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks)
 - [Glossary](/en-US/docs/Glossary)
@@ -11883,14 +18197,35 @@ This therefore allows users to use websites without loading whole new pages from
     - [React](https://reactjs.org/)
     - [Angular](https://angular.io/)
     - [Vue.JS](https://vuejs.org/)
+=======
+-   _Interwiki("wikipedia", "Single-page application"_) (Wikipedia)
+-   [Understanding client-side JavaScript frameworks](/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks)
+-   [Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("API"_)
+    -   _Glossary("AJAX"_)
+    -   _Glossary("JavaScript"_)
+
+-   Popular SPA frameworks:
+
+    -   [React](https://reactjs.org/)
+    -   [Angular](https://angular.io/)
+    -   [Vue.JS](https://vuejs.org/)
+>>>>>>> master
 
 ---
 
 ## Term: Specification
 
+<<<<<<< HEAD
 - Glossary
 - OpenPractices
 - Standardization
+=======
+-   Glossary
+-   OpenPractices
+-   Standardization
+>>>>>>> master
 
 ---
 
@@ -11898,18 +18233,31 @@ This therefore allows users to use websites without loading whole new pages from
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Specification"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Specification"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Speculative parsing
 
+<<<<<<< HEAD
 - Advanced
 - HTML
 - HTML5
 - NeedsUpdate
 - Web Development
 - Web Performance
+=======
+-   Advanced
+-   HTML
+-   HTML5
+-   NeedsUpdate
+-   Web Development
+-   Web Performance
+>>>>>>> master
 
 ---
 
@@ -11923,19 +18271,38 @@ To make speculative loads of linked scripts, style sheets and images successful,
 
 Speculative tree building fails when `document.write()` changes the tree builder state such that the speculative state after the `</script>` tag no longer holds when all the content inserted by `document.write()` has been parsed. However, only unusual uses of `document.write()` cause trouble. Here are the things to avoid:
 
+<<<<<<< HEAD
 - Don't write unbalanced trees. `<script>document.write("<div>");</script>` is bad. `<script>document.write("<div></div>");</script>` is OK.
 - Don't write an unfinished token. `<script>document.write("<div></div");</script>` is bad.
 - Don't finish your writing with a carriage return. `<script>document.write("Hello World!\r");</script>` is bad. `<script>document.write("Hello World!\n");</script>` is OK.
 - Don't format part of a table. `<table><script>document.write("<tr><td>Hello World!</td></tr>");</script></table>` is bad.
+=======
+-   Don't write unbalanced trees. `<script>document.write("<div>");</script>` is bad. `<script>document.write("<div>
+</div>");</script>` is OK.
+-   Don't write an unfinished token. `<script>document.write("<div> </div");</script>` is bad.
+-   Don't finish your writing with a carriage return. `<script>document.write("Hello World!\r");</script>` is bad. `<script>document.write("Hello World!\n");</script>` is OK.
+-   Don't format part of a table. `<table>
+    <script>document.write("<tr>
+    <td>Hello World!</td>
+    </tr>");</script>
+    </table>` is bad.
+>>>>>>> master
 
 ---
 
 ## Term: Speed index
 
+<<<<<<< HEAD
 - Glossary
 - Performance
 - Reference
 - Web Performance
+=======
+-   Glossary
+-   Performance
+-   Reference
+-   Web Performance
+>>>>>>> master
 
 ---
 
@@ -11947,17 +18314,29 @@ The calculation calculates what percent of the page is visually complete at ever
 
 #### See also
 
+<<<<<<< HEAD
 - [Learn web performance](/en-US/docs/Learn/Performance)
+=======
+-   [Learn web performance](/en-US/docs/Learn/Performance)
+>>>>>>> master
 
 ---
 
 ## Term: SQL Injection
 
+<<<<<<< HEAD
 - Glossary
 - Security
 - Sql
 - Sql Injection
 - Webapp
+=======
+-   Glossary
+-   Security
+-   Sql
+-   Sql Injection
+-   Webapp
+>>>>>>> master
 
 ---
 
@@ -12019,17 +18398,29 @@ So due to (1) each single quote (') in the input string is replaced with double 
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "SQL injection"_) on Wikipedia
 - [Explanation of SQL injection ](https://www.owasp.org/index.php/SQL_Injection)on OWASP (Open Web Application Security Project)
+=======
+-   _Interwiki("wikipedia", "SQL injection"_) on Wikipedia
+-   [Explanation of SQL injection ](https://www.owasp.org/index.php/SQL_Injection)on OWASP (Open Web Application Security Project)
+>>>>>>> master
 
 ---
 
 ## Term: SQL
 
+<<<<<<< HEAD
 - CodingScripting
 - Database
 - Glossary
 - Sql
+=======
+-   CodingScripting
+-   Database
+-   Glossary
+-   Sql
+>>>>>>> master
 
 ---
 
@@ -12037,16 +18428,27 @@ So due to (1) each single quote (') in the input string is replaced with double 
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "SQL"_) on Wikipedia
 - [Learn SQL on sqlzoo.net](https://sqlzoo.net/wiki/SQL_Tutorial)
 - [Tutorials Point](https://www.tutorialspoint.com/sql/)
+=======
+-   _Interwiki("wikipedia", "SQL"_) on Wikipedia
+-   [Learn SQL on sqlzoo.net](https://sqlzoo.net/wiki/SQL_Tutorial)
+-   [Tutorials Point](https://www.tutorialspoint.com/sql/)
+>>>>>>> master
 
 ---
 
 ## Term: SRI
 
+<<<<<<< HEAD
 - CSP
 - Security
+=======
+-   CSP
+-   Security
+>>>>>>> master
 
 ---
 
@@ -12054,18 +18456,31 @@ So due to (1) each single quote (') in the input string is replaced with double 
 
 #### See also
 
+<<<<<<< HEAD
 - [Subresource Integrity](/en-US/docs/Web/Security/Subresource_Integrity)
 - _HTTPHeader("Content-Security-Policy"_): _CSP("require-sri-for"_)
+=======
+-   [Subresource Integrity](/en-US/docs/Web/Security/Subresource_Integrity)
+-   _HTTPHeader("Content-Security-Policy"_): _CSP("require-sri-for"_)
+>>>>>>> master
 
 ---
 
 ## Term: Secure Sockets Layer (SSL)
 
+<<<<<<< HEAD
 - Glossary
 - SSL
 - Security
 - TLS
 - Web Performance
+=======
+-   Glossary
+-   SSL
+-   Security
+-   TLS
+-   Web Performance
+>>>>>>> master
 
 ---
 
@@ -12073,20 +18488,35 @@ So due to (1) each single quote (') in the input string is replaced with double 
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Transport Layer Security"_) (Wikipedia)
 - [Transport Layer Security (TLS) protocol](/en-US/docs/Web/Security/Transport_Layer_Security)
 - [Glossary](/en-US/docs/Glossary)
 
     - _Glossary("HTTPS"_)
     - _Glossary("TLS"_)
+=======
+-   _Interwiki("wikipedia", "Transport Layer Security"_) (Wikipedia)
+-   [Transport Layer Security (TLS) protocol](/en-US/docs/Web/Security/Transport_Layer_Security)
+-   [Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("HTTPS"_)
+    -   _Glossary("TLS"_)
+>>>>>>> master
 
 ---
 
 ## Term: Stacking context
 
+<<<<<<< HEAD
 - CSS
 - CodingScripting
 - Glossary
+=======
+-   CSS
+-   CodingScripting
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -12094,12 +18524,17 @@ So due to (1) each single quote (') in the input string is replaced with double 
 
 #### See also
 
+<<<<<<< HEAD
 - [Further explanation and example](/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context)
+=======
+-   [Further explanation and example](/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context)
+>>>>>>> master
 
 ---
 
 ## Term: State machine
 
+<<<<<<< HEAD
 - CodingScripting
 - Finite
 - Glossary
@@ -12108,6 +18543,16 @@ So due to (1) each single quote (') in the input string is replaced with double 
 - Moore
 - State Machine
 - Turing Machine
+=======
+-   CodingScripting
+-   Finite
+-   Glossary
+-   Input
+-   Mealy
+-   Moore
+-   State Machine
+-   Turing Machine
+>>>>>>> master
 
 ---
 
@@ -12119,10 +18564,17 @@ Looking at the final state, you can discern something about the series of inputs
 
 There are two types of basic state machines:
 
+<<<<<<< HEAD
 - deterministic finite state machine
 - - : This kind allows only one possible transition for any allowed input. This is like the "if" _Glossary("statement"_) in that `if x == true then doThis else doThat` is not possible. The computer must perform _one_ of the two options.
 - non-deterministic finite state machine
     - : Given some state, an input can lead to more than one different state.
+=======
+-   deterministic finite state machine
+-   -   : This kind allows only one possible transition for any allowed input. This is like the "if" _Glossary("statement"_) in that `if x == true then doThis else doThat` is not possible. The computer must perform _one_ of the two options.
+-   non-deterministic finite state machine
+    -   : Given some state, an input can lead to more than one different state.
+>>>>>>> master
 
 _Figure 1: Deterministic Finite State Machine_
 
@@ -12140,18 +18592,31 @@ Note that any _Glossary("regular expression"_) can be represented by a state mac
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Finite-state machine"_) on Wikipedia
 - _Interwiki("wikipedia", "UML state machine"_) on Wikipedia
 - _Interwiki("wikipedia", "Moore machine"_) on Wikipedia
 - _Interwiki("wikipedia", "Mealy machine"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Finite-state machine"_) on Wikipedia
+-   _Interwiki("wikipedia", "UML state machine"_) on Wikipedia
+-   _Interwiki("wikipedia", "Moore machine"_) on Wikipedia
+-   _Interwiki("wikipedia", "Mealy machine"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Statement
 
+<<<<<<< HEAD
 - Beginner
 - CodingScripting
 - Glossary
+=======
+-   Beginner
+-   CodingScripting
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -12159,19 +18624,33 @@ Note that any _Glossary("regular expression"_) can be represented by a state mac
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Statement (computer science)"_) on Wikipedia
 - [JavaScript statements and declarations](/en-US/docs/Web/JavaScript/Reference/Statements)
+=======
+-   _Interwiki("wikipedia", "Statement (computer science)"_) on Wikipedia
+-   [JavaScript statements and declarations](/en-US/docs/Web/JavaScript/Reference/Statements)
+>>>>>>> master
 
 ---
 
 ## Term: Static method
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - JavaScript
 - Method
 - Static
 - Static Method
+=======
+-   CodingScripting
+-   Glossary
+-   JavaScript
+-   Method
+-   Static
+-   Static Method
+>>>>>>> master
 
 ---
 
@@ -12186,12 +18665,20 @@ Methods called on object instances are called _instance methods_.
 In the [Notifications API](/en-US/docs/Web/API/Notifications_API), the _domxref("Notification.requestPermission()"_) method is called on the actual _domxref("Notification"_) constructor itself — it is a static method:
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 let promise = Notification.requestPermission();
 ```
 
 The _domxref("Notification.close()"_) method on the other hand, is an instance method — it is called on an specific notification object instance to close the system notification it represents:
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 let myNotification = new Notification('This is my notification');
 
 myNotification.close();
@@ -12199,20 +18686,35 @@ myNotification.close();
 
 #### See also
 
+<<<<<<< HEAD
 - [Static Method](https://www.techopedia.com/definition/24034/static-method) on Techopedia
 - [static](/en-US/docs/Web/JavaScript/Reference/Classes/static)
 - [MDN Web Docs Glossary](/en-US/docs/Glossary)
 
     - _Glossary("Object"_)
     - _Glossary("Method"_)
+=======
+-   [Static Method](https://www.techopedia.com/definition/24034/static-method) on Techopedia
+-   [static](/en-US/docs/Web/JavaScript/Reference/Classes/static)
+-   [MDN Web Docs Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("Object"_)
+    -   _Glossary("Method"_)
+>>>>>>> master
 
 ---
 
 ## Term: Static typing
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - Type
+=======
+-   CodingScripting
+-   Glossary
+-   Type
+>>>>>>> master
 
 ---
 
@@ -12220,15 +18722,25 @@ myNotification.close();
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Type system"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Type system"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Strict mode
 
+<<<<<<< HEAD
 - Glossary
 - JavaScript
 - Reference
+=======
+-   Glossary
+-   JavaScript
+-   Reference
+>>>>>>> master
 
 ---
 
@@ -12238,19 +18750,33 @@ Strict mode for an entire script is invoked by including the statement `"use str
 
 #### See also
 
+<<<<<<< HEAD
 - [Strict mode](/en-US/docs/Web/JavaScript/Reference/Strict_mode)
 - [Transitioning to strict mode](/en-US/docs/Web/JavaScript/Reference/Strict_mode/Transitioning_to_strict_mode)
 - [Glossary](/en-US/docs/Glossary)
 
     - _Glossary("Sloppy mode"_)
+=======
+-   [Strict mode](/en-US/docs/Web/JavaScript/Reference/Strict_mode)
+-   [Transitioning to strict mode](/en-US/docs/Web/JavaScript/Reference/Strict_mode/Transitioning_to_strict_mode)
+-   [Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("Sloppy mode"_)
+>>>>>>> master
 
 ---
 
 ## Term: Stringifier
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - Stringifier
+=======
+-   CodingScripting
+-   Glossary
+-   Stringifier
+>>>>>>> master
 
 ---
 
@@ -12258,16 +18784,27 @@ Strict mode for an entire script is invoked by including the statement `"use str
 
 #### See also
 
+<<<<<<< HEAD
 - Stringifiers in [Information contained in a WebIDL file](/en-US/docs/MDN/Contribute/Howto/Write_an_API_reference/Information_contained_in_a_WebIDL_file#stringifier)
+=======
+-   Stringifiers in [Information contained in a WebIDL file](/en-US/docs/MDN/Contribute/Howto/Write_an_API_reference/Information_contained_in_a_WebIDL_file#stringifier)
+>>>>>>> master
 
 ---
 
 ## Term: String
 
+<<<<<<< HEAD
 - Beginner
 - CodingScripting
 - Glossary
 - String
+=======
+-   Beginner
+-   CodingScripting
+-   Glossary
+-   String
+>>>>>>> master
 
 ---
 
@@ -12277,18 +18814,31 @@ In _Glossary("JavaScript"_), a String is one of the _Glossary("Primitive", "prim
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "String (computer science)"_) on Wikipedia
 - [JavaScript data types and data structures](/en-US/docs/Web/JavaScript/Data_structures#string_type)
+=======
+-   _Interwiki("wikipedia", "String (computer science)"_) on Wikipedia
+-   [JavaScript data types and data structures](/en-US/docs/Web/JavaScript/Data_structures#string_type)
+>>>>>>> master
 
 ---
 
 ## Term: STUN
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
 - STUN
 - WebMechanics
 - WebRTC
+=======
+-   Glossary
+-   Infrastructure
+-   STUN
+-   WebMechanics
+-   WebRTC
+>>>>>>> master
 
 ---
 
@@ -12296,46 +18846,81 @@ In _Glossary("JavaScript"_), a String is one of the _Glossary("Primitive", "prim
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "STUN"_) on Wikipedia
 - [WebRTC protocols](/en-US/docs/Web/API/WebRTC_API/Protocols)
 
 ### Technical reference
 
 - [Specification](https://datatracker.ietf.org/doc/html/rfc5389)
+=======
+-   _Interwiki("wikipedia", "STUN"_) on Wikipedia
+-   [WebRTC protocols](/en-US/docs/Web/API/WebRTC_API/Protocols)
+
+### Technical reference
+
+-   [Specification](https://datatracker.ietf.org/doc/html/rfc5389)
+>>>>>>> master
 
 ---
 
 ## Term: Style origin
 
+<<<<<<< HEAD
 - CSS
 - Glossary
 - Style
 - Style Origin
 - origin
+=======
+-   CSS
+-   Glossary
+-   Style
+-   Style Origin
+-   origin
+>>>>>>> master
 
 ---
 
 > In _Glossary("CSS"_), there are three categories of sources for style changes. These categories are called **style origins**. They are the **user agent origin**, **user origin**, and the **author origin**.
 
+<<<<<<< HEAD
 - User-agent origin
 - - : The user agent origin is the style origin comprised of the default styles used by the user's web browser. If no other styles are applied to content, the user agent origin's styles are used while rendering elements.
 - User origin
     - : The user origin is the style origin containing any CSS that the user of the web browser has added. These may be from adding styles using a developer tool or from a browser extension that automatically applies custom styles to content, such as [Stylus](https://add0n.com/stylus.html) or [Stylish](https://userstyles.org/).
 - Author origin
     - : The author origin is the style origin which contains all of the styles which are part of the document, whether embedded within the _Glossary("HTML"_) or loaded from an external stylesheet file.
+=======
+-   User-agent origin
+-   -   : The user agent origin is the style origin comprised of the default styles used by the user's web browser. If no other styles are applied to content, the user agent origin's styles are used while rendering elements.
+-   User origin
+    -   : The user origin is the style origin containing any CSS that the user of the web browser has added. These may be from adding styles using a developer tool or from a browser extension that automatically applies custom styles to content, such as [Stylus](https://add0n.com/stylus.html) or [Stylish](https://userstyles.org/).
+-   Author origin
+    -   : The author origin is the style origin which contains all of the styles which are part of the document, whether embedded within the _Glossary("HTML"_) or loaded from an external stylesheet file.
+>>>>>>> master
 
 The style origins are used to determine where to stop rolling back (or backtracking through) the cascade of styles that have been applied to an element when removing styles, such as when using the _cssxref("unset"_) or _cssxref("revert"_) keywords.
 
 #### See also
 
+<<<<<<< HEAD
 - [CSS Cascading and Inheritance: Cascading Origins](https://drafts.csswg.org/css-cascade-4/#cascading-origins)
+=======
+-   [CSS Cascading and Inheritance: Cascading Origins](https://drafts.csswg.org/css-cascade-4/#cascading-origins)
+>>>>>>> master
 
 ---
 
 ## Term: Stylesheet
 
+<<<<<<< HEAD
 - Glossary
 - StyleSheet
+=======
+-   Glossary
+-   StyleSheet
+>>>>>>> master
 
 ---
 
@@ -12345,19 +18930,33 @@ External stylesheets are generally preferred because they allow you to control t
 
 #### See also
 
+<<<<<<< HEAD
 - [CSS first steps](/en-US/docs/Learn/CSS/First_steps)
 - Stylesheets on [Wikipedia](<https://en.wikipedia.org/wiki/Style_sheet_(web_development)>)
+=======
+-   [CSS first steps](/en-US/docs/Learn/CSS/First_steps)
+-   Stylesheets on [Wikipedia](<https://en.wikipedia.org/wiki/Style_sheet_(web_development)>)
+>>>>>>> master
 
 ---
 
 ## Term: SVG
 
+<<<<<<< HEAD
 - Beginner
 - CodingScripting
 - Glossary
 - Graphics
 - SVG
 - l10n:priority
+=======
+-   Beginner
+-   CodingScripting
+-   Glossary
+-   Graphics
+-   SVG
+-   l10n:priority
+>>>>>>> master
 
 ---
 
@@ -12369,17 +18968,29 @@ As a [vector image format](https://en.wikipedia.org/wiki/Vector_graphics), SVG g
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "SVG"_) on Wikipedia
 - [W3.org's SVG Primer](https://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html)
 - [SVG documentation on MDN](/en-US/docs/Web/SVG)
 - [Latest SVG specification](https://www.w3.org/TR/SVG/)
+=======
+-   _Interwiki("wikipedia", "SVG"_) on Wikipedia
+-   [W3.org's SVG Primer](https://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html)
+-   [SVG documentation on MDN](/en-US/docs/Web/SVG)
+-   [Latest SVG specification](https://www.w3.org/TR/SVG/)
+>>>>>>> master
 
 ---
 
 ## Term: SVN
 
+<<<<<<< HEAD
 - Collaborating
 - Glossary
+=======
+-   Collaborating
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -12387,19 +18998,33 @@ As a [vector image format](https://en.wikipedia.org/wiki/Vector_graphics), SVG g
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Apache Subversion"_) on Wikipedia
 - [Official website](https://subversion.apache.org/)
+=======
+-   _Interwiki("wikipedia", "Apache Subversion"_) on Wikipedia
+-   [Official website](https://subversion.apache.org/)
+>>>>>>> master
 
 ---
 
 ## Term: Symbol
 
+<<<<<<< HEAD
 - Data Type
 - ECMAScript 2015
 - Glossary
 - JavaScript
 - Sharing
 - Symbol
+=======
+-   Data Type
+-   ECMAScript 2015
+-   Glossary
+-   JavaScript
+-   Sharing
+-   Symbol
+>>>>>>> master
 
 ---
 
@@ -12412,6 +19037,10 @@ Symbol can have an optional description, but for debugging purposes only.
 A **Symbol** value represents a unique identifier. For example:
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 // Here are two symbols with the same description:
 let Sym1 = Symbol('Sym');
 let Sym2 = Symbol('Sym');
@@ -12435,6 +19064,10 @@ Most values in JavaScript support implicit conversion to a string. For instance,
 For example:
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 let Sym = Symbol('Sym');
 alert(Sym); // TypeError: Cannot convert a Symbol value to a string
 ```
@@ -12444,6 +19077,10 @@ That's a "language guard" against messing up, because strings and symbols are fu
 If you really want to show a symbol, we need to call `.toString()` on it.
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 let Sym = Symbol('Sym');
 alert(Sym.toString()); // Symbol(Sym), now it works
 ```
@@ -12451,6 +19088,10 @@ alert(Sym.toString()); // Symbol(Sym), now it works
 Or you can use the `symbol.description` property to get its description:
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 let _Sym = Symbol('Sym');
 
 alert(_Sym.description); // Sym
@@ -12464,11 +19105,19 @@ Examples of well-known symbols are: _jsxref("Symbol.iterator"_) for array-like o
 
 They are listed in the specification in the [Well-known symbols](https://tc39.github.io/ecma262/#sec-well-known-symbols) table:
 
+<<<<<<< HEAD
 - `Symbol.hasInstance`
 - `Symbol.isConcatSpreadable`
 - `Symbol.iterator`
 - `Symbol.toPrimitive`
 - …and so on.
+=======
+-   `Symbol.hasInstance`
+-   `Symbol.isConcatSpreadable`
+-   `Symbol.iterator`
+-   `Symbol.toPrimitive`
+-   …and so on.
+>>>>>>> master
 
 ### Global symbol registry
 
@@ -12477,11 +19126,16 @@ There is a global symbol registry holding all available symbols. The methods tha
 The method `Symbol.for(tokenString)` returns a symbol value from the registry, and `Symbol.keyFor(symbolValue)` returns a token string from the registry; each is the other's inverse, so the following is `true`:
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 Symbol.keyFor(Symbol.for('tokenString')) === 'tokenString'; // true
 ```
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Symbol (programming)"_) on Wikipedia
 - [JavaScript data types and data structures](/en-US/docs/Web/JavaScript/Data_structures)
 - [Symbols in ECMAScript 6](https://2ality.com/2014/12/es6-symbols.html)
@@ -12491,15 +19145,33 @@ Symbol.keyFor(Symbol.for('tokenString')) === 'tokenString'; // true
 
     - _Glossary("JavaScript"_)
     - _Glossary("Primitive"_)
+=======
+-   _Interwiki("wikipedia", "Symbol (programming)"_) on Wikipedia
+-   [JavaScript data types and data structures](/en-US/docs/Web/JavaScript/Data_structures)
+-   [Symbols in ECMAScript 6](https://2ality.com/2014/12/es6-symbols.html)
+-   _jsxref("Symbol"_) in the MDN JS reference
+-   _jsxref("Object.getOwnPropertySymbols()"_)
+-   [MDN Web Docs Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("JavaScript"_)
+    -   _Glossary("Primitive"_)
+>>>>>>> master
 
 ---
 
 ## Term: Symmetric-key cryptography
 
+<<<<<<< HEAD
 - Cryptography
 - Glossary
 - Security
 - Symmetric-key cryptography
+=======
+-   Cryptography
+-   Glossary
+-   Security
+-   Symmetric-key cryptography
+>>>>>>> master
 
 ---
 
@@ -12513,20 +19185,35 @@ Most symmetric-key algorithms currently in use are block ciphers: this means tha
 
 #### See also
 
+<<<<<<< HEAD
 - [MDN Web Docs Glossary](/en-US/docs/Glossary)
 
     - _Glossary("Block cipher mode of operation"_)
     - _Glossary("Cryptography"_)
     - _Glossary("Cryptographic hash function"_)
     - _Glossary("Symmetric-key cryptography"_)
+=======
+-   [MDN Web Docs Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("Block cipher mode of operation"_)
+    -   _Glossary("Cryptography"_)
+    -   _Glossary("Cryptographic hash function"_)
+    -   _Glossary("Symmetric-key cryptography"_)
+>>>>>>> master
 
 ---
 
 ## Term: Synchronous
 
+<<<<<<< HEAD
 - Glossary
 - Web
 - WebMechanics
+=======
+-   Glossary
+-   Web
+-   WebMechanics
+>>>>>>> master
 
 ---
 
@@ -12538,16 +19225,27 @@ Many programming commands are also synchronous — for example when you type in 
 
 #### See also
 
+<<<<<<< HEAD
 - _glossary("Asynchronous"_)
 - [Synchronous and asynchronous requests](/en-US/docs/Web/API/XMLHttpRequest/Synchronous_and_Asynchronous_Requests) using the [XMLHttpRequest()](/en-US/docs/Web/API/XMLHttpRequest) _glossary("API"_)
+=======
+-   _glossary("Asynchronous"_)
+-   [Synchronous and asynchronous requests](/en-US/docs/Web/API/XMLHttpRequest/Synchronous_and_Asynchronous_Requests) using the [XMLHttpRequest()](/en-US/docs/Web/API/XMLHttpRequest) _glossary("API"_)
+>>>>>>> master
 
 ---
 
 ## Term: Syntax error
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - JavaScript
+=======
+-   CodingScripting
+-   Glossary
+-   JavaScript
+>>>>>>> master
 
 ---
 
@@ -12557,16 +19255,27 @@ For example, if you leave off a closing brace (`}`) when defining a _Glossary("J
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Syntax error"_) on Wikipedia
 - _jsxref("SyntaxError"_) JavaScript object
+=======
+-   _Interwiki("wikipedia", "Syntax error"_) on Wikipedia
+-   _jsxref("SyntaxError"_) JavaScript object
+>>>>>>> master
 
 ---
 
 ## Term: Syntax
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - Syntax
+=======
+-   CodingScripting
+-   Glossary
+-   Syntax
+>>>>>>> master
 
 ---
 
@@ -12584,17 +19293,29 @@ Frameworks are said to have a "clean" syntax if they produce simple, readable, c
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Syntax (programming languages)"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Syntax (programming languages)"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Synthetic monitoring
 
+<<<<<<< HEAD
 - Glossary
 - RUM
 - Reference
 - Synthetic monitoring
 - Web Performance
+=======
+-   Glossary
+-   RUM
+-   Reference
+-   Synthetic monitoring
+-   Web Performance
+>>>>>>> master
 
 ---
 
@@ -12608,17 +19329,29 @@ Unlike [RUM](/en-US/docs/Glossary/Real_User_Monitoring), synthetic monitoring pr
 
 #### See also
 
+<<<<<<< HEAD
 - [Real User Monitoring (RUM)](/en-US/docs/Glossary/Real_User_Monitoring)
 - [Real User Monitoring (RUM) versus Synthetic Monitoring](/en-US/docs/Web/Performance/Rum-vs-Synthetic)
 - [Beacon](/en-US/docs/Glossary/beacon)
+=======
+-   [Real User Monitoring (RUM)](/en-US/docs/Glossary/Real_User_Monitoring)
+-   [Real User Monitoring (RUM) versus Synthetic Monitoring](/en-US/docs/Web/Performance/Rum-vs-Synthetic)
+-   [Beacon](/en-US/docs/Glossary/beacon)
+>>>>>>> master
 
 ---
 
 ## Term: Table Grid Box
 
+<<<<<<< HEAD
 - Glossary
 - CSS
 - Tables
+=======
+-   Glossary
+-   CSS
+-   Tables
+>>>>>>> master
 
 ---
 
@@ -12628,9 +19361,15 @@ Unlike [RUM](/en-US/docs/Glossary/Real_User_Monitoring), synthetic monitoring pr
 
 ## Term: Table Wrapper Box
 
+<<<<<<< HEAD
 - Glossary
 - CSS
 - Tables
+=======
+-   Glossary
+-   CSS
+-   Tables
+>>>>>>> master
 
 ---
 
@@ -12640,10 +19379,17 @@ Unlike [RUM](/en-US/docs/Glossary/Real_User_Monitoring), synthetic monitoring pr
 
 ## Term: Tag
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - HTML
 - Intro
+=======
+-   CodingScripting
+-   Glossary
+-   HTML
+-   Intro
+>>>>>>> master
 
 ---
 
@@ -12653,14 +19399,21 @@ The name of an HTML element is the name used in angle brackets such as `<p>` for
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "HTML element"_) on Wikipedia
 - [HTML elements syntax](https://html.spec.whatwg.org/multipage/syntax.html#elements-2) on _glossary("WHATWG"_)
 - [Introduction to HTML](/en-US/docs/Learn/HTML/Introduction_to_HTML)
+=======
+-   _Interwiki("wikipedia", "HTML element"_) on Wikipedia
+-   [HTML elements syntax](https://html.spec.whatwg.org/multipage/syntax.html#elements-2) on _glossary("WHATWG"_)
+-   [Introduction to HTML](/en-US/docs/Learn/HTML/Introduction_to_HTML)
+>>>>>>> master
 
 ---
 
 ## Term: TCP handshake
 
+<<<<<<< HEAD
 - Glossary
 - Networking
 - SSL
@@ -12669,6 +19422,16 @@ The name of an HTML element is the name used in angle brackets such as `<p>` for
 - TCP handshake
 - TLS
 - Web Performance
+=======
+-   Glossary
+-   Networking
+-   SSL
+-   Security
+-   TCP
+-   TCP handshake
+-   TLS
+-   Web Performance
+>>>>>>> master
 
 ---
 
@@ -12682,14 +19445,21 @@ This handshake step happens after a _glossary('DNS', 'DNS lookup'_) and before t
 
 #### See also
 
+<<<<<<< HEAD
 - [Transport Layer Security (TLS) protocol](/en-US/docs/Web/Security/Transport_Layer_Security)
 - _Glossary("HTTPS"_)
 - _Interwiki("wikipedia", "Transport Layer Security"_) on Wikipedia
+=======
+-   [Transport Layer Security (TLS) protocol](/en-US/docs/Web/Security/Transport_Layer_Security)
+-   _Glossary("HTTPS"_)
+-   _Interwiki("wikipedia", "Transport Layer Security"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: TCP slow start
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
 - Networking
@@ -12697,6 +19467,15 @@ This handshake step happens after a _glossary('DNS', 'DNS lookup'_) and before t
 - Transmission Control Protocol
 - Web Performance
 - data
+=======
+-   Glossary
+-   Infrastructure
+-   Networking
+-   TCP
+-   Transmission Control Protocol
+-   Web Performance
+-   data
+>>>>>>> master
 
 ---
 
@@ -12710,19 +19489,33 @@ Congestion itself is a state that happens within a network layer when the messag
 
 #### See also
 
+<<<<<<< HEAD
 - [Populating the page: how browsers work](/en-US/docs/Web/Performance/How_browsers_work)
 - [http overview](/en-US/docs/Web/HTTP/Overview)
+=======
+-   [Populating the page: how browsers work](/en-US/docs/Web/Performance/How_browsers_work)
+-   [http overview](/en-US/docs/Web/HTTP/Overview)
+>>>>>>> master
 
 ---
 
 ## Term: TCP
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
 - Networking
 - TCP
 - Transmission Control Protocol
 - data
+=======
+-   Glossary
+-   Infrastructure
+-   Networking
+-   TCP
+-   Transmission Control Protocol
+-   data
+>>>>>>> master
 
 ---
 
@@ -12732,6 +19525,7 @@ TCP's role is to ensure the packets are reliably delivered, error free. TCP has 
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Transmission Control Protocol"_) (Wikipedia)
 - [HTTP Overview](/en-US/docs/Web/HTTP/Overview)
 - [How browsers work](/en-US/docs/Web/Performance/How_browsers_work)
@@ -12740,13 +19534,28 @@ TCP's role is to ensure the packets are reliably delivered, error free. TCP has 
     - _Glossary("IPv4"_)
     - _Glossary("IPv6"_)
     - _Glossary("Packet"_)
+=======
+-   _Interwiki("wikipedia", "Transmission Control Protocol"_) (Wikipedia)
+-   [HTTP Overview](/en-US/docs/Web/HTTP/Overview)
+-   [How browsers work](/en-US/docs/Web/Performance/How_browsers_work)
+-   [Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("IPv4"_)
+    -   _Glossary("IPv6"_)
+    -   _Glossary("Packet"_)
+>>>>>>> master
 
 ---
 
 ## Term: Telnet
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
+=======
+-   Glossary
+-   Infrastructure
+>>>>>>> master
 
 ---
 
@@ -12754,18 +19563,31 @@ TCP's role is to ensure the packets are reliably delivered, error free. TCP has 
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki('wikipedia','Telnet'_) on Wikipedia
+=======
+-   _interwiki('wikipedia','Telnet'_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Texel
 
+<<<<<<< HEAD
 - 3D
 - Drawing
 - Glossary
 - Graphics
 - Texel
 - Texture
+=======
+-   3D
+-   Drawing
+-   Glossary
+-   Graphics
+-   Texel
+-   Texture
+>>>>>>> master
 
 ---
 
@@ -12777,18 +19599,31 @@ Textures are characterised by collections of Texel's, as how images are characte
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Texel (graphics)"_) on Wikipedia
 - [Using textures in WebGL](/en-US/docs/Web/API/WebGL_API/Tutorial/Using_textures_in_WebGL)
 - [Lighting in WebGL](/en-US/docs/Web/API/WebGL_API/Tutorial/Lighting_in_WebGL)
 - [Animating textures in WebGL](/en-US/docs/Web/API/WebGL_API/Tutorial/Animating_textures_in_WebGL)
+=======
+-   _interwiki("wikipedia", "Texel (graphics)"_) on Wikipedia
+-   [Using textures in WebGL](/en-US/docs/Web/API/WebGL_API/Tutorial/Using_textures_in_WebGL)
+-   [Lighting in WebGL](/en-US/docs/Web/API/WebGL_API/Tutorial/Lighting_in_WebGL)
+-   [Animating textures in WebGL](/en-US/docs/Web/API/WebGL_API/Tutorial/Animating_textures_in_WebGL)
+>>>>>>> master
 
 ---
 
 ## Term: Thread
 
+<<<<<<< HEAD
 - Glossary
 - Thread
 - asynchronous
+=======
+-   Glossary
+-   Thread
+-   asynchronous
+>>>>>>> master
 
 ---
 
@@ -12802,22 +19637,39 @@ Overall it can be observed these threads within our operating system are extreme
 
 #### See also
 
+<<<<<<< HEAD
 - [Asynchronous JavaScript](/en-US/docs/Learn/JavaScript/Asynchronous)
 - [Web worker API](/en-US/docs/Web/API/Web_Workers_API)
 - [Service worker API](/en-US/docs/Web/API/Service_Worker_API)
 - [Glossary](/en-US/docs/Glossary)
 
     - _Glossary("Main thread"_)
+=======
+-   [Asynchronous JavaScript](/en-US/docs/Learn/JavaScript/Asynchronous)
+-   [Web worker API](/en-US/docs/Web/API/Web_Workers_API)
+-   [Service worker API](/en-US/docs/Web/API/Service_Worker_API)
+-   [Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("Main thread"_)
+>>>>>>> master
 
 ---
 
 ## Term: Three js
 
+<<<<<<< HEAD
 - Browser
 - CodingScripting
 - JavaScript
 - Programming Language
 - three.js
+=======
+-   Browser
+-   CodingScripting
+-   JavaScript
+-   Programming Language
+-   three.js
+>>>>>>> master
 
 ---
 
@@ -12825,17 +19677,29 @@ Overall it can be observed these threads within our operating system are extreme
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Three.js"_) on Wikipedia
 - [three.js official website](https://threejs.org/)
+=======
+-   _Interwiki("wikipedia", "Three.js"_) on Wikipedia
+-   [three.js official website](https://threejs.org/)
+>>>>>>> master
 
 ---
 
 ## Term: Time to first byte
 
+<<<<<<< HEAD
 - Glossary
 - Performance
 - Reference
 - Web Performance
+=======
+-   Glossary
+-   Performance
+-   Reference
+-   Web Performance
+>>>>>>> master
 
 ---
 
@@ -12847,18 +19711,31 @@ TTFB is the time it takes between the start of the request and the start of the 
 
 #### See also
 
+<<<<<<< HEAD
 - [A typical HTTP session](/en-US/docs/Web/HTTP/Session)
 - [PerformanceResourceTiming](/en-US/docs/Web/API/PerformanceResourceTiming)
 - [PerformanceTiming](/en-US/docs/Web/API/PerformanceTiming)
+=======
+-   [A typical HTTP session](/en-US/docs/Web/HTTP/Session)
+-   [PerformanceResourceTiming](/en-US/docs/Web/API/PerformanceResourceTiming)
+-   [PerformanceTiming](/en-US/docs/Web/API/PerformanceTiming)
+>>>>>>> master
 
 ---
 
 ## Term: Time to interactive
 
+<<<<<<< HEAD
 - Glossary
 - Performance
 - Reference
 - Web Performance
+=======
+-   Glossary
+-   Performance
+-   Reference
+-   Web Performance
+>>>>>>> master
 
 ---
 
@@ -12872,17 +19749,29 @@ TTI is derived by leveraging information from the _domxref("Long Tasks API"_). A
 
 #### See also
 
+<<<<<<< HEAD
 - [Definition of TTI](https://github.com/WICG/time-to-interactive) from Web Incubator Community Group
 - [Time to Interactive — focusing on human-centric metrics](https://building.calibreapp.com/time-to-interactive-focusing-on-the-human-centric-metrics-22eb7e64dd23) by Radimir Bitsov
 - [Tracking TTI](https://web.dev/user-centric-performance-metrics/#tracking_tti)
+=======
+-   [Definition of TTI](https://github.com/WICG/time-to-interactive) from Web Incubator Community Group
+-   [Time to Interactive — focusing on human-centric metrics](https://building.calibreapp.com/time-to-interactive-focusing-on-the-human-centric-metrics-22eb7e64dd23) by Radimir Bitsov
+-   [Tracking TTI](https://web.dev/user-centric-performance-metrics/#tracking_tti)
+>>>>>>> master
 
 ---
 
 ## Term: TLD
 
+<<<<<<< HEAD
 - Glossary
 - Web
 - WebMechanics
+=======
+-   Glossary
+-   Web
+-   WebMechanics
+>>>>>>> master
 
 ---
 
@@ -12895,6 +19784,7 @@ Here org is the TLD; mozilla.org is the second-level domain name; and developer 
 
 _Glossary("IANA"_) today distinguishes the following groups of top-level domains:
 
+<<<<<<< HEAD
 - country-code top-level domains (ccTLD)
 - - : Two-character domains established for countries or territories. Example: _.us_ for United States.
 - internationalized country code top-level domains (IDN ccTLD)
@@ -12912,16 +19802,43 @@ _Glossary("IANA"_) today distinguishes the following groups of top-level domains
 
 - _Interwiki("wikipedia", "TLD"_) on Wikipedia
 - [List of top-level domains](https://www.iana.org/domains/root/db)
+=======
+-   country-code top-level domains (ccTLD)
+-   -   : Two-character domains established for countries or territories. Example: _.us_ for United States.
+-   internationalized country code top-level domains (IDN ccTLD)
+-   -   : ccTLDs in non-Latin character sets (e.g., Arabic or Chinese).
+-   generic top-level domains (gTLD)
+-   -   : Top-level domains with three or more characters.
+-   unsponsored top-level domains
+    -   : Domains that operate directly under policies established by ICANN processes for the global Internet community, for example "com" and "edu".
+-   sponsored top-level domains (sTLD)
+    -   : These domains are proposed and sponsored by private organizations that decide whether an applicant is eligible to use the TLD, based on community theme concepts.
+-   infrastructure top-level domain
+    -   : This group consists of one domain, the _Glossary("ARPA", "Address and Routing Parameter Area"_) (ARPA).
+
+#### See also
+
+-   _Interwiki("wikipedia", "TLD"_) on Wikipedia
+-   [List of top-level domains](https://www.iana.org/domains/root/db)
+>>>>>>> master
 
 ---
 
 ## Term: Transport Layer Security (TLS)
 
+<<<<<<< HEAD
 - Cryptography
 - Glossary
 - Infrastructure
 - Security
 - Web Performance
+=======
+-   Cryptography
+-   Glossary
+-   Infrastructure
+-   Security
+-   Web Performance
+>>>>>>> master
 
 ---
 
@@ -12933,6 +19850,7 @@ All modern browsers support the TLS protocol, requiring the server to provide a 
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Transport Layer Security"_) (Wikipedia)
 - [RFC 5246](https://datatracker.ietf.org/doc/html/rfc5246) (The Transport Layer Security Protocol, Version 1.2)
 - [Transport Layer Security](/en-US/docs/Web/Security/Transport_Layer_Security)
@@ -12941,14 +19859,30 @@ All modern browsers support the TLS protocol, requiring the server to provide a 
 
     - _Glossary("HTTPS"_)
     - _Glossary("SSL"_)
+=======
+-   _Interwiki("wikipedia", "Transport Layer Security"_) (Wikipedia)
+-   [RFC 5246](https://datatracker.ietf.org/doc/html/rfc5246) (The Transport Layer Security Protocol, Version 1.2)
+-   [Transport Layer Security](/en-US/docs/Web/Security/Transport_Layer_Security)
+-   [OWASP: Transport Layer Protection Cheat Sheet](https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet)
+-   [Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("HTTPS"_)
+    -   _Glossary("SSL"_)
+>>>>>>> master
 
 ---
 
 ## Term: TOFU
 
+<<<<<<< HEAD
 - HTTP
 - SSH
 - Security
+=======
+-   HTTP
+-   SSH
+-   Security
+>>>>>>> master
 
 ---
 
@@ -12958,16 +19892,27 @@ TOFU is used in the SSH protocol, in [HTTP Public Key Pinning](/en-US/docs/Web/H
 
 #### See also
 
+<<<<<<< HEAD
 - [HTTP Public Key Pinning](/en-US/docs/Web/HTTP/Public_Key_Pinning) (_Glossary("HPKP"_))
 - _HTTPHeader("Public-Key-Pins"_)
 - Wikipedia: [TOFU](https://en.wikipedia.org/wiki/Trust_on_first_use)
+=======
+-   [HTTP Public Key Pinning](/en-US/docs/Web/HTTP/Public_Key_Pinning) (_Glossary("HPKP"_))
+-   _HTTPHeader("Public-Key-Pins"_)
+-   Wikipedia: [TOFU](https://en.wikipedia.org/wiki/Trust_on_first_use)
+>>>>>>> master
 
 ---
 
 ## Term: Transferable objects
 
+<<<<<<< HEAD
 - Transferable
 - Workers
+=======
+-   Transferable
+-   Workers
+>>>>>>> master
 
 ---
 
@@ -12996,6 +19941,10 @@ The _jsxref("Uint8Array"_) is copied (duplicated) in the worker while its buffer
 After transfer any attempt to read or write `uInt8Array` from the main thread will throw, but you can still check the `byteLength` to confirm it is now zero.
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 // Create an 8MB "file" and fill it.
 var uInt8Array = new Uint8Array(1024 * 1024 * 8); // 8MB
 for (var i = 0; i < uInt8Array.length; ++i) {
@@ -13017,6 +19966,10 @@ console.log(uInt8Array.byteLength); // 0
 The code below shows a _domxref("structuredClone()"_) operation where the underlying buffer is copied from the original object to the clone.
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 const original = new Uint8Array(1024);
 const clone = structuredClone(original);
 console.log(original.byteLength); // 1024
@@ -13041,6 +19994,7 @@ console.log(original.byteLength); // 0
 
 The items that can be _transferred_ are:
 
+<<<<<<< HEAD
 - _jsxref("ArrayBuffer"_)
 - _domxref("MessagePort"_)
 - _domxref("ReadableStream"_)
@@ -13050,23 +20004,47 @@ The items that can be _transferred_ are:
 - _domxref("ImageBitmap"_)
 - _domxref("VideoFrame"_)
 - _domxref("OffscreenCanvas"_)
+=======
+-   _jsxref("ArrayBuffer"_)
+-   _domxref("MessagePort"_)
+-   _domxref("ReadableStream"_)
+-   _domxref("WritableStream"_)
+-   _domxref("TransformStream"_)
+-   _domxref("AudioData"_)
+-   _domxref("ImageBitmap"_)
+-   _domxref("VideoFrame"_)
+-   _domxref("OffscreenCanvas"_)
+>>>>>>> master
 
 > **Note:** Transferrable objects are marked up in [Web IDL files](https://github.com/w3c/webref/tree/main/ed/idl) with the attribute `Transferrable`.
 
 #### See also
 
+<<<<<<< HEAD
 - [Transferable Objects: Lightning Fast!](https://updates.html5rocks.com/2011/12/Transferable-Objects-Lightning-Fast)
 - [Using Web Workers](/en-US/docs/Web/API/Web_Workers_API/Using_web_workers)
 - [Transferable objects in the HTML specification](https://html.spec.whatwg.org/multipage/structured-data.html#transferable-objects)
 - _domxref("DedicatedWorkerGlobalScope.postMessage()"_)
+=======
+-   [Transferable Objects: Lightning Fast!](https://updates.html5rocks.com/2011/12/Transferable-Objects-Lightning-Fast)
+-   [Using Web Workers](/en-US/docs/Web/API/Web_Workers_API/Using_web_workers)
+-   [Transferable objects in the HTML specification](https://html.spec.whatwg.org/multipage/structured-data.html#transferable-objects)
+-   _domxref("DedicatedWorkerGlobalScope.postMessage()"_)
+>>>>>>> master
 
 ---
 
 ## Term: Transient activation
 
+<<<<<<< HEAD
 - Transient activation
 - Glossary
 - JavaScript
+=======
+-   Transient activation
+-   Glossary
+-   JavaScript
+>>>>>>> master
 
 ---
 
@@ -13077,19 +20055,29 @@ For example, scripts cannot arbitrarily launch a popup that requires _transient 
 
 Examples of APIs that require _transient activation_ are:
 
+<<<<<<< HEAD
 - _domxref("MediaDevices.selectAudioOutput()"_)
+=======
+-   _domxref("MediaDevices.selectAudioOutput()"_)
+>>>>>>> master
 
 > **Note:** Transient activation expires after a timeout (if not renewed by further interaction), and may also be "consumed" by some APIs.
 
 #### See also
 
+<<<<<<< HEAD
 - _domxref("MediaDevices.selectAudioOutput()"_)
 - [HTML Living Standard > Transient activation](https://html.spec.whatwg.org/multipage/interaction.html#transient-activation)
+=======
+-   _domxref("MediaDevices.selectAudioOutput()"_)
+-   [HTML Living Standard > Transient activation](https://html.spec.whatwg.org/multipage/interaction.html#transient-activation)
+>>>>>>> master
 
 ---
 
 ## Term: Tree shaking
 
+<<<<<<< HEAD
 - JavaScript
 - Modules
 - Statement
@@ -13097,6 +20085,15 @@ Examples of APIs that require _transient activation_ are:
 - export
 - import
 - tree shaking
+=======
+-   JavaScript
+-   Modules
+-   Statement
+-   Web Performance
+-   export
+-   import
+-   tree shaking
+>>>>>>> master
 
 ---
 
@@ -13108,17 +20105,29 @@ In modern JavaScript applications, we use module bundlers (e.g., [webpack](https
 
 #### See also
 
+<<<<<<< HEAD
 - ["Benefits of dead code elimination during bundling"](https://exploringjs.com/es6/ch_modules.html#_benefit-dead-code-elimination-during-bundling) in Axel Rauschmayer's book: "Exploring JS: Modules"
 - [Tree shaking implementation with webpack](https://webpack.js.org/guides/tree-shaking/)
+=======
+-   ["Benefits of dead code elimination during bundling"](https://exploringjs.com/es6/ch_modules.html#_benefit-dead-code-elimination-during-bundling) in Axel Rauschmayer's book: "Exploring JS: Modules"
+-   [Tree shaking implementation with webpack](https://webpack.js.org/guides/tree-shaking/)
+>>>>>>> master
 
 ---
 
 ## Term: Trident
 
+<<<<<<< HEAD
 - Browser
 - Glossary
 - Infrastructure
 - Trident
+=======
+-   Browser
+-   Glossary
+-   Infrastructure
+-   Trident
+>>>>>>> master
 
 ---
 
@@ -13126,15 +20135,25 @@ In modern JavaScript applications, we use module bundlers (e.g., [webpack](https
 
 #### See also
 
+<<<<<<< HEAD
 - [Trident layout engine](https://en.wikipedia.org/wiki/Trident_%28layout_engine%29) on Wikipedia
+=======
+-   [Trident layout engine](https://en.wikipedia.org/wiki/Trident_%28layout_engine%29) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Truthy
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - JavaScript
+=======
+-   CodingScripting
+-   Glossary
+-   JavaScript
+>>>>>>> master
 
 ---
 
@@ -13145,6 +20164,10 @@ _Glossary("JavaScript"_) uses _Glossary("Type_Coercion", "type coercion"_) in Bo
 Examples of _truthy_ values in JavaScript (which will be coerced to `true` in boolean contexts, and thus execute the `if` block):
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 if (true)
 if ({})
 if ([])
@@ -13165,6 +20188,10 @@ if (-Infinity)
 If the first object is truthy, the [logical AND operator](/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND) returns the second operand:
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 true && "dog"
 // returns "dog"
 
@@ -13174,20 +20201,35 @@ true && "dog"
 
 #### See also
 
+<<<<<<< HEAD
 - _Glossary("Falsy"_)
 - _Glossary("Type_Coercion", "Type coercion"_)
 - _Glossary("Boolean"_)
+=======
+-   _Glossary("Falsy"_)
+-   _Glossary("Type_Coercion", "Type coercion"_)
+-   _Glossary("Boolean"_)
+>>>>>>> master
 
 ---
 
 ## Term: TTL
 
+<<<<<<< HEAD
 - Caching
 - Domain Name System
 - Glossary
 - Infrastructure
 - Networking
 - Performance
+=======
+-   Caching
+-   Domain Name System
+-   Glossary
+-   Infrastructure
+-   Networking
+-   Performance
+>>>>>>> master
 
 ---
 
@@ -13203,19 +20245,33 @@ In the context of caching, TTL (as an unsigned 32-bit integer) being a part of t
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Time to live", "TTL"_) on Wikipedia
 - [RFC 2181](https://datatracker.ietf.org/doc/html/rfc2181#section-8) on IETF
 - [RFC1035](https://datatracker.ietf.org/doc/html/rfc1035) on IETF
+=======
+-   _Interwiki("wikipedia", "Time to live", "TTL"_) on Wikipedia
+-   [RFC 2181](https://datatracker.ietf.org/doc/html/rfc2181#section-8) on IETF
+-   [RFC1035](https://datatracker.ietf.org/doc/html/rfc1035) on IETF
+>>>>>>> master
 
 ---
 
 ## Term: TURN
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
 - TURN
 - WebMechanics
 - WebRTC
+=======
+-   Glossary
+-   Infrastructure
+-   TURN
+-   WebMechanics
+-   WebRTC
+>>>>>>> master
 
 ---
 
@@ -13223,18 +20279,31 @@ In the context of caching, TTL (as an unsigned 32-bit integer) being a part of t
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "TURN"_) on Wikipedia
 - [WebRTC protocols](/en-US/docs/Web/API/WebRTC_API/Protocols)
 - [Specification](https://www.ietf.org/rfc/rfc5766.txt)
 - [Specification update for IPv6](https://www.ietf.org/rfc/rfc6156.txt)
+=======
+-   _Interwiki("wikipedia", "TURN"_) on Wikipedia
+-   [WebRTC protocols](/en-US/docs/Web/API/WebRTC_API/Protocols)
+-   [Specification](https://www.ietf.org/rfc/rfc5766.txt)
+-   [Specification update for IPv6](https://www.ietf.org/rfc/rfc6156.txt)
+>>>>>>> master
 
 ---
 
 ## Term: Type coercion
 
+<<<<<<< HEAD
 - Coercion
 - JavaScript
 - Type coercion
+=======
+-   Coercion
+-   JavaScript
+-   Type coercion
+>>>>>>> master
 
 ---
 
@@ -13243,6 +20312,10 @@ In the context of caching, TTL (as an unsigned 32-bit integer) being a part of t
 ## Examples
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 const value1 = '5';
 const value2 = 9;
 let sum = value1 + value2;
@@ -13255,25 +20328,44 @@ In the above example, JavaScript has _coerced_ the `9` from a number into a stri
 The compiler could have coerced the `5` into a number and returned a sum of `14`, but it did not. To return this result, you'd have to explicitly convert the `5` to a number using the _jsxref("Global_Objects/Number", "Number()"_) method:
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 sum = Number(value1) + value2;
 ```
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Type conversion"_) (Wikipedia)
 - [Glossary](/en-US/docs/Glossary)
 
     - _Glossary("Type"_)
     - _Glossary("Type conversion"_)
+=======
+-   _Interwiki("wikipedia", "Type conversion"_) (Wikipedia)
+-   [Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("Type"_)
+    -   _Glossary("Type conversion"_)
+>>>>>>> master
 
 ---
 
 ## Term: Type conversion
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - Type casting
 - Type conversion
+=======
+-   CodingScripting
+-   Glossary
+-   Type casting
+-   Type conversion
+>>>>>>> master
 
 ---
 
@@ -13281,19 +20373,33 @@ sum = Number(value1) + value2;
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Type conversion"_) (Wikipedia)
 - [Glossary](/en-US/docs/Glossary)
 
     - _Glossary("Type"_)
     - _Glossary("Type coercion"_)
+=======
+-   _Interwiki("wikipedia", "Type conversion"_) (Wikipedia)
+-   [Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("Type"_)
+    -   _Glossary("Type coercion"_)
+>>>>>>> master
 
 ---
 
 ## Term: Type
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - JavaScript
+=======
+-   CodingScripting
+-   Glossary
+-   JavaScript
+>>>>>>> master
 
 ---
 
@@ -13307,6 +20413,7 @@ If you are unsure of the type of a value, you can use the [`typeof`](/en-US/docs
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Data type"_) on Wikipedia
 - [JavaScript data types](/en-US/docs/Web/JavaScript/Data_structures)
 - [Glossary](/en-US/docs/Glossary)
@@ -13319,16 +20426,38 @@ If you are unsure of the type of a value, you can use the [`typeof`](/en-US/docs
     - _Glossary("null"_)
     - _Glossary("undefined"_)
     - _Glossary("symbol"_)
+=======
+-   _Interwiki("wikipedia", "Data type"_) on Wikipedia
+-   [JavaScript data types](/en-US/docs/Web/JavaScript/Data_structures)
+-   [Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("JavaScript"_)
+    -   _Glossary("string"_)
+    -   _Glossary("number"_)
+    -   _Glossary("bigint"_)
+    -   _Glossary("boolean"_)
+    -   _Glossary("null"_)
+    -   _Glossary("undefined"_)
+    -   _Glossary("symbol"_)
+>>>>>>> master
 
 ---
 
 ## Term: UDP (User Datagram Protocol)
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
 - Networking
 - Protocols
 - UDP
+=======
+-   Glossary
+-   Infrastructure
+-   Networking
+-   Protocols
+-   UDP
+>>>>>>> master
 
 ---
 
@@ -13340,16 +20469,27 @@ UDP is suitable for purposes where error checking and correction are either not 
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "User Datagram Protocol"_) on Wikipedia
 - [Specification](https://datatracker.ietf.org/doc/html/rfc768)
+=======
+-   _Interwiki("wikipedia", "User Datagram Protocol"_) on Wikipedia
+-   [Specification](https://datatracker.ietf.org/doc/html/rfc768)
+>>>>>>> master
 
 ---
 
 ## Term: UI
 
+<<<<<<< HEAD
 - Accessibility
 - Design
 - Glossary
+=======
+-   Accessibility
+-   Design
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -13357,17 +20497,29 @@ UDP is suitable for purposes where error checking and correction are either not 
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "User_interface", "User interface"_) on Wikipedia
 - _interwiki("wikipedia", "Front_end_development", "Front end development"_) on Wikipedia
+=======
+-   _interwiki("wikipedia", "User_interface", "User interface"_) on Wikipedia
+-   _interwiki("wikipedia", "Front_end_development", "Front end development"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: undefined
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - JavaScript
 - NeedsContent
+=======
+-   CodingScripting
+-   Glossary
+-   JavaScript
+-   NeedsContent
+>>>>>>> master
 
 ---
 
@@ -13376,6 +20528,10 @@ UDP is suitable for purposes where error checking and correction are either not 
 ## Example
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 var x; //create a variable but assign it no value
 
 console.log("x's value is", x); //logs "x's value is undefined"
@@ -13383,14 +20539,23 @@ console.log("x's value is", x); //logs "x's value is undefined"
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Undefined value"_) on Wikipedia
 - [JavaScript data types and data structures](/en-US/docs/Web/JavaScript/Data_structures)
+=======
+-   _Interwiki("wikipedia", "Undefined value"_) on Wikipedia
+-   [JavaScript data types and data structures](/en-US/docs/Web/JavaScript/Data_structures)
+>>>>>>> master
 
 ---
 
 ## Term: Unicode
 
+<<<<<<< HEAD
 - Infrastructure
+=======
+-   Infrastructure
+>>>>>>> master
 
 ---
 
@@ -13404,18 +20569,31 @@ The most common Unicode character encoding on the Web is _Glossary("UTF-8"_). Ot
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Unicode"_) on Wikipedia
 - [The Unicode Standard: A Technical Introduction](https://www.unicode.org/standard/principles.html)
+=======
+-   _Interwiki("wikipedia", "Unicode"_) on Wikipedia
+-   [The Unicode Standard: A Technical Introduction](https://www.unicode.org/standard/principles.html)
+>>>>>>> master
 
 ---
 
 ## Term: URI
 
+<<<<<<< HEAD
 - Glossary
 - HTTP
 - Search
 - URI
 - URL
+=======
+-   Glossary
+-   HTTP
+-   Search
+-   URI
+-   URL
+>>>>>>> master
 
 ---
 
@@ -13425,16 +20603,27 @@ The most common are _Glossary("URL","URL"_)s, which identify the resource by giv
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "URI"_) on Wikipedia
 - [RFC 3986 on URI](https://datatracker.ietf.org/doc/html/rfc3986)
+=======
+-   _Interwiki("wikipedia", "URI"_) on Wikipedia
+-   [RFC 3986 on URI](https://datatracker.ietf.org/doc/html/rfc3986)
+>>>>>>> master
 
 ---
 
 ## Term: URL
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
 - l10n:priority
+=======
+-   Glossary
+-   Infrastructure
+-   l10n:priority
+>>>>>>> master
 
 ---
 
@@ -13446,18 +20635,31 @@ URLs can also be used for file transfer (_Glossary("FTP"_)) , emails (_Glossary(
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "URL"_) on Wikipedia
 - [Understanding URLs and their structure](/en-US/docs/Learn/Common_questions/What_is_a_URL)
 - The syntax of URLs is defined in the [URL Living Standard](https://url.spec.whatwg.org/)
+=======
+-   _Interwiki("wikipedia", "URL"_) on Wikipedia
+-   [Understanding URLs and their structure](/en-US/docs/Learn/Common_questions/What_is_a_URL)
+-   The syntax of URLs is defined in the [URL Living Standard](https://url.spec.whatwg.org/)
+>>>>>>> master
 
 ---
 
 ## Term: URN
 
+<<<<<<< HEAD
 - Glossary
 - Intro
 - Navigation
 - urn
+=======
+-   Glossary
+-   Intro
+-   Navigation
+-   urn
+>>>>>>> master
 
 ---
 
@@ -13465,14 +20667,23 @@ URLs can also be used for file transfer (_Glossary("FTP"_)) , emails (_Glossary(
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "URN"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "URN"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Usenet
 
+<<<<<<< HEAD
 - Glossary
 - WebMechanics
+=======
+-   Glossary
+-   WebMechanics
+>>>>>>> master
 
 ---
 
@@ -13480,12 +20691,17 @@ URLs can also be used for file transfer (_Glossary("FTP"_)) , emails (_Glossary(
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Usenet"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Usenet"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: User agent
 
+<<<<<<< HEAD
 - Browser
 - Glossary
 - UA
@@ -13495,6 +20711,17 @@ URLs can also be used for file transfer (_Glossary("FTP"_)) , emails (_Glossary(
 - agent
 - user agent
 - userAgent
+=======
+-   Browser
+-   Glossary
+-   UA
+-   User-agent
+-   Web Browser
+-   WebMechanics
+-   agent
+-   user agent
+-   userAgent
+>>>>>>> master
 
 ---
 
@@ -13510,6 +20737,7 @@ A typical user agent string looks like this: `"Mozilla/5.0 (X11; Ubuntu; Linux x
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "User agent"_) on Wikipedia
 - _domxref("Navigator/userAgent", "NavigatorID.userAgent"_)
 - [Browser detection using the user agent](/en-US/docs/Web/HTTP/Browser_detection_using_the_user_agent)
@@ -13521,16 +20749,37 @@ A typical user agent string looks like this: `"Mozilla/5.0 (X11; Ubuntu; Linux x
 - HTTP Headers
 
     - _HTTPHeader("User-agent"_)
+=======
+-   _interwiki("wikipedia", "User agent"_) on Wikipedia
+-   _domxref("Navigator/userAgent", "NavigatorID.userAgent"_)
+-   [Browser detection using the user agent](/en-US/docs/Web/HTTP/Browser_detection_using_the_user_agent)
+-   _RFC(2616, "14.43"_): The `User-Agent` header
+-   [Glossary:](/en-US/docs/Glossary)
+
+    -   _Glossary("Browser"_)
+
+-   HTTP Headers
+
+    -   _HTTPHeader("User-agent"_)
+>>>>>>> master
 
 ---
 
 ## Term: UTF-8
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - HTML
 - JavaScript
 - Utf-8
+=======
+-   CodingScripting
+-   Glossary
+-   HTML
+-   JavaScript
+-   Utf-8
+>>>>>>> master
 
 ---
 
@@ -13540,15 +20789,25 @@ The first 128 UTF-8 characters precisely match the first 128 ASCII characters (n
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "UTF-8"_) on Wikipedia
 - [FAQ about UTF-8 on Unicode website](https://www.unicode.org/faq/utf_bom.html#UTF8)
+=======
+-   _Interwiki("wikipedia", "UTF-8"_) on Wikipedia
+-   [FAQ about UTF-8 on Unicode website](https://www.unicode.org/faq/utf_bom.html#UTF8)
+>>>>>>> master
 
 ---
 
 ## Term: UUID
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
+=======
+-   Glossary
+-   Infrastructure
+>>>>>>> master
 
 ---
 
@@ -13565,18 +20824,31 @@ The formal definition can be found in: [RFC4122: A Universally Unique IDentifier
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "UUID"_) on Wikipedia
 - [`Crypto.randomUUID()`](/en-US/docs/Web/API/Crypto/randomUUID)
+=======
+-   _Interwiki("wikipedia", "UUID"_) on Wikipedia
+-   [`Crypto.randomUUID()`](/en-US/docs/Web/API/Crypto/randomUUID)
+>>>>>>> master
 
 ---
 
 ## Term: UX
 
+<<<<<<< HEAD
 - Accessibility
 - Composing
 - Design
 - Glossary
 - Navigation
+=======
+-   Accessibility
+-   Composing
+-   Design
+-   Glossary
+-   Navigation
+>>>>>>> master
 
 ---
 
@@ -13586,15 +20858,25 @@ The system can be any kind of product or application that an end user is meant t
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "User experience"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "User experience"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Validator
 
+<<<<<<< HEAD
 - Beginner
 - Glossary
 - Security
+=======
+-   Beginner
+-   Glossary
+-   Security
+>>>>>>> master
 
 ---
 
@@ -13602,16 +20884,27 @@ The system can be any kind of product or application that an end user is meant t
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Validator"_) on Wikipedia
 - [Short list of validators](/en-US/docs/Tools/Validators)
+=======
+-   _Interwiki("wikipedia", "Validator"_) on Wikipedia
+-   [Short list of validators](/en-US/docs/Tools/Validators)
+>>>>>>> master
 
 ---
 
 ## Term: Value
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - NeedsContent
+=======
+-   CodingScripting
+-   Glossary
+-   NeedsContent
+>>>>>>> master
 
 ---
 
@@ -13619,15 +20912,25 @@ The system can be any kind of product or application that an end user is meant t
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Primitive wrapper class"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "Primitive wrapper class"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Variable
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - JavaScript
+=======
+-   CodingScripting
+-   Glossary
+-   JavaScript
+>>>>>>> master
 
 ---
 
@@ -13635,16 +20938,27 @@ The system can be any kind of product or application that an end user is meant t
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Variable (computer science)"_) on Wikipedia
 - [Declaring variables in JavaScript](/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#declarations)
 - [`var` statement in JavaScript](/en-US/docs/Web/JavaScript/Reference/Statements/var)
+=======
+-   _Interwiki("wikipedia", "Variable (computer science)"_) on Wikipedia
+-   [Declaring variables in JavaScript](/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#declarations)
+-   [`var` statement in JavaScript](/en-US/docs/Web/JavaScript/Reference/Statements/var)
+>>>>>>> master
 
 ---
 
 ## Term: Vendor Prefix
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
+=======
+-   CodingScripting
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -13658,10 +20972,17 @@ The system can be any kind of product or application that an end user is meant t
 
 The major browsers use the following prefixes:
 
+<<<<<<< HEAD
 - `-webkit-` (Chrome, Safari, newer versions of Opera, almost all iOS browsers including Firefox for iOS; basically, any WebKit based browser)
 - `-moz-` (Firefox)
 - `-o-` (old pre-WebKit versions of Opera)
 - `-ms-` (Internet Explorer and Microsoft Edge)
+=======
+-   `-webkit-` (Chrome, Safari, newer versions of Opera, almost all iOS browsers including Firefox for iOS; basically, any WebKit based browser)
+-   `-moz-` (Firefox)
+-   `-o-` (old pre-WebKit versions of Opera)
+-   `-ms-` (Internet Explorer and Microsoft Edge)
+>>>>>>> master
 
 Sample usage:
 
@@ -13679,23 +21000,41 @@ Historically, vendors have also used prefixes for experimental APIs. If an entir
 
 Prefixes for interface names are upper-cased:
 
+<<<<<<< HEAD
 - `WebKit` (Chrome, Safari, newer versions of Opera, almost all iOS browsers (including Firefox for iOS); basically, any WebKit based browser)
 - `Moz` (Firefox)
 - `O` (Older, pre-WebKit, versions of Opera)
 - `MS` (Internet Explorer and Microsoft Edge)
+=======
+-   `WebKit` (Chrome, Safari, newer versions of Opera, almost all iOS browsers (including Firefox for iOS); basically, any WebKit based browser)
+-   `Moz` (Firefox)
+-   `O` (Older, pre-WebKit, versions of Opera)
+-   `MS` (Internet Explorer and Microsoft Edge)
+>>>>>>> master
 
 ### Property and method prefixes
 
 The prefixes for properties and methods are lower-case:
 
+<<<<<<< HEAD
 - `webkit` (Chrome, Safari, newer versions of Opera, almost all iOS browsers (including Firefox for iOS); basically, any WebKit based browser)
 - `moz` (Firefox)
 - `o` (Old, pre-WebKit, versions of Opera)
 - `ms` (Internet Explorer and Microsoft Edge)
+=======
+-   `webkit` (Chrome, Safari, newer versions of Opera, almost all iOS browsers (including Firefox for iOS); basically, any WebKit based browser)
+-   `moz` (Firefox)
+-   `o` (Old, pre-WebKit, versions of Opera)
+-   `ms` (Internet Explorer and Microsoft Edge)
+>>>>>>> master
 
 Sample usage:
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 var requestAnimationFrame =
     window.requestAnimationFrame ||
     window.mozRequestAnimationFrame ||
@@ -13706,16 +21045,27 @@ var requestAnimationFrame =
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "CSS_hack#Browser_prefixes", "Vendor prefix"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "CSS_hack#Browser_prefixes", "Vendor prefix"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Viewport
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - Layout
 - viewport
+=======
+-   CodingScripting
+-   Glossary
+-   Layout
+-   viewport
+>>>>>>> master
 
 ---
 
@@ -13725,20 +21075,35 @@ The portion of the viewport that is currently visible is called the **_Glossary(
 
 #### See also
 
+<<<<<<< HEAD
 - [Visual Viewport API](/en-US/docs/Web/API/Visual_Viewport_API)
 - _Interwiki("wikipedia", "Viewport"_) on Wikipedia
 - [A tale of two viewports](https://www.quirksmode.org/mobile/viewports.html) (Quirksmode)
 - _Glossary("Visual viewport"_) in the MDN Glossary
 - _Glossary("Layout viewport"_) in the MDN Glossary
+=======
+-   [Visual Viewport API](/en-US/docs/Web/API/Visual_Viewport_API)
+-   _Interwiki("wikipedia", "Viewport"_) on Wikipedia
+-   [A tale of two viewports](https://www.quirksmode.org/mobile/viewports.html) (Quirksmode)
+-   _Glossary("Visual viewport"_) in the MDN Glossary
+-   _Glossary("Layout viewport"_) in the MDN Glossary
+>>>>>>> master
 
 ---
 
 ## Term: Visual Viewport
 
+<<<<<<< HEAD
 - Glossary
 - VisualViewport
 - viewport
 - visual viewport
+=======
+-   Glossary
+-   VisualViewport
+-   viewport
+-   visual viewport
+>>>>>>> master
 
 ---
 
@@ -13746,19 +21111,33 @@ The portion of the viewport that is currently visible is called the **_Glossary(
 
 #### See also
 
+<<<<<<< HEAD
 - [Visual Viewport API](/en-US/docs/Web/API/Visual_Viewport_API)
 - _Interwiki("wikipedia", "Viewport"_) on Wikipedia
 - [A tale of two viewports](https://www.quirksmode.org/mobile/viewports.html) (Quirksmode)
 - _Glossary("Viewport"_) in the MDN Glossary
 - _Glossary("Layout viewport"_) in the MDN Glossary
+=======
+-   [Visual Viewport API](/en-US/docs/Web/API/Visual_Viewport_API)
+-   _Interwiki("wikipedia", "Viewport"_) on Wikipedia
+-   [A tale of two viewports](https://www.quirksmode.org/mobile/viewports.html) (Quirksmode)
+-   _Glossary("Viewport"_) in the MDN Glossary
+-   _Glossary("Layout viewport"_) in the MDN Glossary
+>>>>>>> master
 
 ---
 
 ## Term: VoIP
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
 - VoIP
+=======
+-   Glossary
+-   Infrastructure
+-   VoIP
+>>>>>>> master
 
 ---
 
@@ -13768,18 +21147,31 @@ VoIP allows you to make a call directly from a computer, a special VoIP phone, o
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "VoIP"_) on Wikipedia
+=======
+-   _Interwiki("wikipedia", "VoIP"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: W3C
 
+<<<<<<< HEAD
 - Community
 - Consortium
 - Glossary
 - Intro
 - W3C
 - Web consortium
+=======
+-   Community
+-   Consortium
+-   Glossary
+-   Intro
+-   W3C
+-   Web consortium
+>>>>>>> master
 
 ---
 
@@ -13791,15 +21183,25 @@ Each standard passes through four stages of maturity: Working Draft (WD), Candid
 
 #### See also
 
+<<<<<<< HEAD
 - [W3C website](https://www.w3.org/)
 - _Interwiki("wikipedia", "World Wide Web Consortium", "W3C"_) on Wikipedia
+=======
+-   [W3C website](https://www.w3.org/)
+-   _Interwiki("wikipedia", "World Wide Web Consortium", "W3C"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: WAI
 
+<<<<<<< HEAD
 - Accessibility
 - Glossary
+=======
+-   Accessibility
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -13807,17 +21209,29 @@ Each standard passes through four stages of maturity: Working Draft (WD), Candid
 
 #### See also
 
+<<<<<<< HEAD
 - [WAI website](https://www.w3.org/WAI/)
 - _Interwiki("wikipedia", "Web Accessibility Initiative"_) on Wikipedia
+=======
+-   [WAI website](https://www.w3.org/WAI/)
+-   _Interwiki("wikipedia", "Web Accessibility Initiative"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: WCAG
 
+<<<<<<< HEAD
 - Accessibility
 - Glossary
 - WCAG
 - Web Guidelines
+=======
+-   Accessibility
+-   Glossary
+-   WCAG
+-   Web Guidelines
+>>>>>>> master
 
 ---
 
@@ -13827,6 +21241,7 @@ WCAG 2.0 which superseded WCAG 1.0 was published as a W3C Recommendation on 11 D
 
 WCAG uses three levels of conformance:
 
+<<<<<<< HEAD
 - Priority 1: Web developers **must** satisfy these requirements, otherwise it will be impossible for one or more groups to access the Web content. Conformance to this level is described as A.
 - Priority 2: Web developers **should** satisfy these requirements, otherwise some groups will find it difficult to access the Web content. Conformance to this level is described as AA or Double-A.
 - Priority 3: Web developers **may** satisfy these requirements, in order to make it easier for some groups to access the Web content. Conformance to this level is described as AAA or Triple-A.
@@ -13836,15 +21251,33 @@ WCAG uses three levels of conformance:
 - _Interwiki("wikipedia", "Web Content Accessibility Guidelines", "WCAG"_) on Wikipedia
 - [Accessibility information on MDN](/en-US/docs/Web/Accessibility/Information_for_Web_authors)
 - [The WCAG 2.0 recommendation at the W3C](https://www.w3.org/TR/WCAG20/)
+=======
+-   Priority 1: Web developers **must** satisfy these requirements, otherwise it will be impossible for one or more groups to access the Web content. Conformance to this level is described as A.
+-   Priority 2: Web developers **should** satisfy these requirements, otherwise some groups will find it difficult to access the Web content. Conformance to this level is described as AA or Double-A.
+-   Priority 3: Web developers **may** satisfy these requirements, in order to make it easier for some groups to access the Web content. Conformance to this level is described as AAA or Triple-A.
+
+#### See also
+
+-   _Interwiki("wikipedia", "Web Content Accessibility Guidelines", "WCAG"_) on Wikipedia
+-   [Accessibility information on MDN](/en-US/docs/Web/Accessibility/Information_for_Web_authors)
+-   [The WCAG 2.0 recommendation at the W3C](https://www.w3.org/TR/WCAG20/)
+>>>>>>> master
 
 ---
 
 ## Term: Web performance
 
+<<<<<<< HEAD
 - Glossary
 - Perceived Performance
 - Reference
 - Web Performance
+=======
+-   Glossary
+-   Perceived Performance
+-   Reference
+-   Web Performance
+>>>>>>> master
 
 ---
 
@@ -13854,15 +21287,25 @@ Objectively, it is measurable time, in milliseconds, it takes for the web page o
 
 #### See also
 
+<<<<<<< HEAD
 - [Learn about web performance](/en-US/docs/Learn/Performance)
 - [Perceived performance](/en-US/docs/Glossary/Perceived_performance)
+=======
+-   [Learn about web performance](/en-US/docs/Learn/Performance)
+-   [Perceived performance](/en-US/docs/Glossary/Perceived_performance)
+>>>>>>> master
 
 ---
 
 ## Term: Web server
 
+<<<<<<< HEAD
 - web server
 - web-server
+=======
+-   web server
+-   web-server
+>>>>>>> master
 
 ---
 
@@ -13870,18 +21313,31 @@ Objectively, it is measurable time, in milliseconds, it takes for the web page o
 
 #### See also
 
+<<<<<<< HEAD
 - [Introduction to servers](/en-US/docs/Learn/Common_questions/What_is_a_web_server)
 - _Interwiki("wikipedia", "Server (computing)"_) on Wikipedia
+=======
+-   [Introduction to servers](/en-US/docs/Learn/Common_questions/What_is_a_web_server)
+-   _Interwiki("wikipedia", "Server (computing)"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: Web standards
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
 - Web Standards
 - standards
 - web specifications
+=======
+-   Glossary
+-   Infrastructure
+-   Web Standards
+-   standards
+-   web specifications
+>>>>>>> master
 
 ---
 
@@ -13891,6 +21347,7 @@ Several standards bodies are responsible for defining different aspects of the W
 
 This non-exhaustive list gives you an idea of which standards websites and network systems must conform to:
 
+<<<<<<< HEAD
 - **IETF** (Internet Engineering Task Force): Internet standards (STD), which among other things govern set-up and use of _Glossary("URI", "URIs"_), _Glossary("HTTP"_), and _Glossary("MIME"_)
 - **_Glossary("W3C"_)**: specifications for markup language (e.g., _Glossary("HTML"_)), style definitions (i.e., _Glossary("CSS"_)), _Glossary("DOM"_), _Glossary("Accessibility", "accessibility"_)
 - **IANA** (Internet Assigned Numbers Authority): name and number registries
@@ -13900,13 +21357,29 @@ This non-exhaustive list gives you an idea of which standards websites and netwo
 #### See also
 
 - _Interwiki("wikipedia", "Web standards"_) on Wikipedia
+=======
+-   **IETF** (Internet Engineering Task Force): Internet standards (STD), which among other things govern set-up and use of _Glossary("URI", "URIs"_), _Glossary("HTTP"_), and _Glossary("MIME"_)
+-   **_Glossary("W3C"_)**: specifications for markup language (e.g., _Glossary("HTML"_)), style definitions (i.e., _Glossary("CSS"_)), _Glossary("DOM"_), _Glossary("Accessibility", "accessibility"_)
+-   **IANA** (Internet Assigned Numbers Authority): name and number registries
+-   **Ecma Intl.:** scripting standards, most prominently for _Glossary("JavaScript"_)
+-   **_Glossary("ISO"_)** (International Organization for Standardization): standards governing a diverse array of aspects, including character encodings, website management, and user-interface design
+
+#### See also
+
+-   _Interwiki("wikipedia", "Web standards"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: WebAssembly
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
+=======
+-   Glossary
+-   Infrastructure
+>>>>>>> master
 
 ---
 
@@ -13914,16 +21387,27 @@ This non-exhaustive list gives you an idea of which standards websites and netwo
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki('wikipedia','WebAssembly'_) on Wikipedia
 - [Official website](https://webassembly.org/)
 - [WebAssembly](/en-US/docs/WebAssembly) on MDN
+=======
+-   _interwiki('wikipedia','WebAssembly'_) on Wikipedia
+-   [Official website](https://webassembly.org/)
+-   [WebAssembly](/en-US/docs/WebAssembly) on MDN
+>>>>>>> master
 
 ---
 
 ## Term: WebDAV
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
+=======
+-   Glossary
+-   Infrastructure
+>>>>>>> master
 
 ---
 
@@ -13933,6 +21417,7 @@ WebDAV is rarely used alone, but two extensions are very common: _Glossary("CalD
 
 WebDAV allows clients to
 
+<<<<<<< HEAD
 - add, delete, and retrieve webpage metadata (e.g. author or creation date)
 - link pages of any media type to related pages
 - create sets of documents and retrieve hierarchical list
@@ -13947,15 +21432,38 @@ WebDAV allows clients to
     - _rfc(2518_)
     - _rfc(3253_)
     - _rfc(3744_)
+=======
+-   add, delete, and retrieve webpage metadata (e.g. author or creation date)
+-   link pages of any media type to related pages
+-   create sets of documents and retrieve hierarchical list
+-   copy and move webpages
+-   lock a document from being edited by more than one person at a time
+
+#### See also
+
+-   _Interwiki("wikipedia", "WebDAV"_) on Wikipedia
+-   Specifications:
+
+    -   _rfc(2518_)
+    -   _rfc(3253_)
+    -   _rfc(3744_)
+>>>>>>> master
 
 ---
 
 ## Term: WebExtensions
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - NeedsContent
 - WebExtensions
+=======
+-   CodingScripting
+-   Glossary
+-   NeedsContent
+-   WebExtensions
+>>>>>>> master
 
 ---
 
@@ -13963,17 +21471,29 @@ WebDAV allows clients to
 
 #### See also
 
+<<<<<<< HEAD
 - [Browser extensions](/en-US/docs/Mozilla/Add-ons/WebExtensions) on MDN
+=======
+-   [Browser extensions](/en-US/docs/Mozilla/Add-ons/WebExtensions) on MDN
+>>>>>>> master
 
 ---
 
 ## Term: WebGL
 
+<<<<<<< HEAD
 - Advanced
 - CodingScripting
 - Glossary
 - Web Graphics
 - WebGL
+=======
+-   Advanced
+-   CodingScripting
+-   Glossary
+-   Web Graphics
+-   WebGL
+>>>>>>> master
 
 ---
 
@@ -13987,18 +21507,31 @@ All major _Glossary("Browser","browsers"_) now support WebGL, but its availabili
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "WebGL"_) on Wikipedia
 - [Check for WebGL support](https://get.webgl.org/)
 - [WebGL on MDN](/en-US/docs/Web/API/WebGL_API)
 - [Support table for WebGL](https://caniuse.com/#feat=webgl)
+=======
+-   _Interwiki("wikipedia", "WebGL"_) on Wikipedia
+-   [Check for WebGL support](https://get.webgl.org/)
+-   [WebGL on MDN](/en-US/docs/Web/API/WebGL_API)
+-   [Support table for WebGL](https://caniuse.com/#feat=webgl)
+>>>>>>> master
 
 ---
 
 ## Term: WebIDL
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - WebIDL
+=======
+-   CodingScripting
+-   Glossary
+-   WebIDL
+>>>>>>> master
 
 ---
 
@@ -14008,21 +21541,37 @@ WebIDL is used in nearly every API _Glossary("specification"_) for the Web, and 
 
 #### See also
 
+<<<<<<< HEAD
 - [Specification](https://www.w3.org/TR/WebIDL/)
 - [Information contained in a WebIDL file](/en-US/docs/MDN/Contribute/Howto/Write_an_API_reference/Information_contained_in_a_WebIDL_file)
 - [WebIDL bindings](/en-US/docs/Mozilla/WebIDL_bindings)
 - _interwiki("wikipedia", "WebIDL"_)
+=======
+-   [Specification](https://www.w3.org/TR/WebIDL/)
+-   [Information contained in a WebIDL file](/en-US/docs/MDN/Contribute/Howto/Write_an_API_reference/Information_contained_in_a_WebIDL_file)
+-   [WebIDL bindings](/en-US/docs/Mozilla/WebIDL_bindings)
+-   _interwiki("wikipedia", "WebIDL"_)
+>>>>>>> master
 
 ---
 
 ## Term: WebKit
 
+<<<<<<< HEAD
 - Browser
 - Glossary
 - Intro
 - Web
 - WebKit
 - WebMechanics
+=======
+-   Browser
+-   Glossary
+-   Intro
+-   Web
+-   WebKit
+-   WebMechanics
+>>>>>>> master
 
 ---
 
@@ -14034,17 +21583,29 @@ WebKit is an Apple trademark, and the framework is distributed under a BSD-form 
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "WebKit"_) on Wikipedia
 - [WebKit CSS extensions](/en-US/docs/Web/CSS/WebKit_Extensions)
+=======
+-   _Interwiki("wikipedia", "WebKit"_) on Wikipedia
+-   [WebKit CSS extensions](/en-US/docs/Web/CSS/WebKit_Extensions)
+>>>>>>> master
 
 ---
 
 ## Term: WebM
 
+<<<<<<< HEAD
 - Composing
 - Glossary
 - Infrastructure
 - WebM
+=======
+-   Composing
+-   Glossary
+-   Infrastructure
+-   WebM
+>>>>>>> master
 
 ---
 
@@ -14052,17 +21613,29 @@ WebKit is an Apple trademark, and the framework is distributed under a BSD-form 
 
 #### See also
 
+<<<<<<< HEAD
 - [WebM ](https://en.wikipedia.org/wiki/WebM)on Wikipedia
+=======
+-   [WebM ](https://en.wikipedia.org/wiki/WebM)on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: WebP
 
+<<<<<<< HEAD
 - Beginner
 - Composing
 - Glossary
 - Infrastructure
 - WebP
+=======
+-   Beginner
+-   Composing
+-   Glossary
+-   Infrastructure
+-   WebP
+>>>>>>> master
 
 ---
 
@@ -14070,12 +21643,17 @@ WebKit is an Apple trademark, and the framework is distributed under a BSD-form 
 
 #### See also
 
+<<<<<<< HEAD
 - [WebP ](https://en.wikipedia.org/wiki/WebP)on Wikipedia
+=======
+-   [WebP ](https://en.wikipedia.org/wiki/WebP)on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: WebRTC
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - Infrastructure
@@ -14084,6 +21662,16 @@ WebKit is an Apple trademark, and the framework is distributed under a BSD-form 
 - VoIP
 - Web
 - WebRTC
+=======
+-   CodingScripting
+-   Glossary
+-   Infrastructure
+-   JavaScript
+-   P2P
+-   VoIP
+-   Web
+-   WebRTC
+>>>>>>> master
 
 ---
 
@@ -14091,6 +21679,7 @@ WebKit is an Apple trademark, and the framework is distributed under a BSD-form 
 
 WebRTC consists mainly of these parts:
 
+<<<<<<< HEAD
 - _domxref("MediaDevices.getUserMedia", "getUserMedia()"_)
 - - : Grants access to a device's camera and/or microphone, and can plug in their signals to a
 - _domxref("RTCPeerConnection"_)
@@ -14103,11 +21692,26 @@ WebRTC consists mainly of these parts:
 - _Interwiki("wikipedia", "WebRTC"_) on Wikipedia
 - [WebRTC API on MDN](/en-US/docs/Web/API/WebRTC_API)
 - [Browser support for WebRTC](https://caniuse.com/rtcpeerconnection)
+=======
+-   _domxref("MediaDevices.getUserMedia", "getUserMedia()"_)
+-   -   : Grants access to a device's camera and/or microphone, and can plug in their signals to a
+-   _domxref("RTCPeerConnection"_)
+    -   : An interface to configure video chat or voice calls.
+-   _domxref("RTCDataChannel"_)
+    -   : Provides a method to set up a _Glossary("P2P", "peer-to-peer"_) data pathway between browsers.
+
+#### See also
+
+-   _Interwiki("wikipedia", "WebRTC"_) on Wikipedia
+-   [WebRTC API on MDN](/en-US/docs/Web/API/WebRTC_API)
+-   [Browser support for WebRTC](https://caniuse.com/rtcpeerconnection)
+>>>>>>> master
 
 ---
 
 ## Term: WebSockets
 
+<<<<<<< HEAD
 - Connection
 - Glossary
 - Infrastructure
@@ -14115,6 +21719,15 @@ WebRTC consists mainly of these parts:
 - Protocols
 - Web
 - WebSocket
+=======
+-   Connection
+-   Glossary
+-   Infrastructure
+-   Networking
+-   Protocols
+-   Web
+-   WebSocket
+>>>>>>> master
 
 ---
 
@@ -14124,21 +21737,37 @@ Any client or server application can use WebSocket, but principally web _Glossar
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Websocket"_) on Wikipedia
 - [WebSocket reference on MDN](/en-US/docs/Web/API/WebSocket)
 - [Writing WebSocket client applications](/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_client_applications)
 - [Writing WebSocket servers](/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_servers)
+=======
+-   _Interwiki("wikipedia", "Websocket"_) on Wikipedia
+-   [WebSocket reference on MDN](/en-US/docs/Web/API/WebSocket)
+-   [Writing WebSocket client applications](/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_client_applications)
+-   [Writing WebSocket servers](/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_servers)
+>>>>>>> master
 
 ---
 
 ## Term: WebVTT
 
+<<<<<<< HEAD
 - Audio
 - CodingScripting
 - Glossary
 - Video
 - Web
 - WebVTT
+=======
+-   Audio
+-   CodingScripting
+-   Glossary
+-   Video
+-   Web
+-   WebVTT
+>>>>>>> master
 
 ---
 
@@ -14148,14 +21777,21 @@ WebVTT files provide metadata that is time-aligned with audio or video content l
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "WebVTT"_) on Wikipedia
 - [WebVTT](/en-US/docs/Web/API/WebVTT_API) on MDN
 - [Specification](https://www.w3.org/TR/webvtt1/)
+=======
+-   _Interwiki("wikipedia", "WebVTT"_) on Wikipedia
+-   [WebVTT](/en-US/docs/Web/API/WebVTT_API) on MDN
+-   [Specification](https://www.w3.org/TR/webvtt1/)
+>>>>>>> master
 
 ---
 
 ## Term: WHATWG
 
+<<<<<<< HEAD
 - Community
 - DOM
 - Glossary
@@ -14164,6 +21800,16 @@ WebVTT files provide metadata that is time-aligned with audio or video content l
 - WHATWG
 - Web
 - standards
+=======
+-   Community
+-   DOM
+-   Glossary
+-   HTML
+-   HTML5
+-   WHATWG
+-   Web
+-   standards
+>>>>>>> master
 
 ---
 
@@ -14171,16 +21817,27 @@ WebVTT files provide metadata that is time-aligned with audio or video content l
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "WHATWG"_) on Wikipedia
 - [WHATWG website](https://whatwg.org/)
+=======
+-   _Interwiki("wikipedia", "WHATWG"_) on Wikipedia
+-   [WHATWG website](https://whatwg.org/)
+>>>>>>> master
 
 ---
 
 ## Term: Whitespace
 
+<<<<<<< HEAD
 - Glossary
 - Lexical Grammar
 - whitespace
+=======
+-   Glossary
+-   Lexical Grammar
+-   whitespace
+>>>>>>> master
 
 ---
 
@@ -14198,6 +21855,7 @@ The [ECMAScript Language Specification](https://tc39.es/ecma262/#sec-white-space
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "Whitespace character"_) (Wikipedia)
 - [How whitespace is handled by HTML, CSS, and in the DOM](/en-US/docs/Web/API/Document_Object_Model/Whitespace)
 - _cssxref("white-space"_)
@@ -14207,6 +21865,17 @@ The [ECMAScript Language Specification](https://tc39.es/ecma262/#sec-white-space
     - [ECMAScript Language Specification](https://tc39.es/ecma262/#sec-white-space)
 
 - [Glossary](/en-US/docs/Glossary)
+=======
+-   _interwiki("wikipedia", "Whitespace character"_) (Wikipedia)
+-   [How whitespace is handled by HTML, CSS, and in the DOM](/en-US/docs/Web/API/Document_Object_Model/Whitespace)
+-   _cssxref("white-space"_)
+-   Specifications
+
+    -   [ASCII whitespace spec](https://infra.spec.whatwg.org/#ascii-whitespace)
+    -   [ECMAScript Language Specification](https://tc39.es/ecma262/#sec-white-space)
+
+-   [Glossary](/en-US/docs/Glossary)
+>>>>>>> master
 
     1.  _Glossary("Character"_)
 
@@ -14214,9 +21883,15 @@ The [ECMAScript Language Specification](https://tc39.es/ecma262/#sec-white-space
 
 ## Term: WindowProxy
 
+<<<<<<< HEAD
 - Glossary
 - Window
 - WindowProxy
+=======
+-   Glossary
+-   Window
+-   WindowProxy
+>>>>>>> master
 
 ---
 
@@ -14224,17 +21899,29 @@ The [ECMAScript Language Specification](https://tc39.es/ecma262/#sec-white-space
 
 #### See also
 
+<<<<<<< HEAD
 - HTML specification: [WindowProxy section](https://html.spec.whatwg.org/multipage/window-object.html#the-windowproxy-exotic-object)
 - Stack Overflow question: [WindowProxy and Window objects?](https://stackoverflow.com/q/16092835/)
+=======
+-   HTML specification: [WindowProxy section](https://html.spec.whatwg.org/multipage/window-object.html#the-windowproxy-exotic-object)
+-   Stack Overflow question: [WindowProxy and Window objects?](https://stackoverflow.com/q/16092835/)
+>>>>>>> master
 
 ---
 
 ## Term: World Wide Web
 
+<<<<<<< HEAD
 - Glossary
 - Infrastructure
 - WWW
 - World Wide Web
+=======
+-   Glossary
+-   Infrastructure
+-   WWW
+-   World Wide Web
+>>>>>>> master
 
 ---
 
@@ -14244,9 +21931,15 @@ Tim Berners-Lee proposed the architecture of what became known as the World Wide
 
 The system we know today as "the Web" consists of several components:
 
+<<<<<<< HEAD
 - The **_Glossary("HTTP"_)** protocol governs data transfer between a server and a client.
 - To access a Web component, a client supplies a unique universal identifier, called a **_Glossary("URL"_)** (uniform resource locator) or _Glossary("URI"_) (uniform resource identifier) (formally called Universal Document Identifier (UDI)).
 - **_Glossary("HTML"_)** (hypertext markup language) is the most common format for publishing web documents.
+=======
+-   The **_Glossary("HTTP"_)** protocol governs data transfer between a server and a client.
+-   To access a Web component, a client supplies a unique universal identifier, called a **_Glossary("URL"_)** (uniform resource locator) or _Glossary("URI"_) (uniform resource identifier) (formally called Universal Document Identifier (UDI)).
+-   **_Glossary("HTML"_)** (hypertext markup language) is the most common format for publishing web documents.
+>>>>>>> master
 
 Linking, or connecting resources through _Glossary("Hyperlink","hyperlinks"_), is a defining concept of the Web, aiding its identity as a collection of connected documents.
 
@@ -14254,17 +21947,29 @@ Soon after inventing the Web, Tim Berners-Lee founded the _Glossary("W3C"_) (Wor
 
 #### See also
 
+<<<<<<< HEAD
 - [Learn the Web](/en-US/docs/Learn)
 - _Interwiki("wikipedia", "World Wide Web"_) on Wikipedia
 - [The W3C website](https://w3.org)
+=======
+-   [Learn the Web](/en-US/docs/Learn)
+-   _Interwiki("wikipedia", "World Wide Web"_) on Wikipedia
+-   [The W3C website](https://w3.org)
+>>>>>>> master
 
 ---
 
 ## Term: Wrapper
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - Wrapper
+=======
+-   CodingScripting
+-   Glossary
+-   Wrapper
+>>>>>>> master
 
 ---
 
@@ -14274,21 +21979,37 @@ For example, SDK Libraries for AWS are examples of wrappers.
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "Wrapper function"_) (Wikipedia)
 - [MDN Web Docs Glossary](/en-US/docs/Glossary)
 
     - _Glossary("API"_)
     - _Glossary("Class"_)
     - _Glossary("Function"_)
+=======
+-   _Interwiki("wikipedia", "Wrapper function"_) (Wikipedia)
+-   [MDN Web Docs Glossary](/en-US/docs/Glossary)
+
+    -   _Glossary("API"_)
+    -   _Glossary("Class"_)
+    -   _Glossary("Function"_)
+>>>>>>> master
 
 ---
 
 ## Term: XForms
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - Deprecated
 - XForms
+=======
+-   CodingScripting
+-   Glossary
+-   Deprecated
+-   XForms
+>>>>>>> master
 
 ---
 
@@ -14300,11 +22021,19 @@ For example, SDK Libraries for AWS are examples of wrappers.
 
 ## Term: XHR (XMLHttpRequest)
 
+<<<<<<< HEAD
 - API
 - Beginner
 - CodingScripting
 - Glossary
 - XMLHttpRequest
+=======
+-   API
+-   Beginner
+-   CodingScripting
+-   Glossary
+-   XMLHttpRequest
+>>>>>>> master
 
 ---
 
@@ -14312,18 +22041,31 @@ For example, SDK Libraries for AWS are examples of wrappers.
 
 #### See also
 
+<<<<<<< HEAD
 - _interwiki("wikipedia", "XMLHttpRequest"_) on Wikipedia
 - [Synchronous vs. Asynchronous Communications](https://peoplesofttutorial.com/difference-between-synchronous-and-asynchronous-messaging/)
 - The _domxref("XMLHttpRequest"_) object
 - The [documentation on MDN about how to use XMLHttpRequest](/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest)
+=======
+-   _interwiki("wikipedia", "XMLHttpRequest"_) on Wikipedia
+-   [Synchronous vs. Asynchronous Communications](https://peoplesofttutorial.com/difference-between-synchronous-and-asynchronous-messaging/)
+-   The _domxref("XMLHttpRequest"_) object
+-   The [documentation on MDN about how to use XMLHttpRequest](/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest)
+>>>>>>> master
 
 ---
 
 ## Term: XHTML
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - XHTML
+=======
+-   CodingScripting
+-   Glossary
+-   XHTML
+>>>>>>> master
 
 ---
 
@@ -14336,14 +22078,23 @@ For example, SDK Libraries for AWS are examples of wrappers.
 Note also that if you wish to allow xml:base, you will need the [xml:base function](/en-US/docs/Archive/Add-ons/Code_snippets/XML/base_function), and the line beginning `var href = ...` should become:
 
 ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
 var href = getXmlBaseLink(/* XLink sans xml:base */ xinclude.getAttribute('href'), /* Element to query from */ xinclude);
 ```
 
 ---
 
+<<<<<<< HEAD
 
 ```js
 
+=======
+```js
+//
+>>>>>>> master
 
 function resolveXIncludes(docu) {
     // http://www.w3.org/TR/xinclude/#xml-included-items
@@ -14487,8 +22238,13 @@ function resolveXIncludes(docu) {
 
 ## Term: XLink
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
+=======
+-   CodingScripting
+-   Glossary
+>>>>>>> master
 
 ---
 
@@ -14502,6 +22258,7 @@ XLink is used in [SVG](/en-US/docs/Web/SVG), [MathML](/en-US/docs/Web/MathML), a
 
 ### Specifications
 
+<<<<<<< HEAD
 - [XLink 1.0](https://www.w3.org/TR/xlink/)
 - [XLink 1.1](https://www.w3.org/TR/xlink11/) (currently a Working Draft)
 
@@ -14509,15 +22266,31 @@ XLink is used in [SVG](/en-US/docs/Web/SVG), [MathML](/en-US/docs/Web/MathML), a
 
 - [XML](/en-US/docs/Web/XML)
 - [Code snippets:getAttributeNS](/en-US/docs/Web/API/Element/getAttributeNS) - a wrapper for dealing with some browsers not supporting this DOM method
+=======
+-   [XLink 1.0](https://www.w3.org/TR/xlink/)
+-   [XLink 1.1](https://www.w3.org/TR/xlink11/) (currently a Working Draft)
+
+##### See also
+
+-   [XML](/en-US/docs/Web/XML)
+-   [Code snippets:getAttributeNS](/en-US/docs/Web/API/Element/getAttributeNS) - a wrapper for dealing with some browsers not supporting this DOM method
+>>>>>>> master
 
 ---
 
 ## Term: XML
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - XML
 - l10n:priority
+=======
+-   CodingScripting
+-   Glossary
+-   XML
+-   l10n:priority
+>>>>>>> master
 
 ---
 
@@ -14525,16 +22298,27 @@ XLink is used in [SVG](/en-US/docs/Web/SVG), [MathML](/en-US/docs/Web/MathML), a
 
 #### See also
 
+<<<<<<< HEAD
 - [XML introduction](/en-US/docs/Web/XML/XML_introduction)
+=======
+-   [XML introduction](/en-US/docs/Web/XML/XML_introduction)
+>>>>>>> master
 
 ---
 
 ## Term: XPath
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - XML
 - XPath
+=======
+-   CodingScripting
+-   Glossary
+-   XML
+-   XPath
+>>>>>>> master
 
 ---
 
@@ -14542,19 +22326,33 @@ XLink is used in [SVG](/en-US/docs/Web/SVG), [MathML](/en-US/docs/Web/MathML), a
 
 #### See also
 
+<<<<<<< HEAD
 - [XPath documentation on MDN](/en-US/docs/Web/XPath)
 - [XPath specification](https://www.w3.org/TR/xpath-30/)
 - [Official website](https://www.w3.org/standards/techs/xpath#w3c_all)
 - _Interwiki("wikipedia", "XPath"_) on Wikipedia
+=======
+-   [XPath documentation on MDN](/en-US/docs/Web/XPath)
+-   [XPath specification](https://www.w3.org/TR/xpath-30/)
+-   [Official website](https://www.w3.org/standards/techs/xpath#w3c_all)
+-   _Interwiki("wikipedia", "XPath"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: XQuery
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - XML
 - XQuery
+=======
+-   CodingScripting
+-   Glossary
+-   XML
+-   XQuery
+>>>>>>> master
 
 ---
 
@@ -14562,17 +22360,29 @@ XLink is used in [SVG](/en-US/docs/Web/SVG), [MathML](/en-US/docs/Web/MathML), a
 
 #### See also
 
+<<<<<<< HEAD
 - [Official website](https://www.w3.org/XML/Query/)
 - _Interwiki("wikipedia", "XQuery"_) on Wikipedia
+=======
+-   [Official website](https://www.w3.org/XML/Query/)
+-   _Interwiki("wikipedia", "XQuery"_) on Wikipedia
+>>>>>>> master
 
 ---
 
 ## Term: XSLT
 
+<<<<<<< HEAD
 - CodingScripting
 - Glossary
 - XML
 - XSLT
+=======
+-   CodingScripting
+-   Glossary
+-   XML
+-   XSLT
+>>>>>>> master
 
 ---
 
@@ -14582,5 +22392,10 @@ XSLT has its own processor that accepts XML input, or any format convertible to 
 
 #### See also
 
+<<<<<<< HEAD
 - _Interwiki("wikipedia", "XSLT"_) on Wikipedia
 - [XSLT documentation on MDN](/en-US/docs/Web/XSLT)
+=======
+-   _Interwiki("wikipedia", "XSLT"_) on Wikipedia
+-   [XSLT documentation on MDN](/en-US/docs/Web/XSLT)
+>>>>>>> master

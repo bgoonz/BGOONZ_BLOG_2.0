@@ -10,6 +10,10 @@ seo:
 template: docs
 ---
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 In production, it is recommended to minify any JavaScript code that is included with your application. **Minification can help your website load several times faster,** especially as the size of your JavaScript source code grows.
 
 Here's one way to set it up:

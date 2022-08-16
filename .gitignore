@@ -77,8 +77,12 @@ typings/
 
 
 # gatsby files
+<<<<<<< HEAD
 # .cache/
 # public
+=======
+
+>>>>>>> master
 
 # Mac files
 .DS_Store
@@ -91,8 +95,13 @@ yarn-error.log
 .yarn-integrity
 
 node_modules/
+public/
+.cache/
 
+<<<<<<< HEAD
 .package-lock.json
 *.cache
 *public
 src/pages/docs/tools/Archive.md
+=======
+>>>>>>> master

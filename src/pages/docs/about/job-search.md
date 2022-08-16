@@ -11,6 +11,7 @@ seo:
 template: docs
 ---
 
+
 # Job Boards and The Hunt
 
 I can't imagine the kind of masochism it would take to enjoy the act of posting and daily maintenance on a job board…It's part of the…
@@ -68,6 +69,7 @@ Don't wait for the company to reach out to you! Be proactive in showing your int
 
 ### Update (remote work edition):
 
+<<<<<<< HEAD
 1.  <span id="3063"><a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#arc" class="markup--anchor markup--li-anchor">Arc</a></span>
 2.  <span id="7639"><a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#we-work-remotely" class="markup--anchor markup--li-anchor">We Work Remotely</a></span>
 3.  <span id="e21f"><a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#skip-the-drive" class="markup--anchor markup--li-anchor">Skip The Drive</a></span>
@@ -93,6 +95,83 @@ Don't wait for the company to reach out to you! Be proactive in showing your int
 23. <span id="fa5e"><a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#upwork" class="markup--anchor markup--li-anchor">Upwork</a></span>
 24. <span id="f209"><a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#freelancer" class="markup--anchor markup--li-anchor">Freelancer</a></span>
 25. <span id="5ec4"><a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#freelancermap" class="markup--anchor markup--li-anchor">freelancermap</a></span>
+=======
+1.  <span id="3063">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#arc" class="markup--anchor markup--li-anchor">Arc</a>
+</span>
+2.  <span id="7639">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#we-work-remotely" class="markup--anchor markup--li-anchor">We Work Remotely</a>
+</span>
+3.  <span id="e21f">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#skip-the-drive" class="markup--anchor markup--li-anchor">Skip The Drive</a>
+</span>
+4.  <span id="e1df">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#power-to-fly" class="markup--anchor markup--li-anchor">Power to Fly</a>
+</span>
+5.  <span id="ecb8">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#remote-ok" class="markup--anchor markup--li-anchor">Remote OK</a>
+</span>
+6.  <span id="c08c">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#remotive" class="markup--anchor markup--li-anchor">Remotive</a>
+</span>
+7.  <span id="b4f2">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#flexjobs" class="markup--anchor markup--li-anchor">FlexJobs</a>
+</span>
+8.  <span id="e670">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#dribble" class="markup--anchor markup--li-anchor">Dribble</a>
+</span>
+9.  <span id="3b01">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#angellist" class="markup--anchor markup--li-anchor">AngelList</a>
+</span>
+10. <span id="4e54">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#remote-co" class="markup--anchor markup--li-anchor">Remote.co</a>
+</span>
+11. <span id="043a">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#justremote" class="markup--anchor markup--li-anchor">JustRemote</a>
+</span>
+12. <span id="7190">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#virtual-vocations" class="markup--anchor markup--li-anchor">Virtual Vocations</a>
+</span>
+13. <span id="8128">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#pangian" class="markup--anchor markup--li-anchor">Pangian</a>
+</span>
+14. <span id="f142">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#working-nomads" class="markup--anchor markup--li-anchor">Working Nomads</a>
+</span>
+15. <span id="6d89">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#jobspresso" class="markup--anchor markup--li-anchor">Jobspresso</a>
+</span>
+16. <span id="8732">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#outsourcely" class="markup--anchor markup--li-anchor">Outsourcely</a>
+</span>
+17. <span id="4f25">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#landing-jobs" class="markup--anchor markup--li-anchor">Landing.Jobs</a>
+</span>
+18. <span id="f994">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#authentic-jobs" class="markup--anchor markup--li-anchor">Authentic Jobs</a>
+</span>
+19. <span id="4b77">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#stack-overflow" class="markup--anchor markup--li-anchor">Stack Overflow</a>
+</span>
+20. <span id="bb76">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#gun-io" class="markup--anchor markup--li-anchor">Gun.io</a>
+</span>
+21. <span id="114e">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#idealist" class="markup--anchor markup--li-anchor">Idealist</a>
+</span>
+22. <span id="5da2">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#fiverr" class="markup--anchor markup--li-anchor">Fiverr</a>
+</span>
+23. <span id="fa5e">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#upwork" class="markup--anchor markup--li-anchor">Upwork</a>
+</span>
+24. <span id="f209">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#freelancer" class="markup--anchor markup--li-anchor">Freelancer</a>
+</span>
+25. <span id="5ec4">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#freelancermap" class="markup--anchor markup--li-anchor">freelancermap</a>
+</span>
+>>>>>>> master
 
 ---
 
@@ -100,6 +179,7 @@ Don't wait for the company to reach out to you! Be proactive in showing your int
 
 #### General Boards
 
+<<<<<<< HEAD
 - <span id="a076"><a href="https://builtin.com/jobs" class="markup--anchor markup--li-anchor">Built In</a></span>
 - <span id="c522"><a href="https://stackoverflow.com/jobs" class="markup--anchor markup--li-anchor">Stack Overflow</a></span>
 - <span id="8235"><a href="http://angel.co/jobs" class="markup--anchor markup--li-anchor">angel.co</a></span>
@@ -144,6 +224,118 @@ Don't wait for the company to reach out to you! Be proactive in showing your int
 - <span id="3dfc"><a href="http://angel.co/talent" class="markup--anchor markup--li-anchor">http://angel.co/talent</a></span>
 - <span id="319e"><a href="https://www.whitetruffle.com/" class="markup--anchor markup--li-anchor">whitetruffle</a></span>
 - <span id="428a"><a href="http://www.crunchboard.com/jobs/" class="markup--anchor markup--li-anchor">crunchboard</a></span>
+=======
+- <span id="a076">
+<a href="https://builtin.com/jobs" class="markup--anchor markup--li-anchor">Built In</a>
+</span>
+- <span id="c522">
+<a href="https://stackoverflow.com/jobs" class="markup--anchor markup--li-anchor">Stack Overflow</a>
+</span>
+- <span id="8235">
+<a href="http://angel.co/jobs" class="markup--anchor markup--li-anchor">angel.co</a>
+</span>
+- <span id="ae9e">
+<a href="https://www.theladders.com/jobs/search-jobs" class="markup--anchor markup--li-anchor">The Ladders</a>
+</span>
+- <span id="aceb">
+<a href="http://www.crunchboard.com/jobs" class="markup--anchor markup--li-anchor">CrunchBoard</a>
+</span>
+- <span id="7e5f">
+<a href="https://uncubed.com/" class="markup--anchor markup--li-anchor">Uncubed</a>
+</span>
+- <span id="8678">
+<a href="https://technical.ly/jobs/" class="markup--anchor markup--li-anchor">Technical.ly</a>
+</span>
+- <span id="c7fe">
+<a href="https://www.dice.com/" class="markup--anchor markup--li-anchor">Dice</a>
+</span>
+- <span id="23f7">
+<a href="https://www.techcareers.com/" class="markup--anchor markup--li-anchor">Tech Careers</a>
+</span>
+- <span id="20cf">
+<a href="http://jobs.mashable.com/jobs/search/results" class="markup--anchor markup--li-anchor">Mashable</a>
+</span>
+
+#### Remote or Relocation Boards:
+
+- <span id="1e47">
+<a href="https://weworkremotely.com/" class="markup--anchor markup--li-anchor">We Work Remotely</a>
+</span>
+- <span id="37d2">
+<a href="https://relocate.me/" class="markup--anchor markup--li-anchor">Relocate</a>
+<a href="https://workfromhomejobs.me/" class="markup--anchor markup--li-anchor">‍</a>
+</span>
+- <span id="aad7">
+<a href="https://workfromhomejobs.me/" class="markup--anchor markup--li-anchor">Work From Home Jobs</a>
+</span>
+- <span id="d1fc">
+<a href="https://docs.google.com/spreadsheets/d/16V7hG7l24hBAnlcmaSG3mrusDx1uj_ZsLwnTu7L_wsQ/edit?usp=sharing" class="markup--anchor markup--li-anchor">Remote Boards &amp; Companies Spreadsheet</a>
+</span>
+- <span id="5267">
+<a href="https://careervault.io/" class="markup--anchor markup--li-anchor">Career Vault</a>
+</span>
+
+#### DS Boards:
+
+- <span id="a50a">
+<a href="https://www.bigdatajobs.com/" class="markup--anchor markup--li-anchor">BigDataJobs</a>
+</span>
+- <span id="e7ce">
+<a href="https://icrunchdata.com/data-science-jobs/" class="markup--anchor markup--li-anchor">Icrunchdata</a>
+</span>
+- <span id="d66f">
+<a href="https://www.analyticsjobs.co.uk/" class="markup--anchor markup--li-anchor">Analyticsjobs.co.uk</a>
+</span>
+
+#### Design Boards
+
+- <span id="0a09">
+<a href="https://www.behance.net/joblist" class="markup--anchor markup--li-anchor">Behance</a>
+</span>
+- <span id="0174">
+<a href="https://www.uxjobsboard.com/" class="markup--anchor markup--li-anchor">UX Jobs Board</a>
+</span>
+- <span id="ef44">
+<a href="https://www.krop.com/creative-jobs/ux-ui-designer/" class="markup--anchor markup--li-anchor">Krop</a>
+</span>
+
+#### Software Development
+
+- <span id="4702">
+<a href="https://www.honeypot.io/pages/for_employers" class="markup--anchor markup--li-anchor">Honeypot.io</a>
+</span>
+- <span id="d025">
+<a href="https://jobs.github.com/" class="markup--anchor markup--li-anchor">GitHub</a>
+</span>
+- <span id="ed46">
+<a href="https://blabladev.eu/" class="markup--anchor markup--li-anchor">BlablaDev</a>
+</span>
+- <span id="c23f">
+<a href="http://jobs.smashingmagazine.com/" class="markup--anchor markup--li-anchor">Smashing <strong>Magazine</strong>
+</a>
+</span>
+- <span id="61fd">
+<a href="http://jobs.arstechnica.com/" class="markup--anchor markup--li-anchor">arstechnica</a>
+</span>
+- <span id="c526">
+<a href="http://jobs.37signals.com/" class="markup--anchor markup--li-anchor">obs.37signals</a>
+</span>
+- <span id="1ec6">
+<a href="http://news.ycombinator.com/submitted?id=whoishiring" class="markup--anchor markup--li-anchor">ycombinator</a>
+</span>
+- <span id="fa87">
+<a href="http://jobs.slashdot.org/jobboard.php" class="markup--anchor markup--li-anchor">jobs.slashdot.org</a>
+</span>
+- <span id="3dfc">
+<a href="http://angel.co/talent" class="markup--anchor markup--li-anchor">http://angel.co/talent</a>
+</span>
+- <span id="319e">
+<a href="https://www.whitetruffle.com/" class="markup--anchor markup--li-anchor">whitetruffle</a>
+</span>
+- <span id="428a">
+<a href="http://www.crunchboard.com/jobs/" class="markup--anchor markup--li-anchor">crunchboard</a>
+</span>
+>>>>>>> master
 
 **I am intentionally not linking glassdoor because they have irritated me for the last time by insisting I provide a job review every time I want to access their content… (To the makers of glassdoor… HOW MANY TIMES A MONTH DO YOU THINK I CHANGE JOBS!!!!) I don't have 15 minutes to make up a job experience every time I want to read a review.**
 
@@ -256,7 +448,13 @@ Most of us are familiar with the concept of six degrees of separation — th
 
 **_5. Freelancer websites_**. oDesk.com, Elance.com, etc. Lower pay, but 100% contract work, and has a lot of flexible opportunities if you're not looking for traditional full-time employment or remote work.
 
+<<<<<<< HEAD
 - <span id="1350"><a href="https://www.quora.com/What-are-the-best-job-boards-for-software-engineers" class="markup--anchor markup--li-anchor">Source</a></span>
+=======
+- <span id="1350">
+<a href="https://www.quora.com/What-are-the-best-job-boards-for-software-engineers" class="markup--anchor markup--li-anchor">Source</a>
+</span>
+>>>>>>> master
 
 <figure><img src="https://cdn-images-1.medium.com/max/600/1*3_3Cb73SQM_YazWGpZWtIw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*aI1PfkSpsUks598LAJvKoQ.png" class="graf-image" /></figure>
 
@@ -283,8 +481,15 @@ Most of us are familiar with the concept of six degrees of separation — th
 - **[LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/inspect/)**
 - **[LinkedIn Featured Images](https://medium.com/@jamesyhiggs/how-to-add-thumbnail-images-to-the-featured-section-of-your-linkedin-profile-for-web-apps-sites-917346235932)**
 - **[Frontend Masters](https://frontendmasters.com/)** - Expensive, but worth every penny
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> master
 
 <hr>
+
+
 
 # **Resume**
 
@@ -293,8 +498,15 @@ Most of us are familiar with the concept of six degrees of separation — th
 # **Cover Letter**
 
 - **[Six C's of Business Communication](http://www.fsb.miamioh.edu/fsb/content/programs/howe-writing-initiative/HWI-handout-CsofBusComm.html)**
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> master
 
 <hr>
+
+
 
 # **Heroku** - _Use at your own risk_
 
@@ -302,8 +514,15 @@ Most of us are familiar with the concept of six degrees of separation — th
 - **[UptimeRobot](https://uptimerobot.com/)**
 - **[Kaffeine](https://kaffeine.herokuapp.com/)**
 - **[UptimeRobot and Dyno Lecture](https://docs.google.com/document/d/1_BZswbvmcEtVul9gD59Lk4IUk2mHp1Wbe2ucaHTY7A0/edit)**
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> master
 
 <hr>
+
+
 
 # **Trivia**
 
@@ -313,8 +532,15 @@ Most of us are familiar with the concept of six degrees of separation — th
 - ## **Python Trivia**
 - ## **Frontend Trivia**
     - [**12 Essential Web Design Interview Questions**](https://www.toptal.com/designers/web/interview-questions)
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> master
 
 <hr>
+
+
 
 # **Language Resources**
 
@@ -347,6 +573,15 @@ Most of us are familiar with the concept of six degrees of separation — th
     - [**Specifishity**](http://www.specifishity.com/)
     - [**CSS3 Cheat Sheet**](https://www.onblastblog.com/css3-cheat-sheet/)
     - [**Jen Simmons Labs**](https://labs.jensimmons.com/)
+<<<<<<< HEAD
+
+- ## **Miscellaneous Resources**
+
+    - [**CodePen**](https://codepen.io/)
+        - [2020 Most Popular Pens (replace year for more)](https://codepen.io/202/popular/pens/)
+    - [**Web Design Weekly**](https://web-design-weekly.com/)
+    - [**Responsive Design Weekly**](https://responsivedesign.is/)
+=======
 
 - ## **Miscellaneous Resources**
 
@@ -355,7 +590,12 @@ Most of us are familiar with the concept of six degrees of separation — th
     - [**Web Design Weekly**](https://web-design-weekly.com/)
     - [**Responsive Design Weekly**](https://responsivedesign.is/)
 
+
+>>>>>>> master
+
 <hr>
+
+
 
 # **DS&A**
 
@@ -367,43 +607,85 @@ Most of us are familiar with the concept of six degrees of separation — th
 - **[What is a Hash Table](https://www.youtube.com/watch?v=shs0KM3wKv8)**
     - O(1) for a "good" table
     - O(n) for a terrible table (lots of collisions, etc.)
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> master
 
 <hr>
+
+
 
 # **System Design**
 
 - **[The Basics](https://www.educative.io/courses/grokking-the-system-design-interview/m2yDVZnQ8lG)**
 - **[Caching](https://levelup.gitconnected.com/everything-you-need-to-know-about-caching-system-design-932a6bdf3334)**
 - **[Load Balancing](https://codeburst.io/system-design-basics-load-balancer-101-adc4f602d08f)**
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> master
 
 <hr>
+
+
 
 # **Interviewing**
 
 - ### **Mock Interviewing**
     - **[Interviewing.io](https://interviewing.io/)**
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> master
 
 <hr>
+
+
 
 # **Networking**
 
 - **[MeetUp](https://www.meetup.com/)**
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> master
 
 <hr>
+
+
 
 # **Managing and Organizing Job Search**
 
 - **[Notion](notion.so)**
     - Trillo clone but with added features that make it really great! Consider creating a template for new job seekers!
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> master
 
 <hr>
+
+
 
 # **Negotiations**
 
 - **[Haseeb's 10 Rules - Part 1](https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/)**
 - **[Haseeb's 10 Rules - Part 2](https://haseebq.com/how-not-to-bomb-your-offer-negotiation/)**
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> master
 
 <hr>
+
+
 
 # **Portfolio Sites**
 
@@ -432,7 +714,18 @@ Take 25 minutes to choose a template, download it, rename it githubusername.gith
    of the directory. If the file is located elsewhere, relocate it to the root and adjust
    any relative paths for any imported scripts or style sheets.
 
+<<<<<<< HEAD
 <hr>
+=======
+
+
+<br>
+<br>
+<br>
+<br>
+>>>>>>> master
+
+
 
 # **QA Engineering**
 
@@ -455,13 +748,31 @@ Take 25 minutes to choose a template, download it, rename it githubusername.gith
     Implementation Specialist
     Technical Account Manager
 
+<<<<<<< HEAD
 <hr>
+=======
+
+
+<br>
+<br>
+<br>
+<br>
+>>>>>>> master
+
+
 
 # **Externship**
 
 - **[insidesherpa](https://www.insidesherpa.com/)**
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> master
 
 <hr>
+
+
 
 # **Open Source**
 
@@ -470,8 +781,15 @@ Take 25 minutes to choose a template, download it, rename it githubusername.gith
 - **[First timers only](https://www.firsttimersonly.com/)**
 - **[Open Source Underdogs](https://opensourceunderdogs.com/episodes/)**
 - **[Code Triage](https://www.codetriage.com/)**
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> master
 
 <hr>
+
+
 
 # **Volunteer**
 
@@ -480,23 +798,44 @@ Take 25 minutes to choose a template, download it, rename it githubusername.gith
 - **[Social Coder](https://socialcoder.org/Home/Index)**
 - **[Catch A Fire](https://www.catchafire.org/)**
 - **[Hackers For Charity](https://www.hackersforcharity.org/)**
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> master
 
 <hr>
+
+
 
 # **Imposter Syndrome**
 
 - **[The Imposter's Advantage - Zain Rizvi](https://www.zainrizvi.io/blog/the-impostors-advantage/)**
 - **[Stats on the tech giants](https://www.techrepublic.com/article/why-58-of-tech-employees-suffer-from-imposter-syndrome/)**
 - **[Why MS degrees are shit](http://blog.alinelerner.com/how-different-is-a-b-s-in-computer-science-from-a-m-s-in-computer-science-when-it-comes-to-recruiting/)**
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> master
 
 <hr>
+
+
 
 # **Podcasts**
 
 - **[FreeCodeCamp Podcast](https://freecodecamp.libsyn.com/)**
 - **[Codish Podcast](https://www.heroku.com/podcasts/codeish/85-the-new-definition-of-frontend-development)**
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> master
 
 <hr>
+
+
 
 # **Books**
 
@@ -510,8 +849,15 @@ Take 25 minutes to choose a template, download it, rename it githubusername.gith
 - - [Amazon](https://www.amazon.com/Elements-Programming-Interviews-Python-Insiders/dp/1537713949)
 - **Skienna Algorithm Design Manual**
     - [Amazon](https://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena-ebook-dp-B00B8139Z8/dp/B00B8139Z8/ref=mt_other?_encoding=UTF8&me=&qid=)
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> master
 
 <hr>
+
+
 
 # **QA Questions**
 

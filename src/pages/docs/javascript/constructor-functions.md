@@ -322,6 +322,10 @@ console.log(Book instanceof Function); // true
 
 - A **`prototype chain`** defines a series of prototype objects that are delegated to one by one, when a property or method can't be found on an instance object.
     ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
     console.log(theGrapesOfWrath.getInformation()); // The Grapes of Wrath
     ```
     When the `getInformation()` method is invoked:
@@ -370,10 +374,18 @@ class Movie extends CatalogItem {
 *   **`Entry Point`** : JS File that is passed to Node for access to the entire application.
 *   Syntax for exporting modules:
     ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
     module.exports.Book = Book;
     module.exports.Movie = Movie;
     ```
     ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
     module.exports = {
         Book,
         Movie
@@ -382,10 +394,18 @@ class Movie extends CatalogItem {
 *   Syntax for importing modules:
 
     ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
     const classes = require('./classes');
     ```
 
     ```js
+<<<<<<< HEAD
+=======
+//
+>>>>>>> master
     const { Book, Movie } = require('./classes');
     ```
 
