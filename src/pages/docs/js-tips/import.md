@@ -3,13 +3,14 @@ title: import
 weight: 0
 excerpt:
 seo:
-    title: ''
+    title: 'import'
     description: 'The static import statement is used to import read only live bindings which are exported by another module.'
     robots: []
     extra: []
     type: stackbit_page_meta
 template: docs
 ---
+
 
 # import
 
@@ -24,6 +25,7 @@ Backward compatibility can be ensured using attribute `nomodule` on the [`<scrip
 ## Syntax
 
 ```js
+//
     import defaultExport from "module-name";
     import * as name from "module-name";
     import { export1 } from "module-name";

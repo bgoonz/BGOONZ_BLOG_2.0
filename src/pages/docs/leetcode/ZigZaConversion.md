@@ -11,6 +11,7 @@ seo:
 template: docs
 ---
 
+
 ## [6. ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/description/)
 
 ### Problem:
@@ -91,6 +92,7 @@ next_i = i + numRows + (numRows - 2), if col is even && (row == 1 || row == numR
 ```
 
 ```js
+//
 /**
  * @param {string} s
  * @param {number} numRows

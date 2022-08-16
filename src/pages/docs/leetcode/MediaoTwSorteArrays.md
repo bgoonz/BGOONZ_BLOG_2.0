@@ -11,6 +11,7 @@ seo:
 template: docs
 ---
 
+
 ## [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)
 
 ### Problem:
@@ -60,6 +61,7 @@ Otherwise, if `nums1[i] <= nums2[j]` then we know `nums1[i] < nums2[j-1]` (becau
 Same goes `nums1[i-1] <= nums2[j] <= nums1[i]`.
 
 ```js
+//
 /**
  * @param {number[]} nums1
  * @param {number[]} nums2
