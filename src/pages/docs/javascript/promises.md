@@ -712,9 +712,15 @@ document.querySelector('.spinner').style.display = 'none';})
 
 ## Async Await:
 
+
 <details>
 
-<summary> Async Await:  </summary>
+
+
+<summary>
+ Async Await:  
+</summary>
+
 
 ## The basics of async/await
 

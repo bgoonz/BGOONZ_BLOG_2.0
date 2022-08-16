@@ -1333,13 +1333,25 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
 
 # Components
 
-<details>
-
-  <summary><h1>Click to see React Components (src folder)!</h1></summary>
 
 <details>
 
-  <summary>ActionLink!</summary>
+
+  
+<summary>
+<h1>Click to see React Components (src folder)!</h1>
+</summary>
+
+
+
+<details>
+
+
+  
+<summary>
+ActionLink!
+</summary>
+
 
 ## ActionLink
 
@@ -1416,9 +1428,15 @@ button: *.get(action, 'style', null) !== 'link',
 
 ---
 
+
 <details>
 
-  <summary>CtaButtons!</summary>
+
+  
+<summary>
+CtaButtons!
+</summary>
+
 
 ## CtaButtons
 
@@ -1461,9 +1479,15 @@ export default class CtaButtons extends React.Component {
 
 ---
 
+
 <details>
 
-  <summary>Click to expand!</summary>
+
+  
+<summary>
+Click to expand!
+</summary>
+
 
 ## DocsMenu
 
@@ -1562,9 +1586,15 @@ export default class DocsMenu extends React.Component {
 
 ---
 
+
 <details>
 
-  <summary>Click to expand!</summary>
+
+  
+<summary>
+Click to expand!
+</summary>
+
 
 ## DocsSubmenu
 
@@ -1604,9 +1634,15 @@ export default class DocsSubmenu extends React.Component {
 
 ---
 
+
 <details>
 
-  <summary>Click to expand!</summary>
+
+  
+<summary>
+Click to expand!
+</summary>
+
 
 ## Footer
 
@@ -1812,9 +1848,15 @@ export default class Header extends React.Component {
 
 ---
 
+
 <details>
 
-  <summary>Click to expand!</summary>
+
+  
+<summary>
+Click to expand!
+</summary>
+
 
 ## Icon
 
@@ -1863,9 +1905,15 @@ export default class Icon extends React.Component {
 
 ---
 
+
 <details>
 
-  <summary>Click to expand!</summary>
+
+  
+<summary>
+Click to expand!
+</summary>
+
 
 ## Body
 
@@ -1955,9 +2003,15 @@ export default class Body extends React.Component {
 
 ---
 
+
 <details>
 
-  <summary>Click to expand!</summary>
+
+  
+<summary>
+Click to expand!
+</summary>
+
 
 ## SectionContent
 
@@ -2016,9 +2070,15 @@ export default class SectionContent extends React.Component {
 
 ---
 
+
 <details>
 
-  <summary>Click to expand!</summary>
+
+  
+<summary>
+Click to expand!
+</summary>
+
 
 ## SectionCta
 
@@ -2067,9 +2127,15 @@ export default class SectionCta extends React.Component {
 
 ---
 
+
 <details>
 
-  <summary>Click to expand!</summary>
+
+  
+<summary>
+Click to expand!
+</summary>
+
 
 ## SectionDocs
 
@@ -2149,9 +2215,15 @@ export default class SectionDocs extends React.Component {
 
 ---
 
+
 <details>
 
-  <summary>Click to expand!</summary>
+
+  
+<summary>
+Click to expand!
+</summary>
+
 
 ## SectionGrid
 
@@ -2239,9 +2311,15 @@ export default class SectionGrid extends React.Component {
 
 ---
 
+
 <details>
 
-  <summary>Click to expand!</summary>
+
+  
+<summary>
+Click to expand!
+</summary>
+
 
 ## SectionHero
 
@@ -2290,9 +2368,15 @@ export default class SectionHero extends React.Component {
 
 ---
 
+
 <details>
 
-  <summary>Click to expand!</summary>
+
+  
+<summary>
+Click to expand!
+</summary>
+
 
 ## Submenu
 
@@ -2340,9 +2424,15 @@ export default class Submenu extends React.Component {
 
 ---
 
+
 <details>
 
-  <summary>Click to expand!</summary>
+
+  
+<summary>
+Click to expand!
+</summary>
+
 
 ## Index.js
 
@@ -2434,9 +2524,15 @@ export default {
 
 # Static Javascript
 
+
 <details>
 
-  <summary>Static Javascript:!</summary>
+
+  
+<summary>
+Static Javascript:!
+</summary>
+
 
 # main.js
 
@@ -10535,7 +10631,9 @@ Prism.languages.markup.tag.addAttribute(
 
 ```
 
+
 <details>
+
 
 ```
 

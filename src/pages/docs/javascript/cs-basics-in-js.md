@@ -214,9 +214,15 @@ let UTIL = (function (parent, $) {
 
 # Summary:
 
+
 <details>
 
-<summary> recitation  </summary>
+
+
+<summary>
+ recitation  
+</summary>
+
 
 ### Anonymous Closures
 

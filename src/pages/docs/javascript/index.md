@@ -14,9 +14,15 @@ template: docs
 
 ## Javascript
 
+
 <details>
 
-<summary>  Cheatsheet </summary>
+
+
+<summary>
+  Cheatsheet 
+</summary>
+
 
 ```js
 //

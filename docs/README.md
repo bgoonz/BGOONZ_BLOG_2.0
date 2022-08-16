@@ -1,30 +1,20 @@
-# Bgoonz Blog Readme:
+# Bgoonz Blog Readme
 
 ### [Github Org Link](https://github.com/BGOOONZ-BLOG/)
 
 ## [CHANGELOG](./CHANGELOG.md)
 
-##### [Cloudfare-Backup](https://bgoonz-blog-2-0.pages.dev/)
-
-⇨ [search](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) ⇨ [Backup Repo Deploy](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) ⇨ [Github pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/)
-
-⇨ [Go To Site Wiki](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki) ⇨ [Gatsby Cloud Version](https://bgoonzblog20master.gtsb.io/)
-
-⇨ [Vercel Version](https://bgoonz-blog-2-0.vercel.app/)
-
-⇨ [Cloudfare-Domain](www.webdevhub.us) ⇨ [gh-pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/)
-
-### Repos
-
--   [Alt Backup](https://github.com/BGOOONZ-BLOG/bgoonz-blog2.0-v-5)
--   [Blog Content](https://github.com/bgoonz/MainBlogContent)
+##### [Cloudfare-Backup](https://bgoonz-blog-2-0.pages.dev/)⇨ [search](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) ⇨ [Backup Repo Deploy](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) ⇨ [Github pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/)⇨ [Go To Site Wiki](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki) ⇨ [Gatsby Cloud Version](https://bgoonzblog20master.gtsb.io/)⇨ [Vercel Version](https://bgoonz-blog-2-0.vercel.app/)⇨ [Cloudfare-Domain](www.webdevhub.us) ⇨ [gh-pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/)
 
 ###### [⇨Privacy policy⇦](https://codepen.io/bgoonz/pen/LYLJZrW)
 
-<!-- /code_chunk_output -->
-![preview](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/blog-may-2022.png?raw=true)
+### Repos
+
+- [Alt Backup](https://github.com/BGOOONZ-BLOG/bgoonz-blog2.0-v-5)
+- [Blog Content](https://github.com/bgoonz/MainBlogContent)
 
 ---
+
 ## Useful Commands (internal use)
 
 ```bash
@@ -39,9 +29,8 @@ git merge fixy              # and merge in the fixed branch
 git push                    # done, no need to force push!
 
 
-<!-- /code_chunk_output -->
 
-![preview](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/blog-may-2022.png?raw=true)
+
 
 git checkout 307a5cd        # check out the commit that you want to reset to
 git checkout -b fixy        # create a branch named fixy to do the work
@@ -51,9 +40,9 @@ git merge fixy              # and merge in the fixed branch
 git push                    # done, no need to force push!
 
 
+npm i @stackbit/gatsby-plugin-menus babel-runtime chokidar classnames fs-extra gatsby gatsby-image gatsby-plugin-netlify gatsby-plugin-netlify-cms gatsby-plugin-sass gatsby-plugin-react-helmet gatsby-plugin-typescript  --legacy-peer-deps
 
 ```
-npm i @stackbit/gatsby-plugin-menus babel-runtime chokidar classnames fs-extra gatsby gatsby-image gatsby-plugin-netlify gatsby-plugin-netlify-cms gatsby-plugin-sass gatsby-plugin-react-helmet gatsby-plugin-typescript  --legacy-peer-deps
 
 ---
 <a href="https://testmysite.io/61e5ff836a840eeeef7e78e9/bgoonz-blog.netlify.app" rel="Test My Site Results">
@@ -62,11 +51,15 @@ npm i @stackbit/gatsby-plugin-menus babel-runtime chokidar classnames fs-extra g
 [![gmail](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![linkedin](https://img.icons8.com/color/96/000000/linkedin.png) ](https://www.linkedin.com/in/bryan-guner-046199128/)
 
 <details>
-<summary>Web Dev Setup</summary>
+
+<summary>
+Web Dev Setup
+</summary>
 
 [webpack](https://webpack.js.org/)
 
 ## Basic Web Development Environment Setup
+
 Windows Subsystem for Linux (WSL) and Ubuntu
 
 ---
@@ -82,92 +75,89 @@ Artificial neural networks, usually simply called neural networks, are computing
 
 Open Menu
 
--   [Navigation](/docs/sitemap) Sub-menu
--   [Docs](/docs)
--   [Showcase](/showcase)
--   [Contact!](/docs/faq/contact)
--   [Python](/docs/python/python-ds)
--   [JavaScript](/javascript)
--   [Blog](/blog/)
+- [Navigation](/docs/sitemap) Sub-menu
+- [Docs](/docs)
+- [Showcase](/showcase)
+- [Contact!](/docs/faq/contact)
+- [Python](/docs/python/python-ds)
+- [JavaScript](/javascript)
+- [Blog](/blog/)
 
 Sub-menu
 
--   [Blog-Post-Archive](https://bgoonz.blogspot.com/)
+- [Blog-Post-Archive](https://bgoonz.blogspot.com/)
 
--   [Top Blog Posts](https://blog-w-comments.vercel.app/)
+- [Top Blog Posts](https://blog-w-comments.vercel.app/)
 
--   [Blog w Comments](/blogWcomments/)
+- [Blog w Comments](/blogWcomments/)
 
--   [Job Search](/docs/career/)
+- [Job Search](/docs/career/)
 
 Sub-menu
 
--   [Job Boards](/docs/career/job-boards)
--   [Do's and Don'ts of interviews](/interview/dos-and-donts)
--   [Career-Tips](https://bgoonz-blog.netlify.app/docs/career/)
+- [Job Boards](/docs/career/job-boards)
+- [Do's and Don'ts of interviews](/interview/dos-and-donts)
+- [Career-Tips](https://bgoonz-blog.netlify.app/docs/career/)
 
--   [Interview Questions](/docs/interview/interview-questions)
--   [Archive](/docs/archive) Sub-menu
--   [Resource-Archive-Server](https://github.com/bgoonz/Learning-Assets)
--   [Bootcamp Resources](https://lambda-resources.netlify.app/)
+- [Interview Questions](/docs/interview/interview-questions)
+- [Archive](/docs/archive) Sub-menu
+- [Resource-Archive-Server](https://github.com/bgoonz/Learning-Assets)
+- [Bootcamp Resources](https://lambda-resources.netlify.app/)
 
--   [Web Dev Setup](https://bgoonz-blog.netlify.app/blog/webdev-setup/)
+- [Web Dev Setup](https://bgoonz-blog.netlify.app/blog/webdev-setup/)
 
-
--   [Top Repos](/docs)
--   [MY_DOCS](https://bryan-guner.gitbook.io/my-docs/)
-
+- [Top Repos](/docs)
+- [MY_DOCS](https://bryan-guner.gitbook.io/my-docs/)
 
 ---
 
--   [WebAudioLab](https://bgoonz.github.io/WebAudioDaw/)
+- [WebAudioLab](https://bgoonz.github.io/WebAudioDaw/)
 
+- [Condensed -Portfolio](https://bg-portfolio.netlify.app/)
 
--   [Condensed -Portfolio](https://bg-portfolio.netlify.app/)
+- [Family Promise Tracker](https://a.familypromiseservicetracker.dev/)
 
--   [Family Promise Tracker](https://a.familypromiseservicetracker.dev/)
+- [DTW-Guitar-FX-Automation](https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering)
+- [Embeds Blog](https://bgoonz-blog-v3-0.netlify.app/embeds/)
 
--   [DTW-Guitar-FX-Automation](https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering)
--   [Embeds Blog](https://bgoonz-blog-v3-0.netlify.app/embeds/)
+- [alt-blogs](https://bgoonz-blog-v3-0.netlify.app/)
 
--   [alt-blogs](https://bgoonz-blog-v3-0.netlify.app/)
+- [Games](https://bgoonz-games.netlify.app/)
 
--   [Games](https://bgoonz-games.netlify.app/)
+- [Blog Backup](https://bgoonz-blog-v3-0.netlify.app/)
 
--   [Blog Backup](https://bgoonz-blog-v3-0.netlify.app/)
+- [Cover Letter](https://bgoonz-cv.netlify.app/)
 
--   [Cover Letter](https://bgoonz-cv.netlify.app/)
+- [Project Centric](https://project-portfolio42.netlify.app/)
 
--   [Project Centric](https://project-portfolio42.netlify.app/)
+- [Wordpress Blog](https://bgoonz-blog.netlify.app/)
 
--   [Wordpress Blog](https://bgoonz-blog.netlify.app/)
+- [Project Portfolio Gallery](https://project-portfolio42.netlify.app/)
 
--   [Project Portfolio Gallery](https://project-portfolio42.netlify.app/)
+- [github-stats-website](https://bgoonz.github.io/github-stats-website/)
 
--   [github-stats-website](https://bgoonz.github.io/github-stats-website/)
-
--   [Admin](https://bgoonz-blog.netlify.app/admin/)
+- [Admin](https://bgoonz-blog.netlify.app/admin/)
 
 Sub-menu
 
--   [Write Docs](https://bgoonz-blog.netlify.app/admin/#/collections/docs)
--   [Write Blog](https://bgoonz-blog.netlify.app/admin/#/collections/blog/new)
--   [Webmaster](https://bgoonz-blog.netlify.app/admin/#/collections/blog/new)
--   [Tools](/docs/tools) Sub-menu
--   [Github HTML Previewer](https://githtmlpreview.netlify.app/)
+- [Write Docs](https://bgoonz-blog.netlify.app/admin/#/collections/docs)
+- [Write Blog](https://bgoonz-blog.netlify.app/admin/#/collections/blog/new)
+- [Webmaster](https://bgoonz-blog.netlify.app/admin/#/collections/blog/new)
+- [Tools](/docs/tools) Sub-menu
+- [Github HTML Previewer](https://githtmlpreview.netlify.app/)
 
--   [Text Tools](https://devtools42.netlify.app/)
+- [Text Tools](https://devtools42.netlify.app/)
 
--   [Ternary 2 If Else](https://ternary42.netlify.app/)
+- [Ternary 2 If Else](https://ternary42.netlify.app/)
 
--   [Web Dev Utility Tools](/hps://web-dev-utility-tools-bgoonz.netlify.app/)
+- [Web Dev Utility Tools](/hps://web-dev-utility-tools-bgoonz.netlify.app/)
 
--   [Setup Checker](https://github.com/bgoonz/web-dev-setup-checker)
--   [PotluckPlanner](https://potluck-landing.netlify.app/)
+- [Setup Checker](https://github.com/bgoonz/web-dev-setup-checker)
+- [PotluckPlanner](https://potluck-landing.netlify.app/)
 
--   [WebDev Quizzes](https://web-dev-interview-prep-quiz-website.netlify.app/)
+- [WebDev Quizzes](https://web-dev-interview-prep-quiz-website.netlify.app/)
 
--   [Github-Advanced-Search](https://github.com/search/advanced)
+- [Github-Advanced-Search](https://github.com/search/advanced)
     Close Menu
     _🔎_
     Search
@@ -185,6 +175,7 @@ git add .
 git commit -m"update"
 git push -u origin gh-pages
 ```
+
 ```bash
 git init
 git add .
@@ -195,6 +186,7 @@ git push -u origin preview
 [](https://webpack.js.org/)
 
 > Notes:
+
 ###### code
 
 ```bash
@@ -270,6 +262,7 @@ git add .
 git commit -m"update"
 git push -u origin gh-pages
 ```
+
 ```bash
 git init
 git add .
@@ -284,6 +277,7 @@ git push -u origin preview
 ### [Convolutional Neural Networks](/neural networks)
 
 > Notes:
+
 ###### code
 
 ### [Jamstack](/jamstack)
@@ -500,7 +494,11 @@ get in touch! +1 (551) - 254 - 5505
 
 [GitHub](https://github.com/bgoonz) [Youtube](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA) [Instagram](https://www.instagram.com/bgoonz/?hl=en) [dev.to](https://dev.to/bgoonz)
 
-<summary> Bash Commands</summary>
+
+<summary>
+ Bash Commands
+</summary>
+
 ## My Commands
 ## # Find
 # To find files by case-insensitive extension (ex: .jpg, .jpg, .jpG)
@@ -551,29 +549,44 @@ let cat = require('child_process')
 .toString('UTF-8');
 fs.writeFile('output.md', cat, err =>  {
 ````
+
 # 2. Download Website Using Wget
+
 > Notes: ==> sudo apt install wget
-wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e robots=off -U mozilla https://bootcamp42.gitbook.io/python/
+wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e robots=off -U mozilla <https://bootcamp42.gitbook.io/python/>
+
 # 3. Clean Out Messy Git Repo
+
 ## Description: recursively removes git related folders as well as internal use files / attributions in addition to empty folders
+
 > Notes: To clear up clutter in repositories that only get used on your local machine.
 find . -empty -type d -print -delete
 find . \( -name ".git" -o -name ".gitignore" -o -name ".gitmodules" -o -name ".gitattributes" \) -exec rm -rf -- {} +
 find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o  -name "*CHANGELOG.txt" -o -name "*LICENSE.txt" -o -name "*CONTRIBUTING.txt" -name "*HISTORY.md" -o -name "*LICENSE" -o -name "*SECURITY.md" -o -name "*RELEASE.md" -o  -name "*CHANGELOG.md" -o -name "*LICENSE.md" -o -name "*CODE_OF_CONDUCT.md" -o -name "*CONTRIBUTING.md" \) -exec rm -rf -- {} +
+
 # 4. clone all of a user's git repositories
+
 ## Description: clone all of a user or organization's git repositories
+
 # Generalized
+
 CNTX={users|orgs}; NAME={username|orgname}; PAGE=1
-curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
+curl "<https://api.github.com/>$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
+
 # Clone all Git User
+
 CNTX={users}; NAME={bgoonz}; PAGE=1
+
 # Clone all Git Organization
+
 CNTX={organizations}; NAME={TheAlgorithms}; PAGE=1
-curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=master |
+curl "<https://api.github.com/>$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=master |
 grep -e 'git_url*' |
 cut -d \" -f 4 |
 xargs -L1 git clone
+
 # 5. Git Workflow
+
 git push -u origin master
 git push -u origin main
 git push -u origin bryan-guner
@@ -582,21 +595,32 @@ git init
 git add .
 git commit -m"update"
 git push -u origin preview
+
 # 6. Recursive Unzip In Place
+
 ## Description: recursively unzips folders and then deletes the zip file by the same name
+
 find . -name "*.zip" | while read filename; do unzip -o -d "`dirname "$filename"`" "$filename"; done;
 find . -name "*.zip" -type f -print -delete
+
 # 7. git pull keeping local changes
+
 git stash
 git pull
 git stash pop
+
 # 8. Prettier Code Formatter
+
 sudo npm i prettier -g
+
 # 9. Pandoc
+
 find ./ -iname "*.md" -type f -exec sh -c 'pandoc --standalone "${0}" -o "${0%.md}.html"' {} \;
 find ./ -iname "*.html" -type f -exec sh -c 'pandoc --wrap=none --from html --to markdown_strict "${0}" -o "${0%.html}.md"' {} \;
 find ./ -iname "*.docx" -type f -exec sh -c 'pandoc "${0}" -o "${0%.docx}.md"' {} \;
+
 # 10. Gitpod Installs
+
 sudo apt install tree
 sudo apt install pandoc -y
 sudo apt install rename -y
@@ -608,10 +632,15 @@ npm i npm-recursive-install -g
 black .
 prettier --write .
 npm-recursive-install
+
 # 11. Repo Utils Package
+
 ## Description: my standard repo utis package
+
 npm i @bgoonz11/repoutils
+
 # 12. Unix Tree Package Usage
+
 tree -d -I  'node_modules'
 tree  -I  'node_modules'
 tree -f  -I  'node_modules' > TREE.md
@@ -619,27 +648,36 @@ tree -f -L 2  > README.md
 tree -f  -I  'node_modules' > listing-path.md
 tree -f  -I  'node_modules' -d > TREE.md
 tree -f > README.md
+
 # 13. Find & Replace string in file & folder names recursively
+
 find . -type f -exec rename 's/string1/string2/g' {} +
 find . -type f -exec rename 's/\.download//g' {} +
 find . -type d -exec rename 's/-main//g' {} +
-rename 's/\.js\.download$/.js/' *.js\.download
-rename 's/\.html\.markdown$/.md/' *.html\.markdown
+rename 's/\.js\.download$/.js/'*.js\.download
+rename 's/\.html\.markdown$/.md/'*.html\.markdown
 find . -type d -exec rename 's/es6//g' {} +
+
 # 14. Remove double extensions
-for file in *.md.md
+
+for file in*.md.md
 mv "${file}" "${file%.md}"
-for file in *.html.html
+for file in*.html.html
 mv "${file}" "${file%.html}"
-for file in *.html.png
-for file in *.jpg.jpg
+for file in*.html.png
+for file in*.jpg.jpg
 do
 mv "${file}" "${file%.png}"
 done
+
 # 15. Truncate folder names down to 12 characters
+
 for d in ./*; do mv $d ${d:0:12}; done
+
 # 16.Appendir.js
+
 ## Description: combine the contents of every file in the contaning directory
+
 > Notes: this includes the contents of the file it's self...
 //APPEND-DIR.js
 const fs = require('fs');
@@ -647,12 +685,17 @@ let cat = require('child_process').execSync('cat *').toString('UTF-8');
 fs.writeFile('output.md', cat, (err) => {
 if (err) throw err;
 });
+
 # 17. Replace space in filename with underscore
+
 ## Description: followed by replace `'#' with '_'` in directory name
+
 > Notes: Can be re-purposed to find and replace any set of strings in file or folder names.
-find . -name "* *" -type f | rename 's/_//g'
+find . -name "**" -type f | rename 's/_//g'
 find . -name "* *" -type d | rename 's/#/_/g'
+
 # 18. Filter & delete files by name and extension
+
 find . -name '.bin' -type d -prune -exec rm -rf '{}' +
 find . -name '*.html' -type d -prune -exec rm -rf '{}' +
 find . -name 'nav-index' -type d -prune -exec rm -rf '{}' +
@@ -660,18 +703,24 @@ find . -name 'node-gyp' -type d -prune -exec rm -rf '{}' +
 find . -name 'deleteme.txt' -type f -prune -exec rm -rf '{}' +
 find . -name 'right.html' -type f -prune -exec rm -rf '{}' +
 find . -name 'left.html' -type f -prune -exec rm -rf '{}' +
+
 # 19. Remove lines containing string
+
 > Notes: Remove lines not containing `'.js'`
 sudo sed -i '/\.js/!d' ./*scrap2.md
 sudo sed -i '/author/d' ./*
+
 # 20. Remove duplicate lines from a text file
+
 > //...syntax of uniq...//
 > $uniq [OPTION] [INPUT[OUTPUT]]
 > The syntax of this is quite easy to understand. Here, INPUT refers to the input file in which repeated lines need to be filtered out and if INPUT isn't specified then uniq reads from the standard input. OUTPUT refers to the output file in which you can store the filtered output generated by uniq command and as in case of INPUT if OUTPUT isn't specified then uniq writes to the standard output.
 Now, let's understand the use of this with the help of an example. Suppose you have a text file named kt.txt which contains repeated lines that needs to be omitted. This can simply be done with uniq.
 sudo apt install uniq
 uniq -u input.txt output.txt
+
 # 21. Remove lines containing string
+
 sudo sed -i '/githubusercontent/d' ./*sandbox.md
 sudo sed -i '/githubusercontent/d' ./*scrap2.md
 sudo sed -i '/github\.com/d' ./*out.md
@@ -688,27 +737,42 @@ sudo sed -i '/stargazers/d' ./repo.txt
 sudo sed -i '/node_modules/d' ./index.html
 sudo sed -i '/right\.html/d' ./index.html
 sudo sed -i '/right\.html/d' ./right.html
+
 # 22. Zip directory excluding .git and node_modules all the way down (Linux)
-#!/bin/bash
+
+# !/bin/bash
+
 TSTAMP=`date '+%Y%m%d-%H%M%S'`
-zip -r $1.$TSTAMP.zip $1 -x "**.git/*" -x "**node_modules/*" `shift; echo $@;`
+zip -r $1.$TSTAMP.zip $1 -x "**.git/_" -x "**node_modules/_" `shift; echo $@;`
 printf "\nCreated: $1.$TSTAMP.zip\n"
-# usage:
+
+# usage
+
 # - zipdir thedir
+
 # - zip thedir -x "**anotherexcludedsubdir/*"    (important the double quotes to prevent glob expansion)
-# if in windows/git-bash, add 'zip' command this way:
-# https://stackoverflow.com/a/55749636/1482990
+
+# if in windows/git-bash, add 'zip' command this way
+
+# <https://stackoverflow.com/a/55749636/1482990>
+
 # 23. Delete files containing a certain string
+
 find . | xargs grep -l www.redhat.com | awk '{print "rm "$1}' >  doit.sh
 vi doit.sh // check for murphy and his law
 source doit.sh
+
 # 24
+
 html="sitemap.html"
 echo '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/mdn-article.css"> '
 echo '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/markdown-to-html-style.css"> '
 awk '{print "<li> <a href=\""$1"\"> ",$1,"&nbsp;</a> </li> "}' $listing
+
 # 25. Index of Iframes
+
 ## Description: Creates an index.html file that contains all the files in the working directory or any of it's sub folders as iframes instead of anchor tags
+
 > Notes: Useful Follow up Code:
 
 ```bash
@@ -799,7 +863,7 @@ echo '  </style>'
 
   # awk '{print "<li>"};
 
-  # 	{print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
+  #  {print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
 
   echo ""
 
@@ -1115,7 +1179,7 @@ find . -type f -exec rename 's/-master//g' {} +
 
 ```
 
-> Notes: The same could be done for folder names by changing the *-type f* flag (for file) to a *-type d* flag (for directory)
+> Notes: The same could be done for folder names by changing the _-type f_ flag (for file) to a _-type d_ flag (for directory)
 
 ```bash
 find <mydir> -type d -exec sed -i 's/<string1>/<string2>/g' {} +
@@ -1919,7 +1983,7 @@ find . -maxdepth 2 -name build -type d
 
 ## To search all files who are not in .git directory
 
-find . ! -iwholename '*.git*' -type f
+find . ! -iwholename '_.git_' -type f
 
 ## To find all files that have the same node (hard link) as MY_FILE_HERE
 
@@ -1937,53 +2001,52 @@ find . -type f -exec chmod 644 {} \;
 
 ![Preview](https://i.imgur.com/nieW1vp.png)
 
-
 ## Wiki Nav
 
-
--   [Home](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
--   [add copy to code blocks.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/add-copy-to-code-blocks.md)
--   [Add site search w algolia.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Add-site-search-w-algolia.md)
--   [adding mailing list.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/adding-mailing-list.md)
--   [Adding search 2 gatsby site.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Adding-search-2-gatsby-site.md)
--   [awesome.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/awesome.md)
--   [broken links.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/broken-links.md)
--   [configure custom domain.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/configure-custom-domain.md)
--   [contentauthoring.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/contentauthoring.md)
--   [full text search w lunar.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/full-text-search-w-lunar.md)
--   [inject 4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject-4.md)
--   [inject3.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject3.md)
--   [inject4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject4.md)
--   [injected content part2.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-content-part2.md)
--   [injected js part4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-js-part4.md)
--   [injected part3.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-part3.md)
--   [links 2 embed.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/links-2-embed.md)
--   [links to remember](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/links-to-remember)
--   [Netlify Injected Content](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Netlify-Injected-Content)
--   [old version of index.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/old-version-of-index.md)
--   [optimize vscode.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/optimize-vscode.md)
--   [possibly useful snippets.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/possibly-useful-snippets.md)
--   [privacy policy.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/privacy-policy.md)
--   [random stuff.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/random-stuff.md)
--   [random.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/random.md)
--   [ref type](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/ref-type)
--   [SEO.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/SEO.md)
--   [stable points.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/stable-points.md)
--   [tech used.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/tech-used.md)
--   [Technologies Used.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Technologies-Used.md)
--   [THINGS TO EMBED.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/THINGS-TO-EMBED.md)
--   [validation report.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/validation-report.md)
--   [web archive.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/web-archive.md)
--   [wordpress vs headless cms.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/wordpress-vs-headless-cms.md)
-
+- [Home](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
+- [add copy to code blocks.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/add-copy-to-code-blocks.md)
+- [Add site search w algolia.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Add-site-search-w-algolia.md)
+- [adding mailing list.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/adding-mailing-list.md)
+- [Adding search 2 gatsby site.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Adding-search-2-gatsby-site.md)
+- [awesome.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/awesome.md)
+- [broken links.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/broken-links.md)
+- [configure custom domain.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/configure-custom-domain.md)
+- [contentauthoring.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/contentauthoring.md)
+- [full text search w lunar.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/full-text-search-w-lunar.md)
+- [inject 4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject-4.md)
+- [inject3.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject3.md)
+- [inject4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject4.md)
+- [injected content part2.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-content-part2.md)
+- [injected js part4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-js-part4.md)
+- [injected part3.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-part3.md)
+- [links 2 embed.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/links-2-embed.md)
+- [links to remember](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/links-to-remember)
+- [Netlify Injected Content](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Netlify-Injected-Content)
+- [old version of index.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/old-version-of-index.md)
+- [optimize vscode.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/optimize-vscode.md)
+- [possibly useful snippets.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/possibly-useful-snippets.md)
+- [privacy policy.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/privacy-policy.md)
+- [random stuff.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/random-stuff.md)
+- [random.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/random.md)
+- [ref type](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/ref-type)
+- [SEO.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/SEO.md)
+- [stable points.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/stable-points.md)
+- [tech used.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/tech-used.md)
+- [Technologies Used.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Technologies-Used.md)
+- [THINGS TO EMBED.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/THINGS-TO-EMBED.md)
+- [validation report.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/validation-report.md)
+- [web archive.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/web-archive.md)
+- [wordpress vs headless cms.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/wordpress-vs-headless-cms.md)
 
 ---
 
 ## Dependencies
 
-
 <details>
-  <summary>Click to expand!</summary>
+
+<summary>
+Click to expand!
+</summary>
 
 [![@algolia**](https://avatars.githubusercontent.com/u/2034458?s=40&v=4)](https://github.com/algolia)[algolia / algoliasearch-client-javascript](https://github.com/algolia/algoliasearch-client-javascript)@algolia/client-search
 `^ 4.10.3`
@@ -2083,9 +2146,11 @@ find . -type f -exec chmod 644 {} \;
 
 ## Docs Structure
 
-
 <details>
-<summary>  Docs Structure  </summary>
+
+<summary>
+  Docs Structure  
+</summary>
 
 ```
 ├── blog
@@ -2689,7 +2754,11 @@ docky ./../src/components/pages/**/*.md \ # specify the components to parse
 -   [https://bgoonz-blog.netlify.app/interview-questions-js](https://bgoonz-blog.netlify.app/interview-questions-js)
 -   [https://bgoonz-blog.netlify.app/readme](https://bgoonz-blog.netlify.app/readme)
 -   [https://bgoonz-blog.netlify.app/showcase](https://bgoonz-blog.netlify.app/showcase)
-<summary>  ↞↠ Getting Started With GatsbyJS ↞↠  </summary>
+
+<summary>
+  ↞↠ Getting Started With GatsbyJS ↞↠  
+</summary>
+
 
 #
 
@@ -2700,13 +2769,12 @@ docky ./../src/components/pages/**/*.md \ # specify the components to parse
 ![tech-stack](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/madewith.png?raw=true)
 
 ```
+
 ---
 
 ## SOURCECODE
 
 ---
-
-
 
 ### Overview
 
@@ -2724,9 +2792,9 @@ _.get(object, path, defaultValue)
 
 This method accepts the following parameters:
 
--   **`object`**: The object in which the given path will be queried.
--   **`path`**: The path used to retrieve the value from the object.
--   **`defaultValue`**: The default value that will be returned for resolved values that are undefined.
+- **`object`**: The object in which the given path will be queried.
+- **`path`**: The path used to retrieve the value from the object.
+- **`defaultValue`**: The default value that will be returned for resolved values that are undefined.
 
 ### Return value
 
@@ -2740,25 +2808,24 @@ Let’s look at an example of the `_.get()` method in the code snippet below:
 
 In the HTML tab:
 
--   **Line 5**: We import the `lodash` script.
+- **Line 5**: We import the `lodash` script.
 
 In the JavaScript tab:
 
--   **Lines 2 to 15**: We create an object to perform a query.
+- **Lines 2 to 15**: We create an object to perform a query.
 
--   **Line 18**: We define a variable `collegeYopPath` to get the value.
+- **Line 18**: We define a variable `collegeYopPath` to get the value.
 
--   **Lines 19**: We use the `_.get()` method and pass the `object`, `collegeYopPath`, and a default value as parameters.
+- **Lines 19**: We use the `_.get()` method and pass the `object`, `collegeYopPath`, and a default value as parameters.
 
--   **Line 22**: We define a variable `falsyPath` to get the value.
+- **Line 22**: We define a variable `falsyPath` to get the value.
 
--   **Lines 23**: We use the `_.get()` method and pass the `object`, `falsyPath` and a `default value` as parameters.
+- **Lines 23**: We use the `_.get()` method and pass the `object`, `falsyPath` and a `default value` as parameters.
 
 ### Output
 
--   The `_.get()` method at **line 19** contains a valid path, and therefore the expression is resolved, and `2021` is printed on the console.
--   The `_.get()` method at **Line 23** contains an invalid path, and therefore the expression is resolved as `undefined`.
-
+- The `_.get()` method at **line 19** contains a valid path, and therefore the expression is resolved, and `2021` is printed on the console.
+- The `_.get()` method at **Line 23** contains an invalid path, and therefore the expression is resolved as `undefined`.
 
 ---
 
@@ -2916,7 +2983,10 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
 ## Source Code
 
 <details>
-<summary>  Folder Structure (src)  </summary>
+
+<summary>
+  Folder Structure (src)  
+</summary>
 
 ```
 .
@@ -3231,7 +3301,10 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
 </details>
 
 <details>
-<summary>  Click To See Component Sourcecode  </summary>
+
+<summary>
+  Click To See Component Sourcecode  
+</summary>
 
 ## Component Structure
 
@@ -3302,15 +3375,16 @@ export default class ActionLink extends React.Component {
 ```
 
 ---
+
 ### Table of Contents
 
--   [getPage][1]
-    -   [Parameters][2]
--   [getPageByFilePath][3]
-    -   [Parameters][4]
--   [getPages][5]
-    -   [Parameters][6]
-    -   [Examples][7]
+- [getPage][1]
+  - [Parameters][2]
+- [getPageByFilePath][3]
+  - [Parameters][4]
+- [getPages][5]
+  - [Parameters][6]
+  - [Examples][7]
 
 ## getPage
 
@@ -3318,8 +3392,8 @@ Get the page at the provided `urlPath`.
 
 ### Parameters
 
--   `pages` **[Array][8]** Array of page objects. All pages must have 'url' field.
--   `urlPath` **[string][9]** The url path to find the page by
+- `pages` **[Array][8]** Array of page objects. All pages must have 'url' field.
+- `urlPath` **[string][9]** The url path to find the page by
 
 Returns **[Object][10]**
 
@@ -3329,8 +3403,8 @@ Get the page at the provided `filePath`.
 
 ### Parameters
 
--   `pages` **[Array][8]** Array of page objects. All pages must have 'url' field.
--   `filePath` **[string][9]** The file path to find the page by
+- `pages` **[Array][8]** Array of page objects. All pages must have 'url' field.
+- `filePath` **[string][9]** The file path to find the page by
 
 Returns **[Object][10]**
 
@@ -3342,8 +3416,8 @@ the page having its URL equal to `urlPath`.
 
 ### Parameters
 
--   `pages` **[Array][8]** Array of page objects. All pages must have 'url' field.
--   `urlPath` **[string][9]** The url path to filter pages by
+- `pages` **[Array][8]** Array of page objects. All pages must have 'url' field.
+- `urlPath` **[string][9]** The url path to filter pages by
 
 ### Examples
 
@@ -3375,8 +3449,6 @@ Returns **[Array][8]**
 [8]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
 [9]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
 [10]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
-
-
 
 ```js
 import React from 'react';

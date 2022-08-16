@@ -13,8 +13,14 @@ template: docs
 
 # Markdown Dropdown:
 
+
 <details>
-<summary>How do I dropdown?</summary>
+
+
+<summary>
+How do I dropdown?
+</summary>
+
 <br>
 This is how you dropdown.
 <br>
@@ -31,7 +37,11 @@ This is how you dropdown.
 ---
 
 <details open>
-<summary>Want to ruin the surprise?</summary>
+
+<summary>
+Want to ruin the surprise?
+</summary>
+
 <br>
 Well, you asked for it!
 <br>
