@@ -10,6 +10,7 @@ seo:
 template: docs
 ---
 
+
 # What is heap data structure
 
 Heap is one efficient implementation of an abstract data structure called a [priority queue](https://learnersbucket.com/tutorials/data-structures/priority-queue-implementation-in-javascript).
@@ -18,9 +19,17 @@ Heap is one efficient implementation of an abstract data structure called a [pri
 
 ## Priority Queue
 
+
 <details>
 
-<summary> Click To Learn About Priority Queues </summary>
+
+
+<summary>
+ Click To Learn About Priority Queues 
+
+</summary>
+
+
 
 What is priority queue?
 -----------------------
@@ -203,6 +212,7 @@ If the index of any element in the array is `i`, the element in the index `2i+1`
 Thus we can create the binary heap using an array rather than using a tree.
 
 ```js
+//
 function BinaryHeap(){
   let list = [];
   
@@ -508,6 +518,7 @@ ___
 ## Binary heap with Min-Heap
 
 ```js
+//
 function BinaryHeap(){
   let list = [];
   
@@ -605,6 +616,7 @@ function BinaryHeap(){
 ```
 
 ```js
+//
 Input:
 const heap = new BinaryHeap();
 heap.insert(3);
@@ -632,6 +644,7 @@ ___
 ## Class based implementation of binary heap in javascript
 
 ```js
+//
 class BinaryHeap{
   constructor(){
     this.list = [];

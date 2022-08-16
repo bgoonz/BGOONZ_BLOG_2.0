@@ -10,10 +10,7 @@ seo:
 template: docs
 ---
 
-<<<<<<< HEAD
-=======
 
->>>>>>> master
     PRIVACY NOTICE
 
 - Visit our website at <https://bgoonz-blog.netlify.app/>

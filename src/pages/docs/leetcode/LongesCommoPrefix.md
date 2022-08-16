@@ -11,6 +11,7 @@ seo:
 template: docs
 ---
 
+
 ## [14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/description/)
 
 ### Problem:
@@ -45,6 +46,7 @@ All given inputs are in lowercase letters `a-z`.
 JavaScript specific solution. Get the min len then narrow down the prefix.
 
 ```js
+//
 /**
  * @param {string[]} strs
  * @return {string}
@@ -67,6 +69,7 @@ let longestCommonPrefix = function (strs) {
 #### TWO
 
 ```js
+//
 /**
  * @param {string[]} strs
  * @return {string}
@@ -89,6 +92,7 @@ let longestCommonPrefix = function (strs) {
 General solution. Build up the prefix.
 
 ```js
+//
 /**
  * @param {string[]} strs
  * @return {string}

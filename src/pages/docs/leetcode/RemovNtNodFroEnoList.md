@@ -11,6 +11,7 @@ seo:
 template: docs
 ---
 
+
 ## [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)
 
 ### Problem:
@@ -44,6 +45,7 @@ Boundaries that should be awared of:
 - It should be `p1.next` touches the end rather than `p1` because we want `p1` pointing at the last node.
 
 ```js
+//
 /**
  * Definition for singly-linked list.
  * function ListNode(val) {

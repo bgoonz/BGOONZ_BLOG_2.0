@@ -20,6 +20,7 @@ systems like Google.'
 template: docs
 ---
 
+
 # The Anatomy of a Search Engine
 
 > ## Excerpt
@@ -136,7 +137,6 @@ Another big difference between the web and traditional well controlled collectio
 
 First, we will provide a high level discussion of the architecture. Then, there is some in-depth descriptions of important data structures. Finally, the major applications: crawling, indexing, and searching will be examined in depth.
 
-![]()
 
 Figure 1. High Level Google Architecture
 
