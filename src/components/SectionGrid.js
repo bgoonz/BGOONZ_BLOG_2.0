@@ -1,10 +1,12 @@
+/* It renders a section with a title, subtitle, and a grid of items */
+
 import _ from 'lodash';
 import React from 'react';
 import { classNames, htmlToReact, Link, markdownify, withPrefix } from '../utils';
 import CtaButtons from './CtaButtons';
 export default class SectionGrid extends React.Component {
     render() {
-        const section = _.get(this.props, 'section', null);
+        let section = _.get(this.props, 'section', null);
         return (
             <section id={_.get(section, 'section_id', null)} className={classNames('block', 'block-grid', 'outer', {'has-header': _.get(section, 'title', null) || _.get(section, 'subtitle', null)})}>
               <div className="inner">
