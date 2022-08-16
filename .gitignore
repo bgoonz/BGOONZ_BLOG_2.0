@@ -52,7 +52,6 @@ typings/
 *.tgz
 
 # dotenv environment variables file
-.env
 
 
 # gatsby files
@@ -72,6 +71,3 @@ node_modules/
 public/
 .cache/
 
-
-
-package.lock.json
