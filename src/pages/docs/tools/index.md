@@ -34,62 +34,229 @@ seo:
           relativeUrl: true
 template: docs
 ---
-## Markdown tools  
 
+<h1>   Markdown tools  </h1>
+
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+
+<br>
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://random-static-html-deploys.netlify.app/markdow-tools-embed.html" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
+<br>
+
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://drive.google.com/embeddedfolderview?id=1DHyQsPLziqSUODclplhnNX1eknzbZrL8#grid" style="width:100%; height:600px; border:0;">
 </iframe>
-##  HTML TO Markdown Converter  
+<br>
+
+<br>
+
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<h1> HTML TO Markdown Converter  </h1>
+<br>
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz.github.io/html-2-md-converter/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
-##  PDF Tools
+<br>
+
+<br>
+
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+
+<h1> PDF Tools   </h1>
+<br>
+
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://pdf-tools-xi.vercel.app/" height="8000px" width="800px" style="" scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
-##    Number Base Converter  
+<br>
+
+<br>
+
+<br>
+<br>
+<br>
+<br>
+
+<br>
+
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<h1>   Number Base Converter  </h1>
+<br>
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://number-base-converter-react.vercel.app/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
-  ##   Text Tools
+<br>
+
+<br>
+<br>
+  <h1>  Text Tools </h1>
+<br>
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://devtools42.netlify.app/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
-  ##   Other Tools
+<br>
+
+<br>
+<br>
+  <h1>  Other Tools </h1>
+<br>
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://bgoonz.github.io/more-tools-textool-template-format/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
-##   Awesome Search
+<br>
+
+<br>
+<br>
+<h1>  Awesome Search </h1>
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://codepen.io/bgoonz/embed/JjNaPpL?default-tab=result&theme-id=light" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
-## Paste excel to HTML
+<br>
+<br>
+<br>
+<br>
+<h1>Paste excel to HTML</h1>
+<br>
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://pedantic-wing-adbf82.netlify.app/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
-##   Cloud Storage
-##  Up to 1TB of cloud Storage for file sharing!</h2>
+<br>
+<br>
+
+<h1>  Cloud Storage </h1>
+<br>
+
+<h2> Up to 1TB of cloud Storage for file sharing!</h2>
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://onedrive.live.com/embed?cid=D21009FDD967A241&resid=D21009FDD967A241%21538729&authkey=AHSDSyoYqzg2K2E" height="800px" width="800px" style="zoom:0.69; align-self:center;display:auto;display: block;border:2px solid gold;">
 </iframe>
+<br>
+
+<br>
+
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://resourcerepo2.netlify.app/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
-##  Text Tools
+<br>
+<br>
+<br>
+<br>
+<h1> Text Tools     </h1>
+<br>
+
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://devtools42.netlify.app/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
-##  Ternary Converter
+<br>
+
+<br>
+
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+
+<h1> Ternary Converter   </h1>
+<br>
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://ternary42.netlify.app/" height="8000px" width="800px" style="" scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
-##   Github HTML Render from link
+<br>
+
+<br>
+
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+
+<h1>  Github HTML Render from link </h1>
+<br>
+
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://githtmlpreview.netlify.app/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
-##  Form Builder GUI
+<br>
+
+<br>
+
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+
+<h1> Form Builder GUI </h1>
+<br>
+
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://fourm-builder-gui.netlify.app/" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
+<br>
 
-##  Border Builder 
+<!-- <br>
+<h1> Border Builder </h1>
+<br>
 
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://random-static-html-deploys.netlify.app/web-speech-api-master/speak-easy-synthesis/index.html" height="8000px" width="800px" style=""scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
- 
+<br>
+
+<br>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<br>
+<br>
+<br>
+ -->
+
+<br>
+<br>
+
+<h1>                </h1>
+<br>
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" src="https://ds-algo-official.netlify.app/" height="800px" style="width: 100%;" scrolling="yes" loading="lazy"  allowfullscreen="true">
 </iframe>
+<br>
 
-
-
+<br>
+<br>
+<br>
+<h1>                </h1>
+<br>
 
  <iframe height="800" style="width: 100%;" scrolling="yes" title="Simple Typing Carousel " src="https://codepen.io/bgoonz/embed/ExZvGoZ?default-tab=html%2Cresult"    loading="lazy"  allowfullscreen="true">
   See the Pen <a href="https://codepen.io/bgoonz/pen/ExZvGoZ">
