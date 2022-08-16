@@ -1,5 +1,3 @@
-
-
 root_docs_path: /docs
 sections:
     - about
@@ -9,22 +7,18 @@ sections:
     - community
     - content
     - css
-    - ds-algo
+    - data-structures
     - docs
     - faq
-    - git
     - interact
     - javascript
-    - js-tips
     - interview
     - leetcode
-    - overflow
     - projects
     - python
-    - quick-ref
+    - quick-reference
     - react
     - reference
     - tools
     - tips
     - tutorials
-    - typescript
