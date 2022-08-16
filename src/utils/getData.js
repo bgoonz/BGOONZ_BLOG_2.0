@@ -1,3 +1,4 @@
+/* Exporting the function cycler. */
 import _ from 'lodash';
 
 export default function getData(siteData, dataPath) {
