@@ -45,20 +45,20 @@ window.onGatsbyInitialClientRender = function () {
         // Remove nav related classes on page load
         document.body.classList.remove('menu--opened');
 
-        const menuToggle = document.querySelectorAll('.menu-toggle');
-        if (menuToggle) {
-            for (let i = 0; i < menuToggle.length; i++) {
-                menuToggle[i].removeEventListener('click', menuToggleHandler, false);
-            }
-        }
+  const menuToggle = document.querySelectorAll('.menu-toggle');
+  if (menuToggle) {
+    for (let i = 0; i < menuToggle.length; i++) {
+      menuToggle[i].removeEventListener('click', menuToggleHandler, false);
+    }
+  }
 
-        const submenuToggle = document.querySelectorAll('.submenu-toggle');
-        if (submenuToggle) {
-            for (let i = 0; i < submenuToggle.length; i++) {
-                submenuToggle[i].removeEventListener('click', submenuToggleHandler, false);
-            }
-        }
-    };
+  const submenuToggle = document.querySelectorAll('.submenu-toggle');
+  if (submenuToggle) {
+    for (let i = 0; i < submenuToggle.length; i++) {
+      submenuToggle[i].removeEventListener('click', submenuToggleHandler, false);
+    }
+  }
+};
 
     window.addDocsNavigationHandlers = function () {
         const docsNavToggle = document.getElementById('docs-nav-toggle');
@@ -66,37 +66,37 @@ window.onGatsbyInitialClientRender = function () {
             docsNavToggle.addEventListener('click', docsNavToggleHandler, false);
         }
 
-        const docsSubmenuToggle = document.querySelectorAll('.docs-submenu-toggle');
-        if (docsSubmenuToggle) {
-            for (let i = 0; i < docsSubmenuToggle.length; i++) {
-                docsSubmenuToggle[i].addEventListener('click', submenuToggleHandler, false);
-            }
-        }
-    };
+  const docsSubmenuToggle = document.querySelectorAll('.docs-submenu-toggle');
+  if (docsSubmenuToggle) {
+    for (let i = 0; i < docsSubmenuToggle.length; i++) {
+      docsSubmenuToggle[i].addEventListener('click', submenuToggleHandler, false);
+    }
+  }
+};
 
     window.removeDocsNavigationHandlers = function () {
         // Remove docs nav related classes on page load
         document.body.classList.remove('docs-menu--opened');
 
-        const docsNavToggle = document.getElementById('docs-nav-toggle');
-        if (docsNavToggle) {
-            docsNavToggle.removeEventListener('click', docsNavToggleHandler, false);
-        }
+  const docsNavToggle = document.getElementById('docs-nav-toggle');
+  if (docsNavToggle) {
+    docsNavToggle.removeEventListener('click', docsNavToggleHandler, false);
+  }
 
-        const docsSubmenuToggle = document.querySelectorAll('.docs-submenu-toggle');
-        if (docsSubmenuToggle) {
-            for (let i = 0; i < docsSubmenuToggle.length; i++) {
-                docsSubmenuToggle[i].removeEventListener('click', submenuToggleHandler, false);
-            }
-        }
-    };
+  const docsSubmenuToggle = document.querySelectorAll('.docs-submenu-toggle');
+  if (docsSubmenuToggle) {
+    for (let i = 0; i < docsSubmenuToggle.length; i++) {
+      docsSubmenuToggle[i].removeEventListener('click', submenuToggleHandler, false);
+    }
+  }
+};
 
     window.addPageNavLinks = function () {
         const pageToc = document.getElementById('page-nav-inside');
         const pageTocContainer = document.getElementById('page-nav-link-container');
 
-        if (pageToc && pageTocContainer) {
-            const pageContent = document.querySelector('.type-docs .post-content');
+  if (pageToc && pageTocContainer) {
+    const pageContent = document.querySelector('.type-docs .post-content');
 
             // Create in-page navigation
             const headerLinks = getHeaderLinks({
@@ -226,37 +226,37 @@ window.onGatsbyInitialClientRender = function () {
         return result;
     }
 
-    function getHeaderLinks(options = {}) {
-        let tagNames = options.tagNames || ['h2', 'h3'];
-        let root = options.root || document.body;
-        let headerElements = getElementsByTagNames(root, tagNames);
-        return createLinksForHeaderElements(headerElements);
-    }
+function getHeaderLinks(options = {}) {
+  let tagNames = options.tagNames || ["h2", "h3"];
+  let root = options.root || document.body;
+  let headerElements = getElementsByTagNames(root, tagNames);
+  return createLinksForHeaderElements(headerElements);
+}
 
-    function renderHeaderLinks(element, links) {
-        if (links.length === 0) {
-            return;
-        }
-        let ulElm = document.createElement('ul');
-        for (let i = 0; i < links.length; i++) {
-            let liElm = document.createElement('li');
-            liElm.append(links[i].link);
-            if (links[i].children.length > 0) {
-                renderHeaderLinks(liElm, links[i].children);
-            }
-            ulElm.appendChild(liElm);
-        }
-        element.appendChild(ulElm);
+function renderHeaderLinks(element, links) {
+  if (links.length === 0) {
+    return;
+  }
+  let ulElm = document.createElement("ul");
+  for (let i = 0; i < links.length; i++) {
+    let liElm = document.createElement("li");
+    liElm.append(links[i].link);
+    if (links[i].children.length > 0) {
+      renderHeaderLinks(liElm, links[i].children);
     }
+    ulElm.appendChild(liElm);
+  }
+  element.appendChild(ulElm);
+}
 
-    function anchorForId(id) {
-        let anchor = document.createElement('a');
-        anchor.setAttribute('class', 'hash-link');
-        anchor.setAttribute('data-scroll', '');
-        anchor.href = '#' + id;
-        anchor.innerHTML = '<span class="screen-reader-text">Copy</span>';
-        return anchor;
-    }
+function anchorForId(id) {
+  let anchor = document.createElement("a");
+  anchor.setAttribute("class", "hash-link");
+  anchor.setAttribute("data-scroll", "");
+  anchor.href = "#" + id;
+  anchor.innerHTML = '<span class="screen-reader-text">Copy</span>';
+  return anchor;
+}
 
     // Syntax Highlighter
     // Prism.highlightAll();
