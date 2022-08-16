@@ -19,7 +19,9 @@ All of the code examples below will be included a second time at the bottom of t
 
 React uses a syntax extension of JavaScript called JSX that allows you to write HTML directly within JavaScript.
 
-<figure><img src="https://cdn-images-1.medium.com/max/1200/0*Olfj44MF6WSzvlSM.png" class="graf-image" /></figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/1200/0*Olfj44MF6WSzvlSM.png" class="graf-image" />
+</figure>
 
 ### React
 
@@ -66,10 +68,18 @@ React has a few different kinds of components, but we'll start with `React.Compo
 
 
 
+
 <details>
 
 
-<summary> More About React </summary>
+
+
+<summary>
+ More About React 
+
+</summary>
+
+
 
 React.js is a JavaScript library that can be used to build user interfaces. With React, users can create reusable components, and these components display data as it changes over time. React Native also exists to help you create native mobile apps using React (the more common approach for users). In other words, React is a JavaScript tool that makes it easy to reason about, construct, and maintain stateless and stateful user interfaces. It provides the means to declaratively define and divide a UI into UI components (a.k.a., React components) using HTML-like nodes called React nodes. React nodes eventually get transformed into a format for UI rendering (e.g., HTML/DOM, canvas, svg, etc.).
 
@@ -94,6 +104,7 @@ Below I am creating a React component by invoking the `React.createClass` functi
 As you can see, the `MySelect` component is made up of some styles and an empty React `<div>` node element.
 
 ```js
+//
 const MySelect = React.createClass({ //define MySelect component
     render: function(){
         const mySelectStyle = {
@@ -102,7 +113,8 @@ const MySelect = React.createClass({ //define MySelect component
             padding: '5px'
         };
         // using {} to reference a JS variable inside of JSX
-        return <div style={mySelectStyle}></div>; //react div element, via JSX
+        return <div style={mySelectStyle}>
+</div>; //react div element, via JSX
     }
 });
 ```
@@ -122,7 +134,8 @@ return React.createElement('div', { style: mySelectStyle });
 instead of this:
 
 ```
-return <div style={mySelectStyle}></div>;
+return <div style={mySelectStyle}>
+</div>;
 ```
 
 For now, just keep in mind that when you write HTML-like tags in React code, eventually it must be transformed into real JavaScript, along with any ES6 syntax.
@@ -134,6 +147,7 @@ I'm going to define another component called `<MyOption>` and then use the `<MyO
 Examine the updated JavaScript code below which defines both the `<MySelect>` and `<MyOption>` React components.
 
 ```js
+//
 const MySelect = React.createClass({
     render: function(){
         const mySelectStyle = {
@@ -143,10 +157,14 @@ const MySelect = React.createClass({
         };
         return ( //react div element, via JSX, containing <MyOption> component
             <div style={mySelectStyle}>
-                <MyOption value="Volvo"></MyOption>
-                <MyOption value="Saab"></MyOption>
-                <MyOption value="Mercedes"></MyOption>
-                <MyOption value="Audi"></MyOption>
+                <MyOption value="Volvo">
+</MyOption>
+                <MyOption value="Saab">
+</MyOption>
+                <MyOption value="Mercedes">
+</MyOption>
+                <MyOption value="Audi">
+</MyOption>
             </div>
         );
     }
@@ -175,7 +193,8 @@ Before we do that I'd like to mention that up to this point all we have done is 
 
 Let's now render the `<MySelect>` component to the virtual DOM which in turn will render it to the actual DOM inside of an HTML page.
 
-In the JavaScript below notice I added a call to the `ReactDOM.render()` function on the last line. Here I am passing the `ReactDOM.render()` function the component we want to render (i.e., `<MySelect>`) and a reference to the HTML element already in the HTML DOM (i.e., `<div id="app"></div>`) where I want to render my React `<MySelect>` component.
+In the JavaScript below notice I added a call to the `ReactDOM.render()` function on the last line. Here I am passing the `ReactDOM.render()` function the component we want to render (i.e., `<MySelect>`) and a reference to the HTML element already in the HTML DOM (i.e., `<div id="app">
+</div>`) where I want to render my React `<MySelect>` component.
 
 Click on the "Result" tab and you will see our custom React `<MySelect>` component rendered to the HTML DOM.
 
@@ -196,6 +215,7 @@ State is typically found on the top most component which makes up a UI component
 I've updated the code below accordingly to add state to the component. As I am making updates to the code, make sure you read the JavaScript comments which call attention to the changes in the code.
 
 ```js
+//
 const MySelect = React.createClass({
     getInitialState: function(){ //add selected, default state
         return {selected: false}; //this.state.selected = false;
@@ -208,10 +228,14 @@ const MySelect = React.createClass({
         };
         return (
             <div style={mySelectStyle}>
-                <MyOption value="Volvo"></MyOption>
-                <MyOption value="Saab"></MyOption>
-                <MyOption value="Mercedes"></MyOption>
-                <MyOption value="Audi"></MyOption>
+                <MyOption value="Volvo">
+</MyOption>
+                <MyOption value="Saab">
+</MyOption>
+                <MyOption value="Mercedes">
+</MyOption>
+                <MyOption value="Audi">
+</MyOption>
             </div>
         );
     }
@@ -229,6 +253,7 @@ ReactDOM.render(<MySelect />, document.getElementById('app'));
 With the default state set, next we'll add a callback function called `select` that gets called when a user clicks on an option. Inside of this function we get the text of the option that was selected (via the `event` parameter) and use that to determine how to `setState` on the current component. Notice that I am using `event` details passed to the `select` callback. This pattern should look familiar if you've had any experience with jQuery.
 
 ```js
+//
 const MySelect = React.createClass({
     getInitialState: function(){
         return {selected: false};
@@ -248,10 +273,14 @@ const MySelect = React.createClass({
         };
         return (
             <div style={mySelectStyle}>
-                <MyOption value="Volvo"></MyOption>
-                <MyOption value="Saab"></MyOption>
-                <MyOption value="Mercedes"></MyOption>
-                <MyOption value="Audi"></MyOption>
+                <MyOption value="Volvo">
+</MyOption>
+                <MyOption value="Saab">
+</MyOption>
+                <MyOption value="Mercedes">
+</MyOption>
+                <MyOption value="Audi">
+</MyOption>
             </div>
         );
     }
@@ -271,6 +300,7 @@ In order for our `<MyOption>` components to gain access to the `select` function
 With that in place we can add `onClick={this.props.select}` to the `<MyOption>` components. Hopefully it's obvious that all we have done is wired up a `click` event that will call the `select` function. React takes care of wiring up the real click handler in the real DOM for you.
 
 ```js
+//
 const MySelect = React.createClass({
     getInitialState: function(){
         return {selected: false};
@@ -290,10 +320,14 @@ const MySelect = React.createClass({
         };
         return (//pass reference, using props, to select callback to <MyOption>
             <div style={mySelectStyle}>
-                <MyOption select={this.select} value="Volvo"></MyOption>
-                <MyOption select={this.select} value="Saab"></MyOption>
-                <MyOption select={this.select} value="Mercedes"></MyOption>
-                <MyOption select={this.select} value="Audi"></MyOption>
+                <MyOption select={this.select} value="Volvo">
+</MyOption>
+                <MyOption select={this.select} value="Saab">
+</MyOption>
+                <MyOption select={this.select} value="Mercedes">
+</MyOption>
+                <MyOption select={this.select} value="Audi">
+</MyOption>
             </div>
         );
     }
@@ -321,6 +355,7 @@ While our React UI select component is not as pretty or feature complete as you 
 Before moving on to the role of the virtual DOM I do want to stress that you don't have to use JSX and Babel. You can always bypass these tools and just write straight JavaScript. Below, I'm showing the final state of the code after the JSX has been transformed by Babel. If you choose not to use JSX, then you'll have to write the following code yourself instead of the code I've written throughout this section.
 
 ```js
+//
 const MySelect = React.createClass({
   displayName: 'MySelect',
 
@@ -380,7 +415,8 @@ ReactDOM.render(React.createElement(MySelect, null), document.getElementById('ap
 
 I'm going to end this whirlwind tour where most people typically start talking about React. I'll finish off this React overview by talking about the merits of the React virtual DOM.
 
-Hopefully you notice the only interaction with the real DOM we had during the creation of our custom select UI is when we told the `ReactDOM.render()` function where to render our UI component in the HTML page (i.e., render it to `<div id="app"></div>`). This might just be the only interaction you ever have with the real DOM when building out a React application from a tree of React components. And herein lies much of the value of React. By using React, you really don't ever have to think about the DOM like you once did when you were writing jQuery code. React replaces jQuery, as a complete DOM abstraction, by removing most, if not all, implicit DOM interactions from your code. Of course, that's not the only benefit, or even the best benefit.
+Hopefully you notice the only interaction with the real DOM we had during the creation of our custom select UI is when we told the `ReactDOM.render()` function where to render our UI component in the HTML page (i.e., render it to `<div id="app">
+</div>`). This might just be the only interaction you ever have with the real DOM when building out a React application from a tree of React components. And herein lies much of the value of React. By using React, you really don't ever have to think about the DOM like you once did when you were writing jQuery code. React replaces jQuery, as a complete DOM abstraction, by removing most, if not all, implicit DOM interactions from your code. Of course, that's not the only benefit, or even the best benefit.
 
 Because the DOM has been completely abstracted by the Virtual DOM this allows for a heavy handed performance pattern of updating the real DOM when state is changed. The Virtual DOM keeps track of UI changes based on state and props. It then compares that to the real DOM, and then makes only the minimal changes required to update the UI. In other words, the real DOM is only ever patched with the minimal changes needed when state or props change.
 
@@ -434,6 +470,7 @@ The code editor has a JSX element similar to what you created in the last challe
 
 
 ```js
+//
 
     const JSX = (
       <div>
@@ -482,6 +519,7 @@ The code editor has a JSX element similar to what you created in the last challe
 ### Ans:
 
 ```js
+//
 
  const JSX = (
       <div className="myDiv">
@@ -493,21 +531,25 @@ The code editor has a JSX element similar to what you created in the last challe
 
 -Another important way in which JSX differs from HTML is in the idea of the self-closing tag.
 
-> _In HTML, almost all tags have both an opening and closing tag:_ `<div></div>;` _the closing tag always has a forward slash before the tag name that you are closing._
+> _In HTML, almost all tags have both an opening and closing tag:_ `<div>
+</div>;` _the closing tag always has a forward slash before the tag name that you are closing._
 
 > _there are special instances in HTML called "self-closing tags", or tags that don't require both an opening and closing tag before another tag can start._
 
-> _For example the line-break tag can be written as_ `<br>` _or as_ `<br />,` _but should never be written as_ `<br></br>`_, since it doesn't contain any content._
+> _For example the line-break tag can be written as_ `<br>` _or as_ `<br />,` _but should never be written as_ `<br>
+</br>`_, since it doesn't contain any content._
 
 > _In JSX, the rules are a little different. Any JSX element can be written with a self-closing tag, and every element must be closed.  
 > The line-break tag, for example, must always be written as_ `<br />` _in order to be valid JSX that can be transpiled.  
-> A_ `<div>`_, on the other hand, can be written as_ `<div />`_or_`<div></div>`_.  
+> A_ `<div>`_, on the other hand, can be written as_ `<div />`_or_`<div>
+</div>`_.  
 > The difference is that in the first syntax version there is no way to include anything in the_ `<div />`_._
 
 ### Fix the errors in the code editor so that it is valid JSX and successfully transpiles. Make sure you don't change any of the content — you only need to close tags where they are needed.
 
 
 ```js
+//
 
     const JSX = (
       <div>
@@ -520,6 +562,7 @@ The code editor has a JSX element similar to what you created in the last challe
 ### Ans:
 
 ```js
+//
 
  const JSX = (
       <div>
@@ -642,9 +685,17 @@ Note: The text is considered a child of the div element, so you will not be able
 ---
 
 
+
 <details>
 
-<summary>  See More </summary>   
+
+
+<summary>
+  See More 
+
+</summary>
+
+   
 
 
 ### React: Create a Component with Composition
@@ -708,9 +759,17 @@ Note: The text is considered a child of the div element, so you will not be able
 
 
 
+
 <details>
 
-<summary>  Answers </summary>   
+
+
+<summary>
+  Answers 
+
+</summary>
+
+   
 
 
     const ChildComponent = () => {
@@ -748,10 +807,16 @@ Note: The text is considered a child of the div element, so you will not be able
 
 
 
-<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz - Overview</strong><br />
-<em>Web Developer, Electrical Engineer https://bryanguner.medium.com/ https://portfolio42.netlify.app/…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz">
+<strong>bgoonz - Overview</strong>
+<br />
+<em>Web Developer, Electrical Engineer https://bryanguner.medium.com/ https://portfolio42.netlify.app/…</em>github.com</a>
+<a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
-_More content at_ <a href="http://plainenglish.io/" class="markup--anchor markup--p-anchor"><em>plainenglish.io</em></a>
+_More content at_ <a href="http://plainenglish.io/" class="markup--anchor markup--p-anchor">
+<em>plainenglish.io</em>
+</a>
 
 By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [May 19, 2021](https://medium.com/p/8021738aa1ad).
 
@@ -769,24 +834,43 @@ By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner<
 <li>Filter <code>children</code> to remove unnecessary nodes except for <code>AccordionItem</code> by identifying the function's name.</li>
 <li>Use <code>Array.prototype.map()</code> on the collected nodes to render the individual collapsible elements.</li>
 <li>Define <code>changeItem</code>, which will be executed when clicking an <code>AccordionItem</code>'s <code>&lt;button&gt;</code>.</li>
-<li><code>changeItem</code> executes the passed callback, <code>onItemClick</code>, and updates <code>bindIndex</code> based on the clicked element.</li>
+<li>
+<code>changeItem</code> executes the passed callback, <code>onItemClick</code>, and updates <code>bindIndex</code> based on the clicked element.</li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb1-1" title="1"><span class="fu">.accordion-item.collapsed</span> {</a>
-<a class="sourceLine" id="cb1-2" title="2">  <span class="kw">display</span>: <span class="dv">none</span><span class="op">;</span></a>
+<div class="sourceCode" id="cb1">
+<pre class="sourceCode css">
+<code class="sourceCode css">
+<a class="sourceLine" id="cb1-1" title="1">
+<span class="fu">.accordion-item.collapsed</span> {</a>
+<a class="sourceLine" id="cb1-2" title="2">  <span class="kw">display</span>: <span class="dv">none</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb1-3" title="3">}</a>
-<a class="sourceLine" id="cb1-4" title="4"></a>
-<a class="sourceLine" id="cb1-5" title="5"><span class="fu">.accordion-item.expanded</span> {</a>
-<a class="sourceLine" id="cb1-6" title="6">  <span class="kw">display</span>: <span class="dv">block</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb1-4" title="4">
+</a>
+<a class="sourceLine" id="cb1-5" title="5">
+<span class="fu">.accordion-item.expanded</span> {</a>
+<a class="sourceLine" id="cb1-6" title="6">  <span class="kw">display</span>: <span class="dv">block</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb1-7" title="7">}</a>
-<a class="sourceLine" id="cb1-8" title="8"></a>
-<a class="sourceLine" id="cb1-9" title="9"><span class="fu">.accordion-button</span> {</a>
-<a class="sourceLine" id="cb1-10" title="10">  <span class="kw">display</span>: <span class="dv">block</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb1-11" title="11">  <span class="kw">width</span>: <span class="dv">100</span><span class="dt">%</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb1-8" title="8">
+</a>
+<a class="sourceLine" id="cb1-9" title="9">
+<span class="fu">.accordion-button</span> {</a>
+<a class="sourceLine" id="cb1-10" title="10">  <span class="kw">display</span>: <span class="dv">block</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb1-11" title="11">  <span class="kw">width</span>: <span class="dv">100</span>
+<span class="dt">%</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb1-12" title="12">}</a>
 
 </div>
 
 ```js
+//
 
 const AccordionItem = ({ label, isCollapsed, handleClick, children }) =&gt; {
   return (
@@ -830,6 +914,7 @@ children={props.children}
 <hr />
 
 ```js
+//
 
 ReactDOM.render(
   &lt;Accordion defaultIndex=&quot;1&quot; onItemClick={console.log}&gt;
@@ -853,62 +938,146 @@ ReactDOM.render(
 <li>Use the <code>useEffect()</code> hook to update the value of <code>isShown</code> to <code>true</code> and clear the interval by using <code>timeoutId</code> when the component is unmounted.</li>
 <li>Define a <code>closeAlert</code> function to set the component as removed from the DOM by displaying a fading out animation and set <code>isShown</code> to <code>false</code> via <code>setTimeout()</code>.</li>
 </ul>
-<div class="sourceCode" id="cb4"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb4-1" title="1"><span class="im">@keyframes</span> leave {</a>
+<div class="sourceCode" id="cb4">
+<pre class="sourceCode css">
+<code class="sourceCode css">
+<a class="sourceLine" id="cb4-1" title="1">
+<span class="im">@keyframes</span> leave {</a>
 <a class="sourceLine" id="cb4-2" title="2">  <span class="dv">0%</span> {</a>
-<a class="sourceLine" id="cb4-3" title="3">    <span class="kw">opacity</span>: <span class="dv">1</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb4-3" title="3">    <span class="kw">opacity</span>: <span class="dv">1</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb4-4" title="4">  }</a>
 <a class="sourceLine" id="cb4-5" title="5">  <span class="dv">100%</span> {</a>
-<a class="sourceLine" id="cb4-6" title="6">    <span class="kw">opacity</span>: <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb4-6" title="6">    <span class="kw">opacity</span>: <span class="dv">0</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb4-7" title="7">  }</a>
 <a class="sourceLine" id="cb4-8" title="8">}</a>
-<a class="sourceLine" id="cb4-9" title="9"></a>
-<a class="sourceLine" id="cb4-10" title="10"><span class="fu">.alert</span> {</a>
-<a class="sourceLine" id="cb4-11" title="11">  <span class="kw">padding</span>: <span class="dv">0.75</span><span class="dt">rem</span> <span class="dv">0.5</span><span class="dt">rem</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb4-12" title="12">  <span class="kw">margin-bottom</span>: <span class="dv">0.5</span><span class="dt">rem</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb4-13" title="13">  <span class="kw">text-align</span>: <span class="dv">left</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb4-14" title="14">  <span class="kw">padding-right</span>: <span class="dv">40</span><span class="dt">px</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb4-15" title="15">  <span class="kw">border-radius</span>: <span class="dv">4</span><span class="dt">px</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb4-16" title="16">  <span class="kw">font-size</span>: <span class="dv">16</span><span class="dt">px</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb4-17" title="17">  <span class="kw">position</span>: <span class="dv">relative</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb4-9" title="9">
+</a>
+<a class="sourceLine" id="cb4-10" title="10">
+<span class="fu">.alert</span> {</a>
+<a class="sourceLine" id="cb4-11" title="11">  <span class="kw">padding</span>: <span class="dv">0.75</span>
+<span class="dt">rem</span> <span class="dv">0.5</span>
+<span class="dt">rem</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb4-12" title="12">  <span class="kw">margin-bottom</span>: <span class="dv">0.5</span>
+<span class="dt">rem</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb4-13" title="13">  <span class="kw">text-align</span>: <span class="dv">left</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb4-14" title="14">  <span class="kw">padding-right</span>: <span class="dv">40</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb4-15" title="15">  <span class="kw">border-radius</span>: <span class="dv">4</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb4-16" title="16">  <span class="kw">font-size</span>: <span class="dv">16</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb4-17" title="17">  <span class="kw">position</span>: <span class="dv">relative</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb4-18" title="18">}</a>
-<a class="sourceLine" id="cb4-19" title="19"></a>
-<a class="sourceLine" id="cb4-20" title="20"><span class="fu">.alert.warning</span> {</a>
-<a class="sourceLine" id="cb4-21" title="21">  <span class="kw">color</span>: <span class="cn">#856404</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb4-22" title="22">  <span class="kw">background-color</span>: <span class="cn">#fff3cd</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb4-23" title="23">  <span class="kw">border-color</span>: <span class="cn">#ffeeba</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb4-19" title="19">
+</a>
+<a class="sourceLine" id="cb4-20" title="20">
+<span class="fu">.alert.warning</span> {</a>
+<a class="sourceLine" id="cb4-21" title="21">  <span class="kw">color</span>: <span class="cn">#856404</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb4-22" title="22">  <span class="kw">background-color</span>: <span class="cn">#fff3cd</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb4-23" title="23">  <span class="kw">border-color</span>: <span class="cn">#ffeeba</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb4-24" title="24">}</a>
-<a class="sourceLine" id="cb4-25" title="25"></a>
-<a class="sourceLine" id="cb4-26" title="26"><span class="fu">.alert.error</span> {</a>
-<a class="sourceLine" id="cb4-27" title="27">  <span class="kw">color</span>: <span class="cn">#721c24</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb4-28" title="28">  <span class="kw">background-color</span>: <span class="cn">#f8d7da</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb4-29" title="29">  <span class="kw">border-color</span>: <span class="cn">#f5c6cb</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb4-25" title="25">
+</a>
+<a class="sourceLine" id="cb4-26" title="26">
+<span class="fu">.alert.error</span> {</a>
+<a class="sourceLine" id="cb4-27" title="27">  <span class="kw">color</span>: <span class="cn">#721c24</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb4-28" title="28">  <span class="kw">background-color</span>: <span class="cn">#f8d7da</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb4-29" title="29">  <span class="kw">border-color</span>: <span class="cn">#f5c6cb</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb4-30" title="30">}</a>
-<a class="sourceLine" id="cb4-31" title="31"></a>
-<a class="sourceLine" id="cb4-32" title="32"><span class="fu">.alert.leaving</span> {</a>
-<a class="sourceLine" id="cb4-33" title="33">  <span class="kw">animation</span>: leave <span class="dv">0.5</span><span class="dt">s</span> <span class="dv">forwards</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb4-31" title="31">
+</a>
+<a class="sourceLine" id="cb4-32" title="32">
+<span class="fu">.alert.leaving</span> {</a>
+<a class="sourceLine" id="cb4-33" title="33">  <span class="kw">animation</span>: leave <span class="dv">0.5</span>
+<span class="dt">s</span> <span class="dv">forwards</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb4-34" title="34">}</a>
-<a class="sourceLine" id="cb4-35" title="35"></a>
-<a class="sourceLine" id="cb4-36" title="36"><span class="fu">.alert</span> <span class="fu">.close</span> {</a>
-<a class="sourceLine" id="cb4-37" title="37">  <span class="kw">position</span>: <span class="dv">absolute</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb4-38" title="38">  <span class="kw">top</span>: <span class="dv">0</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb4-39" title="39">  <span class="kw">right</span>: <span class="dv">0</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb4-40" title="40">  <span class="kw">padding</span>: <span class="dv">0</span> <span class="dv">0.75</span><span class="dt">rem</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb4-41" title="41">  <span class="kw">color</span>: <span class="cn">#333</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb4-42" title="42">  <span class="kw">border</span>: <span class="dv">0</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb4-43" title="43">  <span class="kw">height</span>: <span class="dv">100</span><span class="dt">%</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb4-44" title="44">  <span class="kw">cursor</span>: <span class="dv">pointer</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb4-45" title="45">  <span class="kw">background</span>: <span class="dv">none</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb4-46" title="46">  <span class="kw">font-weight</span>: <span class="dv">600</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb4-47" title="47">  <span class="kw">font-size</span>: <span class="dv">16</span><span class="dt">px</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb4-35" title="35">
+</a>
+<a class="sourceLine" id="cb4-36" title="36">
+<span class="fu">.alert</span> <span class="fu">.close</span> {</a>
+<a class="sourceLine" id="cb4-37" title="37">  <span class="kw">position</span>: <span class="dv">absolute</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb4-38" title="38">  <span class="kw">top</span>: <span class="dv">0</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb4-39" title="39">  <span class="kw">right</span>: <span class="dv">0</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb4-40" title="40">  <span class="kw">padding</span>: <span class="dv">0</span> <span class="dv">0.75</span>
+<span class="dt">rem</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb4-41" title="41">  <span class="kw">color</span>: <span class="cn">#333</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb4-42" title="42">  <span class="kw">border</span>: <span class="dv">0</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb4-43" title="43">  <span class="kw">height</span>: <span class="dv">100</span>
+<span class="dt">%</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb4-44" title="44">  <span class="kw">cursor</span>: <span class="dv">pointer</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb4-45" title="45">  <span class="kw">background</span>: <span class="dv">none</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb4-46" title="46">  <span class="kw">font-weight</span>: <span class="dv">600</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb4-47" title="47">  <span class="kw">font-size</span>: <span class="dv">16</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb4-48" title="48">}</a>
-<a class="sourceLine" id="cb4-49" title="49"></a>
-<a class="sourceLine" id="cb4-50" title="50"><span class="fu">.alert</span> <span class="fu">.close</span><span class="in">:after</span> {</a>
-<a class="sourceLine" id="cb4-51" title="51">  <span class="kw">content</span>: <span class="st">&quot;x&quot;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb4-49" title="49">
+</a>
+<a class="sourceLine" id="cb4-50" title="50">
+<span class="fu">.alert</span> <span class="fu">.close</span>
+<span class="in">:after</span> {</a>
+<a class="sourceLine" id="cb4-51" title="51">  <span class="kw">content</span>: <span class="st">&quot;x&quot;</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb4-52" title="52">}</a>
 
 </div>
 
 ```js
+//
 
 const Alert = ({ isDefaultShown = false, timeout = 250, type, message }) =&gt; {
   const [isShown, setIsShown] = React.useState(isDefaultShown);
@@ -947,6 +1116,7 @@ role=&quot;alert&quot;
 <hr />
 
 ```js
+//
 
 ReactDOM.render(
   &lt;Alert type=&quot;info&quot; message=&quot;This is info&quot; /&gt;,
@@ -964,6 +1134,7 @@ ReactDOM.render(
 </ul>
 
 ```js
+//
 
 const AutoLink = ({ text }) =&gt; {
   const delimiter =
@@ -990,6 +1161,7 @@ return word;
 <hr />
 
 ```js
+//
 
 ReactDOM.render(
   &lt;AutoLink text=&quot;foo bar baz http://example.org bar&quot; /&gt;,
@@ -1006,6 +1178,7 @@ ReactDOM.render(
 </ul>
 
 ```js
+//
 
 const Callto = ({ phone, children }) =&gt; {
   return &lt;a href={`tel:${phone}`}&gt;{children}&lt;/a&gt;;
@@ -1016,6 +1189,7 @@ const Callto = ({ phone, children }) =&gt; {
 <hr />
 
 ```js
+//
 
 ReactDOM.render(
   &lt;Callto phone=&quot;+302101234567&quot;&gt;Call me!&lt;/Callto&gt;,
@@ -1032,22 +1206,39 @@ ReactDOM.render(
 <li>Compute the <code>className</code> for each carousel item while mapping over them and applying it accordingly.</li>
 <li>Render the carousel items using <code>React.cloneElement()</code> and pass down <code>...rest</code> along with the computed <code>className</code>.</li>
 </ul>
-<div class="sourceCode" id="cb11"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb11-1" title="1"><span class="fu">.carousel</span> {</a>
-<a class="sourceLine" id="cb11-2" title="2">  <span class="kw">position</span>: <span class="dv">relative</span><span class="op">;</span></a>
+<div class="sourceCode" id="cb11">
+<pre class="sourceCode css">
+<code class="sourceCode css">
+<a class="sourceLine" id="cb11-1" title="1">
+<span class="fu">.carousel</span> {</a>
+<a class="sourceLine" id="cb11-2" title="2">  <span class="kw">position</span>: <span class="dv">relative</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb11-3" title="3">}</a>
-<a class="sourceLine" id="cb11-4" title="4"></a>
-<a class="sourceLine" id="cb11-5" title="5"><span class="fu">.carousel-item</span> {</a>
-<a class="sourceLine" id="cb11-6" title="6">  <span class="kw">position</span>: <span class="dv">absolute</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb11-7" title="7">  <span class="kw">visibility</span>: <span class="dv">hidden</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb11-4" title="4">
+</a>
+<a class="sourceLine" id="cb11-5" title="5">
+<span class="fu">.carousel-item</span> {</a>
+<a class="sourceLine" id="cb11-6" title="6">  <span class="kw">position</span>: <span class="dv">absolute</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb11-7" title="7">  <span class="kw">visibility</span>: <span class="dv">hidden</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb11-8" title="8">}</a>
-<a class="sourceLine" id="cb11-9" title="9"></a>
-<a class="sourceLine" id="cb11-10" title="10"><span class="fu">.carousel-item.visible</span> {</a>
-<a class="sourceLine" id="cb11-11" title="11">  <span class="kw">visibility</span>: <span class="dv">visible</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb11-9" title="9">
+</a>
+<a class="sourceLine" id="cb11-10" title="10">
+<span class="fu">.carousel-item.visible</span> {</a>
+<a class="sourceLine" id="cb11-11" title="11">  <span class="kw">visibility</span>: <span class="dv">visible</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb11-12" title="12">}</a>
 
 </div>
 
 ```js
+//
 
 const Carousel = ({ carouselItems, ...rest }) =&gt; {
   const [active, setActive] = React.useState(0);
@@ -1076,6 +1267,7 @@ className: `carousel-item${activeClass}`,
 <hr />
 
 ```js
+//
 
 ReactDOM.render(
   &lt;Carousel
@@ -1098,22 +1290,40 @@ ReactDOM.render(
 <li>Determine the appearance of the content, based on <code>isCollapsed</code> and apply the appropriate <code>className</code>.</li>
 <li>Update the value of the <code>aria-expanded</code> attribute based on <code>isCollapsed</code> to make the component accessible.</li>
 </ul>
-<div class="sourceCode" id="cb14"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb14-1" title="1"><span class="fu">.collapse-button</span> {</a>
-<a class="sourceLine" id="cb14-2" title="2">  <span class="kw">display</span>: <span class="dv">block</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb14-3" title="3">  <span class="kw">width</span>: <span class="dv">100</span><span class="dt">%</span><span class="op">;</span></a>
+<div class="sourceCode" id="cb14">
+<pre class="sourceCode css">
+<code class="sourceCode css">
+<a class="sourceLine" id="cb14-1" title="1">
+<span class="fu">.collapse-button</span> {</a>
+<a class="sourceLine" id="cb14-2" title="2">  <span class="kw">display</span>: <span class="dv">block</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb14-3" title="3">  <span class="kw">width</span>: <span class="dv">100</span>
+<span class="dt">%</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb14-4" title="4">}</a>
-<a class="sourceLine" id="cb14-5" title="5"></a>
-<a class="sourceLine" id="cb14-6" title="6"><span class="fu">.collapse-content.collapsed</span> {</a>
-<a class="sourceLine" id="cb14-7" title="7">  <span class="kw">display</span>: <span class="dv">none</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb14-5" title="5">
+</a>
+<a class="sourceLine" id="cb14-6" title="6">
+<span class="fu">.collapse-content.collapsed</span> {</a>
+<a class="sourceLine" id="cb14-7" title="7">  <span class="kw">display</span>: <span class="dv">none</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb14-8" title="8">}</a>
-<a class="sourceLine" id="cb14-9" title="9"></a>
-<a class="sourceLine" id="cb14-10" title="10"><span class="fu">.collapsed-content.expanded</span> {</a>
-<a class="sourceLine" id="cb14-11" title="11">  <span class="kw">display</span>: <span class="dv">block</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb14-9" title="9">
+</a>
+<a class="sourceLine" id="cb14-10" title="10">
+<span class="fu">.collapsed-content.expanded</span> {</a>
+<a class="sourceLine" id="cb14-11" title="11">  <span class="kw">display</span>: <span class="dv">block</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb14-12" title="12">}</a>
 
 </div>
 
 ```js
+//
 
 const Collapse = ({ collapsed, children }) =&gt; {
   const [isCollapsed, setIsCollapsed] = React.useState(collapsed);
@@ -1139,6 +1349,7 @@ aria-expanded={isCollapsed}
 <hr />
 
 ```js
+//
 
 ReactDOM.render(
   &lt;Collapse&gt;
@@ -1159,6 +1370,7 @@ ReactDOM.render(
 </ul>
 
 ```js
+//
 
 const ControlledInput = ({ value, onValueChange, ...rest }) =&gt; {
   return (
@@ -1175,6 +1387,7 @@ const ControlledInput = ({ value, onValueChange, ...rest }) =&gt; {
 <hr />
 
 ```js
+//
 
 const Form = () =&gt; {
   const [value, setValue] = React.useState(&quot;&quot;);
@@ -1205,6 +1418,7 @@ ReactDOM.render(&lt;Form /&gt;, document.getElementById(&quot;root&quot;));
 </ul>
 
 ```js
+//
 
 const CountDown = ({ hours = 0, minutes = 0, seconds = 0 }) =&gt; {
   const [paused, setPaused] = React.useState(false);
@@ -1251,6 +1465,7 @@ return (
 <hr />
 
 ```js
+//
 
 ReactDOM.render(
   &lt;CountDown hours={1} minutes={45} /&gt;,
@@ -1267,6 +1482,7 @@ ReactDOM.render(
 </ul>
 
 ```js
+//
 
 const DataList = ({ isOrdered = false, data }) =&gt; {
   const list = data.map((val, i) =&gt; &lt;li key={`${i}_${val}`}&gt;{val}&lt;/li&gt;);
@@ -1278,6 +1494,7 @@ const DataList = ({ isOrdered = false, data }) =&gt; {
 <hr />
 
 ```js
+//
 
 const names = [&quot;John&quot;, &quot;Paul&quot;, &quot;Mary&quot;];
 ReactDOM.render(&lt;DataList data={names} /&gt;, document.getElementById(&quot;root&quot;));
@@ -1296,6 +1513,7 @@ ReactDOM.render(
 </ul>
 
 ```js
+//
 
 const DataTable = ({ data }) =&gt; {
   return (
@@ -1323,6 +1541,7 @@ const DataTable = ({ data }) =&gt; {
 <hr />
 
 ```js
+//
 
 const people = [&quot;John&quot;, &quot;Jesse&quot;];
 ReactDOM.render(&lt;DataTable data={people} /&gt;, document.getElementById(&quot;root&quot;));
@@ -1336,29 +1555,62 @@ ReactDOM.render(&lt;DataTable data={people} /&gt;, document.getElementById(&quot
 <li>Use the <code>useState()</code> hook to create the <code>drag</code> and <code>filename</code> variables, initialized to <code>false</code> and <code>''</code> respectively.</li>
 <li>The variables <code>dragCounter</code> and <code>drag</code> are used to determine if a file is being dragged, while <code>filename</code> is used to store the dropped file's name.</li>
 <li>Create the <code>handleDrag</code>, <code>handleDragIn</code>, <code>handleDragOut</code> and <code>handleDrop</code> methods to handle drag and drop functionality.</li>
-<li><code>handleDrag</code> prevents the browser from opening the dragged file, <code>handleDragIn</code> and <code>handleDragOut</code> handle the dragged file entering and exiting the component, while <code>handleDrop</code> handles the file being dropped and passes it to <code>onDrop</code>.</li>
+<li>
+<code>handleDrag</code> prevents the browser from opening the dragged file, <code>handleDragIn</code> and <code>handleDragOut</code> handle the dragged file entering and exiting the component, while <code>handleDrop</code> handles the file being dropped and passes it to <code>onDrop</code>.</li>
 <li>Use the <code>useEffect()</code> hook to handle each of the drag and drop events using the previously created methods.</li>
 </ul>
-<div class="sourceCode" id="cb25"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb25-1" title="1"><span class="fu">.filedrop</span> {</a>
-<a class="sourceLine" id="cb25-2" title="2">  <span class="kw">min-height</span>: <span class="dv">120</span><span class="dt">px</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb25-3" title="3">  <span class="kw">border</span>: <span class="dv">3</span><span class="dt">px</span> <span class="dv">solid</span> <span class="cn">#d3d3d3</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb25-4" title="4">  <span class="kw">text-align</span>: <span class="dv">center</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb25-5" title="5">  <span class="kw">font-size</span>: <span class="dv">24</span><span class="dt">px</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb25-6" title="6">  <span class="kw">padding</span>: <span class="dv">32</span><span class="dt">px</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb25-7" title="7">  <span class="kw">border-radius</span>: <span class="dv">4</span><span class="dt">px</span><span class="op">;</span></a>
+<div class="sourceCode" id="cb25">
+<pre class="sourceCode css">
+<code class="sourceCode css">
+<a class="sourceLine" id="cb25-1" title="1">
+<span class="fu">.filedrop</span> {</a>
+<a class="sourceLine" id="cb25-2" title="2">  <span class="kw">min-height</span>: <span class="dv">120</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb25-3" title="3">  <span class="kw">border</span>: <span class="dv">3</span>
+<span class="dt">px</span> <span class="dv">solid</span> <span class="cn">#d3d3d3</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb25-4" title="4">  <span class="kw">text-align</span>: <span class="dv">center</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb25-5" title="5">  <span class="kw">font-size</span>: <span class="dv">24</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb25-6" title="6">  <span class="kw">padding</span>: <span class="dv">32</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb25-7" title="7">  <span class="kw">border-radius</span>: <span class="dv">4</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb25-8" title="8">}</a>
-<a class="sourceLine" id="cb25-9" title="9"></a>
-<a class="sourceLine" id="cb25-10" title="10"><span class="fu">.filedrop.drag</span> {</a>
-<a class="sourceLine" id="cb25-11" title="11">  <span class="kw">border</span>: <span class="dv">3</span><span class="dt">px</span> <span class="dv">dashed</span> <span class="cn">#1e90ff</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb25-9" title="9">
+</a>
+<a class="sourceLine" id="cb25-10" title="10">
+<span class="fu">.filedrop.drag</span> {</a>
+<a class="sourceLine" id="cb25-11" title="11">  <span class="kw">border</span>: <span class="dv">3</span>
+<span class="dt">px</span> <span class="dv">dashed</span> <span class="cn">#1e90ff</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb25-12" title="12">}</a>
-<a class="sourceLine" id="cb25-13" title="13"></a>
-<a class="sourceLine" id="cb25-14" title="14"><span class="fu">.filedrop.ready</span> {</a>
-<a class="sourceLine" id="cb25-15" title="15">  <span class="kw">border</span>: <span class="dv">3</span><span class="dt">px</span> <span class="dv">solid</span> <span class="cn">#32cd32</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb25-13" title="13">
+</a>
+<a class="sourceLine" id="cb25-14" title="14">
+<span class="fu">.filedrop.ready</span> {</a>
+<a class="sourceLine" id="cb25-15" title="15">  <span class="kw">border</span>: <span class="dv">3</span>
+<span class="dt">px</span> <span class="dv">solid</span> <span class="cn">#32cd32</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb25-16" title="16">}</a>
 
 </div>
 
 ```js
+//
 
 const FileDrop = ({ onDrop }) =&gt; {
   const [drag, setDrag] = React.useState(false);
@@ -1426,6 +1678,7 @@ drag ? &quot;filedrop drag&quot; : filename ? &quot;filedrop ready&quot; : &quot
 <hr />
 
 ```js
+//
 
 ReactDOM.render(
   &lt;FileDrop onDrop={console.log} /&gt;,
@@ -1443,6 +1696,7 @@ ReactDOM.render(
 </ul>
 
 ```js
+//
 
 const LimitedTextarea = ({ rows, cols, value, limit }) =&gt; {
   const [content, setContent] = React.useState(value.slice(0, limit));
@@ -1474,6 +1728,7 @@ value={content}
 <hr />
 
 ```js
+//
 
 ReactDOM.render(
   &lt;LimitedTextarea limit={32} value=&quot;Hello!&quot; /&gt;,
@@ -1493,6 +1748,7 @@ ReactDOM.render(
 </ul>
 
 ```js
+//
 
 const LimitedWordTextarea = ({ rows, cols, value, limit }) =&gt; {
   const [{ content, wordCount }, setContent] = React.useState({
@@ -1539,6 +1795,7 @@ value={content}
 <hr />
 
 ```js
+//
 
 ReactDOM.render(
   &lt;LimitedWordTextarea limit={5} value=&quot;Hello there!&quot; /&gt;,
@@ -1553,38 +1810,75 @@ ReactDOM.render(
 <li>Render an SVG, whose <code>height</code> and <code>width</code> are determined by the <code>size</code> prop.</li>
 <li>Use CSS to animate the SVG, creating a spinning animation.</li>
 </ul>
-<div class="sourceCode" id="cb32"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb32-1" title="1"><span class="fu">.loader</span> {</a>
-<a class="sourceLine" id="cb32-2" title="2">  <span class="kw">animation</span>: rotate <span class="dv">2</span><span class="dt">s</span> <span class="dv">linear</span> <span class="dv">infinite</span><span class="op">;</span></a>
+<div class="sourceCode" id="cb32">
+<pre class="sourceCode css">
+<code class="sourceCode css">
+<a class="sourceLine" id="cb32-1" title="1">
+<span class="fu">.loader</span> {</a>
+<a class="sourceLine" id="cb32-2" title="2">  <span class="kw">animation</span>: rotate <span class="dv">2</span>
+<span class="dt">s</span> <span class="dv">linear</span> <span class="dv">infinite</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb32-3" title="3">}</a>
-<a class="sourceLine" id="cb32-4" title="4"></a>
-<a class="sourceLine" id="cb32-5" title="5"><span class="im">@keyframes</span> rotate {</a>
+<a class="sourceLine" id="cb32-4" title="4">
+</a>
+<a class="sourceLine" id="cb32-5" title="5">
+<span class="im">@keyframes</span> rotate {</a>
 <a class="sourceLine" id="cb32-6" title="6">  <span class="dv">100%</span> {</a>
-<a class="sourceLine" id="cb32-7" title="7">    <span class="kw">transform</span>: <span class="fu">rotate(</span><span class="dv">360</span><span class="dt">deg</span><span class="fu">)</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb32-7" title="7">    <span class="kw">transform</span>: <span class="fu">rotate(</span>
+<span class="dv">360</span>
+<span class="dt">deg</span>
+<span class="fu">)</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb32-8" title="8">  }</a>
 <a class="sourceLine" id="cb32-9" title="9">}</a>
-<a class="sourceLine" id="cb32-10" title="10"></a>
-<a class="sourceLine" id="cb32-11" title="11"><span class="fu">.loader</span> circle {</a>
-<a class="sourceLine" id="cb32-12" title="12">  <span class="kw">animation</span>: dash <span class="dv">1.5</span><span class="dt">s</span> <span class="dv">ease-in-out</span> <span class="dv">infinite</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb32-10" title="10">
+</a>
+<a class="sourceLine" id="cb32-11" title="11">
+<span class="fu">.loader</span> circle {</a>
+<a class="sourceLine" id="cb32-12" title="12">  <span class="kw">animation</span>: dash <span class="dv">1.5</span>
+<span class="dt">s</span> <span class="dv">ease-in-out</span> <span class="dv">infinite</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb32-13" title="13">}</a>
-<a class="sourceLine" id="cb32-14" title="14"></a>
-<a class="sourceLine" id="cb32-15" title="15"><span class="im">@keyframes</span> dash {</a>
+<a class="sourceLine" id="cb32-14" title="14">
+</a>
+<a class="sourceLine" id="cb32-15" title="15">
+<span class="im">@keyframes</span> dash {</a>
 <a class="sourceLine" id="cb32-16" title="16">  <span class="dv">0%</span> {</a>
-<a class="sourceLine" id="cb32-17" title="17">    stroke-dasharray: <span class="dv">1</span><span class="op">,</span> <span class="dv">150</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb32-18" title="18">    stroke-dashoffset: <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb32-17" title="17">    stroke-dasharray: <span class="dv">1</span>
+<span class="op">,</span> <span class="dv">150</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb32-18" title="18">    stroke-dashoffset: <span class="dv">0</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb32-19" title="19">  }</a>
 <a class="sourceLine" id="cb32-20" title="20">  <span class="dv">50%</span> {</a>
-<a class="sourceLine" id="cb32-21" title="21">    stroke-dasharray: <span class="dv">90</span><span class="op">,</span> <span class="dv">150</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb32-22" title="22">    stroke-dashoffset: <span class="dv">-35</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb32-21" title="21">    stroke-dasharray: <span class="dv">90</span>
+<span class="op">,</span> <span class="dv">150</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb32-22" title="22">    stroke-dashoffset: <span class="dv">-35</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb32-23" title="23">  }</a>
 <a class="sourceLine" id="cb32-24" title="24">  <span class="dv">100%</span> {</a>
-<a class="sourceLine" id="cb32-25" title="25">    stroke-dasharray: <span class="dv">90</span><span class="op">,</span> <span class="dv">150</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb32-26" title="26">    stroke-dashoffset: <span class="dv">-124</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb32-25" title="25">    stroke-dasharray: <span class="dv">90</span>
+<span class="op">,</span> <span class="dv">150</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb32-26" title="26">    stroke-dashoffset: <span class="dv">-124</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb32-27" title="27">  }</a>
 <a class="sourceLine" id="cb32-28" title="28">}</a>
 
 </div>
 
 ```js
+//
 
 const Loader = ({ size }) =&gt; {
   return (
@@ -1608,6 +1902,7 @@ const Loader = ({ size }) =&gt; {
 <hr />
 
 ```js
+//
 
 ReactDOM.render(&lt;Loader size={24} /&gt;, document.getElementById(&quot;root&quot;));
 
@@ -1622,6 +1917,7 @@ ReactDOM.render(&lt;Loader size={24} /&gt;, document.getElementById(&quot;root&q
 </ul>
 
 ```js
+//
 
 const Mailto = ({ email, subject = &quot;&quot;, body = &quot;&quot;, children }) =&gt; {
   let params = subject || body ? &quot;?&quot; : &quot;&quot;;
@@ -1636,6 +1932,7 @@ return &lt;a href={`mailto:${email}${params}`}&gt;{children}&lt;/a&gt;;
 <hr />
 
 ```js
+//
 
 ReactDOM.render(
   &lt;Mailto email=&quot;foo@bar.baz&quot; subject=&quot;Hello &amp; Welcome&quot; body=&quot;Hello world!&quot;&gt;
@@ -1654,9 +1951,13 @@ ReactDOM.render(
 <li>Use <code>Array.prototype.map()</code> to render each value in the <code>propertyNames</code> array as a <code>&lt;th&gt;</code> element.</li>
 <li>Use <code>Array.prototype.map()</code> to render each object in the <code>filteredData</code> array as a <code>&lt;tr&gt;</code> element, containing a <code>&lt;td&gt;</code> for each key in the object.</li>
 </ul>
-<p><em>This component does not work with nested objects and will break if there are nested objects inside any of the properties specified in <code>propertyNames</code></em></p>
+<p>
+<em>This component does not work with nested objects and will break if there are nested objects inside any of the properties specified in <code>propertyNames</code>
+</em>
+</p>
 
 ```js
+//
 
 const MappedTable = ({ data, propertyNames }) =&gt; {
   let filteredData = data.map((v) =&gt;
@@ -1691,6 +1992,7 @@ const MappedTable = ({ data, propertyNames }) =&gt; {
 <hr />
 
 ```js
+//
 
 const people = [
   { name: &quot;John&quot;, surname: &quot;Smith&quot;, age: 42 },
@@ -1713,92 +2015,235 @@ ReactDOM.render(
 <li>Use the <code>isVisible</code> prop passed down from the parent to determine if the modal should be displayed or not.</li>
 <li>To use the component, import <code>Modal</code> only once and then display it by passing a boolean value to the <code>isVisible</code> attribute.</li>
 </ul>
-<div class="sourceCode" id="cb39"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb39-1" title="1"><span class="fu">.modal</span> {</a>
-<a class="sourceLine" id="cb39-2" title="2">  <span class="kw">position</span>: <span class="dv">fixed</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb39-3" title="3">  <span class="kw">top</span>: <span class="dv">0</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb39-4" title="4">  <span class="kw">bottom</span>: <span class="dv">0</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb39-5" title="5">  <span class="kw">left</span>: <span class="dv">0</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb39-6" title="6">  <span class="kw">right</span>: <span class="dv">0</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb39-7" title="7">  <span class="kw">width</span>: <span class="dv">100</span><span class="dt">%</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb39-8" title="8">  <span class="kw">z-index</span>: <span class="dv">9999</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb39-9" title="9">  <span class="kw">display</span>: flex<span class="op">;</span></a>
-<a class="sourceLine" id="cb39-10" title="10">  <span class="kw">align-items</span>: <span class="dv">center</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb39-11" title="11">  <span class="kw">justify-content</span>: <span class="dv">center</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb39-12" title="12">  <span class="kw">background-color</span>: <span class="fu">rgba(</span><span class="dv">0</span><span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="dv">0.25</span><span class="fu">)</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb39-13" title="13">  <span class="kw">animation-name</span>: appear<span class="op">;</span></a>
-<a class="sourceLine" id="cb39-14" title="14">  <span class="kw">animation-duration</span>: <span class="dv">300</span><span class="dt">ms</span><span class="op">;</span></a>
+<div class="sourceCode" id="cb39">
+<pre class="sourceCode css">
+<code class="sourceCode css">
+<a class="sourceLine" id="cb39-1" title="1">
+<span class="fu">.modal</span> {</a>
+<a class="sourceLine" id="cb39-2" title="2">  <span class="kw">position</span>: <span class="dv">fixed</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb39-3" title="3">  <span class="kw">top</span>: <span class="dv">0</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb39-4" title="4">  <span class="kw">bottom</span>: <span class="dv">0</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb39-5" title="5">  <span class="kw">left</span>: <span class="dv">0</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb39-6" title="6">  <span class="kw">right</span>: <span class="dv">0</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb39-7" title="7">  <span class="kw">width</span>: <span class="dv">100</span>
+<span class="dt">%</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb39-8" title="8">  <span class="kw">z-index</span>: <span class="dv">9999</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb39-9" title="9">  <span class="kw">display</span>: flex<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb39-10" title="10">  <span class="kw">align-items</span>: <span class="dv">center</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb39-11" title="11">  <span class="kw">justify-content</span>: <span class="dv">center</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb39-12" title="12">  <span class="kw">background-color</span>: <span class="fu">rgba(</span>
+<span class="dv">0</span>
+<span class="op">,</span> <span class="dv">0</span>
+<span class="op">,</span> <span class="dv">0</span>
+<span class="op">,</span> <span class="dv">0.25</span>
+<span class="fu">)</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb39-13" title="13">  <span class="kw">animation-name</span>: appear<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb39-14" title="14">  <span class="kw">animation-duration</span>: <span class="dv">300</span>
+<span class="dt">ms</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb39-15" title="15">}</a>
-<a class="sourceLine" id="cb39-16" title="16"></a>
-<a class="sourceLine" id="cb39-17" title="17"><span class="fu">.modal-dialog</span> {</a>
-<a class="sourceLine" id="cb39-18" title="18">  <span class="kw">width</span>: <span class="dv">100</span><span class="dt">%</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb39-19" title="19">  <span class="kw">max-width</span>: <span class="dv">550</span><span class="dt">px</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb39-20" title="20">  <span class="kw">background</span>: <span class="cn">white</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb39-21" title="21">  <span class="kw">position</span>: <span class="dv">relative</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb39-22" title="22">  <span class="kw">margin</span>: <span class="dv">0</span> <span class="dv">20</span><span class="dt">px</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb39-23" title="23">  <span class="kw">max-height</span>: <span class="fu">calc(</span><span class="dv">100</span><span class="dt">vh</span> <span class="op">-</span> <span class="dv">40</span><span class="dt">px</span><span class="fu">)</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb39-24" title="24">  <span class="kw">text-align</span>: <span class="dv">left</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb39-25" title="25">  <span class="kw">display</span>: flex<span class="op">;</span></a>
-<a class="sourceLine" id="cb39-26" title="26">  <span class="kw">flex-direction</span>: column<span class="op">;</span></a>
-<a class="sourceLine" id="cb39-27" title="27">  <span class="kw">overflow</span>: <span class="dv">hidden</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb39-28" title="28">  <span class="kw">box-shadow</span>: <span class="dv">0</span> <span class="dv">4</span><span class="dt">px</span> <span class="dv">8</span><span class="dt">px</span> <span class="dv">0</span> <span class="fu">rgba(</span><span class="dv">0</span><span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="dv">0.2</span><span class="fu">)</span><span class="op">,</span> <span class="dv">0</span> <span class="dv">6</span><span class="dt">px</span> <span class="dv">20</span><span class="dt">px</span> <span class="dv">0</span> <span class="fu">rgba(</span><span class="dv">0</span><span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="dv">0.19</span><span class="fu">)</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb39-29" title="29">  <span class="kw">-webkit-animation-name</span>: animatetop<span class="op">;</span></a>
-<a class="sourceLine" id="cb39-30" title="30">  <span class="kw">-webkit-animation-duration</span>: <span class="dv">0.4</span><span class="dt">s</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb39-31" title="31">  <span class="kw">animation-name</span>: slide-in<span class="op">;</span></a>
-<a class="sourceLine" id="cb39-32" title="32">  <span class="kw">animation-duration</span>: <span class="dv">0.5</span><span class="dt">s</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb39-16" title="16">
+</a>
+<a class="sourceLine" id="cb39-17" title="17">
+<span class="fu">.modal-dialog</span> {</a>
+<a class="sourceLine" id="cb39-18" title="18">  <span class="kw">width</span>: <span class="dv">100</span>
+<span class="dt">%</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb39-19" title="19">  <span class="kw">max-width</span>: <span class="dv">550</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb39-20" title="20">  <span class="kw">background</span>: <span class="cn">white</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb39-21" title="21">  <span class="kw">position</span>: <span class="dv">relative</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb39-22" title="22">  <span class="kw">margin</span>: <span class="dv">0</span> <span class="dv">20</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb39-23" title="23">  <span class="kw">max-height</span>: <span class="fu">calc(</span>
+<span class="dv">100</span>
+<span class="dt">vh</span> <span class="op">-</span> <span class="dv">40</span>
+<span class="dt">px</span>
+<span class="fu">)</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb39-24" title="24">  <span class="kw">text-align</span>: <span class="dv">left</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb39-25" title="25">  <span class="kw">display</span>: flex<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb39-26" title="26">  <span class="kw">flex-direction</span>: column<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb39-27" title="27">  <span class="kw">overflow</span>: <span class="dv">hidden</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb39-28" title="28">  <span class="kw">box-shadow</span>: <span class="dv">0</span> <span class="dv">4</span>
+<span class="dt">px</span> <span class="dv">8</span>
+<span class="dt">px</span> <span class="dv">0</span> <span class="fu">rgba(</span>
+<span class="dv">0</span>
+<span class="op">,</span> <span class="dv">0</span>
+<span class="op">,</span> <span class="dv">0</span>
+<span class="op">,</span> <span class="dv">0.2</span>
+<span class="fu">)</span>
+<span class="op">,</span> <span class="dv">0</span> <span class="dv">6</span>
+<span class="dt">px</span> <span class="dv">20</span>
+<span class="dt">px</span> <span class="dv">0</span> <span class="fu">rgba(</span>
+<span class="dv">0</span>
+<span class="op">,</span> <span class="dv">0</span>
+<span class="op">,</span> <span class="dv">0</span>
+<span class="op">,</span> <span class="dv">0.19</span>
+<span class="fu">)</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb39-29" title="29">  <span class="kw">-webkit-animation-name</span>: animatetop<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb39-30" title="30">  <span class="kw">-webkit-animation-duration</span>: <span class="dv">0.4</span>
+<span class="dt">s</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb39-31" title="31">  <span class="kw">animation-name</span>: slide-in<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb39-32" title="32">  <span class="kw">animation-duration</span>: <span class="dv">0.5</span>
+<span class="dt">s</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb39-33" title="33">}</a>
-<a class="sourceLine" id="cb39-34" title="34"></a>
-<a class="sourceLine" id="cb39-35" title="35"><span class="fu">.modal-header</span><span class="op">,</span></a>
-<a class="sourceLine" id="cb39-36" title="36"><span class="fu">.modal-footer</span> {</a>
-<a class="sourceLine" id="cb39-37" title="37">  <span class="kw">display</span>: flex<span class="op">;</span></a>
-<a class="sourceLine" id="cb39-38" title="38">  <span class="kw">align-items</span>: <span class="dv">center</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb39-39" title="39">  <span class="kw">padding</span>: <span class="dv">1</span><span class="dt">rem</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb39-34" title="34">
+</a>
+<a class="sourceLine" id="cb39-35" title="35">
+<span class="fu">.modal-header</span>
+<span class="op">,</span>
+</a>
+<a class="sourceLine" id="cb39-36" title="36">
+<span class="fu">.modal-footer</span> {</a>
+<a class="sourceLine" id="cb39-37" title="37">  <span class="kw">display</span>: flex<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb39-38" title="38">  <span class="kw">align-items</span>: <span class="dv">center</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb39-39" title="39">  <span class="kw">padding</span>: <span class="dv">1</span>
+<span class="dt">rem</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb39-40" title="40">}</a>
-<a class="sourceLine" id="cb39-41" title="41"></a>
-<a class="sourceLine" id="cb39-42" title="42"><span class="fu">.modal-header</span> {</a>
-<a class="sourceLine" id="cb39-43" title="43">  <span class="kw">border-bottom</span>: <span class="dv">1</span><span class="dt">px</span> <span class="dv">solid</span> <span class="cn">#dbdbdb</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb39-44" title="44">  <span class="kw">justify-content</span>: space-between<span class="op">;</span></a>
+<a class="sourceLine" id="cb39-41" title="41">
+</a>
+<a class="sourceLine" id="cb39-42" title="42">
+<span class="fu">.modal-header</span> {</a>
+<a class="sourceLine" id="cb39-43" title="43">  <span class="kw">border-bottom</span>: <span class="dv">1</span>
+<span class="dt">px</span> <span class="dv">solid</span> <span class="cn">#dbdbdb</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb39-44" title="44">  <span class="kw">justify-content</span>: space-between<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb39-45" title="45">}</a>
-<a class="sourceLine" id="cb39-46" title="46"></a>
-<a class="sourceLine" id="cb39-47" title="47"><span class="fu">.modal-footer</span> {</a>
-<a class="sourceLine" id="cb39-48" title="48">  <span class="kw">border-top</span>: <span class="dv">1</span><span class="dt">px</span> <span class="dv">solid</span> <span class="cn">#dbdbdb</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb39-49" title="49">  <span class="kw">justify-content</span>: flex-end<span class="op">;</span></a>
+<a class="sourceLine" id="cb39-46" title="46">
+</a>
+<a class="sourceLine" id="cb39-47" title="47">
+<span class="fu">.modal-footer</span> {</a>
+<a class="sourceLine" id="cb39-48" title="48">  <span class="kw">border-top</span>: <span class="dv">1</span>
+<span class="dt">px</span> <span class="dv">solid</span> <span class="cn">#dbdbdb</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb39-49" title="49">  <span class="kw">justify-content</span>: flex-end<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb39-50" title="50">}</a>
-<a class="sourceLine" id="cb39-51" title="51"></a>
-<a class="sourceLine" id="cb39-52" title="52"><span class="fu">.modal-close</span> {</a>
-<a class="sourceLine" id="cb39-53" title="53">  <span class="kw">cursor</span>: <span class="dv">pointer</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb39-54" title="54">  <span class="kw">padding</span>: <span class="dv">1</span><span class="dt">rem</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb39-55" title="55">  <span class="kw">margin</span>: <span class="dv">-1</span><span class="dt">rem</span> <span class="dv">-1</span><span class="dt">rem</span> <span class="dv">-1</span><span class="dt">rem</span> <span class="bu">auto</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb39-51" title="51">
+</a>
+<a class="sourceLine" id="cb39-52" title="52">
+<span class="fu">.modal-close</span> {</a>
+<a class="sourceLine" id="cb39-53" title="53">  <span class="kw">cursor</span>: <span class="dv">pointer</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb39-54" title="54">  <span class="kw">padding</span>: <span class="dv">1</span>
+<span class="dt">rem</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb39-55" title="55">  <span class="kw">margin</span>: <span class="dv">-1</span>
+<span class="dt">rem</span> <span class="dv">-1</span>
+<span class="dt">rem</span> <span class="dv">-1</span>
+<span class="dt">rem</span> <span class="bu">auto</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb39-56" title="56">}</a>
-<a class="sourceLine" id="cb39-57" title="57"></a>
-<a class="sourceLine" id="cb39-58" title="58"><span class="fu">.modal-body</span> {</a>
-<a class="sourceLine" id="cb39-59" title="59">  <span class="kw">overflow</span>: <span class="bu">auto</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb39-57" title="57">
+</a>
+<a class="sourceLine" id="cb39-58" title="58">
+<span class="fu">.modal-body</span> {</a>
+<a class="sourceLine" id="cb39-59" title="59">  <span class="kw">overflow</span>: <span class="bu">auto</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb39-60" title="60">}</a>
-<a class="sourceLine" id="cb39-61" title="61"></a>
-<a class="sourceLine" id="cb39-62" title="62"><span class="fu">.modal-content</span> {</a>
-<a class="sourceLine" id="cb39-63" title="63">  <span class="kw">padding</span>: <span class="dv">1</span><span class="dt">rem</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb39-61" title="61">
+</a>
+<a class="sourceLine" id="cb39-62" title="62">
+<span class="fu">.modal-content</span> {</a>
+<a class="sourceLine" id="cb39-63" title="63">  <span class="kw">padding</span>: <span class="dv">1</span>
+<span class="dt">rem</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb39-64" title="64">}</a>
-<a class="sourceLine" id="cb39-65" title="65"></a>
-<a class="sourceLine" id="cb39-66" title="66"><span class="im">@keyframes</span> appear {</a>
+<a class="sourceLine" id="cb39-65" title="65">
+</a>
+<a class="sourceLine" id="cb39-66" title="66">
+<span class="im">@keyframes</span> appear {</a>
 <a class="sourceLine" id="cb39-67" title="67">  <span class="dv">from</span> {</a>
-<a class="sourceLine" id="cb39-68" title="68">    <span class="kw">opacity</span>: <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb39-68" title="68">    <span class="kw">opacity</span>: <span class="dv">0</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb39-69" title="69">  }</a>
 <a class="sourceLine" id="cb39-70" title="70">  <span class="dv">to</span> {</a>
-<a class="sourceLine" id="cb39-71" title="71">    <span class="kw">opacity</span>: <span class="dv">1</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb39-71" title="71">    <span class="kw">opacity</span>: <span class="dv">1</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb39-72" title="72">  }</a>
 <a class="sourceLine" id="cb39-73" title="73">}</a>
-<a class="sourceLine" id="cb39-74" title="74"></a>
-<a class="sourceLine" id="cb39-75" title="75"><span class="im">@keyframes</span> slide-in {</a>
+<a class="sourceLine" id="cb39-74" title="74">
+</a>
+<a class="sourceLine" id="cb39-75" title="75">
+<span class="im">@keyframes</span> slide-in {</a>
 <a class="sourceLine" id="cb39-76" title="76">  <span class="dv">from</span> {</a>
-<a class="sourceLine" id="cb39-77" title="77">    <span class="kw">transform</span>: translateY(<span class="dv">-150</span><span class="dt">px</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb39-77" title="77">    <span class="kw">transform</span>: translateY(<span class="dv">-150</span>
+<span class="dt">px</span>)<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb39-78" title="78">  }</a>
 <a class="sourceLine" id="cb39-79" title="79">  <span class="dv">to</span> {</a>
-<a class="sourceLine" id="cb39-80" title="80">    <span class="kw">transform</span>: translateY(<span class="dv">0</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb39-80" title="80">    <span class="kw">transform</span>: translateY(<span class="dv">0</span>)<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb39-81" title="81">  }</a>
 <a class="sourceLine" id="cb39-82" title="82">}</a>
 
 </div>
 
 ```js
+//
 
 const Modal = ({ isVisible = false, title, content, footer, onClose }) =&gt; {
   const keydownHandler = ({ key }) =&gt; {
@@ -1836,6 +2281,7 @@ return !isVisible ? null : (
 <hr />
 
 ```js
+//
 
 const App = () =&gt; {
   const [isModal, setModal] = React.useState(false);
@@ -1866,6 +2312,7 @@ ReactDOM.render(&lt;App /&gt;, document.getElementById(&quot;root&quot;));
 </ul>
 
 ```js
+//
 
 const MultiselectCheckbox = ({ options, onChange }) =&gt; {
   const [data, setData] = React.useState(options);
@@ -1902,6 +2349,7 @@ onClick={() =&gt; toggle(index)}
 <hr />
 
 ```js
+//
 
 const options = [{ label: &quot;Item One&quot; }, { label: &quot;Item Two&quot; }];
 
@@ -1925,6 +2373,7 @@ document.getElementById(&quot;root&quot;)
 </ul>
 
 ```js
+//
 
 const PasswordRevealer = ({ value }) =&gt; {
   const [shown, setShown] = React.useState(false);
@@ -1941,6 +2390,7 @@ const PasswordRevealer = ({ value }) =&gt; {
 <hr />
 
 ```js
+//
 
 ReactDOM.render(&lt;PasswordRevealer /&gt;, document.getElementById(&quot;root&quot;));
 
@@ -1952,56 +2402,133 @@ ReactDOM.render(&lt;PasswordRevealer /&gt;, document.getElementById(&quot;root&q
 <li>Use the <code>useState()</code> hook to create the <code>coords</code> and <code>isRippling</code> state variables for the pointer's coordinates and the animation state of the button respectively.</li>
 <li>Use a <code>useEffect()</code> hook to change the value of <code>isRippling</code> every time the <code>coords</code> state variable changes, starting the animation.</li>
 <li>Use <code>setTimeout()</code> in the previous hook to clear the animation after it's done playing.</li>
-<li>Use a <code>useEffect()</code> hook to reset <code>coords</code> whenever the <code>isRippling</code> state variable is <code>false.</code></li>
+<li>Use a <code>useEffect()</code> hook to reset <code>coords</code> whenever the <code>isRippling</code> state variable is <code>false.</code>
+</li>
 <li>Handle the <code>onClick</code> event by updating the <code>coords</code> state variable and calling the passed callback.</li>
 </ul>
-<div class="sourceCode" id="cb46"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb46-1" title="1"><span class="fu">.ripple-button</span> {</a>
-<a class="sourceLine" id="cb46-2" title="2">  <span class="kw">border-radius</span>: <span class="dv">4</span><span class="dt">px</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb46-3" title="3">  <span class="kw">border</span>: <span class="dv">none</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb46-4" title="4">  <span class="kw">margin</span>: <span class="dv">8</span><span class="dt">px</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb46-5" title="5">  <span class="kw">padding</span>: <span class="dv">14</span><span class="dt">px</span> <span class="dv">24</span><span class="dt">px</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb46-6" title="6">  <span class="kw">background</span>: <span class="cn">#1976d2</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb46-7" title="7">  <span class="kw">color</span>: <span class="cn">#fff</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb46-8" title="8">  <span class="kw">overflow</span>: <span class="dv">hidden</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb46-9" title="9">  <span class="kw">position</span>: <span class="dv">relative</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb46-10" title="10">  <span class="kw">cursor</span>: <span class="dv">pointer</span><span class="op">;</span></a>
+<div class="sourceCode" id="cb46">
+<pre class="sourceCode css">
+<code class="sourceCode css">
+<a class="sourceLine" id="cb46-1" title="1">
+<span class="fu">.ripple-button</span> {</a>
+<a class="sourceLine" id="cb46-2" title="2">  <span class="kw">border-radius</span>: <span class="dv">4</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb46-3" title="3">  <span class="kw">border</span>: <span class="dv">none</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb46-4" title="4">  <span class="kw">margin</span>: <span class="dv">8</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb46-5" title="5">  <span class="kw">padding</span>: <span class="dv">14</span>
+<span class="dt">px</span> <span class="dv">24</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb46-6" title="6">  <span class="kw">background</span>: <span class="cn">#1976d2</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb46-7" title="7">  <span class="kw">color</span>: <span class="cn">#fff</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb46-8" title="8">  <span class="kw">overflow</span>: <span class="dv">hidden</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb46-9" title="9">  <span class="kw">position</span>: <span class="dv">relative</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb46-10" title="10">  <span class="kw">cursor</span>: <span class="dv">pointer</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb46-11" title="11">}</a>
-<a class="sourceLine" id="cb46-12" title="12"></a>
-<a class="sourceLine" id="cb46-13" title="13"><span class="fu">.ripple-button</span> <span class="op">&gt;</span> <span class="fu">.ripple</span> {</a>
-<a class="sourceLine" id="cb46-14" title="14">  <span class="kw">width</span>: <span class="dv">20</span><span class="dt">px</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb46-15" title="15">  <span class="kw">height</span>: <span class="dv">20</span><span class="dt">px</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb46-16" title="16">  <span class="kw">position</span>: <span class="dv">absolute</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb46-17" title="17">  <span class="kw">background</span>: <span class="cn">#63a4ff</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb46-18" title="18">  <span class="kw">display</span>: <span class="dv">block</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb46-19" title="19">  <span class="kw">content</span>: <span class="st">&quot;&quot;</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb46-20" title="20">  <span class="kw">border-radius</span>: <span class="dv">9999</span><span class="dt">px</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb46-21" title="21">  <span class="kw">opacity</span>: <span class="dv">1</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb46-22" title="22">  <span class="kw">animation</span>: <span class="dv">0.9</span><span class="dt">s</span> <span class="dv">ease</span> <span class="dv">1</span> <span class="dv">forwards</span> ripple-effect<span class="op">;</span></a>
+<a class="sourceLine" id="cb46-12" title="12">
+</a>
+<a class="sourceLine" id="cb46-13" title="13">
+<span class="fu">.ripple-button</span> <span class="op">&gt;</span> <span class="fu">.ripple</span> {</a>
+<a class="sourceLine" id="cb46-14" title="14">  <span class="kw">width</span>: <span class="dv">20</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb46-15" title="15">  <span class="kw">height</span>: <span class="dv">20</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb46-16" title="16">  <span class="kw">position</span>: <span class="dv">absolute</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb46-17" title="17">  <span class="kw">background</span>: <span class="cn">#63a4ff</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb46-18" title="18">  <span class="kw">display</span>: <span class="dv">block</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb46-19" title="19">  <span class="kw">content</span>: <span class="st">&quot;&quot;</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb46-20" title="20">  <span class="kw">border-radius</span>: <span class="dv">9999</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb46-21" title="21">  <span class="kw">opacity</span>: <span class="dv">1</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb46-22" title="22">  <span class="kw">animation</span>: <span class="dv">0.9</span>
+<span class="dt">s</span> <span class="dv">ease</span> <span class="dv">1</span> <span class="dv">forwards</span> ripple-effect<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb46-23" title="23">}</a>
-<a class="sourceLine" id="cb46-24" title="24"></a>
-<a class="sourceLine" id="cb46-25" title="25"><span class="im">@keyframes</span> ripple-effect {</a>
+<a class="sourceLine" id="cb46-24" title="24">
+</a>
+<a class="sourceLine" id="cb46-25" title="25">
+<span class="im">@keyframes</span> ripple-effect {</a>
 <a class="sourceLine" id="cb46-26" title="26">  <span class="dv">0%</span> {</a>
-<a class="sourceLine" id="cb46-27" title="27">    <span class="kw">transform</span>: <span class="fu">scale(</span><span class="dv">1</span><span class="fu">)</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb46-28" title="28">    <span class="kw">opacity</span>: <span class="dv">1</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb46-27" title="27">    <span class="kw">transform</span>: <span class="fu">scale(</span>
+<span class="dv">1</span>
+<span class="fu">)</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb46-28" title="28">    <span class="kw">opacity</span>: <span class="dv">1</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb46-29" title="29">  }</a>
 <a class="sourceLine" id="cb46-30" title="30">  <span class="dv">50%</span> {</a>
-<a class="sourceLine" id="cb46-31" title="31">    <span class="kw">transform</span>: <span class="fu">scale(</span><span class="dv">10</span><span class="fu">)</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb46-32" title="32">    <span class="kw">opacity</span>: <span class="dv">0.375</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb46-31" title="31">    <span class="kw">transform</span>: <span class="fu">scale(</span>
+<span class="dv">10</span>
+<span class="fu">)</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb46-32" title="32">    <span class="kw">opacity</span>: <span class="dv">0.375</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb46-33" title="33">  }</a>
 <a class="sourceLine" id="cb46-34" title="34">  <span class="dv">100%</span> {</a>
-<a class="sourceLine" id="cb46-35" title="35">    <span class="kw">transform</span>: <span class="fu">scale(</span><span class="dv">35</span><span class="fu">)</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb46-36" title="36">    <span class="kw">opacity</span>: <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb46-35" title="35">    <span class="kw">transform</span>: <span class="fu">scale(</span>
+<span class="dv">35</span>
+<span class="fu">)</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb46-36" title="36">    <span class="kw">opacity</span>: <span class="dv">0</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb46-37" title="37">  }</a>
 <a class="sourceLine" id="cb46-38" title="38">}</a>
-<a class="sourceLine" id="cb46-39" title="39"></a>
-<a class="sourceLine" id="cb46-40" title="40"><span class="fu">.ripple-button</span> <span class="op">&gt;</span> <span class="fu">.content</span> {</a>
-<a class="sourceLine" id="cb46-41" title="41">  <span class="kw">position</span>: <span class="dv">relative</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb46-42" title="42">  <span class="kw">z-index</span>: <span class="dv">2</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb46-39" title="39">
+</a>
+<a class="sourceLine" id="cb46-40" title="40">
+<span class="fu">.ripple-button</span> <span class="op">&gt;</span> <span class="fu">.content</span> {</a>
+<a class="sourceLine" id="cb46-41" title="41">  <span class="kw">position</span>: <span class="dv">relative</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb46-42" title="42">  <span class="kw">z-index</span>: <span class="dv">2</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb46-43" title="43">}</a>
 
 </div>
 
 ```js
+//
 
 const RippleButton = ({ children, onClick }) =&gt; {
   const [coords, setCoords] = React.useState({ x: -1, y: -1 });
@@ -2046,6 +2573,7 @@ style={{
 <hr />
 
 ```js
+//
 
 ReactDOM.render(
   &lt;RippleButton onClick={(e) =&gt; console.log(e)}&gt;Click me&lt;/RippleButton&gt;,
@@ -2064,6 +2592,7 @@ ReactDOM.render(
 </ul>
 
 ```js
+//
 
 const Select = ({ values, onValueChange, selectedValue, ...rest }) =&gt; {
   return (
@@ -2086,6 +2615,7 @@ const Select = ({ values, onValueChange, selectedValue, ...rest }) =&gt; {
 <hr />
 
 ```js
+//
 
 const choices = [
   [&quot;grapefruit&quot;, &quot;Grapefruit&quot;],
@@ -2113,6 +2643,7 @@ ReactDOM.render(
 </ul>
 
 ```js
+//
 
 const Slider = ({
   min = 0,
@@ -2138,6 +2669,7 @@ const Slider = ({
 <hr />
 
 ```js
+//
 
 ReactDOM.render(
   &lt;Slider onValueChange={(val) =&gt; console.log(val)} /&gt;,
@@ -2155,14 +2687,23 @@ ReactDOM.render(
 <li>Use <code>Array.from()</code> to create an array of <code>5</code> elements and <code>Array.prototype.map()</code> to create individual <code>&lt;Star&gt;</code> components.</li>
 <li>Handle the <code>onMouseOver</code> and <code>onMouseLeave</code> events of the wrapping element using <code>hoverOver</code> and the <code>onClick</code> event using <code>setRating</code>.</li>
 </ul>
-<div class="sourceCode" id="cb53"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb53-1" title="1"><span class="fu">.star</span> {</a>
-<a class="sourceLine" id="cb53-2" title="2">  <span class="kw">color</span>: <span class="cn">#ff9933</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb53-3" title="3">  <span class="kw">cursor</span>: <span class="dv">pointer</span><span class="op">;</span></a>
+<div class="sourceCode" id="cb53">
+<pre class="sourceCode css">
+<code class="sourceCode css">
+<a class="sourceLine" id="cb53-1" title="1">
+<span class="fu">.star</span> {</a>
+<a class="sourceLine" id="cb53-2" title="2">  <span class="kw">color</span>: <span class="cn">#ff9933</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb53-3" title="3">  <span class="kw">cursor</span>: <span class="dv">pointer</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb53-4" title="4">}</a>
 
 </div>
 
 ```js
+//
 
 const Star = ({ marked, starId }) =&gt; {
   return (
@@ -2204,6 +2745,7 @@ marked={selection ? selection &gt;= i + 1 : rating &gt;= i + 1}
 <hr />
 
 ```js
+//
 
 ReactDOM.render(&lt;StarRating value={2} /&gt;, document.getElementById(&quot;root&quot;));
 
@@ -2215,36 +2757,73 @@ ReactDOM.render(&lt;StarRating value={2} /&gt;, document.getElementById(&quot;ro
 <li>Define a <code>Tabs</code> component that uses the <code>useState()</code> hook to initialize the value of the <code>bindIndex</code> state variable to <code>defaultIndex</code>.</li>
 <li>Define a <code>TabItem</code> component and filter <code>children</code> passed to the <code>Tabs</code> component to remove unnecessary nodes except for <code>TabItem</code> by identifying the function's name.</li>
 <li>Define <code>changeTab</code>, which will be executed when clicking a <code>&lt;button&gt;</code> from the menu.</li>
-<li><code>changeTab</code> executes the passed callback, <code>onTabClick</code>, and updates <code>bindIndex</code> based on the clicked element.</li>
+<li>
+<code>changeTab</code> executes the passed callback, <code>onTabClick</code>, and updates <code>bindIndex</code> based on the clicked element.</li>
 <li>Use <code>Array.prototype.map()</code> on the collected nodes to render the menu and view of the tabs, using the value of <code>binIndex</code> to determine the active tab and apply the correct <code>className</code>.</li>
 </ul>
-<div class="sourceCode" id="cb56"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb56-1" title="1"><span class="fu">.tab-menu</span> <span class="op">&gt;</span> button {</a>
-<a class="sourceLine" id="cb56-2" title="2">  <span class="kw">cursor</span>: <span class="dv">pointer</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb56-3" title="3">  <span class="kw">padding</span>: <span class="dv">8</span><span class="dt">px</span> <span class="dv">16</span><span class="dt">px</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb56-4" title="4">  <span class="kw">border</span>: <span class="dv">0</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb56-5" title="5">  <span class="kw">border-bottom</span>: <span class="dv">2</span><span class="dt">px</span> <span class="dv">solid</span> <span class="dv">transparent</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb56-6" title="6">  <span class="kw">background</span>: <span class="dv">none</span><span class="op">;</span></a>
+<div class="sourceCode" id="cb56">
+<pre class="sourceCode css">
+<code class="sourceCode css">
+<a class="sourceLine" id="cb56-1" title="1">
+<span class="fu">.tab-menu</span> <span class="op">&gt;</span> button {</a>
+<a class="sourceLine" id="cb56-2" title="2">  <span class="kw">cursor</span>: <span class="dv">pointer</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb56-3" title="3">  <span class="kw">padding</span>: <span class="dv">8</span>
+<span class="dt">px</span> <span class="dv">16</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb56-4" title="4">  <span class="kw">border</span>: <span class="dv">0</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb56-5" title="5">  <span class="kw">border-bottom</span>: <span class="dv">2</span>
+<span class="dt">px</span> <span class="dv">solid</span> <span class="dv">transparent</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb56-6" title="6">  <span class="kw">background</span>: <span class="dv">none</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb56-7" title="7">}</a>
-<a class="sourceLine" id="cb56-8" title="8"></a>
-<a class="sourceLine" id="cb56-9" title="9"><span class="fu">.tab-menu</span> <span class="op">&gt;</span> button<span class="fu">.focus</span> {</a>
-<a class="sourceLine" id="cb56-10" title="10">  <span class="kw">border-bottom</span>: <span class="dv">2</span><span class="dt">px</span> <span class="dv">solid</span> <span class="cn">#007bef</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb56-8" title="8">
+</a>
+<a class="sourceLine" id="cb56-9" title="9">
+<span class="fu">.tab-menu</span> <span class="op">&gt;</span> button<span class="fu">.focus</span> {</a>
+<a class="sourceLine" id="cb56-10" title="10">  <span class="kw">border-bottom</span>: <span class="dv">2</span>
+<span class="dt">px</span> <span class="dv">solid</span> <span class="cn">#007bef</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb56-11" title="11">}</a>
-<a class="sourceLine" id="cb56-12" title="12"></a>
-<a class="sourceLine" id="cb56-13" title="13"><span class="fu">.tab-menu</span> <span class="op">&gt;</span> button<span class="in">:hover</span> {</a>
-<a class="sourceLine" id="cb56-14" title="14">  <span class="kw">border-bottom</span>: <span class="dv">2</span><span class="dt">px</span> <span class="dv">solid</span> <span class="cn">#007bef</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb56-12" title="12">
+</a>
+<a class="sourceLine" id="cb56-13" title="13">
+<span class="fu">.tab-menu</span> <span class="op">&gt;</span> button<span class="in">:hover</span> {</a>
+<a class="sourceLine" id="cb56-14" title="14">  <span class="kw">border-bottom</span>: <span class="dv">2</span>
+<span class="dt">px</span> <span class="dv">solid</span> <span class="cn">#007bef</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb56-15" title="15">}</a>
-<a class="sourceLine" id="cb56-16" title="16"></a>
-<a class="sourceLine" id="cb56-17" title="17"><span class="fu">.tab-content</span> {</a>
-<a class="sourceLine" id="cb56-18" title="18">  <span class="kw">display</span>: <span class="dv">none</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb56-16" title="16">
+</a>
+<a class="sourceLine" id="cb56-17" title="17">
+<span class="fu">.tab-content</span> {</a>
+<a class="sourceLine" id="cb56-18" title="18">  <span class="kw">display</span>: <span class="dv">none</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb56-19" title="19">}</a>
-<a class="sourceLine" id="cb56-20" title="20"></a>
-<a class="sourceLine" id="cb56-21" title="21"><span class="fu">.tab-content.selected</span> {</a>
-<a class="sourceLine" id="cb56-22" title="22">  <span class="kw">display</span>: <span class="dv">block</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb56-20" title="20">
+</a>
+<a class="sourceLine" id="cb56-21" title="21">
+<span class="fu">.tab-content.selected</span> {</a>
+<a class="sourceLine" id="cb56-22" title="22">  <span class="kw">display</span>: <span class="dv">block</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb56-23" title="23">}</a>
 
 </div>
 
 ```js
+//
 
 const TabItem = (props) =&gt; &lt;div {...props} /&gt;;
 
@@ -2285,6 +2864,7 @@ key={`tab-content-${props.index}`}
 <hr />
 
 ```js
+//
 
 ReactDOM.render(
   &lt;Tabs defaultIndex=&quot;1&quot; onTabClick={console.log}&gt;
@@ -2310,70 +2890,183 @@ ReactDOM.render(
 <li>Define the <code>removeTagData</code> method, which will be executed on clicking the delete icon in the tag.</li>
 <li>Use <code>Array.prototype.filter()</code> in the <code>removeTagData</code> method to remove the tag using its <code>index</code> to filter it out from the <code>tagData</code> array.</li>
 </ul>
-<div class="sourceCode" id="cb59"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb59-1" title="1"><span class="fu">.tag-input</span> {</a>
-<a class="sourceLine" id="cb59-2" title="2">  <span class="kw">display</span>: flex<span class="op">;</span></a>
-<a class="sourceLine" id="cb59-3" title="3">  <span class="kw">flex-wrap</span>: wrap<span class="op">;</span></a>
-<a class="sourceLine" id="cb59-4" title="4">  <span class="kw">min-height</span>: <span class="dv">48</span><span class="dt">px</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb59-5" title="5">  <span class="kw">padding</span>: <span class="dv">0</span> <span class="dv">8</span><span class="dt">px</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb59-6" title="6">  <span class="kw">border</span>: <span class="dv">1</span><span class="dt">px</span> <span class="dv">solid</span> <span class="cn">#d6d8da</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb59-7" title="7">  <span class="kw">border-radius</span>: <span class="dv">6</span><span class="dt">px</span><span class="op">;</span></a>
+<div class="sourceCode" id="cb59">
+<pre class="sourceCode css">
+<code class="sourceCode css">
+<a class="sourceLine" id="cb59-1" title="1">
+<span class="fu">.tag-input</span> {</a>
+<a class="sourceLine" id="cb59-2" title="2">  <span class="kw">display</span>: flex<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb59-3" title="3">  <span class="kw">flex-wrap</span>: wrap<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb59-4" title="4">  <span class="kw">min-height</span>: <span class="dv">48</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb59-5" title="5">  <span class="kw">padding</span>: <span class="dv">0</span> <span class="dv">8</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb59-6" title="6">  <span class="kw">border</span>: <span class="dv">1</span>
+<span class="dt">px</span> <span class="dv">solid</span> <span class="cn">#d6d8da</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb59-7" title="7">  <span class="kw">border-radius</span>: <span class="dv">6</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb59-8" title="8">}</a>
-<a class="sourceLine" id="cb59-9" title="9"></a>
-<a class="sourceLine" id="cb59-10" title="10"><span class="fu">.tag-input</span> input {</a>
-<a class="sourceLine" id="cb59-11" title="11">  <span class="kw">flex</span>: <span class="dv">1</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb59-12" title="12">  <span class="kw">border</span>: <span class="dv">none</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb59-13" title="13">  <span class="kw">height</span>: <span class="dv">46</span><span class="dt">px</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb59-14" title="14">  <span class="kw">font-size</span>: <span class="dv">14</span><span class="dt">px</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb59-15" title="15">  <span class="kw">padding</span>: <span class="dv">4</span><span class="dt">px</span> <span class="dv">0</span> <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb59-9" title="9">
+</a>
+<a class="sourceLine" id="cb59-10" title="10">
+<span class="fu">.tag-input</span> input {</a>
+<a class="sourceLine" id="cb59-11" title="11">  <span class="kw">flex</span>: <span class="dv">1</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb59-12" title="12">  <span class="kw">border</span>: <span class="dv">none</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb59-13" title="13">  <span class="kw">height</span>: <span class="dv">46</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb59-14" title="14">  <span class="kw">font-size</span>: <span class="dv">14</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb59-15" title="15">  <span class="kw">padding</span>: <span class="dv">4</span>
+<span class="dt">px</span> <span class="dv">0</span> <span class="dv">0</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb59-16" title="16">}</a>
-<a class="sourceLine" id="cb59-17" title="17"></a>
-<a class="sourceLine" id="cb59-18" title="18"><span class="fu">.tag-input</span> input<span class="in">:focus</span> {</a>
-<a class="sourceLine" id="cb59-19" title="19">  <span class="kw">outline</span>: <span class="dv">transparent</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb59-17" title="17">
+</a>
+<a class="sourceLine" id="cb59-18" title="18">
+<span class="fu">.tag-input</span> input<span class="in">:focus</span> {</a>
+<a class="sourceLine" id="cb59-19" title="19">  <span class="kw">outline</span>: <span class="dv">transparent</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb59-20" title="20">}</a>
-<a class="sourceLine" id="cb59-21" title="21"></a>
-<a class="sourceLine" id="cb59-22" title="22"><span class="fu">.tags</span> {</a>
-<a class="sourceLine" id="cb59-23" title="23">  <span class="kw">display</span>: flex<span class="op">;</span></a>
-<a class="sourceLine" id="cb59-24" title="24">  <span class="kw">flex-wrap</span>: wrap<span class="op">;</span></a>
-<a class="sourceLine" id="cb59-25" title="25">  <span class="kw">padding</span>: <span class="dv">0</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb59-26" title="26">  <span class="kw">margin</span>: <span class="dv">8</span><span class="dt">px</span> <span class="dv">0</span> <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb59-21" title="21">
+</a>
+<a class="sourceLine" id="cb59-22" title="22">
+<span class="fu">.tags</span> {</a>
+<a class="sourceLine" id="cb59-23" title="23">  <span class="kw">display</span>: flex<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb59-24" title="24">  <span class="kw">flex-wrap</span>: wrap<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb59-25" title="25">  <span class="kw">padding</span>: <span class="dv">0</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb59-26" title="26">  <span class="kw">margin</span>: <span class="dv">8</span>
+<span class="dt">px</span> <span class="dv">0</span> <span class="dv">0</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb59-27" title="27">}</a>
-<a class="sourceLine" id="cb59-28" title="28"></a>
-<a class="sourceLine" id="cb59-29" title="29"><span class="fu">.tag</span> {</a>
-<a class="sourceLine" id="cb59-30" title="30">  <span class="kw">width</span>: <span class="bu">auto</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb59-31" title="31">  <span class="kw">height</span>: <span class="dv">32</span><span class="dt">px</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb59-32" title="32">  <span class="kw">display</span>: flex<span class="op">;</span></a>
-<a class="sourceLine" id="cb59-33" title="33">  <span class="kw">align-items</span>: <span class="dv">center</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb59-34" title="34">  <span class="kw">justify-content</span>: <span class="dv">center</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb59-35" title="35">  <span class="kw">color</span>: <span class="cn">#fff</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb59-36" title="36">  <span class="kw">padding</span>: <span class="dv">0</span> <span class="dv">8</span><span class="dt">px</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb59-37" title="37">  <span class="kw">font-size</span>: <span class="dv">14</span><span class="dt">px</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb59-38" title="38">  <span class="kw">list-style</span>: <span class="dv">none</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb59-39" title="39">  <span class="kw">border-radius</span>: <span class="dv">6</span><span class="dt">px</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb59-40" title="40">  <span class="kw">margin</span>: <span class="dv">0</span> <span class="dv">8</span><span class="dt">px</span> <span class="dv">8</span><span class="dt">px</span> <span class="dv">0</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb59-41" title="41">  <span class="kw">background</span>: <span class="cn">#0052cc</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb59-28" title="28">
+</a>
+<a class="sourceLine" id="cb59-29" title="29">
+<span class="fu">.tag</span> {</a>
+<a class="sourceLine" id="cb59-30" title="30">  <span class="kw">width</span>: <span class="bu">auto</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb59-31" title="31">  <span class="kw">height</span>: <span class="dv">32</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb59-32" title="32">  <span class="kw">display</span>: flex<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb59-33" title="33">  <span class="kw">align-items</span>: <span class="dv">center</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb59-34" title="34">  <span class="kw">justify-content</span>: <span class="dv">center</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb59-35" title="35">  <span class="kw">color</span>: <span class="cn">#fff</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb59-36" title="36">  <span class="kw">padding</span>: <span class="dv">0</span> <span class="dv">8</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb59-37" title="37">  <span class="kw">font-size</span>: <span class="dv">14</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb59-38" title="38">  <span class="kw">list-style</span>: <span class="dv">none</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb59-39" title="39">  <span class="kw">border-radius</span>: <span class="dv">6</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb59-40" title="40">  <span class="kw">margin</span>: <span class="dv">0</span> <span class="dv">8</span>
+<span class="dt">px</span> <span class="dv">8</span>
+<span class="dt">px</span> <span class="dv">0</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb59-41" title="41">  <span class="kw">background</span>: <span class="cn">#0052cc</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb59-42" title="42">}</a>
-<a class="sourceLine" id="cb59-43" title="43"></a>
-<a class="sourceLine" id="cb59-44" title="44"><span class="fu">.tag-title</span> {</a>
-<a class="sourceLine" id="cb59-45" title="45">  <span class="kw">margin-top</span>: <span class="dv">3</span><span class="dt">px</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb59-43" title="43">
+</a>
+<a class="sourceLine" id="cb59-44" title="44">
+<span class="fu">.tag-title</span> {</a>
+<a class="sourceLine" id="cb59-45" title="45">  <span class="kw">margin-top</span>: <span class="dv">3</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb59-46" title="46">}</a>
-<a class="sourceLine" id="cb59-47" title="47"></a>
-<a class="sourceLine" id="cb59-48" title="48"><span class="fu">.tag-close-icon</span> {</a>
-<a class="sourceLine" id="cb59-49" title="49">  <span class="kw">display</span>: <span class="dv">block</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb59-50" title="50">  <span class="kw">width</span>: <span class="dv">16</span><span class="dt">px</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb59-51" title="51">  <span class="kw">height</span>: <span class="dv">16</span><span class="dt">px</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb59-52" title="52">  <span class="kw">line-height</span>: <span class="dv">16</span><span class="dt">px</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb59-53" title="53">  <span class="kw">text-align</span>: <span class="dv">center</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb59-54" title="54">  <span class="kw">font-size</span>: <span class="dv">14</span><span class="dt">px</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb59-55" title="55">  <span class="kw">margin-left</span>: <span class="dv">8</span><span class="dt">px</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb59-56" title="56">  <span class="kw">color</span>: <span class="cn">#0052cc</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb59-57" title="57">  <span class="kw">border-radius</span>: <span class="dv">50</span><span class="dt">%</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb59-58" title="58">  <span class="kw">background</span>: <span class="cn">#fff</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb59-59" title="59">  <span class="kw">cursor</span>: <span class="dv">pointer</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb59-47" title="47">
+</a>
+<a class="sourceLine" id="cb59-48" title="48">
+<span class="fu">.tag-close-icon</span> {</a>
+<a class="sourceLine" id="cb59-49" title="49">  <span class="kw">display</span>: <span class="dv">block</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb59-50" title="50">  <span class="kw">width</span>: <span class="dv">16</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb59-51" title="51">  <span class="kw">height</span>: <span class="dv">16</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb59-52" title="52">  <span class="kw">line-height</span>: <span class="dv">16</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb59-53" title="53">  <span class="kw">text-align</span>: <span class="dv">center</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb59-54" title="54">  <span class="kw">font-size</span>: <span class="dv">14</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb59-55" title="55">  <span class="kw">margin-left</span>: <span class="dv">8</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb59-56" title="56">  <span class="kw">color</span>: <span class="cn">#0052cc</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb59-57" title="57">  <span class="kw">border-radius</span>: <span class="dv">50</span>
+<span class="dt">%</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb59-58" title="58">  <span class="kw">background</span>: <span class="cn">#fff</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb59-59" title="59">  <span class="kw">cursor</span>: <span class="dv">pointer</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb59-60" title="60">}</a>
 
 </div>
 
 ```js
+//
 
 const TagInput = ({ tags }) =&gt; {
   const [tagData, setTagData] = React.useState(tags);
@@ -2413,6 +3106,7 @@ const TagInput = ({ tags }) =&gt; {
 <hr />
 
 ```js
+//
 
 ReactDOM.render(
   &lt;TagInput tags={[&quot;Nodejs&quot;, &quot;MongoDB&quot;]} /&gt;,
@@ -2429,6 +3123,7 @@ ReactDOM.render(
 </ul>
 
 ```js
+//
 
 const TextArea = ({
   cols = 20,
@@ -2453,6 +3148,7 @@ const TextArea = ({
 <hr />
 
 ```js
+//
 
 ReactDOM.render(
   &lt;TextArea
@@ -2470,21 +3166,39 @@ ReactDOM.render(
 <li>Use the <code>useState()</code> hook to initialize the <code>isToggleOn</code> state variable to <code>defaultToggled</code>.</li>
 <li>Render an <code>&lt;input&gt;</code> and bind its <code>onClick</code> event to update the <code>isToggledOn</code> state variable, applying the appropriate <code>className</code> to the wrapping <code>&lt;label&gt;</code>.</li>
 </ul>
-<div class="sourceCode" id="cb64"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb64-1" title="1"><span class="fu">.toggle</span> input<span class="ex">[type</span><span class="op">=</span><span class="st">&quot;checkbox&quot;</span><span class="ex">]</span> {</a>
-<a class="sourceLine" id="cb64-2" title="2">  <span class="kw">display</span>: <span class="dv">none</span><span class="op">;</span></a>
+<div class="sourceCode" id="cb64">
+<pre class="sourceCode css">
+<code class="sourceCode css">
+<a class="sourceLine" id="cb64-1" title="1">
+<span class="fu">.toggle</span> input<span class="ex">[type</span>
+<span class="op">=</span>
+<span class="st">&quot;checkbox&quot;</span>
+<span class="ex">]</span> {</a>
+<a class="sourceLine" id="cb64-2" title="2">  <span class="kw">display</span>: <span class="dv">none</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb64-3" title="3">}</a>
-<a class="sourceLine" id="cb64-4" title="4"></a>
-<a class="sourceLine" id="cb64-5" title="5"><span class="fu">.toggle.on</span> {</a>
-<a class="sourceLine" id="cb64-6" title="6">  <span class="kw">background-color</span>: <span class="cn">green</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb64-4" title="4">
+</a>
+<a class="sourceLine" id="cb64-5" title="5">
+<span class="fu">.toggle.on</span> {</a>
+<a class="sourceLine" id="cb64-6" title="6">  <span class="kw">background-color</span>: <span class="cn">green</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb64-7" title="7">}</a>
-<a class="sourceLine" id="cb64-8" title="8"></a>
-<a class="sourceLine" id="cb64-9" title="9"><span class="fu">.toggle.off</span> {</a>
-<a class="sourceLine" id="cb64-10" title="10">  <span class="kw">background-color</span>: <span class="cn">red</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb64-8" title="8">
+</a>
+<a class="sourceLine" id="cb64-9" title="9">
+<span class="fu">.toggle.off</span> {</a>
+<a class="sourceLine" id="cb64-10" title="10">  <span class="kw">background-color</span>: <span class="cn">red</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb64-11" title="11">}</a>
 
 </div>
 
 ```js
+//
 
 const Toggle = ({ defaultToggled = false }) =&gt; {
   const [isToggleOn, setIsToggleOn] = React.useState(defaultToggled);
@@ -2504,6 +3218,7 @@ onChange={() =&gt; setIsToggleOn(!isToggleOn)}
 <hr />
 
 ```js
+//
 
 ReactDOM.render(&lt;Toggle /&gt;, document.getElementById(&quot;root&quot;));
 
@@ -2516,36 +3231,96 @@ ReactDOM.render(&lt;Toggle /&gt;, document.getElementById(&quot;root&quot;));
 <li>Render a container element that contains the tooltip element and the <code>children</code> passed to the component.</li>
 <li>Handle the <code>onMouseEnter</code> and <code>onMouseLeave</code> methods, by altering the value of the <code>show</code> variable, toggling the <code>className</code> of the tooltip.</li>
 </ul>
-<div class="sourceCode" id="cb67"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb67-1" title="1"><span class="fu">.tooltip-container</span> {</a>
-<a class="sourceLine" id="cb67-2" title="2">  <span class="kw">position</span>: <span class="dv">relative</span><span class="op">;</span></a>
+<div class="sourceCode" id="cb67">
+<pre class="sourceCode css">
+<code class="sourceCode css">
+<a class="sourceLine" id="cb67-1" title="1">
+<span class="fu">.tooltip-container</span> {</a>
+<a class="sourceLine" id="cb67-2" title="2">  <span class="kw">position</span>: <span class="dv">relative</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb67-3" title="3">}</a>
-<a class="sourceLine" id="cb67-4" title="4"></a>
-<a class="sourceLine" id="cb67-5" title="5"><span class="fu">.tooltip-box</span> {</a>
-<a class="sourceLine" id="cb67-6" title="6">  <span class="kw">position</span>: <span class="dv">absolute</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb67-7" title="7">  <span class="kw">background</span>: <span class="fu">rgba(</span><span class="dv">0</span><span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="dv">0.7</span><span class="fu">)</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb67-8" title="8">  <span class="kw">color</span>: <span class="cn">#fff</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb67-9" title="9">  <span class="kw">padding</span>: <span class="dv">5</span><span class="dt">px</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb67-10" title="10">  <span class="kw">border-radius</span>: <span class="dv">5</span><span class="dt">px</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb67-11" title="11">  <span class="kw">top</span>: <span class="fu">calc(</span><span class="dv">100</span><span class="dt">%</span> <span class="op">+</span> <span class="dv">5</span><span class="dt">px</span><span class="fu">)</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb67-12" title="12">  <span class="kw">display</span>: <span class="dv">none</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb67-4" title="4">
+</a>
+<a class="sourceLine" id="cb67-5" title="5">
+<span class="fu">.tooltip-box</span> {</a>
+<a class="sourceLine" id="cb67-6" title="6">  <span class="kw">position</span>: <span class="dv">absolute</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb67-7" title="7">  <span class="kw">background</span>: <span class="fu">rgba(</span>
+<span class="dv">0</span>
+<span class="op">,</span> <span class="dv">0</span>
+<span class="op">,</span> <span class="dv">0</span>
+<span class="op">,</span> <span class="dv">0.7</span>
+<span class="fu">)</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb67-8" title="8">  <span class="kw">color</span>: <span class="cn">#fff</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb67-9" title="9">  <span class="kw">padding</span>: <span class="dv">5</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb67-10" title="10">  <span class="kw">border-radius</span>: <span class="dv">5</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb67-11" title="11">  <span class="kw">top</span>: <span class="fu">calc(</span>
+<span class="dv">100</span>
+<span class="dt">%</span> <span class="op">+</span> <span class="dv">5</span>
+<span class="dt">px</span>
+<span class="fu">)</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb67-12" title="12">  <span class="kw">display</span>: <span class="dv">none</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb67-13" title="13">}</a>
-<a class="sourceLine" id="cb67-14" title="14"></a>
-<a class="sourceLine" id="cb67-15" title="15"><span class="fu">.tooltip-box.visible</span> {</a>
-<a class="sourceLine" id="cb67-16" title="16">  <span class="kw">display</span>: <span class="dv">block</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb67-14" title="14">
+</a>
+<a class="sourceLine" id="cb67-15" title="15">
+<span class="fu">.tooltip-box.visible</span> {</a>
+<a class="sourceLine" id="cb67-16" title="16">  <span class="kw">display</span>: <span class="dv">block</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb67-17" title="17">}</a>
-<a class="sourceLine" id="cb67-18" title="18"></a>
-<a class="sourceLine" id="cb67-19" title="19"><span class="fu">.tooltip-arrow</span> {</a>
-<a class="sourceLine" id="cb67-20" title="20">  <span class="kw">position</span>: <span class="dv">absolute</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb67-21" title="21">  <span class="kw">top</span>: <span class="dv">-10</span><span class="dt">px</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb67-22" title="22">  <span class="kw">left</span>: <span class="dv">50</span><span class="dt">%</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb67-23" title="23">  <span class="kw">border-width</span>: <span class="dv">5</span><span class="dt">px</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb67-24" title="24">  <span class="kw">border-style</span>: <span class="dv">solid</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb67-25" title="25">  <span class="kw">border-color</span>: <span class="dv">transparent</span> <span class="dv">transparent</span> <span class="fu">rgba(</span><span class="dv">0</span><span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="dv">0.7</span><span class="fu">)</span> <span class="dv">transparent</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb67-18" title="18">
+</a>
+<a class="sourceLine" id="cb67-19" title="19">
+<span class="fu">.tooltip-arrow</span> {</a>
+<a class="sourceLine" id="cb67-20" title="20">  <span class="kw">position</span>: <span class="dv">absolute</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb67-21" title="21">  <span class="kw">top</span>: <span class="dv">-10</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb67-22" title="22">  <span class="kw">left</span>: <span class="dv">50</span>
+<span class="dt">%</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb67-23" title="23">  <span class="kw">border-width</span>: <span class="dv">5</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb67-24" title="24">  <span class="kw">border-style</span>: <span class="dv">solid</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb67-25" title="25">  <span class="kw">border-color</span>: <span class="dv">transparent</span> <span class="dv">transparent</span> <span class="fu">rgba(</span>
+<span class="dv">0</span>
+<span class="op">,</span> <span class="dv">0</span>
+<span class="op">,</span> <span class="dv">0</span>
+<span class="op">,</span> <span class="dv">0.7</span>
+<span class="fu">)</span> <span class="dv">transparent</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb67-26" title="26">}</a>
 
 </div>
 
 ```js
+//
 
 const Tooltip = ({ children, text, ...rest }) =&gt; {
   const [show, setShow] = React.useState(false);
@@ -2570,6 +3345,7 @@ onMouseLeave={() =&gt; setShow(false)}
 <hr />
 
 ```js
+//
 
 ReactDOM.render(
   &lt;Tooltip text=&quot;Simple tooltip&quot;&gt;
@@ -2589,51 +3365,127 @@ ReactDOM.render(
 <li>Determine the appearance of the component, based on <code>isParentToggled</code>, <code>isToggled</code>, <code>name</code> and checking for <code>Array.isArray()</code> on <code>data</code>.</li>
 <li>For each child in <code>data</code>, determine if it is an object or array and recursively render a sub-tree or a text element with the appropriate style.</li>
 </ul>
-<div class="sourceCode" id="cb70"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb70-1" title="1"><span class="fu">.tree-element</span> {</a>
-<a class="sourceLine" id="cb70-2" title="2">  <span class="kw">margin</span>: <span class="dv">0</span> <span class="dv">0</span> <span class="dv">0</span> <span class="dv">4</span><span class="dt">px</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb70-3" title="3">  <span class="kw">position</span>: <span class="dv">relative</span><span class="op">;</span></a>
+<div class="sourceCode" id="cb70">
+<pre class="sourceCode css">
+<code class="sourceCode css">
+<a class="sourceLine" id="cb70-1" title="1">
+<span class="fu">.tree-element</span> {</a>
+<a class="sourceLine" id="cb70-2" title="2">  <span class="kw">margin</span>: <span class="dv">0</span> <span class="dv">0</span> <span class="dv">0</span> <span class="dv">4</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb70-3" title="3">  <span class="kw">position</span>: <span class="dv">relative</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb70-4" title="4">}</a>
-<a class="sourceLine" id="cb70-5" title="5"></a>
-<a class="sourceLine" id="cb70-6" title="6"><span class="fu">.tree-element.is-child</span> {</a>
-<a class="sourceLine" id="cb70-7" title="7">  <span class="kw">margin-left</span>: <span class="dv">16</span><span class="dt">px</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb70-5" title="5">
+</a>
+<a class="sourceLine" id="cb70-6" title="6">
+<span class="fu">.tree-element.is-child</span> {</a>
+<a class="sourceLine" id="cb70-7" title="7">  <span class="kw">margin-left</span>: <span class="dv">16</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb70-8" title="8">}</a>
-<a class="sourceLine" id="cb70-9" title="9"></a>
-<a class="sourceLine" id="cb70-10" title="10">div<span class="fu">.tree-element</span><span class="in">:before</span> {</a>
-<a class="sourceLine" id="cb70-11" title="11">  <span class="kw">content</span>: <span class="st">&quot;&quot;</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb70-12" title="12">  <span class="kw">position</span>: <span class="dv">absolute</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb70-13" title="13">  <span class="kw">top</span>: <span class="dv">24</span><span class="dt">px</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb70-14" title="14">  <span class="kw">left</span>: <span class="dv">1</span><span class="dt">px</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb70-15" title="15">  <span class="kw">height</span>: <span class="fu">calc(</span><span class="dv">100</span><span class="dt">%</span> <span class="op">-</span> <span class="dv">48</span><span class="dt">px</span><span class="fu">)</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb70-16" title="16">  <span class="kw">border-left</span>: <span class="dv">1</span><span class="dt">px</span> <span class="dv">solid</span> <span class="cn">gray</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb70-9" title="9">
+</a>
+<a class="sourceLine" id="cb70-10" title="10">div<span class="fu">.tree-element</span>
+<span class="in">:before</span> {</a>
+<a class="sourceLine" id="cb70-11" title="11">  <span class="kw">content</span>: <span class="st">&quot;&quot;</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb70-12" title="12">  <span class="kw">position</span>: <span class="dv">absolute</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb70-13" title="13">  <span class="kw">top</span>: <span class="dv">24</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb70-14" title="14">  <span class="kw">left</span>: <span class="dv">1</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb70-15" title="15">  <span class="kw">height</span>: <span class="fu">calc(</span>
+<span class="dv">100</span>
+<span class="dt">%</span> <span class="op">-</span> <span class="dv">48</span>
+<span class="dt">px</span>
+<span class="fu">)</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb70-16" title="16">  <span class="kw">border-left</span>: <span class="dv">1</span>
+<span class="dt">px</span> <span class="dv">solid</span> <span class="cn">gray</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb70-17" title="17">}</a>
-<a class="sourceLine" id="cb70-18" title="18"></a>
+<a class="sourceLine" id="cb70-18" title="18">
+</a>
 <a class="sourceLine" id="cb70-19" title="19">p<span class="fu">.tree-element</span> {</a>
-<a class="sourceLine" id="cb70-20" title="20">  <span class="kw">margin-left</span>: <span class="dv">16</span><span class="dt">px</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb70-20" title="20">  <span class="kw">margin-left</span>: <span class="dv">16</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb70-21" title="21">}</a>
-<a class="sourceLine" id="cb70-22" title="22"></a>
-<a class="sourceLine" id="cb70-23" title="23"><span class="fu">.toggler</span> {</a>
-<a class="sourceLine" id="cb70-24" title="24">  <span class="kw">position</span>: <span class="dv">absolute</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb70-25" title="25">  <span class="kw">top</span>: <span class="dv">10</span><span class="dt">px</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb70-26" title="26">  <span class="kw">left</span>: <span class="dv">0</span><span class="dt">px</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb70-27" title="27">  <span class="kw">width</span>: <span class="dv">0</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb70-28" title="28">  <span class="kw">height</span>: <span class="dv">0</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb70-29" title="29">  <span class="kw">border-top</span>: <span class="dv">4</span><span class="dt">px</span> <span class="dv">solid</span> <span class="dv">transparent</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb70-30" title="30">  <span class="kw">border-bottom</span>: <span class="dv">4</span><span class="dt">px</span> <span class="dv">solid</span> <span class="dv">transparent</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb70-31" title="31">  <span class="kw">border-left</span>: <span class="dv">5</span><span class="dt">px</span> <span class="dv">solid</span> <span class="cn">gray</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb70-32" title="32">  <span class="kw">cursor</span>: <span class="dv">pointer</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb70-22" title="22">
+</a>
+<a class="sourceLine" id="cb70-23" title="23">
+<span class="fu">.toggler</span> {</a>
+<a class="sourceLine" id="cb70-24" title="24">  <span class="kw">position</span>: <span class="dv">absolute</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb70-25" title="25">  <span class="kw">top</span>: <span class="dv">10</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb70-26" title="26">  <span class="kw">left</span>: <span class="dv">0</span>
+<span class="dt">px</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb70-27" title="27">  <span class="kw">width</span>: <span class="dv">0</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb70-28" title="28">  <span class="kw">height</span>: <span class="dv">0</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb70-29" title="29">  <span class="kw">border-top</span>: <span class="dv">4</span>
+<span class="dt">px</span> <span class="dv">solid</span> <span class="dv">transparent</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb70-30" title="30">  <span class="kw">border-bottom</span>: <span class="dv">4</span>
+<span class="dt">px</span> <span class="dv">solid</span> <span class="dv">transparent</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb70-31" title="31">  <span class="kw">border-left</span>: <span class="dv">5</span>
+<span class="dt">px</span> <span class="dv">solid</span> <span class="cn">gray</span>
+<span class="op">;</span>
+</a>
+<a class="sourceLine" id="cb70-32" title="32">  <span class="kw">cursor</span>: <span class="dv">pointer</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb70-33" title="33">}</a>
-<a class="sourceLine" id="cb70-34" title="34"></a>
-<a class="sourceLine" id="cb70-35" title="35"><span class="fu">.toggler.closed</span> {</a>
-<a class="sourceLine" id="cb70-36" title="36">  <span class="kw">transform</span>: <span class="fu">rotate(</span><span class="dv">90</span><span class="dt">deg</span><span class="fu">)</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb70-34" title="34">
+</a>
+<a class="sourceLine" id="cb70-35" title="35">
+<span class="fu">.toggler.closed</span> {</a>
+<a class="sourceLine" id="cb70-36" title="36">  <span class="kw">transform</span>: <span class="fu">rotate(</span>
+<span class="dv">90</span>
+<span class="dt">deg</span>
+<span class="fu">)</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb70-37" title="37">}</a>
-<a class="sourceLine" id="cb70-38" title="38"></a>
-<a class="sourceLine" id="cb70-39" title="39"><span class="fu">.collapsed</span> {</a>
-<a class="sourceLine" id="cb70-40" title="40">  <span class="kw">display</span>: <span class="dv">none</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb70-38" title="38">
+</a>
+<a class="sourceLine" id="cb70-39" title="39">
+<span class="fu">.collapsed</span> {</a>
+<a class="sourceLine" id="cb70-40" title="40">  <span class="kw">display</span>: <span class="dv">none</span>
+<span class="op">;</span>
+</a>
 <a class="sourceLine" id="cb70-41" title="41">}</a>
 
 </div>
 
 ```js
+//
 
 const TreeView = ({
   data,
@@ -2687,6 +3539,7 @@ className={isToggled ? &quot;tree-element&quot; : &quot;tree-element collapsed&q
 <hr />
 
 ```js
+//
 
 const data = {
   lorem: {
@@ -2725,6 +3578,7 @@ ReactDOM.render(
 </ul>
 
 ```js
+//
 
 const UncontrolledInput = ({ defaultValue, onValueChange, ...rest }) =&gt; {
   return (
@@ -2741,6 +3595,7 @@ const UncontrolledInput = ({ defaultValue, onValueChange, ...rest }) =&gt; {
 <hr />
 
 ```js
+//
 
 ReactDOM.render(
   &lt;UncontrolledInput
@@ -2764,6 +3619,7 @@ ReactDOM.render(
 </ul>
 
 ```js
+//
 
 const useAsync = (fn) =&gt; {
   const initialState = { loading: false, error: null, value: null };
@@ -2798,6 +3654,7 @@ return { ...state, run };
 <hr />
 
 ```js
+//
 
 const RandomImage = (props) =&gt; {
   const imgFetch = useAsync((url) =&gt;
@@ -2840,6 +3697,7 @@ ReactDOM.render(&lt;RandomImage /&gt;, document.getElementById(&quot;root&quot;)
 </ul>
 
 ```js
+//
 
 const useClickInside = (ref, callback) =&gt; {
   const handleClick = (e) =&gt; {
@@ -2860,6 +3718,7 @@ const useClickInside = (ref, callback) =&gt; {
 <hr />
 
 ```js
+//
 
 const ClickBox = ({ onClickInside }) =&gt; {
   const clickRef = React.useRef();
@@ -2898,6 +3757,7 @@ document.getElementById(&quot;root&quot;)
 </ul>
 
 ```js
+//
 
 const useClickOutside = (ref, callback) =&gt; {
   const handleClick = (e) =&gt; {
@@ -2918,6 +3778,7 @@ const useClickOutside = (ref, callback) =&gt; {
 <hr />
 
 ```js
+//
 
 const ClickBox = ({ onClickOutside }) =&gt; {
   const clickRef = React.useRef();
@@ -2955,6 +3816,7 @@ document.getElementById(&quot;root&quot;)
 </ul>
 
 ```js
+//
 
 const useComponentDidMount = (onMountHandler) =&gt; {
   React.useEffect(() =&gt; {
@@ -2967,6 +3829,7 @@ const useComponentDidMount = (onMountHandler) =&gt; {
 <hr />
 
 ```js
+//
 
 const Mounter = () =&gt; {
   useComponentDidMount(() =&gt; console.log(&quot;Component did mount&quot;));
@@ -2986,6 +3849,7 @@ ReactDOM.render(&lt;Mounter /&gt;, document.getElementById(&quot;root&quot;));
 </ul>
 
 ```js
+//
 
 const useComponentWillUnmount = (onUnmountHandler) =&gt; {
   React.useEffect(
@@ -3001,6 +3865,7 @@ const useComponentWillUnmount = (onUnmountHandler) =&gt; {
 <hr />
 
 ```js
+//
 
 const Unmounter = () =&gt; {
   useComponentWillUnmount(() =&gt; console.log(&quot;Component will unmount&quot;));
@@ -3023,6 +3888,7 @@ ReactDOM.render(&lt;Unmounter /&gt;, document.getElementById(&quot;root&quot;));
 </ul>
 
 ```js
+//
 
 const useCopyToClipboard = (text) =&gt; {
   const copyToClipboard = (str) =&gt; {
@@ -3061,6 +3927,7 @@ return [copied, copy];
 <hr />
 
 ```js
+//
 
 const TextCopy = (props) =&gt; {
   const [copied, copy] = useCopyToClipboard(&quot;Lorem ipsum&quot;);
@@ -3088,6 +3955,7 @@ ReactDOM.render(&lt;TextCopy /&gt;, document.getElementById(&quot;root&quot;));
 </ul>
 
 ```js
+//
 
 const useDebounce = (value, delay) =&gt; {
   const [debouncedValue, setDebouncedValue] = React.useState(value);
@@ -3111,6 +3979,7 @@ return debouncedValue;
 <hr />
 
 ```js
+//
 
 const Counter = () =&gt; {
   const [value, setValue] = React.useState(0);
@@ -3140,6 +4009,7 @@ ReactDOM.render(&lt;Counter /&gt;, document.getElementById(&quot;root&quot;));
 </ul>
 
 ```js
+//
 
 const useFetch = (url, options) =&gt; {
   const [response, setResponse] = React.useState(null);
@@ -3166,6 +4036,7 @@ return { response, error };
 <hr />
 
 ```js
+//
 
 const ImageFetch = (props) =&gt; {
   const res = useFetch(&quot;https://dog.ceo/api/breeds/image/random&quot;, {});
@@ -3194,6 +4065,7 @@ ReactDOM.render(&lt;ImageFetch /&gt;, document.getElementById(&quot;root&quot;))
 </ul>
 
 ```js
+//
 
 const useInterval = (callback, delay) =&gt; {
   const savedCallback = React.useRef();
@@ -3218,6 +4090,7 @@ return () =&gt; clearInterval(id);
 <hr />
 
 ```js
+//
 
 const Timer = (props) =&gt; {
   const [seconds, setSeconds] = React.useState(0);
@@ -3242,6 +4115,7 @@ ReactDOM.render(&lt;Timer /&gt;, document.getElementById(&quot;root&quot;));
 </ul>
 
 ```js
+//
 
 const useMediaQuery = (query, whenTrue, whenFalse) =&gt; {
   if (typeof window === &quot;undefined&quot; || typeof window.matchMedia === &quot;undefined&quot;)
@@ -3264,6 +4138,7 @@ return match ? whenTrue : whenFalse;
 <hr />
 
 ```js
+//
 
 const ResponsiveText = () =&gt; {
   const text = useMediaQuery(
@@ -3289,6 +4164,7 @@ ReactDOM.render(&lt;ResponsiveText /&gt;, document.getElementById(&quot;root&quo
 </ul>
 
 ```js
+//
 
 const getOnLineStatus = () =&gt;
   typeof navigator !== &quot;undefined&quot; &amp;&amp; typeof navigator.onLine === &quot;boolean&quot;
@@ -3320,6 +4196,7 @@ return status;
 <hr />
 
 ```js
+//
 
 const StatusIndicator = () =&gt; {
   const isOnline = useNavigatorOnLine();
@@ -3340,10 +4217,12 @@ ReactDOM.render(&lt;StatusIndicator /&gt;, document.getElementById(&quot;root&qu
 <li>When the component is first mounted, use <code>Storage.getItem()</code> to update <code>value</code> if there's a stored value or <code>Storage.setItem()</code> to persist the current value.</li>
 <li>When <code>value</code> is updated, use <code>Storage.setItem()</code> to store the new value.</li>
 <li>When <code>name</code> is updated, use <code>Storage.setItem()</code> to create the new key, update the <code>nameRef</code> and use <code>Storage.removeItem()</code> to remove the previous key from <code>localStorage</code>.</li>
-<li><strong>NOTE:</strong> The hook is meant for use with primitive values (i.e. not objects) and doesn't account for changes to <code>localStorage</code> due to other code. Both of these issues can be easily handled (e.g. JSON serialization and handling the <code>'storage'</code> event).</li>
+<li>
+<strong>NOTE:</strong> The hook is meant for use with primitive values (i.e. not objects) and doesn't account for changes to <code>localStorage</code> due to other code. Both of these issues can be easily handled (e.g. JSON serialization and handling the <code>'storage'</code> event).</li>
 </ul>
 
 ```js
+//
 
 const usePersistedState = (name, defaultValue) =&gt; {
   const [value, setValue] = React.useState(defaultValue);
@@ -3384,6 +4263,7 @@ return [value, setValue];
 <hr />
 
 ```js
+//
 
 const MyComponent = ({ name }) =&gt; {
   const [val, setVal] = usePersistedState(name, 10);
@@ -3425,6 +4305,7 @@ ReactDOM.render(&lt;MyApp /&gt;, document.getElementById(&quot;root&quot;));
 </ul>
 
 ```js
+//
 
 const usePrevious = (value) =&gt; {
   const ref = React.useRef();
@@ -3439,6 +4320,7 @@ const usePrevious = (value) =&gt; {
 <hr />
 
 ```js
+//
 
 const Counter = () =&gt; {
   const [value, setValue] = React.useState(0);
@@ -3469,6 +4351,7 @@ ReactDOM.render(&lt;Counter /&gt;, document.getElementById(&quot;root&quot;));
 </ul>
 
 ```js
+//
 
 const isDOMavailable = !!(
   typeof window !== &quot;undefined&quot; &amp;&amp;
@@ -3508,6 +4391,7 @@ return React.useMemo(
 <hr />
 
 ```js
+//
 
 const SSRChecker = (props) =&gt; {
   let { isBrowser, isServer } = useSSR();
@@ -3529,6 +4413,7 @@ ReactDOM.render(&lt;SSRChecker /&gt;, document.getElementById(&quot;root&quot;))
 </ul>
 
 ```js
+//
 
 const useTimeout = (callback, delay) =&gt; {
   const savedCallback = React.useRef();
@@ -3553,6 +4438,7 @@ return () =&gt; clearTimeout(id);
 <hr />
 
 ```js
+//
 
 const OneSecondTimer = (props) =&gt; {
   const [seconds, setSeconds] = React.useState(0);
@@ -3576,6 +4462,7 @@ ReactDOM.render(&lt;OneSecondTimer /&gt;, document.getElementById(&quot;root&quo
 </ul>
 
 ```js
+//
 
 const useToggler = (initialState) =&gt; {
   const [value, setValue] = React.useState(initialState);
@@ -3590,6 +4477,7 @@ return [value, toggleValue];
 <hr />
 
 ```js
+//
 
 const Switch = () =&gt; {
   const [val, toggleVal] = useToggler(false);
@@ -3608,6 +4496,7 @@ ReactDOM.render(&lt;Switch /&gt;, document.getElementById(&quot;root&quot;));
 </ul>
 
 ```js
+//
 
 const useUnload = (fn) =&gt; {
   const cb = React.useRef(fn);
@@ -3626,6 +4515,7 @@ window.removeEventListener(&quot;beforeunload&quot;, onUnload);
 <hr />
 
 ```js
+//
 
 const App = () =&gt; {
   useUnload((e) =&gt; {

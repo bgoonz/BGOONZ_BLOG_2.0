@@ -1,11 +1,11 @@
 ---
-title: Javascript Interview Questions
+title: JS-Intervew-2
 subtitle: Object Oriented JavaScript
 date: '2021-09-11'
 thumb_image_alt: big o
 excerpt: What are the possible ways to create objects in JavaScript
 seo:
-    title: ''
+    title: 'Javascript Interview Questions Part 2'
     description: What are the possible ways to create objects in JavaScript
     robots: []
     extra:
@@ -28,7 +28,7 @@ image: images/green-spruce-4e3a1745.png
 
 ## Javascript Interview Questions
 
-1. What are the possible ways to create objects in JavaScript
+1.  What are the possible ways to create objects in JavaScript
 
     There are many ways to create objects in javascript as below
 
@@ -36,7 +36,7 @@ image: images/green-spruce-4e3a1745.png
 
         The simplest way to create an empty object is using the Object constructor. Currently this approach is not recommended.
 
-        ```js
+        ```javascript
         var object = new Object();
         ```
 
@@ -44,7 +44,7 @@ image: images/green-spruce-4e3a1745.png
 
         The create method of Object creates a new object by passing the prototype object as a parameter
 
-        ```js
+        ```javascript
         var object = Object.create(null);
         ```
 
@@ -52,7 +52,7 @@ image: images/green-spruce-4e3a1745.png
 
         The object literal syntax is equivalent to create method when it passes null as parameter
 
-        ```js
+        ```javascript
         var object = {};
         ```
 
@@ -60,7 +60,7 @@ image: images/green-spruce-4e3a1745.png
 
         Create any function and apply the new operator to create object instances,
 
-        ```js
+        ```javascript
         function Person(name) {
             this.name = name;
             this.age = 21;
@@ -72,7 +72,7 @@ image: images/green-spruce-4e3a1745.png
 
         This is similar to function constructor but it uses prototype for their properties and methods,
 
-        ```js
+        ```javascript
         function Person() {}
         Person.prototype.name = 'Sudheer';
         var object = new Person();
@@ -80,7 +80,7 @@ image: images/green-spruce-4e3a1745.png
 
         This is equivalent to an instance created with an object create method with a function prototype and then call that function with an instance and parameters as arguments.
 
-        ```js
+        ```javascript
         function func {};
 
         new func(x, y, z);
@@ -88,7 +88,7 @@ image: images/green-spruce-4e3a1745.png
 
         **(OR)**
 
-        ```js
+        ```javascript
         // Create a new instance using function prototype.
         var newInstance = Object.create(func.prototype)
 
@@ -103,7 +103,7 @@ image: images/green-spruce-4e3a1745.png
 
         ES6 introduces class feature to create the objects
 
-        ```js
+        ```javascript
         class Person {
             constructor(name) {
                 this.name = name;
@@ -117,13 +117,13 @@ image: images/green-spruce-4e3a1745.png
 
         A Singleton is an object which can only be instantiated one time. Repeated calls to its constructor return the same instance and this way one can ensure that they don't accidentally create multiple instances.
 
-        ```js
+        ```javascript
         var object = new (function () {
             this.name = 'Sudheer';
         })();
         ```
 
-2. What is a prototype chain
+2.  What is a prototype chain
 
     **Prototype chaining** is used to build new types of objects based on existing ones. It is similar to inheritance in a class based language.
 
@@ -131,13 +131,13 @@ image: images/green-spruce-4e3a1745.png
 
     ![Screenshot](images/prototype_chain.png)
 
-3. What is the difference between Call, Apply and Bind
+3.  What is the difference between Call, Apply and Bind
 
     The difference between Call, Apply and Bind can be explained with below examples,
 
     **Call:** The call() method invokes a function with a given `this` value and arguments provided one by one
 
-    ```js
+    ```javascript
     var employee1 = { firstName: 'John', lastName: 'Rodson' };
     var employee2 = { firstName: 'Jimmy', lastName: 'Baily' };
 
@@ -151,7 +151,7 @@ image: images/green-spruce-4e3a1745.png
 
     **Apply:** Invokes the function with a given `this` value and allows you to pass in arguments as an array
 
-    ```js
+    ```javascript
     var employee1 = { firstName: 'John', lastName: 'Rodson' };
     var employee2 = { firstName: 'Jimmy', lastName: 'Baily' };
 
@@ -165,7 +165,7 @@ image: images/green-spruce-4e3a1745.png
 
     **bind:** returns a new function, allowing you to pass any number of arguments
 
-    ```js
+    ```javascript
     var employee1 = { firstName: 'John', lastName: 'Rodson' };
     var employee2 = { firstName: 'Jimmy', lastName: 'Baily' };
 
@@ -183,29 +183,29 @@ image: images/green-spruce-4e3a1745.png
 
     Whereas Bind creates a new function that will have `this` set to the first parameter passed to bind().
 
-4. What is JSON and its common operations
+4.  What is JSON and its common operations
 
     **JSON** is a text-based data format following JavaScript object syntax, which was popularized by `Douglas Crockford`. It is useful when you want to transmit data across a network and it is basically just a text file with an extension of .json, and a MIME type of application/json
 
     **Parsing:** Converting a string to a native object
 
-    ```js
+    ```javascript
     JSON.parse(text);
     ```
 
     **Stringification:** converting a native object to a string so it can be transmitted across the network
 
-    ```js
+    ```javascript
     JSON.stringify(object);
     ```
 
-5. What is the purpose of the array slice method
+5.  What is the purpose of the array slice method
 
     The **slice()** method returns the selected elements in an array as a new array object. It selects the elements starting at the given start argument, and ends at the given optional end argument without including the last element. If you omit the second argument then it selects till the end.
 
     Some of the examples of this method are,
 
-    ```js
+    ```javascript
     let arrayIntegers = [1, 2, 3, 4, 5];
     let arrayIntegers1 = arrayIntegers.slice(0, 2); // returns [1,2]
     let arrayIntegers2 = arrayIntegers.slice(2, 3); // returns [3]
@@ -214,13 +214,13 @@ image: images/green-spruce-4e3a1745.png
 
     **Note:** Slice method won't mutate the original array but it returns the subset as a new array.
 
-6. What is the purpose of the array splice method
+6.  What is the purpose of the array splice method
 
     The **splice()** method is used either adds/removes items to/from an array, and then returns the removed item. The first argument specifies the array position for insertion or deletion whereas the optional second argument indicates the number of elements to be deleted. Each additional argument is added to the array.
 
     Some of the examples of this method are,
 
-    ```js
+    ```javascript
     let arrayIntegersOriginal1 = [1, 2, 3, 4, 5];
     let arrayIntegersOriginal2 = [1, 2, 3, 4, 5];
     let arrayIntegersOriginal3 = [1, 2, 3, 4, 5];
@@ -232,7 +232,7 @@ image: images/green-spruce-4e3a1745.png
 
     **Note:** Splice method modifies the original array and returns the deleted array.
 
-7. What is the difference between slice and splice
+7.  What is the difference between slice and splice
 
     Some of the major difference in a tabular form
 
@@ -242,7 +242,7 @@ image: images/green-spruce-4e3a1745.png
     | Returns the subset of original array         | Returns the deleted elements as array           |
     | Used to pick the elements from array         | Used to insert or delete elements to/from array |
 
-8. How do you compare Object and Map
+8.  How do you compare Object and Map
 
     **Objects** are similar to **Maps** in that both let you set keys to values, retrieve those values, delete keys, and detect whether something is stored at a key. Due to this reason, Objects have been used as Maps historically. But there are important differences that make using a Map preferable in certain cases.
 
@@ -253,7 +253,7 @@ image: images/green-spruce-4e3a1745.png
     5. An Object has a prototype, so there are default keys in the map that could collide with your keys if you're not careful. As of ES5 this can be bypassed by using map = Object.create(null), but this is seldom done.
     6. A Map may perform better in scenarios involving frequent addition and removal of key pairs.
 
-9. What is the difference between == and === operators
+9.  What is the difference between == and === operators
 
     JavaScript provides both strict(===, !==) and type-converting(==, !=) equality comparison. The strict operators take type of variable in consideration, while non-strict operators make type correction/conversion based upon values of variables. The strict operators follow the below conditions for different types,
 
@@ -269,7 +269,7 @@ image: images/green-spruce-4e3a1745.png
 
     Some of the example which covers the above cases,
 
-    ```js
+    ```javascript
     0 == false   // true
     0 === false  // false
     1 == "1"     // true
@@ -292,7 +292,7 @@ image: images/green-spruce-4e3a1745.png
 
     For example, in such a language, a function can be passed as an argument to other functions, can be returned by another function and can be assigned as a value to a variable. For example, in the below example, handler functions assigned to a listener
 
-    ```js
+    ```javascript
     const handler = () => console.log('This is a click handler function');
     document.addEventListener('click', handler);
     ```
@@ -301,7 +301,7 @@ image: images/green-spruce-4e3a1745.png
 
     First-order function is a function that doesn't accept another function as an argument and doesn't return a function as its return value.
 
-    ```js
+    ```javascript
     const firstOrder = () => console.log('I am a first order function!');
     ```
 
@@ -309,7 +309,7 @@ image: images/green-spruce-4e3a1745.png
 
     Higher-order function is a function that accepts another function as an argument or returns a function as a return value or both.
 
-    ```js
+    ```javascript
     const firstOrderFunc = () => console.log('Hello, I am a First order function');
     const higherOrder = (ReturnFirstOrderFunc) => ReturnFirstOrderFunc();
     higherOrder(firstOrderFunc);
@@ -321,7 +321,7 @@ image: images/green-spruce-4e3a1745.png
 
     Let us take an example of unary function,
 
-    ```js
+    ```javascript
     const unaryFunction = (a) => console.log(a + 10); // Add 10 to the given argument and display the value
     ```
 
@@ -331,7 +331,7 @@ image: images/green-spruce-4e3a1745.png
 
     Let's take an example of n-ary function and how it turns into a currying function,
 
-    ```js
+    ```javascript
     const multiArgFunction = (a, b, c) => a + b + c;
     console.log(multiArgFunction(1, 2, 3)); // 6
 
@@ -349,7 +349,7 @@ image: images/green-spruce-4e3a1745.png
 
     Let's take an example to see the difference between pure and impure functions,
 
-    ```js
+    ```javascript
     //Impure
     let numberArray = [];
     const impureAddNumber = (number) => numberArray.push(number);
@@ -373,7 +373,7 @@ image: images/green-spruce-4e3a1745.png
 
     Let's take an example to demonstrate the usage,
 
-    ```js
+    ```javascript
     let counter = 30;
     if (counter === 30) {
         let counter = 31;
@@ -394,7 +394,7 @@ image: images/green-spruce-4e3a1745.png
 
     Let's take an example to see the difference,
 
-    ```js
+    ```javascript
     function userDetails(username) {
         if (username) {
             console.log(salary); // undefined due to hoisting
@@ -412,280 +412,3 @@ image: images/green-spruce-4e3a1745.png
 
     `let` is a mathematical statement that was adopted by early programming languages like **Scheme** and **Basic**. It has been borrowed from dozens of other languages that use `let` already as a traditional keyword as close to `var` as possible.
 
-20. How do you redeclare variables in switch block without an error
-
-    If you try to redeclare variables in a `switch block` then it will cause errors because there is only one block. For example, the below code block throws a syntax error as below,
-
-    ```js
-    let counter = 1;
-    switch (x) {
-        case 0:
-            let name;
-            break;
-
-        case 1:
-            let name; // SyntaxError for redeclaration.
-            break;
-    }
-    ```
-
-    To avoid this error, you can create a nested block inside a case clause and create a new block scoped lexical environment.
-
-    ```js
-    let counter = 1;
-    switch (x) {
-        case 0: {
-            let name;
-            break;
-        }
-        case 1: {
-            let name; // No SyntaxError for redeclaration.
-            break;
-        }
-    }
-    ```
-
-21. What is the Temporal Dead Zone
-
-    The Temporal Dead Zone is a behavior in JavaScript that occurs when declaring a variable with the let and const keywords, but not with var. In ECMAScript 6, accessing a `let` or `const` variable before its declaration (within its scope) causes a ReferenceError. The time span when that happens, between the creation of a variable's binding and its declaration, is called the temporal dead zone.
-
-    Let's see this behavior with an example,
-
-    ```js
-    function somemethod() {
-        console.log(counter1); // undefined
-        console.log(counter2); // ReferenceError
-        var counter1 = 1;
-        let counter2 = 2;
-    }
-    ```
-
-22. What is IIFE(Immediately Invoked Function Expression)
-
-    IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined. The signature of it would be as below,
-
-    ```js
-    (function () {
-        // logic here
-    })();
-    ```
-
-    The primary reason to use an IIFE is to obtain data privacy because any variables declared within the IIFE cannot be accessed by the outside world. i.e, If you try to access variables with IIFE then it throws an error as below,
-
-    ```js
-    (function () {
-        var message = 'IIFE';
-        console.log(message);
-    })();
-    console.log(message); //Error: message is not defined
-    ```
-
-23. What is the benefit of using modules
-
-    There are a lot of benefits to using modules in favour of a sprawling. Some of the benefits are,
-
-    1. Maintainability
-    2. Reusability
-    3. Namespacing
-
-24. What is memoization
-
-    Memoization is a programming technique which attempts to increase a function's performance by caching its previously computed results. Each time a memoized function is called, its parameters are used to index the cache. If the data is present, then it can be returned, without executing the entire function. Otherwise the function is executed and then the result is added to the cache.
-    Let's take an example of adding function with memoization,
-
-    ```js
-    const memoizAddition = () => {
-        let cache = {};
-        return (value) => {
-            if (value in cache) {
-                console.log('Fetching from cache');
-                return cache[value]; // Here, cache.value cannot be used as property name starts with the number which is not a valid JavaScript  identifier. Hence, can only be accessed using the square bracket notation.
-            } else {
-                console.log('Calculating result');
-                let result = value + 20;
-                cache[value] = result;
-                return result;
-            }
-        };
-    };
-    // returned function from memoizAddition
-    const addition = memoizAddition();
-    console.log(addition(20)); //output: 40 calculated
-    console.log(addition(20)); //output: 40 cached
-    ```
-
-25. What is Hoisting
-
-    Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution. Remember that JavaScript only hoists declarations, not initialisation.
-    Let's take a simple example of variable hoisting,
-
-    ```js
-    console.log(message); //output : undefined
-    var message = 'The variable Has been hoisted';
-    ```
-
-    The above code looks like as below to the interpreter,
-
-    ```js
-    var message;
-    console.log(message);
-    message = 'The variable Has been hoisted';
-    ```
-
-26. What are classes in ES6
-
-    In ES6, Javascript classes are primarily syntactic sugar over JavaScript's existing prototype-based inheritance.
-    For example, the prototype based inheritance written in function expression as below,
-
-    ```js
-    function Bike(model, color) {
-        this.model = model;
-        this.color = color;
-    }
-
-    Bike.prototype.getDetails = function () {
-        return this.model + ' bike has' + this.color + ' color';
-    };
-    ```
-
-    Whereas ES6 classes can be defined as an alternative
-
-    ```js
-    class Bike {
-        constructor(color, model) {
-            this.color = color;
-            this.model = model;
-        }
-
-        getDetails() {
-            return this.model + ' bike has' + this.color + ' color';
-        }
-    }
-    ```
-
-27. What are closures
-
-    A closure is the combination of a function and the lexical environment within which that function was declared. i.e, It is an inner function that has access to the outer or enclosing function's variables. The closure has three scope chains
-
-    1. Own scope where variables defined between its curly brackets
-    2. Outer function's variables
-    3. Global variables
-
-    Let's take an example of closure concept,
-
-    ```js
-    function Welcome(name) {
-        var greetingInfo = function (message) {
-            console.log(message + ' ' + name);
-        };
-        return greetingInfo;
-    }
-    var myFunction = Welcome('John');
-    myFunction('Welcome '); //Output: Welcome John
-    myFunction('Hello Mr.'); //output: Hello Mr.John
-    ```
-
-    As per the above code, the inner function(i.e, greetingInfo) has access to the variables in the outer function scope(i.e, Welcome) even after the outer function has returned.
-
-28. What are modules
-
-    Modules refer to small units of independent, reusable code and also act as the foundation of many JavaScript design patterns. Most of the JavaScript modules export an object literal, a function, or a constructor
-
-29. Why do you need modules
-
-    Below are the list of benefits using modules in javascript ecosystem
-
-    1. Maintainability
-    2. Reusability
-    3. Namespacing
-
-30. What is scope in javascript
-
-    Scope is the accessibility of variables, functions, and objects in some particular part of your code during runtime. In other words, scope determines the visibility of variables and other resources in areas of your code.
-
-31. What is a service worker
-
-    A Service worker is basically a script (JavaScript file) that runs in the background, separate from a web page and provides features that don't need a web page or user interaction. Some of the major features of service workers are Rich offline experiences(offline first web application development), periodic background syncs, push notifications, intercept and handle network requests and programmatically managing a cache of responses.
-
-32. How do you manipulate DOM using a service worker
-
-    Service worker can't access the DOM directly. But it can communicate with the pages it controls by responding to messages sent via the `postMessage` interface, and those pages can manipulate the DOM.
-
-33. How do you reuse information across service worker restarts
-
-    The problem with service worker is that it gets terminated when not in use, and restarted when it's next needed, so you cannot rely on global state within a service worker's `onfetch` and `onmessage` handlers. In this case, service workers will have access to IndexedDB API in order to persist and reuse across restarts.
-
-34. What is IndexedDB
-
-    IndexedDB is a low-level API for client-side storage of larger amounts of structured data, including files/blobs. This API uses indexes to enable high-performance searches of this data.
-
-35. What is web storage
-
-    Web storage is an API that provides a mechanism by which browsers can store key/value pairs locally within the user's browser, in a much more intuitive fashion than using cookies. The web storage provides two mechanisms for storing data on the client.
-
-    1. **Local storage:** It stores data for current origin with no expiration date.
-    2. **Session storage:** It stores data for one session and the data is lost when the browser tab is closed.
-
-36. What is a post message
-
-    Post message is a method that enables cross-origin communication between Window objects.(i.e, between a page and a pop-up that it spawned, or between a page and an iframe embedded within it). Generally, scripts on different pages are allowed to access each other if and only if the pages follow same-origin policy(i.e, pages share the same protocol, port number, and host).
-
-37. What is a Cookie
-
-    A cookie is a piece of data that is stored on your computer to be accessed by your browser. Cookies are saved as key/value pairs.
-    For example, you can create a cookie named username as below,
-
-    ```js
-    document.cookie = 'username=John';
-    ```
-
-    ![Screenshot](images/cookie.png)
-
-38. Why do you need a Cookie
-
-    Cookies are used to remember information about the user profile(such as username). It basically involves two steps,
-
-    1. When a user visits a web page, the user profile can be stored in a cookie.
-    2. Next time the user visits the page, the cookie remembers the user profile.
-
-39. What are the options in a cookie
-
-    There are few below options available for a cookie,
-
-    1. By default, the cookie is deleted when the browser is closed but you can change this behavior by setting expiry date (in UTC time).
-
-    ```js
-    document.cookie = 'username=John; expires=Sat, 8 Jun 2019 12:00:00 UTC';
-    ```
-
-    1. By default, the cookie belongs to a current page. But you can tell the browser what path the cookie belongs to using a path parameter.
-
-    ```js
-    document.cookie = 'username=John; path=/services';
-    ```
-
-40. How do you delete a cookie
-
-    You can delete a cookie by setting the expiry date as a passed date. You don't need to specify a cookie value in this case.
-    For example, you can delete a username cookie in the current page as below.
-
-    ```js
-    document.cookie = 'username=; expires=Fri, 07 Jun 2019 00:00:00 UTC; path=/;';
-    ```
-
-    **Note:** You should define the cookie path option to ensure that you delete the right cookie. Some browsers doesn't allow to delete a cookie unless you specify a path parameter.
-
-41. What are the differences between cookie, local storage and session storage
-
-    Below are some of the differences between cookie, local storage and session storage,
-
-    | Feature                           | Cookie                             | Local storage    | Session storage     |
-    | --------------------------------- | ---------------------------------- | ---------------- | ------------------- |
-    | Accessed on client or server side | Both server-side & client-side     | client-side only | client-side only    |
-    | Lifetime                          | As configured using Expires option | until deleted    | until tab is closed |
-    | SSL support                       | Supported                          | Not supported    | Not supported       |
-    | Maximum data size                 | 4KB                                | 5 MB             | 5MB                 |
-
-42. What is the main difference between localStorage and sessionStorage
-
-    LocalStorage is the same as SessionStorage but it persists the data even when the browser is closed and reopened(i.e it has no expiration time) whereas in sessionStorage data gets cleared when the page session ends.

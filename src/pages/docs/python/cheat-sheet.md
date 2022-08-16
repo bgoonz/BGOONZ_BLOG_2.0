@@ -18,7 +18,6 @@ seo:
 template: docs
 ---
 
-
 ## Lorem ipsum
 
 # Python Cheat Sheet
@@ -3075,7 +3074,7 @@ with open("filename.yaml") as f:
 
 Install it with:
 
-```bash
+```shell
 pip install anyconfig
 ```
 
@@ -3481,7 +3480,7 @@ The `setup.py` file is at the heart of a Python project. It describes all of the
 
 This allows you to easily install Python packages. Often it's enough to write:
 
-```bash
+```shell
 python setup.py install
 ```
 

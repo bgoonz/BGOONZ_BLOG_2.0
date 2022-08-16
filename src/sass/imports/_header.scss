@@ -1,8 +1,7 @@
 .site-header {
-    background: black;
-    background-image: url('https://i.imgur.com/CEYEZp8.jpeg');
-    padding-bottom: 0.4em;
-    padding-top: 0.2em;
+    background: #fff;
+    padding-bottom: 1.25em;
+    padding-top: 1.125em;
 }
 
 .site-header-inside {
@@ -29,7 +28,7 @@
     margin: 0;
 
     img {
-        max-height: 45px;
+        max-height: 36px;
     }
 }
 
@@ -50,7 +49,7 @@
     a {
         &:not(.button) {
             display: inline-block;
-            font-size: 1.1em;
+            font-size: 0.9375em;
             line-height: 1.5;
         }
     }
@@ -79,7 +78,6 @@
 }
 
 @media only screen and (min-width: 801px) {
-
     #menu-open,
     #menu-close {
         display: none;
@@ -112,8 +110,8 @@
             }
         }
 
-        &.has-children>a {
-            padding-right: 18px;
+        &.has-children > a {
+            padding-right: 15px;
             position: relative;
 
             &:after {
@@ -145,7 +143,7 @@
             display: none;
         }
 
-        &.has-children:hover>.submenu {
+        &.has-children:hover > .submenu {
             opacity: 1;
             -webkit-transition: margin 0.3s, opacity 0.2s;
             transition: margin 0.3s, opacity 0.2s;
@@ -155,7 +153,7 @@
 
     .submenu {
         background: #fff;
-        border: 4px solid $gray-300;
+        border: 1px solid $gray-300;
         border-radius: $border-radius-sm;
         box-shadow: $box-shadow;
         left: 0;
@@ -253,10 +251,11 @@
             z-index: 997;
         }
 
-        .submenu {
-            border-top: 2px solid $gray-300;
-            display: none;
-            padding-left: 2em;
+        .site-navigation {
+            right: 0;
+            -webkit-transition: right 0.3s ease-in-out;
+            transition: right 0.3s ease-in-out;
+            visibility: visible;
         }
 
         .site-header {
@@ -292,7 +291,6 @@
         }
 
         a {
-
             &:not(.button),
             &.button-icon {
                 padding: 0.75em 0;
@@ -309,12 +307,8 @@
             }
         }
 
-        .submenu-toggle {
-            color: $gray-500;
-            height: 2.8125em;
-            position: absolute;
-            right: 0;
-            top: 0.02;
+        &.has-children > a {
+            margin-right: 2em;
         }
 
         .menu-item {
@@ -335,33 +329,41 @@
             top: 0;
         }
 
-        .menu-button {
-            &>.button:not(.button-icon) {
-                margin-bottom: 1.5em;
-                margin-top: 1.25em;
+        &.active {
+            .submenu-toggle {
+                .icon-angle-right {
+                    -webkit-transform: rotate(135deg);
+                    transform: rotate(135deg);
+                }
+            }
+
+            .submenu {
+                display: block;
             }
         }
+    }
 
-        .submenu {
-            display: block;
+    .menu-button {
+        & > .button:not(.button-icon) {
+            margin-bottom: 1.25em;
+            margin-top: 1.25em;
+        }
+
+        & + .menu-button {
+            & > .button:not(.button-icon) {
+                margin-top: 0;
+            }
         }
     }
-}
 
-.menu-button {
-    &>.button:not(.button-icon) {
-        margin-bottom: 1.25em;
-        margin-top: 1.25em;
+    #menu-open {
+        margin-left: auto;
     }
 
-    &+.menu-button {
-        &>.button:not(.button-icon) {
-            margin-top: 0;
-        }
+    #menu-close {
+        display: block;
+        position: absolute;
+        right: $container-padding;
+        top: $container-padding;
     }
-}
-
-.palette-navy .button,
-.palette-navy .line-left:after {
-    background: #000000de;
 }

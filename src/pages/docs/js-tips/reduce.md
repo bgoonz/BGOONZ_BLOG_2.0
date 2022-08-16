@@ -111,7 +111,101 @@ Suppose the following use of `reduce()` occurred:
 
 The callback would be invoked four times, with the arguments and return values in each call being as follows:
 
-<table><thead><tr class="header"><th><code>callback</code> iteration</th><th><code>accumulator</code></th><th><code>currentValue</code></th><th><code>currentIndex</code></th><th><code>array</code></th><th>return value</th></tr></thead><tbody><tr class="odd"><td>first call</td><td><code>0</code></td><td><code>1</code></td><td><code>1</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>1</code></td></tr><tr class="even"><td>second call</td><td><code>1</code></td><td><code>2</code></td><td><code>2</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>3</code></td></tr><tr class="odd"><td>third call</td><td><code>3</code></td><td><code>3</code></td><td><code>3</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>6</code></td></tr><tr class="even"><td>fourth call</td><td><code>6</code></td><td><code>4</code></td><td><code>4</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>10</code></td></tr></tbody></table>
+<table>
+<thead>
+<tr class="header">
+<th>
+<code>callback</code> iteration</th>
+<th>
+<code>accumulator</code>
+</th>
+<th>
+<code>currentValue</code>
+</th>
+<th>
+<code>currentIndex</code>
+</th>
+<th>
+<code>array</code>
+</th>
+<th>return value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>first call</td>
+<td>
+<code>0</code>
+</td>
+<td>
+<code>1</code>
+</td>
+<td>
+<code>1</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>1</code>
+</td>
+</tr>
+<tr class="even">
+<td>second call</td>
+<td>
+<code>1</code>
+</td>
+<td>
+<code>2</code>
+</td>
+<td>
+<code>2</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>3</code>
+</td>
+</tr>
+<tr class="odd">
+<td>third call</td>
+<td>
+<code>3</code>
+</td>
+<td>
+<code>3</code>
+</td>
+<td>
+<code>3</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>6</code>
+</td>
+</tr>
+<tr class="even">
+<td>fourth call</td>
+<td>
+<code>6</code>
+</td>
+<td>
+<code>4</code>
+</td>
+<td>
+<code>4</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>10</code>
+</td>
+</tr>
+</tbody>
+</table>
 
 The value returned by `reduce()` would be that of the last callback invocation (`10`).
 
@@ -125,12 +219,124 @@ If you were to provide an `initialValue` as the second argument to `reduce()`, t
         return accumulator + currentValue
     }, 10)
 
-<table><thead><tr class="header"><th><code>callback</code> iteration</th><th><code>accumulator</code></th><th><code>currentValue</code></th><th><code>currentIndex</code></th><th><code>array</code></th><th>return value</th></tr></thead><tbody><tr class="odd"><td>first call</td><td><code>10</code></td><td><code>0</code></td><td><code>0</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>10</code></td></tr><tr class="even"><td>second call</td><td><code>10</code></td><td><code>1</code></td><td><code>1</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>11</code></td></tr><tr class="odd"><td>third call</td><td><code>11</code></td><td><code>2</code></td><td><code>2</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>13</code></td></tr><tr class="even"><td>fourth call</td><td><code>13</code></td><td><code>3</code></td><td><code>3</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>16</code></td></tr><tr class="odd"><td>fifth call</td><td><code>16</code></td><td><code>4</code></td><td><code>4</code></td><td><code>[0, 1, 2, 3, 4]</code></td><td><code>20</code></td></tr></tbody></table>
+<table>
+<thead>
+<tr class="header">
+<th>
+<code>callback</code> iteration</th>
+<th>
+<code>accumulator</code>
+</th>
+<th>
+<code>currentValue</code>
+</th>
+<th>
+<code>currentIndex</code>
+</th>
+<th>
+<code>array</code>
+</th>
+<th>return value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>first call</td>
+<td>
+<code>10</code>
+</td>
+<td>
+<code>0</code>
+</td>
+<td>
+<code>0</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>10</code>
+</td>
+</tr>
+<tr class="even">
+<td>second call</td>
+<td>
+<code>10</code>
+</td>
+<td>
+<code>1</code>
+</td>
+<td>
+<code>1</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>11</code>
+</td>
+</tr>
+<tr class="odd">
+<td>third call</td>
+<td>
+<code>11</code>
+</td>
+<td>
+<code>2</code>
+</td>
+<td>
+<code>2</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>13</code>
+</td>
+</tr>
+<tr class="even">
+<td>fourth call</td>
+<td>
+<code>13</code>
+</td>
+<td>
+<code>3</code>
+</td>
+<td>
+<code>3</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>16</code>
+</td>
+</tr>
+<tr class="odd">
+<td>fifth call</td>
+<td>
+<code>16</code>
+</td>
+<td>
+<code>4</code>
+</td>
+<td>
+<code>4</code>
+</td>
+<td>
+<code>[0, 1, 2, 3, 4]</code>
+</td>
+<td>
+<code>20</code>
+</td>
+</tr>
+</tbody>
+</table>
 
 The value returned by `reduce()` in this case would be `20`.
 
 ## Polyfill
-
+```js
     // Production steps of ECMA-262, Edition 5, 15.4.4.21
     // Reference: https://es5.github.io/#x15.4.4.21
     // https://tc39.github.io/ecma262/#sec-array.prototype.reduce
@@ -194,13 +400,13 @@ The value returned by `reduce()` in this case would be `20`.
         }
       });
     }
-
+```
 **Note:** If you need to support truly obsolete JavaScript engines that do not support [`Object.defineProperty()`](../object/defineproperty), it is best not to polyfill `Array.prototype` methods at all, as you cannot make them **non-enumerable**.
 
 ## Examples
 
 ### Sum all the values of an array
-
+```js
     let sum = [0, 1, 2, 3].reduce(function (accumulator, currentValue) {
       return accumulator + currentValue
     }, 0)
@@ -212,20 +418,20 @@ Alternatively written with an arrow function:
       ( accumulator, currentValue ) => accumulator + currentValue,
       0
     )
-
+```
 ### Sum of values in an object array
 
 To sum up the values contained in an array of objects, you **must** supply an `initialValue`, so that each item passes through your function.
-
+```js
     let initialValue = 0
     let sum = [{x: 1}, {x: 2}, {x: 3}].reduce(function (accumulator, currentValue) {
         return accumulator + currentValue.x
     }, initialValue)
 
     console.log(sum) // logs 6
-
+```
 Alternatively written with an arrow function:
-
+```js
     let initialValue = 0
     let sum = [{x: 1}, {x: 2}, {x: 3}].reduce(
         (accumulator, currentValue) => accumulator + currentValue.x
@@ -233,9 +439,9 @@ Alternatively written with an arrow function:
     )
 
     console.log(sum) // logs 6
-
+```
 ### Flatten an array of arrays
-
+```js
     let flattened = [[0, 1], [2, 3], [4, 5]].reduce(
       function(accumulator, currentValue) {
         return accumulator.concat(currentValue)
@@ -243,16 +449,16 @@ Alternatively written with an arrow function:
       []
     )
     // flattened is [0, 1, 2, 3, 4, 5]
-
+```
 Alternatively written with an arrow function:
-
+```js
     let flattened = [[0, 1], [2, 3], [4, 5]].reduce(
       ( accumulator, currentValue ) => accumulator.concat(currentValue),
       []
     )
-
+```
 ### Counting instances of values in an object
-
+```js
     let names = ['Alice', 'Bob', 'Tiff', 'Bruce', 'Alice']
 
     let countedNames = names.reduce(function (allNames, name) {
@@ -266,7 +472,7 @@ Alternatively written with an arrow function:
     }, {})
     // countedNames is:
     // { 'Alice': 2, 'Bob': 1, 'Tiff': 1, 'Bruce': 1 }
-
+```
 ### Grouping objects by a property
 
     let people = [
