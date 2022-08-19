@@ -1,8 +1,10 @@
 # Bgoonz Blog Readme
 
-# [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app/)
+<div align="centered">
 
-##### [⇨Privacy policy⇦](https://codepen.io/bgoonz/pen/LYLJZrW)
+### [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app)
+
+### [CHANGELOG](./CHANGELOG.md)
 
 ##### [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app) [⇨**Cloudfare-Backup**⇦](https://bgoonz-blog-2-0.pages.dev/) [⇨**search**⇦](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) [⇨**Backup Repo Deploy**⇦](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) [⇨**Github pages**⇦](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) [⇨**Go To Site Wiki**⇦](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki) [⇨**Gatsby Cloud Version**⇦](https://bgoonzblog20master.gatsbyjs.io/) [⇨**Vercel Version**⇦](https://bgoonz-blog-2-0.vercel.app/) [⇨**Cloudfare-Domain**⇦](www.webdevhub.us) [⇨**gh-pages**⇦](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) [⇨**backup netlify deploy**⇦](https://bgoonz-blog20-backup.netlify.app/)
 
@@ -17,97 +19,280 @@
 
 ![GitHub visitors](https://visitor-badge-reloaded.herokuapp.com/badge?page_id=bgoonz.visitor.badge.reloaded&color=00bbbb&style=for-the-badge&logo=github)
 
+[![Demo](https://img.youtube.com/vi/OGCcq1_Tbzk/0.jpg)](https://www.youtube.com/watch?v=OGCcq1_Tbzk)
 
-[![.github/workflows/pages.yml](https://github.com/permission-squad/BGOONZ_BLOG_2.0/actions/workflows/pages.yml/badge.svg?branch=master&event=deployment)](https://github.com/permission-squad/BGOONZ_BLOG_2.0/actions/workflows/pages.yml)
+</div>
+---
+
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [Bgoonz Blog Readme](#bgoonz-blog-readme)
+  - [⇨WEBSITE🗺️⇦](#website️httpsbgoonz-blognetlifyapp)
+  - [CHANGELOG](#changelogchangelogmd)
+    - [⇨WEBSITE🗺️⇦ ⇨**Cloudfare-Backup**⇦ ⇨**search**⇦ ⇨**Backup Repo Deploy**⇦ ⇨**Github pages**⇦ ⇨**Go To Site Wiki**⇦ ⇨**Gatsby Cloud Version**⇦ ⇨**Vercel Version**⇦ ⇨**Cloudfare-Domain**⇦ ⇨**gh-pages**⇦ ⇨**backup netlify deploy**⇦](#website️httpsbgoonz-blognetlifyapp-cloudfare-backuphttpsbgoonz-blog-2-0pagesdev-searchhttpswwwalgoliacomrealtime-search-demoweb-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4-backup-repo-deployhttpsbgoonzblog20-backupnetlifyappgsctab0-github-pageshttpsbgoonzgithubiobgoonz_blog_20-go-to-site-wikihttpsgithubcombgoonzbgoonz_blog_20wiki-gatsby-cloud-versionhttpsbgoonzblog20mastergatsbyjsio-vercel-versionhttpsbgoonz-blog-2-0vercelapp-cloudfare-domainwwwwebdevhubus-gh-pageshttpsbgoonzgithubiobgoonz_blog_20-backup-netlify-deployhttpsbgoonz-blog20-backupnetlifyapp)
+  - [Repos](#repos)
+    - [⇨Privacy policy⇦](#privacy-policyhttpscodepeniobgoonzpenlyljzrw)
+  - [Useful Commands (internal use)](#useful-commands-internal-use)
+  - [Web Dev Setup](#web-dev-setup)
+  - [Bash Cheat Sheet (MY COMMANDS)](#bash-cheat-sheet-my-commands)
+    - [Find](#find)
+  - [To find files by case-insensitive extension (ex: .jpg, .JPG, .jpG)](#to-find-files-by-case-insensitive-extension-ex-jpg-jpg-jpg)
+  - [To find directories](#to-find-directories)
+  - [To find files](#to-find-files)
+  - [To find files by octal permission](#to-find-files-by-octal-permission)
+  - [To find files with setuid bit set](#to-find-files-with-setuid-bit-set)
+  - [To find files with extension '.txt' and remove them](#to-find-files-with-extension-txt-and-remove-them)
+  - [To find files with extension '.txt' and look for a string into them](#to-find-files-with-extension-txt-and-look-for-a-string-into-them)
+  - [To find files with size bigger than 5 Mebibyte and sort them by size](#to-find-files-with-size-bigger-than-5-mebibyte-and-sort-them-by-size)
+  - [To find files bigger than 2 Megabyte and list them](#to-find-files-bigger-than-2-megabyte-and-list-them)
+  - [To find files modified more than 7 days ago and list file information](#to-find-files-modified-more-than-7-days-ago-and-list-file-information)
+  - [To find symlinks owned by a user and list file information](#to-find-symlinks-owned-by-a-user-and-list-file-information)
+  - [To search for and delete empty directories](#to-search-for-and-delete-empty-directories)
+  - [To search for directories named build at a max depth of 2 directories](#to-search-for-directories-named-build-at-a-max-depth-of-2-directories)
+  - [To search all files who are not in .git directory](#to-search-all-files-who-are-not-in-git-directory)
+  - [To find all files that have the same node (hard link) as MY_FILE_HERE](#to-find-all-files-that-have-the-same-node-hard-link-as-my_file_here)
+  - [To find all files in the current directory and modify their permissions](#to-find-all-files-in-the-current-directory-and-modify-their-permissions)
+  - [Wiki Nav](#wiki-nav)
+  - [Dependencies](#dependencies)
+  - [Docs Structure](#docs-structure)
+    - [Overview](#overview)
+    - [Syntax](#syntax)
+    - [Parameters](#parameters)
+    - [Return value](#return-value)
+    - [Example](#example)
+    - [Explanation](#explanation)
+    - [Output](#output)
+  - [Technoloy](#technoloy)
+  - [SOURCECODE](#sourcecode)
+    - [Overview](#overview-1)
+    - [Syntax](#syntax-1)
+    - [Parameters](#parameters-1)
+    - [Return value](#return-value-1)
+    - [Example](#example-1)
+    - [Explanation](#explanation-1)
+    - [Output](#output-1)
+  - [Source Code](#source-code)
+  - [Component Structure](#component-structure)
+
+<!-- /code_chunk_output -->
+
+![preview](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/blog-may-2022.png?raw=true)
 
 ---
 
-<div align="center">
+## Useful Commands (internal use)
 
-##### [Cloudfare-Backup](https://bgoonz-blog-2-0.pages.dev/) ⇨ [search](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) ⇨ [Backup Repo Deploy](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) ⇨ [Github pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) ⇨ [Go To Site Wiki](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)  ⇨ [Gatsby Cloud Version](https://bgoonzblog20master.gatsbyjs.io/)
+```bash
 
-</div>
-<div align="center">
+npm i @stackbit/gatsby-plugin-menus babel-runtime chokidar classnames fs-extra gatsby gatsby-image gatsby-plugin-netlify gatsby-plugin-netlify-cms gatsby-plugin-sass gatsby-plugin-react-helmet gatsby-plugin-typescript  --legacy-peer-deps
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys)[![CodeFactor](https://www.codefactor.io/repository/github/webdevhub42/bgoonz_blog_2.0/badge)](https://www.codefactor.io/repository/github/webdevhub42/bgoonz_blog_2.0)[![CodeScene System Mastery**](https://codescene.io/projects/17026/status-badges/system-mastery)](https://codescene.io/projects/17026)![Profile views**](https://views.whatilearened.today/views/github/bgoonz/views.svg)[![Gitter**](https://badges.gitter.im/bgoonz/community.svg)](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)[![CodeScene Code Health](https://codescene.io/projects/17026/status-badges/code-health)](https://codescene.io/projects/17026)[![CodeQL](https://github.com/bgoonz/BGOONZ_BLOG_2.0/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/bgoonz/BGOONZ_BLOG_2.0/actions/workflows/codeql-analysis.yml)[![CircleCI](https://circleci.com/gh/bgoonz/BGOONZ_BLOG_2.0/tree/master.svg?style=svg)](https://circleci.com/gh/bgoonz/BGOONZ_BLOG_2.0/tree/master)
 
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/aac9892cd5e6fe8241ce?action=collection%2Fimport#?env%5Bblog%5D=dW5kZWZpbmVk)![GitHub visitors](https://visitor-badge-reloaded.herokuapp.com/badge?page_id=bgoonz.visitor.badge.reloaded&color=00bbbb&style=for-the-badge&logo=github)
+git checkout 307a5cd        # check out the commit that you want to reset to
+git checkout -b fixy        # create a branch named fixy to do the work
+git merge -s ours master    # merge master's history without changing any files
+git checkout master         # switch back to master
+git merge fixy              # and merge in the fixed branch
+git push                    # done, no need to force push!
 
-</div>
+
+
+```
+
+---
+
+<a href="https://testmysite.io/61e5ff836a840eeeef7e78e9/bgoonz-blog.netlify.app" rel="Test My Site Results">
+![Test My Site](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/Screenshot%202022-03-30%20at%2012-37-24%20Website%20Speed%20Test%20Tool%20-%20Testmysite.io%20by%20Netlify.png?raw=true)</a>
+
+---
+
+## Web Dev Setup
 
 <details>
 
-<summary>Bash Commands</summary>
+<summary>Web Dev Setup</summary>
 
-## My Commands
+---
 
-#### Find
+title: WebDev Setup
+template: post
+subtitle: Basic Web Development Environment Setup
+excerpt: Windows Subsystem for Linux (WSL) and Ubuntu
+date: 2022-05-08T18:10:03.296Z
+image: <https://cdn-images-1.medium.com/max/800/0>*aqKP1drNHmNm34zz.jpg
+thumb_image: <https://cdn-images-1.medium.com/max/800/0>*aqKP1drNHmNm34zz.jpg
+image_position: right
+author: src/data/authors/bgoonz.yaml
+categories: - src/data/categories/js.yaml - src/data/categories/javascript.yaml
+tags: - src/data/tags/links.yaml - src/data/tags/resources.yaml
+show_author_bio: true
+related_posts: - src/pages/blog/vs-code-extensions.md - src/pages/blog/code-playgrounds-of-2021.md - src/pages/blog/adding-css-to-your-html.md - src/pages/blog/deploy-react-app-to-heroku.md
+cmseditable: true
 
-# To find files by case-insensitive extension (ex: .jpg, .JPG, .jpG)
+---
 
-find . -iname "\*.jpg"
+## Basic Web Development Environment Setup
 
-# To find directories
+Windows Subsystem for Linux (WSL) and Ubuntu
 
-find . -type d
+---
 
-# To find files
+### Basic Web Development Environment Setup
 
-find . -type f
+#### Windows Subsystem for Linux (WSL) and Ubuntu
 
-# To find files by octal permission
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*aqKP1drNHmNm34zz.jpg" class="graf-image" />
+</figure>Test if you have Ubuntu installed by typing "Ubuntu" in the search box in the bottom app bar that reads "Type here to search". If you see a search result that reads **"Ubuntu 20.04 LTS"** with "App" under it, then you have it installed.
+```
+1.  In the application search box in the bottom bar, type "PowerShell" to find the application named "Windows PowerShell"
+2.  Right-click on "Windows PowerShell" and choose "Run as administrator" from the popup menu
+3.  In the blue PowerShell window, type the following: `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`
+4.  Restart your computer
+5.  In the application search box in the bottom bar, type "Store" to find the application named "Microsoft Store"
+6.  Click "Microsoft Store"
+7.  Click the "Search" button in the upper-right corner of the window
+8.  Type in "Ubuntu"
+9.  Click "Run Linux on Windows (Get the apps)"
+10. Click the orange tile labeled **"Ubuntu"** Note that there are 3 versions in the Microsoft Store… you want the one just entitled 'Ubuntu'
+11. Click "Install"
+12. After it downloads, click "Launch"
+13. If you get the option, pin the application to the task bar. Otherwise, right-click on the orange Ubuntu icon in the task bar and choose "Pin to taskbar"
+14. When prompted to "Enter new UNIX username", type your first name with no spaces
+15. When prompted, enter and retype a password for this UNIX user (it can be the same as your Windows password)
+16. Confirm your installation by typing the command `whoami 'as in who-am-i'`followed by Enter at the prompt (it should print your first name)
+17. You need to update your packages, so type `sudo apt update` (if prompted for your password, enter it)
+18. You need to upgrade your packages, so type `sudo apt upgrade` (if prompted for your password, enter it)
+```
+### Git
 
-find . -type f -perm 777
+Git comes with Ubuntu, so there's nothing to install. However, you should configure it using the following instructions.
 
-# To find files with setuid bit set
+Open an Ubuntu terminal if you don't have one open already.
 
-find . -xdev \( -perm -4000 \) -type f -print0 | xargs -0 ls -l
+1. > You need to configure Git, so type `git config --global user.name "Your Name"` with replacing "Your Name" with your real name.
+2. > You need to configure Git, so type `git config --global user.email your@email.com` with replacing "<a href="mailto:your@email.com" class="markup--anchor markup--li-anchor">your@email.com</a>" with your real email.
 
-# To find files with extension '.txt' and remove them
+**Note: if you want git to remember your login credentials type:**
 
-find ./path/ -name '\*.txt' -exec rm '{}' \;
+    git config --global credential.helper store
 
-# To find files with extension '.txt' and look for a string into them
+### Google Chrome
 
-find ./path/ -name '\*.txt' | xargs grep 'string'
+Test if you have Chrome installed by typing "Chrome" in the search box in the bottom app bar that reads "Type here to search". If you see a search result that reads "Chrome" with "App" under it, then you have it installed. Otherwise, follow these instructions to install Google Chrome.
 
-# To find files with size bigger than 5 Mebibyte and sort them by size
+### Node.js
 
-find . -size +5M -type f -print0 | xargs -0 ls -Ssh | sort -z
+Test if you have Node.js installed by opening an Ubuntu terminal and typing `node --version`. If it reports "Command 'node' not found", then you need to follow these directions.
 
-# To find files bigger than 2 Megabyte and list them
+1. > In the Ubuntu terminal, type `sudo apt update` and press Enter
+2. > In the Ubuntu terminal, type `sudo apt install build-essential` and press Enter
+3. > In the Ubuntu terminal, type `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash` and press Enter
+4. > In the Ubuntu terminal, type `. ./.bashrc` and press Enter
+5. > In the Ubuntu terminal, type `nvm install --lts` and press Enter
+6. > Confirm that **node** is installed by typing `node --version` and seeing it print something that is not "Command not found"!
 
-find . -type f -size +200000000c -exec ls -lh {} \; | awk '{ print $9 ": " $5 }'
+### Unzip
 
-# To find files modified more than 7 days ago and list file information
+You will often have to download a zip file and unzip it. It is easier to do this from the command line. So we need to install a linux unzip utility.
 
-find . -type f -mtime +7d -ls
+In the Ubuntu terminal type: `sudo apt install unzip` and press Enter
 
-# To find symlinks owned by a user and list file information
+Mocha.js
 
-find . -type l -user <username-or-userid> -ls
+Test if you have Mocha.js installed by opening an Ubuntu terminal and typing `which mocha`. If it prints a path, then you're good. Otherwise, if it prints nothing, install Mocha.js by typing `npm install -g mocha`.
 
-# To search for and delete empty directories
+### Python 3
 
-find . -type d -empty -exec rmdir {} \;
+Ubuntu does not come with Python 3. Install it using the command `sudo apt install python3`. Test it by typing `python3 --version` and seeing it print a number.
 
-# To search for directories named build at a max depth of 2 directories
+### Note about WSL
 
-find . -maxdepth 2 -name build -type d
+As of the time of writing of this document, WSL has an issue renaming or deleting files if Visual Studio Code is open. So before doing any linux commands which manipulate files, make sure you **close** Visual Studio Code before running those commands in the Ubuntu terminal.
 
-# To search all files who are not in .git directory
+### Some other common instillations
 
-find . ! -iwholename '_.git_' -type f
+```bash
+    # Installing build essentials
+    sudo apt-get install -y build-essential libssl-dev
+    # Nodejs and NVM
+    curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
+    source ~/.profile
+    sudo nvm install 7.10.0
+    sudo nvm use 7.10.0
+    node -v
+    #nodemon
+    sudo npm install -g nodemon
+    sudo npm install -g loopback-cli
+    # Forever to run nodejs scripts forever
+    sudo npm install forever -g
+    # Git - a version control system
+    sudo apt-get update
+    sudo apt-get install -y git xclip
+    # Grunt - an automated task runner
+    sudo npm install -g grunt-cli
+    # Bower - a dependency manager
+    sudo npm install -g bower
+    # Yeoman - for generators
+    sudo npm install -g yo
+    # maven
+    sudo apt-get install maven -y
+    # Gulp - an automated task runner
+    sudo npm install -g gulp-cli
+    # Angular FullStack - My favorite MEAN boilerplate (MEAN = MongoDB, Express, Angularjs, Nodejs)
+    sudo npm install -g generator-angular-fullstack
+    # Vim, Curl, Python - Some random useful stuff
+    sudo apt-get install -y vim curl python-software-properties
+    sudo apt-get install -y python-dev, python-pip
+    sudo apt-get install -y libkrb5-dev
+    # Installing JDK and JRE
+    sudo apt-get install -y default-jre
+    sudo apt-get install -y default-jdk
+    # Archive Extractors
+    sudo apt-get install -y unace unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller
+    # FileZilla - a FTP client
+    sudo apt-get install -y filezilla
+```
 
-# To find all files that have the same node (hard link) as MY_FILE_HERE
+</details>
 
-find . -type f -samefile MY_FILE_HERE 2>/dev/null
+---
 
-# To find all files in the current directory and modify their permissions
+### Documentation Commands
 
-find . -type f -exec chmod 644 {} \;
+documentation build src/components/DocsMenu.js  -f md> ./notes/DocsMenu.md
+documentation build src/components/Footer.js  -f md> ./notes/Footer.md
+documentation build src/components/Header.js  -f md> ./notes/Header.md
+documentation build src/components/index.js  -f md> ./notes/index.md
+documentation build src/components/SectionContent.js  -f md> ./notes/SectionContent.md
+documentation build src/components/SectionDocs.js  -f md> ./notes/SectionDocs.md
+documentation build src/components/SectionHero.js  -f md> ./notes/SectionHero.md
+documentation build src/components/CtaButtons.js  -f md> ./notes/CtaButtons.md
+documentation build src/components/DocsSubmenu.js  -f md> ./notes/DocsSubmenu.md
+documentation build src/components/FormField.js  -f md> ./notes/FormField.md
+documentation build src/components/Icon.js  -f md> ./notes/Icon.md
+documentation build src/components/Layout.js  -f md> ./notes/Layout.md
+documentation build src/components/SectionCta.js  -f md> ./notes/SectionCta.md
+documentation build src/components/SectionGrid.js  -f md> ./notes/SectionGrid.md
+documentation build src/components/Submenu.js  -f md> ./notes/Submenu.md
+documentation build src/components/ActionLink.js  -f md> ./notes/ActionLink.md
 
-# 1. Remove spaces from file and folder names and then remove numbers from files and folder names
+---
+
+## Blog Content
+
+---
+
+---
+
+## Bash Cheat Sheet (MY COMMANDS)
+
+<details>
+
+<summary> Bash Cheat Sheet (MY COMMANDS) </summary
+
+## 1. Remove spaces from file and folder names and then remove numbers from files and folder names
 
 ### Description: need to : `sudo apt install rename`
 
@@ -176,7 +361,7 @@ wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e ro
 
 ###### code
 
-```bash
+````bash
 
 find . -empty -type d -print -delete
 
@@ -196,11 +381,9 @@ find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o  -name "*CHANGELOG.tx
 
 ###### code
 
-# Generalized
+## Generalized
 
-```sh
-
-
+```bash
 
 CNTX={users|orgs}; NAME={username|orgname}; PAGE=1
 curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
@@ -268,7 +451,7 @@ git init
 git add .
 git commit -m"update"
 git push -u origin gh-pages
-```
+````
 
 ```bash
 git init
@@ -351,7 +534,7 @@ find ./ -iname "*.docx" -type f -exec sh -c 'pandoc "${0}" -o "${0%.docx}.md"' {
 
 ```
 
----
+``---
 
 ## 10. Gitpod Installs
 
@@ -646,9 +829,9 @@ lastUpdated: 2020-10-28T16:19:04+02:00
 sudo sed -i '/title:/d' ./*output.md
 sudo sed -i '/firstSeen/d' ./*output.md
 sudo sed -i '/lastUpdated/d' ./*output.md
-sudo sed -i '/tags:/d' ./*output.md
+sudo sed -i '/tags:/d' ./_output.md
 
-sudo sed -i '/badstring/d' ./*
+sudo sed -i '/badstring/d' ./_
 
 sudo sed -i '/stargazers/d' ./repo.txt
 sudo sed -i '/node_modules/d' ./index.html
@@ -675,13 +858,12 @@ zip -r $1.$TSTAMP.zip $1 -x "**.git/*" -x "**node_modules/*" `shift; echo $@;`
 
 printf "\nCreated: $1.$TSTAMP.zip\n"
 
-# usage:
-# - zipdir thedir
-# - zip thedir -x "**anotherexcludedsubdir/*"    (important the double quotes to prevent glob expansion)
+## usage:
+## - zipdir thedir
+## - zip thedir -x "anotherexcludedsubdir"    (important the double quotes to prevent glob expansion)
 
-# if in windows/git-bash, add 'zip' command this way:
-# https://stackoverflow.com/a/55749636/1482990
-
+## if in windows/git-bash, add 'zip' command this way:
+## https://stackoverflow.com/a/55749636/1482990
 
 ```
 
@@ -745,7 +927,7 @@ cmd() {
   echo '<style>'
 
 echo '    a {'
-echo '      color: black;'
+echo '      color: #000000;'
 echo '    }'
 echo ''
 echo '    li {'
@@ -795,7 +977,7 @@ echo '  </style>'
 
   # awk '{print "<li>"};
 
-  # 	{print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
+  #  {print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
 
   echo ""
 
@@ -857,7 +1039,7 @@ cmd() {
   echo '<style>'
 
 echo '    a {'
-echo '      color: black;'
+echo '      color: #000000;'
 echo '    }'
 echo ''
 echo '    li {'
@@ -907,7 +1089,7 @@ echo '  </style>'
 
   # awk '{print "<li>"};
 
-  # 	{print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
+  #  {print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
 
   echo ""
 
@@ -1428,8 +1610,542 @@ find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
 find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
+```
 
-find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
+## 99. Cheat Sheet
+
+### Description
+
+> Notes:
+
+###### code
+
+```bash
+#!/bin/bash
+revert
+## SHORTCUTS and HISTORY
+
+
+CTRL+A  # move to beginning of line
+CTRL+B  # moves backward one character
+CTRL+C  # halts the current command
+CTRL+D  # deletes one character backward or logs out of current session, similar to exit
+CTRL+E  # moves to end of line
+CTRL+F  # moves forward one character
+CTRL+G  # aborts the current editing command and ring the terminal bell
+CTRL+H  # deletes one character under cursor (same as DELETE)
+CTRL+J  # same as RETURN
+CTRL+K  # deletes (kill) forward to end of line
+CTRL+L  # clears screen and redisplay the line
+CTRL+M  # same as RETURN
+CTRL+N  # next line in command history
+CTRL+O  # same as RETURN, then displays next line in history file
+CTRL+P  # previous line in command history
+CTRL+Q  # resumes suspended shell output
+CTRL+R  # searches backward
+CTRL+S  # searches forward or suspends shell output
+CTRL+T  # transposes two characters
+CTRL+U  # kills backward from point to the beginning of line
+CTRL+V  # makes the next character typed verbatim
+CTRL+W  # kills the word behind the cursor
+CTRL+X  # lists the possible filename completions of the current word
+CTRL+Y  # retrieves (yank) last item killed
+CTRL+Z  # stops the current command, resume with fg in the foreground or bg in the background
+
+ALT+B   # moves backward one word
+ALT+D   # deletes next word
+ALT+F   # moves forward one word
+ALT+H   # deletes one character backward
+ALT+T   # transposes two words
+ALT+.   # pastes last word from the last command. Pressing it repeatedly traverses through command history.
+ALT+U   # capitalizes every character from the current cursor position to the end of the word
+ALT+L   # uncapitalizes every character from the current cursor position to the end of the word
+ALT+C   # capitalizes the letter under the cursor. The cursor then moves to the end of the word.
+ALT+R   # reverts any changes to a command you've pulled from your history if you've edited it.
+ALT+?   # list possible completions to what is typed
+ALT+^   # expand line to most recent match from history
+
+CTRL+X then (   # start recording a keyboard macro
+CTRL+X then )   # finish recording keyboard macro
+CTRL+X then E   # recall last recorded keyboard macro
+CTRL+X then CTRL+E   # invoke text editor (specified by $EDITOR) on current command line then execute resultes as shell commands
+
+BACKSPACE  # deletes one character backward
+DELETE     # deletes one character under cursor
+
+history   # shows command line history
+!!        # repeats the last command
+!<n>      # refers to command line 'n'
+!<string> # refers to command starting with 'string'
+
+exit      # logs out of current session
+
+
+## BASH BASICS
+
+
+env                 # displays all environment variables
+
+echo $SHELL         # displays the shell you're using
+echo $BASH_VERSION  # displays bash version
+
+bash                # if you want to use bash (type exit to go back to your previously opened shell)
+whereis bash        # locates the binary, source and manual-page for a command
+which bash          # finds out which program is executed as 'bash' (default: /bin/bash, can change across environments)
+
+clear               # clears content on window (hide displayed lines)
+
+
+## FILE COMMANDS
+
+
+ls                            # lists your files in current directory, ls <dir> to print files in a specific directory
+ls -l                         # lists your files in 'long format', which contains the exact size of the file, who owns the file and who has the right to look at it, and when it was last modified
+ls -a                         # lists all files in 'long format', including hidden files (name beginning with '.')
+ln -s <filename> <link>       # creates symbolic link to file
+readlink <filename>           # shows where a symbolic links points to
+tree                          # show directories and subdirectories in easilly readable file tree
+mc                            # terminal file explorer (alternative to ncdu)
+touch <filename>              # creates or updates (edit) your file
+mktemp -t <filename>            # make a temp file in /tmp/ which is deleted at next boot (-d to make directory)
+cat <filename>                # prints file raw content (will not be interpreted)
+any_command > <filename>      # '>' is used to perform redirections, it will set any_command's stdout to file instead of "real stdout" (generally /dev/stdout)
+more <filename>               # shows the first part of a file (move with space and type q to quit)
+head <filename>               # outputs the first lines of file (default: 10 lines)
+tail <filename>               # outputs the last lines of file (useful with -f option) (default: 10 lines)
+vim <filename>                # opens a file in VIM (VI iMproved) text editor, will create it if it doesn't exist
+mv <filename1> <dest>         # moves a file to destination, behavior will change based on 'dest' type (dir: file is placed into dir; file: file will replace dest (tip: useful for renaming))
+cp <filename1> <dest>         # copies a file
+rm <filename>                 # removes a file
+find . -name <name> <type>    # searches for a file or a directory in the current directory and all its sub-directories by its name
+diff <filename1> <filename2>  # compares files, and shows where they differ
+wc <filename>                 # tells you how many lines, words and characters there are in a file. Use -lwc (lines, word, character) to ouput only 1 of those informations
+sort <filename>               # sorts the contents of a text file line by line in alphabetical order, use -n for numeric sort and -r for reversing order.
+sort -t -k <filename>         # sorts the contents on specific sort key field starting from 1, using the field separator t.
+rev                           # reverse string characters (hello becomes olleh)
+chmod -options <filename>     # lets you change the read, write, and execute permissions on your files (more infos: SUID, GUID)
+gzip <filename>               # compresses files using gzip algorithm
+gunzip <filename>             # uncompresses files compressed by gzip
+gzcat <filename>              # lets you look at gzipped file without actually having to gunzip it
+lpr <filename>                # prints the file
+lpq                           # checks out the printer queue
+lprm <jobnumber>              # removes something from the printer queue
+genscript                     # converts plain text files into postscript for printing and gives you some options for formatting
+dvips <filename>              # prints .dvi files (i.e. files produced by LaTeX)
+grep <pattern> <filenames>    # looks for the string in the files
+grep -r <pattern> <dir>       # search recursively for pattern in directory
+head -n file_name | tail +n   # Print nth line from file.
+head -y lines.txt | tail +x   # want to display all the lines from x to y. This includes the xth and yth lines.
+
+
+## DIRECTORY COMMANDS
+
+
+mkdir <dirname>               # makes a new directory
+rmdir <dirname>               # remove an empty directory
+rmdir -rf <dirname>           # remove a non-empty directory
+mv <dir1> <dir2>              # rename a directory from <dir1> to <dir2>
+cd                            # changes to home
+cd ..                         # changes to the parent directory
+cd <dirname>                  # changes directory
+cp -r <dir1> <dir2>           # copy <dir1> into <dir2> including sub-directories
+pwd                           # tells you where you currently are
+cd ~                          # changes to home.
+cd -                        # changes to previous working directory
+
+
+## SSH, SYSTEM INFO & NETWORK COMMANDS
+
+
+ssh user@host            # connects to host as user
+ssh -p <port> user@host  # connects to host on specified port as user
+ssh-copy-id user@host    # adds your ssh key to host for user to enable a keyed or passwordless login
+
+whoami                   # returns your username
+passwd                   # lets you change your password
+quota -v                 # shows what your disk quota is
+date                     # shows the current date and time
+cal                      # shows the month's calendar
+uptime                   # shows current uptime
+w                        # displays whois online
+finger <user>            # displays information about user
+uname -a                 # shows kernel information
+man <command>            # shows the manual for specified command
+df                       # shows disk usage
+du <filename>            # shows the disk usage of the files and directories in filename (du -s give only a total)
+last <yourUsername>      # lists your last logins
+ps -u yourusername       # lists your processes
+kill <PID>               # kills the processes with the ID you gave
+killall <processname>    # kill all processes with the name
+top                      # displays your currently active processes
+lsof                     # lists open files
+bg                       # lists stopped or background jobs ; resume a stopped job in the background
+fg                       # brings the most recent job in the foreground
+fg <job>                 # brings job to the foreground
+
+ping <host>              # pings host and outputs results
+whois <domain>           # gets whois information for domain
+dig <domain>             # gets DNS information for domain
+dig -x <host>            # reverses lookup host
+wget <file>              # downloads file
+
+time <command>             # report time consumed by command execution
+
+
+## VARIABLES
+
+
+varname=value                # defines a variable
+varname=value command        # defines a variable to be in the environment of a particular subprocess
+echo $varname                # checks a variable's value
+echo $$                      # prints process ID of the current shell
+echo $!                      # prints process ID of the most recently invoked background job
+echo $?                      # displays the exit status of the last command
+read <varname>               # reads a string from the input and assigns it to a variable
+read -p "prompt" <varname>   # same as above but outputs a prompt to ask user for value
+column -t <filename>         # display info in pretty columns (often used with pipe)
+let <varname> = <equation>   # performs mathematical calculation using operators like +, -, *, /, %
+export VARNAME=value         # defines an environment variable (will be available in subprocesses)
+
+array[0]=valA                # how to define an array
+array[1]=valB
+array[2]=valC
+array=([2]=valC [0]=valA [1]=valB)  # another way
+array=(valA valB valC)              # and another
+
+${array[i]}                  # displays array's value for this index. If no index is supplied, array element 0 is assumed
+${#array[i]}                 # to find out the length of any element in the array
+${#array[@]}                 # to find out how many values there are in the array
+
+declare -a                   # the variables are treated as arrays
+declare -f                   # uses function names only
+declare -F                   # displays function names without definitions
+declare -i                   # the variables are treated as integers
+declare -r                   # makes the variables read-only
+declare -x                   # marks the variables for export via the environment
+
+${varname:-word}             # if varname exists and isn't null, return its value; otherwise return word
+${varname:word}              # if varname exists and isn't null, return its value; otherwise return word
+${varname:=word}             # if varname exists and isn't null, return its value; otherwise set it word and then return its value
+${varname:?message}          # if varname exists and isn't null, return its value; otherwise print varname, followed by message and abort the current command or script
+${varname:+word}             # if varname exists and isn't null, return word; otherwise return null
+${varname:offset:length}     # performs substring expansion. It returns the substring of $varname starting at offset and up to length characters
+
+${variable#pattern}          # if the pattern matches the beginning of the variable's value, delete the shortest part that matches and return the rest
+${variable##pattern}         # if the pattern matches the beginning of the variable's value, delete the longest part that matches and return the rest
+${variable%pattern}          # if the pattern matches the end of the variable's value, delete the shortest part that matches and return the rest
+${variable%%pattern}         # if the pattern matches the end of the variable's value, delete the longest part that matches and return the rest
+${variable/pattern/string}   # the longest match to pattern in variable is replaced by string. Only the first match is replaced
+${variable//pattern/string}  # the longest match to pattern in variable is replaced by string. All matches are replaced
+
+${#varname}                  # returns the length of the value of the variable as a character string
+
+*(patternlist)               # matches zero or more occurrences of the given patterns
++(patternlist)               # matches one or more occurrences of the given patterns
+?(patternlist)               # matches zero or one occurrence of the given patterns
+@(patternlist)               # matches exactly one of the given patterns
+!(patternlist)               # matches anything except one of the given patterns
+
+$(UNIX command)              # command substitution: runs the command and returns standard output
+
+
+## FUNCTIONS
+
+
+## The function refers to passed arguments by position (as if they were positional parameters), that is, $1, $2, and so forth.
+## $@ is equal to "$1" "$2"... "$N", where N is the number of positional parameters. $# holds the number of positional parameters.
+
+function functname() {
+  shell commands
+}
+
+unset -f functname  # deletes a function definition
+declare -f          # displays all defined functions in your login session
+
+
+## FLOW CONTROLS
+
+
+statement1 && statement2  # and operator
+statement1 || statement2  # or operator
+
+-a                        # and operator inside a test conditional expression
+-o                        # or operator inside a test conditional expression
+
+## STRINGS
+
+str1 == str2               # str1 matches str2
+str1 != str2               # str1 does not match str2
+str1 < str2                # str1 is less than str2 (alphabetically)
+str1 > str2                # str1 is greater than str2 (alphabetically)
+str1 \> str2               # str1 is sorted after str2
+str1 \< str2               # str1 is sorted before str2
+-n str1                    # str1 is not null (has length greater than 0)
+-z str1                    # str1 is null (has length 0)
+
+## FILES
+
+-a file                   # file exists or its compilation is successful
+-d file                   # file exists and is a directory
+-e file                   # file exists; same -a
+-f file                   # file exists and is a regular file (i.e., not a directory or other special type of file)
+-r file                   # you have read permission
+-s file                   # file exists and is not empty
+-w file                   # your have write permission
+-x file                   # you have execute permission on file, or directory search permission if it is a directory
+-N file                   # file was modified since it was last read
+-O file                   # you own file
+-G file                   # file's group ID matches yours (or one of yours, if you are in multiple groups)
+file1 -nt file2           # file1 is newer than file2
+file1 -ot file2           # file1 is older than file2
+
+## NUMBERS
+
+-lt                       # less than
+-le                       # less than or equal
+-eq                       # equal
+-ge                       # greater than or equal
+-gt                       # greater than
+-ne                       # not equal
+
+if condition
+then
+  statements
+[elif condition
+  then statements...]
+[else
+  statements]
+fi
+
+for x in {1..10}
+do
+  statements
+done
+
+for name [in list]
+do
+  statements that can use $name
+done
+
+for (( initialisation ; ending condition ; update ))
+do
+  statements...
+done
+
+case expression in
+  pattern1 )
+    statements ;;
+  pattern2 )
+    statements ;;
+esac
+
+select name [in list]
+do
+  statements that can use $name
+done
+
+while condition; do
+  statements
+done
+
+until condition; do
+  statements
+done
+
+
+## COMMAND-LINE PROCESSING CYCLE
+
+
+## The default order for command lookup is functions, followed by built-ins, with scripts and executables last.
+## There are three built-ins that you can use to override this order: `command`, `builtin` and `enable`.
+
+command  # removes alias and function lookup. Only built-ins and commands found in the search path are executed
+builtin  # looks up only built-in commands, ignoring functions and commands found in PATH
+enable   # enables and disables shell built-ins
+
+eval     # takes arguments and run them through the command-line processing steps all over again
+
+
+## INPUT/OUTPUT REDIRECTORS
+
+
+cmd1|cmd2  # pipe; takes standard output of cmd1 as standard input to cmd2
+< file     # takes standard input from file
+> file     # directs standard output to file
+>> file    # directs standard output to file; append to file if it already exists
+>|file     # forces standard output to file even if noclobber is set
+n>|file    # forces output to file from file descriptor n even if noclobber is set
+<> file    # uses file as both standard input and standard output
+n<>file    # uses file as both input and output for file descriptor n
+n>file     # directs file descriptor n to file
+n<file     # takes file descriptor n from file
+n>>file    # directs file description n to file; append to file if it already exists
+n>&        # duplicates standard output to file descriptor n
+n<&        # duplicates standard input from file descriptor n
+n>&m       # file descriptor n is made to be a copy of the output file descriptor
+n<&m       # file descriptor n is made to be a copy of the input file descriptor
+&>file     # directs standard output and standard error to file
+<&-      # closes the standard input
+>&-      # closes the standard output
+n>&-     # closes the ouput from file descriptor n
+n<&-     # closes the input from file descripor n
+
+|tee <file># output command to both terminal and a file (-a to append to file)
+
+
+## PROCESS HANDLING
+
+
+## To suspend a job, type CTRL+Z while it is running. You can also suspend a job with CTRL+Y.
+## This is slightly different from CTRL+Z in that the process is only stopped when it attempts to read input from terminal.
+## Of course, to interrupt a job, type CTRL+C.
+
+myCommand &  # runs job in the background and prompts back the shell
+
+jobs         # lists all jobs (use with -l to see associated PID)
+
+fg           # brings a background job into the foreground
+fg %+        # brings most recently invoked background job
+fg %-      # brings second most recently invoked background job
+fg %N        # brings job number N
+fg %string   # brings job whose command begins with string
+fg %?string  # brings job whose command contains string
+
+kill -l               # returns a list of all signals on the system, by name and number
+kill PID              # terminates process with specified PID
+kill -s SIGKILL 4500  # sends a signal to force or terminate the process
+kill -15 913          # Ending PID 913 process with signal 15 (TERM)
+kill %1               # Where %1 is the number of job as read from 'jobs' command.
+
+ps           # prints a line of information about the current running login shell and any processes running under it
+ps -a        # selects all processes with a tty except session leaders
+
+trap cmd sig1 sig2  # executes a command when a signal is received by the script
+trap "" sig1 sig2   # ignores that signals
+trap - sig1 sig2    # resets the action taken when the signal is received to the default
+
+disown <PID|JID>    # removes the process from the list of jobs
+
+wait                # waits until all background jobs have finished
+sleep <number>      # wait # of seconds before continuing
+
+pv                  # display progress bar for data handling commands. often used with pipe like |pv
+yes                 # give yes response everytime an input is requested from script/process
+
+
+## TIPS & TRICKS
+
+
+## set an alias
+cd; nano .bash_profile
+> alias gentlenode='ssh admin@gentlenode.com -p 3404'  # add your alias in .bash_profile
+
+## to quickly go to a specific directory
+cd; nano .bashrc
+> shopt -s cdable_vars
+> export websites="/Users/mac/Documents/websites"
+
+source .bashrc
+cd $websites
+
+
+## DEBUGGING SHELL PROGRAMS
+
+
+bash -n scriptname  # don't run commands; check for syntax errors only
+set -o noexec       # alternative (set option in script)
+
+bash -v scriptname  # echo commands before running them
+set -o verbose      # alternative (set option in script)
+
+bash -x scriptname  # echo commands after command-line processing
+set -o xtrace       # alternative (set option in script)
+
+trap 'echo $varname' EXIT  # useful when you want to print out the values of variables at the point that your script exits
+
+function errtrap {
+  es=$?
+  echo "ERROR line $1: Command exited with status $es."
+}
+
+trap 'errtrap $LINENO' ERR  # is run whenever a command in the surrounding script or function exits with non-zero status
+
+function dbgtrap {
+  echo "badvar is $badvar"
+}
+
+trap dbgtrap DEBUG  # causes the trap code to be executed before every statement in a function or script
+## ...section of code in which the problem occurs...
+trap - DEBUG  # turn off the DEBUG trap
+
+function returntrap {
+  echo "A return occurred"
+}
+
+trap returntrap RETURN  # is executed each time a shell function or a script executed with the . or source commands finishes executing
+
+
+## COLORS AND BACKGROUNDS
+
+## note: \e or \x1B also work instead of \033
+## Reset
+Color_Off='\033[0m' # Text Reset
+
+## Regular Colors
+Black='\033[0;30m'  # Black
+Red='\033[0;31m'    # Red
+Green='\033[0;32m'  # Green
+Yellow='\033[0;33m' # Yellow
+Blue='\033[0;34m'   # Blue
+Purple='\033[0;35m' # Purple
+Cyan='\033[0;36m'   # Cyan
+White='\033[0;97m'  # White
+
+## Additional colors
+LGrey='\033[0;37m'  # Ligth Gray
+DGrey='\033[0;90m'  # Dark Gray
+LRed='\033[0;91m'   # Ligth Red
+LGreen='\033[0;92m' # Ligth Green
+LYellow='\033[0;93m'# Ligth Yellow
+LBlue='\033[0;94m'  # Ligth Blue
+LPurple='\033[0;95m'# Light Purple
+LCyan='\033[0;96m'  # Ligth Cyan
+
+## Bold
+BBlack='\033[1;30m' # Black
+BRed='\033[1;31m'   # Red
+BGreen='\033[1;32m' # Green
+BYellow='\033[1;33m'# Yellow
+BBlue='\033[1;34m'  # Blue
+BPurple='\033[1;35m'# Purple
+BCyan='\033[1;36m'  # Cyan
+BWhite='\033[1;37m' # White
+
+## Underline
+UBlack='\033[4;30m' # Black
+URed='\033[4;31m'   # Red
+UGreen='\033[4;32m' # Green
+UYellow='\033[4;33m'# Yellow
+UBlue='\033[4;34m'  # Blue
+UPurple='\033[4;35m'# Purple
+UCyan='\033[4;36m'  # Cyan
+UWhite='\033[4;37m' # White
+
+## Background
+On_Black='\033[40m' # Black
+On_Red='\033[41m'   # Red
+On_Green='\033[42m' # Green
+On_Yellow='\033[43m'# Yellow
+On_Blue='\033[44m'  # Blue
+On_Purple='\033[45m'# Purple
+On_Cyan='\033[46m'  # Cyan
+On_White='\033[47m' # White
+
+## Example of usage
+echo -e "${Green}This is GREEN text${Color_Off} and normal text"
+echo -e "${Red}${On_White}This is Red test on White background${Color_Off}"
+## option -e is mandatory, it enable interpretation of backslash escapes
+printf "${Red} This is red \n"
 
 ```
 
@@ -1513,40 +2229,40 @@ find . -type f -exec chmod 644 {} \;
 
 ## Wiki Nav
 
--   [Home](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
--   [add copy to code blocks.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/add-copy-to-code-blocks.md)
--   [Add site search w algolia.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Add-site-search-w-algolia.md)
--   [adding mailing list.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/adding-mailing-list.md)
--   [Adding search 2 gatsby site.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Adding-search-2-gatsby-site.md)
--   [awesome.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/awesome.md)
--   [broken links.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/broken-links.md)
--   [configure custom domain.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/configure-custom-domain.md)
--   [contentauthoring.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/contentauthoring.md)
--   [full text search w lunar.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/full-text-search-w-lunar.md)
--   [inject 4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject-4.md)
--   [inject3.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject3.md)
--   [inject4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject4.md)
--   [injected content part2.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-content-part2.md)
--   [injected js part4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-js-part4.md)
--   [injected part3.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-part3.md)
--   [links 2 embed.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/links-2-embed.md)
--   [links to remember](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/links-to-remember)
--   [Netlify Injected Content](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Netlify-Injected-Content)
--   [old version of index.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/old-version-of-index.md)
--   [optimize vscode.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/optimize-vscode.md)
--   [possibly useful snippets.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/possibly-useful-snippets.md)
--   [privacy policy.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/privacy-policy.md)
--   [random stuff.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/random-stuff.md)
--   [random.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/random.md)
--   [ref type](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/ref-type)
--   [SEO.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/SEO.md)
--   [stable points.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/stable-points.md)
--   [tech used.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/tech-used.md)
--   [Technologies Used.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Technologies-Used.md)
--   [THINGS TO EMBED.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/THINGS-TO-EMBED.md)
--   [validation report.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/validation-report.md)
--   [web archive.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/web-archive.md)
--   [wordpress vs headless cms.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/wordpress-vs-headless-cms.md)
+- [Home](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
+- [add copy to code blocks.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/add-copy-to-code-blocks.md)
+- [Add site search w algolia.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Add-site-search-w-algolia.md)
+- [adding mailing list.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/adding-mailing-list.md)
+- [Adding search 2 gatsby site.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Adding-search-2-gatsby-site.md)
+- [awesome.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/awesome.md)
+- [broken links.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/broken-links.md)
+- [configure custom domain.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/configure-custom-domain.md)
+- [contentauthoring.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/contentauthoring.md)
+- [full text search w lunar.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/full-text-search-w-lunar.md)
+- [inject 4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject-4.md)
+- [inject3.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject3.md)
+- [inject4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject4.md)
+- [injected content part2.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-content-part2.md)
+- [injected js part4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-js-part4.md)
+- [injected part3.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-part3.md)
+- [links 2 embed.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/links-2-embed.md)
+- [links to remember](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/links-to-remember)
+- [Netlify Injected Content](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Netlify-Injected-Content)
+- [old version of index.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/old-version-of-index.md)
+- [optimize vscode.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/optimize-vscode.md)
+- [possibly useful snippets.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/possibly-useful-snippets.md)
+- [privacy policy.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/privacy-policy.md)
+- [random stuff.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/random-stuff.md)
+- [random.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/random.md)
+- [ref type](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/ref-type)
+- [SEO.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/SEO.md)
+- [stable points.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/stable-points.md)
+- [tech used.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/tech-used.md)
+- [Technologies Used.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Technologies-Used.md)
+- [THINGS TO EMBED.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/THINGS-TO-EMBED.md)
+- [validation report.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/validation-report.md)
+- [web archive.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/web-archive.md)
+- [wordpress vs headless cms.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/wordpress-vs-headless-cms.md)
 
 ---
 
@@ -1554,7 +2270,6 @@ find . -type f -exec chmod 644 {} \;
 
 <details>
   <summary>Click to expand!</summary>
-
 [![@algolia**](https://avatars.githubusercontent.com/u/2034458?s=40&v=4)](https://github.com/algolia)[algolia / algoliasearch-client-javascript](https://github.com/algolia/algoliasearch-client-javascript)@algolia/client-search
 `^ 4.10.3`
 
@@ -1656,8 +2371,7 @@ find . -type f -exec chmod 644 {} \;
 ## Docs Structure
 
 <details>
-<summary>  Docs Structure  </summary>
-
+<summary>  Docs Structure</summary>
 ```
 ├── blog
 │     ├── 300-react-questions.md
@@ -2369,9 +3083,9 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
 
--   **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby**](https://www.gatsbyjs.com/tutorial/).\*\* It starts with zero assumptions about your level of ability and walks through every step of the process.
+- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby**](https://www.gatsbyjs.com/tutorial/).\*\* It starts with zero assumptions about your level of ability and walks through every step of the process.
 -
--   **To dive straight into code samples, head [to our documentation**](https://www.gatsbyjs.com/docs/).\*\* In particular, check out the *Guides*, *API Reference*, and *Advanced Tutorials* sections in the sidebar.
+- **To dive straight into code samples, head [to our documentation**](https://www.gatsbyjs.com/docs/).\*\* In particular, check out the *Guides*, *API Reference*, and *Advanced Tutorials* sections in the sidebar.
 
 ## 💫 Deploy
 
@@ -2380,6 +3094,7 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 [![Deploy with Vercel**](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/BGOONZ_BLOG_2.0.git)
 
 ---
+
 ### Gatsby With Netlify CMS
 
 This tutorial will use [gatsby-personal-starter-blog](https://github.com/thomaswang/gatsby-personal-starter-blog), a Gatsby starter based on the official [gatsby-starter-blog](/starters/gatsbyjs/gatsby-starter-blog/). The differences are that `gatsby-personal-starter-blog` is configured to run the blog on a subdirectory, `/blog`, and comes pre-installed with [Netlify CMS](https://www.netlifycms.org/) for content editing. It also adds VS Code highlighting for code blocks.
@@ -2500,24 +3215,24 @@ Inside a Gatsby project, you may see some or all of the following folders and fi
 
 [Folders](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#folders)
 
--   **`/.cache`** *Automatically generated.* This folder is an internal cache created automatically by Gatsby. The files inside this folder are not meant for modification. Should be added to the `.gitignore` file if not added already.
--   **`/plugins`** This folder hosts any project-specific ("local") plugins that aren't published as an `npm` package. Check out the [plugin docs](https://www.gatsbyjs.com/docs/plugins/) for more detail.
--   **`/public`** *Automatically generated.* The output of the build process will be exposed inside this folder. Should be added to the `.gitignore` file if not added already.
--   **`/src`** This directory will contain all of the code related to what you will see on the frontend of your site (what you see in the browser), like your site header, or a page template. "src" is a convention for "source code".
+- **`/.cache`** *Automatically generated.* This folder is an internal cache created automatically by Gatsby. The files inside this folder are not meant for modification. Should be added to the `.gitignore` file if not added already.
+- **`/plugins`** This folder hosts any project-specific ("local") plugins that aren't published as an `npm` package. Check out the [plugin docs](https://www.gatsbyjs.com/docs/plugins/) for more detail.
+- **`/public`** *Automatically generated.* The output of the build process will be exposed inside this folder. Should be added to the `.gitignore` file if not added already.
+- **`/src`** This directory will contain all of the code related to what you will see on the frontend of your site (what you see in the browser), like your site header, or a page template. "src" is a convention for "source code".
 
-    -   **`/api`** JavaScript and TypeScript files under `src/api` become functions automatically with paths based on their file name. Check out the [functions guide](https://www.gatsbyjs.com/docs/reference/functions/) for more detail.
-    -   **`/pages`** Components under `src/pages` become pages automatically with paths based on their file name. Check out the [pages recipes](https://www.gatsbyjs.com/docs/recipes/pages-layouts) for more detail.
-    -   **`/templates`** Contains templates for programmatically creating pages. Check out the [templates docs](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#page-template-components) for more detail.
-    -   **`html.js`** For custom configuration of default `.cache/default_html.js`. Check out the [custom HTML docs](https://www.gatsbyjs.com/docs/custom-html/) for more detail.
+  - **`/api`** JavaScript and TypeScript files under `src/api` become functions automatically with paths based on their file name. Check out the [functions guide](https://www.gatsbyjs.com/docs/reference/functions/) for more detail.
+  - **`/pages`** Components under `src/pages` become pages automatically with paths based on their file name. Check out the [pages recipes](https://www.gatsbyjs.com/docs/recipes/pages-layouts) for more detail.
+  - **`/templates`** Contains templates for programmatically creating pages. Check out the [templates docs](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#page-template-components) for more detail.
+  - **`html.js`** For custom configuration of default `.cache/default_html.js`. Check out the [custom HTML docs](https://www.gatsbyjs.com/docs/custom-html/) for more detail.
 
--   **`/static`** If you put a file into the static folder, it will not be processed by webpack. Instead it will be copied into the public folder untouched. Check out the [assets docs](https://www.gatsbyjs.com/docs/how-to/images-and-media/static-folder/#adding-assets-outside-of-the-module-system) for more detail.
+- **`/static`** If you put a file into the static folder, it will not be processed by webpack. Instead it will be copied into the public folder untouched. Check out the [assets docs](https://www.gatsbyjs.com/docs/how-to/images-and-media/static-folder/#adding-assets-outside-of-the-module-system) for more detail.
 
 [Files](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#files)
 
--   **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
--   **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you'd like to include, etc. Check out the [config docs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/) for more detail.
--   **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby node APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
--   **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+- **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+- **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you'd like to include, etc. Check out the [config docs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/) for more detail.
+- **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby node APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+- **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
 
 [Misc](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#miscellaneous)
 [Misc](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#miscellaneous)
@@ -2707,9 +3422,9 @@ _.get(object, path, defaultValue)
 
 This method accepts the following parameters:
 
--   **`object`**: The object in which the given path will be queried.
--   **`path`**: The path used to retrieve the value from the object.
--   **`defaultValue`**: The default value that will be returned for resolved values that are undefined.
+- **`object`**: The object in which the given path will be queried.
+- **`path`**: The path used to retrieve the value from the object.
+- **`defaultValue`**: The default value that will be returned for resolved values that are undefined.
 
 ### Return value
 
@@ -2723,28 +3438,51 @@ Let’s look at an example of the `_.get()` method in the code snippet below:
 
 In the HTML tab:
 
--   **Line 5**: We import the `lodash` script.
+- **Line 5**: We import the `lodash` script.
 
 In the JavaScript tab:
 
--   **Lines 2 to 15**: We create an object to perform a query.
+- **Lines 2 to 15**: We create an object to perform a query.
 
--   **Line 18**: We define a variable `collegeYopPath` to get the value.
+- **Line 18**: We define a variable `collegeYopPath` to get the value.
 
--   **Lines 19**: We use the `_.get()` method and pass the `object`, `collegeYopPath`, and a default value as parameters.
+- **Lines 19**: We use the `_.get()` method and pass the `object`, `collegeYopPath`, and a default value as parameters.
 
--   **Line 22**: We define a variable `falsyPath` to get the value.
+- **Line 22**: We define a variable `falsyPath` to get the value.
 
--   **Lines 23**: We use the `_.get()` method and pass the `object`, `falsyPath` and a `default value` as parameters.
+- **Lines 23**: We use the `_.get()` method and pass the `object`, `falsyPath` and a `default value` as parameters.
 
 ### Output
 
--   The `_.get()` method at **line 19** contains a valid path, and therefore the expression is resolved, and `2021` is printed on the console.
--   The `_.get()` method at **Line 23** contains an invalid path, and therefore the expression is resolved as `undefined`.
+- The `_.get()` method at **line 19** contains a valid path, and therefore the expression is resolved, and `2021` is printed on the console.
+- The `_.get()` method at **Line 23** contains an invalid path, and therefore the expression is resolved as `undefined`.
 
-## Technoloy
+```
+module.exports = {  siteMetadata: {
+    title: "My Gatsby Site",  },  
+plugins: [    { 
+     resolve: `gatsby-source-filesystem`,      
+options: {
+        name: `markdown-pages`,      
+  path: `${__dirname}/src/markdown-pages`,      
+},  
+  },  
+],}
+```
 
-![tech-stack](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/madewith.png?raw=true)
+Completing the above step means that you've "sourced" the Markdown files from the filesystem. You can now "transform" the Markdown to HTML and the YAML frontmatter to JSON.
+
+[Transform Markdown to HTML and frontmatter to data using `gatsby-transformer-remark`](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#transform-markdown-to-html-and-frontmatter-to-data-using-gatsby-transformer-remark)
+
+You'll use the plugin [`gatsby-transformer-remark`](https://www.gatsbyjs.com/plugins/gatsby-transformer-remark/) to recognize files which are Markdown and read their content. The plugin will convert the frontmatter metadata part of your Markdown files as `frontmatter` and the content part as HTML.
+
+[Install transformer plugin](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#install-transformer-plugin)
+
+`npm install gatsby-transformer-remark`
+
+[Configure plugin](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#configure-plugin)
+
+Add this to `gatsby-config.js` after the previously added `gatsby-source-filesystem`.
 
 ---
 
@@ -2761,16 +3499,16 @@ If the value is not present at the object’s specific path, it will be resolved
 ### Syntax
 
 ```js
-_.get(object, path, defaultValue)
+_.get(object, path, defaultValue);
 ```
 
 ### Parameters
 
 This method accepts the following parameters:
 
--   **`object`**: The object in which the given path will be queried.
--   **`path`**: The path used to retrieve the value from the object.
--   **`defaultValue`**: The default value that will be returned for resolved values that are undefined.
+- **`object`**: The object in which the given path will be queried.
+- **`path`**: The path used to retrieve the value from the object.
+- **`defaultValue`**: The default value that will be returned for resolved values that are undefined.
 
 ### Return value
 
@@ -2784,24 +3522,24 @@ Let’s look at an example of the `_.get()` method in the code snippet below:
 
 In the HTML tab:
 
--   **Line 5**: We import the `lodash` script.
+- **Line 5**: We import the `lodash` script.
 
 In the JavaScript tab:
 
--   **Lines 2 to 15**: We create an object to perform a query.
+- **Lines 2 to 15**: We create an object to perform a query.
 
--   **Line 18**: We define a variable `collegeYopPath` to get the value.
+- **Line 18**: We define a variable `collegeYopPath` to get the value.
 
--   **Lines 19**: We use the `_.get()` method and pass the `object`, `collegeYopPath`, and a default value as parameters.
+- **Lines 19**: We use the `_.get()` method and pass the `object`, `collegeYopPath`, and a default value as parameters.
 
--   **Line 22**: We define a variable `falsyPath` to get the value.
+- **Line 22**: We define a variable `falsyPath` to get the value.
 
--   **Lines 23**: We use the `_.get()` method and pass the `object`, `falsyPath` and a `default value` as parameters.
+- **Lines 23**: We use the `_.get()` method and pass the `object`, `falsyPath` and a `default value` as parameters.
 
 ### Output
 
--   The `_.get()` method at **line 19** contains a valid path, and therefore the expression is resolved, and `2021` is printed on the console.
--   The `_.get()` method at **Line 23** contains an invalid path, and therefore the expression is resolved as `undefined`.
+- The `_.get()` method at **line 19** contains a valid path, and therefore the expression is resolved, and `2021` is printed on the console.
+- The `_.get()` method at **Line 23** contains an invalid path, and therefore the expression is resolved as `undefined`.
 
 ---
 
@@ -2959,8 +3697,7 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
 ## Source Code
 
 <details>
-<summary>  Folder Structure (src)  </summary>
-
+<summary>  Folder Structure (src)</summary>
 ```
 .
 ├── Combined_____-_____Doc.md
@@ -3269,16 +4006,17 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
     └── withPrefix.js
 
 32 directories, 272 files
+
 ```
 
 </details>
 
 <details>
-<summary>  Click To See Component Sourcecode  </summary>
-
+<summary>  Click To See Component Sourcecode</summary>
 ## Component Structure
 
 ```
+
 .
 ├── ActionLink.js
 ├── CtaButtons.js
@@ -3305,55 +4043,62 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
 ---
 
 ```js
-import React from 'react';
-import _ from 'lodash';
+import React from "react";
+import _ from "lodash";
 
-
-import { Link, withPrefix, classNames } from '../utils';
-import Icon from './Icon';
+import { Link, withPrefix, classNames } from "../utils";
+import Icon from "./Icon";
 
 export default class ActionLink extends React.Component {
-    render() {
-        let action = _.get(this.props, 'action', null);
-        return (
-            <Link
-                to={withPrefix(_.get(action, 'url', null))}
-                {...(_.get(action, 'new_window', null) ? { target: '_blank' } : null)}
-                {...(_.get(action, 'new_window', null) || _.get(action, 'no_follow', null)
-                    ? {
-                          rel: (_.get(action, 'new_window', null) ? 'noopener ' : '') + (_.get(action, 'no_follow', null) ? 'nofollow' : '')
-                      }
-                    : null)}
-                className={classNames({
-                    button: _.get(action, 'style', null) !== 'link',
-                    'button-secondary': _.get(action, 'style', null) === 'secondary',
-                    'button-icon': _.get(action, 'style', null) === 'icon'
-                })}
-            >
-                {_.get(action, 'style', null) === 'icon' && _.get(action, 'icon_class', null) ? (
-                    <React.Fragment>
-                        <Icon {...this.props} icon={_.get(action, 'icon_class', null)} />
-                        <span className="screen-reader-text"> {_.get(action, 'label', null)}</span>
-                    </React.Fragment>
-                ) : (
-                    _.get(action, 'label', null)
-                )}
-            </Link>
-        );
-    }
+  render() {
+    let action = _.get(this.props, "action", null);
+    return (
+      <Link
+        to={withPrefix(_.get(action, "url", null))}
+        {...(_.get(action, "new_window", null) ? { target: "_blank" } : null)}
+        {...(_.get(action, "new_window", null) ||
+        _.get(action, "no_follow", null)
+          ? {
+              rel:
+                (_.get(action, "new_window", null) ? "noopener " : "") +
+                (_.get(action, "no_follow", null) ? "nofollow" : ""),
+            }
+          : null)}
+        className={classNames({
+          button: _.get(action, "style", null) !== "link",
+          "button-secondary": _.get(action, "style", null) === "secondary",
+          "button-icon": _.get(action, "style", null) === "icon",
+        })}
+      >
+        {_.get(action, "style", null) === "icon" &&
+        _.get(action, "icon_class", null) ? (
+          <React.Fragment>
+            <Icon {...this.props} icon={_.get(action, "icon_class", null)} />
+            <span className="screen-reader-text">
+              {" "}
+              {_.get(action, "label", null)}
+            </span>
+          </React.Fragment>
+        ) : (
+          _.get(action, "label", null)
+        )}
+      </Link>
+    );
+  }
 }
 ```
 
 ---
+
 ### Table of Contents
 
--   [getPage][1]
-    -   [Parameters][2]
--   [getPageByFilePath][3]
-    -   [Parameters][4]
--   [getPages][5]
-    -   [Parameters][6]
-    -   [Examples][7]
+- [getPage][1]
+  - [Parameters][2]
+- [getPageByFilePath][3]
+  - [Parameters][4]
+- [getPages][5]
+  - [Parameters][6]
+  - [Examples][7]
 
 ## getPage
 
@@ -3361,8 +4106,8 @@ Get the page at the provided `urlPath`.
 
 ### Parameters
 
--   `pages` **[Array][8]** Array of page objects. All pages must have 'url' field.
--   `urlPath` **[string][9]** The url path to find the page by
+- `pages` **[Array][8]** Array of page objects. All pages must have 'url' field.
+- `urlPath` **[string][9]** The url path to find the page by
 
 Returns **[Object][10]**
 
@@ -3372,8 +4117,8 @@ Get the page at the provided `filePath`.
 
 ### Parameters
 
--   `pages` **[Array][8]** Array of page objects. All pages must have 'url' field.
--   `filePath` **[string][9]** The file path to find the page by
+- `pages` **[Array][8]** Array of page objects. All pages must have 'url' field.
+- `filePath` **[string][9]** The file path to find the page by
 
 Returns **[Object][10]**
 
@@ -3385,8 +4130,8 @@ the page having its URL equal to `urlPath`.
 
 ### Parameters
 
--   `pages` **[Array][8]** Array of page objects. All pages must have 'url' field.
--   `urlPath` **[string][9]** The url path to filter pages by
+- `pages` **[Array][8]** Array of page objects. All pages must have 'url' field.
+- `urlPath` **[string][9]** The url path to filter pages by
 
 ### Examples
 
@@ -3420,497 +4165,675 @@ Returns **[Array][8]**
 [10]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
 
 ```js
-import React from 'react';
-import _ from 'lodash';
+import React from "react";
+import _ from "lodash";
 
-
-import { Link, withPrefix, classNames } from '../utils';
+import { Link, withPrefix, classNames } from "../utils";
 
 export default class CtaButtons extends React.Component {
-    render() {
-        let actions = _.get(this.props, 'actions', null);
-        return _.map(actions, (action, action_idx) => (
-            <Link
-                key={action_idx}
-                to={withPrefix(_.get(action, 'url', null))}
-                {...(_.get(action, 'new_window', null) ? { target: '_blank' } : null)}
-                {...(_.get(action, 'new_window', null) || _.get(action, 'no_follow', null)
-                    ? {
-                          rel: (_.get(action, 'new_window', null) ? 'noopener ' : '') + (_.get(action, 'no_follow', null) ? 'nofollow' : '')
-                      }
-                    : null)}
-                className={classNames({
-                    button: _.get(action, 'style', null) === 'primary' || _.get(action, 'style', null) === 'secondary',
-                    'button-secondary': _.get(action, 'style', null) === 'secondary'
-                })}
-            >
-                {_.get(action, 'label', null)}
-            </Link>
-        ));
-    }
+  render() {
+    let actions = _.get(this.props, "actions", null);
+    return _.map(actions, (action, action_idx) => (
+      <Link
+        key={action_idx}
+        to={withPrefix(_.get(action, "url", null))}
+        {...(_.get(action, "new_window", null) ? { target: "_blank" } : null)}
+        {...(_.get(action, "new_window", null) ||
+        _.get(action, "no_follow", null)
+          ? {
+              rel:
+                (_.get(action, "new_window", null) ? "noopener " : "") +
+                (_.get(action, "no_follow", null) ? "nofollow" : ""),
+            }
+          : null)}
+        className={classNames({
+          button:
+            _.get(action, "style", null) === "primary" ||
+            _.get(action, "style", null) === "secondary",
+          "button-secondary": _.get(action, "style", null) === "secondary",
+        })}
+      >
+        {_.get(action, "label", null)}
+      </Link>
+    ));
+  }
 }
 ```
 
 ---
 
 ```js
-import React from 'react';
-import _ from 'lodash';
+import React from "react";
+import _ from "lodash";
 
-
-import { getPage, classNames, Link, withPrefix, pathJoin, getPages } from '../utils';
-import DocsSubmenu from './DocsSubmenu';
+import {
+  getPage,
+  classNames,
+  Link,
+  withPrefix,
+  pathJoin,
+  getPages,
+} from "../utils";
+import DocsSubmenu from "./DocsSubmenu";
 
 export default class DocsMenu extends React.Component {
-    render() {
-        let site = _.get(this.props, 'site', null);
-        let page = _.get(this.props, 'page', null);
-        let root_docs_path = _.get(site, 'data.doc_sections.root_docs_path', null);
-        let root_page = getPage(this.props.pageContext.pages, root_docs_path);
-        return (
-            <nav id="docs-nav" className="docs-nav">
-                <div id="docs-nav-inside" className="docs-nav-inside sticky">
-                    <button id="docs-nav-toggle" className="docs-nav-toggle">
-                        Navigate Docs
-                        <span className="icon-angle-right" aria-hidden="true" />
-                    </button>
-                    <div className="docs-nav-menu">
-                        <ul id="docs-menu" className="docs-menu">
-                            <li
-                                className={classNames('docs-menu-item', {
-                                    current: _.get(page, 'url', null) === _.get(root_page, 'url', null)
-                                })}
-                            >
-                                <Link to={withPrefix(_.get(root_page, 'url', null))}> {_.get(root_page, 'frontmatter.title', null)}</Link>
-                            </li>
-                            {_.map(_.get(site, 'data.doc_sections.sections', null), (section, section_idx) => {
-                                let section_path = pathJoin(root_docs_path, section);
-                                let section_page = getPage(this.props.pageContext.pages, section_path);
-                                let child_pages = _.orderBy(getPages(this.props.pageContext.pages, section_path), 'frontmatter.weight');
-                                let child_count = _.size(child_pages);
-                                let has_children = child_count > 0 ? true : false;
-                                let is_current_page = _.get(page, 'url', null) === _.get(section_page, 'url', null) ? true : false;
-                                let is_active = _.get(page, 'url', null).startsWith(_.get(section_page, 'url', null));
-                                return (
-                                    <React.Fragment key={section_idx + '.1'}>
-                                        <li
-                                            key={section_idx}
-                                            className={classNames('docs-menu-item', {
-                                                'has-children': has_children,
-                                                current: is_current_page,
-                                                active: is_active
-                                            })}
-                                        >
-                                            <Link to={withPrefix(_.get(section_page, 'url', null))}> {_.get(section_page, 'frontmatter.title', null)}</Link>
-                                            {has_children && (
-                                                <React.Fragment>
-                                                    <button className="docs-submenu-toggle">
-                                                        <span className="screen-reader-text"> Submenu</span>
-                                                        <span className="icon-angle-right" aria-hidden="true" />
-                                                    </button>
-                                                    <DocsSubmenu {...this.props} child_pages={child_pages} page={page} site={site} />
-                                                </React.Fragment>
-                                            )}
-                                        </li>
-                                    </React.Fragment>
-                                );
-                            })}
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        );
-    }
+  render() {
+    let site = _.get(this.props, "site", null);
+    let page = _.get(this.props, "page", null);
+    let root_docs_path = _.get(site, "data.doc_sections.root_docs_path", null);
+    let root_page = getPage(this.props.pageContext.pages, root_docs_path);
+    return (
+      <nav id="docs-nav" className="docs-nav">
+        <div id="docs-nav-inside" className="docs-nav-inside sticky">
+          <button id="docs-nav-toggle" className="docs-nav-toggle">
+            Navigate Docs
+            <span className="icon-angle-right" aria-hidden="true" />
+          </button>
+          <div className="docs-nav-menu">
+            <ul id="docs-menu" className="docs-menu">
+              <li
+                className={classNames("docs-menu-item", {
+                  current:
+                    _.get(page, "url", null) === _.get(root_page, "url", null),
+                })}
+              >
+                <Link to={withPrefix(_.get(root_page, "url", null))}>
+                  {" "}
+                  {_.get(root_page, "frontmatter.title", null)}
+                </Link>
+              </li>
+              {_.map(
+                _.get(site, "data.doc_sections.sections", null),
+                (section, section_idx) => {
+                  let section_path = pathJoin(root_docs_path, section);
+                  let section_page = getPage(
+                    this.props.pageContext.pages,
+                    section_path
+                  );
+                  let child_pages = _.orderBy(
+                    getPages(this.props.pageContext.pages, section_path),
+                    "frontmatter.weight"
+                  );
+                  let child_count = _.size(child_pages);
+                  let has_children = child_count > 0 ? true : false;
+                  let is_current_page =
+                    _.get(page, "url", null) ===
+                    _.get(section_page, "url", null)
+                      ? true
+                      : false;
+                  let is_active = _.get(page, "url", null).startsWith(
+                    _.get(section_page, "url", null)
+                  );
+                  return (
+                    <React.Fragment key={section_idx + ".1"}>
+                      <li
+                        key={section_idx}
+                        className={classNames("docs-menu-item", {
+                          "has-children": has_children,
+                          current: is_current_page,
+                          active: is_active,
+                        })}
+                      >
+                        <Link to={withPrefix(_.get(section_page, "url", null))}>
+                          {" "}
+                          {_.get(section_page, "frontmatter.title", null)}
+                        </Link>
+                        {has_children && (
+                          <React.Fragment>
+                            <button className="docs-submenu-toggle">
+                              <span className="screen-reader-text">
+                                {" "}
+                                Submenu
+                              </span>
+                              <span
+                                className="icon-angle-right"
+                                aria-hidden="true"
+                              />
+                            </button>
+                            <DocsSubmenu
+                              {...this.props}
+                              child_pages={child_pages}
+                              page={page}
+                              site={site}
+                            />
+                          </React.Fragment>
+                        )}
+                      </li>
+                    </React.Fragment>
+                  );
+                }
+              )}
+            </ul>
+          </div>
+        </div>
+      </nav>
+    );
+  }
 }
 ```
 
 ---
 
 ```js
-import React from 'react';
-import _ from 'lodash';
+import React from "react";
+import _ from "lodash";
 
-
-import { classNames, Link, withPrefix } from '../utils';
+import { classNames, Link, withPrefix } from "../utils";
 
 export default class DocsSubmenu extends React.Component {
-    render() {
-        let child_pages = _.get(this.props, 'child_pages', null);
-        let page = _.get(this.props, 'page', null);
-        return (
-            <ul className="docs-submenu">
-                {_.map(child_pages, (child_page, child_page_idx) => (
-                    <li
-                        key={child_page_idx}
-                        className={classNames('docs-menu-item', {
-                            current: _.get(page, 'url', null) === _.get(child_page, 'url', null)
-                        })}
-                    >
-                        <Link to={withPrefix(_.get(child_page, 'url', null))}> {_.get(child_page, 'frontmatter.title', null)}</Link>
-                    </li>
-                ))}
-            </ul>
-        );
-    }
+  render() {
+    let child_pages = _.get(this.props, "child_pages", null);
+    let page = _.get(this.props, "page", null);
+    return (
+      <ul className="docs-submenu">
+        {_.map(child_pages, (child_page, child_page_idx) => (
+          <li
+            key={child_page_idx}
+            className={classNames("docs-menu-item", {
+              current:
+                _.get(page, "url", null) === _.get(child_page, "url", null),
+            })}
+          >
+            <Link to={withPrefix(_.get(child_page, "url", null))}>
+              {" "}
+              {_.get(child_page, "frontmatter.title", null)}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    );
+  }
 }
 ```
 
 ---
 
 ```js
-import _ from 'lodash';
-import React from 'react';
+import _ from "lodash";
+import React from "react";
 
-import { htmlToReact } from '../utils';
-import ActionLink from './ActionLink';
-import addScript from './../hooks/addScript';
+import { htmlToReact } from "../utils";
+import ActionLink from "./ActionLink";
+import addScript from "./../hooks/addScript";
 const Script = (props) => {
-    importScript('./../hooks/addScript.js');
+  importScript("./../hooks/addScript.js");
 };
 export default class Footer extends React.Component {
-    render() {
-        return (
-            <footer id="colophon" className="site-footer outer">
-                <div>
+  render() {
+    return (
+      <footer id="colophon" className="site-footer outer">
+        <div>
+          <center>
+            <br />
+
+            <link
+              rel="stylesheet"
+              href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css"
+            />
+
+            <br />
+
+            <table cellPadding={0} cellSpacing={0} border={0}>
+              <tbody>
+                <tr>
+                  <td
+                    style={{
+                      fontFamily: "Arial, Helvetica, sans-serif",
+                      fontSize: "7.5pt",
+                    }}
+                  >
                     <center>
-                        <br />
-
-                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
-
-                        <br />
-
-                        <table cellPadding={0} cellSpacing={0} border={0}>
-                            <tbody>
-                                <tr>
-                                    <td
-                                        style={{
-                                            fontFamily: 'Arial, Helvetica, sans-serif',
-                                            fontSize: '7.5pt'
-                                        }}
-                                    >
-                                        <center>
-                                            <table
-                                                width="95%"
-                                                cellPadding={0}
-                                                cellSpacing={0}
-                                                border={0}
-                                                style={{
-                                                    fontFamily: 'Arial, Helvetica, sans-serif',
-                                                    fontSize: '7.5pt'
-                                                }}
-                                            >
-                                                <tbody>
-                                                    <tr>
-                                                        <td
-                                                            style={{
-                                                                fontFamily: 'Arial, Helvetica, sans-serif',
-                                                                fontSize: '7.5pt'
-                                                            }}
-                                                            align="left"
-                                                        >
-                                                            <a target="_blank" href="https://search.freefind.com/siteindex.html?si=14588965">
-                                                                index
-                                                            </a>
-                                                        </td>
-                                                        <td
-                                                            style={{
-                                                                fontFamily: 'Arial, Helvetica, sans-serif',
-                                                                fontSize: '7.5pt'
-                                                            }}
-                                                            align="center"
-                                                        >
-                                                            <a target="_blank" href="https://search.freefind.com/find.html?si=14588965&m=0&p=0">
-                                                                sitemap
-                                                            </a>
-                                                        </td>
-                                                        <td
-                                                            style={{
-                                                                fontFamily: 'Arial, Helvetica, sans-serif',
-                                                                fontSize: '7.5pt'
-                                                            }}
-                                                            align="right"
-                                                        >
-                                                            <a target="_blank" href="https://search.freefind.com/find.html?si=14588965&pid=a">
-                                                                advanced
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </center>
-
-                                        <form
-                                            style={{
-                                                margin: '0px',
-                                                marginTop: '2px'
-                                            }}
-                                            action="https://search.freefind.com/find.html"
-                                            method="get"
-                                            acceptCharset="utf-8"
-                                            target="_self"
-                                        >
-                                            <input type="hidden" name="si" defaultValue={14588965} />
-                                            <input type="hidden" name="pid" defaultValue="r" />
-                                            <input type="hidden" name="n" defaultValue={0} />
-                                            <input type="hidden" name="_charset_" defaultValue />
-                                            <input type="hidden" name="bcd" defaultValue="÷" />
-                                            <input type="text" name="query" size={15} />
-                                            <input type="submit" defaultValue="search" />
-                                        </form>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td
-                                        style={{
-                                            textAlign: 'center',
-                                            fontFamily: 'Arial, Helvetica, sans-serif',
-                                            fontSize: '7.5pt',
-                                            paddingTop: '4px'
-                                        }}
-                                    >
-                                        <a
-                                            style={{
-                                                textDecoration: 'none',
-                                                color: 'transparent'
-                                            }}
-                                            href="https://www.freefind.com"
-                                            rel="nofollow"
-                                        >
-                                            search engine
-                                        </a>
-                                        <a
-                                            style={{
-                                                textDecoration: 'none',
-                                                color: 'transparent'
-                                            }}
-                                            href="https://www.freefind.com"
-                                            rel="nofollow"
-                                        >
-                                            by
-                                            <span style={{ color: 'transparent' }}> freefind</span>
-                                        </a>
-                                        {
-                                            <iframe
-                                                src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"
-                                                frameborder="0"
-                                                id="social-embed"
-                                                width="100%!important"
-                                            >
-                                                {' '}
-                                            </iframe>
-                                        }
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <a href="//pdfcrowd.com/url_to_pdf/?" onclick="if(!this.p)href+='&url='+encodeURIComponent(location.href);this.p=1">
-                            Save to PDF
-                        </a>
+                      <table
+                        width="95%"
+                        cellPadding={0}
+                        cellSpacing={0}
+                        border={0}
+                        style={{
+                          fontFamily: "Arial, Helvetica, sans-serif",
+                          fontSize: "7.5pt",
+                        }}
+                      >
+                        <tbody>
+                          <tr>
+                            <td
+                              style={{
+                                fontFamily: "Arial, Helvetica, sans-serif",
+                                fontSize: "7.5pt",
+                              }}
+                              align="left"
+                            >
+                              <a
+                                target="_blank"
+                                href="https://search.freefind.com/siteindex.html?si=14588965"
+                              >
+                                index
+                              </a>
+                            </td>
+                            <td
+                              style={{
+                                fontFamily: "Arial, Helvetica, sans-serif",
+                                fontSize: "7.5pt",
+                              }}
+                              align="center"
+                            >
+                              <a
+                                target="_blank"
+                                href="https://search.freefind.com/find.html?si=14588965&m=0&p=0"
+                              >
+                                sitemap
+                              </a>
+                            </td>
+                            <td
+                              style={{
+                                fontFamily: "Arial, Helvetica, sans-serif",
+                                fontSize: "7.5pt",
+                              }}
+                              align="right"
+                            >
+                              <a
+                                target="_blank"
+                                href="https://search.freefind.com/find.html?si=14588965&pid=a"
+                              >
+                                advanced
+                              </a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </center>
-                </div>
 
-                <div className="inner">
-                    <div id="search" className="inner">
-                        {' '}
-                    </div>
-                    <div className="site-footer-inside">
-                        <p className="site-info">
-                            {_.get(this.props, 'pageContext.site.siteMetadata.footer.content', null) && (
-                                <span className="copyright"> {htmlToReact(_.get(this.props, 'pageContext.site.siteMetadata.footer.content', null))}</span>
-                            )}
-                            {_.map(_.get(this.props, 'pageContext.site.siteMetadata.footer.links', null), (action, action_idx) => (
-                                <ActionLink key={action_idx} {...this.props} action={action} />
-                            ))}{' '}
-                        </p>
-                        {_.get(this.props, 'pageContext.site.siteMetadata.footer.has_social', null) && (
-                            <div className="social-links">
-                                {_.map(_.get(this.props, 'pageContext.site.siteMetadata.footer.social_links', null), (action, action_idx) => (
-                                    <ActionLink key={action_idx} {...this.props} action={action} />
-                                ))}{' '}
-                            </div>
-                        )}{' '}
-                    </div>
-                </div>
-            </footer>
-        );
-    }
+                    <form
+                      style={{
+                        margin: "0px",
+                        marginTop: "2px",
+                      }}
+                      action="https://search.freefind.com/find.html"
+                      method="get"
+                      acceptCharset="utf-8"
+                      target="_self"
+                    >
+                      <input type="hidden" name="si" defaultValue={14588965} />
+                      <input type="hidden" name="pid" defaultValue="r" />
+                      <input type="hidden" name="n" defaultValue={0} />
+                      <input type="hidden" name="_charset_" defaultValue />
+                      <input type="hidden" name="bcd" defaultValue="÷" />
+                      <input type="text" name="query" size={15} />
+                      <input type="submit" defaultValue="search" />
+                    </form>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    style={{
+                      textAlign: "center",
+                      fontFamily: "Arial, Helvetica, sans-serif",
+                      fontSize: "7.5pt",
+                      paddingTop: "4px",
+                    }}
+                  >
+                    <a
+                      style={{
+                        textDecoration: "none",
+                        color: "transparent",
+                      }}
+                      href="https://www.freefind.com"
+                      rel="nofollow"
+                    >
+                      search engine
+                    </a>
+                    <a
+                      style={{
+                        textDecoration: "none",
+                        color: "transparent",
+                      }}
+                      href="https://www.freefind.com"
+                      rel="nofollow"
+                    >
+                      by
+                      <span style={{ color: "transparent" }}> freefind</span>
+                    </a>
+                    {
+                      <iframe
+                        src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"
+                        frameborder="0"
+                        id="social-embed"
+                        width="100%!important"
+                      >
+                        {" "}
+                      </iframe>
+                    }
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <a
+              href="//pdfcrowd.com/url_to_pdf/?"
+              onclick="if(!this.p)href+='&url='+encodeURIComponent(location.href);this.p=1"
+            >
+              Save to PDF
+            </a>
+          </center>
+        </div>
+
+        <div className="inner">
+          <div id="search" className="inner">
+            {" "}
+          </div>
+          <div className="site-footer-inside">
+            <p className="site-info">
+              {_.get(
+                this.props,
+                "pageContext.site.siteMetadata.footer.content",
+                null
+              ) && (
+                <span className="copyright">
+                  {" "}
+                  {htmlToReact(
+                    _.get(
+                      this.props,
+                      "pageContext.site.siteMetadata.footer.content",
+                      null
+                    )
+                  )}
+                </span>
+              )}
+              {_.map(
+                _.get(
+                  this.props,
+                  "pageContext.site.siteMetadata.footer.links",
+                  null
+                ),
+                (action, action_idx) => (
+                  <ActionLink
+                    key={action_idx}
+                    {...this.props}
+                    action={action}
+                  />
+                )
+              )}{" "}
+            </p>
+            {_.get(
+              this.props,
+              "pageContext.site.siteMetadata.footer.has_social",
+              null
+            ) && (
+              <div className="social-links">
+                {_.map(
+                  _.get(
+                    this.props,
+                    "pageContext.site.siteMetadata.footer.social_links",
+                    null
+                  ),
+                  (action, action_idx) => (
+                    <ActionLink
+                      key={action_idx}
+                      {...this.props}
+                      action={action}
+                    />
+                  )
+                )}{" "}
+              </div>
+            )}{" "}
+          </div>
+        </div>
+      </footer>
+    );
+  }
 }
 ```
 
 ---
 
 ```js
-import React from 'react';
-import _ from 'lodash';
+import React from "react";
+import _ from "lodash";
 
-
-import { Link, withPrefix, classNames } from '../utils';
-import ActionLink from './ActionLink';
-import Submenu from './Submenu';
+import { Link, withPrefix, classNames } from "../utils";
+import ActionLink from "./ActionLink";
+import Submenu from "./Submenu";
 
 export default class Header extends React.Component {
-    render() {
-        return (
-            <header id="masthead" className="site-header outer">
-                {/* <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />  */}
+  render() {
+    return (
+      <header id="masthead" className="site-header outer">
+        {/* <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />  */}
 
-                <br />
+        <br />
 
-                <div className="inner">
-                    <div className="site-header-inside">
-                        <div className="site-branding">
-                            {_.get(this.props, 'pageContext.site.siteMetadata.header.logo_img', null) ? (
-                                <p className="site-logo">
-                                    <Link to={withPrefix(_.get(this.props, 'pageContext.site.siteMetadata.header.url', null) || '/')}>
-                                        <img
-                                            src={withPrefix(_.get(this.props, 'pageContext.site.siteMetadata.header.logo_img', null))}
-                                            alt={_.get(this.props, 'pageContext.site.siteMetadata.header.logo_img_alt', null)}
-                                        />
-                                    </Link>
-                                </p>
-                            ) : (
-                                <p className="site-title">
-                                    {' '}
-                                    WebDevHub
-                                    <Link to={withPrefix(_.get(this.props, 'pageContext.site.siteMetadata.header.url', null) || '/')}>
-                                        {_.get(this.props, 'pageContext.site.siteMetadata.header.title', null)}
-                                    </Link>
-                                </p>
-                            )}
-                        </div>
-                        <div id="search" className="inner">
-                            {' '}
-                        </div>
-                        {_.get(this.props, 'pageContext.site.siteMetadata.header.has_nav', null) && (
-                            <React.Fragment>
-                                <nav id="main-navigation" className="site-navigation" aria-label="Main Navigation">
-                                    <div className="site-nav-inside">
-                                        <button id="menu-close" className="menu-toggle">
-                                            <span className="screen-reader-text"> Open Menu</span>
-                                            <span className="icon-close" aria-hidden="true" />
-                                        </button>
-                                        <ul className="menu">
-                                            {_.map(_.get(this.props, 'pageContext.site.siteMetadata.header.nav_links', null), (action, action_idx) => {
-                                                let page_url = _.trim(_.get(this.props, 'pageContext.url', null), '/');
-                                                let action_url = _.trim(_.get(action, 'url', null), '/');
-                                                return (
-                                                    <li
-                                                        key={action_idx}
-                                                        className={classNames('menu-item', {
-                                                            'has-children': _.get(action, 'has_subnav', null) && _.get(action, 'subnav_links', null),
-                                                            current: page_url === action_url,
-                                                            'menu-button': _.get(action, 'style', null) !== 'link'
-                                                        })}
-                                                    >
-                                                        <ActionLink {...this.props} action={action} />
-                                                        {_.get(action, 'has_subnav', null) && _.get(action, 'subnav_links', null) && (
-                                                            <React.Fragment>
-                                                                <button className="submenu-toggle">
-                                                                    <span className="icon-angle-right" aria-hidden="true" />
-                                                                    <span className="screen-reader-text"> Sub-menu</span>
-                                                                </button>
-                                                                <Submenu
-                                                                    {...this.props}
-                                                                    submenu={_.get(action, 'subnav_links', null)}
-                                                                    menu_class={'submenu'}
-                                                                    page={this.props.pageContext}
-                                                                />
-                                                            </React.Fragment>
-                                                        )}
-                                                    </li>
-                                                );
-                                            })}
-                                        </ul>
-                                    </div>
-                                </nav>
-                                <button id="menu-open" className="menu-toggle">
-                                    <span className="screen-reader-text"> Close Menu</span>
-                                    <span className="icon-menu" aria-hidden="true" />
-                                </button>
-                            </React.Fragment>
-                        )}
-                    </div>
-                </div>
-
-                <div>
-                    <a className="github-corner" href="https://github.com/bgoonz/BGOONZ_BLOG_2.0" aria-label="View source on Github">
-                        <svg
-                            aria-hidden="true"
-                            width={40}
-                            height={40}
-                            viewBox="0 0 250 250"
-                            style={{
-                                zIndex: 100000,
-                                fill: 'black',
-                                color: '#fff',
-                                position: 'fixed',
-                                top: '0px',
-                                border: 0,
-                                left: '0px',
-                                transform: 'scale(-1.5, 1.5)'
-                            }}
-                        >
-                            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"> </path>
-                            <path
-                                className="octo-arm"
-                                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-                                fill="currentColor"
-                                style={{ transformOrigin: '130px 106px' }}
+        <div className="inner">
+          <div className="site-header-inside">
+            <div className="site-branding">
+              {_.get(
+                this.props,
+                "pageContext.site.siteMetadata.header.logo_img",
+                null
+              ) ? (
+                <p className="site-logo">
+                  <Link
+                    to={withPrefix(
+                      _.get(
+                        this.props,
+                        "pageContext.site.siteMetadata.header.url",
+                        null
+                      ) || "/"
+                    )}
+                  >
+                    <img
+                      src={withPrefix(
+                        _.get(
+                          this.props,
+                          "pageContext.site.siteMetadata.header.logo_img",
+                          null
+                        )
+                      )}
+                      alt={_.get(
+                        this.props,
+                        "pageContext.site.siteMetadata.header.logo_img_alt",
+                        null
+                      )}
+                    />
+                  </Link>
+                </p>
+              ) : (
+                <p className="site-title">
+                  {" "}
+                  WebDevHub
+                  <Link
+                    to={withPrefix(
+                      _.get(
+                        this.props,
+                        "pageContext.site.siteMetadata.header.url",
+                        null
+                      ) || "/"
+                    )}
+                  >
+                    {_.get(
+                      this.props,
+                      "pageContext.site.siteMetadata.header.title",
+                      null
+                    )}
+                  </Link>
+                </p>
+              )}
+            </div>
+            <div id="search" className="inner">
+              {" "}
+            </div>
+            {_.get(
+              this.props,
+              "pageContext.site.siteMetadata.header.has_nav",
+              null
+            ) && (
+              <React.Fragment>
+                <nav
+                  id="main-navigation"
+                  className="site-navigation"
+                  aria-label="Main Navigation"
+                >
+                  <div className="site-nav-inside">
+                    <button id="menu-close" className="menu-toggle">
+                      <span className="screen-reader-text"> Open Menu</span>
+                      <span className="icon-close" aria-hidden="true" />
+                    </button>
+                    <ul className="menu">
+                      {_.map(
+                        _.get(
+                          this.props,
+                          "pageContext.site.siteMetadata.header.nav_links",
+                          null
+                        ),
+                        (action, action_idx) => {
+                          let page_url = _.trim(
+                            _.get(this.props, "pageContext.url", null),
+                            "/"
+                          );
+                          let action_url = _.trim(
+                            _.get(action, "url", null),
+                            "/"
+                          );
+                          return (
+                            <li
+                              key={action_idx}
+                              className={classNames("menu-item", {
+                                "has-children":
+                                  _.get(action, "has_subnav", null) &&
+                                  _.get(action, "subnav_links", null),
+                                current: page_url === action_url,
+                                "menu-button":
+                                  _.get(action, "style", null) !== "link",
+                              })}
                             >
-                                {' '}
-                            </path>
-                            <path
-                                className="octo-body"
-                                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-                                fill="currentColor"
-                            >
-                                {' '}
-                            </path>
-                        </svg>
-                    </a>
-                </div>
-            </header>
-        );
-    }
+                              <ActionLink {...this.props} action={action} />
+                              {_.get(action, "has_subnav", null) &&
+                                _.get(action, "subnav_links", null) && (
+                                  <React.Fragment>
+                                    <button className="submenu-toggle">
+                                      <span
+                                        className="icon-angle-right"
+                                        aria-hidden="true"
+                                      />
+                                      <span className="screen-reader-text">
+                                        {" "}
+                                        Sub-menu
+                                      </span>
+                                    </button>
+                                    <Submenu
+                                      {...this.props}
+                                      submenu={_.get(
+                                        action,
+                                        "subnav_links",
+                                        null
+                                      )}
+                                      menu_class={"submenu"}
+                                      page={this.props.pageContext}
+                                    />
+                                  </React.Fragment>
+                                )}
+                            </li>
+                          );
+                        }
+                      )}
+                    </ul>
+                  </div>
+                </nav>
+                <button id="menu-open" className="menu-toggle">
+                  <span className="screen-reader-text"> Close Menu</span>
+                  <span className="icon-menu" aria-hidden="true" />
+                </button>
+              </React.Fragment>
+            )}
+          </div>
+        </div>
+
+        <div>
+          <a
+            className="github-corner"
+            href="https://github.com/bgoonz/BGOONZ_BLOG_2.0"
+            aria-label="View source on Github"
+          >
+            <svg
+              aria-hidden="true"
+              width={40}
+              height={40}
+              viewBox="0 0 250 250"
+              style={{
+                zIndex: 100000,
+                fill: "black",
+                color: "#fff",
+                position: "fixed",
+                top: "0px",
+                border: 0,
+                left: "0px",
+                transform: "scale(-1.5, 1.5)",
+              }}
+            >
+              <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z">
+                {" "}
+              </path>
+              <path
+                className="octo-arm"
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor"
+                style={{ transformOrigin: "130px 106px" }}
+              >
+                {" "}
+              </path>
+              <path
+                className="octo-body"
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor"
+              >
+                {" "}
+              </path>
+            </svg>
+          </a>
+        </div>
+      </header>
+    );
+  }
 }
 ```
 
 ---
 
 ```js
-import React from 'react';
-import _ from 'lodash';
+import React from "react";
+import _ from "lodash";
 
 export default class Icon extends React.Component {
-    render() {
-        let icon = _.get(this.props, 'icon', null);
-        return (
-            <svg className="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                {icon === 'dev' ? (
-                    <path d="M7.42 10.05c-.18-.16-.46-.23-.84-.23H6l.02 2.44.04 2.45.56-.02c.41 0 .63-.07.83-.26.24-.24.26-.36.26-2.2 0-1.91-.02-1.96-.29-2.18zM0 4.94v14.12h24V4.94H0zM8.56 15.3c-.44.58-1.06.77-2.53.77H4.71V8.53h1.4c1.67 0 2.16.18 2.6.9.27.43.29.6.32 2.57.05 2.23-.02 2.73-.47 3.3zm5.09-5.47h-2.47v1.77h1.52v1.28l-.72.04-.75.03v1.77l1.22.03 1.2.04v1.28h-1.6c-1.53 0-1.6-.01-1.87-.3l-.3-.28v-3.16c0-3.02.01-3.18.25-3.48.23-.31.25-.31 1.88-.31h1.64v1.3zm4.68 5.45c-.17.43-.64.79-1 .79-.18 0-.45-.15-.67-.39-.32-.32-.45-.63-.82-2.08l-.9-3.39-.45-1.67h.76c.4 0 .75.02.75.05 0 .06 1.16 4.54 1.26 4.83.04.15.32-.7.73-2.3l.66-2.52.74-.04c.4-.02.73 0 .73.04 0 .14-1.67 6.38-1.8 6.68z" />
-                ) : icon === 'facebook' ? (
-                    <path d="M23.998 12c0-6.628-5.372-12-11.999-12C5.372 0 0 5.372 0 12c0 5.988 4.388 10.952 10.124 11.852v-8.384H7.078v-3.469h3.046V9.356c0-3.008 1.792-4.669 4.532-4.669 1.313 0 2.686.234 2.686.234v2.953H15.83c-1.49 0-1.955.925-1.955 1.874V12h3.328l-.532 3.469h-2.796v8.384c5.736-.9 10.124-5.864 10.124-11.853z" />
-                ) : icon === 'github' ? (
-                    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
-                ) : icon === 'instagram' ? (
-                    <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913a5.885 5.885 0 001.384 2.126A5.868 5.868 0 004.14 23.37c.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558a5.898 5.898 0 002.126-1.384 5.86 5.86 0 001.384-2.126c.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913a5.89 5.89 0 00-1.384-2.126A5.847 5.847 0 0019.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227a3.81 3.81 0 01-.899 1.382 3.744 3.744 0 01-1.38.896c-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421a3.716 3.716 0 01-1.379-.899 3.644 3.644 0 01-.9-1.38c-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678a6.162 6.162 0 100 12.324 6.162 6.162 0 100-12.324zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405a1.441 1.441 0 01-2.88 0 1.44 1.44 0 012.88 0z" />
-                ) : icon === 'linkedin' ? (
-                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                ) : icon === 'pinterest' ? (
-                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z" />
-                ) : icon === 'reddit' ? (
-                    <path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z" />
-                ) : icon === 'twitter' ? (
-                    <path d="M23.954 4.569a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.691 8.094 4.066 6.13 1.64 3.161a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.061a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.937 4.937 0 004.604 3.417 9.868 9.868 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63a9.936 9.936 0 002.46-2.548l-.047-.02z" />
-                ) : icon === 'youtube' ? (
-                    <path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z" />
-                ) : (
-                    icon === 'vimeo' && (
-                        <path d="M23.977 6.416c-.105 2.338-1.739 5.543-4.894 9.609-3.268 4.247-6.026 6.37-8.29 6.37-1.409 0-2.578-1.294-3.553-3.881L5.322 11.4C4.603 8.816 3.834 7.522 3.01 7.522c-.179 0-.806.378-1.881 1.132L0 7.197a315.065 315.065 0 003.501-3.128C5.08 2.701 6.266 1.984 7.055 1.91c1.867-.18 3.016 1.1 3.447 3.838.465 2.953.789 4.789.971 5.507.539 2.45 1.131 3.674 1.776 3.674.502 0 1.256-.796 2.265-2.385 1.004-1.589 1.54-2.797 1.612-3.628.144-1.371-.395-2.061-1.614-2.061-.574 0-1.167.121-1.777.391 1.186-3.868 3.434-5.757 6.762-5.637 2.473.06 3.628 1.664 3.493 4.797l-.013.01z" />
-                    )
-                )}
-            </svg>
-        );
-    }
+  render() {
+    let icon = _.get(this.props, "icon", null);
+    return (
+      <svg
+        className="icon"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        {icon === "dev" ? (
+          <path d="M7.42 10.05c-.18-.16-.46-.23-.84-.23H6l.02 2.44.04 2.45.56-.02c.41 0 .63-.07.83-.26.24-.24.26-.36.26-2.2 0-1.91-.02-1.96-.29-2.18zM0 4.94v14.12h24V4.94H0zM8.56 15.3c-.44.58-1.06.77-2.53.77H4.71V8.53h1.4c1.67 0 2.16.18 2.6.9.27.43.29.6.32 2.57.05 2.23-.02 2.73-.47 3.3zm5.09-5.47h-2.47v1.77h1.52v1.28l-.72.04-.75.03v1.77l1.22.03 1.2.04v1.28h-1.6c-1.53 0-1.6-.01-1.87-.3l-.3-.28v-3.16c0-3.02.01-3.18.25-3.48.23-.31.25-.31 1.88-.31h1.64v1.3zm4.68 5.45c-.17.43-.64.79-1 .79-.18 0-.45-.15-.67-.39-.32-.32-.45-.63-.82-2.08l-.9-3.39-.45-1.67h.76c.4 0 .75.02.75.05 0 .06 1.16 4.54 1.26 4.83.04.15.32-.7.73-2.3l.66-2.52.74-.04c.4-.02.73 0 .73.04 0 .14-1.67 6.38-1.8 6.68z" />
+        ) : icon === "facebook" ? (
+          <path d="M23.998 12c0-6.628-5.372-12-11.999-12C5.372 0 0 5.372 0 12c0 5.988 4.388 10.952 10.124 11.852v-8.384H7.078v-3.469h3.046V9.356c0-3.008 1.792-4.669 4.532-4.669 1.313 0 2.686.234 2.686.234v2.953H15.83c-1.49 0-1.955.925-1.955 1.874V12h3.328l-.532 3.469h-2.796v8.384c5.736-.9 10.124-5.864 10.124-11.853z" />
+        ) : icon === "github" ? (
+          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+        ) : icon === "instagram" ? (
+          <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913a5.885 5.885 0 001.384 2.126A5.868 5.868 0 004.14 23.37c.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558a5.898 5.898 0 002.126-1.384 5.86 5.86 0 001.384-2.126c.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913a5.89 5.89 0 00-1.384-2.126A5.847 5.847 0 0019.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227a3.81 3.81 0 01-.899 1.382 3.744 3.744 0 01-1.38.896c-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421a3.716 3.716 0 01-1.379-.899 3.644 3.644 0 01-.9-1.38c-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678a6.162 6.162 0 100 12.324 6.162 6.162 0 100-12.324zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405a1.441 1.441 0 01-2.88 0 1.44 1.44 0 012.88 0z" />
+        ) : icon === "linkedin" ? (
+          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+        ) : icon === "pinterest" ? (
+          <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z" />
+        ) : icon === "reddit" ? (
+          <path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z" />
+        ) : icon === "twitter" ? (
+          <path d="M23.954 4.569a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.691 8.094 4.066 6.13 1.64 3.161a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.061a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.937 4.937 0 004.604 3.417 9.868 9.868 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63a9.936 9.936 0 002.46-2.548l-.047-.02z" />
+        ) : icon === "youtube" ? (
+          <path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z" />
+        ) : (
+          icon === "vimeo" && (
+            <path d="M23.977 6.416c-.105 2.338-1.739 5.543-4.894 9.609-3.268 4.247-6.026 6.37-8.29 6.37-1.409 0-2.578-1.294-3.553-3.881L5.322 11.4C4.603 8.816 3.834 7.522 3.01 7.522c-.179 0-.806.378-1.881 1.132L0 7.197a315.065 315.065 0 003.501-3.128C5.08 2.701 6.266 1.984 7.055 1.91c1.867-.18 3.016 1.1 3.447 3.838.465 2.953.789 4.789.971 5.507.539 2.45 1.131 3.674 1.776 3.674.502 0 1.256-.796 2.265-2.385 1.004-1.589 1.54-2.797 1.612-3.628.144-1.371-.395-2.061-1.614-2.061-.574 0-1.167.121-1.777.391 1.186-3.868 3.434-5.757 6.762-5.637 2.473.06 3.628 1.664 3.493 4.797l-.013.01z" />
+          )
+        )}
+      </svg>
+    );
+  }
 }
 ```

@@ -1,10 +1,10 @@
 ---
-title: Mini Projects 2
+title: Mini Projects
 excerpt: >-
     In this section you'll learn how to add syntax highlighting, examples,
     callouts and much more.
 seo:
-    title: Mini Projects 2
+    title: Mini Projects
     description: This is the Mini Projects page
     extra:
         - name: 'og:type'
@@ -253,7 +253,7 @@ weight: 0
 <br>
 <br>
 <br>
-<h1> Fractions Website </h1>
+<h1>  </h1>
 <br>
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://kguner-fractions-website.netlify.app/" width="1000px" height="800px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
 </iframe>
@@ -284,7 +284,7 @@ weight: 0
 <br>
 <br>
 <br>
-<h1>  Dev Journal </h1>
+<h1>   </h1>
 <br>
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://dev-journal42.netlify.app/" width="1000px" height="800px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
 </iframe>
@@ -315,7 +315,7 @@ weight: 0
 <br>
 <br>
 <br>
-<h1> Blood Sugars for  </h1>
+<h1>  </h1>
 <br>
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://sanity-gatsby-hey-sugar-5.netlify.app/" width="1000px" height="800px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
 </iframe>
@@ -346,7 +346,7 @@ weight: 0
 <br>
 <br>
 <br>
-<h1> Norwex Ecommerce  </h1>
+<h1>   </h1>
 <br>
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://friendly-amaranth-51833.netlify.app/" width="1000px" height="800px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
 </iframe>
@@ -377,7 +377,7 @@ weight: 0
 <br>
 <br>
 <br>
-<h1> Sidebar Blog </h1>
+<h1>  </h1>
 <br>
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://sidebar-blog.netlify.app/" width="1000px" height="800px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
 </iframe>
@@ -408,7 +408,7 @@ weight: 0
 <br>
 <br>
 <br>
-<h1>  Markdown Templates  </h1>
+<h1>   </h1>
 <br>
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://markdown-templates-42.netlify.app/" width="1000px" height="800px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"  frameborder="0" >
 </iframe>
@@ -422,7 +422,6 @@ weight: 0
 <br>
 <br>
 
-<<<<<<< HEAD
 <br>
 <br>
 <br>
@@ -553,5 +552,3 @@ weight: 0
 <br>
 
 <br>
-=======
->>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
