@@ -2,8 +2,8 @@
 
 <details>
 
-<summary> Bash Cheat Sheet (MY COMMANDS) </summary
-
+<summary>
+ Bash Cheat Sheet (MY COMMANDS) </summary
 
 ## 99. Cheat Sheet
 
@@ -15,7 +15,7 @@
 
 ```sh
 #!/bin/bash
-revert
+
 ## SHORTCUTS and HISTORY
 
 
@@ -542,16 +542,9 @@ printf "${Red} This is red \n"
 
 ```
 
-
-
 </details>
 
-
-
 >
-
-
-
 
 #### Find
 
@@ -572,53 +565,53 @@ find . -type f
 find . -type f -perm 777
 
 ## To find files with setuid bit set
-
+```bash
 find . -xdev \( -perm -4000 \) -type f -print0 | xargs -0 ls -l
-
+```
 ## To find files with extension '.txt' and remove them
-
+```bash
 find ./path/ -name '\*.txt' -exec rm '{}' \;
-
+```
 ## To find files with extension '.txt' and look for a string into them
-
+```bash
 find ./path/ -name '\*.txt' | xargs grep 'string'
-
+```
 ## To find files with size bigger than 5 Mebibyte and sort them by size
-
+```bash
 find . -size +5M -type f -print0 | xargs -0 ls -Ssh | sort -z
-
+```
 ## To find files bigger than 2 Megabyte and list them
-
+```bash
 find . -type f -size +200000000c -exec ls -lh {} \; | awk '{ print $9 ": " $5 }'
-
+```
 ## To find files modified more than 7 days ago and list file information
-
+```bash
 find . -type f -mtime +7d -ls
-
+```
 ## To find symlinks owned by a user and list file information
-
+```bash
 find . -type l -user <username-or-userid> -ls
-
+```
 ## To search for and delete empty directories
-
+```bash
 find . -type d -empty -exec rmdir {} \;
-
+```
 ## To search for directories named build at a max depth of 2 directories
-
+```bash
 find . -maxdepth 2 -name build -type d
-
+```
 ## To search all files who are not in .git directory
-
+```bash
 find . ! -iwholename '_.git_' -type f
-
+```
 ## To find all files that have the same node (hard link) as MY_FILE_HERE
-
+```bash
 find . -type f -samefile MY_FILE_HERE 2>/dev/null
-
+```
 ## To find all files in the current directory and modify their permissions
-
+```bash
 find . -type f -exec chmod 644 {} \;
-
+```
 ---
 
 ## 1. Remove spaces from file and folder names and then remove numbers from files and folder names
@@ -634,9 +627,9 @@ find . -name "* *" -type d | rename 's/ /_/g'
 find . -name "* *" -type f | rename 's/ /_/g'
 ```
 
-```sh
+````bash
 
-```sh
+```bash
 find $dir -type f | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
 
 find $dir -type d | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
@@ -1256,7 +1249,7 @@ cmd() {
   echo '<style>'
 
 echo '    a {'
-echo '      color: black;'
+echo '      color: #000000;'
 echo '    }'
 echo ''
 echo '    li {'
@@ -1306,7 +1299,7 @@ echo '  </style>'
 
   # awk '{print "<li>"};
 
-  # 	{print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
+  #  {print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
 
   echo ""
 
@@ -1368,7 +1361,7 @@ cmd() {
   echo '<style>'
 
 echo '    a {'
-echo '      color: black;'
+echo '      color: #000000;'
 echo '    }'
 echo ''
 echo '    li {'
@@ -1418,7 +1411,7 @@ echo '  </style>'
 
   # awk '{print "<li>"};
 
-  # 	{print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
+  #  {print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
 
   echo ""
 
@@ -1899,7 +1892,7 @@ foreach ($ZipFile in $ZipFiles) {
     Write-Progress -Activity "Unzipping to $($UnzipPath)" -PercentComplete (($progress / ($ZipFiles.Count + 1)) * 100) -CurrentOperation $ZipFile.FullName -Status "File $($Progress) of $($ZipFiles.Count)"
     $ZipFolder = $Shell.NameSpace($ZipFile.fullname)
 
-    $Location.Copyhere($ZipFolder.items(), 1040) # 1040 - No msgboxes to the user - https://msdn.microsoft.com/library/bb787866%28VS.85%29.aspx
+    $Location.Copyhere($ZipFolder.items(), 1040) # 1040 - No msgboxes to the user - http://msdn.microsoft.com/en-us/library/bb787866%28VS.85%29.aspx
     $progress++
 }
 

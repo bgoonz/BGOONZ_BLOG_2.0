@@ -1,20 +1,33 @@
 !(function (e) {
   var n = {};
+
   function t(r) {
     if (n[r]) return n[r].exports;
-    var o = (n[r] = { i: r, l: !1, exports: {} });
+    var o = (n[r] = {
+      i: r,
+      l: !1,
+      exports: {},
+    });
     return e[r].call(o.exports, o, o.exports, t), (o.l = !0), o.exports;
   }
   (t.m = e),
     (t.c = n),
     (t.d = function (e, n, r) {
-      t.o(e, n) || Object.defineProperty(e, n, { enumerable: !0, get: r });
+      t.o(e, n) ||
+        Object.defineProperty(e, n, {
+          enumerable: !0,
+          get: r,
+        });
     }),
     (t.r = function (e) {
       "undefined" != typeof Symbol &&
         Symbol.toStringTag &&
-        Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }),
-        Object.defineProperty(e, "__esModule", { value: !0 });
+        Object.defineProperty(e, Symbol.toStringTag, {
+          value: "Module",
+        }),
+        Object.defineProperty(e, "__esModule", {
+          value: !0,
+        });
     }),
     (t.t = function (e, n) {
       if ((1 & n && (e = t(e)), 8 & n)) return e;
@@ -22,7 +35,10 @@
       var r = Object.create(null);
       if (
         (t.r(r),
-        Object.defineProperty(r, "default", { enumerable: !0, value: e }),
+        Object.defineProperty(r, "default", {
+          enumerable: !0,
+          value: e,
+        }),
         2 & n && "string" != typeof e)
       )
         for (var o in e)
@@ -83,6 +99,7 @@
       o = {},
       i = [],
       M = [];
+
     function a(e, n) {
       var t,
         a,
@@ -119,10 +136,12 @@
         l
       );
     }
+
     function u(e, n) {
       for (var t in n) e[t] = n[t];
       return e;
     }
+
     function s(e, n) {
       e && ("function" == typeof e ? e(n) : (e.current = n));
     }
@@ -130,6 +149,7 @@
       "function" == typeof Promise
         ? Promise.resolve().then.bind(Promise.resolve())
         : setTimeout;
+
     function l(e, n) {
       return a(
         e.nodeName,
@@ -139,15 +159,18 @@
     }
     var N = /acit|ex(?:s|g|n|p|$)|rph|ows|mnc|ntw|ine[ch]|zoo|^ord/i,
       D = [];
+
     function g(e) {
       !e._dirty &&
         (e._dirty = !0) &&
         1 == D.push(e) &&
         (o.debounceRendering || c)(y);
     }
+
     function y() {
       for (var e; (e = D.pop()); ) e._dirty && S(e);
     }
+
     function j(e, n, t) {
       return "string" == typeof n || "number" == typeof n
         ? void 0 !== e.splitText
@@ -155,12 +178,14 @@
         ? !e._componentConstructor && z(e, n.nodeName)
         : t || e._componentConstructor === n.nodeName;
     }
+
     function z(e, n) {
       return (
         e.normalizedNodeName === n ||
         e.nodeName.toLowerCase() === n.toLowerCase()
       );
     }
+
     function T(e) {
       var n = u({}, e.attributes);
       n.children = e.children;
@@ -168,10 +193,12 @@
       if (void 0 !== t) for (var r in t) void 0 === n[r] && (n[r] = t[r]);
       return n;
     }
+
     function f(e) {
       var n = e.parentNode;
       n && n.removeChild(e);
     }
+
     function A(e, n, t, r, o) {
       if (("className" === n && (n = "class"), "key" === n));
       else if ("ref" === n) s(t, null), s(r, e);
@@ -224,6 +251,7 @@
         }
       else e.className = r || "";
     }
+
     function d(e) {
       return this._listeners[e.type]((o.event && o.event(e)) || e);
     }
@@ -231,11 +259,13 @@
       E = 0,
       w = !1,
       I = !1;
+
     function O() {
       for (var e; (e = p.shift()); )
         o.afterMount && o.afterMount(e),
           e.componentDidMount && e.componentDidMount();
     }
+
     function x(e, n, t, r, o, i) {
       E++ ||
         ((w = null != o && void 0 !== o.ownerSVGElement),
@@ -247,6 +277,7 @@
         M
       );
     }
+
     function L(e, n, t, r, o) {
       var i = e,
         M = w;
@@ -390,6 +421,7 @@
         i
       );
     }
+
     function h(e, n) {
       var t = e._component;
       t
@@ -398,6 +430,7 @@
           (!1 !== n && null != e.__preactattr_) || f(e),
           v(e));
     }
+
     function v(e) {
       for (e = e.lastChild; e; ) {
         var n = e.previousSibling;
@@ -405,6 +438,7 @@
       }
     }
     var m = [];
+
     function b(e, n, t) {
       var r,
         o = m.length;
@@ -419,9 +453,11 @@
           return (r.nextBase = m[o].nextBase), m.splice(o, 1), r;
       return r;
     }
+
     function k(e, n, t) {
       return this.constructor(e, t);
     }
+
     function C(e, n, t, r, i) {
       e._disable ||
         ((e._disable = !0),
@@ -445,6 +481,7 @@
             : S(e, 1, i)),
         s(e.__ref, e));
     }
+
     function S(e, n, t, r) {
       if (!e._disable) {
         var i,
@@ -531,6 +568,7 @@
         E || r || O();
       }
     }
+
     function U(e) {
       o.beforeUnmount && o.beforeUnmount(e);
       var n = e.base;
@@ -548,6 +586,7 @@
           v(n)),
         s(e.__ref, null);
     }
+
     function Y(e, n) {
       (this._dirty = !0),
         (this.context = n),
@@ -555,9 +594,11 @@
         (this.state = this.state || {}),
         (this._renderCallbacks = []);
     }
+
     function Q(e, n, t) {
       return x(t, e, {}, !1, n, !1);
     }
+
     function _() {
       return {};
     }
@@ -784,12 +825,15 @@
         var r = [];
         Object.freeze(r);
         var o = {};
+
         function i() {
           return ++Ye.mobxGuid;
         }
+
         function M(e) {
           throw (a(!1, e), "X");
         }
+
         function a(e, n) {
           if (!e)
             throw new Error(
@@ -799,6 +843,7 @@
             );
         }
         Object.freeze(o);
+
         function u(e) {
           var n = !1;
           return function () {
@@ -806,14 +851,17 @@
           };
         }
         var s = function () {};
+
         function c(e) {
           return null !== e && "object" == typeof e;
         }
+
         function l(e) {
           if (null === e || "object" != typeof e) return !1;
           var n = Object.getPrototypeOf(e);
           return n === Object.prototype || null === n;
         }
+
         function N(e, n, t) {
           Object.defineProperty(e, n, {
             enumerable: !1,
@@ -822,6 +870,7 @@
             value: t,
           });
         }
+
         function D(e, n) {
           var t = "isMobX" + e;
           return (
@@ -831,15 +880,19 @@
             }
           );
         }
+
         function g(e) {
           return Array.isArray(e) || zt(e);
         }
+
         function y(e) {
           return e instanceof Map;
         }
+
         function j(e) {
           return e instanceof Set;
         }
+
         function z(e) {
           var n = new Set();
           for (var t in e) n.add(t);
@@ -850,9 +903,11 @@
             Array.from(n)
           );
         }
+
         function T(e) {
           return e && e.toString ? e.toString() : new String(e).toString();
         }
+
         function f(e) {
           return null === e ? null : "object" == typeof e ? "" + e : e;
         }
@@ -915,6 +970,7 @@
             );
           })(),
           E = D("Atom", p);
+
         function w(e, n, t) {
           void 0 === n && (n = s), void 0 === t && (t = s);
           var r = new p(e);
@@ -937,7 +993,9 @@
           O = function (e, n) {
             return (O =
               Object.setPrototypeOf ||
-              ({ __proto__: [] } instanceof Array &&
+              ({
+                __proto__: [],
+              } instanceof Array &&
                 function (e, n) {
                   e.__proto__ = n;
                 }) ||
@@ -956,17 +1014,18 @@ WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE,
 MERCHANTABLITY OR NON-INFRINGEMENT.
 See the Apache Version 2.0 License for specific language governing permissions
 and limitations under the License.
-***************************************************************************** */ var x =
-          function () {
-            return (x =
-              Object.assign ||
-              function (e) {
-                for (var n, t = 1, r = arguments.length; t < r; t++)
-                  for (var o in (n = arguments[t]))
-                    Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o]);
-                return e;
-              }).apply(this, arguments);
-          };
+***************************************************************************** */
+        var x = function () {
+          return (x =
+            Object.assign ||
+            function (e) {
+              for (var n, t = 1, r = arguments.length; t < r; t++)
+                for (var o in (n = arguments[t]))
+                  Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o]);
+              return e;
+            }).apply(this, arguments);
+        };
+
         function L(e) {
           var n = "function" == typeof Symbol && e[Symbol.iterator],
             t = 0;
@@ -976,11 +1035,15 @@ and limitations under the License.
                 next: function () {
                   return (
                     e && t >= e.length && (e = void 0),
-                    { value: e && e[t++], done: !e }
+                    {
+                      value: e && e[t++],
+                      done: !e,
+                    }
                   );
                 },
               };
         }
+
         function h(e, n) {
           var t = "function" == typeof Symbol && e[Symbol.iterator];
           if (!t) return e;
@@ -992,7 +1055,9 @@ and limitations under the License.
             for (; (void 0 === n || n-- > 0) && !(r = i.next()).done; )
               M.push(r.value);
           } catch (e) {
-            o = { error: e };
+            o = {
+              error: e,
+            };
           } finally {
             try {
               r && !r.done && (t = i.return) && t.call(i);
@@ -1002,6 +1067,7 @@ and limitations under the License.
           }
           return M;
         }
+
         function v() {
           for (var e = [], n = 0; n < arguments.length; n++)
             e = e.concat(h(arguments[n]));
@@ -1011,6 +1077,7 @@ and limitations under the License.
           b = Symbol("mobx pending decorators"),
           k = {},
           C = {};
+
         function S(e, n) {
           var t = n ? k : C;
           return (
@@ -1027,6 +1094,7 @@ and limitations under the License.
             })
           );
         }
+
         function U(e) {
           var n, t;
           if (!0 !== e[m]) {
@@ -1046,7 +1114,9 @@ and limitations under the License.
                   );
                 }
               } catch (e) {
-                n = { error: e };
+                n = {
+                  error: e,
+                };
               } finally {
                 try {
                   M && !M.done && (t = i.return) && t.call(i);
@@ -1057,6 +1127,7 @@ and limitations under the License.
             }
           }
         }
+
         function Y(e, n) {
           return function () {
             var t,
@@ -1082,6 +1153,7 @@ and limitations under the License.
               : ((t = Array.prototype.slice.call(arguments)), o);
           };
         }
+
         function Q(e) {
           return (
             ((2 === e.length || 3 === e.length) &&
@@ -1089,22 +1161,33 @@ and limitations under the License.
             (4 === e.length && !0 === e[3])
           );
         }
+
         function _(e, n, t) {
           return Un(e)
             ? e
             : Array.isArray(e)
-            ? q.array(e, { name: t })
+            ? q.array(e, {
+                name: t,
+              })
             : l(e)
-            ? q.object(e, void 0, { name: t })
+            ? q.object(e, void 0, {
+                name: t,
+              })
             : y(e)
-            ? q.map(e, { name: t })
+            ? q.map(e, {
+                name: t,
+              })
             : j(e)
-            ? q.set(e, { name: t })
+            ? q.set(e, {
+                name: t,
+              })
             : e;
         }
+
         function B(e) {
           return e;
         }
+
         function P(e) {
           a(e);
           var n = Y(!0, function (n, t, r, o, i) {
@@ -1118,12 +1201,22 @@ and limitations under the License.
             t = ("undefined" != typeof process && process.env, n);
           return (t.enhancer = e), t;
         }
-        var R = { deep: !0, name: void 0, defaultDecorator: void 0, proxy: !0 };
+        var R = {
+          deep: !0,
+          name: void 0,
+          defaultDecorator: void 0,
+          proxy: !0,
+        };
+
         function Z(e) {
           return null == e
             ? R
             : "string" == typeof e
-            ? { name: e, deep: !0, proxy: !0 }
+            ? {
+                name: e,
+                deep: !0,
+                proxy: !0,
+              }
             : e;
         }
         Object.freeze(R);
@@ -1132,19 +1225,32 @@ and limitations under the License.
             return null == e || mt(e) || zt(e) || dt(e) || wt(e)
               ? e
               : Array.isArray(e)
-              ? q.array(e, { name: t, deep: !1 })
+              ? q.array(e, {
+                  name: t,
+                  deep: !1,
+                })
               : l(e)
-              ? q.object(e, void 0, { name: t, deep: !1 })
+              ? q.object(e, void 0, {
+                  name: t,
+                  deep: !1,
+                })
               : y(e)
-              ? q.map(e, { name: t, deep: !1 })
+              ? q.map(e, {
+                  name: t,
+                  deep: !1,
+                })
               : j(e)
-              ? q.set(e, { name: t, deep: !1 })
+              ? q.set(e, {
+                  name: t,
+                  deep: !1,
+                })
               : M(!1);
           }),
           W = P(B),
           V = P(function (e, n, t) {
             return Ut(e, n) ? n : e;
           });
+
         function J(e) {
           return e.defaultDecorator
             ? e.defaultDecorator.enhancer
@@ -1206,6 +1312,7 @@ and limitations under the License.
             if (r !== e) return r;
             M(!1);
           };
+
         function X(e) {
           M(
             "Expected one or two arguments to observable." +
@@ -1224,9 +1331,22 @@ and limitations under the License.
             var i = t.get,
               M = t.set,
               a = o[0] || {};
-            Ot(e).addComputedProp(e, n, x({ get: i, set: M, context: e }, a));
+            Ot(e).addComputedProp(
+              e,
+              n,
+              x(
+                {
+                  get: i,
+                  set: M,
+                  context: e,
+                },
+                a
+              )
+            );
           }),
-          ne = ee({ equals: I.structural }),
+          ne = ee({
+            equals: I.structural,
+          }),
           te = function (e, n, t) {
             if ("string" == typeof n) return ee.apply(null, arguments);
             if (null !== e && "object" == typeof e && 1 === arguments.length)
@@ -1254,9 +1374,11 @@ and limitations under the License.
         var re = function (e) {
           this.cause = e;
         };
+
         function oe(e) {
           return e instanceof re;
         }
+
         function ie(e) {
           switch (e.dependenciesState) {
             case K.UP_TO_DATE:
@@ -1285,9 +1407,11 @@ and limitations under the License.
               return ye(e), Ne(t), ge(n), !1;
           }
         }
+
         function Me() {
           return null !== Ye.trackingDerivation;
         }
+
         function ae(e) {
           var n = e.observers.size > 0;
           Ye.computationDepth > 0 && n && M(!1),
@@ -1295,6 +1419,7 @@ and limitations under the License.
               (!n && "strict" !== Ye.enforceActions) ||
               M(!1);
         }
+
         function ue(e, n, t) {
           var r = De(!0);
           ye(e),
@@ -1343,12 +1468,14 @@ and limitations under the License.
             o
           );
         }
+
         function se(e) {
           var n = e.observing;
           e.observing = [];
           for (var t = n.length; t--; ) Pe(n[t], e);
           e.dependenciesState = K.NOT_TRACKING;
         }
+
         function ce(e) {
           var n = le();
           try {
@@ -1357,20 +1484,25 @@ and limitations under the License.
             Ne(n);
           }
         }
+
         function le() {
           var e = Ye.trackingDerivation;
           return (Ye.trackingDerivation = null), e;
         }
+
         function Ne(e) {
           Ye.trackingDerivation = e;
         }
+
         function De(e) {
           var n = Ye.allowStateReads;
           return (Ye.allowStateReads = e), n;
         }
+
         function ge(e) {
           Ye.allowStateReads = e;
         }
+
         function ye(e) {
           if (e.dependenciesState !== K.UP_TO_DATE) {
             e.dependenciesState = K.UP_TO_DATE;
@@ -1382,12 +1514,14 @@ and limitations under the License.
           ze = 1,
           Te = Object.getOwnPropertyDescriptor(function () {}, "name");
         Te && Te.configurable;
+
         function fe(e, n, t) {
           var r = function () {
             return Ae(e, n, t || this, arguments);
           };
           return (r.isMobxAction = !0), r;
         }
+
         function Ae(e, n, t, r) {
           var o = de(e, t, r);
           try {
@@ -1398,6 +1532,7 @@ and limitations under the License.
             pe(o);
           }
         }
+
         function de(e, n, t) {
           var r = 0,
             o = le();
@@ -1413,6 +1548,7 @@ and limitations under the License.
           };
           return (je = i.actionId), i;
         }
+
         function pe(e) {
           je !== e.actionId &&
             M("invalid action stack. did you forget to finish an action?"),
@@ -1425,6 +1561,7 @@ and limitations under the License.
             e.notifySpy,
             (Ye.suppressReactionErrors = !1);
         }
+
         function Ee(e, n) {
           var t,
             r = we(e);
@@ -1435,13 +1572,16 @@ and limitations under the License.
           }
           return t;
         }
+
         function we(e) {
           var n = Ye.allowStateChanges;
           return (Ye.allowStateChanges = e), n;
         }
+
         function Ie(e) {
           Ye.allowStateChanges = e;
         }
+
         function Oe(e) {
           var n,
             t = Ye.computationDepth;
@@ -1689,7 +1829,12 @@ and limitations under the License.
                   var i = t.get();
                   if (!r || n) {
                     var M = le();
-                    e({ type: "update", object: t, newValue: i, oldValue: o }),
+                    e({
+                      type: "update",
+                      object: t,
+                      newValue: i,
+                      oldValue: o,
+                    }),
                       Ne(M);
                   }
                   (r = !1), (o = i);
@@ -1748,6 +1893,7 @@ and limitations under the License.
               (this.suppressReactionErrors = !1);
           },
           ke = {};
+
         function Ce() {
           return "undefined" != typeof window
             ? window
@@ -1782,29 +1928,36 @@ and limitations under the License.
                   new be())
             );
           })();
+
         function Qe() {
           return Ye;
         }
+
         function _e() {
           var e = new be();
           for (var n in e) -1 === me.indexOf(n) && (Ye[n] = e[n]);
           Ye.allowStateChanges = !Ye.enforceActions;
         }
+
         function Be(e, n) {
           e.observers.add(n),
             e.lowestObserverState > n.dependenciesState &&
               (e.lowestObserverState = n.dependenciesState);
         }
+
         function Pe(e, n) {
           e.observers.delete(n), 0 === e.observers.size && Re(e);
         }
+
         function Re(e) {
           !1 === e.isPendingUnobservation &&
             ((e.isPendingUnobservation = !0), Ye.pendingUnobservations.push(e));
         }
+
         function Ze() {
           Ye.inBatch++;
         }
+
         function Ge() {
           if (0 == --Ye.inBatch) {
             qe();
@@ -1819,6 +1972,7 @@ and limitations under the License.
             Ye.pendingUnobservations = [];
           }
         }
+
         function He(e) {
           var n = Ye.trackingDerivation;
           return null !== n
@@ -1830,6 +1984,7 @@ and limitations under the License.
               !0)
             : (0 === e.observers.size && Ye.inBatch > 0 && Re(e), !1);
         }
+
         function We(e, n) {
           if (
             (console.log(
@@ -1965,6 +2120,7 @@ and limitations under the License.
             e
           );
         })();
+
         function Je(e) {
           return (
             Ye.globalReactionErrorHandlers.push(e),
@@ -1977,9 +2133,11 @@ and limitations under the License.
         var Fe = function (e) {
           return e();
         };
+
         function qe() {
           Ye.inBatch > 0 || Ye.isRunningReactions || Fe(Xe);
         }
+
         function Xe() {
           Ye.isRunningReactions = !0;
           for (var e = Ye.pendingReactions, n = 0; e.length > 0; ) {
@@ -1995,6 +2153,7 @@ and limitations under the License.
           Ye.isRunningReactions = !1;
         }
         var Ke = D("Reaction", Ve);
+
         function $e(e) {
           var n = Fe;
           Fe = function (t) {
@@ -2003,15 +2162,18 @@ and limitations under the License.
             });
           };
         }
+
         function en(e) {
           return (
             console.warn("[mobx.spy] Is a no-op in production builds"),
             function () {}
           );
         }
+
         function nn() {
           M(!1);
         }
+
         function tn(e) {
           return function (n, t, r) {
             if (r) {
@@ -2035,6 +2197,7 @@ and limitations under the License.
             return rn(e).apply(this, arguments);
           };
         }
+
         function rn(e) {
           return function (n, t, r) {
             Object.defineProperty(n, t, {
@@ -2058,6 +2221,7 @@ and limitations under the License.
             ? tn(n).apply(null, arguments)
             : void N(e, n, fe(e.name || n, t.value, this));
         };
+
         function Mn(e, n) {
           return Ae(
             "string" == typeof e ? e : e.name || "<unnamed action>",
@@ -2066,12 +2230,15 @@ and limitations under the License.
             void 0
           );
         }
+
         function an(e) {
           return "function" == typeof e && !0 === e.isMobxAction;
         }
+
         function un(e, n, t) {
           N(e, n, fe(n, t.bind(e)));
         }
+
         function sn(e, n) {
           void 0 === n && (n = o);
           var t,
@@ -2101,6 +2268,7 @@ and limitations under the License.
               n.requiresObservable
             );
           }
+
           function u() {
             e(t);
           }
@@ -2132,6 +2300,7 @@ and limitations under the License.
         var cn = function (e) {
           return e();
         };
+
         function ln(e) {
           return e.scheduler
             ? e.scheduler
@@ -2141,6 +2310,7 @@ and limitations under the License.
               }
             : cn;
         }
+
         function Nn(e, n, t) {
           void 0 === t && (t = o);
           var r,
@@ -2174,6 +2344,7 @@ and limitations under the License.
               t.onError,
               t.requiresObservable
             );
+
           function j() {
             if (((D = !1), !y.isDisposed)) {
               var n = !1;
@@ -2188,12 +2359,15 @@ and limitations under the License.
           }
           return y.schedule(), y.getDisposer();
         }
+
         function Dn(e, n, t) {
           return yn("onBecomeObserved", e, n, t);
         }
+
         function gn(e, n, t) {
           return yn("onBecomeUnobserved", e, n, t);
         }
+
         function yn(e, n, t, r) {
           var o = "function" == typeof r ? bt(n, t) : bt(n),
             i = "function" == typeof r ? r : t,
@@ -2208,6 +2382,7 @@ and limitations under the License.
                 }
           );
         }
+
         function jn(e) {
           var n = e.enforceActions,
             t = e.computedRequiresReaction,
@@ -2269,6 +2444,7 @@ and limitations under the License.
               (Ye.disableErrorBoundaries = !!o)),
             i && $e(i);
         }
+
         function zn(e, n) {
           var t = "function" == typeof e ? e.prototype : e,
             r = function (e) {
@@ -2283,13 +2459,16 @@ and limitations under the License.
           for (var o in n) r(o);
           return e;
         }
+
         function Tn(e, n, t, r) {
           var o = fn((r = Z(r)));
           return U(e), Ot(e, r.name, o.enhancer), n && An(e, n, t, o), e;
         }
+
         function fn(e) {
           return e.defaultDecorator || (!1 === e.deep ? W : G);
         }
+
         function An(e, n, t, r) {
           var o, i;
           Ze();
@@ -2304,7 +2483,9 @@ and limitations under the License.
                 l && Object.defineProperty(e, s, l);
               }
             } catch (e) {
-              o = { error: e };
+              o = {
+                error: e,
+              };
             } finally {
               try {
                 u && !u.done && (i = a.return) && i.call(a);
@@ -2316,13 +2497,17 @@ and limitations under the License.
             Ge();
           }
         }
+
         function dn(e, n) {
           return pn(bt(e, n));
         }
+
         function pn(e) {
           var n,
             t,
-            r = { name: e.name };
+            r = {
+              name: e.name,
+            };
           return (
             e.observing &&
               e.observing.length > 0 &&
@@ -2335,11 +2520,15 @@ and limitations under the License.
             r
           );
         }
+
         function En(e, n) {
           return wn(bt(e, n));
         }
+
         function wn(e) {
-          var n = { name: e.name };
+          var n = {
+            name: e.name,
+          };
           return (
             (function (e) {
               return e.observers && e.observers.size > 0;
@@ -2353,12 +2542,15 @@ and limitations under the License.
           );
         }
         var In = 0;
+
         function On() {
           this.message = "FLOW_CANCELLED";
         }
+
         function xn(e) {
           return e instanceof On;
         }
+
         function Ln(e) {
           1 !== arguments.length &&
             M("Flow expects 1 argument and cannot be used as decorator");
@@ -2372,6 +2564,7 @@ and limitations under the License.
               a = void 0,
               u = new Promise(function (e, r) {
                 var o = 0;
+
                 function u(e) {
                   var t;
                   a = void 0;
@@ -2385,6 +2578,7 @@ and limitations under the License.
                   }
                   c(t);
                 }
+
                 function s(e) {
                   var t;
                   a = void 0;
@@ -2398,6 +2592,7 @@ and limitations under the License.
                   }
                   c(t);
                 }
+
                 function c(n) {
                   if (!n || "function" != typeof n.then)
                     return n.done
@@ -2422,9 +2617,11 @@ and limitations under the License.
             );
           };
         }
+
         function hn(e) {
           "function" == typeof e.cancel && e.cancel();
         }
+
         function vn(e, n, t) {
           var r;
           if (dt(e) || zt(e) || Le(e)) r = kt(e);
@@ -2440,6 +2637,7 @@ and limitations under the License.
                 r.dehancer = void 0;
               });
         }
+
         function mn(e, n, t) {
           return "function" == typeof t
             ? (function (e, n, t) {
@@ -2449,6 +2647,7 @@ and limitations under the License.
                 return kt(e).intercept(n);
               })(e, n);
         }
+
         function bn(e, n) {
           if (null == e) return !1;
           if (void 0 !== n) {
@@ -2459,12 +2658,15 @@ and limitations under the License.
           }
           return ve(e);
         }
+
         function kn(e) {
           return arguments.length > 1 ? M(!1) : bn(e);
         }
+
         function Cn(e, n) {
           return "string" != typeof n ? M(!1) : bn(e, n);
         }
+
         function Sn(e, n) {
           return (
             null != e &&
@@ -2473,12 +2675,15 @@ and limitations under the License.
               : mt(e) || !!e[d] || E(e) || Ke(e) || ve(e))
           );
         }
+
         function Un(e) {
           return 1 !== arguments.length && M(!1), Sn(e);
         }
+
         function Yn(e, n) {
           return "string" != typeof n ? M(!1) : Sn(e, n);
         }
+
         function Qn(e) {
           return mt(e)
             ? e[d].getKeys()
@@ -2490,6 +2695,7 @@ and limitations under the License.
               })
             : M(!1);
         }
+
         function _n(e) {
           return mt(e)
             ? Qn(e).map(function (n) {
@@ -2505,6 +2711,7 @@ and limitations under the License.
             ? e.slice()
             : M(!1);
         }
+
         function Bn(e) {
           return mt(e)
             ? Qn(e).map(function (n) {
@@ -2522,6 +2729,7 @@ and limitations under the License.
               })
             : M(!1);
         }
+
         function Pn(e, n, t) {
           if (2 !== arguments.length || wt(e))
             if (mt(e)) {
@@ -2549,6 +2757,7 @@ and limitations under the License.
             }
           }
         }
+
         function Rn(e, n) {
           if (mt(e)) e[d].remove(n);
           else if (dt(e)) e.delete(n);
@@ -2560,6 +2769,7 @@ and limitations under the License.
               e.splice(n, 1);
           }
         }
+
         function Zn(e, n) {
           return mt(e)
             ? kt(e).has(n)
@@ -2569,10 +2779,12 @@ and limitations under the License.
             ? n >= 0 && n < e.length
             : M(!1);
         }
+
         function Gn(e, n) {
           if (Zn(e, n))
             return mt(e) ? e[n] : dt(e) ? e.get(n) : zt(e) ? e[n] : M(!1);
         }
+
         function Hn(e, n, t, r) {
           return "function" == typeof t
             ? (function (e, n, t, r) {
@@ -2588,13 +2800,18 @@ and limitations under the License.
           exportMapsAsObjects: !0,
           recurseEverything: !1,
         };
+
         function Vn(e, n, t, r) {
           return r.detectCycles && e.set(n, t), t;
         }
+
         function Jn(e, n) {
           var t;
           return (
-            "boolean" == typeof n && (n = { detectCycles: n }),
+            "boolean" == typeof n &&
+              (n = {
+                detectCycles: n,
+              }),
             n || (n = Wn),
             (n.detectCycles =
               void 0 === n.detectCycles
@@ -2667,6 +2884,7 @@ and limitations under the License.
             })(e, n, t)
           );
         }
+
         function Fn() {
           for (var e = [], n = 0; n < arguments.length; n++)
             e[n] = arguments[n];
@@ -2678,6 +2896,7 @@ and limitations under the License.
             console.log("[mobx.trace] '" + r.name + "' tracing enabled"),
             (r.isTracing = t ? $.BREAK : $.LOG);
         }
+
         function qn(e) {
           switch (e.length) {
             case 0:
@@ -2688,6 +2907,7 @@ and limitations under the License.
               return bt(e[0], e[1]);
           }
         }
+
         function Xn(e, n) {
           void 0 === n && (n = void 0), Ze();
           try {
@@ -2696,11 +2916,13 @@ and limitations under the License.
             Ge();
           }
         }
+
         function Kn(e, n, t) {
           return 1 === arguments.length || (n && "object" == typeof n)
             ? et(e, n)
             : $n(e, n, t || {});
         }
+
         function $n(e, n, t) {
           var r;
           "number" == typeof t.timeout &&
@@ -2719,19 +2941,28 @@ and limitations under the License.
             }, t);
           return M;
         }
+
         function et(e, n) {
           var t;
           var r = new Promise(function (r, o) {
-            var i = $n(e, r, x(x({}, n), { onError: o }));
+            var i = $n(
+              e,
+              r,
+              x(x({}, n), {
+                onError: o,
+              })
+            );
             t = function () {
               i(), o("WHEN_CANCELLED");
             };
           });
           return (r.cancel = t), r;
         }
+
         function nt(e) {
           return e[d];
         }
+
         function tt(e) {
           return (
             "string" == typeof e || "number" == typeof e || "symbol" == typeof e
@@ -2766,13 +2997,16 @@ and limitations under the License.
             return M("Dynamic observable objects cannot be frozen"), !1;
           },
         };
+
         function ot(e) {
           var n = new Proxy(e, rt);
           return (e[d].proxy = n), n;
         }
+
         function it(e) {
           return void 0 !== e.interceptors && e.interceptors.length > 0;
         }
+
         function Mt(e, n) {
           var t = e.interceptors || (e.interceptors = []);
           return (
@@ -2783,6 +3017,7 @@ and limitations under the License.
             })
           );
         }
+
         function at(e, n) {
           var t = le();
           try {
@@ -2801,9 +3036,11 @@ and limitations under the License.
             Ne(t);
           }
         }
+
         function ut(e) {
           return void 0 !== e.changeListeners && e.changeListeners.length > 0;
         }
+
         function st(e, n) {
           var t = e.changeListeners || (e.changeListeners = []);
           return (
@@ -2814,6 +3051,7 @@ and limitations under the License.
             })
           );
         }
+
         function ct(e, n) {
           var t = le(),
             r = e.changeListeners;
@@ -2850,6 +3088,7 @@ and limitations under the License.
             return M("Observable arrays cannot be frozen"), !1;
           },
         };
+
         function Nt(e, n, t, r) {
           void 0 === t && (t = "ObservableArray@" + i()),
             void 0 === r && (r = !1);
@@ -3191,6 +3430,7 @@ and limitations under the License.
           });
         var yt,
           jt = D("ObservableArrayAdministration", Dt);
+
         function zt(e) {
           return c(e) && jt(e[d]);
         }
@@ -3255,7 +3495,11 @@ and limitations under the License.
                 var n = this;
                 if (
                   (ae(this._keysAtom), it(this)) &&
-                  !(r = at(this, { type: "delete", object: this, name: e }))
+                  !(r = at(this, {
+                    type: "delete",
+                    object: this,
+                    name: e,
+                  }))
                 )
                   return !1;
                 if (this._has(e)) {
@@ -3313,7 +3557,12 @@ and limitations under the License.
                   });
                 var r = ut(this),
                   o = r
-                    ? { type: "add", object: this, name: e, newValue: n }
+                    ? {
+                        type: "add",
+                        object: this,
+                        name: e,
+                        newValue: n,
+                      }
                     : null;
                 r && ct(this, o);
               }),
@@ -3336,7 +3585,10 @@ and limitations under the License.
                     var t = n.next(),
                       r = t.done,
                       o = t.value;
-                    return { done: r, value: r ? void 0 : e.get(o) };
+                    return {
+                      done: r,
+                      value: r ? void 0 : e.get(o),
+                    };
                   },
                 });
               }),
@@ -3348,7 +3600,10 @@ and limitations under the License.
                     var t = n.next(),
                       r = t.done,
                       o = t.value;
-                    return { done: r, value: r ? void 0 : [o, e.get(o)] };
+                    return {
+                      done: r,
+                      value: r ? void 0 : [o, e.get(o)],
+                    };
                   },
                 });
               }),
@@ -3365,7 +3620,9 @@ and limitations under the License.
                     e.call(n, u, a, this);
                   }
                 } catch (e) {
-                  t = { error: e };
+                  t = {
+                    error: e,
+                  };
                 } finally {
                   try {
                     i && !i.done && (r = o.return) && r.call(o);
@@ -3424,7 +3681,9 @@ and limitations under the License.
                         e.delete(i);
                       }
                     } catch (e) {
-                      n = { error: e };
+                      n = {
+                        error: e,
+                      };
                     } finally {
                       try {
                         o && !o.done && (t = r.return) && t.call(r);
@@ -3470,7 +3729,9 @@ and limitations under the License.
                           }
                       }
                     } catch (e) {
-                      t = { error: e };
+                      t = {
+                        error: e,
+                      };
                     } finally {
                       try {
                         N && !N.done && (r = c.return) && r.call(c);
@@ -3492,7 +3753,9 @@ and limitations under the License.
                         }
                       }
                     } catch (e) {
-                      o = { error: e };
+                      o = {
+                        error: e,
+                      };
                     } finally {
                       try {
                         z && !z.done && (i = j.return) && i.call(j);
@@ -3541,7 +3804,9 @@ and limitations under the License.
                     t["symbol" == typeof M ? M : T(M)] = a;
                   }
                 } catch (n) {
-                  e = { error: n };
+                  e = {
+                    error: n,
+                  };
                 } finally {
                   try {
                     o && !o.done && (n = r.return) && n.call(r);
@@ -3620,7 +3885,9 @@ and limitations under the License.
                         e.delete(i);
                       }
                     } catch (e) {
-                      n = { error: e };
+                      n = {
+                        error: e,
+                      };
                     } finally {
                       try {
                         o && !o.done && (t = r.return) && t.call(r);
@@ -3639,7 +3906,9 @@ and limitations under the License.
                     e.call(n, M, M, this);
                   }
                 } catch (e) {
-                  t = { error: e };
+                  t = {
+                    error: e,
+                  };
                 } finally {
                   try {
                     i && !i.done && (r = o.return) && r.call(o);
@@ -3659,7 +3928,11 @@ and limitations under the License.
                 var n = this;
                 if (
                   (ae(this._atom), it(this)) &&
-                  !(r = at(this, { type: "add", object: this, newValue: e }))
+                  !(r = at(this, {
+                    type: "add",
+                    object: this,
+                    newValue: e,
+                  }))
                 )
                   return this;
                 if (!this.has(e)) {
@@ -3667,7 +3940,13 @@ and limitations under the License.
                     n._data.add(n.enhancer(e, void 0)), n._atom.reportChanged();
                   });
                   var t = ut(this),
-                    r = t ? { type: "add", object: this, newValue: e } : null;
+                    r = t
+                      ? {
+                          type: "add",
+                          object: this,
+                          newValue: e,
+                        }
+                      : null;
                   0, t && ct(this, r);
                 }
                 return this;
@@ -3676,13 +3955,21 @@ and limitations under the License.
                 var n = this;
                 if (
                   it(this) &&
-                  !(r = at(this, { type: "delete", object: this, oldValue: e }))
+                  !(r = at(this, {
+                    type: "delete",
+                    object: this,
+                    oldValue: e,
+                  }))
                 )
                   return !1;
                 if (this.has(e)) {
                   var t = ut(this),
                     r = t
-                      ? { type: "delete", object: this, oldValue: e }
+                      ? {
+                          type: "delete",
+                          object: this,
+                          oldValue: e,
+                        }
                       : null;
                   return (
                     Xn(function () {
@@ -3710,8 +3997,13 @@ and limitations under the License.
                     return (
                       (e += 1),
                       r < t.length
-                        ? { value: [n[r], t[r]], done: !1 }
-                        : { done: !0 }
+                        ? {
+                            value: [n[r], t[r]],
+                            done: !1,
+                          }
+                        : {
+                            done: !0,
+                          }
                     );
                   },
                 });
@@ -3727,8 +4019,13 @@ and limitations under the License.
                 return _t({
                   next: function () {
                     return n < t.length
-                      ? { value: e.dehanceValue(t[n++]), done: !1 }
-                      : { done: !0 };
+                      ? {
+                          value: e.dehanceValue(t[n++]),
+                          done: !1,
+                        }
+                      : {
+                          done: !0,
+                        };
                   },
                 });
               }),
@@ -3983,7 +4280,9 @@ and limitations under the License.
                     i[1] instanceof xe && t.push(M);
                   }
                 } catch (n) {
-                  e = { error: n };
+                  e = {
+                    error: n,
+                  };
                 } finally {
                   try {
                     o && !o.done && (n = r.return) && n.call(r);
@@ -3996,6 +4295,7 @@ and limitations under the License.
               e
             );
           })();
+
         function Ot(e, n, t) {
           if (
             (void 0 === n && (n = ""),
@@ -4010,14 +4310,17 @@ and limitations under the License.
         }
         var xt = Object.create(null),
           Lt = Object.create(null);
+
         function ht(e) {
           var n = e[d];
           return n || (U(e), e[d]);
         }
         var vt = D("ObservableObjectAdministration", It);
+
         function mt(e) {
           return !!c(e) && (U(e), vt(e[d]));
         }
+
         function bt(e, n) {
           if ("object" == typeof e && null !== e) {
             if (zt(e)) return void 0 !== n && M(!1), e[d].atom;
@@ -4035,6 +4338,7 @@ and limitations under the License.
           } else if ("function" == typeof e && Ke(e[d])) return e[d];
           return M(!1);
         }
+
         function kt(e, n) {
           return (
             e || M("Expecting some object"),
@@ -4045,12 +4349,14 @@ and limitations under the License.
               : (U(e), e[d] ? e[d] : void M(!1))
           );
         }
+
         function Ct(e, n) {
           return (
             void 0 !== n ? bt(e, n) : mt(e) || dt(e) || wt(e) ? kt(e) : bt(e)
           ).name;
         }
         var St = Object.prototype.toString;
+
         function Ut(e, n, t) {
           return (
             void 0 === t && (t = -1),
@@ -4124,6 +4430,7 @@ and limitations under the License.
             })(e, n, t)
           );
         }
+
         function Yt(e) {
           return zt(e)
             ? e.slice()
@@ -4131,12 +4438,15 @@ and limitations under the License.
             ? Array.from(e.entries())
             : e;
         }
+
         function Qt(e, n) {
           return Object.prototype.hasOwnProperty.call(e, n);
         }
+
         function _t(e) {
           return (e[Symbol.iterator] = Bt), e;
         }
+
         function Bt() {
           return this;
         }
@@ -4147,7 +4457,9 @@ and limitations under the License.
         "object" == typeof __MOBX_DEVTOOLS_GLOBAL_HOOK__ &&
           __MOBX_DEVTOOLS_GLOBAL_HOOK__.injectMobx({
             spy: en,
-            extras: { getDebugName: Ct },
+            extras: {
+              getDebugName: Ct,
+            },
             $mobx: d,
           });
       }.call(this, t(3));
@@ -4176,12 +4488,14 @@ and limitations under the License.
           });
         var r = t(0),
           o = t(1);
+
         function i(e) {
           return !(
             (e.prototype && e.prototype.render) ||
             r.Component.isPrototypeOf(e)
           );
         }
+
         function M(e) {
           var n =
               arguments.length > 1 && void 0 !== arguments[1]
@@ -4259,9 +4573,11 @@ and limitations under the License.
           },
           N = !1,
           D = console;
+
         function g(e) {
           N = e;
         }
+
         function y(e, n, t, r, i) {
           var M = (function (e) {
               var n = Object(o._getGlobalState)().allowStateChanges;
@@ -4277,6 +4593,7 @@ and limitations under the License.
           }
           return a;
         }
+
         function j(e, n) {
           var t =
               arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
@@ -4293,6 +4610,7 @@ and limitations under the License.
               : o;
           e[n] = i;
         }
+
         function z(e, n) {
           if (
             null == e ||
@@ -4361,6 +4679,7 @@ and limitations under the License.
                 );
               };
             }
+
             function l(e) {
               var n = this[e],
                 r = Object(o.createAtom)("reactive " + e);
@@ -4395,6 +4714,7 @@ and limitations under the License.
             );
           },
         };
+
         function f(e) {
           var n, t;
           if (
@@ -4444,6 +4764,7 @@ and limitations under the License.
           var o = e.prototype || e;
           return A(o), (e.isMobXReactObserver = !0), e;
         }
+
         function A(e) {
           j(e, "componentWillMount", !0),
             j(e, "componentDidMount"),
@@ -4458,7 +4779,15 @@ and limitations under the License.
           ? window
           : void 0 !== e || ("undefined" != typeof self && self);
         var p = (function (e, n) {
-            return e((n = { exports: {} }), n.exports), n.exports;
+            return (
+              e(
+                (n = {
+                  exports: {},
+                }),
+                n.exports
+              ),
+              n.exports
+            );
           })(function (e, n) {
             var t, r, o, i, M, a, u, s;
             e.exports =
@@ -4518,10 +4847,14 @@ and limitations under the License.
               enumerable: !0,
             },
           };
+
         function w(e, n, t) {
           var o,
             i,
-            a = M(n, { prefix: "inject-", suffix: t ? "-with-" + t : "" }),
+            a = M(n, {
+              prefix: "inject-",
+              suffix: t ? "-with-" + t : "",
+            }),
             N =
               ((i = o =
                 (function (t) {
@@ -4564,6 +4897,7 @@ and limitations under the License.
             p(N, n), (N.wrappedComponent = n), Object.defineProperties(N, E), N
           );
         }
+
         function I(e) {
           return function (n, t) {
             return (
@@ -4582,6 +4916,7 @@ and limitations under the License.
             );
           };
         }
+
         function O() {
           var e = void 0;
           if ("function" == typeof arguments[0])
@@ -4603,6 +4938,7 @@ and limitations under the License.
             }
           );
         }
+
         function x(e, n) {
           if ("string" == typeof e)
             throw new Error("Store names should be provided as array");
@@ -4614,7 +4950,11 @@ and limitations under the License.
                 }
             : f(e);
         }
-        var L = { children: !0, key: !0, ref: !0 },
+        var L = {
+            children: !0,
+            key: !0,
+            ref: !0,
+          },
           h = console,
           v = (function (e) {
             function n() {
@@ -4651,7 +4991,9 @@ and limitations under the License.
                       L[r] ||
                         "suppressChangedStoreWarning" === r ||
                         (e[r] = this.props[r]);
-                    return { mobxStores: e };
+                    return {
+                      mobxStores: e,
+                    };
                   },
                 },
                 {
@@ -4697,7 +5039,9 @@ and limitations under the License.
   },
   function (e, n, t) {
     "use strict";
-    Object.defineProperty(n, "__esModule", { value: !0 }),
+    Object.defineProperty(n, "__esModule", {
+      value: !0,
+    }),
       (n.JSONHTTPError =
         n.TextHTTPError =
         n.HTTPError =
@@ -4728,10 +5072,12 @@ and limitations under the License.
         };
       })(),
       i = t(11);
+
     function M(e, n) {
       if (!(e instanceof n))
         throw new TypeError("Cannot call a class as a function");
     }
+
     function a(e, n) {
       if (!e)
         throw new ReferenceError(
@@ -4739,6 +5085,7 @@ and limitations under the License.
         );
       return !n || ("object" != typeof n && "function" != typeof n) ? e : n;
     }
+
     function u(e, n) {
       if ("function" != typeof n && null !== n)
         throw new TypeError(
@@ -4848,7 +5195,9 @@ and limitations under the License.
                 return r(
                   {},
                   this.defaultHeaders,
-                  { "Content-Type": "application/json" },
+                  {
+                    "Content-Type": "application/json",
+                  },
                   e
                 );
               },
@@ -4859,7 +5208,12 @@ and limitations under the License.
                 return e.json().then(function (n) {
                   if (!e.ok) return Promise.reject(new l(e, n));
                   var t = (0, i.getPagination)(e);
-                  return t ? { pagination: t, items: n } : n;
+                  return t
+                    ? {
+                        pagination: t,
+                        items: n,
+                      }
+                    : n;
                 });
               },
             },
@@ -4875,18 +5229,21 @@ and limitations under the License.
                 return (
                   this._sameOrigin &&
                     (t.credentials = t.credentials || "same-origin"),
-                  fetch(this.apiURL + e, r({}, t, { headers: o })).then(
-                    function (e) {
-                      var t = e.headers.get("Content-Type");
-                      return t && t.match(/json/)
-                        ? n.parseJsonResponse(e)
-                        : e.ok
-                        ? e.text().then(function (e) {})
-                        : e.text().then(function (n) {
-                            return Promise.reject(new c(e, n));
-                          });
-                    }
-                  )
+                  fetch(
+                    this.apiURL + e,
+                    r({}, t, {
+                      headers: o,
+                    })
+                  ).then(function (e) {
+                    var t = e.headers.get("Content-Type");
+                    return t && t.match(/json/)
+                      ? n.parseJsonResponse(e)
+                      : e.ok
+                      ? e.text().then(function (e) {})
+                      : e.text().then(function (n) {
+                          return Promise.reject(new c(e, n));
+                        });
+                  })
                 );
               },
             },
@@ -4898,6 +5255,7 @@ and limitations under the License.
   },
   function (e, n, t) {
     "use strict";
+
     function r(e) {
       return (r =
         "function" == typeof Symbol && "symbol" == typeof Symbol.iterator
@@ -4913,12 +5271,17 @@ and limitations under the License.
                 : typeof e;
             })(e);
     }
-    Object.defineProperty(n, "__esModule", { value: !0 }), (n.default = void 0);
+    Object.defineProperty(n, "__esModule", {
+      value: !0,
+    }),
+      (n.default = void 0);
     var o = t(0);
+
     function i(e, n) {
       if (!(e instanceof n))
         throw new TypeError("Cannot call a class as a function");
     }
+
     function M(e, n) {
       for (var t = 0; t < n.length; t++) {
         var r = n[t];
@@ -4928,6 +5291,7 @@ and limitations under the License.
           Object.defineProperty(e, r.key, r);
       }
     }
+
     function a(e, n) {
       return (a =
         Object.setPrototypeOf ||
@@ -4935,6 +5299,7 @@ and limitations under the License.
           return (e.__proto__ = n), e;
         })(e, n);
     }
+
     function u(e) {
       var n = (function () {
         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
@@ -4961,6 +5326,7 @@ and limitations under the License.
         return s(this, t);
       };
     }
+
     function s(e, n) {
       return !n || ("object" !== r(n) && "function" != typeof n)
         ? (function (e) {
@@ -4972,6 +5338,7 @@ and limitations under the License.
           })(e)
         : n;
     }
+
     function c(e) {
       return (c = Object.setPrototypeOf
         ? Object.getPrototypeOf
@@ -4986,7 +5353,11 @@ and limitations under the License.
             "Super expression must either be null or a function"
           );
         (e.prototype = Object.create(n && n.prototype, {
-          constructor: { value: e, writable: !0, configurable: !0 },
+          constructor: {
+            value: e,
+            writable: !0,
+            configurable: !0,
+          },
         })),
           n && a(e, n);
       })(c, e);
@@ -4994,6 +5365,7 @@ and limitations under the License.
         t,
         r,
         s = u(c);
+
       function c() {
         return i(this, c), s.apply(this, arguments);
       }
@@ -5009,7 +5381,10 @@ and limitations under the License.
                 r = e.saving_text;
               return (0, o.h)(
                 "button",
-                { type: "submit", className: "btn".concat(n ? " saving" : "") },
+                {
+                  type: "submit",
+                  className: "btn".concat(n ? " saving" : ""),
+                },
                 n ? r || "Saving" : t || "Save"
               );
             },
@@ -5023,6 +5398,7 @@ and limitations under the License.
   },
   function (e, n, t) {
     "use strict";
+
     function r(e) {
       return (r =
         "function" == typeof Symbol && "symbol" == typeof Symbol.iterator
@@ -5038,12 +5414,17 @@ and limitations under the License.
                 : typeof e;
             })(e);
     }
-    Object.defineProperty(n, "__esModule", { value: !0 }), (n.default = void 0);
+    Object.defineProperty(n, "__esModule", {
+      value: !0,
+    }),
+      (n.default = void 0);
     var o = t(0);
+
     function i(e, n) {
       if (!(e instanceof n))
         throw new TypeError("Cannot call a class as a function");
     }
+
     function M(e, n) {
       for (var t = 0; t < n.length; t++) {
         var r = n[t];
@@ -5053,6 +5434,7 @@ and limitations under the License.
           Object.defineProperty(e, r.key, r);
       }
     }
+
     function a(e, n) {
       return (a =
         Object.setPrototypeOf ||
@@ -5060,6 +5442,7 @@ and limitations under the License.
           return (e.__proto__ = n), e;
         })(e, n);
     }
+
     function u(e) {
       var n = (function () {
         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
@@ -5086,6 +5469,7 @@ and limitations under the License.
         return s(this, t);
       };
     }
+
     function s(e, n) {
       return !n || ("object" !== r(n) && "function" != typeof n)
         ? (function (e) {
@@ -5097,6 +5481,7 @@ and limitations under the License.
           })(e)
         : n;
     }
+
     function c(e) {
       return (c = Object.setPrototypeOf
         ? Object.getPrototypeOf
@@ -5105,11 +5490,26 @@ and limitations under the License.
           })(e);
     }
     var l = {
-        confirm: { type: "success", text: "message_confirm" },
-        password_mail: { type: "success", text: "message_password_mail" },
-        email_changed: { type: "sucess", text: "message_email_changed" },
-        verfication_error: { type: "error", text: "message_verfication_error" },
-        signup_disabled: { type: "error", text: "message_signup_disabled" },
+        confirm: {
+          type: "success",
+          text: "message_confirm",
+        },
+        password_mail: {
+          type: "success",
+          text: "message_password_mail",
+        },
+        email_changed: {
+          type: "sucess",
+          text: "message_email_changed",
+        },
+        verfication_error: {
+          type: "error",
+          text: "message_verfication_error",
+        },
+        signup_disabled: {
+          type: "error",
+          text: "message_signup_disabled",
+        },
       },
       N = (function (e) {
         !(function (e, n) {
@@ -5118,7 +5518,11 @@ and limitations under the License.
               "Super expression must either be null or a function"
             );
           (e.prototype = Object.create(n && n.prototype, {
-            constructor: { value: e, writable: !0, configurable: !0 },
+            constructor: {
+              value: e,
+              writable: !0,
+              configurable: !0,
+            },
           })),
             n && a(e, n);
         })(c, e);
@@ -5126,6 +5530,7 @@ and limitations under the License.
           t,
           r,
           s = u(c);
+
         function c() {
           return i(this, c), s.apply(this, arguments);
         }
@@ -5141,7 +5546,9 @@ and limitations under the License.
                   r = l[n];
                 return (0, o.h)(
                   "div",
-                  { className: "flashMessage ".concat(r.type) },
+                  {
+                    className: "flashMessage ".concat(r.type),
+                  },
                   (0, o.h)("span", null, t(r.text))
                 );
               },
@@ -5211,7 +5618,13 @@ and limitations under the License.
   function (e, n, t) {
     "use strict";
     var r,
-      o = (r = t(9)) && r.__esModule ? r : { default: r };
+      o =
+        (r = t(9)) && r.__esModule
+          ? r
+          : {
+              default: r,
+            };
+
     function i(e) {
       return (i =
         "function" == typeof Symbol && "symbol" == typeof Symbol.iterator
@@ -5238,7 +5651,10 @@ and limitations under the License.
   },
   function (e, n, t) {
     "use strict";
-    Object.defineProperty(n, "__esModule", { value: !0 }), (n.default = void 0);
+    Object.defineProperty(n, "__esModule", {
+      value: !0,
+    }),
+      (n.default = void 0);
     var r = t(0),
       o = t(1),
       i = t(2),
@@ -5247,9 +5663,15 @@ and limitations under the License.
       u = l(t(20)),
       s = l(t(30)),
       c = l(t(31));
+
     function l(e) {
-      return e && e.__esModule ? e : { default: e };
+      return e && e.__esModule
+        ? e
+        : {
+            default: e,
+          };
     }
+
     function N(e, n) {
       return (
         (function (e) {
@@ -5303,11 +5725,13 @@ and limitations under the License.
         })()
       );
     }
+
     function D(e, n) {
       (null == n || n > e.length) && (n = e.length);
       for (var t = 0, r = new Array(n); t < n; t++) r[t] = e[t];
       return r;
     }
+
     function g(e, n) {
       var t = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -5320,6 +5744,7 @@ and limitations under the License.
       }
       return t;
     }
+
     function y(e) {
       for (var n = 1; n < arguments.length; n++) {
         var t = null != arguments[n] ? arguments[n] : {};
@@ -5339,6 +5764,7 @@ and limitations under the License.
       }
       return e;
     }
+
     function j(e, n, t) {
       return (
         n in e
@@ -5353,6 +5779,7 @@ and limitations under the License.
       );
     }
     var z = {};
+
     function T(e) {
       var n = arguments,
         t = z[e] || new Set();
@@ -5360,7 +5787,11 @@ and limitations under the License.
         e.apply(e, Array.prototype.slice.call(n, 1));
       });
     }
-    var f = { login: !0, signup: !0, error: !0 },
+    var f = {
+        login: !0,
+        signup: !0,
+        error: !0,
+      },
       A = {
         on: function (e, n) {
           (z[e] = z[e] || new Set()), z[e].add(n);
@@ -5413,8 +5844,20 @@ and limitations under the License.
                 null === e.getAttribute("data-netlify-identity-menu")
                   ? "button"
                   : "menu";
-              (0,
-              r.render)((0, r.h)(i.Provider, { store: u.default }, (0, r.h)(s.default, { mode: n, text: e.innerText.trim() })), e, null);
+              (0, r.render)(
+                (0, r.h)(
+                  i.Provider,
+                  {
+                    store: u.default,
+                  },
+                  (0, r.h)(s.default, {
+                    mode: n,
+                    text: e.innerText.trim(),
+                  })
+                ),
+                e,
+                null
+              );
             }),
               u.default.init(O(n)),
               (u.default.modal.logo = o),
@@ -5429,7 +5872,9 @@ and limitations under the License.
                   (E = (0, r.render)(
                     (0, r.h)(
                       i.Provider,
-                      { store: u.default },
+                      {
+                        store: u.default,
+                      },
                       (0, r.h)(a.default, null)
                     ),
                     w.contentDocument.body,
@@ -5451,6 +5896,7 @@ and limitations under the License.
         store: u.default,
       },
       d = null;
+
     function p(e, n) {
       var t = "";
       for (var r in n) t += "".concat(r, ": ").concat(n[r], "; ");
@@ -5458,16 +5904,27 @@ and limitations under the License.
     }
     var E,
       w,
-      I = { localhost: !0, "127.0.0.1": !0, "0.0.0.0": !0 };
+      I = {
+        localhost: !0,
+        "127.0.0.1": !0,
+        "0.0.0.0": !0,
+      };
+
     function O(e) {
       var n = I[document.location.hostname];
-      if (e) return new M.default({ APIUrl: e, setCookie: !n });
+      if (e)
+        return new M.default({
+          APIUrl: e,
+          setCookie: !n,
+        });
       if (n) {
         u.default.setIsLocal(n);
         var t = localStorage.getItem("netlifySiteURL");
         return t && u.default.setSiteURL(t), null;
       }
-      return new M.default({ setCookie: !n });
+      return new M.default({
+        setCookie: !n,
+      });
     }
     var x = {
       position: "fixed",
@@ -5488,7 +5945,9 @@ and limitations under the License.
           y(
             y({}, x),
             {},
-            { display: u.default.modal.isOpen ? "block !important" : "none" }
+            {
+              display: u.default.modal.isOpen ? "block !important" : "none",
+            }
           )
         ),
         u.default.modal.isOpen ? T("open", u.default.modal.page) : T("close");
@@ -5518,6 +5977,7 @@ and limitations under the License.
     var L = /(confirmation|invite|recovery|email_change)_token=([^&]+)/,
       h = /error=access_denied&error_description=403/,
       v = /access_token=/;
+
     function m() {
       var e = (document.location.hash || "").replace(/^#\/?/, "");
       if (e) {
@@ -5557,6 +6017,7 @@ and limitations under the License.
   },
   function (e, n, t) {
     "use strict";
+
     function r(e) {
       return (r =
         "function" == typeof Symbol && "symbol" == typeof Symbol.iterator
@@ -5572,12 +6033,17 @@ and limitations under the License.
                 : typeof e;
             })(e);
     }
-    Object.defineProperty(n, "__esModule", { value: !0 }), (n.default = void 0);
+    Object.defineProperty(n, "__esModule", {
+      value: !0,
+    }),
+      (n.default = void 0);
     var o,
       i = (function (e) {
         if (e && e.__esModule) return e;
         if (null === e || ("object" !== r(e) && "function" != typeof e))
-          return { default: e };
+          return {
+            default: e,
+          };
         var n = a();
         if (n && n.has(e)) return n.get(e);
         var t = {},
@@ -5592,7 +6058,13 @@ and limitations under the License.
         (t.default = e), n && n.set(e, t);
         return t;
       })(t(4)),
-      M = (o = t(12)) && o.__esModule ? o : { default: o };
+      M =
+        (o = t(12)) && o.__esModule
+          ? o
+          : {
+              default: o,
+            };
+
     function a() {
       if ("function" != typeof WeakMap) return null;
       var e = new WeakMap();
@@ -5603,10 +6075,12 @@ and limitations under the License.
         e
       );
     }
+
     function u(e, n) {
       if (!(e instanceof n))
         throw new TypeError("Cannot call a class as a function");
     }
+
     function s(e, n) {
       for (var t = 0; t < n.length; t++) {
         var r = n[t];
@@ -5680,7 +6154,11 @@ and limitations under the License.
               value: function (e, n, t) {
                 return this._request("/signup", {
                   method: "POST",
-                  body: JSON.stringify({ email: e, password: n, data: t }),
+                  body: JSON.stringify({
+                    email: e,
+                    password: n,
+                    data: t,
+                  }),
                 });
               },
             },
@@ -5723,7 +6201,9 @@ and limitations under the License.
               value: function (e) {
                 return this._request("/recover", {
                   method: "POST",
-                  body: JSON.stringify({ email: e }),
+                  body: JSON.stringify({
+                    email: e,
+                  }),
                 });
               },
             },
@@ -5792,7 +6272,10 @@ and limitations under the License.
                   this._setRememberHeaders(t),
                   this._request("/verify", {
                     method: "POST",
-                    body: JSON.stringify({ token: n, type: e }),
+                    body: JSON.stringify({
+                      token: n,
+                      type: e,
+                    }),
                   }).then(function (e) {
                     return r.createUser(e, t);
                   })
@@ -5818,7 +6301,9 @@ and limitations under the License.
   },
   function (e, n, t) {
     "use strict";
-    Object.defineProperty(n, "__esModule", { value: !0 });
+    Object.defineProperty(n, "__esModule", {
+      value: !0,
+    });
     var r = function (e, n) {
       if (Array.isArray(e)) return e;
       if (Symbol.iterator in Object(e))
@@ -5883,6 +6368,7 @@ and limitations under the License.
   },
   function (e, n, t) {
     "use strict";
+
     function r(e) {
       return (r =
         "function" == typeof Symbol && "symbol" == typeof Symbol.iterator
@@ -5898,12 +6384,17 @@ and limitations under the License.
                 : typeof e;
             })(e);
     }
-    Object.defineProperty(n, "__esModule", { value: !0 }), (n.default = void 0);
+    Object.defineProperty(n, "__esModule", {
+      value: !0,
+    }),
+      (n.default = void 0);
     var o,
       i = (function (e) {
         if (e && e.__esModule) return e;
         if (null === e || ("object" !== r(e) && "function" != typeof e))
-          return { default: e };
+          return {
+            default: e,
+          };
         var n = a();
         if (n && n.has(e)) return n.get(e);
         var t = {},
@@ -5918,7 +6409,13 @@ and limitations under the License.
         (t.default = e), n && n.set(e, t);
         return t;
       })(t(4)),
-      M = (o = t(13)) && o.__esModule ? o : { default: o };
+      M =
+        (o = t(13)) && o.__esModule
+          ? o
+          : {
+              default: o,
+            };
+
     function a() {
       if ("function" != typeof WeakMap) return null;
       var e = new WeakMap();
@@ -5929,6 +6426,7 @@ and limitations under the License.
         e
       );
     }
+
     function u(e, n) {
       var t = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -5941,6 +6439,7 @@ and limitations under the License.
       }
       return t;
     }
+
     function s(e) {
       for (var n = 1; n < arguments.length; n++) {
         var t = null != arguments[n] ? arguments[n] : {};
@@ -5960,6 +6459,7 @@ and limitations under the License.
       }
       return e;
     }
+
     function c(e, n, t) {
       return (
         n in e
@@ -5973,6 +6473,7 @@ and limitations under the License.
         e
       );
     }
+
     function l(e, n) {
       for (var t = 0; t < n.length; t++) {
         var r = n[t];
@@ -5984,8 +6485,15 @@ and limitations under the License.
     }
     var N = {},
       D = null,
-      g = { api: 1, token: 1, audience: 1, url: 1 },
-      y = { api: 1 },
+      g = {
+        api: 1,
+        token: 1,
+        audience: 1,
+        url: 1,
+      },
+      y = {
+        api: 1,
+      },
       j = function () {
         return "undefined" != typeof window;
       },
@@ -6074,7 +6582,9 @@ and limitations under the License.
             {
               key: "logout",
               value: function () {
-                return this._request("/logout", { method: "POST" })
+                return this._request("/logout", {
+                  method: "POST",
+                })
                   .then(this.clearSession.bind(this))
                   .catch(this.clearSession.bind(this));
               },
@@ -6265,6 +6775,7 @@ and limitations under the License.
   },
   function (e, n, t) {
     "use strict";
+
     function r(e, n) {
       for (var t = 0; t < n.length; t++) {
         var r = n[t];
@@ -6274,7 +6785,10 @@ and limitations under the License.
           Object.defineProperty(e, r.key, r);
       }
     }
-    Object.defineProperty(n, "__esModule", { value: !0 }), (n.default = void 0);
+    Object.defineProperty(n, "__esModule", {
+      value: !0,
+    }),
+      (n.default = void 0);
     var o = (function () {
       function e(n) {
         !(function (e, n) {
@@ -6349,6 +6863,7 @@ and limitations under the License.
   },
   function (e, n, t) {
     "use strict";
+
     function r(e) {
       return (r =
         "function" == typeof Symbol && "symbol" == typeof Symbol.iterator
@@ -6364,7 +6879,10 @@ and limitations under the License.
                 : typeof e;
             })(e);
     }
-    Object.defineProperty(n, "__esModule", { value: !0 }), (n.default = void 0);
+    Object.defineProperty(n, "__esModule", {
+      value: !0,
+    }),
+      (n.default = void 0);
     var o,
       i = t(0),
       M = t(2),
@@ -6374,13 +6892,20 @@ and limitations under the License.
       c = D(t(18)),
       l = D(t(19)),
       N = D(t(6));
+
     function D(e) {
-      return e && e.__esModule ? e : { default: e };
+      return e && e.__esModule
+        ? e
+        : {
+            default: e,
+          };
     }
+
     function g(e, n) {
       if (!(e instanceof n))
         throw new TypeError("Cannot call a class as a function");
     }
+
     function y(e, n) {
       for (var t = 0; t < n.length; t++) {
         var r = n[t];
@@ -6390,6 +6915,7 @@ and limitations under the License.
           Object.defineProperty(e, r.key, r);
       }
     }
+
     function j(e, n) {
       return (j =
         Object.setPrototypeOf ||
@@ -6397,6 +6923,7 @@ and limitations under the License.
           return (e.__proto__ = n), e;
         })(e, n);
     }
+
     function z(e) {
       var n = (function () {
         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
@@ -6423,6 +6950,7 @@ and limitations under the License.
         return T(this, t);
       };
     }
+
     function T(e, n) {
       return !n || ("object" !== r(n) && "function" != typeof n)
         ? (function (e) {
@@ -6434,6 +6962,7 @@ and limitations under the License.
           })(e)
         : n;
     }
+
     function f(e) {
       return (f = Object.setPrototypeOf
         ? Object.getPrototypeOf
@@ -6441,7 +6970,10 @@ and limitations under the License.
             return e.__proto__ || Object.getPrototypeOf(e);
           })(e);
     }
-    var A = { login: !0, signup: !0 },
+    var A = {
+        login: !0,
+        signup: !0,
+      },
       d = {
         login: {
           login: !0,
@@ -6485,7 +7017,9 @@ and limitations under the License.
           password: "new-password",
           providers: !0,
         },
-        user: { title: "logged_in" },
+        user: {
+          title: "logged_in",
+        },
       },
       p =
         (0, M.connect)(["store"])(
@@ -6496,7 +7030,11 @@ and limitations under the License.
                   "Super expression must either be null or a function"
                 );
               (e.prototype = Object.create(n && n.prototype, {
-                constructor: { value: e, writable: !0, configurable: !0 },
+                constructor: {
+                  value: e,
+                  writable: !0,
+                  configurable: !0,
+                },
               })),
                 n && j(e, n);
             })(M, e);
@@ -6504,6 +7042,7 @@ and limitations under the License.
               t,
               r,
               o = z(M);
+
             function M() {
               var e;
               g(this, M);
@@ -6699,6 +7238,7 @@ and limitations under the License.
   },
   function (e, n, t) {
     "use strict";
+
     function r(e) {
       return (r =
         "function" == typeof Symbol && "symbol" == typeof Symbol.iterator
@@ -6714,12 +7254,17 @@ and limitations under the License.
                 : typeof e;
             })(e);
     }
-    Object.defineProperty(n, "__esModule", { value: !0 }), (n.default = void 0);
+    Object.defineProperty(n, "__esModule", {
+      value: !0,
+    }),
+      (n.default = void 0);
     var o = t(0);
+
     function i(e, n) {
       if (!(e instanceof n))
         throw new TypeError("Cannot call a class as a function");
     }
+
     function M(e, n) {
       for (var t = 0; t < n.length; t++) {
         var r = n[t];
@@ -6729,6 +7274,7 @@ and limitations under the License.
           Object.defineProperty(e, r.key, r);
       }
     }
+
     function a(e, n) {
       return (a =
         Object.setPrototypeOf ||
@@ -6736,6 +7282,7 @@ and limitations under the License.
           return (e.__proto__ = n), e;
         })(e, n);
     }
+
     function u(e) {
       var n = (function () {
         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
@@ -6762,6 +7309,7 @@ and limitations under the License.
         return s(this, t);
       };
     }
+
     function s(e, n) {
       return !n || ("object" !== r(n) && "function" != typeof n)
         ? (function (e) {
@@ -6773,6 +7321,7 @@ and limitations under the License.
           })(e)
         : n;
     }
+
     function c(e) {
       return (c = Object.setPrototypeOf
         ? Object.getPrototypeOf
@@ -6787,7 +7336,11 @@ and limitations under the License.
             "Super expression must either be null or a function"
           );
         (e.prototype = Object.create(n && n.prototype, {
-          constructor: { value: e, writable: !0, configurable: !0 },
+          constructor: {
+            value: e,
+            writable: !0,
+            configurable: !0,
+          },
         })),
           n && a(e, n);
       })(c, e);
@@ -6795,6 +7348,7 @@ and limitations under the License.
         t,
         r,
         s = u(c);
+
       function c() {
         var e;
         i(this, c);
@@ -6861,16 +7415,29 @@ and limitations under the License.
                   },
                   (0, o.h)(
                     "div",
-                    { className: "modalContent" },
+                    {
+                      className: "modalContent",
+                    },
                     (0, o.h)(
                       "button",
-                      { onclick: this.handleClose, className: "btn btnClose" },
-                      (0, o.h)("span", { className: "visuallyHidden" }, "Close")
+                      {
+                        onclick: this.handleClose,
+                        className: "btn btnClose",
+                      },
+                      (0, o.h)(
+                        "span",
+                        {
+                          className: "visuallyHidden",
+                        },
+                        "Close"
+                      )
                     ),
                     i &&
                       (0, o.h)(
                         "div",
-                        { className: "header" },
+                        {
+                          className: "header",
+                        },
                         M &&
                           (0, o.h)(
                             "button",
@@ -6897,27 +7464,37 @@ and limitations under the License.
                     n.title &&
                       (0, o.h)(
                         "div",
-                        { className: "header" },
+                        {
+                          className: "header",
+                        },
                         (0, o.h)(
                           "button",
-                          { className: "btn btnHeader active" },
+                          {
+                            className: "btn btnHeader active",
+                          },
                           l(n.title)
                         )
                       ),
                     a &&
                       (0, o.h)(
                         "div",
-                        { className: "header" },
+                        {
+                          className: "header",
+                        },
                         (0, o.h)(
                           "button",
-                          { className: "btn btnHeader active" },
+                          {
+                            className: "btn btnHeader active",
+                          },
                           l("site_url_title")
                         )
                       ),
                     j &&
                       (0, o.h)(
                         "div",
-                        { className: "flashMessage error" },
+                        {
+                          className: "flashMessage error",
+                        },
                         (0, o.h)("span", null, l(j))
                       ),
                     N &&
@@ -6947,7 +7524,9 @@ and limitations under the License.
                       href: "https://www.netlify.com",
                       className: "callOut".concat(r ? " visuallyHidden" : ""),
                     },
-                    (0, o.h)("span", { className: "netlifyLogo" }),
+                    (0, o.h)("span", {
+                      className: "netlifyLogo",
+                    }),
                     l("coded_by")
                   )
               );
@@ -6962,6 +7541,7 @@ and limitations under the License.
   },
   function (e, n, t) {
     "use strict";
+
     function r(e) {
       return (r =
         "function" == typeof Symbol && "symbol" == typeof Symbol.iterator
@@ -6977,8 +7557,12 @@ and limitations under the License.
                 : typeof e;
             })(e);
     }
-    Object.defineProperty(n, "__esModule", { value: !0 }), (n.default = void 0);
+    Object.defineProperty(n, "__esModule", {
+      value: !0,
+    }),
+      (n.default = void 0);
     var o = t(0);
+
     function i(e, n) {
       for (var t = 0; t < n.length; t++) {
         var r = n[t];
@@ -6988,6 +7572,7 @@ and limitations under the License.
           Object.defineProperty(e, r.key, r);
       }
     }
+
     function M(e, n) {
       return (M =
         Object.setPrototypeOf ||
@@ -6995,6 +7580,7 @@ and limitations under the License.
           return (e.__proto__ = n), e;
         })(e, n);
     }
+
     function a(e) {
       var n = (function () {
         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
@@ -7021,6 +7607,7 @@ and limitations under the License.
         return u(this, t);
       };
     }
+
     function u(e, n) {
       return !n || ("object" !== r(n) && "function" != typeof n)
         ? (function (e) {
@@ -7032,6 +7619,7 @@ and limitations under the License.
           })(e)
         : n;
     }
+
     function s(e) {
       return (s = Object.setPrototypeOf
         ? Object.getPrototypeOf
@@ -7046,7 +7634,11 @@ and limitations under the License.
             "Super expression must either be null or a function"
           );
         (e.prototype = Object.create(n && n.prototype, {
-          constructor: { value: e, writable: !0, configurable: !0 },
+          constructor: {
+            value: e,
+            writable: !0,
+            configurable: !0,
+          },
         })),
           n && M(e, n);
       })(s, e);
@@ -7054,6 +7646,7 @@ and limitations under the License.
         t,
         r,
         u = a(s);
+
       function s(e) {
         var n;
         return (
@@ -7091,7 +7684,10 @@ and limitations under the License.
           (n.clearSiteURL = function (e) {
             e.preventDefault, n.props.onSiteURL();
           }),
-          (n.state = { url: "", development: e.devMode || !1 }),
+          (n.state = {
+            url: "",
+            development: e.devMode || !1,
+          }),
           n
         );
       }
@@ -7112,7 +7708,9 @@ and limitations under the License.
                 r
                   ? (0, o.h)(
                       "div",
-                      { class: "subheader" },
+                      {
+                        class: "subheader",
+                      },
                       (0, o.h)("h3", null, i("site_url_title")),
                       (0, o.h)(
                         "button",
@@ -7127,21 +7725,30 @@ and limitations under the License.
                     )
                   : (0, o.h)(
                       "form",
-                      { onsubmit: this.addSiteURL, className: "form" },
+                      {
+                        onsubmit: this.addSiteURL,
+                        className: "form",
+                      },
                       (0, o.h)(
                         "div",
-                        { className: "flashMessage" },
+                        {
+                          className: "flashMessage",
+                        },
                         i("site_url_message")
                       ),
                       (0, o.h)(
                         "div",
-                        { className: "formGroup" },
+                        {
+                          className: "formGroup",
+                        },
                         (0, o.h)(
                           "label",
                           null,
                           (0, o.h)(
                             "span",
-                            { className: "visuallyHidden" },
+                            {
+                              className: "visuallyHidden",
+                            },
                             i("site_url_label")
                           ),
                           (0, o.h)("input", {
@@ -7161,7 +7768,10 @@ and limitations under the License.
                       ),
                       (0, o.h)(
                         "button",
-                        { type: "submit", className: "btn" },
+                        {
+                          type: "submit",
+                          className: "btn",
+                        },
                         i("site_url_submit")
                       )
                     )
@@ -7177,6 +7787,7 @@ and limitations under the License.
   },
   function (e, n, t) {
     "use strict";
+
     function r(e) {
       return (r =
         "function" == typeof Symbol && "symbol" == typeof Symbol.iterator
@@ -7192,14 +7803,24 @@ and limitations under the License.
                 : typeof e;
             })(e);
     }
-    Object.defineProperty(n, "__esModule", { value: !0 }), (n.default = void 0);
+    Object.defineProperty(n, "__esModule", {
+      value: !0,
+    }),
+      (n.default = void 0);
     var o,
       i = t(0),
-      M = (o = t(5)) && o.__esModule ? o : { default: o };
+      M =
+        (o = t(5)) && o.__esModule
+          ? o
+          : {
+              default: o,
+            };
+
     function a(e, n) {
       if (!(e instanceof n))
         throw new TypeError("Cannot call a class as a function");
     }
+
     function u(e, n) {
       for (var t = 0; t < n.length; t++) {
         var r = n[t];
@@ -7209,6 +7830,7 @@ and limitations under the License.
           Object.defineProperty(e, r.key, r);
       }
     }
+
     function s(e, n) {
       return (s =
         Object.setPrototypeOf ||
@@ -7216,6 +7838,7 @@ and limitations under the License.
           return (e.__proto__ = n), e;
         })(e, n);
     }
+
     function c(e) {
       var n = (function () {
         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
@@ -7242,6 +7865,7 @@ and limitations under the License.
         return l(this, t);
       };
     }
+
     function l(e, n) {
       return !n || ("object" !== r(n) && "function" != typeof n)
         ? (function (e) {
@@ -7253,6 +7877,7 @@ and limitations under the License.
           })(e)
         : n;
     }
+
     function N(e) {
       return (N = Object.setPrototypeOf
         ? Object.getPrototypeOf
@@ -7267,7 +7892,11 @@ and limitations under the License.
             "Super expression must either be null or a function"
           );
         (e.prototype = Object.create(n && n.prototype, {
-          constructor: { value: e, writable: !0, configurable: !0 },
+          constructor: {
+            value: e,
+            writable: !0,
+            configurable: !0,
+          },
         })),
           n && s(e, n);
       })(l, e);
@@ -7275,6 +7904,7 @@ and limitations under the License.
         t,
         r,
         o = c(l);
+
       function l() {
         var e;
         a(this, l);
@@ -7305,13 +7935,17 @@ and limitations under the License.
                 },
                 (0, i.h)(
                   "p",
-                  { className: "infoText" },
+                  {
+                    className: "infoText",
+                  },
                   r("logged_in_as"),
                   " ",
                   (0, i.h)("br", null),
                   (0, i.h)(
                     "span",
-                    { className: "infoTextEmail" },
+                    {
+                      className: "infoTextEmail",
+                    },
                     n.user_metadata.full_name || n.user_metadata.name || n.email
                   )
                 ),
@@ -7332,6 +7966,7 @@ and limitations under the License.
   },
   function (e, n, t) {
     "use strict";
+
     function r(e) {
       return (r =
         "function" == typeof Symbol && "symbol" == typeof Symbol.iterator
@@ -7347,13 +7982,22 @@ and limitations under the License.
                 : typeof e;
             })(e);
     }
-    Object.defineProperty(n, "__esModule", { value: !0 }), (n.default = void 0);
+    Object.defineProperty(n, "__esModule", {
+      value: !0,
+    }),
+      (n.default = void 0);
     var o = t(0),
       i = a(t(6)),
       M = a(t(5));
+
     function a(e) {
-      return e && e.__esModule ? e : { default: e };
+      return e && e.__esModule
+        ? e
+        : {
+            default: e,
+          };
     }
+
     function u(e, n) {
       for (var t = 0; t < n.length; t++) {
         var r = n[t];
@@ -7363,6 +8007,7 @@ and limitations under the License.
           Object.defineProperty(e, r.key, r);
       }
     }
+
     function s(e, n) {
       return (s =
         Object.setPrototypeOf ||
@@ -7370,6 +8015,7 @@ and limitations under the License.
           return (e.__proto__ = n), e;
         })(e, n);
     }
+
     function c(e) {
       var n = (function () {
         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
@@ -7396,6 +8042,7 @@ and limitations under the License.
         return l(this, t);
       };
     }
+
     function l(e, n) {
       return !n || ("object" !== r(n) && "function" != typeof n)
         ? (function (e) {
@@ -7407,6 +8054,7 @@ and limitations under the License.
           })(e)
         : n;
     }
+
     function N(e) {
       return (N = Object.setPrototypeOf
         ? Object.getPrototypeOf
@@ -7421,7 +8069,11 @@ and limitations under the License.
             "Super expression must either be null or a function"
           );
         (e.prototype = Object.create(n && n.prototype, {
-          constructor: { value: e, writable: !0, configurable: !0 },
+          constructor: {
+            value: e,
+            writable: !0,
+            configurable: !0,
+          },
         })),
           n && s(e, n);
       })(l, e);
@@ -7429,6 +8081,7 @@ and limitations under the License.
         t,
         r,
         a = c(l);
+
       function l(e) {
         var n;
         return (
@@ -7456,7 +8109,11 @@ and limitations under the License.
           (n.handleLogin = function (e) {
             e.preventDefault(), n.props.onSubmit(n.state);
           }),
-          (n.state = { name: "", email: "", password: "" }),
+          (n.state = {
+            name: "",
+            email: "",
+            password: "",
+          }),
           n
         );
       }
@@ -7482,17 +8139,25 @@ and limitations under the License.
                   onsubmit: this.handleLogin,
                   className: "form ".concat(r ? "disabled" : ""),
                 },
-                t && (0, o.h)(i.default, { type: t, t: u }),
+                t &&
+                  (0, o.h)(i.default, {
+                    type: t,
+                    t: u,
+                  }),
                 n.name &&
                   (0, o.h)(
                     "div",
-                    { className: "formGroup" },
+                    {
+                      className: "formGroup",
+                    },
                     (0, o.h)(
                       "label",
                       null,
                       (0, o.h)(
                         "span",
-                        { className: "visuallyHidden" },
+                        {
+                          className: "visuallyHidden",
+                        },
                         u("form_name_placeholder")
                       ),
                       (0, o.h)("input", {
@@ -7513,13 +8178,17 @@ and limitations under the License.
                 n.email &&
                   (0, o.h)(
                     "div",
-                    { className: "formGroup" },
+                    {
+                      className: "formGroup",
+                    },
                     (0, o.h)(
                       "label",
                       null,
                       (0, o.h)(
                         "span",
-                        { className: "visuallyHidden" },
+                        {
+                          className: "visuallyHidden",
+                        },
                         u("form_name_label")
                       ),
                       (0, o.h)("input", {
@@ -7540,13 +8209,17 @@ and limitations under the License.
                 n.password &&
                   (0, o.h)(
                     "div",
-                    { className: "formGroup" },
+                    {
+                      className: "formGroup",
+                    },
                     (0, o.h)(
                       "label",
                       null,
                       (0, o.h)(
                         "span",
-                        { className: "visuallyHidden" },
+                        {
+                          className: "visuallyHidden",
+                        },
                         u("form_password_label")
                       ),
                       (0, o.h)("input", {
@@ -7581,6 +8254,7 @@ and limitations under the License.
   },
   function (e, n, t) {
     "use strict";
+
     function r(e) {
       return (r =
         "function" == typeof Symbol && "symbol" == typeof Symbol.iterator
@@ -7596,12 +8270,17 @@ and limitations under the License.
                 : typeof e;
             })(e);
     }
-    Object.defineProperty(n, "__esModule", { value: !0 }), (n.default = void 0);
+    Object.defineProperty(n, "__esModule", {
+      value: !0,
+    }),
+      (n.default = void 0);
     var o = t(0);
+
     function i(e, n) {
       if (!(e instanceof n))
         throw new TypeError("Cannot call a class as a function");
     }
+
     function M(e, n) {
       for (var t = 0; t < n.length; t++) {
         var r = n[t];
@@ -7611,19 +8290,26 @@ and limitations under the License.
           Object.defineProperty(e, r.key, r);
       }
     }
+
     function a(e, n, t) {
       return n && M(e.prototype, n), t && M(e, t), e;
     }
+
     function u(e, n) {
       if ("function" != typeof n && null !== n)
         throw new TypeError(
           "Super expression must either be null or a function"
         );
       (e.prototype = Object.create(n && n.prototype, {
-        constructor: { value: e, writable: !0, configurable: !0 },
+        constructor: {
+          value: e,
+          writable: !0,
+          configurable: !0,
+        },
       })),
         n && s(e, n);
     }
+
     function s(e, n) {
       return (s =
         Object.setPrototypeOf ||
@@ -7631,6 +8317,7 @@ and limitations under the License.
           return (e.__proto__ = n), e;
         })(e, n);
     }
+
     function c(e) {
       var n = (function () {
         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
@@ -7657,6 +8344,7 @@ and limitations under the License.
         return l(this, t);
       };
     }
+
     function l(e, n) {
       return !n || ("object" !== r(n) && "function" != typeof n)
         ? (function (e) {
@@ -7668,6 +8356,7 @@ and limitations under the License.
           })(e)
         : n;
     }
+
     function N(e) {
       return (N = Object.setPrototypeOf
         ? Object.getPrototypeOf
@@ -7678,6 +8367,7 @@ and limitations under the License.
     var D = (function (e) {
         u(t, e);
         var n = c(t);
+
         function t() {
           var e;
           i(this, t);
@@ -7719,6 +8409,7 @@ and limitations under the License.
       g = (function (e) {
         u(t, e);
         var n = c(t);
+
         function t() {
           return i(this, t), n.apply(this, arguments);
         }
@@ -7741,11 +8432,20 @@ and limitations under the License.
                   i = n.t;
                 return (0, o.h)(
                   "div",
-                  { className: "providersGroup" },
-                  (0, o.h)("hr", { className: "hr" }),
+                  {
+                    className: "providersGroup",
+                  },
+                  (0, o.h)("hr", {
+                    className: "hr",
+                  }),
                   t.map(function (n) {
-                    return (0,
-                    o.h)(D, { key: n, provider: n, label: e.getLabel(n), onLogin: r, t: i });
+                    return (0, o.h)(D, {
+                      key: n,
+                      provider: n,
+                      label: e.getLabel(n),
+                      onLogin: r,
+                      t: i,
+                    });
                   })
                 );
               },
@@ -7758,7 +8458,10 @@ and limitations under the License.
   },
   function (e, n, t) {
     "use strict";
-    Object.defineProperty(n, "__esModule", { value: !0 }), (n.default = void 0);
+    Object.defineProperty(n, "__esModule", {
+      value: !0,
+    }),
+      (n.default = void 0);
     var r = t(1),
       o = t(21),
       i = (0, r.observable)({
@@ -7774,7 +8477,11 @@ and limitations under the License.
         invite_token: null,
         email_change_token: null,
         namePlaceholder: null,
-        modal: { page: "login", isOpen: !1, logo: !0 },
+        modal: {
+          page: "login",
+          isOpen: !1,
+          logo: !0,
+        },
         locale: o.defaultLocale,
       });
     (i.setNamePlaceholder = (0, r.action)(function (e) {
@@ -7857,7 +8564,9 @@ and limitations under the License.
         return (
           i.startAction(),
           i.gotrue
-            .signup(n, t, { full_name: e })
+            .signup(n, t, {
+              full_name: e,
+            })
             .then(
               (0, r.action)(function () {
                 i.settings.autoconfirm
@@ -7887,7 +8596,9 @@ and limitations under the License.
       (i.updatePassword = (0, r.action)(function (e) {
         i.startAction(),
           (i.recovered_user || i.user)
-            .update({ password: e })
+            .update({
+              password: e,
+            })
             .then(function (e) {
               (i.user = e),
                 (i.recovered_user = null),
@@ -7912,7 +8623,9 @@ and limitations under the License.
         return (
           i.startAction(),
           i.user
-            .update({ email_change_token: i.email_change_token })
+            .update({
+              email_change_token: i.email_change_token,
+            })
             .then(
               (0, r.action)(function (e) {
                 (i.user = e),
@@ -7998,6 +8711,7 @@ and limitations under the License.
   },
   function (e, n, t) {
     "use strict";
+
     function r(e) {
       return (r =
         "function" == typeof Symbol && "symbol" == typeof Symbol.iterator
@@ -8013,7 +8727,9 @@ and limitations under the License.
                 : typeof e;
             })(e);
     }
-    Object.defineProperty(n, "__esModule", { value: !0 }),
+    Object.defineProperty(n, "__esModule", {
+      value: !0,
+    }),
       (n.getTranslation = n.defaultLocale = void 0);
     var o = D(t(22)),
       i = D(t(23)),
@@ -8023,6 +8739,7 @@ and limitations under the License.
       s = D(t(27)),
       c = D(t(28)),
       l = D(t(29));
+
     function N(e) {
       if ("function" != typeof WeakMap) return null;
       var n = new WeakMap(),
@@ -8031,10 +8748,13 @@ and limitations under the License.
         return e ? t : n;
       })(e);
     }
+
     function D(e, n) {
       if (!n && e && e.__esModule) return e;
       if (null === e || ("object" !== r(e) && "function" != typeof e))
-        return { default: e };
+        return {
+          default: e,
+        };
       var t = N(n);
       if (t && t.has(e)) return t.get(e);
       var o = {},
@@ -8049,7 +8769,16 @@ and limitations under the License.
       return (o.default = e), t && t.set(e, o), o;
     }
     n.defaultLocale = "en";
-    var g = { en: o, fr: i, es: M, hu: a, pt: u, pl: s, cs: c, sk: l };
+    var g = {
+      en: o,
+      fr: i,
+      es: M,
+      hu: a,
+      pt: u,
+      pl: s,
+      cs: c,
+      sk: l,
+    };
     n.getTranslation = function (e) {
       var n =
           arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "en",
@@ -8099,6 +8828,7 @@ and limitations under the License.
   },
   function (e, n, t) {
     "use strict";
+
     function r(e) {
       return (r =
         "function" == typeof Symbol && "symbol" == typeof Symbol.iterator
@@ -8114,13 +8844,18 @@ and limitations under the License.
                 : typeof e;
             })(e);
     }
-    Object.defineProperty(n, "__esModule", { value: !0 }), (n.default = void 0);
+    Object.defineProperty(n, "__esModule", {
+      value: !0,
+    }),
+      (n.default = void 0);
     var o,
       i = t(0);
+
     function M(e, n) {
       if (!(e instanceof n))
         throw new TypeError("Cannot call a class as a function");
     }
+
     function a(e, n) {
       for (var t = 0; t < n.length; t++) {
         var r = n[t];
@@ -8130,6 +8865,7 @@ and limitations under the License.
           Object.defineProperty(e, r.key, r);
       }
     }
+
     function u(e, n) {
       return (u =
         Object.setPrototypeOf ||
@@ -8137,6 +8873,7 @@ and limitations under the License.
           return (e.__proto__ = n), e;
         })(e, n);
     }
+
     function s(e) {
       var n = (function () {
         if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
@@ -8163,6 +8900,7 @@ and limitations under the License.
         return c(this, t);
       };
     }
+
     function c(e, n) {
       return !n || ("object" !== r(n) && "function" != typeof n)
         ? (function (e) {
@@ -8174,6 +8912,7 @@ and limitations under the License.
           })(e)
         : n;
     }
+
     function l(e) {
       return (l = Object.setPrototypeOf
         ? Object.getPrototypeOf
@@ -8190,7 +8929,11 @@ and limitations under the License.
                 "Super expression must either be null or a function"
               );
             (e.prototype = Object.create(n && n.prototype, {
-              constructor: { value: e, writable: !0, configurable: !0 },
+              constructor: {
+                value: e,
+                writable: !0,
+                configurable: !0,
+              },
             })),
               n && u(e, n);
           })(c, e);
@@ -8198,6 +8941,7 @@ and limitations under the License.
             t,
             r,
             o = s(c);
+
           function c() {
             var e;
             M(this, c);
@@ -8246,7 +8990,9 @@ and limitations under the License.
                     : n
                     ? (0, i.h)(
                         "ul",
-                        { className: "netlify-identity-menu" },
+                        {
+                          className: "netlify-identity-menu",
+                        },
                         (0, i.h)(
                           "li",
                           {
@@ -8257,13 +9003,17 @@ and limitations under the License.
                           " ",
                           (0, i.h)(
                             "span",
-                            { className: "netlify-identity-user" },
+                            {
+                              className: "netlify-identity-user",
+                            },
                             n.user_metadata.name || n.email
                           )
                         ),
                         (0, i.h)(
                           "li",
-                          { className: "netlify-identity-item" },
+                          {
+                            className: "netlify-identity-item",
+                          },
                           (0, i.h)(
                             "a",
                             {
@@ -8277,10 +9027,14 @@ and limitations under the License.
                       )
                     : (0, i.h)(
                         "ul",
-                        { className: "netlify-identity-menu" },
+                        {
+                          className: "netlify-identity-menu",
+                        },
                         (0, i.h)(
                           "li",
-                          { className: "netlify-identity-item" },
+                          {
+                            className: "netlify-identity-item",
+                          },
                           (0, i.h)(
                             "a",
                             {
@@ -8293,7 +9047,9 @@ and limitations under the License.
                         ),
                         (0, i.h)(
                           "li",
-                          { className: "netlify-identity-item" },
+                          {
+                            className: "netlify-identity-item",
+                          },
                           (0, i.h)(
                             "a",
                             {

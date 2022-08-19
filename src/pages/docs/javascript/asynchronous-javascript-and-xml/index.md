@@ -6,9 +6,9 @@ excerpt: 'This article guides you through the Ajax basics '
 
 <!--StartFragment-->
 
-**Asynchronous JavaScript and XML**, while not a technology in itself, is a term coined in 2005 by Jesse James Garrett, that describes a "new" approach to using a number of existing technologies together, including [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) or [XHTML](https://developer.mozilla.org/en-US/docs/Glossary/XHTML), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model), [XML](https://developer.mozilla.org/en-US/docs/Web/XML), [XSLT](https://developer.mozilla.org/en-US/docs/Web/XSLT), and most importantly the [`XMLHttpRequest`](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) object. When these technologies are combined in the Ajax model, web applications are able to make quick, incremental updates to the user interface without reloading the entire browser page. This makes the application faster and more responsive to user actions.
+**Asynchronous JavaScript and XML**, while not a technology in itself, is a term coined in 2005 by Jesse James Garrett, that describes a "new" approach to using a number of existing technologies together, including [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) or [XHTML](https://developer.mozilla.org/en-US/docs/Glossary/XHTML), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model), [XML](https://developer.mozilla.org/en-US/docs/Web/XML), [XSLT](https://developer.mozilla.org/en-US/docs/Web/XSLT), and most importantly the [`XMLHttpRequest`](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) object. When these technologies are combined in the Ajax model, web applications are able to make quick, incremental updates to the user interface without reloading the entire browser page. This makes the application faster and more responsive to user actions.
 
-Although X in Ajax stands for XML, [JSON](https://developer.mozilla.org/en-US/docs/Glossary/JSON) is preferred over XML nowadays because of its many advantages such as being a part of JavaScript, thus being lighter in size. Both JSON and XML are used for packaging information in the Ajax model.
+Although X in Ajax stands for XML, [JSON](https://developer.mozilla.org/en-US/docs/Glossary/JSON) is preferred over XML nowadays because of its many advantages such as being a part of JavaScript, thus being lighter in size. Both JSON and XML are used for packaging information in the Ajax model.
 
 ## [Documentation](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX#documentation 'Permalink to Documentation')
 
@@ -51,18 +51,18 @@ This article guides you through the Ajax basics and gives you two simple hands-o
 
     XPath stands for **X**ML **Path** Language, it uses a non-XML syntax that provides a flexible way of addressing (pointing to) different parts of an [XML](https://developer.mozilla.org/en-US/docs/Web/XML) document. As well as this, it can also be used to test addressed nodes within a document to determine whether they match a pattern or not.
 
+
 -   [`FileReader`](https://developer.mozilla.org/en-US/docs/Web/API/FileReader) API
 
-    The `FileReader` API lets web applications asynchronously read the contents of files (or raw data buffers) stored on the user's computer, using [`File`](https://developer.mozilla.org/en-US/docs/Web/API/File) or [`Blob`](https://developer.mozilla.org/en-US/docs/Web/API/Blob) objects to specify the file or data to read. File objects may be obtained from a [`FileList`](https://developer.mozilla.org/en-US/docs/Web/API/FileList) object returned as a result of a user selecting files using the [`<input>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) element, from a drag and drop operation's [`DataTransfer`](https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer) object, or from the `mozGetAsFile()` API on an [`HTMLCanvasElement`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement).
+  XPath stands for **X**ML **Path** Language, it uses a non-XML syntax that provides a flexible way of addressing (pointing to) different parts of an [XML](https://developer.mozilla.org/en-US/docs/Web/XML) document. As well as this, it can also be used to test addressed nodes within a document to determine whether they match a pattern or not.
+* [`FileReader`](https://developer.mozilla.org/en-US/docs/Web/API/FileReader) API
 
--   [HTML in XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/HTML_in_XMLHttpRequest)
+  The `FileReader` API lets web applications asynchronously read the contents of files (or raw data buffers) stored on the user's computer, using [`File`](https://developer.mozilla.org/en-US/docs/Web/API/File) or [`Blob`](https://developer.mozilla.org/en-US/docs/Web/API/Blob) objects to specify the file or data to read. File objects may be obtained from a [`FileList`](https://developer.mozilla.org/en-US/docs/Web/API/FileList) object returned as a result of a user selecting files using the [`<input>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) element, from a drag and drop operation's [`DataTransfer`](https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer) object, or from the `mozGetAsFile()` API on an [`HTMLCanvasElement`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement).
+* [HTML in XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/HTML_in_XMLHttpRequest)
 
-    The [XMLHttpRequest](https://xhr.spec.whatwg.org/) specification adds HTML parsing support to [`XMLHttpRequest`](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest), which originally supported only XML parsing. This feature allows Web apps to obtain an HTML resource as a parsed DOM using `XMLHttpRequest`.
+  The [XMLHttpRequest](https://xhr.spec.whatwg.org/) specification adds HTML parsing support to [`XMLHttpRequest`](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest), which originally supported only XML parsing. This feature allows Web apps to obtain an HTML resource as a parsed DOM using `XMLHttpRequest`.
 
 ## [Tools](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX#tools 'Permalink to Tools')
 
 -   [axios](https://github.com/axios/axios)
 
-    [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) based [HTTP](https://developer.mozilla.org/en-US/docs/Glossary/HTTP) client, which uses `XMLHttpRequest` internally.
-
-<!--EndFragment-->

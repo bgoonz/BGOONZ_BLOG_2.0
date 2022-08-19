@@ -14,7 +14,6 @@
         t());
 })(this, function () {
   "use strict";
-
   function t() {
     for (var e = 0, t = 0, n = arguments.length; t < n; t++)
       e += arguments[t].length;
@@ -57,6 +56,7 @@
     );
   };
 });
+
 /*! smooth-scroll v16.1.0 | (c) 2019 Chris Ferdinandi | MIT License | http://github.com/cferdinandi/smooth-scroll */
 window.Element &&
   !Element.prototype.closest &&
@@ -71,13 +71,8 @@ window.Element &&
   }),
   (function () {
     if ("function" == typeof window.CustomEvent) return;
-
     function e(e, t) {
-      t = t || {
-        bubbles: !1,
-        cancelable: !1,
-        detail: void 0,
-      };
+      t = t || { bubbles: !1, cancelable: !1, detail: void 0 };
       var n = document.createEvent("CustomEvent");
       return n.initCustomEvent(e, t.bubbles, t.cancelable, t.detail), n;
     }
@@ -205,10 +200,7 @@ window.Element &&
           if (t.emitEvents && "function" == typeof q.CustomEvent) {
             var a = new CustomEvent(e, {
               bubbles: !0,
-              detail: {
-                anchor: n,
-                toggle: o,
-              },
+              detail: { anchor: n, toggle: o },
             });
             document.dispatchEvent(a);
           }
@@ -343,10 +335,7 @@ window.Element &&
                   (history.pushState &&
                     h.updateURL &&
                     history.pushState(
-                      {
-                        smoothScroll: JSON.stringify(h),
-                        anchor: f.id,
-                      },
+                      { smoothScroll: JSON.stringify(h), anchor: f.id },
                       document.title,
                       f === document.documentElement ? "#top" : "#" + f.id
                     )),
@@ -405,9 +394,7 @@ window.Element &&
               ("string" == typeof t &&
                 t &&
                 !(t = document.querySelector(r(history.state.anchor)))) ||
-                M.animateScroll(t, null, {
-                  updateURL: !1,
-                });
+                M.animateScroll(t, null, { updateURL: !1 });
             }
           };
         M.destroy = function () {
@@ -441,6 +428,7 @@ window.Element &&
       };
     }
   );
+
 /*! gumshoejs v5.1.1 | (c) 2019 Chris Ferdinandi | MIT License | http://github.com/cferdinandi/gumshoe */
 Element.prototype.closest ||
   (Element.prototype.matches ||
@@ -458,13 +446,8 @@ Element.prototype.closest ||
   })),
   (function () {
     if ("function" == typeof window.CustomEvent) return !1;
-
     function t(t, e) {
-      e = e || {
-        bubbles: !1,
-        cancelable: !1,
-        detail: void 0,
-      };
+      e = e || { bubbles: !1, cancelable: !1, detail: void 0 };
       var n = document.createEvent("CustomEvent");
       return n.initCustomEvent(t, e.bubbles, e.cancelable, e.detail), n;
     }
@@ -593,11 +576,7 @@ Element.prototype.closest ||
               var e = document.getElementById(
                 decodeURIComponent(t.hash.substr(1))
               );
-              e &&
-                l.push({
-                  nav: t,
-                  content: e,
-                });
+              e && l.push({ nav: t, content: e });
             }),
             s(l);
         }),
@@ -665,6 +644,7 @@ Element.prototype.closest ||
       };
     }
   );
+
 /*!
  * clipboard.js v2.0.4
  * https://zenorocha.github.io/clipboard.js
@@ -682,35 +662,22 @@ Element.prototype.closest ||
 })(this, function () {
   return (function (n) {
     var o = {};
-
     function r(t) {
       if (o[t]) return o[t].exports;
-      var e = (o[t] = {
-        i: t,
-        l: !1,
-        exports: {},
-      });
+      var e = (o[t] = { i: t, l: !1, exports: {} });
       return n[t].call(e.exports, e, e.exports, r), (e.l = !0), e.exports;
     }
     return (
       (r.m = n),
       (r.c = o),
       (r.d = function (t, e, n) {
-        r.o(t, e) ||
-          Object.defineProperty(t, e, {
-            enumerable: !0,
-            get: n,
-          });
+        r.o(t, e) || Object.defineProperty(t, e, { enumerable: !0, get: n });
       }),
       (r.r = function (t) {
         "undefined" != typeof Symbol &&
           Symbol.toStringTag &&
-          Object.defineProperty(t, Symbol.toStringTag, {
-            value: "Module",
-          }),
-          Object.defineProperty(t, "__esModule", {
-            value: !0,
-          });
+          Object.defineProperty(t, Symbol.toStringTag, { value: "Module" }),
+          Object.defineProperty(t, "__esModule", { value: !0 });
       }),
       (r.t = function (e, t) {
         if ((1 & t && (e = r(e)), 8 & t)) return e;
@@ -718,10 +685,7 @@ Element.prototype.closest ||
         var n = Object.create(null);
         if (
           (r.r(n),
-          Object.defineProperty(n, "default", {
-            enumerable: !0,
-            value: e,
-          }),
+          Object.defineProperty(n, "default", { enumerable: !0, value: e }),
           2 & t && "string" != typeof e)
         )
           for (var o in e)
@@ -784,13 +748,8 @@ Element.prototype.closest ||
         a = o(n(1)),
         c = o(n(3)),
         u = o(n(4));
-
       function o(t) {
-        return t && t.__esModule
-          ? t
-          : {
-              default: t,
-            };
+        return t && t.__esModule ? t : { default: t };
       }
       var l = (function (t) {
         function o(t, e) {
@@ -931,7 +890,6 @@ Element.prototype.closest ||
           o
         );
       })();
-
       function s(t, e) {
         var n = "data-clipboard-" + t;
         if (e.hasAttribute(n)) return e.getAttribute(n);
@@ -969,12 +927,7 @@ Element.prototype.closest ||
           };
         })(),
         a = n(2),
-        c =
-          (o = a) && o.__esModule
-            ? o
-            : {
-                default: o,
-              };
+        c = (o = a) && o.__esModule ? o : { default: o };
       var u = (function () {
         function e(t) {
           !(function (t, e) {
@@ -1182,17 +1135,10 @@ Element.prototype.closest ||
       (n.prototype = {
         on: function (t, e, n) {
           var o = this.e || (this.e = {});
-          return (
-            (o[t] || (o[t] = [])).push({
-              fn: e,
-              ctx: n,
-            }),
-            this
-          );
+          return (o[t] || (o[t] = [])).push({ fn: e, ctx: n }), this;
         },
         once: function (t, e, n) {
           var o = this;
-
           function r() {
             o.off(t, r), e.apply(n, arguments);
           }
@@ -1287,7 +1233,6 @@ Element.prototype.closest ||
     },
     function (t, e, n) {
       var a = n(7);
-
       function i(t, e, n, o, r) {
         var i = function (e, n, t, o) {
           return function (t) {

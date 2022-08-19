@@ -1,25 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Logs
 logs
 *.log
@@ -74,11 +52,12 @@ typings/
 *.tgz
 
 # dotenv environment variables file
+.env
 
 
 # gatsby files
-# .cache/
-# public
+.cache/
+public
 
 # Mac files
 .DS_Store
@@ -93,5 +72,11 @@ yarn-error.log
 node_modules/
 
 
-# *.cache
-# *public
+*.cache
+
+*public/
+
+package.lock.json
+
+# Local Netlify folder
+.netlify

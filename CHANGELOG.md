@@ -1,9 +1,12 @@
 Git History on master by all authors
 
-
 <details>
 
-<summary> Original </summary>   
+<summary>
+ Original
+
+</summary>
+
 
 Merge pull request #1564 from bgoonz/master
 3e3b8baab (HEAD -> master, origin/master, origin/HEAD) by Bryan C Guner <66654881+bgoonz@users.noreply.github.com>, Sat Jan 22 2022 (2 days ago)
@@ -104,7 +107,7 @@ ffb04efe8 by Bryan C Guner <66654881+bgoonz@users.noreply.github.com>, Sat Jan 2
 Merge pull request #1560 from bgoonz/preview
 68d7afa15 by Bryan C Guner <66654881+bgoonz@users.noreply.github.com>, Sat Jan 22 2022 (2 days ago)
 
-site-metadata.json: Multiple updates: _ updated social_links in footer _ updated links in footer \* updated new_window in links
+site-metadata.json: Multiple updates: _updated social_links in footer_ updated links in footer \* updated new_window in links
 cb64efe0c by Bryan Guner <bryan.guner@gmail.com>, Sat Jan 22 2022 (2 days ago)
 1 file changed, 17 insertions(+), 1 deletion(-)
 
@@ -202,7 +205,7 @@ Create github-profiles.md
 b8ff2ca1e by Bryan C Guner <66654881+bgoonz@users.noreply.github.com>, Fri Jan 21 2022 (3 days ago)
 1 file changed, 112 insertions(+)
 
-Merge branch 'master' of https://github.com/Web-Dev-Collaborative/BGOONZ_BLOG_2.0
+Merge branch 'master' of <https://github.com/Web-Dev-Collaborative/BGOONZ_BLOG_2.0>
 f7771c7cf by Bryan C Guner <66654881+bgoonz@users.noreply.github.com>, Fri Jan 21 2022 (3 days ago)
 
 Merge pull request #2 from bgoonz/master
@@ -315,7 +318,7 @@ hi
 c3c681777 by Bryan Guner <bryan.guner@gmail.com>, Fri Jan 21 2022 (3 days ago)
 364 files changed, 1209 insertions(+), 1209 deletions(-)
 
-Merge branch 'master' of https://github.com/bgoonz/BGOONZ_BLOG_2.0
+Merge branch 'master' of <https://github.com/bgoonz/BGOONZ_BLOG_2.0>
 a41090f64 by Bryan Guner <bryan.guner@gmail.com>, Fri Jan 21 2022 (3 days ago)
 
 main-projects.md: added
@@ -326,7 +329,7 @@ bash-intro.md: added
 5aae32300 by Stackbit Code Editor <projects@stackbit.com>, Fri Jan 21 2022 (3 days ago)
 1 file changed, 0 insertions(+), 0 deletions(-)
 
-Merge branch 'preview' of https://github.com/bgoonz/BGOONZ_BLOG_2.0 into preview
+Merge branch 'preview' of <https://github.com/bgoonz/BGOONZ_BLOG_2.0> into preview
 db9888093 by Bryan Guner <bryan.guner@gmail.com>, Fri Jan 21 2022 (3 days ago)
 
 .env: removed
@@ -625,7 +628,7 @@ jamstack.md: added
 1fa357f64 by Bryan Guner <bryan.guner@gmail.com>, Fri Jan 21 2022 (4 days ago)
 1 file changed, 20 insertions(+)
 
-index.md: Multiple updates: _ updated actions in grid_items _ updated type in actions _ updated label in actions _ updated url in actions \* updated style in actions
+index.md: Multiple updates: _updated actions in grid_items_ updated type in actions _updated label in actions_ updated url in actions \* updated style in actions
 39539d581 by Bryan Guner <bryan.guner@gmail.com>, Fri Jan 21 2022 (4 days ago)
 1 file changed, 6 deletions(-)
 
@@ -888,13 +891,13 @@ hi
 4172ce972 by bgoonz <bryan.guner@gmail.con>, Mon Jan 17 2022 (7 days ago)
 2 files changed, 25074 insertions(+), 27 deletions(-)
 
-Merge branch 'master' of https://github.com/bgoonz/BGOONZ_BLOG_2.0
+Merge branch 'master' of <https://github.com/bgoonz/BGOONZ_BLOG_2.0>
 937e49815 by Bryan Guner <bryan.guner@gmail.com>, Mon Jan 17 2022 (7 days ago)
 
 Merge remote-tracking branch 'origin/preview'
 93d277a41 by Stackbit <projects@stackbit.com>, Sun Jan 16 2022 (8 days ago)
 
-Merge branch 'preview' of https://github.com/bgoonz/BGOONZ_BLOG_2.0
+Merge branch 'preview' of <https://github.com/bgoonz/BGOONZ_BLOG_2.0>
 13e53a3bc by Bryan Guner <bryan.guner@gmail.com>, Mon Jan 17 2022 (7 days ago)
 
 scrap.md: changed
@@ -1107,277 +1110,269 @@ Merge pull request #1478 from bgoonz/preview
 
 ···
 
-
-
-
 </details>
 
-
-
-
-
 <details>
 
 ---
 
+<summary>
+  April-4-2022-stable
 
+</summary>
 
-
-<summary>  April-4-2022-stable </summary>   
 
 ## What's Changed
-* Merge pull request #1432 from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1433
-* Preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1434
-* -update by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1436
-* async-js by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1437
-* -update by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1438
-* Merge pull request by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1439
-* Merge pull request by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1441
-* Merge pull request by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1442
-* Merge pull request #1442 from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1443
-* cs-basics-in-js.md: added by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1444
-* Merge pull request #1444 from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1445
-* _docs.scss: changed by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1446
-* STABLE---FIXED-DOCS_FORMATTINGMerge pull request #1446 from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1447
-* -update by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1448
-* -update by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1449
-* _reset.scss: changed by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1450
-* Merge pull request #1450 from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1451
-* -update by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1452
-* -update by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1453
-* Merge pull request by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1454
-* Merge pull request #1454 from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1455
-* Merge pull request #1455 from bgoonz/master by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1456
-* -update by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1457
-* hi by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1458
-* -update by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1459
-* hi by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1460
-* Add files via upload by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1461
-* hi by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1462
-* Update _general.scss by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1463
-* index.md: changed by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1464
-* Merge pull request #1464 from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1465
-* _general.scss: changed by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1466
-* Merge pull request #1466 from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1467
-* portfolio-91689538.jpg: added by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1468
-* _general.scss: changed by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1469
-* Merge pull request by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1470
-* _posts.scss: changed by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1471
-* Merge pull request #1471 from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1472
-* Create python-quiz.md by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1473
-* Merge pull request by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1474
-* Merge pull request #1474 from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1475
-* Merge pull request by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1476
-* -update by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1639
-* Merge pull request #1639 from bgoonz/master by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1640
-* -update by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1641
-* Merge pull request by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1643
-* Restyle -update by @restyled-io in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1642
-* Revert "Merge pull request #1574 from bgoonz/master" by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1653
-* Restyled by clang-format by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1654
-* Merge pull request #1654 from bgoonz/master by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1655
-* Merge pull request #1655 from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1656
-* Bump url-parse from 1.4.3 to 1.5.7 in /notes/future-implementations/gatsby-plugin-algolia/example by @dependabot in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1650
-* Bump url-parse by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1659
-* Update _general.scss by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1657
-* -update by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1661
-* -update by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1663
-* Merge pull request by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1664
-* Merge pull request #1664 from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1665
-* Add .circleci/config.yml by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1660
-* Add .circleci/config.yml by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1666
-* Create BGOONZ_BLOG_2.0.git by @ladykraken in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1652
-* 1a7db48b5f17639cbacd645504b3afd5fd2e170f by @ladykraken in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1651
-* BGOONZ_BLOG_2.0/.github/workflows/makefile.yml by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1667
-* -update by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1668
-* -update by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1670
-* -update by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1671
-* Merge pull request by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1672
-* Merge pull request #1672 from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1673
-* Bump marked from 0.6.1 to 4.0.10 by @dependabot in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1674
-* Bump marked from 0.6.1 to 4.0.10 by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1681
-* Merge pull request#1673from bgoonz/master by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1682
-* Merge pull request#1682from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1683
-* Restyle Merge pull request#1682from bgoonz/preview by @restyled-io in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1684
-* Restyled by whitespace by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1686
-* Restyle Restyled by whitespace by @restyled-io in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1687
-* Configure Sider by @sider in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1685
-* Merge pull request#1683from bgoonz/master by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1690
-* pleaseeeee by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1692
-* -update by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1693
-* -update by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1694
-* Restyle Merge pull request#1683from bgoonz/master by @restyled-io in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1691
-* Restyled by autopep8 by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1695
-* Merge pull request #1695 from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1696
-* -update by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1697
-* Merge pull request#1697from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1698
-* -update by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1700
-* Preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1701
-* 446 by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1702
-* Merge pull request #1702 from bgoonz/master by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1703
-* Merge pull request #1703 from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1704
-* img by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1705
-* Merge pull request #1705 from bgoonz/master by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1706
-* Merge pull request#1705from bgoonz/master by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1707
-* overwriting with better lost history by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1711
-* Merge pull request #1711 from bgoonz/master by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1712
-* Merge pull request #1712 from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1713
-* Merge pull request #1713 from bgoonz/master by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1714
-* Delete _docs.scss by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1715
-* y by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1716
-* -update by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1719
-* Merge pull request #1716 from bgoonz/master by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1717
-* Merge pull request #1717 from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1720
-* Delete lint.yml by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1721
-* -update by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1722
-* Merge pull request #1722 from bgoonz/master by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1724
-* -update by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1725
-* -update by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1726
-* Merge pull request#1725from bgoonz/master by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1727
-* Merge pull request#1727from bgoonz/preview removed unused code like algolia search by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1728
-* Merge pull request #1728 from bgoonz/master by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1729
-* Merge pull request #1729 from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1730
-* Update README.md by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1731
-* jamstack.md: added by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1733
-* Restyle jamstack.md: added by @restyled-io in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1734
-* Merge pull request #1733 from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1735
-* url.md: added by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1736
-* Merge pull request #1736 from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1738
-* Restyle url.md: added by @restyled-io in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1737
-* Restyled by prettier-markdown by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1739
-* Merge pull request #1739 from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1741
-* Merge pull request#1741from bgoonz/master by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1743
-* markdown correcctions by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1745
-* Restyle markdown correcctions by @restyled-io in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1746
-* Restyled by prettier-markdown by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1747
-* js files by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1748
-* logo-final-touchup.PNG: added by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1749
-* Merge pull request #1749 from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1750
-* moved gists by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1752
-* build(deps): bump axios from 0.16.2 to 0.21.2 by @dependabot in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1751
-* build(deps): bump axios from 0.16.2 to 0.21.2 by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1753
-* Merge pull request#1750from bgoonz/master by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1754
-* Merge pull request #1754 from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1756
-* styling by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1757
-* leetcode by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1759
-* Merge remote-tracking branch 'origin/preview' by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1760
-* update by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1761
-* Merge pull request #1761 from bgoonz/master by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1763
-* Merge pull request #1763 from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1764
-* pull by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1765
-* pull by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1766
-* formatting by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1767
-* package-lock.json deleted by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1769
-* _general.scss: changed by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1770
-* scss by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1771
-* inital stable commit by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1772
-* Merge remote-tracking branch 'origin/preview' by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1773
-* iframe fixes by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1774
-* formatting and connect table by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1775
-* accessibility.md: added by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1777
-* Merge pull request #1777 from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1779
-* Restyle accessibility.md: added by @restyled-io in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1778
-* hi by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1780
-* Restyled by prettier-markdown by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1781
-* Merge pull request #1781 from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1782
-* sitemap by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1784
-* hi by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1786
-* Add files via upload by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1787
-* Merge pull request#1782from bgoonz/master by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1789
-* Merge pull request #1789 from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1790
-* Merge pull request#1790from bgoonz/master by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1791
-* Merge pull request #1791 from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1792
-* Merge pull request #1792 from bgoonz/master by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1793
-* Merge pull request #1793 from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1795
-* Restyle Merge pull request#1790from bgoonz/master by @restyled-io in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1794
-* -update by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1796
-* Restyled by clang-format by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1797
-* Restyle -update by @restyled-io in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1798
-* Restyled by prettier-markdown by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1799
-* Delete package-lock.json by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1800
-* Create label.yml by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1801
-* Restyle Restyled by clang-format by @restyled-io in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1802
-* -update by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1803
-* Merge pull request #1803 from bgoonz/master by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1804
-* Merge pull request #1804 from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1805
-* removed prototype from titles by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1806
-* removed prototype from titles by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1807
-* removed prototype from titles by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1808
-* mdn by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1809
-* Restyle mdn by @restyled-io in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1810
-* Restyled by prettier-markdown by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1811
-* Merge remote-tracking branch 'origin/preview' by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1812
-* hi by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1813
-* hi by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1815
-* hi by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1816
-* Merge pull request#1811from bgoonz/master by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1817
-* Restyle Merge pull request#1811from bgoonz/master by @restyled-io in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1818
-* Merge pull request #1817 from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1819
-* formatting by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1820
-* Merge pull request #1820 from bgoonz/master by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1821
-* Merge pull request #1821 from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1822
-* -update by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1823
-* -update by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1826
-* Merge pull request #1826 from bgoonz/master by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1827
-* Merge pull request #1827 from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1828
-* -update by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1829
-* -update by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1832
-* update by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1833
-* update by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1834
-* Merge pull request#1828from bgoonz/master by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1836
-* Restyle  update by @restyled-io in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1835
-* Restyled by jq by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1837
-* deleted script by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1838
-* Merge pull request#1837from bgoonz/master by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1839
-* Merge pull request #1839 from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1840
-* Merge pull request #1840 from bgoonz/master by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1841
-* docs by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1842
-* Update README.md by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1843
-* Merge pull request#1842from bgoonz/master by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1844
-* organized imports by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1845
-* update by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1846
-* Merge pull request#1845from bgoonz/master by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1847
-* initial components  by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1848
-* hi by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1850
-* Merge pull request #1848 from bgoonz/master by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1849
-* de by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1852
-* update by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1853
-* Merge pull request#1852from bgoonz/master by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1854
-* hi dad by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1855
-* ds-algo by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1856
-* hi by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1857
-* Merge pull request#1855from bgoonz/master by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1858
-* git-banner.png by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1860
-* Merge pull request #1860 from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1861
-* Merge pull request#1861from bgoonz/master by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1862
-* Merge pull request #1862 from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1863
-* hi by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1865
-* Merge pull request #1863 from bgoonz/master by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1864
-* Merge pull request#1864from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1866
-* hi by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1867
-* formatting by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1869
-* Merge pull request#1866from bgoonz/master by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1868
-* Merge pull request #1868 from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1871
-* update by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1872
-* update by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1873
-* Merge pull request#1871from bgoonz/master by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1874
-* Merge pull request #1874 from bgoonz/preview by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1875
-* Merge pull request #1875 from bgoonz/master by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1876
-* styling by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1877
-* hi by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1879
-* Merge pull request #1879 from bgoonz/master by @bgoonz in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1880
+
+* Merge pull request #1432 from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1433>
+* Preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1434>
+* -update by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1436>
+* async-js by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1437>
+* -update by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1438>
+* Merge pull request by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1439>
+* Merge pull request by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1441>
+* Merge pull request by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1442>
+* Merge pull request #1442 from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1443>
+* cs-basics-in-js.md: added by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1444>
+* Merge pull request #1444 from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1445>
+* _docs.scss: changed by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1446>
+* STABLE---FIXED-DOCS_FORMATTINGMerge pull request #1446 from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1447>
+* -update by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1448>
+* -update by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1449>
+* _reset.scss: changed by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1450>
+* Merge pull request #1450 from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1451>
+* -update by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1452>
+* -update by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1453>
+* Merge pull request by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1454>
+* Merge pull request #1454 from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1455>
+* Merge pull request #1455 from bgoonz/master by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1456>
+* -update by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1457>
+* hi by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1458>
+* -update by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1459>
+* hi by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1460>
+* Add files via upload by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1461>
+* hi by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1462>
+* Update _general.scss by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1463>
+* index.md: changed by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1464>
+* Merge pull request #1464 from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1465>
+* _general.scss: changed by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1466>
+* Merge pull request #1466 from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1467>
+* portfolio-91689538.jpg: added by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1468>
+* _general.scss: changed by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1469>
+* Merge pull request by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1470>
+* _posts.scss: changed by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1471>
+* Merge pull request #1471 from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1472>
+* Create python-quiz.md by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1473>
+* Merge pull request by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1474>
+* Merge pull request #1474 from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1475>
+* Merge pull request by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1476>
+* -update by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1639>
+* Merge pull request #1639 from bgoonz/master by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1640>
+* -update by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1641>
+* Merge pull request by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1643>
+* Restyle -update by @restyled-io in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1642>
+* Revert "Merge pull request #1574 from bgoonz/master" by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1653>
+* Restyled by clang-format by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1654>
+* Merge pull request #1654 from bgoonz/master by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1655>
+* Merge pull request #1655 from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1656>
+* Bump url-parse from 1.4.3 to 1.5.7 in /notes/future-implementations/gatsby-plugin-algolia/example by @dependabot in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1650>
+* Bump url-parse by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1659>
+* Update _general.scss by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1657>
+* -update by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1661>
+* -update by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1663>
+* Merge pull request by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1664>
+* Merge pull request #1664 from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1665>
+* Add .circleci/config.yml by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1660>
+* Add .circleci/config.yml by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1666>
+* Create BGOONZ_BLOG_2.0.git by @ladykraken in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1652>
+* 1a7db48b5f17639cbacd645504b3afd5fd2e170f by @ladykraken in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1651>
+* BGOONZ_BLOG_2.0/.github/workflows/makefile.yml by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1667>
+* -update by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1668>
+* -update by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1670>
+* -update by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1671>
+* Merge pull request by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1672>
+* Merge pull request #1672 from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1673>
+* Bump marked from 0.6.1 to 4.0.10 by @dependabot in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1674>
+* Bump marked from 0.6.1 to 4.0.10 by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1681>
+* Merge pull request#1673from bgoonz/master by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1682>
+* Merge pull request#1682from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1683>
+* Restyle Merge pull request#1682from bgoonz/preview by @restyled-io in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1684>
+* Restyled by whitespace by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1686>
+* Restyle Restyled by whitespace by @restyled-io in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1687>
+* Configure Sider by @sider in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1685>
+* Merge pull request#1683from bgoonz/master by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1690>
+* pleaseeeee by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1692>
+* -update by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1693>
+* -update by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1694>
+* Restyle Merge pull request#1683from bgoonz/master by @restyled-io in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1691>
+* Restyled by autopep8 by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1695>
+* Merge pull request #1695 from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1696>
+* -update by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1697>
+* Merge pull request#1697from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1698>
+* -update by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1700>
+* Preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1701>
+* 446 by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1702>
+* Merge pull request #1702 from bgoonz/master by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1703>
+* Merge pull request #1703 from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1704>
+* img by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1705>
+* Merge pull request #1705 from bgoonz/master by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1706>
+* Merge pull request#1705from bgoonz/master by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1707>
+* overwriting with better lost history by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1711>
+* Merge pull request #1711 from bgoonz/master by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1712>
+* Merge pull request #1712 from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1713>
+* Merge pull request #1713 from bgoonz/master by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1714>
+* Delete _docs.scss by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1715>
+* y by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1716>
+* -update by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1719>
+* Merge pull request #1716 from bgoonz/master by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1717>
+* Merge pull request #1717 from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1720>
+* Delete lint.yml by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1721>
+* -update by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1722>
+* Merge pull request #1722 from bgoonz/master by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1724>
+* -update by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1725>
+* -update by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1726>
+* Merge pull request#1725from bgoonz/master by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1727>
+* Merge pull request#1727from bgoonz/preview removed unused code like algolia search by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1728>
+* Merge pull request #1728 from bgoonz/master by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1729>
+* Merge pull request #1729 from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1730>
+* Update README.md by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1731>
+* jamstack.md: added by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1733>
+* Restyle jamstack.md: added by @restyled-io in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1734>
+* Merge pull request #1733 from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1735>
+* url.md: added by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1736>
+* Merge pull request #1736 from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1738>
+* Restyle url.md: added by @restyled-io in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1737>
+* Restyled by prettier-markdown by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1739>
+* Merge pull request #1739 from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1741>
+* Merge pull request#1741from bgoonz/master by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1743>
+* markdown correcctions by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1745>
+* Restyle markdown correcctions by @restyled-io in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1746>
+* Restyled by prettier-markdown by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1747>
+* js files by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1748>
+* logo-final-touchup.PNG: added by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1749>
+* Merge pull request #1749 from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1750>
+* moved gists by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1752>
+* build(deps): bump axios from 0.16.2 to 0.21.2 by @dependabot in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1751>
+* build(deps): bump axios from 0.16.2 to 0.21.2 by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1753>
+* Merge pull request#1750from bgoonz/master by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1754>
+* Merge pull request #1754 from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1756>
+* styling by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1757>
+* leetcode by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1759>
+* Merge remote-tracking branch 'origin/preview' by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1760>
+* update by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1761>
+* Merge pull request #1761 from bgoonz/master by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1763>
+* Merge pull request #1763 from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1764>
+* pull by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1765>
+* pull by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1766>
+* formatting by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1767>
+* package-lock.json deleted by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1769>
+* _general.scss: changed by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1770>
+* scss by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1771>
+* inital stable commit by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1772>
+* Merge remote-tracking branch 'origin/preview' by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1773>
+* iframe fixes by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1774>
+* formatting and connect table by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1775>
+* accessibility.md: added by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1777>
+* Merge pull request #1777 from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1779>
+* Restyle accessibility.md: added by @restyled-io in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1778>
+* hi by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1780>
+* Restyled by prettier-markdown by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1781>
+* Merge pull request #1781 from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1782>
+* sitemap by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1784>
+* hi by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1786>
+* Add files via upload by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1787>
+* Merge pull request#1782from bgoonz/master by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1789>
+* Merge pull request #1789 from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1790>
+* Merge pull request#1790from bgoonz/master by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1791>
+* Merge pull request #1791 from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1792>
+* Merge pull request #1792 from bgoonz/master by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1793>
+* Merge pull request #1793 from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1795>
+* Restyle Merge pull request#1790from bgoonz/master by @restyled-io in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1794>
+* -update by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1796>
+* Restyled by clang-format by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1797>
+* Restyle -update by @restyled-io in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1798>
+* Restyled by prettier-markdown by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1799>
+* Delete package-lock.json by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1800>
+* Create label.yml by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1801>
+* Restyle Restyled by clang-format by @restyled-io in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1802>
+* -update by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1803>
+* Merge pull request #1803 from bgoonz/master by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1804>
+* Merge pull request #1804 from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1805>
+* removed prototype from titles by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1806>
+* removed prototype from titles by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1807>
+* removed prototype from titles by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1808>
+* mdn by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1809>
+* Restyle mdn by @restyled-io in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1810>
+* Restyled by prettier-markdown by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1811>
+* Merge remote-tracking branch 'origin/preview' by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1812>
+* hi by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1813>
+* hi by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1815>
+* hi by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1816>
+* Merge pull request#1811from bgoonz/master by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1817>
+* Restyle Merge pull request#1811from bgoonz/master by @restyled-io in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1818>
+* Merge pull request #1817 from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1819>
+* formatting by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1820>
+* Merge pull request #1820 from bgoonz/master by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1821>
+* Merge pull request #1821 from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1822>
+* -update by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1823>
+* -update by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1826>
+* Merge pull request #1826 from bgoonz/master by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1827>
+* Merge pull request #1827 from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1828>
+* -update by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1829>
+* -update by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1832>
+* update by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1833>
+* update by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1834>
+* Merge pull request#1828from bgoonz/master by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1836>
+* Restyle  update by @restyled-io in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1835>
+* Restyled by jq by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1837>
+* deleted script by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1838>
+* Merge pull request#1837from bgoonz/master by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1839>
+* Merge pull request #1839 from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1840>
+* Merge pull request #1840 from bgoonz/master by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1841>
+* docs by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1842>
+* Update README.md by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1843>
+* Merge pull request#1842from bgoonz/master by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1844>
+* organized imports by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1845>
+* update by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1846>
+* Merge pull request#1845from bgoonz/master by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1847>
+* initial components  by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1848>
+* hi by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1850>
+* Merge pull request #1848 from bgoonz/master by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1849>
+* de by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1852>
+* update by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1853>
+* Merge pull request#1852from bgoonz/master by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1854>
+* hi dad by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1855>
+* ds-algo by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1856>
+* hi by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1857>
+* Merge pull request#1855from bgoonz/master by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1858>
+* git-banner.png by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1860>
+* Merge pull request #1860 from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1861>
+* Merge pull request#1861from bgoonz/master by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1862>
+* Merge pull request #1862 from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1863>
+* hi by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1865>
+* Merge pull request #1863 from bgoonz/master by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1864>
+* Merge pull request#1864from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1866>
+* hi by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1867>
+* formatting by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1869>
+* Merge pull request#1866from bgoonz/master by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1868>
+* Merge pull request #1868 from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1871>
+* update by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1872>
+* update by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1873>
+* Merge pull request#1871from bgoonz/master by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1874>
+* Merge pull request #1874 from bgoonz/preview by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1875>
+* Merge pull request #1875 from bgoonz/master by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1876>
+* styling by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1877>
+* hi by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1879>
+* Merge pull request #1879 from bgoonz/master by @bgoonz in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1880>
 
 ## New Contributors
-* @dependabot made their first contribution in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1650
-* @ladykraken made their first contribution in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1652
-* @sider made their first contribution in https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1685
 
-**Full Changelog**: https://github.com/bgoonz/BGOONZ_BLOG_2.0/compare/download...2022
+* @dependabot made their first contribution in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1650>
+* @ladykraken made their first contribution in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1652>
+* @sider made their first contribution in <https://github.com/bgoonz/BGOONZ_BLOG_2.0/pull/1685>
+
+**Full Changelog**: <https://github.com/bgoonz/BGOONZ_BLOG_2.0/compare/download...2022>
 
 <details>
 
-
 ---
-
-
-
