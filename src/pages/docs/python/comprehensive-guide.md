@@ -1,10 +1,10 @@
 ---
-title: lorem-ipsum
+title: Comprehensive Python Guide
 weight: 0
-excerpt: lorem-ipsum
+excerpt: Pythons design into 20 aphorisms, only 19 of which have been written down.
 seo:
-    title: ''
-    description: ''
+    title: 'Comprehensive Python Guide'
+    description: 'Pythons design into 20 aphorisms, only 19 of which have been written down.'
     robots: []
     extra: []
 template: docs
@@ -205,7 +205,7 @@ template: docs
 
 From the [PEP 20 -- The Zen of Python](https://www.python.org/dev/peps/pep-0020/):
 
-> Long time Pythoneer Tim Peters succinctly channels the BDFL's guiding principles for Python's design into 20 aphorisms, only 19 of which have been written down.
+> Long time Pythoneer Tim Peters succinctly channels the BDFL's guiding principles for Pythons design into 20 aphorisms, only 19 of which have been written down.
 
 ```python
 >>> import this
