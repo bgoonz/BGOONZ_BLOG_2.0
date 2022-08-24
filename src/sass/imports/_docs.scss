@@ -263,12 +263,12 @@
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1000px) {
     .post {
         &.type-docs {
             .post-title,
             .post-content {
-                padding-left: 8%;
+                padding-left: 7%;
                 padding-right: 7%;
             }
         }
@@ -280,7 +280,7 @@
         display: -ms-flexbox;
         display: flex;
         padding-top: 3.75em;
-        width: 100%;
+        width: 98%;
     }
 
     .post.type-docs {
