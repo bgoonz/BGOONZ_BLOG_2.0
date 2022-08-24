@@ -87,9 +87,18 @@
   position: relative;
   width: 30px;
 
+<<<<<<< HEAD
+    &:hover,
+    &:focus,
+    &:active {
+        outline: 0;
+    }
+}
+=======
   &:hover,
   &:focus,
   &:active {
     outline: 0;
   }
 }
+>>>>>>> 785af4d57dba47338b43090bd83ba87115dbc192
