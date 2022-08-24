@@ -250,11 +250,9 @@
         }
     }
 
-    .page-nav-inside {
-        display: none;
-
-        &.has-links {
-            display: block;
+    .page-nav-title {
+        &:only-child {
+            display: none;
         }
     }
 }
