@@ -1,58 +1,59 @@
 .site-header {
-  background: #fff;
-  padding-bottom: 1.25em;
-  padding-top: 1.125em;
+    background: black;
+    background-image: url('https://i.imgur.com/CEYEZp8.jpeg');
+    padding-bottom: 0.2em;
+    padding-top: 0.2em;
 }
 
 .site-header-inside {
-  -ms-flex-align: center;
-  align-items: center;
-  display: -ms-flexbox;
-  display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .site-branding {
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
 }
 
 .site-title {
-  color: $gray-700;
-  font-size: 1.5em;
-  font-weight: bold;
-  line-height: 1.2;
-  margin: 0;
+    color: $gray-700;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0;
 }
 
 .site-logo {
-  margin: 0;
+    margin: 0;
 
-  img {
-    max-height: 36px;
-  }
+    img {
+        max-height: 36px;
+    }
 }
 
 .menu,
 .submenu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .menu-item {
-  position: relative;
+    position: relative;
 
-  &.current {
-    color: $color-primary;
-  }
-
-  a {
-    &:not(.button) {
-      display: inline-block;
-      font-size: 0.9375em;
-      line-height: 1.5;
+    &.current {
+        color: $color-primary;
     }
-  }
+
+    a {
+        &:not(.button) {
+            display: inline-block;
+            font-size: 0.9375em;
+            line-height: 1.5;
+        }
+    }
 }
 
 #masthead {

@@ -1,3056 +1,215 @@
-# Bgoonz Blog Readme
+<h1 align="center">Hi 👋, I'm Bryan</h1>
+
+---
+
+<div align="center">
+
+### [WEBSITE](https://bgoonz-blog.netlify.app/)
+
+### [Vercel Backup](https://bgoonz-blog-2-0-iuovoktmh-bgoonz.vercel.app/)
+
+## [Backup Repo Deploy](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0)
+
+## [Github pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/)
+
+![Profile views](https://views.whatilearened.today/views/github/bgoonz/views.svg)[![Gitter](https://badges.gitter.im/bgoonz/community.svg)](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/best-celery-b2d7c/deploys)
+
+[![CodeScene System Mastery](https://codescene.io/projects/17026/status-badges/system-mastery)](https://codescene.io/projects/17026)
+
+    
+    
+    
+![Demo](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/iframes.gif?raw=true)
+    
+    
+    
+</div>
+
+## Docs Structure:
+
+```
+.
+├── ./About
+│   ├── ./About/index.md
+│   ├── ./About/introduction2bg.md
+│   ├── ./About/me.md
+│   └── ./About/resume.md
+├── ./articles
+│   ├── ./articles/algo.md
+│   └── ./articles/basic-web-dev.md
+├── ./faq
+│   ├── ./faq/Contact.md
+│   ├── ./faq/index.md
+│   └── ./faq/other-sites.md
+├── ./index.md
+├── ./jupyter-notebooks.md
+├── ./links
+│   ├── ./links/Social.md
+│   ├── ./links/index.md
+│   └── ./links/my-websites.md
+├── ./portfolio-web.md
+├── ./python.md
+├── ./quick-reference
+│   ├── ./quick-reference/Emmet.md
+│   ├── ./quick-reference/index.md
+│   ├── ./quick-reference/installation.md
+│   └── ./quick-reference/new-repo-instructions.md
+├── ./react
+│   ├── ./react/createReactApp.md
+│   ├── ./react/index.md
+│   └── ./react/react2.md
+├── ./resources.md
+└── ./tools
+    ├── ./tools/Git-Html-Preview.md
+    ├── ./tools/default-readme.md
+    ├── ./tools/index.md
+    ├── ./tools/notes-template.md
+    └── ./tools/plug-ins.md
 
-### [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app)
+7 directories, 29 files
 
 
-### [CHANGELOG](./CHANGELOG.md)
-
-##### [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app) [⇨**Cloudfare-Backup**⇦](https://bgoonz-blog-2-0.pages.dev/) [⇨**search**⇦](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) [⇨**Backup Repo Deploy**⇦](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) [⇨**Github pages**⇦](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) [⇨**Go To Site Wiki**⇦](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki) [⇨**Gatsby Cloud Version**⇦](https://bgoonzblog20master.gatsbyjs.io/) [⇨**Vercel Version**⇦](https://bgoonz-blog-2-0.vercel.app/) [⇨**Cloudfare-Domain**⇦](www.webdevhub.us) [⇨**gh-pages**⇦](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) [⇨**backup netlify deploy**⇦](https://bgoonz-blog20-backup.netlify.app/)
-
-### Repos
-
-[Alt Backup](https://github.com/BGOOONZ-BLOG/bgoonz-blog2.0-v-5)
-[Blog Content](https://github.com/bgoonz/MainBlogContent)
-
-#### [⇨Privacy policy⇦](https://codepen.io/bgoonz/pen/LYLJZrW)
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys)[![CodeFactor](https://www.codefactor.io/repository/github/bgoonz/bgoonz_blog_2.0/badge)](https://www.codefactor.io/repository/github/bgoonz/bgoonz_blog_2.0)
-
-![GitHub visitors](https://visitor-badge-reloaded.herokuapp.com/badge?page_id=bgoonz.visitor.badge.reloaded&color=00bbbb&style=for-the-badge&logo=github)
-
-[![Deploy Gatsby site to Pages](https://github.com/DUKE42web/BGOONZ_BLOG_2.0/actions/workflows/pa7ges.yml/badge.svg?branch=master&event=deployment)](https://github.com/DUKE42web/BGOONZ_BLOG_2.0/actions/workflows/pa7ges.yml)
-
-[![.github/workflows/pages.yml](https://github.com/permission-squad/BGOONZ_BLOG_2.0/actions/workflows/pages.yml/badge.svg?branch=master&event=deployment)](https://github.com/permission-squad/BGOONZ_BLOG_2.0/actions/workflows/pages.yml)
-
----
-
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-
-<!-- code_chunk_output -->
-
-- [Bgoonz Blog Readme](#bgoonz-blog-readme)
-    - [⇨WEBSITE🗺️⇦](#website️httpsbgoonz-blognetlifyapp)
-    - [CHANGELOG](#changelogchangelogmd)
-        - [⇨WEBSITE🗺️⇦ ⇨**Cloudfare-Backup**⇦ ⇨**search**⇦ ⇨**Backup Repo Deploy**⇦ ⇨**Github pages**⇦ ⇨**Go To Site Wiki**⇦ ⇨**Gatsby Cloud Version**⇦ ⇨**Vercel Version**⇦ ⇨**Cloudfare-Domain**⇦ ⇨**gh-pages**⇦ ⇨**backup netlify deploy**⇦](#website️httpsbgoonz-blognetlifyapp-cloudfare-backuphttpsbgoonz-blog-2-0pagesdev-searchhttpswwwalgoliacomrealtime-search-demoweb-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4-backup-repo-deployhttpsbgoonzblog20-backupnetlifyappgsctab0-github-pageshttpsbgoonzgithubiobgoonz_blog_20-go-to-site-wikihttpsgithubcombgoonzbgoonz_blog_20wiki-gatsby-cloud-versionhttpsbgoonzblog20mastergatsbyjsio-vercel-versionhttpsbgoonz-blog-2-0vercelapp-cloudfare-domainwwwwebdevhubus-gh-pageshttpsbgoonzgithubiobgoonz_blog_20-backup-netlify-deployhttpsbgoonz-blog20-backupnetlifyapp)
-    - [Repos](#repos)
-      - [⇨Privacy policy⇦](#privacy-policyhttpscodepeniobgoonzpenlyljzrw)
-  - [Useful Commands (internal use)](#useful-commands-internal-use)
-  - [Web Dev Setup](#web-dev-setup)
-  - [Bash Cheat Sheet (MY COMMANDS)](#bash-cheat-sheet-my-commands)
-      - [Find](#find)
-  - [To find files by case-insensitive extension (ex: .jpg, .JPG, .jpG)](#to-find-files-by-case-insensitive-extension-ex-jpg-jpg-jpg)
-  - [To find directories](#to-find-directories)
-  - [To find files](#to-find-files)
-  - [To find files by octal permission](#to-find-files-by-octal-permission)
-  - [To find files with setuid bit set](#to-find-files-with-setuid-bit-set)
-  - [To find files with extension '.txt' and remove them](#to-find-files-with-extension-txt-and-remove-them)
-  - [To find files with extension '.txt' and look for a string into them](#to-find-files-with-extension-txt-and-look-for-a-string-into-them)
-  - [To find files with size bigger than 5 Mebibyte and sort them by size](#to-find-files-with-size-bigger-than-5-mebibyte-and-sort-them-by-size)
-  - [To find files bigger than 2 Megabyte and list them](#to-find-files-bigger-than-2-megabyte-and-list-them)
-  - [To find files modified more than 7 days ago and list file information](#to-find-files-modified-more-than-7-days-ago-and-list-file-information)
-  - [To find symlinks owned by a user and list file information](#to-find-symlinks-owned-by-a-user-and-list-file-information)
-  - [To search for and delete empty directories](#to-search-for-and-delete-empty-directories)
-  - [To search for directories named build at a max depth of 2 directories](#to-search-for-directories-named-build-at-a-max-depth-of-2-directories)
-  - [To search all files who are not in .git directory](#to-search-all-files-who-are-not-in-git-directory)
-  - [To find all files that have the same node (hard link) as MY_FILE_HERE](#to-find-all-files-that-have-the-same-node-hard-link-as-my_file_here)
-  - [To find all files in the current directory and modify their permissions](#to-find-all-files-in-the-current-directory-and-modify-their-permissions)
-  - [Wiki Nav](#wiki-nav)
-  - [Dependencies](#dependencies)
-  - [Docs Structure](#docs-structure)
-    - [Overview](#overview)
-    - [Syntax](#syntax)
-    - [Parameters](#parameters)
-    - [Return value](#return-value)
-    - [Example](#example)
-    - [Explanation](#explanation)
-    - [Output](#output)
-  - [Technoloy](#technoloy)
-  - [SOURCECODE](#sourcecode)
-    - [Overview](#overview-1)
-    - [Syntax](#syntax-1)
-    - [Parameters](#parameters-1)
-    - [Return value](#return-value-1)
-    - [Example](#example-1)
-    - [Explanation](#explanation-1)
-    - [Output](#output-1)
-  - [Source Code](#source-code)
-  - [Component Structure](#component-structure)
-
-<!-- /code_chunk_output -->
-
-![preview](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/blog-may-2022.png?raw=true)
-
----
-
-## Useful Commands (internal use)
-
-```bash
-
-npm i @stackbit/gatsby-plugin-menus babel-runtime chokidar classnames fs-extra gatsby gatsby-image gatsby-plugin-netlify gatsby-plugin-netlify-cms gatsby-plugin-sass gatsby-plugin-react-helmet gatsby-plugin-typescript  --legacy-peer-deps
-
-
-git checkout 307a5cd        # check out the commit that you want to reset to
-git checkout -b fixy        # create a branch named fixy to do the work
-git merge -s ours master    # merge master's history without changing any files
-git checkout master         # switch back to master
-git merge fixy              # and merge in the fixed branch
-git push                    # done, no need to force push!
-
-
-
-```
-
----
-
-<a href="https://testmysite.io/61e5ff836a840eeeef7e78e9/bgoonz-blog.netlify.app" rel="Test My Site Results">
-![Test My Site](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/Screenshot%202022-03-30%20at%2012-37-24%20Website%20Speed%20Test%20Tool%20-%20Testmysite.io%20by%20Netlify.png?raw=true)</a>
-
----
-
-## Web Dev Setup
-
-<details>
-
-<summary>Web Dev Setup</summary>
-
----
-
-title: WebDev Setup
-template: post
-subtitle: Basic Web Development Environment Setup
-excerpt: Windows Subsystem for Linux (WSL) and Ubuntu
-date: 2022-05-08T18:10:03.296Z
-image: <https://cdn-images-1.medium.com/max/800/0>*aqKP1drNHmNm34zz.jpg
-thumb_image: <https://cdn-images-1.medium.com/max/800/0>*aqKP1drNHmNm34zz.jpg
-image_position: right
-author: src/data/authors/bgoonz.yaml
-categories: - src/data/categories/js.yaml - src/data/categories/javascript.yaml
-tags: - src/data/tags/links.yaml - src/data/tags/resources.yaml
-show_author_bio: true
-related_posts: - src/pages/blog/vs-code-extensions.md - src/pages/blog/code-playgrounds-of-2021.md - src/pages/blog/adding-css-to-your-html.md - src/pages/blog/deploy-react-app-to-heroku.md
-cmseditable: true
-
----
-
-## Basic Web Development Environment Setup
-
-Windows Subsystem for Linux (WSL) and Ubuntu
-
----
-
-### Basic Web Development Environment Setup
-
-#### Windows Subsystem for Linux (WSL) and Ubuntu
-
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/0*aqKP1drNHmNm34zz.jpg" class="graf-image" />
-</figure>Test if you have Ubuntu installed by typing "Ubuntu" in the search box in the bottom app bar that reads "Type here to search". If you see a search result that reads **"Ubuntu 20.04 LTS"** with "App" under it, then you have it installed.
-```
-1.  In the application search box in the bottom bar, type "PowerShell" to find the application named "Windows PowerShell"
-2.  Right-click on "Windows PowerShell" and choose "Run as administrator" from the popup menu
-3.  In the blue PowerShell window, type the following: `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`
-4.  Restart your computer
-5.  In the application search box in the bottom bar, type "Store" to find the application named "Microsoft Store"
-6.  Click "Microsoft Store"
-7.  Click the "Search" button in the upper-right corner of the window
-8.  Type in "Ubuntu"
-9.  Click "Run Linux on Windows (Get the apps)"
-10. Click the orange tile labeled **"Ubuntu"** Note that there are 3 versions in the Microsoft Store… you want the one just entitled 'Ubuntu'
-11. Click "Install"
-12. After it downloads, click "Launch"
-13. If you get the option, pin the application to the task bar. Otherwise, right-click on the orange Ubuntu icon in the task bar and choose "Pin to taskbar"
-14. When prompted to "Enter new UNIX username", type your first name with no spaces
-15. When prompted, enter and retype a password for this UNIX user (it can be the same as your Windows password)
-16. Confirm your installation by typing the command `whoami 'as in who-am-i'`followed by Enter at the prompt (it should print your first name)
-17. You need to update your packages, so type `sudo apt update` (if prompted for your password, enter it)
-18. You need to upgrade your packages, so type `sudo apt upgrade` (if prompted for your password, enter it)
-```
-### Git
-
-Git comes with Ubuntu, so there's nothing to install. However, you should configure it using the following instructions.
-
-Open an Ubuntu terminal if you don't have one open already.
-
-1.  > You need to configure Git, so type `git config --global user.name "Your Name"` with replacing "Your Name" with your real name.
-2.  > You need to configure Git, so type `git config --global user.email your@email.com` with replacing "<a href="mailto:your@email.com" class="markup--anchor markup--li-anchor">your@email.com</a>" with your real email.
-
-**Note: if you want git to remember your login credentials type:**
-
-    git config --global credential.helper store
-
-### Google Chrome
-
-Test if you have Chrome installed by typing "Chrome" in the search box in the bottom app bar that reads "Type here to search". If you see a search result that reads "Chrome" with "App" under it, then you have it installed. Otherwise, follow these instructions to install Google Chrome.
-
-### Node.js
-
-Test if you have Node.js installed by opening an Ubuntu terminal and typing `node --version`. If it reports "Command 'node' not found", then you need to follow these directions.
-
-1.  > In the Ubuntu terminal, type `sudo apt update` and press Enter
-2.  > In the Ubuntu terminal, type `sudo apt install build-essential` and press Enter
-3.  > In the Ubuntu terminal, type `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash` and press Enter
-4.  > In the Ubuntu terminal, type `. ./.bashrc` and press Enter
-5.  > In the Ubuntu terminal, type `nvm install --lts` and press Enter
-6.  > Confirm that **node** is installed by typing `node --version` and seeing it print something that is not "Command not found"!
-
-### Unzip
-
-You will often have to download a zip file and unzip it. It is easier to do this from the command line. So we need to install a linux unzip utility.
-
-In the Ubuntu terminal type: `sudo apt install unzip` and press Enter
-
-Mocha.js
-
-Test if you have Mocha.js installed by opening an Ubuntu terminal and typing `which mocha`. If it prints a path, then you're good. Otherwise, if it prints nothing, install Mocha.js by typing `npm install -g mocha`.
-
-### Python 3
-
-Ubuntu does not come with Python 3. Install it using the command `sudo apt install python3`. Test it by typing `python3 --version` and seeing it print a number.
-
-### Note about WSL
-
-As of the time of writing of this document, WSL has an issue renaming or deleting files if Visual Studio Code is open. So before doing any linux commands which manipulate files, make sure you **close** Visual Studio Code before running those commands in the Ubuntu terminal.
-
-### Some other common instillations
-
-```bash
-    # Installing build essentials
-    sudo apt-get install -y build-essential libssl-dev
-    # Nodejs and NVM
-    curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
-    source ~/.profile
-    sudo nvm install 7.10.0
-    sudo nvm use 7.10.0
-    node -v
-    #nodemon
-    sudo npm install -g nodemon
-    sudo npm install -g loopback-cli
-    # Forever to run nodejs scripts forever
-    sudo npm install forever -g
-    # Git - a version control system
-    sudo apt-get update
-    sudo apt-get install -y git xclip
-    # Grunt - an automated task runner
-    sudo npm install -g grunt-cli
-    # Bower - a dependency manager
-    sudo npm install -g bower
-    # Yeoman - for generators
-    sudo npm install -g yo
-    # maven
-    sudo apt-get install maven -y
-    # Gulp - an automated task runner
-    sudo npm install -g gulp-cli
-    # Angular FullStack - My favorite MEAN boilerplate (MEAN = MongoDB, Express, Angularjs, Nodejs)
-    sudo npm install -g generator-angular-fullstack
-    # Vim, Curl, Python - Some random useful stuff
-    sudo apt-get install -y vim curl python-software-properties
-    sudo apt-get install -y python-dev, python-pip
-    sudo apt-get install -y libkrb5-dev
-    # Installing JDK and JRE
-    sudo apt-get install -y default-jre
-    sudo apt-get install -y default-jdk
-    # Archive Extractors
-    sudo apt-get install -y unace unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller
-    # FileZilla - a FTP client
-    sudo apt-get install -y filezilla
-```
-
-</details>
-
-
-
----
-### Documentation Commands:
-
-documentation build src/components/DocsMenu.js  -f md> ./notes/DocsMenu.md
-documentation build src/components/Footer.js  -f md> ./notes/Footer.md
-documentation build src/components/Header.js  -f md> ./notes/Header.md
-documentation build src/components/index.js  -f md> ./notes/index.md
-documentation build src/components/SectionContent.js  -f md> ./notes/SectionContent.md
-documentation build src/components/SectionDocs.js  -f md> ./notes/SectionDocs.md
-documentation build src/components/SectionHero.js  -f md> ./notes/SectionHero.md
-documentation build src/components/CtaButtons.js  -f md> ./notes/CtaButtons.md
-documentation build src/components/DocsSubmenu.js  -f md> ./notes/DocsSubmenu.md
-documentation build src/components/FormField.js  -f md> ./notes/FormField.md
-documentation build src/components/Icon.js  -f md> ./notes/Icon.md
-documentation build src/components/Layout.js  -f md> ./notes/Layout.md
-documentation build src/components/SectionCta.js  -f md> ./notes/SectionCta.md
-documentation build src/components/SectionGrid.js  -f md> ./notes/SectionGrid.md
-documentation build src/components/Submenu.js  -f md> ./notes/Submenu.md
-documentation build src/components/ActionLink.js  -f md> ./notes/ActionLink.md
-
-
-
-
----
-
-## Blog Content:
-
-
-
-
-
----
-
-
-
----
-
-##  Bash Cheat Sheet (MY COMMANDS)
-
-
-
-
-
-<details>
-
-<summary> Bash Cheat Sheet (MY COMMANDS) </summary
-
-## 1. Remove spaces from file and folder names and then remove numbers from files and folder names
-
-### Description: need to : `sudo apt install rename`
-
-> Notes: Issue when renaming file without numbers collides with existing file name...
-
-###### code
-
-```bash
-find . -name "* *" -type d | rename 's/ /_/g'
-find . -name "* *" -type f | rename 's/ /_/g'
-```
-
-```bash
-
-```bash
-find $dir -type f | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
-
-find $dir -type d | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
-
-for i in *.html; do mv "$i" "${i%-*}.html"; done
-
-for i in *.*; do mv "$i" "${i%-*}.${i##*.}"; done
-
----
-### Description: combine the contents of every file in the contaning directory.
-
->Notes: this includes the contents of the file it's self...
-
-###### code:
-
-```js
-//APPEND-DIR.js
-const fs = require('fs');
-let cat = require('child_process')
-  .execSync('cat *')
-  .toString('UTF-8');
-fs.writeFile('output.md', cat, err => {
-  if (err) throw err;
-});
-
-```
-
-
----
-
-## 2. Download Website Using Wget
-
-### Description
-
-> Notes: ==> sudo apt install wget
-
-###### code
-
-```bash
-
-wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e robots=off -U mozilla https://bootcamp42.gitbook.io/python/
-
-```
-
----
-
-## 3. Clean Out Messy Git Repo
-
-### Description: recursively removes git related folders as well as internal use files / attributions in addition to empty folders
-
-> Notes: To clear up clutter in repositories that only get used on your local machine.
-
-###### code
-
-```bash
-
-find . -empty -type d -print -delete
-
-find . \( -name ".git" -o -name ".gitignore" -o -name ".gitmodules" -o -name ".gitattributes" \) -exec rm -rf -- {} +
-
-find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o  -name "*CHANGELOG.txt" -o -name "*LICENSE.txt" -o -name "*CONTRIBUTING.txt" -name "*HISTORY.md" -o -name "*LICENSE" -o -name "*SECURITY.md" -o -name "*RELEASE.md" -o  -name "*CHANGELOG.md" -o -name "*LICENSE.md" -o -name "*CODE_OF_CONDUCT.md" -o -name "*CONTRIBUTING.md" \) -exec rm -rf -- {} +
-
-```
-
----
-
-## 4. clone all of a user's git repositories
-
-### Description: clone all of a user or organization's git repositories
-
-> Notes:
-
-###### code
-
-## Generalized
-
-```bash
-
-CNTX={users|orgs}; NAME={username|orgname}; PAGE=1
-curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
-  grep -e 'git_url*' |
-  cut -d \" -f 4 |
-  xargs -L1 git clone
-```
-
-## Clone all Git User
-
-```bash
-CNTX={users}; NAME={bgoonz}; PAGE=1
-curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=master |
-  grep -e 'git_url*' |
-  cut -d \" -f 4 |
-  xargs -L1 git clone
-
-```
-
-## Clone all Git Organization
-
-```bash
-
-CNTX={organizations}; NAME={TheAlgorithms}; PAGE=1
-curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=master |
-  grep -e 'git_url*' |
-  cut -d \" -f 4 |
-  xargs -L1 git clone
-
-```
-
----
-
-## 5. Git Workflow
-
-### Description
-
-###### code
-
-```bash
-git pull
-git init
-git add .
-git commit -m"update"
-git push -u origin master
-```
-
-```bash
-git init
-git add .
-git commit -m"update"
-git push -u origin main
-```
-
-```bash
-
-git init
-git add .
-git commit -m"update"
-git push -u origin bryan-guner
-```
-
-```bash
-git init
-git add .
-git commit -m"update"
-git push -u origin gh-pages
-```
-
-```bash
-git init
-git add .
-git commit -m"update"
-git push -u origin preview
-```
-
----
-
-## 6. Recursive Unzip In Place
-
-### Description: recursively unzips folders and then deletes the zip file by the same name
-
-> Notes:
-
-###### code
-
-```bash
-
-find . -name "*.zip" | while read filename; do unzip -o -d "`dirname "$filename"`" "$filename"; done;
-
-find . -name "*.zip" -type f -print -delete
-
-```
-
----
-
-## 7. git pull keeping local changes
-
-### Description
-
-> Notes:
-
-###### code
-
-```bash
-
-git stash
-git pull
-git stash pop
-
-```
-
----
-
-## 8. Prettier Code Formatter
-
-### Description
-
-> Notes:
-
-###### code
-
-```bash
-
-sudo npm i prettier -g
-
-prettier --write .
-
-```
-
----
-
-## 9. Pandoc
-
-### Description
-
-> Notes:
-
-###### code
-
-```bash
-
-find ./ -iname "*.md" -type f -exec sh -c 'pandoc --standalone "${0}" -o "${0%.md}.html"' {} \;
-
-find ./ -iname "*.html" -type f -exec sh -c 'pandoc --wrap=none --from html --to markdown_strict "${0}" -o "${0%.html}.md"' {} \;
-
-find ./ -iname "*.docx" -type f -exec sh -c 'pandoc "${0}" -o "${0%.docx}.md"' {} \;
-
-```
-
----
-
-## 10. Gitpod Installs
-
-### Description
-
-> Notes:
-
-###### code
-
-```bash
-sudo apt install tree
-sudo apt install pandoc -y
-sudo apt install rename -y
-sudo apt install black -y
-sudo apt install wget -y
-npm i lebab -g
-npm i prettier -g
-npm i npm-recursive-install -g
-
-```
-
-```bash
-black .
-
-prettier --write .
-npm-recursive-install
-```
-
----
-
-## 11. Repo Utils Package
-
-### Description: my standard repo utis package
-
-> Notes:
-
-###### code
-
-```bash
-npm i @bgoonz11/repoutils
-
-```
-
----
-
-## 12. Unix Tree Package Usage
-
-### Description
-
-> Notes:
-
-###### code
-
-```bash
-tree -d -I  'node_modules'
-
-tree  -I  'node_modules'
-
-tree -f  -I  'node_modules' >TREE.md
-
-tree -f -L 2  >README.md
-
-tree -f  -I  'node_modules' >listing-path.md
-
-tree -f  -I  'node_modules' -d >TREE.md
-
-tree -f >README.md
-
-```
-
----
-
-## 13. Find & Replace string in file & folder names recursively
-
-### Description
-
-> Notes:
-
-###### code
-
-```bash
-
-find . -type f -exec rename 's/string1/string2/g' {} +
-
-find . -type d -exec rename 's/-master//g' {} +
-
-find . -type f -exec rename 's/\.download//g' {} +
-
-find . -type d -exec rename 's/-main//g' {} +
-
-rename 's/\.js\.download$/.js/' *.js\.download
-
-rename 's/\.html\.markdown$/.md/' *.html\.markdown
-
-find . -type d -exec rename 's/es6//g' {} +
-
-```
-
----
-
-## 14. Remove double extensions
-
-### Description
-
-> Notes:
-
-###### code
-
-```bash
-#!/bin/bash
-
-for file in *.md.md
-do
-    mv "${file}" "${file%.md}"
-done
-
-#!/bin/bash
-
-for file in *.html.html
-do
-    mv "${file}" "${file%.html}"
-done
-```
-
-```bash
-
-#!/bin/bash
-
-for file in *.html.png
-do
-    mv "${file}" "${file%.png}"
-done
-
-for file in *.jpg.jpg
-do
-    mv "${file}" "${file%.png}"
-done
-
-```
-
----
-
-## 15. Truncate folder names down to 12 characters
-
-### Description: Truncate folder names down to 12 characters
-
-> Notes: Truncate folder names down to 12 characters
-
-###### code
-
-```bash
-
-for d in ./*; do mv $d ${d:0:12}; done
-
-```
-
----
-
-## 16.Appendir.js
-
-### Description: combine the contents of every file in the contaning directory
-
-> Notes: this includes the contents of the file it's self...
-
-###### code
-
-```js
-//APPEND-DIR.js
-const fs = require('fs');
-let cat = require('child_process').execSync('cat *').toString('UTF-8');
-fs.writeFile('output.md', cat, (err) => {
-    if (err) throw err;
-});
-```
-
----
-
-## 17. Replace space in filename with underscore
-
-### Description: followed by replace `'#' with '_'` in directory name
-
-> Notes: Can be re-purposed to find and replace any set of strings in file or folder names.
-
-###### code
-
-```bash
-find . -name "* *" -type f | rename 's/_//g'
-
-find . -name "* *" -type d | rename 's/#/_/g'
-
-```
-
----
-
-## 18. Filter & delete files by name and extension
-
-### Description
-
-> Notes:
-
-###### code
-
-```bash
-find . -name '.bin' -type d -prune -exec rm -rf '{}' +
-
-find . -name '*.html' -type d -prune -exec rm -rf '{}' +
-
-find . -name 'nav-index' -type d -prune -exec rm -rf '{}' +
-
-find . -name 'node-gyp' -type d -prune -exec rm -rf '{}' +
-
-find . -name 'deleteme.txt' -type f -prune -exec rm -rf '{}' +
-
-find . -name 'right.html' -type f -prune -exec rm -rf '{}' +
-
-find . -name 'left.html' -type f -prune -exec rm -rf '{}' +
-
-```
-
----
-
-## 19. Remove lines containing string
-
-### Description
-
-> Notes: Remove lines not containing `'.js'`
-
-```bash
-
-sudo sed -i '/\.js/!d' ./*scrap2.md
-
-```
-
-###### code
-
-```bash
-sudo sed -i '/githubusercontent/d' ./*sandbox.md
-
-sudo sed -i '/githubusercontent/d' ./*scrap2.md
-
-sudo sed -i '/github\.com/d' ./*out.md
-
-sudo sed -i '/author/d' ./*
-
-```
-
----
-
-## 20. Remove duplicate lines from a text file
-
-### Description
-
-> Notes:
-> //...syntax of uniq...//
-> $uniq [OPTION] [INPUT[OUTPUT]]
-> The syntax of this is quite easy to understand. Here, INPUT refers to the input file in which repeated lines need to be filtered out and if INPUT isn't specified then uniq reads from the standard input. OUTPUT refers to the output file in which you can store the filtered output generated by uniq command and as in case of INPUT if OUTPUT isn't specified then uniq writes to the standard output.
-
-Now, let's understand the use of this with the help of an example. Suppose you have a text file named kt.txt which contains repeated lines that needs to be omitted. This can simply be done with uniq.
-
-###### code
-
-```bash
-sudo apt install uniq
-uniq -u input.txt output.txt
-
-```
-
----
-
-## 21. Remove lines containing string
-
-### Description
-
-> Notes:
-
-###### code
-
-```bash
-sudo sed -i '/githubusercontent/d' ./*sandbox.md
-
-sudo sed -i '/githubusercontent/d' ./*scrap2.md
-
-sudo sed -i '/github\.com/d' ./*out.md
-
----
-title: add_days
-tags: date,intermediate
-firstSeen: 2020-10-28T16:19:04+02:00
-lastUpdated: 2020-10-28T16:19:04+02:00
----
-
-sudo sed -i '/title:/d' ./*output.md
-sudo sed -i '/firstSeen/d' ./*output.md
-sudo sed -i '/lastUpdated/d' ./*output.md
-sudo sed -i '/tags:/d' ./*output.md
-
-sudo sed -i '/badstring/d' ./*
-
-sudo sed -i '/stargazers/d' ./repo.txt
-sudo sed -i '/node_modules/d' ./index.html
-sudo sed -i '/right\.html/d' ./index.html
-sudo sed -i '/right\.html/d' ./right.html
-
-```
-
----
-
-## 22. Zip directory excluding .git and node_modules all the way down (Linux)
-
-### Descriptio: zip up an entire git directory
-
-> Notes:
-
-###### code
-
-```bash
-
-#!/bin/bash
-TSTAMP=`date '+%Y%m%d-%H%M%S'`
-zip -r $1.$TSTAMP.zip $1 -x "**.git/*" -x "**node_modules/*" `shift; echo $@;`
-
-printf "\nCreated: $1.$TSTAMP.zip\n"
-
-## usage:
-## - zipdir thedir
-## - zip thedir -x "anotherexcludedsubdir"    (important the double quotes to prevent glob expansion)
-
-## if in windows/git-bash, add 'zip' command this way:
-## https://stackoverflow.com/a/55749636/1482990
-
-```
-
----
-
-## 23. Delete files containing a certain string
-
-### Description
-
-> Notes:
-
-###### code
-
-```bash
-find . | xargs grep -l www.redhat.com | awk '{print "rm "$1}' > doit.sh
-vi doit.sh // check for murphy and his law
-source doit.sh
-
-```
-
----
-
-## 24 Generate sitemap
-
-### Description
-
-> Notes: bash command to auto generate sitemap.html which will list all files contained within parent directory.
-
-###### code
-
-```bash
-
-#!/bin/sh
-
-## find ./ | grep -i "\.*$" >files
-find ./ | sed -E -e 's/([^ ]+[ ]+){8}//' | grep -i "\.*$">files
-listing="files"
-
-out=""
-
-html="sitemap.html"
-out="basename $out.html"
-html="sitemap.html"
-cmd() {
-
-  echo '  <!DOCTYPE html>'
-  echo '<html>'
-  echo '<head>'
-
-  echo '  <meta http-equiv="Content-Type" content="text/html">'
-
-  echo '  <meta name="Author" content="Bryan Guner">'
-  echo '<link rel="stylesheet" href="./assets/prism.css">'
-  echo ' <link rel="stylesheet" href="./assets/style.css">'
-  echo ' <script async defer src="./assets/prism.js"></script>'
-
-  echo "  <title> directory </title>"
-    echo '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/mdn-article.css">'
-  echo '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/markdown-to-html-style.css">'
-  echo ""
-  echo '<style>'
-
-echo '    a {'
-echo '      color: black;'
-echo '    }'
-echo ''
-echo '    li {'
-echo '      border: 1px solid black !important;'
-echo '      font-size: 20px;'
-echo '      letter-spacing: 0px;'
-echo '      font-weight: 700;'
-echo '      line-height: 16px;'
-echo '      text-decoration: none !important;'
-echo '      text-transform: uppercase;'
-echo '      background: #194ccdaf !important;'
-echo '      color: black !important;'
-echo '      border: none;'
-echo '      cursor: pointer;'
-echo '      justify-content: center;'
-echo '      padding: 30px 60px;'
-echo '      height: 48px;'
-echo '      text-align: center;'
-echo '      white-space: normal;'
-echo '      border-radius: 10px;'
-echo '      min-width: 45em;'
-echo '      padding: 1.2em 1em 0;'
-echo '      box-shadow: 0 0 5px;'
-echo '      margin: 1em;'
-echo '      display: grid;'
-echo '      -webkit-border-radius: 10px;'
-echo '      -moz-border-radius: 10px;'
-echo '      -ms-border-radius: 10px;'
-echo '      -o-border-radius: 10px;'
-echo '    }'
-echo '  </style>'
-  echo '</head>'
-
-  echo '<body>'
-
-  echo ""
-
-  # continue with the HTML stuff
-
-  echo ""
-
-  echo ""
-
-  echo "<ul>"
-
-  awk '{print "<li><a href=\""$1"\">",$1,"&nbsp;</a></li>"}' $listing
-
-  # awk '{print "<li>"};
-
-  # 	{print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
-
-  echo ""
-
-  echo "</ul>"
-
-  echo "</body>"
-
-  echo "</html>"
-
-}
-
-cmd $listing --sort=extension >>$html
-
-```
-
----
-
-## 25. Index of Iframes
-
-### Description: Creates an index.html file that contains all the files in the working directory or any of it's sub folders as iframes instead of anchor tags
-
-> Notes: Useful Follow up Code:
-
-```bash
-
-```
-
-###### code
-
-```bash
-
-#!/bin/sh
-
-## find ./ | grep -i "\.*$" >files
-find ./ | sed -E -e 's/([^ ]+[ ]+){8}//' | grep -i "\.*$">files
-listing="files"
-
-out=""
-
-html="index.html"
-out="basename $out.html"
-html="index.html"
-cmd() {
-
-  echo '  <!DOCTYPE html>'
-  echo '<html>'
-  echo '<head>'
-
-  echo '  <meta http-equiv="Content-Type" content="text/html">'
-
-  echo '  <meta name="Author" content="Bryan Guner">'
-  echo '<link rel="stylesheet" href="./assets/prism.css">'
-  echo ' <link rel="stylesheet" href="./assets/style.css">'
-  echo ' <script async defer src="./assets/prism.js"></script>'
-
-  echo "  <title> directory </title>"
-
-  echo ""
-  echo '<style>'
-
-echo '    a {'
-echo '      color: black;'
-echo '    }'
-echo ''
-echo '    li {'
-echo '      border: 1px solid black !important;'
-echo '      font-size: 20px;'
-echo '      letter-spacing: 0px;'
-echo '      font-weight: 700;'
-echo '      line-height: 16px;'
-echo '      text-decoration: none !important;'
-echo '      text-transform: uppercase;'
-echo '      background: #194ccdaf !important;'
-echo '      color: black !important;'
-echo '      border: none;'
-echo '      cursor: pointer;'
-echo '      justify-content: center;'
-echo '      padding: 30px 60px;'
-echo '      height: 48px;'
-echo '      text-align: center;'
-echo '      white-space: normal;'
-echo '      border-radius: 10px;'
-echo '      min-width: 45em;'
-echo '      padding: 1.2em 1em 0;'
-echo '      box-shadow: 0 0 5px;'
-echo '      margin: 1em;'
-echo '      display: grid;'
-echo '      -webkit-border-radius: 10px;'
-echo '      -moz-border-radius: 10px;'
-echo '      -ms-border-radius: 10px;'
-echo '      -o-border-radius: 10px;'
-echo '    }'
-echo '  </style>'
-  echo '</head>'
-
-  echo '<body>'
-
-  echo ""
-
-  # continue with the HTML stuff
-
-  echo ""
-
-  echo ""
-
-  echo "<ul>"
-
-  awk '{print "<iframe src=\""$1"\">","</iframe>"}' $listing
-
-  # awk '{print "<li>"};
-
-  # 	{print " <a href=\""$1"\">",$1,"</a></li>&nbsp;"}' \ $listing
-
-  echo ""
-
-  echo "</ul>"
-
-  echo "</body>"
-
-  echo "</html>"
-
-}
-
-cmd $listing --sort=extension >>$html
-
-```
-
----
-
-## 26. Filter Corrupted Git Repo For Troublesome File
-
-### Description
-
-> Notes:
-
-###### code
-
-```bash
-
-git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch assets/_index.html' HEAD
-
-```
-
----
-
-## 27. OVERWRITE LOCAL CHANGES
-
-### Description
-
-Important: If you have any local changes, they will be lost. With or without --hard option, any local commits that haven't been pushed will be lost.[*]
-If you have any files that are not tracked by Git (e.g. uploaded user content), these files will not be affected.
-
-> Notes:
-> First, run a fetch to update all origin/<branch> refs to latest:
-
-###### code
-
-```bash
-
-git fetch --all
-## Backup your current branch:
-
-git branch backup-master
-## Then, you have two options:
-
-git reset --hard origin/master
-## OR If you are on some other branch:
-
-git reset --hard origin/<branch_name>
-## Explanation:
-## git fetch downloads the latest from remote without trying to merge or rebase anything.
-
-## Then the git reset resets the master branch to what you just fetched. The --hard option changes all the files in your working tree to match the files in origin/master
-git fetch --all
-git reset --hard origin/master
-
-```
-
----
-
-## 28. Remove Submodules
-
-### Description: To remove a submodule you need to
-
-> Notes:
-
-> Delete the relevant section from the .gitmodules file.
-> Stage the .gitmodules changes git add .gitmodules
-> Delete the relevant section from .git/config.
-> Run git rm --cached path_to_submodule (no trailing slash).
-> Run rm -rf .git/modules/path_to_submodule (no trailing slash).
-> Commit git commit -m "Removed submodule "
-> Delete the now untracked submodule files rm -rf path_to_submodule
-
-###### code
-
-```bash
-git submodule deinit
-```
-
----
-
-## 29. GET GISTS
-
-### Description
-
-> Notes:
-
-###### code
-
-```bash
-sudo apt install wget
-
-wget -q -O - https://api.github.com/users/bgoonz/gists | grep raw_url | awk -F\" '{print $4}' | xargs -n3 wget
-
-wget -q -O - https://api.github.com/users/amitness/gists | grep raw_url | awk -F\" '{print $4}' | xargs -n3 wget
-
-wget -q -O - https://api.github.com/users/drodsou/gists | grep raw_url | awk -F\" '{print $4}' | xargs -n1 wget
-
-wget -q -O - https://api.github.com/users/thomasmb/gists | grep raw_url | awk -F\" '{print $4}' | xargs -n1 wget
-
-```
-
----
-
-## 30. Remove Remote OriginL
-
-### Description
-
-> Notes:
-
-###### code
-
-```bash
-
-git remote remove origin
-
-```
-
----
-
-## 31. just clone .git folder
-
-### Description
-
-> Notes:
-
-###### code
-
-```bash
-
-git clone --bare --branch=master --single-branch https://github.com/bgoonz/My-Web-Dev-Archive.git
-
-```
-
----
-
-## 32. Undo recent pull request
-
-### Description
-
-> Notes:
-
-###### code
-
-```bash
-
-git reset --hard master@{"10 minutes ago"}
-
-```
-
----
-
-## 33. Lebab
-
-### Description: ES5 --> ES6
-
-> Notes:
-
-###### code
-
-```bash
-## Safe:
-
- lebab --replace ./ --transform arrow
- lebab --replace ./ --transform arrow-return
- lebab --replace ./ --transform for-of
- lebab --replace ./ --transform for-each
- lebab --replace ./ --transform arg-rest
- lebab --replace ./ --transform arg-spread
- lebab --replace ./ --transform obj-method
- lebab --replace ./ --transform obj-shorthand
- lebab --replace ./ --transform multi-var
-
-## ALL:
-
-lebab --replace ./ --transform obj-method
-lebab --replace ./ --transform class
-lebab --replace ./ --transform arrow
-lebab --replace ./ --transform let
-lebab --replace ./ --transform arg-spread
-lebab --replace ./ --transform arg-rest
-lebab --replace ./ --transform for-each
-lebab --replace ./ --transform for-of
-lebab --replace ./ --transform commonjs
-lebab --replace ./ --transform exponent
-lebab --replace ./ --transform multi-var
-lebab --replace ./ --transform template
-lebab --replace ./ --transform default-param
-lebab --replace ./ --transform  destruct-param
-lebab --replace ./ --transform includes
-lebab --replace ./ --transform obj-method
-lebab --replace ./ --transform class
-lebab --replace ./ --transform arrow
-lebab --replace ./ --transform arg-spread
-lebab --replace ./ --transform arg-rest
-lebab --replace ./ --transform for-each
-lebab --replace ./ --transform for-of
-lebab --replace ./ --transform commonjs
-lebab --replace ./ --transform exponent
-lebab --replace ./ --transform multi-var
-lebab --replace ./ --transform template
-lebab --replace ./ --transform default-param
-lebab --replace ./ --transform  destruct-param
-lebab --replace ./ --transform includes
-
-```
-
----
-
-## 34. Troubleshoot Ubuntu Input/Output Error
-
-### Description: Open Powershell as Administrator
-
-> Notes:
-
-###### code
-
-```ps1
-
- wsl.exe --shutdown
-
- Get-Service LxssManager | Restart-Service
-
-```
-
----
-
-## 35. Export Medium as Markdown
-
-### Description
-
-> Notes:
-
-###### code
-
-```bash
-npm i mediumexporter -g
-
-mediumexporter https://medium.com/codex/fundamental-data-structures-in-javascript-8f9f709c15b4 >ds.md
-
-```
-
----
-
-## 36. Delete files in violation of a given size range (100MB for git)
-
-### Description
-
-> Notes:
-
-###### code
-
-```bash
-
-find . -size +75M -a -print -a -exec rm -f {} \;
-
-find . -size +98M -a -print -a -exec rm -f {} \;
-
-```
-
----
-
-## 37. download all links of given file type
-
-### Description
-
-> Notes:
-
-###### code
-
-```bash
-
-wget -r -A.pdf https://overapi.com/git
-
-```
-
----
-
-## 38. Kill all node processes
-
-### Description
-
-> Notes:
-
-###### code
-
-```bash
-killall -s KILL node
-
-```
-
----
-
-## 39. Remove string from file names recursively
-
-### Description: In the example below I am using this command to remove the string "-master" from all file names in the working directory and all of it's sub directories
-
-###### code
-
-```bash
-find <mydir> -type f -exec sed -i 's/<string1>/<string2>/g' {} +
-
-find . -type f -exec rename 's/-master//g' {} +
-
-```
-
-> Notes: The same could be done for folder names by changing the *-type f* flag (for file) to a *-type d* flag (for directory)
-
-```bash
-find <mydir> -type d -exec sed -i 's/<string1>/<string2>/g' {} +
-
-find . -type d -exec rename 's/-master//g' {} +
-
-```
-
----
-
-## 40. Remove spaces from file and folder names recursively
-
-### Description: replaces spaces in file and folder names with an `_` underscore
-
-> Notes: need to run `sudo apt install rename` to use this command
-
-###### code
-
-```bash
-
-find . -name "* *" -type d | rename 's/ /_/g'
-find . -name "* *" -type f | rename 's/ /_/g'
-```
-
----
-
-## 41. Zip Each subdirectories in a given directory into their own zip file
-
-### Description
-
-> Notes:
-
-###### code
-
-```bash
-for i in */; do zip -r "${i%/}.zip" "$i"; done
-
-```
-
----
-
-## 91. Unzip PowerShell
-
-### Description
-
-> Notes:
-
-###### code
-
-```ps1
-
-PARAM (
-    [string] $ZipFilesPath = "./",
-    [string] $UnzipPath = "./RESULT"
-)
-
-$Shell = New-Object -com Shell.Application
-$Location = $Shell.NameSpace($UnzipPath)
-
-$ZipFiles = Get-Childitem $ZipFilesPath -Recurse -Include *.ZIP
-
-$progress = 1
-foreach ($ZipFile in $ZipFiles) {
-    Write-Progress -Activity "Unzipping to $($UnzipPath)" -PercentComplete (($progress / ($ZipFiles.Count + 1)) * 100) -CurrentOperation $ZipFile.FullName -Status "File $($Progress) of $($ZipFiles.Count)"
-    $ZipFolder = $Shell.NameSpace($ZipFile.fullname)
-
-    $Location.Copyhere($ZipFolder.items(), 1040) # 1040 - No msgboxes to the user - https://msdn.microsoft.com/library/bb787866%28VS.85%29.aspx
-    $progress++
-}
-
-```
-
----
-
-## 92. return to bash from zsh
-
-### Description
-
-> Notes:
-
-###### code
-
-```bash
- sudo apt --purge remove zsh
-
-```
-
----
-
-## 93. Symbolic Link
-
-### Description: to working directory
-
-> Notes:
-
-###### code
-
-```bash
-
-ln -s "$(pwd)" ~/NameOfLink
-
-ln -s "$(pwd)" ~/Downloads
-
-```
-
----
-
-## 94. auto generate readme
-
-### Description: rename existing readme to blueprint.md
-
-> Notes:
-
-###### code
-
-```bash
-
-npx @appnest/readme generate
-
-```
-
----
-
-## 95. Log into postgres
-
-### Description
-
-> Notes:
-
-###### code
-
-```bash
-sudo -u postgres psql
-```
-
----
-
-## 96. URL To Subscribe To YouTube Channel
-
-| URL                  | <https://bgoonz-blog.netlify.app>                        |
-| -------------------- | -------------------------------------------------------- |
-| Miscellaneous        | webpack ; Prism                                          |
-| Widgets              | Facebook ; AddThis                                       |
-| Analytics            | Moat ; Google Analytics ; Google Ads Conversion Tracking |
-| Comment systems      | Facebook API & REPL.it Database                          |
-| Security             | Netlify Access                                           |
-| Font scripts         | Google Font API                                          |
-| CDN                  | Unpkg ; jsDelivr ; jQuery CDN ; Netlify                  |
-| Marketing automation | MailChimp                                                |
-| Advertising          | Google AdSense                                           |
-| Tag managers         | Google Tag Manager                                       |
-| Live chat            | Smartsupp ; LiveChat : Mesibo API                        |
-| JavaScript libraries | Lodash ; Dojo ; core-js ; jQuery                         |
-
----
-
-## 96. URL To Subscribe To YouTube Channel
-
-## Description
-
-> Notes:
-
-###### code
-
-```txt
-
-https://www.youtube.com/channel/UC1HDa0wWnIKUf-b4yY9JecQ?sub_confirmation=1
-
-```
-
----
-
-## 97. Embed Repl.it In Medium Post
-
-###### code
-
-```txt
-
-https://repl.it/@bgoonz/Data-Structures-Algos-Codebase?lite=true&amp;referrer=https%3A%2F%2Fbryanguner.medium.com
-
-https://repl.it/@bgoonz/node-db1-project?lite=true&amp;referrer=https%3A%2F%2Fbryanguner.medium.com
-
-https://repl.it/@bgoonz/interview-prac?lite=true&amp;referrer=https%3A%2F%2Fbryanguner.medium.com
-
-https://repl.it/@bgoonz/Database-Prac?lite=true&amp;referrer=https%3A%2F%2Fbryanguner.medium.com
-
-```
-
----
-
-## 98 rRmove text target="parent" from files called right.html
-
-### Description
-
-> Notes:
-
-###### code
-
-```bash
-
-find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
-
-find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
-
-```
-
-## 99. Cheat Sheet
-
-### Description
-
-> Notes:
-
-###### code
-
-```bash
-#!/bin/bash
-revert
-## SHORTCUTS and HISTORY
-
-
-CTRL+A  # move to beginning of line
-CTRL+B  # moves backward one character
-CTRL+C  # halts the current command
-CTRL+D  # deletes one character backward or logs out of current session, similar to exit
-CTRL+E  # moves to end of line
-CTRL+F  # moves forward one character
-CTRL+G  # aborts the current editing command and ring the terminal bell
-CTRL+H  # deletes one character under cursor (same as DELETE)
-CTRL+J  # same as RETURN
-CTRL+K  # deletes (kill) forward to end of line
-CTRL+L  # clears screen and redisplay the line
-CTRL+M  # same as RETURN
-CTRL+N  # next line in command history
-CTRL+O  # same as RETURN, then displays next line in history file
-CTRL+P  # previous line in command history
-CTRL+Q  # resumes suspended shell output
-CTRL+R  # searches backward
-CTRL+S  # searches forward or suspends shell output
-CTRL+T  # transposes two characters
-CTRL+U  # kills backward from point to the beginning of line
-CTRL+V  # makes the next character typed verbatim
-CTRL+W  # kills the word behind the cursor
-CTRL+X  # lists the possible filename completions of the current word
-CTRL+Y  # retrieves (yank) last item killed
-CTRL+Z  # stops the current command, resume with fg in the foreground or bg in the background
-
-ALT+B   # moves backward one word
-ALT+D   # deletes next word
-ALT+F   # moves forward one word
-ALT+H   # deletes one character backward
-ALT+T   # transposes two words
-ALT+.   # pastes last word from the last command. Pressing it repeatedly traverses through command history.
-ALT+U   # capitalizes every character from the current cursor position to the end of the word
-ALT+L   # uncapitalizes every character from the current cursor position to the end of the word
-ALT+C   # capitalizes the letter under the cursor. The cursor then moves to the end of the word.
-ALT+R   # reverts any changes to a command you've pulled from your history if you've edited it.
-ALT+?   # list possible completions to what is typed
-ALT+^   # expand line to most recent match from history
-
-CTRL+X then (   # start recording a keyboard macro
-CTRL+X then )   # finish recording keyboard macro
-CTRL+X then E   # recall last recorded keyboard macro
-CTRL+X then CTRL+E   # invoke text editor (specified by $EDITOR) on current command line then execute resultes as shell commands
-
-BACKSPACE  # deletes one character backward
-DELETE     # deletes one character under cursor
-
-history   # shows command line history
-!!        # repeats the last command
-!<n>      # refers to command line 'n'
-!<string> # refers to command starting with 'string'
-
-exit      # logs out of current session
-
-
-## BASH BASICS
-
-
-env                 # displays all environment variables
-
-echo $SHELL         # displays the shell you're using
-echo $BASH_VERSION  # displays bash version
-
-bash                # if you want to use bash (type exit to go back to your previously opened shell)
-whereis bash        # locates the binary, source and manual-page for a command
-which bash          # finds out which program is executed as 'bash' (default: /bin/bash, can change across environments)
-
-clear               # clears content on window (hide displayed lines)
-
-
-## FILE COMMANDS
-
-
-ls                            # lists your files in current directory, ls <dir> to print files in a specific directory
-ls -l                         # lists your files in 'long format', which contains the exact size of the file, who owns the file and who has the right to look at it, and when it was last modified
-ls -a                         # lists all files in 'long format', including hidden files (name beginning with '.')
-ln -s <filename> <link>       # creates symbolic link to file
-readlink <filename>           # shows where a symbolic links points to
-tree                          # show directories and subdirectories in easilly readable file tree
-mc                            # terminal file explorer (alternative to ncdu)
-touch <filename>              # creates or updates (edit) your file
-mktemp -t <filename>            # make a temp file in /tmp/ which is deleted at next boot (-d to make directory)
-cat <filename>                # prints file raw content (will not be interpreted)
-any_command > <filename>      # '>' is used to perform redirections, it will set any_command's stdout to file instead of "real stdout" (generally /dev/stdout)
-more <filename>               # shows the first part of a file (move with space and type q to quit)
-head <filename>               # outputs the first lines of file (default: 10 lines)
-tail <filename>               # outputs the last lines of file (useful with -f option) (default: 10 lines)
-vim <filename>                # opens a file in VIM (VI iMproved) text editor, will create it if it doesn't exist
-mv <filename1> <dest>         # moves a file to destination, behavior will change based on 'dest' type (dir: file is placed into dir; file: file will replace dest (tip: useful for renaming))
-cp <filename1> <dest>         # copies a file
-rm <filename>                 # removes a file
-find . -name <name> <type>    # searches for a file or a directory in the current directory and all its sub-directories by its name
-diff <filename1> <filename2>  # compares files, and shows where they differ
-wc <filename>                 # tells you how many lines, words and characters there are in a file. Use -lwc (lines, word, character) to ouput only 1 of those informations
-sort <filename>               # sorts the contents of a text file line by line in alphabetical order, use -n for numeric sort and -r for reversing order.
-sort -t -k <filename>         # sorts the contents on specific sort key field starting from 1, using the field separator t.
-rev                           # reverse string characters (hello becomes olleh)
-chmod -options <filename>     # lets you change the read, write, and execute permissions on your files (more infos: SUID, GUID)
-gzip <filename>               # compresses files using gzip algorithm
-gunzip <filename>             # uncompresses files compressed by gzip
-gzcat <filename>              # lets you look at gzipped file without actually having to gunzip it
-lpr <filename>                # prints the file
-lpq                           # checks out the printer queue
-lprm <jobnumber>              # removes something from the printer queue
-genscript                     # converts plain text files into postscript for printing and gives you some options for formatting
-dvips <filename>              # prints .dvi files (i.e. files produced by LaTeX)
-grep <pattern> <filenames>    # looks for the string in the files
-grep -r <pattern> <dir>       # search recursively for pattern in directory
-head -n file_name | tail +n   # Print nth line from file.
-head -y lines.txt | tail +x   # want to display all the lines from x to y. This includes the xth and yth lines.
-
-
-## DIRECTORY COMMANDS
-
-
-mkdir <dirname>               # makes a new directory
-rmdir <dirname>               # remove an empty directory
-rmdir -rf <dirname>           # remove a non-empty directory
-mv <dir1> <dir2>              # rename a directory from <dir1> to <dir2>
-cd                            # changes to home
-cd ..                         # changes to the parent directory
-cd <dirname>                  # changes directory
-cp -r <dir1> <dir2>           # copy <dir1> into <dir2> including sub-directories
-pwd                           # tells you where you currently are
-cd ~                          # changes to home.
-cd -                        # changes to previous working directory
-
-
-## SSH, SYSTEM INFO & NETWORK COMMANDS
-
-
-ssh user@host            # connects to host as user
-ssh -p <port> user@host  # connects to host on specified port as user
-ssh-copy-id user@host    # adds your ssh key to host for user to enable a keyed or passwordless login
-
-whoami                   # returns your username
-passwd                   # lets you change your password
-quota -v                 # shows what your disk quota is
-date                     # shows the current date and time
-cal                      # shows the month's calendar
-uptime                   # shows current uptime
-w                        # displays whois online
-finger <user>            # displays information about user
-uname -a                 # shows kernel information
-man <command>            # shows the manual for specified command
-df                       # shows disk usage
-du <filename>            # shows the disk usage of the files and directories in filename (du -s give only a total)
-last <yourUsername>      # lists your last logins
-ps -u yourusername       # lists your processes
-kill <PID>               # kills the processes with the ID you gave
-killall <processname>    # kill all processes with the name
-top                      # displays your currently active processes
-lsof                     # lists open files
-bg                       # lists stopped or background jobs ; resume a stopped job in the background
-fg                       # brings the most recent job in the foreground
-fg <job>                 # brings job to the foreground
-
-ping <host>              # pings host and outputs results
-whois <domain>           # gets whois information for domain
-dig <domain>             # gets DNS information for domain
-dig -x <host>            # reverses lookup host
-wget <file>              # downloads file
-
-time <command>             # report time consumed by command execution
-
-
-## VARIABLES
-
-
-varname=value                # defines a variable
-varname=value command        # defines a variable to be in the environment of a particular subprocess
-echo $varname                # checks a variable's value
-echo $$                      # prints process ID of the current shell
-echo $!                      # prints process ID of the most recently invoked background job
-echo $?                      # displays the exit status of the last command
-read <varname>               # reads a string from the input and assigns it to a variable
-read -p "prompt" <varname>   # same as above but outputs a prompt to ask user for value
-column -t <filename>         # display info in pretty columns (often used with pipe)
-let <varname> = <equation>   # performs mathematical calculation using operators like +, -, *, /, %
-export VARNAME=value         # defines an environment variable (will be available in subprocesses)
-
-array[0]=valA                # how to define an array
-array[1]=valB
-array[2]=valC
-array=([2]=valC [0]=valA [1]=valB)  # another way
-array=(valA valB valC)              # and another
-
-${array[i]}                  # displays array's value for this index. If no index is supplied, array element 0 is assumed
-${#array[i]}                 # to find out the length of any element in the array
-${#array[@]}                 # to find out how many values there are in the array
-
-declare -a                   # the variables are treated as arrays
-declare -f                   # uses function names only
-declare -F                   # displays function names without definitions
-declare -i                   # the variables are treated as integers
-declare -r                   # makes the variables read-only
-declare -x                   # marks the variables for export via the environment
-
-${varname:-word}             # if varname exists and isn't null, return its value; otherwise return word
-${varname:word}              # if varname exists and isn't null, return its value; otherwise return word
-${varname:=word}             # if varname exists and isn't null, return its value; otherwise set it word and then return its value
-${varname:?message}          # if varname exists and isn't null, return its value; otherwise print varname, followed by message and abort the current command or script
-${varname:+word}             # if varname exists and isn't null, return word; otherwise return null
-${varname:offset:length}     # performs substring expansion. It returns the substring of $varname starting at offset and up to length characters
-
-${variable#pattern}          # if the pattern matches the beginning of the variable's value, delete the shortest part that matches and return the rest
-${variable##pattern}         # if the pattern matches the beginning of the variable's value, delete the longest part that matches and return the rest
-${variable%pattern}          # if the pattern matches the end of the variable's value, delete the shortest part that matches and return the rest
-${variable%%pattern}         # if the pattern matches the end of the variable's value, delete the longest part that matches and return the rest
-${variable/pattern/string}   # the longest match to pattern in variable is replaced by string. Only the first match is replaced
-${variable//pattern/string}  # the longest match to pattern in variable is replaced by string. All matches are replaced
-
-${#varname}                  # returns the length of the value of the variable as a character string
-
-*(patternlist)               # matches zero or more occurrences of the given patterns
-+(patternlist)               # matches one or more occurrences of the given patterns
-?(patternlist)               # matches zero or one occurrence of the given patterns
-@(patternlist)               # matches exactly one of the given patterns
-!(patternlist)               # matches anything except one of the given patterns
-
-$(UNIX command)              # command substitution: runs the command and returns standard output
-
-
-## FUNCTIONS
-
-
-## The function refers to passed arguments by position (as if they were positional parameters), that is, $1, $2, and so forth.
-## $@ is equal to "$1" "$2"... "$N", where N is the number of positional parameters. $# holds the number of positional parameters.
-
-function functname() {
-  shell commands
-}
-
-unset -f functname  # deletes a function definition
-declare -f          # displays all defined functions in your login session
-
-
-## FLOW CONTROLS
-
-
-statement1 && statement2  # and operator
-statement1 || statement2  # or operator
-
--a                        # and operator inside a test conditional expression
--o                        # or operator inside a test conditional expression
-
-## STRINGS
-
-str1 == str2               # str1 matches str2
-str1 != str2               # str1 does not match str2
-str1 < str2                # str1 is less than str2 (alphabetically)
-str1 > str2                # str1 is greater than str2 (alphabetically)
-str1 \> str2               # str1 is sorted after str2
-str1 \< str2               # str1 is sorted before str2
--n str1                    # str1 is not null (has length greater than 0)
--z str1                    # str1 is null (has length 0)
-
-## FILES
-
--a file                   # file exists or its compilation is successful
--d file                   # file exists and is a directory
--e file                   # file exists; same -a
--f file                   # file exists and is a regular file (i.e., not a directory or other special type of file)
--r file                   # you have read permission
--s file                   # file exists and is not empty
--w file                   # your have write permission
--x file                   # you have execute permission on file, or directory search permission if it is a directory
--N file                   # file was modified since it was last read
--O file                   # you own file
--G file                   # file's group ID matches yours (or one of yours, if you are in multiple groups)
-file1 -nt file2           # file1 is newer than file2
-file1 -ot file2           # file1 is older than file2
-
-## NUMBERS
-
--lt                       # less than
--le                       # less than or equal
--eq                       # equal
--ge                       # greater than or equal
--gt                       # greater than
--ne                       # not equal
-
-if condition
-then
-  statements
-[elif condition
-  then statements...]
-[else
-  statements]
-fi
-
-for x in {1..10}
-do
-  statements
-done
-
-for name [in list]
-do
-  statements that can use $name
-done
-
-for (( initialisation ; ending condition ; update ))
-do
-  statements...
-done
-
-case expression in
-  pattern1 )
-    statements ;;
-  pattern2 )
-    statements ;;
-esac
-
-select name [in list]
-do
-  statements that can use $name
-done
-
-while condition; do
-  statements
-done
-
-until condition; do
-  statements
-done
-
-
-## COMMAND-LINE PROCESSING CYCLE
-
-
-## The default order for command lookup is functions, followed by built-ins, with scripts and executables last.
-## There are three built-ins that you can use to override this order: `command`, `builtin` and `enable`.
-
-command  # removes alias and function lookup. Only built-ins and commands found in the search path are executed
-builtin  # looks up only built-in commands, ignoring functions and commands found in PATH
-enable   # enables and disables shell built-ins
-
-eval     # takes arguments and run them through the command-line processing steps all over again
-
-
-## INPUT/OUTPUT REDIRECTORS
-
-
-cmd1|cmd2  # pipe; takes standard output of cmd1 as standard input to cmd2
-< file     # takes standard input from file
-> file     # directs standard output to file
->> file    # directs standard output to file; append to file if it already exists
->|file     # forces standard output to file even if noclobber is set
-n>|file    # forces output to file from file descriptor n even if noclobber is set
-<> file    # uses file as both standard input and standard output
-n<>file    # uses file as both input and output for file descriptor n
-n>file     # directs file descriptor n to file
-n<file     # takes file descriptor n from file
-n>>file    # directs file description n to file; append to file if it already exists
-n>&        # duplicates standard output to file descriptor n
-n<&        # duplicates standard input from file descriptor n
-n>&m       # file descriptor n is made to be a copy of the output file descriptor
-n<&m       # file descriptor n is made to be a copy of the input file descriptor
-&>file     # directs standard output and standard error to file
-<&-      # closes the standard input
->&-      # closes the standard output
-n>&-     # closes the ouput from file descriptor n
-n<&-     # closes the input from file descripor n
-
-|tee <file># output command to both terminal and a file (-a to append to file)
-
-
-## PROCESS HANDLING
-
-
-## To suspend a job, type CTRL+Z while it is running. You can also suspend a job with CTRL+Y.
-## This is slightly different from CTRL+Z in that the process is only stopped when it attempts to read input from terminal.
-## Of course, to interrupt a job, type CTRL+C.
-
-myCommand &  # runs job in the background and prompts back the shell
-
-jobs         # lists all jobs (use with -l to see associated PID)
-
-fg           # brings a background job into the foreground
-fg %+        # brings most recently invoked background job
-fg %-      # brings second most recently invoked background job
-fg %N        # brings job number N
-fg %string   # brings job whose command begins with string
-fg %?string  # brings job whose command contains string
-
-kill -l               # returns a list of all signals on the system, by name and number
-kill PID              # terminates process with specified PID
-kill -s SIGKILL 4500  # sends a signal to force or terminate the process
-kill -15 913          # Ending PID 913 process with signal 15 (TERM)
-kill %1               # Where %1 is the number of job as read from 'jobs' command.
-
-ps           # prints a line of information about the current running login shell and any processes running under it
-ps -a        # selects all processes with a tty except session leaders
-
-trap cmd sig1 sig2  # executes a command when a signal is received by the script
-trap "" sig1 sig2   # ignores that signals
-trap - sig1 sig2    # resets the action taken when the signal is received to the default
-
-disown <PID|JID>    # removes the process from the list of jobs
-
-wait                # waits until all background jobs have finished
-sleep <number>      # wait # of seconds before continuing
-
-pv                  # display progress bar for data handling commands. often used with pipe like |pv
-yes                 # give yes response everytime an input is requested from script/process
-
-
-## TIPS & TRICKS
-
-
-## set an alias
-cd; nano .bash_profile
-> alias gentlenode='ssh admin@gentlenode.com -p 3404'  # add your alias in .bash_profile
-
-## to quickly go to a specific directory
-cd; nano .bashrc
-> shopt -s cdable_vars
-> export websites="/Users/mac/Documents/websites"
-
-source .bashrc
-cd $websites
-
-
-## DEBUGGING SHELL PROGRAMS
-
-
-bash -n scriptname  # don't run commands; check for syntax errors only
-set -o noexec       # alternative (set option in script)
-
-bash -v scriptname  # echo commands before running them
-set -o verbose      # alternative (set option in script)
-
-bash -x scriptname  # echo commands after command-line processing
-set -o xtrace       # alternative (set option in script)
-
-trap 'echo $varname' EXIT  # useful when you want to print out the values of variables at the point that your script exits
-
-function errtrap {
-  es=$?
-  echo "ERROR line $1: Command exited with status $es."
-}
-
-trap 'errtrap $LINENO' ERR  # is run whenever a command in the surrounding script or function exits with non-zero status
-
-function dbgtrap {
-  echo "badvar is $badvar"
-}
-
-trap dbgtrap DEBUG  # causes the trap code to be executed before every statement in a function or script
-## ...section of code in which the problem occurs...
-trap - DEBUG  # turn off the DEBUG trap
-
-function returntrap {
-  echo "A return occurred"
-}
-
-trap returntrap RETURN  # is executed each time a shell function or a script executed with the . or source commands finishes executing
-
-
-## COLORS AND BACKGROUNDS
-
-## note: \e or \x1B also work instead of \033
-## Reset
-Color_Off='\033[0m' # Text Reset
-
-## Regular Colors
-Black='\033[0;30m'  # Black
-Red='\033[0;31m'    # Red
-Green='\033[0;32m'  # Green
-Yellow='\033[0;33m' # Yellow
-Blue='\033[0;34m'   # Blue
-Purple='\033[0;35m' # Purple
-Cyan='\033[0;36m'   # Cyan
-White='\033[0;97m'  # White
-
-## Additional colors
-LGrey='\033[0;37m'  # Ligth Gray
-DGrey='\033[0;90m'  # Dark Gray
-LRed='\033[0;91m'   # Ligth Red
-LGreen='\033[0;92m' # Ligth Green
-LYellow='\033[0;93m'# Ligth Yellow
-LBlue='\033[0;94m'  # Ligth Blue
-LPurple='\033[0;95m'# Light Purple
-LCyan='\033[0;96m'  # Ligth Cyan
-
-## Bold
-BBlack='\033[1;30m' # Black
-BRed='\033[1;31m'   # Red
-BGreen='\033[1;32m' # Green
-BYellow='\033[1;33m'# Yellow
-BBlue='\033[1;34m'  # Blue
-BPurple='\033[1;35m'# Purple
-BCyan='\033[1;36m'  # Cyan
-BWhite='\033[1;37m' # White
-
-## Underline
-UBlack='\033[4;30m' # Black
-URed='\033[4;31m'   # Red
-UGreen='\033[4;32m' # Green
-UYellow='\033[4;33m'# Yellow
-UBlue='\033[4;34m'  # Blue
-UPurple='\033[4;35m'# Purple
-UCyan='\033[4;36m'  # Cyan
-UWhite='\033[4;37m' # White
-
-## Background
-On_Black='\033[40m' # Black
-On_Red='\033[41m'   # Red
-On_Green='\033[42m' # Green
-On_Yellow='\033[43m'# Yellow
-On_Blue='\033[44m'  # Blue
-On_Purple='\033[45m'# Purple
-On_Cyan='\033[46m'  # Cyan
-On_White='\033[47m' # White
-
-## Example of usage
-echo -e "${Green}This is GREEN text${Color_Off} and normal text"
-echo -e "${Red}${On_White}This is Red test on White background${Color_Off}"
-## option -e is mandatory, it enable interpretation of backslash escapes
-printf "${Red} This is red \n"
-
-```
-
-</details>
-
->
-
-#### Find
-
-## To find files by case-insensitive extension (ex: .jpg, .JPG, .jpG)
-
-find . -iname "\*.jpg"
-
-## To find directories
-
-find . -type d
-
-## To find files
-
-find . -type f
-
-## To find files by octal permission
-
-find . -type f -perm 777
-
-## To find files with setuid bit set
-
-find . -xdev \( -perm -4000 \) -type f -print0 | xargs -0 ls -l
-
-## To find files with extension '.txt' and remove them
-
-find ./path/ -name '\*.txt' -exec rm '{}' \;
-
-## To find files with extension '.txt' and look for a string into them
-
-find ./path/ -name '\*.txt' | xargs grep 'string'
-
-## To find files with size bigger than 5 Mebibyte and sort them by size
-
-find . -size +5M -type f -print0 | xargs -0 ls -Ssh | sort -z
-
-## To find files bigger than 2 Megabyte and list them
-
-find . -type f -size +200000000c -exec ls -lh {} \; | awk '{ print $9 ": " $5 }'
-
-## To find files modified more than 7 days ago and list file information
-
-find . -type f -mtime +7d -ls
-
-## To find symlinks owned by a user and list file information
-
-find . -type l -user <username-or-userid> -ls
-
-## To search for and delete empty directories
-
-find . -type d -empty -exec rmdir {} \;
-
-## To search for directories named build at a max depth of 2 directories
-
-find . -maxdepth 2 -name build -type d
-
-## To search all files who are not in .git directory
-
-find . ! -iwholename '*.git*' -type f
-
-## To find all files that have the same node (hard link) as MY_FILE_HERE
-
-find . -type f -samefile MY_FILE_HERE 2>/dev/null
-
-## To find all files in the current directory and modify their permissions
-
-find . -type f -exec chmod 644 {} \;
-
----
-
-</details>
-
----
-
-![Preview](https://i.imgur.com/nieW1vp.png)
-
-## Wiki Nav
-
--   [Home](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
--   [add copy to code blocks.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/add-copy-to-code-blocks.md)
--   [Add site search w algolia.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Add-site-search-w-algolia.md)
--   [adding mailing list.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/adding-mailing-list.md)
--   [Adding search 2 gatsby site.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Adding-search-2-gatsby-site.md)
--   [awesome.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/awesome.md)
--   [broken links.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/broken-links.md)
--   [configure custom domain.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/configure-custom-domain.md)
--   [contentauthoring.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/contentauthoring.md)
--   [full text search w lunar.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/full-text-search-w-lunar.md)
--   [inject 4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject-4.md)
--   [inject3.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject3.md)
--   [inject4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject4.md)
--   [injected content part2.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-content-part2.md)
--   [injected js part4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-js-part4.md)
--   [injected part3.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-part3.md)
--   [links 2 embed.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/links-2-embed.md)
--   [links to remember](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/links-to-remember)
--   [Netlify Injected Content](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Netlify-Injected-Content)
--   [old version of index.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/old-version-of-index.md)
--   [optimize vscode.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/optimize-vscode.md)
--   [possibly useful snippets.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/possibly-useful-snippets.md)
--   [privacy policy.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/privacy-policy.md)
--   [random stuff.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/random-stuff.md)
--   [random.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/random.md)
--   [ref type](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/ref-type)
--   [SEO.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/SEO.md)
--   [stable points.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/stable-points.md)
--   [tech used.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/tech-used.md)
--   [Technologies Used.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Technologies-Used.md)
--   [THINGS TO EMBED.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/THINGS-TO-EMBED.md)
--   [validation report.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/validation-report.md)
--   [web archive.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/web-archive.md)
--   [wordpress vs headless cms.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/wordpress-vs-headless-cms.md)
-
----
-
-## Dependencies
-
-<details>
-  <summary>Click to expand!</summary>
-
-[![@algolia**](https://avatars.githubusercontent.com/u/2034458?s=40&v=4)](https://github.com/algolia)[algolia / algoliasearch-client-javascript](https://github.com/algolia/algoliasearch-client-javascript)@algolia/client-search
-`^ 4.10.3`
-
-[![@algolia**](https://avatars.githubusercontent.com/u/2034458?s=40&v=4)](https://github.com/algolia)[algolia / algoliasearch-client-javascript](https://github.com/algolia/algoliasearch-client-javascript)@algolia/client-common
-`4.10.5`
-
-![@ghost**](https://avatars.githubusercontent.com/u/10137?s=40&v=4)@algolia/requester-common
-`4.10.5`
-
-[![@algolia**](https://avatars.githubusercontent.com/u/2034458?s=40&v=4)](https://github.com/algolia)[algolia / algoliasearch-client-javascript](https://github.com/algolia/algoliasearch-client-javascript)@algolia/transporter
-`4.10.5`
-
-[![@stackbit**](https://avatars.githubusercontent.com/u/38996451?s=40&v=4)](https://github.com/stackbit)[stackbit / gatsby-plugin-menus](https://github.com/stackbit/gatsby-plugin-menus)@stackbit/gatsby-plugin-menus
-`0.0.4`
-
-[![@facebook**](https://avatars.githubusercontent.com/u/69631?s=40&v=4)](https://github.com/facebook)[facebook / jest](https://github.com/facebook/jest)babel-jest
-`^ 24.7.1`
-
-[![@gatsbyjs**](https://avatars.githubusercontent.com/u/12551863?s=40&v=4)](https://github.com/gatsbyjs)[gatsbyjs / gatsby](https://github.com/gatsbyjs/gatsby)babel-preset-gatsby
-`^ 0.1.11`
-
-[![@gatsbyjs**](https://avatars.githubusercontent.com/u/12551863?s=40&v=4)](https://github.com/gatsbyjs)[gatsbyjs / gatsby](https://github.com/gatsbyjs/gatsby) `^ 2.5.0`
-
-[![@keyz**](https://avatars.githubusercontent.com/u/2268452?s=40&u=c3f56fe1d943474ffe4577a82ad79c1a79d7eb6e&v=4)](https://github.com/keyz)[keyz / identity-obj-proxy](https://github.com/keyz/identity-obj-proxy) `^ 3.0.0`
-
-[![@facebook**](https://avatars.githubusercontent.com/u/69631?s=40&v=4)](https://github.com/facebook)[facebook / jest](https://github.com/facebook/jest) `^ 24.7.1`
-
-[![@lodash**](https://avatars.githubusercontent.com/u/2565403?s=40&v=4)](https://github.com/lodash)[lodash / lodash](https://github.com/lodash/lodash) `^ 4.17.11`
-
-[![@facebook**](https://avatars.githubusercontent.com/u/69631?s=40&v=4)](https://github.com/facebook)[facebook / react](https://github.com/facebook/react)react-test-renderer
-`^ 16.8.6`
-
-[![@getkirby-v2**](https://avatars.githubusercontent.com/u/6985611?s=40&v=4)](https://github.com/getkirby-v2)[getkirby-v2 / algolia-plugin](https://github.com/getkirby-v2/algolia-plugin)algolia
-`0.0.0`
-
-[![@ecomfe**](https://avatars.githubusercontent.com/u/2268460?s=40&v=4)](https://github.com/ecomfe)[ecomfe / babel-runtime](https://github.com/ecomfe/babel-runtime) `6.26.0`
-
-[![@paulmillr**](https://avatars.githubusercontent.com/u/574696?s=40&u=7f4396380d73af134b898c8eaf7bb171f448f40f&v=4)](https://github.com/paulmillr)[paulmillr / chokidar](https://github.com/paulmillr/chokidar) `3.4.0`
-
-[![@DefinitelyTyped**](https://avatars.githubusercontent.com/u/3637556?s=40&v=4)](https://github.com/DefinitelyTyped)[DefinitelyTyped / DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)@types/node
-`^ 13`
-
-[![@micromatch**](https://avatars.githubusercontent.com/u/26890389?s=40&v=4)](https://github.com/micromatch)[micromatch / anymatch](https://github.com/micromatch/anymatch) `~ 3.1.1`
-
-[![@micromatch**](https://avatars.githubusercontent.com/u/26890389?s=40&v=4)](https://github.com/micromatch)[micromatch / braces](https://github.com/micromatch/braces) `~ 3.0.2`
-
-[![@chaijs**](https://avatars.githubusercontent.com/u/1515293?s=40&v=4)](https://github.com/chaijs)[chaijs / chai](https://github.com/chaijs/chai) `^ 4.2`
-
-[![@microsoft**](https://avatars.githubusercontent.com/u/6154722?s=40&v=4)](https://github.com/microsoft)[microsoft / dtslint](https://github.com/microsoft/dtslint) `^ 3.3.0`
-
-[![@eslint**](https://avatars.githubusercontent.com/u/6019716?s=40&v=4)](https://github.com/eslint)[eslint / eslint](https://github.com/eslint/eslint) `^ 6.6.0`
-
-[![@fsevents**](https://avatars.githubusercontent.com/u/48760001?s=40&v=4)](https://github.com/fsevents)[fsevents / fsevents](https://github.com/fsevents/fsevents) `~ 2.1.2`
-
-[![@gulpjs**](https://avatars.githubusercontent.com/u/6200624?s=40&v=4)](https://github.com/gulpjs)[gulpjs / glob-parent](https://github.com/gulpjs/glob-parent) `~ 5.1.0`
-
-[![@sindresorhus**](https://avatars.githubusercontent.com/u/170270?s=40&u=34acd557a042ac478d273a4621570cadb6b0bd89&v=4)](https://github.com/sindresorhus)[sindresorhus / is-binary-path](https://github.com/sindresorhus/is-binary-path) `~ 2.1.0`
-
-[![@micromatch**](https://avatars.githubusercontent.com/u/26890389?s=40&v=4)](https://github.com/micromatch)[micromatch / is-glob](https://github.com/micromatch/is-glob) `~ 4.0.1`
-
-[![@mochajs**](https://avatars.githubusercontent.com/u/8770005?s=40&v=4)](https://github.com/mochajs)[mochajs / mocha](https://github.com/mochajs/mocha) `^ 7.0.0`
-
-[![@jonschlinkert**](https://avatars.githubusercontent.com/u/383994?s=40&u=335f06277f72722162e89bd5516849f2e82f37cf&v=4)](https://github.com/jonschlinkert)[jonschlinkert / normalize-path](https://github.com/jonschlinkert/normalize-path) `~ 3.0.0`
-
-[![@istanbuljs**](https://avatars.githubusercontent.com/u/13523395?s=40&v=4)](https://github.com/istanbuljs)[istanbuljs / nyc](https://github.com/istanbuljs/nyc) `^ 15.0.0`
-
-[![@paulmillr**](https://avatars.githubusercontent.com/u/574696?s=40&u=7f4396380d73af134b898c8eaf7bb171f448f40f&v=4)](https://github.com/paulmillr)[paulmillr / readdirp](https://github.com/paulmillr/readdirp) `~ 3.4.0`
-
-[![@isaacs**](https://avatars.githubusercontent.com/u/9287?s=40&u=60a280618307ae965cadbe52da4baa7e351c848c&v=4)](https://github.com/isaacs)[isaacs / rimraf](https://github.com/isaacs/rimraf) `^ 3.0.0`
-
-[![@sinonjs**](https://avatars.githubusercontent.com/u/6570253?s=40&v=4)](https://github.com/sinonjs)[sinonjs / sinon](https://github.com/sinonjs/sinon) `^ 9.0.1`
-
-[![@domenic**](https://avatars.githubusercontent.com/u/617481?s=40&v=4)](https://github.com/domenic)[domenic / sinon-chai](https://github.com/domenic/sinon-chai) `^ 3.3.0`
-
-[![@anodynos**](https://avatars.githubusercontent.com/u/856453?s=40&v=4)](https://github.com/anodynos)[anodynos / upath](https://github.com/anodynos/upath) `^ 1.2.0`
-
-[![@JedWatson**](https://avatars.githubusercontent.com/u/872310?s=40&u=9548676d01f104232ee42e5ac0d985db77e6a5a4&v=4)](https://github.com/JedWatson)[JedWatson / classnames](https://github.com/JedWatson/classnames) `2.2.6`
-
-[![@bestiejs**](https://avatars.githubusercontent.com/u/802850?s=40&v=4)](https://github.com/bestiejs)[bestiejs / benchmark.js](https://github.com/bestiejs/benchmark.js)benchmark
-`^ 1.0.0`
-
-[![@browserify**](https://avatars.githubusercontent.com/u/6320506?s=40&v=4)](https://github.com/browserify)[browserify / browserify](https://github.com/browserify/browserify) `^ 14.1.0`
-
-[![@mochajs**](https://avatars.githubusercontent.com/u/8770005?s=40&v=4)](https://github.com/mochajs)[mochajs / mocha](https://github.com/mochajs/mocha) `^ 2.1.0`
-
-[![@jeromedecoster**](https://avatars.githubusercontent.com/u/158071?s=40&u=470a733fdc34a9fedab18ae4cf5109d2ea357425&v=4)](https://github.com/jeromedecoster)[jeromedecoster / opn-cli](https://github.com/jeromedecoster/opn-cli) `^ 3.1.0`
-
-[![@documentationjs**](https://avatars.githubusercontent.com/u/11415556?s=40&v=4)](https://github.com/documentationjs)[documentationjs / documentation](https://github.com/documentationjs/documentation) `^ 13.2.5`
-
-[![@babel**](https://avatars.githubusercontent.com/u/9637642?s=40&v=4)](https://github.com/babel)[babel / babel](https://github.com/babel/babel)@babel/core
-`7.12.3`
-
-[Cloudfare-Backup](https://bgoonz-blog-2-0.pages.dev/) ↞↠ Search Website: [search](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) ↞↠ [Backup Repo Deploy](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) ↞↠ [Github pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) ↞↠ [Go To Site Wiki](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
-
-</details>
-
----
-
-## Docs Structure
-
-<details>
-<summary>  Docs Structure  </summary>
-
 ```
-├── blog
-│     ├── 300-react-questions.md
-│     ├── awesome-graphql.md
-│     ├── big-o-complexity.md
-│     ├── blog-archive.md
-│     ├── blogwcomments.md
-│     ├── data-structures.md
-│     ├── flow-control-in-python.md
-│     ├── functions-in-python.md
-│     ├── git-gateway.md
-│     ├── index.md
-│     ├── interview-questions-js.md
-│     ├── netlify-cms.md
-│     ├── platform-docs.md
-│     ├── python-for-js-dev.md
-│     ├── python-resources.md
-│     ├── web-dev-trends.md
-│     └── web-scraping.md
-├── docs
-│     ├── about
-│     │     ├── eng-portfolio.md
-│     │     ├── ideas-for-this-website.md
-│     │     ├── index.md
-│     │     ├── intrests.md
-│     │     ├── job-search.md
-│     │     └── resume.md
-│     ├── articles
-│     │     ├── basic-web-dev.md
-│     │     ├── buffers.md
-│     │     ├── dev-dep.md
-│     │     ├── event-loop.md
-│     │     ├── fs-module.md
-│     │     ├── how-the-web-works.md
-│     │     ├── http.md
-│     │     ├── index.md
-│     │     ├── install.md
-│     │     ├── intro.md
-│     │     ├── modules.md
-│     │     ├── nextjs.md
-│     │     ├── node-api-express.md
-│     │     ├── node-cli-args.md
-│     │     ├── node-common-modules.md
-│     │     ├── node-env-variables.md
-│     │     ├── node-js-language.md
-│     │     ├── node-package-manager.md
-│     │     ├── node-repl.md
-│     │     ├── node-run-cli.md
-│     │     ├── nodejs.md
-│     │     ├── nodevsbrowser.md
-│     │     ├── npm.md
-│     │     ├── npx.md
-│     │     ├── os-module.md
-│     │     ├── reading-files.md
-│     │     ├── semantic-html.md
-│     │     ├── semantic.md
-│     │     ├── the-uniform-resource-locator-(url).md
-│     │     ├── understanding-firebase.md
-│     │     ├── v8.md
-│     │     ├── web-standards-checklist.md
-│     │     ├── webdev-tools.md
-│     │     └── writing-files.md
-│     ├── audio
-│     │     ├── audio-feature-extraction.md
-│     │     ├── audio.md
-│     │     ├── dfft.md
-│     │     ├── discrete-fft.md
-│     │     ├── dtw-python-explained.md
-│     │     ├── dynamic-time-warping.md
-│     │     ├── index.md
-│     │     └── web-audio-api.md
-│     ├── career
-│     │     ├── dev-interview.md
-│     │     ├── index.md
-│     │     ├── interview-dos-n-donts.md
-│     │     └── job-boards.md
-│     ├── community
-│     │     ├── an-open-letter-2-future-developers.md
-│     │     ├── index.md
-│     │     └── video-chat.md
-│     ├── content
-│     │     ├── algo.md
-│     │     ├── archive.md
-│     │     ├── gatsby-Queries-Mutations.md
-│     │     ├── history-api.md
-│     │     ├── index.md
-│     │     ├── main-projects.md
-│     │     └── trouble-shooting.md
-│     ├── data-structures
-│     │     └── index.md
-│     ├── docs
-│     │     ├── appendix.md
-│     │     ├── art-of-command-line.md
-│     │     ├── bash.md
-│     │     ├── content.md
-│     │     ├── css.md
-│     │     ├── data-structures-docs.md
-│     │     ├── es-6-features.md
-│     │     ├── git-reference.md
-│     │     ├── git-repos.md
-│     │     ├── html-spec.md
-│     │     ├── index.md
-│     │     ├── markdown.md
-│     │     ├── no-whiteboarding.md
-│     │     ├── node-docs-complete.md
-│     │     ├── node-docs-full.md
-│     │     ├── regex-in-js.md
-│     │     └── sitemap.md
-│     ├── faq
-│     │     ├── contact.md
-│     │     ├── index.md
-│     │     └── plug-ins.md
-│     ├── gists.md
-│     ├── index.md
-│     ├── interact
-│     │     ├── callstack-visual.md
-│     │     ├── clock.md
-│     │     ├── index.md
-│     │     ├── jupyter-notebooks.md
-│     │     ├── other-sites.md
-│     │     └── video-chat.md
-│     ├── interview
-│     │     ├── index.md
-│     │     ├── job-search-nav.md
-│     │     └── review-concepts.md
-│     ├── javascript
-│     │     ├── arrow-functions.md
-│     │     ├── asyncjs.md
-│     │     ├── await-keyword.md
-│     │     ├── bigo.md
-│     │     ├── clean-code.md
-│     │     ├── constructor-functions.md
-│     │     ├── index.md
-│     │     ├── promises.md
-│     │     ├── review.md
-│     │     └── this-is-about-this.md
-│     ├── leetcode
-│     │     └── index.md
-│     ├── privacy-policy.md
-│     ├── projects
-│     │     ├── embeded-websites.md
-│     │     ├── index.md
-│     │     ├── list-of-projects.md
-│     │     ├── mini-projects.md
-│     │     └── my-websites.md
-│     ├── python
-│     │     ├── at-length.md
-│     │     ├── cheat-sheet.md
-│     │     ├── comprehensive-guide.md
-│     │     ├── examples.md
-│     │     ├── flow-control.md
-│     │     ├── functions.md
-│     │     ├── google-sheets-api.md
-│     │     ├── index.md
-│     │     ├── intro-for-js-devs.md
-│     │     ├── python-ds.md
-│     │     └── snippets.md
-│     ├── quick-reference
-│     │     ├── Emmet.md
-│     │     ├── all-emojis.md
-│     │     ├── create-react-app.md
-│     │     ├── git-bash.md
-│     │     ├── git-tricks.md
-│     │     ├── google-firebase.md
-│     │     ├── heroku-error-codes.md
-│     │     ├── index.md
-│     │     ├── installation.md
-│     │     ├── markdown-dropdowns.md
-│     │     ├── minifiction.md
-│     │     ├── new-repo-instructions.md
-│     │     ├── psql-setup.md
-│     │     ├── pull-request-rubric.md
-│     │     ├── quick-links.md
-│     │     ├── topRepos.md
-│     │     ├── understanding-path.md
-│     │     └── vscode-themes.md
-│     ├── react
-│     │     ├── ajax-n-apis.md
-│     │     ├── cheatsheet.md
-│     │     ├── createReactApp.md
-│     │     ├── demo.md
-│     │     ├── dont-use-index-as-keys.md
-│     │     ├── index.md
-│     │     ├── jsx.md
-│     │     ├── react-docs.md
-│     │     ├── react-in-depth.md
-│     │     ├── react2.md
-│     │     └── render-elements.md
-│     ├── reference
-│     │     ├── awesome-lists.md
-│     │     ├── awesome-static.md
-│     │     ├── bash-commands.md
-│     │     ├── bookmarks.md
-│     │     ├── embed-the-web.md
-│     │     ├── github-search.md
-│     │     ├── google-cloud.md
-│     │     ├── how-2-reinstall-npm.md
-│     │     ├── how-to-kill-a-process.md
-│     │     ├── index.md
-│     │     ├── installing-node.md
-│     │     ├── intro-to-nodejs.md
-│     │     ├── notes-template.md
-│     │     ├── psql.md
-│     │     ├── resources.md
-│     │     ├── vscode.md
-│     │     └── web-api's.md
-│     ├── search.md
-│     ├── sitemap.md
-│     ├── tips
-│     │     ├── array-methods.md
-│     │     ├── index.md
-│     │     └── insert-into-array.md
-│     ├── tools
-│     │     ├── Archive.md
-│     │     ├── data-structures.md
-│     │     ├── dev-utilities.md
-│     │     ├── index.md
-│     │     └── markdown-html.md
-│     └── tutorials
-│         ├── enviorment-setup.md
-│         └── index.md
-├── index.md
-├── privacy-policy.md
-├── readme.md
-├── showcase.md
-└── tree.md
-
-23 directories, 202 files
-
-```
-
-## SITEMAP
-
-[**🌍⇒https://bgoonz-blog.netlify.app/🗺️**](https://bgoonz-blog.netlify.app/)
-
-[**🌍⇒blog🗺️**](https://bgoonz-blog.netlify.app/blog)
-
-[**🌍⇒docs🗺️**](https://bgoonz-blog.netlify.app/docs)
-
-[**🌍⇒readme🗺️**](https://bgoonz-blog.netlify.app/readme)
-
-[**🌍⇒review🗺️**](https://bgoonz-blog.netlify.app/review)
-
-[**🌍⇒showcase🗺️**](https://bgoonz-blog.netlify.app/showcase)
-
-[**🌍⇒blog/awesome-graphql🗺️**](https://bgoonz-blog.netlify.app/blog/awesome-graphql)
-
-[**🌍⇒blog/big-o-complexity🗺️**](https://bgoonz-blog.netlify.app/blog/big-o-complexity)
-
-[**🌍⇒blog/blog-archive🗺️**](https://bgoonz-blog.netlify.app/blog/blog-archive)
-
-[**🌍⇒blog/blogwcomments🗺️**](https://bgoonz-blog.netlify.app/blog/blogwcomments)
-
-[**🌍⇒blog/data-structures🗺️**](https://bgoonz-blog.netlify.app/blog/data-structures)
-
-[**🌍⇒blog/flow-control-in-python🗺️**](https://bgoonz-blog.netlify.app/blog/flow-control-in-python)
-
-[**🌍⇒blog/functions-in-python🗺️**](https://bgoonz-blog.netlify.app/blog/functions-in-python)
-
-[**🌍⇒blog/git-gateway🗺️**](https://bgoonz-blog.netlify.app/blog/git-gateway)
-
-[**🌍⇒blog/interview-questions-js🗺️**](https://bgoonz-blog.netlify.app/blog/interview-questions-js)
-
-[**🌍⇒blog/media-queries-explained🗺️**](https://bgoonz-blog.netlify.app/blog/media-queries-explained)
-
-[**🌍⇒blog/my-medium🗺️**](https://bgoonz-blog.netlify.app/blog/my-medium)
-
-[**🌍⇒blog/netlify-cms🗺️**](https://bgoonz-blog.netlify.app/blog/netlify-cms)
-
-[**🌍⇒blog/platform-docs🗺️**](https://bgoonz-blog.netlify.app/blog/platform-docs)
-
-[**🌍⇒blog/python-for-js-dev🗺️**](https://bgoonz-blog.netlify.app/blog/python-for-js-dev)
-
-[**🌍⇒blog/python-resources🗺️**](https://bgoonz-blog.netlify.app/blog/python-resources)
-
-[**🌍⇒blog/web-dev-trends🗺️**](https://bgoonz-blog.netlify.app/blog/web-dev-trends)
-
-[**🌍⇒blog/web-scraping🗺️**](https://bgoonz-blog.netlify.app/blog/web-scraping)
-
-[**🌍⇒docs/about🗺️**](https://bgoonz-blog.netlify.app/docs/about)
-
-[**🌍⇒docs/articles🗺️**](https://bgoonz-blog.netlify.app/docs/articles)
-
-[**🌍⇒docs/audio🗺️**](https://bgoonz-blog.netlify.app/docs/audio)
-
-[**🌍⇒docs/career🗺️**](https://bgoonz-blog.netlify.app/docs/career)
-
-[**🌍⇒docs/community🗺️**](https://bgoonz-blog.netlify.app/docs/community)
-
-[**🌍⇒docs/content🗺️**](https://bgoonz-blog.netlify.app/docs/content)
-
-[**🌍⇒docs/docs🗺️**](https://bgoonz-blog.netlify.app/docs/docs)
-
-[**🌍⇒docs/faq🗺️**](https://bgoonz-blog.netlify.app/docs/faq)
-
-[**🌍⇒docs/gallery🗺️**](https://bgoonz-blog.netlify.app/docs/gallery)
-
-[**🌍⇒docs/interact🗺️**](https://bgoonz-blog.netlify.app/docs/interact)
-
-[**🌍⇒docs/javascript🗺️**](https://bgoonz-blog.netlify.app/docs/javascript)
-
-[**🌍⇒docs/leetcode🗺️**](https://bgoonz-blog.netlify.app/docs/leetcode)
-
-[**🌍⇒docs/other-content🗺️**](https://bgoonz-blog.netlify.app/docs/other-content)
 
-[**🌍⇒docs/privacy-policy🗺️**](https://bgoonz-blog.netlify.app/docs/privacy-policy)
+### Links:
 
-[**🌍⇒docs/projects🗺️**](https://bgoonz-blog.netlify.app/docs/projects)
+##### Try it out without cloning the entire repo:
 
-[**🌍⇒docs/python🗺️**](https://bgoonz-blog.netlify.app/docs/python)
+##### [stackblitz demo hosted on firebase](https://exploring-firebase-4c023.firebaseapp.com/)
 
-[**🌍⇒docs/quick-reference🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference)
+-   [/showcase/](https://bgoonz-blog.netlify.app/showcase/)
+-   [/repos/](https://bgoonz-blog.netlify.app/repos/)
+-   [/blog/](https://bgoonz-blog.netlify.app/blog/)
+-   [/docs/jupyter-notebooks/](https://bgoonz-blog.netlify.app/docs/jupyter-notebooks/)
+-   [/docs/portfolio-web/](https://bgoonz-blog.netlify.app/docs/portfolio-web/)
+-   [/docs/python/](https://bgoonz-blog.netlify.app/docs/python/)
+-   [/docs/About/](https://bgoonz-blog.netlify.app/docs/About/)
+-   [/docs/About/resume/](https://bgoonz-blog.netlify.app/docs/About/resume/)
+-   [/docs/about/](https://bgoonz-blog.netlify.app/docs/about/)
+-   [/docs/faq/](https://bgoonz-blog.netlify.app/docs/faq/)
+-   [/docs/quick-reference/](https://bgoonz-blog.netlify.app/docs/quick-reference/)
+-   [/docs/quick-reference/Emmet/](https://bgoonz-blog.netlify.app/docs/quick-reference/Emmet/)
+-   [/docs/quick-reference/new-repo-instructions/](https://bgoonz-blog.netlify.app/docs/quick-reference/new-repo-instructions/)
+-   [/docs/links/Social/](https://bgoonz-blog.netlify.app/docs/links/Social/)
+-   [/docs/links/](https://bgoonz-blog.netlify.app/docs/links/)
+-   [/docs/quick-reference/installation/](https://bgoonz-blog.netlify.app/docs/quick-reference/installation/)
+-   [/docs/links/my-websites/](https://bgoonz-blog.netlify.app/docs/links/my-websites/)
+-   [/docs/](https://bgoonz-blog.netlify.app/docs/)
+-   [/blog/community/](https://bgoonz-blog.netlify.app/blog/community/)
+-   [/blog/python/](https://bgoonz-blog.netlify.app/blog/python/)
+-   [/docs/resources/](https://bgoonz-blog.netlify.app/docs/resources/)
+-   [/docs/react/createReactApp/](https://bgoonz-blog.netlify.app/docs/react/createReactApp/)
+-   [/docs/tools/](https://bgoonz-blog.netlify.app/docs/tools/)
+-   [/notes-template/](https://bgoonz-blog.netlify.app/notes-template/)
+-   [/blog/my-medium/](https://bgoonz-blog.netlify.app/blog/my-medium/)
+-   [/docs/tools/default-readme/](https://bgoonz-blog.netlify.app/docs/tools/default-readme/)
+-   [/docs/tools/plug-ins/](https://bgoonz-blog.netlify.app/docs/tools/plug-ins/)
+-   [/docs/react/react2/](https://bgoonz-blog.netlify.app/docs/react/react2/)
+-   [/docs/tools/notes-template/](https://bgoonz-blog.netlify.app/docs/tools/notes-template/)
+-   [/review/](https://bgoonz-blog.netlify.app/review/)
+-   [/docs/articles/basic-web-dev/](https://bgoonz-blog.netlify.app/docs/articles/basic-web-dev/)
+-   [/blog/data-structures/](https://bgoonz-blog.netlify.app/blog/data-structures/)
+-   [/docs/About/me/](https://bgoonz-blog.netlify.app/docs/About/me/)
+-   [/docs/About/introduction2bg/](https://bgoonz-blog.netlify.app/docs/About/introduction2bg/)
+-   [/docs/react/](https://bgoonz-blog.netlify.app/docs/react/)
+-   [/docs/tools/Git-Html-Preview/](https://bgoonz-blog.netlify.app/docs/tools/Git-Html-Preview/)
+-   [/gallery/](https://bgoonz-blog.netlify.app/gallery/)
 
-[**🌍⇒docs/react🗺️**](https://bgoonz-blog.netlify.app/docs/react)
+## Blog
 
-[**🌍⇒docs/reference🗺️**](https://bgoonz-blog.netlify.app/docs/reference)
+-   [introductory-react-part-2](https://bryanguner.medium.com/introductory-react-part-2-cda01615a186?source=your_stories_page-------------------------------------)
 
-[**🌍⇒docs/search🗺️**](https://bgoonz-blog.netlify.app/docs/search)
+-   [a-very-quick-guide-to-calculating-big-o-computational-complexity](https://bryanguner.medium.com/a-very-quick-guide-to-calculating-big-o-computational-complexity-eb1557e85fa3?source=your_stories_page-------------------------------------)
 
-[**🌍⇒docs/sitemap🗺️**](https://bgoonz-blog.netlify.app/docs/sitemap)
+-   [introduction-to-react-for-complete-beginners](https://javascript.plainenglish.io/introduction-to-react-for-complete-beginners-8021738aa1ad?source=your_stories_page-------------------------------------)
 
-[**🌍⇒docs/tools🗺️**](https://bgoonz-blog.netlify.app/docs/tools)
+-   [scheduling-settimeout-and-setinterval](https://javascript.plainenglish.io/scheduling-settimeout-and-setinterval-fcb2f40d16f7?source=your_stories_page-------------------------------------)
 
-[**🌍⇒docs/tutorials🗺️**](https://bgoonz-blog.netlify.app/docs/tutorials)
+-   [css-animations](https://bryanguner.medium.com/css-animations-d196a20099a5?source=your_stories_page-------------------------------------)
 
-[**🌍⇒docs/about/eng-portfolio🗺️**](https://bgoonz-blog.netlify.app/docs/about/eng-portfolio)
+-   [these-are-the-bash-shell-commands-that-stand-between-me-and-insanity](https://bryanguner.medium.com/these-are-the-bash-shell-commands-that-stand-between-me-and-insanity-984865ba5d1b?source=your_stories_page-------------------------------------)
 
-[**🌍⇒docs/about/ideas-for-this-website🗺️**](https://bgoonz-blog.netlify.app/docs/about/ideas-for-this-website)
+-   [how-to-implement-native-es6-data-structures-using-arrays-objects](https://bryanguner.medium.com/how-to-implement-native-es6-data-structures-using-arrays-objects-ce953b9f6a07?source=your_stories_page-------------------------------------)
 
-[**🌍⇒docs/about/intrests🗺️**](https://bgoonz-blog.netlify.app/docs/about/intrests)
+-   [objects-in-javascript](https://medium.com/codex/objects-in-javascript-cc578a781e1d?source=your_stories_page-------------------------------------)
 
-[**🌍⇒docs/about/interview🗺️**](https://bgoonz-blog.netlify.app/docs/about/interview)
+-   [absolute-beginners-guide-to-javascript-part1](https://javascript.plainenglish.io/absolute-beginners-guide-to-javascript-part-1-e222d166b6e1?source=your_stories_page-------------------------------------)
 
-[**🌍⇒docs/about/resume🗺️**](https://bgoonz-blog.netlify.app/docs/about/resume)
+-   [web-developer-resource-list-part-4](https://medium.com/star-gazers/web-developer-resource-list-part-4-fd686892b9eb?source=your_stories_page-------------------------------------)
 
-[**🌍⇒docs/articles/basic-web-dev🗺️**](https://bgoonz-blog.netlify.app/docs/articles/basic-web-dev)
+-   [vscode-extensions-specifically-for-javascript-development](https://medium.com/codex/vscode-extensions-specifically-for-javascript-development-ea91305cbd4a?source=your_stories_page-------------------------------------)
 
-[**🌍⇒docs/articles/buffers🗺️**](https://bgoonz-blog.netlify.app/docs/articles/buffers)
+-   [a-list-of-all-of-my-articles-to-link-to-future-posts](https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b?source=your_stories_page-------------------------------------)
 
-[**🌍⇒docs/articles/dev-dep🗺️**](https://bgoonz-blog.netlify.app/docs/articles/dev-dep)
+-   [lists-stacks-and-queues-in-javascript](https://javascript.plainenglish.io/lists-stacks-and-queues-in-javascript-88466fae0fbb?source=your_stories_page-------------------------------------)
 
-[**🌍⇒docs/articles/event-loop🗺️**](https://bgoonz-blog.netlify.app/docs/articles/event-loop)
+-   [web-development-resources-part-3](https://bryanguner.medium.com/web-development-resources-part-3-f862ceb2b82a?source=your_stories_page-------------------------------------)
 
-[**🌍⇒docs/articles/fs-module🗺️**](https://bgoonz-blog.netlify.app/docs/articles/fs-module)
+-   [web-development-interview-part-3](https://medium.com/codex/web-development-interview-part-3-826ae81a9107?source=your_stories_page-------------------------------------)
 
-[**🌍⇒docs/articles/how-the-web-works🗺️**](https://bgoonz-blog.netlify.app/docs/articles/how-the-web-works)
+-   [running-list-of-interesting-articles-tools](https://bryanguner.medium.com/running-list-of-interesting-articles-tools-and-ideas-as-i-explore-them-b87a2f04d9a6?source=your_stories_page-------------------------------------)
 
-[**🌍⇒docs/articles/http🗺️**](https://bgoonz-blog.netlify.app/docs/articles/http)
+-   [the-best-cloud-based-code-playgrounds-of-2021-part-1](https://bryanguner.medium.com/the-best-cloud-based-code-playgrounds-of-2021-part-1-cdae9448db24?source=your_stories_page-------------------------------------)
 
-[**🌍⇒docs/articles/install🗺️**](https://bgoonz-blog.netlify.app/docs/articles/install)
+-   [front-end-interview-questions-part-2](https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443?source=your_stories_page-------------------------------------)
 
-[**🌍⇒docs/articles/intro🗺️**](https://bgoonz-blog.netlify.app/docs/articles/intro)
+-   [web-developer-resource-list-part-2](https://medium.com/star-gazers/web-developer-resource-list-part-2-9c5cb56ab263?source=your_stories_page-------------------------------------)
 
-[**🌍⇒docs/articles/media-queries-no-more🗺️**](https://bgoonz-blog.netlify.app/docs/articles/media-queries-no-more)
+-   [http-basics](https://levelup.gitconnected.com/http-basics-8f02a96a834a?source=your_stories_page-------------------------------------)
 
-[**🌍⇒docs/articles/module-exports🗺️**](https://bgoonz-blog.netlify.app/docs/articles/module-exports)
+-   [javascript-frameworks-libraries](https://javascript.plainenglish.io/javascript-frameworks-libraries-35931e187a35?source=your_stories_page-------------------------------------)
 
-[**🌍⇒docs/articles/nextjs🗺️**](https://bgoonz-blog.netlify.app/docs/articles/nextjs)
+-   [my-take-on-awesome-javascript](https://javascript.plainenglish.io/my-take-on-awesome-javascript-243255451e74?source=your_stories_page-------------------------------------)
 
-[**🌍⇒docs/articles/node-api-express🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-api-express)
+-   [get-started-with-vscode-extensions](https://levelup.gitconnected.com/everything-you-need-to-get-started-with-vscode-extensions-resources-b9f4c8d91931?source=your_stories_page-------------------------------------)
 
-[**🌍⇒docs/articles/node-cli-args🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-cli-args)
+-   [my-favorite-vscode-themes](https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f?source=your_stories_page-------------------------------------)
 
-[**🌍⇒docs/articles/node-common-modules🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-common-modules)
+-   [object-oriented-programming-in-javascript](https://levelup.gitconnected.com/object-oriented-programming-in-javascript-d45007d06333?source=your_stories_page-------------------------------------)
 
-[**🌍⇒docs/articles/node-env-variables🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-env-variables)
+-   [javascript-rotate-array-problemwalkthrough](https://medium.com/codex/javascript-rotate-array-problemwalkthrough-31deb19ebba1?source=your_stories_page-------------------------------------)
 
-[**🌍⇒docs/articles/node-js-language🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-js-language)
+-   [super-simple-intro-to-html-651d695f9bc](https://levelup.gitconnected.com/super-simple-intro-to-html-651d695f9bc?source=your_stories_page-------------------------------------)
 
-[**🌍⇒docs/articles/node-package-manager🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-package-manager)
+-   [everything-you-need-to-know-about-relational-databases-sql-postgresql](https://medium.com/codex/everything-you-need-to-know-about-relational-databases-sql-postgresql-and-sequelize-to-build-8acb68284a98?source=your_stories_page-------------------------------------)
 
-[**🌍⇒docs/articles/node-repl🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-repl)
+-   [understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107](https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107?source=your_stories_page-------------------------------------)
 
-[**🌍⇒docs/articles/node-run-cli🗺️**](https://bgoonz-blog.netlify.app/docs/articles/node-run-cli)
+-   [complete-javascript-reference-guide-64306cd6b0db](https://javascript.plainenglish.io/complete-javascript-reference-guide-64306cd6b0db?source=your_stories_page-------------------------------------)- [
 
-[**🌍⇒docs/articles/nodejs🗺️**](https://bgoonz-blog.netlify.app/docs/articles/nodejs)
+</div>
 
-[**🌍⇒docs/articles/nodevsbrowser🗺️**](https://bgoonz-blog.netlify.app/docs/articles/nodevsbrowser)
-
-[**🌍⇒docs/articles/npm🗺️**](https://bgoonz-blog.netlify.app/docs/articles/npm)
-
-[**🌍⇒docs/articles/npx🗺️**](https://bgoonz-blog.netlify.app/docs/articles/npx)
-
-[**🌍⇒docs/articles/os-module🗺️**](https://bgoonz-blog.netlify.app/docs/articles/os-module)
-
-[**🌍⇒docs/articles/package-lock🗺️**](https://bgoonz-blog.netlify.app/docs/articles/package-lock)
-
-[**🌍⇒docs/articles/reading-files🗺️**](https://bgoonz-blog.netlify.app/docs/articles/reading-files)
-
-[**🌍⇒docs/articles/semantic🗺️**](https://bgoonz-blog.netlify.app/docs/articles/semantic)
-
-[**🌍⇒docs/articles/semantic-html🗺️**](https://bgoonz-blog.netlify.app/docs/articles/semantic-html)
-
-[**🌍⇒docs/articles/the-uniform-resource-locator-(url)🗺️**](<https://bgoonz-blog.netlify.app/docs/articles/the-uniform-resource-locator-(url)>)
-
-[**🌍⇒docs/articles/understanding-firebase🗺️**](https://bgoonz-blog.netlify.app/docs/articles/understanding-firebase)
-
-[**🌍⇒docs/articles/v8🗺️**](https://bgoonz-blog.netlify.app/docs/articles/v8)
-
-[**🌍⇒docs/articles/web-standards-checklist🗺️**](https://bgoonz-blog.netlify.app/docs/articles/web-standards-checklist)
-
-[**🌍⇒docs/articles/webdev-tools🗺️**](https://bgoonz-blog.netlify.app/docs/articles/webdev-tools)
-
-[**🌍⇒docs/articles/write-2-json-with-python🗺️**](https://bgoonz-blog.netlify.app/docs/articles/write-2-json-with-python)
-
-[**🌍⇒docs/articles/writing-files🗺️**](https://bgoonz-blog.netlify.app/docs/articles/writing-files)
-
-[**🌍⇒docs/audio/audio🗺️**](https://bgoonz-blog.netlify.app/docs/audio/audio)
-
-[**🌍⇒docs/audio/audio-feature-extraction🗺️**](https://bgoonz-blog.netlify.app/docs/audio/audio-feature-extraction)
-
-[**🌍⇒docs/audio/dfft🗺️**](https://bgoonz-blog.netlify.app/docs/audio/dfft)
-
-[**🌍⇒docs/audio/discrete-fft🗺️**](https://bgoonz-blog.netlify.app/docs/audio/discrete-fft)
-
-[**🌍⇒docs/audio/dtw-python-explained🗺️**](https://bgoonz-blog.netlify.app/docs/audio/dtw-python-explained)
-
-[**🌍⇒docs/audio/dynamic-time-warping🗺️**](https://bgoonz-blog.netlify.app/docs/audio/dynamic-time-warping)
-
-[**🌍⇒docs/audio/web-audio-api🗺️**](https://bgoonz-blog.netlify.app/docs/audio/web-audio-api)
-
-[**🌍⇒docs/career/confidence🗺️**](https://bgoonz-blog.netlify.app/docs/career/confidence)
-
-[**🌍⇒docs/career/dev-interview🗺️**](https://bgoonz-blog.netlify.app/docs/career/dev-interview)
-
-[**🌍⇒docs/career/interview-dos-n-donts🗺️**](https://bgoonz-blog.netlify.app/docs/career/interview-dos-n-donts)
-
-[**🌍⇒docs/career/job-boards🗺️**](https://bgoonz-blog.netlify.app/docs/career/job-boards)
-
-[**🌍⇒docs/community/an-open-letter-2-future-developers🗺️**](https://bgoonz-blog.netlify.app/docs/community/an-open-letter-2-future-developers)
-
-[**🌍⇒docs/community/video-chat🗺️**](https://bgoonz-blog.netlify.app/docs/community/video-chat)
-
-[**🌍⇒docs/content/algo🗺️**](https://bgoonz-blog.netlify.app/docs/content/algo)
-
-[**🌍⇒docs/content/archive🗺️**](https://bgoonz-blog.netlify.app/docs/content/archive)
-
-[**🌍⇒docs/content/data-structures-algo🗺️**](https://bgoonz-blog.netlify.app/docs/content/data-structures-algo)
-
-[**🌍⇒docs/content/gatsby-Queries-Mutations🗺️**](https://bgoonz-blog.netlify.app/docs/content/gatsby-Queries-Mutations)
-
-[**🌍⇒docs/content/history-api🗺️**](https://bgoonz-blog.netlify.app/docs/content/history-api)
-
-[**🌍⇒docs/content/projects🗺️**](https://bgoonz-blog.netlify.app/docs/content/projects)
-
-[**🌍⇒docs/content/recent-projects🗺️**](https://bgoonz-blog.netlify.app/docs/content/recent-projects)
-
-[**🌍⇒docs/content/trouble-shooting🗺️**](https://bgoonz-blog.netlify.app/docs/content/trouble-shooting)
-
-[**🌍⇒docs/docs/appendix🗺️**](https://bgoonz-blog.netlify.app/docs/docs/appendix)
-
-[**🌍⇒docs/docs/bash🗺️**](https://bgoonz-blog.netlify.app/docs/docs/bash)
-
-[**🌍⇒docs/docs/content🗺️**](https://bgoonz-blog.netlify.app/docs/docs/content)
-
-[**🌍⇒docs/docs/css🗺️**](https://bgoonz-blog.netlify.app/docs/docs/css)
-
-[**🌍⇒docs/docs/data-structures-docs🗺️**](https://bgoonz-blog.netlify.app/docs/docs/data-structures-docs)
-
-[**🌍⇒docs/docs/git-reference🗺️**](https://bgoonz-blog.netlify.app/docs/docs/git-reference)
-
-[**🌍⇒docs/docs/git-repos🗺️**](https://bgoonz-blog.netlify.app/docs/docs/git-repos)
-
-[**🌍⇒docs/docs/html-spec🗺️**](https://bgoonz-blog.netlify.app/docs/docs/html-spec)
-
-[**🌍⇒docs/docs/markdown🗺️**](https://bgoonz-blog.netlify.app/docs/docs/markdown)
-
-[**🌍⇒docs/docs/no-whiteboarding🗺️**](https://bgoonz-blog.netlify.app/docs/docs/no-whiteboarding)
-
-[**🌍⇒docs/docs/node-docs-complete🗺️**](https://bgoonz-blog.netlify.app/docs/docs/node-docs-complete)
-
-[**🌍⇒docs/docs/node-docs-full🗺️**](https://bgoonz-blog.netlify.app/docs/docs/node-docs-full)
-
-[**🌍⇒docs/docs/regex-in-js🗺️**](https://bgoonz-blog.netlify.app/docs/docs/regex-in-js)
-
-[**🌍⇒docs/docs/sitemap🗺️**](https://bgoonz-blog.netlify.app/docs/docs/sitemap)
-
-[**🌍⇒docs/faq/contact🗺️**](https://bgoonz-blog.netlify.app/docs/faq/contact)
-
-[**🌍⇒docs/faq/plug-ins🗺️**](https://bgoonz-blog.netlify.app/docs/faq/plug-ins)
-
-[**🌍⇒docs/interact/callstack-visual🗺️**](https://bgoonz-blog.netlify.app/docs/interact/callstack-visual)
-
-[**🌍⇒docs/interact/clock🗺️**](https://bgoonz-blog.netlify.app/docs/interact/clock)
-
-[**🌍⇒docs/interact/jupyter-notebooks🗺️**](https://bgoonz-blog.netlify.app/docs/interact/jupyter-notebooks)
-
-[**🌍⇒docs/interact/other-sites🗺️**](https://bgoonz-blog.netlify.app/docs/interact/other-sites)
-
-[**🌍⇒docs/interact/video-chat🗺️**](https://bgoonz-blog.netlify.app/docs/interact/video-chat)
-
-[**🌍⇒docs/javascript/arrow-functions🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/arrow-functions)
-
-[**🌍⇒docs/javascript/await-keyword🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/await-keyword)
-
-[**🌍⇒docs/javascript/bigo🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/bigo)
-
-[**🌍⇒docs/javascript/clean-code🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/clean-code)
-
-[**🌍⇒docs/javascript/constructor-functions🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/constructor-functions)
-
-[**🌍⇒docs/javascript/promises🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/promises)
-
-[**🌍⇒docs/javascript/review🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/review)
-
-[**🌍⇒docs/javascript/this-is-about-this🗺️**](https://bgoonz-blog.netlify.app/docs/javascript/this-is-about-this)
-
-[**🌍⇒docs/projects/medium-links🗺️**](https://bgoonz-blog.netlify.app/docs/projects/medium-links)
-
-[**🌍⇒docs/projects/my-websites🗺️**](https://bgoonz-blog.netlify.app/docs/projects/my-websites)
-
-[**🌍⇒docs/python/at-length🗺️**](https://bgoonz-blog.netlify.app/docs/python/at-length)
-
-[**🌍⇒docs/python/basics🗺️**](https://bgoonz-blog.netlify.app/docs/python/basics)
-
-[**🌍⇒docs/python/cheat-sheet🗺️**](https://bgoonz-blog.netlify.app/docs/python/cheat-sheet)
-
-[**🌍⇒docs/python/comprehensive-guide🗺️**](https://bgoonz-blog.netlify.app/docs/python/comprehensive-guide)
-
-[**🌍⇒docs/python/examples🗺️**](https://bgoonz-blog.netlify.app/docs/python/examples)
-
-[**🌍⇒docs/python/flow-control🗺️**](https://bgoonz-blog.netlify.app/docs/python/flow-control)
-
-[**🌍⇒docs/python/functions🗺️**](https://bgoonz-blog.netlify.app/docs/python/functions)
-
-[**🌍⇒docs/python/google-sheets-api🗺️**](https://bgoonz-blog.netlify.app/docs/python/google-sheets-api)
-
-[**🌍⇒docs/python/intro-for-js-devs🗺️**](https://bgoonz-blog.netlify.app/docs/python/intro-for-js-devs)
-
-[**🌍⇒docs/python/python-ds🗺️**](https://bgoonz-blog.netlify.app/docs/python/python-ds)
-
-[**🌍⇒docs/python/snippets🗺️**](https://bgoonz-blog.netlify.app/docs/python/snippets)
-
-[**🌍⇒docs/quick-reference/Emmet🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/Emmet)
-
-[**🌍⇒docs/quick-reference/all-emojis🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/all-emojis)
-
-[**🌍⇒docs/quick-reference/create-react-app🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/create-react-app)
-
-[**🌍⇒docs/quick-reference/git-bash🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/git-bash)
-
-[**🌍⇒docs/quick-reference/git-tricks🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/git-tricks)
-
-[**🌍⇒docs/quick-reference/google-firebase🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/google-firebase)
-
-[**🌍⇒docs/quick-reference/heroku-error-codes🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/heroku-error-codes)
-
-[**🌍⇒docs/quick-reference/installation🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/installation)
-
-[**🌍⇒docs/quick-reference/markdown-dropdowns🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/markdown-dropdowns)
-
-[**🌍⇒docs/quick-reference/minifiction🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/minifiction)
-
-[**🌍⇒docs/quick-reference/new-repo-instructions🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/new-repo-instructions)
-
-[**🌍⇒docs/quick-reference/psql-setup🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/psql-setup)
-
-[**🌍⇒docs/quick-reference/pull-request-rubric🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/pull-request-rubric)
-
-[**🌍⇒docs/quick-reference/quick-links🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/quick-links)
-
-[**🌍⇒docs/quick-reference/topRepos🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/topRepos)
-
-[**🌍⇒docs/quick-reference/understanding-path🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/understanding-path)
-
-[**🌍⇒docs/quick-reference/vscode-themes🗺️**](https://bgoonz-blog.netlify.app/docs/quick-reference/vscode-themes)
-
-[**🌍⇒docs/react/cheatsheet🗺️**](https://bgoonz-blog.netlify.app/docs/react/cheatsheet)
-
-[**🌍⇒docs/react/createReactApp🗺️**](https://bgoonz-blog.netlify.app/docs/react/createReactApp)
-
-[**🌍⇒docs/react/demo🗺️**](https://bgoonz-blog.netlify.app/docs/react/demo)
-
-[**🌍⇒docs/react/jsx🗺️**](https://bgoonz-blog.netlify.app/docs/react/jsx)
-
-[**🌍⇒docs/react/react-docs🗺️**](https://bgoonz-blog.netlify.app/docs/react/react-docs)
-
-[**🌍⇒docs/react/react-in-depth🗺️**](https://bgoonz-blog.netlify.app/docs/react/react-in-depth)
-
-[**🌍⇒docs/react/react2🗺️**](https://bgoonz-blog.netlify.app/docs/react/react2)
-
-[**🌍⇒docs/react/render-elements🗺️**](https://bgoonz-blog.netlify.app/docs/react/render-elements)
-
-[**🌍⇒docs/reference/awesome-lists🗺️**](https://bgoonz-blog.netlify.app/docs/reference/awesome-lists)
-
-[**🌍⇒docs/reference/awesome-static🗺️**](https://bgoonz-blog.netlify.app/docs/reference/awesome-static)
-
-[**🌍⇒docs/reference/bookmarks🗺️**](https://bgoonz-blog.netlify.app/docs/reference/bookmarks)
-
-[**🌍⇒docs/reference/embed-the-web🗺️**](https://bgoonz-blog.netlify.app/docs/reference/embed-the-web)
-
-[**🌍⇒docs/reference/github-search🗺️**](https://bgoonz-blog.netlify.app/docs/reference/github-search)
-
-[**🌍⇒docs/reference/how-2-reinstall-npm🗺️**](https://bgoonz-blog.netlify.app/docs/reference/how-2-reinstall-npm)
-
-[**🌍⇒docs/reference/how-to-kill-a-process🗺️**](https://bgoonz-blog.netlify.app/docs/reference/how-to-kill-a-process)
-
-[**🌍⇒docs/reference/installing-node🗺️**](https://bgoonz-blog.netlify.app/docs/reference/installing-node)
-
-[**🌍⇒docs/reference/intro-to-nodejs🗺️**](https://bgoonz-blog.netlify.app/docs/reference/intro-to-nodejs)
-
-[**🌍⇒docs/reference/notes-template🗺️**](https://bgoonz-blog.netlify.app/docs/reference/notes-template)
-
-[**🌍⇒docs/reference/psql🗺️**](https://bgoonz-blog.netlify.app/docs/reference/psql)
-
-[**🌍⇒docs/reference/resources🗺️**](https://bgoonz-blog.netlify.app/docs/reference/resources)
-
-[**🌍⇒docs/reference/vscode🗺️**](https://bgoonz-blog.netlify.app/docs/reference/vscode)
-
-[**🌍⇒docs/reference/web-api's🗺️**](https://bgoonz-blog.netlify.app/docs/reference/web-api's)
-
-[**🌍⇒docs/tools/data-structures🗺️**](https://bgoonz-blog.netlify.app/docs/tools/data-structures)
-
-[**🌍⇒docs/tools/dev-utilities🗺️**](https://bgoonz-blog.netlify.app/docs/tools/dev-utilities)
-
-[**🌍⇒docs/tools/google-cloud🗺️**](https://bgoonz-blog.netlify.app/docs/tools/google-cloud)
-
-[**🌍⇒docs/tools/markdown-html🗺️**](https://bgoonz-blog.netlify.app/docs/tools/markdown-html)
-
-[**🌍⇒docs/tools/more-tools🗺️**](https://bgoonz-blog.netlify.app/docs/tools/more-tools)
-
-[**🌍⇒docs/tutorials/google-lighthouse-cli🗺️**](https://bgoonz-blog.netlify.app/docs/tutorials/google-lighthouse-cli)
-
-</details>
-
 ---
-
----
-
----
-
-<details>
-<summary>  ↞↠ Getting Started With GatsbyJS ↞↠  </summary>
-#
 
 ---
 
 ## 🚀 Quick start
 
-1. **Create a Gatsby site.**
+1.  **Create a Gatsby site.**
 
     Use the Gatsby CLI to create a new site, specifying the default starter.
 
-```bashell
-   # create a new Gatsby site using the default starter
-   gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-```
+    ```shell
+    # create a new Gatsby site using the default starter
+    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
+    ```
 
-1. **Start developing.**
+1.  **Start developing.**
 
-    Navigate into your new site's directory and start it up.
+    Navigate into your new site’s directory and start it up.
 
-```bashell
-   cd my-default-starter/
-   gatsby develop
-```
+    ```shell
+    cd my-default-starter/
+    gatsby develop
+    ```
 
-1. **Open the source code and start editing!**
+1.  **Open the source code and start editing!**
 
     Your site is now running at `http://localhost:8000`!
 
-    *Note: You'll also see a second link:*`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
+    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
 
     Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
@@ -3072,27 +231,27 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
     ├── package.json
     └── README.md
 
-1. **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
 
-2. **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for "source code".
+2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
 
-3. **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
 
-4. **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
 
-5. **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
 
-6. **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you'd like to include, etc. (Check out the [config docs](https://www.gatsbyjs.com/docs/gatsby-config/) for more detail).
+6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.com/docs/gatsby-config/) for more detail).
 
-7. **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
 
-8. **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
 
-9. **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
+9.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won't change this file directly).**
+10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
 
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project's name, author, etc). This manifest is how npm knows which packages to install for your project.
+11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
 12. **`README.md`**: A text file containing useful reference information about your project.
 
@@ -3100,448 +259,23 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
 
--   **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby**](https://www.gatsbyjs.com/tutorial/).\*\* It starts with zero assumptions about your level of ability and walks through every step of the process.
--
--   **To dive straight into code samples, head [to our documentation**](https://www.gatsbyjs.com/docs/).\*\* In particular, check out the *Guides*, *API Reference*, and *Advanced Tutorials* sections in the sidebar.
+-   **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+
+-   **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
 ## 💫 Deploy
 
-[![Deploy to Netlify**](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/BGOONZ_BLOG_2.0.git)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/BGOONZ_BLOG_2.0.git)
 
-[![Deploy with Vercel**](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/BGOONZ_BLOG_2.0.git)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/BGOONZ_BLOG_2.0.git)
 
----
-### Gatsby With Netlify CMS
+<!-- AUTO-GENERATED-CONTENT:END -->
 
-This tutorial will use [gatsby-personal-starter-blog](https://github.com/thomaswang/gatsby-personal-starter-blog), a Gatsby starter based on the official [gatsby-starter-blog](/starters/gatsbyjs/gatsby-starter-blog/). The differences are that `gatsby-personal-starter-blog` is configured to run the blog on a subdirectory, `/blog`, and comes pre-installed with [Netlify CMS](https://www.netlifycms.org/) for content editing. It also adds VS Code highlighting for code blocks.
-
-## Prerequisites
-
-- A GitHub account
-- The [Gatsby CLI](/docs/reference/gatsby-cli/) installed
-
-## Set up a Netlify CMS-managed Gatsby site in 5 steps
-
-### Step 1
-
-Open your Terminal and run the following command from the Gatsby CLI to create a new Gatsby site using [gatsby-personal-starter-blog](https://github.com/thomaswang/gatsby-personal-starter-blog).
-
-```shell
-gatsby new [your-project-name] https://github.com/thomaswangio/gatsby-personal-starter-blog
-```
-
-### Step 2
-
-Once the Gatsby site is finished installing all the packages and dependencies, you can now go into the directory and run the site locally.
-
-```shell
-cd [your-project-name]
-gatsby develop
-```
-
-Now you can go to `http://localhost:8000` to see your new site, but what's extra cool is that Netlify CMS is pre-installed and you can access it at `http://localhost:8000/admin`
-
-A CMS, or content management system, is useful because you can add content like blog posts from a dashboard on your site, instead of having to add posts manually with Markdown. However, you'll likely want to be able to access the CMS from a deployed website, not just locally. For that, you'll need to deploy to Netlify through GitHub, set up continuous deployment, and do a few configurations. You'll go over this in [Step-5](#step-5).
-
-### Step 3
-
-Open the project in your code editor and open `static/admin/config.yml`. Replace `your-username/your-repo-name` with your GitHub username and project name. This step is important for managing and deploying the Netlify CMS interface.
-
-```diff
-backend:
--  name: test-repo
-
-+  name: github
-+  repo: your-username/your-repo-name
-```
-
-#### Customizing your site
-
-Head into `gatsby-config.js` and you can edit your siteMetadata, add a Google Analytics tracking ID, and your app icon/favicon. Test out the edits for the deployed build by quitting the development server and running `gatsby build && gatsby serve`.
-
-You'll likely also want to edit the `README.md` and `package.json` files to include your own project details.
-
-### Step 4
-
-Open [github.com](https://github.com) and create a new repository, with the same name as your project. Push your new Gatsby site's code to GitHub using the following Terminal commands:
-
-```shell
-git init
-git add .
-git commit -m "initial commit"
-git remote add origin https://github.com/[your-username]/[your-repo-name].git
-git push -u origin master
-```
-
-Then, open [app.netlify.com](https://app.netlify.com) and add a "New site from Git". Choose your newly created repo and click on "Deploy site" with the default deployment settings.
-
-> *Note: if you don't see the correct repo listed, you may need to install or reconfigure the Netlify app on GitHub.*
-
-![Netlify Dashboard for Creating a new site](netlify-dashboard.png)
-
-### Step 5
-
-To make sure that Netlify CMS has access to your GitHub repo, you need to set up an OAuth application on GitHub. The instructions for that are here: [Netlify's Using an Authorization Provider](https://www.netlify.com/docs/authentication-providers/#using-an-authentication-provider).
-
-For the "Homepage URL" – you can use your Netlify subdomain, `[name-of-your-site].netlify.com`, or you can use a custom domain. To customize the subdomain, look for the "Edit site name" field under "Domain Management" for your project on the [Netlify app](https://app.netlify.com). To connect your Netlify site to your custom domain instead, see [Netlify’s instructions on custom domains](https://www.netlify.com/docs/custom-domains/).
-
-Once you've configured an authentication provider then you'll be able to use Netlify CMS at your deployed site to add new posts.
-
-![Netlify and GitHub Authorization](https://cdn.netlify.com/67edd5b656c432888d736cd40125cb61376905bb/c1cba/img/docs/github-oauth-config.png)
-
-Copy the credentials of your new app listed on [GitHub OAuth Apps](https://github.com/settings/developers) and install a new auth provider on Netlify using them.
-
-![Setting up access control](netlify-install-oauth-provider.png)
-
-#### Benefits of Netlify CMS, GitHub, and Netlify Workflow
-
-Congrats! Now that Netlify CMS is successfully configured to your project, every time you add a new post, the content will be stored in your repository and versioned on GitHub because Netlify CMS is Git-based. Also, thanks to [Netlify's Continuous Deployment](https://www.netlify.com/docs/continuous-deployment/), a new version will be deployed every time you add or edit a post.
-
-You can learn more about Netlify CMS and how to configure it further in the [Netlify CMS documentation](https://www.netlifycms.org/docs/intro/)
 ---
 
 ---
 
-## Gatsby Project Structure | Gatsby
-
-> ## Excerpt
->
-> Inside a Gatsby project, you may see some or all of the following folders and files: Folders /.cache Automatically generated. This folder…
-
----
-
-Inside a Gatsby project, you may see some or all of the following folders and files:
-
-```
-/|
--- /.cache
-|-- /plugins
-|-- /public
-|-- /src    
-|-- /api    
-|-- /pages    
-|-- /templates    
-|-- html.js
-|-- /static
-|-- gatsby-config.js
-|-- gatsby-node.js
-|-- gatsby-ssr.js
-|-- gatsby-browser.js
-```
-
-[Folders](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#folders)
-
--   **`/.cache`** *Automatically generated.* This folder is an internal cache created automatically by Gatsby. The files inside this folder are not meant for modification. Should be added to the `.gitignore` file if not added already.
--   **`/plugins`** This folder hosts any project-specific ("local") plugins that aren't published as an `npm` package. Check out the [plugin docs](https://www.gatsbyjs.com/docs/plugins/) for more detail.
--   **`/public`** *Automatically generated.* The output of the build process will be exposed inside this folder. Should be added to the `.gitignore` file if not added already.
--   **`/src`** This directory will contain all of the code related to what you will see on the frontend of your site (what you see in the browser), like your site header, or a page template. "src" is a convention for "source code".
-
-    -   **`/api`** JavaScript and TypeScript files under `src/api` become functions automatically with paths based on their file name. Check out the [functions guide](https://www.gatsbyjs.com/docs/reference/functions/) for more detail.
-    -   **`/pages`** Components under `src/pages` become pages automatically with paths based on their file name. Check out the [pages recipes](https://www.gatsbyjs.com/docs/recipes/pages-layouts) for more detail.
-    -   **`/templates`** Contains templates for programmatically creating pages. Check out the [templates docs](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#page-template-components) for more detail.
-    -   **`html.js`** For custom configuration of default `.cache/default_html.js`. Check out the [custom HTML docs](https://www.gatsbyjs.com/docs/custom-html/) for more detail.
-
--   **`/static`** If you put a file into the static folder, it will not be processed by webpack. Instead it will be copied into the public folder untouched. Check out the [assets docs](https://www.gatsbyjs.com/docs/how-to/images-and-media/static-folder/#adding-assets-outside-of-the-module-system) for more detail.
-
-[Files](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#files)
-
--   **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
--   **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you'd like to include, etc. Check out the [config docs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/) for more detail.
--   **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby node APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
--   **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
-
-[Misc](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#miscellaneous)
-[Misc](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#miscellaneous)
-
-The file/folder structure described above reflects Gatsby-specific files and folders. Since Gatsby sites are also React apps, it's common to use standard React code organization patterns such as folders like `/components` and `/utils` inside `/src`. The [React docs](https://reactjs.org/docs/faq-structure.html) have more information on a typical React app folder structure.
-
----
-
-
-
-
-
-#### Layout Components | Gatsby
-
-## Excerpt
-
-> In this guide, you'll learn Gatsby's approach to layouts, how to create and use layout components, and how to prevent layout components from…
-
----
-
-In this guide, you'll learn Gatsby's approach to layouts, how to create and use layout components, and how to prevent layout components from unmounting.
-
-[Gatsby's approach to layouts](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#gatsbys-approach-to-layouts)
-
-Gatsby does not, by default, automatically apply layouts to pages (there are, however, ways to do so which will be covered in a later section). Instead, Gatsby follows React's compositional model of importing and using components. This makes it possible to create multiple levels of layouts, e.g. a global header and footer, and then on some pages, a sidebar menu. It also makes it possible to pass data between layout and page components.
-
-[What are layout components?](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#what-are-layout-components)
-
-Layout components are for sections of your site that you want to share across multiple pages. For example, Gatsby sites will commonly have a layout component with a shared header and footer. Other common things to add to layouts are a sidebar and/or navigation menu. On this page for example, the header at the top is part of gatsbyjs.com's layout component.
-
-[How to create layout components](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-create-layout-components)
-
-It is recommended to create your layout components alongside the rest of your components (e.g. into `src/components/`).
-
-Here is an example of a very basic layout component at `src/components/layout.js`:
-
-```
-import React from "react"export default function Layout({ children }) {  return (    <div style={{ margin: `0 auto`, maxWidth: 650, padding: `0 1rem` }}>       {children}    </div>   )}
-```
-
-[](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-import-and-add-layout-components-to-pages)How to import and add layout components to pages
-
-If you want to apply a layout to a page, you will need to include the `Layout` component and wrap your page in it. For example, here is how you would apply your layout to the front page:
-
-```
-import React from "react"import Layout from "../components/layout"export default function Home() {  return (    <Layout>       <h1> I'm in a layout!</h1>     </Layout>   );}
-```
-
-Repeat for every page and template that needs this layout.
-
-[How to prevent layout components from unmounting](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-prevent-layout-components-from-unmounting)
-
-As mentioned earlier, Gatsby does not, by default, automatically wrap pages in a layout component. The "top level" component is the page itself. As a result, when the "top level" component changes between pages, React will re-render all children. This means that shared components like navigations will unmount and remount. This will break CSS transitions or React state within those shared components.
-
-If you need to set a wrapper component around page components that won't get unmounted on page changes, use the **`wrapPageElement`** [browser API](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/#wrapPageElement) and the [SSR equivalent](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/#wrapPageElement).
-
-Alternatively, you can prevent your layout component from unmounting by using [gatsby-plugin-layout](https://www.gatsbyjs.com/plugins/gatsby-plugin-layout/), which implements the `wrapPageElement` APIs for you.
-
-## Adding Markdown Pages | Gatsby
-
-> ## Excerpt
->
-> Gatsby can use Markdown files to create pages in your site.
-> You add plugins to read and understand folders with Markdown files and from them…
-
----
-
-Gatsby can use Markdown files to create pages in your site. You add plugins to read and understand folders with Markdown files and from them create pages automatically.
-
-Here are the steps Gatsby follows for making this happen.
-
-1. Read files into Gatsby from the filesystem
-2. Transform Markdown to HTML and [frontmatter](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#frontmatter-for-metadata-in-markdown-files) to data
-3. Add a Markdown file
-4. Create a Collection Route component for the Markdown files
-
-[](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#read-files-into-gatsby-from-the-filesystem)Read files into Gatsby from the filesystem
-
-Use the plugin [`gatsby-source-filesystem`](https://www.gatsbyjs.com/plugins/gatsby-source-filesystem/#gatsby-source-filesystem) to read files.
-
-[](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#install)Install
-
-`npm install gatsby-source-filesystem`
-
-[Add Plugin](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#add-plugin)Add plugin
-
-Open `gatsby-config.js` to add the `gatsby-source-filesystem` plugin. The `path` option is how you set the directory to search for files.
-
-```
-module.exports = {  siteMetadata: {
-    title: "My Gatsby Site",  },  
-plugins: [    { 
-     resolve: `gatsby-source-filesystem`,      
-options: {
-        name: `markdown-pages`,      
-  path: `${__dirname}/src/markdown-pages`,      
-},  
-  },  
-],}
-```
-
-Completing the above step means that you've "sourced" the Markdown files from the filesystem. You can now "transform" the Markdown to HTML and the YAML frontmatter to JSON.
-
-[Transform Markdown to HTML and frontmatter to data using `gatsby-transformer-remark`](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#transform-markdown-to-html-and-frontmatter-to-data-using-gatsby-transformer-remark)
-
-You'll use the plugin [`gatsby-transformer-remark`](https://www.gatsbyjs.com/plugins/gatsby-transformer-remark/) to recognize files which are Markdown and read their content. The plugin will convert the frontmatter metadata part of your Markdown files as `frontmatter` and the content part as HTML.
-
-[Install transformer plugin](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#install-transformer-plugin)
-
-`npm install gatsby-transformer-remark`
-
-[Configure plugin](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#configure-plugin)
-
-Add this to `gatsby-config.js` after the previously added `gatsby-source-filesystem`.
-
-```
-module.exports = {  siteMetadata: {
-    title: "My Gatsby Site",  },  
-plugins: [    { 
-     resolve: `gatsby-source-filesystem`,      
-options: {
-        name: `markdown-pages`,      
-  path: `${__dirname}/src/markdown-pages`,      
-},  
-  },  
-  `gatsby-transformer-remark`,  ],
-}
-```
-
-[Add a Markdown file](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#add-a-markdown-file)
-
-Create a folder in the `/src` directory of your Gatsby application called `markdown-pages`. Now create a Markdown file inside it with the name `post-1.md`.
-
-[Frontmatter for metadata in Markdown files](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#frontmatter-for-metadata-in-markdown-files)
-
-When you create a Markdown file, you can include a set of key/value pairs that can be used to provide additional data relevant to specific pages in the GraphQL data layer. This data is called "frontmatter" and is denoted by the triple dashes at the start and end of the block. This block will be parsed by `gatsby-transformer-remark` as YAML. You can then query the data through the GraphQL API from your React components.
-
-src/markdown-pages/post-1.md
-
-```
----slug: "/blog/my-first-post"date: "2019-05-04"title: "My first blog post"---
-```
-
-What is important in this step is the key pair `slug`. The value that is assigned to the key `slug` is used in order to navigate to your post.
-
-[](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#create-a-collection-route-for-the-markdown-files)Create a Collection Route for the Markdown files
-
-Create `src/pages/{MarkdownRemark.frontmatter__slug}.js` and add the following code:
-
-src/pages/{MarkdownRemark.frontmatter\_\_slug}.js
-
-```
-import React from "react"
-import { graphql } from "gatsby"export default function Template({  data, }) {  const { markdownRemark } = data   const { frontmatter, html } = markdownRemark  return (    <div className="blog-post-container">       <div className="blog-post">         <h1> {frontmatter.title}</h1>         <h2> {frontmatter.date}</h2>         <div          className="blog-post-content"          dangerouslySetInnerHTML={{ __html: html }}        />       </div>     </div>   )}export const pageQuery = graphql`  query($id: String!) {    markdownRemark(id: {
- eq: $id }) {      html      frontmatter {        date(formatString: "MMMM DD, YYYY")        slug        title      }    }  }`
-```
-
-Two things are important in the file above:
-
-1. A GraphQL query is made in the second half of the file to get the Markdown data. Gatsby has automagically given you all the Markdown metadata and HTML in this query's result.
-
-    **Note: To learn more about GraphQL, consider this [excellent resource](https://www.howtographql.com/)**
-
-2. The result of the query is injected by Gatsby into the component as the `data` prop. `props.data.markdownRemark` is the property that has all the details of the Markdown file.
-
-Next you could create a page component at `src/pages/blog/index.js` to serve as a listing page for all your blog posts.
-
-This should get you started on some basic Markdown functionality in your Gatsby site. You can further customize the frontmatter and the component file to get desired effects!
-
-For more information, have a look in the working example `using-markdown-pages`. You can find it in the [Gatsby examples section](https://github.com/gatsbyjs/gatsby/tree/master/examples).
-
-[Other tutorials](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#other-tutorials)
-
-</details>
-
----
-
-### Overview
-
-The **`_.get()` method** in Lodash retrieves the object’s value at a specific path.
-
-If the value is not present at the object’s specific path, it will be resolved as `undefined`. This method will return the default value if specified in such a case.
-
-### Syntax
-
-```js
-_.get(object, path, defaultValue)
-```
-
-### Parameters
-
-This method accepts the following parameters:
-
--   **`object`**: The object in which the given path will be queried.
--   **`path`**: The path used to retrieve the value from the object.
--   **`defaultValue`**: The default value that will be returned for resolved values that are undefined.
-
-### Return value
-
-This method will return the value at the specified path if found. Otherwise, it will return the default value if specified.
-
-### Example
-
-Let’s look at an example of the `_.get()` method in the code snippet below:
-
-### Explanation
-
-In the HTML tab:
-
--   **Line 5**: We import the `lodash` script.
-
-In the JavaScript tab:
-
--   **Lines 2 to 15**: We create an object to perform a query.
-
--   **Line 18**: We define a variable `collegeYopPath` to get the value.
-
--   **Lines 19**: We use the `_.get()` method and pass the `object`, `collegeYopPath`, and a default value as parameters.
-
--   **Line 22**: We define a variable `falsyPath` to get the value.
-
--   **Lines 23**: We use the `_.get()` method and pass the `object`, `falsyPath` and a `default value` as parameters.
-
-### Output
-
--   The `_.get()` method at **line 19** contains a valid path, and therefore the expression is resolved, and `2021` is printed on the console.
--   The `_.get()` method at **Line 23** contains an invalid path, and therefore the expression is resolved as `undefined`.
-
-## Technoloy
-
-![tech-stack](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/madewith.png?raw=true)
-
----
-
-## SOURCECODE
-
----
-
-
-
-### Overview
-
-The **`_.get()` method** in Lodash retrieves the object’s value at a specific path.
-
-If the value is not present at the object’s specific path, it will be resolved as `undefined`. This method will return the default value if specified in such a case.
-
-### Syntax
-
-```js
-_.get(object, path, defaultValue)
-```
-
-### Parameters
-
-This method accepts the following parameters:
-
--   **`object`**: The object in which the given path will be queried.
--   **`path`**: The path used to retrieve the value from the object.
--   **`defaultValue`**: The default value that will be returned for resolved values that are undefined.
-
-### Return value
-
-This method will return the value at the specified path if found. Otherwise, it will return the default value if specified.
-
-### Example
-
-Let’s look at an example of the `_.get()` method in the code snippet below:
-
-### Explanation
-
-In the HTML tab:
-
--   **Line 5**: We import the `lodash` script.
-
-In the JavaScript tab:
-
--   **Lines 2 to 15**: We create an object to perform a query.
-
--   **Line 18**: We define a variable `collegeYopPath` to get the value.
-
--   **Lines 19**: We use the `_.get()` method and pass the `object`, `collegeYopPath`, and a default value as parameters.
-
--   **Line 22**: We define a variable `falsyPath` to get the value.
-
--   **Lines 23**: We use the `_.get()` method and pass the `object`, `falsyPath` and a `default value` as parameters.
-
-### Output
-
--   The `_.get()` method at **line 19** contains a valid path, and therefore the expression is resolved, and `2021` is printed on the console.
--   The `_.get()` method at **Line 23** contains an invalid path, and therefore the expression is resolved as `undefined`.
-
-
----
+# Codebase:
 
 ```
 
@@ -3597,7 +331,7 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$ tree -f
 │   │   │   ├── ./pages/docs/articles/algo.md
 │   │   │   ├── ./pages/docs/articles/article-compilation.md
 │   │   │   ├── ./pages/docs/articles/basic-web-dev.md
-│   │   │   ├── ./pages/docs/articles/gists.md
+│   │   │   ├── ./pages/docs/articles/gallery.md
 │   │   │   ├── ./pages/docs/articles/index.md
 │   │   │   ├── ./pages/docs/articles/install.md
 │   │   │   ├── ./pages/docs/articles/intro.md
@@ -3612,7 +346,7 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$ tree -f
 │   │   ├── ./pages/docs/faq
 │   │   │   ├── ./pages/docs/faq/contact.md
 │   │   │   └── ./pages/docs/faq/index.md
-│   │   ├── ./pages/docs/gists.md
+│   │   ├── ./pages/docs/gallery.md
 │   │   ├── ./pages/docs/index.md
 │   │   ├── ./pages/docs/interact
 │   │   │   ├── ./pages/docs/interact/clock.md
@@ -3690,479 +424,72 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$ tree -f
 
 21 directories, 119 files
 bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
-```
 
----
 
-## Source Code
-
-<details>
-<summary>  Folder Structure (src)  </summary>
-
-```
-.
-├── Combined_____-_____Doc.md
-├── components
-│     ├── ActionLink.js
-│     ├── CtaButtons.js
-│     ├── DarkToggle
-│     │     ├── index.js
-│     │     └── styles.js
-│     ├── DocsMenu.js
-│     ├── DocsSubmenu.js
-│     ├── Footer.js
-│     ├── Header.js
-│     ├── Icon.js
-│     ├── Layout.js
-│     ├── SectionContent.js
-│     ├── SectionCta.js
-│     ├── SectionDocs.js
-│     ├── SectionGrid.js
-│     ├── SectionHero.js
-│     ├── Submenu.js
-│     ├── global.css
-│     └── index.js
-├── data
-│     └── doc_sections.yml
-├── hooks
-│     ├── addScript.js
-│     ├── index.js
-│     ├── useDarkMode.js
-│     ├── useEventListener.js
-│     ├── useMediaQuery.js
-│     ├── useOnClickOutside.js
-│     ├── useQueryParam.js
-│     ├── useSize.js
-│     └── useStorage.js
-├── html.js
-├── pages
-│     ├── blog
-│     │     ├── 300-react-questions.md
-│     │     ├── awesome-graphql.md
-│     │     ├── big-o-complexity.md
-│     │     ├── blog-archive.md
-│     │     ├── blogwcomments.md
-│     │     ├── data-structures.md
-│     │     ├── flow-control-in-python.md
-│     │     ├── functions-in-python.md
-│     │     ├── git-gateway.md
-│     │     ├── index.md
-│     │     ├── interview-questions-js.md
-│     │     ├── netlify-cms.md
-│     │     ├── platform-docs.md
-│     │     ├── python-for-js-dev.md
-│     │     ├── python-resources.md
-│     │     ├── web-dev-trends.md
-│     │     └── web-scraping.md
-│     ├── docs
-│     │     ├── about
-│     │     │     ├── eng-portfolio.md
-│     │     │     ├── ideas-for-this-website.md
-│     │     │     ├── index.md
-│     │     │     ├── intrests.md
-│     │     │     ├── job-search.md
-│     │     │     └── resume.md
-│     │     ├── articles
-│     │     │     ├── basic-web-dev.md
-│     │     │     ├── buffers.md
-│     │     │     ├── dev-dep.md
-│     │     │     ├── event-loop.md
-│     │     │     ├── fs-module.md
-│     │     │     ├── how-the-web-works.md
-│     │     │     ├── http.md
-│     │     │     ├── index.md
-│     │     │     ├── install.md
-│     │     │     ├── intro.md
-│     │     │     ├── modules.md
-│     │     │     ├── nextjs.md
-│     │     │     ├── node-api-express.md
-│     │     │     ├── node-cli-args.md
-│     │     │     ├── node-common-modules.md
-│     │     │     ├── node-env-variables.md
-│     │     │     ├── node-js-language.md
-│     │     │     ├── node-package-manager.md
-│     │     │     ├── node-repl.md
-│     │     │     ├── node-run-cli.md
-│     │     │     ├── nodejs.md
-│     │     │     ├── nodevsbrowser.md
-│     │     │     ├── npm.md
-│     │     │     ├── npx.md
-│     │     │     ├── os-module.md
-│     │     │     ├── reading-files.md
-│     │     │     ├── semantic-html.md
-│     │     │     ├── semantic.md
-│     │     │     ├── the-uniform-resource-locator-(url).md
-│     │     │     ├── understanding-firebase.md
-│     │     │     ├── v8.md
-│     │     │     ├── web-standards-checklist.md
-│     │     │     ├── webdev-tools.md
-│     │     │     └── writing-files.md
-│     │     ├── audio
-│     │     │     ├── audio-feature-extraction.md
-│     │     │     ├── audio.md
-│     │     │     ├── dfft.md
-│     │     │     ├── discrete-fft.md
-│     │     │     ├── dtw-python-explained.md
-│     │     │     ├── dynamic-time-warping.md
-│     │     │     ├── index.md
-│     │     │     └── web-audio-api.md
-│     │     ├── career
-│     │     │     ├── dev-interview.md
-│     │     │     ├── index.md
-│     │     │     ├── interview-dos-n-donts.md
-│     │     │     └── job-boards.md
-│     │     ├── community
-│     │     │     ├── an-open-letter-2-future-developers.md
-│     │     │     ├── index.md
-│     │     │     └── video-chat.md
-│     │     ├── content
-│     │     │     ├── algo.md
-│     │     │     ├── archive.md
-│     │     │     ├── gatsby-Queries-Mutations.md
-│     │     │     ├── history-api.md
-│     │     │     ├── index.md
-│     │     │     ├── main-projects.md
-│     │     │     └── trouble-shooting.md
-│     │     ├── data-structures
-│     │     │     └── index.md
-│     │     ├── docs
-│     │     │     ├── appendix.md
-│     │     │     ├── art-of-command-line.md
-│     │     │     ├── bash.md
-│     │     │     ├── content.md
-│     │     │     ├── css.md
-│     │     │     ├── data-structures-docs.md
-│     │     │     ├── es-6-features.md
-│     │     │     ├── git-reference.md
-│     │     │     ├── git-repos.md
-│     │     │     ├── html-spec.md
-│     │     │     ├── index.md
-│     │     │     ├── markdown.md
-│     │     │     ├── no-whiteboarding.md
-│     │     │     ├── node-docs-complete.md
-│     │     │     ├── node-docs-full.md
-│     │     │     ├── regex-in-js.md
-│     │     │     └── sitemap.md
-│     │     ├── faq
-│     │     │     ├── contact.md
-│     │     │     ├── index.md
-│     │     │     └── plug-ins.md
-│     │     ├── gists.md
-│     │     ├── index.md
-│     │     ├── interact
-│     │     │     ├── callstack-visual.md
-│     │     │     ├── clock.md
-│     │     │     ├── index.md
-│     │     │     ├── jupyter-notebooks.md
-│     │     │     ├── other-sites.md
-│     │     │     └── video-chat.md
-│     │     ├── interview
-│     │     │     ├── index.md
-│     │     │     ├── job-search-nav.md
-│     │     │     └── review-concepts.md
-│     │     ├── javascript
-│     │     │     ├── arrow-functions.md
-│     │     │     ├── asyncjs.md
-│     │     │     ├── await-keyword.md
-│     │     │     ├── bigo.md
-│     │     │     ├── clean-code.md
-│     │     │     ├── constructor-functions.md
-│     │     │     ├── index.md
-│     │     │     ├── promises.md
-│     │     │     ├── review.md
-│     │     │     └── this-is-about-this.md
-│     │     ├── leetcode
-│     │     │     └── index.md
-│     │     ├── privacy-policy.md
-│     │     ├── projects
-│     │     │     ├── embeded-websites.md
-│     │     │     ├── index.md
-│     │     │     ├── list-of-projects.md
-│     │     │     ├── mini-projects.md
-│     │     │     └── my-websites.md
-│     │     ├── python
-│     │     │     ├── at-length.md
-│     │     │     ├── cheat-sheet.md
-│     │     │     ├── comprehensive-guide.md
-│     │     │     ├── examples.md
-│     │     │     ├── flow-control.md
-│     │     │     ├── functions.md
-│     │     │     ├── google-sheets-api.md
-│     │     │     ├── index.md
-│     │     │     ├── intro-for-js-devs.md
-│     │     │     ├── python-ds.md
-│     │     │     └── snippets.md
-│     │     ├── quick-reference
-│     │     │     ├── Emmet.md
-│     │     │     ├── all-emojis.md
-│     │     │     ├── create-react-app.md
-│     │     │     ├── git-bash.md
-│     │     │     ├── git-tricks.md
-│     │     │     ├── google-firebase.md
-│     │     │     ├── heroku-error-codes.md
-│     │     │     ├── index.md
-│     │     │     ├── installation.md
-│     │     │     ├── markdown-dropdowns.md
-│     │     │     ├── minifiction.md
-│     │     │     ├── new-repo-instructions.md
-│     │     │     ├── psql-setup.md
-│     │     │     ├── pull-request-rubric.md
-│     │     │     ├── quick-links.md
-│     │     │     ├── topRepos.md
-│     │     │     ├── understanding-path.md
-│     │     │     └── vscode-themes.md
-│     │     ├── react
-│     │     │     ├── ajax-n-apis.md
-│     │     │     ├── cheatsheet.md
-│     │     │     ├── createReactApp.md
-│     │     │     ├── demo.md
-│     │     │     ├── dont-use-index-as-keys.md
-│     │     │     ├── index.md
-│     │     │     ├── jsx.md
-│     │     │     ├── react-docs.md
-│     │     │     ├── react-in-depth.md
-│     │     │     ├── react2.md
-│     │     │     └── render-elements.md
-│     │     ├── reference
-│     │     │     ├── awesome-lists.md
-│     │     │     ├── awesome-static.md
-│     │     │     ├── bash-commands.md
-│     │     │     ├── bookmarks.md
-│     │     │     ├── embed-the-web.md
-│     │     │     ├── github-search.md
-│     │     │     ├── google-cloud.md
-│     │     │     ├── how-2-reinstall-npm.md
-│     │     │     ├── how-to-kill-a-process.md
-│     │     │     ├── index.md
-│     │     │     ├── installing-node.md
-│     │     │     ├── intro-to-nodejs.md
-│     │     │     ├── notes-template.md
-│     │     │     ├── psql.md
-│     │     │     ├── resources.md
-│     │     │     ├── vscode.md
-│     │     │     └── web-api's.md
-│     │     ├── search.md
-│     │     ├── sitemap.md
-│     │     ├── tips
-│     │     │     ├── array-methods.md
-│     │     │     ├── index.md
-│     │     │     └── insert-into-array.md
-│     │     ├── tools
-│     │     │     ├── Archive.md
-│     │     │     ├── data-structures.md
-│     │     │     ├── dev-utilities.md
-│     │     │     ├── index.md
-│     │     │     └── markdown-html.md
-│     │     └── tutorials
-│     │         ├── enviorment-setup.md
-│     │         └── index.md
-│     ├── index.md
-│     ├── privacy-policy.md
-│     ├── readme.md
-│     └── showcase.md
-├── sass
-│     ├── imports
-│     │     ├── _animations.scss
-│     │     ├── _buttons.scss
-│     │     ├── _docs.scss
-│     │     ├── _footer.scss
-│     │     ├── _forms.scss
-│     │     ├── _functions.scss
-│     │     ├── _general.scss
-│     │     ├── _header.scss
-│     │     ├── _helpers.scss
-│     │     ├── _icons.scss
-│     │     ├── _palettes.scss
-│     │     ├── _posts.scss
-│     │     ├── _prism.scss
-│     │     ├── _reset.scss
-│     │     ├── _sections.scss
-│     │     ├── _structure.scss
-│     │     ├── _tables.scss
-│     │     └── _variables.scss
-│     └── main.scss
-├── templates
-│     ├── advanced.js
-│     ├── blog.js
-│     ├── docs.js
-│     ├── page.js
-│     ├── post.js
-│     └── templates.md
-└── utils
-    ├── attribute.js
-    ├── blm-badge.js
-    ├── classNames.js
-    ├── cycler.js
-    ├── getData.js
-    ├── getPage.js
-    ├── getPageByFilePath.js
-    ├── getPages.js
-    ├── htmlToReact.js
-    ├── index.js
-    ├── link.js
-    ├── markdownify.js
-    ├── pathJoin.js
-    ├── toStyleObj.js
-    ├── toUrl.js
-    └── withPrefix.js
-
-32 directories, 272 files
-```
-
-</details>
-
-<details>
-<summary>  Click To See Component Sourcecode  </summary>
-
-## Component Structure
-
-```
-.
-├── ActionLink.js
-├── CtaButtons.js
-├── DarkToggle
-│     ├── index.js
-│     └── styles.js
-├── DocsMenu.js
-├── DocsSubmenu.js
-├── Footer.js
-├── Header.js
-├── Icon.js
-├── Layout.js
-├── SectionContent.js
-├── SectionCta.js
-├── SectionDocs.js
-├── SectionGrid.js
-├── SectionHero.js
-├── Submenu.js
-├── global.css
-└── index.js
 
 ```
 
 ---
 
+#Components
+
+<details>
+  <summary><h1>Click to see React Components (src folder)!</h1></summary>
+
+<details>
+  <summary>ActionLink!</summary>
+  
+  ##ActionLink
 ```js
 import React from 'react';
 import _ from 'lodash';
-
 
 import { Link, withPrefix, classNames } from '../utils';
 import Icon from './Icon';
 
 export default class ActionLink extends React.Component {
-    render() {
-        let action = _.get(this.props, 'action', null);
-        return (
-            <Link
-                to={withPrefix(_.get(action, 'url', null))}
-                {...(_.get(action, 'new_window', null) ? { target: '_blank' } : null)}
-                {...(_.get(action, 'new_window', null) || _.get(action, 'no_follow', null)
-                    ? {
-                          rel: (_.get(action, 'new_window', null) ? 'noopener ' : '') + (_.get(action, 'no_follow', null) ? 'nofollow' : '')
-                      }
-                    : null)}
-                className={classNames({
-                    button: _.get(action, 'style', null) !== 'link',
-                    'button-secondary': _.get(action, 'style', null) === 'secondary',
-                    'button-icon': _.get(action, 'style', null) === 'icon'
-                })}
-            >
-                {_.get(action, 'style', null) === 'icon' && _.get(action, 'icon_class', null) ? (
-                    <React.Fragment>
-                        <Icon {...this.props} icon={_.get(action, 'icon_class', null)} />
-                        <span className="screen-reader-text"> {_.get(action, 'label', null)}</span>
-                    </React.Fragment>
-                ) : (
-                    _.get(action, 'label', null)
-                )}
-            </Link>
-        );
-    }
+render() {
+let action = \_.get(this.props, 'action', null);
+return (
+
+<Link
+to={withPrefix(_.get(action, 'url', null))}
+{...(_.get(action, 'new_window', null) ? { target: '\_blank' } : null)}
+{...(_.get(action, 'new*window', null) || *.get(action, 'no*follow', null)
+? {
+rel: (*.get(action, 'new*window', null) ? 'noopener ' : '') + (*.get(action, 'no*follow', null) ? 'nofollow' : '')
 }
-```
+: null)}
+className={classNames({
+button: *.get(action, 'style', null) !== 'link',
+'button-secondary': _.get(action, 'style', null) === 'secondary',
+'button-icon': _.get(action, 'style', null) === 'icon'
+})} >
+{_.get(action, 'style', null) === 'icon' && _.get(action, 'icon*class', null) ? (
+<React.Fragment>
+<Icon {...this.props} icon={*.get(action, 'icon*class', null)} />
+<span className="screen-reader-text">{*.get(action, 'label', null)}</span>
+</React.Fragment>
+) : (
+\_.get(action, 'label', null)
+)}
+</Link>
+);
+}
+}
+
+````
+---
+
+<details>
+  <summary>CtaButtons!</summary>
+
+  ## CtaButtons
 
 ---
-### Table of Contents
-
--   [getPage][1]
-    -   [Parameters][2]
--   [getPageByFilePath][3]
-    -   [Parameters][4]
--   [getPages][5]
-    -   [Parameters][6]
-    -   [Examples][7]
-
-## getPage
-
-Get the page at the provided `urlPath`.
-
-### Parameters
-
--   `pages` **[Array][8]** Array of page objects. All pages must have 'url' field.
--   `urlPath` **[string][9]** The url path to find the page by
-
-Returns **[Object][10]**
-
-## getPageByFilePath
-
-Get the page at the provided `filePath`.
-
-### Parameters
-
--   `pages` **[Array][8]** Array of page objects. All pages must have 'url' field.
--   `filePath` **[string][9]** The file path to find the page by
-
-Returns **[Object][10]**
-
-## getPages
-
-Get all the pages located under the provided `urlPath`, not including the
-index page. I.e.: All pages having their URLs start with `urlPath` excluding
-the page having its URL equal to `urlPath`.
-
-### Parameters
-
--   `pages` **[Array][8]** Array of page objects. All pages must have 'url' field.
--   `urlPath` **[string][9]** The url path to filter pages by
-
-### Examples
-
-```javascript
-pages => [
-  {url: '/'},
-  {url: '/about'},
-  {url: '/posts'},
-  {url: '/posts/hello'},
-  {url: '/posts/world'}
-]
-
-getPages(pages, /posts')
-=> [
-  {url: '/posts/hello'},
-  {url: '/posts/world'}
-]
-```
-
-Returns **[Array][8]**
-
-[1]: #getpage
-[2]: #parameters
-[3]: #getpagebyfilepath
-[4]: #parameters-1
-[5]: #getpages
-[6]: #parameters-2
-[7]: #examples
-[8]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
-[9]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
-[10]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
-
-
-
 ```js
 import React from 'react';
 import _ from 'lodash';
-
 
 import { Link, withPrefix, classNames } from '../utils';
 
@@ -4189,14 +516,21 @@ export default class CtaButtons extends React.Component {
         ));
     }
 }
-```
+
+````
+
+---
+
+<details>
+  <summary>Click to expand!</summary>
+  
+  ## DocsMenu
 
 ---
 
 ```js
 import React from 'react';
 import _ from 'lodash';
-
 
 import { getPage, classNames, Link, withPrefix, pathJoin, getPages } from '../utils';
 import DocsSubmenu from './DocsSubmenu';
@@ -4221,7 +555,7 @@ export default class DocsMenu extends React.Component {
                                     current: _.get(page, 'url', null) === _.get(root_page, 'url', null)
                                 })}
                             >
-                                <Link to={withPrefix(_.get(root_page, 'url', null))}> {_.get(root_page, 'frontmatter.title', null)}</Link>
+                                <Link to={withPrefix(_.get(root_page, 'url', null))}>{_.get(root_page, 'frontmatter.title', null)}</Link>
                             </li>
                             {_.map(_.get(site, 'data.doc_sections.sections', null), (section, section_idx) => {
                                 let section_path = pathJoin(root_docs_path, section);
@@ -4241,11 +575,11 @@ export default class DocsMenu extends React.Component {
                                                 active: is_active
                                             })}
                                         >
-                                            <Link to={withPrefix(_.get(section_page, 'url', null))}> {_.get(section_page, 'frontmatter.title', null)}</Link>
+                                            <Link to={withPrefix(_.get(section_page, 'url', null))}>{_.get(section_page, 'frontmatter.title', null)}</Link>
                                             {has_children && (
                                                 <React.Fragment>
                                                     <button className="docs-submenu-toggle">
-                                                        <span className="screen-reader-text"> Submenu</span>
+                                                        <span className="screen-reader-text">Submenu</span>
                                                         <span className="icon-angle-right" aria-hidden="true" />
                                                     </button>
                                                     <DocsSubmenu {...this.props} child_pages={child_pages} page={page} site={site} />
@@ -4266,10 +600,16 @@ export default class DocsMenu extends React.Component {
 
 ---
 
+<details>
+  <summary>Click to expand!</summary>
+  
+  ## DocsSubmenu
+
+---
+
 ```js
 import React from 'react';
 import _ from 'lodash';
-
 
 import { classNames, Link, withPrefix } from '../utils';
 
@@ -4286,7 +626,7 @@ export default class DocsSubmenu extends React.Component {
                             current: _.get(page, 'url', null) === _.get(child_page, 'url', null)
                         })}
                     >
-                        <Link to={withPrefix(_.get(child_page, 'url', null))}> {_.get(child_page, 'frontmatter.title', null)}</Link>
+                        <Link to={withPrefix(_.get(child_page, 'url', null))}>{_.get(child_page, 'frontmatter.title', null)}</Link>
                     </li>
                 ))}
             </ul>
@@ -4297,178 +637,42 @@ export default class DocsSubmenu extends React.Component {
 
 ---
 
+<details>
+  <summary>Click to expand!</summary>
+  
+  ## Footer
+
+---
+
 ```js
-import _ from 'lodash';
 import React from 'react';
+import _ from 'lodash';
 
 import { htmlToReact } from '../utils';
 import ActionLink from './ActionLink';
-import addScript from './../hooks/addScript';
-const Script = (props) => {
-    importScript('./../hooks/addScript.js');
-};
+
 export default class Footer extends React.Component {
     render() {
         return (
             <footer id="colophon" className="site-footer outer">
-                <div>
-                    <center>
-                        <br />
-
-                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
-
-                        <br />
-
-                        <table cellPadding={0} cellSpacing={0} border={0}>
-                            <tbody>
-                                <tr>
-                                    <td
-                                        style={{
-                                            fontFamily: 'Arial, Helvetica, sans-serif',
-                                            fontSize: '7.5pt'
-                                        }}
-                                    >
-                                        <center>
-                                            <table
-                                                width="95%"
-                                                cellPadding={0}
-                                                cellSpacing={0}
-                                                border={0}
-                                                style={{
-                                                    fontFamily: 'Arial, Helvetica, sans-serif',
-                                                    fontSize: '7.5pt'
-                                                }}
-                                            >
-                                                <tbody>
-                                                    <tr>
-                                                        <td
-                                                            style={{
-                                                                fontFamily: 'Arial, Helvetica, sans-serif',
-                                                                fontSize: '7.5pt'
-                                                            }}
-                                                            align="left"
-                                                        >
-                                                            <a target="_blank" href="https://search.freefind.com/siteindex.html?si=14588965">
-                                                                index
-                                                            </a>
-                                                        </td>
-                                                        <td
-                                                            style={{
-                                                                fontFamily: 'Arial, Helvetica, sans-serif',
-                                                                fontSize: '7.5pt'
-                                                            }}
-                                                            align="center"
-                                                        >
-                                                            <a target="_blank" href="https://search.freefind.com/find.html?si=14588965&m=0&p=0">
-                                                                sitemap
-                                                            </a>
-                                                        </td>
-                                                        <td
-                                                            style={{
-                                                                fontFamily: 'Arial, Helvetica, sans-serif',
-                                                                fontSize: '7.5pt'
-                                                            }}
-                                                            align="right"
-                                                        >
-                                                            <a target="_blank" href="https://search.freefind.com/find.html?si=14588965&pid=a">
-                                                                advanced
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </center>
-
-                                        <form
-                                            style={{
-                                                margin: '0px',
-                                                marginTop: '2px'
-                                            }}
-                                            action="https://search.freefind.com/find.html"
-                                            method="get"
-                                            acceptCharset="utf-8"
-                                            target="_self"
-                                        >
-                                            <input type="hidden" name="si" defaultValue={14588965} />
-                                            <input type="hidden" name="pid" defaultValue="r" />
-                                            <input type="hidden" name="n" defaultValue={0} />
-                                            <input type="hidden" name="_charset_" defaultValue />
-                                            <input type="hidden" name="bcd" defaultValue="÷" />
-                                            <input type="text" name="query" size={15} />
-                                            <input type="submit" defaultValue="search" />
-                                        </form>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td
-                                        style={{
-                                            textAlign: 'center',
-                                            fontFamily: 'Arial, Helvetica, sans-serif',
-                                            fontSize: '7.5pt',
-                                            paddingTop: '4px'
-                                        }}
-                                    >
-                                        <a
-                                            style={{
-                                                textDecoration: 'none',
-                                                color: 'transparent'
-                                            }}
-                                            href="https://www.freefind.com"
-                                            rel="nofollow"
-                                        >
-                                            search engine
-                                        </a>
-                                        <a
-                                            style={{
-                                                textDecoration: 'none',
-                                                color: 'transparent'
-                                            }}
-                                            href="https://www.freefind.com"
-                                            rel="nofollow"
-                                        >
-                                            by
-                                            <span style={{ color: 'transparent' }}> freefind</span>
-                                        </a>
-                                        {
-                                            <iframe
-                                                src="https://bgoonz.github.io/fb-and-twitter-api-embeds/"
-                                                frameborder="0"
-                                                id="social-embed"
-                                                width="100%!important"
-                                            >
-                                                {' '}
-                                            </iframe>
-                                        }
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <a href="//pdfcrowd.com/url_to_pdf/?" onclick="if(!this.p)href+='&url='+encodeURIComponent(location.href);this.p=1">
-                            Save to PDF
-                        </a>
-                    </center>
-                </div>
-
                 <div className="inner">
-                    <div id="search" className="inner">
-                        {' '}
-                    </div>
                     <div className="site-footer-inside">
                         <p className="site-info">
                             {_.get(this.props, 'pageContext.site.siteMetadata.footer.content', null) && (
-                                <span className="copyright"> {htmlToReact(_.get(this.props, 'pageContext.site.siteMetadata.footer.content', null))}</span>
+                                <span className="copyright">{htmlToReact(_.get(this.props, 'pageContext.site.siteMetadata.footer.content', null))}</span>
                             )}
                             {_.map(_.get(this.props, 'pageContext.site.siteMetadata.footer.links', null), (action, action_idx) => (
                                 <ActionLink key={action_idx} {...this.props} action={action} />
-                            ))}{' '}
+                            ))}
                         </p>
+
                         {_.get(this.props, 'pageContext.site.siteMetadata.footer.has_social', null) && (
                             <div className="social-links">
                                 {_.map(_.get(this.props, 'pageContext.site.siteMetadata.footer.social_links', null), (action, action_idx) => (
                                     <ActionLink key={action_idx} {...this.props} action={action} />
-                                ))}{' '}
+                                ))}
                             </div>
-                        )}{' '}
+                        )}
                     </div>
                 </div>
             </footer>
@@ -4479,10 +683,13 @@ export default class Footer extends React.Component {
 
 ---
 
+## Header
+
+---
+
 ```js
 import React from 'react';
 import _ from 'lodash';
-
 
 import { Link, withPrefix, classNames } from '../utils';
 import ActionLink from './ActionLink';
@@ -4492,10 +699,6 @@ export default class Header extends React.Component {
     render() {
         return (
             <header id="masthead" className="site-header outer">
-                {/* <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />  */}
-
-                <br />
-
                 <div className="inner">
                     <div className="site-header-inside">
                         <div className="site-branding">
@@ -4518,15 +721,13 @@ export default class Header extends React.Component {
                                 </p>
                             )}
                         </div>
-                        <div id="search" className="inner">
-                            {' '}
-                        </div>
+                        <div id="search" className="inner"></div>
                         {_.get(this.props, 'pageContext.site.siteMetadata.header.has_nav', null) && (
                             <React.Fragment>
                                 <nav id="main-navigation" className="site-navigation" aria-label="Main Navigation">
                                     <div className="site-nav-inside">
                                         <button id="menu-close" className="menu-toggle">
-                                            <span className="screen-reader-text"> Open Menu</span>
+                                            <span className="screen-reader-text">Open Menu</span>
                                             <span className="icon-close" aria-hidden="true" />
                                         </button>
                                         <ul className="menu">
@@ -4547,7 +748,7 @@ export default class Header extends React.Component {
                                                             <React.Fragment>
                                                                 <button className="submenu-toggle">
                                                                     <span className="icon-angle-right" aria-hidden="true" />
-                                                                    <span className="screen-reader-text"> Sub-menu</span>
+                                                                    <span className="screen-reader-text">Sub-menu</span>
                                                                 </button>
                                                                 <Submenu
                                                                     {...this.props}
@@ -4564,48 +765,44 @@ export default class Header extends React.Component {
                                     </div>
                                 </nav>
                                 <button id="menu-open" className="menu-toggle">
-                                    <span className="screen-reader-text"> Close Menu</span>
+                                    <span className="screen-reader-text">Close Menu</span>
                                     <span className="icon-menu" aria-hidden="true" />
                                 </button>
                             </React.Fragment>
                         )}
                     </div>
                 </div>
-
+                <div id="search" className="inner"></div>
                 <div>
                     <a className="github-corner" href="https://github.com/bgoonz/BGOONZ_BLOG_2.0" aria-label="View source on Github">
                         <svg
                             aria-hidden="true"
-                            width={40}
-                            height={40}
+                            width={80}
+                            height={80}
                             viewBox="0 0 250 250"
                             style={{
                                 zIndex: 100000,
-                                fill: 'black',
+                                fill: '#194ccdaf',
                                 color: '#fff',
                                 position: 'fixed',
-                                top: '0px',
+                                top: '20px',
                                 border: 0,
-                                left: '0px',
+                                left: '20px',
                                 transform: 'scale(-1.5, 1.5)'
                             }}
                         >
-                            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"> </path>
+                            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
                             <path
                                 className="octo-arm"
                                 d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
                                 fill="currentColor"
                                 style={{ transformOrigin: '130px 106px' }}
-                            >
-                                {' '}
-                            </path>
+                            ></path>
                             <path
                                 className="octo-body"
                                 d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
                                 fill="currentColor"
-                            >
-                                {' '}
-                            </path>
+                            ></path>
                         </svg>
                     </a>
                 </div>
@@ -4614,6 +811,13 @@ export default class Header extends React.Component {
     }
 }
 ```
+
+---
+
+<details>
+  <summary>Click to expand!</summary>
+  
+  ## Icon
 
 ---
 
@@ -4653,4 +857,5472 @@ export default class Icon extends React.Component {
         );
     }
 }
+```
+
+---
+
+<details>
+  <summary>Click to expand!</summary>
+  
+  ## Body
+
+---
+
+```js
+import React from 'react';
+
+import { Helmet } from 'react-helmet';
+import _ from 'lodash';
+
+import { withPrefix, attribute } from '../utils';
+import '../sass/main.scss';
+import Header from './Header';
+import Footer from './Footer';
+
+export default class Body extends React.Component {
+    render() {
+        return (
+            <React.Fragment>
+                <Helmet>
+                    <title>
+                        {_.get(this.props, 'pageContext.frontmatter.seo.title', null)
+                            ? _.get(this.props, 'pageContext.frontmatter.seo.title', null)
+                            : _.get(this.props, 'pageContext.frontmatter.title', null) + ' | ' + _.get(this.props, 'pageContext.site.siteMetadata.title', null)}
+                    </title>
+                    <meta charSet="utf-8" />
+                    <meta name="viewport" content="width=device-width, initialScale=1.0" />
+                    <meta name="description" content={_.get(this.props, 'pageContext.frontmatter.seo.description', null) || ''} />
+                    {_.get(this.props, 'pageContext.frontmatter.seo.robots', null) && (
+                        <meta name="robots" content={_.join(_.get(this.props, 'pageContext.frontmatter.seo.robots', null), ',')} />
+                    )}
+                    {_.map(_.get(this.props, 'pageContext.frontmatter.seo.extra', null), (meta, meta_idx) => {
+                        let key_name = _.get(meta, 'keyName', null) || 'name';
+                        return _.get(meta, 'relativeUrl', null) ? (
+                            _.get(this.props, 'pageContext.site.siteMetadata.domain', null) &&
+                                (() => {
+                                    let domain = _.trim(_.get(this.props, 'pageContext.site.siteMetadata.domain', null), '/');
+                                    let rel_url = withPrefix(_.get(meta, 'value', null));
+                                    let full_url = domain + rel_url;
+                                    return <meta key={meta_idx} {...attribute(key_name, _.get(meta, 'name', null))} content={full_url} />;
+                                })()
+                        ) : (
+                            <meta key={meta_idx + '.1'} {...attribute(key_name, _.get(meta, 'name', null))} content={_.get(meta, 'value', null)} />
+                        );
+                    })}
+                    <link rel="preconnect" href="https://fonts.gstatic.com" />
+                    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+                    {_.get(this.props, 'pageContext.site.siteMetadata.favicon', null) && (
+                        <link rel="icon" href={withPrefix(_.get(this.props, 'pageContext.site.siteMetadata.favicon', null))} />
+                    )}
+                    <body className={'palette-' + _.get(this.props, 'pageContext.site.siteMetadata.palette', null)} />
+                </Helmet>
+                <div id="page" className="site">
+                    <Header {...this.props} />
+                    <main id="content" className="site-content">
+                        {this.props.children}
+                    </main>
+                    <Footer {...this.props} />
+                </div>
+            </React.Fragment>
+        );
+    }
+}
+```
+
+---
+
+<details>
+  <summary>Click to expand!</summary>
+  
+  ## SectionContent
+
+---
+
+```js
+import React from 'react';
+import _ from 'lodash';
+
+import { classNames, withPrefix, markdownify } from '../utils';
+import CtaButtons from './CtaButtons';
+
+export default class SectionContent extends React.Component {
+    render() {
+        let section = _.get(this.props, 'section', null);
+        return (
+            <section id={_.get(section, 'section_id', null)} className="block block-text outer">
+                <div className="outter">
+                    <div
+                        className={classNames('inner', {
+                            'grid-swap': _.get(section, 'image', null) && _.get(section, 'image_position', null) === 'right'
+                        })}
+                    >
+                        {_.get(section, 'image', null) && (
+                            <div className="grid-item block-image">
+                                <img src={withPrefix(_.get(section, 'image', null))} alt={_.get(section, 'image_alt', null)} />
+                            </div>
+                        )}
+                        <div>
+                            {_.get(section, 'title', null) && (
+                                <div className="block-header">
+                                    <h2 className="block-title">{_.get(section, 'title', null)}</h2>
+                                </div>
+                            )}
+                            {_.get(section, 'content', null) && <div className="outer">{markdownify(_.get(section, 'content', null))}</div>}
+                            {_.get(section, 'actions', null) && (
+                                <div className="block-buttons">
+                                    <CtaButtons {...this.props} actions={_.get(section, 'actions', null)} />
+                                </div>
+                            )}
+                        </div>
+                    </div>
+                </div>
+            </section>
+        );
+    }
+}
+```
+
+---
+
+<details>
+  <summary>Click to expand!</summary>
+  
+  ## SectionCta
+
+---
+
+```js
+import React from 'react';
+import _ from 'lodash';
+
+import { htmlToReact } from '../utils';
+import CtaButtons from './CtaButtons';
+
+export default class SectionCta extends React.Component {
+    render() {
+        let section = _.get(this.props, 'section', null);
+        return (
+            <section id={_.get(section, 'section_id', null)} className="block block-cta outer">
+                <div className="inner">
+                    <div className="has-gradient">
+                        <div className="grid grid-middle grid-center">
+                            {(_.get(section, 'title', null) || _.get(section, 'subtitle', null)) && (
+                                <div className="grid-item block-header">
+                                    {_.get(section, 'title', null) && <h2 className="block-title">{_.get(section, 'title', null)}</h2>}
+                                    {_.get(section, 'subtitle', null) && <p className="block-subtitle">{htmlToReact(_.get(section, 'subtitle', null))}</p>}
+                                </div>
+                            )}
+                            {_.get(section, 'actions', null) && (
+                                <div className="grid-item block-buttons">
+                                    <CtaButtons {...this.props} actions={_.get(section, 'actions', null)} />
+                                </div>
+                            )}
+                        </div>
+                    </div>
+                </div>
+            </section>
+        );
+    }
+}
+```
+
+---
+
+<details>
+  <summary>Click to expand!</summary>
+  
+  ## SectionDocs
+
+---
+
+```js
+import React from 'react';
+import _ from 'lodash';
+
+import { classNames, htmlToReact, pathJoin, getPage, Link, withPrefix } from '../utils';
+
+export default class SectionDocs extends React.Component {
+    render() {
+        let section = _.get(this.props, 'section', null);
+        return (
+            <section
+                id={_.get(section, 'section_id', null)}
+                className={classNames('block', 'block-grid', 'outer', {
+                    'has-header': _.get(section, 'title', null) || _.get(section, 'subtitle', null)
+                })}
+            >
+                <div className="inner">
+                    {(_.get(section, 'title', null) || _.get(section, 'subtitle', null)) && (
+                        <div className="block-header inner-sm">
+                            {_.get(section, 'title', null) && <h2 className="block-title">{_.get(section, 'title', null)}</h2>}
+                            {_.get(section, 'subtitle', null) && <p className="block-subtitle">{htmlToReact(_.get(section, 'subtitle', null))}</p>}
+                        </div>
+                    )}
+                    <div className="block-content">
+                        <div
+                            className={classNames('grid', {
+                                'grid-col-2': _.get(section, 'col_number', null) === 'two',
+                                'grid-col-3': _.get(section, 'col_number', null) === 'three'
+                            })}
+                        >
+                            {_.map(_.get(this.props, 'pageContext.site.data.doc_sections.sections', null), (doc_section, doc_section_idx) => {
+                                let doc_section_path = pathJoin(_.get(this.props, 'pageContext.site.data.doc_sections.root_docs_path', null), doc_section);
+                                let doc_section_page = getPage(this.props.pageContext.pages, doc_section_path);
+                                return (
+                                    <div key={doc_section_idx} className="grid-item">
+                                        <div className="grid-item-inside">
+                                            <h3 className="grid-item-title line-left">
+                                                <Link to={withPrefix(_.get(doc_section_page, 'url', null))}>
+                                                    {_.get(doc_section_page, 'frontmatter.title', null)}
+                                                </Link>
+                                            </h3>
+                                            {_.get(doc_section_page, 'frontmatter.excerpt', null) && (
+                                                <div className="grid-item-content">
+                                                    <p>{htmlToReact(_.get(doc_section_page, 'frontmatter.excerpt', null))}</p>
+                                                </div>
+                                            )}
+                                            <div className="grid-item-buttons">
+                                                <Link to={withPrefix(_.get(doc_section_page, 'url', null))}>Learn More</Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    </div>
+                </div>
+            </section>
+        );
+    }
+}
+```
+
+---
+
+<details>
+  <summary>Click to expand!</summary>
+  
+  ## SectionGrid
+
+---
+
+```js
+import React from 'react';
+import _ from 'lodash';
+
+import { classNames, htmlToReact, withPrefix, Link, markdownify } from '../utils';
+import CtaButtons from './CtaButtons';
+
+export default class SectionGrid extends React.Component {
+    render() {
+        let section = _.get(this.props, 'section', null);
+        return (
+            <section
+                id={_.get(section, 'section_id', null)}
+                className={classNames('block', 'block-grid', 'outer', {
+                    'has-header': _.get(section, 'title', null) || _.get(section, 'subtitle', null)
+                })}
+            >
+                <div className="inner">
+                    {(_.get(section, 'title', null) || _.get(section, 'subtitle', null)) && (
+                        <div className="block-header inner-sm">
+                            {_.get(section, 'title', null) && <h2 className="block-title">{_.get(section, 'title', null)}</h2>}
+                            {_.get(section, 'subtitle', null) && <p className="block-subtitle">{htmlToReact(_.get(section, 'subtitle', null))}</p>}
+                        </div>
+                    )}
+                    {_.get(section, 'grid_items', null) && (
+                        <div className="block-content">
+                            <div
+                                className={classNames('grid', {
+                                    'grid-col-2': _.get(section, 'col_number', null) === 'two',
+                                    'grid-col-3': _.get(section, 'col_number', null) === 'three'
+                                })}
+                            >
+                                {_.map(_.get(section, 'grid_items', null), (item, item_idx) => (
+                                    <div key={item_idx} className="grid-item">
+                                        <div className="grid-item-inside">
+                                            {_.get(item, 'image', null) && (
+                                                <div className="grid-item-image">
+                                                    <img src={withPrefix(_.get(item, 'image', null))} alt={_.get(item, 'image_alt', null)} />
+                                                </div>
+                                            )}
+                                            {_.get(item, 'title', null) && (
+                                                <h3 className="grid-item-title line-left">
+                                                    {_.get(item, 'title_url', null) ? (
+                                                        <Link to={withPrefix(_.get(item, 'title_url', null))}>{_.get(item, 'title', null)}</Link>
+                                                    ) : (
+                                                        _.get(item, 'title', null)
+                                                    )}
+                                                </h3>
+                                            )}
+                                            {_.get(item, 'content', null) && (
+                                                <div className="grid-item-content">{markdownify(_.get(item, 'content', null))}</div>
+                                            )}
+                                            {_.get(item, 'actions', null) && (
+                                                <div className="grid-item-buttons">
+                                                    <CtaButtons {...this.props} actions={_.get(item, 'actions', null)} />
+                                                </div>
+                                            )}
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    )}
+                </div>
+            </section>
+        );
+    }
+}
+```
+
+---
+
+<details>
+  <summary>Click to expand!</summary>
+  
+  ## SectionHero
+
+---
+
+```js
+import React from 'react';
+import _ from 'lodash';
+
+import { toStyleObj, withPrefix, markdownify } from '../utils';
+import CtaButtons from './CtaButtons';
+
+export default class SectionHero extends React.Component {
+    render() {
+        let section = _.get(this.props, 'section', null);
+        return (
+            <section id={_.get(section, 'section_id', null)} className="block block-hero has-gradient outer">
+                {_.get(section, 'image', null) && (
+                    <div className="bg-img" style={toStyleObj("background-image: url('" + withPrefix(_.get(section, 'image', null)) + "')")} />
+                )}
+                <div className="inner-sm">
+                    {_.get(section, 'title', null) && (
+                        <div className="block-header">
+                            <h1 className="block-title">{_.get(section, 'title', null)}</h1>
+                        </div>
+                    )}
+                    {_.get(section, 'content', null) && <div className="block-content">{markdownify(_.get(section, 'content', null))}</div>}
+                    {_.get(section, 'actions', null) && (
+                        <div className="block-buttons">
+                            <CtaButtons {...this.props} actions={_.get(section, 'actions', null)} />
+                        </div>
+                    )}
+                </div>
+            </section>
+        );
+    }
+}
+```
+
+---
+
+<details>
+  <summary>Click to expand!</summary>
+  
+  ## Submenu
+
+---
+
+```js
+import React from 'react';
+import _ from 'lodash';
+
+import { classNames } from '../utils';
+import ActionLink from './ActionLink';
+
+export default class Submenu extends React.Component {
+    render() {
+        let page = _.get(this.props, 'page', null);
+        return (
+            <ul className={_.get(this.props, 'menu_class', null)}>
+                {_.map(_.get(this.props, 'submenu', null), (action, action_idx) => {
+                    let page_url = _.trim(_.get(page, 'url', null), '/');
+                    let action_url = _.trim(_.get(action, 'url', null), '/');
+                    return (
+                        <li
+                            key={action_idx}
+                            className={classNames('menu-item', {
+                                current: page_url === action_url,
+                                'menu-button': _.get(action, 'style', null) !== 'link'
+                            })}
+                        >
+                            <ActionLink {...this.props} action={action} />
+                        </li>
+                    );
+                })}
+            </ul>
+        );
+    }
+}
+```
+
+---
+
+<details>
+  <summary>Click to expand!</summary>
+  
+  ## Index.js
+
+---
+
+```js
+import ActionLink from './ActionLink';
+import CtaButtons from './CtaButtons';
+import DocsMenu from './DocsMenu';
+import DocsSubmenu from './DocsSubmenu';
+import Footer from './Footer';
+import Header from './Header';
+import Icon from './Icon';
+import SectionContent from './SectionContent';
+import SectionCta from './SectionCta';
+import SectionDocs from './SectionDocs';
+import SectionGrid from './SectionGrid';
+import SectionHero from './SectionHero';
+import Submenu from './Submenu';
+import Layout from './Layout';
+
+export {
+    ActionLink,
+    CtaButtons,
+    DocsMenu,
+    DocsSubmenu,
+    Footer,
+    Header,
+    Icon,
+    SectionContent,
+    SectionCta,
+    SectionDocs,
+    SectionGrid,
+    SectionHero,
+    Submenu,
+    Layout
+};
+
+export default {
+    ActionLink,
+    CtaButtons,
+    DocsMenu,
+    DocsSubmenu,
+    Footer,
+    Header,
+    Icon,
+    SectionContent,
+    SectionCta,
+    SectionDocs,
+    SectionGrid,
+    SectionHero,
+    Submenu,
+    Layout
+};
+```
+
+</details>
+
+---
+
+---
+
+# Static Javascript:
+
+<details>
+  <summary>Static Javascript:!</summary>
+
+# main.js
+
+```js
+window.onGatsbyInitialClientRender = function () {
+    /**
+     * Main JS file for theme behaviours
+     */
+    // Responsive video embeds
+    let videoEmbeds = ['iframe[src*="youtube.com"]', 'iframe[src*="vimeo.com"]'];
+    reframe(videoEmbeds.join(','));
+
+    // Handle main navigation menu toggling on small screens
+    function menuToggleHandler(e) {
+        e.preventDefault();
+        document.body.classList.toggle('menu--opened');
+    }
+
+    // Handle docs navigation menu toggling on small screens
+    function docsNavToggleHandler(e) {
+        e.preventDefault();
+        document.body.classList.toggle('docs-menu--opened');
+    }
+
+    // Handle submenu toggling
+    function submenuToggleHandler(e) {
+        e.preventDefault();
+        this.parentNode.classList.toggle('active');
+    }
+
+    window.addMainNavigationHandlers = function () {
+        const menuToggle = document.querySelectorAll('.menu-toggle');
+        if (menuToggle) {
+            for (let i = 0; i < menuToggle.length; i++) {
+                menuToggle[i].addEventListener('click', menuToggleHandler, false);
+            }
+        }
+
+        const submenuToggle = document.querySelectorAll('.submenu-toggle');
+        if (submenuToggle) {
+            for (let i = 0; i < submenuToggle.length; i++) {
+                submenuToggle[i].addEventListener('click', submenuToggleHandler, false);
+            }
+        }
+    };
+
+    window.removeMainNavigationHandlers = function () {
+        // Remove nav related classes on page load
+        document.body.classList.remove('menu--opened');
+
+        const menuToggle = document.querySelectorAll('.menu-toggle');
+        if (menuToggle) {
+            for (let i = 0; i < menuToggle.length; i++) {
+                menuToggle[i].removeEventListener('click', menuToggleHandler, false);
+            }
+        }
+
+        const submenuToggle = document.querySelectorAll('.submenu-toggle');
+        if (submenuToggle) {
+            for (let i = 0; i < submenuToggle.length; i++) {
+                submenuToggle[i].removeEventListener('click', submenuToggleHandler, false);
+            }
+        }
+    };
+
+    window.addDocsNavigationHandlers = function () {
+        const docsNavToggle = document.getElementById('docs-nav-toggle');
+        if (docsNavToggle) {
+            docsNavToggle.addEventListener('click', docsNavToggleHandler, false);
+        }
+
+        const docsSubmenuToggle = document.querySelectorAll('.docs-submenu-toggle');
+        if (docsSubmenuToggle) {
+            for (let i = 0; i < docsSubmenuToggle.length; i++) {
+                docsSubmenuToggle[i].addEventListener('click', submenuToggleHandler, false);
+            }
+        }
+    };
+
+    window.removeDocsNavigationHandlers = function () {
+        // Remove docs nav related classes on page load
+        document.body.classList.remove('docs-menu--opened');
+
+        const docsNavToggle = document.getElementById('docs-nav-toggle');
+        if (docsNavToggle) {
+            docsNavToggle.removeEventListener('click', docsNavToggleHandler, false);
+        }
+
+        const docsSubmenuToggle = document.querySelectorAll('.docs-submenu-toggle');
+        if (docsSubmenuToggle) {
+            for (let i = 0; i < docsSubmenuToggle.length; i++) {
+                docsSubmenuToggle[i].removeEventListener('click', submenuToggleHandler, false);
+            }
+        }
+    };
+
+    window.addPageNavLinks = function () {
+        const pageToc = document.getElementById('page-nav-inside');
+        const pageTocContainer = document.getElementById('page-nav-link-container');
+
+        if (pageToc && pageTocContainer) {
+            const pageContent = document.querySelector('.type-docs .post-content');
+
+            // Create in-page navigation
+            const headerLinks = getHeaderLinks({
+                root: pageContent
+            });
+            if (headerLinks.length > 0) {
+                pageToc.classList.add('has-links');
+                renderHeaderLinks(pageTocContainer, headerLinks);
+            }
+
+            // Scroll to anchors
+            let scroll = new SmoothScroll('[data-scroll]');
+            let hash = window.decodeURI(location.hash.replace('#', ''));
+            if (hash !== '') {
+                window.setTimeout(function () {
+                    let anchor = document.getElementById(hash);
+                    if (anchor) {
+                        scroll.animateScroll(anchor);
+                    }
+                }, 0);
+            }
+
+            // Highlight current anchor
+            let pageTocLinks = pageTocContainer.getElementsByTagName('a');
+            if (pageTocLinks.length > 0) {
+                let spy = new Gumshoe('#page-nav-inside a', {
+                    nested: true,
+                    nestedClass: 'active-parent'
+                });
+            }
+
+            // Add link to page content headings
+            let pageHeadings = getElementsByTagNames(pageContent, ['h2', 'h3']);
+            for (let i = 0; i < pageHeadings.length; i++) {
+                let heading = pageHeadings[i];
+                if (typeof heading.id !== 'undefined' && heading.id !== '') {
+                    heading.insertBefore(anchorForId(heading.id), heading.firstChild);
+                }
+            }
+
+            // Copy link url
+            let clipboard = new ClipboardJS('.hash-link', {
+                text: function (trigger) {
+                    return window.location.href.replace(window.location.hash, '') + trigger.getAttribute('href');
+                }
+            });
+        }
+    };
+
+    window.removePageNavLinks = function () {
+        const pageToc = document.getElementById('page-nav-inside');
+        const pageTocContainer = document.getElementById('page-nav-link-container');
+
+        if (pageToc && pageTocContainer) {
+            pageToc.classList.remove('has-links');
+            while (pageTocContainer.firstChild) {
+                pageTocContainer.removeChild(pageTocContainer.firstChild);
+            }
+        }
+    };
+
+    function getElementsByTagNames(root, tagNames) {
+        let elements = [];
+        for (let i = 0; i < root.children.length; i++) {
+            let element = root.children[i];
+            let tagName = element.nodeName.toLowerCase();
+            if (tagNames.includes(tagName)) {
+                elements.push(element);
+            }
+            elements = elements.concat(getElementsByTagNames(element, tagNames));
+        }
+        return elements;
+    }
+
+    function createLinksForHeaderElements(elements) {
+        let result = [];
+        let stack = [
+            {
+                level: 0,
+                children: result
+            }
+        ];
+        let re = /^h(\d)$/;
+        for (let i = 0; i < elements.length; i++) {
+            let element = elements[i];
+            let tagName = element.nodeName.toLowerCase();
+            let match = re.exec(tagName);
+            if (!match) {
+                console.warn('can not create links to non header element');
+                continue;
+            }
+            let headerLevel = parseInt(match[1], 10);
+            if (!element.id) {
+                if (!element.textContent) {
+                    console.warn('can not create link to element without id and without text content');
+                    continue;
+                }
+                element.id = element.textContent
+                    .toLowerCase()
+                    .replace(/[^\w]+/g, '_')
+                    .replace(/^_/, '')
+                    .replace(/_$/, '');
+            }
+            let link = document.createElement('a');
+            link.href = '#' + element.id;
+            link.setAttribute('data-scroll', '');
+            link.appendChild(document.createTextNode(element.textContent));
+            let obj = {
+                id: element.id,
+                level: headerLevel,
+                textContent: element.textContent,
+                element: element,
+                link: link,
+                children: []
+            };
+            if (headerLevel > stack[stack.length - 1].level) {
+                stack[stack.length - 1].children.push(obj);
+                stack.push(obj);
+            } else {
+                while (headerLevel <= stack[stack.length - 1].level && stack.length > 1) {
+                    stack.pop();
+                }
+                stack[stack.length - 1].children.push(obj);
+                stack.push(obj);
+            }
+        }
+        return result;
+    }
+
+    function getHeaderLinks(options = {}) {
+        let tagNames = options.tagNames || ['h2', 'h3'];
+        let root = options.root || document.body;
+        let headerElements = getElementsByTagNames(root, tagNames);
+        return createLinksForHeaderElements(headerElements);
+    }
+
+    function renderHeaderLinks(element, links) {
+        if (links.length === 0) {
+            return;
+        }
+        let ulElm = document.createElement('ul');
+        for (let i = 0; i < links.length; i++) {
+            let liElm = document.createElement('li');
+            liElm.append(links[i].link);
+            if (links[i].children.length > 0) {
+                renderHeaderLinks(liElm, links[i].children);
+            }
+            ulElm.appendChild(liElm);
+        }
+        element.appendChild(ulElm);
+    }
+
+    function anchorForId(id) {
+        let anchor = document.createElement('a');
+        anchor.setAttribute('class', 'hash-link');
+        anchor.setAttribute('data-scroll', '');
+        anchor.href = '#' + id;
+        anchor.innerHTML = '<span class="screen-reader-text">Copy</span>';
+        return anchor;
+    }
+
+    // Syntax Highlighter
+    // Prism.highlightAll();
+};
+
+//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
+//--------------------------------New----------------------------------
+//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
+```
+
+---
+
+---
+
+# Page Load JS
+
+```js
+window.onGatsbyRouteUpdate = function () {
+    window.addMainNavigationHandlers();
+    window.addDocsNavigationHandlers();
+    window.addPageNavLinks();
+};
+```
+
+---
+
+---
+
+# PageUnload.js
+
+```js
+window.onGatsbyPreRouteUpdate = function () {
+    window.removeMainNavigationHandlers();
+    window.removeDocsNavigationHandlers();
+    window.removePageNavLinks();
+};
+```
+
+---
+
+---
+
+# Plugins.js
+
+```js
+!(function (e, t) {
+    'object' == typeof exports && 'undefined' != typeof module
+        ? (module.exports = t())
+        : 'function' == typeof define && define.amd
+        ? define(t)
+        : ((e = 'undefined' != typeof globalThis ? globalThis : e || self).reframe = t());
+})(this, function () {
+    'use strict';
+    function t() {
+        for (var e = 0, t = 0, n = arguments.length; t < n; t++) e += arguments[t].length;
+        for (var i = Array(e), o = 0, t = 0; t < n; t++) for (var r = arguments[t], f = 0, d = r.length; f < d; f++, o++) i[o] = r[f];
+        return i;
+    }
+    return function (e, s) {
+        return (
+            void 0 === s && (s = 'js-reframe'),
+            ('string' == typeof e ? t(document.querySelectorAll(e)) : 'length' in e ? t(e) : [e]).forEach(function (e) {
+                var t, n, i, o, r, f, d, l;
+                -1 !== e.className.split(' ').indexOf(s) ||
+                    -1 < e.style.width.indexOf('%') ||
+                    ((i = e.getAttribute('height') || e.offsetHeight),
+                    (o = e.getAttribute('width') || e.offsetWidth),
+                    (r = (('string' == typeof i ? parseInt(i) : i) / ('string' == typeof o ? parseInt(o) : o)) * 100),
+                    ((f = document.createElement('div')).className = s),
+                    ((d = f.style).position = 'relative'),
+                    (d.width = '100%'),
+                    (d.paddingTop = r + '%'),
+                    ((l = e.style).position = 'absolute'),
+                    (l.width = '100%'),
+                    (l.height = '100%'),
+                    (l.left = '0'),
+                    (l.top = '0'),
+                    null !== (t = e.parentNode) && void 0 !== t && t.insertBefore(f, e),
+                    null !== (n = e.parentNode) && void 0 !== n && n.removeChild(e),
+                    f.appendChild(e));
+            })
+        );
+    };
+});
+
+/*! smooth-scroll v16.1.0 | (c) 2019 Chris Ferdinandi | MIT License | http://github.com/cferdinandi/smooth-scroll */
+window.Element &&
+    !Element.prototype.closest &&
+    (Element.prototype.closest = function (e) {
+        var t,
+            n = (this.document || this.ownerDocument).querySelectorAll(e),
+            o = this;
+        do {
+            for (t = n.length; 0 <= --t && n.item(t) !== o; );
+        } while (t < 0 && (o = o.parentElement));
+        return o;
+    }),
+    (function () {
+        if ('function' == typeof window.CustomEvent) return;
+        function e(e, t) {
+            t = t || { bubbles: !1, cancelable: !1, detail: void 0 };
+            var n = document.createEvent('CustomEvent');
+            return n.initCustomEvent(e, t.bubbles, t.cancelable, t.detail), n;
+        }
+        (e.prototype = window.Event.prototype), (window.CustomEvent = e);
+    })(),
+    (function () {
+        for (var r = 0, e = ['ms', 'moz', 'webkit', 'o'], t = 0; t < e.length && !window.requestAnimationFrame; ++t)
+            (window.requestAnimationFrame = window[e[t] + 'RequestAnimationFrame']),
+                (window.cancelAnimationFrame = window[e[t] + 'CancelAnimationFrame'] || window[e[t] + 'CancelRequestAnimationFrame']);
+        window.requestAnimationFrame ||
+            (window.requestAnimationFrame = function (e, t) {
+                var n = new Date().getTime(),
+                    o = Math.max(0, 16 - (n - r)),
+                    a = window.setTimeout(function () {
+                        e(n + o);
+                    }, o);
+                return (r = n + o), a;
+            }),
+            window.cancelAnimationFrame ||
+                (window.cancelAnimationFrame = function (e) {
+                    clearTimeout(e);
+                });
+    })(),
+    (function (e, t) {
+        'function' == typeof define && define.amd
+            ? define([], function () {
+                  return t(e);
+              })
+            : 'object' == typeof exports
+            ? (module.exports = t(e))
+            : (e.SmoothScroll = t(e));
+    })('undefined' != typeof global ? global : 'undefined' != typeof window ? window : this, function (q) {
+        'use strict';
+        var I = {
+                ignore: '[data-scroll-ignore]',
+                header: null,
+                topOnEmptyHash: !0,
+                speed: 500,
+                speedAsDuration: !1,
+                durationMax: null,
+                durationMin: null,
+                clip: !0,
+                offset: 0,
+                easing: 'easeInOutCubic',
+                customEasing: null,
+                updateURL: !0,
+                popstate: !0,
+                emitEvents: !0
+            },
+            F = function () {
+                var n = {};
+                return (
+                    Array.prototype.forEach.call(arguments, function (e) {
+                        for (var t in e) {
+                            if (!e.hasOwnProperty(t)) return;
+                            n[t] = e[t];
+                        }
+                    }),
+                    n
+                );
+            },
+            r = function (e) {
+                '#' === e.charAt(0) && (e = e.substr(1));
+                for (var t, n = String(e), o = n.length, a = -1, r = '', i = n.charCodeAt(0); ++a < o; ) {
+                    if (0 === (t = n.charCodeAt(a))) throw new InvalidCharacterError('Invalid character: the input contains U+0000.');
+                    (1 <= t && t <= 31) || 127 == t || (0 === a && 48 <= t && t <= 57) || (1 === a && 48 <= t && t <= 57 && 45 === i)
+                        ? (r += '\\' + t.toString(16) + ' ')
+                        : (r +=
+                              128 <= t || 45 === t || 95 === t || (48 <= t && t <= 57) || (65 <= t && t <= 90) || (97 <= t && t <= 122)
+                                  ? n.charAt(a)
+                                  : '\\' + n.charAt(a));
+                }
+                return '#' + r;
+            },
+            L = function () {
+                return Math.max(
+                    document.body.scrollHeight,
+                    document.documentElement.scrollHeight,
+                    document.body.offsetHeight,
+                    document.documentElement.offsetHeight,
+                    document.body.clientHeight,
+                    document.documentElement.clientHeight
+                );
+            },
+            x = function (e) {
+                return e ? ((t = e), parseInt(q.getComputedStyle(t).height, 10) + e.offsetTop) : 0;
+                var t;
+            },
+            H = function (e, t, n, o) {
+                if (t.emitEvents && 'function' == typeof q.CustomEvent) {
+                    var a = new CustomEvent(e, {
+                        bubbles: !0,
+                        detail: { anchor: n, toggle: o }
+                    });
+                    document.dispatchEvent(a);
+                }
+            };
+        return function (o, e) {
+            var A,
+                a,
+                O,
+                C,
+                M = {};
+            (M.cancelScroll = function (e) {
+                cancelAnimationFrame(C), (C = null), e || H('scrollCancel', A);
+            }),
+                (M.animateScroll = function (i, c, e) {
+                    M.cancelScroll();
+                    var s = F(A || I, e || {}),
+                        u = '[object Number]' === Object.prototype.toString.call(i),
+                        t = u || !i.tagName ? null : i;
+                    if (u || t) {
+                        var l = q.pageYOffset;
+                        s.header && !O && (O = document.querySelector(s.header));
+                        var n,
+                            o,
+                            a,
+                            m,
+                            r,
+                            d,
+                            f,
+                            h,
+                            p = x(O),
+                            g = u
+                                ? i
+                                : (function (e, t, n, o) {
+                                      var a = 0;
+                                      if (e.offsetParent) for (; (a += e.offsetTop), (e = e.offsetParent); );
+                                      return (a = Math.max(a - t - n, 0)), o && (a = Math.min(a, L() - q.innerHeight)), a;
+                                  })(t, p, parseInt('function' == typeof s.offset ? s.offset(i, c) : s.offset, 10), s.clip),
+                            y = g - l,
+                            v = L(),
+                            w = 0,
+                            S =
+                                ((n = y),
+                                (a = (o = s).speedAsDuration ? o.speed : Math.abs((n / 1e3) * o.speed)),
+                                o.durationMax && a > o.durationMax ? o.durationMax : o.durationMin && a < o.durationMin ? o.durationMin : parseInt(a, 10)),
+                            E = function (e, t) {
+                                var n,
+                                    o,
+                                    a,
+                                    r = q.pageYOffset;
+                                if (e == t || r == t || (l < t && q.innerHeight + r) >= v)
+                                    return (
+                                        M.cancelScroll(!0),
+                                        (o = t),
+                                        (a = u),
+                                        0 === (n = i) && document.body.focus(),
+                                        a ||
+                                            (n.focus(),
+                                            document.activeElement !== n && (n.setAttribute('tabindex', '-1'), n.focus(), (n.style.outline = 'none')),
+                                            q.scrollTo(0, o)),
+                                        H('scrollStop', s, i, c),
+                                        !(C = m = null)
+                                    );
+                            },
+                            b = function (e) {
+                                var t, n, o;
+                                m || (m = e),
+                                    (w += e - m),
+                                    (d =
+                                        l +
+                                        y *
+                                            ((n = r = 1 < (r = 0 === S ? 0 : w / S) ? 1 : r),
+                                            'easeInQuad' === (t = s).easing && (o = n * n),
+                                            'easeOutQuad' === t.easing && (o = n * (2 - n)),
+                                            'easeInOutQuad' === t.easing && (o = n < 0.5 ? 2 * n * n : (4 - 2 * n) * n - 1),
+                                            'easeInCubic' === t.easing && (o = n * n * n),
+                                            'easeOutCubic' === t.easing && (o = --n * n * n + 1),
+                                            'easeInOutCubic' === t.easing && (o = n < 0.5 ? 4 * n * n * n : (n - 1) * (2 * n - 2) * (2 * n - 2) + 1),
+                                            'easeInQuart' === t.easing && (o = n * n * n * n),
+                                            'easeOutQuart' === t.easing && (o = 1 - --n * n * n * n),
+                                            'easeInOutQuart' === t.easing && (o = n < 0.5 ? 8 * n * n * n * n : 1 - 8 * --n * n * n * n),
+                                            'easeInQuint' === t.easing && (o = n * n * n * n * n),
+                                            'easeOutQuint' === t.easing && (o = 1 + --n * n * n * n * n),
+                                            'easeInOutQuint' === t.easing && (o = n < 0.5 ? 16 * n * n * n * n * n : 1 + 16 * --n * n * n * n * n),
+                                            t.customEasing && (o = t.customEasing(n)),
+                                            o || n)),
+                                    q.scrollTo(0, Math.floor(d)),
+                                    E(d, g) || ((C = q.requestAnimationFrame(b)), (m = e));
+                            };
+                        0 === q.pageYOffset && q.scrollTo(0, 0),
+                            (f = i),
+                            (h = s),
+                            u ||
+                                (history.pushState &&
+                                    h.updateURL &&
+                                    history.pushState(
+                                        { smoothScroll: JSON.stringify(h), anchor: f.id },
+                                        document.title,
+                                        f === document.documentElement ? '#top' : '#' + f.id
+                                    )),
+                            'matchMedia' in q && q.matchMedia('(prefers-reduced-motion)').matches
+                                ? q.scrollTo(0, Math.floor(g))
+                                : (H('scrollStart', s, i, c), M.cancelScroll(!0), q.requestAnimationFrame(b));
+                    }
+                });
+            var t = function (e) {
+                    if (
+                        !e.defaultPrevented &&
+                        !(0 !== e.button || e.metaKey || e.ctrlKey || e.shiftKey) &&
+                        'closest' in e.target &&
+                        (a = e.target.closest(o)) &&
+                        'a' === a.tagName.toLowerCase() &&
+                        !e.target.closest(A.ignore) &&
+                        a.hostname === q.location.hostname &&
+                        a.pathname === q.location.pathname &&
+                        /#/.test(a.href)
+                    ) {
+                        var t,
+                            n = r(a.hash);
+                        if ('#' === n) {
+                            if (!A.topOnEmptyHash) return;
+                            t = document.documentElement;
+                        } else t = document.querySelector(n);
+                        (t = t || '#top' !== n ? t : document.documentElement) &&
+                            (e.preventDefault(),
+                            (function (e) {
+                                if (history.replaceState && e.updateURL && !history.state) {
+                                    var t = q.location.hash;
+                                    (t = t || ''),
+                                        history.replaceState(
+                                            {
+                                                smoothScroll: JSON.stringify(e),
+                                                anchor: t || q.pageYOffset
+                                            },
+                                            document.title,
+                                            t || q.location.href
+                                        );
+                                }
+                            })(A),
+                            M.animateScroll(t, a));
+                    }
+                },
+                n = function (e) {
+                    if (null !== history.state && history.state.smoothScroll && history.state.smoothScroll === JSON.stringify(A)) {
+                        var t = history.state.anchor;
+                        ('string' == typeof t && t && !(t = document.querySelector(r(history.state.anchor)))) || M.animateScroll(t, null, { updateURL: !1 });
+                    }
+                };
+            M.destroy = function () {
+                A && (document.removeEventListener('click', t, !1), q.removeEventListener('popstate', n, !1), M.cancelScroll(), (C = O = a = A = null));
+            };
+            return (
+                (function () {
+                    if (!('querySelector' in document && 'addEventListener' in q && 'requestAnimationFrame' in q && 'closest' in q.Element.prototype))
+                        throw 'Smooth Scroll: This browser does not support the required JavaScript methods and browser APIs.';
+                    M.destroy(),
+                        (A = F(I, e || {})),
+                        (O = A.header ? document.querySelector(A.header) : null),
+                        document.addEventListener('click', t, !1),
+                        A.updateURL && A.popstate && q.addEventListener('popstate', n, !1);
+                })(),
+                M
+            );
+        };
+    });
+
+/*! gumshoejs v5.1.1 | (c) 2019 Chris Ferdinandi | MIT License | http://github.com/cferdinandi/gumshoe */
+Element.prototype.closest ||
+    (Element.prototype.matches || (Element.prototype.matches = Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector),
+    (Element.prototype.closest = function (t) {
+        var e = this;
+        if (!document.documentElement.contains(this)) return null;
+        do {
+            if (e.matches(t)) return e;
+            e = e.parentElement;
+        } while (null !== e);
+        return null;
+    })),
+    (function () {
+        if ('function' == typeof window.CustomEvent) return !1;
+        function t(t, e) {
+            e = e || { bubbles: !1, cancelable: !1, detail: void 0 };
+            var n = document.createEvent('CustomEvent');
+            return n.initCustomEvent(t, e.bubbles, e.cancelable, e.detail), n;
+        }
+        (t.prototype = window.Event.prototype), (window.CustomEvent = t);
+    })(),
+    (function (t, e) {
+        'function' == typeof define && define.amd
+            ? define([], function () {
+                  return e(t);
+              })
+            : 'object' == typeof exports
+            ? (module.exports = e(t))
+            : (t.Gumshoe = e(t));
+    })('undefined' != typeof global ? global : 'undefined' != typeof window ? window : this, function (t) {
+        'use strict';
+        var e = {
+                navClass: 'active',
+                contentClass: 'active',
+                nested: !1,
+                nestedClass: 'active',
+                offset: 0,
+                reflow: !1,
+                events: !0
+            },
+            n = function (t, e, n) {
+                if (n.settings.events) {
+                    var o = new CustomEvent(t, {
+                        bubbles: !0,
+                        cancelable: !0,
+                        detail: n
+                    });
+                    e.dispatchEvent(o);
+                }
+            },
+            o = function (t) {
+                var e = 0;
+                if (t.offsetParent) for (; t; ) (e += t.offsetTop), (t = t.offsetParent);
+                return e >= 0 ? e : 0;
+            },
+            s = function (t) {
+                t &&
+                    t.sort(function (t, e) {
+                        return o(t.content) < o(e.content) ? -1 : 1;
+                    });
+            },
+            c = function (e, n, o) {
+                var s = e.getBoundingClientRect(),
+                    c = (function (t) {
+                        return 'function' == typeof t.offset ? parseFloat(t.offset()) : parseFloat(t.offset);
+                    })(n);
+                return o ? parseInt(s.bottom, 10) < (t.innerHeight || document.documentElement.clientHeight) : parseInt(s.top, 10) <= c;
+            },
+            r = function () {
+                return (
+                    t.innerHeight + t.pageYOffset >=
+                    Math.max(
+                        document.body.scrollHeight,
+                        document.documentElement.scrollHeight,
+                        document.body.offsetHeight,
+                        document.documentElement.offsetHeight,
+                        document.body.clientHeight,
+                        document.documentElement.clientHeight
+                    )
+                );
+            },
+            i = function (t, e) {
+                var n = t[t.length - 1];
+                if (
+                    (function (t, e) {
+                        return !(!r() || !c(t.content, e, !0));
+                    })(n, e)
+                )
+                    return n;
+                for (var o = t.length - 1; o >= 0; o--) if (c(t[o].content, e)) return t[o];
+            },
+            l = function (t, e) {
+                if (e.nested) {
+                    var n = t.parentNode.closest('li');
+                    n && (n.classList.remove(e.nestedClass), l(n, e));
+                }
+            },
+            a = function (t, e) {
+                if (t) {
+                    var o = t.nav.closest('li');
+                    o &&
+                        (o.classList.remove(e.navClass),
+                        t.content.classList.remove(e.contentClass),
+                        l(o, e),
+                        n('gumshoeDeactivate', o, {
+                            link: t.nav,
+                            content: t.content,
+                            settings: e
+                        }));
+                }
+            },
+            u = function (t, e) {
+                if (e.nested) {
+                    var n = t.parentNode.closest('li');
+                    n && (n.classList.add(e.nestedClass), u(n, e));
+                }
+            };
+        return function (o, c) {
+            var r,
+                l,
+                f,
+                d,
+                m,
+                v = {};
+            (v.setup = function () {
+                (r = document.querySelectorAll(o)),
+                    (l = []),
+                    Array.prototype.forEach.call(r, function (t) {
+                        var e = document.getElementById(decodeURIComponent(t.hash.substr(1)));
+                        e && l.push({ nav: t, content: e });
+                    }),
+                    s(l);
+            }),
+                (v.detect = function () {
+                    var t = i(l, m);
+                    t
+                        ? (f && t.content === f.content) ||
+                          (a(f, m),
+                          (function (t, e) {
+                              if (t) {
+                                  var o = t.nav.closest('li');
+                                  o &&
+                                      (o.classList.add(e.navClass),
+                                      t.content.classList.add(e.contentClass),
+                                      u(o, e),
+                                      n('gumshoeActivate', o, {
+                                          link: t.nav,
+                                          content: t.content,
+                                          settings: e
+                                      }));
+                              }
+                          })(t, m),
+                          (f = t))
+                        : f && (a(f, m), (f = null));
+                });
+            var p = function (e) {
+                    d && t.cancelAnimationFrame(d), (d = t.requestAnimationFrame(v.detect));
+                },
+                h = function (e) {
+                    d && t.cancelAnimationFrame(d),
+                        (d = t.requestAnimationFrame(function () {
+                            s(l), v.detect();
+                        }));
+                };
+            v.destroy = function () {
+                f && a(f, m),
+                    t.removeEventListener('scroll', p, !1),
+                    m.reflow && t.removeEventListener('resize', h, !1),
+                    (l = null),
+                    (r = null),
+                    (f = null),
+                    (d = null),
+                    (m = null);
+            };
+            return (
+                (m = (function () {
+                    var t = {};
+                    return (
+                        Array.prototype.forEach.call(arguments, function (e) {
+                            for (var n in e) {
+                                if (!e.hasOwnProperty(n)) return;
+                                t[n] = e[n];
+                            }
+                        }),
+                        t
+                    );
+                })(e, c || {})),
+                v.setup(),
+                v.detect(),
+                t.addEventListener('scroll', p, !1),
+                m.reflow && t.addEventListener('resize', h, !1),
+                v
+            );
+        };
+    });
+
+/*!
+ * clipboard.js v2.0.4
+ * https://zenorocha.github.io/clipboard.js
+ *
+ * Licensed MIT © Zeno Rocha
+ */
+!(function (t, e) {
+    'object' == typeof exports && 'object' == typeof module
+        ? (module.exports = e())
+        : 'function' == typeof define && define.amd
+        ? define([], e)
+        : 'object' == typeof exports
+        ? (exports.ClipboardJS = e())
+        : (t.ClipboardJS = e());
+})(this, function () {
+    return (function (n) {
+        var o = {};
+        function r(t) {
+            if (o[t]) return o[t].exports;
+            var e = (o[t] = { i: t, l: !1, exports: {} });
+            return n[t].call(e.exports, e, e.exports, r), (e.l = !0), e.exports;
+        }
+        return (
+            (r.m = n),
+            (r.c = o),
+            (r.d = function (t, e, n) {
+                r.o(t, e) || Object.defineProperty(t, e, { enumerable: !0, get: n });
+            }),
+            (r.r = function (t) {
+                'undefined' != typeof Symbol &&
+                    Symbol.toStringTag &&
+                    Object.defineProperty(t, Symbol.toStringTag, {
+                        value: 'Module'
+                    }),
+                    Object.defineProperty(t, '__esModule', { value: !0 });
+            }),
+            (r.t = function (e, t) {
+                if ((1 & t && (e = r(e)), 8 & t)) return e;
+                if (4 & t && 'object' == typeof e && e && e.__esModule) return e;
+                var n = Object.create(null);
+                if (
+                    (r.r(n),
+                    Object.defineProperty(n, 'default', {
+                        enumerable: !0,
+                        value: e
+                    }),
+                    2 & t && 'string' != typeof e)
+                )
+                    for (var o in e)
+                        r.d(
+                            n,
+                            o,
+                            function (t) {
+                                return e[t];
+                            }.bind(null, o)
+                        );
+                return n;
+            }),
+            (r.n = function (t) {
+                var e =
+                    t && t.__esModule
+                        ? function () {
+                              return t.default;
+                          }
+                        : function () {
+                              return t;
+                          };
+                return r.d(e, 'a', e), e;
+            }),
+            (r.o = function (t, e) {
+                return Object.prototype.hasOwnProperty.call(t, e);
+            }),
+            (r.p = ''),
+            r((r.s = 0))
+        );
+    })([
+        function (t, e, n) {
+            'use strict';
+            var r =
+                    'function' == typeof Symbol && 'symbol' == typeof Symbol.iterator
+                        ? function (t) {
+                              return typeof t;
+                          }
+                        : function (t) {
+                              return t && 'function' == typeof Symbol && t.constructor === Symbol && t !== Symbol.prototype ? 'symbol' : typeof t;
+                          },
+                i = (function () {
+                    function o(t, e) {
+                        for (var n = 0; n < e.length; n++) {
+                            var o = e[n];
+                            (o.enumerable = o.enumerable || !1), (o.configurable = !0), 'value' in o && (o.writable = !0), Object.defineProperty(t, o.key, o);
+                        }
+                    }
+                    return function (t, e, n) {
+                        return e && o(t.prototype, e), n && o(t, n), t;
+                    };
+                })(),
+                a = o(n(1)),
+                c = o(n(3)),
+                u = o(n(4));
+            function o(t) {
+                return t && t.__esModule ? t : { default: t };
+            }
+            var l = (function (t) {
+                function o(t, e) {
+                    !(function (t, e) {
+                        if (!(t instanceof e)) throw new TypeError('Cannot call a class as a function');
+                    })(this, o);
+                    var n = (function (t, e) {
+                        if (!t) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+                        return !e || ('object' != typeof e && 'function' != typeof e) ? t : e;
+                    })(this, (o.__proto__ || Object.getPrototypeOf(o)).call(this));
+                    return n.resolveOptions(e), n.listenClick(t), n;
+                }
+                return (
+                    (function (t, e) {
+                        if ('function' != typeof e && null !== e) throw new TypeError('Super expression must either be null or a function, not ' + typeof e);
+                        (t.prototype = Object.create(e && e.prototype, {
+                            constructor: {
+                                value: t,
+                                enumerable: !1,
+                                writable: !0,
+                                configurable: !0
+                            }
+                        })),
+                            e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : (t.__proto__ = e));
+                    })(o, c.default),
+                    i(
+                        o,
+                        [
+                            {
+                                key: 'resolveOptions',
+                                value: function () {
+                                    var t = 0 < arguments.length && void 0 !== arguments[0] ? arguments[0] : {};
+                                    (this.action = 'function' == typeof t.action ? t.action : this.defaultAction),
+                                        (this.target = 'function' == typeof t.target ? t.target : this.defaultTarget),
+                                        (this.text = 'function' == typeof t.text ? t.text : this.defaultText),
+                                        (this.container = 'object' === r(t.container) ? t.container : document.body);
+                                }
+                            },
+                            {
+                                key: 'listenClick',
+                                value: function (t) {
+                                    var e = this;
+                                    this.listener = (0, u.default)(t, 'click', function (t) {
+                                        return e.onClick(t);
+                                    });
+                                }
+                            },
+                            {
+                                key: 'onClick',
+                                value: function (t) {
+                                    var e = t.delegateTarget || t.currentTarget;
+                                    this.clipboardAction && (this.clipboardAction = null),
+                                        (this.clipboardAction = new a.default({
+                                            action: this.action(e),
+                                            target: this.target(e),
+                                            text: this.text(e),
+                                            container: this.container,
+                                            trigger: e,
+                                            emitter: this
+                                        }));
+                                }
+                            },
+                            {
+                                key: 'defaultAction',
+                                value: function (t) {
+                                    return s('action', t);
+                                }
+                            },
+                            {
+                                key: 'defaultTarget',
+                                value: function (t) {
+                                    var e = s('target', t);
+                                    if (e) return document.querySelector(e);
+                                }
+                            },
+                            {
+                                key: 'defaultText',
+                                value: function (t) {
+                                    return s('text', t);
+                                }
+                            },
+                            {
+                                key: 'destroy',
+                                value: function () {
+                                    this.listener.destroy(), this.clipboardAction && (this.clipboardAction.destroy(), (this.clipboardAction = null));
+                                }
+                            }
+                        ],
+                        [
+                            {
+                                key: 'isSupported',
+                                value: function () {
+                                    var t = 0 < arguments.length && void 0 !== arguments[0] ? arguments[0] : ['copy', 'cut'],
+                                        e = 'string' == typeof t ? [t] : t,
+                                        n = !!document.queryCommandSupported;
+                                    return (
+                                        e.forEach(function (t) {
+                                            n = n && !!document.queryCommandSupported(t);
+                                        }),
+                                        n
+                                    );
+                                }
+                            }
+                        ]
+                    ),
+                    o
+                );
+            })();
+            function s(t, e) {
+                var n = 'data-clipboard-' + t;
+                if (e.hasAttribute(n)) return e.getAttribute(n);
+            }
+            t.exports = l;
+        },
+        function (t, e, n) {
+            'use strict';
+            var o,
+                r =
+                    'function' == typeof Symbol && 'symbol' == typeof Symbol.iterator
+                        ? function (t) {
+                              return typeof t;
+                          }
+                        : function (t) {
+                              return t && 'function' == typeof Symbol && t.constructor === Symbol && t !== Symbol.prototype ? 'symbol' : typeof t;
+                          },
+                i = (function () {
+                    function o(t, e) {
+                        for (var n = 0; n < e.length; n++) {
+                            var o = e[n];
+                            (o.enumerable = o.enumerable || !1), (o.configurable = !0), 'value' in o && (o.writable = !0), Object.defineProperty(t, o.key, o);
+                        }
+                    }
+                    return function (t, e, n) {
+                        return e && o(t.prototype, e), n && o(t, n), t;
+                    };
+                })(),
+                a = n(2),
+                c = (o = a) && o.__esModule ? o : { default: o };
+            var u = (function () {
+                function e(t) {
+                    !(function (t, e) {
+                        if (!(t instanceof e)) throw new TypeError('Cannot call a class as a function');
+                    })(this, e),
+                        this.resolveOptions(t),
+                        this.initSelection();
+                }
+                return (
+                    i(e, [
+                        {
+                            key: 'resolveOptions',
+                            value: function () {
+                                var t = 0 < arguments.length && void 0 !== arguments[0] ? arguments[0] : {};
+                                (this.action = t.action),
+                                    (this.container = t.container),
+                                    (this.emitter = t.emitter),
+                                    (this.target = t.target),
+                                    (this.text = t.text),
+                                    (this.trigger = t.trigger),
+                                    (this.selectedText = '');
+                            }
+                        },
+                        {
+                            key: 'initSelection',
+                            value: function () {
+                                this.text ? this.selectFake() : this.target && this.selectTarget();
+                            }
+                        },
+                        {
+                            key: 'selectFake',
+                            value: function () {
+                                var t = this,
+                                    e = 'rtl' == document.documentElement.getAttribute('dir');
+                                this.removeFake(),
+                                    (this.fakeHandlerCallback = function () {
+                                        return t.removeFake();
+                                    }),
+                                    (this.fakeHandler = this.container.addEventListener('click', this.fakeHandlerCallback) || !0),
+                                    (this.fakeElem = document.createElement('textarea')),
+                                    (this.fakeElem.style.fontSize = '12pt'),
+                                    (this.fakeElem.style.border = '0'),
+                                    (this.fakeElem.style.padding = '0'),
+                                    (this.fakeElem.style.margin = '0'),
+                                    (this.fakeElem.style.position = 'absolute'),
+                                    (this.fakeElem.style[e ? 'right' : 'left'] = '-9999px');
+                                var n = window.pageYOffset || document.documentElement.scrollTop;
+                                (this.fakeElem.style.top = n + 'px'),
+                                    this.fakeElem.setAttribute('readonly', ''),
+                                    (this.fakeElem.value = this.text),
+                                    this.container.appendChild(this.fakeElem),
+                                    (this.selectedText = (0, c.default)(this.fakeElem)),
+                                    this.copyText();
+                            }
+                        },
+                        {
+                            key: 'removeFake',
+                            value: function () {
+                                this.fakeHandler &&
+                                    (this.container.removeEventListener('click', this.fakeHandlerCallback),
+                                    (this.fakeHandler = null),
+                                    (this.fakeHandlerCallback = null)),
+                                    this.fakeElem && (this.container.removeChild(this.fakeElem), (this.fakeElem = null));
+                            }
+                        },
+                        {
+                            key: 'selectTarget',
+                            value: function () {
+                                (this.selectedText = (0, c.default)(this.target)), this.copyText();
+                            }
+                        },
+                        {
+                            key: 'copyText',
+                            value: function () {
+                                var e = void 0;
+                                try {
+                                    e = document.execCommand(this.action);
+                                } catch (t) {
+                                    e = !1;
+                                }
+                                this.handleResult(e);
+                            }
+                        },
+                        {
+                            key: 'handleResult',
+                            value: function (t) {
+                                this.emitter.emit(t ? 'success' : 'error', {
+                                    action: this.action,
+                                    text: this.selectedText,
+                                    trigger: this.trigger,
+                                    clearSelection: this.clearSelection.bind(this)
+                                });
+                            }
+                        },
+                        {
+                            key: 'clearSelection',
+                            value: function () {
+                                this.trigger && this.trigger.focus(), window.getSelection().removeAllRanges();
+                            }
+                        },
+                        {
+                            key: 'destroy',
+                            value: function () {
+                                this.removeFake();
+                            }
+                        },
+                        {
+                            key: 'action',
+                            set: function () {
+                                var t = 0 < arguments.length && void 0 !== arguments[0] ? arguments[0] : 'copy';
+                                if (((this._action = t), 'copy' !== this._action && 'cut' !== this._action))
+                                    throw new Error('Invalid "action" value, use either "copy" or "cut"');
+                            },
+                            get: function () {
+                                return this._action;
+                            }
+                        },
+                        {
+                            key: 'target',
+                            set: function (t) {
+                                if (void 0 !== t) {
+                                    if (!t || 'object' !== (void 0 === t ? 'undefined' : r(t)) || 1 !== t.nodeType)
+                                        throw new Error('Invalid "target" value, use a valid Element');
+                                    if ('copy' === this.action && t.hasAttribute('disabled'))
+                                        throw new Error('Invalid "target" attribute. Please use "readonly" instead of "disabled" attribute');
+                                    if ('cut' === this.action && (t.hasAttribute('readonly') || t.hasAttribute('disabled')))
+                                        throw new Error(
+                                            'Invalid "target" attribute. You can\'t cut text from elements with "readonly" or "disabled" attributes'
+                                        );
+                                    this._target = t;
+                                }
+                            },
+                            get: function () {
+                                return this._target;
+                            }
+                        }
+                    ]),
+                    e
+                );
+            })();
+            t.exports = u;
+        },
+        function (t, e) {
+            t.exports = function (t) {
+                var e;
+                if ('SELECT' === t.nodeName) t.focus(), (e = t.value);
+                else if ('INPUT' === t.nodeName || 'TEXTAREA' === t.nodeName) {
+                    var n = t.hasAttribute('readonly');
+                    n || t.setAttribute('readonly', ''), t.select(), t.setSelectionRange(0, t.value.length), n || t.removeAttribute('readonly'), (e = t.value);
+                } else {
+                    t.hasAttribute('contenteditable') && t.focus();
+                    var o = window.getSelection(),
+                        r = document.createRange();
+                    r.selectNodeContents(t), o.removeAllRanges(), o.addRange(r), (e = o.toString());
+                }
+                return e;
+            };
+        },
+        function (t, e) {
+            function n() {}
+            (n.prototype = {
+                on: function (t, e, n) {
+                    var o = this.e || (this.e = {});
+                    return (o[t] || (o[t] = [])).push({ fn: e, ctx: n }), this;
+                },
+                once: function (t, e, n) {
+                    var o = this;
+                    function r() {
+                        o.off(t, r), e.apply(n, arguments);
+                    }
+                    return (r._ = e), this.on(t, r, n);
+                },
+                emit: function (t) {
+                    for (var e = [].slice.call(arguments, 1), n = ((this.e || (this.e = {}))[t] || []).slice(), o = 0, r = n.length; o < r; o++)
+                        n[o].fn.apply(n[o].ctx, e);
+                    return this;
+                },
+                off: function (t, e) {
+                    var n = this.e || (this.e = {}),
+                        o = n[t],
+                        r = [];
+                    if (o && e) for (var i = 0, a = o.length; i < a; i++) o[i].fn !== e && o[i].fn._ !== e && r.push(o[i]);
+                    return r.length ? (n[t] = r) : delete n[t], this;
+                }
+            }),
+                (t.exports = n);
+        },
+        function (t, e, n) {
+            var d = n(5),
+                h = n(6);
+            t.exports = function (t, e, n) {
+                if (!t && !e && !n) throw new Error('Missing required arguments');
+                if (!d.string(e)) throw new TypeError('Second argument must be a String');
+                if (!d.fn(n)) throw new TypeError('Third argument must be a Function');
+                if (d.node(t))
+                    return (
+                        (s = e),
+                        (f = n),
+                        (l = t).addEventListener(s, f),
+                        {
+                            destroy: function () {
+                                l.removeEventListener(s, f);
+                            }
+                        }
+                    );
+                if (d.nodeList(t))
+                    return (
+                        (a = t),
+                        (c = e),
+                        (u = n),
+                        Array.prototype.forEach.call(a, function (t) {
+                            t.addEventListener(c, u);
+                        }),
+                        {
+                            destroy: function () {
+                                Array.prototype.forEach.call(a, function (t) {
+                                    t.removeEventListener(c, u);
+                                });
+                            }
+                        }
+                    );
+                if (d.string(t)) return (o = t), (r = e), (i = n), h(document.body, o, r, i);
+                throw new TypeError('First argument must be a String, HTMLElement, HTMLCollection, or NodeList');
+                var o, r, i, a, c, u, l, s, f;
+            };
+        },
+        function (t, n) {
+            (n.node = function (t) {
+                return void 0 !== t && t instanceof HTMLElement && 1 === t.nodeType;
+            }),
+                (n.nodeList = function (t) {
+                    var e = Object.prototype.toString.call(t);
+                    return void 0 !== t && ('[object NodeList]' === e || '[object HTMLCollection]' === e) && 'length' in t && (0 === t.length || n.node(t[0]));
+                }),
+                (n.string = function (t) {
+                    return 'string' == typeof t || t instanceof String;
+                }),
+                (n.fn = function (t) {
+                    return '[object Function]' === Object.prototype.toString.call(t);
+                });
+        },
+        function (t, e, n) {
+            var a = n(7);
+            function i(t, e, n, o, r) {
+                var i = function (e, n, t, o) {
+                    return function (t) {
+                        (t.delegateTarget = a(t.target, n)), t.delegateTarget && o.call(e, t);
+                    };
+                }.apply(this, arguments);
+                return (
+                    t.addEventListener(n, i, r),
+                    {
+                        destroy: function () {
+                            t.removeEventListener(n, i, r);
+                        }
+                    }
+                );
+            }
+            t.exports = function (t, e, n, o, r) {
+                return 'function' == typeof t.addEventListener
+                    ? i.apply(null, arguments)
+                    : 'function' == typeof n
+                    ? i.bind(null, document).apply(null, arguments)
+                    : ('string' == typeof t && (t = document.querySelectorAll(t)),
+                      Array.prototype.map.call(t, function (t) {
+                          return i(t, e, n, o, r);
+                      }));
+            };
+        },
+        function (t, e) {
+            if ('undefined' != typeof Element && !Element.prototype.matches) {
+                var n = Element.prototype;
+                n.matches = n.matchesSelector || n.mozMatchesSelector || n.msMatchesSelector || n.oMatchesSelector || n.webkitMatchesSelector;
+            }
+            t.exports = function (t, e) {
+                for (; t && 9 !== t.nodeType; ) {
+                    if ('function' == typeof t.matches && t.matches(e)) return t;
+                    t = t.parentNode;
+                }
+            };
+        }
+    ]);
+});
+```
+
+---
+
+---
+
+# Prism.js
+
+      ```js
+      /* PrismJS 1.16.0
+
+https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript&plugins=toolbar+copy-to-clipboard _/
+var \_self = 'undefined' != typeof window ? window : 'undefined' != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? self : {},
+Prism = (function (g) {
+var c = /\blang(?:uage)?-([\w-]+)\b/i,
+a = 0,
+C = {
+manual: g.Prism && g.Prism.manual,
+disableWorkerMessageHandler: g.Prism && g.Prism.disableWorkerMessageHandler,
+util: {
+encode: function (e) {
+return e instanceof M
+? new M(e.type, C.util.encode(e.content), e.alias)
+: Array.isArray(e)
+? e.map(C.util.encode)
+: e
+.replace(/&/g, '&amp;')
+.replace(/</g, '&lt;')
+.replace(/\u00a0/g, ' ');
+},
+type: function (e) {
+return Object.prototype.toString.call(e).slice(8, -1);
+},
+objId: function (e) {
+return e.**id || Object.defineProperty(e, '**id', { value: ++a }), e.\_\_id;
+},
+clone: function n(e, t) {
+var r,
+a,
+i = C.util.type(e);
+switch (((t = t || {}), i)) {
+case 'Object':
+if (((a = C.util.objId(e)), t[a])) return t[a];
+for (var l in ((r = {}), (t[a] = r), e)) e.hasOwnProperty(l) && (r[l] = n(e[l], t));
+return r;
+case 'Array':
+return (
+(a = C.util.objId(e)),
+t[a]
+? t[a]
+: ((r = []),
+(t[a] = r),
+e.forEach(function (e, a) {
+r[a] = n(e, t);
+}),
+r)
+);
+default:
+return e;
+}
+}
+},
+languages: {
+extend: function (e, a) {
+var n = C.util.clone(C.languages[e]);
+for (var t in a) n[t] = a[t];
+return n;
+},
+insertBefore: function (n, e, a, t) {
+var r = (t = t || C.languages)[n],
+i = {};
+for (var l in r)
+if (r.hasOwnProperty(l)) {
+if (l == e) for (var o in a) a.hasOwnProperty(o) && (i[o] = a[o]);
+a.hasOwnProperty(l) || (i[l] = r[l]);
+}
+var s = t[n];
+return (
+(t[n] = i),
+C.languages.DFS(C.languages, function (e, a) {
+a === s && e != n && (this[e] = i);
+}),
+i
+);
+},
+DFS: function e(a, n, t, r) {
+r = r || {};
+var i = C.util.objId;
+for (var l in a)
+if (a.hasOwnProperty(l)) {
+n.call(a, l, a[l], t || l);
+var o = a[l],
+s = C.util.type(o);
+'Object' !== s || r[i(o)] ? 'Array' !== s || r[i(o)] || ((r[i(o)] = !0), e(o, n, l, r)) : ((r[i(o)] = !0), e(o, n, null, r));
+}
+}
+},
+plugins: {},
+highlightAll: function (e, a) {
+C.highlightAllUnder(document, e, a);
+},
+highlightAllUnder: function (e, a, n) {
+var t = {
+callback: n,
+selector: 'code[class_="language-"], [class*="language-"] code, code[class*="lang-"], [class*="lang-"] code'
+};
+C.hooks.run('before-highlightall', t);
+for (var r, i = t.elements || e.querySelectorAll(t.selector), l = 0; (r = i[l++]); ) C.highlightElement(r, !0 === a, t.callback);
+},
+highlightElement: function (e, a, n) {
+for (var t, r = 'none', i = e; i && !c.test(i.className); ) i = i.parentNode;
+i && ((r = (i.className.match(c) || [, 'none'])[1].toLowerCase()), (t = C.languages[r])),
+(e.className = e.className.replace(c, '').replace(/\s+/g, ' ') + ' language-' + r),
+e.parentNode &&
+((i = e.parentNode), /pre/i.test(i.nodeName) && (i.className = i.className.replace(c, '').replace(/\s+/g, ' ') + ' language-' + r));
+var l = { element: e, language: r, grammar: t, code: e.textContent },
+o = function (e) {
+(l.highlightedCode = e),
+C.hooks.run('before-insert', l),
+(l.element.innerHTML = l.highlightedCode),
+C.hooks.run('after-highlight', l),
+C.hooks.run('complete', l),
+n && n.call(l.element);
+};
+if ((C.hooks.run('before-sanity-check', l), l.code))
+if ((C.hooks.run('before-highlight', l), l.grammar))
+if (a && g.Worker) {
+var s = new Worker(C.filename);
+(s.onmessage = function (e) {
+o(e.data);
+}),
+s.postMessage(
+JSON.stringify({
+language: l.language,
+code: l.code,
+immediateClose: !0
+})
+);
+} else o(C.highlight(l.code, l.grammar, l.language));
+else o(C.util.encode(l.code));
+else C.hooks.run('complete', l);
+},
+highlight: function (e, a, n) {
+var t = { code: e, grammar: a, language: n };
+return (
+C.hooks.run('before-tokenize', t),
+(t.tokens = C.tokenize(t.code, t.grammar)),
+C.hooks.run('after-tokenize', t),
+M.stringify(C.util.encode(t.tokens), t.language)
+);
+},
+matchGrammar: function (e, a, n, t, r, i, l) {
+for (var o in n)
+if (n.hasOwnProperty(o) && n[o]) {
+if (o == l) return;
+var s = n[o];
+s = 'Array' === C.util.type(s) ? s : [s];
+for (var g = 0; g < s.length; ++g) {
+var c = s[g],
+u = c.inside,
+h = !!c.lookbehind,
+f = !!c.greedy,
+d = 0,
+m = c.alias;
+if (f && !c.pattern.global) {
+var p = c.pattern.toString().match(/[imuy]_$/)[0];
+c.pattern = RegExp(c.pattern.source, p + 'g');
+}
+c = c.pattern || c;
+for (var y = t, v = r; y < a.length; v += a[y].length, ++y) {
+var k = a[y];
+if (a.length > e.length) return;
+if (!(k instanceof M)) {
+if (f && y != a.length - 1) {
+if (((c.lastIndex = v), !(x = c.exec(e)))) break;
+for (
+var b = x.index + (h ? x[1].length : 0), w = x.index + x[0].length, A = y, P = v, O = a.length;
+A < O && (P < w || (!a[A].type && !a[A - 1].greedy));
+++A
+)
+(P += a[A].length) <= b && (++y, (v = P));
+if (a[y] instanceof M) continue;
+(N = A - y), (k = e.slice(v, P)), (x.index -= v);
+} else {
+c.lastIndex = 0;
+var x = c.exec(k),
+N = 1;
+}
+if (x) {
+h && (d = x[1] ? x[1].length : 0);
+w = (b = x.index + d) + (x = x[0].slice(d)).length;
+var j = k.slice(0, b),
+S = k.slice(w),
+E = [y, N];
+j && (++y, (v += j.length), E.push(j));
+var * = new M(o, u ? C.tokenize(x, u) : x, m, x, f);
+if (
+(E.push(*),
+S && E.push(S),
+Array.prototype.splice.apply(a, E),
+1 != N && C.matchGrammar(e, a, n, y, v, !0, o),
+i)
+)
+break;
+} else if (i) break;
+}
+}
+}
+}
+},
+tokenize: function (e, a) {
+var n = [e],
+t = a.rest;
+if (t) {
+for (var r in t) a[r] = t[r];
+delete a.rest;
+}
+return C.matchGrammar(e, n, a, 0, 0, !1), n;
+},
+hooks: {
+all: {},
+add: function (e, a) {
+var n = C.hooks.all;
+(n[e] = n[e] || []), n[e].push(a);
+},
+run: function (e, a) {
+var n = C.hooks.all[e];
+if (n && n.length) for (var t, r = 0; (t = n[r++]); ) t(a);
+}
+},
+Token: M
+};
+function M(e, a, n, t, r) {
+(this.type = e), (this.content = a), (this.alias = n), (this.length = 0 | (t || '').length), (this.greedy = !!r);
+}
+if (
+((g.Prism = C),
+(M.stringify = function (e, a) {
+if ('string' == typeof e) return e;
+if (Array.isArray(e))
+return e
+.map(function (e) {
+return M.stringify(e, a);
+})
+.join('');
+var n = {
+type: e.type,
+content: M.stringify(e.content, a),
+tag: 'span',
+classes: ['token', e.type],
+attributes: {},
+language: a
+};
+if (e.alias) {
+var t = Array.isArray(e.alias) ? e.alias : [e.alias];
+Array.prototype.push.apply(n.classes, t);
+}
+C.hooks.run('wrap', n);
+var r = Object.keys(n.attributes)
+.map(function (e) {
+return e + '="' + (n.attributes[e] || '').replace(/"/g, '&quot;') + '"';
+})
+.join(' ');
+return '<' + n.tag + ' class="' + n.classes.join(' ') + '"' + (r ? ' ' + r : '') + '>' + n.content + '</' + n.tag + '>';
+}),
+!g.document)
+)
+return (
+g.addEventListener &&
+(C.disableWorkerMessageHandler ||
+g.addEventListener(
+'message',
+function (e) {
+var a = JSON.parse(e.data),
+n = a.language,
+t = a.code,
+r = a.immediateClose;
+g.postMessage(C.highlight(t, C.languages[n], n)), r && g.close();
+},
+!1
+)),
+C
+);
+var e = document.currentScript || [].slice.call(document.getElementsByTagName('script')).pop();
+return (
+e &&
+((C.filename = e.src),
+C.manual ||
+e.hasAttribute('data-manual') ||
+('loading' !== document.readyState
+? window.requestAnimationFrame
+? window.requestAnimationFrame(C.highlightAll)
+: window.setTimeout(C.highlightAll, 16)
+: document.addEventListener('DOMContentLoaded', C.highlightAll))),
+C
+);
+})(\_self);
+'undefined' != typeof module && module.exports && (module.exports = Prism), 'undefined' != typeof global && (global.Prism = Prism);
+(Prism.languages.markup = {
+comment: /<!--[\s\S]_?-->/,
+prolog: /<\?[\s\S]+?\?>/,
+doctype: /<!DOCTYPE[\s\S]+?>/i,
+cdata: /<!\[CDATA\[[\s\S]_?]]>/i,
+tag: {
+pattern: /<\/?(?!\d)[^\s>\/=$<%]+(?:\s(?:\s_[^\s>\/=]+(?:\s*=\s*(?:"[^"]_"|'[^']_'|[^\s'">=]+(?=[\s>]))|(?=[\s/>])))+)?\s*\/?>/i,
+greedy: !0,
+inside: {
+tag: {
+pattern: /^<\/?[^\s>\/]+/i,
+inside: { punctuation: /^<\/?/, namespace: /^[^\s>\/:]+:/ }
+},
+'attr-value': {
+pattern: /=\s*(?:"[^"]_"|'[^']_'|[^\s'">=]+)/i,
+inside: {
+punctuation: [/^=/, { pattern: /^(\s*)["']|["']$/, lookbehind: !0 }]
+                }
+            },
+            punctuation: /\/?>/,
+            'attr-name': {
+                pattern: /[^\s>\/]+/,
+                inside: { namespace: /^[^\s>\/:]+:/ }
+            }
+        }
+    },
+    entity: /&#?[\da-z]{1,8};/i
+}),
+    (Prism.languages.markup.tag.inside['attr-value'].inside.entity = Prism.languages.markup.entity),
+    Prism.hooks.add('wrap', function (a) {
+        'entity' === a.type && (a.attributes.title = a.content.replace(/&amp;/, '&'));
+    }),
+    Object.defineProperty(Prism.languages.markup.tag, 'addInlined', {
+        value: function (a, e) {
+            var s = {};
+            (s['language-' + e] = {
+                pattern: /(^<!\[CDATA\[)[\s\S]+?(?=\]\]>$)/i,
+lookbehind: !0,
+inside: Prism.languages[e]
+}),
+(s.cdata = /^<!\[CDATA\[|\]\]>$/i);
+var n = {
+'included-cdata': { pattern: /<!\[CDATA\[[\s\S]*?\]\]>/i, inside: s }
+};
+n['language-' + e] = { pattern: /[\s\S]+/, inside: Prism.languages[e] };
+var i = {};
+(i[a] = {
+pattern: RegExp('(<**[\\s\\S]_?>)(?:<!\\[CDATA\\[[\\s\\S]_?\\]\\]>\\s*|[\\s\\S])*?(?=<\\/**>)'.replace(/**/g, a), 'i'),
+lookbehind: !0,
+greedy: !0,
+inside: n
+}),
+Prism.languages.insertBefore('markup', 'cdata', i);
+}
+}),
+(Prism.languages.xml = Prism.languages.extend('markup', {})),
+(Prism.languages.html = Prism.languages.markup),
+(Prism.languages.mathml = Prism.languages.markup),
+(Prism.languages.svg = Prism.languages.markup);
+!(function (s) {
+var t = /("|')(?:\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])_\1/;
+(s.languages.css = {
+comment: /\/\*[\s\S]_?\*\//,
+atrule: {
+pattern: /@[\w-]+[\s\S]_?(?:;|(?=\s_\{))/,
+inside: { rule: /@[\w-]+/ }
+},
+url: {
+pattern: RegExp('url\\((?:' + t.source + '|[^\n\r()]_)\\)', 'i'),
+inside: { function: /^url/i, punctuation: /^\(|\)$/ }
+},
+selector: RegExp('[^{}\\s](?:[^{};"\']|' + t.source + ')_?(?=\\s*\\{)'),
+string: { pattern: t, greedy: !0 },
+property: /[-\_a-z\xA0-\uFFFF][-\w\xa0-\uffff]*(?=\s*:)/i,
+important: /!important\b/i,
+function: /[-a-z0-9]+(?=\()/i,
+punctuation: /[(){};:,]/
+}),
+(s.languages.css.atrule.inside.rest = s.languages.css);
+var e = s.languages.markup;
+e &&
+(e.tag.addInlined('style', 'css'),
+s.languages.insertBefore(
+'inside',
+'attr-value',
+{
+'style-attr': {
+pattern: /\s*style=("|')(?:\\[\s\S]|(?!\1)[^\\])*\1/i,
+inside: {
+'attr-name': { pattern: /^\s*style/i, inside: e.tag.inside },
+punctuation: /^\s*=\s*['"]|['"]\s*$/,
+'attr-value': { pattern: /.+/i, inside: s.languages.css }
+},
+alias: 'language-css'
+}
+},
+e.tag
+));
+})(Prism);
+Prism.languages.clike = {
+comment: [
+{ pattern: /(^|[^\\])\/\*[\s\S]*?(?:\*\/|$)/, lookbehind: !0 },
+        { pattern: /(^|[^\\:])\/\/.*/, lookbehind: !0, greedy: !0 }
+    ],
+    string: {
+        pattern: /(["'])(?:\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1/,
+        greedy: !0
+    },
+    'class-name': {
+        pattern: /((?:\b(?:class|interface|extends|implements|trait|instanceof|new)\s+)|(?:catch\s+\())[\w.\\]+/i,
+        lookbehind: !0,
+        inside: { punctuation: /[.\\]/ }
+    },
+    keyword: /\b(?:if|else|while|do|for|return|in|instanceof|function|new|try|throw|catch|finally|null|break|continue)\b/,
+    boolean: /\b(?:true|false)\b/,
+    function: /\w+(?=\()/,
+    number: /\b0x[\da-f]+\b|(?:\b\d+\.?\d*|\B\.\d+)(?:e[+-]?\d+)?/i,
+    operator: /--?|\+\+?|!=?=?|<=?|>=?|==?=?|&&?|\|\|?|\?|\*|\/|~|\^|%/,
+    punctuation: /[{}[\];(),.:]/
+};
+(Prism.languages.javascript = Prism.languages.extend('clike', {
+    'class-name': [
+        Prism.languages.clike['class-name'],
+        {
+            pattern: /(^|[^$\w\xA0-\uFFFF])[\_$A-Z\xA0-\uFFFF][$\w\xa0-\uffff]_(?=\.(?:prototype|constructor))/,
+lookbehind: !0
+}
+],
+keyword: [
+{ pattern: /((?:^|})\s_)(?:catch|finally)\b/, lookbehind: !0 },
+{
+pattern:
+/(^|[^.])\b(?:as|async(?=\s*(?:function\b|\(|[$\w\xA0-\uFFFF]|$))|await|break|case|class|const|continue|debugger|default|delete|do|else|enum|export|extends|for|from|function|get|if|implements|import|in|instanceof|interface|let|new|null|of|package|private|protected|public|return|set|static|super|switch|this|throw|try|typeof|undefined|var|void|while|with|yield)\b/,
+lookbehind: !0
+}
+],
+number: /\b(?:(?:0[xX](<?:[\dA-Fa-f](?:_[\dA-Fa-f])?>)+|0[bB](<?:[01](?:_[01])?>)+|0[oO](<?:[0-7](?:_[0-7])?>)+)n?|(?:\d(?:*\d)?)+n|NaN|Infinity)\b|(?:\b(?:\d(?:_\d)?)+\.?(?:\d(?:\_\d)?)_|\B\.(?:\d(?:_\d)?)+)(?:[Ee][+-]?(?:\d(?:_\d)?)+)?/,
+function: /[\_$a-zA-Z\xA0-\uFFFF][$\w\xa0-\uffff]_(?=\s_(?:\.\s*(?:apply|bind|call)\s*)?\()/,
+operator: /-[-=]?|\+[+=]?|!=?=?|<<?=?|>>?>?=?|=(?:==?|>)?|&[&=]?|\|[|=]?|\*\*?=?|\/=?|~|\^=?|%=?|\?|\.{3}/
+})),
+(Prism.languages.javascript['class-name'][0].pattern = /(\b(?:class|interface|extends|implements|instanceof|new)\s+)[\w.\\]+/),
+Prism.languages.insertBefore('javascript', 'keyword', {
+regex: {
+pattern: /((?:^|[^$\w\xa0-\uffff."'\])\s])\s*)\/(\[(?:[^\]\\\r\n]|\\.)*]|\\.|[^/\\\[\r\n])+\/[gimyus]{0,6}(?=\s*($|[\r\n,.;})\]]))/,
+            lookbehind: !0,
+            greedy: !0
+        },
+        'function-variable': {
+            pattern:
+                /[_$a-zA-Z\xA0-\uFFFF][$\w\xA0-\uFFFF]*(?=\s*[=:]\s*(?:async\s*)?(?:\bfunction\b|(?:\((?:[^()]|\([^()]*\))_\)|[\_$a-zA-Z\xA0-\uFFFF][$\w\xa0-\uffff]_)\s*=>))/,
+alias: 'function'
+},
+parameter: [
+{
+pattern: /(function(?:\s+[\_$A-Za-z\xA0-\uFFFF][$\w\xa0-\uffff]*)?\s*\(\s*)(?!\s)(?:[^()]|\([^()]_\))+?(?=\s_\))/,
+lookbehind: !0,
+inside: Prism.languages.javascript
+},
+{
+pattern: /[\_$a-z\xA0-\uFFFF][$\w\xa0-\uffff]_(?=\s_=>)/i,
+inside: Prism.languages.javascript
+},
+{
+pattern: /(\(\s*)(?!\s)(?:[^()]|\([^()]*\))+?(?=\s*\)\s*=>)/,
+lookbehind: !0,
+inside: Prism.languages.javascript
+},
+{
+pattern:
+/((?:\b|\s|^)(?!(?:as|async|await|break|case|catch|class|const|continue|debugger|default|delete|do|else|enum|export|extends|finally|for|from|function|get|if|implements|import|in|instanceof|interface|let|new|null|of|package|private|protected|public|return|set|static|super|switch|this|throw|try|typeof|undefined|var|void|while|with|yield)(?![$\w\xA0-\uFFFF]))(?:[\_$A-Za-z\xA0-\uFFFF][$\w\xa0-\uffff]_\s_)\(\s*)(?!\s)(?:[^()]|\([^()]*\))+?(?=\s*\)\s*\{)/,
+lookbehind: !0,
+inside: Prism.languages.javascript
+}
+],
+constant: /\b[A-Z](?:[A-Z_]|\dx?)_\b/
+}),
+Prism.languages.insertBefore('javascript', 'string', {
+'template-string': {
+pattern: /`(?:\\[\s\S]|\${(?:[^{}]|{(?:[^{}]|{[^}]_})_})+}|[^\\`])_`/,
+greedy: !0,
+inside: {
+interpolation: {
+pattern: /\${(?:[^{}]|{(?:[^{}]|{[^}]_})_})+}/,
+inside: {
+'interpolation-punctuation': {
+pattern: /^\${|}$/,
+alias: 'punctuation'
+},
+rest: Prism.languages.javascript
+}
+},
+string: /[\s\S]+/
+}
+}
+}),
+Prism.languages.markup && Prism.languages.markup.tag.addInlined('script', 'javascript'),
+(Prism.languages.js = Prism.languages.javascript);
+!(function () {
+if ('undefined' != typeof self && self.Prism && self.document) {
+var r = [],
+i = {},
+n = function () {};
+Prism.plugins.toolbar = {};
+var t = (Prism.plugins.toolbar.registerButton = function (t, n) {
+var e;
+(e =
+'function' == typeof n
+? n
+: function (t) {
+var e;
+return (
+'function' == typeof n.onClick
+? (((e = document.createElement('button')).type = 'button'),
+e.addEventListener('click', function () {
+n.onClick.call(this, t);
+}))
+: 'string' == typeof n.url
+? ((e = document.createElement('a')).href = n.url)
+: (e = document.createElement('span')),
+(e.textContent = n.text),
+e
+);
+}),
+t in i ? console.warn('There is a button with the key "' + t + '" registered already.') : r.push((i[t] = e));
+}),
+e = (Prism.plugins.toolbar.hook = function (a) {
+var t = a.element.parentNode;
+if (t && /pre/i.test(t.nodeName) && !t.parentNode.classList.contains('code-toolbar')) {
+var e = document.createElement('div');
+e.classList.add('code-toolbar'), t.parentNode.insertBefore(e, t), e.appendChild(t);
+var o = document.createElement('div');
+o.classList.add('toolbar'),
+document.body.hasAttribute('data-toolbar-order') &&
+(r = document.body
+.getAttribute('data-toolbar-order')
+.split(',')
+.map(function (t) {
+return i[t] || n;
+})),
+r.forEach(function (t) {
+var e = t(a);
+if (e) {
+var n = document.createElement('div');
+n.classList.add('toolbar-item'), n.appendChild(e), o.appendChild(n);
+}
+}),
+e.appendChild(o);
+}
+});
+t('label', function (t) {
+var e = t.element.parentNode;
+if (e && /pre/i.test(e.nodeName) && e.hasAttribute('data-label')) {
+var n,
+a,
+o = e.getAttribute('data-label');
+try {
+a = document.querySelector('template#' + o);
+} catch (t) {}
+return (
+a
+? (n = a.content)
+: (e.hasAttribute('data-url')
+? ((n = document.createElement('a')).href = e.getAttribute('data-url'))
+: (n = document.createElement('span')),
+(n.textContent = o)),
+n
+);
+}
+}),
+Prism.hooks.add('complete', e);
+}
+})();
+!(function () {
+if ('undefined' != typeof self && self.Prism && self.document)
+if (Prism.plugins.toolbar) {
+var r = window.ClipboardJS || void 0;
+r || 'function' != typeof require || (r = require('clipboard'));
+var i = [];
+if (!r) {
+var o = document.createElement('script'),
+e = document.querySelector('head');
+(o.onload = function () {
+if ((r = window.ClipboardJS)) for (; i.length; ) i.pop()();
+}),
+(o.src = 'https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js'),
+e.appendChild(o);
+}
+Prism.plugins.toolbar.registerButton('copy-to-clipboard', function (e) {
+var t = document.createElement('a');
+return (t.textContent = 'Copy'), r ? o() : i.push(o), t;
+function o() {
+var o = new r(t, {
+text: function () {
+return e.code;
+}
+});
+o.on('success', function () {
+(t.textContent = 'Copied'), n();
+}),
+o.on('error', function () {
+(t.textContent = 'Press Ctrl+C to copy'), n();
+});
+}
+function n() {
+setTimeout(function () {
+t.textContent = 'Copy';
+}, 5e3);
+}
+});
+} else console.warn('Copy to Clipboard plugin loaded before Toolbar plugin.');
+})();
+/_ PrismJS 1.24.1
+https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript _/
+var \_self = 'undefined' != typeof window ? window : 'undefined' != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? self : {},
+Prism = (function (u) {
+var c = /\blang(?:uage)?-([\w-]+)\b/i,
+n = 0,
+e = {},
+M = {
+manual: u.Prism && u.Prism.manual,
+disableWorkerMessageHandler: u.Prism && u.Prism.disableWorkerMessageHandler,
+util: {
+encode: function e(n) {
+return n instanceof W
+? new W(n.type, e(n.content), n.alias)
+: Array.isArray(n)
+? n.map(e)
+: n
+.replace(/&/g, '&amp;')
+.replace(/</g, '&lt;')
+.replace(/\u00a0/g, ' ');
+},
+type: function (e) {
+return Object.prototype.toString.call(e).slice(8, -1);
+},
+objId: function (e) {
+return e.**id || Object.defineProperty(e, '**id', { value: ++n }), e.**id;
+},
+clone: function t(e, r) {
+var a, n;
+switch (((r = r || {}), M.util.type(e))) {
+case 'Object':
+if (((n = M.util.objId(e)), r[n])) return r[n];
+for (var i in ((a = {}), (r[n] = a), e)) e.hasOwnProperty(i) && (a[i] = t(e[i], r));
+return a;
+case 'Array':
+return (
+(n = M.util.objId(e)),
+r[n]
+? r[n]
+: ((a = []),
+(r[n] = a),
+e.forEach(function (e, n) {
+a[n] = t(e, r);
+}),
+a)
+);
+default:
+return e;
+}
+},
+getLanguage: function (e) {
+for (; e && !c.test(e.className); ) e = e.parentElement;
+return e ? (e.className.match(c) || [, 'none'])[1].toLowerCase() : 'none';
+},
+currentScript: function () {
+if ('undefined' == typeof document) return null;
+if ('currentScript' in document) return document.currentScript;
+try {
+throw new Error();
+} catch (e) {
+var n = (/at [^(\r\n]_\((._):.+:.+\)$/i.exec(e.stack) || [])[1];
+                            if (n) {
+                                var t = document.getElementsByTagName('script');
+                                for (var r in t) if (t[r].src == n) return t[r];
+                            }
+                            return null;
+                        }
+                    },
+                    isActive: function (e, n, t) {
+                        for (var r = 'no-' + n; e; ) {
+                            var a = e.classList;
+                            if (a.contains(n)) return !0;
+                            if (a.contains(r)) return !1;
+                            e = e.parentElement;
+                        }
+                        return !!t;
+                    }
+                },
+                languages: {
+                    plain: e,
+                    plaintext: e,
+                    text: e,
+                    txt: e,
+                    extend: function (e, n) {
+                        var t = M.util.clone(M.languages[e]);
+                        for (var r in n) t[r] = n[r];
+                        return t;
+                    },
+                    insertBefore: function (t, e, n, r) {
+                        var a = (r = r || M.languages)[t],
+                            i = {};
+                        for (var l in a)
+                            if (a.hasOwnProperty(l)) {
+                                if (l == e) for (var o in n) n.hasOwnProperty(o) && (i[o] = n[o]);
+                                n.hasOwnProperty(l) || (i[l] = a[l]);
+                            }
+                        var s = r[t];
+                        return (
+                            (r[t] = i),
+                            M.languages.DFS(M.languages, function (e, n) {
+                                n === s && e != t && (this[e] = i);
+                            }),
+                            i
+                        );
+                    },
+                    DFS: function e(n, t, r, a) {
+                        a = a || {};
+                        var i = M.util.objId;
+                        for (var l in n)
+                            if (n.hasOwnProperty(l)) {
+                                t.call(n, l, n[l], r || l);
+                                var o = n[l],
+                                    s = M.util.type(o);
+                                'Object' !== s || a[i(o)] ? 'Array' !== s || a[i(o)] || ((a[i(o)] = !0), e(o, t, l, a)) : ((a[i(o)] = !0), e(o, t, null, a));
+                            }
+                    }
+                },
+                plugins: {},
+                highlightAll: function (e, n) {
+                    M.highlightAllUnder(document, e, n);
+                },
+                highlightAllUnder: function (e, n, t) {
+                    var r = {
+                        callback: t,
+                        container: e,
+                        selector: 'code[class*="language-"], [class*="language-"] code, code[class*="lang-"], [class*="lang-"] code'
+                    };
+                    M.hooks.run('before-highlightall', r),
+                        (r.elements = Array.prototype.slice.apply(r.container.querySelectorAll(r.selector))),
+                        M.hooks.run('before-all-elements-highlight', r);
+                    for (var a, i = 0; (a = r.elements[i++]); ) M.highlightElement(a, !0 === n, r.callback);
+                },
+                highlightElement: function (e, n, t) {
+                    var r = M.util.getLanguage(e),
+                        a = M.languages[r];
+                    e.className = e.className.replace(c, '').replace(/\s+/g, ' ') + ' language-' + r;
+                    var i = e.parentElement;
+                    i && 'pre' === i.nodeName.toLowerCase() && (i.className = i.className.replace(c, '').replace(/\s+/g, ' ') + ' language-' + r);
+                    var l = { element: e, language: r, grammar: a, code: e.textContent };
+                    function o(e) {
+                        (l.highlightedCode = e),
+                            M.hooks.run('before-insert', l),
+                            (l.element.innerHTML = l.highlightedCode),
+                            M.hooks.run('after-highlight', l),
+                            M.hooks.run('complete', l),
+                            t && t.call(l.element);
+                    }
+                    if (
+                        (M.hooks.run('before-sanity-check', l),
+                        (i = l.element.parentElement) && 'pre' === i.nodeName.toLowerCase() && !i.hasAttribute('tabindex') && i.setAttribute('tabindex', '0'),
+                        !l.code)
+                    )
+                        return M.hooks.run('complete', l), void (t && t.call(l.element));
+                    if ((M.hooks.run('before-highlight', l), l.grammar))
+                        if (n && u.Worker) {
+                            var s = new Worker(M.filename);
+                            (s.onmessage = function (e) {
+                                o(e.data);
+                            }),
+                                s.postMessage(JSON.stringify({ language: l.language, code: l.code, immediateClose: !0 }));
+                        } else o(M.highlight(l.code, l.grammar, l.language));
+                    else o(M.util.encode(l.code));
+                },
+                highlight: function (e, n, t) {
+                    var r = { code: e, grammar: n, language: t };
+                    return (
+                        M.hooks.run('before-tokenize', r),
+                        (r.tokens = M.tokenize(r.code, r.grammar)),
+                        M.hooks.run('after-tokenize', r),
+                        W.stringify(M.util.encode(r.tokens), r.language)
+                    );
+                },
+                tokenize: function (e, n) {
+                    var t = n.rest;
+                    if (t) {
+                        for (var r in t) n[r] = t[r];
+                        delete n.rest;
+                    }
+                    var a = new i();
+                    return (
+                        I(a, a.head, e),
+                        (function e(n, t, r, a, i, l) {
+                            for (var o in r)
+                                if (r.hasOwnProperty(o) && r[o]) {
+                                    var s = r[o];
+                                    s = Array.isArray(s) ? s : [s];
+                                    for (var u = 0; u < s.length; ++u) {
+                                        if (l && l.cause == o + ',' + u) return;
+                                        var c = s[u],
+                                            g = c.inside,
+                                            f = !!c.lookbehind,
+                                            h = !!c.greedy,
+                                            d = c.alias;
+                                        if (h && !c.pattern.global) {
+                                            var p = c.pattern.toString().match(/[imsuy]*$/)[0];
+c.pattern = RegExp(c.pattern.source, p + 'g');
+}
+for (var v = c.pattern || c, m = a.next, y = i; m !== t.tail && !(l && y >= l.reach); y += m.value.length, m = m.next) {
+var b = m.value;
+if (t.length > n.length) return;
+if (!(b instanceof W)) {
+var k,
+x = 1;
+if (h) {
+if (!(k = z(v, y, n, f))) break;
+var w = k.index,
+A = k.index + k[0].length,
+P = y;
+for (P += m.value.length; P <= w; ) (m = m.next), (P += m.value.length);
+if (((P -= m.value.length), (y = P), m.value instanceof W)) continue;
+for (var E = m; E !== t.tail && (P < A || 'string' == typeof E.value); E = E.next)
+x++, (P += E.value.length);
+x--, (b = n.slice(y, P)), (k.index -= y);
+} else if (!(k = z(v, 0, b, f))) continue;
+var w = k.index,
+S = k[0],
+O = b.slice(0, w),
+L = b.slice(w + S.length),
+N = y + b.length;
+l && N > l.reach && (l.reach = N);
+var j = m.prev;
+O && ((j = I(t, j, O)), (y += O.length)), q(t, j, x);
+var C = new W(o, g ? M.tokenize(S, g) : S, d, S);
+if (((m = I(t, j, C)), L && I(t, m, L), 1 < x)) {
+var _ = { cause: o + ',' + u, reach: N };
+e(n, t, r, m.prev, y, _), l && _.reach > l.reach && (l.reach = _.reach);
+}
+}
+}
+}
+}
+})(e, a, n, a.head, 0),
+(function (e) {
+var n = [],
+t = e.head.next;
+for (; t !== e.tail; ) n.push(t.value), (t = t.next);
+return n;
+})(a)
+);
+},
+hooks: {
+all: {},
+add: function (e, n) {
+var t = M.hooks.all;
+(t[e] = t[e] || []), t[e].push(n);
+},
+run: function (e, n) {
+var t = M.hooks.all[e];
+if (t && t.length) for (var r, a = 0; (r = t[a++]); ) r(n);
+}
+},
+Token: W
+};
+function W(e, n, t, r) {
+(this.type = e), (this.content = n), (this.alias = t), (this.length = 0 | (r || '').length);
+}
+function z(e, n, t, r) {
+e.lastIndex = n;
+var a = e.exec(t);
+if (a && r && a[1]) {
+var i = a[1].length;
+(a.index += i), (a[0] = a[0].slice(i));
+}
+return a;
+}
+function i() {
+var e = { value: null, prev: null, next: null },
+n = { value: null, prev: e, next: null };
+(e.next = n), (this.head = e), (this.tail = n), (this.length = 0);
+}
+function I(e, n, t) {
+var r = n.next,
+a = { value: t, prev: n, next: r };
+return (n.next = a), (r.prev = a), e.length++, a;
+}
+function q(e, n, t) {
+for (var r = n.next, a = 0; a < t && r !== e.tail; a++) r = r.next;
+((n.next = r).prev = n), (e.length -= a);
+}
+if (
+((u.Prism = M),
+(W.stringify = function n(e, t) {
+if ('string' == typeof e) return e;
+if (Array.isArray(e)) {
+var r = '';
+return (
+e.forEach(function (e) {
+r += n(e, t);
+}),
+r
+);
+}
+var a = { type: e.type, content: n(e.content, t), tag: 'span', classes: ['token', e.type], attributes: {}, language: t },
+i = e.alias;
+i && (Array.isArray(i) ? Array.prototype.push.apply(a.classes, i) : a.classes.push(i)), M.hooks.run('wrap', a);
+var l = '';
+for (var o in a.attributes) l += ' ' + o + '="' + (a.attributes[o] || '').replace(/"/g, '&quot;') + '"';
+return '<' + a.tag + ' class="' + a.classes.join(' ') + '"' + l + '>' + a.content + '</' + a.tag + '>';
+}),
+!u.document)
+)
+return (
+u.addEventListener &&
+(M.disableWorkerMessageHandler ||
+u.addEventListener(
+'message',
+function (e) {
+var n = JSON.parse(e.data),
+t = n.language,
+r = n.code,
+a = n.immediateClose;
+u.postMessage(M.highlight(r, M.languages[t], t)), a && u.close();
+},
+!1
+)),
+M
+);
+var t = M.util.currentScript();
+function r() {
+M.manual || M.highlightAll();
+}
+if ((t && ((M.filename = t.src), t.hasAttribute('data-manual') && (M.manual = !0)), !M.manual)) {
+var a = document.readyState;
+'loading' === a || ('interactive' === a && t && t.defer)
+? document.addEventListener('DOMContentLoaded', r)
+: window.requestAnimationFrame
+? window.requestAnimationFrame(r)
+: window.setTimeout(r, 16);
+}
+return M;
+})(_self);
+'undefined' != typeof module && module.exports && (module.exports = Prism), 'undefined' != typeof global && (global.Prism = Prism);
+(Prism.languages.markup = {
+comment: /<!--[\s\S]*?-->/,
+prolog: /<\?[\s\S]+?\?>/,
+doctype: {
+pattern: /<!DOCTYPE(?:[^>"'[\]]|"[^"]*"|'[^']*')+(?:\[(?:[^<"'\]]|"[^"]*"|'[^']*'|<(?!!--)|<!--(?:[^-]|-(?!->))*-->)*\]\s*)?>/i,
+greedy: !0,
+inside: {
+'internal-subset': { pattern: /(^[^\[]*\[)[\s\S]+(?=\]>$)/, lookbehind: !0, greedy: !0, inside: null },
+string: { pattern: /"[^"]*"|'[^']*'/, greedy: !0 },
+punctuation: /^<!|>$|[[\]]/,
+'doctype-tag': /^DOCTYPE/,
+name: /[^\s<>'"]+/
+}
+},
+cdata: /<!\[CDATA\[[\s\S]*?\]\]>/i,
+tag: {
+pattern: /<\/?(?!\d)[^\s>\/=$<%]+(?:\s(?:\s*[^\s>\/=]+(?:\s*=\s*(?:"[^"]*"|'[^']*'|[^\s'">=]+(?=[\s>]))|(?=[\s/>])))+)?\s*\/?>/,
+greedy: !0,
+inside: {
+tag: { pattern: /^<\/?[^\s>\/]+/, inside: { punctuation: /^<\/?/, namespace: /^[^\s>\/:]+:/ } },
+'special-attr': [],
+'attr-value': { pattern: /=\s*(?:"[^"]*"|'[^']*'|[^\s'">=]+)/, inside: { punctuation: [{ pattern: /^=/, alias: 'attr-equals' }, /"|'/] } },
+punctuation: /\/?>/,
+'attr-name': { pattern: /[^\s>\/]+/, inside: { namespace: /^[^\s>\/:]+:/ } }
+}
+},
+entity: [{ pattern: /&[\da-z]{1,8};/i, alias: 'named-entity' }, /&#x?[\da-f]{1,8};/i]
+}),
+(Prism.languages.markup.tag.inside['attr-value'].inside.entity = Prism.languages.markup.entity),
+(Prism.languages.markup.doctype.inside['internal-subset'].inside = Prism.languages.markup),
+Prism.hooks.add('wrap', function (a) {
+'entity' === a.type && (a.attributes.title = a.content.replace(/&amp;/, '&'));
+}),
+Object.defineProperty(Prism.languages.markup.tag, 'addInlined', {
+value: function (a, e) {
+var s = {};
+(s['language-' + e] = { pattern: /(^<!\[CDATA\[)[\s\S]+?(?=\]\]>$)/i, lookbehind: !0, inside: Prism.languages[e] }),
+                (s.cdata = /^<!\[CDATA\[|\]\]>$/i);
+var t = { 'included-cdata': { pattern: /<!\[CDATA\[[\s\S]*?\]\]>/i, inside: s } };
+t['language-' + e] = { pattern: /[\s\S]+/, inside: Prism.languages[e] };
+var n = {};
+(n[a] = {
+pattern: RegExp(
+'(<**[^>]*>)(?:<!\\[CDATA\\[(?:[^\\]]|\\](?!]>))*\\]\\]>|(?!<!\\[CDATA\\[)[^])\*?(?=</**>)'.replace(/\_\_/g, function () {
+return a;
+}),
+'i'
+),
+lookbehind: !0,
+greedy: !0,
+inside: t
+}),
+Prism.languages.insertBefore('markup', 'cdata', n);
+}
+}),
+Object.defineProperty(Prism.languages.markup.tag, 'addAttribute', {
+value: function (a, e) {
+Prism.languages.markup.tag.inside['special-attr'].push({
+pattern: RegExp('(^|["\'\\s])(?:' + a + ')\\s*=\\s*(?:"[^"]*"|\'[^\']*\'|[^\\s\'">=]+(?=[\\s>]))', 'i'),
+lookbehind: !0,
+inside: {
+'attr-name': /^[^\s=]+/,
+'attr-value': {
+pattern: /=[\s\S]+/,
+inside: {
+value: {
+pattern: /(^=\s*(["']|(?!["'])))\S[\s\S]*(?=\2$)/,
+                                lookbehind: !0,
+                                alias: [e, 'language-' + e],
+                                inside: Prism.languages[e]
+                            },
+                            punctuation: [{ pattern: /^=/, alias: 'attr-equals' }, /"|'/]
+                        }
+                    }
+                }
+            });
+        }
+    }),
+    (Prism.languages.html = Prism.languages.markup),
+    (Prism.languages.mathml = Prism.languages.markup),
+    (Prism.languages.svg = Prism.languages.markup),
+    (Prism.languages.xml = Prism.languages.extend('markup', {})),
+    (Prism.languages.ssml = Prism.languages.xml),
+    (Prism.languages.atom = Prism.languages.xml),
+    (Prism.languages.rss = Prism.languages.xml);
+!(function (s) {
+    var e = /(?:"(?:\\(?:\r\n|[\s\S])|[^"\\\r\n])*"|'(?:\\(?:\r\n|[\s\S])|[^'\\\r\n])*')/;
+    (s.languages.css = {
+        comment: /\/\*[\s\S]*?\*\//,
+        atrule: {
+            pattern: /@[\w-](?:[^;{\s]|\s+(?![\s{]))*(?:;|(?=\s*\{))/,
+            inside: {
+                rule: /^@[\w-]+/,
+                'selector-function-argument': {
+                    pattern: /(\bselector\s*\(\s*(?![\s)]))(?:[^()\s]|\s+(?![\s)])|\((?:[^()]|\([^()]*\))*\))+(?=\s*\))/,
+                    lookbehind: !0,
+                    alias: 'selector'
+                },
+                keyword: { pattern: /(^|[^\w-])(?:and|not|only|or)(?![\w-])/, lookbehind: !0 }
+            }
+        },
+        url: {
+            pattern: RegExp('\\burl\\((?:' + e.source + '|(?:[^\\\\\r\n()"\']|\\\\[^])*)\\)', 'i'),
+            greedy: !0,
+            inside: { function: /^url/i, punctuation: /^\(|\)$/, string: { pattern: RegExp('^' + e.source + '$'), alias: 'url' } }
+        },
+        selector: { pattern: RegExp('(^|[{}\\s])[^{}\\s](?:[^{};"\'\\s]|\\s+(?![\\s{])|' + e.source + ')*(?=\\s*\\{)'), lookbehind: !0 },
+        string: { pattern: e, greedy: !0 },
+        property: { pattern: /(^|[^-\w\xA0-\uFFFF])(?!\s)[-_a-z\xA0-\uFFFF](?:(?!\s)[-\w\xA0-\uFFFF])*(?=\s*:)/i, lookbehind: !0 },
+        important: /!important\b/i,
+        function: { pattern: /(^|[^-a-z0-9])[-a-z0-9]+(?=\()/i, lookbehind: !0 },
+        punctuation: /[(){};:,]/
+    }),
+        (s.languages.css.atrule.inside.rest = s.languages.css);
+    var t = s.languages.markup;
+    t && (t.tag.addInlined('style', 'css'), t.tag.addAttribute('style', 'css'));
+})(Prism);
+Prism.languages.clike = {
+    comment: [
+        { pattern: /(^|[^\\])\/\*[\s\S]*?(?:\*\/|$)/, lookbehind: !0, greedy: !0 },
+{ pattern: /(^|[^\\:])\/\/.*/, lookbehind: !0, greedy: !0 }
+],
+string: { pattern: /(["'])(?:\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1/, greedy: !0 },
+'class-name': {
+pattern: /(\b(?:class|interface|extends|implements|trait|instanceof|new)\s+|\bcatch\s+\()[\w.\\]+/i,
+lookbehind: !0,
+inside: { punctuation: /[.\\]/ }
+},
+keyword: /\b(?:if|else|while|do|for|return|in|instanceof|function|new|try|throw|catch|finally|null|break|continue)\b/,
+boolean: /\b(?:true|false)\b/,
+function: /\b\w+(?=\()/,
+number: /\b0x[\da-f]+\b|(?:\b\d+(?:\.\d*)?|\B\.\d+)(?:e[+-]?\d+)?/i,
+operator: /[<>]=?|[!=]=?=?|--?|\+\+?|&&?|\|\|?|[?*/~^%]/,
+punctuation: /[{}[\];(),.:]/
+};
+(Prism.languages.javascript = Prism.languages.extend('clike', {
+'class-name': [
+Prism.languages.clike['class-name'],
+{ pattern: /(^|[^$\w\xa0-\uffff])(?!\s)[_$A-Z\xA0-\uFFFF](?:(?!\s)[$\w\xA0-\uFFFF])_(?=\.(?:prototype|constructor))/, lookbehind: !0 }
+],
+keyword: [
+{ pattern: /((?:^|\})\s_)catch\b/, lookbehind: !0 },
+{
+pattern:
+/(^|[^.]|\.\.\.\s*)\b(?:as|assert(?=\s*\{)|async(?=\s*(?:function\b|\(|[$\w\xA0-\uFFFF]|$))|await|break|case|class|const|continue|debugger|default|delete|do|else|enum|export|extends|finally(?=\s*(?:\{|$))|for|from(?=\s*(?:['"]|$))|function|(?:get|set)(?=\s*(?:[#\[$\w\xA0-\uFFFF]|$))|if|implements|import|in|instanceof|interface|let|new|null|of|package|private|protected|public|return|static|super|switch|this|throw|try|typeof|undefined|var|void|while|with|yield)\b/,
+            lookbehind: !0
+        }
+    ],
+    function: /#?(?!\s)[_$a-zA-Z\xA0-\uFFFF](?:(?!\s)[$\w\xA0-\uFFFF])*(?=\s*(?:\.\s*(?:apply|bind|call)\s*)?\()/,
+number: /\b(?:(?:0[xX](<?:[\dA-Fa-f](?:_[\dA-Fa-f])?>)+|0[bB](<?:[01](?:_[01])?>)+|0[oO](<?:[0-7](?:_[0-7])?>)+)n?|(?:\d(?:*\d)?)+n|NaN|Infinity)\b|(?:\b(?:\d(?:_\d)?)+\.?(?:\d(?:\_\d)?)_|\B\.(?:\d(?:_\d)?)+)(?:[Ee][+-]?(?:\d(?:_\d)?)+)?/,
+operator: /--|\+\+|\*\*=?|=>|&&=?|\|\|=?|[!=]==|<<=?|>>>?=?|[-+*/%&|^!=<>]=?|\.{3}|\?\?=?|\?\.?|[~:]/
+})),
+(Prism.languages.javascript['class-name'][0].pattern = /(\b(?:class|interface|extends|implements|instanceof|new)\s+)[\w.\\]+/),
+Prism.languages.insertBefore('javascript', 'keyword', {
+regex: {
+pattern:
+/((?:^|[^$\w\xa0-\uffff."'\])\s]|\b(?:return|yield))\s*)\/(?:\[(?:[^\]\\\r\n]|\\.)*\]|\\.|[^/\\\[\r\n])+\/[dgimyus]{0,7}(?=(?:\s|\/\*(?:[^*]|\*(?!\/))_\*\/)_(?:$|[\r\n,.;:})\]]|\/\/))/,
+            lookbehind: !0,
+            greedy: !0,
+            inside: {
+                'regex-source': { pattern: /^(\/)[\s\S]+(?=\/[a-z]*$)/, lookbehind: !0, alias: 'language-regex', inside: Prism.languages.regex },
+'regex-delimiter': /^\/|\/$/,
+                'regex-flags': /^[a-z]+$/
+}
+},
+'function-variable': {
+pattern:
+/#?(?!\s)[\_$a-zA-Z\xA0-\uFFFF](<?:(?!\s)[$\w\xA0-\uFFFF]>)_(?=\s_[=:]\s*(?:async\s*)?(?:\bfunction\b|(?:\((?:[^()]|\([^()]_\))_\)|(?!\s)[\_$a-zA-Z\xA0-\uFFFF](<?:(?!\s)[$\w\xA0-\uFFFF]>)_)\s_=>))/,
+alias: 'function'
+},
+parameter: [
+{
+pattern: /(function(?:\s+(?!\s)[\_$a-zA-Z\xA0-\uFFFF](<?:(?!\s)[$\w\xA0-\uFFFF]>)_)?\s_\(\s*)(?!\s)(?:[^()\s]|\s+(?![\s)])|\([^()]*\))+(?=\s*\))/,
+lookbehind: !0,
+inside: Prism.languages.javascript
+},
+{
+pattern: /(^|[^$\w\xa0-\uffff])(?!\s)[\_$a-z\xA0-\uFFFF](<?:(?!\s)[$\w\xA0-\uFFFF]>)*(?=\s*=>)/i,
+lookbehind: !0,
+inside: Prism.languages.javascript
+},
+{ pattern: /(\(\s*)(?!\s)(?:[^()\s]|\s+(?![\s)])|\([^()]_\))+(?=\s_\)\s*=>)/, lookbehind: !0, inside: Prism.languages.javascript },
+{
+pattern:
+/((?:\b|\s|^)(?!(?:as|async|await|break|case|catch|class|const|continue|debugger|default|delete|do|else|enum|export|extends|finally|for|from|function|get|if|implements|import|in|instanceof|interface|let|new|null|of|package|private|protected|public|return|set|static|super|switch|this|throw|try|typeof|undefined|var|void|while|with|yield)(?![$\w\xA0-\uFFFF]))(?:(?!\s)[\_$a-zA-Z\xA0-\uFFFF](<?:(?!\s)[$\w\xA0-\uFFFF]>)*\s*)\(\s*|\]\s*\(\s*)(?!\s)(?:[^()\s]|\s+(?![\s)])|\([^()]_\))+(?=\s_\)\s*\{)/,
+lookbehind: !0,
+inside: Prism.languages.javascript
+}
+],
+constant: /\b[A-Z](?:[A-Z_]|\dx?)*\b/
+}),
+Prism.languages.insertBefore('javascript', 'string', {
+hashbang: { pattern: /^#!._/, greedy: !0, alias: 'comment' },
+'template-string': {
+pattern: /`(?:\\[\s\S]|\$\{(?:[^{}]|\{(?:[^{}]|\{[^}]_\})_\})+\}|(?!\$\{)[^\\`])_`/, greedy: !0, inside: { 'template-punctuation': { pattern: /^`|`$/, alias: 'string' },
+                interpolation: {
+                    pattern: /((?:^|[^\\])(?:\\{2})*)\$\{(?:[^{}]|\{(?:[^{}]|\{[^}]*\})*\})+\}/,
+                    lookbehind: !0,
+                    inside: { 'interpolation-punctuation': { pattern: /^\$\{|\}$/, alias: 'punctuation' }, rest: Prism.languages.javascript }
+},
+string: /[\s\S]+/
+}
+}
+}),
+Prism.languages.markup &&
+(Prism.languages.markup.tag.addInlined('script', 'javascript'),
+Prism.languages.markup.tag.addAttribute(
+'on(?:abort|blur|change|click|composition(?:end|start|update)|dblclick|error|focus(?:in|out)?|key(?:down|up)|load|mouse(?:down|enter|leave|move|out|over|up)|reset|resize|scroll|select|slotchange|submit|unload|wheel)',
+'javascript'
+)),
+(Prism.languages.js = Prism.languages.javascript);
+
+````
+
+# main.js
+
+```js
+window.onGatsbyInitialClientRender = function () {
+    /**
+     * Main JS file for theme behaviours
+     */
+    // Responsive video embeds
+    let videoEmbeds = ['iframe[src*="youtube.com"]', 'iframe[src*="vimeo.com"]'];
+    reframe(videoEmbeds.join(','));
+
+    // Handle main navigation menu toggling on small screens
+    function menuToggleHandler(e) {
+        e.preventDefault();
+        document.body.classList.toggle('menu--opened');
+    }
+
+    // Handle docs navigation menu toggling on small screens
+    function docsNavToggleHandler(e) {
+        e.preventDefault();
+        document.body.classList.toggle('docs-menu--opened');
+    }
+
+    // Handle submenu toggling
+    function submenuToggleHandler(e) {
+        e.preventDefault();
+        this.parentNode.classList.toggle('active');
+    }
+
+    window.addMainNavigationHandlers = function () {
+        const menuToggle = document.querySelectorAll('.menu-toggle');
+        if (menuToggle) {
+            for (let i = 0; i < menuToggle.length; i++) {
+                menuToggle[i].addEventListener('click', menuToggleHandler, false);
+            }
+        }
+
+        const submenuToggle = document.querySelectorAll('.submenu-toggle');
+        if (submenuToggle) {
+            for (let i = 0; i < submenuToggle.length; i++) {
+                submenuToggle[i].addEventListener('click', submenuToggleHandler, false);
+            }
+        }
+    };
+
+    window.removeMainNavigationHandlers = function () {
+        // Remove nav related classes on page load
+        document.body.classList.remove('menu--opened');
+
+        const menuToggle = document.querySelectorAll('.menu-toggle');
+        if (menuToggle) {
+            for (let i = 0; i < menuToggle.length; i++) {
+                menuToggle[i].removeEventListener('click', menuToggleHandler, false);
+            }
+        }
+
+        const submenuToggle = document.querySelectorAll('.submenu-toggle');
+        if (submenuToggle) {
+            for (let i = 0; i < submenuToggle.length; i++) {
+                submenuToggle[i].removeEventListener('click', submenuToggleHandler, false);
+            }
+        }
+    };
+
+    window.addDocsNavigationHandlers = function () {
+        const docsNavToggle = document.getElementById('docs-nav-toggle');
+        if (docsNavToggle) {
+            docsNavToggle.addEventListener('click', docsNavToggleHandler, false);
+        }
+
+        const docsSubmenuToggle = document.querySelectorAll('.docs-submenu-toggle');
+        if (docsSubmenuToggle) {
+            for (let i = 0; i < docsSubmenuToggle.length; i++) {
+                docsSubmenuToggle[i].addEventListener('click', submenuToggleHandler, false);
+            }
+        }
+    };
+
+    window.removeDocsNavigationHandlers = function () {
+        // Remove docs nav related classes on page load
+        document.body.classList.remove('docs-menu--opened');
+
+        const docsNavToggle = document.getElementById('docs-nav-toggle');
+        if (docsNavToggle) {
+            docsNavToggle.removeEventListener('click', docsNavToggleHandler, false);
+        }
+
+        const docsSubmenuToggle = document.querySelectorAll('.docs-submenu-toggle');
+        if (docsSubmenuToggle) {
+            for (let i = 0; i < docsSubmenuToggle.length; i++) {
+                docsSubmenuToggle[i].removeEventListener('click', submenuToggleHandler, false);
+            }
+        }
+    };
+
+    window.addPageNavLinks = function () {
+        const pageToc = document.getElementById('page-nav-inside');
+        const pageTocContainer = document.getElementById('page-nav-link-container');
+
+        if (pageToc && pageTocContainer) {
+            const pageContent = document.querySelector('.type-docs .post-content');
+
+            // Create in-page navigation
+            const headerLinks = getHeaderLinks({
+                root: pageContent
+            });
+            if (headerLinks.length > 0) {
+                pageToc.classList.add('has-links');
+                renderHeaderLinks(pageTocContainer, headerLinks);
+            }
+
+            // Scroll to anchors
+            let scroll = new SmoothScroll('[data-scroll]');
+            let hash = window.decodeURI(location.hash.replace('#', ''));
+            if (hash !== '') {
+                window.setTimeout(function () {
+                    let anchor = document.getElementById(hash);
+                    if (anchor) {
+                        scroll.animateScroll(anchor);
+                    }
+                }, 0);
+            }
+
+            // Highlight current anchor
+            let pageTocLinks = pageTocContainer.getElementsByTagName('a');
+            if (pageTocLinks.length > 0) {
+                let spy = new Gumshoe('#page-nav-inside a', {
+                    nested: true,
+                    nestedClass: 'active-parent'
+                });
+            }
+
+            // Add link to page content headings
+            let pageHeadings = getElementsByTagNames(pageContent, ['h2', 'h3']);
+            for (let i = 0; i < pageHeadings.length; i++) {
+                let heading = pageHeadings[i];
+                if (typeof heading.id !== 'undefined' && heading.id !== '') {
+                    heading.insertBefore(anchorForId(heading.id), heading.firstChild);
+                }
+            }
+
+            // Copy link url
+            let clipboard = new ClipboardJS('.hash-link', {
+                text: function (trigger) {
+                    return window.location.href.replace(window.location.hash, '') + trigger.getAttribute('href');
+                }
+            });
+        }
+    };
+
+    window.removePageNavLinks = function () {
+        const pageToc = document.getElementById('page-nav-inside');
+        const pageTocContainer = document.getElementById('page-nav-link-container');
+
+        if (pageToc && pageTocContainer) {
+            pageToc.classList.remove('has-links');
+            while (pageTocContainer.firstChild) {
+                pageTocContainer.removeChild(pageTocContainer.firstChild);
+            }
+        }
+    };
+
+    function getElementsByTagNames(root, tagNames) {
+        let elements = [];
+        for (let i = 0; i < root.children.length; i++) {
+            let element = root.children[i];
+            let tagName = element.nodeName.toLowerCase();
+            if (tagNames.includes(tagName)) {
+                elements.push(element);
+            }
+            elements = elements.concat(getElementsByTagNames(element, tagNames));
+        }
+        return elements;
+    }
+
+    function createLinksForHeaderElements(elements) {
+        let result = [];
+        let stack = [
+            {
+                level: 0,
+                children: result
+            }
+        ];
+        let re = /^h(\d)$/;
+        for (let i = 0; i < elements.length; i++) {
+            let element = elements[i];
+            let tagName = element.nodeName.toLowerCase();
+            let match = re.exec(tagName);
+            if (!match) {
+                console.warn('can not create links to non header element');
+                continue;
+            }
+            let headerLevel = parseInt(match[1], 10);
+            if (!element.id) {
+                if (!element.textContent) {
+                    console.warn('can not create link to element without id and without text content');
+                    continue;
+                }
+                element.id = element.textContent
+                    .toLowerCase()
+                    .replace(/[^\w]+/g, '_')
+                    .replace(/^_/, '')
+                    .replace(/_$/, '');
+            }
+            let link = document.createElement('a');
+            link.href = '#' + element.id;
+            link.setAttribute('data-scroll', '');
+            link.appendChild(document.createTextNode(element.textContent));
+            let obj = {
+                id: element.id,
+                level: headerLevel,
+                textContent: element.textContent,
+                element: element,
+                link: link,
+                children: []
+            };
+            if (headerLevel > stack[stack.length - 1].level) {
+                stack[stack.length - 1].children.push(obj);
+                stack.push(obj);
+            } else {
+                while (headerLevel <= stack[stack.length - 1].level && stack.length > 1) {
+                    stack.pop();
+                }
+                stack[stack.length - 1].children.push(obj);
+                stack.push(obj);
+            }
+        }
+        return result;
+    }
+
+    function getHeaderLinks(options = {}) {
+        let tagNames = options.tagNames || ['h2', 'h3'];
+        let root = options.root || document.body;
+        let headerElements = getElementsByTagNames(root, tagNames);
+        return createLinksForHeaderElements(headerElements);
+    }
+
+    function renderHeaderLinks(element, links) {
+        if (links.length === 0) {
+            return;
+        }
+        let ulElm = document.createElement('ul');
+        for (let i = 0; i < links.length; i++) {
+            let liElm = document.createElement('li');
+            liElm.append(links[i].link);
+            if (links[i].children.length > 0) {
+                renderHeaderLinks(liElm, links[i].children);
+            }
+            ulElm.appendChild(liElm);
+        }
+        element.appendChild(ulElm);
+    }
+
+    function anchorForId(id) {
+        let anchor = document.createElement('a');
+        anchor.setAttribute('class', 'hash-link');
+        anchor.setAttribute('data-scroll', '');
+        anchor.href = '#' + id;
+        anchor.innerHTML = '<span class="screen-reader-text">Copy</span>';
+        return anchor;
+    }
+
+    // Syntax Highlighter
+    // Prism.highlightAll();
+};
+
+//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
+//--------------------------------New----------------------------------
+//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
+````
+
+---
+
+---
+
+# Page Load JS
+
+```js
+window.onGatsbyRouteUpdate = function () {
+    window.addMainNavigationHandlers();
+    window.addDocsNavigationHandlers();
+    window.addPageNavLinks();
+};
+```
+
+---
+
+---
+
+# PageUnload.js
+
+```js
+window.onGatsbyPreRouteUpdate = function () {
+    window.removeMainNavigationHandlers();
+    window.removeDocsNavigationHandlers();
+    window.removePageNavLinks();
+};
+```
+
+---
+
+---
+
+# Plugins.js
+
+```js
+!(function (e, t) {
+    'object' == typeof exports && 'undefined' != typeof module
+        ? (module.exports = t())
+        : 'function' == typeof define && define.amd
+        ? define(t)
+        : ((e = 'undefined' != typeof globalThis ? globalThis : e || self).reframe = t());
+})(this, function () {
+    'use strict';
+    function t() {
+        for (var e = 0, t = 0, n = arguments.length; t < n; t++) e += arguments[t].length;
+        for (var i = Array(e), o = 0, t = 0; t < n; t++) for (var r = arguments[t], f = 0, d = r.length; f < d; f++, o++) i[o] = r[f];
+        return i;
+    }
+    return function (e, s) {
+        return (
+            void 0 === s && (s = 'js-reframe'),
+            ('string' == typeof e ? t(document.querySelectorAll(e)) : 'length' in e ? t(e) : [e]).forEach(function (e) {
+                var t, n, i, o, r, f, d, l;
+                -1 !== e.className.split(' ').indexOf(s) ||
+                    -1 < e.style.width.indexOf('%') ||
+                    ((i = e.getAttribute('height') || e.offsetHeight),
+                    (o = e.getAttribute('width') || e.offsetWidth),
+                    (r = (('string' == typeof i ? parseInt(i) : i) / ('string' == typeof o ? parseInt(o) : o)) * 100),
+                    ((f = document.createElement('div')).className = s),
+                    ((d = f.style).position = 'relative'),
+                    (d.width = '100%'),
+                    (d.paddingTop = r + '%'),
+                    ((l = e.style).position = 'absolute'),
+                    (l.width = '100%'),
+                    (l.height = '100%'),
+                    (l.left = '0'),
+                    (l.top = '0'),
+                    null !== (t = e.parentNode) && void 0 !== t && t.insertBefore(f, e),
+                    null !== (n = e.parentNode) && void 0 !== n && n.removeChild(e),
+                    f.appendChild(e));
+            })
+        );
+    };
+});
+
+/*! smooth-scroll v16.1.0 | (c) 2019 Chris Ferdinandi | MIT License | http://github.com/cferdinandi/smooth-scroll */
+window.Element &&
+    !Element.prototype.closest &&
+    (Element.prototype.closest = function (e) {
+        var t,
+            n = (this.document || this.ownerDocument).querySelectorAll(e),
+            o = this;
+        do {
+            for (t = n.length; 0 <= --t && n.item(t) !== o; );
+        } while (t < 0 && (o = o.parentElement));
+        return o;
+    }),
+    (function () {
+        if ('function' == typeof window.CustomEvent) return;
+        function e(e, t) {
+            t = t || { bubbles: !1, cancelable: !1, detail: void 0 };
+            var n = document.createEvent('CustomEvent');
+            return n.initCustomEvent(e, t.bubbles, t.cancelable, t.detail), n;
+        }
+        (e.prototype = window.Event.prototype), (window.CustomEvent = e);
+    })(),
+    (function () {
+        for (var r = 0, e = ['ms', 'moz', 'webkit', 'o'], t = 0; t < e.length && !window.requestAnimationFrame; ++t)
+            (window.requestAnimationFrame = window[e[t] + 'RequestAnimationFrame']),
+                (window.cancelAnimationFrame = window[e[t] + 'CancelAnimationFrame'] || window[e[t] + 'CancelRequestAnimationFrame']);
+        window.requestAnimationFrame ||
+            (window.requestAnimationFrame = function (e, t) {
+                var n = new Date().getTime(),
+                    o = Math.max(0, 16 - (n - r)),
+                    a = window.setTimeout(function () {
+                        e(n + o);
+                    }, o);
+                return (r = n + o), a;
+            }),
+            window.cancelAnimationFrame ||
+                (window.cancelAnimationFrame = function (e) {
+                    clearTimeout(e);
+                });
+    })(),
+    (function (e, t) {
+        'function' == typeof define && define.amd
+            ? define([], function () {
+                  return t(e);
+              })
+            : 'object' == typeof exports
+            ? (module.exports = t(e))
+            : (e.SmoothScroll = t(e));
+    })('undefined' != typeof global ? global : 'undefined' != typeof window ? window : this, function (q) {
+        'use strict';
+        var I = {
+                ignore: '[data-scroll-ignore]',
+                header: null,
+                topOnEmptyHash: !0,
+                speed: 500,
+                speedAsDuration: !1,
+                durationMax: null,
+                durationMin: null,
+                clip: !0,
+                offset: 0,
+                easing: 'easeInOutCubic',
+                customEasing: null,
+                updateURL: !0,
+                popstate: !0,
+                emitEvents: !0
+            },
+            F = function () {
+                var n = {};
+                return (
+                    Array.prototype.forEach.call(arguments, function (e) {
+                        for (var t in e) {
+                            if (!e.hasOwnProperty(t)) return;
+                            n[t] = e[t];
+                        }
+                    }),
+                    n
+                );
+            },
+            r = function (e) {
+                '#' === e.charAt(0) && (e = e.substr(1));
+                for (var t, n = String(e), o = n.length, a = -1, r = '', i = n.charCodeAt(0); ++a < o; ) {
+                    if (0 === (t = n.charCodeAt(a))) throw new InvalidCharacterError('Invalid character: the input contains U+0000.');
+                    (1 <= t && t <= 31) || 127 == t || (0 === a && 48 <= t && t <= 57) || (1 === a && 48 <= t && t <= 57 && 45 === i)
+                        ? (r += '\\' + t.toString(16) + ' ')
+                        : (r +=
+                              128 <= t || 45 === t || 95 === t || (48 <= t && t <= 57) || (65 <= t && t <= 90) || (97 <= t && t <= 122)
+                                  ? n.charAt(a)
+                                  : '\\' + n.charAt(a));
+                }
+                return '#' + r;
+            },
+            L = function () {
+                return Math.max(
+                    document.body.scrollHeight,
+                    document.documentElement.scrollHeight,
+                    document.body.offsetHeight,
+                    document.documentElement.offsetHeight,
+                    document.body.clientHeight,
+                    document.documentElement.clientHeight
+                );
+            },
+            x = function (e) {
+                return e ? ((t = e), parseInt(q.getComputedStyle(t).height, 10) + e.offsetTop) : 0;
+                var t;
+            },
+            H = function (e, t, n, o) {
+                if (t.emitEvents && 'function' == typeof q.CustomEvent) {
+                    var a = new CustomEvent(e, {
+                        bubbles: !0,
+                        detail: { anchor: n, toggle: o }
+                    });
+                    document.dispatchEvent(a);
+                }
+            };
+        return function (o, e) {
+            var A,
+                a,
+                O,
+                C,
+                M = {};
+            (M.cancelScroll = function (e) {
+                cancelAnimationFrame(C), (C = null), e || H('scrollCancel', A);
+            }),
+                (M.animateScroll = function (i, c, e) {
+                    M.cancelScroll();
+                    var s = F(A || I, e || {}),
+                        u = '[object Number]' === Object.prototype.toString.call(i),
+                        t = u || !i.tagName ? null : i;
+                    if (u || t) {
+                        var l = q.pageYOffset;
+                        s.header && !O && (O = document.querySelector(s.header));
+                        var n,
+                            o,
+                            a,
+                            m,
+                            r,
+                            d,
+                            f,
+                            h,
+                            p = x(O),
+                            g = u
+                                ? i
+                                : (function (e, t, n, o) {
+                                      var a = 0;
+                                      if (e.offsetParent) for (; (a += e.offsetTop), (e = e.offsetParent); );
+                                      return (a = Math.max(a - t - n, 0)), o && (a = Math.min(a, L() - q.innerHeight)), a;
+                                  })(t, p, parseInt('function' == typeof s.offset ? s.offset(i, c) : s.offset, 10), s.clip),
+                            y = g - l,
+                            v = L(),
+                            w = 0,
+                            S =
+                                ((n = y),
+                                (a = (o = s).speedAsDuration ? o.speed : Math.abs((n / 1e3) * o.speed)),
+                                o.durationMax && a > o.durationMax ? o.durationMax : o.durationMin && a < o.durationMin ? o.durationMin : parseInt(a, 10)),
+                            E = function (e, t) {
+                                var n,
+                                    o,
+                                    a,
+                                    r = q.pageYOffset;
+                                if (e == t || r == t || (l < t && q.innerHeight + r) >= v)
+                                    return (
+                                        M.cancelScroll(!0),
+                                        (o = t),
+                                        (a = u),
+                                        0 === (n = i) && document.body.focus(),
+                                        a ||
+                                            (n.focus(),
+                                            document.activeElement !== n && (n.setAttribute('tabindex', '-1'), n.focus(), (n.style.outline = 'none')),
+                                            q.scrollTo(0, o)),
+                                        H('scrollStop', s, i, c),
+                                        !(C = m = null)
+                                    );
+                            },
+                            b = function (e) {
+                                var t, n, o;
+                                m || (m = e),
+                                    (w += e - m),
+                                    (d =
+                                        l +
+                                        y *
+                                            ((n = r = 1 < (r = 0 === S ? 0 : w / S) ? 1 : r),
+                                            'easeInQuad' === (t = s).easing && (o = n * n),
+                                            'easeOutQuad' === t.easing && (o = n * (2 - n)),
+                                            'easeInOutQuad' === t.easing && (o = n < 0.5 ? 2 * n * n : (4 - 2 * n) * n - 1),
+                                            'easeInCubic' === t.easing && (o = n * n * n),
+                                            'easeOutCubic' === t.easing && (o = --n * n * n + 1),
+                                            'easeInOutCubic' === t.easing && (o = n < 0.5 ? 4 * n * n * n : (n - 1) * (2 * n - 2) * (2 * n - 2) + 1),
+                                            'easeInQuart' === t.easing && (o = n * n * n * n),
+                                            'easeOutQuart' === t.easing && (o = 1 - --n * n * n * n),
+                                            'easeInOutQuart' === t.easing && (o = n < 0.5 ? 8 * n * n * n * n : 1 - 8 * --n * n * n * n),
+                                            'easeInQuint' === t.easing && (o = n * n * n * n * n),
+                                            'easeOutQuint' === t.easing && (o = 1 + --n * n * n * n * n),
+                                            'easeInOutQuint' === t.easing && (o = n < 0.5 ? 16 * n * n * n * n * n : 1 + 16 * --n * n * n * n * n),
+                                            t.customEasing && (o = t.customEasing(n)),
+                                            o || n)),
+                                    q.scrollTo(0, Math.floor(d)),
+                                    E(d, g) || ((C = q.requestAnimationFrame(b)), (m = e));
+                            };
+                        0 === q.pageYOffset && q.scrollTo(0, 0),
+                            (f = i),
+                            (h = s),
+                            u ||
+                                (history.pushState &&
+                                    h.updateURL &&
+                                    history.pushState(
+                                        { smoothScroll: JSON.stringify(h), anchor: f.id },
+                                        document.title,
+                                        f === document.documentElement ? '#top' : '#' + f.id
+                                    )),
+                            'matchMedia' in q && q.matchMedia('(prefers-reduced-motion)').matches
+                                ? q.scrollTo(0, Math.floor(g))
+                                : (H('scrollStart', s, i, c), M.cancelScroll(!0), q.requestAnimationFrame(b));
+                    }
+                });
+            var t = function (e) {
+                    if (
+                        !e.defaultPrevented &&
+                        !(0 !== e.button || e.metaKey || e.ctrlKey || e.shiftKey) &&
+                        'closest' in e.target &&
+                        (a = e.target.closest(o)) &&
+                        'a' === a.tagName.toLowerCase() &&
+                        !e.target.closest(A.ignore) &&
+                        a.hostname === q.location.hostname &&
+                        a.pathname === q.location.pathname &&
+                        /#/.test(a.href)
+                    ) {
+                        var t,
+                            n = r(a.hash);
+                        if ('#' === n) {
+                            if (!A.topOnEmptyHash) return;
+                            t = document.documentElement;
+                        } else t = document.querySelector(n);
+                        (t = t || '#top' !== n ? t : document.documentElement) &&
+                            (e.preventDefault(),
+                            (function (e) {
+                                if (history.replaceState && e.updateURL && !history.state) {
+                                    var t = q.location.hash;
+                                    (t = t || ''),
+                                        history.replaceState(
+                                            {
+                                                smoothScroll: JSON.stringify(e),
+                                                anchor: t || q.pageYOffset
+                                            },
+                                            document.title,
+                                            t || q.location.href
+                                        );
+                                }
+                            })(A),
+                            M.animateScroll(t, a));
+                    }
+                },
+                n = function (e) {
+                    if (null !== history.state && history.state.smoothScroll && history.state.smoothScroll === JSON.stringify(A)) {
+                        var t = history.state.anchor;
+                        ('string' == typeof t && t && !(t = document.querySelector(r(history.state.anchor)))) || M.animateScroll(t, null, { updateURL: !1 });
+                    }
+                };
+            M.destroy = function () {
+                A && (document.removeEventListener('click', t, !1), q.removeEventListener('popstate', n, !1), M.cancelScroll(), (C = O = a = A = null));
+            };
+            return (
+                (function () {
+                    if (!('querySelector' in document && 'addEventListener' in q && 'requestAnimationFrame' in q && 'closest' in q.Element.prototype))
+                        throw 'Smooth Scroll: This browser does not support the required JavaScript methods and browser APIs.';
+                    M.destroy(),
+                        (A = F(I, e || {})),
+                        (O = A.header ? document.querySelector(A.header) : null),
+                        document.addEventListener('click', t, !1),
+                        A.updateURL && A.popstate && q.addEventListener('popstate', n, !1);
+                })(),
+                M
+            );
+        };
+    });
+
+/*! gumshoejs v5.1.1 | (c) 2019 Chris Ferdinandi | MIT License | http://github.com/cferdinandi/gumshoe */
+Element.prototype.closest ||
+    (Element.prototype.matches || (Element.prototype.matches = Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector),
+    (Element.prototype.closest = function (t) {
+        var e = this;
+        if (!document.documentElement.contains(this)) return null;
+        do {
+            if (e.matches(t)) return e;
+            e = e.parentElement;
+        } while (null !== e);
+        return null;
+    })),
+    (function () {
+        if ('function' == typeof window.CustomEvent) return !1;
+        function t(t, e) {
+            e = e || { bubbles: !1, cancelable: !1, detail: void 0 };
+            var n = document.createEvent('CustomEvent');
+            return n.initCustomEvent(t, e.bubbles, e.cancelable, e.detail), n;
+        }
+        (t.prototype = window.Event.prototype), (window.CustomEvent = t);
+    })(),
+    (function (t, e) {
+        'function' == typeof define && define.amd
+            ? define([], function () {
+                  return e(t);
+              })
+            : 'object' == typeof exports
+            ? (module.exports = e(t))
+            : (t.Gumshoe = e(t));
+    })('undefined' != typeof global ? global : 'undefined' != typeof window ? window : this, function (t) {
+        'use strict';
+        var e = {
+                navClass: 'active',
+                contentClass: 'active',
+                nested: !1,
+                nestedClass: 'active',
+                offset: 0,
+                reflow: !1,
+                events: !0
+            },
+            n = function (t, e, n) {
+                if (n.settings.events) {
+                    var o = new CustomEvent(t, {
+                        bubbles: !0,
+                        cancelable: !0,
+                        detail: n
+                    });
+                    e.dispatchEvent(o);
+                }
+            },
+            o = function (t) {
+                var e = 0;
+                if (t.offsetParent) for (; t; ) (e += t.offsetTop), (t = t.offsetParent);
+                return e >= 0 ? e : 0;
+            },
+            s = function (t) {
+                t &&
+                    t.sort(function (t, e) {
+                        return o(t.content) < o(e.content) ? -1 : 1;
+                    });
+            },
+            c = function (e, n, o) {
+                var s = e.getBoundingClientRect(),
+                    c = (function (t) {
+                        return 'function' == typeof t.offset ? parseFloat(t.offset()) : parseFloat(t.offset);
+                    })(n);
+                return o ? parseInt(s.bottom, 10) < (t.innerHeight || document.documentElement.clientHeight) : parseInt(s.top, 10) <= c;
+            },
+            r = function () {
+                return (
+                    t.innerHeight + t.pageYOffset >=
+                    Math.max(
+                        document.body.scrollHeight,
+                        document.documentElement.scrollHeight,
+                        document.body.offsetHeight,
+                        document.documentElement.offsetHeight,
+                        document.body.clientHeight,
+                        document.documentElement.clientHeight
+                    )
+                );
+            },
+            i = function (t, e) {
+                var n = t[t.length - 1];
+                if (
+                    (function (t, e) {
+                        return !(!r() || !c(t.content, e, !0));
+                    })(n, e)
+                )
+                    return n;
+                for (var o = t.length - 1; o >= 0; o--) if (c(t[o].content, e)) return t[o];
+            },
+            l = function (t, e) {
+                if (e.nested) {
+                    var n = t.parentNode.closest('li');
+                    n && (n.classList.remove(e.nestedClass), l(n, e));
+                }
+            },
+            a = function (t, e) {
+                if (t) {
+                    var o = t.nav.closest('li');
+                    o &&
+                        (o.classList.remove(e.navClass),
+                        t.content.classList.remove(e.contentClass),
+                        l(o, e),
+                        n('gumshoeDeactivate', o, {
+                            link: t.nav,
+                            content: t.content,
+                            settings: e
+                        }));
+                }
+            },
+            u = function (t, e) {
+                if (e.nested) {
+                    var n = t.parentNode.closest('li');
+                    n && (n.classList.add(e.nestedClass), u(n, e));
+                }
+            };
+        return function (o, c) {
+            var r,
+                l,
+                f,
+                d,
+                m,
+                v = {};
+            (v.setup = function () {
+                (r = document.querySelectorAll(o)),
+                    (l = []),
+                    Array.prototype.forEach.call(r, function (t) {
+                        var e = document.getElementById(decodeURIComponent(t.hash.substr(1)));
+                        e && l.push({ nav: t, content: e });
+                    }),
+                    s(l);
+            }),
+                (v.detect = function () {
+                    var t = i(l, m);
+                    t
+                        ? (f && t.content === f.content) ||
+                          (a(f, m),
+                          (function (t, e) {
+                              if (t) {
+                                  var o = t.nav.closest('li');
+                                  o &&
+                                      (o.classList.add(e.navClass),
+                                      t.content.classList.add(e.contentClass),
+                                      u(o, e),
+                                      n('gumshoeActivate', o, {
+                                          link: t.nav,
+                                          content: t.content,
+                                          settings: e
+                                      }));
+                              }
+                          })(t, m),
+                          (f = t))
+                        : f && (a(f, m), (f = null));
+                });
+            var p = function (e) {
+                    d && t.cancelAnimationFrame(d), (d = t.requestAnimationFrame(v.detect));
+                },
+                h = function (e) {
+                    d && t.cancelAnimationFrame(d),
+                        (d = t.requestAnimationFrame(function () {
+                            s(l), v.detect();
+                        }));
+                };
+            v.destroy = function () {
+                f && a(f, m),
+                    t.removeEventListener('scroll', p, !1),
+                    m.reflow && t.removeEventListener('resize', h, !1),
+                    (l = null),
+                    (r = null),
+                    (f = null),
+                    (d = null),
+                    (m = null);
+            };
+            return (
+                (m = (function () {
+                    var t = {};
+                    return (
+                        Array.prototype.forEach.call(arguments, function (e) {
+                            for (var n in e) {
+                                if (!e.hasOwnProperty(n)) return;
+                                t[n] = e[n];
+                            }
+                        }),
+                        t
+                    );
+                })(e, c || {})),
+                v.setup(),
+                v.detect(),
+                t.addEventListener('scroll', p, !1),
+                m.reflow && t.addEventListener('resize', h, !1),
+                v
+            );
+        };
+    });
+
+/*!
+ * clipboard.js v2.0.4
+ * https://zenorocha.github.io/clipboard.js
+ *
+ * Licensed MIT © Zeno Rocha
+ */
+!(function (t, e) {
+    'object' == typeof exports && 'object' == typeof module
+        ? (module.exports = e())
+        : 'function' == typeof define && define.amd
+        ? define([], e)
+        : 'object' == typeof exports
+        ? (exports.ClipboardJS = e())
+        : (t.ClipboardJS = e());
+})(this, function () {
+    return (function (n) {
+        var o = {};
+        function r(t) {
+            if (o[t]) return o[t].exports;
+            var e = (o[t] = { i: t, l: !1, exports: {} });
+            return n[t].call(e.exports, e, e.exports, r), (e.l = !0), e.exports;
+        }
+        return (
+            (r.m = n),
+            (r.c = o),
+            (r.d = function (t, e, n) {
+                r.o(t, e) || Object.defineProperty(t, e, { enumerable: !0, get: n });
+            }),
+            (r.r = function (t) {
+                'undefined' != typeof Symbol &&
+                    Symbol.toStringTag &&
+                    Object.defineProperty(t, Symbol.toStringTag, {
+                        value: 'Module'
+                    }),
+                    Object.defineProperty(t, '__esModule', { value: !0 });
+            }),
+            (r.t = function (e, t) {
+                if ((1 & t && (e = r(e)), 8 & t)) return e;
+                if (4 & t && 'object' == typeof e && e && e.__esModule) return e;
+                var n = Object.create(null);
+                if (
+                    (r.r(n),
+                    Object.defineProperty(n, 'default', {
+                        enumerable: !0,
+                        value: e
+                    }),
+                    2 & t && 'string' != typeof e)
+                )
+                    for (var o in e)
+                        r.d(
+                            n,
+                            o,
+                            function (t) {
+                                return e[t];
+                            }.bind(null, o)
+                        );
+                return n;
+            }),
+            (r.n = function (t) {
+                var e =
+                    t && t.__esModule
+                        ? function () {
+                              return t.default;
+                          }
+                        : function () {
+                              return t;
+                          };
+                return r.d(e, 'a', e), e;
+            }),
+            (r.o = function (t, e) {
+                return Object.prototype.hasOwnProperty.call(t, e);
+            }),
+            (r.p = ''),
+            r((r.s = 0))
+        );
+    })([
+        function (t, e, n) {
+            'use strict';
+            var r =
+                    'function' == typeof Symbol && 'symbol' == typeof Symbol.iterator
+                        ? function (t) {
+                              return typeof t;
+                          }
+                        : function (t) {
+                              return t && 'function' == typeof Symbol && t.constructor === Symbol && t !== Symbol.prototype ? 'symbol' : typeof t;
+                          },
+                i = (function () {
+                    function o(t, e) {
+                        for (var n = 0; n < e.length; n++) {
+                            var o = e[n];
+                            (o.enumerable = o.enumerable || !1), (o.configurable = !0), 'value' in o && (o.writable = !0), Object.defineProperty(t, o.key, o);
+                        }
+                    }
+                    return function (t, e, n) {
+                        return e && o(t.prototype, e), n && o(t, n), t;
+                    };
+                })(),
+                a = o(n(1)),
+                c = o(n(3)),
+                u = o(n(4));
+            function o(t) {
+                return t && t.__esModule ? t : { default: t };
+            }
+            var l = (function (t) {
+                function o(t, e) {
+                    !(function (t, e) {
+                        if (!(t instanceof e)) throw new TypeError('Cannot call a class as a function');
+                    })(this, o);
+                    var n = (function (t, e) {
+                        if (!t) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+                        return !e || ('object' != typeof e && 'function' != typeof e) ? t : e;
+                    })(this, (o.__proto__ || Object.getPrototypeOf(o)).call(this));
+                    return n.resolveOptions(e), n.listenClick(t), n;
+                }
+                return (
+                    (function (t, e) {
+                        if ('function' != typeof e && null !== e) throw new TypeError('Super expression must either be null or a function, not ' + typeof e);
+                        (t.prototype = Object.create(e && e.prototype, {
+                            constructor: {
+                                value: t,
+                                enumerable: !1,
+                                writable: !0,
+                                configurable: !0
+                            }
+                        })),
+                            e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : (t.__proto__ = e));
+                    })(o, c.default),
+                    i(
+                        o,
+                        [
+                            {
+                                key: 'resolveOptions',
+                                value: function () {
+                                    var t = 0 < arguments.length && void 0 !== arguments[0] ? arguments[0] : {};
+                                    (this.action = 'function' == typeof t.action ? t.action : this.defaultAction),
+                                        (this.target = 'function' == typeof t.target ? t.target : this.defaultTarget),
+                                        (this.text = 'function' == typeof t.text ? t.text : this.defaultText),
+                                        (this.container = 'object' === r(t.container) ? t.container : document.body);
+                                }
+                            },
+                            {
+                                key: 'listenClick',
+                                value: function (t) {
+                                    var e = this;
+                                    this.listener = (0, u.default)(t, 'click', function (t) {
+                                        return e.onClick(t);
+                                    });
+                                }
+                            },
+                            {
+                                key: 'onClick',
+                                value: function (t) {
+                                    var e = t.delegateTarget || t.currentTarget;
+                                    this.clipboardAction && (this.clipboardAction = null),
+                                        (this.clipboardAction = new a.default({
+                                            action: this.action(e),
+                                            target: this.target(e),
+                                            text: this.text(e),
+                                            container: this.container,
+                                            trigger: e,
+                                            emitter: this
+                                        }));
+                                }
+                            },
+                            {
+                                key: 'defaultAction',
+                                value: function (t) {
+                                    return s('action', t);
+                                }
+                            },
+                            {
+                                key: 'defaultTarget',
+                                value: function (t) {
+                                    var e = s('target', t);
+                                    if (e) return document.querySelector(e);
+                                }
+                            },
+                            {
+                                key: 'defaultText',
+                                value: function (t) {
+                                    return s('text', t);
+                                }
+                            },
+                            {
+                                key: 'destroy',
+                                value: function () {
+                                    this.listener.destroy(), this.clipboardAction && (this.clipboardAction.destroy(), (this.clipboardAction = null));
+                                }
+                            }
+                        ],
+                        [
+                            {
+                                key: 'isSupported',
+                                value: function () {
+                                    var t = 0 < arguments.length && void 0 !== arguments[0] ? arguments[0] : ['copy', 'cut'],
+                                        e = 'string' == typeof t ? [t] : t,
+                                        n = !!document.queryCommandSupported;
+                                    return (
+                                        e.forEach(function (t) {
+                                            n = n && !!document.queryCommandSupported(t);
+                                        }),
+                                        n
+                                    );
+                                }
+                            }
+                        ]
+                    ),
+                    o
+                );
+            })();
+            function s(t, e) {
+                var n = 'data-clipboard-' + t;
+                if (e.hasAttribute(n)) return e.getAttribute(n);
+            }
+            t.exports = l;
+        },
+        function (t, e, n) {
+            'use strict';
+            var o,
+                r =
+                    'function' == typeof Symbol && 'symbol' == typeof Symbol.iterator
+                        ? function (t) {
+                              return typeof t;
+                          }
+                        : function (t) {
+                              return t && 'function' == typeof Symbol && t.constructor === Symbol && t !== Symbol.prototype ? 'symbol' : typeof t;
+                          },
+                i = (function () {
+                    function o(t, e) {
+                        for (var n = 0; n < e.length; n++) {
+                            var o = e[n];
+                            (o.enumerable = o.enumerable || !1), (o.configurable = !0), 'value' in o && (o.writable = !0), Object.defineProperty(t, o.key, o);
+                        }
+                    }
+                    return function (t, e, n) {
+                        return e && o(t.prototype, e), n && o(t, n), t;
+                    };
+                })(),
+                a = n(2),
+                c = (o = a) && o.__esModule ? o : { default: o };
+            var u = (function () {
+                function e(t) {
+                    !(function (t, e) {
+                        if (!(t instanceof e)) throw new TypeError('Cannot call a class as a function');
+                    })(this, e),
+                        this.resolveOptions(t),
+                        this.initSelection();
+                }
+                return (
+                    i(e, [
+                        {
+                            key: 'resolveOptions',
+                            value: function () {
+                                var t = 0 < arguments.length && void 0 !== arguments[0] ? arguments[0] : {};
+                                (this.action = t.action),
+                                    (this.container = t.container),
+                                    (this.emitter = t.emitter),
+                                    (this.target = t.target),
+                                    (this.text = t.text),
+                                    (this.trigger = t.trigger),
+                                    (this.selectedText = '');
+                            }
+                        },
+                        {
+                            key: 'initSelection',
+                            value: function () {
+                                this.text ? this.selectFake() : this.target && this.selectTarget();
+                            }
+                        },
+                        {
+                            key: 'selectFake',
+                            value: function () {
+                                var t = this,
+                                    e = 'rtl' == document.documentElement.getAttribute('dir');
+                                this.removeFake(),
+                                    (this.fakeHandlerCallback = function () {
+                                        return t.removeFake();
+                                    }),
+                                    (this.fakeHandler = this.container.addEventListener('click', this.fakeHandlerCallback) || !0),
+                                    (this.fakeElem = document.createElement('textarea')),
+                                    (this.fakeElem.style.fontSize = '12pt'),
+                                    (this.fakeElem.style.border = '0'),
+                                    (this.fakeElem.style.padding = '0'),
+                                    (this.fakeElem.style.margin = '0'),
+                                    (this.fakeElem.style.position = 'absolute'),
+                                    (this.fakeElem.style[e ? 'right' : 'left'] = '-9999px');
+                                var n = window.pageYOffset || document.documentElement.scrollTop;
+                                (this.fakeElem.style.top = n + 'px'),
+                                    this.fakeElem.setAttribute('readonly', ''),
+                                    (this.fakeElem.value = this.text),
+                                    this.container.appendChild(this.fakeElem),
+                                    (this.selectedText = (0, c.default)(this.fakeElem)),
+                                    this.copyText();
+                            }
+                        },
+                        {
+                            key: 'removeFake',
+                            value: function () {
+                                this.fakeHandler &&
+                                    (this.container.removeEventListener('click', this.fakeHandlerCallback),
+                                    (this.fakeHandler = null),
+                                    (this.fakeHandlerCallback = null)),
+                                    this.fakeElem && (this.container.removeChild(this.fakeElem), (this.fakeElem = null));
+                            }
+                        },
+                        {
+                            key: 'selectTarget',
+                            value: function () {
+                                (this.selectedText = (0, c.default)(this.target)), this.copyText();
+                            }
+                        },
+                        {
+                            key: 'copyText',
+                            value: function () {
+                                var e = void 0;
+                                try {
+                                    e = document.execCommand(this.action);
+                                } catch (t) {
+                                    e = !1;
+                                }
+                                this.handleResult(e);
+                            }
+                        },
+                        {
+                            key: 'handleResult',
+                            value: function (t) {
+                                this.emitter.emit(t ? 'success' : 'error', {
+                                    action: this.action,
+                                    text: this.selectedText,
+                                    trigger: this.trigger,
+                                    clearSelection: this.clearSelection.bind(this)
+                                });
+                            }
+                        },
+                        {
+                            key: 'clearSelection',
+                            value: function () {
+                                this.trigger && this.trigger.focus(), window.getSelection().removeAllRanges();
+                            }
+                        },
+                        {
+                            key: 'destroy',
+                            value: function () {
+                                this.removeFake();
+                            }
+                        },
+                        {
+                            key: 'action',
+                            set: function () {
+                                var t = 0 < arguments.length && void 0 !== arguments[0] ? arguments[0] : 'copy';
+                                if (((this._action = t), 'copy' !== this._action && 'cut' !== this._action))
+                                    throw new Error('Invalid "action" value, use either "copy" or "cut"');
+                            },
+                            get: function () {
+                                return this._action;
+                            }
+                        },
+                        {
+                            key: 'target',
+                            set: function (t) {
+                                if (void 0 !== t) {
+                                    if (!t || 'object' !== (void 0 === t ? 'undefined' : r(t)) || 1 !== t.nodeType)
+                                        throw new Error('Invalid "target" value, use a valid Element');
+                                    if ('copy' === this.action && t.hasAttribute('disabled'))
+                                        throw new Error('Invalid "target" attribute. Please use "readonly" instead of "disabled" attribute');
+                                    if ('cut' === this.action && (t.hasAttribute('readonly') || t.hasAttribute('disabled')))
+                                        throw new Error(
+                                            'Invalid "target" attribute. You can\'t cut text from elements with "readonly" or "disabled" attributes'
+                                        );
+                                    this._target = t;
+                                }
+                            },
+                            get: function () {
+                                return this._target;
+                            }
+                        }
+                    ]),
+                    e
+                );
+            })();
+            t.exports = u;
+        },
+        function (t, e) {
+            t.exports = function (t) {
+                var e;
+                if ('SELECT' === t.nodeName) t.focus(), (e = t.value);
+                else if ('INPUT' === t.nodeName || 'TEXTAREA' === t.nodeName) {
+                    var n = t.hasAttribute('readonly');
+                    n || t.setAttribute('readonly', ''), t.select(), t.setSelectionRange(0, t.value.length), n || t.removeAttribute('readonly'), (e = t.value);
+                } else {
+                    t.hasAttribute('contenteditable') && t.focus();
+                    var o = window.getSelection(),
+                        r = document.createRange();
+                    r.selectNodeContents(t), o.removeAllRanges(), o.addRange(r), (e = o.toString());
+                }
+                return e;
+            };
+        },
+        function (t, e) {
+            function n() {}
+            (n.prototype = {
+                on: function (t, e, n) {
+                    var o = this.e || (this.e = {});
+                    return (o[t] || (o[t] = [])).push({ fn: e, ctx: n }), this;
+                },
+                once: function (t, e, n) {
+                    var o = this;
+                    function r() {
+                        o.off(t, r), e.apply(n, arguments);
+                    }
+                    return (r._ = e), this.on(t, r, n);
+                },
+                emit: function (t) {
+                    for (var e = [].slice.call(arguments, 1), n = ((this.e || (this.e = {}))[t] || []).slice(), o = 0, r = n.length; o < r; o++)
+                        n[o].fn.apply(n[o].ctx, e);
+                    return this;
+                },
+                off: function (t, e) {
+                    var n = this.e || (this.e = {}),
+                        o = n[t],
+                        r = [];
+                    if (o && e) for (var i = 0, a = o.length; i < a; i++) o[i].fn !== e && o[i].fn._ !== e && r.push(o[i]);
+                    return r.length ? (n[t] = r) : delete n[t], this;
+                }
+            }),
+                (t.exports = n);
+        },
+        function (t, e, n) {
+            var d = n(5),
+                h = n(6);
+            t.exports = function (t, e, n) {
+                if (!t && !e && !n) throw new Error('Missing required arguments');
+                if (!d.string(e)) throw new TypeError('Second argument must be a String');
+                if (!d.fn(n)) throw new TypeError('Third argument must be a Function');
+                if (d.node(t))
+                    return (
+                        (s = e),
+                        (f = n),
+                        (l = t).addEventListener(s, f),
+                        {
+                            destroy: function () {
+                                l.removeEventListener(s, f);
+                            }
+                        }
+                    );
+                if (d.nodeList(t))
+                    return (
+                        (a = t),
+                        (c = e),
+                        (u = n),
+                        Array.prototype.forEach.call(a, function (t) {
+                            t.addEventListener(c, u);
+                        }),
+                        {
+                            destroy: function () {
+                                Array.prototype.forEach.call(a, function (t) {
+                                    t.removeEventListener(c, u);
+                                });
+                            }
+                        }
+                    );
+                if (d.string(t)) return (o = t), (r = e), (i = n), h(document.body, o, r, i);
+                throw new TypeError('First argument must be a String, HTMLElement, HTMLCollection, or NodeList');
+                var o, r, i, a, c, u, l, s, f;
+            };
+        },
+        function (t, n) {
+            (n.node = function (t) {
+                return void 0 !== t && t instanceof HTMLElement && 1 === t.nodeType;
+            }),
+                (n.nodeList = function (t) {
+                    var e = Object.prototype.toString.call(t);
+                    return void 0 !== t && ('[object NodeList]' === e || '[object HTMLCollection]' === e) && 'length' in t && (0 === t.length || n.node(t[0]));
+                }),
+                (n.string = function (t) {
+                    return 'string' == typeof t || t instanceof String;
+                }),
+                (n.fn = function (t) {
+                    return '[object Function]' === Object.prototype.toString.call(t);
+                });
+        },
+        function (t, e, n) {
+            var a = n(7);
+            function i(t, e, n, o, r) {
+                var i = function (e, n, t, o) {
+                    return function (t) {
+                        (t.delegateTarget = a(t.target, n)), t.delegateTarget && o.call(e, t);
+                    };
+                }.apply(this, arguments);
+                return (
+                    t.addEventListener(n, i, r),
+                    {
+                        destroy: function () {
+                            t.removeEventListener(n, i, r);
+                        }
+                    }
+                );
+            }
+            t.exports = function (t, e, n, o, r) {
+                return 'function' == typeof t.addEventListener
+                    ? i.apply(null, arguments)
+                    : 'function' == typeof n
+                    ? i.bind(null, document).apply(null, arguments)
+                    : ('string' == typeof t && (t = document.querySelectorAll(t)),
+                      Array.prototype.map.call(t, function (t) {
+                          return i(t, e, n, o, r);
+                      }));
+            };
+        },
+        function (t, e) {
+            if ('undefined' != typeof Element && !Element.prototype.matches) {
+                var n = Element.prototype;
+                n.matches = n.matchesSelector || n.mozMatchesSelector || n.msMatchesSelector || n.oMatchesSelector || n.webkitMatchesSelector;
+            }
+            t.exports = function (t, e) {
+                for (; t && 9 !== t.nodeType; ) {
+                    if ('function' == typeof t.matches && t.matches(e)) return t;
+                    t = t.parentNode;
+                }
+            };
+        }
+    ]);
+});
+```
+
+---
+
+---
+
+# Prism.js
+
+```js
+
+var \_self = 'undefined' != typeof window ? window : 'undefined' != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? self : {},
+Prism = (function (g) {
+var c = /\blang(?:uage)?-([\w-]+)\b/i,
+a = 0,
+C = {
+manual: g.Prism && g.Prism.manual,
+disableWorkerMessageHandler: g.Prism && g.Prism.disableWorkerMessageHandler,
+util: {
+encode: function (e) {
+return e instanceof M
+? new M(e.type, C.util.encode(e.content), e.alias)
+: Array.isArray(e)
+? e.map(C.util.encode)
+: e
+.replace(/&/g, '&amp;')
+.replace(/</g, '&lt;')
+.replace(/\u00a0/g, ' ');
+},
+type: function (e) {
+return Object.prototype.toString.call(e).slice(8, -1);
+},
+objId: function (e) {
+return e.**id || Object.defineProperty(e, '**id', { value: ++a }), e.\_\_id;
+},
+clone: function n(e, t) {
+var r,
+a,
+i = C.util.type(e);
+switch (((t = t || {}), i)) {
+case 'Object':
+if (((a = C.util.objId(e)), t[a])) return t[a];
+for (var l in ((r = {}), (t[a] = r), e)) e.hasOwnProperty(l) && (r[l] = n(e[l], t));
+return r;
+case 'Array':
+return (
+(a = C.util.objId(e)),
+t[a]
+? t[a]
+: ((r = []),
+(t[a] = r),
+e.forEach(function (e, a) {
+r[a] = n(e, t);
+}),
+r)
+);
+default:
+return e;
+}
+}
+},
+languages: {
+extend: function (e, a) {
+var n = C.util.clone(C.languages[e]);
+for (var t in a) n[t] = a[t];
+return n;
+},
+insertBefore: function (n, e, a, t) {
+var r = (t = t || C.languages)[n],
+i = {};
+for (var l in r)
+if (r.hasOwnProperty(l)) {
+if (l == e) for (var o in a) a.hasOwnProperty(o) && (i[o] = a[o]);
+a.hasOwnProperty(l) || (i[l] = r[l]);
+}
+var s = t[n];
+return (
+(t[n] = i),
+C.languages.DFS(C.languages, function (e, a) {
+a === s && e != n && (this[e] = i);
+}),
+i
+);
+},
+DFS: function e(a, n, t, r) {
+r = r || {};
+var i = C.util.objId;
+for (var l in a)
+if (a.hasOwnProperty(l)) {
+n.call(a, l, a[l], t || l);
+var o = a[l],
+s = C.util.type(o);
+'Object' !== s || r[i(o)] ? 'Array' !== s || r[i(o)] || ((r[i(o)] = !0), e(o, n, l, r)) : ((r[i(o)] = !0), e(o, n, null, r));
+}
+}
+},
+plugins: {},
+highlightAll: function (e, a) {
+C.highlightAllUnder(document, e, a);
+},
+highlightAllUnder: function (e, a, n) {
+var t = {
+callback: n,
+selector: 'code[class_="language-"], [class*="language-"] code, code[class*="lang-"], [class*="lang-"] code'
+};
+C.hooks.run('before-highlightall', t);
+for (var r, i = t.elements || e.querySelectorAll(t.selector), l = 0; (r = i[l++]); ) C.highlightElement(r, !0 === a, t.callback);
+},
+highlightElement: function (e, a, n) {
+for (var t, r = 'none', i = e; i && !c.test(i.className); ) i = i.parentNode;
+i && ((r = (i.className.match(c) || [, 'none'])[1].toLowerCase()), (t = C.languages[r])),
+(e.className = e.className.replace(c, '').replace(/\s+/g, ' ') + ' language-' + r),
+e.parentNode &&
+((i = e.parentNode), /pre/i.test(i.nodeName) && (i.className = i.className.replace(c, '').replace(/\s+/g, ' ') + ' language-' + r));
+var l = { element: e, language: r, grammar: t, code: e.textContent },
+o = function (e) {
+(l.highlightedCode = e),
+C.hooks.run('before-insert', l),
+(l.element.innerHTML = l.highlightedCode),
+C.hooks.run('after-highlight', l),
+C.hooks.run('complete', l),
+n && n.call(l.element);
+};
+if ((C.hooks.run('before-sanity-check', l), l.code))
+if ((C.hooks.run('before-highlight', l), l.grammar))
+if (a && g.Worker) {
+var s = new Worker(C.filename);
+(s.onmessage = function (e) {
+o(e.data);
+}),
+s.postMessage(
+JSON.stringify({
+language: l.language,
+code: l.code,
+immediateClose: !0
+})
+);
+} else o(C.highlight(l.code, l.grammar, l.language));
+else o(C.util.encode(l.code));
+else C.hooks.run('complete', l);
+},
+highlight: function (e, a, n) {
+var t = { code: e, grammar: a, language: n };
+return (
+C.hooks.run('before-tokenize', t),
+(t.tokens = C.tokenize(t.code, t.grammar)),
+C.hooks.run('after-tokenize', t),
+M.stringify(C.util.encode(t.tokens), t.language)
+);
+},
+matchGrammar: function (e, a, n, t, r, i, l) {
+for (var o in n)
+if (n.hasOwnProperty(o) && n[o]) {
+if (o == l) return;
+var s = n[o];
+s = 'Array' === C.util.type(s) ? s : [s];
+for (var g = 0; g < s.length; ++g) {
+var c = s[g],
+u = c.inside,
+h = !!c.lookbehind,
+f = !!c.greedy,
+d = 0,
+m = c.alias;
+if (f && !c.pattern.global) {
+var p = c.pattern.toString().match(/[imuy]_$/)[0];
+c.pattern = RegExp(c.pattern.source, p + 'g');
+}
+c = c.pattern || c;
+for (var y = t, v = r; y < a.length; v += a[y].length, ++y) {
+var k = a[y];
+if (a.length > e.length) return;
+if (!(k instanceof M)) {
+if (f && y != a.length - 1) {
+if (((c.lastIndex = v), !(x = c.exec(e)))) break;
+for (
+var b = x.index + (h ? x[1].length : 0), w = x.index + x[0].length, A = y, P = v, O = a.length;
+A < O && (P < w || (!a[A].type && !a[A - 1].greedy));
+++A
+)
+(P += a[A].length) <= b && (++y, (v = P));
+if (a[y] instanceof M) continue;
+(N = A - y), (k = e.slice(v, P)), (x.index -= v);
+} else {
+c.lastIndex = 0;
+var x = c.exec(k),
+N = 1;
+}
+if (x) {
+h && (d = x[1] ? x[1].length : 0);
+w = (b = x.index + d) + (x = x[0].slice(d)).length;
+var j = k.slice(0, b),
+S = k.slice(w),
+E = [y, N];
+j && (++y, (v += j.length), E.push(j));
+var * = new M(o, u ? C.tokenize(x, u) : x, m, x, f);
+if (
+(E.push(*),
+S && E.push(S),
+Array.prototype.splice.apply(a, E),
+1 != N && C.matchGrammar(e, a, n, y, v, !0, o),
+i)
+)
+break;
+} else if (i) break;
+}
+}
+}
+}
+},
+tokenize: function (e, a) {
+var n = [e],
+t = a.rest;
+if (t) {
+for (var r in t) a[r] = t[r];
+delete a.rest;
+}
+return C.matchGrammar(e, n, a, 0, 0, !1), n;
+},
+hooks: {
+all: {},
+add: function (e, a) {
+var n = C.hooks.all;
+(n[e] = n[e] || []), n[e].push(a);
+},
+run: function (e, a) {
+var n = C.hooks.all[e];
+if (n && n.length) for (var t, r = 0; (t = n[r++]); ) t(a);
+}
+},
+Token: M
+};
+function M(e, a, n, t, r) {
+(this.type = e), (this.content = a), (this.alias = n), (this.length = 0 | (t || '').length), (this.greedy = !!r);
+}
+if (
+((g.Prism = C),
+(M.stringify = function (e, a) {
+if ('string' == typeof e) return e;
+if (Array.isArray(e))
+return e
+.map(function (e) {
+return M.stringify(e, a);
+})
+.join('');
+var n = {
+type: e.type,
+content: M.stringify(e.content, a),
+tag: 'span',
+classes: ['token', e.type],
+attributes: {},
+language: a
+};
+if (e.alias) {
+var t = Array.isArray(e.alias) ? e.alias : [e.alias];
+Array.prototype.push.apply(n.classes, t);
+}
+C.hooks.run('wrap', n);
+var r = Object.keys(n.attributes)
+.map(function (e) {
+return e + '="' + (n.attributes[e] || '').replace(/"/g, '&quot;') + '"';
+})
+.join(' ');
+return '<' + n.tag + ' class="' + n.classes.join(' ') + '"' + (r ? ' ' + r : '') + '>' + n.content + '</' + n.tag + '>';
+}),
+!g.document)
+)
+return (
+g.addEventListener &&
+(C.disableWorkerMessageHandler ||
+g.addEventListener(
+'message',
+function (e) {
+var a = JSON.parse(e.data),
+n = a.language,
+t = a.code,
+r = a.immediateClose;
+g.postMessage(C.highlight(t, C.languages[n], n)), r && g.close();
+},
+!1
+)),
+C
+);
+var e = document.currentScript || [].slice.call(document.getElementsByTagName('script')).pop();
+return (
+e &&
+((C.filename = e.src),
+C.manual ||
+e.hasAttribute('data-manual') ||
+('loading' !== document.readyState
+? window.requestAnimationFrame
+? window.requestAnimationFrame(C.highlightAll)
+: window.setTimeout(C.highlightAll, 16)
+: document.addEventListener('DOMContentLoaded', C.highlightAll))),
+C
+);
+})(\_self);
+'undefined' != typeof module && module.exports && (module.exports = Prism), 'undefined' != typeof global && (global.Prism = Prism);
+(Prism.languages.markup = {
+comment: /<!--[\s\S]_?-->/,
+prolog: /<\?[\s\S]+?\?>/,
+doctype: /<!DOCTYPE[\s\S]+?>/i,
+cdata: /<!\[CDATA\[[\s\S]_?]]>/i,
+tag: {
+pattern: /<\/?(?!\d)[^\s>\/=$<%]+(?:\s(?:\s_[^\s>\/=]+(?:\s*=\s*(?:"[^"]_"|'[^']_'|[^\s'">=]+(?=[\s>]))|(?=[\s/>])))+)?\s*\/?>/i,
+greedy: !0,
+inside: {
+tag: {
+pattern: /^<\/?[^\s>\/]+/i,
+inside: { punctuation: /^<\/?/, namespace: /^[^\s>\/:]+:/ }
+},
+'attr-value': {
+pattern: /=\s*(?:"[^"]_"|'[^']_'|[^\s'">=]+)/i,
+inside: {
+punctuation: [/^=/, { pattern: /^(\s*)["']|["']$/, lookbehind: !0 }]
+                }
+            },
+            punctuation: /\/?>/,
+            'attr-name': {
+                pattern: /[^\s>\/]+/,
+                inside: { namespace: /^[^\s>\/:]+:/ }
+            }
+        }
+    },
+    entity: /&#?[\da-z]{1,8};/i
+}),
+    (Prism.languages.markup.tag.inside['attr-value'].inside.entity = Prism.languages.markup.entity),
+    Prism.hooks.add('wrap', function (a) {
+        'entity' === a.type && (a.attributes.title = a.content.replace(/&amp;/, '&'));
+    }),
+    Object.defineProperty(Prism.languages.markup.tag, 'addInlined', {
+        value: function (a, e) {
+            var s = {};
+            (s['language-' + e] = {
+                pattern: /(^<!\[CDATA\[)[\s\S]+?(?=\]\]>$)/i,
+lookbehind: !0,
+inside: Prism.languages[e]
+}),
+(s.cdata = /^<!\[CDATA\[|\]\]>$/i);
+var n = {
+'included-cdata': { pattern: /<!\[CDATA\[[\s\S]*?\]\]>/i, inside: s }
+};
+n['language-' + e] = { pattern: /[\s\S]+/, inside: Prism.languages[e] };
+var i = {};
+(i[a] = {
+pattern: RegExp('(<**[\\s\\S]_?>)(?:<!\\[CDATA\\[[\\s\\S]_?\\]\\]>\\s*|[\\s\\S])*?(?=<\\/**>)'.replace(/**/g, a), 'i'),
+lookbehind: !0,
+greedy: !0,
+inside: n
+}),
+Prism.languages.insertBefore('markup', 'cdata', i);
+}
+}),
+(Prism.languages.xml = Prism.languages.extend('markup', {})),
+(Prism.languages.html = Prism.languages.markup),
+(Prism.languages.mathml = Prism.languages.markup),
+(Prism.languages.svg = Prism.languages.markup);
+!(function (s) {
+var t = /("|')(?:\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])_\1/;
+(s.languages.css = {
+comment: /\/\*[\s\S]_?\*\//,
+atrule: {
+pattern: /@[\w-]+[\s\S]_?(?:;|(?=\s_\{))/,
+inside: { rule: /@[\w-]+/ }
+},
+url: {
+pattern: RegExp('url\\((?:' + t.source + '|[^\n\r()]_)\\)', 'i'),
+inside: { function: /^url/i, punctuation: /^\(|\)$/ }
+},
+selector: RegExp('[^{}\\s](?:[^{};"\']|' + t.source + ')_?(?=\\s*\\{)'),
+string: { pattern: t, greedy: !0 },
+property: /[-\_a-z\xA0-\uFFFF][-\w\xa0-\uffff]*(?=\s*:)/i,
+important: /!important\b/i,
+function: /[-a-z0-9]+(?=\()/i,
+punctuation: /[(){};:,]/
+}),
+(s.languages.css.atrule.inside.rest = s.languages.css);
+var e = s.languages.markup;
+e &&
+(e.tag.addInlined('style', 'css'),
+s.languages.insertBefore(
+'inside',
+'attr-value',
+{
+'style-attr': {
+pattern: /\s*style=("|')(?:\\[\s\S]|(?!\1)[^\\])*\1/i,
+inside: {
+'attr-name': { pattern: /^\s*style/i, inside: e.tag.inside },
+punctuation: /^\s*=\s*['"]|['"]\s*$/,
+'attr-value': { pattern: /.+/i, inside: s.languages.css }
+},
+alias: 'language-css'
+}
+},
+e.tag
+));
+})(Prism);
+Prism.languages.clike = {
+comment: [
+{ pattern: /(^|[^\\])\/\*[\s\S]*?(?:\*\/|$)/, lookbehind: !0 },
+        { pattern: /(^|[^\\:])\/\/.*/, lookbehind: !0, greedy: !0 }
+    ],
+    string: {
+        pattern: /(["'])(?:\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1/,
+        greedy: !0
+    },
+    'class-name': {
+        pattern: /((?:\b(?:class|interface|extends|implements|trait|instanceof|new)\s+)|(?:catch\s+\())[\w.\\]+/i,
+        lookbehind: !0,
+        inside: { punctuation: /[.\\]/ }
+    },
+    keyword: /\b(?:if|else|while|do|for|return|in|instanceof|function|new|try|throw|catch|finally|null|break|continue)\b/,
+    boolean: /\b(?:true|false)\b/,
+    function: /\w+(?=\()/,
+    number: /\b0x[\da-f]+\b|(?:\b\d+\.?\d*|\B\.\d+)(?:e[+-]?\d+)?/i,
+    operator: /--?|\+\+?|!=?=?|<=?|>=?|==?=?|&&?|\|\|?|\?|\*|\/|~|\^|%/,
+    punctuation: /[{}[\];(),.:]/
+};
+(Prism.languages.javascript = Prism.languages.extend('clike', {
+    'class-name': [
+        Prism.languages.clike['class-name'],
+        {
+            pattern: /(^|[^$\w\xA0-\uFFFF])[\_$A-Z\xA0-\uFFFF][$\w\xa0-\uffff]_(?=\.(?:prototype|constructor))/,
+lookbehind: !0
+}
+],
+keyword: [
+{ pattern: /((?:^|})\s_)(?:catch|finally)\b/, lookbehind: !0 },
+{
+pattern:
+/(^|[^.])\b(?:as|async(?=\s*(?:function\b|\(|[$\w\xA0-\uFFFF]|$))|await|break|case|class|const|continue|debugger|default|delete|do|else|enum|export|extends|for|from|function|get|if|implements|import|in|instanceof|interface|let|new|null|of|package|private|protected|public|return|set|static|super|switch|this|throw|try|typeof|undefined|var|void|while|with|yield)\b/,
+lookbehind: !0
+}
+],
+number: /\b(?:(?:0[xX](<?:[\dA-Fa-f](?:_[\dA-Fa-f])?>)+|0[bB](<?:[01](?:_[01])?>)+|0[oO](<?:[0-7](?:_[0-7])?>)+)n?|(?:\d(?:*\d)?)+n|NaN|Infinity)\b|(?:\b(?:\d(?:*\d)?)+\.?(?:\d(?:\_\d)?)*|\B\.(?:\d(?:_\d)?)+)(?:[Ee][+-]?(?:\d(?:_\d)?)+)?/,
+function: /[\_$a-zA-Z\xA0-\uFFFF][$\w\xa0-\uffff]_(?=\s_(?:\.\s*(?:apply|bind|call)\s*)?\()/,
+operator: /-[-=]?|\+[+=]?|!=?=?|<<?=?|>>?>?=?|=(?:==?|>)?|&[&=]?|\|[|=]?|\*\*?=?|\/=?|~|\^=?|%=?|\?|\.{3}/
+})),
+(Prism.languages.javascript['class-name'][0].pattern = /(\b(?:class|interface|extends|implements|instanceof|new)\s+)[\w.\\]+/),
+Prism.languages.insertBefore('javascript', 'keyword', {
+regex: {
+pattern: /((?:^|[^$\w\xa0-\uffff."'\])\s])\s*)\/(\[(?:[^\]\\\r\n]|\\.)*]|\\.|[^/\\\[\r\n])+\/[gimyus]{0,6}(?=\s*($|[\r\n,.;})\]]))/,
+            lookbehind: !0,
+            greedy: !0
+        },
+        'function-variable': {
+            pattern:
+                /[_$a-zA-Z\xA0-\uFFFF][$\w\xA0-\uFFFF]*(?=\s*[=:]\s*(?:async\s*)?(?:\bfunction\b|(?:\((?:[^()]|\([^()]*\))_\)|[\_$a-zA-Z\xA0-\uFFFF][$\w\xa0-\uffff]_)\s*=>))/,
+alias: 'function'
+},
+parameter: [
+{
+pattern: /(function(?:\s+[\_$A-Za-z\xA0-\uFFFF][$\w\xa0-\uffff]*)?\s*\(\s*)(?!\s)(?:[^()]|\([^()]_\))+?(?=\s_\))/,
+lookbehind: !0,
+inside: Prism.languages.javascript
+},
+{
+pattern: /[\_$a-z\xA0-\uFFFF][$\w\xa0-\uffff]_(?=\s_=>)/i,
+inside: Prism.languages.javascript
+},
+{
+pattern: /(\(\s*)(?!\s)(?:[^()]|\([^()]*\))+?(?=\s*\)\s*=>)/,
+lookbehind: !0,
+inside: Prism.languages.javascript
+},
+{
+pattern:
+/((?:\b|\s|^)(?!(?:as|async|await|break|case|catch|class|const|continue|debugger|default|delete|do|else|enum|export|extends|finally|for|from|function|get|if|implements|import|in|instanceof|interface|let|new|null|of|package|private|protected|public|return|set|static|super|switch|this|throw|try|typeof|undefined|var|void|while|with|yield)(?![$\w\xA0-\uFFFF]))(?:[\_$A-Za-z\xA0-\uFFFF][$\w\xa0-\uffff]_\s_)\(\s*)(?!\s)(?:[^()]|\([^()]*\))+?(?=\s*\)\s*\{)/,
+lookbehind: !0,
+inside: Prism.languages.javascript
+}
+],
+constant: /\b[A-Z](?:[A-Z_]|\dx?)_\b/
+}),
+Prism.languages.insertBefore('javascript', 'string', {
+'template-string': {
+pattern: /`(?:\\[\s\S]|\${(?:[^{}]|{(?:[^{}]|{[^}]_})_})+}|[^\\`])_`/,
+greedy: !0,
+inside: {
+interpolation: {
+pattern: /\${(?:[^{}]|{(?:[^{}]|{[^}]_})_})+}/,
+inside: {
+'interpolation-punctuation': {
+pattern: /^\${|}$/,
+alias: 'punctuation'
+},
+rest: Prism.languages.javascript
+}
+},
+string: /[\s\S]+/
+}
+}
+}),
+Prism.languages.markup && Prism.languages.markup.tag.addInlined('script', 'javascript'),
+(Prism.languages.js = Prism.languages.javascript);
+!(function () {
+if ('undefined' != typeof self && self.Prism && self.document) {
+var r = [],
+i = {},
+n = function () {};
+Prism.plugins.toolbar = {};
+var t = (Prism.plugins.toolbar.registerButton = function (t, n) {
+var e;
+(e =
+'function' == typeof n
+? n
+: function (t) {
+var e;
+return (
+'function' == typeof n.onClick
+? (((e = document.createElement('button')).type = 'button'),
+e.addEventListener('click', function () {
+n.onClick.call(this, t);
+}))
+: 'string' == typeof n.url
+? ((e = document.createElement('a')).href = n.url)
+: (e = document.createElement('span')),
+(e.textContent = n.text),
+e
+);
+}),
+t in i ? console.warn('There is a button with the key "' + t + '" registered already.') : r.push((i[t] = e));
+}),
+e = (Prism.plugins.toolbar.hook = function (a) {
+var t = a.element.parentNode;
+if (t && /pre/i.test(t.nodeName) && !t.parentNode.classList.contains('code-toolbar')) {
+var e = document.createElement('div');
+e.classList.add('code-toolbar'), t.parentNode.insertBefore(e, t), e.appendChild(t);
+var o = document.createElement('div');
+o.classList.add('toolbar'),
+document.body.hasAttribute('data-toolbar-order') &&
+(r = document.body
+.getAttribute('data-toolbar-order')
+.split(',')
+.map(function (t) {
+return i[t] || n;
+})),
+r.forEach(function (t) {
+var e = t(a);
+if (e) {
+var n = document.createElement('div');
+n.classList.add('toolbar-item'), n.appendChild(e), o.appendChild(n);
+}
+}),
+e.appendChild(o);
+}
+});
+t('label', function (t) {
+var e = t.element.parentNode;
+if (e && /pre/i.test(e.nodeName) && e.hasAttribute('data-label')) {
+var n,
+a,
+o = e.getAttribute('data-label');
+try {
+a = document.querySelector('template#' + o);
+} catch (t) {}
+return (
+a
+? (n = a.content)
+: (e.hasAttribute('data-url')
+? ((n = document.createElement('a')).href = e.getAttribute('data-url'))
+: (n = document.createElement('span')),
+(n.textContent = o)),
+n
+);
+}
+}),
+Prism.hooks.add('complete', e);
+}
+})();
+!(function () {
+if ('undefined' != typeof self && self.Prism && self.document)
+if (Prism.plugins.toolbar) {
+var r = window.ClipboardJS || void 0;
+r || 'function' != typeof require || (r = require('clipboard'));
+var i = [];
+if (!r) {
+var o = document.createElement('script'),
+e = document.querySelector('head');
+(o.onload = function () {
+if ((r = window.ClipboardJS)) for (; i.length; ) i.pop()();
+}),
+(o.src = 'https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js'),
+e.appendChild(o);
+}
+Prism.plugins.toolbar.registerButton('copy-to-clipboard', function (e) {
+var t = document.createElement('a');
+return (t.textContent = 'Copy'), r ? o() : i.push(o), t;
+function o() {
+var o = new r(t, {
+text: function () {
+return e.code;
+}
+});
+o.on('success', function () {
+(t.textContent = 'Copied'), n();
+}),
+o.on('error', function () {
+(t.textContent = 'Press Ctrl+C to copy'), n();
+});
+}
+function n() {
+setTimeout(function () {
+t.textContent = 'Copy';
+}, 5e3);
+}
+});
+} else console.warn('Copy to Clipboard plugin loaded before Toolbar plugin.');
+})();
+/_ PrismJS 1.24.1
+https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript _/
+var \_self = 'undefined' != typeof window ? window : 'undefined' != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? self : {},
+Prism = (function (u) {
+var c = /\blang(?:uage)?-([\w-]+)\b/i,
+n = 0,
+e = {},
+M = {
+manual: u.Prism && u.Prism.manual,
+disableWorkerMessageHandler: u.Prism && u.Prism.disableWorkerMessageHandler,
+util: {
+encode: function e(n) {
+return n instanceof W
+? new W(n.type, e(n.content), n.alias)
+: Array.isArray(n)
+? n.map(e)
+: n
+.replace(/&/g, '&amp;')
+.replace(/</g, '&lt;')
+.replace(/\u00a0/g, ' ');
+},
+type: function (e) {
+return Object.prototype.toString.call(e).slice(8, -1);
+},
+objId: function (e) {
+return e.**id || Object.defineProperty(e, '**id', { value: ++n }), e.**id;
+},
+clone: function t(e, r) {
+var a, n;
+switch (((r = r || {}), M.util.type(e))) {
+case 'Object':
+if (((n = M.util.objId(e)), r[n])) return r[n];
+for (var i in ((a = {}), (r[n] = a), e)) e.hasOwnProperty(i) && (a[i] = t(e[i], r));
+return a;
+case 'Array':
+return (
+(n = M.util.objId(e)),
+r[n]
+? r[n]
+: ((a = []),
+(r[n] = a),
+e.forEach(function (e, n) {
+a[n] = t(e, r);
+}),
+a)
+);
+default:
+return e;
+}
+},
+getLanguage: function (e) {
+for (; e && !c.test(e.className); ) e = e.parentElement;
+return e ? (e.className.match(c) || [, 'none'])[1].toLowerCase() : 'none';
+},
+currentScript: function () {
+if ('undefined' == typeof document) return null;
+if ('currentScript' in document) return document.currentScript;
+try {
+throw new Error();
+} catch (e) {
+var n = (/at [^(\r\n]_\((._):.+:.+\)$/i.exec(e.stack) || [])[1];
+                            if (n) {
+                                var t = document.getElementsByTagName('script');
+                                for (var r in t) if (t[r].src == n) return t[r];
+                            }
+                            return null;
+                        }
+                    },
+                    isActive: function (e, n, t) {
+                        for (var r = 'no-' + n; e; ) {
+                            var a = e.classList;
+                            if (a.contains(n)) return !0;
+                            if (a.contains(r)) return !1;
+                            e = e.parentElement;
+                        }
+                        return !!t;
+                    }
+                },
+                languages: {
+                    plain: e,
+                    plaintext: e,
+                    text: e,
+                    txt: e,
+                    extend: function (e, n) {
+                        var t = M.util.clone(M.languages[e]);
+                        for (var r in n) t[r] = n[r];
+                        return t;
+                    },
+                    insertBefore: function (t, e, n, r) {
+                        var a = (r = r || M.languages)[t],
+                            i = {};
+                        for (var l in a)
+                            if (a.hasOwnProperty(l)) {
+                                if (l == e) for (var o in n) n.hasOwnProperty(o) && (i[o] = n[o]);
+                                n.hasOwnProperty(l) || (i[l] = a[l]);
+                            }
+                        var s = r[t];
+                        return (
+                            (r[t] = i),
+                            M.languages.DFS(M.languages, function (e, n) {
+                                n === s && e != t && (this[e] = i);
+                            }),
+                            i
+                        );
+                    },
+                    DFS: function e(n, t, r, a) {
+                        a = a || {};
+                        var i = M.util.objId;
+                        for (var l in n)
+                            if (n.hasOwnProperty(l)) {
+                                t.call(n, l, n[l], r || l);
+                                var o = n[l],
+                                    s = M.util.type(o);
+                                'Object' !== s || a[i(o)] ? 'Array' !== s || a[i(o)] || ((a[i(o)] = !0), e(o, t, l, a)) : ((a[i(o)] = !0), e(o, t, null, a));
+                            }
+                    }
+                },
+                plugins: {},
+                highlightAll: function (e, n) {
+                    M.highlightAllUnder(document, e, n);
+                },
+                highlightAllUnder: function (e, n, t) {
+                    var r = {
+                        callback: t,
+                        container: e,
+                        selector: 'code[class*="language-"], [class*="language-"] code, code[class*="lang-"], [class*="lang-"] code'
+                    };
+                    M.hooks.run('before-highlightall', r),
+                        (r.elements = Array.prototype.slice.apply(r.container.querySelectorAll(r.selector))),
+                        M.hooks.run('before-all-elements-highlight', r);
+                    for (var a, i = 0; (a = r.elements[i++]); ) M.highlightElement(a, !0 === n, r.callback);
+                },
+                highlightElement: function (e, n, t) {
+                    var r = M.util.getLanguage(e),
+                        a = M.languages[r];
+                    e.className = e.className.replace(c, '').replace(/\s+/g, ' ') + ' language-' + r;
+                    var i = e.parentElement;
+                    i && 'pre' === i.nodeName.toLowerCase() && (i.className = i.className.replace(c, '').replace(/\s+/g, ' ') + ' language-' + r);
+                    var l = { element: e, language: r, grammar: a, code: e.textContent };
+                    function o(e) {
+                        (l.highlightedCode = e),
+                            M.hooks.run('before-insert', l),
+                            (l.element.innerHTML = l.highlightedCode),
+                            M.hooks.run('after-highlight', l),
+                            M.hooks.run('complete', l),
+                            t && t.call(l.element);
+                    }
+                    if (
+                        (M.hooks.run('before-sanity-check', l),
+                        (i = l.element.parentElement) && 'pre' === i.nodeName.toLowerCase() && !i.hasAttribute('tabindex') && i.setAttribute('tabindex', '0'),
+                        !l.code)
+                    )
+                        return M.hooks.run('complete', l), void (t && t.call(l.element));
+                    if ((M.hooks.run('before-highlight', l), l.grammar))
+                        if (n && u.Worker) {
+                            var s = new Worker(M.filename);
+                            (s.onmessage = function (e) {
+                                o(e.data);
+                            }),
+                                s.postMessage(JSON.stringify({ language: l.language, code: l.code, immediateClose: !0 }));
+                        } else o(M.highlight(l.code, l.grammar, l.language));
+                    else o(M.util.encode(l.code));
+                },
+                highlight: function (e, n, t) {
+                    var r = { code: e, grammar: n, language: t };
+                    return (
+                        M.hooks.run('before-tokenize', r),
+                        (r.tokens = M.tokenize(r.code, r.grammar)),
+                        M.hooks.run('after-tokenize', r),
+                        W.stringify(M.util.encode(r.tokens), r.language)
+                    );
+                },
+                tokenize: function (e, n) {
+                    var t = n.rest;
+                    if (t) {
+                        for (var r in t) n[r] = t[r];
+                        delete n.rest;
+                    }
+                    var a = new i();
+                    return (
+                        I(a, a.head, e),
+                        (function e(n, t, r, a, i, l) {
+                            for (var o in r)
+                                if (r.hasOwnProperty(o) && r[o]) {
+                                    var s = r[o];
+                                    s = Array.isArray(s) ? s : [s];
+                                    for (var u = 0; u < s.length; ++u) {
+                                        if (l && l.cause == o + ',' + u) return;
+                                        var c = s[u],
+                                            g = c.inside,
+                                            f = !!c.lookbehind,
+                                            h = !!c.greedy,
+                                            d = c.alias;
+                                        if (h && !c.pattern.global) {
+                                            var p = c.pattern.toString().match(/[imsuy]*$/)[0];
+c.pattern = RegExp(c.pattern.source, p + 'g');
+}
+for (var v = c.pattern || c, m = a.next, y = i; m !== t.tail && !(l && y >= l.reach); y += m.value.length, m = m.next) {
+var b = m.value;
+if (t.length > n.length) return;
+if (!(b instanceof W)) {
+var k,
+x = 1;
+if (h) {
+if (!(k = z(v, y, n, f))) break;
+var w = k.index,
+A = k.index + k[0].length,
+P = y;
+for (P += m.value.length; P <= w; ) (m = m.next), (P += m.value.length);
+if (((P -= m.value.length), (y = P), m.value instanceof W)) continue;
+for (var E = m; E !== t.tail && (P < A || 'string' == typeof E.value); E = E.next)
+x++, (P += E.value.length);
+x--, (b = n.slice(y, P)), (k.index -= y);
+} else if (!(k = z(v, 0, b, f))) continue;
+var w = k.index,
+S = k[0],
+O = b.slice(0, w),
+L = b.slice(w + S.length),
+N = y + b.length;
+l && N > l.reach && (l.reach = N);
+var j = m.prev;
+O && ((j = I(t, j, O)), (y += O.length)), q(t, j, x);
+var C = new W(o, g ? M.tokenize(S, g) : S, d, S);
+if (((m = I(t, j, C)), L && I(t, m, L), 1 < x)) {
+var _ = { cause: o + ',' + u, reach: N };
+e(n, t, r, m.prev, y, _), l && _.reach > l.reach && (l.reach = _.reach);
+}
+}
+}
+}
+}
+})(e, a, n, a.head, 0),
+(function (e) {
+var n = [],
+t = e.head.next;
+for (; t !== e.tail; ) n.push(t.value), (t = t.next);
+return n;
+})(a)
+);
+},
+hooks: {
+all: {},
+add: function (e, n) {
+var t = M.hooks.all;
+(t[e] = t[e] || []), t[e].push(n);
+},
+run: function (e, n) {
+var t = M.hooks.all[e];
+if (t && t.length) for (var r, a = 0; (r = t[a++]); ) r(n);
+}
+},
+Token: W
+};
+function W(e, n, t, r) {
+(this.type = e), (this.content = n), (this.alias = t), (this.length = 0 | (r || '').length);
+}
+function z(e, n, t, r) {
+e.lastIndex = n;
+var a = e.exec(t);
+if (a && r && a[1]) {
+var i = a[1].length;
+(a.index += i), (a[0] = a[0].slice(i));
+}
+return a;
+}
+function i() {
+var e = { value: null, prev: null, next: null },
+n = { value: null, prev: e, next: null };
+(e.next = n), (this.head = e), (this.tail = n), (this.length = 0);
+}
+function I(e, n, t) {
+var r = n.next,
+a = { value: t, prev: n, next: r };
+return (n.next = a), (r.prev = a), e.length++, a;
+}
+function q(e, n, t) {
+for (var r = n.next, a = 0; a < t && r !== e.tail; a++) r = r.next;
+((n.next = r).prev = n), (e.length -= a);
+}
+if (
+((u.Prism = M),
+(W.stringify = function n(e, t) {
+if ('string' == typeof e) return e;
+if (Array.isArray(e)) {
+var r = '';
+return (
+e.forEach(function (e) {
+r += n(e, t);
+}),
+r
+);
+}
+var a = { type: e.type, content: n(e.content, t), tag: 'span', classes: ['token', e.type], attributes: {}, language: t },
+i = e.alias;
+i && (Array.isArray(i) ? Array.prototype.push.apply(a.classes, i) : a.classes.push(i)), M.hooks.run('wrap', a);
+var l = '';
+for (var o in a.attributes) l += ' ' + o + '="' + (a.attributes[o] || '').replace(/"/g, '&quot;') + '"';
+return '<' + a.tag + ' class="' + a.classes.join(' ') + '"' + l + '>' + a.content + '</' + a.tag + '>';
+}),
+!u.document)
+)
+return (
+u.addEventListener &&
+(M.disableWorkerMessageHandler ||
+u.addEventListener(
+'message',
+function (e) {
+var n = JSON.parse(e.data),
+t = n.language,
+r = n.code,
+a = n.immediateClose;
+u.postMessage(M.highlight(r, M.languages[t], t)), a && u.close();
+},
+!1
+)),
+M
+);
+var t = M.util.currentScript();
+function r() {
+M.manual || M.highlightAll();
+}
+if ((t && ((M.filename = t.src), t.hasAttribute('data-manual') && (M.manual = !0)), !M.manual)) {
+var a = document.readyState;
+'loading' === a || ('interactive' === a && t && t.defer)
+? document.addEventListener('DOMContentLoaded', r)
+: window.requestAnimationFrame
+? window.requestAnimationFrame(r)
+: window.setTimeout(r, 16);
+}
+return M;
+})(_self);
+'undefined' != typeof module && module.exports && (module.exports = Prism), 'undefined' != typeof global && (global.Prism = Prism);
+(Prism.languages.markup = {
+comment: /<!--[\s\S]*?-->/,
+prolog: /<\?[\s\S]+?\?>/,
+doctype: {
+pattern: /<!DOCTYPE(?:[^>"'[\]]|"[^"]*"|'[^']*')+(?:\[(?:[^<"'\]]|"[^"]*"|'[^']*'|<(?!!--)|<!--(?:[^-]|-(?!->))*-->)*\]\s*)?>/i,
+greedy: !0,
+inside: {
+'internal-subset': { pattern: /(^[^\[]*\[)[\s\S]+(?=\]>$)/, lookbehind: !0, greedy: !0, inside: null },
+string: { pattern: /"[^"]*"|'[^']*'/, greedy: !0 },
+punctuation: /^<!|>$|[[\]]/,
+'doctype-tag': /^DOCTYPE/,
+name: /[^\s<>'"]+/
+}
+},
+cdata: /<!\[CDATA\[[\s\S]*?\]\]>/i,
+tag: {
+pattern: /<\/?(?!\d)[^\s>\/=$<%]+(?:\s(?:\s*[^\s>\/=]+(?:\s*=\s*(?:"[^"]*"|'[^']*'|[^\s'">=]+(?=[\s>]))|(?=[\s/>])))+)?\s*\/?>/,
+greedy: !0,
+inside: {
+tag: { pattern: /^<\/?[^\s>\/]+/, inside: { punctuation: /^<\/?/, namespace: /^[^\s>\/:]+:/ } },
+'special-attr': [],
+'attr-value': { pattern: /=\s*(?:"[^"]*"|'[^']*'|[^\s'">=]+)/, inside: { punctuation: [{ pattern: /^=/, alias: 'attr-equals' }, /"|'/] } },
+punctuation: /\/?>/,
+'attr-name': { pattern: /[^\s>\/]+/, inside: { namespace: /^[^\s>\/:]+:/ } }
+}
+},
+entity: [{ pattern: /&[\da-z]{1,8};/i, alias: 'named-entity' }, /&#x?[\da-f]{1,8};/i]
+}),
+(Prism.languages.markup.tag.inside['attr-value'].inside.entity = Prism.languages.markup.entity),
+(Prism.languages.markup.doctype.inside['internal-subset'].inside = Prism.languages.markup),
+Prism.hooks.add('wrap', function (a) {
+'entity' === a.type && (a.attributes.title = a.content.replace(/&amp;/, '&'));
+}),
+Object.defineProperty(Prism.languages.markup.tag, 'addInlined', {
+value: function (a, e) {
+var s = {};
+(s['language-' + e] = { pattern: /(^<!\[CDATA\[)[\s\S]+?(?=\]\]>$)/i, lookbehind: !0, inside: Prism.languages[e] }),
+                (s.cdata = /^<!\[CDATA\[|\]\]>$/i);
+var t = { 'included-cdata': { pattern: /<!\[CDATA\[[\s\S]*?\]\]>/i, inside: s } };
+t['language-' + e] = { pattern: /[\s\S]+/, inside: Prism.languages[e] };
+var n = {};
+(n[a] = {
+pattern: RegExp(
+'(<**[^>]*>)(?:<!\\[CDATA\\[(?:[^\\]]|\\](?!\]>))*\\]\\]>|(?!<!\\[CDATA\\[)[^])\*?(?=</**>)'.replace(/\_\_/g, function () {
+return a;
+}),
+'i'
+),
+lookbehind: !0,
+greedy: !0,
+inside: t
+}),
+Prism.languages.insertBefore('markup', 'cdata', n);
+}
+}),
+Object.defineProperty(Prism.languages.markup.tag, 'addAttribute', {
+value: function (a, e) {
+Prism.languages.markup.tag.inside['special-attr'].push({
+pattern: RegExp('(^|["\'\\s])(?:' + a + ')\\s*=\\s*(?:"[^"]*"|\'[^\']*\'|[^\\s\'">=]+(?=[\\s>]))', 'i'),
+lookbehind: !0,
+inside: {
+'attr-name': /^[^\s=]+/,
+'attr-value': {
+pattern: /=[\s\S]+/,
+inside: {
+value: {
+pattern: /(^=\s*(["']|(?!["'])))\S[\s\S]*(?=\2$)/,
+                                lookbehind: !0,
+                                alias: [e, 'language-' + e],
+                                inside: Prism.languages[e]
+                            },
+                            punctuation: [{ pattern: /^=/, alias: 'attr-equals' }, /"|'/]
+                        }
+                    }
+                }
+            });
+        }
+    }),
+    (Prism.languages.html = Prism.languages.markup),
+    (Prism.languages.mathml = Prism.languages.markup),
+    (Prism.languages.svg = Prism.languages.markup),
+    (Prism.languages.xml = Prism.languages.extend('markup', {})),
+    (Prism.languages.ssml = Prism.languages.xml),
+    (Prism.languages.atom = Prism.languages.xml),
+    (Prism.languages.rss = Prism.languages.xml);
+!(function (s) {
+    var e = /(?:"(?:\\(?:\r\n|[\s\S])|[^"\\\r\n])*"|'(?:\\(?:\r\n|[\s\S])|[^'\\\r\n])*')/;
+    (s.languages.css = {
+        comment: /\/\*[\s\S]*?\*\//,
+        atrule: {
+            pattern: /@[\w-](?:[^;{\s]|\s+(?![\s{]))*(?:;|(?=\s*\{))/,
+            inside: {
+                rule: /^@[\w-]+/,
+                'selector-function-argument': {
+                    pattern: /(\bselector\s*\(\s*(?![\s)]))(?:[^()\s]|\s+(?![\s)])|\((?:[^()]|\([^()]*\))*\))+(?=\s*\))/,
+                    lookbehind: !0,
+                    alias: 'selector'
+                },
+                keyword: { pattern: /(^|[^\w-])(?:and|not|only|or)(?![\w-])/, lookbehind: !0 }
+            }
+        },
+        url: {
+            pattern: RegExp('\\burl\\((?:' + e.source + '|(?:[^\\\\\r\n()"\']|\\\\[^])*)\\)', 'i'),
+            greedy: !0,
+            inside: { function: /^url/i, punctuation: /^\(|\)$/, string: { pattern: RegExp('^' + e.source + '$'), alias: 'url' } }
+        },
+        selector: { pattern: RegExp('(^|[{}\\s])[^{}\\s](?:[^{};"\'\\s]|\\s+(?![\\s{])|' + e.source + ')*(?=\\s*\\{)'), lookbehind: !0 },
+        string: { pattern: e, greedy: !0 },
+        property: { pattern: /(^|[^-\w\xA0-\uFFFF])(?!\s)[-_a-z\xA0-\uFFFF](?:(?!\s)[-\w\xA0-\uFFFF])*(?=\s*:)/i, lookbehind: !0 },
+        important: /!important\b/i,
+        function: { pattern: /(^|[^-a-z0-9])[-a-z0-9]+(?=\()/i, lookbehind: !0 },
+        punctuation: /[(){};:,]/
+    }),
+        (s.languages.css.atrule.inside.rest = s.languages.css);
+    var t = s.languages.markup;
+    t && (t.tag.addInlined('style', 'css'), t.tag.addAttribute('style', 'css'));
+})(Prism);
+Prism.languages.clike = {
+    comment: [
+        { pattern: /(^|[^\\])\/\*[\s\S]*?(?:\*\/|$)/, lookbehind: !0, greedy: !0 },
+{ pattern: /(^|[^\\:])\/\/.*/, lookbehind: !0, greedy: !0 }
+],
+string: { pattern: /(["'])(?:\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1/, greedy: !0 },
+'class-name': {
+pattern: /(\b(?:class|interface|extends|implements|trait|instanceof|new)\s+|\bcatch\s+\()[\w.\\]+/i,
+lookbehind: !0,
+inside: { punctuation: /[.\\]/ }
+},
+keyword: /\b(?:if|else|while|do|for|return|in|instanceof|function|new|try|throw|catch|finally|null|break|continue)\b/,
+boolean: /\b(?:true|false)\b/,
+function: /\b\w+(?=\()/,
+number: /\b0x[\da-f]+\b|(?:\b\d+(?:\.\d*)?|\B\.\d+)(?:e[+-]?\d+)?/i,
+operator: /[<>]=?|[!=]=?=?|--?|\+\+?|&&?|\|\|?|[?*/~^%]/,
+punctuation: /[{}[\];(),.:]/
+};
+(Prism.languages.javascript = Prism.languages.extend('clike', {
+'class-name': [
+Prism.languages.clike['class-name'],
+{ pattern: /(^|[^$\w\xa0-\uffff])(?!\s)[_$A-Z\xA0-\uFFFF](?:(?!\s)[$\w\xA0-\uFFFF])_(?=\.(?:prototype|constructor))/, lookbehind: !0 }
+],
+keyword: [
+{ pattern: /((?:^|\})\s_)catch\b/, lookbehind: !0 },
+{
+pattern:
+/(^|[^.]|\.\.\.\s*)\b(?:as|assert(?=\s*\{)|async(?=\s*(?:function\b|\(|[$\w\xA0-\uFFFF]|$))|await|break|case|class|const|continue|debugger|default|delete|do|else|enum|export|extends|finally(?=\s*(?:\{|$))|for|from(?=\s*(?:['"]|$))|function|(?:get|set)(?=\s*(?:[#\[$\w\xA0-\uFFFF]|$))|if|implements|import|in|instanceof|interface|let|new|null|of|package|private|protected|public|return|static|super|switch|this|throw|try|typeof|undefined|var|void|while|with|yield)\b/,
+            lookbehind: !0
+        }
+    ],
+    function: /#?(?!\s)[_$a-zA-Z\xA0-\uFFFF](?:(?!\s)[$\w\xA0-\uFFFF])*(?=\s*(?:\.\s*(?:apply|bind|call)\s*)?\()/,
+number: /\b(?:(?:0[xX](<?:[\dA-Fa-f](?:_[\dA-Fa-f])?>)+|0[bB](<?:[01](?:_[01])?>)+|0[oO](<?:[0-7](?:_[0-7])?>)+)n?|(?:\d(?:*\d)?)+n|NaN|Infinity)\b|(?:\b(?:\d(?:*\d)?)+\.?(?:\d(?:\_\d)?)*|\B\.(?:\d(?:_\d)?)+)(?:[Ee][+-]?(?:\d(?:_\d)?)+)?/,
+operator: /--|\+\+|\*\*=?|=>|&&=?|\|\|=?|[!=]==|<<=?|>>>?=?|[-+*/%&|^!=<>]=?|\.{3}|\?\?=?|\?\.?|[~:]/
+})),
+(Prism.languages.javascript['class-name'][0].pattern = /(\b(?:class|interface|extends|implements|instanceof|new)\s+)[\w.\\]+/),
+Prism.languages.insertBefore('javascript', 'keyword', {
+regex: {
+pattern:
+/((?:^|[^$\w\xa0-\uffff."'\])\s]|\b(?:return|yield))\s*)\/(?:\[(?:[^\]\\\r\n]|\\.)*\]|\\.|[^/\\\[\r\n])+\/[dgimyus]{0,7}(?=(?:\s|\/\*(?:[^*]|\*(?!\/))_\*\/)_(?:$|[\r\n,.;:})\]]|\/\/))/,
+            lookbehind: !0,
+            greedy: !0,
+            inside: {
+                'regex-source': { pattern: /^(\/)[\s\S]+(?=\/[a-z]*$)/, lookbehind: !0, alias: 'language-regex', inside: Prism.languages.regex },
+'regex-delimiter': /^\/|\/$/,
+                'regex-flags': /^[a-z]+$/
+}
+},
+'function-variable': {
+pattern:
+/#?(?!\s)[\_$a-zA-Z\xA0-\uFFFF](<?:(?!\s)[$\w\xA0-\uFFFF]>)_(?=\s_[=:]\s*(?:async\s*)?(?:\bfunction\b|(?:\((?:[^()]|\([^()]_\))_\)|(?!\s)[\_$a-zA-Z\xA0-\uFFFF](<?:(?!\s)[$\w\xA0-\uFFFF]>)_)\s_=>))/,
+alias: 'function'
+},
+parameter: [
+{
+pattern: /(function(?:\s+(?!\s)[\_$a-zA-Z\xA0-\uFFFF](<?:(?!\s)[$\w\xA0-\uFFFF]>)_)?\s_\(\s*)(?!\s)(?:[^()\s]|\s+(?![\s)])|\([^()]*\))+(?=\s*\))/,
+lookbehind: !0,
+inside: Prism.languages.javascript
+},
+{
+pattern: /(^|[^$\w\xa0-\uffff])(?!\s)[\_$a-z\xA0-\uFFFF](<?:(?!\s)[$\w\xA0-\uFFFF]>)*(?=\s*=>)/i,
+lookbehind: !0,
+inside: Prism.languages.javascript
+},
+{ pattern: /(\(\s*)(?!\s)(?:[^()\s]|\s+(?![\s)])|\([^()]_\))+(?=\s_\)\s*=>)/, lookbehind: !0, inside: Prism.languages.javascript },
+{
+pattern:
+/((?:\b|\s|^)(?!(?:as|async|await|break|case|catch|class|const|continue|debugger|default|delete|do|else|enum|export|extends|finally|for|from|function|get|if|implements|import|in|instanceof|interface|let|new|null|of|package|private|protected|public|return|set|static|super|switch|this|throw|try|typeof|undefined|var|void|while|with|yield)(?![$\w\xA0-\uFFFF]))(?:(?!\s)[\_$a-zA-Z\xA0-\uFFFF](<?:(?!\s)[$\w\xA0-\uFFFF]>)*\s*)\(\s*|\]\s*\(\s*)(?!\s)(?:[^()\s]|\s+(?![\s)])|\([^()]_\))+(?=\s_\)\s*\{)/,
+lookbehind: !0,
+inside: Prism.languages.javascript
+}
+],
+constant: /\b[A-Z](?:[A-Z_]|\dx?)*\b/
+}),
+Prism.languages.insertBefore('javascript', 'string', {
+hashbang: { pattern: /^#!._/, greedy: !0, alias: 'comment' },
+'template-string': {
+pattern: /`(?:\\[\s\S]|\$\{(?:[^{}]|\{(?:[^{}]|\{[^}]_\})_\})+\}|(?!\$\{)[^\\`])_`/, greedy: !0, inside: { 'template-punctuation': { pattern: /^`|`$/, alias: 'string' },
+                interpolation: {
+                    pattern: /((?:^|[^\\])(?:\\{2})*)\$\{(?:[^{}]|\{(?:[^{}]|\{[^}]*\})*\})+\}/,
+                    lookbehind: !0,
+                    inside: { 'interpolation-punctuation': { pattern: /^\$\{|\}$/, alias: 'punctuation' }, rest: Prism.languages.javascript }
+},
+string: /[\s\S]+/
+}
+}
+}),
+Prism.languages.markup &&
+(Prism.languages.markup.tag.addInlined('script', 'javascript'),
+Prism.languages.markup.tag.addAttribute(
+'on(?:abort|blur|change|click|composition(?:end|start|update)|dblclick|error|focus(?:in|out)?|key(?:down|up)|load|mouse(?:down|enter|leave|move|out|over|up)|reset|resize|scroll|select|slotchange|submit|unload|wheel)',
+'javascript'
+)),
+(Prism.languages.js = Prism.languages.javascript);
+
+```
+
+```
+
+<details>
 ```

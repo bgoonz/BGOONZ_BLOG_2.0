@@ -1,18 +1,9 @@
-const path = require("path");
-const fs = require("fs");
-<<<<<<< HEAD
-const { createFilePath } = require("gatsby-source-filesystem");
-const _ = require("lodash");
-
+const path = require('path');
+const fs = require('fs');
+const { createFilePath } = require('gatsby-source-filesystem');
+const _ = require('lodash');
 
 function findFileNode({ node, getNode }) {
-=======
-const {createFilePath} = require("gatsby-source-filesystem");
-const _ = require("lodash");
-
-
-function findFileNode({node, getNode}) {
->>>>>>> 217d551e709e0a3855c273c4474405cc96110325
     let fileNode = node;
     let ids = [fileNode.id];
 
@@ -36,25 +27,14 @@ function findFileNode({node, getNode}) {
         return null;
     }
 
-    return fileNode
+    return fileNode;
 }
 
-<<<<<<< HEAD
 exports.onCreateNode = ({ node, getNode, actions }, options) => {
-
     const { createNodeField } = actions;
 
-    if (node.internal.type === "MarkdownRemark") {
+    if (node.internal.type === 'MarkdownRemark') {
         let fileNode = findFileNode({ node, getNode });
-=======
-exports.onCreateNode = ({node, getNode, actions}, options) => {
->>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
-
-    const { createNodeField } = actions;
-
-    if (node.internal.type === "MarkdownRemark") {
-        let fileNode = findFileNode({node, getNode});
->>>>>>> 217d551e709e0a3855c273c4474405cc96110325
         if (!fileNode) {
             throw new Error('could not find parent File node for MarkdownRemark node: ' + node);
         }
@@ -65,54 +45,34 @@ exports.onCreateNode = ({node, getNode, actions}, options) => {
         } else if (_.get(options, 'uglyUrls', false)) {
             url = path.join(fileNode.relativeDirectory, fileNode.name + '.html');
         } else {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
             url = createFilePath({ node, getNode });
         }
 
-        createNodeField({ node, name: "url", value: url });
-        createNodeField({ node, name: "absolutePath", value: fileNode.absolutePath });
-        createNodeField({ node, name: "relativePath", value: fileNode.relativePath });
-        createNodeField({ node, name: "absoluteDir", value: fileNode.dir });
-        createNodeField({ node, name: "relativeDir", value: fileNode.relativeDirectory });
-        createNodeField({ node, name: "base", value: fileNode.base });
-        createNodeField({ node, name: "ext", value: fileNode.ext });
-        createNodeField({ node, name: "name", value: fileNode.name });
+        createNodeField({ node, name: 'url', value: url });
+        createNodeField({
+            node,
+            name: 'absolutePath',
+            value: fileNode.absolutePath
+        });
+        createNodeField({
+            node,
+            name: 'relativePath',
+            value: fileNode.relativePath
+        });
+        createNodeField({ node, name: 'absoluteDir', value: fileNode.dir });
+        createNodeField({
+            node,
+            name: 'relativeDir',
+            value: fileNode.relativeDirectory
+        });
+        createNodeField({ node, name: 'base', value: fileNode.base });
+        createNodeField({ node, name: 'ext', value: fileNode.ext });
+        createNodeField({ node, name: 'name', value: fileNode.name });
     }
 };
 
 exports.createPages = ({ graphql, getNode, actions, getNodesByType }) => {
     const { createPage, deletePage } = actions;
-=======
-            if (_.get(options, 'uglyUrls', false)) {
-                url = path.join(fileNode.relativeDirectory, `${fileNode.name}.html`);
-                return;
-            }
-
->>>>>>> f4594b19594599756372b62212ee4796747e0825
-            url = createFilePath({node, getNode});
->>>>>>> 31529e7f3804dd87db4a38ff4ec221f4138351d9
-        }
-
-        createNodeField({ node, name: "url", value: url });
-        createNodeField({ node, name: "absolutePath", value: fileNode.absolutePath });
-        createNodeField({ node, name: "relativePath", value: fileNode.relativePath });
-        createNodeField({ node, name: "absoluteDir", value: fileNode.dir });
-        createNodeField({ node, name: "relativeDir", value: fileNode.relativeDirectory });
-        createNodeField({ node, name: "base", value: fileNode.base });
-        createNodeField({ node, name: "ext", value: fileNode.ext });
-        createNodeField({ node, name: "name", value: fileNode.name });
-    }
-};
-
-<<<<<<< HEAD
-exports.createPages = ({ graphql, getNode, actions, getNodesByType }) => {
-    const { createPage, deletePage } = actions;
-=======
-exports.createPages = ({graphql, getNode, actions, getNodesByType}) => {
-    const {createPage, deletePage} = actions;
->>>>>>> 217d551e709e0a3855c273c4474405cc96110325
 
     // Use GraphQL to bring only the "id" and "html" (added by gatsby-transformer-remark)
     // properties of the MarkdownRemark nodes. Don't bring additional fields
@@ -121,33 +81,29 @@ exports.createPages = ({graphql, getNode, actions, getNodesByType}) => {
     // "html" attribute exists only on a GraphQL node, but does not exist on the
     // underlying node.
     return graphql(`
-    {
-      allMarkdownRemark {
-        edges {
-          node {
-            id
-            html
-          }
+        {
+            allMarkdownRemark {
+                edges {
+                    node {
+                        id
+                        html
+                    }
+                }
+            }
         }
-      }
-    }
-    `).then(result => {
+    `).then((result) => {
         if (result.errors) {
             return Promise.reject(result.errors);
         }
 
-<<<<<<< HEAD
         const nodes = result.data.allMarkdownRemark.edges.map(({ node }) => node);
-=======
-        const nodes = result.data.allMarkdownRemark.edges.map(({node}) => node);
->>>>>>> 217d551e709e0a3855c273c4474405cc96110325
         const siteNode = getNode('Site');
         const siteDataNode = getNode('SiteData');
         const sitePageNodes = getNodesByType('SitePage');
         const sitePageNodesByPath = _.keyBy(sitePageNodes, 'path');
         const siteData = _.get(siteDataNode, 'data', {});
 
-        const pages = nodes.map(graphQLNode => {
+        const pages = nodes.map((graphQLNode) => {
             // Use the node id to get the underlying node. It is not exactly the
             // same node returned by GraphQL, because GraphQL resolvers might
             // transform node fields.
@@ -163,7 +119,7 @@ exports.createPages = ({graphql, getNode, actions, getNodesByType}) => {
             };
         });
 
-        nodes.forEach(graphQLNode => {
+        nodes.forEach((graphQLNode) => {
             const node = getNode(graphQLNode.id);
             const url = node.fields.url;
 

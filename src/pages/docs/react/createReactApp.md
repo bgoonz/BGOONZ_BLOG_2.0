@@ -1,6 +1,6 @@
 ---
 title: npx-create-react-app
-weight: 0
+weight: 1
 seo:
     title: npx-create-react-app
     description: This is the npx-create-react-app page
@@ -39,13 +39,14 @@ npm start
 
 #### Babel can translate between different versions of javascript so that your code can run on browsers that are limited to ES5 compatibility... included by default with every new react project.
 
-```console
+```bash
 |15:25:30|bryan@LAPTOP-9LGJ3JGS:[05-installing-nodejs] 05-installing-nodejs_exitstatus:0__________________________________________________________o>
 
 npx create-react-app my-app
 y-app
 npm start
 Creating a new React app in /mnt/c/MY-WEB-DEV/10-React-V3/05-installing-nodejs/my-app.
+
 
 Installing packages. This might take a couple of minutes.
 Installing react, react-dom, and react-scripts with cra-template...
@@ -145,7 +146,7 @@ Inside that directory, you can run several commands:
 
   yarn eject
     Removes this tool and copies build dependencies, configuration files
-    and scripts into the app directory. If you do this, you can't go back!
+    and scripts into the app directory. If you do this, you can’t go back!
 
 We suggest that you begin by typing:
 
