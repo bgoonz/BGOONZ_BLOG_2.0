@@ -5093,7 +5093,7 @@ Grid areas _must_ be rectangular in nature; it is not possible to create, for ex
 
 In the example below I have a grid container with two grid items. I have named these with the _cssxref("grid-area"_) property and then laid them out on the grid using _cssxref("grid-template-areas"_). This creates two grid areas, one covering four grid cells, the other two.
 
-```css hidden
+```css
 * {
     box-sizing: border-box;
 }
@@ -5203,7 +5203,7 @@ If you do not place items using one of the grid placement methods, direct childr
 
 In the example we have created a three column track grid. The five items are placed into grid cells working along an initial row of three grid cells, then creating a new row for the remaining two.
 
-```css hidden
+```css
 * {
     box-sizing: border-box;
 }
@@ -5328,7 +5328,7 @@ When an element becomes a grid container it establishes a **grid formatting cont
 
 In the following example there is a grid with three column tracks and two row tracks. This gives us 4 column lines and 3 row lines.
 
-```css hidden
+```css
 * {
     box-sizing: border-box;
 }
@@ -5381,7 +5381,7 @@ Lines are also created in the _implicit grid_ when implicit tracks are created t
 
 Having created a grid, you can place items onto the grid by line number. In the following example the item is positioned from column line 1 to column line 3, and from row line 1 to row line 3.
 
-```css hidden
+```css
 * {
     box-sizing: border-box;
 }
@@ -5430,7 +5430,7 @@ Having created a grid, you can place items onto the grid by line number. In the 
 
 The lines created in the _explicit grid_ can be named, by adding the name in square brackets before or after the track sizing information. When placing an item, you can then use these names instead of the line number, as demonstrated below.
 
-```css hidden
+```css
 * {
     box-sizing: border-box;
 }
@@ -5545,7 +5545,7 @@ When defining grid tracks using _cssxref("grid-template-columns"_) and _cssxref(
 
 The example below demonstrates a grid with three column tracks, one of 200 pixels, the second of 1fr, the third of 3fr. Once the 200 pixels has been subtracted from the space available in the grid container, the remaining space is divided by 4. One part is given to column 2, 3 parts to column 3.
 
-```css hidden
+```css
 * {
     box-sizing: border-box;
 }
@@ -5619,7 +5619,7 @@ In the example below I have created an _explicit grid_ of three columns and two 
 
 ## Example
 
-```css hidden
+```css
 * {
     box-sizing: border-box;
 }
@@ -5699,7 +5699,7 @@ In the example below I have created an _explicit grid_ of three columns and two 
 
 In the example below we have a three-column and two-row track grid, with 20-pixel gaps between column tracks and `20px`-gaps between row tracks.
 
-```css hidden
+```css
 * {
     box-sizing: border-box;
 }
