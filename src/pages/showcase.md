@@ -4,7 +4,7 @@ sections:
     - section_id: hero
       type: section_hero
       title: Showcase
-      image: images/charming-dolphin.gif
+      image: images/spin-cube.gif
       content: |
           Some of my more engaging projects!
     - section_id: showcase
@@ -13,11 +13,9 @@ sections:
       grid_items:
           - title: Git HTML PREVIEW
             title_url: 'https://github.com/bgoonz/GIT-HTML-PREVIEW-TOOL'
-            image: images/futuristic-mars.gif
+            image: images/git-preview.gif
             content: >
                 Preview html files by pasting their url into the search bar
-
-
                 **Access-Control-Allow-Origin Header When Site A tries to fetch
                 content from Site B**
             actions:
@@ -31,7 +29,7 @@ sections:
             image_alt: git html preview
           - title: Guitar Effects Automation Using Subsequence Dynamic Time Warping
             title_url: 'https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering'
-            image: images/curious-europa.gif
+            image: images/dtw-slideshow.gif
             content: >
                 **Modified subsequence dynamic time warping feature detection using
                 pure data implemented in python**
@@ -60,7 +58,7 @@ sections:
                   type: action
           - title: Learning Redux
             title_url: 'https://learning-redux42.netlify.app/'
-            image_alt: lorem-ipsum
+            image_alt: image of
             content: >
                 ***React Redux provides a pair of custom React hooks that allow your
                 React components to interact with the Redux store.***
@@ -73,10 +71,10 @@ sections:
                   no_follow: false
                   type: action
             type: grid_item
-            image: images/best-birch.gif
+            image: images/redux-state.gif
           - title: Mihir-Beg-Music.com
             title_url: 'https://panoramic-eggplant-452e4.netlify.app/'
-            image: images/7a8bc98e902a2f6dea90386cdfb154c2.png
+            image: images/mihir.png
             content: |
                 Artist Showcase & Podcasting Site
             actions:
@@ -101,22 +99,19 @@ sections:
                   no_follow: false
                   type: action
             type: grid_item
-            image: images/21ecc2f26e2641c8e9aae5479481bbe2 (5).png
+            image: images/blog-form.png
           - title: Potluck Planner
             title_url: 'https://potluck-landing.netlify.app/'
-            image_alt: lorem-ipsum
+            image_alt: image of
             content: >+
                 ## Potluck Planner
-
-
                 If you have ever tried to organize a potluck through text messages,
                 online to-do lists or spreadsheets, you'll understand why this app is
                 essential.In the world of social gatherings and potlucks the "Potluck
                 Planner" is king. This is your place for all things pot luck.
-
             actions: []
             type: grid_item
-            image: images/potluck-planner.JPG
+            image: images/potluck-planner.jpg
           - title: Zumzi Video Conferencing
             title_url: 'https://github.com/bgoonz/zumzi-chat-messenger'
             image_alt: video chat
@@ -134,13 +129,12 @@ sections:
                   no_follow: false
                   type: action
             type: grid_item
-            image: images/energetic-sunflower.png
+            image: images/zumzi-video-chat.png
           - title: Web Audio Workstation
             title_url: lorem-ipsum
-            image_alt: lorem-ipsum
+            image_alt: image of
             content: |+
                 Made using jQuery and Vanilla JS
-
             actions:
                 - label: Go To Live Site
                   url: 'https://mihirbegmusiclab.netlify.app/'
@@ -157,7 +151,7 @@ sections:
                   no_follow: false
                   type: action
             type: grid_item
-            image: images/royal-kangaroo.JPG
+            image: images/royal-kangaroo.jpg
 seo:
     title: Showcase
     extra:
@@ -168,10 +162,10 @@ seo:
           value: Showcase
           keyName: property
         - name: 'og:description'
-          value: This is the showcase page
+          value: project showcase
           keyName: property
         - name: 'og:image'
-          value: images/5.jpg
+          value: images/My Post-4ecb169f.png
           keyName: property
           relativeUrl: true
         - name: 'twitter:card'
