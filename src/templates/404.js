@@ -50,6 +50,7 @@ const NotFoundPage = () => {
                 <br/>
                 <Link to="/">Go home</Link>.
             </p>
+            <div id="search" />
         </main>
     )
 }

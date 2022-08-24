@@ -21,7 +21,7 @@
         "classnames": "2.2.6",
         "docky": "^1.5.4",
         "fs-extra": "7.0.1",
-        "gatsby": "^2.0.0",
+        "gatsby": "^2.0.0 ",
         "gatsby-plugin-disqus": "^1.2.3",
         "gatsby-plugin-no-sourcemaps": "^4.17.0",
         "gatsby-plugin-offline": "^5.9.0",
