@@ -130,11 +130,11 @@ export default createGlobalStyle`
     line-height: initial;
     text-transform: uppercase;
     border-radius: 0 0 0.2em 0.2em;
-    color: black;
+    color: #000000;
   }
   .gatsby-code-title {
     background: var(--color-orange-default);
-    color: black;
+    color: #000000;
     padding: 0.3em 0.5em;
     width: max-content;
     margin: 1em 0 -1.6em 1em;

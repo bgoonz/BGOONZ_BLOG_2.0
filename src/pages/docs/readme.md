@@ -926,7 +926,7 @@ This page contains links that give the impression that some of the site contents
 
     Use the Gatsby CLI to create a new site, specifying the default starter.
 
-    ```consoleell
+    ```shell
 
     # create a new Gatsby site using the default starter
 
@@ -938,7 +938,7 @@ This page contains links that give the impression that some of the site contents
 
     Navigate into your new site's directory and start it up.
 
-    ```consoleell
+    ```shell
 
     cd my-default-starter/
 
