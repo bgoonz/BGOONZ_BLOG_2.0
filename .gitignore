@@ -77,8 +77,7 @@ typings/
 
 
 # gatsby files
-.cache/
-public
+
 
 # Mac files
 .DS_Store
@@ -91,13 +90,9 @@ yarn-error.log
 .yarn-integrity
 
 node_modules/
+public/
+.cache/
 
 
-*.cache
-
-*public/
 
 package.lock.json
-
-# Local Netlify folder
-.netlify

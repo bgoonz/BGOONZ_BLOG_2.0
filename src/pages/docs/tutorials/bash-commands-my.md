@@ -328,7 +328,7 @@ cmd() {
   echo ""
   echo '<style>'
 echo '    a {'
-echo '      color: #000000;'
+echo '      color: black;'
 echo '    }'
 echo ''
 echo '    li {'
