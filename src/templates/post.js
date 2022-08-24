@@ -23,7 +23,7 @@ export default class Post extends React.Component {
                         {_.get(this.props, 'pageContext.frontmatter.image', null) && (
                             <div
                                 className="bg-img"
-                                style={toStyleObj(`background-image: url('${withPrefix(_.get(this.props, 'pageContext.frontmatter.image', null))}')`)}
+                                style={toStyleObj("background-image: url('" + withPrefix(_.get(this.props, 'pageContext.frontmatter.image', null)) + "')")}
                             />
                         )}
                         <div className="inner-sm">

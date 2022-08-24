@@ -29,20 +29,20 @@ cmseditable: true
 
 ## TABLE OF CONTENTS
 
-- [How to use gatsby-cli](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#how-to-use-gatsby-cli)
-- [API commands](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#api-commands)
+-   [How to use gatsby-cli](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#how-to-use-gatsby-cli)
+-   [API commands](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#api-commands)
 
-  - [new](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#new)
-  - [develop](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#develop)
-  - [build](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#build)
-  - [serve](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#serve)
-  - [info](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#info)
-  - [clean](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#clean)
-  - [plugin](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#plugin)
-  - [Repl](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#repl)
-  - [Disabling colored output](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#disabling-colored-output)
+    -   [new](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#new)
+    -   [develop](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#develop)
+    -   [build](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#build)
+    -   [serve](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#serve)
+    -   [info](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#info)
+    -   [clean](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#clean)
+    -   [plugin](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#plugin)
+    -   [Repl](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#repl)
+    -   [Disabling colored output](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#disabling-colored-output)
 
-- [How to change your default package manager for your next project?](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#how-to-change-your-default-package-manager-for-your-next-project)
+-   [How to change your default package manager for your next project?](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#how-to-change-your-default-package-manager-for-your-next-project)
 
 The Gatsby command line tool (CLI) is the main entry point for getting up and running with a Gatsby application and for using functionality including running a development server and building out your Gatsby application for deployment.
 
@@ -75,13 +75,13 @@ All the following documentation is available in the tool by running `gatsby --he
 
 #### [](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#usage)Usage
 
-```shell
+```consoleell
 gatsby new
 ```
 
 The CLI will run an interactive shell asking for these options before creating a Gatsby site for you:
 
-```shell
+```consoleell
 gatsby new
 What would you like to name the folder where your site will be created?
 my-gatsby-site
@@ -116,7 +116,7 @@ Would you like to install additional features with other plugins? (multiple choi
 
 To create a site from a starter instead, run the command with your site name and starter URL:
 
-```shell
+```consoleell
 gatsby new [<site-name> [<starter-url>]]
 ```
 
@@ -133,16 +133,16 @@ Note that this will not prompt you to create a custom setup, but only clone the 
 
 ##### [](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#examples)Examples
 
-- Create a Gatsby site named `my-awesome-site` using the default starter:
+-   Create a Gatsby site named `my-awesome-site` using the default starter:
 
-```shell
+```consoleell
 gatsby new my-awesome-site
 
 ```
 
-- Create a Gatsby site named `my-awesome-blog-site`, using [gatsby-starter-blog](https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-blog/):
+-   Create a Gatsby site named `my-awesome-blog-site`, using [gatsby-starter-blog](https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-blog/):
 
-```shell
+```consoleell
 gatsby new my-awesome-blog-site https://github.com/gatsbyjs/gatsby-starter-blog
 ```
 
@@ -170,13 +170,13 @@ Follow the [Local HTTPS guide](https://www.gatsbyjs.com/docs/local-https/) to fi
 
 You can use the Gatsby develop command with the host option to access your dev environment on other devices on the same network, run:
 
-```shell
+```consoleell
 gatsby develop -H 0.0.0.0
 ```
 
 Then the terminal will log information as usual, but will additionally include a URL that you can navigate to from a client on the same network to see how the site renders.
 
-```shell
+```consoleell
 You can now view gatsbyjs.com in the browser.
 ⠀
   Local:            http://0.0.0.0:8000/
@@ -239,10 +239,10 @@ At the root of a Gatsby site, wipe out the cache (`.cache` folder) and public di
 
 This is useful as a last resort when your local project seems to have issues or content does not seem to be refreshing. Issues this may fix commonly include:
 
-- Stale data, e.g. this file/resource/etc. isn’t appearing
-- GraphQL error, e.g. this GraphQL resource should be present but is not
-- Dependency issues, e.g. invalid version, cryptic errors in console, etc.
-- Plugin issues, e.g. developing a local plugin and changes don’t seem to be taking effect
+-   Stale data, e.g. this file/resource/etc. isn’t appearing
+-   GraphQL error, e.g. this GraphQL resource should be present but is not
+-   Dependency issues, e.g. invalid version, cryptic errors in console, etc.
+-   Plugin issues, e.g. developing a local plugin and changes don’t seem to be taking effect
 
 ### [](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#plugin)`plugin`
 
@@ -294,7 +294,7 @@ In addition to the explicit `--no-color` option, the CLI respects the presence o
 
 When you use `gatsby new` for the first time to create a new project, you are asked to choose your default package manager between yarn and npm.
 
-```shell
+```consoleell
 Which package manager would you like to use ? › - Use arrow-keys. Return to submit.
 ❯  yarn
    npm

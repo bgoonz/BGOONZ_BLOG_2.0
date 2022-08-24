@@ -391,7 +391,7 @@ time tree              # Time how long the tree command takes to execute
 
 ## Scheduled Tasks
 
-```
+```pre
    *      *         *         *           *
 Minute, Hour, Day of month, Month, Day of the week
 ```

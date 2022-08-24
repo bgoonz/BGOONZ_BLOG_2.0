@@ -1,9 +1,3 @@
-/**
- * It returns all the pages that are located under the provided URL path
- * @param pages - An array of page objects. All pages must have 'url' field.
- * @param urlPath - The URL path of the page you want to get the children of.
- * @returns An array of objects that have a url property that starts with the urlPath.
- */
 import _ from 'lodash';
 
 /**
@@ -31,12 +25,12 @@ import _ from 'lodash';
  * @param {string} urlPath The url path to filter pages by
  * @return {Array}
  */
-export default function getPages( pages, urlPath ) {
-  urlPath = _.trim( urlPath, '/' );
-  const urlPathParts = _.split( urlPath, '/' );
-  return _.filter( pages, page => {
-    const pageUrlPath = _.trim( page.url, '/' );
-    const pageUrlParts = _.split( pageUrlPath, '/' );
-    return pageUrlParts.length > urlPathParts.length && _.isEqual( pageUrlParts.slice( 0, urlPathParts.length ), urlPathParts );
-  } );
+export default function getPages(pages, urlPath) {
+    urlPath = _.trim(urlPath, '/');
+    const urlPathParts = _.split(urlPath, '/');
+    return _.filter(pages, page => {
+        const pageUrlPath = _.trim(page.url, '/');
+        const pageUrlParts = _.split(pageUrlPath, '/');
+        return pageUrlParts.length > urlPathParts.length && _.isEqual(pageUrlParts.slice(0, urlPathParts.length), urlPathParts);
+    });
 }
