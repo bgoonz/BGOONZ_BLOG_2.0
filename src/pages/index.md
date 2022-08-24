@@ -21,134 +21,134 @@ sections:
           - content: >
                 Memoization, Tabulation, and Sorting Algorithms by Example
 
-                Why is looking at runtime not a reliable method of calculating time
-                complexity?
-            actions:
-                - label: Get Started
-                  url: /docs
-                  style: link
-            title: A Quick Guide To Big O
-            image: images/my-back.png
-            title_url: >-
-                https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522
-          - content: >
-                *Python has a built in help function that let’s you see a description
-                of the source code without having to navigate to it… “-SickNasty …
-                Autor Unknown”  .*
-            actions:
-                - label: View Posts
-                  url: >-
-                      https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb
-                  style: link
-            image_alt: python
-            title: Python Guide
-            title_url: >-
-                https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb
-            image: images/smiling-maple.png
-          - content: >
-                This section exists for me to day dream ideas for the future... and
-                maybe... just maybe, hold myself accountable to them.
-            actions:
-                - label: Learn More
-                  url: /docs/tools
-                  style: link
-            title: Guitar Effects Triggering w DTW
-            title_url: 'https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering'
-            image: images/panoramic-owl.png
-          - title_url: 'https://bryanguner.medium.com/introductory-react-part-2-cda01615a186'
-            image_alt: img of dtw
-            content: >
-                As I learn to build web applications in React I will blog about it in
-                this series in an attempt to capture the questions that a complete
-                beginner might encounter that a more seasoned developer would take for
-                granted!
-            actions: []
-            type: grid_item
-            title: Beginner Guide React
-            image: images/successful-panda.gif
-          - title_url: 'https://dev.to/bgoonz/scope-and-context-in-javascript-5cma'
-            image_alt: img of react
-            content: "Scope & Context in JS\n\nThe\_**scope**\_of a program in JavaScript is the set of variables that are available for use within the program. \n"
-            actions: []
-            type: grid_item
-            image: images/pleasant-birch.png
-            title: Scope & Closure
-          - image_alt: Every idea needs a medium
-            content: >
-                PostgreSQL Cheat Sheet, Everything You Need to Get Started With VSCode
-                + Extensions & Resources, Super Simple Intro To HTML,  Understanding
-                Git... etc....
-            actions: []
-            type: grid_item
-            title: My Medium Blog
-            image: images/curious-mustard.png
-            title_url: >-
-                https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b
-    - title: Site Search
-      section_id: Search
-      image_alt: site search
-      image_position: right
-      content: >-
-          <iframe width="560" height="315"
-          src="https://www.youtube-nocookie.com/embed/xGZSWvFess8?start=2"
-          title="YouTube video player" frameborder="0" allow="accelerometer;
-          autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-      actions: []
-      type: section_content
-    - section_id: Web Audio DAW
-      image_alt: medium
-      image_position: left
-      actions:
-          - label: Go To Web Audio Daw
-            url: 'https://mihirbegmusiclab.netlify.app/'
-            style: primary
-            icon_class: dev
-            new_window: true
-            no_follow: false
-            type: action
-      type: section_content
-      image: images/goals.jpg
-      title: Web Audio DAW
-    - title: Music
-      section_id: guitar
-      image_alt: bryan-guner
-      image_position: left
-      content: >-
-          <iframe class="block-content" width="100%
-          src="https://www.youtube.com/embed/xGZSWvFess8" title="YouTube video
-          player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-          encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      actions:
-          - label: Youtube
-            url: 'https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA'
+          Why is looking at runtime not a reliable method of calculating time
+          complexity?
+        actions:
+          - label: Get Started
+            url: /docs
             style: link
-            icon_class: youtube
-            new_window: true
-            no_follow: false
-            type: action
-      type: section_content
-    - section_id: Music
-      image_alt: listen to my playlist
-      image_position: left
-      content: >
-          <iframe class="block-content" width="100%    
-          src="https://open.spotify.com/embed/playlist/2VojZ70yfWaSeVfY2gjwVC?theme=0"
-          width="100%" height="380" frameBorder="0" allowtransparency="true"
-          allow="encrypted-media"></iframe>
-      actions: []
-      type: section_content
-      title: Spotify
-    - title: Current Interests
-      section_id: interests
-      subtitle: From github repositories to existential questions.
-      col_number: three
-      grid_items:
-          - title: Angolia
-            title_url: angolia
-            image_alt: angolia
-            content: |
-                ## Full Text Search
+        title: A Quick Guide To Big O
+        image: images/my-back.png
+        title_url: >-
+          https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522
+      - content: >
+          *Python has a built in help function that let’s you see a description
+          of the source code without having to navigate to it… “-SickNasty …
+          Autor Unknown”  .*
+        actions:
+          - label: View Posts
+            url: >-
+              https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb
+            style: link
+        image_alt: python
+        title: Python Guide
+        title_url: >-
+          https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb
+        image: images/smiling-maple.png
+      - content: >
+          This section exists for me to day dream ideas for the future... and
+          maybe... just maybe, hold myself accountable to them.
+        actions:
+          - label: Learn More
+            url: /docs/tools
+            style: link
+        title: Guitar Effects Triggering w DTW
+        title_url: 'https://github.com/bgoonz/Revamped-Automatic-Guitar-Effect-Triggering'
+        image: images/panoramic-owl.png
+      - title_url: 'https://bryanguner.medium.com/introductory-react-part-2-cda01615a186'
+        image_alt: img of dtw
+        content: >
+          As I learn to build web applications in React I will blog about it in
+          this series in an attempt to capture the questions that a complete
+          beginner might encounter that a more seasoned developer would take for
+          granted!
+        actions: []
+        type: grid_item
+        title: Beginner Guide React
+        image: images/successful-panda.gif
+      - title_url: 'https://dev.to/bgoonz/scope-and-context-in-javascript-5cma'
+        image_alt: img of react
+        content: "Scope & Context in JS\n\nThe\_**scope**\_of a program in JavaScript is the set of variables that are available for use within the program. \n"
+        actions: []
+        type: grid_item
+        image: images/pleasant-birch.png
+        title: Scope & Closure
+      - image_alt: Every idea needs a medium
+        content: >
+          PostgreSQL Cheat Sheet, Everything You Need to Get Started With VSCode
+          + Extensions & Resources, Super Simple Intro To HTML,  Understanding
+          Git... etc....
+        actions: []
+        type: grid_item
+        title: My Medium Blog
+        image: images/curious-mustard.png
+        title_url: >-
+          https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b
+  - title: Site Search
+    section_id: Search
+    image_alt: site search
+    image_position: right
+    content: |-
+      <iframe class="block-content"style=" height:400px!important;"
+       src="https://random-static-html-deploys.netlify.app/blog-search.html" title="YouTube video
+       player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+       encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    actions: []
+    type: section_content
+    image: images/thoughtful-zucchini.gif
+  - section_id: Web Audio DAW
+    image_alt: medium
+    image_position: left
+    actions:
+      - label: Go To Web Audio Daw
+        url: 'https://mihirbegmusiclab.netlify.app/'
+        style: primary
+        icon_class: dev
+        new_window: true
+        no_follow: false
+        type: action
+    type: section_content
+    image: images/goals.jpg
+    title: Web Audio DAW
+  - title: Music
+    section_id: guitar
+    image_alt: bryan-guner
+    image_position: left
+    content: >-
+      <iframe class="block-content" width="100%
+      src="https://www.youtube.com/embed/xGZSWvFess8" title="YouTube video
+      player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+      encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    actions:
+      - label: Youtube
+        url: 'https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA'
+        style: link
+        icon_class: youtube
+        new_window: true
+        no_follow: false
+        type: action
+    type: section_content
+  - section_id: Music
+    image_alt: listen to my playlist
+    image_position: left
+    content: >
+      <iframe class="block-content" width="100%    
+      src="https://open.spotify.com/embed/playlist/2VojZ70yfWaSeVfY2gjwVC?theme=0"
+      width="100%" height="380" frameBorder="0" allowtransparency="true"
+      allow="encrypted-media"></iframe>
+    actions: []
+    type: section_content
+    title: Spotify
+  - title: Current Interests
+    section_id: interests
+    subtitle: From github repositories to existential questions.
+    col_number: three
+    grid_items:
+      - title: Angolia
+        title_url: angolia
+        image_alt: angolia
+        content: |
+          ## Full Text Search
 
                 [Full Text Search](https://www.algolia.com/)
 
