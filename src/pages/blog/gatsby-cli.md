@@ -29,20 +29,20 @@ cmseditable: true
 
 ## TABLE OF CONTENTS
 
--   [How to use gatsby-cli](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#how-to-use-gatsby-cli)
--   [API commands](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#api-commands)
+- [How to use gatsby-cli](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#how-to-use-gatsby-cli)
+- [API commands](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#api-commands)
 
-    -   [new](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#new)
-    -   [develop](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#develop)
-    -   [build](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#build)
-    -   [serve](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#serve)
-    -   [info](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#info)
-    -   [clean](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#clean)
-    -   [plugin](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#plugin)
-    -   [Repl](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#repl)
-    -   [Disabling colored output](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#disabling-colored-output)
+  - [new](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#new)
+  - [develop](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#develop)
+  - [build](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#build)
+  - [serve](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#serve)
+  - [info](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#info)
+  - [clean](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#clean)
+  - [plugin](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#plugin)
+  - [Repl](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#repl)
+  - [Disabling colored output](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#disabling-colored-output)
 
--   [How to change your default package manager for your next project?](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#how-to-change-your-default-package-manager-for-your-next-project)
+- [How to change your default package manager for your next project?](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#how-to-change-your-default-package-manager-for-your-next-project)
 
 The Gatsby command line tool (CLI) is the main entry point for getting up and running with a Gatsby application and for using functionality including running a development server and building out your Gatsby application for deployment.
 
@@ -133,14 +133,14 @@ Note that this will not prompt you to create a custom setup, but only clone the 
 
 ##### [](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#examples)Examples
 
--   Create a Gatsby site named `my-awesome-site` using the default starter:
+- Create a Gatsby site named `my-awesome-site` using the default starter:
 
 ```shell
 gatsby new my-awesome-site
 
 ```
 
--   Create a Gatsby site named `my-awesome-blog-site`, using [gatsby-starter-blog](https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-blog/):
+- Create a Gatsby site named `my-awesome-blog-site`, using [gatsby-starter-blog](https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-blog/):
 
 ```shell
 gatsby new my-awesome-blog-site https://github.com/gatsbyjs/gatsby-starter-blog
@@ -239,10 +239,10 @@ At the root of a Gatsby site, wipe out the cache (`.cache` folder) and public di
 
 This is useful as a last resort when your local project seems to have issues or content does not seem to be refreshing. Issues this may fix commonly include:
 
--   Stale data, e.g. this file/resource/etc. isn’t appearing
--   GraphQL error, e.g. this GraphQL resource should be present but is not
--   Dependency issues, e.g. invalid version, cryptic errors in console, etc.
--   Plugin issues, e.g. developing a local plugin and changes don’t seem to be taking effect
+- Stale data, e.g. this file/resource/etc. isn’t appearing
+- GraphQL error, e.g. this GraphQL resource should be present but is not
+- Dependency issues, e.g. invalid version, cryptic errors in console, etc.
+- Plugin issues, e.g. developing a local plugin and changes don’t seem to be taking effect
 
 ### [](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#plugin)`plugin`
 
