@@ -1,7 +1,3 @@
-/**
- * It reads all the files in the data directory, parses them, and creates a single node with the data
- * @param changedFile - The file that was changed.
- */
 const path = require('path');
 const yaml = require('js-yaml');
 const fse = require('fs-extra');
@@ -32,7 +28,7 @@ exports.sourceNodes = (props, pluginOptions = {}) => {
     }
 
     if (!path.isAbsolute(pluginOptions.path)) {
-        pluginOptions.path = path.resolve(process.cwd(), pluginOptions.path)
+        pluginOptions.path = path.resolve(process.cwd(), pluginOptions.path);
     }
 
     reporter.info(`[gatsby-source-data] setup file watcher and create site data`);
@@ -122,6 +118,6 @@ function convertDataFilesToJSON(dataFiles, dataDirPath, reporter) {
         });
     });
     return Promise.all(promises).then(results => {
-        return _.reduce(results, (data, res) => _.merge(data, res), {})
+        return _.reduce(results, (data, res) => _.merge(data, res), {});
     });
 }
