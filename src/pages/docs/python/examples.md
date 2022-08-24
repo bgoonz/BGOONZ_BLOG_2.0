@@ -1,10 +1,10 @@
 ---
-title: Python Practice
+title: Practice
 weight: 0
 excerpt: Example Problems
 seo:
-    title: 'Python Examples'
-    description: 'Python Problems & Solutions For Beginners'
+    title: ''
+    description: ''
     robots: []
     extra: []
 template: docs

@@ -627,7 +627,7 @@ find . -name "* *" -type d | rename 's/ /_/g'
 find . -name "* *" -type f | rename 's/ /_/g'
 ```
 
-```sh
+````bash
 
 ```sh
 find $dir -type f | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
@@ -1249,7 +1249,7 @@ cmd() {
   echo '<style>'
 
 echo '    a {'
-echo '      color: black;'
+echo '      color: #000000;'
 echo '    }'
 echo ''
 echo '    li {'
@@ -1361,7 +1361,7 @@ cmd() {
   echo '<style>'
 
 echo '    a {'
-echo '      color: black;'
+echo '      color: #000000;'
 echo '    }'
 echo ''
 echo '    li {'
