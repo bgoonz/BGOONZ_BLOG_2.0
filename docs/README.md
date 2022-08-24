@@ -2,7 +2,8 @@
 
 ### [Github Org Link](https://github.com/BGOOONZ-BLOG/)
 
-### [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app)
+## [CHANGELOG](./CHANGELOG.md)
+
 
 ### [CHANGELOG](./CHANGELOG.md)
 
@@ -4053,7 +4054,7 @@ export default class ActionLink extends React.Component {
 ```
 
 ---
-
+,
 
 ### Table of Contents
 
@@ -4166,18 +4167,12 @@ export default class CtaButtons extends React.Component {
 ---
 
 ```js
-import React from "react";
-import _ from "lodash";
+import React from 'react';
+import _ from 'lodash';
 
-import {
-  getPage,
-  classNames,
-  Link,
-  withPrefix,
-  pathJoin,
-  getPages,
-} from "../utils";
-import DocsSubmenu from "./DocsSubmenu";
+
+import { getPage, classNames, Link, withPrefix, pathJoin, getPages } from '../utils';
+import DocsSubmenu from './DocsSubmenu';
 
 export default class DocsMenu extends React.Component {
     render() {
