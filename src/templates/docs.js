@@ -16,8 +16,8 @@ export const query = graphql`
 `;
 export default class Docs extends React.Component {
     render() {
-        const root_docs_path = _.trim(_.get(this.props, 'pageContext.site.data.doc_sections.root_docs_path', null), '/');
-        const current_page_url = _.trim(_.get(this.props, 'pageContext.url', null), '/');
+        let root_docs_path = _.trim(_.get(this.props, 'pageContext.site.data.doc_sections.root_docs_path', null), '/');
+        let current_page_url = _.trim(_.get(this.props, 'pageContext.url', null), '/');
         return (
             <Layout {...this.props}>
                 <div className="inner outer">
@@ -32,9 +32,9 @@ export default class Docs extends React.Component {
                                     {htmlToReact(_.get(this.props, 'pageContext.html', null))}
                                     {root_docs_path !== current_page_url &&
                                         (() => {
-                                            const child_pages = _.orderBy(getPages(this.props.pageContext.pages, current_page_url), 'frontmatter.weight');
-                                            const child_count = _.size(child_pages);
-                                            const has_children = child_count > 0;
+                                            let child_pages = _.orderBy(getPages(this.props.pageContext.pages, current_page_url), 'frontmatter.weight');
+                                            let child_count = _.size(child_pages);
+                                            let has_children = !!(child_count > 0);
                                             return (
                                                 <React.Fragment>
                                                     {has_children && (
@@ -63,7 +63,7 @@ export default class Docs extends React.Component {
                         </nav>
                     </div>
                     <Disqus />
-                    <div data-sheet2site="1c4ZMBRKv7mwotLxfd_5-Q_XxC2_Dkc3NLfFQMmEV7Vo&g=1&e=1" />
+                    <div data-sheet2site="1c4ZMBRKv7mwotLxfd_5-Q_XxC2_Dkc3NLfFQMmEV7Vo&g=1&e=1"></div>
                 </div>
             </Layout>
         );

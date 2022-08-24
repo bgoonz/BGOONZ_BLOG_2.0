@@ -3,8 +3,8 @@ title: Postgresql Cheat Sheet
 weight: 0
 excerpt: Postgresql Cheat Sheet
 seo:
-    title: ''
-    description: ''
+    title: 'Postgresql Cheat Sheet'
+    description: 'Postgresql Cheat Sheet'
     robots: []
     extra: []
     type: stackbit_page_meta
