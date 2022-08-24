@@ -33,7 +33,6 @@ template: docs
 weight: 0
 ---
 
-<h1> Network Visualization </h1>
 <iframe
   height="300"
   style="width: 100%"

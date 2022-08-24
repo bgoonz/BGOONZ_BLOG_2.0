@@ -4,7 +4,7 @@ import { classNames, markdownify, withPrefix } from '../utils';
 import CtaButtons from './CtaButtons';
 export default class SectionContent extends React.Component {
     render() {
-        const section = _.get(this.props, 'section', null);
+        let section = _.get(this.props, 'section', null);
         return (
             <section id={_.get(section, 'section_id', null)} className="block block-text outer">
                 <div className="outter">
