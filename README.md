@@ -133,6 +133,16 @@ ___
 
 ---
 
+### Workflows
+
+[![CI](https://github.com/bgoonz/BGOONZ_BLOG_2.0/actions/workflows/main.yml/badge.svg)](https://github.com/bgoonz/BGOONZ_BLOG_2.0/actions/workflows/main.yml)
+
+
+
+
+
+---
+
 
 
 
