@@ -1,4 +1,3 @@
-/* A comment. */
 /* eslint-disable linebreak-style */
 /**
  * Implement Gatsby's Browser APIs in this file.
@@ -12,7 +11,7 @@
 // window.onGatsbyInitialClientRender() has run
 let initialized = false;
 
-export function onInitialClientRender() {
+exports.onInitialClientRender = () => {
     initialized = true;
     if ('onGatsbyInitialClientRender' in window && typeof window.onGatsbyInitialClientRender === 'function') {
         window.onGatsbyInitialClientRender();
@@ -20,16 +19,16 @@ export function onInitialClientRender() {
     if ('onGatsbyRouteUpdate' in window && typeof window.onGatsbyRouteUpdate === 'function') {
         window.onGatsbyRouteUpdate();
     }
-}
+};
 
-export function onRouteUpdate() {
+exports.onRouteUpdate = () => {
     if (initialized && 'onGatsbyRouteUpdate' in window && typeof window.onGatsbyRouteUpdate === 'function') {
         window.onGatsbyRouteUpdate();
     }
-}
+};
 
-export function onPreRouteUpdate() {
+exports.onPreRouteUpdate = () => {
     if (initialized && 'onGatsbyPreRouteUpdate' in window && typeof window.onGatsbyPreRouteUpdate === 'function') {
         window.onGatsbyPreRouteUpdate();
     }
-}
+};
