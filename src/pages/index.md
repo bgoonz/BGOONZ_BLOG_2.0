@@ -215,7 +215,7 @@ sections:
           <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://random-static-html-deploys.netlify.app" class="block-content" width="100%  width="1200px!important" height="1000px!important" ></iframe>
       actions: []
       type: section_content
-      image: images/cool annimation.gif
+      image: images/api.gif
     - section_id: tools
       image_alt: tools
       image_position: left
