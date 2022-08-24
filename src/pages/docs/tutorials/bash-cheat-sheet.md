@@ -3,7 +3,7 @@ title: Bash Cheat Sheet
 template: docs
 excerpt: A cheat sheet for bash commands.
 ---
-# Bash Cheat Sheet
+## Bash Cheat Sheet
 
  A cheat sheet for bash commands.
 
