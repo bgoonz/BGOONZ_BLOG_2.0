@@ -39,7 +39,7 @@ jobs:
         id: detect-package-manager
         run: |
           if [ -f "${{ github.workspace }}/yarn.lock" ]; then
-            echo "::set-output name=manager::yarn"
+            echo "::set-output name=manager::npm"
             echo "::set-output name=command::install"
             exit 0
           elif [ -f "${{ github.workspace }}/package.json" ]; then
@@ -48,12 +48,11 @@ jobs:
             exit 0
           else
             echo "Unable to determine packager manager"
-            exit 1
           fi
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: "16"
+          node-version: "14"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
       - name: Setup Pages
         id: pages

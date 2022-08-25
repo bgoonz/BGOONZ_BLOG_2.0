@@ -33,6 +33,7 @@ template: docs
 weight: 0
 ---
 
+<h1> Network Visualization </h1>
 <iframe
   height="300"
   style="width: 100%"
@@ -2880,7 +2881,6 @@ Guner
  <br>
  <br>
 <br>
-<<<<<<< HEAD
 <!-------------------------------------------------------------------------------------->
 <br>
 <br>
@@ -2997,5 +2997,3 @@ Guner
  <br>
 <br>
 <br>
-=======
->>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2

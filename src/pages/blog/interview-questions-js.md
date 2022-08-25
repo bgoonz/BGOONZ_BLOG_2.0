@@ -2490,21 +2490,12 @@ Cons
 
         An operator is capable of manipulating(mathematical and logical computations) a certain value or operand. There are various operators supported by JavaScript as below,
 
-<<<<<<< HEAD
         1. **Arithmetic Operators:** Includes + (Addition),- (Subtraction), \* (Multiplication), / (Division), % (Modulus), + + (Increment) and - - (Decrement)
         2. **Comparison Operators:** Includes = =(Equal),!= (Not Equal), ===(Equal with type), > (Greater than),> = (Greater than or Equal to),< (Less than),<= (Less than or Equal to)
         3. **Logical Operators:** Includes &&(Logical AND),||(Logical OR),!(Logical NOT)
         4. **Assignment Operators:** Includes = (Assignment Operator), += (Add and Assignment Operator), - = (Subtract and Assignment Operator), \*= (Multiply and Assignment), /= (Divide and Assignment), %= (Modules and Assignment)
         5. **Ternary Operators:** It includes conditional(: ?) Operator
         6. **typeof Operator:** It uses to find type of variable. The syntax looks like `typeof variable`
-=======
-     1. **Arithmetic Operators:** Includes + (Addition),- (Subtraction), \* (Multiplication), / (Division), % (Modulus), + + (Increment) and - - (Decrement)
-     2. **Comparison Operators:** Includes = =(Equal),!= (Not Equal), ===(Equal with type), > (Greater than),> = (Greater than or Equal to),< (Less than),<= (Less than or Equal to)
-     3. **Logical Operators:** Includes &&(Logical AND),||(Logical OR),!(Logical NOT)
-     4. **Assignment Operators:** Includes = (Assignment Operator), += (Add and Assignment Operator), - = (Subtract and Assignment Operator), \*= (Multiply and Assignment), /= (Divide and Assignment), %= (Modules and Assignment)
-     5. **Ternary Operators:** It includes conditional(: ?) Operator
-     6. **typeof Operator:** It uses to find type of variable. The syntax looks like `typeof variable`
->>>>>>> 82af54be39033a629965b16189f8db2cb842f1d2
 
 185.    What is a rest parameter
 
@@ -3473,7 +3464,7 @@ Cons
 
         TypeScript is a typed superset of JavaScript created by Microsoft that adds optional types, classes, async/await, and many other features, and compiles to plain JavaScript. Angular built entirely in TypeScript and used as a primary language. You can install it globally as
 
-        ```console
+        ```shell
         npm install -g typescript
         ```
 
@@ -4275,7 +4266,7 @@ Cons
 
         No, you cannot redeclare let and const variables. If you do, it throws below error
 
-        ```console
+        ```shell
         Uncaught SyntaxError: Identifier 'someVariable' has already been declared
         ```
 
@@ -5441,7 +5432,7 @@ Cons
 
         and the output would be in
 
-        ```console
+        ```shell
         Script loaded
         My script is initialized
         ```
@@ -5458,7 +5449,7 @@ Cons
 
         and the output is,
 
-        ```console
+        ```shell
         My script is initialized
         Script loaded
         ```
