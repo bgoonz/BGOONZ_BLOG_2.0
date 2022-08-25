@@ -6,7 +6,8 @@
 
 ### [CHANGELOG](./CHANGELOG.md)
 
-##### [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app) [⇨**Cloudfare-Backup**⇦](https://bgoonz-blog-2-0.pages.dev/) [⇨**search**⇦](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) [⇨**Backup Repo Deploy**⇦](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) [⇨**Github pages**⇦](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) [⇨**Go To Site Wiki**⇦](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki) [⇨**Gatsby Cloud Version**⇦](https://bgoonzblog20master.gatsbyjs.io/) [⇨**Vercel Version**⇦](https://bgoonz-blog-2-0.vercel.app/) [⇨**Cloudfare-Domain**⇦](www.webdevhub.us) [⇨**gh-pages**⇦](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) [⇨**backup netlify deploy**⇦](https://bgoonz-blog20-backup.netlify.app/)
+##### [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app) [⇨**Cloudfare-Backup**⇦](https://bgoonz-blog-2-0.pages.dev/) [⇨**search**⇦](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) [⇨**Backup Repo Deploy**⇦](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) [⇨**Github pages**⇦](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) [⇨**Go To Site Wiki**⇦](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki) [⇨**Gatsby Cloud Version**⇦](https://bgoonzblog20master.gatsbyjs.io/) [⇨**Vercel Version**⇦](https://bgoonz-blog-2-0.vercel.app/) 
+[⇨**Cloudfare-Domain**⇦](www.webdevhub.us) [⇨**gh-pages**⇦](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) [⇨**backup netlify deploy**⇦](https://bgoonz-blog20-backup.netlify.app/)
 
 ### Repos
 
@@ -132,6 +133,16 @@ ___
 
 ---
 
+### Workflows
+
+[![CI](https://github.com/bgoonz/BGOONZ_BLOG_2.0/actions/workflows/main.yml/badge.svg)](https://github.com/bgoonz/BGOONZ_BLOG_2.0/actions/workflows/main.yml)
+
+
+
+
+
+---
+
 
 
 
@@ -167,27 +178,11 @@ git push                    # done, no need to force push!
 ## Web Dev Setup
 
 <details>
+<summary>
+<======= Web Dev Setup
+</summary>
 
-<summary>Web Dev Setup</summary>
 
----
-
-title: WebDev Setup
-template: post
-subtitle: Basic Web Development Environment Setup
-excerpt: Windows Subsystem for Linux (WSL) and Ubuntu
-date: 2022-05-08T18:10:03.296Z
-image: <https://cdn-images-1.medium.com/max/800/0>*aqKP1drNHmNm34zz.jpg
-thumb_image: <https://cdn-images-1.medium.com/max/800/0>*aqKP1drNHmNm34zz.jpg
-image_position: right
-author: src/data/authors/bgoonz.yaml
-categories: - src/data/categories/js.yaml - src/data/categories/javascript.yaml
-tags: - src/data/tags/links.yaml - src/data/tags/resources.yaml
-show_author_bio: true
-related_posts: - src/pages/blog/vs-code-extensions.md - src/pages/blog/code-playgrounds-of-2021.md - src/pages/blog/adding-css-to-your-html.md - src/pages/blog/deploy-react-app-to-heroku.md
-cmseditable: true
-
----
 
 ## Basic Web Development Environment Setup
 
@@ -246,7 +241,7 @@ Test if you have Node.js installed by opening an Ubuntu terminal and typing `nod
 1. > In the Ubuntu terminal, type `sudo apt update` and press Enter
 2. > In the Ubuntu terminal, type `sudo apt install build-essential` and press Enter
 3. > In the Ubuntu terminal, type `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash` and press Enter
-4. > In the Ubuntu terminal, type `. ./.bashrc` and press Enter
+4. > In the Ubuntu terminal, type `../.bashrc` and press Enter
 5. > In the Ubuntu terminal, type `nvm install --lts` and press Enter
 6. > Confirm that **node** is installed by typing `node --version` and seeing it print something that is not "Command not found"!
 
@@ -316,26 +311,7 @@ As of the time of writing of this document, WSL has an issue renaming or deletin
 
 ---
 
-### Documentation Commands
 
-documentation build src/components/DocsMenu.js  -f md> ./notes/DocsMenu.md
-documentation build src/components/Footer.js  -f md> ./notes/Footer.md
-documentation build src/components/Header.js  -f md> ./notes/Header.md
-documentation build src/components/index.js  -f md> ./notes/index.md
-documentation build src/components/SectionContent.js  -f md> ./notes/SectionContent.md
-documentation build src/components/SectionDocs.js  -f md> ./notes/SectionDocs.md
-documentation build src/components/SectionHero.js  -f md> ./notes/SectionHero.md
-documentation build src/components/CtaButtons.js  -f md> ./notes/CtaButtons.md
-documentation build src/components/DocsSubmenu.js  -f md> ./notes/DocsSubmenu.md
-documentation build src/components/FormField.js  -f md> ./notes/FormField.md
-documentation build src/components/Icon.js  -f md> ./notes/Icon.md
-documentation build src/components/Layout.js  -f md> ./notes/Layout.md
-documentation build src/components/SectionCta.js  -f md> ./notes/SectionCta.md
-documentation build src/components/SectionGrid.js  -f md> ./notes/SectionGrid.md
-documentation build src/components/Submenu.js  -f md> ./notes/Submenu.md
-documentation build src/components/ActionLink.js  -f md> ./notes/ActionLink.md
-
----
 
 ## Blog Content
 
