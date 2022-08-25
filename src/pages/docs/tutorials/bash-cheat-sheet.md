@@ -3,7 +3,7 @@ title: Bash Cheat Sheet
 template: docs
 excerpt: A cheat sheet for bash commands.
 ---
-# Bash Cheat Sheet
+## Bash Cheat Sheet
 
  A cheat sheet for bash commands.
 
@@ -391,7 +391,7 @@ time tree              # Time how long the tree command takes to execute
 
 ## Scheduled Tasks
 
-```pre
+```
    *      *         *         *           *
 Minute, Hour, Day of month, Month, Day of the week
 ```

@@ -7,8 +7,8 @@ https://bgoonz-blog.netlify.app/*
   X-Robots-Tag: noindex
 
 [[redirects]]
-  from = "/search"
-  to = "https://api.mysearch.com"
+  from = "/resources"
+  to = "https://vercel--bgoonz-blog.netlify.app/docs/tools/"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
