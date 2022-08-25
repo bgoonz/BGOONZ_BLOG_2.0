@@ -377,12 +377,7 @@ models:
               options:
                   - two
                   - three
-<<<<<<< HEAD
-                  - four
-              default: four
-=======
               default: three
->>>>>>> master
               required: true
     section_grid:
         type: object

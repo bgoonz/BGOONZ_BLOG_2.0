@@ -4320,7 +4320,7 @@ With the `styled` object imported, you can now start creating Styled Components.
 ```
 const Button = styled.button`
   font-size: 1.5em;
-  background-color: #000000;
+  background-color: black;
   color: white;
 `
 ```
@@ -4384,7 +4384,7 @@ If you have one component and you want to create a similar one, just styled slig
 
 ```
 const Button = styled.button`
-  color: #000000;
+  color: black;
   //...
 `
 
@@ -6515,7 +6515,7 @@ export default () => (
       }
       a {
         text-decoration: none;
-        color: #000000;
+        color: black;
       }
       a:hover {
         opacity: 0.8;

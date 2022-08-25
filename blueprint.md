@@ -1466,7 +1466,7 @@ git remote remove origin
 ---
 
 ## 31. just clone .git folder
-
+static\images\api.gif
 ### Description
 
 > Notes:

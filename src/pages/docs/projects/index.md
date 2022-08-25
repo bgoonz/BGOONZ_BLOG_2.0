@@ -237,7 +237,7 @@ https://bgoonz-blog-v3-0.netlify.app/embeds/
 <br>
 <h1>  Potluck Planner </h1>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://potluck-landing.netlify.app/" height="800px" width="800px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://potluck-landing.netlify.app/" height="800px" width="100%" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"
        frameborder="0" >
 </iframe>
 <br>
@@ -249,7 +249,7 @@ https://bgoonz-blog-v3-0.netlify.app/embeds/
 <br>
 <h1>  Useful Snippets </h1>
 <br>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://bgoonz.github.io/Useful-Snippets/" height="800px" width="800px" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"     style="z-index:-1!important; overflow:scroll;resize:both;"  src="https://bgoonz.github.io/Useful-Snippets/" height="800px" width="100%" scrolling="yes"   frameborder="yes" loading="lazy"  allowfullscreen="true"
        frameborder="0" >
 </iframe>
 <br>
