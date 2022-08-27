@@ -11,13 +11,13 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
     - name: Update Blog
-      working-directory: packages/github 
+      working-directory: ./
       run: |
         npx npm-check-updates -u --dep prod
         npm install
     - name: Check Status
       id: status
-      working-directory: packages/github 
+      working-directory: ./
       run: | 
         if [[ "$(git status --porcelain)" != "" ]]; then 
         echo "::set-output name=createPR::true"
