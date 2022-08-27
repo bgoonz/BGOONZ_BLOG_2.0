@@ -25,6 +25,10 @@ Url: http://gitpop2.herokuapp.com/bgoonz/BGOONZ_BLOG_2.0
 
 [![Demo](https://img.youtube.com/vi/OGCcq1_Tbzk/0.jpg)](https://www.youtube.com/watch?v=OGCcq1_Tbzk)
 
+
+
+##### Bug Tracker 
+https://app.usersnap.com/#/6bf5b719-6d97-4b67-9cc8-271a747f56d3/statistics
 </div>
 ---
 
