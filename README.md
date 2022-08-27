@@ -1,17 +1,16 @@
 <div align="center">
 
-
-
 # Bgoonz Blog Readme
+
 ## [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app)
 
-## 💫 Deploy
+### 💫 Deploy
 
 [![Deploy to Netlify**](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/BGOONZ_BLOG_2.0.git)[![Deploy with Vercel**](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/BGOONZ_BLOG_2.0.git)![GitHub visitors](https://visitor-badge-reloaded.herokuapp.com/badge?page_id=bgoonz.visitor.badge.reloaded&color=00bbbb&style=for-the-badge&logo=github)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys)[![CodeFactor](https://www.codefactor.io/repository/github/bgoonz/bgoonz_blog_2.0/badge)](https://www.codefactor.io/repository/github/bgoonz/bgoonz_blog_2.0)
 
-##### [CHANGELOG](./CHANGELOG.md)
+
 
 ##### [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app) [⇨**Cloudfare-Backup**⇦](https://bgoonz-blog-2-0.pages.dev/) [⇨**search**⇦](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) [⇨**Backup Repo Deploy**⇦](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) [⇨**Github pages**⇦](https://bgoonz.github.io/BGOONZ_BLOG_2.0/)[⇨**Go To Site Wiki**⇦](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki) [⇨**Gatsby Cloud Version**⇦](https://bgoonzblog20master.gatsbyjs.io/) [⇨**Vercel Version**⇦](https://bgoonz-blog.vercel.app/)[⇨**Cloudfare-Domain**⇦](www.webdevhub.us) [⇨**gh-pages**⇦](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) [⇨**backup netlify deploy**⇦](https://bgoonz-blog20-backup.netlify.app/)
 
@@ -22,9 +21,21 @@
 [Alt Backup](https://github.com/BGOOONZ-BLOG/bgoonz-blog2.0-v-5)
 [Blog Content](https://github.com/bgoonz/MainBlogContent)
 
-
+---    
+    
+ ##### [CHANGELOG](./CHANGELOG.md)   
+ 
+- [⇨Privacy policy⇦](https://codepen.io/bgoonz/pen/LYLJZrW)
+    
+    
+---
+    
 #### Branch Deploys:
+    
+[Cloudfare-Backup](https://bgoonz-blog-2-0.pages.dev/) ↞↠ Search Website: [search](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) ↞↠ [Backup Repo Deploy](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) ↞↠ [Github pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) ↞↠ [Go To Site Wiki](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)    
 
+---    
+    
 
 ##### [Bug Tracker](https://app.usersnap.com/#/6bf5b719-6d97-4b67-9cc8-271a747f56d3/statistics)
 - [Most Updated Forks](http://gitpop2.herokuapp.com/bgoonz/BGOONZ_BLOG_2.0)
@@ -35,7 +46,6 @@
 
 
 
-- [⇨Privacy policy⇦](https://codepen.io/bgoonz/pen/LYLJZrW)
 
 
 
@@ -150,7 +160,7 @@ ___
 
 
 
-## Useful Commands (internal use)
+##### Useful Commands (internal use)
 
 ```bash
 
@@ -174,11 +184,14 @@ git push                    # done, no need to force push!
 
 ---
 
-<figure>
-<img src="https://cdn-images-1.medium.com/max/800/0*aqKP1drNHmNm34zz.jpg" class="graf-image" />
-</figure>
+
+
 
 ## Basic Web Development Environment Setup
+
+
+![Webdev Setup](https://cdn-images-1.medium.com/max/800/0*aqKP1drNHmNm34zz.jpg)
+
 
 <details>
 
@@ -303,13 +316,9 @@ As of the time of writing of this document, WSL has an issue renaming or deletin
 
 ---
 
----
 
----
 
----
 
-</div>
 
 ## Bash Cheat Sheet (MY COMMANDS)
 
@@ -2244,7 +2253,7 @@ find . -type f -samefile MY_FILE_HERE 2>/dev/null
 
 find . -type f -exec chmod 644 {} \;
 
----
+
 
 </details>
 
@@ -2258,7 +2267,7 @@ find . -type f -exec chmod 644 {} \;
 
 <details>
 
-  <summary>Click to expand!<details>
+  <summary>Dependencies (Click to expand!)<details>
 
 [![@algolia**](https://avatars.githubusercontent.com/u/2034458?s=40&v=4)](https://github.com/algolia)[algolia / algoliasearch-client-javascript](https://github.com/algolia/algoliasearch-client-javascript)@algolia/client-search
 `^ 4.10.3`
@@ -2352,7 +2361,7 @@ find . -type f -exec chmod 644 {} \;
 [![@babel**](https://avatars.githubusercontent.com/u/9637642?s=40&v=4)](https://github.com/babel)[babel / babel](https://github.com/babel/babel)@babel/core
 `7.12.3`
 
-[Cloudfare-Backup](https://bgoonz-blog-2-0.pages.dev/) ↞↠ Search Website: [search](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) ↞↠ [Backup Repo Deploy](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) ↞↠ [Github pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) ↞↠ [Go To Site Wiki](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
+
 
 </details>
 
@@ -2991,411 +3000,8 @@ find . -type f -exec chmod 644 {} \;
 
 ---
 
----
 
----
-
-<details>
-
-<summary>  ↞↠ Getting Started With GatsbyJS ↞↠  <details>
-
-#
-
----
-
-## 🚀 Quick start
-
-1. **Create a Gatsby site.**
-
-   Use the Gatsby CLI to create a new site, specifying the default starter.
-
-```bashell
-   # create a new Gatsby site using the default starter
-   gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-```
-
-1. **Start developing.**
-
-   Navigate into your new site's directory and start it up.
-
-```bashell
-   cd my-default-starter/
-   gatsby develop
-```
-
-1. **Open the source code and start editing!**
-
-   Your site is now running at `http://localhost:8000`!
-
-   _Note: You'll also see a second link:_`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
-
-   Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
-
-## 🧐 What's inside?
-
-A quick look at the top-level files and directories you'll see in a Gatsby project.
-
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
-
-1. **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
-
-2. **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for "source code".
-
-3. **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
-
-4. **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
-
-5. **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
-
-6. **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you'd like to include, etc. (Check out the [config docs](https://www.gatsbyjs.com/docs/gatsby-config/) for more detail).
-
-7. **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
-
-8. **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
-
-9. **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
-
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won't change this file directly).**
-
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project's name, author, etc). This manifest is how npm knows which packages to install for your project.
-
-12. **`README.md`**: A text file containing useful reference information about your project.
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby**](https://www.gatsbyjs.com/tutorial/).\*\* It starts with zero assumptions about your level of ability and walks through every step of the process.
--
-- **To dive straight into code samples, head [to our documentation**](https://www.gatsbyjs.com/docs/).\*\* In particular, check out the *Guides*, *API Reference*, and *Advanced Tutorials\* sections in the sidebar.
-
-
-
----
-
-### Gatsby With Netlify CMS
-
-This tutorial will use [gatsby-personal-starter-blog](https://github.com/thomaswang/gatsby-personal-starter-blog), a Gatsby starter based on the official [gatsby-starter-blog](/starters/gatsbyjs/gatsby-starter-blog/). The differences are that `gatsby-personal-starter-blog` is configured to run the blog on a subdirectory, `/blog`, and comes pre-installed with [Netlify CMS](https://www.netlifycms.org/) for content editing. It also adds VS Code highlighting for code blocks.
-
-## Prerequisites
-
-- A GitHub account
-- The [Gatsby CLI](/docs/reference/gatsby-cli/) installed
-
-## Set up a Netlify CMS-managed Gatsby site in 5 steps
-
-### Step 1
-
-Open your Terminal and run the following command from the Gatsby CLI to create a new Gatsby site using [gatsby-personal-starter-blog](https://github.com/thomaswang/gatsby-personal-starter-blog).
-
-```shell
-gatsby new [your-project-name] https://github.com/thomaswangio/gatsby-personal-starter-blog
-```
-
-### Step 2
-
-Once the Gatsby site is finished installing all the packages and dependencies, you can now go into the directory and run the site locally.
-
-```shell
-cd [your-project-name]
-gatsby develop
-```
-
-Now you can go to `http://localhost:8000` to see your new site, but what's extra cool is that Netlify CMS is pre-installed and you can access it at `http://localhost:8000/admin`
-
-A CMS, or content management system, is useful because you can add content like blog posts from a dashboard on your site, instead of having to add posts manually with Markdown. However, you'll likely want to be able to access the CMS from a deployed website, not just locally. For that, you'll need to deploy to Netlify through GitHub, set up continuous deployment, and do a few configurations. You'll go over this in [Step-5](#step-5).
-
-### Step 3
-
-Open the project in your code editor and open `static/admin/config.yml`. Replace `your-username/your-repo-name` with your GitHub username and project name. This step is important for managing and deploying the Netlify CMS interface.
-
-```diff
-backend:
--  name: test-repo
-
-+  name: github
-+  repo: your-username/your-repo-name
-```
-
-#### Customizing your site
-
-Head into `gatsby-config.js` and you can edit your siteMetadata, add a Google Analytics tracking ID, and your app icon/favicon. Test out the edits for the deployed build by quitting the development server and running `gatsby build && gatsby serve`.
-
-You'll likely also want to edit the `README.md` and `package.json` files to include your own project details.
-
-### Step 4
-
-Open [github.com](https://github.com) and create a new repository, with the same name as your project. Push your new Gatsby site's code to GitHub using the following Terminal commands:
-
-```shell
-git init
-git add .
-git commit -m "initial commit"
-git remote add origin https://github.com/[your-username]/[your-repo-name].git
-git push -u origin master
-```
-
-Then, open [app.netlify.com](https://app.netlify.com) and add a "New site from Git". Choose your newly created repo and click on "Deploy site" with the default deployment settings.
-
-> _Note: if you don't see the correct repo listed, you may need to install or reconfigure the Netlify app on GitHub._
-
-![Netlify Dashboard for Creating a new site](netlify-dashboard.png)
-
-### Step 5
-
-To make sure that Netlify CMS has access to your GitHub repo, you need to set up an OAuth application on GitHub. The instructions for that are here: [Netlify's Using an Authorization Provider](https://www.netlify.com/docs/authentication-providers/#using-an-authentication-provider).
-
-For the "Homepage URL" – you can use your Netlify subdomain, `[name-of-your-site].netlify.com`, or you can use a custom domain. To customize the subdomain, look for the "Edit site name" field under "Domain Management" for your project on the [Netlify app](https://app.netlify.com). To connect your Netlify site to your custom domain instead, see [Netlify’s instructions on custom domains](https://www.netlify.com/docs/custom-domains/).
-
-Once you've configured an authentication provider then you'll be able to use Netlify CMS at your deployed site to add new posts.
-
-![Netlify and GitHub Authorization](https://cdn.netlify.com/67edd5b656c432888d736cd40125cb61376905bb/c1cba/img/docs/github-oauth-config.png)
-
-Copy the credentials of your new app listed on [GitHub OAuth Apps](https://github.com/settings/developers) and install a new auth provider on Netlify using them.
-
-![Setting up access control](netlify-install-oauth-provider.png)
-
-#### Benefits of Netlify CMS, GitHub, and Netlify Workflow
-
-Congrats! Now that Netlify CMS is successfully configured to your project, every time you add a new post, the content will be stored in your repository and versioned on GitHub because Netlify CMS is Git-based. Also, thanks to [Netlify's Continuous Deployment](https://www.netlify.com/docs/continuous-deployment/), a new version will be deployed every time you add or edit a post.
-
-## You can learn more about Netlify CMS and how to configure it further in the [Netlify CMS documentation](https://www.netlifycms.org/docs/intro/)
-
----
-
-## Gatsby Project Structure | Gatsby
-
-> ## Excerpt
->
-> Inside a Gatsby project, you may see some or all of the following folders and files: Folders /.cache Automatically generated. This folder…
-
----
-
-Inside a Gatsby project, you may see some or all of the following folders and files:
-
-```
-/|
--- /.cache
-|-- /plugins
-|-- /public
-|-- /src
-|-- /api
-|-- /pages
-|-- /templates
-|-- html.js
-|-- /static
-|-- gatsby-config.js
-|-- gatsby-node.js
-|-- gatsby-ssr.js
-|-- gatsby-browser.js
-```
-
-[Folders](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#folders)
-
-- **`/.cache`** _Automatically generated._ This folder is an internal cache created automatically by Gatsby. The files inside this folder are not meant for modification. Should be added to the `.gitignore` file if not added already.
-- **`/plugins`** This folder hosts any project-specific ("local") plugins that aren't published as an `npm` package. Check out the [plugin docs](https://www.gatsbyjs.com/docs/plugins/) for more detail.
-- **`/public`** _Automatically generated._ The output of the build process will be exposed inside this folder. Should be added to the `.gitignore` file if not added already.
-- **`/src`** This directory will contain all of the code related to what you will see on the frontend of your site (what you see in the browser), like your site header, or a page template. "src" is a convention for "source code".
-
-  - **`/api`** JavaScript and TypeScript files under `src/api` become functions automatically with paths based on their file name. Check out the [functions guide](https://www.gatsbyjs.com/docs/reference/functions/) for more detail.
-  - **`/pages`** Components under `src/pages` become pages automatically with paths based on their file name. Check out the [pages recipes](https://www.gatsbyjs.com/docs/recipes/pages-layouts) for more detail.
-  - **`/templates`** Contains templates for programmatically creating pages. Check out the [templates docs](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#page-template-components) for more detail.
-  - **`html.js`** For custom configuration of default `.cache/default_html.js`. Check out the [custom HTML docs](https://www.gatsbyjs.com/docs/custom-html/) for more detail.
-
-- **`/static`** If you put a file into the static folder, it will not be processed by webpack. Instead it will be copied into the public folder untouched. Check out the [assets docs](https://www.gatsbyjs.com/docs/how-to/images-and-media/static-folder/#adding-assets-outside-of-the-module-system) for more detail.
-
-[Files](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#files)
-
-- **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
-- **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you'd like to include, etc. Check out the [config docs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/) for more detail.
-- **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby node APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
-- **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
-
-[Misc](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#miscellaneous)
-[Misc](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#miscellaneous)
-
-The file/folder structure described above reflects Gatsby-specific files and folders. Since Gatsby sites are also React apps, it's common to use standard React code organization patterns such as folders like `/components` and `/utils` inside `/src`. The [React docs](https://reactjs.org/docs/faq-structure.html) have more information on a typical React app folder structure.
-
----
-
-#### Layout Components | Gatsby
-
-## Excerpt
-
-> In this guide, you'll learn Gatsby's approach to layouts, how to create and use layout components, and how to prevent layout components from…
-
----
-
-In this guide, you'll learn Gatsby's approach to layouts, how to create and use layout components, and how to prevent layout components from unmounting.
-
-[Gatsby's approach to layouts](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#gatsbys-approach-to-layouts)
-
-Gatsby does not, by default, automatically apply layouts to pages (there are, however, ways to do so which will be covered in a later section). Instead, Gatsby follows React's compositional model of importing and using components. This makes it possible to create multiple levels of layouts, e.g. a global header and footer, and then on some pages, a sidebar menu. It also makes it possible to pass data between layout and page components.
-
-[What are layout components?](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#what-are-layout-components)
-
-Layout components are for sections of your site that you want to share across multiple pages. For example, Gatsby sites will commonly have a layout component with a shared header and footer. Other common things to add to layouts are a sidebar and/or navigation menu. On this page for example, the header at the top is part of gatsbyjs.com's layout component.
-
-[How to create layout components](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-create-layout-components)
-
-It is recommended to create your layout components alongside the rest of your components (e.g. into `src/components/`).
-
-Here is an example of a very basic layout component at `src/components/layout.js`:
-
-```
-import React from "react"export default function Layout({ children }) {  return (    <div style={{ margin: `0 auto`, maxWidth: 650, padding: `0 1rem` }}>       {children}    </div>   )}
-```
-
-[](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-import-and-add-layout-components-to-pages)How to import and add layout components to pages
-
-If you want to apply a layout to a page, you will need to include the `Layout` component and wrap your page in it. For example, here is how you would apply your layout to the front page:
-
-```
-import React from "react"import Layout from "../components/layout"export default function Home() {  return (    <Layout>       <h1> I'm in a layout!</h1>     </Layout>   );}
-```
-
-Repeat for every page and template that needs this layout.
-
-[How to prevent layout components from unmounting](https://www.gatsbyjs.com/docs/how-to/routing/layout-components/#how-to-prevent-layout-components-from-unmounting)
-
-As mentioned earlier, Gatsby does not, by default, automatically wrap pages in a layout component. The "top level" component is the page itself. As a result, when the "top level" component changes between pages, React will re-render all children. This means that shared components like navigations will unmount and remount. This will break CSS transitions or React state within those shared components.
-
-If you need to set a wrapper component around page components that won't get unmounted on page changes, use the **`wrapPageElement`** [browser API](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/#wrapPageElement) and the [SSR equivalent](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/#wrapPageElement).
-
-Alternatively, you can prevent your layout component from unmounting by using [gatsby-plugin-layout](https://www.gatsbyjs.com/plugins/gatsby-plugin-layout/), which implements the `wrapPageElement` APIs for you.
-
-## Adding Markdown Pages | Gatsby
-
-> ## Excerpt
->
-> Gatsby can use Markdown files to create pages in your site.
-> You add plugins to read and understand folders with Markdown files and from them…
-
----
-
-Gatsby can use Markdown files to create pages in your site. You add plugins to read and understand folders with Markdown files and from them create pages automatically.
-
-Here are the steps Gatsby follows for making this happen.
-
-1. Read files into Gatsby from the filesystem
-2. Transform Markdown to HTML and [frontmatter](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#frontmatter-for-metadata-in-markdown-files) to data
-3. Add a Markdown file
-4. Create a Collection Route component for the Markdown files
-
-[](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#read-files-into-gatsby-from-the-filesystem)Read files into Gatsby from the filesystem
-
-Use the plugin [`gatsby-source-filesystem`](https://www.gatsbyjs.com/plugins/gatsby-source-filesystem/#gatsby-source-filesystem) to read files.
-
-[](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#install)Install
-
-`npm install gatsby-source-filesystem`
-
-[Add Plugin](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#add-plugin)Add plugin
-
-Open `gatsby-config.js` to add the `gatsby-source-filesystem` plugin. The `path` option is how you set the directory to search for files.
-
-```
-module.exports = {  siteMetadata: {
-    title: "My Gatsby Site",  },
-plugins: [    {
-     resolve: `gatsby-source-filesystem`,
-options: {
-        name: `markdown-pages`,
-  path: `${__dirname}/src/markdown-pages`,
-},
-  },
-],}
-```
-
-Completing the above step means that you've "sourced" the Markdown files from the filesystem. You can now "transform" the Markdown to HTML and the YAML frontmatter to JSON.
-
-[Transform Markdown to HTML and frontmatter to data using `gatsby-transformer-remark`](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#transform-markdown-to-html-and-frontmatter-to-data-using-gatsby-transformer-remark)
-
-You'll use the plugin [`gatsby-transformer-remark`](https://www.gatsbyjs.com/plugins/gatsby-transformer-remark/) to recognize files which are Markdown and read their content. The plugin will convert the frontmatter metadata part of your Markdown files as `frontmatter` and the content part as HTML.
-
-[Install transformer plugin](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#install-transformer-plugin)
-
-`npm install gatsby-transformer-remark`
-
-[Configure plugin](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#configure-plugin)
-
-Add this to `gatsby-config.js` after the previously added `gatsby-source-filesystem`.
-
-```
-module.exports = {  siteMetadata: {
-    title: "My Gatsby Site",  },
-plugins: [    {
-     resolve: `gatsby-source-filesystem`,
-options: {
-        name: `markdown-pages`,
-  path: `${__dirname}/src/markdown-pages`,
-},
-  },
-  `gatsby-transformer-remark`,  ],
-}
-```
-
-[Add a Markdown file](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#add-a-markdown-file)
-
-Create a folder in the `/src` directory of your Gatsby application called `markdown-pages`. Now create a Markdown file inside it with the name `post-1.md`.
-
-[Frontmatter for metadata in Markdown files](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#frontmatter-for-metadata-in-markdown-files)
-
-When you create a Markdown file, you can include a set of key/value pairs that can be used to provide additional data relevant to specific pages in the GraphQL data layer. This data is called "frontmatter" and is denoted by the triple dashes at the start and end of the block. This block will be parsed by `gatsby-transformer-remark` as YAML. You can then query the data through the GraphQL API from your React components.
-
-src/markdown-pages/post-1.md
-
-```
----slug: "/blog/my-first-post"date: "2019-05-04"title: "My first blog post"---
-```
-
-What is important in this step is the key pair `slug`. The value that is assigned to the key `slug` is used in order to navigate to your post.
-
-[](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#create-a-collection-route-for-the-markdown-files)Create a Collection Route for the Markdown files
-
-Create `src/pages/{MarkdownRemark.frontmatter__slug}.js` and add the following code:
-
-src/pages/{MarkdownRemark.frontmatter\_\_slug}.js
-
-```
-import React from "react"
-import { graphql } from "gatsby"export default function Template({  data, }) {  const { markdownRemark } = data   const { frontmatter, html } = markdownRemark  return (    <div className="blog-post-container">       <div className="blog-post">         <h1> {frontmatter.title}</h1>         <h2> {frontmatter.date}</h2>         <div          className="blog-post-content"          dangerouslySetInnerHTML={{ __html: html }}        />       </div>     </div>   )}export const pageQuery = graphql`  query($id: String!) {    markdownRemark(id: {
- eq: $id }) {      html      frontmatter {        date(formatString: "MMMM DD, YYYY")        slug        title      }    }  }`
-```
-
-Two things are important in the file above:
-
-1. A GraphQL query is made in the second half of the file to get the Markdown data. Gatsby has automagically given you all the Markdown metadata and HTML in this query's result.
-
-   **Note: To learn more about GraphQL, consider this [excellent resource](https://www.howtographql.com/)**
-
-2. The result of the query is injected by Gatsby into the component as the `data` prop. `props.data.markdownRemark` is the property that has all the details of the Markdown file.
-
-Next you could create a page component at `src/pages/blog/index.js` to serve as a listing page for all your blog posts.
-
-This should get you started on some basic Markdown functionality in your Gatsby site. You can further customize the frontmatter and the component file to get desired effects!
-
-For more information, have a look in the working example `using-markdown-pages`. You can find it in the [Gatsby examples section](https://github.com/gatsbyjs/gatsby/tree/master/examples).
-
-[Other tutorials](https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/#other-tutorials)
-
-</details>
-
----
-
-### Overview
+### Overview Of Helper Methods
 
 The **`_.get()` method** in Lodash retrieves the object’s value at a specific path.
 
