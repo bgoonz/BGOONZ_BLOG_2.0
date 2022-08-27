@@ -61,10 +61,10 @@ cmseditable: true
 
 ### Tools using the *SSH* protocol
 
--   [scp](http://linux.die.net/man/1/scp) - Secure remote file copy utility over *SSH*.
+-   [scp](https://linux.die.net/man/1/scp) - Secure remote file copy utility over *SSH*.
 -   [rsync](https://rsync.samba.org/) - Fast incremental transfer utility that supports *SSH*.
 -   [sftp](https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol) - File transfer protocol over *SSH*.
--   [curl](http://curl.haxx.se/) - Command line tool and library to transfer data (support `sftp`).
+-   [curl](https://curl.haxx.se/) - Command line tool and library to transfer data (support `sftp`).
 
 ### Servers
 
@@ -91,7 +91,7 @@ cmseditable: true
 -   [switcher](https://github.com/jamescun/switcher) [![stars](https://img.shields.io/github/stars/jamescun/switcher.svg?style=social&label=stars)](https://github.com/jamescun/switcher) - Run *SSH* and *HTTP(S)* on the same port.
 -   [sslh](https://github.com/yrutschle/sslh) [![stars](https://img.shields.io/github/stars/yrutschle/sslh.svg?style=social&label=stars)](https://github.com/yrutschle/sslh) - Applicative Protocol Multiplexer (i.e: *SSH* + *HTTPS*).
 -   [tund](https://github.com/aphyr/tund) [![stars](https://img.shields.io/github/stars/aphyr/tund.svg?style=social&label=stars)](https://github.com/aphyr/tund) - *SSH* reverse tunnel daemon.
--   [autossh](http://www.harding.motd.ca/autossh/) - Automatically respawn *SSH* session after network interruption.
+-   [autossh](https://www.harding.motd.ca/autossh/) - Automatically respawn *SSH* session after network interruption.
 -   [wssh](https://github.com/aluzzardi/wssh) [![stars](https://img.shields.io/github/stars/aluzzardi/wssh.svg?style=social&label=stars)](https://github.com/aluzzardi/wssh) - *SSH* to WebSockets Bridge.
 -   [docker-volume-sshfs](https://github.com/vieux/docker-volume-sshfs) [![stars](https://img.shields.io/github/stars/vieux/docker-volume-sshfs.svg?style=social&label=stars)](https://github.com/vieux/docker-volume-sshfs) - `sshfs` docker volume plugin.
 -   [quicssh](https://github.com/moul/quicssh) [![stars](https://img.shields.io/github/stars/moul/quicssh.svg?style=social&label=stars)](https://github.com/moul/quicssh) - QUIC proxy for SSH
@@ -105,14 +105,14 @@ cmseditable: true
 -   [tmux-cssh](https://github.com/dennishafemann/tmux-cssh) [![stars](https://img.shields.io/github/stars/dennishafemann/tmux-cssh.svg?style=social&label=stars)](https://github.com/dennishafemann/tmux-cssh) - `tmux` with a *ClusterSSH*-like behavior.
 -   [tm](https://github.com/Ganneff/tm) [![stars](https://img.shields.io/github/stars/Ganneff/tm.svg?style=social&label=stars)](https://github.com/Ganneff/tm) - `tmux` manager / helper.
 -   [i2cssh](https://github.com/wouterdebie/i2cssh) [![stars](https://img.shields.io/github/stars/wouterdebie/i2cssh.svg?style=social&label=stars)](https://github.com/wouterdebie/i2cssh) - `csshX` like *SSH* tool for *iTerm2*.
--   [ClusterSSH](http://sourceforge.net/projects/clusterssh/) - Controls a number of `xterm` windows via a single graphical console.
+-   [ClusterSSH](https://sourceforge.net/projects/clusterssh/) - Controls a number of `xterm` windows via a single graphical console.
 
 ### *SSH* keys / Authentication
 
 -   [authy-ssh](https://github.com/authy/authy-ssh) [![stars](https://img.shields.io/github/stars/authy/authy-ssh.svg?style=social&label=stars)](https://github.com/authy/authy-ssh) - Easy *two-factor* authentication for *SSH* servers.
 -   [github-auth](https://github.com/chrishunt/github-auth) [![stars](https://img.shields.io/github/stars/chrishunt/github-auth.svg?style=social&label=stars)](https://github.com/chrishunt/github-auth) - *SSH* key management for GitHub users.
 -   [cipherhub](https://github.com/substack/cipherhub) [![stars](https://img.shields.io/github/stars/substack/cipherhub.svg?style=social&label=stars)](https://github.com/substack/cipherhub) - Encrypt messages based on *SSH* public keys with easy import from GitHub.
--   [Slack notifications](http://www.ryanbrink.com/slack-ssh-session-notifications/) ([archived version](https://web.archive.org/web/20160505202303/http://www.ryanbrink.com/slack-ssh-session-notifications/)) - Guide to setup Slack notifications (can be modified for other services).
+-   [Slack notifications](https://www.ryanbrink.com/slack-ssh-session-notifications/) ([archived version](https://web.archive.org/web/20160505202303/http://www.ryanbrink.com/slack-ssh-session-notifications/)) - Guide to setup Slack notifications (can be modified for other services).
 -   [totp-ssh-fluxer](https://github.com/benjojo/totp-ssh-fluxer) [![stars](https://img.shields.io/github/stars/benjojo/totp-ssh-fluxer.svg?style=social&label=stars)](https://github.com/benjojo/totp-ssh-fluxer) - A way to make sure your `sshd` port changes every 30 seconds.
 -   [github-keygen](https://github.com/dolmen/github-keygen) [![stars](https://img.shields.io/github/stars/dolmen/github-keygen.svg?style=social&label=stars)](https://github.com/dolmen/github-keygen) - Easy creation of secure *SSH* configuration for your GitHub account(s).
 -   [kr](https://github.com/KryptCo/kr) [![stars](https://img.shields.io/github/stars/dolmen/github-keygen.svg?style=social&label=stars)](https://github.com/KryptCo/kr) - Kr agent that route access request to the paired mobile phone where Kryptonite is installed.
@@ -155,14 +155,14 @@ cmseditable: true
 -   [ssh-hammer](https://github.com/shazow/ssh-hammer) [![stars](https://img.shields.io/github/stars/shazow/ssh-hammer.svg?style=social&label=stars)](https://github.com/shazow/ssh-hammer) - *SSH* load testing tool.
 -   [kippo](https://github.com/desaster/kippo) [![stars](https://img.shields.io/github/stars/desaster/kippo.svg?style=social&label=stars)](https://github.com/desaster/kippo) - *SSH* Honeypot.
 -   [cowrie](https://github.com/micheloosterhof/cowrie) [![stars](https://img.shields.io/github/stars/micheloosterhof/cowrie.svg?style=social&label=stars)](https://github.com/micheloosterhof/cowrie) - *SSH* Honeypot (based on kippo).
--   [sshmitm](http://linux.die.net/man/8/sshmitm) - *SSH* monkey-in-the-middle.
+-   [sshmitm](https://linux.die.net/man/8/sshmitm) - *SSH* monkey-in-the-middle.
 -   [ssh-audit](https://github.com/arthepsy/ssh-audit) [![stars](https://img.shields.io/github/stars/arthepsy/ssh-audit.svg?style=social&label=stars)](https://github.com/arthepsy/ssh-audit) - A tool for *SSH* server auditing.
 -   [sshesame](https://github.com/jaksi/sshesame) [![stars](https://img.shields.io/github/stars/jaksi/sshesame.svg?style=social&label=stars)](https://github.com/jaksi/sshesame) - A fake SSH server that lets everyone in and logs their activity.
 
 ### Alternatives to *SSH*
 
 -   [GoTTY](https://github.com/yudai/gotty) [![stars](https://img.shields.io/github/stars/yudai/gotty.svg?style=social&label=stars)](https://github.com/yudai/gotty) - Share your terminal as web application.
--   [telnet](http://www.telnet.org/htm/faq.htm) - An unencrypted network protocol and an application used to connect to remote computers and issue commands.
+-   [telnet](https://www.telnet.org/htm/faq.htm) - An unencrypted network protocol and an application used to connect to remote computers and issue commands.
 -   [ttyd](https://github.com/tsl0922/ttyd) [![stars](https://img.shields.io/github/stars/tsl0922/ttyd.svg?style=social&label=stars)](https://github.com/tsl0922/ttyd) - Share your terminal over the web.
 -   [rsh](https://en.wikipedia.org/wiki/Remote_Shell) - An unencrypted network protocol and application used to connect to remote computers and issue commands.
 
@@ -182,7 +182,7 @@ cmseditable: true
 
 -   Java
 
-    -   [jsch](http://www.jcraft.com/jsch/) - Pure *java*, *BSD* licensed, *SSH2* client library.
+    -   [jsch](https://www.jcraft.com/jsch/) - Pure *java*, *BSD* licensed, *SSH2* client library.
 
 -   Javascript/Node.js
 
@@ -202,7 +202,7 @@ cmseditable: true
 
 -   [How to use *SSH* to Connect to a Remote Server](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-to-connect-to-a-remote-server-in-ubuntu)
 -   [Best practices](https://blog.0xbadc0de.be/archives/300)
--   [Granting Temporary Access to Your Servers (Using Signed *SSH* Keys)](http://linux-audit.com/granting-temporary-access-to-servers-using-signed-ssh-keys/)
+-   [Granting Temporary Access to Your Servers (Using Signed *SSH* Keys)](https://linux-audit.com/granting-temporary-access-to-servers-using-signed-ssh-keys/)
 -   [How to SSH login without a password](https://www.rosehosting.com/blog/ssh-login-without-password-using-ssh-keys/)
 -   [Gist: SSH Recipes](https://gist.github.com/mjalajel/beaa91a5f8d04ebb464c2c28da01406a) - Collection of recipes for writing awesome ssh config files.
 
@@ -214,8 +214,8 @@ cmseditable: true
 
 ### Documentation
 
--   [man page](http://linux.die.net/man/1/ssh)
--   [Specifications (OpenSSH)](http://www.openssh.com/specs.html)
+-   [man page](https://linux.die.net/man/1/ssh)
+-   [Specifications (OpenSSH)](https://www.openssh.com/specs.html)
 -   [Wikipedia article](https://en.wikipedia.org/wiki/Secure_Shell)
 
 <!--EndFragment-->

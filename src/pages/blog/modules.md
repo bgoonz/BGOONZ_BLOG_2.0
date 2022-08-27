@@ -240,7 +240,7 @@ Would you believe… *nothing?*
 
 Oh, you’re not that gullible. Well, would you believe the standard *mostly doesn’t say* what `import` does? And that this is a good thing?
 
-ES6 leaves the details of module loading entirely [up to the implementation](http://www.ecma-international.org/ecma-262/6.0/index.html#sec-hostresolveimportedmodule). The rest of module execution is [specified in detail](http://www.ecma-international.org/ecma-262/6.0/index.html#sec-toplevelmoduleevaluationjob).
+ES6 leaves the details of module loading entirely [up to the implementation](https://www.ecma-international.org/ecma-262/6.0/index.html#sec-hostresolveimportedmodule). The rest of module execution is [specified in detail](https://www.ecma-international.org/ecma-262/6.0/index.html#sec-toplevelmoduleevaluationjob).
 
 Roughly speaking, when you tell the JS engine to run a module, it has to behave as though these four steps are happening:
 
@@ -253,7 +253,7 @@ Roughly speaking, when you tell the JS engine to run a module, it has to behave 
 
 See? I told you the answer was “nothing”. I don’t lie about programming languages.
 
-But now we get to the fun part of this system. There’s a cool trick. Because the system doesn’t specify how loading works, and because you can figure out all the dependencies ahead of time by looking at the `import`declarations in the source code, an implementation of ES6 is free to do all the work at compile time and bundle all your modules into a single file to ship them over the network! And tools like [webpack](http://www.2ality.com/2015/04/webpack-es6.html) actually do this.
+But now we get to the fun part of this system. There’s a cool trick. Because the system doesn’t specify how loading works, and because you can figure out all the dependencies ahead of time by looking at the `import`declarations in the source code, an implementation of ES6 is free to do all the work at compile time and bundle all your modules into a single file to ship them over the network! And tools like [webpack](https://www.2ality.com/2015/04/webpack-es6.html) actually do this.
 
 This is a big deal, because loading scripts over the network takes time, and every time you fetch one, you may find that it contains `import` declarations that require you to load dozens more. A naive loader would require a lot of network round trips. But with webpack, not only can you use ES6 with modules today, you get all the software engineering benefits with no run-time performance hit.
 
@@ -272,13 +272,13 @@ For a dynamic language, JavaScript has gotten itself a surprisingly static modul
 
 The system is quite nice as long as your needs are static. But you can imagine needing a little hack sometimes, right?
 
-That’s why whatever module-loading system you use will have a programmatic API to go alongside ES6’s static `import/export` syntax. For example, [webpack includes an API](http://webpack.github.io/docs/code-splitting.html) that you can use for “code splitting”, loading some bundles of modules lazily on demand. The same API can help you break most of the other rules listed above.
+That’s why whatever module-loading system you use will have a programmatic API to go alongside ES6’s static `import/export` syntax. For example, [webpack includes an API](https://webpack.github.io/docs/code-splitting.html) that you can use for “code splitting”, loading some bundles of modules lazily on demand. The same API can help you break most of the other rules listed above.
 
 The ES6 module *syntax* is very static, and that’s good—it’s paying off in the form of powerful compile-time tools. But the static syntax was designed to work alongside a rich dynamic, programmatic loader API.
 
 ### When can I use ES6 modules?
 
-To use modules today, you’ll need a compiler such as [Traceur](https://github.com/google/traceur-compiler#what-is-traceur) or [Babel](http://babeljs.io/). Earlier in this series, [Gastón I. Silva showed how to use Babel and Broccoli](https://hacks.mozilla.org/2015/06/es6-in-depth-babel-and-broccoli/) to compile ES6 code for the web; building on that article, Gastón has [a working example with support for ES6 modules](https://github.com/givanse/broccoli-babel-examples/tree/master/es6-modules). This [post by Axel Rauschmayer](http://www.2ality.com/2015/04/webpack-es6.html) contains an example using Babel and webpack.
+To use modules today, you’ll need a compiler such as [Traceur](https://github.com/google/traceur-compiler#what-is-traceur) or [Babel](https://babeljs.io/). Earlier in this series, [Gastón I. Silva showed how to use Babel and Broccoli](https://hacks.mozilla.org/2015/06/es6-in-depth-babel-and-broccoli/) to compile ES6 code for the web; building on that article, Gastón has [a working example with support for ES6 modules](https://github.com/givanse/broccoli-babel-examples/tree/master/es6-modules). This [post by Axel Rauschmayer](https://www.2ality.com/2015/04/webpack-es6.html) contains an example using Babel and webpack.
 
 The ES6 module system was designed mainly by Dave Herman and Sam Tobin-Hochstadt, who defended the static parts of the system against all comers (including me) through years of controversy. Jon Coppeard is implementing modules in Firefox. Additional work on a [JavaScript Loader Standard](https://github.com/whatwg/loader) is underway. Work to add something like `<script type=module>` to HTML is expected to follow.
 

@@ -72,13 +72,13 @@ ___
 
 #### ES6/ES 2015
 
-The 6th edition of the ECMAScript standard. A.k.a, JavaScript 2015 or ECMAScript 2015. The [ECMAScript 6th edition](http://www.ecma-international.org/ecma-262/6.0/index.html) was finalized in June 2015.
+The 6th edition of the ECMAScript standard. A.k.a, JavaScript 2015 or ECMAScript 2015. The [ECMAScript 6th edition](https://www.ecma-international.org/ecma-262/6.0/index.html) was finalized in June 2015.
 
 ___
 
 #### ECMAScript 2016 (a.k.a, ES7)
 
-The 7th edition of the ECMAScript standard. The [ECMAScript 7th edition](http://www.ecma-international.org/ecma-262/7.0/index.html) was finalized in June 2016.
+The 7th edition of the ECMAScript standard. The [ECMAScript 7th edition](https://www.ecma-international.org/ecma-262/7.0/index.html) was finalized in June 2016.
 
 ___
 

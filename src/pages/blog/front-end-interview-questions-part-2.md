@@ -26,7 +26,7 @@ These will focus more on vocabulary and concepts than the application driven app
 
 - - -
 
-#### [](https://github.com/permission-squad/gist-notes/blob/main/2021-03-19_Front-End-Interview-Questions-Part-2-86ddc0e91443.md#codex)[CODEX](http://medium.com/codex)
+#### [](https://github.com/permission-squad/gist-notes/blob/main/2021-03-19_Front-End-Interview-Questions-Part-2-86ddc0e91443.md#codex)[CODEX](https://medium.com/codex)
 
 ### [](https://github.com/permission-squad/gist-notes/blob/main/2021-03-19_Front-End-Interview-Questions-Part-2-86ddc0e91443.md#front-end-interview-questions-part2)Front End Interview Questions Part 2
 

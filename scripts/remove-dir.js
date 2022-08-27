@@ -1,10 +1,10 @@
-const fs = require('fs')
+const fs = require("fs");
 
-fs.rmdir('./newdir', err => {
-	if (err) {
-		console.error(err)
-		return
-	}
+fs.rmdir("./newdir", (err) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
 
-	console.log('directory deleted')
-})
+  console.log("directory deleted");
+});
