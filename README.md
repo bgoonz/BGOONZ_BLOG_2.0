@@ -1,7 +1,8 @@
-# Bgoonz Blog Readme
-
 <div align="center">
 
+
+
+# Bgoonz Blog Readme
 ## [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app)
 
 ## 💫 Deploy
