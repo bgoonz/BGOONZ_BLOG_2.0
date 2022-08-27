@@ -2,24 +2,24 @@
 title: flow-control-in-python
 subtitle: flow-control-in-python
 date: '2021-10-14'
-thumb_image_alt: python logo
-excerpt: These operators evaluate to True or False depending on the values you give them
+thumb_image_alt: lorem-ipsum
+excerpt: lorem-ipsum
 seo:
-    title: flow-control-in-python'
-    description: 'These operators evaluate to True or False depending on the values you give them'
+    title: ''
+    description: ''
     robots: []
     extra: []
 template: post
-thumb_image: images/python.jpg
+thumb_image: images/python1.jpg
 image: images/python2-15e88a3a.jpg
 ---
 
 ## Read It
 
-- [Website](https://www.pythoncheatsheet.org)
-- [Github](https://github.com/wilfredinni/python-cheatsheet)
-- [PDF](https://github.com/wilfredinni/Python-cheatsheet/raw/master/python_cheat_sheet.pdf)
-- [Jupyter Notebook](https://mybinder.org/v2/gh/wilfredinni/python-cheatsheet/master?filepath=jupyter_notebooks)
+-   [Website](https://www.pythoncheatsheet.org)
+-   [Github](https://github.com/wilfredinni/python-cheatsheet)
+-   [PDF](https://github.com/wilfredinni/Python-cheatsheet/raw/master/python_cheat_sheet.pdf)
+-   [Jupyter Notebook](https://mybinder.org/v2/gh/wilfredinni/python-cheatsheet/master?filepath=jupyter_notebooks)
 
 ## Flow Control
 
