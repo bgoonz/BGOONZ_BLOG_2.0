@@ -1,24 +1,16 @@
-<<<<<<< HEAD
-Everything You Need To Know About Relational Databases, SQL, PostgreSQL and Sequelize To Build...
-=======
 ---
-title: Everything You Need To Know About Relational Databases
+title: Relational Databases
+weight: 0
+excerpt: For Front end developers who like myself struggle with making the jump to fullstack
+seo:
+    title: 'Relational Databases'
+    description: 'For Front end developers who like myself struggle with making the jump to fullstack'
+    robots: []
+    extra: []
+    type: stackbit_page_meta
 template: docs
-excerpt: For Front end developers who like myself struggle with making the jump
-  to fullstack.
----Everything You Need To Know About Relational Databases, SQL, PostgreSQL and Sequelize To Build...
->>>>>>> c7e25372c (broken)
-===============================================================================================
+---
 
-For Front end developers who like myself struggle with making the jump to fullstack.
-
-* * * * *
-
-#### [CODEX](http://medium.com/codex)
-
-### **Everything You Need To Know About Relational Databases, SQL, PostgreSQL and Sequelize To Build Your Backend!**
-
-<<<<<<< HEAD
 
 ![image](https://cdn-images-1.medium.com/max/800/0*3wDVBrK5ltmjjVSJ.jpeg)
 =======
