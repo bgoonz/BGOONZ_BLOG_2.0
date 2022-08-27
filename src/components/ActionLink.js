@@ -1,3 +1,4 @@
+/* This class is a React component that renders a link to an action. */
 import React from "react";
 import _ from "lodash";
 
