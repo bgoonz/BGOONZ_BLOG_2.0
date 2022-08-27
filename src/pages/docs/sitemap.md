@@ -33,6 +33,9 @@ template: docs
 
 # [**➡️🏠🏠HOME🏠🏠⬅️**](https://bgoonz-blog.netlify.app/)
 
+
+<div class="important"><strong>Not Up To Date<strong></div>
+
 <center>
 
 ## [**<ins>➡️📚🏠docs🏠📚⬅️</ins>**](https://bgoonz-blog.netlify.app/docs)

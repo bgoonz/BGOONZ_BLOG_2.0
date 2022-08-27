@@ -38,15 +38,18 @@ For this example, I'm going to use the minify tools from minifycode.com.
 
 First, locate the css file (commonly named style.css) in your site files and open the file using a page editor. Then copy the entire css code to your clipboard.
 
-![](https://www.elegantthemes.com/blog/wp-content/uploads/2018/12/min4.png)
+
+![image](https://www.elegantthemes.com/blog/wp-content/uploads/2018/12/min4.png)
 
 Go to [minifycode.com](http://minifycode.com/css-minifier/) and click the CSS minifier tab. Then paste the CSS code into the input box and click the Minify CSS button.
 
-![](https://www.elegantthemes.com/blog/wp-content/uploads/2018/12/min5.png)
+
+![image](https://www.elegantthemes.com/blog/wp-content/uploads/2018/12/min5.png)
 
 After the new minified code is generated, copy the code.
 
-![](https://www.elegantthemes.com/blog/wp-content/uploads/2018/12/min6.png)
+
+![image](https://www.elegantthemes.com/blog/wp-content/uploads/2018/12/min6.png)
 
 Then go back to the css file of your website and replace the code with the new minified version.
 

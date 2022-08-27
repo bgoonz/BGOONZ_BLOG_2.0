@@ -1,3 +1,7 @@
 {
+<<<<<<< HEAD
     "makefile.extensionOutputFolder": "./.vscode"
+=======
+  "makefile.extensionOutputFolder": "./.vscode"
+>>>>>>> 943b7affea90db50be9fdcfdc63d0097cf4ed9fc
 }

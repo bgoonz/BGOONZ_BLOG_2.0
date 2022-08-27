@@ -149,7 +149,8 @@ Make sure to review the [general project-level best practices](https://firebase.
 
 The [Firebase console](https://console.firebase.google.com/?authuser=0) offers the richest environment for managing Firebase products, apps, and project-level settings.
 
-![](https://firebase.google.com/docs/projects/images/firebase_console_overview.png?authuser=0)
+
+![image](https://firebase.google.com/docs/projects/images/firebase_console_overview.png?authuser=0)
 
 The left-side panel of the console lists the Firebase products, organized by top-level categories. At the top of the left-side panel, access a project's settings by clicking settings. A project's settings include [integrations](https://firebase.google.com/integrations?authuser=0), [access permissions](https://firebase.google.com/docs/projects/iam/overview?authuser=0), and [billing](https://firebase.google.com/pricing?authuser=0).
 

@@ -24,9 +24,11 @@ Items will be laid out following either the `main axis` (from `main-start` to `m
 
 ### [](https://css-tricks.com/snippets/css/a-guide-to-flexbox//#aa-flexbox-properties)Flexbox properties
 
-![](https://css-tricks.com/wp-content/uploads/2018/10/01-container.svg)
 
-![](https://css-tricks.com/wp-content/uploads/2018/10/01-container.svg)
+![image](https://css-tricks.com/wp-content/uploads/2018/10/01-container.svg)
+
+
+![image](https://css-tricks.com/wp-content/uploads/2018/10/01-container.svg)
 
 ## [](https://css-tricks.com/snippets/css/a-guide-to-flexbox//#aa-properties-for-the-parentflex-container)Properties for the Parent
 
@@ -173,9 +175,11 @@ The `safe` and `unsafe` modifier keywords can be used in conjunction with all th
 
 #### [](https://css-tricks.com/snippets/css/a-guide-to-flexbox//#aa-gap-row-gap-column-gap)gap, row-gap, column-gap
 
-![](https://css-tricks.com/wp-content/uploads/2021/09/gap-1.svg)
 
-![](https://css-tricks.com/wp-content/uploads/2021/09/gap-1.svg)
+![image](https://css-tricks.com/wp-content/uploads/2021/09/gap-1.svg)
+
+
+![image](https://css-tricks.com/wp-content/uploads/2021/09/gap-1.svg)
 
 [The `gap` property](https://css-tricks.com/almanac/properties/g/gap/) explicitly controls the space between flex items. It applies that spacing *only between items* not on the outer edges.
 
@@ -194,9 +198,11 @@ The behavior could be thought of as a *minimum* gutter, as if the gutter is bigg
 
 It is not exclusively for flexbox, `gap` works in grid and multi-column layout as well.
 
-![](https://css-tricks.com/wp-content/uploads/2018/10/02-items.svg)
 
-![](https://css-tricks.com/wp-content/uploads/2018/10/02-items.svg)
+![image](https://css-tricks.com/wp-content/uploads/2018/10/02-items.svg)
+
+
+![image](https://css-tricks.com/wp-content/uploads/2018/10/02-items.svg)
 
 ## [](https://css-tricks.com/snippets/css/a-guide-to-flexbox//#aa-properties-for-the-childrenflex-items)Properties for the Children
 

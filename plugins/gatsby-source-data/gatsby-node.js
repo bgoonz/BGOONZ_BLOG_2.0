@@ -28,10 +28,10 @@ exports.sourceNodes = (props, pluginOptions = {}) => {
     }
 
     if (!path.isAbsolute(pluginOptions.path)) {
-        pluginOptions.path = path.resolve(process.cwd(), pluginOptions.path);
+        pluginOptions.path = path.resolve(process.cwd(), pluginOptions.path)
     }
 
-    reporter.info('[gatsby-source-data] setup file watcher and create site data');
+    reporter.info(`[gatsby-source-data] setup file watcher and create site data`);
 
     const dataPath = pluginOptions.path;
     const createSiteDataFromFilesPartial = _.partial(createSiteDataFromFiles, { dataPath, createNode, createContentDigest, reporter });
@@ -61,7 +61,6 @@ async function createSiteDataFromFiles({ dataPath, createNode, createContentDige
         dataFiles.push(metadataFileName);
     }
 
-    /* Sorting the dataFiles array. */
     const sortedDataFiles = dataFiles.slice().sort();
     const data = await convertDataFilesToJSON(sortedDataFiles, dataPath, reporter);
 
@@ -78,12 +77,6 @@ async function createSiteDataFromFiles({ dataPath, createNode, createContentDige
     });
 }
 
-/**
- * It takes a directory and returns a list of all files in that directory and all subdirectories
- * @param dir - The directory to read
- * @param options - {
- * @returns An array of file paths relative to the root directory.
- */
 async function readDirRecursively(dir, options) {
     const rootDir = _.get(options, 'rootDir', dir);
     const files = await fse.readdir(dir);
@@ -125,6 +118,6 @@ function convertDataFilesToJSON(dataFiles, dataDirPath, reporter) {
         });
     });
     return Promise.all(promises).then(results => {
-        return _.reduce(results, (data, res) => _.merge(data, res), {});
+        return _.reduce(results, (data, res) => _.merge(data, res), {})
     });
 }
