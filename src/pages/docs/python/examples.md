@@ -3,8 +3,8 @@ title: Practice
 weight: 0
 excerpt: Example Problems
 seo:
-    title: 'Python Examples'
-    description: 'Practice with Python'
+    title: ''
+    description: ''
     robots: []
     extra: []
 template: docs

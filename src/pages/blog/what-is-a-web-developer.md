@@ -8,8 +8,8 @@ excerpt: A website can have anywhere from a single person to an entire team
   behind it, but at minimum, it needs a web developer. These people write the
   code that gets a website working and visible on the world wide web.
 date: 2022-06-06T21:37:03.789Z
-image: blob:https://bgoonz-blog.netlify.app/8f606f9d-3431-460c-9190-36bb9777babb
-thumb_image: blob:https://bgoonz-blog.netlify.app/8f606f9d-3431-460c-9190-36bb9777babb
+image: /blog/banner.jpg
+thumb_image: /blog/banner.jpg
 image_position: right
 author: src/data/authors/bgoonz.yaml
 categories:

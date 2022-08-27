@@ -51,11 +51,11 @@ template: docs
 
     - put it in brackets to access the value of the variable, rather than just make the value that string
 
-  ```js
+        ```js
 //
         let a = 'b';
         let obj = { a: 'letter_a', [a]: 'letter b' };
-  ```
+        ```
 
 - Use the `obj[key] !== undefined` pattern to check if a given variable that contains a key exists in an object
 - - can also use `(key in object)` syntax interchangeably \(returns a boolean\)
@@ -64,7 +64,7 @@ template: docs
     - `Object.values(obj)` returns an array of the values in `obj`
 - Iterate through an object using a `for in` loop
 
- ```js
+    ```js
 //
     let printValues = function (obj) {
         for (let key in obj) {
@@ -72,14 +72,14 @@ template: docs
             console.log(value);
         }
     };
- ```
+    ```
 
 - Define a function that utilizes `...rest` syntax to accept an arbitrary number of arguments
 
     - `...rest` syntax will store all additional arguments in an array
     - array will be empty if there are no additional arguments
 
-  ```js
+        ```js
 //
         let myFunction = function (str, ...strs) {
             console.log('The first string is ' + str);
@@ -88,19 +88,19 @@ template: docs
                 console.log(str);
             });
         };
-  ```
+        ```
 
 ###
 
 - Use `...spread` syntax for Object literals and Array literals
 
- ```js
+    ```js
 //
     let arr1 = ['a', 'b', 'c'];
     let longer = [...arr1, 'd', 'e']; // ["a", "b", "c", "d", "e"]
     // without spread syntax, this would give you a nested array
     let withoutRest = [arr1, 'd', 'e']; // [["a", "b", "c"], "d", "e"]
- ```
+    ```
 
 - Destructure an array to reference specific elements
 
@@ -156,7 +156,7 @@ console.log(color, vegetable); //=> mauve spaghetti squash
 
 - Write a function that accepts a array as an argument and returns an object representing the count of each character in the array
 
- ```js
+    ```js
 //
     //
     let elementCounts = function (array) {
@@ -168,7 +168,7 @@ console.log(color, vegetable); //=> mauve spaghetti squash
         return obj;
     };
     console.log(elementCounts(['e', 'f', 'g', 'f'])); // => Object {e: 1, f: 2, g: 1}
- ```
+    ```
 
 ### Callbacks Lesson Concepts
 
@@ -226,7 +226,7 @@ console.log(myMapArrow([16,25,36], Math.sqrt)); // => [4, 5, 6];
 
 - Write a function, myFilter, that takes in an array and a callback as arguments. The function should mimic the behavior of `Array#filter`.
 
- ```js
+    ```js
 //
     let myFilter = function (array, callback) {
         let filtered = [];
@@ -236,11 +236,11 @@ console.log(myMapArrow([16,25,36], Math.sqrt)); // => [4, 5, 6];
             }
         }
     };
- ```
+    ```
 
 - Write a function, myEvery, that takes in an array and a callback as arguments. The function should mimic the behavior of `Array#every`.
 
- ```js
+    ```js
 //
     let myEvery = function (array, callback) {
         for (let i = 0; i < array.length; i++) {
@@ -259,7 +259,7 @@ console.log(myMapArrow([16,25,36], Math.sqrt)); // => [4, 5, 6];
         }
         return true;
     };
- ```
+    ```
 
 ### Scope Lesson Concepts
 
@@ -459,7 +459,7 @@ console.log(counter3());
 
     - when we call bind on a function, we get an exotic function back—so the context will always be the same for that new function
 
- ```text
+    ```text
     let cat = {
     purr: function () {
     console.log("meow");
@@ -472,7 +472,7 @@ console.log(counter3());
 
     // we can use the built in Function.bind to ensure our context, our this, // is the cat object let boundCat = sayMeow.bind(cat);
     boundCat(); // prints "meow"
- ```
+    ```
 
     \`\`
 
@@ -516,7 +516,7 @@ console.log(this); // Object [global] {etc, etc, etc,  name: 'Layla'}
     - you could also overwrite values or assign values to exist in a space where they should not exist
 - if you call a function as a callback, it will set `this` to be the outer function itself, even if the function you were calling is a method that was called on a particular object
 
- ```text
+    ```text
     let cat = {
     purr: function () {
     console.log("meow");
@@ -526,7 +526,7 @@ console.log(this); // Object [global] {etc, etc, etc,  name: 'Layla'}
     },
     };
     global.setTimeout(cat.purrMore, 5000); // 5 seconds later: TypeError: this.purr is not a function
- ```
+    ```
 
 we can use strict mode with `"use strict";` this will prevent you from accessing the global object with `this` in functions, so if you try to call `this` in the global context and change a value, you will get a type error, and the things you try to access will be undefined
 

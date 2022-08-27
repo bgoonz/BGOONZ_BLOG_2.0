@@ -8,7 +8,7 @@ const _ = require('lodash');
 const metadataFileName = 'site-metadata.json';
 
 const parsers = {
-    yaml: (data) => yaml.safeLoad(data, {schema: yaml.JSON_SCHEMA}),
+    yaml: (data) => yaml.safeLoad(data, { schema: yaml.JSON_SCHEMA }),
     json: (data) => JSON.parse(data)
 };
 
@@ -28,7 +28,7 @@ exports.sourceNodes = (props, pluginOptions = {}) => {
     }
 
     if (!path.isAbsolute(pluginOptions.path)) {
-        pluginOptions.path = path.resolve(process.cwd(), pluginOptions.path);
+        pluginOptions.path = path.resolve(process.cwd(), pluginOptions.path)
     }
 
     reporter.info(`[gatsby-source-data] setup file watcher and create site data`);
@@ -84,7 +84,7 @@ async function readDirRecursively(dir, options) {
         const filePath = path.join(dir, file);
         const stats = await fse.stat(filePath);
         if (stats.isDirectory()) {
-            return readDirRecursively(filePath, {rootDir});
+            return readDirRecursively(filePath, { rootDir });
         } else if (stats.isFile()) {
             return path.relative(rootDir, filePath);
         } else {
@@ -118,6 +118,6 @@ function convertDataFilesToJSON(dataFiles, dataDirPath, reporter) {
         });
     });
     return Promise.all(promises).then(results => {
-        return _.reduce(results, (data, res) => _.merge(data, res), {});
+        return _.reduce(results, (data, res) => _.merge(data, res), {})
     });
 }

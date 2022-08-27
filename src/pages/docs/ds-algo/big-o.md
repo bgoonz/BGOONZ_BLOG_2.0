@@ -12,7 +12,7 @@ template: docs
 
 # A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting Algorithms by Example
 
-![alt-text](https://cdn-images-1.medium.com/max/800/0*yjlSk3T9c2_14in1.png)
+![](https://cdn-images-1.medium.com/max/800/0*yjlSk3T9c2_14in1.png)
 
 <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    frameborder="0" width="100%" height="500px" src="https://replit.com/@bgoonz/Medium-article-comp-complex?lite=true">
 </iframe>
@@ -47,7 +47,7 @@ template: docs
 
 `Putting it all together`
 
-![alt-text](https://cdn-images-1.medium.com/max/800/1*TT8uuv1x3nmGUw5rvtoZ8A.png)
+![](https://cdn-images-1.medium.com/max/800/1*TT8uuv1x3nmGUw5rvtoZ8A.png)
 
 -   First we apply the product rule to drop all constants.
 -   Then we apply the sum rule to select the single most dominant term.
@@ -60,7 +60,7 @@ Common Complexity Classes
 
 #### There are 7 major classes in Time Complexity
 
-![alt-text](https://cdn-images-1.medium.com/max/800/1*6zKhmJoHkvDbrd8jfUDf3A.png)
+![](https://cdn-images-1.medium.com/max/800/1*6zKhmJoHkvDbrd8jfUDf3A.png)
 
 #### `O(1) Constant`
 
@@ -204,9 +204,9 @@ function exponential3n(n) {
 1.  FUNCTION MUST BE RECURSIVE.
 2.  Our additional Data Structure is usually an object (we refer to it as our memo... or sometimes cache!)
 
-![alt-text](https://cdn-images-1.medium.com/max/800/1*4U79jBMjU2wKE_tyYcD_3A.png)
+![](https://cdn-images-1.medium.com/max/800/1*4U79jBMjU2wKE_tyYcD_3A.png)
 
-![alt-text](https://cdn-images-1.medium.com/max/800/1*Qh42KZgcCxmVt6WrTasCVw.png)
+![](https://cdn-images-1.medium.com/max/800/1*Qh42KZgcCxmVt6WrTasCVw.png)
 
 ### Memoizing Factorial
 
@@ -216,7 +216,7 @@ Our memo object is _mapping_ out our arguments of factorial to it's return value
 
 ### Memoizing Fibonacci
 
-![alt-text](https://cdn-images-1.medium.com/max/800/0*2XaPj7UGKZYFjYhb)
+![](https://cdn-images-1.medium.com/max/800/0*2XaPj7UGKZYFjYhb)
 
 -   Our time complexity for Fibonacci goes from O(2^n) to O(n) after applying memoization.
 
@@ -378,7 +378,7 @@ function fibonacci(n) {\
 
 -   Bubble Sort will always use the same amount of memory regardless of n.
 
-![alt-text](https://cdn-images-1.medium.com/max/800/0*Ck9aeGY-d5tbz7dT)
+![](https://cdn-images-1.medium.com/max/800/0*Ck9aeGY-d5tbz7dT)
 
 ```js
 //
@@ -487,7 +487,7 @@ function fibonacci(n) {\
 
 -   Selection Sort will always use the same amount of memory regardless of n.
 
-![alt-text](https://cdn-images-1.medium.com/max/800/0*AByxtBjFrPVVYmyu)
+![](https://cdn-images-1.medium.com/max/800/0*AByxtBjFrPVVYmyu)
 
 ```js
 //
@@ -531,7 +531,7 @@ function fibonacci(n) {\
 
 -   Selection sort organizes the smallest elements to the start of the array.
 
-![alt-text](https://cdn-images-1.medium.com/max/800/0*GeYNxlRcbt2cf0rY)
+![](https://cdn-images-1.medium.com/max/800/0*GeYNxlRcbt2cf0rY)
 
 > Summary of how Selection Sort should work:
 
@@ -575,7 +575,7 @@ function fibonacci(n) {\
 
 -   Because we are creating a subArray for each element in the original input, our Space Comlexity becomes linear.
 
-![alt-text](https://cdn-images-1.medium.com/max/800/0*gbNU6wrszGPrfAZG)
+![](https://cdn-images-1.medium.com/max/800/0*gbNU6wrszGPrfAZG)
 
 ```js
 //
@@ -616,9 +616,9 @@ function fibonacci(n) {\
 -   Since our array gets split in half every single time we contribute O(log(n)). The while loop contained in our helper merge function contributes O(n) therefore our time complexity is O(nlog(n)); `Space Complexity`: O(n)
 -   We are linear O(n) time because we are creating subArrays.
 
-![alt-text](https://cdn-images-1.medium.com/max/800/0*GeU8YwwCoK8GiSTD)
+![](https://cdn-images-1.medium.com/max/800/0*GeU8YwwCoK8GiSTD)
 
-![alt-text](https://cdn-images-1.medium.com/max/800/0*IxqGb72XDVDeeiMl)
+![](https://cdn-images-1.medium.com/max/800/0*IxqGb72XDVDeeiMl)
 
 ### Example of Merge Sort
 
@@ -689,7 +689,7 @@ function fibonacci(n) {\
 
 [view raw](https://gist.github.com/eengineergz/cbb533137a7f957d3bc4077395c1ff64/raw/8e1b1d82bcc6ef7a8350632740ad1bf38e660ec4/merge2.js)[merge2.js ](https://gist.github.com/eengineergz/cbb533137a7f957d3bc4077395c1ff64#file-merge2-js)hosted with ❤ by [GitHub](https://github.com/)
 
-![alt-text](https://cdn-images-1.medium.com/max/800/0*HMCR--9niDt5zY6M)
+![](https://cdn-images-1.medium.com/max/800/0*HMCR--9niDt5zY6M)
 
 -   **Merge sort is O(nlog(n)) time.**
 -   _We need a function for merging and a function for sorting._
@@ -714,9 +714,9 @@ function fibonacci(n) {\
 -   It is easy to sort elements of an array relative to a particular target value.
 -   An array of 0 or 1 elements is already trivially sorted.
 
-![alt-text](https://cdn-images-1.medium.com/max/800/0*WLl_HpdBGXYx284T)
+![](https://cdn-images-1.medium.com/max/800/0*WLl_HpdBGXYx284T)
 
-![alt-text](https://cdn-images-1.medium.com/max/800/0*-LyHJXGPTYsWLDZf)
+![](https://cdn-images-1.medium.com/max/800/0*-LyHJXGPTYsWLDZf)
 
 ```js
 //
@@ -740,7 +740,7 @@ function fibonacci(n) {\
 
 `Space Complexity`: O(1)
 
-![alt-text](https://cdn-images-1.medium.com/max/800/0*-naVYGTXzE2Yoali)
+![](https://cdn-images-1.medium.com/max/800/0*-naVYGTXzE2Yoali)
 
 > _Recursive Solution_
 
@@ -855,7 +855,7 @@ function fibonacci(n) {\
 [**Web-Dev-Hub**\
 *Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of...*bgoonz-blog.netlify.app](https://bgoonz-blog.netlify.app/ 'https://bgoonz-blog.netlify.app/')[](https://bgoonz-blog.netlify.app/)
 
-![alt-text](https://cdn-images-1.medium.com/max/800/1*VCmj_H9AHs41oC9Yx1hZFQ.png)
+![](https://cdn-images-1.medium.com/max/800/1*VCmj_H9AHs41oC9Yx1hZFQ.png)
 
 ```js
 //

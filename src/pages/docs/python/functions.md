@@ -4,7 +4,7 @@ weight: 0
 excerpt: When creating a function using the def statement, you can specify what the return value should be with a return statement. A return statement consists of the following
 seo:
     title: 'Python Functions'
-    description: ' When creating a function using the def statement, you can specify what the return value should be with a return statement. A return statement consists of the following'
+    description: ''
     robots: []
     extra: []
 template: docs

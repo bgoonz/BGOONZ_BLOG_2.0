@@ -33,7 +33,7 @@ template: docs
 
 -   Use `xargs` (or `parallel`). It's very powerful. Note you can control how many items execute per line (`-L`) as well as parallelism (`-P`). If you're not sure if it'll do the right thing, use `xargs echo` first. Also, `-I{}` is handy. Examples:
 
-```bash
+```console
       find . -name '*.py' | xargs grep some_function
       cat hosts | xargs -I{} ssh root@{} hostname
 ```
@@ -64,14 +64,14 @@ template: docs
 
 -   In Bash scripts, use `set -x` (or the variant `set -v`, which logs raw input, including unexpanded variables and comments) for debugging output. Use strict modes unless you have a good reason not to: Use `set -e` to abort on errors (nonzero exit code). Use `set -u` to detect unset variable usages. Consider `set -o pipefail` too, to abort on errors within pipes (though read up on it more if you do, as this topic is a bit subtle). For more involved scripts, also use `trap` on EXIT or ERR. A useful habit is to start a script like this, which will make it detect and abort on common errors and print a message:
 
-```bash
+```console
       set -euo pipefail
       trap "echo 'error: Script failed: see failed command above'" ERR
 ```
 
 -   In Bash scripts, subshells (written with parentheses) are convenient ways to group commands. A common example is to temporarily move to a different working directory, e.g.
 
-```bash
+```console
       # do something in current dir
       (cd /some/other/dir && other-command)
       # continue in original dir
@@ -85,13 +85,13 @@ template: docs
 
 -   The output of a command can be treated like a file via `<(some command)` (known as process substitution). For example, compare local `/etc/hosts` with a remote one:
 
-```bash
+```console
       diff /etc/hosts <(ssh somehost cat /etc/hosts)
 ```
 
 -   When writing scripts you may want to put all of your code in curly braces. If the closing brace is missing, your script will be prevented from executing due to a syntax error. This makes sense when your script is going to be downloaded from the web, since it prevents partially downloaded scripts from executing:
 
-```bash
+```console
 {
       # Your code here
 }
@@ -132,7 +132,7 @@ EOF
 
 -   To get the permissions on a file in octal form, which is useful for system configuration but not available in `ls` and easy to bungle, use something like
 
-```bash
+```console
       stat -c '%A %a %n' /etc/timezone
 ```
 
@@ -194,13 +194,13 @@ EOF
 
 -   To replace all occurrences of a string in place, in one or more files:
 
-```bash
+```console
       perl -pi.bak -e 's/old-string/new-string/g' my-files-*.txt
 ```
 
 -   To rename multiple files and/or search and replace within files, try [`repren`](https://github.com/jlevy/repren). (In some cases the `rename` command also allows multiple renames, but be careful as its functionality is not the same on all Linux distributions.)
 
-```bash
+```console
       # Full rename of filenames, directories, and contents foo -> bar:
       repren --full --preserve-case --from foo --to bar .
       # Recover backup files whatever.bak -> whatever:
@@ -211,7 +211,7 @@ EOF
 
 -   As the man page says, `rsync` really is a fast and extraordinarily versatile file copying tool. It's known for synchronizing between machines but is equally useful locally. When security restrictions allow, using `rsync` instead of `scp` allows recovery of a transfer without restarting from scratch. It also is among the [fastest ways](https://web.archive.org/web/20130929001850/http://linuxnote.net/jianingy/en/linux/a-fast-way-to-remove-huge-number-of-files.html) to delete large numbers of files:
 
-```bash
+```console
 mkdir empty && rsync -r --delete empty/ some-dir && rmdir some-dir
 ```
 
@@ -233,7 +233,7 @@ mkdir empty && rsync -r --delete empty/ some-dir && rmdir some-dir
 
 -   To convert text encodings, try `iconv`. Or `uconv` for more advanced use; it supports some advanced Unicode things. For example:
 
-```bash
+```console
       # Displays hex codes or actual names of characters (useful for debugging):
       uconv -f utf-8 -t utf-8 -x '::Any-Hex;' < input.txt
       uconv -f utf-8 -t utf-8 -x '::Any-Name;' < input.txt
@@ -251,7 +251,7 @@ mkdir empty && rsync -r --delete empty/ some-dir && rmdir some-dir
 
 -   Use `getfacl` and `setfacl` to save and restore file permissions. For example:
 
-```bash
+```console
    getfacl -R /some/path > permissions.txt
    setfacl --restore=permissions.txt
 ```
@@ -307,7 +307,7 @@ A few examples of piecing together commands:
 
 -   It is remarkably helpful sometimes that you can do set intersection, union, and difference of text files via `sort`/`uniq`. Suppose `a` and `b` are text files that are already uniqued. This is fast, and works on files of arbitrary size, up to many gigabytes. (Sort is not limited by memory, though you may need to use the `-T` option if `/tmp` is on a small root partition.) See also the note about `LC_ALL` above and `sort`'s `-u` option (left out for clarity below).
 
-```bash
+```console
       sort a b | uniq > c   # c is a union b
       sort a b | uniq -d > c   # c is a intersect b
       sort a b b | uniq -u > c   # c is set difference a - b
@@ -323,19 +323,19 @@ A few examples of piecing together commands:
 -
 -   Summing all numbers in the third column of a text file (this is probably 3X faster and 3X less code than equivalent Python):
 
-```bash
+```console
       awk '{ x += $3 } END { print x }' myfile
 ```
 
 -   To see sizes/dates on a tree of files, this is like a recursive `ls -l` but is easier to read than `ls -lR`:
 
-```bash
+```console
       find . -type f -ls
 ```
 
 -   Say you have a text file, like a web server log, and a certain value that appears on some lines, such as an `acct_id` parameter that is present in the URL. If you want a tally of how many requests for each `acct_id`:
 
-```bash
+```console
       egrep -o 'acct_id=[0-9]+' access.log | cut -d= -f2 | sort | uniq -c | sort -rn
 ```
 
@@ -343,7 +343,7 @@ A few examples of piecing together commands:
 -
 -   Run this function to get a random tip from this document (parses Markdown and extracts an item):
 
-```bash
+```console
       function taocl() {
         curl -s https://raw.githubusercontent.com/jlevy/the-art-of-command-line/master/README.md |
           sed '/cowsay[.]png/d' |
