@@ -13,8 +13,7 @@
 
 ### Repos
 
-[Alt Backup](https://github.com/BGOOONZ-BLOG/bgoonz-blog2.0-v-5)
-[Blog Content](https://github.com/bgoonz/MainBlogContent)
+
 
 Url: [gitpop](http://gitpop2.herokuapp.com/bgoonz/BGOONZ_BLOG_2.0)
 
@@ -30,12 +29,8 @@ Url: [gitpop](http://gitpop2.herokuapp.com/bgoonz/BGOONZ_BLOG_2.0)
 
 ## Forks
 
----
 
----
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 | Repo                                                                                              | Stars | Forks | Modified              |
 | ------------------------------------------------------------------------------------------------- | ----- | ----- | --------------------- |
 | [floridamandingo/BGOONZ_BLOG_2.0](https://github.com/floridamandingo/BGOONZ_BLOG_2.0)             | 2     | 1     | 6 days, 18 hours ago  |
