@@ -4,8 +4,6 @@
     "version": "1.11.5",
     "license": "MIT",
     "scripts": {
-        "in": "npm i --legacy-peer-deps",
-        "audit": "npm audit fix        ",
         "develop": "gatsby develop",
         "start": "npm run develop",
         "build": "gatsby build --prefix-paths",
@@ -17,6 +15,7 @@
         "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json}\"",
         "clean": "gatsby clean",
         "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+
     },
     "dependencies": {
         "@stackbit/gatsby-plugin-menus": "0.0.4",
