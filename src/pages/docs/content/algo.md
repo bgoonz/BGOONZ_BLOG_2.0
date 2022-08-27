@@ -215,7 +215,8 @@ The complexity is usually expressed with the Big O notation. The wikipedia page 
 
 ## The Array data structure
 
-![](https://cdn-images-1.medium.com/max/2000/0*Qk3UYgeqXamRrFLR.gif)
+
+![image](https://cdn-images-1.medium.com/max/2000/0*Qk3UYgeqXamRrFLR.gif)
 
 ## Definition
 
@@ -325,7 +326,8 @@ console.log('-------------------------------');
      */
 ```
 
-![](https://cdn-images-1.medium.com/max/2000/1*-BJ2hU-CZO2kuzu4x5a53g.png)
+
+![image](https://cdn-images-1.medium.com/max/2000/1*-BJ2hU-CZO2kuzu4x5a53g.png)
 
 indexvalue0 … this is the first value, stored at zero position
 
@@ -423,7 +425,8 @@ I also visualize an object as a table.
 
 The main difference is that object's "index" need not be numbers and is not necessarily sequenced.
 
-![](https://cdn-images-1.medium.com/max/2572/1*KVZkD2zrgEa_47igW8Hq8g.png)
+
+![image](https://cdn-images-1.medium.com/max/2572/1*KVZkD2zrgEa_47igW8Hq8g.png)
 
 ```js
 //
@@ -479,9 +482,11 @@ newObj.helloWorld();
 
 ## The Hash Table
 
-![](https://cdn-images-1.medium.com/max/2000/0*avbxLAFocSV6vsl5.gif)
 
-![](https://cdn-images-1.medium.com/max/2048/0*3GJiRoLyEoZ_aIlO)
+![image](https://cdn-images-1.medium.com/max/2000/0*avbxLAFocSV6vsl5.gif)
+
+
+![image](https://cdn-images-1.medium.com/max/2048/0*3GJiRoLyEoZ_aIlO)
 
 ## _Definition_
 
@@ -655,7 +660,8 @@ console.log(symmetricDifference(setA, setC)); // => Set [1, 2, 5, 6]
 console.log(difference(setA, setC)); // => Set [1, 2]
 ```
 
-![](https://cdn-images-1.medium.com/max/2000/0*gOE33ANZP2ujbjIG)
+
+![image](https://cdn-images-1.medium.com/max/2000/0*gOE33ANZP2ujbjIG)
 
 ## _Definition_
 
@@ -768,7 +774,8 @@ console.log('set3 length gives 3:', set3.length()); // => 3
 
 ## The Singly Linked List
 
-![](https://cdn-images-1.medium.com/max/2048/0*fLs64rV-Xq19aVCA.gif)
+
+![image](https://cdn-images-1.medium.com/max/2048/0*fLs64rV-Xq19aVCA.gif)
 
 ## _Definition_
 
@@ -910,7 +917,8 @@ console.log('length is 7:', singlyLinkedList.length()); // => 7
 
 ## The Doubly Linked List
 
-![](https://cdn-images-1.medium.com/max/2000/0*TQXiR-L_itiG3WP-.gif)
+
+![image](https://cdn-images-1.medium.com/max/2000/0*TQXiR-L_itiG3WP-.gif)
 
 ## _Definition_
 
@@ -1119,7 +1127,8 @@ O(n) O(n) O(1) O(1)
 
 ## The Stack
 
-![](https://cdn-images-1.medium.com/max/4050/0*qsjYW-Lvfo22ecLE.gif)
+
+![image](https://cdn-images-1.medium.com/max/4050/0*qsjYW-Lvfo22ecLE.gif)
 
 ## _Definition_
 
@@ -1172,7 +1181,8 @@ O(n) O(n) O(1) O(1)
 
 ## The Queue
 
-![](https://cdn-images-1.medium.com/max/4050/0*YvfuX5tKP7-V0p7v.gif)
+
+![image](https://cdn-images-1.medium.com/max/4050/0*YvfuX5tKP7-V0p7v.gif)
 
 ## _Definition_
 
@@ -1225,7 +1235,8 @@ O(n) O(n) O(1) O(n)
 
 ## The Tree
 
-![](https://cdn-images-1.medium.com/max/2000/0*yUiQ-NaPKeLQnN7n)
+
+![image](https://cdn-images-1.medium.com/max/2000/0*yUiQ-NaPKeLQnN7n)
 
 ## _Definition_
 
@@ -1237,7 +1248,8 @@ Access Search Insertion Deletion
 O(n) O(n) O(n) O(n)
 To get a full overview of the time and space complexity of the Tree data structure, have a look to this excellent Big O cheat sheet.
 
-![](https://cdn-images-1.medium.com/max/2000/1*DCdQiB6XqBJCrFRz12BwqA.png)
+
+![image](https://cdn-images-1.medium.com/max/2000/1*DCdQiB6XqBJCrFRz12BwqA.png)
 
 > _The code_
 
@@ -1401,7 +1413,8 @@ To get a full overview of the time and space complexity of the Tree data structu
 
 ## The Graph
 
-![](https://cdn-images-1.medium.com/max/2000/0*q31mL1kjFWlIzw3l.gif)
+
+![image](https://cdn-images-1.medium.com/max/2000/0*q31mL1kjFWlIzw3l.gif)
 
 ## _Definition_
 

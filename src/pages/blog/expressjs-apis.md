@@ -621,7 +621,8 @@ In order to perform a JOIN query, the required information we need are:
 
 **Pictorial Presentation of SQL Joins:**
 
-![](https://www.w3resource.com/w3r_images/sql-joins-all.gif)
+
+![image](https://www.w3resource.com/w3r_images/sql-joins-all.gif)
 
 **Example:**
 
@@ -662,7 +663,8 @@ There should no be knex code in the endpoints themselves.
 
 ### Part    4
 
-![](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5ecaf43d-ee27-4da1-aa3c-aa1d9d96cc40/Untitled.png)
+
+![image](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5ecaf43d-ee27-4da1-aa3c-aa1d9d96cc40/Untitled.png)
 
 #### **Overview**
 

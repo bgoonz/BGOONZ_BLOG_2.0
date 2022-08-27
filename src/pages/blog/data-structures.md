@@ -1807,14 +1807,16 @@ For this problem, a height-balanced binary tree is defined as:
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/10/06/balance_1.jpg)
+
+![image](https://assets.leetcode.com/uploads/2020/10/06/balance_1.jpg)
 
 **Input:** root = \[3,9,20,null,null,15,7]
 **Output:** true
 
 **Example 2:**
 
-![](https://assets.leetcode.com/uploads/2020/10/06/balance_2.jpg)
+
+![image](https://assets.leetcode.com/uploads/2020/10/06/balance_2.jpg)
 
 **Input:** root = \[1,2,2,3,3,null,null,4,4]
 **Output:** false
@@ -1865,14 +1867,16 @@ Basically, the deletion can be divided into two stages:
 
 **Example 1:**
 
-![](https://assets.leetcode.com/uploads/2020/09/04/del_node_1.jpg)
+
+![image](https://assets.leetcode.com/uploads/2020/09/04/del_node_1.jpg)
 
 **Input:** root = \[5,3,6,2,4,null,7], key = 3
 **Output:** \[5,4,6,2,null,null,7]
 **Explanation:** Given key to delete is 3. So we find the node with value 3 and delete it.
 One valid answer is \[5,4,6,2,null,null,7], shown in the above BST.
 Please notice that another valid answer is \[5,2,6,null,4,null,7] and it's also accepted.
-![](https://assets.leetcode.com/uploads/2020/09/04/del_node_supp.jpg)
+
+![image](https://assets.leetcode.com/uploads/2020/09/04/del_node_supp.jpg)
 
 **Example 2:**
 
