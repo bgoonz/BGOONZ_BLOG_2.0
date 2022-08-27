@@ -204,7 +204,7 @@ To determine if a string `hostSuffixString` is a registrable domain suffix of 
       * `hostSuffix` [equals](https://url.spec.whatwg.org/#concept-host-equals) `hostSuffix`'s [public suffix](https://url.spec.whatwg.org/#host-public-suffix)
       * `hostSuffix`, prefixed by U+002E (.), matches the end `originalHost`'s [public suffix](https://url.spec.whatwg.org/#host-public-suffix)
 
-      then return false. [\[URL]](https://html.spec.whatwg.org/multipage/references.html#refsURL)
+      then return false. \[[URL]](https://html.spec.whatwg.org/multipage/references.html#refsURL)
    4. Assert: `originalHost`'s [public suffix](https://url.spec.whatwg.org/#host-public-suffix), prefixed by U+002E (.), matches the end of `hostSuffix`.
 5. Return true.
 
@@ -230,13 +230,13 @@ To determine if a string `hostSuffixString` is a registrable domain suffix of 
 
   Returns true if this `Window` belongs to an [agent cluster](https://tc39.es/ecma262/#sec-agent-clusters) which is [origin](https://html.spec.whatwg.org/multipage/origin.html#concept-origin)-[keyed](https://html.spec.whatwg.org/multipage/webappapis.html#agent-cluster-key), in the manner described in this section.
 
-A `Document` delivered over a [secure context](https://html.spec.whatwg.org/multipage/webappapis.html#secure-context) can request that it be placed in an [origin](https://html.spec.whatwg.org/multipage/origin.html#concept-origin)-[keyed](https://html.spec.whatwg.org/multipage/webappapis.html#agent-cluster-key) [agent cluster](https://tc39.es/ecma262/#sec-agent-clusters), by using the ``Origin-Agent-Cluster`` HTTP response header. This header is a [structured header](https://httpwg.org/specs/rfc8941.html) whose value must be a [boolean](https://httpwg.org/specs/rfc8941.html#boolean). [\[STRUCTURED-FIELDS]](https://html.spec.whatwg.org/multipage/references.html#refsSTRUCTURED-FIELDS)
+A `Document` delivered over a [secure context](https://html.spec.whatwg.org/multipage/webappapis.html#secure-context) can request that it be placed in an [origin](https://html.spec.whatwg.org/multipage/origin.html#concept-origin)-[keyed](https://html.spec.whatwg.org/multipage/webappapis.html#agent-cluster-key) [agent cluster](https://tc39.es/ecma262/#sec-agent-clusters), by using the `Origin-Agent-Cluster` HTTP response header. This header is a [structured header](https://httpwg.org/specs/rfc8941.html) whose value must be a [boolean](https://httpwg.org/specs/rfc8941.html#boolean). \[[STRUCTURED-FIELDS]](https://html.spec.whatwg.org/multipage/references.html#refsSTRUCTURED-FIELDS)
 
-Per the processing model in the [create and initialize a new `Document` object](https://html.spec.whatwg.org/multipage/browsing-the-web.html#initialise-the-document-object), values that are not the [structured header boolean](https://httpwg.org/specs/rfc8941.html#boolean) true value (i.e., ``?1``) will be ignored.
+Per the processing model in the [create and initialize a new `Document` object](https://html.spec.whatwg.org/multipage/browsing-the-web.html#initialise-the-document-object), values that are not the [structured header boolean](https://httpwg.org/specs/rfc8941.html#boolean) true value (i.e., `?1`) will be ignored.
 
 The consequences of using this header are that the resulting `Document`'s [agent cluster key](https://html.spec.whatwg.org/multipage/webappapis.html#agent-cluster-key) is its [origin](https://dom.spec.whatwg.org/#concept-document-origin), instead of the [corresponding site](https://html.spec.whatwg.org/multipage/origin.html#obtain-a-site). In terms of observable effects, this means that attempting to [relax the same-origin restriction](https://html.spec.whatwg.org/multipage/origin.html#relaxing-the-same-origin-restriction) using `document.domain` will instead do nothing, and it will not be possible to send `WebAssembly.Module` objects to cross-origin `Document`s (even if they are [same site](https://html.spec.whatwg.org/multipage/origin.html#same-site)). Behind the scenes, this isolation can allow user agents to allocate implementation-specific resources corresponding to [agent clusters](https://tc39.es/ecma262/#sec-agent-clusters), such as processes or threads, more efficiently.
 
-Note that within a [browsing context group](https://html.spec.whatwg.org/multipage/browsers.html#browsing-context-group), the ``Origin-Agent-Cluster`` header can never cause same-origin `Document` objects to end up in different [agent clusters](https://tc39.es/ecma262/#sec-agent-clusters), even if one sends the header and the other doesn't. This is prevented by means of the [historical agent cluster key map](https://html.spec.whatwg.org/multipage/browsers.html#historical-agent-cluster-key-map).
+Note that within a [browsing context group](https://html.spec.whatwg.org/multipage/browsers.html#browsing-context-group), the `Origin-Agent-Cluster` header can never cause same-origin `Document` objects to end up in different [agent clusters](https://tc39.es/ecma262/#sec-agent-clusters), even if one sends the header and the other doesn't. This is prevented by means of the [historical agent cluster key map](https://html.spec.whatwg.org/multipage/browsers.html#historical-agent-cluster-key-map).
 
 This means that the `originAgentCluster` getter can return false, even if the header is set, if the header was omitted on a previously-loaded same-origin page in the same [browsing context group](https://html.spec.whatwg.org/multipage/browsers.html#browsing-context-group). Similarly, it can return true even when the header is not set.
 
@@ -244,7 +244,7 @@ The `originAgentCluster` getter steps are to return the [surrounding agent](h
 
 `Document`s with an [opaque origin](https://html.spec.whatwg.org/multipage/origin.html#concept-origin-opaque) can be considered unconditionally origin-keyed; for them the header has no effect, and the `originAgentCluster` getter will always return true.
 
-Similarly, `Document`s whose [agent cluster](https://tc39.es/ecma262/#sec-agent-clusters)'s [cross-origin isolation mode](https://html.spec.whatwg.org/multipage/webappapis.html#agent-cluster-cross-origin-isolation) is not "`none`" are automatically origin-keyed. The ``Origin-Agent-Cluster`\` header might be useful as an additional hint to implementations about resource allocation, since the \``Cross-Origin-Opener-Policy`\` and \``Cross-Origin-Embedder-Policy`` headers used to achieve cross-origin isolation are more about ensuring that everything in the same address space opts in to being there. But adding it would have no additional observable effects on author code.
+Similarly, `Document`s whose [agent cluster](https://tc39.es/ecma262/#sec-agent-clusters)'s [cross-origin isolation mode](https://html.spec.whatwg.org/multipage/webappapis.html#agent-cluster-cross-origin-isolation) is not "`none`" are automatically origin-keyed. The ``Origin-Agent-Cluster`\` header might be useful as an additional hint to implementations about resource allocation, since the \``Cross-Origin-Opener-Policy`\` and \`\`Cross-Origin-Embedder-Policy headers used to achieve cross-origin isolation are more about ensuring that everything in the same address space opts in to being there. But adding it would have no additional observable effects on author code.
 
 ### 7.6 Sandboxing[](https://html.spec.whatwg.org/multipage/origin.html#sandboxing)
 
@@ -281,7 +281,7 @@ A sandboxing flag set is a set of zero or more of the following flags, which a
   This flag [blocks form submission](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#sandboxSubmitBlocked).
 * The sandboxed pointer lock browsing context flag
 
-  This flag disables the Pointer Lock API. [\[POINTERLOCK]](https://html.spec.whatwg.org/multipage/references.html#refsPOINTERLOCK)
+  This flag disables the Pointer Lock API. \[[POINTERLOCK]](https://html.spec.whatwg.org/multipage/references.html#refsPOINTERLOCK)
 * The sandboxed scripts browsing context flag
 
   This flag [blocks script execution](https://html.spec.whatwg.org/multipage/webappapis.html#sandboxScriptBlocked).
@@ -305,10 +305,10 @@ A sandboxing flag set is a set of zero or more of the following flags, which a
   * the `beforeunload` event
 * The sandboxed orientation lock browsing context flag
 
-  This flag disables the ability to lock the screen orientation. [\[SCREENORIENTATION]](https://html.spec.whatwg.org/multipage/references.html#refsSCREENORIENTATION)
+  This flag disables the ability to lock the screen orientation. \[[SCREENORIENTATION]](https://html.spec.whatwg.org/multipage/references.html#refsSCREENORIENTATION)
 * The sandboxed presentation browsing context flag
 
-  This flag disables the Presentation API. [\[PRESENTATION]](https://html.spec.whatwg.org/multipage/references.html#refsPRESENTATION)
+  This flag disables the Presentation API. \[[PRESENTATION]](https://html.spec.whatwg.org/multipage/references.html#refsPRESENTATION)
 * The sandboxed downloads browsing context flag
 
   This flag prevents content from initiating or instantiating downloads, whether through [downloading hyperlinks](https://html.spec.whatwg.org/multipage/links.html#downloading-hyperlinks) or through [navigation](https://html.spec.whatwg.org/multipage/browsing-the-web.html#process-a-navigate-response) that gets handled [as a download](https://html.spec.whatwg.org/multipage/links.html#as-a-download).
@@ -360,7 +360,7 @@ Every `Document` has an active sandboxing flag set, which is a [sandboxing f
 
 Every resource that is obtained by the [navigation algorithm](https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate) has a forced sandboxing flag set, which is a [sandboxing flag set](https://html.spec.whatwg.org/multipage/origin.html#sandboxing-flag-set). A resource by default has no flags set in its [forced sandboxing flag set](https://html.spec.whatwg.org/multipage/origin.html#forced-sandboxing-flag-set), but other specifications can define that certain flags are set.
 
-In particular, the [forced sandboxing flag set](https://html.spec.whatwg.org/multipage/origin.html#forced-sandboxing-flag-set) is used by Content Security Policy. [\[CSP]](https://html.spec.whatwg.org/multipage/references.html#refsCSP)
+In particular, the [forced sandboxing flag set](https://html.spec.whatwg.org/multipage/origin.html#forced-sandboxing-flag-set) is used by Content Security Policy. \[[CSP]](https://html.spec.whatwg.org/multipage/references.html#refsCSP)
 
 - - -
 
@@ -389,7 +389,7 @@ A cross-origin opener policy value allows a document which is navigated to in 
 
   This behaves the same as "`same-origin`", with the addition that it sets the (new) [top-level browsing context](https://html.spec.whatwg.org/multipage/browsers.html#top-level-browsing-context)'s [group](https://html.spec.whatwg.org/multipage/browsers.html#tlbc-group)'s [cross-origin isolation mode](https://html.spec.whatwg.org/multipage/browsers.html#bcg-cross-origin-isolation) to one of "`logical`" or "`concrete`".
 
-  "`same-origin-plus-COEP`" cannot be directly set via the ``Cross-Origin-Opener-Policy`\` header, but results from a combination of setting both \``Cross-Origin-Opener-Policy: same-origin`\` and a \``Cross-Origin-Embedder-Policy`` header whose value is [compatible with cross-origin isolation](https://html.spec.whatwg.org/multipage/origin.html#compatible-with-cross-origin-isolation) together.
+  "`same-origin-plus-COEP`" cannot be directly set via the ``Cross-Origin-Opener-Policy`\` header, but results from a combination of setting both \``Cross-Origin-Opener-Policy: same-origin`\` and a \`\`Cross-Origin-Embedder-Policy header whose value is [compatible with cross-origin isolation](https://html.spec.whatwg.org/multipage/origin.html#compatible-with-cross-origin-isolation) together.
 
 A cross-origin opener policy consists of:
 
@@ -409,9 +409,9 @@ To match cross-origin opener policy values, given a [cross-origin opener polic
 
 **✔**MDN
 
-A `Document`'s [cross-origin opener policy](https://html.spec.whatwg.org/multipage/dom.html#concept-document-coop) is derived from the ``Cross-Origin-Opener-Policy`\` and \``Cross-Origin-Opener-Policy-Report-Only`` HTTP response headers. These headers are [structured headers](https://httpwg.org/specs/rfc8941.html) whose value must be a [token](https://httpwg.org/specs/rfc8941.html#token). [\[STRUCTURED-FIELDS]](https://html.spec.whatwg.org/multipage/references.html#refsSTRUCTURED-FIELDS)
+A `Document`'s [cross-origin opener policy](https://html.spec.whatwg.org/multipage/dom.html#concept-document-coop) is derived from the ``Cross-Origin-Opener-Policy`\` and \``Cross-Origin-Opener-Policy-Report-Only HTTP response headers. These headers are [structured headers](https://httpwg.org/specs/rfc8941.html) whose value must be a [token](https://httpwg.org/specs/rfc8941.html#token). \[[STRUCTURED-FIELDS]](https://html.spec.whatwg.org/multipage/references.html#refsSTRUCTURED-FIELDS)
 
-The valid [token](https://httpwg.org/specs/rfc8941.html#token) values are the [opener policy values](https://html.spec.whatwg.org/multipage/origin.html#cross-origin-opener-policy-value). The token may also have attached [parameters](https://httpwg.org/specs/rfc8941.html#param); of these, the "`report-to`" parameter can have a [valid URL string](https://url.spec.whatwg.org/#valid-url-string) identifying an appropriate reporting endpoint. [\[REPORTING]](https://html.spec.whatwg.org/multipage/references.html#refsREPORTING)
+The valid [token](https://httpwg.org/specs/rfc8941.html#token) values are the [opener policy values](https://html.spec.whatwg.org/multipage/origin.html#cross-origin-opener-policy-value). The token may also have attached [parameters](https://httpwg.org/specs/rfc8941.html#param); of these, the "`report-to`" parameter can have a [valid URL string](https://url.spec.whatwg.org/#valid-url-string) identifying an appropriate reporting endpoint. \[[REPORTING]](https://html.spec.whatwg.org/multipage/references.html#refsREPORTING)
 
 Per the processing model described below, user agents will ignore this header if it contains an invalid value. Likewise, user agents will ignore this header if the value cannot be parsed as a [token](https://httpwg.org/specs/rfc8941.html#token).
 
@@ -421,7 +421,7 @@ To obtain a cross-origin opener policy given a [response](https://fetch.spec.
 
 1. Let `policy` be a new [cross-origin opener policy](https://html.spec.whatwg.org/multipage/origin.html#cross-origin-opener-policy).
 2. If `reservedEnvironment` is a [non-secure context](https://html.spec.whatwg.org/multipage/webappapis.html#non-secure-context), then return `policy`.
-3. Let `value` be the result of [getting a structured field value](https://fetch.spec.whatwg.org/#concept-header-list-get-structured-header) given ``Cross-Origin-Opener-Policy`` and "`item`" from `response`'s [header list](https://fetch.spec.whatwg.org/#concept-response-header-list).
+3. Let `value` be the result of [getting a structured field value](https://fetch.spec.whatwg.org/#concept-header-list-get-structured-header) given `Cross-Origin-Opener-Policy` and "`item`" from `response`'s [header list](https://fetch.spec.whatwg.org/#concept-response-header-list).
 4. If `parsedItem` is not null, then:
 
    1. If `parsedItem`\[0] is "`same-origin`", then:
@@ -431,7 +431,7 @@ To obtain a cross-origin opener policy given a [response](https://fetch.spec.
       3. Otherwise, set `policy`'s [value](https://html.spec.whatwg.org/multipage/origin.html#coop-struct-value) to "`same-origin`".
    2. If `parsedItem`\[0] is "`same-origin-allow-popups`", then set `policy`'s [value](https://html.spec.whatwg.org/multipage/origin.html#coop-struct-value) to "`same-origin-allow-popups`".
    3. If `parsedItem`\[1]["`report-to`"] [exists](https://infra.spec.whatwg.org/#map-exists) and it is a string, then set `policy`'s [reporting endpoint](https://html.spec.whatwg.org/multipage/origin.html#coop-struct-report-endpoint) to `parsedItem`\[1]["`report-to`"].
-5. Set `parsedItem` to the result of [getting a structured field value](https://fetch.spec.whatwg.org/#concept-header-list-get-structured-header) given ``Cross-Origin-Opener-Policy-Report-Only`` and "`item`" from `response`'s [header list](https://fetch.spec.whatwg.org/#concept-response-header-list).
+5. Set `parsedItem` to the result of [getting a structured field value](https://fetch.spec.whatwg.org/#concept-header-list-get-structured-header) given `Cross-Origin-Opener-Policy-Report-Only` and "`item`" from `response`'s [header list](https://fetch.spec.whatwg.org/#concept-response-header-list).
 6. If `parsedItem` is not null, then:
 
    1. If `parsedItem`\[0] is "`same-origin`", then:
@@ -714,13 +714,13 @@ An embedder policy value is one of three strings that controls the fetching of
 
 * "`unsafe-none`"
 
-  This is the default value. When this value is used, cross-origin resources can be fetched without giving explicit permission through the [CORS protocol](https://fetch.spec.whatwg.org/#http-cors-protocol) or the ``Cross-Origin-Resource-Policy`` header.
+  This is the default value. When this value is used, cross-origin resources can be fetched without giving explicit permission through the [CORS protocol](https://fetch.spec.whatwg.org/#http-cors-protocol) or the `Cross-Origin-Resource-Policy` header.
 * "`require-corp`"
 
-  When this value is used, fetching cross-origin resources requires the server's explicit permission through the [CORS protocol](https://fetch.spec.whatwg.org/#http-cors-protocol) or the ``Cross-Origin-Resource-Policy`` header.
+  When this value is used, fetching cross-origin resources requires the server's explicit permission through the [CORS protocol](https://fetch.spec.whatwg.org/#http-cors-protocol) or the `Cross-Origin-Resource-Policy` header.
 * "`credentialless`"
 
-  When this value is used, fetching cross-origin no-CORS resources omits credentials. In exchange, an explicit ``Cross-Origin-Resource-Policy`` header is not required. Other requests sent with credentials require the server's explicit permission through the [CORS protocol](https://fetch.spec.whatwg.org/#http-cors-protocol) or the ``Cross-Origin-Resource-Policy`` header.
+  When this value is used, fetching cross-origin no-CORS resources omits credentials. In exchange, an explicit `Cross-Origin-Resource-Policy` header is not required. Other requests sent with credentials require the server's explicit permission through the [CORS protocol](https://fetch.spec.whatwg.org/#http-cors-protocol) or the `Cross-Origin-Resource-Policy` header.
 
 Before supporting "`credentialless`", implementers are strongly encouraged to support both:
 
@@ -742,23 +742,23 @@ The "`coep`" report type is a [report type](https://w3c.github.io/reporting/#
 
 #### 7.8.1 The headers[](https://html.spec.whatwg.org/multipage/origin.html#the-coep-headers)
 
-The ``Cross-Origin-Embedder-Policy`\` and \``Cross-Origin-Embedder-Policy-Report-Only`` HTTP response headers allow a server to declare an [embedder policy](https://html.spec.whatwg.org/multipage/origin.html#embedder-policy) for an [environment settings object](https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object). These headers are [structured headers](https://httpwg.org/specs/rfc8941.html) whose values must be [token](https://httpwg.org/specs/rfc8941.html#token). [\[STRUCTURED-FIELDS]](https://html.spec.whatwg.org/multipage/references.html#refsSTRUCTURED-FIELDS)
+The ``Cross-Origin-Embedder-Policy`\` and \``Cross-Origin-Embedder-Policy-Report-Only HTTP response headers allow a server to declare an [embedder policy](https://html.spec.whatwg.org/multipage/origin.html#embedder-policy) for an [environment settings object](https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object). These headers are [structured headers](https://httpwg.org/specs/rfc8941.html) whose values must be [token](https://httpwg.org/specs/rfc8941.html#token). \[[STRUCTURED-FIELDS]](https://html.spec.whatwg.org/multipage/references.html#refsSTRUCTURED-FIELDS)
 
-The valid [token](https://httpwg.org/specs/rfc8941.html#token) values are the [embedder policy values](https://html.spec.whatwg.org/multipage/origin.html#embedder-policy-value). The token may also have attached [parameters](https://httpwg.org/specs/rfc8941.html#param); of these, the "`report-to`" parameter can have a [valid URL string](https://url.spec.whatwg.org/#valid-url-string) identifying an appropriate reporting endpoint. [\[REPORTING]](https://html.spec.whatwg.org/multipage/references.html#refsREPORTING)
+The valid [token](https://httpwg.org/specs/rfc8941.html#token) values are the [embedder policy values](https://html.spec.whatwg.org/multipage/origin.html#embedder-policy-value). The token may also have attached [parameters](https://httpwg.org/specs/rfc8941.html#param); of these, the "`report-to`" parameter can have a [valid URL string](https://url.spec.whatwg.org/#valid-url-string) identifying an appropriate reporting endpoint. \[[REPORTING]](https://html.spec.whatwg.org/multipage/references.html#refsREPORTING)
 
-The [processing model](https://html.spec.whatwg.org/multipage/origin.html#obtain-an-embedder-policy) fails open (by defaulting to "`unsafe-none`") in the presence of a header that cannot be parsed as a token. This includes inadvertent lists created by combining multiple instances of the ``Cross-Origin-Embedder-Policy`` header present in a given response:
+The [processing model](https://html.spec.whatwg.org/multipage/origin.html#obtain-an-embedder-policy) fails open (by defaulting to "`unsafe-none`") in the presence of a header that cannot be parsed as a token. This includes inadvertent lists created by combining multiple instances of the `Cross-Origin-Embedder-Policy` header present in a given response:
 
-| ``Cross-Origin-Embedder-Policy`` | Final [embedder policy value](https://html.spec.whatwg.org/multipage/origin.html#embedder-policy-value) |
-| -------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| *No header delivered*            | "`unsafe-none`"                                                                                         |
-| ``require-corp``                 | "`require-corp`"                                                                                        |
-| ``unknown-value``                | "`unsafe-none`"                                                                                         |
-| ``require-corp, unknown-value``  | "`unsafe-none`"                                                                                         |
-| ``unknown-value, unknown-value`` | "`unsafe-none`"                                                                                         |
-| ``unknown-value, require-corp``  | "`unsafe-none`"                                                                                         |
-| ``require-corp, require-corp``   | "`unsafe-none`"                                                                                         |
+| `Cross-Origin-Embedder-Policy` | Final [embedder policy value](https://html.spec.whatwg.org/multipage/origin.html#embedder-policy-value) |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------- |
+| *No header delivered*          | "`unsafe-none`"                                                                                         |
+| `require-corp`                 | "`require-corp`"                                                                                        |
+| `unknown-value`                | "`unsafe-none`"                                                                                         |
+| `require-corp, unknown-value`  | "`unsafe-none`"                                                                                         |
+| `unknown-value, unknown-value` | "`unsafe-none`"                                                                                         |
+| `unknown-value, require-corp`  | "`unsafe-none`"                                                                                         |
+| `require-corp, require-corp`   | "`unsafe-none`"                                                                                         |
 
-(The same applies to ``Cross-Origin-Embedder-Policy-Report-Only``.)
+(The same applies to `Cross-Origin-Embedder-Policy-Report-Only`.)
 
 - - -
 
@@ -766,12 +766,12 @@ To obtain an embedder policy from a [response](https://fetch.spec.whatwg.org/
 
 1. Let `policy` be a new [embedder policy](https://html.spec.whatwg.org/multipage/origin.html#embedder-policy).
 2. If `environment` is a [non-secure context](https://html.spec.whatwg.org/multipage/webappapis.html#non-secure-context), then return `policy`.
-3. Let `parsedItem` be the result of [getting a structured field value](https://fetch.spec.whatwg.org/#concept-header-list-get-structured-header) with ``Cross-Origin-Embedder-Policy`` and "`item`" from `response`'s [header list](https://fetch.spec.whatwg.org/#concept-response-header-list).
+3. Let `parsedItem` be the result of [getting a structured field value](https://fetch.spec.whatwg.org/#concept-header-list-get-structured-header) with `Cross-Origin-Embedder-Policy` and "`item`" from `response`'s [header list](https://fetch.spec.whatwg.org/#concept-response-header-list).
 4. If `parsedItem` is non-null and `parsedItem`\[0] is [compatible with cross-origin isolation](https://html.spec.whatwg.org/multipage/origin.html#compatible-with-cross-origin-isolation):
 
    1. Set `policy`'s [value](https://html.spec.whatwg.org/multipage/origin.html#embedder-policy-value-2) to `parsedItem`\[0].
    2. If `parsedItem`\[1]["`report-to`"] [exists](https://infra.spec.whatwg.org/#map-exists), then set `policy`'s [endpoint](https://html.spec.whatwg.org/multipage/origin.html#embedder-policy-reporting-endpoint) to `parsedItem`\[1]["`report-to`"].
-5. Set `parsedItem` to the result of [getting a structured field value](https://fetch.spec.whatwg.org/#concept-header-list-get-structured-header) with ``Cross-Origin-Embedder-Policy-Report-Only`` and "`item`" from `response`'s [header list](https://fetch.spec.whatwg.org/#concept-response-header-list).
+5. Set `parsedItem` to the result of [getting a structured field value](https://fetch.spec.whatwg.org/#concept-header-list-get-structured-header) with `Cross-Origin-Embedder-Policy-Report-Only` and "`item`" from `response`'s [header list](https://fetch.spec.whatwg.org/#concept-response-header-list).
 6. If `parsedItem` is non-null and `parsedItem`\[0] is [compatible with cross-origin isolation](https://html.spec.whatwg.org/multipage/origin.html#compatible-with-cross-origin-isolation):
 
    1. Set `policy`'s [value](https://html.spec.whatwg.org/multipage/origin.html#embedder-policy-report-only-value) to `parsedItem`\[0].
@@ -841,7 +841,7 @@ To create a policy container from a fetch response given a [response](https:/
 2. Let `result` be a new [policy container](https://html.spec.whatwg.org/multipage/origin.html#policy-container).
 3. Set `result`'s [CSP list](https://html.spec.whatwg.org/multipage/origin.html#policy-container-csp-list) to the result of [parsing a response's Content Security Policies](https://w3c.github.io/webappsec-csp/#parse-response-csp) given `response`.
 4. If `environment` is non-null, then set `result`'s [embedder policy](https://html.spec.whatwg.org/multipage/origin.html#policy-container-embedder-policy) to the result of [obtaining an embedder policy](https://html.spec.whatwg.org/multipage/origin.html#obtain-an-embedder-policy) given `response` and `environment`. Otherwise, set it to "`unsafe-none`".
-5. Set `result`'s [referrer policy](https://html.spec.whatwg.org/multipage/origin.html#policy-container-referrer-policy) to the result of [parsing the ``Referrer-Policy`` header](https://w3c.github.io/webappsec-referrer-policy/#parse-referrer-policy-from-header) given `response`. [\[REFERRERPOLICY]](https://html.spec.whatwg.org/multipage/references.html#refsREFERRERPOLICY)
+5. Set `result`'s [referrer policy](https://html.spec.whatwg.org/multipage/origin.html#policy-container-referrer-policy) to the result of [parsing the `Referrer-Policy` header](https://w3c.github.io/webappsec-referrer-policy/#parse-referrer-policy-from-header) given `response`. \[[REFERRERPOLICY]](https://html.spec.whatwg.org/multipage/references.html#refsREFERRERPOLICY)
 6. Return `result`.
 
 To determine navigation params policy container given a [URL](https://url.spec.whatwg.org/#concept-url) `responseURL` and four [policy container](https://html.spec.whatwg.org/multipage/origin.html#policy-container)-or-nulls `historyPolicyContainer`, `initiatorPolicyContainer`, `parentPolicyContainer`, and `responsePolicyContainer`:
