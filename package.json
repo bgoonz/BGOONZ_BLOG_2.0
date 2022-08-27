@@ -17,16 +17,16 @@
         "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json}\"",
         "clean": "gatsby clean",
         "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-    },
-    "dependencies": {
+    }, "dependencies": {
         "@stackbit/gatsby-plugin-menus": "0.0.4",
         "axios": "^0.21.2",
         "babel-runtime": "6.26.0",
+        "child-process": "^1.0.2",
         "chokidar": "3.4.0",
         "classnames": "2.2.6",
         "docky": "^1.5.4",
         "fs-extra": "7.0.1",
-        "gatsby": "^2.0.0",
+        "gatsby": "^2.0.0 ",
         "gatsby-plugin-disqus": "^1.2.3",
         "gatsby-plugin-no-sourcemaps": "^4.17.0",
         "gatsby-plugin-offline": "^5.9.0",
@@ -42,6 +42,7 @@
         "marked": "0.6.1",
         "moment": "^2.29.3",
         "moment-strftime": "0.5.0",
+        "node-fetch": "^2.6.7",
         "node-sass": "^4.14.0",
         "node-sass-utils": "1.1.2",
         "prismjs": "^1.28.0",
