@@ -6,6 +6,9 @@
 
 ### [CHANGELOG](./CHANGELOG.md)
 
+
+##### [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app) [⇨**Cloudfare-Backup**⇦](https://bgoonz-blog-2-0.pages.dev/) [⇨**search**⇦](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) [⇨**Backup Repo Deploy**⇦](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) [⇨**Github pages**⇦](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) [⇨**Go To Site Wiki**⇦](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki) [⇨**Gatsby Cloud Version**⇦](https://bgoonzblog20master.gatsbyjs.io/) [⇨**Vercel Version**⇦](https://bgoonz-blog.vercel.app/) [⇨**Cloudfare-Domain**⇦](www.webdevhub.us) [⇨**gh-pages**⇦](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) [⇨**backup netlify deploy**⇦](https://bgoonz-blog20-backup.netlify.app/)
+
 #### [Commit Log](docs/meta-info/log.md.md)
 
 
@@ -15,6 +18,7 @@
 ##### [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app) [⇨**Cloudfare-Backup**⇦](https://bgoonz-blog-2-0.pages.dev/) [⇨**search**⇦](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) [⇨**Backup Repo Deploy**⇦](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) [⇨**Github pages**⇦](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) [⇨**Go To Site Wiki**⇦](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki) [⇨**Gatsby Cloud Version**⇦](https://bgoonzblog20master.gatsbyjs.io/) [⇨**Vercel Version**⇦](https://bgoonz-blog.vercel.app/)
 
 [⇨**Cloudfare-Domain**⇦](www.webdevhub.us) [⇨**gh-pages**⇦](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) [⇨**backup netlify deploy**⇦](https://bgoonz-blog20-backup.netlify.app/)
+
 
 ### Repos
 
@@ -133,7 +137,7 @@ Url: <http://gitpop2.herokuapp.com/bgoonz/BGOONZ_BLOG_2.0>
 | [bgoonz/BGOONZ\_BLOG\_2.0](https://github.com/bgoonz/BGOONZ_BLOG_2.0)                               | 14    | 35    | 5 minutes ago         |
 
 ---
->>>>>>> f8217ed7da48524eaff0bc59626697fc43dbae4b
+
 
 ## Deploys
 
