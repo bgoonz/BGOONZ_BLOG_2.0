@@ -5,24 +5,23 @@
 .post-full,
 .post-feed {
   &:last-child {
-      margin-bottom: 5em;
+    margin-bottom: 5em;
   }
 }
 
 .has-gradient {
-
   &.page-header,
   &.post-header {
-      padding-bottom: 9.5em;
-      padding-top: 3.75em;
-      text-align: center;
+    padding-bottom: 9.5em;
+    padding-top: 3.75em;
+    text-align: center;
   }
 
   .page-title,
   .post-title {
-      color: inherit;
-      font-size: 2.25em;
-      margin: 0;
+    color: inherit;
+    font-size: 2.25em;
+    margin: 0;
   }
 }
 
@@ -36,8 +35,8 @@
 
 .post-title {
   a {
-      color: inherit !important;
-      text-decoration: none;
+    color: inherit !important;
+    text-decoration: none;
   }
 }
 
@@ -48,8 +47,8 @@
   margin: 0;
 
   img {
-      border-radius: $border-radius $border-radius 0 0;
-      width: 100%;
+    border-radius: $border-radius $border-radius 0 0;
+    width: 100%;
   }
 }
 
@@ -69,86 +68,85 @@
 
 .post-full {
   .post-content {
-      padding: 1.5em;
+    padding: 2.5em 1.5em;
   }
 
   .post-meta {
-      margin: 0 0 0.5em;
+    margin: 0 0 0.5em;
   }
 }
 
 .post-feed {
   .post {
-      padding: 0 0 2.5em;
+    padding: 0 0 2.5em;
   }
 
   .post-meta {
-      color: $gray-500;
-      font-size: 0.875em;
-      margin: 0 0 0.5em;
-      padding-left: 1.71428em;
-      padding-right: 1.71428em;
+    color: $gray-500;
+    font-size: 0.875em;
+    margin: 0 0 0.5em;
+    padding-left: 1.71428em;
+    padding-right: 1.71428em;
   }
 
   .post-header {
-      margin: 0 0 1.25em;
-      padding-top: 1.875em;
+    margin: 0 0 1.25em;
+    padding-top: 1.875em;
   }
 
   .post-title {
-      font-size: 1.5em;
-      margin: 0;
-      padding-left: 1em;
-      padding-right: 1em;
+    font-size: 1.5em;
+    margin: 0;
+    padding-left: 1em;
+    padding-right: 1em;
   }
 
   .post-excerpt {
-      margin-bottom: 1.25em;
-      padding-left: 1.5em;
-      padding-right: 1.5em;
+    margin-bottom: 1.25em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
   }
 
   .read-more {
-      margin: 0;
-      padding-left: 1.5em;
-      padding-right: 1.5em;
+    margin: 0;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
   }
 
   .read-more-link {
-      font-weight: bold;
-      text-decoration: none;
+    font-weight: bold;
+    text-decoration: none;
 
-      &:after {
-          font-size: 1.125em;
-          content: '\2192';
-          line-height: 1.5;
-          margin-left: 5px;
-      }
+    &:after {
+      font-size: 1.125em;
+      content: "\2192";
+      line-height: 1.5;
+      margin-left: 5px;
+    }
 
-      &:hover {
-          color: $gray-600;
-      }
+    &:hover {
+      color: $gray-600;
+    }
   }
 }
 
-@media only screen and (min-width: 841px) {
+@media only screen and (min-width: 641px) {
   .has-gradient {
-
-      .page-title,
-      .post-title {
-          font-size: 3em;
-      }
+    .page-title,
+    .post-title {
+      font-size: 3em;
+    }
   }
 
   .page-subtitle,
   .post-subtitle {
-      font-size: 1.25em;
+    font-size: 1.25em;
   }
 
   .post-full {
-      .post-meta {
-          font-size: 1.125em;
-      }
+    .post-meta {
+      font-size: 1.125em;
+    }
   }
 
   .post-full .post-content,
@@ -156,13 +154,13 @@
   .post-feed .post-title,
   .post-feed .post-excerpt,
   .post-feed .read-more {
-      padding-left: 7%;
-      padding-right: 7%;
+    padding-left: 7%;
+    padding-right: 7%;
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
   .post {
-      margin-bottom: 4vw;
+    margin-bottom: 4vw;
   }
 }

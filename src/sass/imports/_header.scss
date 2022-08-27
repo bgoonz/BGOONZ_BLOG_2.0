@@ -1,5 +1,5 @@
 .site-header {
-    background: #000000;
+    background: black;
     background-image: url('https://i.imgur.com/CEYEZp8.jpeg');
     padding-bottom: 0.4em;
     padding-top: 0.2em;
@@ -79,7 +79,6 @@
 }
 
 @media only screen and (min-width: 801px) {
-
     #menu-open,
     #menu-close {
         display: none;
@@ -112,7 +111,7 @@
             }
         }
 
-        &.has-children>a {
+        &.has-children > a {
             padding-right: 18px;
             position: relative;
 
@@ -145,7 +144,7 @@
             display: none;
         }
 
-        &.has-children:hover>.submenu {
+        &.has-children:hover > .submenu {
             opacity: 1;
             -webkit-transition: margin 0.3s, opacity 0.2s;
             transition: margin 0.3s, opacity 0.2s;
@@ -293,7 +292,6 @@
         }
 
         a {
-
             &:not(.button),
             &.button-icon {
                 padding: 0.75em 0;
@@ -310,7 +308,7 @@
             }
         }
 
-        &.has-children>a {
+        &.has-children > a {
             margin-right: 2em;
         }
 
@@ -347,13 +345,13 @@
     }
 
     .menu-button {
-        &>.button:not(.button-icon) {
+        & > .button:not(.button-icon) {
             margin-bottom: 1.25em;
             margin-top: 1.25em;
         }
 
-        &+.menu-button {
-            &>.button:not(.button-icon) {
+        & + .menu-button {
+            & > .button:not(.button-icon) {
                 margin-top: 0;
             }
         }

@@ -1,8 +1,8 @@
 # Bgoonz Blog Readme:
 
-### [Github Org Link](https://github.com/BGOOONZ-BLOG/)
+<div align="centered">
 
-## [CHANGELOG](./CHANGELOG.md)
+### [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app)
 
 
 ### [CHANGELOG](./CHANGELOG.md)
@@ -90,6 +90,7 @@
 
 npm i @stackbit/gatsby-plugin-menus babel-runtime chokidar classnames fs-extra gatsby gatsby-image gatsby-plugin-netlify gatsby-plugin-netlify-cms gatsby-plugin-sass gatsby-plugin-react-helmet gatsby-plugin-typescript  --legacy-peer-deps
 
+
 git checkout 307a5cd        # check out the commit that you want to reset to
 git checkout -b fixy        # create a branch named fixy to do the work
 git merge -s ours master    # merge master's history without changing any files
@@ -102,20 +103,36 @@ git push                    # done, no need to force push!
 ```
 
 ---
+
 <a href="https://testmysite.io/61e5ff836a840eeeef7e78e9/bgoonz-blog.netlify.app" rel="Test My Site Results">
 ![Test My Site](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/Screenshot%202022-03-30%20at%2012-37-24%20Website%20Speed%20Test%20Tool%20-%20Testmysite.io%20by%20Netlify.png?raw=true)</a>
 
-[![gmail](https://img.icons8.com/color/96/000000/gmail.png)](mailto:bryan.guner@gmail.com)[![linkedin](https://img.icons8.com/color/96/000000/linkedin.png) ](https://www.linkedin.com/in/bryan-guner-046199128/)
+---
+
+## Web Dev Setup
 
 <details>
 
-<summary>
-Web Dev Setup
+<summary>Web Dev Setup</summary>
 
-</summary>
+---
 
+title: WebDev Setup
+template: post
+subtitle: Basic Web Development Environment Setup
+excerpt: Windows Subsystem for Linux (WSL) and Ubuntu
+date: 2022-05-08T18:10:03.296Z
+image: <https://cdn-images-1.medium.com/max/800/0>*aqKP1drNHmNm34zz.jpg
+thumb_image: <https://cdn-images-1.medium.com/max/800/0>*aqKP1drNHmNm34zz.jpg
+image_position: right
+author: src/data/authors/bgoonz.yaml
+categories: - src/data/categories/js.yaml - src/data/categories/javascript.yaml
+tags: - src/data/tags/links.yaml - src/data/tags/resources.yaml
+show_author_bio: true
+related_posts: - src/pages/blog/vs-code-extensions.md - src/pages/blog/code-playgrounds-of-2021.md - src/pages/blog/adding-css-to-your-html.md - src/pages/blog/deploy-react-app-to-heroku.md
+cmseditable: true
 
-[webpack](https://webpack.js.org/)
+---
 
 ## Basic Web Development Environment Setup
 
@@ -123,37 +140,51 @@ Windows Subsystem for Linux (WSL) and Ubuntu
 
 ---
 
-![dtw](https://d33wubrfki0l68.cloudfront.net/1111140b3425c2a3e653688cedc52c43af701d30/54d59/images/dtw-algo.jpg)
-Artificial neural networks, usually simply called neural networks, are computing systems vaguely inspired by the biological [neural networks](https://github.com/tensorflow/tensorflow)
-![neural](/_static/app-assets/neural.PNG)
-[NJDEVILS](https://www.allaboutthejersey.com/)
+### Basic Web Development Environment Setup
 
-[Career](/docs/career/)
+#### Windows Subsystem for Linux (WSL) and Ubuntu
 
-[![webdevhub logo](https://d33wubrfki0l68.cloudfront.net/e5662f0d4f3e7730aea1a0faf7ff09ea20184700/83eb0/images/home-button.png)](/)
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*aqKP1drNHmNm34zz.jpg" class="graf-image" />
+</figure>Test if you have Ubuntu installed by typing "Ubuntu" in the search box in the bottom app bar that reads "Type here to search". If you see a search result that reads **"Ubuntu 20.04 LTS"** with "App" under it, then you have it installed.
+```
+1.  In the application search box in the bottom bar, type "PowerShell" to find the application named "Windows PowerShell"
+2.  Right-click on "Windows PowerShell" and choose "Run as administrator" from the popup menu
+3.  In the blue PowerShell window, type the following: `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`
+4.  Restart your computer
+5.  In the application search box in the bottom bar, type "Store" to find the application named "Microsoft Store"
+6.  Click "Microsoft Store"
+7.  Click the "Search" button in the upper-right corner of the window
+8.  Type in "Ubuntu"
+9.  Click "Run Linux on Windows (Get the apps)"
+10. Click the orange tile labeled **"Ubuntu"** Note that there are 3 versions in the Microsoft Store… you want the one just entitled 'Ubuntu'
+11. Click "Install"
+12. After it downloads, click "Launch"
+13. If you get the option, pin the application to the task bar. Otherwise, right-click on the orange Ubuntu icon in the task bar and choose "Pin to taskbar"
+14. When prompted to "Enter new UNIX username", type your first name with no spaces
+15. When prompted, enter and retype a password for this UNIX user (it can be the same as your Windows password)
+16. Confirm your installation by typing the command `whoami 'as in who-am-i'`followed by Enter at the prompt (it should print your first name)
+17. You need to update your packages, so type `sudo apt update` (if prompted for your password, enter it)
+18. You need to upgrade your packages, so type `sudo apt upgrade` (if prompted for your password, enter it)
+```
+### Git
 
-Open Menu
+Git comes with Ubuntu, so there's nothing to install. However, you should configure it using the following instructions.
 
-- [Navigation](/docs/sitemap) Sub-menu
-- [Docs](/docs)
-- [Showcase](/showcase)
-- [Contact!](/docs/faq/contact)
-- [Python](/docs/python/python-ds)
-- [JavaScript](/javascript)
-- [Blog](/blog/)
+Open an Ubuntu terminal if you don't have one open already.
 
 1.  > You need to configure Git, so type `git config --global user.name "Your Name"` with replacing "Your Name" with your real name.
 2.  > You need to configure Git, so type `git config --global user.email your@email.com` with replacing "<a href="mailto:your@email.com" class="markup--anchor markup--li-anchor">your@email.com</a>" with your real email.
 
-- [Blog-Post-Archive](https://bgoonz.blogspot.com/)
+**Note: if you want git to remember your login credentials type:**
 
-- [Top Blog Posts](https://blog-w-comments.vercel.app/)
+    git config --global credential.helper store
 
-- [Blog w Comments](/blogWcomments/)
+### Google Chrome
 
-- [Job Search](/docs/career/)
+Test if you have Chrome installed by typing "Chrome" in the search box in the bottom app bar that reads "Type here to search". If you see a search result that reads "Chrome" with "App" under it, then you have it installed. Otherwise, follow these instructions to install Google Chrome.
 
-Sub-menu
+### Node.js
 
 Test if you have Node.js installed by opening an Ubuntu terminal and typing `node --version`. If it reports "Command 'node' not found", then you need to follow these directions.
 
@@ -890,11 +921,13 @@ listing="files"
 out=""
 
 html="sitemap.html"
-echo '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/mdn-article.css"> '
-echo '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/markdown-to-html-style.css"> '
-awk '{print "<li> <a href=\""$1"\"> ",$1,"&nbsp;</a> </li> "}' $listing
+out="basename $out.html"
+html="sitemap.html"
+cmd() {
 
-# 25. Index of Iframes
+  echo '  <!DOCTYPE html>'
+  echo '<html>'
+  echo '<head>'
 
   echo '  <meta http-equiv="Content-Type" content="text/html">'
 
@@ -1388,7 +1421,7 @@ find . -type f -exec rename 's/-master//g' {} +
 
 ```
 
-> Notes: The same could be done for folder names by changing the _-type f_ flag (for file) to a _-type d_ flag (for directory)
+> Notes: The same could be done for folder names by changing the *-type f* flag (for file) to a *-type d* flag (for directory)
 
 ```bash
 find <mydir> -type d -exec sed -i 's/<string1>/<string2>/g' {} +
@@ -2192,7 +2225,7 @@ find . -maxdepth 2 -name build -type d
 
 ## To search all files who are not in .git directory
 
-find . ! -iwholename '_.git_' -type f
+find . ! -iwholename '*.git*' -type f
 
 ## To find all files that have the same node (hard link) as MY_FILE_HERE
 
@@ -2346,7 +2379,7 @@ find . -type f -exec chmod 644 {} \;
 [![@babel**](https://avatars.githubusercontent.com/u/9637642?s=40&v=4)](https://github.com/babel)[babel / babel](https://github.com/babel/babel)@babel/core
 `7.12.3`
 
-↞↠ Search Website: [search](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) ↞↠ [Backup Repo Deploy](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) ↞↠ [Github pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/)
+[Cloudfare-Backup](https://bgoonz-blog-2-0.pages.dev/) ↞↠ Search Website: [search](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) ↞↠ [Backup Repo Deploy](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) ↞↠ [Github pages](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) ↞↠ [Go To Site Wiki](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
 
 </details>
 
@@ -2590,10 +2623,7 @@ find . -type f -exec chmod 644 {} \;
 
 ## SITEMAP
 
-docky ./../src/components/pages/**/*.md \ # specify the components to parse
-  --watch "./../src/components/**/*.js","./README.md" \ # watch files
-  --ignore "src/components/**/index.js" \ # ignored files
-  --use-readme=true
+[**🌍⇒https://bgoonz-blog.netlify.app/🗺️**](https://bgoonz-blog.netlify.app/)
 
 [**🌍⇒blog🗺️**](https://bgoonz-blog.netlify.app/blog)
 
@@ -4054,8 +4084,6 @@ export default class ActionLink extends React.Component {
 ```
 
 ---
-,
-
 ### Table of Contents
 
 -   [getPage][1]

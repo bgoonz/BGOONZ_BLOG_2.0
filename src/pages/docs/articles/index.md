@@ -3,21 +3,23 @@ title: Articles
 weight: 0
 excerpt: my web development articles
 seo:
-    title: ''
-    description: This section is similar to a blog but is more technical in nature
-        and time invariant with regard to content.
-    robots: []
-    extra: []
-    type: stackbit_page_meta
+  title: ''
+  description: >-
+    This section is similar to a blog but is more technical in nature and time
+    invariant with regard to content.
+  robots: []
+  extra: []
+  type: stackbit_page_meta
 template: docs
 ---
 
 ## Articles
 
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://codesandbox.io/embed/medium-articles-vdxzf?autoresize=1&fontsize=18&hidenavigation=1&theme=light&view=preview"
-     style="width:1200px; height:800px; border:0; border-radius: 4px; "
+
+<iframe src="https://codesandbox.io/embed/boring-antonelli-vdxzf?fontsize=14&hidenavigation=1&theme=dark&view=preview"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="medium-articles"
-     allow="allow-presentation allow-same-origin allow-scripts"
-   >
-</iframe>
-<br>
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
+

@@ -11,7 +11,6 @@ seo:
 template: docs
 ---
 
-
 # await
 
 The `await` operator is used to wait for a [`Promise`](../global_objects/promise). It can only be used inside an [`async function`](../statements/async_function) within regular JavaScript code; however it can be used on its own with [JavaScript modules.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)

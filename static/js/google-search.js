@@ -1,8 +1,9 @@
 (function(opts_) {
     /*
-    Copyright The Closure Library Authors.
-    SPDX-License-Identifier: Apache-2.0
-   */
+
+      Copyright The Closure Library Authors.
+      SPDX-License-Identifier: Apache-2.0
+     */
     var g = this || self,
         k = function(a, b) {
             function d() {}
@@ -18,6 +19,7 @@
         l = function(a) {
             return a;
         };
+
     function m(a) {
         if (Error.captureStackTrace) Error.captureStackTrace(this, m);
         else {
@@ -152,12 +154,15 @@
                 }, !0) :
                 b && b());
     };
+
     function ca(a) {
         return 'function' === typeof a ? a : 'string' === typeof a && 'function' === typeof window[a] ? window[a] : null;
     }
+
     function M() {
         return !(window.__gcse && window.__gcse.plainStyle);
     }
+
     function N(a) {
         var b = document.createElement('link');
         b.type = 'text/css';
@@ -206,23 +211,19 @@
         return b;
     }
     var O,
-        G = opts_.usqp ?
-        {
+        G = opts_.usqp ? {
             usqp: opts_.usqp
-        } :
-        {},
+        } : {},
         P = opts_.language.toLowerCase();
-    O = opts_.cselibVersion ?
-        J({
-            versionDir: opts_.cselibVersion,
-            versionSlash: L,
-            lang: P
-        }) :
-        J({
-            versionDir: '',
-            versionSlash: '',
-            lang: P
-        });
+    O = opts_.cselibVersion ? J({
+        versionDir: opts_.cselibVersion,
+        versionSlash: L,
+        lang: P
+    }) : J({
+        versionDir: '',
+        versionSlash: '',
+        lang: P
+    });
     var Q = window.__gcse.scb,
         R = document.createElement('script');
     R.src = A(O);
@@ -235,23 +236,25 @@
     Q && (R.onload = Q);
     document.getElementsByTagName('head')[0].appendChild(R);
     if (M()) {
-        document.getElementsByTagName('head')[0].appendChild(
-            N(
-                opts_.cselibVersion ?
-                E(K, {
-                    versionDir: opts_.cselibVersion,
-                    versionSlash: L,
-                    experiment: '',
-                    lang: opts_.language
-                }) :
-                E(K, {
-                    versionDir: '',
-                    versionSlash: '',
-                    experiment: '',
-                    lang: opts_.language
-                })
-            )
-        );
+        document
+            .getElementsByTagName('head')[0]
+            .appendChild(
+                N(
+                    opts_.cselibVersion ?
+                    E(K, {
+                        versionDir: opts_.cselibVersion,
+                        versionSlash: L,
+                        experiment: '',
+                        lang: opts_.language
+                    }) :
+                    E(K, {
+                        versionDir: '',
+                        versionSlash: '',
+                        experiment: '',
+                        lang: opts_.language
+                    })
+                )
+            );
         var W,
             X = opts_.uiOptions.cssThemeVersion || 2,
             Y = opts_.theme.toLowerCase(),

@@ -10,7 +10,6 @@ seo:
 template: docs
 ---
 
-
 ## JS Fat Arrow Functions
 
 Classical JavaScript function syntax doesn't provide for any flexibility, be that a 1 statement function or an unfortunate multi-page function. Every time you need a function you have to type out the dreaded `function () {}`. More concise function syntax was one of the many reasons why [CoffeeScript](http://coffeescript.org/) gained so much momentum back in the day. This is especially pronounced in the case of tiny callback functions. Lets look at a Promise chain:
@@ -181,5 +180,5 @@ Fat arrow functions can't be used as generators. That's it -- no exceptions, no 
 
 Fat arrow functions are one of my favorite additions to JavaScript. It might be very tempting to just start using `=>` instead of `function` everywhere. I've seen whole libraries written just using `=>` and I don't think it's the right thing to do because of the special features that `=>` introduces. I recommend using arrow functions only in places where you explicitly want to use the new features:
 
-- Single statement functions that immediately return (lambdas)
-- Functions that need to work with parent scope `this`
+-   Single statement functions that immediately return (lambdas)
+-   Functions that need to work with parent scope `this`

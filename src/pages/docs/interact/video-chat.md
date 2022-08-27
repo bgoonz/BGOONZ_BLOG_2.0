@@ -35,10 +35,8 @@ template: docs
 
 # Zumzi Video Conference:
 
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    class="block-content" width="100%  width="1000px" height="1400px"
-        src="https://zumzi-chat-messenger.vercel.app/web/login.html">
-</iframe>
-<br>
+<iframe class="block-content" width="100%  width="1000px" height="1400px"
+        src="https://zumzi-chat-messenger.vercel.app/web/login.html"></iframe>
 
 ## Zumzi Live Demo
 
@@ -119,8 +117,7 @@ There are two sub-folders:
 
 ---
 
-![zzumzi](https://github.com/bgoonz/zumzi-chat-messenger/blob/master/zumzi.png?raw=true)
-
+![zzumzi](https://github.com/bgoonz/zumzi-chat-messenger/blob/master/zumzi.PNG?raw=true)
 ```
 [.](.)<br>
 ├── [./backend](./backend)
@@ -216,7 +213,7 @@ There are two sub-folders:
 │ └── [./web/vendor](./web/vendor)
 │ ├── [./web/vendor/bootstrap.min.css](./web/vendor/bootstrap.min.css)
 │ └── [./web/vendor/bootstrap.min.js](./web/vendor/bootstrap.min.js)<br>
-└── [./zumzi-video-chat.png](./zumzi-video-chat.png)<br>
+└── [./zumzi-video-chat.PNG](./zumzi-video-chat.PNG)<br>
 ```
 
 ## Messenger
@@ -229,8 +226,7 @@ Refer to the [Get-Started Guide](https://mesibo.com/documentation/tutorials/get-
 
 To open messenger demo launch `messenger.html`
 
-```js
-//
+```javascript
 const MESIBO_ACCESS_TOKEN = 'xxxxxxx';
 const MESIBO_APP_ID = 'xxxx';
 const MESIBO_API_URL = 'https://app.mesibo.com/api.php';
@@ -281,8 +277,7 @@ You can provide a list of local contacts that will be loaded as a list of availa
 
 To launch popup demo you can configure the following for setting the displayed user avatar and destination user(to which all messages will be sent) in `config.js` and launch `popup.html`
 
-```js
-//
+```javascript
 const POPUP_DISPLAY_NAME = 'xxxx';
 const POPUP_DISPLAY_PICTURE = 'images/profile/default-profile-icon.jpg';
 const POPUP_DESTINATION_USER = 'xxxx';
@@ -318,8 +313,7 @@ Ensure that you perform a hard reload so that you have the latest Mesibo Javascr
 
 The easiest way to install Mesibo Javascript SDK is to include following in `<HEAD>` section of your HTML file:
 
-    <script type="text/javascript" src="https://api.mesibo.com/mesibo.js">
-</script>
+    <script type="text/javascript" src="https://api.mesibo.com/mesibo.js"></script>
 
 You can also use `async` and `defer` attributes inside `script` tag if requires.
 
