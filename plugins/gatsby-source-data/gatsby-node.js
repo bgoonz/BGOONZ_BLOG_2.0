@@ -1,20 +1,24 @@
-const path = require('path');
-const yaml = require('js-yaml');
-const fse = require('fs-extra');
-const chokidar = require('chokidar');
-const _ = require('lodash');
+const path = require("path");
+const yaml = require("js-yaml");
+const fse = require("fs-extra");
+const chokidar = require("chokidar");
+const _ = require("lodash");
 
-const metadataFileName = `site-metadata.json`;
+const metadataFileName = "site-metadata.json";
+
 const parsers = {
-    yaml: (data) => yaml.safeLoad(data, {schema: yaml.JSON_SCHEMA}),
-    json: (data) => JSON.parse(data)
+  yaml: (data) => yaml.safeLoad(data, { schema: yaml.JSON_SCHEMA }),
+  json: (data) => JSON.parse(data),
 };
+
 const supportedExtensions = {
-    'yaml': parsers.yaml,
-    'yml': parsers.yaml,
-    'json': parsers.json
+  yaml: parsers.yaml,
+  yml: parsers.yaml,
+  json: parsers.json,
 };
+
 exports.sourceNodes = (props, pluginOptions = {}) => {
+
     const createContentDigest = props.createContentDigest;
     const { createNode } = props.actions;
     const reporter = props.reporter;
@@ -35,51 +39,76 @@ exports.sourceNodes = (props, pluginOptions = {}) => {
     watcher.on('change', createSiteDataFromFilesPartial);
     watcher.on('unlink', createSiteDataFromFilesPartial);
     return createSiteDataFromFiles({ dataPath, createNode, createContentDigest, reporter }, null);
+
 };
-async function createSiteDataFromFiles({ dataPath, createNode, createContentDigest, reporter }, changedFile) {
-    reporter.info(`[gatsby-source-data] create site data from files, updated path: ${changedFile}`);
-    let dataFiles = [];
-    const dataPathExists = await fse.pathExists(dataPath);
-    if (dataPathExists) {
-        dataFiles = await readDirRecursively(dataPath);
-    }
-    const metadataPath = path.resolve(metadataFileName);
-    const metadataExists = await fse.pathExists(metadataPath);
-    if (metadataExists) {
-        dataFiles.push(metadataFileName);
-    }
-    const sortedDataFiles = dataFiles.slice().sort();
-    const data = await convertDataFilesToJSON(sortedDataFiles, dataPath, reporter);
-    createNode({
-        id: 'SiteData',
-        parent: null,
-        children: [],
-        data: data,
-        internal: {
-            type: 'SiteData',
-            contentDigest: createContentDigest(JSON.stringify(data)),
-            description: `Site data from ${path.relative(process.cwd(), dataPath)}`
-        }
-    });
+
+async function createSiteDataFromFiles(
+  { dataPath, createNode, createContentDigest, reporter },
+  changedFile
+) {
+  reporter.info(
+    `[gatsby-source-data] create site data from files, updated path: ${changedFile}`
+  );
+  let dataFiles = [];
+
+  const dataPathExists = await fse.pathExists(dataPath);
+  if (dataPathExists) {
+    dataFiles = await readDirRecursively(dataPath);
+  }
+
+  const metadataPath = path.resolve(metadataFileName);
+  const metadataExists = await fse.pathExists(metadataPath);
+  if (metadataExists) {
+    dataFiles.push(metadataFileName);
+  }
+
+  /* Sorting the dataFiles array. */
+  const sortedDataFiles = dataFiles.slice().sort();
+  const data = await convertDataFilesToJSON(
+    sortedDataFiles,
+    dataPath,
+    reporter
+  );
+
+  createNode({
+    id: "SiteData",
+    parent: null,
+    children: [],
+    data: data,
+    internal: {
+      type: "SiteData",
+      contentDigest: createContentDigest(JSON.stringify(data)),
+      description: `Site data from ${path.relative(process.cwd(), dataPath)}`,
+    },
+  });
 }
+
+/**
+ * It takes a directory and returns a list of all files in that directory and all subdirectories
+ * @param dir - The directory to read
+ * @param options - {
+ * @returns An array of file paths relative to the root directory.
+ */
 async function readDirRecursively(dir, options) {
-    const rootDir = _.get(options, 'rootDir', dir);
-    const files = await fse.readdir(dir);
-    const promises = _.map(files, async file => {
-        const filePath = path.join(dir, file);
-        const stats = await fse.stat(filePath);
-        if (stats.isDirectory()) {
-            return readDirRecursively(filePath, {rootDir});
-        } else if (stats.isFile()) {
-            return path.relative(rootDir, filePath);
-        } else {
-            return null;
-        }
-    });
-    const recFiles = await Promise.all(promises);
-    return _.chain(recFiles).compact().flatten().value();
+  const rootDir = _.get(options, "rootDir", dir);
+  const files = await fse.readdir(dir);
+  const promises = _.map(files, async (file) => {
+    const filePath = path.join(dir, file);
+    const stats = await fse.stat(filePath);
+    if (stats.isDirectory()) {
+      return readDirRecursively(filePath, { rootDir });
+    } else if (stats.isFile()) {
+      return path.relative(rootDir, filePath);
+    } else {
+      return null;
+    }
+  });
+  const recFiles = await Promise.all(promises);
+  return _.chain(recFiles).compact().flatten().value();
 }
+
 function convertDataFilesToJSON(dataFiles, dataDirPath, reporter) {
+
     let promises = _.map(dataFiles, filePath => {
         const pathObject = path.parse(filePath);
         const absFilePath = pathObject.base === metadataFileName ? metadataFileName : path.join(dataDirPath, filePath);
@@ -103,5 +132,10 @@ function convertDataFilesToJSON(dataFiles, dataDirPath, reporter) {
     });
     return Promise.all(promises).then(results => {
         return _.reduce(results, (data, res) => _.merge(data, res), {});
+
     });
+  });
+  return Promise.all(promises).then((results) => {
+    return _.reduce(results, (data, res) => _.merge(data, res), {});
+  });
 }

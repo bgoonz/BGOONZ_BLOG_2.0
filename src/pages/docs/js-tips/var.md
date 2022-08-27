@@ -11,6 +11,7 @@ seo:
 template: docs
 ---
 
+
 # var
 
 The `var` declares a function-scoped or globally-scoped variable, optionally initializing it to a value.

@@ -12,16 +12,21 @@ template: docs
 
 # A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting Algorithms by Example
 
-![](https://cdn-images-1.medium.com/max/800/0*yjlSk3T9c2_14in1.png)
 
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    frameborder="0" width="100%" height="500px" src="https://replit.com/@bgoonz/Medium-article-comp-complex?lite=true"></iframe>
+![image](https://cdn-images-1.medium.com/max/800/0*yjlSk3T9c2_14in1.png)
+
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    frameborder="0" width="100%" height="500px" src="https://replit.com/@bgoonz/Medium-article-comp-complex?lite=true">
+</iframe>
+<br>
 
 -   Why is looking at runtime not a reliable method of calculating time complexity?
 -   Not all computers are made equal( some may be stronger and therefore boost our runtime speed )
 -   How many background processes ran concurrently with our program that was being tested?
 -   We also need to ask if our code remains performant if we increase the size of the input.
 -   The real question we need to answering is: `How does our performance scale?`.
-<iframe sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/bgoonz/embed/preview/RwKYRoo?height=600&amp;slug-hash=RwKYRoo&amp;default-tabs=js,result&amp;host=https://codepen.io" width="100%" height="500px"  frameborder="0" scrolling="no"></iframe>
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://codepen.io/bgoonz/embed/preview/RwKYRoo?height=600&amp;slug-hash=RwKYRoo&amp;default-tabs=js,result&amp;host=https://codepen.io" width="100%" height="500px"  frameborder="0" scrolling="no">
+</iframe>
+<br>
 
 ### big 'O' notation
 
@@ -43,7 +48,8 @@ template: docs
 
 `Putting it all together`
 
-![](https://cdn-images-1.medium.com/max/800/1*TT8uuv1x3nmGUw5rvtoZ8A.png)
+
+![image](https://cdn-images-1.medium.com/max/800/1*TT8uuv1x3nmGUw5rvtoZ8A.png)
 
 -   First we apply the product rule to drop all constants.
 -   Then we apply the sum rule to select the single most dominant term.
@@ -56,7 +62,8 @@ Common Complexity Classes
 
 #### There are 7 major classes in Time Complexity
 
-![](https://cdn-images-1.medium.com/max/800/1*6zKhmJoHkvDbrd8jfUDf3A.png)
+
+![image](https://cdn-images-1.medium.com/max/800/1*6zKhmJoHkvDbrd8jfUDf3A.png)
 
 #### `O(1) Constant`
 
@@ -67,6 +74,7 @@ Common Complexity Classes
 > **In most cases our hidden base of Logarithmic time is 2, log complexity algorithm's will typically display 'halving' the size of the input (like binary search!)**
 
 ```js
+//
 // O(log(n))
 function logarithmic1(n) {
     if (n <= 1) return;
@@ -89,6 +97,7 @@ function logarithmic2(n) {
 > **Linear algorithm's will access each item of the input "once".**
 
 ```js
+//
 // O(n)
 function linear1(n) {
     for (let i = 1; i <= n; i++) {
@@ -119,6 +128,7 @@ function linear3(n) {
 > Algorithm's that are log-linear will use** both recursion AND iteration.**
 
 ```js
+//
 // O(n * log(n))
 function loglinear(n) {
     if (n <= 1) return;
@@ -140,6 +150,7 @@ function loglinear(n) {
 > `
 
 ```js
+//
 // O(n^2)
 function quadratic(n) {
     for (let i = 1; i <= n; i++) {
@@ -166,6 +177,7 @@ function cubic(n) {
 > **Algorithm's with exponential time are VERY SLOW.**
 
 ```js
+//
 // O(2^n)
 function exponential2n(n) {
     if (n === 1) return;
@@ -195,9 +207,11 @@ function exponential3n(n) {
 1.  FUNCTION MUST BE RECURSIVE.
 2.  Our additional Data Structure is usually an object (we refer to it as our memo... or sometimes cache!)
 
-![](https://cdn-images-1.medium.com/max/800/1*4U79jBMjU2wKE_tyYcD_3A.png)
 
-![](https://cdn-images-1.medium.com/max/800/1*Qh42KZgcCxmVt6WrTasCVw.png)
+![image](https://cdn-images-1.medium.com/max/800/1*4U79jBMjU2wKE_tyYcD_3A.png)
+
+
+![image](https://cdn-images-1.medium.com/max/800/1*Qh42KZgcCxmVt6WrTasCVw.png)
 
 ### Memoizing Factorial
 
@@ -207,7 +221,8 @@ Our memo object is _mapping_ out our arguments of factorial to it's return value
 
 ### Memoizing Fibonacci
 
-![](https://cdn-images-1.medium.com/max/800/0*2XaPj7UGKZYFjYhb)
+
+![image](https://cdn-images-1.medium.com/max/800/0*2XaPj7UGKZYFjYhb)
 
 -   Our time complexity for Fibonacci goes from O(2^n) to O(n) after applying memoization.
 
@@ -227,10 +242,8 @@ Our memo object is _mapping_ out our arguments of factorial to it's return value
 
 ---
 
-
 ```js
-
-
+//
 function fastFib(n, memo = {}) {
     if (n in memo) return memo[n];
     if (n === 1 || n === 2) return 1;
@@ -255,6 +268,7 @@ fastFib(50); // => 12586269025 |
 -   _The accompanying DS is usually an array._
 
 ```js
+//
    function fib(n) {
    let mostRecentCalcs = [0, 1];
    if (n === 0) return mostRecentCalcs[0];
@@ -290,6 +304,7 @@ function fibonacci(n) {\
 > _Memoization Fibonacci 1_
 
 ```js
+//
    function fibMemo(n, memo = { 0: 0, 1: 1 }) {
    if (n in memo) return memo[n];
    memo[n] = fibMemo(n - 1) + fibMemo(n - 2);
@@ -303,6 +318,7 @@ function fibonacci(n) {\
 > _Memoization Fibonacci 2_
 
 ```js
+//
    function fib(n, memo) {
    memo = memo || {};
    if (memo[n]) return memo[n];
@@ -317,6 +333,7 @@ function fibonacci(n) {\
 > _Tabulated Fibonacci_
 
 ```js
+//
    function tabFib(n) {
    let table = new Array(n);
    table[0] = 0;
@@ -336,6 +353,7 @@ function fibonacci(n) {\
 ### Example of Linear Search
 
 ```js
+//
    function search(array, term) {
    for (let i = 0; i < array.length; i++) {
    if (array[i] === term) {
@@ -366,9 +384,11 @@ function fibonacci(n) {\
 
 -   Bubble Sort will always use the same amount of memory regardless of n.
 
-![](https://cdn-images-1.medium.com/max/800/0*Ck9aeGY-d5tbz7dT)
+
+![image](https://cdn-images-1.medium.com/max/800/0*Ck9aeGY-d5tbz7dT)
 
 ```js
+//
    function swap(array, idx1, idx2) {
    [array[idx1], array[idx2]] = [array[idx2], array[idx1]];
    }
@@ -418,6 +438,7 @@ function fibonacci(n) {\
 -   _Bubble sort, sorts an array of integers by bubbling the largest integer to the top._
 
 ```js
+//
    // Bubble Sort
    function bubble(array) {
    let sorted = true;
@@ -442,6 +463,7 @@ function fibonacci(n) {\
 [view raw](https://gist.github.com/eengineergz/fd4acc0c89033bd219ebf9d3ec40b053/raw/14b00dabe615cdfaf39dce21b99edf038c345d94/bub.js)[bub.js ](https://gist.github.com/eengineergz/fd4acc0c89033bd219ebf9d3ec40b053#file-bub-js)hosted with ❤ by [GitHub](https://github.com/)
 
 ```js
+//
    function bubbleSort(items) {
    let length = items.length;
    for (let i = 0; i < length; i++) {
@@ -472,9 +494,11 @@ function fibonacci(n) {\
 
 -   Selection Sort will always use the same amount of memory regardless of n.
 
-![](https://cdn-images-1.medium.com/max/800/0*AByxtBjFrPVVYmyu)
+
+![image](https://cdn-images-1.medium.com/max/800/0*AByxtBjFrPVVYmyu)
 
 ```js
+//
    function swap(array, idx1, idx2) {
    [array[idx1], array[idx2]] = [array[idx2], array[idx2]];
    }
@@ -515,7 +539,8 @@ function fibonacci(n) {\
 
 -   Selection sort organizes the smallest elements to the start of the array.
 
-![](https://cdn-images-1.medium.com/max/800/0*GeYNxlRcbt2cf0rY)
+
+![image](https://cdn-images-1.medium.com/max/800/0*GeYNxlRcbt2cf0rY)
 
 > Summary of how Selection Sort should work:
 
@@ -526,6 +551,7 @@ function fibonacci(n) {\
 5.  _Repeat until list is sorted._
 
 ```js
+//
    let selectionSort = (arr) => {
    let len = arr.length;
    for (let i = 0; i < len; i++) {
@@ -558,9 +584,11 @@ function fibonacci(n) {\
 
 -   Because we are creating a subArray for each element in the original input, our Space Comlexity becomes linear.
 
-![](https://cdn-images-1.medium.com/max/800/0*gbNU6wrszGPrfAZG)
+
+![image](https://cdn-images-1.medium.com/max/800/0*gbNU6wrszGPrfAZG)
 
 ```js
+//
    function insertionSort(array) {
    for (let i = 1; i < array.length; i++) {
    let value = list[i];
@@ -598,13 +626,16 @@ function fibonacci(n) {\
 -   Since our array gets split in half every single time we contribute O(log(n)). The while loop contained in our helper merge function contributes O(n) therefore our time complexity is O(nlog(n)); `Space Complexity`: O(n)
 -   We are linear O(n) time because we are creating subArrays.
 
-![](https://cdn-images-1.medium.com/max/800/0*GeU8YwwCoK8GiSTD)
 
-![](https://cdn-images-1.medium.com/max/800/0*IxqGb72XDVDeeiMl)
+![image](https://cdn-images-1.medium.com/max/800/0*GeU8YwwCoK8GiSTD)
+
+
+![image](https://cdn-images-1.medium.com/max/800/0*IxqGb72XDVDeeiMl)
 
 ### Example of Merge Sort
 
 ```js
+//
    function merge(leftArray, rightArray) {
    const sorted = [];
    while (letArray.length > 0 && rightArray.length > 0) {
@@ -646,6 +677,7 @@ function fibonacci(n) {\
 [view raw](https://gist.github.com/eengineergz/18fbb7edc9f5c4820ccfcecacf3c5e48/raw/9e9157edcd1c4c2a795666eeff038bac405a9ff6/mergesort.js)[mergesort.js ](https://gist.github.com/eengineergz/18fbb7edc9f5c4820ccfcecacf3c5e48#file-mergesort-js)hosted with ❤ by [GitHub](https://github.com/)
 
 ```js
+//
    function merge(arr1, arr2) {
    let result = [];
    while (arr1.length && arr2.length) {
@@ -669,7 +701,8 @@ function fibonacci(n) {\
 
 [view raw](https://gist.github.com/eengineergz/cbb533137a7f957d3bc4077395c1ff64/raw/8e1b1d82bcc6ef7a8350632740ad1bf38e660ec4/merge2.js)[merge2.js ](https://gist.github.com/eengineergz/cbb533137a7f957d3bc4077395c1ff64#file-merge2-js)hosted with ❤ by [GitHub](https://github.com/)
 
-![](https://cdn-images-1.medium.com/max/800/0*HMCR--9niDt5zY6M)
+
+![image](https://cdn-images-1.medium.com/max/800/0*HMCR--9niDt5zY6M)
 
 -   **Merge sort is O(nlog(n)) time.**
 -   _We need a function for merging and a function for sorting._
@@ -694,11 +727,14 @@ function fibonacci(n) {\
 -   It is easy to sort elements of an array relative to a particular target value.
 -   An array of 0 or 1 elements is already trivially sorted.
 
-![](https://cdn-images-1.medium.com/max/800/0*WLl_HpdBGXYx284T)
 
-![](https://cdn-images-1.medium.com/max/800/0*-LyHJXGPTYsWLDZf)
+![image](https://cdn-images-1.medium.com/max/800/0*WLl_HpdBGXYx284T)
+
+
+![image](https://cdn-images-1.medium.com/max/800/0*-LyHJXGPTYsWLDZf)
 
 ```js
+//
    function quickSort(array) {
    if (array.length <= 1) return array;
    let pivot = array.shift();
@@ -719,11 +755,13 @@ function fibonacci(n) {\
 
 `Space Complexity`: O(1)
 
-![](https://cdn-images-1.medium.com/max/800/0*-naVYGTXzE2Yoali)
+
+![image](https://cdn-images-1.medium.com/max/800/0*-naVYGTXzE2Yoali)
 
 > _Recursive Solution_
 
 ```js
+//
    function binarySearch(array, target) {
    if (array.length === 0) return false;
    let midPt = Math.floor(array.length / 2);
@@ -743,6 +781,7 @@ function fibonacci(n) {\
 > _Min Max Solution_
 
 ```js
+//
    function binarySearch(array, target) {
    let start = 0;
    let end = array.length - 1;
@@ -766,6 +805,7 @@ function fibonacci(n) {\
 [view raw](https://gist.github.com/eengineergz/eb8d1e1684db15cc2c8af28e13f38751/raw/25f8dd3250bf27dff4215f23e5f693b4ab54ebb7/minmaxbinsearch.js)[minmaxbinsearch.js ](https://gist.github.com/eengineergz/eb8d1e1684db15cc2c8af28e13f38751#file-minmaxbinsearch-js)hosted with ❤ by [GitHub](https://github.com/)
 
 ```js
+//
    function binarySearch(arr, x, start, end) {
    if (start > end) return false;
    let mid = Math.floor((start + end) / 2);
@@ -799,6 +839,7 @@ function fibonacci(n) {\
 6.  _Repeat until list is sorted._
 
 ```js
+//
    let insertionSort = (inputArr) => {
    let length = inputArr.length;
    for (let i = 1; i < length; i++) {
@@ -830,9 +871,11 @@ function fibonacci(n) {\
 [**Web-Dev-Hub**\
 *Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of...*bgoonz-blog.netlify.app](https://bgoonz-blog.netlify.app/ 'https://bgoonz-blog.netlify.app/')[](https://bgoonz-blog.netlify.app/)
 
-![](https://cdn-images-1.medium.com/max/800/1*VCmj_H9AHs41oC9Yx1hZFQ.png)
+
+![image](https://cdn-images-1.medium.com/max/800/1*VCmj_H9AHs41oC9Yx1hZFQ.png)
 
 ```js
+//
 /**************************************BIG-O***********************************/
 /***********************Common Algorithms for Analysis********************/
 //mdn Object;
@@ -1378,6 +1421,7 @@ console.log(fibTab(50)); //12586269025 |
 <summary> Big O Examples In JavaScript  </summary>
 
 ```js
+//
 /**************************************BIG-O***********************************/
 /***********************Common Algorithms for Analysis********************/
 //mdn Object;

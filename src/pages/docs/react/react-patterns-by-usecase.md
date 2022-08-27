@@ -10,6 +10,7 @@ seo:
 template: docs
 ---
 
+
 ## Wrapping/Mirroring
 
 ### Wrapping/Mirroring a HTML Element
@@ -548,7 +549,9 @@ function RouterLink(props: LinkProps | AnchorProps) {
 ```
 
 <details>
-  <summary><b>Approach: Generic Components</b></summary>
+  <summary>
+<b>Approach: Generic Components</b>
+</summary>
 
 Here is an example solution, see the further discussion for other solutions. _thanks to [@jpavon](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet/issues/12#issuecomment-394440577)_
 
@@ -575,7 +578,9 @@ const Link = <T extends {}>(props: LinkProps & T extends RouterLinkProps ? Route
 </details>
 
 <details>
-  <summary><b>Approach: Composition</b></summary>
+  <summary>
+<b>Approach: Composition</b>
+</summary>
 
 If you want to conditionally render a component, sometimes is better to use [React's composition model](https://reactjs.org/docs/composition-vs-inheritance.html) to have simpler components and better to understand typings:
 
@@ -663,7 +668,8 @@ The above example does not work as we are not checking the value of `event.value
 <details>
   <summary>
   Discriminated Unions in TypeScript can also work with hook dependencies in React. The type matched is automatically updated when the corresponding union member based on which a hook depends, changes. Expand more to see an example usecase.
-   <br/><br/>
+   <br/>
+<br/>
   </summary>
 
 ```tsx
@@ -698,7 +704,8 @@ function App() {
 }
 ```
 
-<a href="https://www.typescriptlang.org/play?#code/JYWwDg9gTgLgBAKjgQwM5wEoFNkGN4BmUEIcA5FDvmQNwBQdMAnmFnAArFjoC8dccAD5wA3vwETgqAIJQoyJgC44MKAFcs9CRIBuyADYblqVcAB2AcwDaAXRpxxAgL7jhY7QKmz5SuAQOomo66BkZwJlDmFloSTvS4EGYmcAAacDxwABRgypwQ3ACU6QB8ouKUMGpQZphUMAB0aoEAslggEJnBmUU8pZ0ecAA8ACbAOsXB2nqGWJmoBYqTEiJg9V5yCnAAZFtwq9Ma9QBWEOaZZAA0ZAUuAwIiAISr6z7bu-uhWLcegwD0o+NggULsErM8ZBsmBc9vUDlgbNDfr84AAVFhYVC4SJgeDINQwEjIGDAXAGfRMOAgIm4AAWGJUdLgCTkGMgZlGljgcJU6PEBXocToBDUZnwwEScGkYDA3TKAgqVRq-QkIzGTP0aFQADlkCAsDwAERSsAGiYDQZpF4KHgifz6QJOLmfG1kAgQCBkR2-M0-S0Qnw21QaR1wm1WV3uy7kABGyCgUbIsYAXmQbF6fQI-gCffy6E4gA"><i>See this in TS Playground</i>
+<a href="https://www.typescriptlang.org/play?#code/JYWwDg9gTgLgBAKjgQwM5wEoFNkGN4BmUEIcA5FDvmQNwBQdMAnmFnAArFjoC8dccAD5wA3vwETgqAIJQoyJgC44MKAFcs9CRIBuyADYblqVcAB2AcwDaAXRpxxAgL7jhY7QKmz5SuAQOomo66BkZwJlDmFloSTvS4EGYmcAAacDxwABRgypwQ3ACU6QB8ouKUMGpQZphUMAB0aoEAslggEJnBmUU8pZ0ecAA8ACbAOsXB2nqGWJmoBYqTEiJg9V5yCnAAZFtwq9Ma9QBWEOaZZAA0ZAUuAwIiAISr6z7bu-uhWLcegwD0o+NggULsErM8ZBsmBc9vUDlgbNDfr84AAVFhYVC4SJgeDINQwEjIGDAXAGfRMOAgIm4AAWGJUdLgCTkGMgZlGljgcJU6PEBXocToBDUZnwwEScGkYDA3TKAgqVRq-QkIzGTP0aFQADlkCAsDwAERSsAGiYDQZpF4KHgifz6QJOLmfG1kAgQCBkR2-M0-S0Qnw21QaR1wm1WV3uy7kABGyCgUbIsYAXmQbF6fQI-gCffy6E4gA">
+<i>See this in TS Playground</i>
 </a>
 
 In the above example, based on the `isArray` union member, the type of the `value` hook dependency changes.

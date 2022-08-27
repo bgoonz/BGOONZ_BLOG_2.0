@@ -11,6 +11,7 @@ seo:
 template: docs
 ---
 
+
 # index
 
 This appendix is a non-exhaustive list of new syntactic features and methods that were added to JavaScript in ES6. These features are the most commonly used and most helpful.

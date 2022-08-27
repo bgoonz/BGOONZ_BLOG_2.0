@@ -10,6 +10,7 @@ seo:
 template: docs
 ---
 
+
 Variables are declared with the `var` keyword. JavaScript is
 _dynamically typed_ so every variable can hold a value of any data type.
 
@@ -18,6 +19,7 @@ Variables can be declared without an initial value.
 Some example declarations:
 
 ```js
+//
 var foo;
 var bar = 42;
 var foo, bar, baz;
@@ -31,7 +33,8 @@ Variables that don't explicitly get assigned an initial value have the value
 
 <div class="callout secondary">
 
-<i class="fa fa-info-circle" aria-hidden="true"></i> **ES2015**
+<i class="fa fa-info-circle" aria-hidden="true">
+</i> **ES2015**
 
 Since ES2015, `let` and `const` can be used in addition to `var`. We will learn
 how they differ from `var` later. For now, lets have a look how `const` differs
@@ -40,6 +43,7 @@ Reassigning a value will either throw an error (in strict mode, see below) or
 is silently ignored:
 
 ```js
+//
 const foo = 42;
 foo = 21; // error or ignored
 ```
@@ -47,6 +51,7 @@ foo = 21; // error or ignored
 `const`s _must_ be initialized with a value:
 
 ```js
+//
 const foo; // error
 foo = 42;
 ```
@@ -65,6 +70,7 @@ result in a syntax error.
 Examples:
 
 ```js
+//
 var π = 3.141;
 var _foo = π;
 var 0_bar = '...'; // Syntax error
@@ -77,6 +83,7 @@ var 0_bar = '...'; // Syntax error
 Trying to _read_ an _undeclared variable_ results in a runtime error:
 
 ```js
+//
 var foo;
 console.log(bar); // ReferenceError: bar is not defined.
 ```
@@ -88,6 +95,7 @@ create an _implicit global variable_ and should thus be avoided:
 
 
 ```js
+//
 
 
 function foo() {
@@ -115,6 +123,7 @@ considered bad or confusing.
 Strict mode can be enabled for a JavaScript or a function by putting
 
 ```js
+//
 'use strict';
 ```
 
@@ -142,7 +151,8 @@ As we will see in the following slides, objects belong to different kinds of
 
 <div class="callout secondary">
 
-<i class="fa fa-info-circle" aria-hidden="true"></i> **ES2015**
+<i class="fa fa-info-circle" aria-hidden="true">
+</i> **ES2015**
 
 ES2015 introduces a 6th primitive data type: _[Symbol][]_. Symbols are _unique_
 and _immutable_ values.

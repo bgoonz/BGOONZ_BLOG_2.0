@@ -11,6 +11,7 @@ seo:
 template: docs
 ---
 
+
 # this
 
 A `this` behaves a little differently in JavaScript compared to other languages. It also has some differences between [strict mode](../strict_mode) and non-strict mode.

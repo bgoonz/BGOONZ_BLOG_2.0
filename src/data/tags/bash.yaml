@@ -1,0 +1,28 @@
+id: "Bash "
+title: Bash
+description: >-
+  <!--StartFragment-->
+
+
+  When a computer boots up, a kernel (whether it's Linux, BSD, Mach, or NT) recognizes all the physical hardware and enables each component to talk with one another and be orchestrated by some basic software. A computer's most basic set of instructions simply keeps it powered on and in a safe state: activating fans periodically to prevent overheating, using subsystems to monitor disk space or "listen" for newly attached devices, and so on. If this was all computers did, they'd be about as interesting as a convection oven.
+
+
+  Computer scientists recognized this early on, so [they developed](https://opensource.com/19/9/command-line-heroes-bash) a *shell* for Unix computers that operates outside of the kernel (or *around* the kernel, like a shell in nature) and allows humans to interact with the computer whenever they want to. It was an exciting development at a time when people were feeding punchcards into computers to tell them what to do. Of all the shells available, Bash is one of the most popular, the most powerful, and the most friendly.
+
+
+  ## Bash is an application
+
+
+  When you start a terminal (such as the [GNOME Terminal](https://gitlab.gnome.org/GNOME/gnome-terminal) or [Konsole](https://konsole.kde.org/) on Linux or [iTerm2](https://iterm2.com/) on macOS) running the Bash shell, you're greeted with a *prompt*. A prompt is a symbol, usually a dollar sign (**$**), indicating that the shell is waiting for your input. Of course, knowing what you're supposed to type is another matter entirely.
+
+
+  This probably comes across as unfriendly, but it's actually a perfectly succinct representation of the many connotations around the term "Bash." To many new users, there's no separation between the concept of Bash and the concept of Linux or Unix: it's the proverbial black-screen-with-green-text into which you're supposed to code what your computer does next. That conflates the Bash shell with the *commands* you type into the shell. It's important to understand that they're two separate things: Bash is just an application, and its primary job is to run *other* applications (in the form of commands) that are installed on the same system.
+
+
+  **[Download our free [Bash cheat sheet](https://opensource.com/downloads/bash-cheat-sheet)]**
+
+
+  You can learn Bash, but only in the context of learning the operating system that it's running on. Without knowing commands, there's not much you can do with Bash.
+
+
+  <!--EndFragment-->

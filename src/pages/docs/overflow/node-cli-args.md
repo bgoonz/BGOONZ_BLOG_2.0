@@ -15,6 +15,7 @@ seo:
 template: docs
 ---
 
+
 When you install a package using npm you can perform 2 types of installation:
 
 - a local install

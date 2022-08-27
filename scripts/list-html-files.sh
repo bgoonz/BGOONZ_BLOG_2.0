@@ -1,0 +1,1 @@
+find ./ | grep -i "\.html*$"

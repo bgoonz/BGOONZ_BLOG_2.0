@@ -1,0 +1,78 @@
+id: python
+title: python
+description: "Python is a [multi-paradigm programming
+  language](https://en.wikipedia.org/wiki/Multi-paradigm_programming_language
+  \"Multi-paradigm programming language\"). [Object-oriented
+  programming](https://en.wikipedia.org/wiki/Object-oriented_programming
+  \"Object-oriented programming\") and [structured
+  programming](https://en.wikipedia.org/wiki/Structured_programming \"Structured
+  programming\") are fully supported, and many of its features support
+  functional programming and [aspect-oriented
+  programming](https://en.wikipedia.org/wiki/Aspect-oriented_programming
+  \"Aspect-oriented programming\") (including by
+  [metaprogramming](https://en.wikipedia.org/wiki/Metaprogramming
+  \"Metaprogramming\")[meta](https://en.wikipedia.org/wiki/Python_(programming_\
+  language)#cite_note-AutoNT-13-59) and
+  [metaobjects](https://en.wikipedia.org/wiki/Metaobject \"Metaobject\")
+  \\[magic methods\\]
+  ).[\\[60\\]](https://en.wikipedia.org/wiki/Python_(programming_language)#cite\
+  _note-AutoNT-14-60) Many other paradigms are supported via extensions,
+  including [design by
+  contract](https://en.wikipedia.org/wiki/Design_by_contract \"Design by
+  contract\")[\\[61\\]](https://en.wikipedia.org/wiki/Python_(programming_langu\
+  age)#cite_note-AutoNT-15-61)[\\[62\\]](https://en.wikipedia.org/wiki/Python_(\
+  programming_language)#cite_note-AutoNT-16-62) and [logic
+  programming](https://en.wikipedia.org/wiki/Logic_programming \"Logic
+  programming\").[\\[63\\]](https://en.wikipedia.org/wiki/Python_(programming_l\
+  anguage)#cite_note-AutoNT-17-63)\r
+
+  \r
+
+  Python uses [dynamic typing](https://en.wikipedia.org/wiki/Dynamic_typing
+  \"Dynamic typing\"), and a combination of [reference
+  counting](https://en.wikipedia.org/wiki/Reference_counting \"Reference
+  counting\") and a cycle-detecting garbage collector for [memory
+  management](https://en.wikipedia.org/wiki/Memory_management \"Memory
+  management\").[\\[64\\]](https://en.wikipedia.org/wiki/Python_(programming_la\
+  nguage)#cite_note-Reference_counting-64) It uses dynamic [name
+  resolution](https://en.wikipedia.org/wiki/Name_resolution_(programming_langua\
+  ges) \"Name resolution (programming languages)\") ([late
+  binding](https://en.wikipedia.org/wiki/Late_binding \"Late binding\")), which
+  binds method and variable names during program execution.\r
+
+  \r
+
+  Its design offers some support for functional programming in the
+  [Lisp](https://en.wikipedia.org/wiki/Lisp_(programming_language) \"Lisp
+  (programming language)\") tradition. It has `filter`,`map`and`reduce`
+  functions; [list
+  comprehensions](https://en.wikipedia.org/wiki/List_comprehension \"List
+  comprehension\"),
+  [dictionaries](https://en.wikipedia.org/wiki/Associative_array \"Associative
+  array\"), sets, and
+  [generator](https://en.wikipedia.org/wiki/Generator_(computer_programming)
+  \"Generator (computer programming)\")
+  expressions.[\\[65\\]](https://en.wikipedia.org/wiki/Python_(programming_lang\
+  uage)#cite_note-AutoNT-59-65) The standard library has two modules
+  (`itertools` and `functools`) that implement functional tools borrowed from
+  [Haskell](https://en.wikipedia.org/wiki/Haskell_(programming_language)
+  \"Haskell (programming language)\") and [Standard
+  ML](https://en.wikipedia.org/wiki/Standard_ML \"Standard
+  ML\").[\\[66\\]](https://en.wikipedia.org/wiki/Python_(programming_language)#\
+  cite_note-AutoNT-18-66)\r
+
+  \r
+
+  Its core philosophy is \r
+
+  \r
+
+  -   Beautiful is better than ugly.\r
+
+  -   Explicit is better than implicit.\r
+
+  -   Simple is better than complex.\r
+
+  -   Complex is better than complicated.\r
+
+  -   Readability counts."

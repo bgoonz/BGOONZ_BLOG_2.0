@@ -1,14 +1,15 @@
 ---
 title: Insert Into Array
 weight: 0
-excerpt: Insert Into Array
+excerpt: We have some in-built methods to add at elements at the beginning and end of the array.
 seo:
-    title: ''
-    description: ''
+    title: 'Insert Into Array'
+    description: 'We have some in-built methods to add at elements at the beginning and end of the array.'
     robots: []
     extra: []
 template: docs
 ---
+
 
 ## Insert Into Array
 

@@ -3,12 +3,13 @@ title: New Developers
 weight: 0
 excerpt: lorem-ipsum
 seo:
-    title: ''
-    description: ''
+    title: 'An open letter to future developers'
+    description: 'Why are frameworks useful'
     robots: []
     extra: []
 template: docs
 ---
+
 
 ## 1\. Why are frameworks useful?
 
@@ -36,11 +37,12 @@ To recap, the use of these tools helps the developer get up and running quickly 
 
 Best of all, frontend frameworks resolve any issues with browser compatibility and are key to responsive web design, which we'll discuss further on.
 
-#### Curious about a career in Web Development?
+#### Curious about a careerin Web Development?
 
 Start learning for free!
 
-[![](https://careerfoundry.com/en/wp-content/uploads/2021/07/web-image@3x.jpg)](https://careerfoundry.com/en/short-courses/become-a-web-developer/?popup-tracking=blog-inline-DEV)
+[
+![image](https://careerfoundry.com/en/wp-content/uploads/2021/07/web-image@3x.jpg)](https://careerfoundry.com/en/short-courses/become-a-web-developer/?popup-tracking=blog-inline-DEV)
 
 ## 3\. Popular frameworks
 

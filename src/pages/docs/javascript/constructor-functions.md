@@ -11,12 +11,14 @@ seo:
 template: docs
 ---
 
+
 ## **Constructor Functions**
 
 **Defining a constructor function**
 _Example of an object using object initialiation_
 
 ```js
+//
 const fellowshipOfTheRing = {
     title: 'The Fellowship of the Ring',
     series: 'The Lord of the Rings',
@@ -39,6 +41,7 @@ const fellowshipOfTheRing = {
 
 
 ```js
+//
 
 
 function Book(title, series, author) {
@@ -56,6 +59,7 @@ function Book(title, series, author) {
 
 
 ```js
+//
 
 
 function Book(title, series, author) {
@@ -83,6 +87,7 @@ console.log(fellowshipOfTheRing); // Book { title: 'The Fellowship of the Ring',
 **Using the instanceof operator to check an object's type**
 
 ```js
+//
 console.log(fellowshipOfTheRing instanceof Book); // true
 ```
 
@@ -111,6 +116,7 @@ console.log(fellowshipOfTheRing instanceof Book); // true
 
 
 ```js
+//
 
 
 function Book(title, series, author) {
@@ -148,6 +154,7 @@ In ES2015, JS gained the **`class`** keyword - replacing the need to use only co
 **Defining a ES2015 class**
 
 ```js
+//
 class Book {
     constructor(title, series, author) {
         this.title = title;
@@ -178,6 +185,7 @@ class Book {
 **Class Definitions are NOT hoisted**
 
 ```js
+//
 test();
 
 function test() {
@@ -201,6 +209,7 @@ function test() {
     - Prepending the **`static`** keyword at the beginning on the method name will make it static.
 
 ```js
+//
 class Book {
     constructor(title, series, author) {
         this.title = title;
@@ -234,6 +243,7 @@ console.log(bookTitles.join(', ')); // The Fellowship of the Ring, The Two Tower
 
 
 ```js
+//
 
 
 function Book(title, series, author) {
@@ -282,6 +292,7 @@ console.log(bookTitles.join(', ')); // The Fellowship of the Ring, The Two Tower
 - **`Inheritance`** : The process of basing a class upon another class.
 
 ```js
+//
 class CatalogItem {
     constructor(title, series) {
         this.title = title;
@@ -322,6 +333,7 @@ console.log(Book instanceof Function); // true
 
 - A **`prototype chain`** defines a series of prototype objects that are delegated to one by one, when a property or method can't be found on an instance object.
     ```js
+//
     console.log(theGrapesOfWrath.getInformation()); // The Grapes of Wrath
     ```
     When the `getInformation()` method is invoked:
@@ -334,6 +346,7 @@ console.log(Book instanceof Function); // true
 - **`Method Overriding`** : when a child class provides an implementation of a method that's already defined in a parent class.
 
 ```js
+//
 class Movie extends CatalogItem {
     constructor(title, series, director) {
         super(title, series);
@@ -370,10 +383,12 @@ class Movie extends CatalogItem {
 *   **`Entry Point`** : JS File that is passed to Node for access to the entire application.
 *   Syntax for exporting modules:
     ```js
+//
     module.exports.Book = Book;
     module.exports.Movie = Movie;
     ```
     ```js
+//
     module.exports = {
         Book,
         Movie
@@ -382,10 +397,12 @@ class Movie extends CatalogItem {
 *   Syntax for importing modules:
 
     ```js
+//
     const classes = require('./classes');
     ```
 
     ```js
+//
     const { Book, Movie } = require('./classes');
     ```
 

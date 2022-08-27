@@ -11,6 +11,7 @@ seo:
 template: docs
 ---
 
+
 # Job Boards and The Hunt
 
 I can't imagine the kind of masochism it would take to enjoy the act of posting and daily maintenance on a job board…It's part of the…
@@ -21,8 +22,12 @@ I can't imagine the kind of masochism it would take to enjoy the act of posting 
 
 #### I can't imagine the kind of masochism it would take to enjoy the act of posting and daily maintenance on a job board…It's part of the process that you've already invested so much of yourself in, so you should take pride in it; do a good job the first time around and you'll get where your going in the blink of an eye!
 
-<a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>A list of all of my articles to link to future posts</strong><br />
-<em>You should probably skip this one… seriously it's just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+<a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b">
+<strong>A list of all of my articles to link to future posts</strong>
+<br />
+<em>You should probably skip this one… seriously it's just for internal use!</em>bryanguner.medium.com</a>
+<a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock">
+</a>
 
 ---
 
@@ -60,7 +65,9 @@ Don't wait for the company to reach out to you! Be proactive in showing your int
 ‍\***  
 \*You might be invited for another interview on short notice; review the description regularly so it doesn't slip from your memory, and keep brushing up on skills you may need for an interview (chances are, this won't be the only job you'll need them for anyway!)
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/0*H4pwwuDEjkYTWKpJ.gif" class="graf-image" /></figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/0*H4pwwuDEjkYTWKpJ.gif" class="graf-image" />
+</figure>
 
 ---
 
@@ -68,31 +75,81 @@ Don't wait for the company to reach out to you! Be proactive in showing your int
 
 ### Update (remote work edition):
 
-1.  <span id="3063"><a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#arc" class="markup--anchor markup--li-anchor">Arc</a></span>
-2.  <span id="7639"><a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#we-work-remotely" class="markup--anchor markup--li-anchor">We Work Remotely</a></span>
-3.  <span id="e21f"><a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#skip-the-drive" class="markup--anchor markup--li-anchor">Skip The Drive</a></span>
-4.  <span id="e1df"><a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#power-to-fly" class="markup--anchor markup--li-anchor">Power to Fly</a></span>
-5.  <span id="ecb8"><a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#remote-ok" class="markup--anchor markup--li-anchor">Remote OK</a></span>
-6.  <span id="c08c"><a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#remotive" class="markup--anchor markup--li-anchor">Remotive</a></span>
-7.  <span id="b4f2"><a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#flexjobs" class="markup--anchor markup--li-anchor">FlexJobs</a></span>
-8.  <span id="e670"><a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#dribble" class="markup--anchor markup--li-anchor">Dribble</a></span>
-9.  <span id="3b01"><a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#angellist" class="markup--anchor markup--li-anchor">AngelList</a></span>
-10. <span id="4e54"><a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#remote-co" class="markup--anchor markup--li-anchor">Remote.co</a></span>
-11. <span id="043a"><a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#justremote" class="markup--anchor markup--li-anchor">JustRemote</a></span>
-12. <span id="7190"><a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#virtual-vocations" class="markup--anchor markup--li-anchor">Virtual Vocations</a></span>
-13. <span id="8128"><a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#pangian" class="markup--anchor markup--li-anchor">Pangian</a></span>
-14. <span id="f142"><a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#working-nomads" class="markup--anchor markup--li-anchor">Working Nomads</a></span>
-15. <span id="6d89"><a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#jobspresso" class="markup--anchor markup--li-anchor">Jobspresso</a></span>
-16. <span id="8732"><a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#outsourcely" class="markup--anchor markup--li-anchor">Outsourcely</a></span>
-17. <span id="4f25"><a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#landing-jobs" class="markup--anchor markup--li-anchor">Landing.Jobs</a></span>
-18. <span id="f994"><a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#authentic-jobs" class="markup--anchor markup--li-anchor">Authentic Jobs</a></span>
-19. <span id="4b77"><a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#stack-overflow" class="markup--anchor markup--li-anchor">Stack Overflow</a></span>
-20. <span id="bb76"><a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#gun-io" class="markup--anchor markup--li-anchor">Gun.io</a></span>
-21. <span id="114e"><a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#idealist" class="markup--anchor markup--li-anchor">Idealist</a></span>
-22. <span id="5da2"><a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#fiverr" class="markup--anchor markup--li-anchor">Fiverr</a></span>
-23. <span id="fa5e"><a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#upwork" class="markup--anchor markup--li-anchor">Upwork</a></span>
-24. <span id="f209"><a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#freelancer" class="markup--anchor markup--li-anchor">Freelancer</a></span>
-25. <span id="5ec4"><a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#freelancermap" class="markup--anchor markup--li-anchor">freelancermap</a></span>
+1.  <span id="3063">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#arc" class="markup--anchor markup--li-anchor">Arc</a>
+</span>
+2.  <span id="7639">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#we-work-remotely" class="markup--anchor markup--li-anchor">We Work Remotely</a>
+</span>
+3.  <span id="e21f">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#skip-the-drive" class="markup--anchor markup--li-anchor">Skip The Drive</a>
+</span>
+4.  <span id="e1df">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#power-to-fly" class="markup--anchor markup--li-anchor">Power to Fly</a>
+</span>
+5.  <span id="ecb8">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#remote-ok" class="markup--anchor markup--li-anchor">Remote OK</a>
+</span>
+6.  <span id="c08c">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#remotive" class="markup--anchor markup--li-anchor">Remotive</a>
+</span>
+7.  <span id="b4f2">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#flexjobs" class="markup--anchor markup--li-anchor">FlexJobs</a>
+</span>
+8.  <span id="e670">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#dribble" class="markup--anchor markup--li-anchor">Dribble</a>
+</span>
+9.  <span id="3b01">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#angellist" class="markup--anchor markup--li-anchor">AngelList</a>
+</span>
+10. <span id="4e54">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#remote-co" class="markup--anchor markup--li-anchor">Remote.co</a>
+</span>
+11. <span id="043a">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#justremote" class="markup--anchor markup--li-anchor">JustRemote</a>
+</span>
+12. <span id="7190">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#virtual-vocations" class="markup--anchor markup--li-anchor">Virtual Vocations</a>
+</span>
+13. <span id="8128">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#pangian" class="markup--anchor markup--li-anchor">Pangian</a>
+</span>
+14. <span id="f142">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#working-nomads" class="markup--anchor markup--li-anchor">Working Nomads</a>
+</span>
+15. <span id="6d89">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#jobspresso" class="markup--anchor markup--li-anchor">Jobspresso</a>
+</span>
+16. <span id="8732">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#outsourcely" class="markup--anchor markup--li-anchor">Outsourcely</a>
+</span>
+17. <span id="4f25">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#landing-jobs" class="markup--anchor markup--li-anchor">Landing.Jobs</a>
+</span>
+18. <span id="f994">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#authentic-jobs" class="markup--anchor markup--li-anchor">Authentic Jobs</a>
+</span>
+19. <span id="4b77">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#stack-overflow" class="markup--anchor markup--li-anchor">Stack Overflow</a>
+</span>
+20. <span id="bb76">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#gun-io" class="markup--anchor markup--li-anchor">Gun.io</a>
+</span>
+21. <span id="114e">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#idealist" class="markup--anchor markup--li-anchor">Idealist</a>
+</span>
+22. <span id="5da2">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#fiverr" class="markup--anchor markup--li-anchor">Fiverr</a>
+</span>
+23. <span id="fa5e">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#upwork" class="markup--anchor markup--li-anchor">Upwork</a>
+</span>
+24. <span id="f209">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#freelancer" class="markup--anchor markup--li-anchor">Freelancer</a>
+</span>
+25. <span id="5ec4">
+<a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#freelancermap" class="markup--anchor markup--li-anchor">freelancermap</a>
+</span>
 
 ---
 
@@ -100,50 +157,116 @@ Don't wait for the company to reach out to you! Be proactive in showing your int
 
 #### General Boards
 
-- <span id="a076"><a href="https://builtin.com/jobs" class="markup--anchor markup--li-anchor">Built In</a></span>
-- <span id="c522"><a href="https://stackoverflow.com/jobs" class="markup--anchor markup--li-anchor">Stack Overflow</a></span>
-- <span id="8235"><a href="http://angel.co/jobs" class="markup--anchor markup--li-anchor">angel.co</a></span>
-- <span id="ae9e"><a href="https://www.theladders.com/jobs/search-jobs" class="markup--anchor markup--li-anchor">The Ladders</a></span>
-- <span id="aceb"><a href="http://www.crunchboard.com/jobs" class="markup--anchor markup--li-anchor">CrunchBoard</a></span>
-- <span id="7e5f"><a href="https://uncubed.com/" class="markup--anchor markup--li-anchor">Uncubed</a></span>
-- <span id="8678"><a href="https://technical.ly/jobs/" class="markup--anchor markup--li-anchor">Technical.ly</a></span>
-- <span id="c7fe"><a href="https://www.dice.com/" class="markup--anchor markup--li-anchor">Dice</a></span>
-- <span id="23f7"><a href="https://www.techcareers.com/" class="markup--anchor markup--li-anchor">Tech Careers</a></span>
-- <span id="20cf"><a href="http://jobs.mashable.com/jobs/search/results" class="markup--anchor markup--li-anchor">Mashable</a></span>
+- <span id="a076">
+<a href="https://builtin.com/jobs" class="markup--anchor markup--li-anchor">Built In</a>
+</span>
+- <span id="c522">
+<a href="https://stackoverflow.com/jobs" class="markup--anchor markup--li-anchor">Stack Overflow</a>
+</span>
+- <span id="8235">
+<a href="http://angel.co/jobs" class="markup--anchor markup--li-anchor">angel.co</a>
+</span>
+- <span id="ae9e">
+<a href="https://www.theladders.com/jobs/search-jobs" class="markup--anchor markup--li-anchor">The Ladders</a>
+</span>
+- <span id="aceb">
+<a href="http://www.crunchboard.com/jobs" class="markup--anchor markup--li-anchor">CrunchBoard</a>
+</span>
+- <span id="7e5f">
+<a href="https://uncubed.com/" class="markup--anchor markup--li-anchor">Uncubed</a>
+</span>
+- <span id="8678">
+<a href="https://technical.ly/jobs/" class="markup--anchor markup--li-anchor">Technical.ly</a>
+</span>
+- <span id="c7fe">
+<a href="https://www.dice.com/" class="markup--anchor markup--li-anchor">Dice</a>
+</span>
+- <span id="23f7">
+<a href="https://www.techcareers.com/" class="markup--anchor markup--li-anchor">Tech Careers</a>
+</span>
+- <span id="20cf">
+<a href="http://jobs.mashable.com/jobs/search/results" class="markup--anchor markup--li-anchor">Mashable</a>
+</span>
 
 #### Remote or Relocation Boards:
 
-- <span id="1e47"><a href="https://weworkremotely.com/" class="markup--anchor markup--li-anchor">We Work Remotely</a></span>
-- <span id="37d2"><a href="https://relocate.me/" class="markup--anchor markup--li-anchor">Relocate</a><a href="https://workfromhomejobs.me/" class="markup--anchor markup--li-anchor">‍</a></span>
-- <span id="aad7"><a href="https://workfromhomejobs.me/" class="markup--anchor markup--li-anchor">Work From Home Jobs</a></span>
-- <span id="d1fc"><a href="https://docs.google.com/spreadsheets/d/16V7hG7l24hBAnlcmaSG3mrusDx1uj_ZsLwnTu7L_wsQ/edit?usp=sharing" class="markup--anchor markup--li-anchor">Remote Boards &amp; Companies Spreadsheet</a></span>
-- <span id="5267"><a href="https://careervault.io/" class="markup--anchor markup--li-anchor">Career Vault</a></span>
+- <span id="1e47">
+<a href="https://weworkremotely.com/" class="markup--anchor markup--li-anchor">We Work Remotely</a>
+</span>
+- <span id="37d2">
+<a href="https://relocate.me/" class="markup--anchor markup--li-anchor">Relocate</a>
+<a href="https://workfromhomejobs.me/" class="markup--anchor markup--li-anchor">‍</a>
+</span>
+- <span id="aad7">
+<a href="https://workfromhomejobs.me/" class="markup--anchor markup--li-anchor">Work From Home Jobs</a>
+</span>
+- <span id="d1fc">
+<a href="https://docs.google.com/spreadsheets/d/16V7hG7l24hBAnlcmaSG3mrusDx1uj_ZsLwnTu7L_wsQ/edit?usp=sharing" class="markup--anchor markup--li-anchor">Remote Boards &amp; Companies Spreadsheet</a>
+</span>
+- <span id="5267">
+<a href="https://careervault.io/" class="markup--anchor markup--li-anchor">Career Vault</a>
+</span>
 
 #### DS Boards:
 
-- <span id="a50a"><a href="https://www.bigdatajobs.com/" class="markup--anchor markup--li-anchor">BigDataJobs</a></span>
-- <span id="e7ce"><a href="https://icrunchdata.com/data-science-jobs/" class="markup--anchor markup--li-anchor">Icrunchdata</a></span>
-- <span id="d66f"><a href="https://www.analyticsjobs.co.uk/" class="markup--anchor markup--li-anchor">Analyticsjobs.co.uk</a></span>
+- <span id="a50a">
+<a href="https://www.bigdatajobs.com/" class="markup--anchor markup--li-anchor">BigDataJobs</a>
+</span>
+- <span id="e7ce">
+<a href="https://icrunchdata.com/data-science-jobs/" class="markup--anchor markup--li-anchor">Icrunchdata</a>
+</span>
+- <span id="d66f">
+<a href="https://www.analyticsjobs.co.uk/" class="markup--anchor markup--li-anchor">Analyticsjobs.co.uk</a>
+</span>
 
 #### Design Boards
 
-- <span id="0a09"><a href="https://www.behance.net/joblist" class="markup--anchor markup--li-anchor">Behance</a></span>
-- <span id="0174"><a href="https://www.uxjobsboard.com/" class="markup--anchor markup--li-anchor">UX Jobs Board</a></span>
-- <span id="ef44"><a href="https://www.krop.com/creative-jobs/ux-ui-designer/" class="markup--anchor markup--li-anchor">Krop</a></span>
+- <span id="0a09">
+<a href="https://www.behance.net/joblist" class="markup--anchor markup--li-anchor">Behance</a>
+</span>
+- <span id="0174">
+<a href="https://www.uxjobsboard.com/" class="markup--anchor markup--li-anchor">UX Jobs Board</a>
+</span>
+- <span id="ef44">
+<a href="https://www.krop.com/creative-jobs/ux-ui-designer/" class="markup--anchor markup--li-anchor">Krop</a>
+</span>
 
 #### Software Development
 
-- <span id="4702"><a href="https://www.honeypot.io/pages/for_employers" class="markup--anchor markup--li-anchor">Honeypot.io</a></span>
-- <span id="d025"><a href="https://jobs.github.com/" class="markup--anchor markup--li-anchor">GitHub</a></span>
-- <span id="ed46"><a href="https://blabladev.eu/" class="markup--anchor markup--li-anchor">BlablaDev</a></span>
-- <span id="c23f"><a href="http://jobs.smashingmagazine.com/" class="markup--anchor markup--li-anchor">Smashing <strong>Magazine</strong></a></span>
-- <span id="61fd"><a href="http://jobs.arstechnica.com/" class="markup--anchor markup--li-anchor">arstechnica</a></span>
-- <span id="c526"><a href="http://jobs.37signals.com/" class="markup--anchor markup--li-anchor">obs.37signals</a></span>
-- <span id="1ec6"><a href="http://news.ycombinator.com/submitted?id=whoishiring" class="markup--anchor markup--li-anchor">ycombinator</a></span>
-- <span id="fa87"><a href="http://jobs.slashdot.org/jobboard.php" class="markup--anchor markup--li-anchor">jobs.slashdot.org</a></span>
-- <span id="3dfc"><a href="http://angel.co/talent" class="markup--anchor markup--li-anchor">http://angel.co/talent</a></span>
-- <span id="319e"><a href="https://www.whitetruffle.com/" class="markup--anchor markup--li-anchor">whitetruffle</a></span>
-- <span id="428a"><a href="http://www.crunchboard.com/jobs/" class="markup--anchor markup--li-anchor">crunchboard</a></span>
+- <span id="4702">
+<a href="https://www.honeypot.io/pages/for_employers" class="markup--anchor markup--li-anchor">Honeypot.io</a>
+</span>
+- <span id="d025">
+<a href="https://jobs.github.com/" class="markup--anchor markup--li-anchor">GitHub</a>
+</span>
+- <span id="ed46">
+<a href="https://blabladev.eu/" class="markup--anchor markup--li-anchor">BlablaDev</a>
+</span>
+- <span id="c23f">
+<a href="http://jobs.smashingmagazine.com/" class="markup--anchor markup--li-anchor">Smashing <strong>Magazine</strong>
+</a>
+</span>
+- <span id="61fd">
+<a href="http://jobs.arstechnica.com/" class="markup--anchor markup--li-anchor">arstechnica</a>
+</span>
+- <span id="c526">
+<a href="http://jobs.37signals.com/" class="markup--anchor markup--li-anchor">obs.37signals</a>
+</span>
+- <span id="1ec6">
+<a href="http://news.ycombinator.com/submitted?id=whoishiring" class="markup--anchor markup--li-anchor">ycombinator</a>
+</span>
+- <span id="fa87">
+<a href="http://jobs.slashdot.org/jobboard.php" class="markup--anchor markup--li-anchor">jobs.slashdot.org</a>
+</span>
+- <span id="3dfc">
+<a href="http://angel.co/talent" class="markup--anchor markup--li-anchor">http://angel.co/talent</a>
+</span>
+- <span id="319e">
+<a href="https://www.whitetruffle.com/" class="markup--anchor markup--li-anchor">whitetruffle</a>
+</span>
+- <span id="428a">
+<a href="http://www.crunchboard.com/jobs/" class="markup--anchor markup--li-anchor">crunchboard</a>
+</span>
 
 **I am intentionally not linking glassdoor because they have irritated me for the last time by insisting I provide a job review every time I want to access their content… (To the makers of glassdoor… HOW MANY TIMES A MONTH DO YOU THINK I CHANGE JOBS!!!!) I don't have 15 minutes to make up a job experience every time I want to read a review.**
 
@@ -151,10 +274,19 @@ Don't wait for the company to reach out to you! Be proactive in showing your int
 
 > Also here is a repo of compiled job search and interviewing resources:
 
-<a href="https://github.com/bgoonz/INTERVIEW-PREP-COMPLETE" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/INTERVIEW-PREP-COMPLETE"><strong>bgoonz/INTERVIEW-PREP-COMPLETE</strong><br />
-<em>Your resume is your personal summary sheet. Your resume is the thing that gets your foot in the door. So, there's a few…</em>github.com</a><a href="https://github.com/bgoonz/INTERVIEW-PREP-COMPLETE" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<a href="https://github.com/bgoonz/INTERVIEW-PREP-COMPLETE" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/INTERVIEW-PREP-COMPLETE">
+<strong>bgoonz/INTERVIEW-PREP-COMPLETE</strong>
+<br />
+<em>Your resume is your personal summary sheet. Your resume is the thing that gets your foot in the door. So, there's a few…</em>github.com</a>
+<a href="https://github.com/bgoonz/INTERVIEW-PREP-COMPLETE" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
-<figure><img src="https://cdn-images-1.medium.com/max/600/1*3_3Cb73SQM_YazWGpZWtIw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*aI1PfkSpsUks598LAJvKoQ.png" class="graf-image" /></figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/600/1*3_3Cb73SQM_YazWGpZWtIw.png" class="graf-image" />
+</figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/600/1*aI1PfkSpsUks598LAJvKoQ.png" class="graf-image" />
+</figure>
 
 #### First off I am going to introduce a few different categories for those of you who are completely overwhelmed by the prospect of even selecting a job board let alone establishing a competitive presence on one. Here's a few catorizations I think are worth distinguishing for one and other.
 
@@ -170,9 +302,16 @@ Seek to leverage the connections you have with people you know and companies you
 
 Once you send off a message in step two, there are a variety of responses you may receive. Sometimes an individual will forward you along to someone who may be of better assistance, other times your message may be overlooked with no reply, and its possible (best case scenario) your request for a chat becomes an invitation to interview.
 
-<figure><img src="https://cdn-images-1.medium.com/max/600/1*3_3Cb73SQM_YazWGpZWtIw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*aI1PfkSpsUks598LAJvKoQ.png" class="graf-image" /></figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/600/1*3_3Cb73SQM_YazWGpZWtIw.png" class="graf-image" />
+</figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/600/1*aI1PfkSpsUks598LAJvKoQ.png" class="graf-image" />
+</figure>
 
-<figure><img src="https://cdn-images-1.medium.com/max/600/1*5eObFD9fV2fe5DztitZfsA.png" class="graf-image" /></figure>### ***2. LinkedIn***.
+<figure>
+<img src="https://cdn-images-1.medium.com/max/600/1*5eObFD9fV2fe5DztitZfsA.png" class="graf-image" />
+</figure>### ***2. LinkedIn***.
 
 I am going to devote a lot of time to this one because it is the largest and most active of all the job board ecosystems… period… full stop regardless of your industry.
 
@@ -182,13 +321,21 @@ If you put your resume and skills on LinkedIn.com as a software Engineer, and st
 
 Here's my profile… feel free to connect… the larger your network the greater your exposure is to someone who works at your potential dream job.
 
-<a href="https://www.linkedin.com/in/bryan-guner-046199128/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://www.linkedin.com/in/bryan-guner-046199128/"><strong>Bryan Guner - Web Developer - Freelance | LinkedIn</strong><br />
-<em>View Bryan Guner's profile on LinkedIn, the world's largest professional community. Bryan has 5 jobs listed on their…</em>www.linkedin.com</a><a href="https://www.linkedin.com/in/bryan-guner-046199128/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<a href="https://www.linkedin.com/in/bryan-guner-046199128/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://www.linkedin.com/in/bryan-guner-046199128/">
+<strong>Bryan Guner - Web Developer - Freelance | LinkedIn</strong>
+<br />
+<em>View Bryan Guner's profile on LinkedIn, the world's largest professional community. Bryan has 5 jobs listed on their…</em>www.linkedin.com</a>
+<a href="https://www.linkedin.com/in/bryan-guner-046199128/" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
 Here's A Linkedin Checklist I will be using before I return to the job hunt!
 
-<a href="https://www.notion.so/LinkedIn-d8b35e25ff0c451dbb5506ffa1179a8d" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://www.notion.so/LinkedIn-d8b35e25ff0c451dbb5506ffa1179a8d"><strong>LinkedIn</strong><br />
-<em>Personal and Contact Information:</em>www.notion.so</a><a href="https://www.notion.so/LinkedIn-d8b35e25ff0c451dbb5506ffa1179a8d" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
+<a href="https://www.notion.so/LinkedIn-d8b35e25ff0c451dbb5506ffa1179a8d" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://www.notion.so/LinkedIn-d8b35e25ff0c451dbb5506ffa1179a8d">
+<strong>LinkedIn</strong>
+<br />
+<em>Personal and Contact Information:</em>www.notion.so</a>
+<a href="https://www.notion.so/LinkedIn-d8b35e25ff0c451dbb5506ffa1179a8d" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock">
+</a>
 
 > excerpt:
 
@@ -213,8 +360,12 @@ Here's A Linkedin Checklist I will be using before I return to the job hunt!
 
 > _To leverage this information, (the trick is to constantly remind yourself to be on your game with speaking with them.) I do not care what your teacher's past have said… mark my words…_ **\*THERE IS MOST CERTAINLY SUCH A THING AS A STUPID QUESTION\*\***…Anyone who tells you otherwise is either stupid themselves or just overcome with their own compassion (an admirable trait but ultimately a disservice to you the competitive job seeker).\*
 
-<a href="https://hbr.org/2018/05/the-surprising-power-of-questions" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://hbr.org/2018/05/the-surprising-power-of-questions"><strong>How to Ask Great Questions</strong><br />
-<em>In Brief The Problem Some professionals such as litigators, journalists and even doctors, are taught to ask questions…</em>hbr.org</a><a href="https://hbr.org/2018/05/the-surprising-power-of-questions" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<a href="https://hbr.org/2018/05/the-surprising-power-of-questions" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://hbr.org/2018/05/the-surprising-power-of-questions">
+<strong>How to Ask Great Questions</strong>
+<br />
+<em>In Brief The Problem Some professionals such as litigators, journalists and even doctors, are taught to ask questions…</em>hbr.org</a>
+<a href="https://hbr.org/2018/05/the-surprising-power-of-questions" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
 > Engage in networking. I would recommend **finding and connecting with current attendee of any software development bootcamp**. They're all (for the most part) programatically encouraged to connect network and engage in peer skill promotion (even if they have no idea of you skill level). If that weren't enough reason, all of them come from a cohort of other individuals being instructed to do the same. Once you have a few in your network other's will seek you out through Linkedin recommendations algorithm.
 
@@ -222,11 +373,18 @@ Here's A Linkedin Checklist I will be using before I return to the job hunt!
 
 > **Of the 214 people that vouched for me… I guestimate about only 80 actually know me in any respectable capacity, and of those, only probably 30 or so are familiar with my competency in the skills they endorsed. It all boils down to the strategies that bootcamps instill in their students. It's the polar opposite of a zero sum game and they're more than happy to exchange personal recommendations with you. They're also far more driven to consistently engage with other members of the linkedin ecosystem because they need to a network to help compensate for their lack of a four year degree and the connections you make in that time.**
 
-<figure><img src="https://cdn-images-1.medium.com/max/400/1*E519LWHx8W3CXw6c5FXgqg.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/1000/1*AUDMmyZrugM3SSy_0axgfQ.jpeg" class="graf-image" /></figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/400/1*E519LWHx8W3CXw6c5FXgqg.png" class="graf-image" />
+</figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/1000/1*AUDMmyZrugM3SSy_0axgfQ.jpeg" class="graf-image" />
+</figure>
 
 > Build your personal brand. Developing your brand will not only help you attract clients or recruits if you decide to start a business, but will also help you find great job opportunities. You can post anything you take pride in so long as it's fairly professional. Definitely make use of the featured section to showcase your work.
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*DlqWg94B670bgin5STdJNg.png" class="graf-image" /></figure>### Don't:
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*DlqWg94B670bgin5STdJNg.png" class="graf-image" />
+</figure>### Don't:
 
 #### Don't Use LinkedIn's Default Headline
 
@@ -236,7 +394,12 @@ LinkedIn automatically populates your headline with your current job title and c
 
 Placing keywords strategically into your LinkedIn profile is virtually the only way to ensure being flagged by search algorithms as a potential candidate.You could be forgiven for being tempted to heed the advice of your inner lizard brain, and just stuffing your profile with buzzwords but this will likely trigger a spam account checker and result in worse outcomes than the absence of said keywords.
 
-<figure><img src="https://cdn-images-1.medium.com/max/600/1*3_3Cb73SQM_YazWGpZWtIw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*aI1PfkSpsUks598LAJvKoQ.png" class="graf-image" /></figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/600/1*3_3Cb73SQM_YazWGpZWtIw.png" class="graf-image" />
+</figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/600/1*aI1PfkSpsUks598LAJvKoQ.png" class="graf-image" />
+</figure>
 
 ---
 
@@ -256,24 +419,47 @@ Most of us are familiar with the concept of six degrees of separation — th
 
 **_5. Freelancer websites_**. oDesk.com, Elance.com, etc. Lower pay, but 100% contract work, and has a lot of flexible opportunities if you're not looking for traditional full-time employment or remote work.
 
-- <span id="1350"><a href="https://www.quora.com/What-are-the-best-job-boards-for-software-engineers" class="markup--anchor markup--li-anchor">Source</a></span>
+- <span id="1350">
+<a href="https://www.quora.com/What-are-the-best-job-boards-for-software-engineers" class="markup--anchor markup--li-anchor">Source</a>
+</span>
 
-<figure><img src="https://cdn-images-1.medium.com/max/600/1*3_3Cb73SQM_YazWGpZWtIw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*aI1PfkSpsUks598LAJvKoQ.png" class="graf-image" /></figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/600/1*3_3Cb73SQM_YazWGpZWtIw.png" class="graf-image" />
+</figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/600/1*aI1PfkSpsUks598LAJvKoQ.png" class="graf-image" />
+</figure>
 
 ### Lastly Here's A Github Profile Guide:
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*0nYkgla6oc0uImSZJElpdw.jpeg" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/1*wIhqnhU5zoyIr1GwZ2UTNA.jpeg" class="graf-image" /></figure>Medium is causing strange formatting… they normally form a grid!
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*0nYkgla6oc0uImSZJElpdw.jpeg" class="graf-image" />
+</figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*wIhqnhU5zoyIr1GwZ2UTNA.jpeg" class="graf-image" />
+</figure>Medium is causing strange formatting… they normally form a grid!
 
-<figure><img src="https://cdn-images-1.medium.com/max/800/1*-ypWlmloBF6kz9UnVG2kOA.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/800/1*Y9SdKz9cS3FtjlKaRge3jg.png" class="graf-image" /></figure>### Rubric:
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*-ypWlmloBF6kz9UnVG2kOA.png" class="graf-image" />
+</figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/800/1*Y9SdKz9cS3FtjlKaRge3jg.png" class="graf-image" />
+</figure>### Rubric:
 
-<figure><img src="https://cdn-images-1.medium.com/max/1200/1*5-FYxWj0q8sUvpDoAR3ZLA.png" class="graf-image" /></figure>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/1200/1*5-FYxWj0q8sUvpDoAR3ZLA.png" class="graf-image" />
+</figure>
 
 ---
 
 ### Discover More:
 
-<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong><br />
-<em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/">
+<strong>Web-Dev-Hub</strong>
+<br />
+<em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a>
+<a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock">
+</a>
 
 # **General**
 
@@ -284,7 +470,14 @@ Most of us are familiar with the concept of six degrees of separation — th
 - **[LinkedIn Featured Images](https://medium.com/@jamesyhiggs/how-to-add-thumbnail-images-to-the-featured-section-of-your-linkedin-profile-for-web-apps-sites-917346235932)**
 - **[Frontend Masters](https://frontendmasters.com/)** - Expensive, but worth every penny
 
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 # **Resume**
 
@@ -294,7 +487,14 @@ Most of us are familiar with the concept of six degrees of separation — th
 
 - **[Six C's of Business Communication](http://www.fsb.miamioh.edu/fsb/content/programs/howe-writing-initiative/HWI-handout-CsofBusComm.html)**
 
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 # **Heroku** - _Use at your own risk_
 
@@ -303,7 +503,14 @@ Most of us are familiar with the concept of six degrees of separation — th
 - **[Kaffeine](https://kaffeine.herokuapp.com/)**
 - **[UptimeRobot and Dyno Lecture](https://docs.google.com/document/d/1_BZswbvmcEtVul9gD59Lk4IUk2mHp1Wbe2ucaHTY7A0/edit)**
 
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 # **Trivia**
 
@@ -314,7 +521,14 @@ Most of us are familiar with the concept of six degrees of separation — th
 - ## **Frontend Trivia**
     - [**12 Essential Web Design Interview Questions**](https://www.toptal.com/designers/web/interview-questions)
 
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 # **Language Resources**
 
@@ -355,7 +569,14 @@ Most of us are familiar with the concept of six degrees of separation — th
     - [**Web Design Weekly**](https://web-design-weekly.com/)
     - [**Responsive Design Weekly**](https://responsivedesign.is/)
 
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 # **DS&A**
 
@@ -368,7 +589,14 @@ Most of us are familiar with the concept of six degrees of separation — th
     - O(1) for a "good" table
     - O(n) for a terrible table (lots of collisions, etc.)
 
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 # **System Design**
 
@@ -376,34 +604,69 @@ Most of us are familiar with the concept of six degrees of separation — th
 - **[Caching](https://levelup.gitconnected.com/everything-you-need-to-know-about-caching-system-design-932a6bdf3334)**
 - **[Load Balancing](https://codeburst.io/system-design-basics-load-balancer-101-adc4f602d08f)**
 
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 # **Interviewing**
 
 - ### **Mock Interviewing**
     - **[Interviewing.io](https://interviewing.io/)**
 
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 # **Networking**
 
 - **[MeetUp](https://www.meetup.com/)**
 
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 # **Managing and Organizing Job Search**
 
 - **[Notion](notion.so)**
     - Trillo clone but with added features that make it really great! Consider creating a template for new job seekers!
 
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 # **Negotiations**
 
 - **[Haseeb's 10 Rules - Part 1](https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/)**
 - **[Haseeb's 10 Rules - Part 2](https://haseebq.com/how-not-to-bomb-your-offer-negotiation/)**
 
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 # **Portfolio Sites**
 
@@ -432,7 +695,14 @@ Take 25 minutes to choose a template, download it, rename it githubusername.gith
    of the directory. If the file is located elsewhere, relocate it to the root and adjust
    any relative paths for any imported scripts or style sheets.
 
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 # **QA Engineering**
 
@@ -455,13 +725,27 @@ Take 25 minutes to choose a template, download it, rename it githubusername.gith
     Implementation Specialist
     Technical Account Manager
 
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 # **Externship**
 
 - **[insidesherpa](https://www.insidesherpa.com/)**
 
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 # **Open Source**
 
@@ -471,7 +755,14 @@ Take 25 minutes to choose a template, download it, rename it githubusername.gith
 - **[Open Source Underdogs](https://opensourceunderdogs.com/episodes/)**
 - **[Code Triage](https://www.codetriage.com/)**
 
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 # **Volunteer**
 
@@ -481,7 +772,14 @@ Take 25 minutes to choose a template, download it, rename it githubusername.gith
 - **[Catch A Fire](https://www.catchafire.org/)**
 - **[Hackers For Charity](https://www.hackersforcharity.org/)**
 
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 # **Imposter Syndrome**
 
@@ -489,14 +787,28 @@ Take 25 minutes to choose a template, download it, rename it githubusername.gith
 - **[Stats on the tech giants](https://www.techrepublic.com/article/why-58-of-tech-employees-suffer-from-imposter-syndrome/)**
 - **[Why MS degrees are shit](http://blog.alinelerner.com/how-different-is-a-b-s-in-computer-science-from-a-m-s-in-computer-science-when-it-comes-to-recruiting/)**
 
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 # **Podcasts**
 
 - **[FreeCodeCamp Podcast](https://freecodecamp.libsyn.com/)**
 - **[Codish Podcast](https://www.heroku.com/podcasts/codeish/85-the-new-definition-of-frontend-development)**
 
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 # **Books**
 
@@ -511,7 +823,14 @@ Take 25 minutes to choose a template, download it, rename it githubusername.gith
 - **Skienna Algorithm Design Manual**
     - [Amazon](https://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena-ebook-dp-B00B8139Z8/dp/B00B8139Z8/ref=mt_other?_encoding=UTF8&me=&qid=)
 
-<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 # **QA Questions**
 

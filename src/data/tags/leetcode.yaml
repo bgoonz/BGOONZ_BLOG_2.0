@@ -1,0 +1,29 @@
+id: Leetcode
+title: Leetcode
+description: >-
+  <!--StartFragment-->
+
+
+  LeetCode is one of the most well-known online judge platforms that you can use to practice your programming skills by solving coding questions. It has over 1,100 different problems, support for over 18 programming languages, and an active community that is always there to help you with the solutions you come up with. If your intention is to hone your coding skills, then this online judge platform is one of the best that you can use.
+
+
+  Most of LeetCode’s content is free, but LeetCode Premium enhances all of its positives by granting you access to things like access to premium problems and solutions, access to a built-in debugger, an autocomplete function, and interview simulations with feedback. It also makes it even more effective if you’re using it to prepare for technical interviews, as it grants you access to company-specific programming questions that you can use to have a better grasp of what you can expect from the questions you’ll face in interviews with companies like Google, Facebook, and Microsoft, making it the ideal online judge to use if your sights are set on one of these FAANG companies.
+
+
+  However, as a tool for interview preparation, it’s lacking in certain areas. One of the cons that LeetCode has is that, while you can see the solution to problems, they don’t have an in-depth explanation of the DS&A/systems design concepts you’re using to solve these programming questions, which is a crucial part of the learning process.
+
+
+  Another con is that coding is not the only aspect that is evaluated in these interviews, even if it’s prioritized by other candidates. After all, the first thing that interviewers seek to determine is if you’re a behavioral fit for the company, and even you’re being evaluated on your programming skills, interviewers do not expect you to write perfect code on your first try (if you do, it’s likely that they’ll consider the question to be irrelevant because you knew the answer already).
+
+
+  So, while LeetCode is certainly effective at what it does, you need to combine its use with other resources to truly get the most out of it. Here are a few that may be useful:
+
+
+  * [GeeksforGeeks](https://www.geeksforgeeks.org/ "www.geeksforgeeks.org"): An online portal that acts as a library for a wide array of computer science-related topics. It explains topics like DS&A and systems design exhaustively, both in a written article and instructional video format, and it also has company-specific programming questions for you to solve
+
+  * [Tech Interview Pro](https://www.yoreoyster.com/review/tech-interview-pro/ "www.yoreoyster.com"): An interview prep course designed by a former Google software engineer that has 20+ hours of instructional video content covering data structures & algorithms, systems design, and important soft skills such as communication and understanding of the interview process. The course also grants access to Q&A sessions with the course’s founder every two weeks
+
+  * [Interviewing.io](https://interviewing.io/ "interviewing.io"): A free website where you can have mock interviews with other software engineers (some of whom have worked in big tech companies like Google and Facebook) while you receive immediate, objective feedback on your performance
+
+
+  <!--EndFragment-->
