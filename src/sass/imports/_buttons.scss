@@ -1,5 +1,4 @@
 .button {
-
   -ms-flex-align: center;
   align-items: center;
   background: $color-primary;
@@ -40,7 +39,6 @@
 }
 
 .button-secondary {
-
   background: 0 !important;
   box-shadow: inset 0 0 0 3px currentColor;
   color: $color-primary;
@@ -62,7 +60,6 @@
   font-weight: normal;
   letter-spacing: normal;
   padding: 0.25em;
-
 
   &:hover,
   &:focus,
@@ -90,11 +87,9 @@
   position: relative;
   width: 30px;
 
-
-    &:hover,
-    &:focus,
-    &:active {
-        outline: 0;
-    }
-
+  &:hover,
+  &:focus,
+  &:active {
+    outline: 0;
+  }
 }
