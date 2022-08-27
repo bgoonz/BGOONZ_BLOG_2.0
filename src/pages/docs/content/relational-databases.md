@@ -1,4 +1,13 @@
+<<<<<<< HEAD
 Everything You Need To Know About Relational Databases, SQL, PostgreSQL and Sequelize To Build...
+=======
+---
+title: Everything You Need To Know About Relational Databases
+template: docs
+excerpt: For Front end developers who like myself struggle with making the jump
+  to fullstack.
+---Everything You Need To Know About Relational Databases, SQL, PostgreSQL and Sequelize To Build...
+>>>>>>> c7e25372c (broken)
 ===============================================================================================
 
 For Front end developers who like myself struggle with making the jump to fullstack.
@@ -9,8 +18,12 @@ For Front end developers who like myself struggle with making the jump to fullst
 
 ### **Everything You Need To Know About Relational Databases, SQL, PostgreSQL and Sequelize To Build Your Backend!**
 
+<<<<<<< HEAD
 
 ![image](https://cdn-images-1.medium.com/max/800/0*3wDVBrK5ltmjjVSJ.jpeg)
+=======
+![psql](https://cdn-images-1.medium.com/max/800/0*3wDVBrK5ltmjjVSJ.jpeg)
+>>>>>>> c7e25372c (broken)
 
 **For Front end developers who like myself struggle with making the jump to fullstack.**
 
@@ -1171,11 +1184,17 @@ const Op = Sequelize.Op
 [Op.notIRegexp]: '^[h|a|t]' // !~* '^[h|a|t]' (PG only)
 [Op.like]: { [Op.any]: ['cat', 'hat']}
 
+<<<<<<< HEAD
 
 ![image](https://cdn-images-1.medium.com/max/2560/1*IdBeXbBynFmQD7WwTNr7Hw.png)
 
 
 ![image](https://cdn-images-1.medium.com/max/2560/1*bgZjuBly2EBDtGiCFaFoFw.png)
+=======
+![](https://cdn-images-1.medium.com/max/2560/1*IdBeXbBynFmQD7WwTNr7Hw.png)
+
+![](https://cdn-images-1.medium.com/max/2560/1*bgZjuBly2EBDtGiCFaFoFw.png)
+>>>>>>> c7e25372c (broken)
 
 ### Accessing the Data
 
