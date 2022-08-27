@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 window.onGatsbyInitialClientRender = function () {
   /**
    * Main JS file for theme behaviours
@@ -100,64 +99,28 @@ window.onGatsbyInitialClientRender = function () {
           false
         );
       }
+
+    });
+  }
+};
+window.removePageNavLinks = function() {
+  const pageToc = document.getElementById('page-nav-inside');
+  const pageTocContainer = document.getElementById('page-nav-link-container');
+  if (pageToc && pageTocContainer) {
+    pageToc.classList.remove('has-links');
+    while (pageTocContainer.firstChild) {
+      pageTocContainer.removeChild(pageTocContainer.firstChild);
     }
-  };
+  }
+};
+function getElementsByTagNames(root, tagNames) {
+  let elements = [];
+  for (let i = 0; i < root.children.length; i++) {
+    let element = root.children[i];
+    let tagName = element.nodeName.toLowerCase();
+    if (tagNames.includes(tagName)) {
+      elements.push(element);
 
-  window.addPageNavLinks = function () {
-    const pageToc = document.getElementById("page-nav-inside");
-    const pageTocContainer = document.getElementById("page-nav-link-container");
-
-    if (pageToc && pageTocContainer) {
-      const pageContent = document.querySelector(".type-docs .post-content");
-
-      // Create in-page navigation
-      const headerLinks = getHeaderLinks({
-        root: pageContent,
-      });
-      if (headerLinks.length > 0) {
-        pageToc.classList.add("has-links");
-        renderHeaderLinks(pageTocContainer, headerLinks);
-      }
-
-      // Scroll to anchors
-      let scroll = new SmoothScroll("[data-scroll]");
-      let hash = window.decodeURI(location.hash.replace("#", ""));
-      if (hash !== "") {
-        window.setTimeout(function () {
-          let anchor = document.getElementById(hash);
-          if (anchor) {
-            scroll.animateScroll(anchor);
-          }
-        }, 0);
-      }
-
-      // Highlight current anchor
-      let pageTocLinks = pageTocContainer.getElementsByTagName("a");
-      if (pageTocLinks.length > 0) {
-        let spy = new Gumshoe("#page-nav-inside a", {
-          nested: true,
-          nestedClass: "active-parent",
-        });
-      }
-
-      // Add link to page content headings
-      let pageHeadings = getElementsByTagNames(pageContent, ["h2", "h3"]);
-      for (let i = 0; i < pageHeadings.length; i++) {
-        let heading = pageHeadings[i];
-        if (typeof heading.id !== "undefined" && heading.id !== "") {
-          heading.insertBefore(anchorForId(heading.id), heading.firstChild);
-        }
-      }
-
-      // Copy link url
-      let clipboard = new ClipboardJS(".hash-link", {
-        text: function (trigger) {
-          return (
-            window.location.href.replace(window.location.hash, "") +
-            trigger.getAttribute("href")
-          );
-        },
-      });
     }
   };
 
@@ -279,5 +242,5 @@ window.onGatsbyInitialClientRender = function () {
   }
 
   // Syntax Highlighter
-  // Prism.highlightAll();
+  Prism.highlightAll();
 };

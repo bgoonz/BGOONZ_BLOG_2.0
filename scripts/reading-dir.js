@@ -1,10 +1,10 @@
-const fs = require('fs')
+const fs = require("fs");
 
-fs.readdir('./', (err, files) => {
-	if (err) {
-		console.error(err)
-		return
-	}
+fs.readdir("./", (err, files) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
 
-	console.log('files: ', files)
-})
+  console.log("files: ", files);
+});

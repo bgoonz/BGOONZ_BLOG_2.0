@@ -171,11 +171,13 @@ Cool, we got the raw HTML from the web page! But now we need to make sense of th
 
 Using Chrome DevTools is easy: simply open Google Chrome, and right click on the element you would like to scrape (in this case I am right clicking on George Washington, because we want to get links to all of the individual presidents' Wikipedia pages):
 
-![](https://cdn-media-1.freecodecamp.org/images/1*gLKhu_EO-cDqYna1P9WL_w.png)
+
+![image](https://cdn-media-1.freecodecamp.org/images/1*gLKhu_EO-cDqYna1P9WL_w.png)
 
 Now, simply click inspect, and Chrome will bring up its DevTools pane, allowing you to easily inspect the page's source HTML.
 
-![](https://cdn-media-1.freecodecamp.org/images/1*HSUjFgji22vjwvGi2uZe1A.png)
+
+![image](https://cdn-media-1.freecodecamp.org/images/1*HSUjFgji22vjwvGi2uZe1A.png)
 
 ### Parsing HTML with Cheerio.js
 
@@ -597,9 +599,11 @@ Output:
 
 Let's once again use Chrome DevTools to find the syntax of the code we want to parse, so that we can extract the name and birthday with Cheerio.js.
 
-![](https://cdn-media-1.freecodecamp.org/images/1*exzZbuIwfrCcbTM2rr9_bw.png)
 
-![](https://cdn-media-1.freecodecamp.org/images/1*yth6AmHpywM77n0wEprpiA.png)
+![image](https://cdn-media-1.freecodecamp.org/images/1*exzZbuIwfrCcbTM2rr9_bw.png)
+
+
+![image](https://cdn-media-1.freecodecamp.org/images/1*yth6AmHpywM77n0wEprpiA.png)
 
 So we see that the name is in a class called "firstHeading" and the birthday is in a class called "bday". Let's modify our code to use Cheerio.js to extract these two classes.
 
@@ -1272,7 +1276,8 @@ Here's what the output looks like:
 </tbody>
 </table>
 
-![](https://cdn-media-1.freecodecamp.org/images/1*mKzPVGRR4CFKMwQw5y_YnQ.png)
+
+![image](https://cdn-media-1.freecodecamp.org/images/1*mKzPVGRR4CFKMwQw5y_YnQ.png)
 
 Hmmm…not quite what we want. That's because getting the actual content requires you to run the JavaScript on the page! With Puppeteer, that's no problem.
 
@@ -1408,11 +1413,13 @@ Output:
 
 Nice! The page is filled with the correct content!
 
-![](https://cdn-media-1.freecodecamp.org/images/1*N5HtAiijcMEB_fBQvPd7Ow.png)
+
+![image](https://cdn-media-1.freecodecamp.org/images/1*N5HtAiijcMEB_fBQvPd7Ow.png)
 
 Now we can use Chrome DevTools like we did in the previous example.
 
-![](https://cdn-media-1.freecodecamp.org/images/1*tHSgjPMvn3M26N2f7Q2B1Q.png)
+
+![image](https://cdn-media-1.freecodecamp.org/images/1*tHSgjPMvn3M26N2f7Q2B1Q.png)
 
 It looks like Reddit is putting the titles inside "h2" tags. Let's use Cheerio.js to extract the h2 tags from the page.
 

@@ -27,7 +27,8 @@ The steps I'm going to outline will work on almost every Linux distribution, whe
 
 The first step in killing the unresponsive process is locating it. There are two commands I use to locate a process: *top *and _ps_. Top is a tool every administrator should get to know. With _top_, you get a full listing of currently running process. From the command line, issue _top_ to see a list of your running processes (Figure 1).
 
-![](https://lcom.static.linuxfound.org/sites/lcom/files/killa.jpg)
+
+![image](https://lcom.static.linuxfound.org/sites/lcom/files/killa.jpg)
 
 Figure 1: The top command gives you plenty of information.
 
@@ -49,7 +50,8 @@ The _x_ option is important when you're hunting for information regarding a grap
 
 When you issue the command above, you'll be given more information than you need (Figure 2) for the killing of a process, but it is sometimes more efficient than using top.
 
-![](https://lcom.static.linuxfound.org/sites/lcom/files/killb.jpg)
+
+![image](https://lcom.static.linuxfound.org/sites/lcom/files/killb.jpg)
 
 Figure 2: Locating the necessary information with the ps command.
 
@@ -69,7 +71,8 @@ Which you use will determine the command used for termination. There are two com
 
 There are also different signals that can be sent to both kill commands. What signal you send will be determined by what results you want from the kill command. For instance, you can send the HUP (hang up) signal to the kill command, which will effectively restart the process. This is always a wise choice when you need the process to immediately restart (such as in the case of a daemon). You can get a list of all the signals that can be sent to the kill command by issuing kill -l. You'll find quite a large number of signals (Figure 3).
 
-![](https://lcom.static.linuxfound.org/sites/lcom/files/killc.jpg)
+
+![image](https://lcom.static.linuxfound.org/sites/lcom/files/killc.jpg)
 
 Figure 3: The available kill signals.
 
