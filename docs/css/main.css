@@ -3766,14 +3766,17 @@ header {
     white-space: nowrap;
     text-overflow: ellipsis;
     margin-bottom: 0.25em; }
+
   header .info {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+
     header .info span.version {
       opacity: 0.6;
       font-style: italic;
       font-size: 0.9em; }
+
     header .info .github {
       font-size: 12px;
       display: flex;
@@ -3783,8 +3786,10 @@ header {
       border-radius: 4px;
       background: rgba(255, 255, 255, 0.1);
       transition: background 150ms ease; }
+
       header .info .github:hover {
         background: rgba(255, 255, 255, 0.2); }
+
       header .info .github img {
         margin-left: 0.75em; }
 
@@ -3910,6 +3915,7 @@ table thead {
   letter-spacing: 1px;
   font-size: 11px;
   opacity: 0.4; }
+
 table tbody td {
   border-bottom: 1px solid rgba(0, 0, 0, 0.03);
   line-height: 1.65;
