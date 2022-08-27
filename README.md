@@ -25,6 +25,10 @@ Url: [gitpop](http://gitpop2.herokuapp.com/bgoonz/BGOONZ_BLOG_2.0)
 
 ![GitHub visitors](https://visitor-badge-reloaded.herokuapp.com/badge?page_id=bgoonz.visitor.badge.reloaded&color=00bbbb&style=for-the-badge&logo=github)
 
+
+
+<a  href="https://bgoonzblog20master.gatsbyjs.io/"><img src="https://qrickit.com/api/qr.php?d=https%3A%2F%2Fbgoonzblog20master.gatsbyjs.io%2F&addtext=Click+For+Mobil+Version&txtcolor=000000&fgdcolor=000000&bgdcolor=FFFFFF&qrsize=25&t=p&e=h" style="position: fixed;bottom: 100px;right:20px;"></a>
+
 [![Demo](https://img.youtube.com/vi/OGCcq1_Tbzk/0.jpg)](https://www.youtube.com/watch?v=OGCcq1_Tbzk)
 
 
@@ -32,7 +36,7 @@ Url: [gitpop](http://gitpop2.herokuapp.com/bgoonz/BGOONZ_BLOG_2.0)
 ##### Bug Tracker 
 https://app.usersnap.com/#/6bf5b719-6d97-4b67-9cc8-271a747f56d3/statistics
 </div>
----
+
 
 
 
