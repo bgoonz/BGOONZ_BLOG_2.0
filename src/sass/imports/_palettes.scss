@@ -1,3 +1,4 @@
+/* It's a loop that iterates over the keys in the -palettes map. */
 @each $palette in map-keys($theme-palettes) {
     $palette-suffix: '#{$palette}';
     $color-primary: map-deep-get($theme-palettes, $palette, 'primary');
@@ -40,7 +41,7 @@
         #docs-menu a:hover,
         #docs-menu .current,
         #docs-menu .current-parent,
-        #page-nav li.active > a,
+        #page-nav li.active>a,
         #page-nav a:hover {
             color: $color-primary;
         }

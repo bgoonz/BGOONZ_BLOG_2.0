@@ -1,3 +1,4 @@
+/* A mixin for the grid system. */
 // Text for screen readers
 .screen-reader-text {
     clip: rect(1px, 1px, 1px, 1px);
@@ -28,6 +29,7 @@
 // Responsive video wrappers
 .block-content,
 .post-content {
+
     iframe[src*='vimeo.com'],
     iframe[src*='youtube.com'] {
         display: block;
