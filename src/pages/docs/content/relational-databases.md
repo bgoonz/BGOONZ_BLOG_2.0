@@ -13,10 +13,7 @@ template: docs
 
 
 ![image](https://cdn-images-1.medium.com/max/800/0*3wDVBrK5ltmjjVSJ.jpeg)
-=======
 
-![psql](https://cdn-images-1.medium.com/max/800/0*3wDVBrK5ltmjjVSJ.jpeg)
->>>>>>> c7e25372c (broken)
 
 **For Front end developers who like myself struggle with making the jump to fullstack.**
 
@@ -1185,7 +1182,7 @@ const Op = Sequelize.Op
 ![](https://cdn-images-1.medium.com/max/2560/1*IdBeXbBynFmQD7WwTNr7Hw.png)
 
 ![](https://cdn-images-1.medium.com/max/2560/1*bgZjuBly2EBDtGiCFaFoFw.png)
->>>>>>> c7e25372c (broken)
+ > >>>>> c7e25372c (broken)
 
 ### Accessing the Data
 

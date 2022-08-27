@@ -41,7 +41,7 @@ template: docs
 <https://blog20-preview.netlify.app/>
 
 ## Images
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
+
 
 > 0beuahctjrs_qcqgv.jpg
 
@@ -72,7 +72,7 @@ template: docs
 ![https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/Screenshot%202022-03-30%20at%2012-37-24%20Website%20Speed%20Test%20Tool%20-%20Testmysite.io%20by%20Netlify.png?raw=true](<https://raw.githubusercontent.com/>
 > Screenshot%202022-03-30%20at%2012-37-24%20Website%20Speed%20Test%20Tool%20-%20Testmysite.io%20by%20Netlify.png
 
->>>>>>> 65c20ca7f49855a8140174519342a2219d701b05
+
 
 ![https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/Visual_Studio_Code_logo.png?raw=true](https://raw.githubusercontent.com/bgoonz/BGOONZ_BLOG_2.0/master/static/images/Visual_Studio_Code_logo.png?raw=true)
 
