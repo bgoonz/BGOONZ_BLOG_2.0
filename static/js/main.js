@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 window.onGatsbyInitialClientRender = function () {
   /**
    * Main JS file for theme behaviours
@@ -279,5 +278,5 @@ window.onGatsbyInitialClientRender = function () {
   }
 
   // Syntax Highlighter
-  // Prism.highlightAll();
+  Prism.highlightAll();
 };
