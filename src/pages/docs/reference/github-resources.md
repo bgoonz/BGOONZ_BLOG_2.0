@@ -102,11 +102,11 @@ Adding `?ts=4` to a diff or file URL will display tab characters as 4 spaces wid
 
 Here is a Go source file before adding `?ts=4`:
 
-![Before, tab space example](http://i.imgur.com/GIT1Fr0.png)
+![Before, tab space example](https://i.imgur.com/GIT1Fr0.png)
 
 ...and this is after adding `?ts=4`:
 
-![After, tab space example](http://i.imgur.com/70FL4H9.png)
+![After, tab space example](https://i.imgur.com/70FL4H9.png)
 
 ### Commit History by Author
 
@@ -116,7 +116,7 @@ To view all commits on a repo by author add `?author={user}` to the URL.
 https://github.com/rails/rails/commits/master?author=dhh
 ```
 
-![DHH commit history](http://i.imgur.com/S7AE29b.png)
+![DHH commit history](https://i.imgur.com/S7AE29b.png)
 
 [_Read more about the differences between commits views._](https://help.github.com/articles/differences-between-commit-views/)
 
@@ -124,7 +124,7 @@ https://github.com/rails/rails/commits/master?author=dhh
 
 When cloning a repository the `.git` can be left off the end.
 
-```console
+```shell
 $ git clone https://github.com/tiimgreen/github-cheat-sheet
 ```
 
@@ -144,7 +144,7 @@ https://github.com/{user}/{repo}/branches
 
 From here you can access the compare page or delete a branch with a click of a button.
 
-![Compare branches not merged into master in rails/rails repo - https://github.com/rails/rails/branches](http://i.imgur.com/0FEe30z.png)
+![Compare branches not merged into master in rails/rails repo - https://github.com/rails/rails/branches](https://i.imgur.com/0FEe30z.png)
 
 #### Comparing Branches
 
@@ -162,7 +162,7 @@ For example:
 https://github.com/rails/rails/compare/master...4-1-stable
 ```
 
-![Rails branch compare example](http://i.imgur.com/tIRCOsK.png)
+![Rails branch compare example](https://i.imgur.com/tIRCOsK.png)
 
 `{range}` can be changed to things like:
 
@@ -173,7 +173,7 @@ https://github.com/rails/rails/compare/master@{2014-10-04}...master
 
 _Here, dates are in the format `YYYY-MM-DD`_
 
-![Another compare example](http://i.imgur.com/5dtzESz.png)
+![Another compare example](https://i.imgur.com/5dtzESz.png)
 
 Branches can also be compared in `diff` and `patch` views:
 
@@ -198,27 +198,27 @@ For example:
 https://github.com/rails/rails/compare/byroot:master...master
 ```
 
-![Forked branch compare](http://i.imgur.com/Q1W6qcB.png)
+![Forked branch compare](https://i.imgur.com/Q1W6qcB.png)
 
 ### Gists
 
 [Gists](https://gist.github.com/) are an easy way to work with small bits of code without creating a fully fledged repository.
 
-![Gist](http://i.imgur.com/VkKI1LC.png?1)
+![Gist](https://i.imgur.com/VkKI1LC.png?1)
 
 Add `.pibb` to the end of any Gist URL ([like this](https://gist.github.com/tiimgreen/10545817.pibb)) in order to get the _HTML-only_ version suitable for embedding in any other site.
 
 Gists can be treated as a repository so they can be cloned like any other:
 
-```console
+```shell
 $ git clone https://gist.github.com/tiimgreen/10545817
 ```
 
-![Gists](http://i.imgur.com/BcFzabp.png)
+![Gists](https://i.imgur.com/BcFzabp.png)
 
 This means you also can modify and push updates to Gists:
 
-```console
+```shell
 $ git commit
 $ git push
 Username for 'https://gist.github.com':
@@ -232,11 +232,11 @@ However, Gists do not support directories. All files need to be added to the rep
 
 [Git.io](http://git.io) is a simple URL shortener for GitHub.
 
-![Git.io](http://i.imgur.com/6JUfbcG.png?1)
+![Git.io](https://i.imgur.com/6JUfbcG.png?1)
 
 You can also use it via pure HTTP using Curl:
 
-```console
+```shell
 $ curl -i http://git.io -F "url=https://github.com/..."
 HTTP/1.1 201 Created
 Location: http://git.io/abc123
@@ -260,7 +260,7 @@ When on a repository page, keyboard shortcuts allow you to navigate easily.
 
 To see all of the shortcuts for the current page press `?`:
 
-![Keyboard shortcuts](http://i.imgur.com/y5ZfNEm.png)
+![Keyboard shortcuts](https://i.imgur.com/y5ZfNEm.png)
 
 [Read more about search syntax you can use.](https://help.github.com/articles/search-syntax/)
 
@@ -274,19 +274,19 @@ It also works with ranges, e.g., `#L53-L60`, to select ranges, hold `shift` and 
 https://github.com/rails/rails/blob/master/activemodel/lib/active_model.rb#L53-L60
 ```
 
-![Line Highlighting](http://i.imgur.com/8AhjrCz.png)
+![Line Highlighting](https://i.imgur.com/8AhjrCz.png)
 
 ### Closing Issues via Commit Messages
 
 If a particular commit fixes an issue, any of the keywords `fix/fixes/fixed`, `close/closes/closed` or `resolve/resolves/resolved`, followed by the issue number, will close the issue once it is committed to the repository's default branch.
 
-```console
+```shell
 $ git commit -m "Fix screwup, fixes #12"
 ```
 
 This closes the issue and references the closing commit.
 
-![Closing Repo](http://i.imgur.com/Uh1gZdx.png)
+![Closing Repo](https://i.imgur.com/Uh1gZdx.png)
 
 [_Read more about closing Issues via commit messages._](https://help.github.com/articles/closing-issues-via-commit-messages/)
 
@@ -416,7 +416,7 @@ There are multiple ways of embedding images in Wiki pages. There's the standard 
 
 Which produces:
 
-![Just a screenshot](http://i.imgur.com/J5bMf7S.png)
+![Just a screenshot](https://i.imgur.com/J5bMf7S.png)
 
 ### Quick Quoting
 
@@ -440,11 +440,11 @@ After taking a screenshot and adding it to the clipboard (mac: `cmd-ctrl-shift-4
 
 When creating a repository, GitHub gives you the option of adding in a pre-made license:
 
-![License](http://i.imgur.com/Chqj4Fg.png)
+![License](https://i.imgur.com/Chqj4Fg.png)
 
 You can also add them to existing repositories by creating a new file through the web interface. When the name `LICENSE` is typed in you will get an option to use a template:
 
-![License](http://i.imgur.com/fTjQict.png)
+![License](https://i.imgur.com/fTjQict.png)
 
 Also works for `.gitignore`.
 
@@ -463,7 +463,7 @@ In Issues and Pull requests check boxes can be added with the following syntax (
 - [ ] Sleep
 ```
 
-![Task List](http://i.imgur.com/jJBXhsY.png)
+![Task List](https://i.imgur.com/jJBXhsY.png)
 
 When they are clicked, they will be updated in the pure Markdown:
 
@@ -633,7 +633,7 @@ GitHub can display several common image formats, including PNG, JPG, GIF, and PS
 
 This allows you to do things like:
 
-```console
+```shell
 $ hub clone tiimgreen/toc
 ```
 
@@ -682,7 +682,7 @@ GitHubs icons (Octicons) have now been open sourced.
 
 If you are a student you will be eligible for the GitHub Student Developer Pack. This gives you free credit, free trials and early access to software that will help you when developing.
 
-![GitHub Student Developer Pack](http://i.imgur.com/9ru3K43.png)
+![GitHub Student Developer Pack](https://i.imgur.com/9ru3K43.png)
 
 [_Read more about GitHub's Student Developer Pack_](https://education.github.com/pack)
 
@@ -748,13 +748,13 @@ Changing to a template repository will give a new URL endpoint which can be shar
 
 When you delete a lot of files using `/bin/rm` you can use the following command to remove them from the working tree and from the index, eliminating the need to remove each one individually:
 
-```console
+```shell
 $ git rm $(git ls-files -d)
 ```
 
 For example:
 
-```console
+```shell
 $ git status
 On branch master
 Changes not staged for commit:
@@ -776,7 +776,7 @@ Changes to be committed:
 
 To move to the previous branch in Git:
 
-```console
+```shell
 $ git checkout -
 # Switched to branch 'master'
 
@@ -799,7 +799,7 @@ Git Stripspace:
 
 A file must be passed when calling the command, e.g.:
 
-```console
+```shell
 $ git stripspace < README.md
 ```
 
@@ -811,13 +811,13 @@ Pull Requests are special branches on the GitHub repository which can be retriev
 
 Retrieve a specific Pull Request and store it temporarily in `FETCH_HEAD` for quickly `diff`-ing or `merge`-ing:
 
-```console
+```shell
 $ git fetch origin refs/pull/[PR-Number]/head
 ```
 
 Acquire all Pull Request branches as local remote branches by refspec:
 
-```console
+```shell
 $ git fetch origin '+refs/pull/*/head:refs/remotes/origin/pr/*'
 ```
 
@@ -838,23 +838,23 @@ Or setup the remote to fetch Pull Requests automatically by adding these corresp
 
 For Fork-based Pull Request contributions, it's useful to `checkout` a remote branch representing the Pull Request and create a local branch from it:
 
-```console
+```shell
 $ git checkout pr/42 pr-42
 ```
 
 Or should you work on more repositories, you can globally configure fetching pull requests in the global git config instead.
 
-```console
+```shell
 git config --global --add remote.origin.fetch "+refs/pull/*/head:refs/remotes/origin/pr/*"
 ```
 
 This way, you can use the following short commands in all your repositories:
 
-```console
+```shell
 git fetch origin
 ```
 
-```console
+```shell
 git checkout pr/42
 ```
 
@@ -864,7 +864,7 @@ git checkout pr/42
 
 Commits can be pushed with no code changes by adding `--allow-empty`:
 
-```console
+```shell
 $ git commit -m "Big-ass commit" --allow-empty
 ```
 
@@ -879,23 +879,23 @@ Some use-cases for this (that make sense), include:
 
 Running:
 
-```console
+```shell
 $ git status
 ```
 
 produces:
 
-![git status](http://i.imgur.com/qjPyvXb.png)
+![git status](https://i.imgur.com/qjPyvXb.png)
 
 By adding `-sb`:
 
-```console
+```shell
 $ git status -sb
 ```
 
 this is produced:
 
-![git status -sb](http://i.imgur.com/K0OY3nm.png)
+![git status -sb](https://i.imgur.com/K0OY3nm.png)
 
 [_Read more about the Git `status` command._](http://git-scm.com/docs/git-status)
 
@@ -903,13 +903,13 @@ this is produced:
 
 Running:
 
-```console
+```shell
 $ git log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 ```
 
 produces:
 
-![git log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative](http://i.imgur.com/58eOtkW.png)
+![git log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative](https://i.imgur.com/58eOtkW.png)
 
 Credit to [Palesz](http://stackoverflow.com/users/88355/palesz)
 
@@ -921,17 +921,17 @@ _This can be aliased using the instructions found [here](https://github.com/tiim
 
 A Git query allows you to search all your previous commit messages and find the most recent one matching the query.
 
-```console
+```shell
 $ git show :/query
 ```
 
 where `query` (case-sensitive) is the term you want to search, this then finds the last one and gives details on the lines that were changed.
 
-```console
+```shell
 $ git show :/typo
 ```
 
-![git show :/query](http://i.imgur.com/icaGiNt.png)
+![git show :/query](https://i.imgur.com/icaGiNt.png)
 
 _Press `q` to quit._
 
@@ -941,13 +941,13 @@ Git Grep will return a list of lines matching a pattern.
 
 Running:
 
-```console
+```shell
 $ git grep aliases
 ```
 
 will show all the files containing the string _aliases_.
 
-![git grep aliases](http://i.imgur.com/DL2zpQ9.png)
+![git grep aliases](https://i.imgur.com/DL2zpQ9.png)
 
 _Press `q` to quit._
 
@@ -958,7 +958,7 @@ You can also use multiple flags for more advanced search. For example:
 
 Use it like this:
 
-```console
+```shell
  $ git grep -e pattern --and -e anotherpattern
 ```
 
@@ -968,7 +968,7 @@ Use it like this:
 
 Running:
 
-```console
+```shell
 $ git branch --merged
 ```
 
@@ -976,7 +976,7 @@ will give you a list of all branches that have been merged into your current bra
 
 Conversely:
 
-```console
+```shell
 $ git branch --no-merged
 ```
 
@@ -988,7 +988,7 @@ will give you a list of branches that have not been merged into your current bra
 
 If there is something wrong with a previous commit (can be one or more from HEAD), for example `abcde`, run the following command after you've amended the problem:
 
-```console
+```shell
 $ git commit --fixup=abcde
 $ git rebase abcde^ --autosquash -i
 ```
@@ -1000,13 +1000,13 @@ $ git rebase abcde^ --autosquash -i
 
 Use the Git `instaweb` command to instantly browse your working repository in `gitweb`. This command is a simple script to set up `gitweb` and a web server for browsing the local repository.
 
-```console
+```shell
 $ git instaweb
 ```
 
 opens:
 
-![Git instaweb](http://i.imgur.com/Dxekmqc.png)
+![Git instaweb](https://i.imgur.com/Dxekmqc.png)
 
 [_Read more about the Git `instaweb` command._](http://git-scm.com/docs/git-instaweb)
 
@@ -1033,19 +1033,19 @@ To add an alias, either navigate to `~/.gitconfig` and fill it out in the follow
 
 ...or type in the command-line:
 
-```console
+```shell
 $ git config --global alias.new_alias git_function
 ```
 
 For example:
 
-```console
+```shell
 $ git config --global alias.cm commit
 ```
 
 For an alias with multiple functions use quotes:
 
-```console
+```shell
 $ git config --global alias.ac 'add -A . && commit'
 ```
 
@@ -1071,7 +1071,7 @@ Git gives suggestions for misspelled commands and if auto-correct is enabled the
 
 For example, if you type `git comit` you will get this:
 
-```console
+```shell
 $ git comit -m "Message"
 # git: 'comit' is not a git command. See 'git --help'.
 
@@ -1081,13 +1081,13 @@ $ git comit -m "Message"
 
 Auto-correct can be enabled like this (with a 1.5 second delay):
 
-```console
+```shell
 $ git config --global help.autocorrect 15
 ```
 
 So now the command `git comit` will be auto-corrected to `git commit` like this:
 
-```console
+```shell
 $ git comit -m "Message"
 # WARNING: You called a Git command named 'comit', which does not exist.
 # Continuing under the assumption that you meant 'commit'
@@ -1100,7 +1100,7 @@ The delay before git will rerun the command is so the user has time to abort.
 
 To add more color to your Git output:
 
-```console
+```shell
 $ git config --global color.ui 1
 ```
 

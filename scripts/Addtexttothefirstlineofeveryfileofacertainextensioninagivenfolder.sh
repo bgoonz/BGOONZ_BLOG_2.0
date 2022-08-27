@@ -1,0 +1,1 @@
+for f in *.txt; do printf '%s\n' 0a 'TEXT YOU WISH TO APPEND TO BEGINNING OF EVERY FILE' . x | ex "$f"; done

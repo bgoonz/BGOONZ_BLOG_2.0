@@ -897,7 +897,7 @@ class Link extends React.Component {
 
 <summary>  </summary>
 
-```console
+```shell
 
 npm install --save react       // declarative and flexible JavaScript library for building UI
 npm install --save react-dom   // serves as the entry point of the DOM-related rendering paths
@@ -1320,7 +1320,8 @@ Link.defaultProps = { initialCount: 0 };
 ## Lifecycle Events
 
 Modern React lifecycle methods (v16+)
-![](DZ-97vzW4AAbcZj.jpg)
+
+![image](DZ-97vzW4AAbcZj.jpg)
 
 Legacy Lifecycle Events:
 
@@ -1334,7 +1335,8 @@ Legacy Lifecycle Events:
 
 Sequence of lifecycle events:
 
-![](lifecycle-events.png)
+
+![image](lifecycle-events.png)
 
 Inspired by <http://react.tips>
 

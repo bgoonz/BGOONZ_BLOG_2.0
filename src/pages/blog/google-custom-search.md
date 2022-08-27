@@ -26,7 +26,7 @@ Below is all the code you need to implement custom search on your website.
 
 ## [](https://github.localhost/#step-1)Step 1
 
-Copy and paste the HTML or Solodev Shortcode where you would like your search form to populate and [register your website with Google](http://cse.google.com/).
+Copy and paste the HTML or Solodev Shortcode where you would like your search form to populate and [register your website with Google](https://cse.google.com/).
 
 -   [HTML](https://github.localhost/#code1)
 -   [Solodev Shortcode](https://github.localhost/#code2)

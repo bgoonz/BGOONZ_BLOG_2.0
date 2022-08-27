@@ -1,0 +1,45 @@
+name: "UpdateBlog"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  UpdateBlog:
+    runs-on: ubuntu-latest
+    if: ${{ github.repository_owner == 'bgoonz' }}
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+    - name: Update Blog
+      working-directory: ./
+      run: |
+        npx npm-check-updates -u --dep prod
+        npm install
+    - name: Check Status
+      id: status
+      working-directory: ./
+      run: | 
+        if [[ "$(git status --porcelain)" != "" ]]; then 
+        echo "::set-output name=createPR::true"
+        git config --global user.email "bryan.guner@gmail.com"
+        git config --global user.name "bgoonz"
+        git checkout -b bots/updateGitHubDependencies-${{github.run_number}}
+        git add .
+        git commit -m "Update Dependencies"
+        git push --set-upstream origin bots/updateGitHubDependencies-${{github.run_number}}
+        fi
+    - name: Create PR
+      if: ${{steps.status.outputs.createPR}}
+      uses: actions/github-script@v2
+      with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            github.pulls.create(
+            {
+              base: "master",
+              owner: "${{github.repository_owner}}",
+              repo: "BGOONZ_BLOG_2.0",
+              title: "Update Blog dependencies",
+              body: "Update Blog dependencies",
+              head: "bots/updateGitHubDependencies-${{github.run_number}}"
+            })

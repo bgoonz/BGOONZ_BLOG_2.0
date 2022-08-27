@@ -104,7 +104,7 @@ This line should be following on the very next line.
 
     markdown
 
-    [Help Builder Web Site](http://helpbuilder.west-wind.com/)
+    [Help Builder Web Site](https://helpbuilder.west-wind.com/)
 
 <a href="http://helpbuilder.west-wind.com/" class="markup--anchor markup--p-anchor">Help Builder Web Site</a>
 

@@ -26,13 +26,14 @@ These will focus more on vocabulary and concepts than the application driven app
 
 - - -
 
-#### [](https://github.com/permission-squad/gist-notes/blob/main/2021-03-19_Front-End-Interview-Questions-Part-2-86ddc0e91443.md#codex)[CODEX](http://medium.com/codex)
+#### [](https://github.com/permission-squad/gist-notes/blob/main/2021-03-19_Front-End-Interview-Questions-Part-2-86ddc0e91443.md#codex)[CODEX](https://medium.com/codex)
 
 ### [](https://github.com/permission-squad/gist-notes/blob/main/2021-03-19_Front-End-Interview-Questions-Part-2-86ddc0e91443.md#front-end-interview-questions-part2)Front End Interview Questions Part 2
 
 #### [](https://github.com/permission-squad/gist-notes/blob/main/2021-03-19_Front-End-Interview-Questions-Part-2-86ddc0e91443.md#these-will-focus-more-on-vocabulary-and-concepts-than-the-application-driven-approach-in-my-lastpost)These will focus more on vocabulary and concepts than the application-driven approach in my last post!
 
-[![](https://camo.githubusercontent.com/22121fcc4ed529e7fdaea851db57c0e7dbee2ceeffe6f62b536039b71c7362c0/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f302a4433795149343267426b59706e4c58592e6a7067)](https://camo.githubusercontent.com/22121fcc4ed529e7fdaea851db57c0e7dbee2ceeffe6f62b536039b71c7362c0/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f302a4433795149343267426b59706e4c58592e6a7067)
+[
+![image](https://camo.githubusercontent.com/22121fcc4ed529e7fdaea851db57c0e7dbee2ceeffe6f62b536039b71c7362c0/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f302a4433795149343267426b59706e4c58592e6a7067)](https://camo.githubusercontent.com/22121fcc4ed529e7fdaea851db57c0e7dbee2ceeffe6f62b536039b71c7362c0/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f302a4433795149343267426b59706e4c58592e6a7067)
 
 ### [](https://github.com/permission-squad/gist-notes/blob/main/2021-03-19_Front-End-Interview-Questions-Part-2-86ddc0e91443.md#heres-part-one-for-reference)Here’s part one for reference:
 

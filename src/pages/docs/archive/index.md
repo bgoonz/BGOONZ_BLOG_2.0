@@ -92,7 +92,7 @@ template: docs
 <br>
 
 <h2> Up to 1TB of cloud Storage for file sharing!</h2>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://onedrive.live.com/embed?cid=D21009FDD967A241&resid=D21009FDD967A241%21538729&authkey=AHSDSyoYqzg2K2E" height="800px" width="800px" style="zoom:0.69; align-self:center;display:auto;display: block;border:12px solid gold;">
+<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts" style="resize:both; overflow:scroll;"    src="https://onedrive.live.com/embed?cid=D21009FDD967A241&resid=D21009FDD967A241%21538729&authkey=AHSDSyoYqzg2K2E" height="800px" width="100%" style="zoom:0.69; align-self:center;display:auto;display: block;border:12px solid gold;">
 </iframe>
 <br>
 

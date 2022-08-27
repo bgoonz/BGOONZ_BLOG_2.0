@@ -3464,7 +3464,7 @@ Cons
 
         TypeScript is a typed superset of JavaScript created by Microsoft that adds optional types, classes, async/await, and many other features, and compiles to plain JavaScript. Angular built entirely in TypeScript and used as a primary language. You can install it globally as
 
-        ```console
+        ```shell
         npm install -g typescript
         ```
 
@@ -4266,7 +4266,7 @@ Cons
 
         No, you cannot redeclare let and const variables. If you do, it throws below error
 
-        ```console
+        ```shell
         Uncaught SyntaxError: Identifier 'someVariable' has already been declared
         ```
 
@@ -4643,7 +4643,7 @@ Cons
 
 327.    How do you avoid receiving postMessages from attackers
 
-        Since the listener listens for any message, an attacker can trick the application by sending a message from the attacker's origin, which gives an impression that the receiver received the message from the actual sender's window. You can avoid this issue by validating the origin of the message on the receiver's end using the "message.origin" attribute. For examples, let's check the sender's origin [http://www.some-sender.com](http://www.some-sender.com) on receiver side [www.some-receiver.com](www.some-receiver.com),
+        Since the listener listens for any message, an attacker can trick the application by sending a message from the attacker's origin, which gives an impression that the receiver received the message from the actual sender's window. You can avoid this issue by validating the origin of the message on the receiver's end using the "message.origin" attribute. For examples, let's check the sender's origin [http://www.some-sender.com](https://www.some-sender.com) on receiver side [www.some-receiver.com](www.some-receiver.com),
 
         ```javascript
         //Listener on http://www.some-receiver.com/
@@ -5432,7 +5432,7 @@ Cons
 
         and the output would be in
 
-        ```console
+        ```shell
         Script loaded
         My script is initialized
         ```
@@ -5449,7 +5449,7 @@ Cons
 
         and the output is,
 
-        ```console
+        ```shell
         My script is initialized
         Script loaded
         ```
