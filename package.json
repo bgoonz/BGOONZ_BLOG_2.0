@@ -15,8 +15,7 @@
         "pretty": "prettier --write ./static && prettier --write ./docs && prettier --write ./notes",
         "git": "git add . && git commit -m 'update' && git pull && git push",
         "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json}\"",
-        "clean": "gatsby clean",
-        "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+        "clean": "gatsby clean"
     },
     "dependencies": {
         "@stackbit/gatsby-plugin-menus": "0.0.4",
