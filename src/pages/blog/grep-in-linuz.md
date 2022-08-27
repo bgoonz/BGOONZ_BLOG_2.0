@@ -148,4 +148,3 @@ To use extended regular expressions use the `-e` option. The following line matc
 grep -v -e 'foo' -e 'bar'
 ```
 
-Note that in the GNU version of `grep` there is no difference in available functionality between basic and extended syntaxes.

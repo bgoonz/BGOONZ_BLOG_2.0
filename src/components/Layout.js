@@ -15,31 +15,28 @@ export default class Body extends React.Component {
                         _.get(this.props, "pageContext.frontmatter.seo.title", null) ? _.get(this.props, "pageContext.frontmatter.seo.title", null) : _.get(this.props, "pageContext.frontmatter.title", null) + " | " + _.get(this.props, "pageContext.site.siteMetadata.title", null)
                     } </title>
                     <meta charSet="utf-8"/>
-                    <meta name="viewport" content="width=device-width, initialScale=1.0"/>
-                    <meta name="google-site-verification" content="q5W83EYchlVTyA-iYRE4ElQGcbD_vukQF0NKW12N3qU"/>
                     <meta charset="UTF-8"/>
-                    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-                    <link rel="apple-touch-icon" href="logo-circle.png"/>
-                    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-                    <meta http-equiv="Content-Type" content="HTML"/>
+                    <meta name="description"></meta>
                     <meta name="Author" content="Bryan Guner"/>
-                    <meta name="keywords" content="HTML, Meta Tags, Metadata"/>
-                    <meta http-equiv="Content-Type" content="text/html; charset=us-ascii"/>
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
-                    <meta name="twitter:card" content="summary"/>
                     <meta name="twitter:site" content="@bgoonz"/>
+                    <meta http-equiv="Content-Type" content="HTML"/>
                     <meta name="twitter:creator" content="@bgoonz"/>
+                    <link rel="apple-touch-icon" href="logo-circle.png"/>
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+                    <meta name="keywords" content="HTML, Meta Tags, Metadata"/>
                     <meta name="twitter:image:src" content="/logo-circle.png"/>
-                    <meta name="twitter:title" content="Web Development Resource Hub Bryan Guner"/>
                     <meta property="twitter:card" content="summary_large_image"/>
-                    <link href="https://instructure-uploads-pdx.s3.us-west-2.amazonaws.com/account_168550000000000001/attachments/537/logo-canvas.png" rel="apple-touch-icon"/>
+                    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                    <meta http-equiv="Content-Type" content="text/html; charset=us-ascii"/>
+                    <meta name="twitter:title" content="Web Development Resource Hub Bryan Guner"/>
+                    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"></meta>
+                    <meta name="google-site-verification" content="q5W83EYchlVTyA-iYRE4ElQGcbD_vukQF0NKW12N3qU"/>
+                    <meta name="google-site-verification" content="JzC5eRJ3cpAJk6gfrMzLwxEhOd3QnM6c6AYP8-1EWiw" />
+                    <link href="https://d33wubrfki0l68.cloudfront.net/e5662f0d4f3e7730aea1a0faf7ff09ea20184700/83eb0/images/home-button.png" rel="apple-touch-icon" />
                     <link type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet"/>
                     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
                     <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
-                    <meta charSet="utf-8"/>
-                    <meta name="viewport" content="width=device-width, initialScale=1.0"/>
-                    <meta name="description"
+         
                         content={
                             _.get(this.props, "pageContext.frontmatter.seo.description", null) || ""
                         }/> {

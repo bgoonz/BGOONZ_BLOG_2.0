@@ -1,0 +1,275 @@
+html,
+body {
+    font-family: 'Source Sans Pro', monospace, sans-serif;
+    font-size: 100%;
+    line-height: 1.65;
+}
+
+body.noscroll {
+    overflow: hidden;
+}
+
+a,
+a:visited,
+a:focus {
+    text-decoration: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+[align='center'] {
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+    max-width: 800px;
+    font-size: 14px;
+}
+
+code {
+    border-radius: 4px;
+}
+
+h2 {
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid #eee;
+}
+
+blockquote {
+    padding: 0.75em;
+    padding-left: 1em;
+    margin: 0;
+    font-size: 0.95em;
+    color: rgba(0, 0, 0, 0.6);
+    background: rgba(46, 140, 255, 0.05);
+    border-left: 0.25em solid rgba(46, 140, 255, 0.5);
+    width: 100%;
+}
+blockquote > p {
+    margin: 0;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+input[type='search'] {
+    padding: 1em;
+    font-size: 1em;
+    width: 100%;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    background: #2e8cff;
+    color: white;
+    padding: 0.75em 1em;
+    overflow: hidden;
+}
+header .title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 0.25em;
+}
+header .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .info span.version {
+    opacity: 0.6;
+    font-style: italic;
+    font-size: 0.9em;
+}
+header .info .github {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background 150ms ease;
+}
+header .info .github:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+header .info .github img {
+    margin-left: 0.75em;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+main aside {
+    min-width: 260px;
+    border-right: 1px solid #eee;
+    position: fixed;
+    top: 0;
+    width: 260px;
+    height: 100vh;
+    box-shadow: 2px 0 16px 0 rgba(0, 0, 0, 0.05);
+}
+main aside footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding-top: 0.25em;
+    text-align: center;
+    font-size: 13px;
+    border-top: 1px solid #ddd;
+    background: rgba(0, 0, 0, 0.05);
+    z-index: 10;
+}
+main aside footer a {
+    color: #2e8cff;
+    border-bottom: 1px dotted;
+    font-weight: bold;
+}
+main aside ul {
+    height: calc(100vh - 136px);
+    overflow-y: scroll;
+    list-style: none;
+    padding: 0;
+    padding-bottom: 5em;
+    margin: 0;
+}
+main aside ul li.heading,
+main aside ul li.subheading {
+    text-transform: capitalize;
+}
+main aside ul li.heading.noclick a,
+main aside ul li.subheading.noclick a {
+    background: transparent !important;
+}
+main aside ul li.heading a,
+main aside ul li.subheading a {
+    display: block;
+    font-size: 0.9em;
+    padding: 0.75em 1.5em;
+    border-bottom: 1px solid #eee;
+    color: #858585;
+    transition: background 150ms ease;
+}
+main aside ul li.heading a:hover,
+main aside ul li.subheading a:hover {
+    background: #fafafb;
+}
+main aside ul li.heading a.active,
+main aside ul li.subheading a.active {
+    color: #2e8cff;
+}
+main aside ul li.heading a:first-of-type a,
+main aside ul li.subheading a:first-of-type a {
+    border-top: 1px solid #eee;
+}
+main aside ul li.heading a {
+    color: #0c0c0c;
+    font-size: 14px;
+    padding: 0.75em 1.5em;
+}
+main aside ul li.subheading a {
+    padding: 0.5em 1.5em 0.5em 2.5em;
+}
+main section {
+    max-width: calc(100% - 260px);
+    flex: 1;
+    margin-left: 260px;
+}
+main section .component {
+    padding-bottom: 150px;
+}
+main section header {
+    padding: 0.75em;
+    background: white;
+    margin-top: -1px;
+    margin-bottom: 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+main section h1 {
+    color: black;
+}
+main section article {
+    padding: 4em 23%;
+    border-bottom: 1px solid #eee;
+    transition: background 0.1s ease;
+}
+main section article ul.params li > span {
+    color: #a8a8ab;
+}
+main section article:hover {
+    background: white;
+}
+main section article h2 {
+    font-size: 1.6em;
+}
+
+code.lang-shell {
+    display: block;
+    padding: 0.6em;
+}
+
+code {
+    background: #f4f4f7;
+    padding: 6px;
+}
+code div {
+    margin: 0;
+    display: block;
+}
+
+.badge {
+    padding: 4px 8px;
+    font-size: 11px;
+    background: #ccc;
+    border-radius: 20px;
+    margin-left: 1em;
+    vertical-align: middle;
+    color: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
+table th,
+table td {
+    padding: 0.75em 1.5em 0.75em 1em;
+}
+table thead {
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 11px;
+    opacity: 0.4;
+}
+table tbody td {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+    line-height: 1.65;
+    color: #666666;
+}
+table td > strong {
+    color: black;
+}
+
+/*# sourceMappingURL=main.css.map */

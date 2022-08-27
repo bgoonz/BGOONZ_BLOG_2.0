@@ -1,4 +1,3 @@
-/* Adding event listeners to the menu toggle buttons. */
 window.onGatsbyInitialClientRender = function() {
 /**
  * Main JS file for theme behaviours

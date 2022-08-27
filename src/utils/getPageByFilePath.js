@@ -1,9 +1,3 @@
-/**
- * It takes a data path and returns the data at that path
- * @param siteData - The site data object.
- * @param dataPath - The path to the data file.
- * @returns The data from the dataPath.
- */
 import _ from 'lodash';
 
 /**

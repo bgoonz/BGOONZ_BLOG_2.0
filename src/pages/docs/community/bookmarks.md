@@ -88,7 +88,7 @@ template: docs
 -   [✅] [_**Pull requests ·bgoonz/mini-tools-v3**_](https://github.com/bgoonz/mini-tools-v3/pulls)
 -   [✅] [_**android - emoji look up table and algorithm - StackOverflow**_](https://stackoverflow.com/questions/43858441/emoji-look-up-table-and-algorithm)
 -   [✅] [_**mini-tools-v3 -- Overview --Vercel**_](https://vercel.com/bgoonz/mini-tools-v3)
--   [✅] [_**ExpressJS Apis \|webdevhub**_](https://bgoonz-blog-2-0.vercel.app/blog/blogwcomments/)
+-   [✅] [_**ExpressJS Apis \|webdevhub**_](https://bgoonz-blog.vercel.app/blog/blogwcomments/)
 -   [✅] [_**collaborate? - bryan.guner\@gmail.com -Gmail**_](https://mail.google.com/mail/u/0/?tab=rm&ogbl#search/Tips+fo/FMfcgzGllMDQdVMdZlCWDhWNZTWMdkdK)
 -   [✅] [_**Entrepreneur Blog \| Blogtrepreneur**_](https://www.blogtrepreneur.com/)
 -   [✅] [_**Technical SEO Consultant for eCommerce, Javascript & Large ScaleWebsites - ScottySEO**_](https://scottyseo.com/)

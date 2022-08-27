@@ -110,14 +110,6 @@
                         "no_follow": false
                     },
                     {
-                        "label": "Do's and Don'ts of interviews✅🚯",
-                        "url": "interview/dos-and-donts",
-                        "style": "primary",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false
-                    },
-                    {
                         "label": "Career-Tips🎓",
                         "url": "https://bgoonz-blog.netlify.app//docs/career/",
                         "style": "primary",
