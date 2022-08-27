@@ -1,8 +1,8 @@
-const contextCondition = "production";
-const stateCondition = "ready";
+const contextCondition = 'production';
+const stateCondition = 'ready';
 const sitemapUrl = process.env.SITEMAP_URL;
 
-const axios = require("axios");
+const axios = require('axios');
 
 exports.handler = async (event) => {
   try {
@@ -23,7 +23,7 @@ exports.handler = async (event) => {
         body: `Submitted Successfully`,
       };
     }
-    console.log("Conditions not met, not submitting");
+    console.log('Conditions not met, not submitting');
 
     return {
       statusCode: 200,
