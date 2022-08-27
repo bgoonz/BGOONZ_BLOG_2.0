@@ -127,10 +127,10 @@ ___
 | [academic-resources/BGOONZ\_BLOG\_2.0](https://github.com/academic-resources/BGOONZ_BLOG_2.0) | 0 | 0 | 6 months, 4 weeks ago |
 | [jyoshnakarna/BGOONZ\_BLOG\_2.0](https://github.com/jyoshnakarna/BGOONZ_BLOG_2.0) | 0 | 0 | 2 months, 2 weeks ago |
 | [bgoonz/BGOONZ\_BLOG\_2.0](https://github.com/bgoonz/BGOONZ_BLOG_2.0) | 14 | 35 | 5 minutes ago |
+---
 
-
-
-
+## Deploys 
+[vercel branch netlify](https://6309792f5c634e0009e7e51b--bgoonz-blog.netlify.app/)
 ---
 
 ### Workflows
