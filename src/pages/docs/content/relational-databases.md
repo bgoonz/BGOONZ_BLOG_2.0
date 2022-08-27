@@ -32,7 +32,7 @@ You can access and query the data using the findByPk, findOne, and findAll metho
 *If you follow this guide to a tee you will install PostgreSQL itself on your Windows installation. Then, you will* bryanguner.medium.com](https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089 "https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089")
 
 -   However, if you face issues while installing PostgreSQL, or you don t want to dive into installing it, you can opt for a version of PostgreSQL hosted online. I recommend [ElephantSQL](https://www.elephantsql.com/). I found it s pretty easy to get started with. However, the free version will only give you a 20MB allowance.
--   [Sequelize](http://docs.sequelizejs.com/en/latest/) In addition, we re going to use Sequelize, which is a database [ORM](https://en.wikipedia.org/wiki/Object-relational_mapping) that will interface with the Postgres database for us.
+-   [Sequelize](https://docs.sequelizejs.com/en/latest/) In addition, we re going to use Sequelize, which is a database [ORM](https://en.wikipedia.org/wiki/Object-relational_mapping) that will interface with the Postgres database for us.
 
 **RDBMS and Database Entities**
 
@@ -731,14 +731,14 @@ console.log(JSON.stringify(cats, null, 2));
 
 -   const { Op } = require("sequelize");
 
--   [Op.ne](http://op.ne/): Not equal operator
+-   [Op.ne](https://op.ne/): Not equal operator
 
     const cats = await Cat.findAll({\
     where: {\
     firstName: {\
     // All cats where the name is not equal to "Markov"\
-    // We use brackets in order to evaluate [Op.ne](http://op.ne/) and use the value as the key\
-    [[Op.ne](http://op.ne/)]: "Markov"\
+    // We use brackets in order to evaluate [Op.ne](https://op.ne/) and use the value as the key\
+    [[Op.ne](https://op.ne/)]: "Markov"\
     },\
     },\
     });\
@@ -776,7 +776,7 @@ const cats = await Cat.findAll({
 });
 console.log(JSON.stringify(cats, null, 2));
 
-[Op.gt](http://op.gt/) and [Op.lt](http://op.lt/): greater than and less than operators
+[Op.gt](https://op.gt/) and [Op.lt](https://op.lt/): greater than and less than operators
 
 const cats = await Cat.findAll({ where: { // Find all cats where the age is greater than 4 age: {Op.gtOp.gt: 4 }, } }, }); console.log(JSON.stringify(cats, null, 2));
 
