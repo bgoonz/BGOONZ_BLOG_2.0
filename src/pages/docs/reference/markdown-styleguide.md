@@ -19,8 +19,7 @@ as well as examples of documents that break the rule and corrected
 versions of the examples. Any rule whose heading is ~~struck through~~ is
 deprecated, but still provided for backward-compatibility.
 
-<a name="md001">
-</a>
+<a name="md001"></a>
 
 ## MD001 - Heading levels should only increment by one level at a time
 
@@ -60,8 +59,7 @@ Rationale: Headings represent the structure of a document and can be confusing
 when skipped - especially for accessibility scenarios. More information:
 <https://www.w3.org/WAI/tutorials/page-structure/headings/>.
 
-<a name="md002">
-</a>
+<a name="md002"></a>
 
 ## ~~MD002 - First heading should be a top-level heading~~
 
@@ -71,7 +69,8 @@ Aliases: first-heading-h1, first-header-h1
 
 Parameters: level (number; default 1)
 
-> Note: _MD002 has been deprecated and is disabled by default._ > [MD041/first-line-heading](#md041) offers an improved implementation.
+> Note: *MD002 has been deprecated and is disabled by default.*
+> [MD041/first-line-heading](#md041) offers an improved implementation.
 
 This rule is intended to ensure document headings start at the top level and
 is triggered when the first heading in the document isn't an h1 heading:
@@ -96,8 +95,7 @@ cases where an h1 is added externally.
 Rationale: The top-level heading often acts as the title of a document. More
 information: <https://cirosantilli.com/markdown-style-guide#top-level-header>.
 
-<a name="md003">
-</a>
+<a name="md003"></a>
 
 ## MD003 - Heading style
 
@@ -114,9 +112,10 @@ atx) are used in the same document:
 ```markdown
 # ATX style H1
 
-## Closed ATX style H2
+## Closed ATX style H2 ##
 
-# Setext style H1
+Setext style H1
+===============
 ```
 
 Be consistent with the style of heading used in a document:
@@ -131,9 +130,11 @@ The setext_with_atx and setext_with_atx_closed doc styles allow atx-style
 headings of level 3 or more in documents with setext style headings:
 
 ```markdown
-# Setext style H1
+Setext style H1
+===============
 
-## Setext style H2
+Setext style H2
+---------------
 
 ### ATX style H3
 ```
@@ -144,8 +145,7 @@ that the usage is consistent within the document.
 
 Rationale: Consistent formatting makes it easier to understand a document.
 
-<a name="md004">
-</a>
+<a name="md004"></a>
 
 ## MD004 - Unordered list style
 
@@ -162,20 +162,18 @@ This rule is triggered when the symbols used in the document for unordered
 list items do not match the configured unordered list style:
 
 ```markdown
--   Item 1
-
-*   Item 2
-
--   Item 3
+* Item 1
++ Item 2
+- Item 3
 ```
 
 To fix this issue, use the configured style for list items throughout the
 document:
 
 ```markdown
--   Item 1
--   Item 2
--   Item 3
+* Item 1
+* Item 2
+* Item 3
 ```
 
 The configured list style can be a specific symbol to use (asterisk, plus, dash),
@@ -187,18 +185,17 @@ indent uses asterisk, the middle indent uses plus, and the inner-most indent use
 dash:
 
 ```markdown
--   Item 1
-    -   Item 2
-        -   Item 3
-    -   Item 4
--   Item 4
-    -   Item 5
+* Item 1
+  + Item 2
+    - Item 3
+  + Item 4
+* Item 4
+  + Item 5
 ```
 
 Rationale: Consistent formatting makes it easier to understand a document.
 
-<a name="md005">
-</a>
+<a name="md005"></a>
 
 ## MD005 - Inconsistent indentation for list items at the same level
 
@@ -212,27 +209,31 @@ This rule is triggered when list items are parsed as being at the same level,
 but don't have the same indentation:
 
 ```markdown
--   Item 1
-    -   Nested Item 1
-    -   Nested Item 2
-    -   A misaligned item
+* Item 1
+  * Nested Item 1
+  * Nested Item 2
+   * A misaligned item
 ```
 
 Usually, this rule will be triggered because of a typo. Correct the indentation
 for the list to fix it:
 
 ```markdown
--   Item 1
-    -   Nested Item 1
-    -   Nested Item 2
-    -   Nested Item 3
+* Item 1
+  * Nested Item 1
+  * Nested Item 2
+  * Nested Item 3
 ```
 
 Sequentially-ordered list markers are usually left-aligned such that all items
 have the same starting column:
 
 ```markdown
-... 8. Item 9. Item 10. Item 11. Item
+...
+8. Item
+9. Item
+10. Item
+11. Item
 ...
 ```
 
@@ -240,14 +241,17 @@ This rule also supports right-alignment of list markers such that all items have
 the same ending column:
 
 ```markdown
-... 8. Item 9. Item 10. Item 11. Item
+...
+ 8. Item
+ 9. Item
+10. Item
+11. Item
 ...
 ```
 
 Rationale: Violations of this rule can lead to improperly rendered content.
 
-<a name="md006">
-</a>
+<a name="md006"></a>
 
 ## ~~MD006 - Consider starting bulleted lists at the beginning of the line~~
 
@@ -263,8 +267,8 @@ line:
 ```markdown
 Some text
 
--   List item
--   List item
+  * List item
+  * List item
 ```
 
 To fix, ensure that top-level list items are not indented:
@@ -272,8 +276,8 @@ To fix, ensure that top-level list items are not indented:
 ```markdown
 Some test
 
--   List item
--   List item
+* List item
+* List item
 ```
 
 Note: This rule is triggered for the following scenario because the unordered
@@ -283,10 +287,8 @@ instead.
 
 ```markdown
 1. List item
-
--   List item
--   List item
-
+  - List item
+  - List item
 1. List item
 ```
 
@@ -296,8 +298,7 @@ or the tab key is used to indent. Starting a list 1 space in means that the
 indent of the first nested list is less than the indent of the second level (3
 characters if you use 4 space tabs, or 1 character if you use 2 space tabs).
 
-<a name="md007">
-</a>
+<a name="md007"></a>
 
 ## MD007 - Unordered list indentation
 
@@ -315,15 +316,15 @@ number of spaces (default: 2).
 Example:
 
 ```markdown
--   List item
-    -   Nested list item indented by 3 spaces
+* List item
+   * Nested list item indented by 3 spaces
 ```
 
 Corrected Example:
 
 ```markdown
--   List item
-    -   Nested list item indented by 2 spaces
+* List item
+  * Nested list item indented by 2 spaces
 ```
 
 Note: This rule applies to a sublist only if its parent lists are all also
@@ -344,8 +345,7 @@ and <http://support.markedapp.com/discussions/problems/21-sub-lists-not-indentin
 
 Note: See [Prettier.md](Prettier.md) for compatibility information.
 
-<a name="md009">
-</a>
+<a name="md009"></a>
 
 ## MD009 - Trailing spaces
 
@@ -388,16 +388,15 @@ but some parsers require it. Set the `list_item_empty_lines` parameter to `true`
 to allow this (even when `strict` is `true`):
 
 ```markdown
--   list item text
-    [2 spaces]
-    list item text
+- list item text
+  [2 spaces]
+  list item text
 ```
 
 Rationale: Except when being used to create a line break, trailing whitespace
 has no purpose and does not affect the rendering of content.
 
-<a name="md010">
-</a>
+<a name="md010"></a>
 
 ## MD010 - Hard tabs
 
@@ -420,7 +419,7 @@ Example:
 ```markdown
 Some text
 
-    * hard tab character used to indent the list item
+	* hard tab character used to indent the list item
 ```
 
 <!-- markdownlint-restore -->
@@ -443,8 +442,7 @@ parameter to the number x. The default value would be 1.
 Rationale: Hard tabs are often rendered inconsistently by different editors and
 can be harder to work with than spaces.
 
-<a name="md011">
-</a>
+<a name="md011"></a>
 
 ## MD011 - Reversed link syntax
 
@@ -477,8 +475,7 @@ For (example)[^1]
 
 Rationale: Reversed links are not rendered as usable links.
 
-<a name="md012">
-</a>
+<a name="md012"></a>
 
 ## MD012 - Multiple consecutive blank lines
 
@@ -495,6 +492,7 @@ document:
 
 ```markdown
 Some text here
+
 
 Some more text here
 ```
@@ -516,8 +514,7 @@ consecutive blank lines.
 Rationale: Except in a code block, blank lines serve no purpose and do not
 affect the rendering of content.
 
-<a name="md013">
-</a>
+<a name="md013"></a>
 
 ## MD013 - Line length
 
@@ -527,7 +524,7 @@ Aliases: line-length
 
 <!-- markdownlint-disable line-length -->
 
-Parameters: line_length, heading_line_length, code_block_line_length, code_blocks, tables, headings, headers, strict, stern (number; default 80 for \*\_length, boolean; default true (except strict/stern which default false))
+Parameters: line_length, heading_line_length, code_block_line_length, code_blocks, tables, headings, headers, strict, stern (number; default 80 for *_length, boolean; default true (except strict/stern which default false))
 
 <!-- markdownlint-restore -->
 
@@ -568,8 +565,7 @@ rules. Still, some languages do not lend themselves to short lines.
 Rationale: Extremely long lines can be difficult to work with in some editors.
 More information: <https://cirosantilli.com/markdown-style-guide#line-wrapping>.
 
-<a name="md014">
-</a>
+<a name="md014"></a>
 
 ## MD014 - Dollar signs used before commands without showing output
 
@@ -580,7 +576,7 @@ Aliases: commands-show-output
 Fixable: Most violations can be fixed by tooling
 
 This rule is triggered when there are code blocks showing shell commands to be
-typed, and _all_ of the shell commands are preceded by dollar signs ($):
+typed, and *all* of the shell commands are preceded by dollar signs ($):
 
 <!-- markdownlint-disable commands-show-output -->
 
@@ -612,7 +608,7 @@ $ cat bar
 baz
 ```
 
-Because some commands do not produce output, it is not a violation if _some_
+Because some commands do not produce output, it is not a violation if *some*
 commands do not have output:
 
 ```markdown
@@ -626,8 +622,7 @@ are omitted when they are not needed. See
 <https://cirosantilli.com/markdown-style-guide#dollar-signs-in-shell-code>
 for more information.
 
-<a name="md018">
-</a>
+<a name="md018"></a>
 
 ## MD018 - No space after hash on atx style heading
 
@@ -657,8 +652,7 @@ space:
 
 Rationale: Violations of this rule can lead to improperly rendered content.
 
-<a name="md019">
-</a>
+<a name="md019"></a>
 
 ## MD019 - Multiple spaces after hash on atx style heading
 
@@ -672,9 +666,9 @@ This rule is triggered when more than one space is used to separate the
 heading text from the hash characters in an atx style heading:
 
 ```markdown
-# Heading 1
+#  Heading 1
 
-## Heading 2
+##  Heading 2
 ```
 
 To fix this, separate the heading text from the hash character by a single
@@ -689,8 +683,7 @@ space:
 Rationale: Extra space has no purpose and does not affect the rendering of
 content.
 
-<a name="md020">
-</a>
+<a name="md020"></a>
 
 ## MD020 - No space inside hashes on closed atx style heading
 
@@ -713,17 +706,16 @@ To fix this, separate the heading text from the hash character by a single
 space:
 
 ```markdown
-# Heading 1
+# Heading 1 #
 
-## Heading 2
+## Heading 2 ##
 ```
 
 Note: this rule will fire if either side of the heading is missing spaces.
 
 Rationale: Violations of this rule can lead to improperly rendered content.
 
-<a name="md021">
-</a>
+<a name="md021"></a>
 
 ## MD021 - Multiple spaces inside hashes on closed atx style heading
 
@@ -737,18 +729,18 @@ This rule is triggered when more than one space is used to separate the
 heading text from the hash characters in a closed atx style heading:
 
 ```markdown
-# Heading 1
+#  Heading 1  #
 
-## Heading 2
+##  Heading 2  ##
 ```
 
 To fix this, separate the heading text from the hash character by a single
 space:
 
 ```markdown
-# Heading 1
+# Heading 1 #
 
-## Heading 2
+## Heading 2 ##
 ```
 
 Note: this rule will fire if either side of the heading contains multiple
@@ -757,8 +749,7 @@ spaces.
 Rationale: Extra space has no purpose and does not affect the rendering of
 content.
 
-<a name="md022">
-</a>
+<a name="md022"></a>
 
 ## MD022 - Headings should be surrounded by blank lines
 
@@ -775,11 +766,9 @@ followed by at least one blank line:
 
 ```markdown
 # Heading 1
-
 Some text
 
 Some more text
-
 ## Heading 2
 ```
 
@@ -806,8 +795,7 @@ Rationale: Aside from aesthetic reasons, some parsers, including `kramdown`, wil
 not parse headings that don't have a blank line before, and will parse them as
 regular text.
 
-<a name="md023">
-</a>
+<a name="md023"></a>
 
 ## MD023 - Headings must start at the beginning of the line
 
@@ -822,7 +810,7 @@ This rule is triggered when a heading is indented by one or more spaces:
 ```markdown
 Some text
 
-# Indented heading
+  # Indented heading
 ```
 
 To fix this, ensure that all headings start at the beginning of the line:
@@ -836,8 +824,7 @@ Some text
 Rationale: Headings that don't start at the beginning of the line will not be
 parsed as headings, and will instead appear as regular text.
 
-<a name="md024">
-</a>
+<a name="md024"></a>
 
 ## MD024 - Multiple headings with the same content
 
@@ -883,8 +870,7 @@ in changelogs):
 Rationale: Some markdown parsers generate anchors for headings based on the
 heading name; headings with the same content can cause problems with that.
 
-<a name="md025">
-</a>
+<a name="md025"></a>
 
 ## MD025 - Multiple top-level headings in the same document
 
@@ -931,8 +917,7 @@ serves as the title for the document. If this convention is in use, then there
 can not be more than one title for the document, and the entire document
 should be contained within this heading.
 
-<a name="md026">
-</a>
+<a name="md026"></a>
 
 ## MD026 - Trailing punctuation in heading
 
@@ -971,8 +956,7 @@ like `&copy;`, `&#169;`, and `&#x000A9;` is ignored by this rule.
 Rationale: Headings are not meant to be full sentences. More information:
 <https://cirosantilli.com/markdown-style-guide#punctuation-at-the-end-of-headers>
 
-<a name="md027">
-</a>
+<a name="md027"></a>
 
 ## MD027 - Multiple spaces after blockquote symbol
 
@@ -986,8 +970,8 @@ This rule is triggered when blockquotes have more than one space after the
 blockquote (`>`) symbol:
 
 ```markdown
-> This is a blockquote with bad indentation
-> there should only be one.
+>  This is a blockquote with bad indentation
+>  there should only be one.
 ```
 
 To fix, remove any extraneous space:
@@ -999,8 +983,7 @@ To fix, remove any extraneous space:
 
 Rationale: Consistent formatting makes it easier to understand a document.
 
-<a name="md028">
-</a>
+<a name="md028"></a>
 
 ## MD028 - Blank line inside blockquote
 
@@ -1043,8 +1026,7 @@ Rationale: Some markdown parsers will treat two blockquotes separated by one
 or more blank lines as the same blockquote, while others will treat them as
 separate blockquotes.
 
-<a name="md029">
-</a>
+<a name="md029"></a>
 
 ## MD029 - Ordered list item prefix
 
@@ -1087,21 +1069,25 @@ Example valid list if the style is configured as 'zero':
 
 ```markdown
 0. Do this.
-1. Do that.
-2. Done.
+0. Do that.
+0. Done.
 ```
 
 Example invalid list for all styles:
 
 ```markdown
 1. Do this.
-2. Done.
+3. Done.
 ```
 
 This rule supports 0-prefixing ordered list items for uniform indentation:
 
 ```markdown
-... 08. Item 09. Item 10. Item 11. Item
+...
+08. Item
+09. Item
+10. Item
+11. Item
 ...
 ```
 
@@ -1111,39 +1097,34 @@ improperly-indented code block (or similar) appears between two list items and
 
 <!-- markdownlint-disable code-fence-style -->
 
-````markdown
+~~~markdown
 1. First list
 
 ```text
 Code block
 ```
-````
-
-```
 
 1. Second list
-
-```
+~~~
 
 The fix is to indent the code block so it becomes part of the preceding list
 item as intended:
 
-````markdown
+~~~markdown
 1. First list
 
-    ```text
-    Code block
-    ```
+   ```text
+   Code block
+   ```
 
 2. Still first list
-````
+~~~
 
 <!-- markdownlint-restore -->
 
 Rationale: Consistent formatting makes it easier to understand a document.
 
-<a name="md030">
-</a>
+<a name="md030"></a>
 
 ## MD030 - Spaces after list markers
 
@@ -1162,16 +1143,16 @@ The number of spaces checked for depends on the document style in use, but the
 default is 1 space after any list marker:
 
 ```markdown
--   Foo
--   Bar
--   Baz
+* Foo
+* Bar
+* Baz
 
 1. Foo
 1. Bar
 1. Baz
 
 1. Foo
-    - Bar
+   * Bar
 1. Baz
 ```
 
@@ -1188,19 +1169,19 @@ and unordered lists respectively) if there are multiple paragraphs of content
 inside the list:
 
 ```markdown
--   Foo
--   Bar
--   Baz
+* Foo
+* Bar
+* Baz
 ```
 
 vs.
 
 ```markdown
--   Foo
+*   Foo
 
     Second paragraph
 
--   Bar
+*   Bar
 ```
 
 or
@@ -1220,8 +1201,7 @@ Rationale: Violations of this rule can lead to improperly rendered content.
 
 Note: See [Prettier.md](Prettier.md) for compatibility information.
 
-<a name="md031">
-</a>
+<a name="md031"></a>
 
 ## MD031 - Fenced code blocks should be surrounded by blank lines
 
@@ -1236,41 +1216,34 @@ Fixable: Most violations can be fixed by tooling
 This rule is triggered when fenced code blocks are either not preceded or not
 followed by a blank line:
 
-```markdown
+````markdown
 Some text
 ```
-
 Code block
-
 ```
 
 ```
-
 Another code block
-
 ```
 Some more text
-```
+````
 
 To fix this, ensure that all fenced code blocks have a blank line both before
 and after (except where the block is at the beginning or end of the document):
 
-```markdown
+````markdown
 Some text
-```
 
+```
 Code block
-
 ```
 
 ```
-
 Another code block
-
 ```
 
 Some more text
-```
+````
 
 Set the `list_items` parameter to `false` to disable this rule for list items.
 Disabling this behavior for lists can be useful if it is necessary to create a
@@ -1279,8 +1252,7 @@ Disabling this behavior for lists can be useful if it is necessary to create a
 Rationale: Aside from aesthetic reasons, some parsers, including kramdown, will
 not parse fenced code blocks that don't have blank lines before and after them.
 
-<a name="md032">
-</a>
+<a name="md032"></a>
 
 ## MD032 - Lists should be surrounded by blank lines
 
@@ -1295,13 +1267,12 @@ followed by a blank line:
 
 ```markdown
 Some text
-
--   Some
--   List
+* Some
+* List
 
 1. Some
 2. List
-   Some text
+Some text
 ```
 
 To fix this, ensure that all lists have a blank line both before and after
@@ -1310,8 +1281,8 @@ To fix this, ensure that all lists have a blank line both before and after
 ```markdown
 Some text
 
--   Some
--   List
+* Some
+* List
 
 1. Some
 2. List
@@ -1322,8 +1293,7 @@ Some text
 Rationale: Aside from aesthetic reasons, some parsers, including kramdown, will
 not parse lists that don't have blank lines before and after them.
 
-<a name="md033">
-</a>
+<a name="md033"></a>
 
 ## MD033 - Inline HTML
 
@@ -1351,8 +1321,7 @@ Rationale: Raw HTML is allowed in markdown, but this rule is included for
 those who want their documents to only include "pure" markdown, or for those
 who are rendering markdown documents in something other than HTML.
 
-<a name="md034">
-</a>
+<a name="md034"></a>
 
 ## MD034 - Bare URL used
 
@@ -1399,8 +1368,7 @@ The use of quotes around a bare link will _not_ trigger this rule, either:
 Rationale: Without angle brackets, the URL isn't converted into a link by many
 markdown parsers.
 
-<a name="md035">
-</a>
+<a name="md035"></a>
 
 ## MD035 - Horizontal rule style
 
@@ -1408,7 +1376,7 @@ Tags: hr
 
 Aliases: hr-style
 
-Parameters: style ("consistent", "---", "\*\*\*", or other string specifying the
+Parameters: style ("consistent", "---", "***", or other string specifying the
 horizontal rule; default "consistent")
 
 This rule is triggered when inconsistent styles of horizontal rules are used
@@ -1416,13 +1384,14 @@ in the document:
 
 ```markdown
 ---
----
 
----
+- - -
 
----
+***
 
----
+* * *
+
+****
 ```
 
 To fix this, ensure any horizontal rules used in the document are consistent,
@@ -1430,6 +1399,7 @@ or match the given style if the rule is so configured:
 
 ```markdown
 ---
+
 ---
 ```
 
@@ -1442,8 +1412,7 @@ is allowed.
 
 Rationale: Consistent formatting makes it easier to understand a document.
 
-<a name="md036">
-</a>
+<a name="md036"></a>
 
 ## MD036 - Emphasis used instead of a heading
 
@@ -1489,8 +1458,7 @@ Rationale: Using emphasis instead of a heading prevents tools from inferring
 the structure of a document. More information:
 <https://cirosantilli.com/markdown-style-guide#emphasis-vs-headers>.
 
-<a name="md037">
-</a>
+<a name="md037"></a>
 
 ## MD037 - Spaces inside emphasis markers
 
@@ -1506,9 +1474,9 @@ have spaces between the markers and the text:
 ```markdown
 Here is some ** bold ** text.
 
-Here is some _ italic _ text.
+Here is some * italic * text.
 
-Here is some more ** bold ** text.
+Here is some more __ bold __ text.
 
 Here is some more _ italic _ text.
 ```
@@ -1518,9 +1486,9 @@ To fix this, remove the spaces around the emphasis markers:
 ```markdown
 Here is some **bold** text.
 
-Here is some _italic_ text.
+Here is some *italic* text.
 
-Here is some more **bold** text.
+Here is some more __bold__ text.
 
 Here is some more _italic_ text.
 ```
@@ -1530,8 +1498,7 @@ aren't surrounded by spaces. This rule attempts to detect where
 they were surrounded by spaces, but it appears that emphasized text was
 intended by the author.
 
-<a name="md038">
-</a>
+<a name="md038"></a>
 
 ## MD038 - Spaces inside code span elements
 
@@ -1572,8 +1539,7 @@ markers from an embedded backtick:
 
 Rationale: Violations of this rule can lead to improperly rendered content.
 
-<a name="md039">
-</a>
+<a name="md039"></a>
 
 ## MD039 - Spaces inside link text
 
@@ -1597,8 +1563,7 @@ To fix this, remove the spaces surrounding the link text:
 
 Rationale: Consistent formatting makes it easier to understand a document.
 
-<a name="md040">
-</a>
+<a name="md040"></a>
 
 ## MD040 - Fenced code blocks should have a language specified
 
@@ -1609,49 +1574,35 @@ Aliases: fenced-code-language
 This rule is triggered when fenced code blocks are used, but a language isn't
 specified:
 
-```markdown
-
+````markdown
 ```
-
 #!/bin/bash
 echo Hello world
-
 ```
-
-```
+````
 
 To fix this, add a language specifier to the code block:
 
 ````markdown
-```shell
+```bash
 #!/bin/bash
 echo Hello world
 ```
 ````
 
-```
-
-```
-
-````
-
 To display a code block without syntax highlighting, use:
 
-```markdown
+````markdown
 ```text
 Plain text in a code block
+```
 ````
-
-```
-
-```
 
 Rationale: Specifying a language improves content rendering by using the
 correct syntax highlighting for code. More information:
 <https://cirosantilli.com/markdown-style-guide#option-code-fenced>.
 
-<a name="md041">
-</a>
+<a name="md041"></a>
 
 ## MD041 - First line in a file should be a top-level heading
 
@@ -1681,9 +1632,7 @@ Because it is common for projects on GitHub to use an image for the heading of
 permitted by this rule. For example:
 
 ```markdown
-<h1 align="center">
-<img src="https://placekitten.com/300/150"/>
-</h1>
+<h1 align="center"><img src="https://placekitten.com/300/150"/></h1>
 
 This is a file with a top-level HTML heading
 ```
@@ -1700,8 +1649,7 @@ To disable the use of front matter by this rule, specify `""` for `front_matter_
 Rationale: The top-level heading often acts as the title of a document. More
 information: <https://cirosantilli.com/markdown-style-guide#top-level-header>.
 
-<a name="md042">
-</a>
+<a name="md042"></a>
 
 ## MD042 - No empty links
 
@@ -1735,8 +1683,7 @@ But non-empty fragments will not:
 
 Rationale: Empty links do not lead anywhere and therefore don't function as links.
 
-<a name="md043">
-</a>
+<a name="md043"></a>
 
 ## MD043 - Required heading structure
 
@@ -1756,30 +1703,27 @@ To require exactly the following structure:
 
 ```markdown
 # Head
-
 ## Item
-
 ### Detail
 ```
 
 Set the `headings` parameter to:
 
-```js
-//on
-['# Head', '## Item', '### Detail'];
+```json
+[
+    "# Head",
+    "## Item",
+    "### Detail"
+]
 ```
 
 To allow optional headings as with the following structure:
 
 ```markdown
 # Head
-
 ## Item
-
 ### Detail (optional)
-
 ## Foot
-
 ### Notes (optional)
 ```
 
@@ -1787,9 +1731,14 @@ Use the special value `"*"` meaning "zero or more unspecified headings" or the
 special value `"+"` meaning "one or more unspecified headings" and set the
 `headings` parameter to:
 
-```js
-//on
-['# Head', '## Item', '*', '## Foot', '*'];
+```json
+[
+    "# Head",
+    "## Item",
+    "*",
+    "## Foot",
+    "*"
+]
 ```
 
 When an error is detected, this rule outputs the line number of the first
@@ -1801,8 +1750,7 @@ simplicity, a file may use any supported heading style.
 Rationale: Projects may wish to enforce a consistent document structure across
 a set of similar content.
 
-<a name="md044">
-</a>
+<a name="md044"></a>
 
 ## MD044 - Proper names should have the correct capitalization
 
@@ -1822,17 +1770,17 @@ For example, the language "JavaScript" is usually written with both the 'J' and
 'S' capitalized - though sometimes the 's' or 'j' appear in lower-case. To enforce
 the proper capitalization, specify the desired letter case in the `names` array:
 
-```js
-//on
-['JavaScript'];
+```json
+[
+    "JavaScript"
+]
 ```
 
 Set the `code_blocks` parameter to `false` to disable this rule for code blocks.
 
 Rationale: Incorrect capitalization of proper names is usually a mistake.
 
-<a name="md045">
-</a>
+<a name="md045"></a>
 
 ## MD045 - Images should have alternate text (alt text)
 
@@ -1855,7 +1803,7 @@ Or with reference syntax as:
 
 ...
 
-[ref]: image.jpg 'Optional title'
+[ref]: image.jpg "Optional title"
 ```
 
 Guidance for writing alternate text is available from the [W3C](https://www.w3.org/WAI/alt/),
@@ -1865,8 +1813,7 @@ Guidance for writing alternate text is available from the [W3C](https://www.w3.o
 Rationale: Alternate text is important for accessibility and describes the
 content of an image for people who may not be able to see it.
 
-<a name="md046">
-</a>
+<a name="md046"></a>
 
 ## MD046 - Code block style
 
@@ -1905,8 +1852,7 @@ that usage be consistent within the document (`consistent`).
 
 Rationale: Consistent formatting makes it easier to understand a document.
 
-<a name="md047">
-</a>
+<a name="md047"></a>
 
 ## MD047 - Files should end with a single newline character
 
@@ -1939,8 +1885,7 @@ This file ends with a newline.
 Rationale: Some programs have trouble with files that do not end with a newline.
 More information: <https://unix.stackexchange.com/questions/18743/whats-the-point-in-adding-a-new-line-to-the-end-of-a-file>.
 
-<a name="md048">
-</a>
+<a name="md048"></a>
 
 ## MD048 - Code fence style
 
@@ -1957,34 +1902,26 @@ blocks do not match the configured code fence style:
 ```ruby
 # Fenced code
 ```
-````
 
-```
-
-```
-
-```ruby
+~~~ruby
 # Fenced code
-```
-
+~~~
 ````
 
 To fix this issue, use the configured code fence style throughout the
 document:
 
-```markdown
+````markdown
 ```ruby
 # Fenced code
+```
+
+```ruby
+# Fenced code
+```
 ````
-
-```ruby
-# Fenced code
-```
-
-```
 
 The configured list style can be a specific symbol to use (backtick, tilde), or
 can require that usage be consistent within the document.
 
 Rationale: Consistent formatting makes it easier to understand a document.
-```

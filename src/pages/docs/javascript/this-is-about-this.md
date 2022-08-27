@@ -10,412 +10,200 @@ seo:
 template: docs
 ---
 
-
 # What is THIS
 
-# What is `this`?
+## If the function is defined as an arrow function: [#](https://web.dev/javascript-this/#arrow-functions)
 
-[**`this`**][mdn] is a special "variable" which implicitly exists in every
-function. It can be thought of being similar to Java's `this` and Python's
-`self`, but it's much more flexible than that.
-
-<div class="callout warning">
-
-**Important**: The value of `this` is determined when the
-function is **called**, not when the function is
-_defined_.
-
-</div>
-
-Given the following function:
-
----
-
-
-```js
-//
-
-
-function foo() {
-    console.log(this);
-}
+```
+const arrowFunction = () => {  console.log(this);};
 ```
 
-these would be the values of `this` if called in those specific ways:
+In this case, the value of `this` is *always* the same as `this` in the parent scope:
 
-```js
-//
-// "normal call": global object / window in browsers
-//                undefined in strict mode
-foo();
-
-// as object "method": to the object
-var obj = { method: foo };
-obj.method();
-
-// via .call / .apply: To the value passed as first argument
-foo.call(bar);
+```
+const outerThis = this;const arrowFunction = () => {  // Always logs `true`:  console.log(this === outerThis);};
 ```
 
-[mdn]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this
+Arrow functions are great because the inner value of `this` can't be changed, it's *always* the same as the outer `this`.
 
-## What is the this keyword
+### Other examples [#](https://web.dev/javascript-this/#other-examples)
 
-In general, the `this` references the object of which the function is a property. In other words, the `this` references the object that is currently calling the function.
+With arrow functions, the value of `this` *can't* be changed with [`bind`](https://web.dev/javascript-this/#bound):
 
-Suppose you have an object called `counter` that has a method `next()`. When you call the `next()` method, you can access the `this` object.
-
-```js
-//
-let counter = {
-  count: 0,
-  next: function () {
-    return ++this.count;
-  },
-};
-
-counter.next();Code language: JavaScript (javascript)
+```
+// Logs `true` - bound `this` value is ignored:arrowFunction.bind({foo: 'bar'})();
 ```
 
-Inside the `next()` function, the `this` references the `counter` object. See the following method call:
+With arrow functions, the value of `this` *can't* be changed with [`call` or `apply`](https://web.dev/javascript-this/#call-apply):
 
-```js
-//
-counter.next();Code language: CSS (css)
+```
+// Logs `true` - called `this` value is ignored:arrowFunction.call({foo: 'bar'});// Logs `true` - applied `this` value is ignored:arrowFunction.apply({foo: 'bar'});
 ```
 
-The `next()` is a function that is the property of the `counter` object. Therefore, inside the `next()` function, the `this` references the `counter` object.
+With arrow functions, the value of `this` *can't* be changed by calling the function as a member of another object:
 
-## Global context
-
-In the global context, the `this` references the [global object](https://www.javascripttutorial.net/es-next/javascript-globalthis/), which is the `window` object on the web browser or `global` object on Node.js.
-
-This behavior is consistent in both strict and non-strict modes. Here's the output on the web browser:
-
-```js
-//
-console.log(this === window); // trueCode language: JavaScript (javascript)
+```
+const obj = {arrowFunction};// Logs `true` - parent object is ignored:obj.arrowFunction();
 ```
 
-If you assign a property to `this` object in the global context, JavaScript will add the property to the global object as shown in the following example:
+With arrow functions, the value of `this` *can't* be changed by calling the function as a constructor:
 
-```js
-//
-this.color= 'Red';
-console.log(window.color); // 'Red'Code language: JavaScript (javascript)
+```
+// TypeError: arrowFunction is not a constructornew arrowFunction();
 ```
 
-## Function context
+### 'Bound' instance methods [#](https://web.dev/javascript-this/#'bound'-instance-methods)
 
-In JavaScript, you can call a [function](https://www.javascripttutorial.net/javascript-function/) in the following ways:
+With instance methods, if you want to ensure `this` always refers to the class instance, the best way is to use arrow functions and [class fields](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Classes/Public_class_fields):
 
-- Function invocation
-- Method invocation
-- Constructor invocation
-- Indirect invocation
-
-Each function invocation defines its own context. Therefore, the `this` behaves differently.
-
-### 1) Simple function invocation
-
-In the non-strict mode, the `this` references the global object when the function is called as follows:
-
----
-
-
-```js
-//
-
-
-function show() {
-   console.log(this === window); // true
-}
-
-show();Code language: JavaScript (javascript)
+```
+class Whatever {  someMethod = () => {    // Always the instance of Whatever:    console.log(this);  };}
 ```
 
-When you call the `show()` function, the `this` references the [global object](https://www.javascripttutorial.net/es-next/javascript-globalthis/), which is the `window` on the web browser and `global` on Node.js.
+This pattern is really useful when using instance methods as event listeners in components (such as React components, or web components).
 
-Calling the `show()` function is the same as:
+The above might feel like it's breaking the "`this` will be the same as `this` in the parent scope" rule, but it starts to make sense if you think of class fields as syntactic sugar for setting things in the constructor:
 
-```js
-//
-window.show();Code language: JavaScript (javascript)
+```
+class Whatever {  someMethod = (() => {    const outerThis = this;    return () => {      // Always logs `true`:      console.log(this === outerThis);    };  })();}// ...is roughly equivalent to:class Whatever {  constructor() {    const outerThis = this;    this.someMethod = () => {      // Always logs `true`:      console.log(this === outerThis);    };  }}
 ```
 
-In the strict mode, JavaScript sets the `this` inside a function to `undefined`. For example:
+Alternative pattens involve binding an existing function in the constructor, or assigning the function in the constructor. If you can't use class fields for some reason, assigning functions in the constructor is a reasonable alternative:
 
-```js
-//
-"use strict";
-
-function show() {
-    console.log(this === undefined);
-}
-
-show();Code language: JavaScript (javascript)
+```
+class Whatever {  constructor() {    this.someMethod = () => {      // ...    };  }}
 ```
 
-To enable the strict mode, you use the directive `"use strict"` at the beginning of the JavaScript file. If you want to apply the strict mode to a specific function only, you place it at the top of the function body.
+## Otherwise, if the function/class is called with `new`: [#](https://web.dev/javascript-this/#new)
 
-Note that the strict mode has been available since ECMAScript 5.1. The `strict` mode applies to both function and nested functions. For example:
-
----
-
-
-```js
-//
-
-
-function show() {
-    "use strict";
-    console.log(this === undefined); // true
-
-    function display() {
-        console.log(this === undefined); // true
-    }
-    display();
-}
-
-show();Code language: JavaScript (javascript)
+```
+new Whatever();
 ```
 
-Output:
+The above will call `Whatever` (or its constructor function if it's a class) with `this` set to the result of `Object.create(Whatever.prototype)`.
 
-```js
-//
-true
-trueCode language: JavaScript (javascript)
+```
+class MyClass {  constructor() {    console.log(      this.constructor === Object.create(MyClass.prototype).constructor,    );  }}// Logs `true`:new MyClass();
 ```
 
-In the `display()` inner function, the `this` also set to `undefined` as shown in the console.
+The same is true for older-style constructors:
 
-### 2) Method invocation
-
-When you call a method of an object, JavaScript sets `this` to the object that owns the method. See the following `car` object:
-
-```js
-//
-let car = {
-    brand: 'Honda',
-    getBrand: function () {
-        return this.brand;
-    }
-}
-
-console.log(car.getBrand()); // HondaCode language: JavaScript (javascript)
+```
+function MyClass() {  console.log(    this.constructor === Object.create(MyClass.prototype).constructor,  );}// Logs `true`:new MyClass();
 ```
 
-In this example, the `this` object in the `getBrand()` method references the `car` object.
+### Other examples [#](https://web.dev/javascript-this/#other-examples-2)
 
-Since a method is a property of an object which is a value, you can store it in a variable.
+When called with `new`, the value of `this` *can't* be changed with [`bind`](https://web.dev/javascript-this/#bound):
 
-```js
-//
-let brand = car.getBrand;Code language: JavaScript (javascript)
+```
+const BoundMyClass = MyClass.bind({foo: 'bar'});// Logs `true` - bound `this` value is ignored:new BoundMyClass();
 ```
 
-And then call the method via the variable
+When called with `new`, the value of `this` *can't* be changed by calling the function as a member of another object:
 
-```js
-//
-console.log(brand()); // undefinedCode language: JavaScript (javascript)
+```
+const obj = {MyClass};// Logs `true` - parent object is ignored:new obj.MyClass();
 ```
 
-You get `undefined` instead of `"Honda"` because when you call a method without specifying its object, JavaScript sets `this` to the global object in non-strict mode and `undefined` in the strict mode.
+## Otherwise, if the function has a 'bound' `this` value: [#](https://web.dev/javascript-this/#bound)
 
-To fix this issue, you use the `[bind()](https://www.javascripttutorial.net/javascript-bind/)` method of the `Function.prototype` object. The `bind()` method creates a new function whose the `this` keyword is set to a specified value.
-
-```js
-//
-let brand = car.getBrand.bind(car);
-console.log(brand()); // Honda
-Code language: JavaScript (javascript)
+```
+function someFunction() {  return this;}const boundObject = {hello: 'world'};const boundFunction = someFunction.bind(boundObject);
 ```
 
-In this example, when you call the `brand()` method, the `this` keyword is bound to the `car` object. For example:
+Whenever `boundFunction` is called, its `this` value will be the object passed to `bind` (`boundObject`).
 
-```js
-//
-let car = {
-    brand: 'Honda',
-    getBrand: function () {
-        return this.brand;
-    }
-}
-
-let bike = {
-    brand: 'Harley Davidson'
-}
-
-let brand = car.getBrand.bind(bike);
-console.log(brand());Code language: JavaScript (javascript)
+```
+// Logs `false`:console.log(someFunction() === boundObject);// Logs `true`:console.log(boundFunction() === boundObject);
 ```
 
-Output:
+Warning: Avoid using `bind` to bind a function to its outer `this`. Instead, use [arrow functions](https://web.dev/javascript-this/#arrow-functions), as they make `this` clear from the function declaration, rather than something that happens later in the code.
 
-```js
-//
-Harley Davidson
+Don't use `bind` to set `this` to some value unrelated to the parent object; it's usually unexpected and it's why `this` gets such a bad reputation. Consider passing the value as an argument instead; it's more explicit, and works with arrow functions.
+
+### Other examples [#](https://web.dev/javascript-this/#other-examples-3)
+
+When calling a bound function, the value of `this` *can't* be changed with [`call` or `apply`](https://web.dev/javascript-this/#call-apply):
+
+```
+// Logs `true` - called `this` value is ignored:console.log(boundFunction.call({foo: 'bar'}) === boundObject);// Logs `true` - applied `this` value is ignored:console.log(boundFunction.apply({foo: 'bar'}) === boundObject);
 ```
 
-In this example, the `bind()` method sets the `this` to the `bike` object, therefore, you see the value of the `brand` property of the `bike` object on the console.
+When calling a bound function, the value of `this` *can't* be changed by calling the function as a member of another object:
 
-### 3) Constructor invocation
-
-When you use the `new` keyword to create an instance of a function object, you use the function as a constructor.
-
-The following example declares a `Car` function, then invokes it as a constructor:
-
----
-
-
-```js
-//
-
-
-function Car(brand) {
-    this.brand = brand;
-}
-
-Car.prototype.getBrand = function () {
-    return this.brand;
-}
-
-let car = new Car('Honda');
-console.log(car.getBrand());Code language: JavaScript (javascript)
+```
+const obj = {boundFunction};// Logs `true` - parent object is ignored:console.log(obj.boundFunction() === boundObject);
 ```
 
-The expression `new Car('Honda')` is a constructor invocation of the `Car` function.
+## Otherwise, if `this` is set at call-time: [#](https://web.dev/javascript-this/#call-apply)
 
-JavaScript creates a new object and sets `this` to the newly created object. This pattern works great with only one potential problem.
-
-Now, you can invoke the `Car()` as a function or as a constructor. If you omit the `new` keyword as follows:
-
-```js
-//
-var bmw = Car('BMW');
-console.log(bmw.brand);
-// => TypeError: Cannot read property 'brand' of undefinedCode language: JavaScript (javascript)
+```
+function someFunction() {  return this;}const someObject = {hello: 'world'};// Logs `true`:console.log(someFunction.call(someObject) === someObject);// Logs `true`:console.log(someFunction.apply(someObject) === someObject);
 ```
 
-Since the `this` value in the `Car()` sets to the global object, the `bmw.brand` returns `undefined`.
+The value of `this` is the object passed to `call`/`apply`.
 
-To make sure that the `Car()` function is always invoked using constructor invocation, you add a check at the beginning of the `Car()` function as follows:
+Warning: Don't use `call`/`apply` to set `this` to some value unrelated to the parent object; it's usually unexpected and it's why `this` gets such a bad reputation. Consider passing the value as an argument instead; it's more explicit, and works with arrow functions.
 
----
+Unfortunately `this` is set to some other value by things like DOM event listeners, and using it can result in difficult-to-understand code:
 
+Don't
 
-```js
-//
-
-
-function Car(brand) {
-    if (!(this instanceof Car)) {
-        throw Error('Must use the new operator to call the function');
-    }
-    this.brand = brand;
-}Code language: JavaScript (javascript)
+```
+element.addEventListener('click', function (event) {  // Logs `element`, since the DOM spec sets `this` to  // the element the handler is attached to.  console.log(this);});
 ```
 
-ES6 introduced a meta-property named [`new.target`](https://www.javascripttutorial.net/es6/javascript-new-target/) that allows you to detect whether a function is invoked as a simple invocation or as a constructor.
+I avoid using `this` in cases like above, and instead:
 
-You can modify the `Car()` function that uses the `new.target` metaproperty as follows:
+Do
 
----
-
-
-```js
-//
-
-
-function Car(brand) {
-    if (!new.target) {
-        throw Error('Must use the new operator to call the function');
-    }
-    this.brand = brand;
-}Code language: JavaScript (javascript)
+```
+element.addEventListener('click', (event) => {  // Ideally, grab it from a parent scope:  console.log(element);  // But if you can't do that, get it from the event object:  console.log(event.currentTarget);});
 ```
 
-### 4) Indirect Invocation
+## Otherwise, if the function is called via a parent object (`parent.func()`): [#](https://web.dev/javascript-this/#object-member)
 
-In JavaScript, [functions are first-class citizens](https://www.javascripttutorial.net/javascript-functions-are-first-class-citizens/). In other words, functions are objects, which are instances of the [Function type](https://www.javascripttutorial.net/javascript-function-type/).
-
-The `Function` type has two methods: `[call()](https://www.javascripttutorial.net/javascript-call/)` and `[apply()](https://www.javascripttutorial.net/javascript-apply-method/)` . These methods allow you to set the `this` value when calling a function. For example:
-
----
-
-
-```js
-//
-
-
-function getBrand(prefix) {
-    console.log(prefix + this.brand);
-}
-
-let honda = {
-    brand: 'Honda'
-};
-let audi = {
-    brand: 'Audi'
-};
-
-getBrand.call(honda, "It's a ");
-getBrand.call(audi, "It's an ");Code language: JavaScript (javascript)
+```
+const obj = {  someMethod() {    return this;  },};// Logs `true`:console.log(obj.someMethod() === obj);
 ```
 
-Output:
+In this case the function is called as a member of `obj`, so `this` will be `obj`. This happens at call-time, so the link is broken if the function is called without its parent object, or with a different parent object:
 
-```js
-//
-It's a Honda
-It's an AudiCode language: PHP (php)
+```
+const {someMethod} = obj;// Logs `false`:console.log(someMethod() === obj);const anotherObj = {someMethod};// Logs `false`:console.log(anotherObj.someMethod() === obj);// Logs `true`:console.log(anotherObj.someMethod() === anotherObj);
 ```
 
-In this example, we called the `getBrand()` function indirectly using the `call()` method of the `getBrand` function. We passed `honda` and  `audi` object as the first argument of the `call()` method, therefore, we got the corresponding brand in each call.
+`someMethod() === obj` is false because `someMethod` *isn't* called as a member of `obj`. You might have encountered this gotcha when trying something like this:
 
-The `apply()` method is similar to the `call()` method except that its second argument is an array of arguments.
-
-```js
-//
-getBrand.apply(honda, ["It's a "]); // "It's a Honda"
-getBrand.apply(audi, ["It's an "]); // "It's a Audi"Code language: JavaScript (javascript)
+```
+const $ = document.querySelector;// TypeError: Illegal invocationconst el = $('.some-element');
 ```
 
-## Arrow functions
+This breaks because the implementation of `querySelector` looks at its own `this` value and expects it to be a DOM node of sorts, and the above breaks that connection. To achieve the above correctly:
 
-[ES6](https://www.javascripttutorial.net/es6/) introduced a new concept named [arrow function](https://www.javascripttutorial.net/es6/javascript-arrow-function/). In arrow functions, JavaScript sets the `this` lexically.
-
-It means the arrow function does not create its own [execution context](https://www.javascripttutorial.net/javascript-execution-context/) but inherits the `this` from the outer function where the arrow function is defined. See the following example:
-
-```js
-//
-let getThis = () => this;
-console.log(getThis() === window); // trueCode language: JavaScript (javascript)
+```
+const $ = document.querySelector.bind(document);// Or:const $ = (...args) => document.querySelector(...args);
 ```
 
-In this example, the `this` value is set to the global object i.e., `window` in the web browser.
+Fun fact: Not all APIs use `this` internally. Console methods like `console.log` were changed to avoid `this` references, so `log` doesn't need to be bound to `console`.
 
-Since an arrow function does not create its own execution context, defining a method using an arrow function will cause an issue. For example:
+Warning: Don't transplant a function onto an object just to set `this` to some value unrelated to the parent object; it's usually unexpected and it's why `this` gets such a bad reputation. Consider passing the value as an argument instead; it's more explicit, and works with arrow functions.
 
----
+## Otherwise, if the function or parent scope is in strict mode: [#](https://web.dev/javascript-this/#strict)
 
-
-```js
-//
-
-
-function Car() {
-    this.speed = 120;
-}
-
-Car.prototype.getSpeed = () => {
-    return this.speed;
-}
-
-var car = new Car();
-car.getSpeed(); // TypeErrorCode language: JavaScript (javascript)
+```
+function someFunction() {  'use strict';  return this;}// Logs `true`:console.log(someFunction() === undefined);
 ```
 
-Inside the `getSpeed()` method, the `this` value reference the global object, not the `Car` object. Therefore the `car.getSpeed()` invocation causes an error because the global object does not have the `speed` property.
+In this case, the value of `this` is undefined. `'use strict'` isn't needed in the function if the parent scope is in [strict mode](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Strict_mode) (and all modules are in strict mode).
+
+Warning: Don't rely on this. I mean, there are easier ways to get an `undefined` value 😀.
+
+## Otherwise: [#](https://web.dev/javascript-this/#otherwise)
+
+```
+function someFunction() {  return this;}// Logs `true`:console.log(someFunction() === globalThis);
+```
+
+In this case, the value of `this` is the same as `globalThis`.

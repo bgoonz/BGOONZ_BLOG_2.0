@@ -1,31 +1,33 @@
 .docs-content {
     padding-top: 2.5em;
+    width: 95%;
 }
-
+.post-content {
+    width: 85%;
+}
 .post {
     &.type-docs {
-        margin-bottom: 5.625em;
-        max-width: $container-md;
+        margin-bottom: 3.625em;
 
         h1 {
-            font-size: 1.875em;
+            font-size: 1.975em;
         }
 
         h2 {
-            font-size: 1.5em;
+            font-size: 1.6em;
         }
 
         h3 {
-            font-size: 1.25em;
+            font-size: 1.45em;
         }
 
         h4 {
-            font-size: 1.125em;
+            font-size: 1.35em;
         }
 
         h5,
         h6 {
-            font-size: 1em;
+            font-size: 1.2em;
         }
 
         .hash-link {
@@ -38,7 +40,7 @@
             text-align: center;
             text-decoration: none;
             -webkit-transition: opacity 0.2s;
-            transition: opacity 0.2s;
+            transition: opacity 0.4s;
             width: 1em;
 
             &:before {
@@ -79,17 +81,19 @@
             border: 1px solid $gray-300;
             border-radius: $border-radius;
             box-shadow: $box-shadow;
-            padding: 2.5em 0;
+            padding: 0.3em;
+            width: 70vw;
         }
 
         .post-title {
             font-size: 1.875em;
             margin: 0 0 1.25em;
-            padding: 0 1em;
+            padding: 0 2em;
         }
 
         .post-content {
-            padding: 0 1.875em;
+            padding: 0.975em;
+            word-wrap: break-word;
         }
     }
 }
@@ -136,9 +140,8 @@
         color: $gray-700;
         font-size: 1.125em;
         margin: 0;
-        padding-right: 30px;
+        padding-right: 15px;
         text-align: left;
-        width: 100%;
     }
 
     .docs-submenu-toggle {
@@ -154,11 +157,14 @@
     font-weight: bold;
     line-height: 1.5;
     list-style: none;
-    margin: 0;
+    margin: 0.7em;
     padding: 0;
 
     & > .docs-menu-item > a {
-        padding: 0.1875em 0;
+        padding: 0.3em 0;
+        border-radius: 20px;
+
+        margin: auto;
     }
 
     a {
@@ -181,11 +187,11 @@
     border-left: 1px solid $gray-300;
     color: $gray-600;
     display: none;
-    font-size: 0.9375em;
+    font-size: 1;
     font-weight: normal;
     list-style: none;
     margin-top: 0.625rem;
-    padding-left: 1.25rem;
+    padding-left: 1rem;
 }
 
 .docs-menu-item {
@@ -193,7 +199,7 @@
     margin-bottom: 0.625rem;
 
     &.has-children {
-        padding-right: 30px;
+        padding-right: 20px;
         position: relative;
 
         &.active {
@@ -212,7 +218,7 @@
 }
 
 #page-nav {
-    display: none;
+    text-overflow: wrap;
 
     .page-nav-title {
         font-size: 1em;
@@ -257,35 +263,34 @@
     }
 }
 
-@media only screen and (min-width: 641px) {
+@media only screen and (min-width: 1200px) {
     .post {
         &.type-docs {
             .post-title,
             .post-content {
-                padding-left: 7%;
+                padding-left: 8%;
                 padding-right: 7%;
             }
         }
     }
 }
 
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 1200px) {
     .docs-content {
         display: -ms-flexbox;
         display: flex;
-        padding-top: 3.75em;
+        padding-top: 4em;
+        width: 100%;
     }
 
     .post.type-docs {
         -ms-flex: 1 1 auto;
-        flex: 1 1 auto;
-        overflow: hidden;
+        align-content: center;
     }
 
     .docs-nav,
     .page-nav {
         -ms-flex-negative: 0;
-        flex-shrink: 0;
         margin-bottom: 5.625em;
 
         .sticky {
@@ -296,13 +301,12 @@
     }
 
     .docs-nav {
-        padding-right: 1.5em;
-        width: 12.5em;
+        width: 8.5em;
     }
 
     #page-nav {
-        padding-left: 1.5em;
-        width: 9.5em;
+        font-size: 12px;
+        margin: 4em;
     }
 
     #docs-nav-toggle {
@@ -324,7 +328,7 @@
         box-shadow: $box-shadow;
         box-sizing: border-box;
         margin-bottom: 5%;
-        padding: 0.75em 1em;
+        padding: 1em;
     }
 
     .docs-nav-menu {

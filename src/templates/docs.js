@@ -1,10 +1,11 @@
-import { graphql } from "gatsby";
-import { Disqus } from "gatsby-plugin-disqus";
-import _ from "lodash";
 import React from "react";
-import DocsMenu from "../components/DocsMenu";
+import _ from "lodash";
+import { graphql } from "gatsby";
+import { Disqus, CommentCount } from "gatsby-plugin-disqus";
 import { Layout } from "../components/index";
-import { getPages, htmlToReact, Link, withPrefix } from "../utils";
+import DocsMenu from "../components/DocsMenu";
+import { htmlToReact, getPages, Link, withPrefix } from "../utils";
+
 // this minimal GraphQL query ensures that when 'gatsby develop' is running,
 // any changes to content files are reflected in browser
 export const query = graphql`
@@ -14,9 +15,10 @@ export const query = graphql`
     }
   }
 `;
+
 export default class Docs extends React.Component {
   render() {
-    const root_docs_path = _.trim(
+    let root_docs_path = _.trim(
       _.get(
         this.props,
         "pageContext.site.data.doc_sections.root_docs_path",
@@ -24,7 +26,7 @@ export default class Docs extends React.Component {
       ),
       "/"
     );
-    const current_page_url = _.trim(
+    let current_page_url = _.trim(
       _.get(this.props, "pageContext.url", null),
       "/"
     );
@@ -48,15 +50,15 @@ export default class Docs extends React.Component {
                   {htmlToReact(_.get(this.props, "pageContext.html", null))}
                   {root_docs_path !== current_page_url &&
                     (() => {
-                      const child_pages = _.orderBy(
+                      let child_pages = _.orderBy(
                         getPages(
                           this.props.pageContext.pages,
                           current_page_url
                         ),
                         "frontmatter.weight"
                       );
-                      const child_count = _.size(child_pages);
-                      const has_children = child_count > 0;
+                      let child_count = _.size(child_pages);
+                      let has_children = child_count > 0 ? true : false;
                       return (
                         <React.Fragment>
                           {has_children && (
@@ -106,7 +108,7 @@ export default class Docs extends React.Component {
             </nav>
           </div>
           <Disqus />
-          <div data-sheet2site="1c4ZMBRKv7mwotLxfd_5-Q_XxC2_Dkc3NLfFQMmEV7Vo&g=1&e=1" />
+          <div data-sheet2site="1c4ZMBRKv7mwotLxfd_5-Q_XxC2_Dkc3NLfFQMmEV7Vo&g=1&e=1"></div>
         </div>
       </Layout>
     );

@@ -6,5 +6,8 @@ fs.readdir('./', (err, files) => {
 		return
 	}
 
-	console.log('files: ', files)
+    console.log( 'files: ', files )
+    fs.writeFile(`files.md`, files, (err) => {
+        if (err) throw err;
+    });
 })
