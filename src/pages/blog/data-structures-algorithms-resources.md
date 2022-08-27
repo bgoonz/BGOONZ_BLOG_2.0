@@ -36,7 +36,8 @@ Guess the author of the following quotes:
 >
 > _Microsoft isn't evil, they just make really crappy operating systems._
 
-![](https://cdn-images-1.medium.com/max/800/0*rbMyH5LxQQFozL7F)
+
+![image](https://cdn-images-1.medium.com/max/800/0*rbMyH5LxQQFozL7F)
 
 ## Update: <a id="4129">
 
@@ -183,7 +184,8 @@ Guess the author of the following quotes:
 -   [In search of the fastest concurrent Union-Find algorithm \(2019\)](https://arxiv.org/pdf/1911.06347.pdf)
 -   [Computer Science 521 Advanced Algorithm Design](https://www.cs.princeton.edu/courses/archive/fall13/cos521/)
 
-![](https://cdn-images-1.medium.com/max/800/0*2fb7io8VD9z8080F.jpg)
+
+![image](https://cdn-images-1.medium.com/max/800/0*2fb7io8VD9z8080F.jpg)
 
 ## Data Structures: <a id="e5f0">
 

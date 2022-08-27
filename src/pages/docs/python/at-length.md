@@ -3853,11 +3853,13 @@ number1 = int(input("Enter Number1: "))number2 = int(input("Enter Number2: "))â€
 
 ## README
 
-[![](https://github.com/bgoonz/python-gitbook/raw/master/.gitbook/assets/image%20%2821%29.png)](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/image%20%2821%29.png)
+[
+![image](https://github.com/bgoonz/python-gitbook/raw/master/.gitbook/assets/image%20%2821%29.png)](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/image%20%2821%29.png)
 
 {% embed url="[https://replit.com/@bgoonz/30-days-python\\#01\\_Day\\_Introduction/helloworld.py](https://replit.com/@bgoonz/30-days-python%5C#01%5C_Day%5C_Introduction/helloworld.py)" caption="30 days of python practice" %}
 
-[![](https://github.com/bgoonz/python-gitbook/raw/master/.gitbook/assets/image%20%2822%29.png)](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/image%20%2822%29.png)
+[
+![image](https://github.com/bgoonz/python-gitbook/raw/master/.gitbook/assets/image%20%2822%29.png)](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/image%20%2822%29.png)
 
 **Understanding variables**
 

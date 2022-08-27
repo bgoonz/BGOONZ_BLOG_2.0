@@ -15,7 +15,8 @@ template: docs
 
 ### Explanation for Rotate Right
 
-![](https://cdn-images-1.medium.com/max/1200/0*3_vbGvHeWOgSTxk7.png)
+
+![image](https://cdn-images-1.medium.com/max/1200/0*3_vbGvHeWOgSTxk7.png)
 
 ### Question
 

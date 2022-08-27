@@ -51,7 +51,8 @@ First, we need to create a folder and give it a name of our choice. I'm gonna na
 
 You can easily do that with this command line:
 
-![](https://cdn-media-1.freecodecamp.org/images/1*k8DzCXqZwRaY64Bhli5-yQ.png)
+
+![image](https://cdn-media-1.freecodecamp.org/images/1*k8DzCXqZwRaY64Bhli5-yQ.png)
 
 ```
 mkdir nextjs-app
@@ -91,7 +92,8 @@ npm i react react-dom --save
 
 After that you have to create two necessary folders: `pages` and `static` . Next.js won't work without them!!
 
-![](https://cdn-media-1.freecodecamp.org/images/1*s3N5eZcSSSgRdBiaMQeCRA.png)
+
+![image](https://cdn-media-1.freecodecamp.org/images/1*s3N5eZcSSSgRdBiaMQeCRA.png)
 
 ```
 mkdir pages static
@@ -107,11 +109,13 @@ And then simply you can run `npm next dev` and then open `[http://localhost:3000
 
 The `NotFound` page will show up because we don't have any page yet!
 
-![](https://cdn-media-1.freecodecamp.org/images/1*Hv_4BaqTnrlriZ8Q3zk5ZQ.png)
+
+![image](https://cdn-media-1.freecodecamp.org/images/1*Hv_4BaqTnrlriZ8Q3zk5ZQ.png)
 
 So let's create a `home` page and an entry point `index.js`.
 
-![](https://cdn-media-1.freecodecamp.org/images/1*IwZ5Ahr9egJ8KHF5HnLfHQ.png)
+
+![image](https://cdn-media-1.freecodecamp.org/images/1*IwZ5Ahr9egJ8KHF5HnLfHQ.png)
 
 ```
 touch index.js home.js
@@ -121,11 +125,13 @@ And then you can write a normal React component. As I said above, Next.js is for
 
 Here is what our `home.js` looks like:
 
-![](https://cdn-media-1.freecodecamp.org/images/1*He5fQw-VgeY5Gjo2RFGckw.png)
+
+![image](https://cdn-media-1.freecodecamp.org/images/1*He5fQw-VgeY5Gjo2RFGckw.png)
 
 And here is our `index.js` file:
 
-![](https://cdn-media-1.freecodecamp.org/images/1*AgGKp-WdRTwb3bOuqljcug.png)
+
+![image](https://cdn-media-1.freecodecamp.org/images/1*AgGKp-WdRTwb3bOuqljcug.png)
 
 Next.js has a live reload feature. All you need to do is just change and save, and Next.js will compile and reload the app automatically for you.
 
@@ -133,7 +139,8 @@ Next.js has a live reload feature. All you need to do is just change and save, a
 
 You will see this change in the browser after running `npm next dev`:
 
-![](https://cdn-media-1.freecodecamp.org/images/1*QuQK1J5P0Rc4S-0BhllNmg.png)
+
+![image](https://cdn-media-1.freecodecamp.org/images/1*QuQK1J5P0Rc4S-0BhllNmg.png)
 
 Congratulations! We just created a Next.js app with a few simple steps. These instructions to create a Next.js app are described in the [official docs of Next.js](https://nextjs.org/learn/basics/getting-started/first-page) .
 
@@ -145,7 +152,8 @@ I usually don't use this way. I use the [create-next-app](http://import%20react%
 npx create-next-app my-app
 ```
 
-![](https://cdn-media-1.freecodecamp.org/images/1*W5KCIFWP7yMHI-zaeVcmPA.png)
+
+![image](https://cdn-media-1.freecodecamp.org/images/1*W5KCIFWP7yMHI-zaeVcmPA.png)
 
 You can check out the documentation [here](https://github.com/segmentio/create-next-app) to explore more features.
 
@@ -159,7 +167,8 @@ For example, you might want to add sass support to your app. In this case you ha
 
 First, install `next-sass`:
 
-![](https://cdn-media-1.freecodecamp.org/images/1*5XSEx8DH0851FNzMxDx5LQ.png)
+
+![image](https://cdn-media-1.freecodecamp.org/images/1*5XSEx8DH0851FNzMxDx5LQ.png)
 
 ```
 yarn add @zeit/next-sass
@@ -167,19 +176,23 @@ yarn add @zeit/next-sass
 
 Then include it inside the `next-config.js` file:
 
-![](https://cdn-media-1.freecodecamp.org/images/1*YN_aoR5dzlnMyG2xVHJcww.png)
+
+![image](https://cdn-media-1.freecodecamp.org/images/1*YN_aoR5dzlnMyG2xVHJcww.png)
 
 And then you can create write your sass code and import it in your component:
 
-![](https://cdn-media-1.freecodecamp.org/images/1*kde4wjR-EpoNHc1c4JTb8g.png)
+
+![image](https://cdn-media-1.freecodecamp.org/images/1*kde4wjR-EpoNHc1c4JTb8g.png)
 
 Importing the sass file in our component:
 
-![](https://cdn-media-1.freecodecamp.org/images/1*yv1cTBXPeONqaV-CS1OZ2A.png)
+
+![image](https://cdn-media-1.freecodecamp.org/images/1*yv1cTBXPeONqaV-CS1OZ2A.png)
 
 And here is the result:
 
-![](https://cdn-media-1.freecodecamp.org/images/1*VYfSkK1fIZKu75-2P8s4Bw.png)
+
+![image](https://cdn-media-1.freecodecamp.org/images/1*VYfSkK1fIZKu75-2P8s4Bw.png)
 
 Wow, wasn't that **super easy** to add sass support to out Next.js app?
 
@@ -195,11 +208,13 @@ Next.js performs server-side rendering by default. This makes your application o
 
 Speaking of search engine optimization, Next.js comes with a `Head` component that allows you to add and make dynamic meta tags. It's my favorite feature — you can make custom and dynamic meta tags. These make your website able to be indexed by search engines like Google. Here is an example of a `Head` component :
 
-![](https://cdn-media-1.freecodecamp.org/images/1*mnIJGBgF59r1YjX5jXu8IA.png)
+
+![image](https://cdn-media-1.freecodecamp.org/images/1*mnIJGBgF59r1YjX5jXu8IA.png)
 
 And you can import and use the`Head` component in any other page:
 
-![](https://cdn-media-1.freecodecamp.org/images/1*liF5bNPAQ_j7gA9funSGTg.png)
+
+![image](https://cdn-media-1.freecodecamp.org/images/1*liF5bNPAQ_j7gA9funSGTg.png)
 
 Awesome!
 
@@ -219,21 +234,25 @@ Let's go ahead and create a custom navigation to make everything clear!
 
 To navigate between pages, Next.js has the `Link` method to manage the navigation.
 
-![](https://cdn-media-1.freecodecamp.org/images/1*D54h6wnKX9fCS0AU34tVLA.png)
+
+![image](https://cdn-media-1.freecodecamp.org/images/1*D54h6wnKX9fCS0AU34tVLA.png)
 
 Let's create `blog.js` and `contact.js` pages:
 
 `blog.js`
 
-![](https://cdn-media-1.freecodecamp.org/images/1*f6_vaaPs1Okfj8vZ9Fhk8g.png)
+
+![image](https://cdn-media-1.freecodecamp.org/images/1*f6_vaaPs1Okfj8vZ9Fhk8g.png)
 
 And here is the `contact.js` page:
 
-![](https://cdn-media-1.freecodecamp.org/images/1*5lWCDzAUWed2NlsGpTC5EQ.png)
+
+![image](https://cdn-media-1.freecodecamp.org/images/1*5lWCDzAUWed2NlsGpTC5EQ.png)
 
 And now we must be able to navigate between those pages ?
 
-![](https://cdn-media-1.freecodecamp.org/images/1*7WYZeRb92PAwqthLo0xqHg.gif)
+
+![image](https://cdn-media-1.freecodecamp.org/images/1*7WYZeRb92PAwqthLo0xqHg.gif)
 
 Wow that so easy and super awesome.
 
@@ -245,6 +264,7 @@ The way to avoid this is to use some trick to indicate to the user that the page
 
 Next.js comes with its own code splitting method. It provides us a method, called `dynamic`, to load our component, as in the example below:
 
-![](https://cdn-media-1.freecodecamp.org/images/1*Ib835M7Ih-RY1kRBOUnXFA.png)
+
+![image](https://cdn-media-1.freecodecamp.org/images/1*Ib835M7Ih-RY1kRBOUnXFA.png)
 
 You can find the source code of these examples on [GitHub](https://github.com/hayanisaid/nextjs-intro-example)

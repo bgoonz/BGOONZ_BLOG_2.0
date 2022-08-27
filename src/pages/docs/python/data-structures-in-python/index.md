@@ -109,7 +109,8 @@ This can save you some typing and make your intentions clearer as compared to us
 
 ```
 
-[![](https://img.realpython.net/c34848d05efe728b284c7a87c7fcd5c9)](https://srv.realpython.net/click/33172000876/?c=43772654581&p=58946116052&r=75987)
+[
+![image](https://img.realpython.net/c34848d05efe728b284c7a87c7fcd5c9)](https://srv.realpython.net/click/33172000876/?c=43772654581&p=58946116052&r=75987)
 
 [Remove ads](https://realpython.com/account/join/)
 

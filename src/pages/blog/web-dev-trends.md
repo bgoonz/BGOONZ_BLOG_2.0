@@ -13,7 +13,8 @@ template: post
 thumb_image: images/webdev.png
 ---
 
-**1. AI Chatbots**![](https://blog.sagipl.com/wp-content/uploads/2019/05/AI-Chatbots-1-1024x573.png)
+**1. AI Chatbots**
+![image](https://blog.sagipl.com/wp-content/uploads/2019/05/AI-Chatbots-1-1024x573.png)
 
 Artificial Intelligence (AI) refers to the intelligence displayed by machines. It is primarily used to replace human intelligence.
 
