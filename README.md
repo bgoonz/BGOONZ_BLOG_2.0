@@ -2,153 +2,152 @@
 
 <div align="center">
 
-### [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app)
+## [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app)
 
-#### [CHANGELOG](./CHANGELOG.md)
+## 💫 Deploy
 
-##### [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app) [⇨**Cloudfare-Backup**⇦](https://bgoonz-blog-2-0.pages.dev/) [⇨**search**⇦](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) [⇨**Backup Repo Deploy**⇦](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) [⇨**Github pages**⇦](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) 
+[![Deploy to Netlify**](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/BGOONZ_BLOG_2.0.git)[![Deploy with Vercel**](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/BGOONZ_BLOG_2.0.git)![GitHub visitors](https://visitor-badge-reloaded.herokuapp.com/badge?page_id=bgoonz.visitor.badge.reloaded&color=00bbbb&style=for-the-badge&logo=github)
 
-[⇨**Go To Site Wiki**⇦](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki) [⇨**Gatsby Cloud Version**⇦](https://bgoonzblog20master.gatsbyjs.io/) [⇨**Vercel Version**⇦](https://bgoonz-blog.vercel.app/) 
-[⇨**Cloudfare-Domain**⇦](www.webdevhub.us) [⇨**gh-pages**⇦](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) [⇨**backup netlify deploy**⇦](https://bgoonz-blog20-backup.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys)[![CodeFactor](https://www.codefactor.io/repository/github/bgoonz/bgoonz_blog_2.0/badge)](https://www.codefactor.io/repository/github/bgoonz/bgoonz_blog_2.0)
 
-### Repos
+##### [CHANGELOG](./CHANGELOG.md)
 
+##### [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app) [⇨**Cloudfare-Backup**⇦](https://bgoonz-blog-2-0.pages.dev/) [⇨**search**⇦](https://www.algolia.com/realtime-search-demo/web-dev-resource-hub-9e6b8aa8-6106-44c5-9f59-ff3f9531abd4) [⇨**Backup Repo Deploy**⇦](https://bgoonzblog20-backup.netlify.app/#gsc.tab=0) [⇨**Github pages**⇦](https://bgoonz.github.io/BGOONZ_BLOG_2.0/)[⇨**Go To Site Wiki**⇦](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki) [⇨**Gatsby Cloud Version**⇦](https://bgoonzblog20master.gatsbyjs.io/) [⇨**Vercel Version**⇦](https://bgoonz-blog.vercel.app/)[⇨**Cloudfare-Domain**⇦](www.webdevhub.us) [⇨**gh-pages**⇦](https://bgoonz.github.io/BGOONZ_BLOG_2.0/) [⇨**backup netlify deploy**⇦](https://bgoonz-blog20-backup.netlify.app/)
+
+### Repos:
+
+
+[THIS REPO](https://github.com/bgoonz/BGOONZ_BLOG_2.0)
 [Alt Backup](https://github.com/BGOOONZ-BLOG/bgoonz-blog2.0-v-5)
 [Blog Content](https://github.com/bgoonz/MainBlogContent)
 
-Url: [gitpop](http://gitpop2.herokuapp.com/bgoonz/BGOONZ_BLOG_2.0)
 
-    
-#### [⇨Privacy policy⇦](https://codepen.io/bgoonz/pen/LYLJZrW)
+#### Branch Deploys:
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a1b7ee1a-11a7-4bd2-a341-2260656e216f/deploy-status)](https://app.netlify.com/sites/bgoonz-blog/deploys)[![CodeFactor](https://www.codefactor.io/repository/github/bgoonz/bgoonz_blog_2.0/badge)](https://www.codefactor.io/repository/github/bgoonz/bgoonz_blog_2.0)[![Greetings](https://github.com/bgoonz/BGOONZ_BLOG_2.0/actions/workflows/greetings.yml/badge.svg)](https://github.com/bgoonz/BGOONZ_BLOG_2.0/actions/workflows/greetings.yml)
 
-![GitHub visitors](https://visitor-badge-reloaded.herokuapp.com/badge?page_id=bgoonz.visitor.badge.reloaded&color=00bbbb&style=for-the-badge&logo=github)
+##### [Bug Tracker](https://app.usersnap.com/#/6bf5b719-6d97-4b67-9cc8-271a747f56d3/statistics)
+- [Most Updated Forks](http://gitpop2.herokuapp.com/bgoonz/BGOONZ_BLOG_2.0)
+
+
+
+
+
+
+
+- [⇨Privacy policy⇦](https://codepen.io/bgoonz/pen/LYLJZrW)
+
+
+
+
+
+
+
+
+
+[![Demo](https://img.youtube.com/vi/OGCcq1_Tbzk/0.jpg)](https://www.youtube.com/watch?v=OGCcq1_Tbzk)
+![preview](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/blog-img.png?raw=true)
+
 
 
 
 <a  href="https://bgoonzblog20master.gatsbyjs.io/"><img src="https://qrickit.com/api/qr.php?d=https%3A%2F%2Fbgoonzblog20master.gatsbyjs.io%2F&addtext=Click+For+Mobil+Version&txtcolor=000000&fgdcolor=000000&bgdcolor=FFFFFF&qrsize=25&t=p&e=h" style="position: fixed;bottom: 100px;right:20px;"></a>
 
-[![Demo](https://img.youtube.com/vi/OGCcq1_Tbzk/0.jpg)](https://www.youtube.com/watch?v=OGCcq1_Tbzk)
-
-
-
-##### Bug Tracker 
-https://app.usersnap.com/#/6bf5b719-6d97-4b67-9cc8-271a747f56d3/statistics
-</div>
-
-
-
-
-
-
 
 ---
+
+
 
 
 ## Forks
 
 ___
 
-___
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-| Repo                                                                                                | Stars | Forks | Modified              |
-| --------------------------------------------------------------------------------------------------- | ----- | ----- | --------------------- |
-| [floridamandingo/BGOONZ\_BLOG\_2.0](https://github.com/floridamandingo/BGOONZ_BLOG_2.0)             | 2     | 1     | 6 days, 18 hours ago  |
-| [Web-Audio-Tools/BGOONZ\_BLOG\_2.0](https://github.com/Web-Audio-Tools/BGOONZ_BLOG_2.0)             | 1     | 0     | 6 months, 1 week ago  |
-| [hdi200/BGOONZ\_BLOG\_2.0](https://github.com/hdi200/BGOONZ_BLOG_2.0)                               | 1     | 1     | 2 weeks, 5 days ago   |
-| [eengineergz/BGOONZ\_BLOG\_2.0](https://github.com/eengineergz/BGOONZ_BLOG_2.0)                     | 1     | 0     | 6 months, 3 weeks ago |
-| [Web-Dev-Collaborative/BGOONZ\_BLOG\_2.0](https://github.com/Web-Dev-Collaborative/BGOONZ_BLOG_2.0) | 1     | 0     | 5 minutes ago         |
-| [Bryan-Guner-Backup/BGOONZ\_BLOG\_2.0](https://github.com/Bryan-Guner-Backup/BGOONZ_BLOG_2.0)       | 1     | 0     | 5 hours ago           |
-| [impastasyndrome/BGOONZ\_BLOG\_2.0](https://github.com/impastasyndrome/BGOONZ_BLOG_2.0)             | 1     | 0     | 1 month, 3 weeks ago  |
-| [ft-anywherefitness-2/BGOONZ\_BLOG\_2.0](https://github.com/ft-anywherefitness-2/BGOONZ_BLOG_2.0)   | 0     | 0     | 2 months, 2 weeks ago |
-| [heathermils98/BGOONZ\_BLOG\_2.0](https://github.com/heathermils98/BGOONZ_BLOG_2.0)                 | 0     | 0     | 2 months, 3 weeks ago |
-| [Portfolio-Projects42/BGOONZ\_BLOG\_2.0](https://github.com/Portfolio-Projects42/BGOONZ_BLOG_2.0)   | 0     | 0     | 6 months, 3 weeks ago |
-| [BGOOONZ-BLOG/BGOONZ\_BLOG\_2.0](https://github.com/BGOOONZ-BLOG/BGOONZ_BLOG_2.0)                   | 0     | 0     | 5 minutes ago         |
-| [webdevhub42/BGOONZ\_BLOG\_2.0](https://github.com/webdevhub42/BGOONZ_BLOG_2.0)                     | 0     | 0     | 2 weeks ago           |
-| [hartemolly1/BGOONZ\_BLOG\_2.0](https://github.com/hartemolly1/BGOONZ_BLOG_2.0)                     | 0     | 0     | 3 months ago          |
-| [techsavvyy/BGOONZ\_BLOG\_2.0](https://github.com/techsavvyy/BGOONZ_BLOG_2.0)                       | 0     | 0     | 3 months, 1 week ago  |
-| [TeaganBriggs/BGOONZ\_BLOG\_2.0](https://github.com/TeaganBriggs/BGOONZ_BLOG_2.0)                   | 0     | 0     | 1 month, 2 weeks ago  |
-| [Archive-42/BGOONZ\_BLOG\_2.0](https://github.com/Archive-42/BGOONZ_BLOG_2.0)                       | 0     | 0     | 2 months, 4 weeks ago |
-| [whatamidoing24/BGOONZ\_BLOG\_2.0](https://github.com/whatamidoing24/BGOONZ_BLOG_2.0)               | 0     | 0     | 5 hours ago           |
-| [side-projects-42/BGOONZ\_BLOG\_2.0](https://github.com/side-projects-42/BGOONZ_BLOG_2.0)           | 0     | 0     | 4 months, 3 weeks ago |
-| [DanHefrman/BGOONZ\_BLOG\_2.0](https://github.com/DanHefrman/BGOONZ_BLOG_2.0)                       | 0     | 0     | 9 months, 3 weeks ago |
-| [ladykraken/BGOONZ\_BLOG\_2.0](https://github.com/ladykraken/BGOONZ_BLOG_2.0)                       | 0     | 0     | 3 months, 3 weeks ago |
-| [ArjunBEG/BGOONZ\_BLOG\_2.0](https://github.com/ArjunBEG/BGOONZ_BLOG_2.0)                           | 0     | 0     | 4 months, 3 weeks ago |
-| [permission-squad/BGOONZ\_BLOG\_2.0](https://github.com/permission-squad/BGOONZ_BLOG_2.0)           | 0     | 0     | 2 weeks ago           |
-| [JuanParker1/BGOONZ\_BLOG\_2.0](https://github.com/JuanParker1/BGOONZ_BLOG_2.0)                     | 0     | 0     | 1 month, 2 weeks ago  |
-| [web-tools42/BGOONZ\_BLOG\_2.0](https://github.com/web-tools42/BGOONZ_BLOG_2.0)                     | 0     | 0     | 6 months ago          |
-| [TheLadyKProject/BGOONZ\_BLOG\_2.0](https://github.com/TheLadyKProject/BGOONZ_BLOG_2.0)             | 0     | 0     | 3 months, 1 week ago  |
-| [bgoonz-duke/BGOONZ\_BLOG\_2.0](https://github.com/bgoonz-duke/BGOONZ_BLOG_2.0)                     | 0     | 0     | 3 weeks, 6 days ago   |
-| [RelativeTech/BGOONZ\_BLOG\_2.0](https://github.com/RelativeTech/BGOONZ_BLOG_2.0)                   | 0     | 1     | 10 months ago         |
-| [ETS-ReactNative5/BGOONZ\_BLOG\_2.0](https://github.com/ETS-ReactNative5/BGOONZ_BLOG_2.0)           | 0     | 0     | 3 weeks ago           |
-| [webdev-docs/BGOONZ\_BLOG\_2.0](https://github.com/webdev-docs/BGOONZ_BLOG_2.0)                     | 0     | 0     | 9 months ago          |
-| [DUKE42web/BGOONZ\_BLOG\_2.0](https://github.com/DUKE42web/BGOONZ_BLOG_2.0)                         | 0     | 0     | 3 months, 1 week ago  |
-| [academic-resources/BGOONZ\_BLOG\_2.0](https://github.com/academic-resources/BGOONZ_BLOG_2.0)       | 0     | 0     | 6 months, 4 weeks ago |
-| [jyoshnakarna/BGOONZ\_BLOG\_2.0](https://github.com/jyoshnakarna/BGOONZ_BLOG_2.0)                   | 0     | 0     | 2 months, 2 weeks ago |
-| [bgoonz/BGOONZ\_BLOG\_2.0](https://github.com/bgoonz/BGOONZ_BLOG_2.0)                               | 14    | 35    | 5 minutes ago         |
-=======
-| Repo                                                                                                | Stars | Forks | Modified              |
-| --------------------------------------------------------------------------------------------------- | ----- | ----- | --------------------- |
-| [floridamandingo/BGOONZ\_BLOG\_2.0](https://github.com/floridamandingo/BGOONZ_BLOG_2.0)             | 2     | 1     | 6 days, 18 hours ago  |
-| [Web-Audio-Tools/BGOONZ\_BLOG\_2.0](https://github.com/Web-Audio-Tools/BGOONZ_BLOG_2.0)             | 1     | 0     | 6 months, 1 week ago  |
-| [hdi200/BGOONZ\_BLOG\_2.0](https://github.com/hdi200/BGOONZ_BLOG_2.0)                               | 1     | 1     | 2 weeks, 5 days ago   |
-| [eengineergz/BGOONZ\_BLOG\_2.0](https://github.com/eengineergz/BGOONZ_BLOG_2.0)                     | 1     | 0     | 6 months, 3 weeks ago |
-| [Web-Dev-Collaborative/BGOONZ\_BLOG\_2.0](https://github.com/Web-Dev-Collaborative/BGOONZ_BLOG_2.0) | 1     | 0     | 5 minutes ago         |
-| [Bryan-Guner-Backup/BGOONZ\_BLOG\_2.0](https://github.com/Bryan-Guner-Backup/BGOONZ_BLOG_2.0)       | 1     | 0     | 5 hours ago           |
-| [impastasyndrome/BGOONZ\_BLOG\_2.0](https://github.com/impastasyndrome/BGOONZ_BLOG_2.0)             | 1     | 0     | 1 month, 3 weeks ago  |
-| [ft-anywherefitness-2/BGOONZ\_BLOG\_2.0](https://github.com/ft-anywherefitness-2/BGOONZ_BLOG_2.0)   | 0     | 0     | 2 months, 2 weeks ago |
-| [heathermils98/BGOONZ\_BLOG\_2.0](https://github.com/heathermils98/BGOONZ_BLOG_2.0)                 | 0     | 0     | 2 months, 3 weeks ago |
-| [Portfolio-Projects42/BGOONZ\_BLOG\_2.0](https://github.com/Portfolio-Projects42/BGOONZ_BLOG_2.0)   | 0     | 0     | 6 months, 3 weeks ago |
-| [BGOOONZ-BLOG/BGOONZ\_BLOG\_2.0](https://github.com/BGOOONZ-BLOG/BGOONZ_BLOG_2.0)                   | 0     | 0     | 5 minutes ago         |
-| [webdevhub42/BGOONZ\_BLOG\_2.0](https://github.com/webdevhub42/BGOONZ_BLOG_2.0)                     | 0     | 0     | 2 weeks ago           |
-| [hartemolly1/BGOONZ\_BLOG\_2.0](https://github.com/hartemolly1/BGOONZ_BLOG_2.0)                     | 0     | 0     | 3 months ago          |
-| [techsavvyy/BGOONZ\_BLOG\_2.0](https://github.com/techsavvyy/BGOONZ_BLOG_2.0)                       | 0     | 0     | 3 months, 1 week ago  |
-| [TeaganBriggs/BGOONZ\_BLOG\_2.0](https://github.com/TeaganBriggs/BGOONZ_BLOG_2.0)                   | 0     | 0     | 1 month, 2 weeks ago  |
-| [Archive-42/BGOONZ\_BLOG\_2.0](https://github.com/Archive-42/BGOONZ_BLOG_2.0)                       | 0     | 0     | 2 months, 4 weeks ago |
-| [whatamidoing24/BGOONZ\_BLOG\_2.0](https://github.com/whatamidoing24/BGOONZ_BLOG_2.0)               | 0     | 0     | 5 hours ago           |
-| [side-projects-42/BGOONZ\_BLOG\_2.0](https://github.com/side-projects-42/BGOONZ_BLOG_2.0)           | 0     | 0     | 4 months, 3 weeks ago |
-| [DanHefrman/BGOONZ\_BLOG\_2.0](https://github.com/DanHefrman/BGOONZ_BLOG_2.0)                       | 0     | 0     | 9 months, 3 weeks ago |
-| [ladykraken/BGOONZ\_BLOG\_2.0](https://github.com/ladykraken/BGOONZ_BLOG_2.0)                       | 0     | 0     | 3 months, 3 weeks ago |
-| [ArjunBEG/BGOONZ\_BLOG\_2.0](https://github.com/ArjunBEG/BGOONZ_BLOG_2.0)                           | 0     | 0     | 4 months, 3 weeks ago |
-| [permission-squad/BGOONZ\_BLOG\_2.0](https://github.com/permission-squad/BGOONZ_BLOG_2.0)           | 0     | 0     | 2 weeks ago           |
-| [JuanParker1/BGOONZ\_BLOG\_2.0](https://github.com/JuanParker1/BGOONZ_BLOG_2.0)                     | 0     | 0     | 1 month, 2 weeks ago  |
-| [web-tools42/BGOONZ\_BLOG\_2.0](https://github.com/web-tools42/BGOONZ_BLOG_2.0)                     | 0     | 0     | 6 months ago          |
-| [TheLadyKProject/BGOONZ\_BLOG\_2.0](https://github.com/TheLadyKProject/BGOONZ_BLOG_2.0)             | 0     | 0     | 3 months, 1 week ago  |
-| [bgoonz-duke/BGOONZ\_BLOG\_2.0](https://github.com/bgoonz-duke/BGOONZ_BLOG_2.0)                     | 0     | 0     | 3 weeks, 6 days ago   |
-| [RelativeTech/BGOONZ\_BLOG\_2.0](https://github.com/RelativeTech/BGOONZ_BLOG_2.0)                   | 0     | 1     | 10 months ago         |
-| [ETS-ReactNative5/BGOONZ\_BLOG\_2.0](https://github.com/ETS-ReactNative5/BGOONZ_BLOG_2.0)           | 0     | 0     | 3 weeks ago           |
-| [webdev-docs/BGOONZ\_BLOG\_2.0](https://github.com/webdev-docs/BGOONZ_BLOG_2.0)                     | 0     | 0     | 9 months ago          |
-| [DUKE42web/BGOONZ\_BLOG\_2.0](https://github.com/DUKE42web/BGOONZ_BLOG_2.0)                         | 0     | 0     | 3 months, 1 week ago  |
-| [academic-resources/BGOONZ\_BLOG\_2.0](https://github.com/academic-resources/BGOONZ_BLOG_2.0)       | 0     | 0     | 6 months, 4 weeks ago |
-| [jyoshnakarna/BGOONZ\_BLOG\_2.0](https://github.com/jyoshnakarna/BGOONZ_BLOG_2.0)                   | 0     | 0     | 2 months, 2 weeks ago |
-| [bgoonz/BGOONZ\_BLOG\_2.0](https://github.com/bgoonz/BGOONZ_BLOG_2.0)                               | 14    | 35    | 5 minutes ago         |
-
----
 
 
-## Deploys 
-[vercel branch netlify](https://6309792f5c634e0009e7e51b--bgoonz-blog.netlify.app/)
----
 
-### Workflows
+| Repo                                                                                              | Stars | Forks | Modified              |
+| ------------------------------------------------------------------------------------------------- | ----- | ----- | --------------------- |
+| [floridamandingo/BGOONZ_BLOG_2.0](https://github.com/floridamandingo/BGOONZ_BLOG_2.0)             | 2     | 1     | 6 days, 18 hours ago  |
+| [Web-Audio-Tools/BGOONZ_BLOG_2.0](https://github.com/Web-Audio-Tools/BGOONZ_BLOG_2.0)             | 1     | 0     | 6 months, 1 week ago  |
+| [hdi200/BGOONZ_BLOG_2.0](https://github.com/hdi200/BGOONZ_BLOG_2.0)                               | 1     | 1     | 2 weeks, 5 days ago   |
+| [eengineergz/BGOONZ_BLOG_2.0](https://github.com/eengineergz/BGOONZ_BLOG_2.0)                     | 1     | 0     | 6 months, 3 weeks ago |
+| [Web-Dev-Collaborative/BGOONZ_BLOG_2.0](https://github.com/Web-Dev-Collaborative/BGOONZ_BLOG_2.0) | 1     | 0     | 5 minutes ago         |
+| [Bryan-Guner-Backup/BGOONZ_BLOG_2.0](https://github.com/Bryan-Guner-Backup/BGOONZ_BLOG_2.0)       | 1     | 0     | 5 hours ago           |
+| [impastasyndrome/BGOONZ_BLOG_2.0](https://github.com/impastasyndrome/BGOONZ_BLOG_2.0)             | 1     | 0     | 1 month, 3 weeks ago  |
+| [ft-anywherefitness-2/BGOONZ_BLOG_2.0](https://github.com/ft-anywherefitness-2/BGOONZ_BLOG_2.0)   | 0     | 0     | 2 months, 2 weeks ago |
+| [heathermils98/BGOONZ_BLOG_2.0](https://github.com/heathermils98/BGOONZ_BLOG_2.0)                 | 0     | 0     | 2 months, 3 weeks ago |
+| [Portfolio-Projects42/BGOONZ_BLOG_2.0](https://github.com/Portfolio-Projects42/BGOONZ_BLOG_2.0)   | 0     | 0     | 6 months, 3 weeks ago |
+| [BGOOONZ-BLOG/BGOONZ_BLOG_2.0](https://github.com/BGOOONZ-BLOG/BGOONZ_BLOG_2.0)                   | 0     | 0     | 5 minutes ago         |
+| [webdevhub42/BGOONZ_BLOG_2.0](https://github.com/webdevhub42/BGOONZ_BLOG_2.0)                     | 0     | 0     | 2 weeks ago           |
+| [hartemolly1/BGOONZ_BLOG_2.0](https://github.com/hartemolly1/BGOONZ_BLOG_2.0)                     | 0     | 0     | 3 months ago          |
+| [techsavvyy/BGOONZ_BLOG_2.0](https://github.com/techsavvyy/BGOONZ_BLOG_2.0)                       | 0     | 0     | 3 months, 1 week ago  |
+| [TeaganBriggs/BGOONZ_BLOG_2.0](https://github.com/TeaganBriggs/BGOONZ_BLOG_2.0)                   | 0     | 0     | 1 month, 2 weeks ago  |
+| [Archive-42/BGOONZ_BLOG_2.0](https://github.com/Archive-42/BGOONZ_BLOG_2.0)                       | 0     | 0     | 2 months, 4 weeks ago |
+| [whatamidoing24/BGOONZ_BLOG_2.0](https://github.com/whatamidoing24/BGOONZ_BLOG_2.0)               | 0     | 0     | 5 hours ago           |
+| [side-projects-42/BGOONZ_BLOG_2.0](https://github.com/side-projects-42/BGOONZ_BLOG_2.0)           | 0     | 0     | 4 months, 3 weeks ago |
+| [DanHefrman/BGOONZ_BLOG_2.0](https://github.com/DanHefrman/BGOONZ_BLOG_2.0)                       | 0     | 0     | 9 months, 3 weeks ago |
+| [ladykraken/BGOONZ_BLOG_2.0](https://github.com/ladykraken/BGOONZ_BLOG_2.0)                       | 0     | 0     | 3 months, 3 weeks ago |
+| [ArjunBEG/BGOONZ_BLOG_2.0](https://github.com/ArjunBEG/BGOONZ_BLOG_2.0)                           | 0     | 0     | 4 months, 3 weeks ago |
+| [permission-squad/BGOONZ_BLOG_2.0](https://github.com/permission-squad/BGOONZ_BLOG_2.0)           | 0     | 0     | 2 weeks ago           |
+| [JuanParker1/BGOONZ_BLOG_2.0](https://github.com/JuanParker1/BGOONZ_BLOG_2.0)                     | 0     | 0     | 1 month, 2 weeks ago  |
+| [web-tools42/BGOONZ_BLOG_2.0](https://github.com/web-tools42/BGOONZ_BLOG_2.0)                     | 0     | 0     | 6 months ago          |
+| [TheLadyKProject/BGOONZ_BLOG_2.0](https://github.com/TheLadyKProject/BGOONZ_BLOG_2.0)             | 0     | 0     | 3 months, 1 week ago  |
+| [bgoonz-duke/BGOONZ_BLOG_2.0](https://github.com/bgoonz-duke/BGOONZ_BLOG_2.0)                     | 0     | 0     | 3 weeks, 6 days ago   |
+| [RelativeTech/BGOONZ_BLOG_2.0](https://github.com/RelativeTech/BGOONZ_BLOG_2.0)                   | 0     | 1     | 10 months ago         |
+| [ETS-ReactNative5/BGOONZ_BLOG_2.0](https://github.com/ETS-ReactNative5/BGOONZ_BLOG_2.0)           | 0     | 0     | 3 weeks ago           |
+| [webdev-docs/BGOONZ_BLOG_2.0](https://github.com/webdev-docs/BGOONZ_BLOG_2.0)                     | 0     | 0     | 9 months ago          |
+| [DUKE42web/BGOONZ_BLOG_2.0](https://github.com/DUKE42web/BGOONZ_BLOG_2.0)                         | 0     | 0     | 3 months, 1 week ago  |
+| [academic-resources/BGOONZ_BLOG_2.0](https://github.com/academic-resources/BGOONZ_BLOG_2.0)       | 0     | 0     | 6 months, 4 weeks ago |
+| [jyoshnakarna/BGOONZ_BLOG_2.0](https://github.com/jyoshnakarna/BGOONZ_BLOG_2.0)                   | 0     | 0     | 2 months, 2 weeks ago |
+| [bgoonz/BGOONZ_BLOG_2.0](https://github.com/bgoonz/BGOONZ_BLOG_2.0)                               | 14    | 35    | 5 minutes ago         |
 
-[![CI](https://github.com/bgoonz/BGOONZ_BLOG_2.0/actions/workflows/main.yml/badge.svg)](https://github.com/bgoonz/BGOONZ_BLOG_2.0/actions/workflows/main.yml)
+
+
+## [vercel branch netlify](https://6309792f5c634e0009e7e51b--bgoonz-blog.netlify.app/)
+
+</div>
 
 
 
 
+## Wiki Nav
 
----
+- [Home](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
+- [add copy to code blocks.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/add-copy-to-code-blocks.md)
+- [Add site search w algolia.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Add-site-search-w-algolia.md)
+- [adding mailing list.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/adding-mailing-list.md)
+- [Adding search 2 gatsby site.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Adding-search-2-gatsby-site.md)
+- [awesome.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/awesome.md)
+- [broken links.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/broken-links.md)
+- [configure custom domain.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/configure-custom-domain.md)
+- [contentauthoring.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/contentauthoring.md)
+- [full text search w lunar.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/full-text-search-w-lunar.md)
+- [inject 4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject-4.md)
+- [inject3.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject3.md)
+- [inject4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject4.md)
+- [injected content part2.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-content-part2.md)
+- [injected js part4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-js-part4.md)
+- [injected part3.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-part3.md)
+- [links 2 embed.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/links-2-embed.md)
+- [links to remember](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/links-to-remember)
+- [Netlify Injected Content](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Netlify-Injected-Content)
+- [old version of index.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/old-version-of-index.md)
+- [optimize vscode.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/optimize-vscode.md)
+- [possibly useful snippets.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/possibly-useful-snippets.md)
+- [privacy policy.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/privacy-policy.md)
+- [random stuff.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/random-stuff.md)
+- [random.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/random.md)
+- [ref type](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/ref-type)
+- [SEO.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/SEO.md)
+- [stable points.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/stable-points.md)
+- [tech used.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/tech-used.md)
+- [Technologies Used.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Technologies-Used.md)
+- [THINGS TO EMBED.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/THINGS-TO-EMBED.md)
+- [validation report.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/validation-report.md)
+- [web archive.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/web-archive.md)
+- [wordpress vs headless cms.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/wordpress-vs-headless-cms.md)
 
 
-
-
-![preview](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/blog-img.png?raw=true)
-
----
 
 ## Useful Commands (internal use)
 
@@ -168,7 +167,7 @@ git push                    # done, no need to force push!
 
 ```
 
----
+
 
 <a href="https://testmysite.io/61e5ff836a840eeeef7e78e9/bgoonz-blog.netlify.app" rel="Test My Site Results">[Test My Site](https://github.com/bgoonz/BGOONZ_BLOG_2.0/blob/master/static/images/Screenshot%202022-03-30%20at%2012-37-24%20Website%20Speed%20Test%20Tool%20-%20Testmysite.io%20by%20Netlify.png?raw=true)</a>
 
@@ -182,24 +181,12 @@ git push                    # done, no need to force push!
 
 <details>
 
-<summary>
- Web Dev Setup (CLICK HERE)
-<details>
-
-
-
-
-
-
-Windows Subsystem for Linux (WSL) and Ubuntu
-
----
-
-### Basic Web Development Environment Setup
+<summary>Basic Web Development Environment Setup (CLICK HERE)<details>
 
 #### Windows Subsystem for Linux (WSL) and Ubuntu
 
 Test if you have Ubuntu installed by typing "Ubuntu" in the search box in the bottom app bar that reads "Type here to search". If you see a search result that reads **"Ubuntu 20.04 LTS"** with "App" under it, then you have it installed.
+
 ```
 1.  In the application search box in the bottom bar, type "PowerShell" to find the application named "Windows PowerShell"
 2.  Right-click on "Windows PowerShell" and choose "Run as administrator" from the popup menu
@@ -220,6 +207,7 @@ Test if you have Ubuntu installed by typing "Ubuntu" in the search box in the bo
 17. You need to update your packages, so type `sudo apt update` (if prompted for your password, enter it)
 18. You need to upgrade your packages, so type `sudo apt upgrade` (if prompted for your password, enter it)
 ```
+
 ### Git
 
 Git comes with Ubuntu, so there's nothing to install. However, you should configure it using the following instructions.
@@ -313,19 +301,20 @@ As of the time of writing of this document, WSL has an issue renaming or deletin
 </details>
 
 ---
----
----
+
 ---
 
+---
 
+---
+
+</div>
 
 ## Bash Cheat Sheet (MY COMMANDS)
 
 <details>
 
-
-<summary>(CLICK HERE) Bash Cheat Sheet MY COMMANDS(CLICK HERE) <details>
-
+<summary>(CLICK HERE) Bash Cheat Sheet MY COMMANDS(CLICK HERE) </summary
 
 ## 1. Remove spaces from file and folder names and then remove numbers from files and folder names
 
@@ -340,7 +329,7 @@ find . -name "* *" -type d | rename 's/ /_/g'
 find . -name "* *" -type f | rename 's/ /_/g'
 ```
 
-```bash
+````bash
 
 ```bash
 find $dir -type f | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
@@ -368,7 +357,7 @@ fs.writeFile('output.md', cat, err => {
   if (err) throw err;
 });
 
-```
+````
 
 ---
 
@@ -738,10 +727,10 @@ for d in ./*; do mv $d ${d:0:12}; done
 
 ```js
 //APPEND-DIR.js
-const fs = require('fs');
-let cat = require('child_process').execSync('cat *').toString('UTF-8');
-fs.writeFile('output.md', cat, (err) => {
-    if (err) throw err;
+const fs = require("fs");
+let cat = require("child_process").execSync("cat *").toString("UTF-8");
+fs.writeFile("output.md", cat, (err) => {
+  if (err) throw err;
 });
 ```
 
@@ -1440,7 +1429,7 @@ find . -type f -exec rename 's/-master//g' {} +
 
 ```
 
-> Notes: The same could be done for folder names by changing the *-type f* flag (for file) to a *-type d* flag (for directory)
+> Notes: The same could be done for folder names by changing the _-type f_ flag (for file) to a _-type d_ flag (for directory)
 
 ```bash
 find <mydir> -type d -exec sed -i 's/<string1>/<string2>/g' {} +
@@ -2184,7 +2173,7 @@ printf "${Red} This is red \n"
 
 ```
 
-</details>
+
 
 >
 
@@ -2244,7 +2233,7 @@ find . -maxdepth 2 -name build -type d
 
 ## To search all files who are not in .git directory
 
-find . ! -iwholename '*.git*' -type f
+find . ! -iwholename '_.git_' -type f
 
 ## To find all files that have the same node (hard link) as MY_FILE_HERE
 
@@ -2260,46 +2249,9 @@ find . -type f -exec chmod 644 {} \;
 
 ---
 
-![Preview](https://i.imgur.com/nieW1vp.png)
 
-## Wiki Nav
 
-- [Home](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
-- [add copy to code blocks.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/add-copy-to-code-blocks.md)
-- [Add site search w algolia.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Add-site-search-w-algolia.md)
-- [adding mailing list.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/adding-mailing-list.md)
-- [Adding search 2 gatsby site.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Adding-search-2-gatsby-site.md)
-- [awesome.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/awesome.md)
-- [broken links.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/broken-links.md)
-- [configure custom domain.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/configure-custom-domain.md)
-- [contentauthoring.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/contentauthoring.md)
-- [full text search w lunar.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/full-text-search-w-lunar.md)
-- [inject 4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject-4.md)
-- [inject3.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject3.md)
-- [inject4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/inject4.md)
-- [injected content part2.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-content-part2.md)
-- [injected js part4.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-js-part4.md)
-- [injected part3.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/injected-part3.md)
-- [links 2 embed.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/links-2-embed.md)
-- [links to remember](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/links-to-remember)
-- [Netlify Injected Content](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Netlify-Injected-Content)
-- [old version of index.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/old-version-of-index.md)
-- [optimize vscode.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/optimize-vscode.md)
-- [possibly useful snippets.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/possibly-useful-snippets.md)
-- [privacy policy.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/privacy-policy.md)
-- [random stuff.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/random-stuff.md)
-- [random.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/random.md)
-- [ref type](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/ref-type)
-- [SEO.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/SEO.md)
-- [stable points.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/stable-points.md)
-- [tech used.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/tech-used.md)
-- [Technologies Used.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/Technologies-Used.md)
-- [THINGS TO EMBED.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/THINGS-TO-EMBED.md)
-- [validation report.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/validation-report.md)
-- [web archive.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/web-archive.md)
-- [wordpress vs headless cms.md](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki/wordpress-vs-headless-cms.md)
 
----
 
 ## Dependencies
 
@@ -3054,7 +3006,7 @@ find . -type f -exec chmod 644 {} \;
 
 1. **Create a Gatsby site.**
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+   Use the Gatsby CLI to create a new site, specifying the default starter.
 
 ```bashell
    # create a new Gatsby site using the default starter
@@ -3063,7 +3015,7 @@ find . -type f -exec chmod 644 {} \;
 
 1. **Start developing.**
 
-    Navigate into your new site's directory and start it up.
+   Navigate into your new site's directory and start it up.
 
 ```bashell
    cd my-default-starter/
@@ -3072,11 +3024,11 @@ find . -type f -exec chmod 644 {} \;
 
 1. **Open the source code and start editing!**
 
-    Your site is now running at `http://localhost:8000`!
+   Your site is now running at `http://localhost:8000`!
 
-    *Note: You'll also see a second link:*`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
+   _Note: You'll also see a second link:_`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+   Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
 ## 🧐 What's inside?
 
@@ -3126,13 +3078,9 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 - **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby**](https://www.gatsbyjs.com/tutorial/).\*\* It starts with zero assumptions about your level of ability and walks through every step of the process.
 -
-- **To dive straight into code samples, head [to our documentation**](https://www.gatsbyjs.com/docs/).\*\* In particular, check out the *Guides*, *API Reference*, and *Advanced Tutorials* sections in the sidebar.
+- **To dive straight into code samples, head [to our documentation**](https://www.gatsbyjs.com/docs/).\*\* In particular, check out the *Guides*, *API Reference*, and *Advanced Tutorials\* sections in the sidebar.
 
-## 💫 Deploy
 
-[![Deploy to Netlify**](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/BGOONZ_BLOG_2.0.git)
-
-[![Deploy with Vercel**](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/BGOONZ_BLOG_2.0.git)
 
 ---
 
@@ -3200,7 +3148,7 @@ git push -u origin master
 
 Then, open [app.netlify.com](https://app.netlify.com) and add a "New site from Git". Choose your newly created repo and click on "Deploy site" with the default deployment settings.
 
-> *Note: if you don't see the correct repo listed, you may need to install or reconfigure the Netlify app on GitHub.*
+> _Note: if you don't see the correct repo listed, you may need to install or reconfigure the Netlify app on GitHub._
 
 ![Netlify Dashboard for Creating a new site](netlify-dashboard.png)
 
@@ -3222,8 +3170,7 @@ Copy the credentials of your new app listed on [GitHub OAuth Apps](https://githu
 
 Congrats! Now that Netlify CMS is successfully configured to your project, every time you add a new post, the content will be stored in your repository and versioned on GitHub because Netlify CMS is Git-based. Also, thanks to [Netlify's Continuous Deployment](https://www.netlify.com/docs/continuous-deployment/), a new version will be deployed every time you add or edit a post.
 
-You can learn more about Netlify CMS and how to configure it further in the [Netlify CMS documentation](https://www.netlifycms.org/docs/intro/)
----
+## You can learn more about Netlify CMS and how to configure it further in the [Netlify CMS documentation](https://www.netlifycms.org/docs/intro/)
 
 ---
 
@@ -3242,10 +3189,10 @@ Inside a Gatsby project, you may see some or all of the following folders and fi
 -- /.cache
 |-- /plugins
 |-- /public
-|-- /src    
-|-- /api    
-|-- /pages    
-|-- /templates    
+|-- /src
+|-- /api
+|-- /pages
+|-- /templates
 |-- html.js
 |-- /static
 |-- gatsby-config.js
@@ -3256,9 +3203,9 @@ Inside a Gatsby project, you may see some or all of the following folders and fi
 
 [Folders](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/#folders)
 
-- **`/.cache`** *Automatically generated.* This folder is an internal cache created automatically by Gatsby. The files inside this folder are not meant for modification. Should be added to the `.gitignore` file if not added already.
+- **`/.cache`** _Automatically generated._ This folder is an internal cache created automatically by Gatsby. The files inside this folder are not meant for modification. Should be added to the `.gitignore` file if not added already.
 - **`/plugins`** This folder hosts any project-specific ("local") plugins that aren't published as an `npm` package. Check out the [plugin docs](https://www.gatsbyjs.com/docs/plugins/) for more detail.
-- **`/public`** *Automatically generated.* The output of the build process will be exposed inside this folder. Should be added to the `.gitignore` file if not added already.
+- **`/public`** _Automatically generated._ The output of the build process will be exposed inside this folder. Should be added to the `.gitignore` file if not added already.
 - **`/src`** This directory will contain all of the code related to what you will see on the frontend of your site (what you see in the browser), like your site header, or a page template. "src" is a convention for "source code".
 
   - **`/api`** JavaScript and TypeScript files under `src/api` become functions automatically with paths based on their file name. Check out the [functions guide](https://www.gatsbyjs.com/docs/reference/functions/) for more detail.
@@ -3360,14 +3307,14 @@ Open `gatsby-config.js` to add the `gatsby-source-filesystem` plugin. The `path`
 
 ```
 module.exports = {  siteMetadata: {
-    title: "My Gatsby Site",  },  
-plugins: [    { 
-     resolve: `gatsby-source-filesystem`,      
+    title: "My Gatsby Site",  },
+plugins: [    {
+     resolve: `gatsby-source-filesystem`,
 options: {
-        name: `markdown-pages`,      
-  path: `${__dirname}/src/markdown-pages`,      
-},  
-  },  
+        name: `markdown-pages`,
+  path: `${__dirname}/src/markdown-pages`,
+},
+  },
 ],}
 ```
 
@@ -3387,14 +3334,14 @@ Add this to `gatsby-config.js` after the previously added `gatsby-source-filesys
 
 ```
 module.exports = {  siteMetadata: {
-    title: "My Gatsby Site",  },  
-plugins: [    { 
-     resolve: `gatsby-source-filesystem`,      
+    title: "My Gatsby Site",  },
+plugins: [    {
+     resolve: `gatsby-source-filesystem`,
 options: {
-        name: `markdown-pages`,      
-  path: `${__dirname}/src/markdown-pages`,      
-},  
-  },  
+        name: `markdown-pages`,
+  path: `${__dirname}/src/markdown-pages`,
+},
+  },
   `gatsby-transformer-remark`,  ],
 }
 ```
@@ -3431,7 +3378,7 @@ Two things are important in the file above:
 
 1. A GraphQL query is made in the second half of the file to get the Markdown data. Gatsby has automagically given you all the Markdown metadata and HTML in this query's result.
 
-    **Note: To learn more about GraphQL, consider this [excellent resource](https://www.howtographql.com/)**
+   **Note: To learn more about GraphQL, consider this [excellent resource](https://www.howtographql.com/)**
 
 2. The result of the query is injected by Gatsby into the component as the `data` prop. `props.data.markdownRemark` is the property that has all the details of the Markdown file.
 
@@ -3456,7 +3403,7 @@ If the value is not present at the object’s specific path, it will be resolved
 ### Syntax
 
 ```js
-_.get(object, path, defaultValue)
+_.get(object, path, defaultValue);
 ```
 
 ### Parameters
@@ -3500,14 +3447,14 @@ In the JavaScript tab:
 
 ```
 module.exports = {  siteMetadata: {
-    title: "My Gatsby Site",  },  
-plugins: [    { 
-     resolve: `gatsby-source-filesystem`,      
+    title: "My Gatsby Site",  },
+plugins: [    {
+     resolve: `gatsby-source-filesystem`,
 options: {
-        name: `markdown-pages`,      
-  path: `${__dirname}/src/markdown-pages`,      
-},  
-  },  
+        name: `markdown-pages`,
+  path: `${__dirname}/src/markdown-pages`,
+},
+  },
 ],}
 ```
 
@@ -3584,8 +3531,6 @@ In the JavaScript tab:
 
 ---
 
-
-
 ---
 
 ## Source Code
@@ -3593,8 +3538,6 @@ In the JavaScript tab:
 <details>
 
 <summary>  Click To See Component Sourcecode<details>
-
-
 
 ---
 
