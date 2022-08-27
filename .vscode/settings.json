@@ -1,3 +1,5 @@
 {
-    "makefile.extensionOutputFolder": "./.vscode"
+    "makefile.extensionOutputFolder": "./.vscode",
+    "notebook.consolidatedRunButton": true,
+    "explorer.fileNesting.enabled": true
 }
