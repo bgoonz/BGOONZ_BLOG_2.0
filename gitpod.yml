@@ -1,7 +1,7 @@
 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
 tasks:
     - init: make
-      command: npm i --legacy-peer-deps && npm i prettier -g && prettier --write .
+      command: nvm i v14.5.0 && npm i prettier -g && npm i --legacy-peer-deps && npm audit fix
 github:
     # https://www.gitpod.io/docs/prebuilds/#configure-prebuilds
     prebuilds:
