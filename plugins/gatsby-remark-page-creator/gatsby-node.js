@@ -28,6 +28,7 @@ function findFileNode({ node, getNode }) {
   }
 
   return fileNode;
+
 }
 
 exports.onCreateNode = ({ node, getNode, actions }, options) => {

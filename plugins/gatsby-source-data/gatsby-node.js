@@ -18,39 +18,28 @@ const supportedExtensions = {
 };
 
 exports.sourceNodes = (props, pluginOptions = {}) => {
-  const createContentDigest = props.createContentDigest;
-  const { createNode } = props.actions;
-  const reporter = props.reporter;
 
-  if (!_.get(pluginOptions, "path")) {
-    pluginOptions.path = "src/data";
-  }
+    const createContentDigest = props.createContentDigest;
+    const { createNode } = props.actions;
+    const reporter = props.reporter;
+    if (!_.get(pluginOptions, 'path')) {
+        pluginOptions.path = 'src/data';
+    }
+    if (!path.isAbsolute(pluginOptions.path)) {
+        pluginOptions.path = path.resolve(process.cwd(), pluginOptions.path);
+    }
+    reporter.info(`[gatsby-source-data] setup file watcher and create site data`);
+    const dataPath = pluginOptions.path;
+    const createSiteDataFromFilesPartial = _.partial(createSiteDataFromFiles, { dataPath, createNode, createContentDigest, reporter });
+    const watcher = chokidar.watch([dataPath, metadataFileName], {
+        cwd: '.',
+        ignoreInitial: true
+    });
+    watcher.on('add', createSiteDataFromFilesPartial);
+    watcher.on('change', createSiteDataFromFilesPartial);
+    watcher.on('unlink', createSiteDataFromFilesPartial);
+    return createSiteDataFromFiles({ dataPath, createNode, createContentDigest, reporter }, null);
 
-  if (!path.isAbsolute(pluginOptions.path)) {
-    pluginOptions.path = path.resolve(process.cwd(), pluginOptions.path);
-  }
-
-  reporter.info("[gatsby-source-data] setup file watcher and create site data");
-
-  const dataPath = pluginOptions.path;
-  const createSiteDataFromFilesPartial = _.partial(createSiteDataFromFiles, {
-    dataPath,
-    createNode,
-    createContentDigest,
-    reporter,
-  });
-  const watcher = chokidar.watch([dataPath, metadataFileName], {
-    cwd: ".",
-    ignoreInitial: true,
-  });
-  watcher.on("add", createSiteDataFromFilesPartial);
-  watcher.on("change", createSiteDataFromFilesPartial);
-  watcher.on("unlink", createSiteDataFromFilesPartial);
-
-  return createSiteDataFromFiles(
-    { dataPath, createNode, createContentDigest, reporter },
-    null
-  );
 };
 
 async function createSiteDataFromFiles(
@@ -119,31 +108,31 @@ async function readDirRecursively(dir, options) {
 }
 
 function convertDataFilesToJSON(dataFiles, dataDirPath, reporter) {
-  let promises = _.map(dataFiles, (filePath) => {
-    const pathObject = path.parse(filePath);
-    const absFilePath =
-      pathObject.base === metadataFileName
-        ? metadataFileName
-        : path.join(dataDirPath, filePath);
-    const relPath =
-      pathObject.base === metadataFileName ? metadataFileName : filePath;
-    const relDir = pathObject.base === metadataFileName ? "" : pathObject.dir;
-    const ext = pathObject.ext.substring(1);
-    if (!_.has(supportedExtensions, ext)) {
-      return null;
-    }
-    return fse.readFile(absFilePath).then((data) => {
-      const propPath = _.compact(
-        relDir.split(path.sep).concat(pathObject.name)
-      );
-      const res = {};
-      try {
-        const parsedData = supportedExtensions[ext](data);
-        _.set(res, propPath, parsedData);
-      } catch (err) {
-        reporter.warn(`[gatsby-source-data] could not parse file: ${relPath}`);
-      }
-      return res;
+
+    let promises = _.map(dataFiles, filePath => {
+        const pathObject = path.parse(filePath);
+        const absFilePath = pathObject.base === metadataFileName ? metadataFileName : path.join(dataDirPath, filePath);
+        const relPath = pathObject.base === metadataFileName ? metadataFileName : filePath;
+        const relDir = pathObject.base === metadataFileName ? '' : pathObject.dir;
+        const ext = pathObject.ext.substring(1);
+        if (!_.has(supportedExtensions, ext)) {
+            return null;
+        }
+        return fse.readFile(absFilePath).then(data => {
+            const propPath = _.compact(relDir.split(path.sep).concat(pathObject.name));
+            const res = {};
+            try {
+                const parsedData = supportedExtensions[ext](data);
+                _.set(res, propPath, parsedData);
+            } catch (err) {
+                reporter.warn(`[gatsby-source-data] could not parse file: ${relPath}`);
+            }
+            return res;
+        });
+    });
+    return Promise.all(promises).then(results => {
+        return _.reduce(results, (data, res) => _.merge(data, res), {});
+
     });
   });
   return Promise.all(promises).then((results) => {
