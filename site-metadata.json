@@ -1,7 +1,7 @@
 {
     "palette": "navy",
     "header": {
-        "logo_img": "images/home-button.png",
+        "logo_img": "images/logo-circle.png",
         "logo_img_alt": "webdevhub logo",
         "has_nav": true,
         "nav_links": [{
@@ -12,58 +12,67 @@
                 "new_window": false,
                 "no_follow": false,
                 "has_subnav": true,
-                "subnav_links": [{
-                        "label": "Docs",
-                        "url": "/docs",
-                        "style": "primary",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false,
-                        "type": "action"
-                    },
-                    {
-                        "label": "Showcase🔎",
-                        "url": "/showcase",
-                        "style": "primary",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false,
-                        "type": "action"
-                    },
-                    {
-                        "label": "Contact!📧",
-                        "url": "/docs/faq/contact",
-                        "style": "primary",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false,
-                        "type": "action"
-                    },
-                    {
-                        "label": "Python🐍",
-                        "url": "/docs/python/python-ds",
-                        "style": "primary",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false,
-                        "type": "action"
-                    },
-                    {
-                        "label": "JavaScript",
-                        "url": "docs/javascript",
-                        "style": "primary",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false
-                    },
-                    {
-                        "label": "Internal Use💻",
-                        "url": "/docs/about/internal-use",
-                        "style": "primary",
-                        "icon_class": "dev",
-                        "new_window": false,
-                        "no_follow": false
-                    }
+                "subnav_links": [
+                  {
+                    "label": "Docs",
+                    "url": "/docs",
+                    "style": "primary",
+                    "icon_class": "dev",
+                    "new_window": false,
+                    "no_follow": false,
+                    "type": "action"
+                  },
+                  {
+                    "label": "Showcase🔎",
+                    "url": "/showcase",
+                    "style": "primary",
+                    "icon_class": "dev",
+                    "new_window": false,
+                    "no_follow": false,
+                    "type": "action"
+                  },
+                  {
+                    "label": "Contact!📧",
+                    "url": "/docs/faq/contact",
+                    "style": "primary",
+                    "icon_class": "dev",
+                    "new_window": false,
+                    "no_follow": false,
+                    "type": "action"
+                  },
+                  {
+                    "label": "Python🐍",
+                    "url": "/docs/python/python-ds",
+                    "style": "primary",
+                    "icon_class": "dev",
+                    "new_window": false,
+                    "no_follow": false,
+                    "type": "action"
+                  },
+                  {
+                    "label": "JavaScript",
+                    "url": "docs/javascript",
+                    "style": "primary",
+                    "icon_class": "dev",
+                    "new_window": false,
+                    "no_follow": false
+                  },
+                  {
+                    "label": "about",
+                    "url": "docs/about",
+                    "style": "primary",
+                    "icon_class": "dev",
+                    "new_window": false,
+                    "no_follow": false
+                  },
+                  {
+                    "label": "Internal Use💻",
+                    "url": "/docs/about/internal-use",
+                    "style": "primary",
+                    "icon_class": "dev",
+                    "new_window": false,
+                    "no_follow": false
+                  }
                 ],
                 "type": "action_menu"
             },
