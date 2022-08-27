@@ -4,8 +4,6 @@
     "version": "1.11.5",
     "license": "MIT",
     "scripts": {
-        "in": "npm i --legacy-peer-deps",
-        "audit": "npm audit fix        ",
         "develop": "gatsby develop",
         "start": "npm run develop",
         "build": "gatsby build --prefix-paths",
@@ -13,9 +11,7 @@
         "prettydock": "npm i docky --location=global && npm i prettier --location=global",
         "docky": "docky src/pages/docs/*.md   --watch 'src/pages/*.js','./README.md'    --use-readme=true",
         "pretty": "prettier --write ./static && prettier --write ./docs && prettier --write ./notes",
-        "git": "git add . && git commit -m 'update' && git pull && git push",
-        "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json}\"",
-        "clean": "gatsby clean"
+        "git": "git add . && git commit -m 'update' && git pull && git push"
     },
     "dependencies": {
         "@stackbit/gatsby-plugin-menus": "0.0.4",
@@ -42,7 +38,6 @@
         "marked": "0.6.1",
         "moment": "^2.29.3",
         "moment-strftime": "0.5.0",
-        "node-fetch": "^2.6.7",
         "node-sass": "^4.14.0",
         "node-sass-utils": "1.1.2",
         "prismjs": "^1.28.0",
