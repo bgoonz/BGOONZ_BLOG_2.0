@@ -128,6 +128,4 @@ Final Words
 
 This blog has covered the steps to make end-to-end automated steps with TestProject's best Rest API testing framework to Automate API Testing. 
 
-We began with submitting fundamental API requests, and it concluded with verifying and contrasting UI-based aspects. In essence, we created a robust end-to-end test by combining REST API and recorded UI stages within the same automated test. And what's even more extraordinary is that none of this required writing a single line of code! Will you consider it the** [best Rest api testing automation post](https://quokkalabs.com/blog/rest-vs-grpc-which-is-the-best-api-protocol/)**? Let me know in the comments. 
-
-<!--EndFragment-->
+We began with submitting fundamental API requests, and it concluded with verifying and contrasting UI-based aspects. In essence, we created a robust end-to-end test by combining REST API and recorded UI stages within the same automated test. And what's even more extraordinary is that none of this required writing a single line of code! Will you consider it the** [best Rest api testing automation post](https://quokkalabs.com/blog/rest-vs-grpc-which-is-the-best-api-protocol/)**? Let me know in the comments.
