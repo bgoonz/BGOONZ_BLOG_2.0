@@ -24,4 +24,4 @@ Stripe's international payment system, which enables both individuals and busine
 
 Stripe is a simple-to-use solution for every business because of its accessible interface and thorough documentation. How to add Stripe to a Ruby on Rails application is a quick guide we have prepared for you about Stripe payment integration.
 
-![](/blog/stripe-developer-profile-3.png)
+![## integrating Stripe](/blog/stripe-developer-profile-3.png)
