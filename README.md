@@ -2,6 +2,8 @@
 
 # Bgoonz Blog Readme
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/eb66c920-eb44-4999-8af7-64a959d0b2fa/deploy-status)](https://app.netlify.com/sites/cool-flan-e6bc30/deploys)
+
 ## [⇨WEBSITE🗺️⇦](https://bgoonz-blog.netlify.app)
 
 ### 💫 Deploy
