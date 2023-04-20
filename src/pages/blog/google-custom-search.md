@@ -4,8 +4,8 @@ template: post
 subtitle: Google search
 excerpt: Google
 date: 2022-06-06T20:55:39.767Z
-image: /blog/wartime-blog-cover-art-modified.png
-thumb_image: /blog/wartime-blog-cover-art-modified.png
+image: https://media.geeksforgeeks.org/wp-content/uploads/20200509200015/output.png
+thumb_image: https://media.geeksforgeeks.org/wp-content/uploads/20200509200015/output.png
 image_position: right
 author: src/data/authors/backup.yaml
 show_author_bio: true
