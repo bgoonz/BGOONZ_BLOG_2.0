@@ -21,6 +21,8 @@ exports.onInitialClientRender = () => {
     }
 };
 
+
+
 exports.onRouteUpdate = () => {
     if (initialized && 'onGatsbyRouteUpdate' in window && typeof window.onGatsbyRouteUpdate === 'function') {
         window.onGatsbyRouteUpdate();

@@ -61,7 +61,7 @@ Only use a `div` or a `span` to markup up content when there isn't another HTML 
 
 > More on semantic markup:
 >
-> -   [Semantic Structure – WebAIM](http://webaim.org/techniques/semanticstructure/)
+> -   [Semantic Structure – WebAIM](https://webaim.org/techniques/semanticstructure/)
 
 ### Keyboard accessibility
 
@@ -71,7 +71,7 @@ Tab order is determined by the order of elements in the DOM, and not by their vi
 
 The `tabindex` attribute should only be used when absolutely necessary.
 
--   `tabindex=0/-1` makes an element focusable, while `tabindex=0` also includes the element in the normal tab order. In both cases, keyboard triggers of the element still require scripting, so where possible, use [interactive content](http://w3c.github.io/html/dom.html#kinds-of-content-interactive-content) instead.
+-   `tabindex=0/-1` makes an element focusable, while `tabindex=0` also includes the element in the normal tab order. In both cases, keyboard triggers of the element still require scripting, so where possible, use [interactive content](https://w3c.github.io/html/dom.html#kinds-of-content-interactive-content) instead.
 
 -   `tabindex=1+` takes an element to the very front of the default tab order. When it's applied, the element's visual positioning is no longer indicative of its tab order, and the only way to find out where an element is would be by tabbing through the page. Therefore, unless a page is carefully designed around elements with positive tabindex, it is very error-proned, and thus currently prohibited in github.com.
 
@@ -94,8 +94,8 @@ Finally, bear in mind that some assistive technologies have keyboard combination
 > More on keyboard accessibility:
 >
 > -   [Focus Order – Understanding WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-order.html)
-> -   [Time to revisit accesskey? by Léonie Watson](http://tink.uk/time-to-revisit-accesskey/)
-> -   [Flexbox & the keyboard navigation disconnect by Léonie Watson](http://tink.uk/flexbox-the-keyboard-navigation-disconnect/)
+> -   [Time to revisit accesskey? by Léonie Watson](https://tink.uk/time-to-revisit-accesskey/)
+> -   [Flexbox & the keyboard navigation disconnect by Léonie Watson](https://tink.uk/flexbox-the-keyboard-navigation-disconnect/)
 
 ### Visual accessibility
 
@@ -106,7 +106,7 @@ Instead of relying solely on color to communicate information, always combine co
 > More on visual accessibility:
 >
 > -   [Use of Color – Understanding WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html)
-> -   [Contrast – Understanding WCAG 2.0](http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html)
+> -   [Contrast – Understanding WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html)
 
 ### Text and labels
 

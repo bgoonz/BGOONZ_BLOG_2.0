@@ -102,11 +102,11 @@ Adding `?ts=4` to a diff or file URL will display tab characters as 4 spaces wid
 
 Here is a Go source file before adding `?ts=4`:
 
-![Before, tab space example](http://i.imgur.com/GIT1Fr0.png)
+![Before, tab space example](https://i.imgur.com/GIT1Fr0.png)
 
 ...and this is after adding `?ts=4`:
 
-![After, tab space example](http://i.imgur.com/70FL4H9.png)
+![After, tab space example](https://i.imgur.com/70FL4H9.png)
 
 ### Commit History by Author
 
@@ -116,7 +116,7 @@ To view all commits on a repo by author add `?author={user}` to the URL.
 https://github.com/rails/rails/commits/master?author=dhh
 ```
 
-![DHH commit history](http://i.imgur.com/S7AE29b.png)
+![DHH commit history](https://i.imgur.com/S7AE29b.png)
 
 [_Read more about the differences between commits views._](https://help.github.com/articles/differences-between-commit-views/)
 
@@ -144,7 +144,7 @@ https://github.com/{user}/{repo}/branches
 
 From here you can access the compare page or delete a branch with a click of a button.
 
-![Compare branches not merged into master in rails/rails repo - https://github.com/rails/rails/branches](http://i.imgur.com/0FEe30z.png)
+![Compare branches not merged into master in rails/rails repo - https://github.com/rails/rails/branches](https://i.imgur.com/0FEe30z.png)
 
 #### Comparing Branches
 
@@ -162,7 +162,7 @@ For example:
 https://github.com/rails/rails/compare/master...4-1-stable
 ```
 
-![Rails branch compare example](http://i.imgur.com/tIRCOsK.png)
+![Rails branch compare example](https://i.imgur.com/tIRCOsK.png)
 
 `{range}` can be changed to things like:
 
@@ -173,7 +173,7 @@ https://github.com/rails/rails/compare/master@{2014-10-04}...master
 
 _Here, dates are in the format `YYYY-MM-DD`_
 
-![Another compare example](http://i.imgur.com/5dtzESz.png)
+![Another compare example](https://i.imgur.com/5dtzESz.png)
 
 Branches can also be compared in `diff` and `patch` views:
 
@@ -198,13 +198,13 @@ For example:
 https://github.com/rails/rails/compare/byroot:master...master
 ```
 
-![Forked branch compare](http://i.imgur.com/Q1W6qcB.png)
+![Forked branch compare](https://i.imgur.com/Q1W6qcB.png)
 
 ### Gists
 
 [Gists](https://gist.github.com/) are an easy way to work with small bits of code without creating a fully fledged repository.
 
-![Gist](http://i.imgur.com/VkKI1LC.png?1)
+![Gist](https://i.imgur.com/VkKI1LC.png?1)
 
 Add `.pibb` to the end of any Gist URL ([like this](https://gist.github.com/tiimgreen/10545817.pibb)) in order to get the _HTML-only_ version suitable for embedding in any other site.
 
@@ -214,7 +214,7 @@ Gists can be treated as a repository so they can be cloned like any other:
 $ git clone https://gist.github.com/tiimgreen/10545817
 ```
 
-![Gists](http://i.imgur.com/BcFzabp.png)
+![Gists](https://i.imgur.com/BcFzabp.png)
 
 This means you also can modify and push updates to Gists:
 
@@ -232,7 +232,7 @@ However, Gists do not support directories. All files need to be added to the rep
 
 [Git.io](http://git.io) is a simple URL shortener for GitHub.
 
-![Git.io](http://i.imgur.com/6JUfbcG.png?1)
+![Git.io](https://i.imgur.com/6JUfbcG.png?1)
 
 You can also use it via pure HTTP using Curl:
 
@@ -260,7 +260,7 @@ When on a repository page, keyboard shortcuts allow you to navigate easily.
 
 To see all of the shortcuts for the current page press `?`:
 
-![Keyboard shortcuts](http://i.imgur.com/y5ZfNEm.png)
+![Keyboard shortcuts](https://i.imgur.com/y5ZfNEm.png)
 
 [Read more about search syntax you can use.](https://help.github.com/articles/search-syntax/)
 
@@ -274,7 +274,7 @@ It also works with ranges, e.g., `#L53-L60`, to select ranges, hold `shift` and 
 https://github.com/rails/rails/blob/master/activemodel/lib/active_model.rb#L53-L60
 ```
 
-![Line Highlighting](http://i.imgur.com/8AhjrCz.png)
+![Line Highlighting](https://i.imgur.com/8AhjrCz.png)
 
 ### Closing Issues via Commit Messages
 
@@ -286,7 +286,7 @@ $ git commit -m "Fix screwup, fixes #12"
 
 This closes the issue and references the closing commit.
 
-![Closing Repo](http://i.imgur.com/Uh1gZdx.png)
+![Closing Repo](https://i.imgur.com/Uh1gZdx.png)
 
 [_Read more about closing Issues via commit messages._](https://help.github.com/articles/closing-issues-via-commit-messages/)
 
@@ -416,7 +416,7 @@ There are multiple ways of embedding images in Wiki pages. There's the standard 
 
 Which produces:
 
-![Just a screenshot](http://i.imgur.com/J5bMf7S.png)
+![Just a screenshot](https://i.imgur.com/J5bMf7S.png)
 
 ### Quick Quoting
 
@@ -440,11 +440,11 @@ After taking a screenshot and adding it to the clipboard (mac: `cmd-ctrl-shift-4
 
 When creating a repository, GitHub gives you the option of adding in a pre-made license:
 
-![License](http://i.imgur.com/Chqj4Fg.png)
+![License](https://i.imgur.com/Chqj4Fg.png)
 
 You can also add them to existing repositories by creating a new file through the web interface. When the name `LICENSE` is typed in you will get an option to use a template:
 
-![License](http://i.imgur.com/fTjQict.png)
+![License](https://i.imgur.com/fTjQict.png)
 
 Also works for `.gitignore`.
 
@@ -463,7 +463,7 @@ In Issues and Pull requests check boxes can be added with the following syntax (
 - [ ] Sleep
 ```
 
-![Task List](http://i.imgur.com/jJBXhsY.png)
+![Task List](https://i.imgur.com/jJBXhsY.png)
 
 When they are clicked, they will be updated in the pure Markdown:
 
@@ -682,7 +682,7 @@ GitHubs icons (Octicons) have now been open sourced.
 
 If you are a student you will be eligible for the GitHub Student Developer Pack. This gives you free credit, free trials and early access to software that will help you when developing.
 
-![GitHub Student Developer Pack](http://i.imgur.com/9ru3K43.png)
+![GitHub Student Developer Pack](https://i.imgur.com/9ru3K43.png)
 
 [_Read more about GitHub's Student Developer Pack_](https://education.github.com/pack)
 
@@ -885,7 +885,7 @@ $ git status
 
 produces:
 
-![git status](http://i.imgur.com/qjPyvXb.png)
+![git status](https://i.imgur.com/qjPyvXb.png)
 
 By adding `-sb`:
 
@@ -895,7 +895,7 @@ $ git status -sb
 
 this is produced:
 
-![git status -sb](http://i.imgur.com/K0OY3nm.png)
+![git status -sb](https://i.imgur.com/K0OY3nm.png)
 
 [_Read more about the Git `status` command._](http://git-scm.com/docs/git-status)
 
@@ -909,7 +909,7 @@ $ git log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %C
 
 produces:
 
-![git log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative](http://i.imgur.com/58eOtkW.png)
+![git log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative](https://i.imgur.com/58eOtkW.png)
 
 Credit to [Palesz](http://stackoverflow.com/users/88355/palesz)
 
@@ -931,7 +931,7 @@ where `query` (case-sensitive) is the term you want to search, this then finds t
 $ git show :/typo
 ```
 
-![git show :/query](http://i.imgur.com/icaGiNt.png)
+![git show :/query](https://i.imgur.com/icaGiNt.png)
 
 _Press `q` to quit._
 
@@ -947,7 +947,7 @@ $ git grep aliases
 
 will show all the files containing the string _aliases_.
 
-![git grep aliases](http://i.imgur.com/DL2zpQ9.png)
+![git grep aliases](https://i.imgur.com/DL2zpQ9.png)
 
 _Press `q` to quit._
 
@@ -1006,7 +1006,7 @@ $ git instaweb
 
 opens:
 
-![Git instaweb](http://i.imgur.com/Dxekmqc.png)
+![Git instaweb](https://i.imgur.com/Dxekmqc.png)
 
 [_Read more about the Git `instaweb` command._](http://git-scm.com/docs/git-instaweb)
 

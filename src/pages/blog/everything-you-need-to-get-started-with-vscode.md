@@ -153,7 +153,7 @@ You can also use [keyboard shortcuts](https://code.visualstudio.com/docs/editor
 >
 > [gnu-global-tags](https://marketplace.visualstudio.com/items?itemName=austin.code-gnu-global) — Provide Intellisense for C/C++ with the help of the GNU Global tool.
 >
-> [YouCompleteMe](https://marketplace.visualstudio.com/items?itemName=RichardHe.you-complete-me) — Provides semantic completions for C/C++ (and TypeScript, JavaScript, Objective-C, Golang, Rust) using [YouCompleteMe](http://ycm-core.github.io/YouCompleteMe/).
+> [YouCompleteMe](https://marketplace.visualstudio.com/items?itemName=RichardHe.you-complete-me) — Provides semantic completions for C/C++ (and TypeScript, JavaScript, Objective-C, Golang, Rust) using [YouCompleteMe](https://ycm-core.github.io/YouCompleteMe/).
 >
 > [C/C++ Clang Command Adapter](https://github.com/mitaki28/vscode-clang) — Completion and Diagnostic for C/C++/Objective-C using Clang command.
 >

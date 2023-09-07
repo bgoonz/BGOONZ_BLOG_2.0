@@ -9,9 +9,9 @@ seo:
 template: page
 image: images/bgoonzblog20-a6a3bfc3.png
 ---
-
 <h1 align="center">Hi 👋, I'm Bryan</h1>
 
+<div class="important"><strong>Readme Page<strong></div>
 ---
 
 <div align="center">

@@ -221,7 +221,7 @@ Hugo, Azure
 demo
 [hlaueriksson/jamstack-cms](https://github.com/hlaueriksson/jamstack-cms)
 [blog
-post](http://conductofcode.io/post/managing-content-for-a-jamstack-site-with-netlify-cms/)
+post](https://conductofcode.io/post/managing-content-for-a-jamstack-site-with-netlify-cms/)
 
 [Bael](https://bael-theme.jake101.com/)
 Vue, Nuxt

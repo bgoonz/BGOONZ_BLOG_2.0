@@ -393,4 +393,4 @@ WHERE c1 IS [NOT] NULL;
 
 - [PostgreSQL 9.6.0 Documentation](https://www.postgresql.org/docs/9.6/static/app-psql.html)
 - [PostgreSQL Exercises](https://pgexercises.com)
-- [PostgreSQL Tutorial](http://www.postgresqltutorial.com/postgresql-cheat-sheets)
+- [PostgreSQL Tutorial](https://www.postgresqltutorial.com/postgresql-cheat-sheets)

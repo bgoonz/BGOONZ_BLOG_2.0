@@ -716,13 +716,13 @@ Plain Old JS Object Lesson Concepts
 - <span id="822a">Write an object literal with a variable key using interpolation</span>
 
 #### put it in brackets to access the value of the variable, rather than just make the value that string
-
+```js
     let a = "b";
         let obj = {
             a: "letter_a",
             [a]: "letter b"
         }
-
+```
 - <span id="e4fc">Use the `obj[key] !== undefined` pattern to check if a given variable that contains a key exists in an object</span>
 - <span id="0baa">can also use `(key in object)` syntax interchangeably (returns a boolean)</span>
 - <span id="ad4c">Utilize Object.keys and Object.values in a function</span>
@@ -730,14 +730,14 @@ Plain Old JS Object Lesson Concepts
 - <span id="f39b">`Object.values(obj)` returns an array of the values in `obj`</span>
 
 #### Iterate through an object using a `for in` loop
-
+```js
     let printValues = function(obj) {
           for (let key in obj) {
               let value = obj[key];
               console.log(value);
           }
       }
-
+```
 #### Define a function that utilizes `...rest` syntax to accept an arbitrary number of arguments
 
 - <span id="58a5">`...rest` syntax will store all additional arguments in an array</span>
@@ -754,12 +754,12 @@ Plain Old JS Object Lesson Concepts
         }
 
 #### Use `...spread` syntax for Object literals and Array literals
-
+```js
     let arr1 = ["a", "b", "c"];
       let longer = [...arr1, "d", "e"]; // ["a", "b", "c", "d", "e"]
       // without spread syntax, this would give you a nested array
       let withoutRest = [arr1, "d", "e"] // [["a", "b", "c"], "d", "e"]
-
+```
 - <span id="118b">Destructure an array to reference specific elements</span>
 
 <!-- -->

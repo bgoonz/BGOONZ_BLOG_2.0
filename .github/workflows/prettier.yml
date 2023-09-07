@@ -1,0 +1,25 @@
+name: Prettier Code Formatter
+
+on:
+  push:
+    branches:
+      - master # Replace with your default branch if not 'main'
+
+jobs:
+  prettier:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14" # You can specify your desired Node.js version
+
+      - name: Install Prettier
+        run: npm install --global prettier
+
+      - name: Run Prettier
+        run: prettier --write '**/*.{js,jsx,ts,tsx,json,html,css}' # Add or remove file extensions as needed

@@ -221,7 +221,7 @@ cmseditable: true
 * ​[Path-to-RegExp](https://github.com/pillarjs/path-to-regexp) - Turn a path string such as /user/:name into a regular expression.
 * ​[Bacon.js](https://github.com/baconjs/bacon.js) - Functional reactive programming library for TypeScript and JavaScript.
 * ​[GGEditor](https://github.com/alibaba/GGEditor) - Visual graph editor based on G6 and React.
-* ​[Arbor](https://github.com/samizdatco/arbor) - Graph visualization library using web workers and jQuery. ([Web](http://arborjs.org/))
+* ​[Arbor](https://github.com/samizdatco/arbor) - Graph visualization library using web workers and jQuery. ([Web](https://arborjs.org/))
 * ​[fsm-as-promised](https://github.com/vstirbu/fsm-as-promised) - Finite state machine library using ES6 promises.
 * ​[x-spreadsheet](https://github.com/myliang/x-spreadsheet) - Web-based JavaScript（canvas）spreadsheet.
 * ​[IsoCity](https://github.com/victorqribeiro/isocity) - Isometric city builder in JavaScript.
@@ -491,7 +491,7 @@ cmseditable: true
 * ​[dom-to-image-retina](https://github.com/egoist/dom-to-image-retina) - dom-to-image but generates high-resolution images.
 * ​[loglevel](https://github.com/pimterry/loglevel) - Minimal lightweight logging for JavaScript, adding reliable log level methods to wrap any available console.log methods.
 * ​[Perfect Freehand](https://github.com/steveruizok/perfect-freehand) - Draw perfect freehand lines.
-* ​[Alo](https://github.com/alojs/alo) - Full-fledged state management. ([Docs](http://www.alojs.com/index.html))
+* ​[Alo](https://github.com/alojs/alo) - Full-fledged state management. ([Docs](https://www.alojs.com/index.html))
 * ​[Form-Data](https://github.com/form-data/form-data) - Library to create readable "multipart/form-data" streams. Can be used to submit forms and file uploads to other web applications.
 * ​[conf](https://github.com/sindresorhus/conf) - Simple config handling for your app or module.
 * ​[gifenc](https://github.com/mattdesl/gifenc) - Fast and lightweight pure-JavaScript GIF encoder.

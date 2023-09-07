@@ -486,7 +486,7 @@ Custom.
 
 > module : Python code in a separate file.
 > package : Path to a directory that contains modules.
-> [**init.py**](http://init.py/) : Default file for a package.
+> [**init.py**](https://init.py/) : Default file for a package.
 > submodule : Another file in a module's folder.
 > function : Function in a module.
 

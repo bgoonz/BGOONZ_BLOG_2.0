@@ -1,0 +1,31 @@
+name: Deploy Markdown to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master  # Replace with your default branch if not 'main'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'  # You can specify your desired Node.js version
+
+    - name: Install markdown-to-html converter
+      run: npm install -g markdown-serve
+
+    - name: Convert Markdown to HTML
+      run: markdown-serve -i ./ -o ./html_output
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./html_output
