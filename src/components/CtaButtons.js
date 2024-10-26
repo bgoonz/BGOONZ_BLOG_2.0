@@ -3,10 +3,9 @@ import _ from 'lodash';
 
 import { Link, withPrefix, classNames } from '../utils';
 
-export default class CtaButtons extends React.Component {
-    render() {
-        let actions = _.get(this.props, 'actions', null);
-        return _.map(actions, (action, action_idx) => (
+const CtaButtons = ({ actions }) => {
+    return (
+        _.map(actions, (action, action_idx) => (
             <Link
                 key={action_idx}
                 to={withPrefix(_.get(action, 'url', null))}
@@ -23,6 +22,8 @@ export default class CtaButtons extends React.Component {
             >
                 {_.get(action, 'label', null)}
             </Link>
-        ));
-    }
-}
+        ))
+    );
+};
+
+export default CtaButtons;
