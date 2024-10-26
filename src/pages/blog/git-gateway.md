@@ -43,6 +43,6 @@ Both Bash and Windows console host have a cd command. cd is an acronym for 'Chan
 
 ## Git Bash Commands
 
-Git Bash is packaged with additional commands that can be found in the `/usr/bin` directory of the Git Bash emulation. Git Bash can actually provide a fairly robust shell experience on Windows. Git Bash comes packaged with the following shell commands which are outside the scope of this document: `[Ssh](https://man.openbsd.org/ssh.1)`, `[scp](https://linux.die.net/man/1/scp)`, `[cat](http://man7.org/linux/man-pages/man1/cat.1.html)`, `[find](https://linux.die.net/man/1/find)`.
+Git Bash is packaged with additional commands that can be found in the `/usr/bin` directory of the Git Bash emulation. Git Bash can actually provide a fairly robust shell experience on Windows. Git Bash comes packaged with the following shell commands which are outside the scope of this document: `[Ssh](https://man.openbsd.org/ssh.1)`, `[scp](https://linux.die.net/man/1/scp)`, `[cat](https://man7.org/linux/man-pages/man1/cat.1.html)`, `[find](https://linux.die.net/man/1/find)`.
 
 In addition the previously discussed set of Bash commands, Git Bash includes the full set of Git core commands discussed through out this site. Learn more at the corresponding documentation pages for

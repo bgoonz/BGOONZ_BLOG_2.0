@@ -138,7 +138,7 @@ abepithymia
 ....
 ```
 
-A great book for understanding the power of regular expressions is [Mastering Regular Expressions](http://shop.oreilly.com/product/9780596528126.do).
+A great book for understanding the power of regular expressions is [Mastering Regular Expressions](https://shop.oreilly.com/product/9780596528126.do).
 
 ## How to use extended regular expressions when searching
 

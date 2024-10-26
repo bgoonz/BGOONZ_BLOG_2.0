@@ -5,8 +5,8 @@ subtitle: Learn React
 excerpt: Below I list the most common terms, and their definitions, used when
   talking about React.
 date: 2022-04-18T20:21:35.309Z
-image: https://deploy-preview-2286--bgoonz-blog.netlify.app/images/react.gif
-thumb_image: https://deploy-preview-2286--bgoonz-blog.netlify.app/images/react.gif
+image: https://blog.logrocket.com/wp-content/uploads/2021/09/optimizing-performance-react-application.png
+thumb_image: https://blog.logrocket.com/wp-content/uploads/2021/09/optimizing-performance-react-application.png
 image_position: top
 author: src/data/authors/bgoonz.yaml
 categories:
@@ -72,13 +72,13 @@ ___
 
 #### ES6/ES 2015
 
-The 6th edition of the ECMAScript standard. A.k.a, JavaScript 2015 or ECMAScript 2015. The [ECMAScript 6th edition](http://www.ecma-international.org/ecma-262/6.0/index.html) was finalized in June 2015.
+The 6th edition of the ECMAScript standard. A.k.a, JavaScript 2015 or ECMAScript 2015. The [ECMAScript 6th edition](https://www.ecma-international.org/ecma-262/6.0/index.html) was finalized in June 2015.
 
 ___
 
 #### ECMAScript 2016 (a.k.a, ES7)
 
-The 7th edition of the ECMAScript standard. The [ECMAScript 7th edition](http://www.ecma-international.org/ecma-262/7.0/index.html) was finalized in June 2016.
+The 7th edition of the ECMAScript standard. The [ECMAScript 7th edition](https://www.ecma-international.org/ecma-262/7.0/index.html) was finalized in June 2016.
 
 ___
 
