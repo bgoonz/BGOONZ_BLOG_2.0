@@ -14,28 +14,26 @@ export const query = graphql`
   }
 `;
 
-export default class Advanced extends React.Component {
-  render() {
-    return (
-      <Layout {...this.props}>
-        {_.map(
-          _.get(this.props, "pageContext.frontmatter.sections", null),
-          (section, section_idx) => {
-            const component = _.upperFirst(
-              _.camelCase(_.get(section, "type", null))
-            );
-            const Component = components[component];
-            return (
-              <Component
-                key={section_idx}
-                {...this.props}
-                section={section}
-                site={this.props.pageContext.site}
-              />
-            );
-          }
-        )}
-      </Layout>
-    );
-  }
+export default function Advanced(props) {
+  return (
+    <Layout {...props}>
+      {_.map(
+        _.get(props, "pageContext.frontmatter.sections", null),
+        (section, section_idx) => {
+          const component = _.upperFirst(
+            _.camelCase(_.get(section, "type", null))
+          );
+          const Component = components[component];
+          return (
+            <Component
+              key={section_idx}
+              {...props}
+              section={section}
+              site={props.pageContext.site}
+            />
+          );
+        }
+      )}
+    </Layout>
+  );
 }

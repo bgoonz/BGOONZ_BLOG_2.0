@@ -1,7 +1,7 @@
-import _ from 'lodash';
-import React from 'react';
-import { htmlToReact } from '../utils';
-import ActionLink from './ActionLink';
+import _ from "lodash";
+import React from "react";
+import { htmlToReact } from "../utils";
+import ActionLink from "./ActionLink";
 
 const Footer = (props) => {
   return (
@@ -12,8 +12,8 @@ const Footer = (props) => {
             <tr>
               <td
                 style={{
-                  fontFamily: 'Arial, Helvetica, sans-serif',
-                  fontSize: '7.5pt',
+                  fontFamily: "Arial, Helvetica, sans-serif",
+                  fontSize: "7.5pt",
                 }}
               >
                 <table
@@ -22,16 +22,16 @@ const Footer = (props) => {
                   cellSpacing={0}
                   border={0}
                   style={{
-                    fontFamily: 'Arial, Helvetica, sans-serif',
-                    fontSize: '7.5pt',
+                    fontFamily: "Arial, Helvetica, sans-serif",
+                    fontSize: "7.5pt",
                   }}
                 >
                   <tbody>
                     <tr>
                       <td
                         style={{
-                          fontFamily: 'Arial, Helvetica, sans-serif',
-                          fontSize: '7.5pt',
+                          fontFamily: "Arial, Helvetica, sans-serif",
+                          fontSize: "7.5pt",
                         }}
                         align="left"
                       >
@@ -45,8 +45,8 @@ const Footer = (props) => {
                       </td>
                       <td
                         style={{
-                          fontFamily: 'Arial, Helvetica, sans-serif',
-                          fontSize: '7.5pt',
+                          fontFamily: "Arial, Helvetica, sans-serif",
+                          fontSize: "7.5pt",
                         }}
                         align="center"
                       >
@@ -63,8 +63,8 @@ const Footer = (props) => {
                 </table>
                 <form
                   style={{
-                    margin: 'auto',
-                    marginTop: '1px',
+                    margin: "auto",
+                    marginTop: "1px",
                   }}
                   action="https://search.freefind.com/find.html"
                   method="get"
@@ -76,18 +76,27 @@ const Footer = (props) => {
                   <input type="hidden" name="n" defaultValue={0} />
                   <input type="hidden" name="_charset_" defaultValue />
                   <input type="hidden" name="bcd" defaultValue="÷" />
-                  <input type="text" name="query" size={15} />
-                  <input type="submit" defaultValue="search" />
+                  <input
+                    type="text"
+                    name="query"
+                    size={15}
+                    aria-label="Search this site"
+                  />
+                  <input
+                    type="submit"
+                    defaultValue="search"
+                    aria-label="Submit search"
+                  />
                 </form>
               </td>
             </tr>
             <tr>
               <td
                 style={{
-                  textAlign: 'center',
-                  fontFamily: 'Arial, Helvetica, sans-serif',
-                  fontSize: '8 pt',
-                  paddingTop: '2px',
+                  textAlign: "center",
+                  fontFamily: "Arial, Helvetica, sans-serif",
+                  fontSize: "8 pt",
+                  paddingTop: "2px",
                 }}
               ></td>
             </tr>
@@ -98,21 +107,48 @@ const Footer = (props) => {
         <div id="search" className="inner"></div>
         <div className="site-footer-inside">
           <p className="site-info">
-            {_.get(props, 'pageContext.site.siteMetadata.footer.content', null) && (
+            {_.get(
+              props,
+              "pageContext.site.siteMetadata.footer.content",
+              null
+            ) && (
               <span className="copyright">
-                {htmlToReact(_.get(props, 'pageContext.site.siteMetadata.footer.content', null))}
+                {htmlToReact(
+                  _.get(
+                    props,
+                    "pageContext.site.siteMetadata.footer.content",
+                    null
+                  )
+                )}
               </span>
             )}
-            {_.map(_.get(props, 'pageContext.site.siteMetadata.footer.links', null), (action, action_idx) => (
-              <ActionLink key={action_idx} {...props} action={action}></ActionLink>
-            ))}
+            {_.map(
+              _.get(props, "pageContext.site.siteMetadata.footer.links", null),
+              (action, action_idx) => (
+                <ActionLink
+                  key={action_idx}
+                  {...props}
+                  action={action}
+                ></ActionLink>
+              )
+            )}
           </p>
-          {_.get(props, 'pageContext.site.siteMetadata.footer.has_social', null) && (
+          {_.get(
+            props,
+            "pageContext.site.siteMetadata.footer.has_social",
+            null
+          ) && (
             <div className="social-links">
               {_.map(
-                _.get(props, 'pageContext.site.siteMetadata.footer.social_links', null),
+                _.get(
+                  props,
+                  "pageContext.site.siteMetadata.footer.social_links",
+                  null
+                ),
                 (action, action_idx) => {
-                  return <ActionLink key={action_idx} {...props} action={action} />;
+                  return (
+                    <ActionLink key={action_idx} {...props} action={action} />
+                  );
                 }
               )}
             </div>

@@ -1,5 +1,10 @@
-export default function head({ title, metaDescription, url, openGraphImageName }) {
-    return `
+export default function head({
+  title,
+  metaDescription,
+  url,
+  openGraphImageName,
+}) {
+  return `
     <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -34,7 +39,7 @@ export default function head({ title, metaDescription, url, openGraphImageName }
     <meta property="og:locale" content="en_US" />
 
     <meta property="og:image" content="https://res.cloudinary.com/netlify/image/upload/c_fit,g_west,h_400,co_rgb:FFFFFFFF,l_text:netlify.com:Pacaembu-Bold.ttf_57:Netlify%20Edge%20Functions:%0A${encodeURI(
-        title
+      title
     )},w_1053,x_46/v1619123320/netlify.com/default-og-background-learn-more.png" />
     <meta property="og:image:alt" content="A Netlify branded open graph image representing ${title}" />
     <meta property="og:image:width" content="1200" />
