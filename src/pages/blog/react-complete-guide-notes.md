@@ -6,7 +6,7 @@ excerpt: Javascript allows us to manipulate the DOM without loading a new page
   and react is a JS library
 date: 2023-02-06T17:26:56.410Z
 image: https://uploads.sitepoint.com/wp-content/uploads/2017/04/1493235373large_react_apps_A-01.png
-thumb_image: /blog/react.png
+thumb_image: https://uploads.sitepoint.com/wp-content/uploads/2017/04/1493235373large_react_apps_A-01.png
 image_position: right
 author: src/data/authors/bgoonz.yaml
 show_author_bio: true
